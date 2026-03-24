@@ -8,6 +8,8 @@ grimoire-core/dist/
 
 # ── Rust / Tauri build ────────────────────────────────────────────────────────
 grimoire-app/src-tauri/target/
+
+# Generated platform projects (recreated by `tauri android/ios init` in CI)
 grimoire-app/src-tauri/gen/android/
 grimoire-app/src-tauri/gen/apple/
 

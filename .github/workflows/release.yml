@@ -1,0 +1,143 @@
+# Grimoire Atziluth — Release workflow
+#
+# Triggered by pushing a version tag (e.g. v1.0.0 or v1.0.0-rc).
+# Produces:
+#   • Linux   — .deb, .AppImage, .rpm (via tauri-action)
+#   • Windows — .exe installer + .msi  (via tauri-action)
+#   • Android — universal .apk         (manual Gradle build)
+#
+# Android release signing (optional — unsigned debug APK built otherwise):
+#   Add these repository secrets to enable signed release APKs:
+#     ANDROID_KEYSTORE          — base64-encoded .jks / .keystore file
+#     ANDROID_KEYSTORE_PASSWORD — store password
+#     ANDROID_KEY_ALIAS         — key alias inside the keystore
+#     ANDROID_KEY_PASSWORD      — key password
+
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  # ── Desktop: Linux + Windows ────────────────────────────────────────────────
+  build-desktop:
+    name: Desktop — ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: ubuntu-22.04
+          - platform: windows-latest
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: grimoire-app/src-tauri -> target
+
+      - name: Install Linux system dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build and publish
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Grimoire Atziluth ${{ github.ref_name }}
+          releaseDraft: true
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          projectPath: ./grimoire-app
+
+  # ── Android ─────────────────────────────────────────────────────────────────
+  build-android:
+    name: Android APK
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android NDK
+        run: sdkmanager "ndk;27.0.12077973"
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: >-
+            aarch64-linux-android,armv7-linux-androideabi,
+            i686-linux-android,x86_64-linux-android
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: grimoire-app/src-tauri -> target
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Initialise Android project
+        working-directory: grimoire-app
+        env:
+          NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
+        run: npm run tauri android init
+
+      - name: Set up release signing
+        if: ${{ secrets.ANDROID_KEYSTORE != '' }}
+        working-directory: grimoire-app/src-tauri/gen/android
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE }}" | base64 --decode > keystore.jks
+          cat > key.properties <<EOF
+          storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
+          keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}
+          storeFile=keystore.jks
+          EOF
+
+      - name: Build Android APK
+        working-directory: grimoire-app
+        env:
+          NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
+        run: npm run tauri android build -- --apk
+
+      - name: Upload APK to release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Grimoire Atziluth ${{ github.ref_name }}
+          draft: true
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          files: grimoire-app/src-tauri/gen/android/app/build/outputs/apk/**/*.apk
