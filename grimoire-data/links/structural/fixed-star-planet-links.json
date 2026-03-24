@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "astrology.fixed-star.hamal",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.hamal",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sheratan",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sheratan",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mesarthim",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mesarthim",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mirach",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.almach",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alcyone",
+      "target": "astrology.planet.luna",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alcyone",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.aldebaran",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.rigel",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.rigel",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.capella",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.capella",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.bellatrix",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.bellatrix",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnath",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnath",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mintaka",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mintaka",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnilam",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnilam",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnitak",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alnitak",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.betelgeuse",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.betelgeuse",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.polaris",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.polaris",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sirius",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sirius",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.canopus",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.canopus",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.procyon",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.procyon",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.castor",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.castor",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.pollux",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.pollux",
+      "target": "astrology.planet.luna",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.praesepe",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.praesepe",
+      "target": "astrology.planet.luna",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.north-asellus",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.north-asellus",
+      "target": "astrology.planet.luna",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.south-asellus",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.south-asellus",
+      "target": "astrology.planet.luna",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alphard",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alphard",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.regulus",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.regulus",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zosma",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zosma",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.denebola",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.denebola",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.vindemiatrix",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.vindemiatrix",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.spica",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.spica",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.arcturus",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.arcturus",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.algorab",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.algorab",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zubenelgenubi",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zubenelgenubi",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zubeneschamali",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zubeneschamali",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.unukalhai",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.unukalhai",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.agena",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.agena",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.antares",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.antares",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.rastaban",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.rastaban",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.ras-algethi",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.ras-algethi",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sabik",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sabik",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.vega",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.vega",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.altair",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.altair",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.deneb-algedi",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.deneb-algedi",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sadalsuud",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sadalsuud",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.fomalhaut",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.fomalhaut",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.deneb",
+      "target": "astrology.planet.venus",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.deneb",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.achernar",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.markab",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.markab",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.scheat",
+      "target": "astrology.planet.mars",
+      "label": "planetary-nature-primary",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.scheat",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-nature-secondary",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

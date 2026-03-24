@@ -1,0 +1,653 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "iching.trigram.heaven",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Qian — Heaven",
+      "description": "Trigram Heaven (☰ Qian, 乾). Three unbroken yang lines — pure yang, the Creative principle. Symbol of the sky, the father, the ruler, the dragon. Qualities: strength, initiative, perseverance, leadership, the indomitable creative will. In the Later Heaven (King Wen) arrangement, Heaven is placed in the northwest. In Chinese cosmology Heaven corresponds to the yang-metal phase. Western alchemical correspondence: Fire (or Air, traditions vary; Qian's pure yang energy is most often matched to Fire as the most active, ascending element). Qian appears as both upper and lower trigram in Hexagram 1 (The Creative), and as a component in many other hexagrams, lending its quality of strength and forward motion.",
+      "secondaryNames": [
+        {
+          "name": "乾",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qian",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ch'ien",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☰",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Ken",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "건",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Geon",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yang",
+        "heaven"
+      ],
+      "extendedData": {
+        "glyph": "☰",
+        "chineseName": "乾",
+        "pinyin": "Qián",
+        "lines": [
+          "yang",
+          "yang",
+          "yang"
+        ],
+        "nature": "Heaven / Sky",
+        "familyRole": "Father",
+        "direction": "Northwest (Later Heaven)",
+        "chineseElement": "wuxing.phase.metal",
+        "westernElement": "astrology.element.fire",
+        "quality": "Creative, strong, initiative, perseverance",
+        "image": "Heaven",
+        "animal": "Horse",
+        "bodyPart": "Head",
+        "hexagramsAsUpper": [
+          1,
+          10,
+          13,
+          25,
+          33,
+          34,
+          44,
+          6
+        ],
+        "hexagramsAsLower": [
+          1,
+          9,
+          14,
+          26,
+          43,
+          11,
+          12,
+          5
+        ],
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.earth",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Kun — Earth",
+      "description": "Trigram Earth (☷ Kun, 坤). Three broken yin lines — pure yin, the Receptive principle. Symbol of the earth, the mother, the mare, yielding soil. Qualities: receptivity, devotion, nurturing, persistence, service, inexhaustible capacity. In the Later Heaven arrangement, Earth is placed in the southwest. Corresponds to the yin-earth phase. Western alchemical correspondence: Earth — the passive, receptive, form-giving element that receives the seed of Heaven and brings it to manifestation. Kun as both upper and lower trigram forms Hexagram 2 (The Receptive), the complement and equal of Heaven.",
+      "secondaryNames": [
+        {
+          "name": "坤",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Kun",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "K'un",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☷",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Kon",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "곤",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Gon",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yin",
+        "earth"
+      ],
+      "extendedData": {
+        "glyph": "☷",
+        "chineseName": "坤",
+        "pinyin": "Kūn",
+        "lines": [
+          "yin",
+          "yin",
+          "yin"
+        ],
+        "nature": "Earth / Ground",
+        "familyRole": "Mother",
+        "direction": "Southwest (Later Heaven)",
+        "chineseElement": "wuxing.phase.earth",
+        "westernElement": "astrology.element.earth",
+        "quality": "Receptive, devoted, yielding, nurturing",
+        "image": "Earth",
+        "animal": "Ox / Mare",
+        "bodyPart": "Abdomen / Belly",
+        "hexagramsAsUpper": [
+          2,
+          8,
+          15,
+          16,
+          23,
+          35,
+          45,
+          20
+        ],
+        "hexagramsAsLower": [
+          2,
+          7,
+          11,
+          19,
+          24,
+          36,
+          46,
+          15
+        ],
+        "yinYang": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.thunder",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Zhen — Thunder",
+      "description": "Trigram Thunder (☳ Zhen, 震). One unbroken yang line below two broken yin lines — yang energy erupting upward from below. Symbol of thunder, arousal, the firstborn son, the dragon emerging. Qualities: movement, arousal, shock, initiative, the sudden start, inspiring fear and reverence. In the Later Heaven arrangement, Thunder is placed in the east — the direction of the rising sun and new beginnings. In the five-phase system Zhen corresponds to wood (spring, growth). Western alchemical correspondence: Fire — the sudden spark, the activating shock, the explosive first movement. Thunder as both trigrams forms Hexagram 51 (The Arousing, Shock).",
+      "secondaryNames": [
+        {
+          "name": "震",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zhen",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chen",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☳",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Shin",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "진",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Jin",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yang",
+        "thunder"
+      ],
+      "extendedData": {
+        "glyph": "☳",
+        "chineseName": "震",
+        "pinyin": "Zhèn",
+        "lines": [
+          "yang",
+          "yin",
+          "yin"
+        ],
+        "nature": "Thunder / Arousing",
+        "familyRole": "Eldest Son",
+        "direction": "East (Later Heaven)",
+        "chineseElement": "wuxing.phase.wood",
+        "westernElement": "astrology.element.fire",
+        "quality": "Arousing, movement, shock, initiative",
+        "image": "Thunder",
+        "animal": "Dragon",
+        "bodyPart": "Foot",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.water",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Kan — Water",
+      "description": "Trigram Water (☵ Kan, 坎). One unbroken yang line between two broken yin lines — yang surrounded and enclosed by yin, like water filling a gorge. Symbol of the abyss, flowing water, danger, the moon, the middle son. Qualities: danger, flow, perseverance through difficulty, the hidden, depth, intelligence. Water always finds the lowest place and persists until it finds a way through every obstacle. In the Later Heaven arrangement, Water is placed in the north. Corresponds to the water phase. Western alchemical correspondence: Water — the flowing, penetrating, hidden element. Kan as both trigrams forms Hexagram 29 (The Abysmal, Repeated Danger).",
+      "secondaryNames": [
+        {
+          "name": "坎",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Kan",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "K'an",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☵",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Kan",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "감",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Gam",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yang",
+        "water"
+      ],
+      "extendedData": {
+        "glyph": "☵",
+        "chineseName": "坎",
+        "pinyin": "Kǎn",
+        "lines": [
+          "yin",
+          "yang",
+          "yin"
+        ],
+        "nature": "Water / Abyss",
+        "familyRole": "Middle Son",
+        "direction": "North (Later Heaven)",
+        "chineseElement": "wuxing.phase.water",
+        "westernElement": "astrology.element.water",
+        "quality": "Dangerous, flowing, hidden, intelligent, persevering",
+        "image": "Water / Gorge",
+        "animal": "Pig / Boar",
+        "bodyPart": "Ear",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.mountain",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Gen — Mountain",
+      "description": "Trigram Mountain (☶ Gen, 艮). One unbroken yang line above two broken yin lines — yang resting on yin, the summit. Symbol of the mountain, stillness, the youngest son, the hand that stops. Qualities: stillness, stopping, resting, meditation, limits, boundaries, completion before a new beginning. The mountain keeps still; it does not force its way through but waits in perfect self-composure. In the Later Heaven arrangement, Mountain is placed in the northeast. Corresponds to the earth phase (transitional). Western alchemical correspondence: Earth — immovable solidity, the densest and most stable element, the foundation. Gen as both trigrams forms Hexagram 52 (Keeping Still, Mountain).",
+      "secondaryNames": [
+        {
+          "name": "艮",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gen",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kên",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☶",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Gon",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "간",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Gan",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yang",
+        "mountain"
+      ],
+      "extendedData": {
+        "glyph": "☶",
+        "chineseName": "艮",
+        "pinyin": "Gèn",
+        "lines": [
+          "yin",
+          "yin",
+          "yang"
+        ],
+        "nature": "Mountain / Stillness",
+        "familyRole": "Youngest Son",
+        "direction": "Northeast (Later Heaven)",
+        "chineseElement": "wuxing.phase.earth",
+        "westernElement": "astrology.element.earth",
+        "quality": "Still, stopping, resting, meditative, solid",
+        "image": "Mountain",
+        "animal": "Dog",
+        "bodyPart": "Hand",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.wind",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Xun — Wind",
+      "description": "Trigram Wind (☴ Xun, 巽). One broken yin line below two unbroken yang lines — yin penetrating upward beneath yang. Symbol of wind, wood (trees growing upward), the eldest daughter, gentle penetration. Qualities: penetration, gentleness, flexibility, persistence, adaptability, working slowly and without force to accomplish everything. Wind enters wherever there is a crack; the root of a tree splits rock in time. In the Later Heaven arrangement, Wind/Wood is placed in the southeast. Corresponds to the wood phase. Western alchemical correspondence: Air — the all-penetrating, invisible, moving element. Xun as both trigrams forms Hexagram 57 (The Gentle, Wind).",
+      "secondaryNames": [
+        {
+          "name": "巽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xun",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sun",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☴",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Son",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "손",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Son",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yin",
+        "wind"
+      ],
+      "extendedData": {
+        "glyph": "☴",
+        "chineseName": "巽",
+        "pinyin": "Xùn",
+        "lines": [
+          "yin",
+          "yang",
+          "yang"
+        ],
+        "nature": "Wind / Wood",
+        "familyRole": "Eldest Daughter",
+        "direction": "Southeast (Later Heaven)",
+        "chineseElement": "wuxing.phase.wood",
+        "westernElement": "astrology.element.air",
+        "quality": "Penetrating, gentle, persistent, flexible",
+        "image": "Wind / Wood",
+        "animal": "Fowl / Cockerel",
+        "bodyPart": "Thigh",
+        "yinYang": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.fire",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Li — Fire",
+      "description": "Trigram Fire (☲ Li, 離). One broken yin line between two unbroken yang lines — yin enclosed by yang, like the hollow inside a flame. Symbol of fire, the sun, the middle daughter, clinging brightness. Qualities: brightness, beauty, clarity, dependence (fire clings to what it burns), elegance, the eye. Fire illuminates everything around it but depends on fuel; it cannot sustain itself alone. In the Later Heaven arrangement, Fire is placed in the south. Corresponds to the fire phase. Western alchemical correspondence: Fire — the luminous, upward-rising, transforming element. Li as both trigrams forms Hexagram 30 (The Clinging, Fire).",
+      "secondaryNames": [
+        {
+          "name": "離",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Li",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Li",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☲",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Ri",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "리",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Ri",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yin",
+        "fire"
+      ],
+      "extendedData": {
+        "glyph": "☲",
+        "chineseName": "離",
+        "pinyin": "Lí",
+        "lines": [
+          "yang",
+          "yin",
+          "yang"
+        ],
+        "nature": "Fire / Sun",
+        "familyRole": "Middle Daughter",
+        "direction": "South (Later Heaven)",
+        "chineseElement": "wuxing.phase.fire",
+        "westernElement": "astrology.element.fire",
+        "quality": "Bright, clinging, beautiful, dependent, illuminating",
+        "image": "Fire / Flame",
+        "animal": "Pheasant",
+        "bodyPart": "Eye",
+        "yinYang": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "iching.trigram.lake",
+      "entityType": "iching.trigram",
+      "primaryDisplayName": "Dui — Lake",
+      "description": "Trigram Lake (☱ Dui, 兌). One broken yin line above two unbroken yang lines — yin floating on yang, an open surface over strength. Symbol of the lake, a marsh, a smiling mouth, the youngest daughter, joyfulness. Qualities: joy, pleasure, exchange, speech, persuasion, openness, delight in life. The lake is open at the surface and nourishes all that comes to it. Joy that arises from inner strength is inexhaustible; joy that depends only on external things runs dry. In the Later Heaven arrangement, Lake is placed in the west. Corresponds to the metal phase. Western alchemical correspondence: Water — the receiving, open, reflective surface; also associated with Air by some traditions (for the openness and communicative quality). Dui as both trigrams forms Hexagram 58 (The Joyous, Lake).",
+      "secondaryNames": [
+        {
+          "name": "兌",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dui",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tui",
+          "languageTag": "zh-translit-wade",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "☱",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Da",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "태",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Tae",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "iching",
+        "trigram",
+        "yin",
+        "lake"
+      ],
+      "extendedData": {
+        "glyph": "☱",
+        "chineseName": "兌",
+        "pinyin": "Duì",
+        "lines": [
+          "yang",
+          "yang",
+          "yin"
+        ],
+        "nature": "Lake / Marsh",
+        "familyRole": "Youngest Daughter",
+        "direction": "West (Later Heaven)",
+        "chineseElement": "wuxing.phase.metal",
+        "westernElement": "astrology.element.water",
+        "quality": "Joyful, open, pleasing, communicative, reflective",
+        "image": "Lake / Smiling Mouth",
+        "animal": "Sheep",
+        "bodyPart": "Mouth",
+        "yinYang": "taoism.principle.yin"
+      }
+    }
+  ]
+}

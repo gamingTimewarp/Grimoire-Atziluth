@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#060e06"/>
+      <stop offset="100%" stop-color="#0c1a0c"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#226633" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#44cc66" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#226633" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#226633" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#99ffcc" opacity="0.9">VIII</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#44cc66" opacity="0.85" filter="url(#glow)">ל</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#336644" opacity="0.8">♎</text>
+
+
+  
+  <text x="150" y="226"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="252" fill="#004422" opacity="0.065">ל</text>
+  
+  <!-- Ground fill (starts at barY, below the ♎ symbol) -->
+  <path d="M18,349 Q150,346 282,349 L282,352 L18,352 Z"
+        fill="#040e06" opacity="0.78"/>
+  <!-- Compass-rose centred on sword tip / ♎ arch apex (4 cardinal + 4 diagonal, mirrored) -->
+  <line x1="150" y1="316" x2="150" y2="336"
+        stroke="#33aa55" stroke-width="0.9" opacity="0.35"/>
+  <line x1="140" y1="326" x2="160" y2="326"
+        stroke="#33aa55" stroke-width="0.9" opacity="0.35"/>
+  <line x1="143" y1="319" x2="157" y2="333"
+        stroke="#33aa55" stroke-width="0.6" opacity="0.22"/>
+  <line x1="157" y1="319" x2="143" y2="333"
+        stroke="#33aa55" stroke-width="0.6" opacity="0.22"/>
+  <!-- Ground cross-hatch (symmetric pairs about cx) -->
+  <line x1="142" y1="349" x2="120" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+<line x1="158" y1="349" x2="180" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+  <line x1="120" y1="349" x2="98" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+<line x1="180" y1="349" x2="202" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+  <line x1="98" y1="349" x2="76" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+<line x1="202" y1="349" x2="224" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+  <line x1="76" y1="349" x2="54" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+<line x1="224" y1="349" x2="246" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+  <line x1="54" y1="349" x2="32" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+<line x1="246" y1="349" x2="268" y2="352"
+               stroke="#1a3322" stroke-width="0.8" opacity="0.18"/>
+  
+  <!-- Blade soft glow -->
+  <line x1="150" y1="266" x2="150" y2="326"
+        stroke="#44ff88" stroke-width="8" opacity="0.07" filter="url(#softglow)"/>
+  <!-- Blade body (tapered polygon, symmetric about cx) -->
+  <polygon points="146,266 154,266 150.5,326 149.5,326"
+           fill="#aaddcc" opacity="0.78"/>
+  <!-- Fuller (centre line of blade, on cx) -->
+  <line x1="150" y1="266" x2="150" y2="326"
+        stroke="#ddfff0" stroke-width="0.7" opacity="0.45"/>
+  <!-- Crossguard (symmetric rectangle centred on cx) -->
+  <rect x="128" y="262" width="44" height="7" rx="3"
+        fill="#88aaaa" opacity="0.84"/>
+  <!-- Grip (centred on cx, mostly inside diamond) -->
+  <line x1="150" y1="262" x2="150" y2="250"
+        stroke="#bb9944" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Pommel (symmetric ellipse on cx) -->
+  <ellipse cx="150" cy="248" rx="5.5" ry="4" fill="#bbaa44" opacity="0.8"/>
+  
+  <!-- Diamond body outer glow -->
+  <polygon points="150,186 110,226 150,266 190,226"
+           fill="#002211" opacity="0.14" filter="url(#softglow)"/>
+  <!-- Diamond body fill -->
+  <polygon points="150,186 110,226 150,266 190,226"
+           fill="#003d1a" stroke="#33bb66" stroke-width="1.5" opacity="0.82"/>
+  <!-- Internal diagonals (axes of perfect balance — lie exactly on cx and dMid) -->
+  <line x1="150" y1="186" x2="150" y2="266"
+        stroke="#44cc66" stroke-width="0.8" opacity="0.22"/>
+  <line x1="110" y1="226" x2="190" y2="226"
+        stroke="#44cc66" stroke-width="0.8" opacity="0.22"/>
+  <!-- Edge highlights (4 edges as exact mirrored pairs) -->
+  <line x1="150" y1="186" x2="110" y2="226"
+        stroke="#55dd77" stroke-width="0.8" opacity="0.5"/>
+  <line x1="150" y1="186" x2="190" y2="226"
+        stroke="#55dd77" stroke-width="0.8" opacity="0.5"/>
+  <line x1="110" y1="226" x2="150" y2="266"
+        stroke="#44bb55" stroke-width="0.8" opacity="0.4"/>
+  <line x1="190" y1="226" x2="150" y2="266"
+        stroke="#44bb55" stroke-width="0.8" opacity="0.4"/>
+  
+  <!-- Left arm (diamond left vertex → left scale attachment) -->
+  <line x1="110" y1="226" x2="76" y2="204"
+        stroke="#33bb55" stroke-width="8" stroke-linecap="round" opacity="0.84"/>
+  <!-- Right arm (exact mirror) -->
+  <line x1="190" y1="226" x2="224" y2="204"
+        stroke="#33bb55" stroke-width="8" stroke-linecap="round" opacity="0.84"/>
+  
+  <!-- Scale beam (horizontal, centred on cx) -->
+  <line x1="76" y1="204" x2="224" y2="204"
+        stroke="#55cc77" stroke-width="1.2" opacity="0.35"/>
+  <!-- Left chain -->
+  <line x1="76" y1="204" x2="76" y2="274"
+        stroke="#44aa66" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.62"/>
+  <!-- Right chain (mirror) -->
+  <line x1="224" y1="204" x2="224" y2="274"
+        stroke="#44aa66" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.62"/>
+  <!-- Left pan bowl (symmetric about cx−scX) -->
+  <path d="M50,274 Q76,283 102,274"
+        fill="none" stroke="#55cc77" stroke-width="2" opacity="0.84"/>
+  <!-- Right pan bowl (mirror about cx+scX) -->
+  <path d="M198,274 Q224,283 250,274"
+        fill="none" stroke="#55cc77" stroke-width="2" opacity="0.84"/>
+  <!-- Left pan cords (symmetric pair within left pan) -->
+  <line x1="50" y1="274" x2="76" y2="265"
+        stroke="#44aa66" stroke-width="0.8" opacity="0.58"/>
+  <line x1="102" y1="274" x2="76" y2="265"
+        stroke="#44aa66" stroke-width="0.8" opacity="0.58"/>
+  <!-- Right pan cords (mirror) -->
+  <line x1="198" y1="274" x2="224" y2="265"
+        stroke="#44aa66" stroke-width="0.8" opacity="0.58"/>
+  <line x1="250" y1="274" x2="224" y2="265"
+        stroke="#44aa66" stroke-width="0.8" opacity="0.58"/>
+  <!-- Left pan: Ma'at's feather (quill on cx-scX; vanes symmetric about it) -->
+  <line x1="76" y1="274" x2="76" y2="254"
+        stroke="#88ddbb" stroke-width="1.5" opacity="0.78"/>
+  <path d="M76,254 C69,260 68,267 76,274"
+        fill="#44cc88" opacity="0.52"/>
+  <path d="M76,254 C83,260 84,267 76,274"
+        fill="#44cc88" opacity="0.52"/>
+  <!-- Right pan: Heart — symmetric about cx+scX (heart is left-right symmetric) -->
+  <path d="M224,268
+           C219,257 212,260 215,268
+           Q224,275    233,268
+           C236,260 229,257 224,268 Z"
+        fill="#cc3344" opacity="0.72"/>
+  
+  <!-- Head (centred on cx) -->
+  <circle cx="150" cy="172" r="14" fill="#33bb66" opacity="0.86"/>
+  <!-- Blindfold (symmetric rect centred on cx) -->
+  <rect x="134" y="169" width="32" height="6" rx="3"
+        fill="#005522" opacity="0.84"/>
+  <!-- Crown band (centred on cx) -->
+  <rect x="136" y="152" width="28" height="6" rx="2"
+        fill="#2d9944" stroke="#55dd77" stroke-width="0.8" opacity="0.86"/>
+  <!-- Ma'at feather — single tall feather centred on cx (symmetric by construction) -->
+  <line x1="150" y1="146" x2="150" y2="94"
+        stroke="#88ddbb" stroke-width="2" opacity="0.84"/>
+  <!-- Left vane -->
+  <path d="M150,94 C139,108 136,126 138,140
+           Q145,145 150,146"
+        fill="#44cc77" opacity="0.62"/>
+  <!-- Right vane (exact mirror of left) -->
+  <path d="M150,94 C161,108 164,126 162,140
+           Q155,145 150,146"
+        fill="#44cc77" opacity="0.62"/>
+  <!-- Feather tip (centred on cx) -->
+  <circle cx="150" cy="92" r="2" fill="#88eebb" opacity="0.72"/>
+  
+  <!-- Α — beginning — centred on vertical axis, above the feather -->
+  <text x="150" y="90"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="15" fill="#55ee99" opacity="0.65" filter="url(#glow)">Α</text>
+  <!-- ♎ = Ω + bar — rendered geometrically, centred on cx -->
+  <!-- Arch glow (softglow traces the Ω semicircle) -->
+  <path d="M130,346 A20,20 0 0,0 170,346"
+        fill="none" stroke="#44ff88" stroke-width="6" opacity="0.09" filter="url(#softglow)"/>
+  <!-- Arch (the Ω — semicircle from left to right, apex at sword tip) -->
+  <path d="M130,346 A20,20 0 0,0 170,346"
+        fill="none" stroke="#55ee99" stroke-width="2.5" stroke-linecap="round"
+        opacity="0.86" filter="url(#glow)"/>
+  <!-- Bar (the ♎ baseline — balance beam, Libra fulcrum, Ω foot) -->
+  <line x1="123" y1="346" x2="177" y2="346"
+        stroke="#55ee99" stroke-width="2" stroke-linecap="round" opacity="0.84"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#99ffcc" letter-spacing="2.5"
+        filter="url(#glow)">Adjustment</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#336644" letter-spacing="3" opacity="0.75">Lamed · Libra · Path 22</text>
+</svg>

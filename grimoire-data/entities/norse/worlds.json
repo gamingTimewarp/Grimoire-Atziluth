@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "norse.world.asgard",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Asgard",
+      "description": "Asgard (Ásgarðr, 'Enclosure of the Aesir') is the celestial stronghold of the Aesir gods, the highest and most radiant of the Nine Worlds, situated at the crown of Yggdrasil or upon its uppermost reaches. It is the home of Odin (who rules from Valaskjalf and the hall Gladsheim), Thor, Frigg, Tyr, Baldur, and the assembled Aesir — the warrior-sovereign gods of the Norse pantheon. Within Asgard stands Valhalla (Valhöll, 'Hall of the Slain'), Odin's great mead-hall where the Einherjar — warriors chosen by the Valkyries from the battlefield dead — feast and train in readiness for Ragnarok. Asgard is connected to Midgard, the world of humans, by Bifrost, the shimmering rainbow bridge guarded by Heimdall, who watches for any approach of the Jotnar. At Ragnarok, Asgard itself will be engulfed in the fire of Surtr and the assault of the giants, but it is prophesied that a new and more radiant world will rise from the sea once the cycle of destruction is complete.",
+      "secondaryNames": [
+        {
+          "name": "Ásgarðr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Asgarth",
+          "languageTag": "en-variant",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Realm of the Aesir",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "inhabitants": [
+          "Aesir gods",
+          "Einherjar",
+          "Valkyries"
+        ],
+        "yggdrasilPosition": "crown/upper branches",
+        "element": null,
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.midgard",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Midgard",
+      "description": "Midgard (Miðgarðr, 'Middle Enclosure') is the world of human beings, situated at the centre of the cosmic structure of Yggdrasil — the only realm directly visible to ordinary human sight and the axis around which the Norse understanding of mortal life is organised. According to the Prose Edda (Gylfaginning), Odin, Vili, and Ve fashioned Midgard from the body of the primordial giant Ymir: his flesh became the earth, his blood the seas, his bones the mountains, and his skull the sky vault. Midgard is encircled by the world-ocean, in whose depths coils Jormungandr (the Midgard Serpent), offspring of Loki, who is so vast that he bites his own tail and holds the world together — yet at Ragnarok will release it and rise from the sea to poison the sky. A wall of Ymir's eyelashes or brows was erected around Midgard to protect it from the Jotnar of Utgard. Midgard is connected to Asgard above by Bifrost and shares the great ash Yggdrasil as the axis of its existence.",
+      "secondaryNames": [
+        {
+          "name": "Miðgarðr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Middle Earth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Middle World",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Midgarth",
+          "languageTag": "en-variant",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "inhabitants": [
+          "humans",
+          "Jormungandr (encircling the world-ocean)"
+        ],
+        "yggdrasilPosition": "trunk/middle",
+        "element": null,
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.vanaheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Vanaheim",
+      "description": "Vanaheim (Vanaheimr, 'Home of the Vanir') is the realm of the Vanir, the elder race of Norse deities associated with fertility, nature, magic (seiðr), prophecy, and the cycles of the natural world. The Vanir — principally Njord, Freyr, and Freyja — represent an older stratum of Germanic religion than the Aesir, and their realm reflects the primal abundance and mystery of the earth before the ordering hand of the sovereign war-gods. The Aesir-Vanir War (Ásir-Vanir Stríð), recounted in the Völuspá and Prose Edda, ended in a truce and an exchange of hostages: Njord, Freyr, and Freyja went to live among the Aesir, while Hoenir and Mimir were sent to Vanaheim — though the Vanir beheaded Mimir upon discovering Hoenir could not counsel without him. Vanaheim's exact position on Yggdrasil is not specified in surviving sources, but it is generally understood to occupy the western or outer regions of the cosmic tree, beyond Asgard. It is a world of ancient wisdom, seasonal magic, and the fertile generative power of the land and sea.",
+      "secondaryNames": [
+        {
+          "name": "Vanaheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Home of the Vanir",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "inhabitants": [
+          "Vanir gods",
+          "Njord",
+          "Freyr",
+          "Freyja"
+        ],
+        "yggdrasilPosition": "outer branches (west)",
+        "element": "astrology.element.water",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.jotunheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Jotunheim",
+      "description": "Jotunheim (Jötunheimr, 'Home of the Giants') is the vast, wild realm of the Jotnar — the primordial giants who embody elemental chaos, raw natural power, and the forces that predate and constantly threaten the ordered cosmos of the gods. It is separated from Asgard by the river Iving (Ífingr), which never freezes, and from Midgard by dense forests and mountain ranges. Jotunheim's chief stronghold is Utgard, ruled by the cunning giant Utgard-Loki (Útgarðaloki), who famously outwitted Thor, Loki, and Thialfi through illusion. The Jotnar are not simply villains; many are ambivalent figures — Odin himself is a grandson of the giant Bolthorn, and numerous Aesir have Jotnar spouses or lovers (Thor's wife Sif is an exception, but his adversaries are mostly Jotnar). Jotunheim sits at the outer periphery of Yggdrasil's middle level, a land of primal chaos held in uneasy tension with the divine order of Asgard.",
+      "secondaryNames": [
+        {
+          "name": "Jötunheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Utgard",
+          "languageTag": "non-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Realm of the Giants",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Giantland",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "inhabitants": [
+          "Jotnar (giants)",
+          "Frost Giants",
+          "Utgard-Loki"
+        ],
+        "yggdrasilPosition": "outer branches (east)",
+        "element": "ice",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.alfheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Alfheim",
+      "description": "Alfheim (Álfheimr, 'Elf-Home') is the luminous realm of the Ljosalfar (Light Elves), described in Gylfaginning as beings 'fairer to look upon than the sun', possessed of beauty and refined magical power that surpasses the gross world of mortals. According to the Prose Edda, Alfheim was given to the god Freyr as a tooth-gift in his infancy, establishing a deep connection between the Vanir lord of fertility and this otherworldly realm of light and natural beauty. The Light Elves differ sharply from the Dark Elves (Dökkálfar) of Svartalfheim; they inhabit a world of radiant clarity, their nature associated with sunlight, growth, and the benevolent magical forces of the natural world. Alfheim's position on Yggdrasil is described as being in the heavens, among the upper branches, close to or within the celestial realm — some scholars place it adjacent to Asgard, reflecting its luminous and otherworldly character. In later Scandinavian folklore the álfar became conflated with spirits of the land (landvættir) and the household dead.",
+      "secondaryNames": [
+        {
+          "name": "Álfheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ljossalfaheimr",
+          "languageTag": "non-alt",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Home of the Light Elves",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "inhabitants": [
+          "Ljosalfar (Light Elves)"
+        ],
+        "yggdrasilPosition": "upper branches",
+        "element": "astrology.element.air",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.svartalfheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Svartalfheim",
+      "description": "Svartalfheim (Svartálfaheimr, 'Home of the Dark Elves') is the subterranean realm of the Dökkálfar (Dark Elves) and, in most sources, also of the Dvergar (Dwarves) — the master craftsmen of Norse cosmology whose skill surpasses all other races in the arts of smithing and enchantment. From Svartalfheim came Mjolnir (Thor's hammer), Gungnir (Odin's spear), Draupnir (Odin's ring), Gleipnir (the magical ribbon that bound the wolf Fenrir), and the golden hair of Sif — testament to the Dwarves' unrivalled artisanship. The Prose Edda (Gylfaginning) describes the Dökkálfar as blacker than pitch and evil in nature, contrasted with the luminous Light Elves of Alfheim; some scholars argue this reflects a later moralisation of older, more ambiguous elf-lore. A significant scholarly and textual dispute concerns whether Svartalfheim and Nidavellir are the same realm or distinct worlds, with Völuspá naming Nidavellir as the dwarves' home while other passages conflate them — see also the Nidavellir entry. Svartalfheim occupies the underground, within the roots or deep earth of Yggdrasil.",
+      "secondaryNames": [
+        {
+          "name": "Svartálfaheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Home of the Dark Elves",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dökkálfaheimr",
+          "languageTag": "non-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "inhabitants": [
+          "Dökkálfar (Dark Elves)",
+          "Dvergar (Dwarves)"
+        ],
+        "yggdrasilPosition": "roots/underground",
+        "element": "astrology.element.earth",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.niflheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Niflheim",
+      "description": "Niflheim (Niflheimr, 'World of Mist' or 'Mist-Home') is the primordial realm of ice, cold, and mist — one of the two original worlds whose meeting-point preceded all creation. According to Gylfaginning, before the worlds existed there was only Ginnungagap (the yawning void): to its northern side lay Niflheim, filled with ice and frost, and to its southern side Muspelheim, blazing with fire. Where the sparks of Muspelheim met the rime of Niflheim in Ginnungagap, the first being — Ymir, the primordial giant — was formed. Niflheim contains Hvergelmir, the roaring cauldron-spring from which all rivers of the cosmos flow, and whose waters are guarded by the serpent Nidhogg and countless other serpents gnawing at the roots of Yggdrasil. Niflheim should be distinguished from Helheim, though the two are often described as adjacent or overlapping — Helheim is the realm of the dead, while Niflheim is the older, deeper cosmic reality of primordial cold. Both occupy the northernmost roots of Yggdrasil.",
+      "secondaryNames": [
+        {
+          "name": "Niflheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mist-Home",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "World of Mist",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "inhabitants": [
+          "Nidhogg",
+          "serpents",
+          "primordial ice"
+        ],
+        "yggdrasilPosition": "northernmost roots",
+        "element": "ice",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.muspelheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Muspelheim",
+      "description": "Muspelheim (Múspellsheim, 'Home of Muspel' or 'World of Fire') is the primordial realm of fire and searing heat, the southern extreme of the cosmos and one of the two original worlds whose creative tension with Niflheim brought existence into being. It is the domain of Surtr (the Black One), a fire-giant of immense power who stands at its border with a flaming sword, and of the Eldjotnar (Fire Giants) who are among the most ancient and formidable of the Jotnar. The sparks and embers that flew north from Muspelheim, meeting the rime of Niflheim in Ginnungagap, catalysed the creation of Ymir and ultimately of all the worlds — making Muspelheim, with Niflheim, the twin womb of creation. At Ragnarok, Surtr will lead the sons of Muspel across Bifrost, shattering the rainbow bridge, and his flaming sword will set the world ablaze and consume the Tree of Yggdrasil; afterward, the earth will sink beneath the sea and rise again, renewed. Muspelheim's position is at the southernmost periphery of Yggdrasil.",
+      "secondaryNames": [
+        {
+          "name": "Múspellsheim",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Muspell",
+          "languageTag": "non-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "World of Fire",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "inhabitants": [
+          "Surtr",
+          "Eldjotnar (Fire Giants)"
+        ],
+        "yggdrasilPosition": "southernmost periphery",
+        "element": "astrology.element.fire",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.helheim",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Helheim",
+      "description": "Helheim (Helheimr, 'Home of Hel') is the realm of the dead who die of old age, sickness, or other non-battle deaths — the vast majority of humanity, as opposed to the warrior dead claimed by the Valkyries for Valhalla or the sea-dead received by Ran. It is ruled by Hel (or Hela), the daughter of Loki and the giantess Angrboda, a being whose body is half living-flesh and half corpse-blue, appointed by Odin to govern the realm of the dead who fall under her sway. Helheim lies deep beneath Niflheim, accessible via a downward road (Helveg) and across the river Gjoll ('Resounding'), spanned by the bridge Gjallarbru guarded by the giantess Modgud. The gate is kept by the hound Garm, whose howling is one of the signs of Ragnarok. According to the myth of Baldur's death, Hermod rode Sleipnir down to Helheim to beg for Baldur's return; Hel agreed on the condition that all beings weep for him — a condition famously thwarted by the disguised Loki. Helheim is a cold, grey, dimly-lit realm, neither of punishment nor of reward, but simply the quiet continuation of existence after death.",
+      "secondaryNames": [
+        {
+          "name": "Helheimr",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hel",
+          "languageTag": "non-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Realm of the Dead",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "inhabitants": [
+          "the honoured dead",
+          "Hel (ruler)",
+          "Garm (gate-hound)",
+          "Modgud (bridge-guardian)"
+        ],
+        "yggdrasilPosition": "deepest roots (beneath Niflheim)",
+        "element": "ice",
+        "isStandardNine": true
+      }
+    },
+    {
+      "canonicalName": "norse.world.nidavellir",
+      "entityType": "norse.world",
+      "primaryDisplayName": "Nidavellir",
+      "description": "Nidavellir (Niðavellir, 'Dark Fields' or 'Dusky Plains') appears in the Völuspá (the great prophetic poem of the Poetic Edda) as the realm of the dwarves, distinct from the Svartalfheim named in the Prose Edda — a textual divergence that has generated significant scholarly debate about whether the Eddic sources describe nine, ten, or more worlds. The Völuspá describes Nidavellir as the site of the dwarves' hall of gold (Sindri's hall, later associated with the afterlife of worthy dwarves), and names Sindri and Brokkr — the craftsmen who forged Mjolnir, Draupnir, and Gullinbursti — as its master smiths. Some scholars (including John Lindow and Rudolf Simek) treat Nidavellir and Svartalfheim as alternative names for the same underground realm of the Dvergar, products of different poetic and prose traditions; others maintain they are genuinely distinct spaces within the cosmological structure. Whether a separate realm or a variant name, Nidavellir represents the dwarvish underground kingdom of supreme craft, labyrinthine tunnels, and ancient lore, situated within or alongside the roots of Yggdrasil.",
+      "secondaryNames": [
+        {
+          "name": "Niðavellir",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dark Fields",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dusky Plains",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "norse",
+        "cosmology",
+        "yggdrasil",
+        "norse-extended"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "inhabitants": [
+          "Dvergar (Dwarves)",
+          "Sindri",
+          "Brokkr"
+        ],
+        "yggdrasilPosition": "roots/underground",
+        "element": "astrology.element.earth",
+        "isStandardNine": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "vedic.mahabhuta.akasha",
+      "entityType": "vedic.mahabhuta",
+      "primaryDisplayName": "Akasha",
+      "description": "Akasha (Ākāśa, Space/Ether) is the first and most subtle of the five Panchamahabhutas, from which the other four great elements emerge. It is the omnipresent, infinite space that provides the substrate for all existence — the medium in which sound (sabda) travels, the first sense-quality to emerge from the primordial prakriti. Akasha corresponds to the sense of hearing (shruti), the throat chakra (Vishuddha), and the space between atoms, cells, and celestial bodies. In Ayurveda it is associated with lightness, subtlety, and the vata dosha.",
+      "secondaryNames": [
+        {
+          "name": "आकाश",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ākāśa",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Space/Ether",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahabhuta",
+        "vedic-element",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "tattwaEquivalent": "tattwa.akasha",
+        "sensory": "sound (shabda)",
+        "senseOrgan": "ears",
+        "chakra": "Vishuddha (Throat)",
+        "doshaInfluence": "Vata"
+      }
+    },
+    {
+      "canonicalName": "vedic.mahabhuta.vayu",
+      "entityType": "vedic.mahabhuta",
+      "primaryDisplayName": "Vayu",
+      "description": "Vayu (Vāyu, Air/Wind) is the second Mahabhuta, emerging from Akasha and carrying within it the quality of sound. Vayu is the element of movement, breath, and vital force — it is the animating principle that makes circulation, neural impulses, and respiration possible. It corresponds to the sense of touch (sparsha), the skin as the organ of perception, and the Anahata (Heart) chakra. In Ayurveda Vayu is the primary component of the Vata dosha along with Akasha.",
+      "secondaryNames": [
+        {
+          "name": "वायु",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vāyu",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Air/Wind",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahabhuta",
+        "vedic-element",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "tattwaEquivalent": "tattwa.vayu",
+        "sensory": "touch (sparsha)",
+        "senseOrgan": "skin",
+        "chakra": "Anahata (Heart)",
+        "doshaInfluence": "Vata"
+      }
+    },
+    {
+      "canonicalName": "vedic.mahabhuta.tejas",
+      "entityType": "vedic.mahabhuta",
+      "primaryDisplayName": "Tejas",
+      "description": "Tejas (Tejas/Agni, Fire/Light) is the third Mahabhuta, the element of heat, light, transformation, and metabolism. Tejas contains the qualities of its predecessors (sound and touch) plus its own quality of form/colour (rupa) — fire is visible, it has form and colour. It governs digestion, metabolism, vision, and the transformative processes of the body and mind. In Ayurveda Tejas is the primary component of the Pitta dosha.",
+      "secondaryNames": [
+        {
+          "name": "तेजस्",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tejas",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Fire/Light",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahabhuta",
+        "vedic-element",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "tattwaEquivalent": "tattwa.tejas",
+        "sensory": "sight/form (rupa)",
+        "senseOrgan": "eyes",
+        "chakra": "Manipura (Solar Plexus)",
+        "doshaInfluence": "Pitta"
+      }
+    },
+    {
+      "canonicalName": "vedic.mahabhuta.apas",
+      "entityType": "vedic.mahabhuta",
+      "primaryDisplayName": "Apas",
+      "description": "Apas (Āpas/Jala, Water) is the fourth Mahabhuta, the element of fluidity, cohesion, and taste. It contains the accumulated qualities of all preceding elements plus its own quality of taste (rasa). Water governs all fluid processes in the body — blood, lymph, synovial fluid, reproductive fluids — and corresponds to the sense of taste and the tongue. In Ayurveda Apas contributes to both Kapha (with Prithivi) and Pitta doshas.",
+      "secondaryNames": [
+        {
+          "name": "आप",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Āpas",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Water",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahabhuta",
+        "vedic-element",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "tattwaEquivalent": "tattwa.apas",
+        "sensory": "taste (rasa)",
+        "senseOrgan": "tongue",
+        "chakra": "Svadhisthana (Sacral)",
+        "doshaInfluence": "Kapha/Pitta"
+      }
+    },
+    {
+      "canonicalName": "vedic.mahabhuta.prithivi",
+      "entityType": "vedic.mahabhuta",
+      "primaryDisplayName": "Prithivi",
+      "description": "Prithivi (Pṛthivī, Earth) is the fifth and densest Mahabhuta, the element of solidity, structure, and smell. It contains all the accumulated qualities of the previous four elements plus its own sense quality of smell (gandha). Prithivi provides the stable, structural basis of the body — bones, teeth, nails, hair, and all solid tissues. It corresponds to the Root chakra (Muladhara) and is the primary component of the Kapha dosha in Ayurveda.",
+      "secondaryNames": [
+        {
+          "name": "पृथ्वी",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pṛthivī",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Earth",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahabhuta",
+        "vedic-element",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "tattwaEquivalent": "tattwa.prithivi",
+        "sensory": "smell (gandha)",
+        "senseOrgan": "nose",
+        "chakra": "Muladhara (Root)",
+        "doshaInfluence": "Kapha"
+      }
+    }
+  ]
+}

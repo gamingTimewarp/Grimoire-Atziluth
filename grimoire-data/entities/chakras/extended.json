@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "chakra.extended.bindu",
+      "entityType": "chakra",
+      "primaryDisplayName": "Bindu",
+      "description": "The Bindu chakra (बिन्दु), also called Bindu Visarga or Soma Chakra, is located at the back of the head at the level of the occiput, slightly above where Hindus traditionally maintain the shikha (sacred topknot). Bindu means 'point' or 'drop' — it is the primal point of cosmic emanation from which creation issues and into which it returns. In Tantric physiology, Bindu is the source of amrita, the nectar of immortality: the luminous moon-drop that descends through the chakras and is ordinarily consumed in the fire of Manipura. Yogic and Tantric practices — particularly khecharī mudrā — aim to arrest this downward flow of amrita and redirect it upward, conferring longevity and ultimately liberation. The Bindu chakra has no petals in conventional iconography and is associated with the crescent moon, white or silver luminosity, and the sound Bindu of the AUM syllable — the dot above the crescent representing the point of transcendence.",
+      "secondaryNames": [
+        { "name": "Bindu Visarga", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Soma Chakra", "languageTag": "sa-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Lunar Chakra", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "बिन्दु", "languageTag": "sa-script", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["chakra", "chakra-extended", "water", "moon"],
+      "extendedData": {
+        "orderNumber": 8,
+        "location": "Back of the head, occiput / base of skull",
+        "colour": "white / silver",
+        "element": "soma (nectar / subtle water)",
+        "seedMantra": null,
+        "petals": 0,
+        "deity": "Chandra (the Moon)",
+        "goddess": "Bindu Shakti",
+        "planetaryCorrespondence": "astrology.planet.luna",
+        "sephiraCorrespondence": "qabalah.sephira.daath",
+        "psychologicalFunction": "Gateway between individual and cosmic consciousness; nectar of immortality; subtle nourishment; the witness",
+        "developmentalStage": "Deep contemplative states; advanced Tantric practice"
+      }
+    },
+    {
+      "canonicalName": "chakra.extended.soul-star",
+      "entityType": "chakra",
+      "primaryDisplayName": "Soul Star",
+      "description": "The Soul Star chakra, located approximately half a metre to one metre above the crown of the head, is the primary transpersonal centre in many modern and New Age systems building on the classical seven-chakra model. It is sometimes called the Eighth Chakra, the Causal Body centre, or — in some lineages — the Seat of the Soul. The Soul Star holds the imprint of the soul's karmic journey across lifetimes; it is the repository of the higher self's purpose, the akashic record of the individual, and the portal through which higher guidance and spiritual information descend into incarnated awareness. Its colour is variously described as white, gold, or magenta; it is associated with the element of Light or Akasha beyond the five gross elements, and corresponds loosely to the Binah-Chokmah level of the Kabbalistic Tree as a collective memory above individual consciousness.",
+      "secondaryNames": [
+        { "name": "Eighth Chakra", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Causal Centre", "languageTag": "en-alt2", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["chakra", "chakra-extended", "transpersonal"],
+      "extendedData": {
+        "orderNumber": 9,
+        "location": "0.5–1 metre above the crown",
+        "colour": "white / gold / magenta",
+        "element": "Akasha / Pure Light",
+        "seedMantra": null,
+        "petals": null,
+        "deity": "Higher Self / Atman",
+        "goddess": null,
+        "planetaryCorrespondence": null,
+        "sephiraCorrespondence": "qabalah.sephira.chokmah",
+        "psychologicalFunction": "Soul purpose, karmic record, higher self guidance, akashic access",
+        "developmentalStage": "Transpersonal development; spiritual awakening beyond personal identity"
+      }
+    },
+    {
+      "canonicalName": "chakra.extended.earth-star",
+      "entityType": "chakra",
+      "primaryDisplayName": "Earth Star",
+      "description": "The Earth Star chakra, located approximately half a metre to one metre below the soles of the feet, is the foundational transpersonal centre in contemporary energy-body frameworks extending the classical seven-chakra model downward as well as upward. It acts as the root of the root — deeper than Muladhara, it anchors the individual's energetic system into the electromagnetic grid of the Earth itself, and into the collective field of physical incarnation, ancestral lineages, and planetary consciousness. Its colour is typically described as deep brown, black, or maroon; it is associated with the element of Earth in its densest, most material form, and with the capacity to be fully grounded in physical embodiment while remaining open to transpersonal experience. The Earth Star is understood to filter and ground energies flowing downward from the higher chakras, preventing energetic overload, and to draw stabilising telluric currents upward.",
+      "secondaryNames": [
+        { "name": "Sub-Personal Chakra", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Grounding Chakra", "languageTag": "en-alt2", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["chakra", "chakra-extended", "transpersonal", "earth"],
+      "extendedData": {
+        "orderNumber": 0,
+        "location": "0.5–1 metre below the feet",
+        "colour": "deep brown / black / maroon",
+        "element": "Earth (dense, telluric)",
+        "seedMantra": null,
+        "petals": null,
+        "deity": "Gaia / Earth Mother",
+        "goddess": null,
+        "planetaryCorrespondence": "astrology.planet.saturn",
+        "sephiraCorrespondence": "qabalah.sephira.malkuth",
+        "psychologicalFunction": "Planetary grounding, ancestral connection, full embodiment, telluric anchoring",
+        "developmentalStage": "Incarnation; somatic healing; ancestral work"
+      }
+    }
+  ]
+}

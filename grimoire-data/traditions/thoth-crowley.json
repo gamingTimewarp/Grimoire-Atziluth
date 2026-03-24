@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.thoth-crowley",
+    "displayName": "Thoth / Crowley",
+    "description": "Aleister Crowley's variant attributions as presented in 'The Book of Thoth' (1944). Derived from the Golden Dawn system but with significant modifications, most notably the transposition of Heh and Tzaddi ('Tzaddi is not the Star'), and the renaming and repositioning of several Major Arcana cards (Lust, Adjustment, Art, The Aeon, The Universe).",
+    "attributionFields": [
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-planet", "displayName": "Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 2 },
+      { "linkLabel": "attributed-letter", "displayName": "Hebrew Letter", "targetEntityType": "letter.hebrew", "allowMultiple": false, "sortOrder": 3 },
+      { "linkLabel": "attributed-path", "displayName": "Tree of Life Path", "targetEntityType": "qabalah.path", "allowMultiple": false, "sortOrder": 4 }
+    ]
+  }
+}

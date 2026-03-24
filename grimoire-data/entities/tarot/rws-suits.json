@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.suit.rws.wands",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Wands",
+      "description": "The suit of Wands (also called Rods, Batons, or Staves). Associated with the element of Fire, the realm of will, ambition, creativity, and spiritual energy. Corresponds to the Yod of the Tetragrammaton and the world of Atziluth.",
+      "secondaryNames": [
+        {
+          "name": "Rods",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Batons",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Staves",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "fire"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "tetragrammaton": "letter.hebrew.yod",
+        "world": "qabalah.world.atziluth",
+        "deck": "tarot.deck.rider-waite-smith"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.rws.cups",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Cups",
+      "description": "The suit of Cups (also called Chalices or Goblets). Associated with the element of Water, the realm of emotion, intuition, relationships, and the unconscious. Corresponds to the first Heh of the Tetragrammaton and the world of Briah.",
+      "secondaryNames": [
+        {
+          "name": "Chalices",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Goblets",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "water"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "tetragrammaton": "letter.hebrew.heh",
+        "world": "qabalah.world.briah",
+        "deck": "tarot.deck.rider-waite-smith"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.rws.swords",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Swords",
+      "description": "The suit of Swords (also called Blades). Associated with the element of Air, the realm of intellect, conflict, truth, and communication. Corresponds to the Vau of the Tetragrammaton and the world of Yetzirah.",
+      "secondaryNames": [
+        {
+          "name": "Blades",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "air"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "tetragrammaton": "letter.hebrew.vau",
+        "world": "qabalah.world.yetzirah",
+        "deck": "tarot.deck.rider-waite-smith"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.rws.pentacles",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Pentacles",
+      "description": "The suit of Pentacles (also called Coins, Discs, or Deniers). Associated with the element of Earth, the realm of material reality, wealth, work, and the physical body. Corresponds to the final Heh of the Tetragrammaton and the world of Assiah.",
+      "secondaryNames": [
+        {
+          "name": "Coins",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Discs",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "earth"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "tetragrammaton": "letter.hebrew.heh",
+        "world": "qabalah.world.assiah",
+        "deck": "tarot.deck.rider-waite-smith"
+      }
+    }
+  ]
+}

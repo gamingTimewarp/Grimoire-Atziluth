@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "fengshui.flying-star.1",
+      "target": "compass.direction.north",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.2",
+      "target": "compass.direction.southwest",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.3",
+      "target": "compass.direction.east",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.4",
+      "target": "compass.direction.southeast",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.5",
+      "target": "compass.direction.center",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.6",
+      "target": "compass.direction.northwest",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.7",
+      "target": "compass.direction.west",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.8",
+      "target": "compass.direction.northeast",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.9",
+      "target": "compass.direction.south",
+      "label": "home-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.1",
+      "target": "wuxing.phase.water",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.2",
+      "target": "wuxing.phase.earth",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.3",
+      "target": "wuxing.phase.wood",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.4",
+      "target": "wuxing.phase.wood",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.5",
+      "target": "wuxing.phase.earth",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.6",
+      "target": "wuxing.phase.metal",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.7",
+      "target": "wuxing.phase.metal",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.8",
+      "target": "wuxing.phase.earth",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.flying-star.9",
+      "target": "wuxing.phase.fire",
+      "label": "element",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

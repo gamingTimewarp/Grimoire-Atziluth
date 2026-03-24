@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "letter.enochian.pa",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Pa",
+      "description": "The first letter of the Enochian alphabet, corresponding approximately to B/P. Revealed to John Dee and Edward Kelley during their angelic communications (1582–1587), recorded in Dee's diaries and the manuscript Liber Loagaeth. The Enochian script was communicated through the skrying sessions and is considered by practitioners of Enochian magic to be the original language of the angels — the divine tongue spoken before the Fall of Babel. Pa corresponds to the Enochian spirit 'Lexarph' in Golden Dawn attributions. Each Enochian letter is associated with elemental, hierarchical, and Watchtower correspondences in the GD system.",
+      "secondaryNames": [ { "name": "ᚠ", "languageTag": "en-glyph", "visible": false, "sortOrder": 0 } ],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 1, "approximateSound": "B/P", "enochianName": "Pa", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.veh",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Veh",
+      "description": "The second letter of the Enochian alphabet, corresponding approximately to C/K. Veh is one of the phonetically harder Enochian consonants. In the Enochian system each letter participates in the construction of the divine Names used to invoke the angelic Watchtowers — the four great tablets (Fire, Water, Air, Earth) plus the Black Cross (Tablet of Union). The letters are arranged within the Tablets and their combinations form the names of the 30 Aethyrs (the levels of the angelic universe explored in the Enochian workings).",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 2, "approximateSound": "C/K", "enochianName": "Veh", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.gon",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Gon",
+      "description": "The third letter of the Enochian alphabet, corresponding to G. Gon participates in numerous divine Names within the Enochian Tablets. The Enochian language as recorded by Dee and Kelley has a grammatical structure studied by later linguists and magicians — whether it is a consistent invented language or received spiritual communication has been debated since its reception.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 3, "approximateSound": "G", "enochianName": "Gon", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.na-hath",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Na-hath",
+      "description": "The fourth letter of the Enochian alphabet, corresponding to D. Na-hath is one of the longer-named Enochian letters. In Golden Dawn practice the Enochian alphabet was employed in Enochian magic as developed by Mathers and Westcott from Dee's manuscripts, significantly extended and systematised relative to Dee's original workings. Crowley further developed Enochian practice and it remains central to modern ceremonial magic.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 4, "approximateSound": "D", "enochianName": "Na-hath", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.ur",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Ur",
+      "description": "The fifth letter of the Enochian alphabet, corresponding to F/V. Ur in the Enochian system participates in the construction of the Calls (Keys) — 48 invocations (19 of which survive) used to open the Aethyrs and communicate with the angelic forces. The Calls are the primary liturgical texts of Enochian magic, used in conjunction with the Tablets and the divine Names derived from the letters.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 5, "approximateSound": "F/V", "enochianName": "Ur", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.graph",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Graph",
+      "description": "The sixth letter of the Enochian alphabet, corresponding to G (alternate). Graph is one of the letters used in the construction of the names of the four great Elemental Kings and the subquadrant angels of the Watchtowers. The four Watchtowers (Tablets) are the central structure of Enochian magic: each tablet governs one of the four elements and contains hundreds of angelic names arranged in a specific pattern.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 6, "approximateSound": "G", "enochianName": "Graph", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.tal",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Tal",
+      "description": "The seventh letter of the Enochian alphabet, corresponding to H. Tal participates in the construction of the three-letter names of the angels associated with the outermost ring of each Watchtower tablet. The GD system assigns these outer rings to the four Kerubic spirits and their associated angelic choirs.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 7, "approximateSound": "H", "enochianName": "Tal", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.gal",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Gal",
+      "description": "The eighth Enochian letter, corresponding to I/J. Gal is one of the vowel-adjacent letters that gives the Enochian language its distinctive sound. When spoken aloud in the Calls the Enochian language produces an unusual acoustic effect that practitioners report as producing altered states of consciousness, which Dee and Kelley recorded as a direct effect of the angelic language itself.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 8, "approximateSound": "I/J", "enochianName": "Gal", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.or-vro",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Or-vro",
+      "description": "The ninth Enochian letter, corresponding to L. Or-vro is one of the more complex-named Enochian letters. Each Enochian letter was communicated to Dee via a specific method: an angel would point to letters on a chart, spelling out divine names and calls backwards (to protect the scryer from the power of the direct pronunciation).",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 9, "approximateSound": "L", "enochianName": "Or-vro", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.med",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Med",
+      "description": "The tenth Enochian letter, corresponding to M. Med participates in the divine names of the Governors of the 30 Aethyrs — the concentric shells of the angelic universe through which the initiate ascends in Enochian vision work. Each Aethyr has three Governors whose names are derived from specific positions within the Watchtower tablets.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 10, "approximateSound": "M", "enochianName": "Med", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.don",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Don",
+      "description": "The eleventh Enochian letter, corresponding to N. Don is one of the most commonly appearing letters in the Enochian divine names. Crowley's Vision and the Voice (Liber 418) records his journeys through the 30 Aethyrs using Enochian Calls, providing the most detailed recorded exploration of the Enochian system from the inside.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 11, "approximateSound": "N", "enochianName": "Don", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.mals",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Mals",
+      "description": "The twelfth Enochian letter, corresponding to O. Mals is one of the vowel letters that provide the characteristic sound of the Enochian language. The five Enochian vowels (corresponding approximately to A, E, I, O, U) were attributed by the GD to the five points of the pentagram, connecting Enochian to the broader esoteric tradition of vowel mysticism found in Greek Gnosticism and Pythagoreanism.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 12, "approximateSound": "O", "enochianName": "Mals", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.ger",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Ger",
+      "description": "The thirteenth Enochian letter, corresponding to P. Ger participates in the construction of the names of the senior angelic officers within each Watchtower tablet. The GD system elaborated Dee's original tablets into a detailed hierarchy of kings, crosses, seniors, kerubim, and lesser angels — each accessible through the appropriate combination of Enochian letters and Calls.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 13, "approximateSound": "P", "enochianName": "Ger", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.na",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Na",
+      "description": "The fourteenth Enochian letter, corresponding to Q. Na (not to be confused with Na-hath) is one of the shorter-named Enochian letters. The construction of the Enochian Watchtower tablets involves reading the letters in multiple directions (horizontally, vertically, and diagonally) to extract different classes of divine names — a sophisticated combinatorial system.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 14, "approximateSound": "Q", "enochianName": "Na", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.gisg",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Gisg",
+      "description": "The fifteenth Enochian letter, corresponding to R. Gisg is one of the letters appearing in the name of the Great Holy Angel BATAIVAH (the king of the Air tablet) and numerous other significant divine names in the Enochian system.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 15, "approximateSound": "R", "enochianName": "Gisg", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.fam",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Fam",
+      "description": "The sixteenth Enochian letter, corresponding to S. Fam participates in the construction of the Calls (Keys) — the 48 invocatory texts of the Enochian system. The First Call (Call of the Thirty Aethyrs) is the foundational invocation; subsequent calls open specific portions of the angelic universe.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 16, "approximateSound": "S", "enochianName": "Fam", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.van",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Van",
+      "description": "The seventeenth Enochian letter, corresponding to T. Van is one of the more widely appearing letters in Enochian divine names. The Tablet of Union (Black Cross) — containing five divine names used to connect the four elemental Watchtowers — uses Van extensively. The five names on the Tablet of Union are EXARP (Air), HCOMA (Water), NANTA (Earth), BITOM (Fire), and the unifying name EHNB.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 17, "approximateSound": "T", "enochianName": "Van", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.ciax",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Ciax",
+      "description": "The eighteenth Enochian letter, corresponding to U/V. Ciax is one of the vowel-like letters that gives Enochian its distinctive phonetic character. The language contains relatively few consonant clusters compared to Semitic languages but more than the Romance languages, creating an unusual phonetic profile that contributes to its perceived otherworldliness when spoken.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 18, "approximateSound": "U/V", "enochianName": "Ciax", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.tal-hol",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Tal-hol",
+      "description": "The nineteenth Enochian letter, corresponding to X. Tal-hol (also referred to simply as 'X' in some GD documents) is used in the construction of several Enochian divine names including those of the outermost angelic hierarchies of the Watchtowers. The full Enochian system as developed by the GD attributes each Enochian letter to a specific position within the Sephirotic Tree of Life.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 19, "approximateSound": "X", "enochianName": "Tal-hol", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.fam-main",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Fam-main",
+      "description": "The twentieth Enochian letter, corresponding to Z. Fam-main (the second F/Z variant) completes the Enochian letter inventory. The 21 Enochian letters cover the sounds of the divine language as communicated by the angels — a system that, despite its unusual origins in 16th-century skrying sessions, has influenced Western magical practice profoundly from the GD onward through Crowley and into contemporary chaos magic and ceremonial practice.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 20, "approximateSound": "Z", "enochianName": "Fam-main", "gdElementalCorrespondence": null }
+    },
+    {
+      "canonicalName": "letter.enochian.mals-g",
+      "entityType": "letter.enochian",
+      "primaryDisplayName": "Mals-g",
+      "description": "The twenty-first and final Enochian letter, corresponding to the terminal form or an alternate vowel. The twenty-first letter completes the Enochian alphabet at 21 characters — one fewer than the Hebrew alphabet's 22, one fewer than the major arcana's 22 paths, but equal to the full 21-gun salute and the 21st degree. The Enochian alphabet is the youngest of the letter systems in this collection, dating to 1582–1587 CE, yet it is the most explicitly magical in intent and origin.",
+      "secondaryNames": [],
+      "tags": ["letter", "enochian", "magical-alphabet"],
+      "extendedData": { "orderNumber": 21, "approximateSound": "variant", "enochianName": "Mals-g", "gdElementalCorrespondence": null }
+    }
+  ]
+}

@@ -1,0 +1,1335 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "letter.arabic.alif",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Alif",
+      "description": "Alif (ا) is the first letter of the Arabic alphabet and the first letter of the Abjad, with a numerical value of 1. Its form — a single vertical stroke — represents unity, the primordial upright human figure, and the divine oneness at the heart of Islamic metaphysics; it is the pillar from which all other letters hang. In Sufi letter mysticism (Hurufiyya), Alif corresponds to Aleph in the Hebrew alphabet (א) and shares the symbolism of divine breath, the first emanation of the creative Word, and the axis connecting heaven and earth. The letter is silent in its own right — it serves as a support for vowel sounds, and Sufi masters read in this silence the ineffable nature of God (Allah), whose name begins with Alif, pointing to the unspeakable ground of Being.",
+      "secondaryNames": [
+        {
+          "name": "ا",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "أَلِف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Alef",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Aleph (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ا",
+        "arabicName": "أَلِف",
+        "transliteration": "alif",
+        "phoneme": "ʾ (glottal stop / long ā)",
+        "abjadValue": 1,
+        "hebrewEquivalentCN": "letter.hebrew.aleph",
+        "hebrewLetter": "letter.hebrew.aleph",
+        "positionInAlphabet": 1,
+        "abjadPosition": 1
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ba",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ba",
+      "description": "Ba (ب) is the second letter of the Abjad system with a numerical value of 2, and the second letter of the modern Arabic alphabet. Its horizontal form, with a single dot beneath, is said by Sufi commentators to represent the world spread out beneath the point of divine attention — the dot being the primordial point (nuqta) from which all creation unfolds, a cosmogonic image central to the thought of Ibn Arabi. Ba corresponds to the Hebrew letter Bet (ב), and in Islamic mystical tradition it is the first letter of 'Bismillah' (بسم الله), the sacred opening formula of the Quran, making it the letter through which the entire divine revelation enters the world. Hurufiyya masters identified the dot of Ba as the secret of the universe — the dimensionless point containing all potentiality.",
+      "secondaryNames": [
+        {
+          "name": "ب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "بَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Baa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Bet (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ب",
+        "arabicName": "بَاء",
+        "transliteration": "ba",
+        "phoneme": "b",
+        "abjadValue": 2,
+        "hebrewEquivalentCN": "letter.hebrew.bet",
+        "hebrewLetter": "letter.hebrew.beth",
+        "positionInAlphabet": 2,
+        "abjadPosition": 2
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.jim",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Jim",
+      "description": "Jim (ج) is the third letter of the Abjad with a numerical value of 3, corresponding to the Hebrew Gimel (ג) and the English sound 'j' or 'g'. Its form is a curved hook with a dot beneath, evoking the grasping nature of the camel's neck — the Arabic root meaning most commonly associated with Gimel, the cognate letter. In Sufi letter mysticism, Jim carries the symbolism of beauty (Jamal, جمال) and the divine attribute of grace, its numerical resonance with the Trinity of the three mother letters in Kabbalistic thought suggesting the threefold nature of manifest existence. Some Hurufiyya commentators associated Jim with the heavenly sphere and the circulation of the celestial bodies, its curved form mirroring the arc of the horizon.",
+      "secondaryNames": [
+        {
+          "name": "ج",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "جِيم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Jeem",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Gimel (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ج",
+        "arabicName": "جِيم",
+        "transliteration": "jim",
+        "phoneme": "dʒ (j)",
+        "abjadValue": 3,
+        "hebrewEquivalentCN": "letter.hebrew.gimel",
+        "hebrewLetter": "letter.hebrew.gimel",
+        "positionInAlphabet": 3,
+        "abjadPosition": 3
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.dal",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Dal",
+      "description": "Dal (د) is the fourth letter of the Abjad with a numerical value of 4, corresponding to the Hebrew Dalet (ד) and representing the sound 'd'. Its angular, doorway-like form reflects the common Semitic root meaning 'door' or 'threshold', a liminal space between two states of being. In Sufi letter mysticism Dal is associated with the divine attribute of duration (Dawam, دوام) and the everlasting quality of God, while its numerical resonance with the number 4 links it to the four elements, the four directions, and the four divine names of fundamental importance in Islamic cosmology. The shared root with the Hebrew Dalet gives Dal a pan-Semitic significance as the letter of the threshold, the gate through which one passes from the outer to the inner world.",
+      "secondaryNames": [
+        {
+          "name": "د",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "دَال",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Daal",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Dalet (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "د",
+        "arabicName": "دَال",
+        "transliteration": "dal",
+        "phoneme": "d",
+        "abjadValue": 4,
+        "hebrewEquivalentCN": "letter.hebrew.dalet",
+        "hebrewLetter": "letter.hebrew.daleth",
+        "positionInAlphabet": 8,
+        "abjadPosition": 4
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ha",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ha",
+      "description": "Ha (ه) is the fifth letter of the Abjad with a numerical value of 5, corresponding to the Hebrew He (ה), and represents a light aspirated 'h' sound. The number 5 carries great significance in Islamic esotericism: the Five Pillars of Islam, the five daily prayers, and the five senses all resonate with this letter. In the Hurufiyya school of Fadl Allah Astarabadi, Ha is identified with the human face and the divine self-disclosure (tajalli), as the letter is present in the divine pronoun 'Huwa' (هو, 'He' — the hidden essence of God), making it a letter of profound theophanic significance. The correspondence with Hebrew He links it to the breath of creation and to the divine name YHWH, in which He appears twice as a marker of manifest divine presence.",
+      "secondaryNames": [
+        {
+          "name": "ه",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "هَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Haa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "He (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ه",
+        "arabicName": "هَاء",
+        "transliteration": "ha",
+        "phoneme": "h",
+        "abjadValue": 5,
+        "hebrewEquivalentCN": "letter.hebrew.he",
+        "hebrewLetter": "letter.hebrew.heh",
+        "positionInAlphabet": 26,
+        "abjadPosition": 5
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.waw",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Waw",
+      "description": "Waw (و) is the sixth letter of the Abjad with a numerical value of 6, corresponding to the Hebrew Vav (ו), and represents the sound 'w' as well as serving as the long vowel 'ū'. Its circular, descending form is associated by Sufi commentators with the act of connection — Waw is the conjunction 'and' (و) in Arabic, the word that links all other words, making it the letter of relationship and divine love (wasl, وصل) that joins the seeker to the Beloved. In Ibn Arabi's mystical cosmology, Waw at value 6 resonates with the six directions of space and the Perfect Human (al-Insan al-Kamil) as the microcosmic centre. Its correspondence to Hebrew Vav, the 'nail' or 'hook', reinforces the imagery of binding and connection across the two traditions.",
+      "secondaryNames": [
+        {
+          "name": "و",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "وَاو",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Vav (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "و",
+        "arabicName": "وَاو",
+        "transliteration": "waw",
+        "phoneme": "w / ū (long vowel)",
+        "abjadValue": 6,
+        "hebrewEquivalentCN": "letter.hebrew.vav",
+        "hebrewLetter": "letter.hebrew.vau",
+        "positionInAlphabet": 27,
+        "abjadPosition": 6
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.zayn",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Zayn",
+      "description": "Zayn (ز) is the seventh letter of the Abjad with a numerical value of 7, corresponding to the Hebrew Zayin (ז), and represents the sound 'z'. The form of Zayn — an elegant single stroke with a slight curve — is associated in Arabic aesthetics with adornment and beauty; the root z-y-n (زين) means 'to adorn' or 'to beautify', giving this letter a cosmetic and artistic resonance. In Sufi letter mysticism the number 7 links Zayn to the seven heavens, the seven classical planets, the seven days of the week, and the seven attributes of God enumerated by Islamic theologians. The correspondence with Hebrew Zayin ('sword') adds a martial sharpness to the letter's aesthetic character, suggesting that beauty is not merely decorative but can cut and transform.",
+      "secondaryNames": [
+        {
+          "name": "ز",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "زَاي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Zay",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Zayin (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ز",
+        "arabicName": "زَاي",
+        "transliteration": "zayn",
+        "phoneme": "z",
+        "abjadValue": 7,
+        "hebrewEquivalentCN": "letter.hebrew.zayin",
+        "hebrewLetter": "letter.hebrew.zayin",
+        "positionInAlphabet": 11,
+        "abjadPosition": 7
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ha-khaa",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ha (Kha)",
+      "description": "Ha (ح), the emphatic pharyngeal 'h', is the eighth letter of the Abjad with a numerical value of 8, corresponding to the Hebrew Chet (ח). It is distinct from the ordinary Ha (ه) — this letter represents a deeper, more constricted aspiration from the throat, the breath of the pharynx rather than the larynx. In the Abjad system this letter (ح) carries value 8, linking it to the eight-gated paradise of Islamic cosmology and to the number of bearers of the divine throne in Quranic cosmology (Q. 69:17). Sufi commentators have associated the deep breath of Ha with the dhikr (divine remembrance) practice — the breath drawn deeply inward as the Name of God is invoked in the silent heart — making this letter a map of contemplative breath-work. Its correspondence with Hebrew Chet, the letter of life (chayyim, חיים), reinforces its association with the vital, animating breath.",
+      "secondaryNames": [
+        {
+          "name": "ح",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "حَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Haa (pharyngeal)",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Chet (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ح",
+        "arabicName": "حَاء",
+        "transliteration": "ha",
+        "phoneme": "ħ (voiceless pharyngeal fricative)",
+        "abjadValue": 8,
+        "hebrewEquivalentCN": "letter.hebrew.chet",
+        "hebrewLetter": "letter.hebrew.cheth",
+        "positionInAlphabet": 6,
+        "abjadPosition": 8
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ta",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ta (emphatic)",
+      "description": "Ta (ط), the emphatic velarised 't', is the ninth letter of the Abjad with a numerical value of 9, corresponding to the Hebrew Tet (ט). This 'heavy' Ta is distinct from the ordinary Ta (ت, Abjad value 400) — in pronunciation, the tongue is pressed harder against the palate and the vocal tract is lowered, producing a deeper, more resonant sound. The number 9 in Islamic mysticism represents the completion of single-digit numbers and is associated with the ninety-nine Beautiful Names of God (whose digits sum to 9) and with the perfection of the manifest world. The Hebrew Tet, often symbolised by the serpent, shares with this Arabic letter an association with hidden or coiled power — the ninth letter conceals within its simple form an immense potential that will unfold through the subsequent letters of tens and hundreds.",
+      "secondaryNames": [
+        {
+          "name": "ط",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "طَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Taa (emphatic)",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Tet (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ط",
+        "arabicName": "طَاء",
+        "transliteration": "ta",
+        "phoneme": "tˤ (emphatic/velarised t)",
+        "abjadValue": 9,
+        "hebrewEquivalentCN": "letter.hebrew.tet",
+        "hebrewLetter": "letter.hebrew.teth",
+        "positionInAlphabet": 16,
+        "abjadPosition": 9
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ya",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ya",
+      "description": "Ya (ي) is the tenth letter of the Abjad with a numerical value of 10, corresponding to the Hebrew Yod (י), the smallest letter of the Hebrew alphabet yet the seed from which all other letters are formed. As the Arabic equivalent it serves both as the consonant 'y' and as the long vowel 'ī', and its sinuous, two-dotted form is one of the most elegantly curved letters in the Arabic script. In Sufi esotericism, Ya at value 10 begins the series of tens, signifying the passage into a new order of magnitude — the completion of the first cycle and the beginning of a more complex reality. Ibn Arabi and the Hurufiyya masters associated Ya with the divine name 'Ya' (يا, the vocative 'O'), the cry of the mystic calling upon God, making this letter the letter of longing and direct address in the highest spiritual sense.",
+      "secondaryNames": [
+        {
+          "name": "ي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "يَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Yaa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Yod (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ي",
+        "arabicName": "يَاء",
+        "transliteration": "ya",
+        "phoneme": "j (y) / ī (long vowel)",
+        "abjadValue": 10,
+        "hebrewEquivalentCN": "letter.hebrew.yod",
+        "hebrewLetter": "letter.hebrew.yod",
+        "positionInAlphabet": 28,
+        "abjadPosition": 10
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.kaf",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Kaf",
+      "description": "Kaf (ك) is the eleventh letter of the Abjad with a numerical value of 20, corresponding to the Hebrew Kaf (כ), the open palm of the hand. The Arabic root k-f (كف) likewise means 'palm' or 'hand', and the letter's open, cupped form visually echoes the receiving hand — the gesture of supplication, of receiving divine gifts, and of generative action. In Islamic mysticism the value 20 and the image of the open hand are connected to the Sufi teaching on divine generosity (karam, كرم): God as the ever-open hand from which all blessings flow. The letter Kaf is also grammatically the letter of comparison and likeness in Arabic ('ka-', meaning 'like' or 'as'), linking it to analogy, correspondence, and the Sufi concept of the universe as a mirror reflecting divine qualities.",
+      "secondaryNames": [
+        {
+          "name": "ك",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "كَاف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kaaf",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Kaf (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ك",
+        "arabicName": "كَاف",
+        "transliteration": "kaf",
+        "phoneme": "k",
+        "abjadValue": 20,
+        "hebrewEquivalentCN": "letter.hebrew.kaf",
+        "hebrewLetter": "letter.hebrew.kaph",
+        "positionInAlphabet": 22,
+        "abjadPosition": 11
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.lam",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Lam",
+      "description": "Lam (ل) is the twelfth letter of the Abjad with a numerical value of 30, corresponding to the Hebrew Lamed (ל), the tallest letter in the Hebrew alphabet and the staff of the teacher. In Arabic, Lam is a fluid, arching stroke that rises high above the baseline and sweeps downward in a graceful curve, and it functions as the definite article 'al-' when combined with Alif — meaning the Lam-Alif ligature (لا, 'la', 'no') is the very letter of the Shahada's negation: 'La ilaha illa Allah' (No god but God). Sufi masters regard Lam as the letter of divine majesty (Lataif, لطائف) and subtle spiritual realities, its value 30 resonating with the thirty degrees of a zodiac sign and the thirty days of a month, linking it to celestial rhythm and cyclical law. The Hebrew Lamed, 'oxgoad' or 'teaching staff', reinforces its association with directed learning and the transmission of wisdom from teacher to student.",
+      "secondaryNames": [
+        {
+          "name": "ل",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "لَام",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Laam",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Lamed (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ل",
+        "arabicName": "لَام",
+        "transliteration": "lam",
+        "phoneme": "l",
+        "abjadValue": 30,
+        "hebrewEquivalentCN": "letter.hebrew.lamed",
+        "hebrewLetter": "letter.hebrew.lamed",
+        "positionInAlphabet": 23,
+        "abjadPosition": 12
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.mim",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Mim",
+      "description": "Mim (م) is the thirteenth letter of the Abjad with a numerical value of 40, corresponding to the Hebrew Mem (מ), the mother letter of water. The closed, circular form of Mim — a small loop — is associated in Sufi symbolism with the closed mouth keeping secrets and with the inward-turning mystery of spiritual knowledge; the letter appears in 'Muhammad' (محمد), and some mystics hold that Mim is the secret letter of the Prophet, the seal of prophethood concealed in the circle of the letter's body. The number 40 carries immense significance in Abrahamic tradition — forty years in the wilderness, forty days of Moses on Sinai, forty days of Jesus's fast — and in Sufism the forty-day spiritual retreat (chilla) is a core practice, making Mim the letter of probation, purification, and the transformative journey through formlessness. Its correspondence with Hebrew Mem links it to the primordial waters of creation and to the maternal, receptive principle.",
+      "secondaryNames": [
+        {
+          "name": "م",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "مِيم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Meem",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Mem (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "م",
+        "arabicName": "مِيم",
+        "transliteration": "mim",
+        "phoneme": "m",
+        "abjadValue": 40,
+        "hebrewEquivalentCN": "letter.hebrew.mem",
+        "hebrewLetter": "letter.hebrew.mem",
+        "positionInAlphabet": 24,
+        "abjadPosition": 13
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.nun",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Nun",
+      "description": "Nun (ن) is the fourteenth letter of the Abjad with a numerical value of 50, corresponding to the Hebrew Nun (נ), associated with the fish and the hidden, darting movement of life beneath the surface. In Arabic the word 'nun' (نون) itself means 'fish' or 'whale', and the letter is famous as the opening letter of Surah Al-Qalam (Q. 68:1) — 'Nun. By the pen and what they inscribe' — a mysterious isolated letter (huruf muqatta'at) whose meaning has fascinated commentators and mystics for centuries. Sufi interpreters have associated Nun with the divine ink and the primordial pen, with the cosmic ocean, and with the Prophet Jonah (Dhul-Nun, 'the one of the whale') as a figure of spiritual descent and resurrection. Its value 50 links it to the Jubilee cycle, the fiftieth gate of understanding (Binah in Kabbalah), and the liberation that comes after the full cycle of purification.",
+      "secondaryNames": [
+        {
+          "name": "ن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "نُون",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Noon",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Nun (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ن",
+        "arabicName": "نُون",
+        "transliteration": "nun",
+        "phoneme": "n",
+        "abjadValue": 50,
+        "hebrewEquivalentCN": "letter.hebrew.nun",
+        "hebrewLetter": "letter.hebrew.nun",
+        "positionInAlphabet": 25,
+        "abjadPosition": 14
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.sin",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Sin",
+      "description": "Sin (س) is the fifteenth letter of the Abjad with a numerical value of 60, corresponding to the Hebrew Samech (ס), and represents the sound 's'. Its form — three small teeth or waves along a baseline — has been likened by Sufi commentators to the teeth of a comb or the ridges of a serpent's back, symbols of order imposed upon the flow of time and matter. The number 60 resonates with the sixty minutes of an hour and the sixty seconds of a minute, giving Sin an association with the measurement of time and with the ordered division of the celestial sphere. In Islamic letter mysticism, Sin is often paired with the sun (Shams, شمس), which begins with Shin, Sin's twin letter — together they form the solar circuit's beginning and end, light passing through the teeth of time.",
+      "secondaryNames": [
+        {
+          "name": "س",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "سِين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Seen",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Samech (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "س",
+        "arabicName": "سِين",
+        "transliteration": "sin",
+        "phoneme": "s",
+        "abjadValue": 60,
+        "hebrewEquivalentCN": "letter.hebrew.samech",
+        "hebrewLetter": "letter.hebrew.samekh",
+        "positionInAlphabet": 12,
+        "abjadPosition": 15
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ayn",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ayn",
+      "description": "Ayn (ع) is the sixteenth letter of the Abjad with a numerical value of 70, corresponding to the Hebrew Ayin (ע), and represents a voiced pharyngeal fricative with no equivalent in most European languages. The name 'Ayn' (عين) means 'eye' as well as 'spring' of water in Arabic — a remarkable dual meaning that Sufi masters have richly developed, associating the letter with spiritual vision, the divine gaze that sees all things, and the inexhaustible source from which divine grace wells up. At value 70, Ayn resonates with the seventy languages of tradition, the seventy elders of Israel, and the seventy veils of divine light and darkness described in Sufi hadith — placing this letter at the threshold of the ineffable, the limit beyond which ordinary language cannot carry us.",
+      "secondaryNames": [
+        {
+          "name": "ع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "عَين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Aain",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Ayin (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ع",
+        "arabicName": "عَين",
+        "transliteration": "ayn",
+        "phoneme": "ʕ (voiced pharyngeal fricative)",
+        "abjadValue": 70,
+        "hebrewEquivalentCN": "letter.hebrew.ayin",
+        "hebrewLetter": "letter.hebrew.ayin",
+        "positionInAlphabet": 18,
+        "abjadPosition": 16
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.fa",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Fa",
+      "description": "Fa (ف) is the seventeenth letter of the Abjad with a numerical value of 80, corresponding to the Hebrew Pe (פ), the mouth. In Arabic the letter's name (فاء) is distinct from the sound it represents, and its single dot above the cupped form gives it a visual elegance; the Arabic root f-m (فم, 'mouth') and f-l (فعل, 'to do') give Fa associations with speech and action, the mouth as the instrument of creative word. In Sufi mysticism Fa is linked to the divine attribute of 'Fath' (فتح, 'opening' or 'victory'), the opening of the heart and the gates of spiritual knowledge — it is the letter of the beginning of the final divine name that opens the Quran (Al-Fatiha, الفاتحة). Its correspondence with Hebrew Pe, the letter of the mouth and of Mercury in the Kabbalistic system, reinforces its role as the letter of articulation, manifestation through sound, and the power of the creative Word.",
+      "secondaryNames": [
+        {
+          "name": "ف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "فَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Faa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Pe (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ف",
+        "arabicName": "فَاء",
+        "transliteration": "fa",
+        "phoneme": "f",
+        "abjadValue": 80,
+        "hebrewEquivalentCN": "letter.hebrew.pe",
+        "hebrewLetter": "letter.hebrew.peh",
+        "positionInAlphabet": 20,
+        "abjadPosition": 17
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.sad",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Sad",
+      "description": "Sad (ص) is the eighteenth letter of the Abjad with a numerical value of 90, corresponding to the Hebrew Tsade (צ), and represents an emphatic velarised 's' — heavier and more resonant than the ordinary Sin. This letter appears alone as a mysterious Quranic opener in Surah Sad (Q. 38:1), 'Sad. By the Quran, full of reminder', and Islamic commentators have long contemplated its isolated, oracular usage as a divine cipher whose meaning is known only to God. In Sufi tradition, Sad at value 90 is associated with sincerity (Sidq, صدق) — the very root s-d-q being this letter's primary Semitic family — making Sad the letter of truth-telling, authenticity, and the unshakeable honesty of the spiritual warrior. Its correspondence with Hebrew Tsade, the 'fish-hook' or 'righteous one', reinforces this association with the capture of truth from the depths of experience.",
+      "secondaryNames": [
+        {
+          "name": "ص",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "صَاد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Saad",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Tsade (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ص",
+        "arabicName": "صَاد",
+        "transliteration": "sad",
+        "phoneme": "sˤ (emphatic/velarised s)",
+        "abjadValue": 90,
+        "hebrewEquivalentCN": "letter.hebrew.tsade",
+        "hebrewLetter": "letter.hebrew.tzaddi",
+        "positionInAlphabet": 14,
+        "abjadPosition": 18
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.qaf",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Qaf",
+      "description": "Qaf (ق) is the nineteenth letter of the Abjad with a numerical value of 100, corresponding to the Hebrew Qof (ק), and represents a deep uvular stop — the 'q' sound produced at the very back of the mouth, at the boundary between the oral cavity and the throat. In Islamic cosmology Qaf (قاف) is also the name of the mythical mountain that encircles the world, the cosmic axis around which the celestial spheres revolve — and Surah Qaf (Q. 50:1), which opens with this single letter, has been interpreted as a key to the secrets of the resurrection and the life to come. At value 100, Qaf initiates the hundreds — a new order of magnitude in Abjad calculation — marking it as a letter of ultimate foundation, the base of the entire cosmic architecture. Its correspondence with Hebrew Qof, the 'back of the head' or the 'nape', reinforces its association with the hidden and the posterior — what lies behind the visible world.",
+      "secondaryNames": [
+        {
+          "name": "ق",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "قَاف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Qaaf",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Qof (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ق",
+        "arabicName": "قَاف",
+        "transliteration": "qaf",
+        "phoneme": "q (uvular stop)",
+        "abjadValue": 100,
+        "hebrewEquivalentCN": "letter.hebrew.qof",
+        "hebrewLetter": "letter.hebrew.qoph",
+        "positionInAlphabet": 21,
+        "abjadPosition": 19
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ra",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ra",
+      "description": "Ra (ر) is the twentieth letter of the Abjad with a numerical value of 200, corresponding to the Hebrew Resh (ר), both of which derive from the Proto-Semitic 'rosh' meaning 'head'. In Arabic the rolling 'r' of Ra evokes movement, vitality, and the cyclical return — and the word 'ruh' (روح, 'spirit') begins with this letter, making Ra the letter of the divine breath of life that animates all beings. At value 200, Ra occupies a position of balance in the system of hundreds, and Sufi masters have associated it with the divine attribute of mercy (Rahma, رحمة) — the root r-h-m permeating the opening of every Quranic chapter and one of God's most frequently invoked names. Its correspondence with Hebrew Resh, attributed to the Sun in Kabbalistic tradition, reinforces Ra's association with luminosity, circling motion, and the life-giving principle that returns cyclically like the solar disk.",
+      "secondaryNames": [
+        {
+          "name": "ر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "رَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Raa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Resh (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ر",
+        "arabicName": "رَاء",
+        "transliteration": "ra",
+        "phoneme": "r",
+        "abjadValue": 200,
+        "hebrewEquivalentCN": "letter.hebrew.resh",
+        "hebrewLetter": "letter.hebrew.resh",
+        "positionInAlphabet": 10,
+        "abjadPosition": 20
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.shin",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Shin",
+      "description": "Shin (ش) is the twenty-first letter of the Abjad with a numerical value of 300, corresponding to the Hebrew Shin (ש), the great mother letter of fire. The 'sh' sound — a dispersing, hissing breath — mirrors the visual form of the letter's three teeth, which Sufi commentators have likened to three flames rising from a single base, the Trinity of fire, light, and heat. In the Arabic word for sun (Shams, شمس), Shin is both the first and third letter, enclosing the solar name in its fiery embrace — and in Islamic letter mysticism Shin at value 300 corresponds to the Archangel Jibrail (Gabriel), the spirit of divine revelation, whose appearance is described as one of blazing fire and incomprehensible brilliance. Its correspondence with Hebrew Shin, attributed to the element of fire and to the divine name Shaddai, places this letter at the heart of both traditions' understanding of divine creative fire.",
+      "secondaryNames": [
+        {
+          "name": "ش",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "شِين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sheen",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Shin (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ش",
+        "arabicName": "شِين",
+        "transliteration": "shin",
+        "phoneme": "ʃ (sh)",
+        "abjadValue": 300,
+        "hebrewEquivalentCN": "letter.hebrew.shin",
+        "hebrewLetter": "letter.hebrew.shin",
+        "positionInAlphabet": 13,
+        "abjadPosition": 21
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ta-taw",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ta (Taw)",
+      "description": "Ta (ت), the ordinary unassuming 't', is the twenty-second and final letter of the shared Semitic core in the Abjad, with a numerical value of 400, corresponding to the Hebrew Tav (ת) — the last letter of the Hebrew alphabet and, in Kabbalistic tradition, the letter attributed to Saturn, the cross, and the completion of the manifest world. In the Abjad order, Ta at 400 closes the cycle of the primary twenty-two letters that map onto the Hebrew alphabet; the six letters that follow (values 500–1000) are distinctly Arabic additions to the Semitic phonemic inventory. Sufi mystics associate Ta with the divine name 'Al-Tawwab' (التواب, 'The One who accepts repentance'), making it the letter of return, restoration, and the completion of the spiritual journey. Its form — two dots above a broad, open curve — has been likened to two eyes watching over an open vessel, symbolising divine witnessing of the seeker's return.",
+      "secondaryNames": [
+        {
+          "name": "ت",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "تَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Taa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Tav (Hebrew equivalent)",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ت",
+        "arabicName": "تَاء",
+        "transliteration": "ta",
+        "phoneme": "t",
+        "abjadValue": 400,
+        "hebrewEquivalentCN": "letter.hebrew.tau",
+        "hebrewLetter": "letter.hebrew.tau",
+        "positionInAlphabet": 3,
+        "abjadPosition": 22
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.tha",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Tha",
+      "description": "Tha (ث) is the twenty-third letter in Abjad order with a numerical value of 500, representing the interdental fricative 'th' as in English 'thin' — a sound that does not exist in the Proto-Semitic phonemic inventory from which Hebrew developed, making this one of the six distinctly Arabic letters with no Hebrew equivalent. Its three dots above a form similar to Ba and Ta mark it as the third member of that visual family, completing a trio of labial and dental sounds; in some traditions the three dots are associated with the three-fold nature of creation, preservation, and dissolution. In the Abjad system Tha initiates the sequence of hundreds beyond 400, marking the transition into phonemic territory unique to the Arabic language — sounds that arose as Arabic diverged from its Semitic siblings and developed its own distinctive sonic character. Sufi commentators occasionally associate Tha with the concept of 'Thubut' (ثبوت, 'stability' or 'permanence'), the unchanging quality of divine essence beneath the flux of manifestation.",
+      "secondaryNames": [
+        {
+          "name": "ث",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ثَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Thaa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ث",
+        "arabicName": "ثَاء",
+        "transliteration": "tha",
+        "phoneme": "θ (voiceless dental fricative, as in 'thin')",
+        "abjadValue": 500,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 4,
+        "abjadPosition": 23
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.kha",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Kha",
+      "description": "Kha (خ) is the twenty-fourth letter in Abjad order with a numerical value of 600, representing the voiceless velar fricative — a rasping, guttural 'kh' sound familiar in Arabic words such as 'khalifa' (خليفة, 'caliph') and absent from the Proto-Semitic phonemic inventory that shaped Hebrew, placing Kha among the six distinctly Arabic letters with no direct Hebrew counterpart. Its form is identical to Jim (ج) and Ha (ح) save for the single dot above, distinguishing its unique sound by the smallest possible mark — a visual reminder that enormous phonemic differences can rest on tiny distinctions. In Sufi letter mysticism Kha at value 600 resonates with the six-hundred-year cycles of prophetic tradition mentioned in hadith literature, and the word 'khayr' (خير, 'goodness' or 'blessing') opens with this letter, associating Kha with divine beneficence and the fullness of created good. The absence of a Hebrew equivalent underscores the uniquely Arabic dimension of this letter's spiritual significance within Islamic rather than pan-Semitic frameworks.",
+      "secondaryNames": [
+        {
+          "name": "خ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "خَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Khaa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "خ",
+        "arabicName": "خَاء",
+        "transliteration": "kha",
+        "phoneme": "x (voiceless velar fricative)",
+        "abjadValue": 600,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 7,
+        "abjadPosition": 24
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.dhal",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Dhal",
+      "description": "Dhal (ذ) is the twenty-fifth letter in Abjad order with a numerical value of 700, representing the voiced interdental fricative 'dh' as in English 'this' — a sound absent from the Proto-Semitic phonemic inventory of ancient Hebrew and Aramaic, making Dhal one of the six distinctly Arabic letters without Hebrew equivalents. Its form is identical to Dal (د) plus a single dot above, visually demonstrating how a single point of difference changes the nature of the sound entirely. The number 700 in the Abjad system completes the seventh century and carries the sacred resonance of the seventh heaven, the highest of the celestial realms in Islamic cosmology, associated with direct proximity to the divine throne. In Sufi tradition, the root dh-k-r (ذكر, 'remembrance' — the practice of dhikr) begins with Dhal, making this letter the letter of the most fundamental Sufi practice: the ceaseless remembrance of God that transforms the practitioner into a mirror of divine qualities.",
+      "secondaryNames": [
+        {
+          "name": "ذ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ذَال",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dhaal",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ذ",
+        "arabicName": "ذَال",
+        "transliteration": "dhal",
+        "phoneme": "ð (voiced dental fricative, as in 'this')",
+        "abjadValue": 700,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 9,
+        "abjadPosition": 25
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.dad",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Dad",
+      "description": "Dad (ض) is the twenty-sixth letter in Abjad order with a numerical value of 800, and it represents one of the most distinctive sounds in the Arabic phonological system — an emphatic lateral fricative or emphatic 'd' that is unique to Arabic among all the world's languages, earning Arabic the classical epithet 'lughat al-Dad' (لغة الضاد, 'the language of Dad'). This uniqueness has no parallel in Hebrew or any other Semitic language, firmly placing Dad among the six distinctly Arabic letters, and it carries a special pride in Arabic cultural identity as the marker of Arabic's phonemic distinctiveness. In Abjad mysticism, the value 800 places Dad in the eighth century of the system, resonating with the eight paradisiacal gardens and the eight bearers of the divine throne. Sufi commentators link Dad to the divine attribute of 'Dayman' (دائم, 'everlasting'), the eternal self-subsistence of God that underpins all transient existence — the uniquely Arabic sound marking a uniquely divine quality.",
+      "secondaryNames": [
+        {
+          "name": "ض",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ضَاد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Daad",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ض",
+        "arabicName": "ضَاد",
+        "transliteration": "dad",
+        "phoneme": "dˤ (emphatic d / Arabic-unique lateral emphatic)",
+        "abjadValue": 800,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 15,
+        "abjadPosition": 26
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.dha",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Dha",
+      "description": "Dha (ظ) is the twenty-seventh letter in Abjad order with a numerical value of 900, representing an emphatic voiced dental fricative — an emphatic version of the 'dh' sound of Dhal (ذ), producing a heavier, more resonant tone from deeper in the vocal tract. Like its fellow emphatic letters, Dha has no equivalent in Hebrew or other Semitic languages, making it one of the six distinctly Arabic letters whose sounds arose from the unique phonological development of the Arabic language. At value 900, Dha stands at the penultimate step before the completion of the Abjad system, corresponding to the ninety-ninth name of God in Islamic tradition — just one short of the full hundred — evoking the sense of imminent completeness, the last breath before the circle is closed. In Sufi mysticism, Dha is associated with the appearance (Zuhur, ظهور) of the divine in creation — the root z-h-r meaning 'to appear' or 'to manifest', linking this heavy, deep letter to the act of revelation itself.",
+      "secondaryNames": [
+        {
+          "name": "ظ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ظَاء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Zhaa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "ظ",
+        "arabicName": "ظَاء",
+        "transliteration": "dha",
+        "phoneme": "ðˤ (emphatic voiced dental fricative)",
+        "abjadValue": 900,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 17,
+        "abjadPosition": 27
+      }
+    },
+    {
+      "canonicalName": "letter.arabic.ghayn",
+      "entityType": "letter.arabic",
+      "primaryDisplayName": "Ghayn",
+      "description": "Ghayn (غ) is the twenty-eighth and final letter of the Abjad system with a numerical value of 1000, representing the voiced velar fricative — the 'gh' sound produced in the throat, similar to a Parisian 'r' or a gargled 'g', present in Arabic but absent from the Proto-Semitic inventory of sounds that shaped the Hebrew alphabet. As the last letter of the Abjad at value 1000, Ghayn completes the full cycle of the numerical alphabet: all the powers of the system — from 1 to 1000 — are contained within the twenty-eight letters, and Ghayn seals them as the thousand seals the final perfection. In Sufi letter mysticism, Ghayn is associated with the divine attribute of 'Ghayb' (غيب, 'the unseen' or 'the hidden'), the realm of divine mystery that lies forever beyond human perception — making this final letter the letter of the absolutely unknowable, the silence beyond language that the entire Abjad has been pointing toward since its first Alif.",
+      "secondaryNames": [
+        {
+          "name": "غ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "غَين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ghaain",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "language",
+        "arabic",
+        "abjad",
+        "gematria"
+      ],
+      "extendedData": {
+        "arabicForm": "غ",
+        "arabicName": "غَين",
+        "transliteration": "ghayn",
+        "phoneme": "ɣ (voiced velar fricative)",
+        "abjadValue": 1000,
+        "hebrewEquivalentCN": null,
+        "hebrewLetter": null,
+        "positionInAlphabet": 19,
+        "abjadPosition": 28
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#120f00"/>
+      <stop offset="100%" stop-color="#201a00"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#665500" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#ccaa00" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#665500" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#665500" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ffee88" opacity="0.9">I</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#ccaa00" opacity="0.85" filter="url(#glow)">ב</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#887730" opacity="0.8">☿</text>
+
+
+  
+  <text x="148" y="225"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="240" fill="#ccaa00" opacity="0.06">ב</text>
+  <ellipse cx="150" cy="205" rx="90" ry="72"
+    fill="none" stroke="#998800" stroke-width="0.8" stroke-dasharray="4 6" opacity="0.35"/>
+  <path d="M150,205
+    C180,177 220,177 220,205
+    C220,233 180,233 150,205
+    C120,177 80,177 80,205
+    C80,233 120,233 150,205 Z"
+    fill="none" stroke="#ccaa00" stroke-width="1" opacity="0.2"/>
+  <g filter="url(#glow)"><g opacity="0.92">
+  <line x1="150" y1="151.48" x2="150" y2="121.24"
+        stroke="#ee4400" stroke-width="4.62" stroke-linecap="round"/>
+  <ellipse cx="150" cy="117.88" rx="5" ry="7.14" fill="#ee4400"/>
+  <circle cx="150" cy="151.48" r="3.36" fill="#ee4400"/>
+</g></g>
+  <g filter="url(#glow)"><g opacity="0.92">
+  <path d="M47.5,187.36
+           Q46.46,202.9 55.83,209.2
+           L58.18,216.76 L61.82,216.76
+           Q64.17,209.2 73.54,202.9
+           Q72.5,187.36 60,188.2 Z"
+        fill="#1166dd"/>
+  <rect x="58.18" y="216.34" width="3.65" height="5.88"
+        fill="#1166dd"/>
+  <rect x="52.19" y="221.38" width="15.62" height="3.36"
+        rx="1.68" fill="#1166dd"/>
+</g></g>
+  <g filter="url(#glow)"><g opacity="0.92">
+  <polygon points="150,257.68 151.89,273.64 150,275.32 148.11,273.64"
+           fill="#ccbb00"/>
+  <rect x="148.94" y="274.9" width="2.12" height="13.44"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="140.24" y="273.22" width="19.53" height="2.94"
+        rx="1.26" fill="#ccbb00"/>
+  <rect x="148.49" y="287.5" width="3.02" height="5.46"
+        rx="2.52" fill="#ccbb00" opacity="0.6"/>
+</g></g>
+  <g filter="url(#glow)"><g opacity="0.92">
+  <circle cx="240" cy="205" r="18.06" fill="none" stroke="#448833" stroke-width="1.89"/>
+  <polygon points="240,190.19 248.7,216.98 225.92,200.42 254.08,200.42 231.3,216.98" fill="none" stroke="#448833" stroke-width="1.89" stroke-linejoin="round"/>
+</g></g>
+  
+  <!-- Body: slim upright form -->
+  <ellipse cx="150" cy="213" rx="9" ry="22" fill="#bb9900" opacity="0.78"/>
+  <!-- Head -->
+  <circle cx="150" cy="177" r="12" fill="#bb9900" opacity="0.82"/>
+  <!-- Arms: one raised (holding caduceus), one outstretched -->
+  <line x1="159" y1="197" x2="160" y2="162"
+        stroke="#bb9900" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <line x1="141" y1="197" x2="106" y2="187"
+        stroke="#bb9900" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <!-- Legs -->
+  <line x1="146" y1="235" x2="142"  y2="265"
+        stroke="#bb9900" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <line x1="154" y1="235" x2="160" y2="265"
+        stroke="#bb9900" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <g><line x1="164" y1="148.8" x2="164" y2="250"
+      stroke="#ddcc44" stroke-width="3.52" stroke-linecap="round"/><path d="M164,153.2
+    C144.2,164.2 144.2,179.6 164,188.4
+    C183.8,199.4 183.8,217  164,228
+    C144.2,239  144.2,234.6 164,245.6"
+    fill="none" stroke="#ddcc44" stroke-width="2.99" stroke-linecap="round" opacity="0.9"/><path d="M164,153.2
+    C183.8,164.2 183.8,179.6 164,188.4
+    C144.2,199.4 144.2,217  164,228
+    C183.8,239  183.8,234.6 164,245.6"
+    fill="none" stroke="#ddcc44" stroke-width="2.99" stroke-linecap="round" opacity="0.9"/><path d="M164,148.8
+    C151.9,137.8 139.8,141.1 149.48,147.7
+    C156.74,144.4 164,143.3 164,148.8 Z"
+    fill="#ddcc44" opacity="0.75"/><path d="M164,148.8
+    C176.1,137.8 188.2,141.1 178.52,147.7
+    C171.26,144.4 164,143.3 164,148.8 Z"
+    fill="#ddcc44" opacity="0.75"/><circle cx="158.06" cy="247.8" r="4.93" fill="#ddcc44" opacity="0.7"/>
+  <circle cx="169.94" cy="247.8" r="4.93" fill="#ddcc44" opacity="0.7"/></g>
+  <g><ellipse cx="150" cy="165" rx="18" ry="3.6"
+    fill="#ddcc44" opacity="0.85"/><path d="M140.1,165
+    C140.1,152.4 159.9,152.4 159.9,165 Z"
+    fill="#ddcc44" opacity="0.85"/><path d="M132,165
+    C125.95,158.95
+     116.88,162.98
+     121.42,170.04
+    C127.46,166.01 132,167.16 132,165 Z"
+    fill="#ddcc44" opacity="0.7"/><path d="M168,165
+    C174.05,158.95
+     183.12,162.98
+     178.58,170.04
+    C172.54,166.01 168,167.16 168,165 Z"
+    fill="#ddcc44" opacity="0.7"/></g>
+  <g><ellipse cx="142" cy="267.31" rx="11" ry="2.31"
+    fill="#ddcc44" opacity="0.7"/><path d="M149.7,265
+    C154.1,259.15
+     160.7,262.49
+     156.3,268.34
+    C151.9,265.84 149.7,265.77 149.7,265 Z"
+    fill="#ddcc44" opacity="0.65"/></g>
+  <g><ellipse cx="160" cy="267.31" rx="11" ry="2.31"
+    fill="#ddcc44" opacity="0.7"/><path d="M152.3,265
+    C147.9,259.15
+     141.3,262.49
+     145.7,268.34
+    C150.1,265.84 152.3,265.77 152.3,265 Z"
+    fill="#ddcc44" opacity="0.65"/></g>
+  
+  <!-- Ape of Thoth (Cynocephalus) — crouching scribe below -->
+  <!-- Body -->
+  <ellipse cx="150" cy="330" rx="22" ry="18" fill="#665520" opacity="0.45"/>
+  <!-- Head with snout -->
+  <circle cx="150" cy="312" r="14" fill="#665520" opacity="0.45"/>
+  <ellipse cx="150" cy="318" rx="8" ry="5" fill="#554418" opacity="0.4"/>
+  <!-- Ears -->
+  <circle cx="137" cy="304" r="5" fill="#665520" opacity="0.4"/>
+  <circle cx="163" cy="304" r="5" fill="#665520" opacity="0.4"/>
+  <!-- Arms resting (scribe posture) -->
+  <line x1="128" y1="325"  x2="112" y2="340"
+        stroke="#665520" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <line x1="172" y1="325"  x2="188" y2="340"
+        stroke="#665520" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <!-- Pen/stylus in right hand (ape as scribe of Thoth) -->
+  <line x1="188" y1="340" x2="198" y2="330"
+        stroke="#aa8800" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <!-- Eye glint -->
+  <circle cx="144" cy="310" r="2.5" fill="#221a00" opacity="0.55"/>
+  <circle cx="156" cy="310" r="2.5" fill="#221a00" opacity="0.55"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ffee88" letter-spacing="2.5"
+        filter="url(#glow)">The Magus</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#887730" letter-spacing="3" opacity="0.75">Beth · Mercury · Path 12</text>
+</svg>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0a0200"/>
+      <stop offset="100%" stop-color="#140400"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#4a1000" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#cc3300" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#4a1000" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#4a1000" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ff9966" opacity="0.9">XX</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#cc3300" opacity="0.85" filter="url(#glow)">ש</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#4a1000" opacity="0.8">△</text>
+
+
+    <defs>
+      <radialGradient id="judgGrad20" cx="50%" cy="38%" r="60%">
+        <stop offset="0%"   stop-color="#fffff8" stop-opacity="0.88"/>
+        <stop offset="26%"  stop-color="#ffbb44" stop-opacity="0.55"/>
+        <stop offset="58%"  stop-color="#ff7722" stop-opacity="0.28"/>
+        <stop offset="100%" stop-color="#ff4400"  stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="shinGlow20" cx="50%" cy="78%" r="62%">
+        <stop offset="0%"   stop-color="#ff4400"  stop-opacity="0.42"/>
+        <stop offset="100%" stop-color="#ff4400"  stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="bloodGrad20" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%"   stop-color="#cc2222" stop-opacity="0.92"/>
+        <stop offset="60%"  stop-color="#aa0018" stop-opacity="0.96"/>
+        <stop offset="100%" stop-color="#6a0008"  stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Background fire-glow rising from below — the field of the Aeon is fire, not darkness -->
+    <ellipse cx="150" cy="290" rx="168" ry="185" fill="url(#shinGlow20)" opacity="0.78"/>
+
+    <!-- Nuit — the cosmic sky-body arching over the entire Aeon -->
+    <!-- She contained the stars (XVII); now she contains the Last Day -->
+    <!-- The Apocalypse happens within her; she remains after it -->
+    <path d="M0,130 C62,54 118,28 150,26 C182,28 238,54 300,130"
+          fill="none" stroke="#100430" stroke-width="30" opacity="0.88"/>
+    <path d="M0,130 C62,54 118,28 150,26 C182,28 238,54 300,130"
+          fill="none" stroke="#c0b8e0" stroke-width="1.2" opacity="0.32"/>
+    <!-- Stars along Nuit's arc (12 — the covenant number, now the Judge's crown) -->
+    <circle cx="0" cy="130" r="1.8" fill="#c0b8e0" opacity="0.52"/>
+    <circle cx="27.27" cy="100.7" r="1.8" fill="#c0b8e0" opacity="0.62"/>
+    <circle cx="54.55" cy="73.77" r="1.8" fill="#c0b8e0" opacity="0.72"/>
+    <circle cx="81.82" cy="51.4" r="1.8" fill="#c0b8e0" opacity="0.52"/>
+    <circle cx="109.09" cy="35.4" r="1.8" fill="#c0b8e0" opacity="0.62"/>
+    <circle cx="136.36" cy="27.06" r="1.8" fill="#c0b8e0" opacity="0.72"/>
+    <circle cx="163.64" cy="27.06" r="1.8" fill="#c0b8e0" opacity="0.52"/>
+    <circle cx="190.91" cy="35.4" r="1.8" fill="#c0b8e0" opacity="0.62"/>
+    <circle cx="218.18" cy="51.4" r="1.8" fill="#c0b8e0" opacity="0.72"/>
+    <circle cx="245.45" cy="73.77" r="1.8" fill="#c0b8e0" opacity="0.52"/>
+    <circle cx="272.73" cy="100.7" r="1.8" fill="#c0b8e0" opacity="0.62"/>
+    <circle cx="300" cy="130" r="1.8" fill="#c0b8e0" opacity="0.72"/>
+
+    <!-- Shin (ש) — three ascending flame-prongs; more visible than other ghost letterforms -->
+    <!-- The fire is not background here: Shin IS the substance of the Apocalypse -->
+    <!-- The three prongs connect at the blood-line below — Shin rises from the Flood of Blood -->
+    <!-- Left prong — ascending and curving slightly left at top -->
+    <path d="M90,316 C88,288 82,252 78,212 C74,172 78,140 84,110 C88,88 90,68 91,50"
+          fill="none" stroke="#ff4400" stroke-width="7" stroke-linecap="round" opacity="0.26"/>
+    <path d="M90,316 C88,288 82,252 78,212 C74,172 78,140 84,110 C88,88 90,68 91,50"
+          fill="none" stroke="#ffaa55" stroke-width="3" stroke-linecap="round" opacity="0.20"/>
+    <!-- Center prong — tallest, straight up to Nuit and Hadit -->
+    <path d="M150,320 C150,292 150,252 150,210 C150,168 150,128 150,92 C150,76 150,58 150,44"
+          fill="none" stroke="#ff4400" stroke-width="7" stroke-linecap="round" opacity="0.26"/>
+    <path d="M150,320 C150,292 150,252 150,210 C150,168 150,128 150,92 C150,76 150,58 150,48"
+          fill="none" stroke="#ffaa55" stroke-width="3" stroke-linecap="round" opacity="0.20"/>
+    <!-- Right prong — ascending and curving slightly right at top -->
+    <path d="M210,316 C212,288 218,252 222,212 C226,172 222,140 216,110 C212,88 210,68 209,50"
+          fill="none" stroke="#ff4400" stroke-width="7" stroke-linecap="round" opacity="0.26"/>
+    <path d="M210,316 C212,288 218,252 222,212 C226,172 222,140 216,110 C212,88 210,68 209,50"
+          fill="none" stroke="#ffaa55" stroke-width="3" stroke-linecap="round" opacity="0.20"/>
+    <!-- Base connector at blood-line -->
+    <path d="M90,316 C110,312 132,318 150,320 C168,318 190,312 210,316"
+          fill="none" stroke="#ff4400" stroke-width="5.5" stroke-linecap="round" opacity="0.22"/>
+
+    <!-- ═══ Hadit — winged solar disk, final form of the solarDisk lineage ═══ -->
+    <!-- Fool(free) Hermit(lantern) Art(crown) Tower(burst) Star(garment) Moon(eclipse) Sun(blazing) Aeon(winged) -->
+    <!-- The eighth appearance: the disk given wings — Horus Behdety, the Egyptian solar Aeon -->
+    <!-- This is simultaneously the Egyptian solar emblem and the Throne described in Ezekiel 1 -->
+
+    <!-- Left wing -->
+    <path d="M122,86 C88,66 60,76 58,90 C60,102 82,106 122,94 Z"
+          fill="#cc8800" stroke="#ffaa44" stroke-width="0.8" opacity="0.90"/>
+    <!-- Left feather tips -->
+    <line x1="114" y1="98" x2="108" y2="112" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.68"/>
+    <line x1="103" y1="96.5" x2="97" y2="110.5" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="92" y1="95" x2="86" y2="109" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.52"/>
+    <line x1="81" y1="93.5" x2="75" y2="107.5" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.44"/>
+    <line x1="70" y1="92" x2="64" y2="106" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.36"/>
+
+    <!-- Right wing -->
+    <path d="M178,86 C212,66 240,76 242,90 C240,102 218,106 178,94 Z"
+          fill="#cc8800" stroke="#ffaa44" stroke-width="0.8" opacity="0.90"/>
+    <!-- Right feather tips -->
+    <line x1="186" y1="98" x2="192" y2="112" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.68"/>
+    <line x1="197" y1="96.5" x2="203" y2="110.5" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="208" y1="95" x2="214" y2="109" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.52"/>
+    <line x1="219" y1="93.5" x2="225" y2="107.5" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.44"/>
+    <line x1="230" y1="92" x2="236" y2="106" stroke="#cc8800" stroke-width="1.5" stroke-linecap="round" opacity="0.36"/>
+
+    <!-- Hadit disk (same solar gold as XIX — the lineage is explicit) -->
+    <circle cx="150" cy="86" r="30" fill="#ffcc22"  opacity="0.96"/>
+    <circle cx="150" cy="86" r="28"   fill="#ffee88" opacity="1.00"/>
+    <circle cx="150" cy="86" r="20"  fill="#fffff0"   opacity="0.90"/>
+    <!-- Uraeus pair at disk base (solar ruler emblem, same as XIX) -->
+    <path d="M144,112 C142,121 138,126 136,122 C134,118 138,114 142,116 C146,118 148,124 150,126"
+          fill="none" stroke="#cc8800" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/>
+    <path d="M156,112 C158,121 162,126 164,122 C166,118 162,114 158,116 C154,118 152,124 150,126"
+          fill="none" stroke="#cc8800" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/>
+
+    <!-- ═══ Cosmic Judge — Ancient of Days + Christ as Last Judge ═══ -->
+    <!-- Daniel 7:9-10: throne of fire, hair white as wool, river of fire -->
+    <!-- Revelation 1:14-16: eyes like blazing fire, sword from mouth, face like the sun in its strength -->
+    <!-- Not a human-scale figure: a presence of concentrated cosmic light -->
+    <!-- The seven stars from XVII (heptagram in the sky) are now held in the Judge's right hand -->
+
+    <!-- Judge's light-field -->
+    <ellipse cx="150" cy="178" rx="74" ry="90" fill="url(#judgGrad20)" opacity="0.90"/>
+
+    <!-- Body of light — the Ancient of Days, column of white fire -->
+    <rect x="138" y="130" width="24" height="108" rx="12" fill="#fffff8" fill-opacity="0.72" opacity="0.88"/>
+
+    <!-- Crown / head — white as wool (Dan 7:9), blazing as fire (Rev 1:14) -->
+    <ellipse cx="150" cy="130" rx="29" ry="20" fill="#fffff8" opacity="0.84"/>
+    <ellipse cx="150" cy="130" rx="22" ry="14" fill="#ffffd8"   opacity="0.80"/>
+    <!-- Eyes like blazing fire -->
+    <circle cx="142" cy="128" r="3.5" fill="#ff5500"  opacity="0.90"/>
+    <circle cx="158" cy="128" r="3.5" fill="#ff5500"  opacity="0.90"/>
+    <circle cx="142" cy="128" r="1.8" fill="#ffddbb" opacity="0.88"/>
+    <circle cx="158" cy="128" r="1.8" fill="#ffddbb" opacity="0.88"/>
+
+    <!-- Seven stars held in the right hand — Rev 1:16 -->
+    <!-- The same seven of XVII's heptagram, now in the Judge's palm -->
+    <circle cx="192" cy="158" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="192" cy="158" r="1.2" fill="white"    opacity="0.82"/><circle cx="192" cy="158" r="4.5" fill="#ffcc66" opacity="0.22"/>
+    <circle cx="207.64" cy="165.53" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="207.64" cy="165.53" r="1.2" fill="white"    opacity="0.82"/>
+    <circle cx="211.5" cy="182.45" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="211.5" cy="182.45" r="1.2" fill="white"    opacity="0.82"/>
+    <circle cx="200.68" cy="196.02" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="200.68" cy="196.02" r="1.2" fill="white"    opacity="0.82"/>
+    <circle cx="183.32" cy="196.02" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="183.32" cy="196.02" r="1.2" fill="white"    opacity="0.82"/>
+    <circle cx="172.5" cy="182.45" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="172.5" cy="182.45" r="1.2" fill="white"    opacity="0.82"/>
+    <circle cx="176.36" cy="165.53" r="2.5" fill="#ffcc66" opacity="0.88"/><circle cx="176.36" cy="165.53" r="1.2" fill="white"    opacity="0.82"/>
+    <!-- Hand outline (faint) -->
+    <ellipse cx="192" cy="178" rx="27" ry="23" fill="none" stroke="#fffff8" stroke-width="1.0" opacity="0.28"/>
+
+    <!-- Sword from mouth — Rev 1:16, 19:15: "a sharp sword to strike down the nations" -->
+    <!-- The same cross-axis as XVIII's eclipse flare and XIX's disc cross-hairs, now weaponised -->
+    <!-- The word of judgement is the same word of creation — spoken, it accomplishes the new order -->
+    <line x1="150" y1="142" x2="150" y2="228" stroke="#ffffd0" stroke-width="2.2" opacity="0.62"/>
+    <line x1="150" y1="142" x2="150" y2="215" stroke="white"     stroke-width="0.9" opacity="0.55"/>
+    <!-- Crossguard suggestion — the double-edged sword -->
+    <line x1="143" y1="185" x2="157" y2="185" stroke="#ffffd0" stroke-width="1.5" opacity="0.45"/>
+
+    <!-- ═══ Four Horsemen — Revelation 6 ═══ -->
+    <!-- Simple abstract forms: the four canonical colors identify each rider -->
+    <!-- Riding in the zone between the Judge above and the blood-flood below -->
+    <!-- White (Conquest), Red (War), Black (Famine), Pale (Death) -->
+    <!-- The Pale rider is Death — card XIII's figure, now at cosmic scale and final commission -->
+
+    <!-- White horse — Conquest (Rev 6:2: "a crown was given to him, and he rode out conquering") -->
+    <ellipse cx="52"  cy="264" rx="23" ry="11" fill="#ccd8e8" opacity="0.62" transform="rotate(-14,52,264)"/>
+    <circle  cx="70"  cy="253" r="6.5"          fill="#ccd8e8" opacity="0.56"/>
+
+    <!-- Red horse — War (Rev 6:4: "its rider was given power to take peace from the earth") -->
+    <ellipse cx="115" cy="274" rx="24" ry="11" fill="#cc1100" opacity="0.68" transform="rotate(-10,115,274)"/>
+    <circle  cx="134" cy="263" r="6.5"          fill="#cc1100" opacity="0.62"/>
+
+    <!-- Black horse — Famine (Rev 6:5: "a pair of scales in its rider's hand") -->
+    <ellipse cx="183" cy="267" rx="23" ry="11" fill="#111422" opacity="0.75" transform="rotate(-12,183,267)"/>
+    <circle  cx="202" cy="256" r="6.5"          fill="#111422" opacity="0.68"/>
+
+    <!-- Pale horse — Death (Rev 6:8: "its rider was named Death, and Hades was following close behind") -->
+    <!-- The same pale rider as XIII, now at the scale of the Last Day -->
+    <ellipse cx="247" cy="277" rx="23" ry="11" fill="#889966" opacity="0.58" transform="rotate(-8,247,277)"/>
+    <circle  cx="266" cy="266" r="6.5"          fill="#889966" opacity="0.52"/>
+
+    <!-- ═══ Flood of Blood — Revelation 14:20 ═══ -->
+    <!-- "Blood flowed out of the press, rising as high as the horses' bridles" -->
+    <!-- The eschatological water arc completes its penultimate station: -->
+    <!--   XV Devil:  Lake of Fire (sulfurous; foreshadowing) -->
+    <!--   XVI Tower: Flood of Water (Noaic type) -->
+    <!--   XVII Star: Crystal River (living water, gift) -->
+    <!--   XVIII Moon: Eclipse-lit pool (veiled approach) -->
+    <!--   XIX Sun:   Lake of Light (individual resurrection) -->
+    <!--   XX Aeon:   Flood of Blood (antitype of the Flood of Water; Rev 14:20) -->
+    <!--   XXI Universe: River of Life in the New Jerusalem (water fully redeemed) -->
+    <rect x="0" y="314" width="300" height="106" fill="url(#bloodGrad20)" opacity="0.96"/>
+
+    <!-- Mountains of Megiddo — dark silhouettes rising above the blood -->
+    <!-- Their peaks are above the blood-line; their lower slopes are submerged -->
+    <!-- These are the mountains that will flee and be found no more (Rev 20:11) -->
+    <path d="M0,314 L20,276 L44,294 L70,256 L96,288 L122,262 L148,290 L150,314 Z"
+          fill="#1a0808" opacity="0.92"/>
+    <path d="M150,314 L152,290 L178,265 L204,284 L230,258 L256,282 L282,268 L300,280 L300,314 Z"
+          fill="#1a0808" opacity="0.92"/>
+    <!-- Pale ash on mountain peaks — the mountains already beginning their dissolution -->
+    <path d="M67,259 L70,256 L73,259" stroke="#d8d0c8" stroke-width="1.2" fill="none" opacity="0.42"/>
+    <path d="M119,265 L122,262 L125,265" stroke="#d8d0c8" stroke-width="1.2" fill="none" opacity="0.38"/>
+    <path d="M227,261 L230,258 L233,261" stroke="#d8d0c8" stroke-width="1.2" fill="none" opacity="0.36"/>
+
+    <!-- Blood surface — same structural position as the pool in XVII-XIX; the same water, transformed -->
+    <path d="M0,316 C50,314.5 100,317.5 150,316 C200,314.5 250,317.5 300,316" fill="none" stroke="#cc2222" stroke-width="0.7" opacity="0.28"/><path d="M0,319.5 C50,318 100,321 150,319.5 C200,318 250,321 300,319.5" fill="none" stroke="#cc2222" stroke-width="0.7" opacity="0.24"/><path d="M0,323 C50,321.5 100,324.5 150,323 C200,321.5 250,324.5 300,323" fill="none" stroke="#cc2222" stroke-width="0.7" opacity="0.2"/><path d="M0,326.5 C50,325 100,328 150,326.5 C200,325 250,328 300,326.5" fill="none" stroke="#cc2222" stroke-width="0.7" opacity="0.16"/><path d="M0,330 C50,328.5 100,331.5 150,330 C200,328.5 250,331.5 300,330" fill="none" stroke="#cc2222" stroke-width="0.7" opacity="0.12"/>
+    <!-- Blood depths -->
+    <rect x="0" y="362" width="300" height="58" fill="#6a0008" opacity="0.52"/>
+  
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ff9966" letter-spacing="2.5"
+        filter="url(#glow)">THE AEON</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#4a1000" letter-spacing="3" opacity="0.75">Shin · Fire · Path 31</text>
+</svg>

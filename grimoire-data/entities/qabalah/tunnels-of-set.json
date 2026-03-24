@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.tunnel-of-set.amprodias",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Amprodias",
+      "description": "The Tunnel of Set corresponding to Path 11 (Aleph, The Fool), connecting Thaumiel (the Qliphoth of Kether) to Chaigidel (the Qliphoth of Chokmah) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 11,
+        "correspondingPath": "qabalah.path.11",
+        "fromQliphoth": "qabalah.qliphoth.thaumiel",
+        "toQliphoth": "qabalah.qliphoth.chaigidel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.baratchial",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Baratchial",
+      "description": "The Tunnel of Set corresponding to Path 12 (Beth, The Magician), connecting Thaumiel (the Qliphoth of Kether) to Satariel (the Qliphoth of Binah) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 12,
+        "correspondingPath": "qabalah.path.12",
+        "fromQliphoth": "qabalah.qliphoth.thaumiel",
+        "toQliphoth": "qabalah.qliphoth.satariel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.gargophias",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Gargophias",
+      "description": "The Tunnel of Set corresponding to Path 13 (Gimel, The High Priestess), connecting Thaumiel (the Qliphoth of Kether) to Thagirion (the Qliphoth of Tiphareth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 13,
+        "correspondingPath": "qabalah.path.13",
+        "fromQliphoth": "qabalah.qliphoth.thaumiel",
+        "toQliphoth": "qabalah.qliphoth.thagirion"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.dagdagiel",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Dagdagiel",
+      "description": "The Tunnel of Set corresponding to Path 14 (Daleth, The Empress), connecting Chaigidel (the Qliphoth of Chokmah) to Satariel (the Qliphoth of Binah) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 14,
+        "correspondingPath": "qabalah.path.14",
+        "fromQliphoth": "qabalah.qliphoth.chaigidel",
+        "toQliphoth": "qabalah.qliphoth.satariel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.hemethterith",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Hemethterith",
+      "description": "The Tunnel of Set corresponding to Path 15 (Heh, The Emperor), connecting Chaigidel (the Qliphoth of Chokmah) to Thagirion (the Qliphoth of Tiphareth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 15,
+        "correspondingPath": "qabalah.path.15",
+        "fromQliphoth": "qabalah.qliphoth.chaigidel",
+        "toQliphoth": "qabalah.qliphoth.thagirion"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.uriens",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Uriens",
+      "description": "The Tunnel of Set corresponding to Path 16 (Vav, The Hierophant), connecting Chaigidel (the Qliphoth of Chokmah) to Gha'agsheblah (the Qliphoth of Chesed) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 16,
+        "correspondingPath": "qabalah.path.16",
+        "fromQliphoth": "qabalah.qliphoth.chaigidel",
+        "toQliphoth": "qabalah.qliphoth.gha-agsheblah"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.zamradiel",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Zamradiel",
+      "description": "The Tunnel of Set corresponding to Path 17 (Zayin, The Lovers), connecting Satariel (the Qliphoth of Binah) to Thagirion (the Qliphoth of Tiphareth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 17,
+        "correspondingPath": "qabalah.path.17",
+        "fromQliphoth": "qabalah.qliphoth.satariel",
+        "toQliphoth": "qabalah.qliphoth.thagirion"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.characith",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Characith",
+      "description": "The Tunnel of Set corresponding to Path 18 (Cheth, The Chariot), connecting Satariel (the Qliphoth of Binah) to Golachab (the Qliphoth of Geburah) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 18,
+        "correspondingPath": "qabalah.path.18",
+        "fromQliphoth": "qabalah.qliphoth.satariel",
+        "toQliphoth": "qabalah.qliphoth.golachab"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.temphioth",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Temphioth",
+      "description": "The Tunnel of Set corresponding to Path 19 (Teth, Strength), connecting Gha'agsheblah (the Qliphoth of Chesed) to Golachab (the Qliphoth of Geburah) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 19,
+        "correspondingPath": "qabalah.path.19",
+        "fromQliphoth": "qabalah.qliphoth.gha-agsheblah",
+        "toQliphoth": "qabalah.qliphoth.golachab"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.yamatu",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Yamatu",
+      "description": "The Tunnel of Set corresponding to Path 20 (Yod, The Hermit), connecting Gha'agsheblah (the Qliphoth of Chesed) to Thagirion (the Qliphoth of Tiphareth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 20,
+        "correspondingPath": "qabalah.path.20",
+        "fromQliphoth": "qabalah.qliphoth.gha-agsheblah",
+        "toQliphoth": "qabalah.qliphoth.thagirion"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.kurgasiax",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Kurgasiax",
+      "description": "The Tunnel of Set corresponding to Path 21 (Kaph, The Wheel of Fortune), connecting Gha'agsheblah (the Qliphoth of Chesed) to Harab Serapel (the Qliphoth of Netzach) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 21,
+        "correspondingPath": "qabalah.path.21",
+        "fromQliphoth": "qabalah.qliphoth.gha-agsheblah",
+        "toQliphoth": "qabalah.qliphoth.harab-serapel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.lafcursiax",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Lafcursiax",
+      "description": "The Tunnel of Set corresponding to Path 22 (Lamed, Justice), connecting Golachab (the Qliphoth of Geburah) to Thagirion (the Qliphoth of Tiphareth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 22,
+        "correspondingPath": "qabalah.path.22",
+        "fromQliphoth": "qabalah.qliphoth.golachab",
+        "toQliphoth": "qabalah.qliphoth.thagirion"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.malkunofat",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Malkunofat",
+      "description": "The Tunnel of Set corresponding to Path 23 (Mem, The Hanged Man), connecting Golachab (the Qliphoth of Geburah) to Samael (the Qliphoth of Hod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 23,
+        "correspondingPath": "qabalah.path.23",
+        "fromQliphoth": "qabalah.qliphoth.golachab",
+        "toQliphoth": "qabalah.qliphoth.samael"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.niantiel",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Niantiel",
+      "description": "The Tunnel of Set corresponding to Path 24 (Nun, Death), connecting Thagirion (the Qliphoth of Tiphareth) to Harab Serapel (the Qliphoth of Netzach) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 24,
+        "correspondingPath": "qabalah.path.24",
+        "fromQliphoth": "qabalah.qliphoth.thagirion",
+        "toQliphoth": "qabalah.qliphoth.harab-serapel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.saksaksalim",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Saksaksalim",
+      "description": "The Tunnel of Set corresponding to Path 25 (Samekh, Temperance), connecting Thagirion (the Qliphoth of Tiphareth) to Gamaliel (the Qliphoth of Yesod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 25,
+        "correspondingPath": "qabalah.path.25",
+        "fromQliphoth": "qabalah.qliphoth.thagirion",
+        "toQliphoth": "qabalah.qliphoth.gamaliel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.aanonin",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "A'ano'nin",
+      "description": "The Tunnel of Set corresponding to Path 26 (Ayin, The Devil), connecting Thagirion (the Qliphoth of Tiphareth) to Samael (the Qliphoth of Hod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 26,
+        "correspondingPath": "qabalah.path.26",
+        "fromQliphoth": "qabalah.qliphoth.thagirion",
+        "toQliphoth": "qabalah.qliphoth.samael"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.parfaxitas",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Parfaxitas",
+      "description": "The Tunnel of Set corresponding to Path 27 (Peh, The Tower), connecting Harab Serapel (the Qliphoth of Netzach) to Samael (the Qliphoth of Hod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 27,
+        "correspondingPath": "qabalah.path.27",
+        "fromQliphoth": "qabalah.qliphoth.harab-serapel",
+        "toQliphoth": "qabalah.qliphoth.samael"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.tzuflifu",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Tzuflifu",
+      "description": "The Tunnel of Set corresponding to Path 28 (Tzaddi, The Star), connecting Harab Serapel (the Qliphoth of Netzach) to Gamaliel (the Qliphoth of Yesod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 28,
+        "correspondingPath": "qabalah.path.28",
+        "fromQliphoth": "qabalah.qliphoth.harab-serapel",
+        "toQliphoth": "qabalah.qliphoth.gamaliel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.qulielfi",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Qulielfi",
+      "description": "The Tunnel of Set corresponding to Path 29 (Qoph, The Moon), connecting Harab Serapel (the Qliphoth of Netzach) to Nahemoth (the Qliphoth of Malkuth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 29,
+        "correspondingPath": "qabalah.path.29",
+        "fromQliphoth": "qabalah.qliphoth.harab-serapel",
+        "toQliphoth": "qabalah.qliphoth.nahemoth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.raflifu",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Raflifu",
+      "description": "The Tunnel of Set corresponding to Path 30 (Resh, The Sun), connecting Samael (the Qliphoth of Hod) to Gamaliel (the Qliphoth of Yesod) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 30,
+        "correspondingPath": "qabalah.path.30",
+        "fromQliphoth": "qabalah.qliphoth.samael",
+        "toQliphoth": "qabalah.qliphoth.gamaliel"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.shalicu",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Shalicu",
+      "description": "The Tunnel of Set corresponding to Path 31 (Shin, Judgement), connecting Samael (the Qliphoth of Hod) to Nahemoth (the Qliphoth of Malkuth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 31,
+        "correspondingPath": "qabalah.path.31",
+        "fromQliphoth": "qabalah.qliphoth.samael",
+        "toQliphoth": "qabalah.qliphoth.nahemoth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.tunnel-of-set.thantifaxath",
+      "entityType": "qabalah.tunnel-of-set",
+      "primaryDisplayName": "Thantifaxath",
+      "description": "The Tunnel of Set corresponding to Path 32 (Tav, The World), connecting Gamaliel (the Qliphoth of Yesod) to Nahemoth (the Qliphoth of Malkuth) on the Nightside of the Tree, as described in Kenneth Grant's Nightside of Eden (1977).",
+      "secondaryNames": [],
+      "tags": ["qabalah", "tunnel-of-set", "qliphoth", "nightside"],
+      "extendedData": {
+        "pathNumber": 32,
+        "correspondingPath": "qabalah.path.32",
+        "fromQliphoth": "qabalah.qliphoth.gamaliel",
+        "toQliphoth": "qabalah.qliphoth.nahemoth"
+      }
+    }
+  ]
+}

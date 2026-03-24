@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.modern-astrology",
+    "displayName": "Modern Astrology",
+    "description": "The modern Western astrological tradition incorporating the three outer planets discovered since 1781: Uranus (discovered 1781, modern ruler of Aquarius), Neptune (1846, modern ruler of Pisces), and Pluto (1930, modern ruler of Scorpio). When active, modern rulerships and associated dignities appear alongside or in place of the classical seven-planet attributions. The outer planets are transpersonal in nature and operate generationally, supplementing rather than replacing the classical system.",
+    "attributionFields": [
+      {
+        "linkLabel": "modern-ruler",
+        "targetEntityType": "astrology.planet",
+        "displayName": "Modern Ruler"
+      }
+    ]
+  }
+}

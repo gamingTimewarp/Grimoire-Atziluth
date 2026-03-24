@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090900"/>
+      <stop offset="100%" stop-color="#161600"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#776600" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#999900" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- ACE header -->
+  <text x="150" y="46"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="13" fill="#776633" letter-spacing="4" opacity="0.8">ACE · SWORDS</text>
+
+  <!-- Large central pip -->
+  <polygon points="150,136.75 92.5,234.5 207.5,234.5" fill="none" stroke="#999900" stroke-width="6.9" opacity="0.8"/>
+<line x1="115.5" y1="202.3" x2="184.5" y2="202.3"
+      stroke="#999900" stroke-width="6.9" opacity="0.8"/>
+  <g filter="url(#glow)"><g>
+  <polygon points="150,128.7 156.98,187.6 150,193.8 143.03,187.6"
+           fill="#ccbb00"/>
+  <rect x="146.09" y="192.25" width="7.81" height="49.6"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="113.96" y="186.05" width="72.07" height="10.85"
+        rx="4.65" fill="#ccbb00"/>
+  <rect x="144.42" y="238.75" width="11.16" height="20.15"
+        rx="9.3" fill="#ccbb00" opacity="0.6"/>
+</g></g>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#ffee88" letter-spacing="2"
+        filter="url(#glow)">Ace of Swords</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#776633" letter-spacing="3"
+        opacity="0.8">Root of the Powers of Air</text>
+</svg>

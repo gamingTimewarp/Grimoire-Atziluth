@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "chakra.classical.muladhara",
+      "entityType": "chakra",
+      "primaryDisplayName": "Muladhara",
+      "description": "The Root Chakra (मूलाधार), located at the base of the spine at the perineum. Muladhara means 'root support' (mula = root; adhara = support). It is the first and most fundamental of the seven chakras, governing physical survival, security, groundedness, and the will to live. Its element is Earth; its colour red; its seed mantra LAM. The deity associated with Muladhara is Ganesha (the remover of obstacles) and Brahma (the creator). The associated goddess is Dakini. In Tantric tradition the sleeping Kundalini Shakti resides coiled here, awaiting awakening. Muladhara corresponds to the developmental stage of infancy and the establishment of basic physical security. Its four-petalled lotus corresponds to the four directions of earthly space.",
+      "secondaryNames": [
+        {
+          "name": "Root Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "मूलाधार",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Base Chakra",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "earth"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "location": "Base of spine, perineum",
+        "colour": "red",
+        "element": "astrology.element.earth",
+        "seedMantra": "LAM",
+        "petals": 4,
+        "deity": "Ganesha / Brahma",
+        "goddess": "Dakini",
+        "planetaryCorrespondence": "astrology.planet.saturn",
+        "sephiraCorrespondence": "qabalah.sephira.malkuth",
+        "psychologicalFunction": "Survival, security, groundedness, tribal belonging",
+        "developmentalStage": "Infancy (0–18 months)"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.svadhisthana",
+      "entityType": "chakra",
+      "primaryDisplayName": "Svadhisthana",
+      "description": "The Sacral Chakra (स्वाधिष्ठान), located in the lower abdomen, approximately 3 cm below the navel. Svadhisthana means 'one's own dwelling' or 'sweetness' (sva = self; adhishthana = dwelling). It governs creativity, sexuality, sensory pleasure, emotional fluidity, and the principle of desire and attraction. Its element is Water; its colour orange; its seed mantra VAM. The deity is Vishnu (preserver and lover); the goddess is Rakini. The six-petalled lotus of Svadhisthana corresponds to the six directions of three-dimensional space plus the central axis. This chakra governs the developmental stage of early childhood when the child discovers pleasure, play, and the world of sensation beyond bare survival.",
+      "secondaryNames": [
+        {
+          "name": "Sacral Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "स्वाधिष्ठान",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Spleen Chakra",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "water"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "location": "Lower abdomen, 3 cm below navel",
+        "colour": "orange",
+        "element": "astrology.element.water",
+        "seedMantra": "VAM",
+        "petals": 6,
+        "deity": "Vishnu",
+        "goddess": "Rakini",
+        "planetaryCorrespondence": "astrology.planet.luna",
+        "sephiraCorrespondence": "qabalah.sephira.yesod",
+        "psychologicalFunction": "Creativity, sexuality, pleasure, desire, emotional fluidity",
+        "developmentalStage": "Early childhood (18 months – 3 years)"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.manipura",
+      "entityType": "chakra",
+      "primaryDisplayName": "Manipura",
+      "description": "The Solar Plexus Chakra (मणिपूर), located at the navel centre (solar plexus). Manipura means 'jewel city' or 'lustrous gem' (mani = gem; pura = city). It governs personal power, will, self-esteem, transformation, metabolism, and the capacity to act in the world with confidence. Its element is Fire; its colour yellow; its seed mantra RAM. The deity is Rudra/Shiva (the destroyer-transformer); the goddess is Lakini. The ten-petalled lotus of Manipura corresponds to the ten life-forces (pranas). This chakra governs the developmental stage of childhood (3–7 years) when the child establishes autonomy, will, and the sense of personal power.",
+      "secondaryNames": [
+        {
+          "name": "Solar Plexus Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "मणिपूर",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Navel Chakra",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "fire"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "location": "Navel centre, solar plexus",
+        "colour": "yellow",
+        "element": "astrology.element.fire",
+        "seedMantra": "RAM",
+        "petals": 10,
+        "deity": "Rudra",
+        "goddess": "Lakini",
+        "planetaryCorrespondence": "astrology.planet.sol",
+        "sephiraCorrespondence": "qabalah.sephira.hod",
+        "psychologicalFunction": "Will, self-esteem, personal power, transformation, autonomy",
+        "developmentalStage": "Childhood (3–7 years)"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.anahata",
+      "entityType": "chakra",
+      "primaryDisplayName": "Anahata",
+      "description": "The Heart Chakra (अनाहत), located at the heart centre in the middle of the chest. Anahata means 'unstruck sound' — the primordial cosmic sound that precedes and underlies all created sound, heard only in the deep silence of meditation. It governs love (both personal and universal), compassion, empathy, forgiveness, and the capacity for relationship. Its element is Air; its colour green (sometimes pink); its seed mantra YAM. The deity is Isha (the lord of compassion); the goddess is Kakini. The twelve-petalled lotus of Anahata marks the transition point between the lower (body-centred) and upper (spirit-centred) chakras. The Anahata is the chamber of the divine spark (Jivatman).",
+      "secondaryNames": [
+        {
+          "name": "Heart Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "अनाहत",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "air"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "location": "Heart centre, middle of chest",
+        "colour": "green",
+        "element": "astrology.element.air",
+        "seedMantra": "YAM",
+        "petals": 12,
+        "deity": "Isha",
+        "goddess": "Kakini",
+        "planetaryCorrespondence": "astrology.planet.venus",
+        "sephiraCorrespondence": "qabalah.sephira.tiphareth",
+        "psychologicalFunction": "Love, compassion, forgiveness, empathy, relationship",
+        "developmentalStage": "Adolescence and young adulthood"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.vishuddha",
+      "entityType": "chakra",
+      "primaryDisplayName": "Vishuddha",
+      "description": "The Throat Chakra (विशुद्ध), located at the throat. Vishuddha means 'especially pure' or 'purification' (vi = especially; shuddha = pure). It governs communication, self-expression, truth-telling, creativity expressed through sound and language, and the power of the spoken word. Its element is Ether (Akasha) or Sound; its colour blue; its seed mantra HAM. The deity is Sadashiva (the eternal Shiva); the goddess is Shakini. The sixteen-petalled lotus of Vishuddha corresponds to the sixteen Sanskrit vowels. This chakra governs the mature adult's capacity to express their inner truth clearly and to hear the truth in others.",
+      "secondaryNames": [
+        {
+          "name": "Throat Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "विशुद्ध",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "ether"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "location": "Throat",
+        "colour": "blue",
+        "element": "vedic.mahabhuta.akasha",
+        "seedMantra": "HAM",
+        "petals": 16,
+        "deity": "Sadashiva",
+        "goddess": "Shakini",
+        "planetaryCorrespondence": "astrology.planet.mercury",
+        "sephiraCorrespondence": "qabalah.sephira.chesed",
+        "psychologicalFunction": "Communication, self-expression, truth, creativity, sound",
+        "developmentalStage": "Mature adulthood and creative expression"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.ajna",
+      "entityType": "chakra",
+      "primaryDisplayName": "Ajna",
+      "description": "The Third Eye Chakra (आज्ञा), located at the brow between and slightly above the physical eyes. Ajna means 'command' or 'perception beyond ordinary sight' — the centre through which the guru's commands are received and through which one perceives the subtle dimensions of reality. It governs intuition, clairvoyance, inner vision, imagination, and the capacity to perceive beyond the five senses. Its element is Light (or Mind); its colour indigo; its seed mantra OM (or KSHAM). The deity is Ardhanarishvara (Shiva-Shakti unified); the goddess is Hakini. The two-petalled lotus of Ajna represents the union of solar (Ida) and lunar (Pingala) nadis at the brow.",
+      "secondaryNames": [
+        {
+          "name": "Third Eye Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "आज्ञा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Brow Chakra",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "light"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "location": "Brow, between and above the eyes",
+        "colour": "indigo",
+        "element": "light",
+        "seedMantra": "OM",
+        "petals": 2,
+        "deity": "Ardhanarishvara",
+        "goddess": "Hakini",
+        "planetaryCorrespondence": "astrology.planet.luna",
+        "sephiraCorrespondence": "qabalah.sephira.chokmah",
+        "psychologicalFunction": "Intuition, inner vision, clairvoyance, imagination, insight",
+        "developmentalStage": "Advanced spiritual development"
+      }
+    },
+    {
+      "canonicalName": "chakra.classical.sahasrara",
+      "entityType": "chakra",
+      "primaryDisplayName": "Sahasrara",
+      "description": "The Crown Chakra (सहस्रार), located at the crown of the head, slightly above it. Sahasrara means 'thousand-petalled' — its lotus has 1000 petals, representing the infinite facets of enlightened consciousness. It governs transcendence, cosmic consciousness, union with the divine, pure awareness beyond all form, and the final liberation (moksha). Its element is Consciousness (beyond the elements); its colour violet or pure white; it is beyond the seed mantra system (sometimes assigned AUM or silence). The Crown Chakra is the dwelling place of Shiva-Bindu, the highest point of the divine spark; it is activated when the Kundalini Shakti, having risen through all the chakras, unites with Shiva at the crown — the moment of enlightenment.",
+      "secondaryNames": [
+        {
+          "name": "Crown Chakra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "सहस्रार",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Thousand-Petalled Lotus",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chakra",
+        "classical",
+        "consciousness"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "location": "Crown of the head",
+        "colour": "violet",
+        "element": "consciousness",
+        "seedMantra": "AUM",
+        "petals": 1000,
+        "deity": "Shiva-Bindu",
+        "goddess": "Ama-Kala",
+        "planetaryCorrespondence": "astrology.planet.sol",
+        "sephiraCorrespondence": "qabalah.sephira.kether",
+        "psychologicalFunction": "Transcendence, cosmic consciousness, unity, liberation (moksha)",
+        "developmentalStage": "Enlightenment and spiritual liberation"
+      }
+    }
+  ]
+}

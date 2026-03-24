@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.goetic-tarot",
+    "displayName": "Goetic-Tarot (Reconstructed)",
+    "description": "Partial and reconstructed correspondences between the 72 Goetia demons and tarot cards, based on various modern occult sources. Marked as unofficial — sources are cited per link. Not a historical tradition; a modern synthesis used for ritual and contemplative work. Treat attributions as exploratory rather than canonical.",
+    "attributionFields": [
+      { "linkLabel": "attributed-demon", "displayName": "Goetic Demon", "targetEntityType": "goetia.demon", "allowMultiple": true, "sortOrder": 0 },
+      { "linkLabel": "attributed-planet", "displayName": "Planetary Sphere", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

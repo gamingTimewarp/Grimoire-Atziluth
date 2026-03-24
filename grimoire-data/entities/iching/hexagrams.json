@@ -1,0 +1,1737 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "iching.hexagram.1",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Qian — The Creative",
+      "description": "Hexagram 1: Qian (☰ above ☰). Six unbroken yang lines — pure yang, the dragon, Heaven. The Creative represents the primal driving force of the cosmos, pure potential actively manifesting, the principle of initiative and strength. The judgment: 'The Creative works sublime success, furthering through perseverance.' The image: Heaven above heaven — the movement of heaven is powerful. The superior person makes himself strong and untiring. The dragon is the symbol: when hidden in the depths, wait; when visible, act; when leaping, experiment; when flying, act fully; when arrogant, there will be occasion for repentance.",
+      "secondaryNames": [
+        {
+          "name": "乾",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram",
+        "yang"
+      ],
+      "extendedData": {
+        "number": 1,
+        "chineseName": "乾",
+        "pinyin": "Qiān",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.heaven",
+        "element": "wuxing.phase.metal",
+        "judgment": "Sublime success, furthering through perseverance",
+        "image": "Heaven above heaven; the superior person makes himself strong and untiring"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.2",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Kun — The Receptive",
+      "description": "Hexagram 2: Kun (☷ above ☷). Six broken yin lines — pure yin, the mare, Earth. The Receptive is the complement of The Creative: where Qian initiates, Kun completes; where Qian leads, Kun follows and supports. The judgment: 'The Receptive brings about sublime success through the perseverance of a mare.' The mare is chosen because it moves over the earth; the yielding, devoted one who finds direction not by leading but by following. Earth supports and nourishes all things without competing.",
+      "secondaryNames": [
+        {
+          "name": "坤",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram",
+        "yin"
+      ],
+      "extendedData": {
+        "number": 2,
+        "chineseName": "坤",
+        "pinyin": "Kūn",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.earth",
+        "element": "wuxing.phase.earth",
+        "judgment": "Sublime success through perseverance of a mare; southwest favourable",
+        "image": "Earth above earth; the superior person carries the outer world with breadth of character"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.3",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Zhun — Difficulty at the Beginning",
+      "description": "Hexagram 3: Zhun (☵ above ☳). Water over Thunder. The image of a blade of grass pushing through the earth — all the potential of the seed meeting the resistance of the soil. Difficulty at the beginning does not mean failure; it means that the new thing is struggling to be born through the chaos that precedes order. The judgment advises: do not act rashly; seek helpers; persist in small steps.",
+      "secondaryNames": [
+        {
+          "name": "屯",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 3,
+        "chineseName": "屯",
+        "pinyin": "Zhūn",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Difficulty at the beginning. It furthers one to appoint helpers",
+        "image": "Clouds and thunder; the superior person brings order out of confusion"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.4",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Meng — Youthful Folly",
+      "description": "Hexagram 4: Meng (☶ above ☵). Mountain over Water. The spring emerging at the foot of the mountain — the source, the beginning of knowledge. Youthful Folly represents the student who comes to the teacher, not the teacher going to the student. It furthers the teacher to wait for the student's sincere readiness. The hexagram addresses the proper relationship between teacher and student, and the nature of education as awakening innate knowledge.",
+      "secondaryNames": [
+        {
+          "name": "蒙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 4,
+        "chineseName": "蒙",
+        "pinyin": "Méng",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Youthful folly has success. The youth seeks me; I do not seek the youth",
+        "image": "A spring welling up at the foot of the mountain; the superior person nourishes character through resolute action"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.5",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Xu — Waiting (Nourishment)",
+      "description": "Hexagram 5: Xu (☵ above ☰). Water over Heaven. Clouds in heaven — rain is coming but has not yet fallen. Waiting with confidence, not with anxiety. The way of the strong person who waits patiently for the right moment rather than forcing premature action. Eating and drinking with serenity, the superior person knows that what is needed will come in due time.",
+      "secondaryNames": [
+        {
+          "name": "需",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 5,
+        "chineseName": "需",
+        "pinyin": "Xū",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "If you are sincere, you have light and success. Perseverance brings good fortune",
+        "image": "Clouds rising up to heaven; the superior person eats and drinks and is joyful and of good cheer"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.6",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Song — Conflict",
+      "description": "Hexagram 6: Song (☰ above ☵). Heaven over Water. Heaven and water moving in opposite directions — the principle of conflict. Song does not recommend conflict but provides guidance for those caught in it. Sincerity is obstructed; the start may be good but the end bad. See the great man; cross not the great water. The superior person considers the beginning before acting.",
+      "secondaryNames": [
+        {
+          "name": "訟",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 6,
+        "chineseName": "訟",
+        "pinyin": "Sòng",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Conflict: you are sincere and are being obstructed; a cautious halt halfway brings good fortune",
+        "image": "Heaven and water moving in opposite directions"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.7",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Shi — The Army",
+      "description": "Hexagram 7: Shi (☷ above ☵). Earth over Water. Hidden water under the earth — the image of an army in reserve, discipline maintained beneath a calm surface. The Army hexagram addresses leadership, the proper use of collective force, and the organisation of people toward a common goal. The army needs a strong, experienced leader. Justice and legitimacy of cause are essential.",
+      "secondaryNames": [
+        {
+          "name": "師",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 7,
+        "chineseName": "師",
+        "pinyin": "Shī",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "The army needs perseverance and a strong man. Good fortune without blame",
+        "image": "In the middle of the earth is water; the superior person increases his masses through generosity toward the people"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.8",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Bi — Holding Together (Union)",
+      "description": "Hexagram 8: Bi (☵ above ☷). Water over Earth. Water on the earth flows together — the principle of union, of water finding its level. Holding Together requires a central person of quality around whom others gather. Examine whether you are in the right place; those who hesitate lose the moment of joining.",
+      "secondaryNames": [
+        {
+          "name": "比",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 8,
+        "chineseName": "比",
+        "pinyin": "Bǐ",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Holding together brings good fortune. Inquire of the oracle once more whether you possess sublimity, constancy, and perseverance",
+        "image": "Water over the earth; the ancient kings encouraged the feudal lords and maintained close relationships with them"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.9",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Xiao Xu — Small Taming (The Taming Power of the Small)",
+      "description": "Hexagram 9: Xiao Xu (☴ above ☰). Wind over Heaven. The wind drives the clouds but the rain has not come yet — small forces can restrain great ones temporarily. The Taming Power of the Small represents gentle restraint, the accumulation of small virtues, and the quiet persistence that achieves what force cannot. A dense overcast from the west: the rain is withheld but will come.",
+      "secondaryNames": [
+        {
+          "name": "小畜",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 9,
+        "chineseName": "小畜",
+        "pinyin": "Xiǎo Xù",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "Small Taming: success. Dense clouds but no rain from our western garden",
+        "image": "Wind travels over heaven; the superior person refines the outward aspect of his character"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.10",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Lü — Treading (Conduct)",
+      "description": "Hexagram 10: Lü (☰ above ☱). Heaven over Lake. Treading on the tiger's tail — dangerous conduct that nevertheless succeeds through good manners and appropriate behaviour. Conduct is the foundation of character. The hexagram addresses the proper way of moving through a situation of unequal power, approaching the strong with correctness and sincerity.",
+      "secondaryNames": [
+        {
+          "name": "履",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 10,
+        "chineseName": "履",
+        "pinyin": "Lǚ",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Treading upon the tail of the tiger. It does not bite the man; success",
+        "image": "Heaven above the lake; the superior person discriminates between high and low and strengthens the thinking of the people"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.11",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Tai — Peace",
+      "description": "Hexagram 11: Tai (☷ above ☰). Earth over Heaven. The small departs; the great approaches. Earth descends toward heaven; heaven ascends toward earth — their union creates peace. Tai is the hexagram of the great marriage of earth and heaven, of the flourishing that comes when yin and yang are in their most harmonious relationship. 'Heaven and earth unite; peace.'",
+      "secondaryNames": [
+        {
+          "name": "泰",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 11,
+        "chineseName": "泰",
+        "pinyin": "Tài",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "The small departs, the great approaches. Good fortune. Success",
+        "image": "Heaven and earth unite: peace; the ruler divides and completes the course of heaven and earth"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.12",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Pi — Standstill (Stagnation)",
+      "description": "Hexagram 12: Pi (☰ above ☷). Heaven over Earth. The great departs; the small approaches. Opposite of Tai: heaven retreats upward, earth retreats downward, and their connection is severed. Stagnation: the superior person withdraws into inner worth while the inferior rule. Do not seek to act; conserve inner strength for when the time turns.",
+      "secondaryNames": [
+        {
+          "name": "否",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 12,
+        "chineseName": "否",
+        "pinyin": "Pǐ",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Standstill: evil people do not further the perseverance of the superior person. The great departs; the small approaches",
+        "image": "Heaven and earth do not unite: standstill; the superior person retreats into his inner worth"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.13",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Tong Ren — Fellowship with Men",
+      "description": "Hexagram 13: Tong Ren (☰ above ☲). Heaven over Fire. Fire rises toward heaven — the image of fellowship, of people united by a common goal. Fellowship in the open plains (not merely within the clan) — the universalising principle that creates bonds beyond tribe. The superior person organises the clans and makes distinctions between things.",
+      "secondaryNames": [
+        {
+          "name": "同人",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 13,
+        "chineseName": "同人",
+        "pinyin": "Tóng Rén",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "Fellowship with men in the open. Success. It furthers to cross the great water",
+        "image": "Heaven together with fire: fellowship; the superior person organises the clans and makes distinctions"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.14",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Da You — Possession in Great Measure",
+      "description": "Hexagram 14: Da You (☲ above ☰). Fire over Heaven. Fire high in the sky illuminates everything — great possession, abundance, the flowering of all good things. The judgment: Supreme success. The image: Fire above heaven; the superior person curbs evil, furthers good, and obeys the benevolent will of heaven.",
+      "secondaryNames": [
+        {
+          "name": "大有",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 14,
+        "chineseName": "大有",
+        "pinyin": "Dà Yǒu",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "Possession in Great Measure: supreme success",
+        "image": "Fire above heaven: great possession; the superior person curbs evil and furthers good"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.15",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Qian — Modesty",
+      "description": "Hexagram 15: Qian (☷ above ☶). Earth over Mountain. The mountain beneath the earth — modesty brings the high down and raises the low. The one quality that is always good and always furthers. Heaven reduces the full and increases the modest; earth transforms the full and causes the modest to flow; men dislike the full and love the modest.",
+      "secondaryNames": [
+        {
+          "name": "謙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 15,
+        "chineseName": "謙",
+        "pinyin": "Qiān",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Modesty creates success. The superior person carries things through",
+        "image": "Within the earth a mountain: modesty; the superior person reduces that which is too much"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.16",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Yu — Enthusiasm",
+      "description": "Hexagram 16: Yu (☳ above ☷). Thunder over Earth. Thunder emerging from earth — the bursting of spring's new energy, the enthusiasm that moves people like music. Enthusiasm: it furthers to install helpers and set armies marching. The image: Thunder bursts forth from the earth; the ancient kings made music to honour merit and offered it with splendour to the supreme deity.",
+      "secondaryNames": [
+        {
+          "name": "豫",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 16,
+        "chineseName": "豫",
+        "pinyin": "Yù",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Enthusiasm furthers installing helpers and setting armies marching",
+        "image": "Thunder bursts forth from the earth; ancient kings made music to honour merit"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.17",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Sui — Following",
+      "description": "Hexagram 17: Sui (☱ above ☳). Lake over Thunder. Thunder resting within the lake — the seasonal rhythm of resting at the right time. Following: supreme success, perseverance without blame. The superior person in the evening rests in the dark, retiring for rest and sleep. Following is not mere submission but the wisdom of adapting to the time.",
+      "secondaryNames": [
+        {
+          "name": "隨",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 17,
+        "chineseName": "隨",
+        "pinyin": "Suí",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Following: supreme success, perseverance without blame",
+        "image": "Thunder in the middle of the lake: following; at nightfall the superior person goes indoors for rest"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.18",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Gu — Work on What Has Been Spoiled (Decay)",
+      "description": "Hexagram 18: Gu (☶ above ☴). Mountain over Wind. Wind below the mountain — the wind cannot move freely, things stagnate and decay. Gu represents the need to address inherited problems and restore what has been damaged through neglect or corruption. Three days before the beginning, three days after the beginning. Correcting decay requires careful timing and sustained effort.",
+      "secondaryNames": [
+        {
+          "name": "蠱",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 18,
+        "chineseName": "蠱",
+        "pinyin": "Gǔ",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "Work on what has been spoiled has supreme success. Three days before, three days after the beginning",
+        "image": "Wind below the mountain: decay; the superior person stirs up the people and strengthens their spirit"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.19",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Lin — Approach",
+      "description": "Hexagram 19: Lin (☷ above ☱). Earth over Lake. The lake beneath the earth — the time when the great approaches from above, when yang energy is growing. Approach: supreme success through perseverance. When the eighth month comes, there will be misfortune. The time of growth and approach is followed inevitably by withdrawal — enjoy the approach while it lasts.",
+      "secondaryNames": [
+        {
+          "name": "臨",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 19,
+        "chineseName": "臨",
+        "pinyin": "Lín",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Approach: supreme success. Perseverance furthers. At the eighth month there will be misfortune",
+        "image": "Earth above the lake: approach; the superior person is inexhaustible in his will to teach"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.20",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Guan — Contemplation (View)",
+      "description": "Hexagram 20: Guan (☴ above ☷). Wind over Earth. The wind moves over the earth, touching all things — contemplation from the watchtower, seeing and being seen. The ablution has been made but not the offering — the moment of reverent preparation for the sacred act. The superior person in contemplation sees how government flourishes in all the regions of the world.",
+      "secondaryNames": [
+        {
+          "name": "觀",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 20,
+        "chineseName": "觀",
+        "pinyin": "Guān",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "The ablution has been made, but not the offering. Full of trust they look up to him",
+        "image": "Wind moves over the earth: contemplation; the kings of old visited regions to observe the people"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.21",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Shi He — Biting Through",
+      "description": "Hexagram 21: Shi He (☲ above ☳). Fire over Thunder. Claps of lightning — the decisive action that bites through an obstacle. A mouth with something between the teeth — the obstacle must be bitten through for union to occur. Success through legal proceedings, through decisive judgement. The superior person applies the laws.",
+      "secondaryNames": [
+        {
+          "name": "噬嗑",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 21,
+        "chineseName": "噬嗑",
+        "pinyin": "Shì Kè",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Biting Through has success. It furthers to let justice be administered",
+        "image": "Thunder and lightning: biting through; the superior person applies the laws with clarity"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.22",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Bi — Grace",
+      "description": "Hexagram 22: Bi (☶ above ☲). Mountain over Fire. Fire at the foot of the mountain illuminates the mountainside — grace, beauty, adornment. Success in small things but not in great decisions. The superior person clarifies current affairs but does not presume to decide on difficult questions. Grace is the beauty that adorns but is not the substance itself.",
+      "secondaryNames": [
+        {
+          "name": "賁",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 22,
+        "chineseName": "賁",
+        "pinyin": "Bì",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "Grace has success. In small matters it is favourable to undertake something",
+        "image": "Fire at the foot of the mountain: grace; the superior person clarifies affairs but does not presume to judge great matters"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.23",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Bo — Splitting Apart",
+      "description": "Hexagram 23: Bo (☶ above ☷). Mountain over Earth. The mountain resting on the earth — but here the yin lines (five) have almost completely displaced the yang line (one at the top). The dark principle is in the ascendant; the forces of dissolution are splitting apart the structure. Do not act; simply endure. The cycle will turn.",
+      "secondaryNames": [
+        {
+          "name": "剝",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 23,
+        "chineseName": "剝",
+        "pinyin": "Bō",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Splitting apart: it does not further to go anywhere",
+        "image": "The mountain rests on the earth: splitting apart; those above can maintain their position only by giving generously to those below"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.24",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Fu — Return (The Turning Point)",
+      "description": "Hexagram 24: Fu (☷ above ☳). Earth over Thunder. Thunder within the earth at the winter solstice — the seed of yang energy stirring in the darkness. The return: after the darkest point, the light returns. One is not to blame for returning; after seven days comes the return. The way of heaven and earth — rest then return. The superior person closes the passes during the solstice.",
+      "secondaryNames": [
+        {
+          "name": "復",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 24,
+        "chineseName": "復",
+        "pinyin": "Fù",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Return: success. Going out and coming in without error. After seven days comes the return",
+        "image": "Thunder within the earth: return; the ancient kings closed passes at the winter solstice"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.25",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Wu Wang — Innocence (The Unexpected)",
+      "description": "Hexagram 25: Wu Wang (☰ above ☳). Heaven over Thunder. Thunder under heaven — the unexpected, the innocent, the natural spontaneity uncorrupted by calculation. Success: if someone is not as they should be, misfortune. Innocence here means alignment with the cosmic order, not naivety. Do not act on private calculations; let the natural unfold.",
+      "secondaryNames": [
+        {
+          "name": "無妄",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 25,
+        "chineseName": "無妄",
+        "pinyin": "Wú Wàng",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Innocence: supreme success. Perseverance brings good fortune. If someone is not as they should be, misfortune",
+        "image": "Under heaven, thunder moves: all things attain the natural state of innocence"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.26",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Da Xu — The Taming Power of the Great",
+      "description": "Hexagram 26: Da Xu (☶ above ☰). Mountain over Heaven. Heaven contained within the mountain — great force held in check, the accumulation of energy and virtue. Perseverance furthers. Not eating at home brings good fortune; it furthers to cross the great water. The wagon with a locked wheel-axle — powerful forces restrained and accumulated.",
+      "secondaryNames": [
+        {
+          "name": "大畜",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 26,
+        "chineseName": "大畜",
+        "pinyin": "Dà Xù",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "The Taming Power of the Great: perseverance furthers. Not eating at home brings good fortune",
+        "image": "Heaven within the mountain: taming power of the great; the superior person acquaints himself with the words and deeds of the past"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.27",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Yi — The Corners of the Mouth (Nourishment)",
+      "description": "Hexagram 27: Yi (☶ above ☳). Mountain over Thunder. The image of a wide-open mouth — the corners, the nourishment we take in and give out. Perseverance furthers. Pay heed to providing nourishment and to what a man seeks to fill his own mouth with. What do we nourish, and how? The question of what fills us and what we offer to others.",
+      "secondaryNames": [
+        {
+          "name": "頤",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 27,
+        "chineseName": "頤",
+        "pinyin": "Yí",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Nourishment: perseverance furthers. Pay heed to the providing of nourishment",
+        "image": "Thunder and mountain: nourishment; the superior person is careful of his words and temperate in eating and drinking"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.28",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Da Guo — Preponderance of the Great",
+      "description": "Hexagram 28: Da Guo (☱ above ☴). Lake over Wind/Wood. The ridgepole is sagging — a great beam has been overloaded, bending toward breaking point. Preponderance of the great: the ridgepole sags to the breaking point. Action is necessary: it furthers to have somewhere to go. The tree under the lake — the great is overloaded and isolated.",
+      "secondaryNames": [
+        {
+          "name": "大過",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 28,
+        "chineseName": "大過",
+        "pinyin": "Dà Guò",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "Preponderance of the great: the ridgepole sags to the breaking point. It furthers to have somewhere to go",
+        "image": "The lake rises above the trees: preponderance of the great; the superior person stands alone without fear"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.29",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Kan — The Abysmal (Water)",
+      "description": "Hexagram 29: Kan (☵ above ☵). Water above Water. The doubled abyss — water flowing through gorges, ever downward, never accumulating in dangerous places, filling all hollows and moving on. The Abysmal: if you are sincere, you have success in your heart and whatever you do succeeds. Moving in the dangerous places: it furthers to teach, to act in the danger and so master it.",
+      "secondaryNames": [
+        {
+          "name": "坎",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 29,
+        "chineseName": "坎",
+        "pinyin": "Kǎn",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "The Abysmal: if you are sincere, you have success in your heart. Action brings supreme good fortune",
+        "image": "Water flows on uninterruptedly and reaches its goal; the superior person walks in lasting virtue and carries on affairs"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.30",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Li — The Clinging (Fire)",
+      "description": "Hexagram 30: Li (☲ above ☲). Fire above Fire. Fire clings to the object it burns — the principle of dependence, of relationship as the source of brilliance. Perseverance furthers; this brings success. Care of the cow brings good fortune. The great man continues to illumine the four quarters of the world. Fire must cling to fuel; the illuminated person clings to what is right.",
+      "secondaryNames": [
+        {
+          "name": "離",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 30,
+        "chineseName": "離",
+        "pinyin": "Lí",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "The Clinging: perseverance furthers. It brings success. Care of the cow brings good fortune",
+        "image": "That which is bright rises twice: fire; the great man continues the illumination of the four quarters"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.31",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Xian — Influence (Wooing)",
+      "description": "Hexagram 31: Xian (☱ above ☶). Lake over Mountain. The lake on the mountain — mutual attraction, the influence of one thing on another. Xian means 'to influence' and represents the natural law of mutual attraction. Success, perseverance furthers; to marry a maiden brings good fortune. The image: a mountain with a lake above — the superior person encourages people to approach him by his readiness to receive them.",
+      "secondaryNames": [
+        {
+          "name": "咸",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 31,
+        "chineseName": "咸",
+        "pinyin": "Xián",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Influence: success. Perseverance furthers. To marry a maiden brings good fortune",
+        "image": "A lake on the mountain: influence; the superior person encourages people by his readiness to receive them"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.32",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Heng — Duration",
+      "description": "Hexagram 32: Heng (☳ above ☴). Thunder over Wind. Thunder and wind reinforcing each other — the principle of duration, of lasting through steadiness. Success without blame. Perseverance furthers; it furthers to have somewhere to go. Duration is not sameness but continuous renewal — the sun and moon endure by continuously moving.",
+      "secondaryNames": [
+        {
+          "name": "恆",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 32,
+        "chineseName": "恆",
+        "pinyin": "Héng",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "Duration: success. No blame. Perseverance furthers. It furthers to have somewhere to go",
+        "image": "Thunder and wind: duration; the superior person stands firm and does not change his direction"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.33",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Dun — Retreat",
+      "description": "Hexagram 33: Dun (☰ above ☶). Heaven over Mountain. The mountain under heaven — heaven retreating before the mountain. Success through strategic retreat: the superior person keeps the inferior at a distance not by anger but by dignity. Retreating in time is success, not failure.",
+      "secondaryNames": [
+        {
+          "name": "遯",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 33,
+        "chineseName": "遯",
+        "pinyin": "Dùn",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Retreat: success. In what is small, perseverance furthers",
+        "image": "Mountain under heaven: retreat; the superior person keeps the inferior man at a distance"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.34",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Da Zhuang — The Power of the Great",
+      "description": "Hexagram 34: Da Zhuang (☳ above ☰). Thunder over Heaven. Thunder above heaven — the power of the great, yang energy at its height. Perseverance furthers. But power must be used rightly: the image of a ram butting against a fence — strength without wisdom breaks itself. The superior person does nothing that is not in keeping with dignity.",
+      "secondaryNames": [
+        {
+          "name": "大壯",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 34,
+        "chineseName": "大壯",
+        "pinyin": "Dà Zhuàng",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "The Power of the Great: perseverance furthers",
+        "image": "Thunder above heaven: great power; the superior person does nothing that is not in keeping with dignity"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.35",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jin — Progress",
+      "description": "Hexagram 35: Jin (☲ above ☷). Fire over Earth. The sun rising above the earth — progress, advance, the flowering that comes when the brightness of the sun shows itself. The powerful prince is honoured with horses; in a single day he is granted audience three times. Progress comes when the right conditions align.",
+      "secondaryNames": [
+        {
+          "name": "晉",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 35,
+        "chineseName": "晉",
+        "pinyin": "Jìn",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Progress: the powerful prince is honoured with horses in large numbers; in a single day he is granted audience three times",
+        "image": "The sun rises over the earth: progress; the superior person brightens his bright virtue"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.36",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Ming Yi — Darkening of the Light",
+      "description": "Hexagram 36: Ming Yi (☷ above ☲). Earth over Fire. Fire below the earth — the brightness wounded, hidden. In adversity it furthers to be persevering. The time when the light has gone underground and must be nurtured in darkness. The superior person lives with the great mass and yet remains in inner withdrawal; he veils his light yet still shines.",
+      "secondaryNames": [
+        {
+          "name": "明夷",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 36,
+        "chineseName": "明夷",
+        "pinyin": "Míng Yí",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "Darkening of the light: in adversity it furthers to be persevering",
+        "image": "The light has sunk into the earth: darkening of the light; the superior person lives with the great mass while veiling his light"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.37",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jia Ren — The Family",
+      "description": "Hexagram 37: Jia Ren (☴ above ☲). Wind over Fire. Wind coming from fire — the family, the home as the foundation of the state. Perseverance of the woman furthers. Each member of the family in their proper role creates the harmony from which all social order proceeds.",
+      "secondaryNames": [
+        {
+          "name": "家人",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 37,
+        "chineseName": "家人",
+        "pinyin": "Jiā Rén",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "The Family: perseverance of the woman furthers",
+        "image": "Wind comes forth from fire: the family; the superior person has substance in his words and durability in his way of life"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.38",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Kui — Opposition",
+      "description": "Hexagram 38: Kui (☲ above ☱). Fire over Lake. Fire and water moving in opposite directions — opposition, estrangement. In small things good fortune. Even in opposition, partial agreement is possible. Two sisters live together but their wills diverge — opposition is part of the world's diversity. The superior person retains his individuality amid the crowd.",
+      "secondaryNames": [
+        {
+          "name": "睽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 38,
+        "chineseName": "睽",
+        "pinyin": "Kuí",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Opposition: in small things, good fortune",
+        "image": "Above, fire; below, the lake: opposition; the superior person retains his individuality"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.39",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jian — Obstruction",
+      "description": "Hexagram 39: Jian (☵ above ☶). Water over Mountain. Water on the mountain — the dangerous abyss before the steep mountain. Obstruction: the southwest furthers; the northeast does not. It furthers to see the great man. Perseverance brings good fortune. The image: water on the mountain — the superior person turns his attention to himself and molds his character.",
+      "secondaryNames": [
+        {
+          "name": "蹇",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 39,
+        "chineseName": "蹇",
+        "pinyin": "Jiǎn",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Obstruction: the southwest furthers, the northeast does not. It furthers to see the great man",
+        "image": "Water on the mountain: obstruction; the superior person turns his attention to himself"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.40",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jie — Deliverance",
+      "description": "Hexagram 40: Jie (☳ above ☵). Thunder over Water. Release of tension after danger — the thunder-rain that clears the air. Deliverance: the southwest furthers. If there is nothing more to be done, return to the ordinary. If there is still something to be done, then hasten to do it. Forgive errors, deal with guilt — then move forward unencumbered.",
+      "secondaryNames": [
+        {
+          "name": "解",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 40,
+        "chineseName": "解",
+        "pinyin": "Jiě",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Deliverance: the southwest furthers. If there is no longer anything where one has to go, return brings good fortune",
+        "image": "Thunder and rain set in: deliverance; the superior person pardons mistakes and forgives misdeeds"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.41",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Sun — Decrease",
+      "description": "Hexagram 41: Sun (☶ above ☱). Mountain over Lake. The lake below the mountain — what decreases below increases above. Decrease combined with sincerity brings about supreme good fortune without blame. Even if there is nothing to offer, a simple bowl of grain is acceptable as an offering. Decrease is not loss but redistribution.",
+      "secondaryNames": [
+        {
+          "name": "損",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 41,
+        "chineseName": "損",
+        "pinyin": "Sǔn",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Decrease combined with sincerity brings about supreme good fortune without blame",
+        "image": "At the foot of the mountain, the lake: decrease; the superior person controls his anger and restrains his instincts"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.42",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Yi — Increase",
+      "description": "Hexagram 42: Yi (☴ above ☳). Wind over Thunder. Wind and thunder reinforce each other — increase. It furthers to have somewhere to go; it furthers to cross the great water. When you see good, imitate it; when you have faults, rid yourself of them. Increase flows from the ruler to the people — when those above distribute below, increase flows.",
+      "secondaryNames": [
+        {
+          "name": "益",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 42,
+        "chineseName": "益",
+        "pinyin": "Yì",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Increase: it furthers to have somewhere to go; it furthers to cross the great water",
+        "image": "Wind and thunder: increase; the superior person, when he sees what is good, imitates it"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.43",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Guai — Breakthrough (Resoluteness)",
+      "description": "Hexagram 43: Guai (☱ above ☰). Lake over Heaven. Water risen to heaven — about to break through. Resoluteness: the matter must be proclaimed at the king's court with sincerity. Crying out brings danger. Tell it to one's own city. It does not further to resort to arms. It furthers to undertake something. The last yin must be expelled by the resoluteness of yang.",
+      "secondaryNames": [
+        {
+          "name": "夬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 43,
+        "chineseName": "夬",
+        "pinyin": "Guài",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.heaven",
+        "judgment": "Breakthrough: the matter must be resolutely made known at the court of the king. Crying out brings danger",
+        "image": "The lake has risen up to heaven: breakthrough; the superior person dispenses riches downward and refrains from resting on his virtue"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.44",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Gou — Coming to Meet",
+      "description": "Hexagram 44: Gou (☰ above ☴). Heaven over Wind. Wind under heaven — the encounter, the one yin meeting the five yang. The maiden is powerful — do not marry such a maiden. Gou represents the temptation that rises to meet those in power, the seductive influence that must be discerned and managed with care.",
+      "secondaryNames": [
+        {
+          "name": "姤",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 44,
+        "chineseName": "姤",
+        "pinyin": "Gòu",
+        "upperTrigram": "iching.trigram.heaven",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "Coming to meet: the maiden is powerful. One should not marry such a maiden",
+        "image": "Under heaven, wind: coming to meet; the prince acts on proclamations and makes them known to the four quarters of heaven"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.45",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Cui — Gathering Together (Massing)",
+      "description": "Hexagram 45: Cui (☱ above ☷). Lake over Earth. The lake above the earth — people gathering around a centre, like water accumulating in a low place. The king approaches his temple — success. It furthers to see the great man; this brings success. Perseverance furthers. Bring great offerings. Good fortune. It furthers to undertake something.",
+      "secondaryNames": [
+        {
+          "name": "萃",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 45,
+        "chineseName": "萃",
+        "pinyin": "Cuì",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.earth",
+        "judgment": "Gathering together: success. The king approaches his temple; it furthers to see the great man",
+        "image": "Over the earth, the lake: gathering together; the superior person renews his weapons to meet the unexpected"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.46",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Sheng — Pushing Upward",
+      "description": "Hexagram 46: Sheng (☷ above ☴). Earth over Wind/Wood. Wood growing within the earth — the patient, irresistible upward push of a tree growing. Pushing Upward: supreme success. See the great man; have no fear. Departure toward the south brings good fortune. The image: wood grows up within the earth — the superior person accumulates small things into something high and great.",
+      "secondaryNames": [
+        {
+          "name": "升",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 46,
+        "chineseName": "升",
+        "pinyin": "Shēng",
+        "upperTrigram": "iching.trigram.earth",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "Pushing upward: supreme success. See the great man; have no fear. Departure toward the south brings good fortune",
+        "image": "Within the earth, wood grows: pushing upward; the superior person accumulates small things to achieve the high and great"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.47",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Kun — Oppression (Exhaustion)",
+      "description": "Hexagram 47: Kun (☱ above ☵). Lake over Water. The lake above the water — water draining away, exhausting the lake. Oppression: success. Perseverance. The great man brings about good fortune. No blame. When one has something to say, it is not believed. Words are not believed in times of exhaustion — only actions count. Endure.",
+      "secondaryNames": [
+        {
+          "name": "困",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 47,
+        "chineseName": "困",
+        "pinyin": "Kùn",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Oppression: success. Perseverance. The great man brings about good fortune. No blame. When one has something to say, it is not believed",
+        "image": "There is no water in the lake: oppression; the superior person stakes his life on following his will"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.48",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jing — The Well",
+      "description": "Hexagram 48: Jing (☵ above ☴). Water over Wind/Wood. The wooden bucket descending into the water — the well. The town may be changed but the well cannot be changed. If one draws water without the rope reaching, bad fortune. The image: wood below water — the well; the superior person encourages people at their work and exhorts them to help one another.",
+      "secondaryNames": [
+        {
+          "name": "井",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 48,
+        "chineseName": "井",
+        "pinyin": "Jǐng",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "The well: the town may be changed but the well cannot. Good fortune if one draws water without muddying the well",
+        "image": "Wood above water: the well; the superior person encourages the people at their work"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.49",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Ge — Revolution (Molting)",
+      "description": "Hexagram 49: Ge (☱ above ☲). Lake over Fire. Fire below the lake — the two primal opposites in direct opposition. Revolution: on your own day you are believed. Supreme success, furthering through perseverance. Remorse disappears. The image: fire in the lake — revolution; the superior person sets the calendar in order and makes the seasons clear.",
+      "secondaryNames": [
+        {
+          "name": "革",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 49,
+        "chineseName": "革",
+        "pinyin": "Gé",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "Revolution: on your own day you are believed. Supreme success, furthering through perseverance. Remorse disappears",
+        "image": "Fire in the lake: revolution; the superior person sets the calendar in order and makes clear the seasons"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.50",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Ding — The Cauldron",
+      "description": "Hexagram 50: Ding (☲ above ☴). Fire over Wind/Wood. Wood feeds the fire — the sacred bronze cauldron of the ancient Chinese ritual, the vessel that transforms raw ingredients into nourishment for the divine. Supreme good fortune. Success. The image: fire over wood — the cauldron; the superior person consolidates his fate by making his position correct.",
+      "secondaryNames": [
+        {
+          "name": "鼎",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 50,
+        "chineseName": "鼎",
+        "pinyin": "Dǐng",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "The Cauldron: supreme good fortune. Success",
+        "image": "Fire over wood: the cauldron; the superior person consolidates his fate by making his position correct"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.51",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Zhen — The Arousing (Shock, Thunder)",
+      "description": "Hexagram 51: Zhen (☳ above ☳). Thunder above Thunder. The doubled thunder — the shock of the divine that awakens. Shock brings success. Shock comes — oh! oh! Laughing words — ha! ha! The shock terrifies for a hundred miles and he does not let fall the sacrificial spoon and chalice. The superior is not moved from his own purpose by the shock.",
+      "secondaryNames": [
+        {
+          "name": "震",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 51,
+        "chineseName": "震",
+        "pinyin": "Zhèn",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.thunder",
+        "judgment": "Shock: success. Shock comes — oh, oh! Then laughing words — ha, ha! The shock terrifies for a hundred miles",
+        "image": "Thunder repeated: shock; in fear and trembling the superior person sets his life in order and examines himself"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.52",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Gen — Keeping Still (Mountain)",
+      "description": "Hexagram 52: Gen (☶ above ☶). Mountain above Mountain. Stillness. Keeping his back still so that he no longer feels his body. He goes into his courtyard and does not see his people. No blame. The image of the mountain: highest rest, the still point at which all transformation becomes possible. Meditation, the stilling of the will.",
+      "secondaryNames": [
+        {
+          "name": "艮",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 52,
+        "chineseName": "艮",
+        "pinyin": "Gèn",
+        "upperTrigram": "iching.trigram.mountain",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Keeping still: keeping his back still so that he no longer feels his body. No blame",
+        "image": "Mountains standing close together: keeping still; the superior person does not permit his thoughts to go beyond his situation"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.53",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jian — Development (Gradual Progress)",
+      "description": "Hexagram 53: Jian (☴ above ☶). Wind over Mountain. A tree growing slowly on a mountain — gradual development, the step-by-step unfolding of the natural order. Gradual progress: the maiden is given in marriage. Good fortune. Perseverance furthers. The wild goose gradually progresses toward the shore — the image of patient, step-by-step advance.",
+      "secondaryNames": [
+        {
+          "name": "漸",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 53,
+        "chineseName": "漸",
+        "pinyin": "Jiàn",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Development: the maiden is given in marriage. Good fortune. Perseverance furthers",
+        "image": "On the mountain a tree: development; the superior person abides in dignity and virtue to improve the mores"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.54",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Gui Mei — The Marrying Maiden",
+      "description": "Hexagram 54: Gui Mei (☳ above ☱). Thunder over Lake. Thunder stirring the lake — undertakings bring misfortune. Nothing that would further. The Marrying Maiden represents the difficult position of the secondary wife (the concubine), dependent on the goodwill of the primary wife — the challenge of finding the right way to be in a subordinate position without self-deception.",
+      "secondaryNames": [
+        {
+          "name": "歸妹",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 54,
+        "chineseName": "歸妹",
+        "pinyin": "Guī Mèi",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "The Marrying Maiden: undertakings bring misfortune. Nothing that would further",
+        "image": "Thunder over the lake: the marrying maiden; the superior person understands the transitory in the light of the eternity of the end"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.55",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Feng — Abundance (Fullness)",
+      "description": "Hexagram 55: Feng (☳ above ☲). Thunder over Fire. Thunder and lightning together — abundance, fullness, the height of summer. Be not sad. Be like the sun at midday. The king reaches fullness — do not mourn. The sun at midday must decline. The superior person decides lawsuits and carries out punishments.",
+      "secondaryNames": [
+        {
+          "name": "豐",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 55,
+        "chineseName": "豐",
+        "pinyin": "Fēng",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "Abundance: success. The king attains abundance. Be not sad. Be like the sun at midday",
+        "image": "Both thunder and lightning come: abundance; the superior person decides lawsuits and carries out punishments"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.56",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Lu — The Wanderer",
+      "description": "Hexagram 56: Lu (☲ above ☶). Fire over Mountain. Fire on the mountain burns bright but does not last long. The Wanderer — success through small things. Perseverance brings good fortune to the wanderer. The bird burns its nest. First the wanderer laughs, then cries. The traveller without home must be adaptable, careful, and undemanding.",
+      "secondaryNames": [
+        {
+          "name": "旅",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 56,
+        "chineseName": "旅",
+        "pinyin": "Lǚ",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "The Wanderer: success through smallness. Perseverance brings good fortune to the wanderer",
+        "image": "Fire on the mountain: the wanderer; the superior person is clear-minded and cautious in imposing penalties"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.57",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Xun — The Gentle (The Penetrating, Wind)",
+      "description": "Hexagram 57: Xun (☴ above ☴). Wind above Wind. The doubled wind — the gentle penetration that accomplishes without force. Success through small things. It furthers to have somewhere to go; it furthers to see the great man. The wind that bends the grass, that spreads seeds and finds every crevice — gentle but omnipresent.",
+      "secondaryNames": [
+        {
+          "name": "巽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 57,
+        "chineseName": "巽",
+        "pinyin": "Xùn",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.wind",
+        "judgment": "The Gentle: success through small things. It furthers to have somewhere to go; it furthers to see the great man",
+        "image": "Winds following upon one another: the gentle; the superior person spreads his commands abroad and carries out his undertakings"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.58",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Dui — The Joyous (Lake)",
+      "description": "Hexagram 58: Dui (☱ above ☱). Lake above Lake. True joy comes not from circumstances but from inner confidence and readiness for all things. The Joyous: success. Perseverance is favourable. Joyousness is to be distinguished from entertainment — the latter is imposed from without, while true joy arises from within and cannot be taken away.",
+      "secondaryNames": [
+        {
+          "name": "兌",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 58,
+        "chineseName": "兌",
+        "pinyin": "Duì",
+        "upperTrigram": "iching.trigram.lake",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "The Joyous: success. Perseverance is favourable",
+        "image": "Lakes resting on one another: the joyous; the superior person joins with his friends for discussion and practice"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.59",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Huan — Dispersion (Dissolution)",
+      "description": "Hexagram 59: Huan (☴ above ☵). Wind over Water. Wind over the water, dispersing it — dissolution of rigidity and isolation. Success. The king approaches his temple. It furthers to cross the great water. Perseverance furthers. Dissolve rigidity and separation; the ancient kings erected sacred temples to unite the people.",
+      "secondaryNames": [
+        {
+          "name": "渙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 59,
+        "chineseName": "渙",
+        "pinyin": "Huàn",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Dispersion: success. The king approaches his temple; it furthers to cross the great water",
+        "image": "Wind drives over the water: dispersion; the kings of old sacrificed to the Lord and built temples"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.60",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Jie — Limitation",
+      "description": "Hexagram 60: Jie (☵ above ☱). Water over Lake. Water above the lake — the lake has a limit, a boundary. Limitation: success. Galling limitation must not be persevered in. The superior person creates number and measure and examines the nature of virtue and correct conduct. A measure of water held in a vessel — limitation gives form to what is limitless.",
+      "secondaryNames": [
+        {
+          "name": "節",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 60,
+        "chineseName": "節",
+        "pinyin": "Jié",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Limitation: success. Galling limitation must not be persevered in",
+        "image": "Water above the lake: limitation; the superior person creates number and measure and examines the nature of virtue"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.61",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Zhong Fu — Inner Truth",
+      "description": "Hexagram 61: Zhong Fu (☴ above ☱). Wind over Lake. Wind above the lake — the image of sincerity that penetrates through all things. Inner truth: pigs and fishes bring good fortune. It furthers to cross the great water; perseverance furthers. The wind penetrates to the depths of the lake, moving the fish — inner truth reaches even those who are difficult to reach.",
+      "secondaryNames": [
+        {
+          "name": "中孚",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 61,
+        "chineseName": "中孚",
+        "pinyin": "Zhōng Fú",
+        "upperTrigram": "iching.trigram.wind",
+        "lowerTrigram": "iching.trigram.lake",
+        "judgment": "Inner truth: pigs and fishes bring good fortune. It furthers to cross the great water; perseverance furthers",
+        "image": "Wind over lake: inner truth; the superior person discusses criminal cases in order to delay executions"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.62",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Xiao Guo — Preponderance of the Small",
+      "description": "Hexagram 62: Xiao Guo (☳ above ☶). Thunder over Mountain. Thunder on the mountain — a bird's flight; it is not well to strive upward; it is well to remain below. Preponderance of the small: success. Perseverance furthers. Small things may be done; great things should not be done. The bird leaves the sound of its passing — it is not fitting to strive upward.",
+      "secondaryNames": [
+        {
+          "name": "小過",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 62,
+        "chineseName": "小過",
+        "pinyin": "Xiǎo Guò",
+        "upperTrigram": "iching.trigram.thunder",
+        "lowerTrigram": "iching.trigram.mountain",
+        "judgment": "Preponderance of the small: success. Perseverance furthers. Small things may be done; great things should not be done",
+        "image": "Thunder on the mountain: preponderance of the small; the superior person in his conduct lays excessive stress on consideration"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.63",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Ji Ji — After Completion",
+      "description": "Hexagram 63: Ji Ji (☵ above ☲). Water over Fire. Water above fire — the perfectly balanced kettle. After completion: success in small matters. Perseverance furthers. At the beginning good fortune; at the end disorder. The hexagram of apparent perfection contains the seed of its own dissolution — all yang lines in yang positions, all yin lines in yin positions. But precisely this completion is the beginning of the next cycle.",
+      "secondaryNames": [
+        {
+          "name": "既濟",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 63,
+        "chineseName": "既濟",
+        "pinyin": "Jì Jì",
+        "upperTrigram": "iching.trigram.water",
+        "lowerTrigram": "iching.trigram.fire",
+        "judgment": "After completion: success in small matters. Perseverance furthers. At the beginning good fortune; at the end disorder",
+        "image": "Water above fire: after completion; the superior person takes thought of misfortune and arms himself against it in advance"
+      }
+    },
+    {
+      "canonicalName": "iching.hexagram.64",
+      "entityType": "iching.hexagram",
+      "primaryDisplayName": "Wei Ji — Before Completion",
+      "description": "Hexagram 64: Wei Ji (☲ above ☵). Fire over Water. Fire above water — fire striving upward, water flowing down, their energies diverge. Before completion: success. But if the little fox before completion wets his tail, there is nothing that would further. The last hexagram of the I Ching ends not with completion but with the approach to completion — the threshold before the new beginning. Wei Ji is the seed of the next cycle, containing all potential.",
+      "secondaryNames": [
+        {
+          "name": "未濟",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "iching",
+        "hexagram"
+      ],
+      "extendedData": {
+        "number": 64,
+        "chineseName": "未濟",
+        "pinyin": "Wèi Jì",
+        "upperTrigram": "iching.trigram.fire",
+        "lowerTrigram": "iching.trigram.water",
+        "judgment": "Before completion: success. But if the little fox before completion wets his tail, there is nothing that would further",
+        "image": "Fire over water: before completion; the superior person is careful in the differentiation of things so that each finds its place"
+      }
+    }
+  ]
+}

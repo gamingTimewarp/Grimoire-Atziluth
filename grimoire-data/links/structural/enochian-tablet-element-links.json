@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "enochian.tablet.air",   "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": [] },
+    { "source": "enochian.tablet.water", "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": [] },
+    { "source": "enochian.tablet.earth", "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": [] },
+    { "source": "enochian.tablet.fire",  "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": [] }
+  ]
+}

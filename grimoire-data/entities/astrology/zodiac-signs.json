@@ -1,0 +1,549 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.zodiac-sign.aries",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Aries",
+      "description": "The Ram (♈). First sign of the zodiac, cardinal fire, ruled by Mars. Aries marks the vernal equinox (spring in the northern hemisphere) and the beginning of the astrological year. As cardinal fire Aries is the initiating spark, the bold leap into action, the pioneer who does not wait for permission. In Hermetic Qabalah Aries is attributed to the Hebrew letter Heh (GD) or Tzaddi (Thoth). Exaltation of the Sun — the greatest solar power of the year at the spring equinox. Detriment of Venus (the Ram has no patience for the pleasures of Taurus-Libra). Fall of Saturn (limitation dissolved by the new beginning). The Emperor (GD) or The Star (Thoth) corresponds to Aries via the Heh/Tzaddi controversy.",
+      "secondaryNames": [
+        {
+          "name": "The Ram",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♈",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "fire",
+        "cardinal"
+      ],
+      "extendedData": {
+        "symbol": "♈",
+        "orderNumber": 1,
+        "element": "astrology.element.fire",
+        "modality": "cardinal",
+        "traditionalRuler": "astrology.planet.mars",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.sol",
+        "detriment": "astrology.planet.venus",
+        "fall": "astrology.planet.saturn",
+        "hebrewLetterGD": "letter.hebrew.heh",
+        "hebrewLetterThoth": "letter.hebrew.tzaddi",
+        "dateRange": "March 21 – April 19",
+        "bodyPart": "Head, face, brain",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.taurus",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Taurus",
+      "description": "The Bull (♉). Second sign, fixed earth, ruled by Venus. Taurus is the fixed, enduring, sensuous, and productive aspect of earth — the fertile soil of spring, the patience of the builder, the steadfast commitment of the craftsman. Exaltation of the Moon: Taurus as the earthly paradise in which the lunar principle of nourishment and growth finds its greatest expression. Detriment of Mars (the slow Bull does not appreciate the ram's urgency) and Pluto (fixed earth resists total transformation). In Hermetic Qabalah Taurus corresponds to the Hebrew letter Vau and The Hierophant. The Bull is sacred in many traditions: Apis in Egypt, the Mithraic bull, the bull of Dionysus.",
+      "secondaryNames": [
+        {
+          "name": "The Bull",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♉",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "earth",
+        "fixed"
+      ],
+      "extendedData": {
+        "symbol": "♉",
+        "orderNumber": 2,
+        "element": "astrology.element.earth",
+        "modality": "fixed",
+        "traditionalRuler": "astrology.planet.venus",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.luna",
+        "detriment": "astrology.planet.mars",
+        "fall": "astrology.planet.uranus",
+        "hebrewLetterGD": "letter.hebrew.vau",
+        "dateRange": "April 20 – May 20",
+        "bodyPart": "Neck, throat, thyroid",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.gemini",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Gemini",
+      "description": "The Twins (♊). Third sign, mutable air, ruled by Mercury. Gemini is the adaptable, communicative, intellectually curious aspect of air — the gathering of information, the weaving of connections, the playful exchange of ideas. The Twins (Castor and Pollux) represent the fundamental duality of mind: the rational and intuitive, the conscious and unconscious, the mortal and immortal. Detriment of Jupiter (the restless Twins exhaust the expansive philosopher) and Neptune (scattered mercurial energy versus oceanic dissolution). Hebrew letter Zayin — The Lovers. Gemini's versatility and duality are both its gift and its challenge.",
+      "secondaryNames": [
+        {
+          "name": "The Twins",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♊",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "air",
+        "mutable"
+      ],
+      "extendedData": {
+        "symbol": "♊",
+        "orderNumber": 3,
+        "element": "astrology.element.air",
+        "modality": "mutable",
+        "traditionalRuler": "astrology.planet.mercury",
+        "modernRuler": null,
+        "exaltation": null,
+        "detriment": "astrology.planet.jupiter",
+        "fall": null,
+        "hebrewLetterGD": "letter.hebrew.zayin",
+        "dateRange": "May 21 – June 20",
+        "bodyPart": "Arms, hands, shoulders, lungs",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.cancer",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Cancer",
+      "description": "The Crab (♋). Fourth sign, cardinal water, ruled by the Moon. Cancer is the initiating, nurturing, protective aspect of water — the womb, the home, the family, the tidal pull of memory and emotion. The Crab's hard shell protects its soft interior, as Cancer's emotional sensitivity is protected by a defensive exterior. Exaltation of Jupiter: in the Cancerian sphere of nurturing love, Jupiter's generosity and abundance find their highest expression. Detriment of Saturn (limitation in the sphere of nurturing dissolves the mother's instinct) and Mars (aggression blocked by the protective carapace). Hebrew letter Cheth — The Chariot.",
+      "secondaryNames": [
+        {
+          "name": "The Crab",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♋",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "water",
+        "cardinal"
+      ],
+      "extendedData": {
+        "symbol": "♋",
+        "orderNumber": 4,
+        "element": "astrology.element.water",
+        "modality": "cardinal",
+        "traditionalRuler": "astrology.planet.luna",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.jupiter",
+        "detriment": "astrology.planet.saturn",
+        "fall": "astrology.planet.mars",
+        "hebrewLetterGD": "letter.hebrew.cheth",
+        "dateRange": "June 21 – July 22",
+        "bodyPart": "Chest, breasts, stomach",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.leo",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Leo",
+      "description": "The Lion (♌). Fifth sign, fixed fire, ruled by the Sun. Leo is the fixed, radiant, creative, sovereign aspect of fire — the high summer sun at its most triumphant, the king on his throne, the artist at the height of creative power. Leo embodies solar consciousness in its most full, generous, and magnificent expression. Detriment of Saturn (the limitation of the taskmaster douses the royal fire) and Uranus (individual eccentricity clashes with royal dignity). Fall of Neptune (the oceanic dissolution of ego is unwelcome in the sign of the self). Hebrew letter Teth — Strength/Lust. The leonine vital force, the kundalini fire, the creative spark of the divine child.",
+      "secondaryNames": [
+        {
+          "name": "The Lion",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♌",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "fire",
+        "fixed"
+      ],
+      "extendedData": {
+        "symbol": "♌",
+        "orderNumber": 5,
+        "element": "astrology.element.fire",
+        "modality": "fixed",
+        "traditionalRuler": "astrology.planet.sol",
+        "modernRuler": null,
+        "exaltation": null,
+        "detriment": "astrology.planet.saturn",
+        "fall": "astrology.planet.neptune",
+        "hebrewLetterGD": "letter.hebrew.teth",
+        "dateRange": "July 23 – August 22",
+        "bodyPart": "Heart, spine, upper back",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.virgo",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Virgo",
+      "description": "The Virgin (♍). Sixth sign, mutable earth, ruled by Mercury. Virgo is the analytical, discriminating, perfecting, service-oriented aspect of earth — the harvest time, the craftsman refining the work, the healer who studies the body's systems with precision. Virgo's mutable quality allows earth to be shaped and worked; her mercurial ruler gives her the analytical intelligence to see what must be improved. Exaltation of Mercury (the perfect mind of the analyst is most itself in Virgo). Detriment of Jupiter (the Virgo detail-focus irritates the Jupiterian expansionism) and Neptune (oceanic dissolution resisted by the precise analyst). Hebrew letter Yod — The Hermit.",
+      "secondaryNames": [
+        {
+          "name": "The Virgin",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♍",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "earth",
+        "mutable"
+      ],
+      "extendedData": {
+        "symbol": "♍",
+        "orderNumber": 6,
+        "element": "astrology.element.earth",
+        "modality": "mutable",
+        "traditionalRuler": "astrology.planet.mercury",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.mercury",
+        "detriment": "astrology.planet.jupiter",
+        "fall": "astrology.planet.venus",
+        "hebrewLetterGD": "letter.hebrew.yod",
+        "dateRange": "August 23 – September 22",
+        "bodyPart": "Digestive system, intestines, abdomen",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.libra",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Libra",
+      "description": "The Scales (♎). Seventh sign, cardinal air, ruled by Venus. Libra is the initiating, harmonising, justice-seeking aspect of air — the autumnal equinox when day and night are perfectly balanced, the diplomat, the aesthete, the judge who weighs all sides. Exaltation of Saturn (the principle of cosmic equilibrium and law finds its greatest expression in Libra's scales). Detriment of Mars (the bold aggressor is frustrated by the need to weigh and consider) and the Sun (the ego's solitary authority is challenged by the need for relationship). Hebrew letter Lamed — Justice/Adjustment.",
+      "secondaryNames": [
+        {
+          "name": "The Scales",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♎",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "air",
+        "cardinal"
+      ],
+      "extendedData": {
+        "symbol": "♎",
+        "orderNumber": 7,
+        "element": "astrology.element.air",
+        "modality": "cardinal",
+        "traditionalRuler": "astrology.planet.venus",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.saturn",
+        "detriment": "astrology.planet.mars",
+        "fall": "astrology.planet.sol",
+        "hebrewLetterGD": "letter.hebrew.lamed",
+        "dateRange": "September 23 – October 22",
+        "bodyPart": "Kidneys, lower back, adrenal glands",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.scorpio",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Scorpio",
+      "description": "The Scorpion (♏). Eighth sign, fixed water, ruled by Mars (traditional) and Pluto (modern). Scorpio is the fixed, penetrating, transformative depth of water — the underworld, the sex drive, death and regeneration, the occult mysteries, and the will to power over the forces of life and death. The three symbols of Scorpio — the scorpion (the lowest), the serpent (the middle), and the eagle (the highest) — represent the initiatory ascent from the poison of death-fear through the wisdom of the serpent to the eagle's transcendent vision. Hebrew letter Nun — Death. Exaltation of Uranus (radical transformation expressed as sudden revelation).",
+      "secondaryNames": [
+        {
+          "name": "The Scorpion",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♏",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "water",
+        "fixed"
+      ],
+      "extendedData": {
+        "symbol": "♏",
+        "orderNumber": 8,
+        "element": "astrology.element.water",
+        "modality": "fixed",
+        "traditionalRuler": "astrology.planet.mars",
+        "modernRuler": "astrology.planet.pluto",
+        "exaltation": "astrology.planet.uranus",
+        "detriment": "astrology.planet.venus",
+        "fall": "astrology.planet.luna",
+        "hebrewLetterGD": "letter.hebrew.nun",
+        "dateRange": "October 23 – November 21",
+        "bodyPart": "Genitals, reproductive organs, colon",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.sagittarius",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Sagittarius",
+      "description": "The Archer (♐). Ninth sign, mutable fire, ruled by Jupiter. Sagittarius is the expansive, philosophical, adventurous aspect of fire — the centaur who spans the animal and divine, the archer whose arrow is aimed at the divine target, the pilgrim who journeys to the sacred mountain. Sagittarius governs philosophy, religion, higher education, foreign travel, and the hunger for meaning. Detriment of Mercury (the Sagittarian enthusiasm scorns fine distinctions) and Neptune (the idealist's quest for absolute truth resists oceanic dissolution). Hebrew letter Samekh — Temperance/Art. The mutable fire of Sagittarius is the arrow in flight.",
+      "secondaryNames": [
+        {
+          "name": "The Archer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♐",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "fire",
+        "mutable"
+      ],
+      "extendedData": {
+        "symbol": "♐",
+        "orderNumber": 9,
+        "element": "astrology.element.fire",
+        "modality": "mutable",
+        "traditionalRuler": "astrology.planet.jupiter",
+        "modernRuler": null,
+        "exaltation": null,
+        "detriment": "astrology.planet.mercury",
+        "fall": null,
+        "hebrewLetterGD": "letter.hebrew.samekh",
+        "dateRange": "November 22 – December 21",
+        "bodyPart": "Thighs, hips, liver, sciatic nerve",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.capricorn",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Capricorn",
+      "description": "The Sea-Goat (♑). Tenth sign, cardinal earth, ruled by Saturn. Capricorn is the initiating, ambitious, disciplined, material-mastering aspect of earth — the winter solstice, the lowest and darkest point of the year from which the sun begins its return. The sea-goat (half goat, half fish) of Babylonian mythology represents the principle of ascent from the depths: the goat climbs the mountain from the deepest waters. Exaltation of Mars (the martial will finds its most disciplined and enduring expression in Capricorn's patient ambition). Hebrew letter Ayin — The Devil/Pan. The Lord of Earth at the winter gate.",
+      "secondaryNames": [
+        {
+          "name": "The Sea-Goat",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♑",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "earth",
+        "cardinal"
+      ],
+      "extendedData": {
+        "symbol": "♑",
+        "orderNumber": 10,
+        "element": "astrology.element.earth",
+        "modality": "cardinal",
+        "traditionalRuler": "astrology.planet.saturn",
+        "modernRuler": null,
+        "exaltation": "astrology.planet.mars",
+        "detriment": "astrology.planet.luna",
+        "fall": "astrology.planet.jupiter",
+        "hebrewLetterGD": "letter.hebrew.ayin",
+        "dateRange": "December 22 – January 19",
+        "bodyPart": "Knees, bones, teeth, skin, joints",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.aquarius",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Aquarius",
+      "description": "The Water-Bearer (♒). Eleventh sign, fixed air, ruled by Saturn (traditional) and Uranus (modern). Aquarius is the fixed, visionary, humanitarian, collective aspect of air — the carrier of the waters of consciousness poured into the world for all humanity. Despite its watery name and symbol Aquarius is an air sign: the Water-Bearer does not drink the water but pours it out for others. Aquarius governs the collective, friendship, technology, reform, humanitarian ideals, and the Aquarian Age. In Thoth, The Star is attributed to Heh-Aquarius. Detriment of the Sun (the individual ego is dissolved in the collective) and Neptune.",
+      "secondaryNames": [
+        {
+          "name": "The Water-Bearer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♒",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "air",
+        "fixed"
+      ],
+      "extendedData": {
+        "symbol": "♒",
+        "orderNumber": 11,
+        "element": "astrology.element.air",
+        "modality": "fixed",
+        "traditionalRuler": "astrology.planet.saturn",
+        "modernRuler": "astrology.planet.uranus",
+        "exaltation": null,
+        "detriment": "astrology.planet.sol",
+        "fall": "astrology.planet.neptune",
+        "hebrewLetterGD": "letter.hebrew.tzaddi",
+        "hebrewLetterThoth": "letter.hebrew.heh",
+        "note": "GD: Aquarius=Tzaddi=The Star. Thoth: Aquarius=Heh=The Star (Crowley's reversal).",
+        "dateRange": "January 20 – February 18",
+        "bodyPart": "Calves, ankles, circulatory system",
+        "polarity": "western.polarity.masculine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.pisces",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Pisces",
+      "description": "The Fish (♓). Twelfth and final sign, mutable water, ruled by Jupiter (traditional) and Neptune (modern). Pisces is the dissolving, transcendent, mystical aspect of water — the end of the cycle, the ocean of the unconscious, the mystical dissolution of the individual into the universal before the new Aries beginning. The Two Fish swim in opposite directions, symbolising the tension between the spiritual and material worlds, the desire to transcend and the pull of incarnation. Exaltation of Venus (universal love at its highest, eros dissolving into agape). Hebrew letter Qoph — The Moon. Detriment of Mercury (the precise analytical mind is submerged in oceanic feeling) and Earth.",
+      "secondaryNames": [
+        {
+          "name": "The Fish",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "♓",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "water",
+        "mutable"
+      ],
+      "extendedData": {
+        "symbol": "♓",
+        "orderNumber": 12,
+        "element": "astrology.element.water",
+        "modality": "mutable",
+        "traditionalRuler": "astrology.planet.jupiter",
+        "modernRuler": "astrology.planet.neptune",
+        "exaltation": "astrology.planet.venus",
+        "detriment": "astrology.planet.mercury",
+        "fall": "astrology.planet.mercury",
+        "hebrewLetterGD": "letter.hebrew.qoph",
+        "dateRange": "February 19 – March 20",
+        "bodyPart": "Feet, toes, lymphatic system",
+        "polarity": "western.polarity.feminine"
+      }
+    },
+    {
+      "canonicalName": "astrology.zodiac-sign.ophiuchus",
+      "entityType": "astrology.zodiac-sign",
+      "primaryDisplayName": "Ophiuchus",
+      "description": "The Serpent-Bearer (⛎). The 13th sign of the IAU-defined zodiac, occupying approximately 18° of the ecliptic between Scorpius and Sagittarius. Ophiuchus was recognised by the International Astronomical Union when it formally defined the constellation boundaries in 1930; the Sun passes through it roughly November 30 – December 18 (sidereal reckoning). It is used in 13-sign (Ophiuchus) and sidereal astrology but is not part of the traditional Western tropical zodiac. The constellation depicts the healer Asclepius (Aesculapius), son of Apollo, grasping the serpent Serpens — a symbol of medicine, healing, transformation, and mastery over life and death. Some modern astrologers associate Ophiuchus with themes of healing, hidden knowledge, the occult, intensity, and the quest for immortality. No traditional Hermetic Qabalah attributions exist for this sign; esoteric correspondences remain speculative and vary by tradition.",
+      "secondaryNames": [
+        {
+          "name": "The Serpent-Bearer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "⛎",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Serpentarius",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "zodiac",
+        "astrology",
+        "13-sign",
+        "sidereal",
+        "ophiuchus"
+      ],
+      "extendedData": {
+        "symbol": "⛎",
+        "orderNumber": 13,
+        "element": null,
+        "modality": null,
+        "traditionalRuler": null,
+        "modernRuler": null,
+        "exaltation": null,
+        "detriment": null,
+        "fall": null,
+        "hebrewLetterGD": null,
+        "hebrewLetterThoth": null,
+        "dateRange": "November 30 – December 18 (sidereal / IAU)",
+        "note": "Not part of the traditional 12-sign tropical zodiac. Recognised by the IAU; used in 13-sign and sidereal astrology.",
+        "polarity": null
+      }
+    }
+  ]
+}

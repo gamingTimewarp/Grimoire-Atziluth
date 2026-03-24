@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.pythagorean-numerology",
+    "displayName": "Pythagorean Numerology",
+    "description": "The standard Western numerology system attributed to Pythagoras, as popularised by modern numerologists including Pythia Numerology and others. Assigns values 1–9 to the Latin alphabet in sequential order (A=1, B=2, ... I=9, J=1, ...). Uses reduction to single digits and recognises master numbers 11, 22, and 33.",
+    "attributionFields": [
+      { "linkLabel": "attributed-number", "displayName": "Numerical Value", "targetEntityType": "numerology.numeral", "allowMultiple": false, "sortOrder": 0 }
+    ]
+  }
+}

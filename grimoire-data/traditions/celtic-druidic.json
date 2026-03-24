@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.celtic-druidic",
+    "displayName": "Celtic / Druidic",
+    "description": "The living tradition of the Celtic peoples and their druidic priesthood, encompassing the Ogham alphabet (tree-alphabet of the ancient Irish druids), the mythology of the Tuatha Dé Danann and other Celtic divine races, sacred festivals of the wheel of the year (Imbolc, Beltane, Lughnasadh, Samhain), and the cosmological understanding of land, sea, and sky as the three realms. The druids served as priests, judges, philosophers, and keepers of oral tradition; their lore was transmitted in verse over twenty years of training. This tradition subsumes and extends the Ogham-BLN system, integrating tree lore, elemental associations, deity correspondences, and the broader mythological corpus of Irish, Scottish, Welsh, and Gaulish tradition.",
+    "attributionFields": [
+      {
+        "linkLabel": "attributed-element",
+        "displayName": "Element",
+        "targetEntityType": "astrology.element",
+        "allowMultiple": false,
+        "sortOrder": 0
+      },
+      {
+        "linkLabel": "attributed-deity",
+        "displayName": "Celtic Deity",
+        "targetEntityType": "celtic.deity",
+        "allowMultiple": false,
+        "sortOrder": 1
+      }
+    ]
+  }
+}

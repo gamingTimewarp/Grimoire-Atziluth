@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090900"/>
+      <stop offset="100%" stop-color="#161600"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#776600" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#999900" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- Pip header: number + decanate -->
+  <text x="24" y="45"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="26" font-weight="300" fill="#ffee88">VI</text>
+  <!-- Planet symbol -->
+  <text x="150" y="38"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="20" fill="#ccbb00" opacity="0.9">☿</text>
+  <!-- Sign symbol -->
+  <text x="150" y="60"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="18" fill="#999900" opacity="0.75">♒</text>
+  <!-- Decan description (tiny) -->
+  <text x="276" y="45"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,serif"
+        font-size="8.5" fill="#776633" letter-spacing="0.5">Mercury in Aquarius</text>
+
+  <!-- Pip arrangement: 6 pips -->
+  <g filter="url(#glow)"><g>
+  <polygon points="68,75.44 70.97,100.52 68,103.16 65.03,100.52"
+           fill="#ccbb00"/>
+  <rect x="66.34" y="102.5" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="52.66" y="99.86" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="65.62" y="122.3" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,75.44 234.97,100.52 232,103.16 229.03,100.52"
+           fill="#ccbb00"/>
+  <rect x="230.34" y="102.5" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="216.66" y="99.86" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="229.62" y="122.3" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="68,184.64 70.97,209.72 68,212.36 65.03,209.72"
+           fill="#ccbb00"/>
+  <rect x="66.34" y="211.7" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="52.66" y="209.06" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="65.62" y="231.5" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,184.64 234.97,209.72 232,212.36 229.03,209.72"
+           fill="#ccbb00"/>
+  <rect x="230.34" y="211.7" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="216.66" y="209.06" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="229.62" y="231.5" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="68,293.84 70.97,318.92 68,321.56 65.03,318.92"
+           fill="#ccbb00"/>
+  <rect x="66.34" y="320.9" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="52.66" y="318.26" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="65.62" y="340.7" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,293.84 234.97,318.92 232,321.56 229.03,318.92"
+           fill="#ccbb00"/>
+  <rect x="230.34" y="320.9" width="3.33" height="21.12"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="216.66" y="318.26" width="30.69" height="4.62"
+        rx="1.98" fill="#ccbb00"/>
+  <rect x="229.62" y="340.7" width="4.75" height="8.58"
+        rx="3.96" fill="#ccbb00" opacity="0.6"/>
+</g></g>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#ffee88" letter-spacing="2"
+        filter="url(#glow)">Science</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#776633" letter-spacing="3"
+        opacity="0.8">VI of Swords</text>
+</svg>

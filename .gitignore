@@ -1,0 +1,58 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Build outputs ─────────────────────────────────────────────────────────────
+dist/
+grimoire-app/dist/
+grimoire-core/dist/
+
+# ── Rust / Tauri build ────────────────────────────────────────────────────────
+grimoire-app/src-tauri/target/
+grimoire-app/src-tauri/gen/android/
+grimoire-app/src-tauri/gen/apple/
+
+# ── User data (SQLite — stored in OS app-data dir at runtime, but safety net) ─
+*.db
+*.db-shm
+*.db-wal
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS cruft ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Claude Code local settings ────────────────────────────────────────────────
+.claude/settings.local.json
+
+# ── Editor / IDE ──────────────────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── TypeScript incremental build info ────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+coverage/

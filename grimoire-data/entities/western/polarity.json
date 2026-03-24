@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "western.polarity.masculine",
+      "entityType": "western.polarity",
+      "primaryDisplayName": "Masculine",
+      "description": "The Masculine principle in Western esoteric tradition represents the active, initiating, projective, solar, and expansive pole of universal polarity. It is not gender in a social sense but a metaphysical quality — the force that acts, initiates, and projects. In Hermetic Qabalah the Masculine is identified with the right Pillar of Mercy (Chokmah, Chesed, Netzach), with Yang, with Fire and Air, with the YOD of the Tetragrammaton, and with the Supernal Father (Chokmah/Abba). It is the sword, the flame, the phallus, the creative Word (Logos). In astrology the masculine signs are the fire and air signs. The alchemical symbol is the upward-pointing triangle (△, fire). In the Tarot the Masculine is expressed through the Emperor, the Hierophant, and the solar trumps. The Masculine alone without the Feminine is sterile — it needs the receiving, form-giving Feminine to bring its impulse into manifestation.",
+      "secondaryNames": [
+        {
+          "name": "Active",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Positive",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Solar",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "western",
+        "polarity",
+        "masculine",
+        "esoteric"
+      ],
+      "extendedData": {
+        "qualities": [
+          "active",
+          "projective",
+          "initiating",
+          "expansive",
+          "solar",
+          "hot",
+          "dry"
+        ],
+        "westernElements": [
+          "astrology.element.fire",
+          "astrology.element.air"
+        ],
+        "qabalisticPillar": "right (Mercy)",
+        "alchemicalSymbol": "△",
+        "hebrewLetter": "letter.hebrew.yod",
+        "complement": "western.polarity.feminine",
+        "yinYangCorrespondence": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "western.polarity.feminine",
+      "entityType": "western.polarity",
+      "primaryDisplayName": "Feminine",
+      "description": "The Feminine principle in Western esoteric tradition represents the receptive, form-giving, magnetic, lunar, and contracting pole of universal polarity. It is not gender in a social sense but a metaphysical quality — the form that receives, contains, and brings into being. In Hermetic Qabalah the Feminine is identified with the left Pillar of Severity (Binah, Geburah, Hod), with Yin, with Water and Earth, with the HEH of the Tetragrammaton, and with the Supernal Mother (Binah/Ima). It is the cup, the womb, the Shekinah, the dark fertile void that gives form to the formless. In astrology the feminine signs are the earth and water signs. The alchemical symbol is the downward-pointing triangle (▽, water). In the Tarot the Feminine is expressed through the High Priestess, the Empress, and the lunar trumps. Malkuth is the ultimate Feminine — the Kingdom, the Bride awaiting the Bridegroom, the Earth herself.",
+      "secondaryNames": [
+        {
+          "name": "Passive",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Negative",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Lunar",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "western",
+        "polarity",
+        "feminine",
+        "esoteric"
+      ],
+      "extendedData": {
+        "qualities": [
+          "receptive",
+          "magnetic",
+          "form-giving",
+          "contracting",
+          "lunar",
+          "cool",
+          "moist"
+        ],
+        "westernElements": [
+          "astrology.element.water",
+          "astrology.element.earth"
+        ],
+        "qabalisticPillar": "left (Severity)",
+        "alchemicalSymbol": "▽",
+        "hebrewLetter": "letter.hebrew.heh",
+        "complement": "western.polarity.masculine",
+        "yinYangCorrespondence": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "western.polarity.androgynous",
+      "entityType": "western.polarity",
+      "primaryDisplayName": "Androgynous",
+      "description": "The Androgynous principle in Western esoteric tradition denotes that which transcends, unites, or holds in balance the masculine and feminine polarities. In Hermetic Qabalah androgynous principles are found primarily on the Middle Pillar (Kether, Da'ath, Tiphareth, Yesod, Malkuth) as equilibrating forces, or in entities whose nature is explicitly described as the union of both poles. Kether as the primal unity contains all duality within itself undivided. Mercury/Hermes is the archetypal androgyne, the Hermaphrodite, the caduceus bearing two serpents entwined. The Great Work in alchemy is often depicted as the alchemical wedding (Chymische Hochzeit) — the union of the Red King (Masculine/Sulphur) and the White Queen (Feminine/Mercury) to produce the Philosopher's Stone, which is neither male nor female but their transcendent child. In Jungian terms the union of Animus and Anima within the psyche.",
+      "secondaryNames": [
+        {
+          "name": "Hermaphrodite",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Equilibrating",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Neutral",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "western",
+        "polarity",
+        "androgynous",
+        "esoteric"
+      ],
+      "extendedData": {
+        "qualities": [
+          "balanced",
+          "unifying",
+          "transcendent",
+          "equilibrating",
+          "mercurial"
+        ],
+        "qabalisticPillar": "middle (Equilibrium)",
+        "alchemicalSymbol": "☿",
+        "associations": [
+          "Mercury",
+          "Kether",
+          "Tiphareth",
+          "Middle Pillar",
+          "Philosopher's Stone"
+        ],
+        "complement": null,
+        "yinYangCorrespondence": null
+      }
+    }
+  ]
+}

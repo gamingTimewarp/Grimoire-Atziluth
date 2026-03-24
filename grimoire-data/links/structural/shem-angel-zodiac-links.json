@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "angel.shem.vehuiah",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.jeliel",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.sitael",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.elemiah",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mahasiah",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lelahel",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.achaiah",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.cahetel",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haziel",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.aladiah",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lauviah",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahaiah",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yezalel",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mebahel",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hariel",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hekamiah",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lauviah-ii",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.caliel",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.leuviah",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.pahaliah",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nelkhael",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeiayel",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.melahel",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haheuiah",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nith-haiah",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haaiah",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeratel",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.seheiah",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.reiiel",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.omael",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lecabel",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.vasariah",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yehuiah",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lehahiah",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.chavakhiah",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.menadel",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.aniel",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haamiah",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.rehael",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.ieiazel",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahahel",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mikael",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.veuliah",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yelahiah",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.sealiah",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.ariel-shem",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.asaliah",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mihael",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.vehuel",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.daniel-shem",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahasiah",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.imamiah",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nanael",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nithael",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mebahiah",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.poyel",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nemamiah",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeialel",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.harahel",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mizrael",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.umabel",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.iah-hel",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.anuel",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mehiel",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.damabiah",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.manakel",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.eyael",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.habuhiah",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.rochel",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.jabamiah",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haiaiel",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mumiah",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "rules-in",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "norse.deity.odin",    "target": "rune.elder-futhark.ansuz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.thor",    "target": "rune.elder-futhark.thurisaz", "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.freyr",   "target": "rune.elder-futhark.ingwaz",   "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.freya",   "target": "rune.elder-futhark.fehu",     "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.tyr",     "target": "rune.elder-futhark.tiwaz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.loki",    "target": "rune.elder-futhark.dagaz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.baldur",  "target": "rune.elder-futhark.sowilo",   "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.heimdall","target": "rune.elder-futhark.mannaz",   "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.frigg",   "target": "rune.elder-futhark.berkano",  "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.skadi",   "target": "rune.elder-futhark.isa",      "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.njord",   "target": "rune.elder-futhark.laguz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.idun",    "target": "rune.elder-futhark.berkano",  "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.mimir",   "target": "rune.elder-futhark.ansuz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.hel",     "target": "rune.elder-futhark.hagalaz",  "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.bragi",   "target": "rune.elder-futhark.ansuz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.var",     "target": "rune.elder-futhark.tiwaz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.surtr",   "target": "rune.elder-futhark.kenaz",    "label": "deity-rune", "bidirectional": false, "traditionScope": [] }
+  ]
+}

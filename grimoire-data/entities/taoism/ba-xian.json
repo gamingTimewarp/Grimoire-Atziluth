@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "taoism.immortal.zhongli-quan",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Zhongli Quan",
+      "description": "Zhongli Quan (鍾離權), also called Han Zhongli, is the eldest and chief of the Eight Immortals. Depicted as a stout bearded man with a bare belly holding a fan that can revive the dead and transmute metals to gold, he was a Han dynasty general who encountered immortals on a mountain retreat and was initiated. He became the teacher of Lü Dongbin and is considered the founder of Inner Alchemy (Neidan) within the Quanzhen school. He represents longevity, abundance, and the alchemical power of transformation.",
+      "secondaryNames": [
+        {
+          "name": "Han Zhongli",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "鍾離權",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Zhong Li Quan",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "emblem": "fan",
+        "patronOf": "military men",
+        "dynasty": "Han",
+        "element": "astrology.element.fire"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.zhang-guolao",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Zhang Guolao",
+      "description": "Zhang Guolao (張果老), 'Old Zhang Guo', is the oldest of the Eight Immortals, depicted as a white-bearded man riding a white mule backwards. When not in use he folds the mule like paper and stores it in a gourd; water revives it. He carries a bamboo tube drum (yugu) and was reportedly summoned by the Tang Emperor Xuanzong, displaying numerous magical powers. He represents wisdom in old age, eccentricity, and magical transformation.",
+      "secondaryNames": [
+        {
+          "name": "張果老",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zhang Guo Lao",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "emblem": "bamboo drum and white mule",
+        "patronOf": "elderly men, hermits",
+        "dynasty": "Tang",
+        "element": "astrology.element.earth"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.lu-dongbin",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Lü Dongbin",
+      "description": "Lü Dongbin (呂洞賓) is the most widely venerated of the Eight Immortals and central figure of the Quanzhen school of Taoism. A Tang dynasty scholar who failed the imperial examinations, he was initiated by Zhongli Quan after enduring ten trials. He carries a demon-subduing sword and a fly-whisk that frees the soul from the body, and is said to have composed numerous alchemical and meditative texts. He is the patron of barbers, scholars, and the sick, and is a primary figure in Taoist inner alchemy and healing traditions.",
+      "secondaryNames": [
+        {
+          "name": "呂洞賓",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lü Yan",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chunyang Zushi",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Patriarch Lü",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese",
+        "quanzhen"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "emblem": "sword and fly whisk",
+        "patronOf": "barbers, scholars, sick",
+        "dynasty": "Tang",
+        "element": "wuxing.phase.metal"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.cao-guojiu",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Cao Guojiu",
+      "description": "Cao Guojiu (曹國舅), 'Royal Uncle Cao', is traditionally the brother of Empress Cao of the Song dynasty. Ashamed by his family's worldly corruption, he renounced court life and became a hermit, eventually receiving instruction from Zhongli Quan and Lü Dongbin. Depicted in court robes carrying jade tablets (castanets), he represents the principle that even those born into worldly power can attain enlightenment through sincere renunciation. He is the patron of actors and performers.",
+      "secondaryNames": [
+        {
+          "name": "曹國舅",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cao Jingxiu",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "emblem": "jade castanets / court tablets",
+        "patronOf": "actors, performers",
+        "dynasty": "Song",
+        "element": "wuxing.phase.metal"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.iron-crutch-li",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Iron-Crutch Li",
+      "description": "Iron-Crutch Li (李鐵拐, Lǐ Tiěguǎi) is depicted as a lame beggar with an iron crutch and a gourd of magical medicines. His spirit left his body to visit Laozi but his disciple cremated the body in error; his spirit was forced to inhabit the recently deceased corpse of a lame beggar, explaining his form. His gourd pours out miraculous healing smoke and cures. He is the patron of the sick, beggars, and the medical profession, embodying compassion for those who suffer.",
+      "secondaryNames": [
+        {
+          "name": "Li Tieguai",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "李鐵拐",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Lǐ Tiěguǎi",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Li Yue",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "emblem": "iron crutch and medicine gourd",
+        "patronOf": "sick, beggars, healers",
+        "dynasty": "legendary",
+        "element": "astrology.element.water"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.han-xiangzi",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Han Xiangzi",
+      "description": "Han Xiangzi (韓湘子) is traditionally the grand-nephew of the Confucian scholar Han Yu, who abandoned Confucian studies for Taoist immortality after encountering Lü Dongbin. He plays a jade flute whose music can charm animals, make flowers bloom in winter, and draw fish from rivers. Representing the arts, carefree spiritual joy, and the transcendence of Confucian propriety through artistic cultivation, he is the patron of musicians.",
+      "secondaryNames": [
+        {
+          "name": "韓湘子",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Han Hsiang-tzu",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "emblem": "jade flute",
+        "patronOf": "musicians",
+        "dynasty": "Tang",
+        "element": "wuxing.phase.wood"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.lan-caihe",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "Lan Caihe",
+      "description": "Lan Caihe (藍采和) is the most mysterious of the Eight Immortals, of uncertain gender — depicted as a young androgyne in blue robes, wearing one shoe, carrying a flower basket. Wandering the streets singing Taoist songs about the transience of life and scattering coins, Lan embodied indifference to worldly attachment before ascending on a crane. The gender ambiguity reflects the Taoist transcendence of fixed distinctions, embodying both yin and yang equally. Patron of florists, gardeners, and the poor.",
+      "secondaryNames": [
+        {
+          "name": "藍采和",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lan Ts'ai-ho",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "emblem": "flower basket",
+        "patronOf": "florists, gardeners, poor",
+        "dynasty": "Tang",
+        "element": "wuxing.phase.wood"
+      }
+    },
+    {
+      "canonicalName": "taoism.immortal.he-xiangu",
+      "entityType": "taoism.immortal",
+      "primaryDisplayName": "He Xiangu",
+      "description": "He Xiangu (何仙姑) is the only female of the Eight Immortals. A Tang dynasty girl from Guangdong who received a vision instructing her to eat powdered mica, she abstained from cooked food, could walk over mountains, and foretold the future. She carries a lotus flower (purity and wisdom) and a peach of immortality, and represents feminine spiritual attainment, purity, and the accessibility of Taoist practice to women. She is invoked for marital happiness and longevity.",
+      "secondaryNames": [
+        {
+          "name": "何仙姑",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ho Hsien-ku",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "He Xian Gu",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "taoism",
+        "immortal",
+        "ba-xian",
+        "chinese"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "emblem": "lotus flower / peach",
+        "patronOf": "women, marital happiness",
+        "dynasty": "Tang",
+        "element": "astrology.element.water"
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+  <!-- Background -->
+  <rect width="100" height="100" fill="#000000"/>
+
+  <!--
+    Tree of Life — Grimoire Atziluth
+    Sephiroth (Queen Scale / Golden Dawn traditional colours):
+      Kether    (50, 6)  — White Brilliance
+      Chokmah   (83,19)  — Pearl Grey
+      Binah     (17,19)  — Saturn Black (dark purple for visibility against black bg)
+      Chesed    (83,42)  — Royal Blue
+      Geburah   (17,42)  — Scarlet
+      Tiphareth (50,56)  — Gold
+      Netzach   (83,71)  — Emerald
+      Hod       (17,71)  — Orange
+      Yesod     (50,83)  — Violet
+      Malkuth   (50,95)  — Citrine / Olive / Russet / Black (4 quarters)
+  -->
+
+  <!-- 22 Paths -->
+  <g stroke="#363650" stroke-width="0.8" stroke-linecap="round">
+    <!-- Supernal Triad -->
+    <line x1="50" y1="6"  x2="83" y2="19"/>  <!-- Kether–Chokmah    Aleph  -->
+    <line x1="50" y1="6"  x2="17" y2="19"/>  <!-- Kether–Binah      Beth   -->
+    <line x1="50" y1="6"  x2="50" y2="56"/>  <!-- Kether–Tiphareth  Gimel  -->
+    <line x1="83" y1="19" x2="17" y2="19"/>  <!-- Chokmah–Binah     Daleth -->
+    <line x1="83" y1="19" x2="50" y2="56"/>  <!-- Chokmah–Tiphareth He     -->
+    <line x1="83" y1="19" x2="83" y2="42"/>  <!-- Chokmah–Chesed    Vav    -->
+    <line x1="17" y1="19" x2="50" y2="56"/>  <!-- Binah–Tiphareth   Zayin  -->
+    <line x1="17" y1="19" x2="17" y2="42"/>  <!-- Binah–Geburah     Cheth  -->
+    <!-- Second Triad -->
+    <line x1="83" y1="42" x2="17" y2="42"/>  <!-- Chesed–Geburah    Teth   -->
+    <line x1="83" y1="42" x2="50" y2="56"/>  <!-- Chesed–Tiphareth  Yod    -->
+    <line x1="83" y1="42" x2="83" y2="71"/>  <!-- Chesed–Netzach    Kaph   -->
+    <line x1="17" y1="42" x2="50" y2="56"/>  <!-- Geburah–Tiphareth Lamed  -->
+    <line x1="17" y1="42" x2="17" y2="71"/>  <!-- Geburah–Hod       Mem    -->
+    <!-- Third Triad -->
+    <line x1="50" y1="56" x2="83" y2="71"/>  <!-- Tiphareth–Netzach Nun    -->
+    <line x1="50" y1="56" x2="17" y2="71"/>  <!-- Tiphareth–Hod     Ayin   -->
+    <line x1="50" y1="56" x2="50" y2="83"/>  <!-- Tiphareth–Yesod   Samech -->
+    <line x1="83" y1="71" x2="17" y2="71"/>  <!-- Netzach–Hod       Pe     -->
+    <line x1="83" y1="71" x2="50" y2="83"/>  <!-- Netzach–Yesod     Tzaddi -->
+    <line x1="83" y1="71" x2="50" y2="95"/>  <!-- Netzach–Malkuth   Qoph   -->
+    <line x1="17" y1="71" x2="50" y2="83"/>  <!-- Hod–Yesod         Resh   -->
+    <line x1="17" y1="71" x2="50" y2="95"/>  <!-- Hod–Malkuth       Shin   -->
+    <line x1="50" y1="83" x2="50" y2="95"/>  <!-- Yesod–Malkuth     Tav    -->
+  </g>
+
+  <!-- Kether (1) — White Brilliance -->
+  <circle cx="50" cy="6"  r="5.2" fill="#F2F2FC"/>
+
+  <!-- Chokmah (2) — Pearl Grey -->
+  <circle cx="83" cy="19" r="5.2" fill="#9BB0C8"/>
+
+  <!-- Binah (3) — Saturn / Black (deep purple keeps it visible on black) -->
+  <circle cx="17" cy="19" r="5.2" fill="#1A003C" stroke="#5A20A0" stroke-width="0.9"/>
+
+  <!-- Chesed (4) — Royal Blue -->
+  <circle cx="83" cy="42" r="5.2" fill="#1E5CC8"/>
+
+  <!-- Geburah (5) — Scarlet -->
+  <circle cx="17" cy="42" r="5.2" fill="#CC2020"/>
+
+  <!-- Tiphareth (6) — Gold -->
+  <circle cx="50" cy="56" r="5.2" fill="#F0C020"/>
+
+  <!-- Netzach (7) — Emerald -->
+  <circle cx="83" cy="71" r="5.2" fill="#18A048"/>
+
+  <!-- Hod (8) — Orange -->
+  <circle cx="17" cy="71" r="5.2" fill="#D87000"/>
+
+  <!-- Yesod (9) — Violet -->
+  <circle cx="50" cy="83" r="5.2" fill="#7040C0"/>
+
+  <!-- Malkuth (10) — Citrine / Olive / Russet / Black (4 quadrants) -->
+  <clipPath id="mk-clip"><circle cx="50" cy="95" r="5.2"/></clipPath>
+  <g clip-path="url(#mk-clip)">
+    <rect x="0"  y="0"  width="50" height="95"   fill="#D0BC42"/>  <!-- top-left:     Citrine -->
+    <rect x="50" y="0"  width="50" height="95"   fill="#6A7A30"/>  <!-- top-right:    Olive   -->
+    <rect x="0"  y="95" width="50" height="10"   fill="#8A3028"/>  <!-- bottom-left:  Russet  -->
+    <rect x="50" y="95" width="50" height="10"   fill="#1E1E1E"/>  <!-- bottom-right: Black   -->
+  </g>
+  <circle cx="50" cy="95" r="5.2" fill="none" stroke="#484848" stroke-width="0.4"/>
+
+</svg>

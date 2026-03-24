@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "deity.greek.helios",              "target": "astrology.planet.sol",              "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.selene",              "target": "astrology.planet.luna",             "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.hermes",              "target": "astrology.planet.mercury",          "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.aphrodite",           "target": "astrology.planet.venus",            "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.ares",                "target": "astrology.planet.mars",             "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.zeus",                "target": "astrology.planet.jupiter",          "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.kronos",              "target": "astrology.planet.saturn",           "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.greek.hecate",              "target": "astrology.planet.luna",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.persephone",          "target": "astrology.planet.luna",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.hermes-trismegistus", "target": "astrology.planet.mercury",          "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.hermes-trismegistus", "target": "deity.greek.hermes",                "label": "syncretic-form", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.dionysus",            "target": "astrology.planet.jupiter",          "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.hephaestus",          "target": "astrology.planet.mars",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.greek.poseidon",            "target": "astrology.planet.neptune",          "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+
+    { "source": "deity.egyptian.ra",               "target": "astrology.planet.sol",              "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.egyptian.thoth",            "target": "astrology.planet.mercury",          "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.egyptian.osiris",           "target": "astrology.planet.saturn",           "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.osiris",           "target": "qabalah.sephira.chokmah",           "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.isis",             "target": "astrology.planet.venus",            "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.horus",            "target": "astrology.planet.sol",              "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.set",              "target": "astrology.planet.mars",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.anubis",           "target": "astrology.planet.mercury",          "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.hathor",           "target": "astrology.planet.venus",            "label": "corresponds-to", "bidirectional": true,  "traditionScope": [] },
+    { "source": "deity.egyptian.maat",             "target": "astrology.zodiac-sign.libra",       "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.ptah",             "target": "astrology.planet.saturn",           "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.sekhmet",          "target": "astrology.planet.mars",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.nuit",             "target": "astrology.planet.saturn",           "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.nephthys",         "target": "astrology.planet.luna",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] },
+    { "source": "deity.egyptian.bast",             "target": "astrology.planet.luna",             "label": "corresponds-to", "bidirectional": false, "traditionScope": [] }
+  ]
+}

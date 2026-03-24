@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#020208"/>
+      <stop offset="100%" stop-color="#040412"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#1a0a28" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#2a1448" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#1a0a28" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#1a0a28" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#aa88cc" opacity="0.9">XV</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#2a1448" opacity="0.85" filter="url(#glow)">ע</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#2a1440" opacity="0.8">♑</text>
+
+
+  <!-- Ghost Ayin (ע) — the Eye and Fountain; the Devil sees only material forms -->
+  <text x="152" y="218"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="252" fill="#080418" opacity="0.12">ע</text>
+
+  <!-- Qliphothic glows — bottom corners; inverted mirror of Geburah glows in Death (XIII) -->
+  <circle cx="28"  cy="324" r="30" fill="#200028" opacity="0.55" filter="url(#softglow)"/>
+  <circle cx="272" cy="324" r="30" fill="#200028" opacity="0.55" filter="url(#softglow)"/>
+
+  <!-- Ziggurat = Qliphothic Tree — Babel reaching for the divine through material accumulation -->
+  <!-- "Let us build a tower whose top is in the heavens" (Gen 11:4) -->
+  <!-- Same vertical aspiration as the Hermit's staff and Art's arrow — but built, not grown -->
+  <!-- Ten hollow stone-nodes in Tree of Life positions: the Qliphoth, the shells of refused light -->
+  <rect x="167" y="168" width="90" height="28"
+          fill="#1c1408" stroke="#2a2010" stroke-width="0.6" opacity="0.90"/>
+  <rect x="177" y="140" width="70" height="28"
+          fill="#1c1408" stroke="#2a2010" stroke-width="0.6" opacity="0.90"/>
+  <rect x="187" y="112" width="50" height="28"
+          fill="#1c1408" stroke="#2a2010" stroke-width="0.6" opacity="0.90"/>
+  <rect x="197" y="84" width="30" height="28"
+          fill="#1c1408" stroke="#2a2010" stroke-width="0.6" opacity="0.90"/>
+  <line x1="171" y1="176" x2="253" y2="176"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="171" y1="184" x2="253" y2="184"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="181" y1="148" x2="243" y2="148"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="181" y1="156" x2="243" y2="156"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="191" y1="120" x2="233" y2="120"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="191" y1="128" x2="233" y2="128"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="201" y1="92" x2="223" y2="92"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <line x1="201" y1="100" x2="223" y2="100"
+            stroke="#2a2010" stroke-width="0.4" opacity="0.45"/>
+  <!-- Qlipha of Kether -->
+  <circle cx="212" cy="88" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Chokmah -->
+  <circle cx="225" cy="101" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Binah -->
+  <circle cx="199" cy="101" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Chesed -->
+  <circle cx="233" cy="124" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Geburah -->
+  <circle cx="191" cy="124" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Tiphareth -->
+  <circle cx="212" cy="132" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Netzach -->
+  <circle cx="240" cy="152" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Hod -->
+  <circle cx="184" cy="152" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Yesod -->
+  <circle cx="212" cy="163" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  <!-- Qlipha of Malkuth -->
+  <circle cx="212" cy="185" r="3.5"
+          fill="#080412" stroke="#2a1830" stroke-width="0.8" opacity="0.82"/>
+  
+  <!-- Lightning — divine judgment already in motion; the same white light as the Fool's sun -->
+  <!-- The Tower falls the moment its architect confuses material accumulation with ascent -->
+  <path d="M224,78 L218,92 L223,96 L214,116 L220,120 L210,140"
+        fill="none" stroke="#eeeebb" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round" opacity="0.84" filter="url(#glow)"/>
+  <path d="M224,78 L218,92 L223,96 L214,116 L220,120 L210,140"
+        fill="none" stroke="#eeeebb" stroke-width="6" opacity="0.10" filter="url(#softglow)"/>
+  <!-- Crown crack at lightning strike -->
+  <path d="M207,84 L212,91 L219,87"
+        fill="none" stroke="#ee9900" stroke-width="1.6" opacity="0.72"/>
+
+  <!-- Beast shadow — the Devil's appetite as history (and Revelation) has seen it -->
+  <!-- Same seven heads as Lust (XI); the Beast is what Pan looks like in the light of empire -->
+  <ellipse cx="192" cy="100" rx="4" ry="3"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="202" cy="95" rx="4" ry="3"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="212" cy="91" rx="6" ry="4.5"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="222" cy="95" rx="4" ry="3"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="232" cy="100" rx="4" ry="3"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="206" cy="107" rx="3.5" ry="2.63"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="218" cy="107" rx="3.5" ry="2.63"
+              fill="#050210" opacity="0.52"/>
+  <ellipse cx="212" cy="128" rx="22" ry="16" fill="#050210" opacity="0.38"/>
+
+  <!-- Lake of Fire — Rev 20:10; Capricorn's sea; the anti-Art -->
+  <!-- Where Art (XIV) had the V.I.T.R.I.O.L. cauldron, here is undifferentiated brimstone -->
+  <!-- The Devil's domain is also his fate: the measure is already taken -->
+  <rect x="18" y="296" width="264" height="56" fill="#1a0800" opacity="0.94"/>
+  <!-- Sulfur-fire surface wave -->
+  <path d="M18,296 Q50,291 82,296 Q114,301 150,296 Q186,291 218,296 Q250,301 282,296"
+        fill="none" stroke="#cc6600" stroke-width="1.4" opacity="0.58"/>
+  <!-- Flame tongues -->
+  <path d="M41,296 Q47.6,293.2 52,289 Q56.4,293.2 63,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M83,296 Q88.4,289 92,283 Q95.6,289 101,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M125,296 Q129.2,291.5 132,287 Q134.8,291.5 139,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M142,296 Q146.8,282.4 150,274 Q153.2,282.4 158,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M161,296 Q165.2,291.5 168,287 Q170.8,291.5 175,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M199,296 Q204.4,289 208,283 Q211.6,289 217,296"
+          fill="#cc6600" opacity="0.54"/>
+  <path d="M237,296 Q243.6,293.2 248,289 Q252.4,293.2 259,296"
+          fill="#cc6600" opacity="0.54"/>
+  <!-- Bright sulfur cores -->
+  <ellipse cx="52" cy="293" rx="5.28" ry="7.48"
+              fill="#ee9900" opacity="0.40"/>
+  <ellipse cx="92" cy="287" rx="4.32" ry="6.12"
+              fill="#ee9900" opacity="0.40"/>
+  <ellipse cx="132" cy="291" rx="3.36" ry="4.76"
+              fill="#ee9900" opacity="0.40"/>
+  <ellipse cx="168" cy="291" rx="3.36" ry="4.76"
+              fill="#ee9900" opacity="0.40"/>
+  <ellipse cx="208" cy="287" rx="4.32" ry="6.12"
+              fill="#ee9900" opacity="0.40"/>
+  <ellipse cx="248" cy="293" rx="5.28" ry="7.48"
+              fill="#ee9900" opacity="0.40"/>
+  <!-- Central axis flame (same position as Art's cauldron — the Work inverted) -->
+  <path d="M143,296 Q148,272 150,264 Q152,272 157,296"
+        fill="#ee9900" opacity="0.52" filter="url(#glow)"/>
+  <path d="M146,296 Q149,280 150,276 Q151,280 154,296"
+        fill="#ffcc44" opacity="0.68"/>
+  <!-- Sulfur glow on surface -->
+  <rect x="18" y="291" width="264" height="5"
+        fill="#cc6600" opacity="0.18" filter="url(#softglow)"/>
+  <!-- Capricorn ♑ and Ayin ע — attribution floating in the Lake -->
+  <text x="72"  y="324" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols',sans-serif"
+        font-size="13" fill="#cc6600" opacity="0.38">♑</text>
+  <text x="228" y="324" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="14" fill="#cc6600" opacity="0.38">ע</text>
+
+  <!-- Inverted Caduceus — Art XIV's axis reversed; the Logos turned toward matter -->
+  <!-- Wings point INTO the Lake — the caduceus's aspiration inverted to immersion -->
+  <line x1="184" y1="188" x2="184" y2="294"
+        stroke="#3a2418" stroke-width="2" opacity="0.52"/>
+  <path d="M176,188 C198,195.42 198,207.08 176,214.5 C170,221.92 170,233.58 192,241 C198,248.42 198,260.08 176,267.5 C170,274.92 170,286.58 192,294"  fill="none" stroke="#cc6600" stroke-width="1.4" opacity="0.56"/>
+  <path d="M192,188 C170,195.42 170,207.08 192,214.5 C198,221.92 198,233.58 176,241 C170,248.42 170,260.08 192,267.5 C198,274.92 198,286.58 176,294" fill="none" stroke="#1a3010" stroke-width="1.4" opacity="0.52"/>
+  <!-- Inverted wings at base (entering the Lake) -->
+  <path d="M176,290 C160,300 156,286 164,276"
+        fill="none" stroke="#3a2418" stroke-width="1.2" opacity="0.44"/>
+  <path d="M192,290 C208,300 212,286 204,276"
+        fill="none" stroke="#3a2418" stroke-width="1.2" opacity="0.44"/>
+
+  <!-- Baphomet/Pan — the irresistible principle of material force; Pan = All -->
+  <!-- Joyful, not grimacing — the Devil is not malice but excess without direction -->
+  <!-- The all-consuming Appetite; the Beast (XI) is one of his faces -->
+  <!-- Horns — large, sweeping, dominant; horn tips just above header border -->
+  <path d="M132,140 C116,120 120,102 136,100" fill="none" stroke="#1a0e08" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+  <path d="M168,140 C184,120 180,102 164,100" fill="none" stroke="#1a0e08" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+  <path d="M132,140 C116,120 120,102 136,100" fill="none" stroke="#cc6600" stroke-width="3" opacity="0.14"/>
+  <path d="M168,140 C184,120 180,102 164,100" fill="none" stroke="#cc6600" stroke-width="3" opacity="0.14"/>
+  <!-- Torch between horn tips — material fire imitating Tiphareth's light; always combustion, never illumination -->
+  <!-- The Fool's solar disk is transcendence; this torch is its material parody -->
+  <line x1="150" y1="100" x2="150" y2="88"
+        stroke="#3a2418" stroke-width="3.5" stroke-linecap="round" opacity="0.74"/>
+  <path d="M143,86 Q145,72 150,64 Q155,72 157,86"
+        fill="#cc6600" opacity="0.74" filter="url(#glow)"/>
+  <path d="M146,84 Q150,66 150,60 Q150,66 154,84"
+        fill="#ee9900" opacity="0.76"/>
+  <path d="M148,74 Q150,56 152,74"
+        fill="#ffcc44" opacity="0.70"/>
+  <circle cx="150" cy="72" r="12" fill="#cc6600" opacity="0.10" filter="url(#softglow)"/>
+  <!-- Skull (goat — broad, flat) -->
+  <ellipse cx="150" cy="148" rx="22" ry="18" fill="#2a1a10" opacity="0.90"/>
+  <!-- Snout (elongated goat muzzle) -->
+  <path d="M140,152 Q136,167 142,175 Q150,179 158,175 Q164,167 160,152"
+        fill="#3a2418" opacity="0.86"/>
+  <!-- Beard -->
+  <path d="M144,175 Q150,192 150,198 Q150,192 156,175"
+        fill="#1a0e08" opacity="0.74"/>
+  <!-- Goat ears (horizontal, swept back) -->
+  <path d="M128,146 L112,151 L124,161" fill="#2a1a10" opacity="0.82"/>
+  <path d="M172,146 L188,151 L176,161" fill="#2a1a10" opacity="0.82"/>
+  <!-- Inverted pentagram on brow — spirit subjugated to matter; the microcosm inverted -->
+  <line x1="150" y1="143" x2="143.53" y2="123.1"
+          stroke="#880011" stroke-width="0.9" opacity="0.64"/>
+  <line x1="143.53" y1="123.1" x2="160.46" y2="135.4"
+          stroke="#880011" stroke-width="0.9" opacity="0.64"/>
+  <line x1="160.46" y1="135.4" x2="139.54" y2="135.4"
+          stroke="#880011" stroke-width="0.9" opacity="0.64"/>
+  <line x1="139.54" y1="135.4" x2="156.47" y2="123.1"
+          stroke="#880011" stroke-width="0.9" opacity="0.64"/>
+  <line x1="156.47" y1="123.1" x2="150" y2="143"
+          stroke="#880011" stroke-width="0.9" opacity="0.64"/>
+  <!-- Third Eye (Ayin ע — the Eye that is this path's letter; sees only material forms) -->
+  <circle cx="150" cy="139" r="10" fill="#ff9900" opacity="0.18" filter="url(#softglow)"/>
+  <circle cx="150" cy="139" r="5.5" fill="#ff9900" opacity="0.80"/>
+  <ellipse cx="150" cy="139" rx="2.5" ry="3.5" fill="#ffcc44" opacity="0.92"/>
+  <!-- Hairy torso -->
+  <path d="M128,174 Q116,212 114,240
+           L186,240 Q184,212 172,174 Z"
+        fill="#2a1a10" opacity="0.88"/>
+  <!-- Chest/belly hair texture -->
+  <line x1="130" y1="190" x2="133" y2="197" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="135" y1="199" x2="138" y2="206" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="140" y1="208" x2="143" y2="215" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="145" y1="190" x2="148" y2="197" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="150" y1="199" x2="153" y2="206" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="155" y1="208" x2="158" y2="215" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="160" y1="190" x2="163" y2="197" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="165" y1="199" x2="168" y2="206" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <line x1="170" y1="208" x2="173" y2="215" stroke="#3a2418" stroke-width="0.7" opacity="0.48"/>
+  <!-- Left arm raised (the sign of material command — As Below; not As Above) -->
+  <line x1="128" y1="186" x2="94" y2="166"
+        stroke="#3a2418" stroke-width="7" stroke-linecap="round" opacity="0.80"/>
+  <circle cx="94" cy="166" r="6" fill="#3a2418" opacity="0.74"/>
+  <!-- Right arm lowered (holds inverted caduceus, pointing into Lake) -->
+  <line x1="172" y1="186" x2="184" y2="188"
+        stroke="#3a2418" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <!-- Goat haunches (below torso — Capricorn body) -->
+  <path d="M114,240 Q110,266 120,290 L130,296"
+        fill="#2a1a10" opacity="0.84"/>
+  <path d="M186,240 Q190,266 180,290 L170,296"
+        fill="#2a1a10" opacity="0.84"/>
+  <!-- Cloven hooves just above Lake surface -->
+  <ellipse cx="126" cy="294" rx="8" ry="5" fill="#1a0e08" opacity="0.86"/>
+  <ellipse cx="174" cy="294" rx="8" ry="5" fill="#1a0e08" opacity="0.86"/>
+  <!-- Fish-tail hint (Capricorn sea-goat: the tail descends into the Lake he rules and will consume him) -->
+  <path d="M140,296 Q144,314 134,326"
+        fill="none" stroke="#1a3010" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M160,296 Q156,314 166,326"
+        fill="none" stroke="#1a3010" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Nachash (נחש) — the Eden serpent; "you shall be as gods" = Babel's program -->
+  <!-- Rises from the Lake it inhabits; its coils are the chains of the bound Lovers -->
+  <!-- Nachash body rising from Lake centre -->
+  <path d="M148,296 C146,274 154,254 148,238 C142,222 152,214 150,228"
+        fill="none" stroke="#1a3010" stroke-width="5" stroke-linecap="round" opacity="0.74"/>
+  <path d="M148,296 C146,274 154,254 148,238 C142,222 152,214 150,228"
+        fill="none" stroke="#2a5020" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <!-- Serpent head (facing upward — toward Baphomet, its master and its substance) -->
+  <ellipse cx="150" cy="224" rx="7" ry="5" fill="#1a3010" opacity="0.82"/>
+  <!-- Forked tongue -->
+  <path d="M147,220 L150,212 L153,220"
+        fill="none" stroke="#2a5020" stroke-width="1.2" opacity="0.65"/>
+  <!-- Left coil → King's chain (corrupted gold: same palette lineage as Art's solGold) -->
+  <!-- Gold darkened from #ddaa22 to #886622 — the same substance, unmaintained -->
+  <path d="M145,288 C120,290 102,278 88,274"
+        fill="none" stroke="#886622" stroke-width="3.5" stroke-linecap="round" opacity="0.70"/>
+  <path d="M145,288 C120,290 102,278 88,274"
+        fill="none" stroke="#1a3010" stroke-width="1.5" stroke-linecap="round" opacity="0.38"/>
+  <!-- Right coil → Queen's chain (corrupted silver: same palette lineage as Art's lunSilv) -->
+  <!-- Silver darkened from #8899bb to #445577 — the union of the Lovers, now divided and bound -->
+  <path d="M155,288 C180,290 198,278 212,274"
+        fill="none" stroke="#445577" stroke-width="3.5" stroke-linecap="round" opacity="0.66"/>
+  <path d="M155,288 C180,290 198,278 212,274"
+        fill="none" stroke="#1a3010" stroke-width="1.5" stroke-linecap="round" opacity="0.36"/>
+
+  <!-- Chained King and Queen — echoing The Lovers (VI) and Art (XIV) -->
+  <!-- The alchemical pair who chose the Nachash's shortcut; same colours, now darkened -->
+  <!-- King (left) — corrupted gold (#886622 ← Lovers' King #c8a060 ← Art's solGold #ddaa22) -->
+  <ellipse cx="80" cy="272" rx="7" ry="8" fill="#886622" opacity="0.70"/>
+  <path d="M74,280 Q70,291 72,296" fill="#886622" opacity="0.56"/>
+  <circle cx="76" cy="278" r="4.5" fill="none"
+          stroke="#886622" stroke-width="1.5" opacity="0.56"/>
+  <!-- Queen (right) — corrupted silver (#445577 ← Lovers' Queen #c0b8d0 ← Art's lunSilv #8899bb) -->
+  <ellipse cx="220" cy="272" rx="7" ry="8" fill="#445577" opacity="0.66"/>
+  <path d="M214,280 Q210,291 212,296" fill="#445577" opacity="0.52"/>
+  <circle cx="224" cy="278" r="4.5" fill="none"
+          stroke="#445577" stroke-width="1.5" opacity="0.52"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#aa88cc" letter-spacing="2.5"
+        filter="url(#glow)">THE DEVIL</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#2a1440" letter-spacing="3" opacity="0.75">Ayin · Capricorn · Path 26</text>
+</svg>

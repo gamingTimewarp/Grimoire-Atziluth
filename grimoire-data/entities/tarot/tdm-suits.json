@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.suit.tdm.batons",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Bâtons",
+      "description": "The suit of Bâtons (Batons/Wands) in the Tarot de Marseille. Fire element.",
+      "secondaryNames": [
+        {
+          "name": "Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Batons",
+          "languageTag": "fr-roman",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "tarot-de-marseille",
+        "fire"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "deck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.tdm.coupes",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Coupes",
+      "description": "The suit of Coupes (Cups) in the Tarot de Marseille. Water element.",
+      "secondaryNames": [
+        {
+          "name": "Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "tarot-de-marseille",
+        "water"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "deck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.tdm.epees",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Épées",
+      "description": "The suit of Épées (Swords) in the Tarot de Marseille. Air element.",
+      "secondaryNames": [
+        {
+          "name": "Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "tarot-de-marseille",
+        "air"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "deck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.tdm.deniers",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Deniers",
+      "description": "The suit of Deniers (Coins/Pentacles) in the Tarot de Marseille. Earth element.",
+      "secondaryNames": [
+        {
+          "name": "Coins",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pentacles",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "tarot-de-marseille",
+        "earth"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "deck": "tarot.deck.tarot-de-marseille"
+      }
+    }
+  ]
+}

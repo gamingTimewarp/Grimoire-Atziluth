@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "iching.trigram.water",
+      "target": "compass.direction.north",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.mountain",
+      "target": "compass.direction.northeast",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.thunder",
+      "target": "compass.direction.east",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.wind",
+      "target": "compass.direction.southeast",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.fire",
+      "target": "compass.direction.south",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.earth",
+      "target": "compass.direction.southwest",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.lake",
+      "target": "compass.direction.west",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.heaven",
+      "target": "compass.direction.northwest",
+      "label": "later-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-later-heaven"]
+    },
+    {
+      "source": "iching.trigram.heaven",
+      "target": "compass.direction.south",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.lake",
+      "target": "compass.direction.southeast",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.fire",
+      "target": "compass.direction.east",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.thunder",
+      "target": "compass.direction.northeast",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.wind",
+      "target": "compass.direction.southwest",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.water",
+      "target": "compass.direction.west",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.mountain",
+      "target": "compass.direction.northwest",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    },
+    {
+      "source": "iching.trigram.earth",
+      "target": "compass.direction.north",
+      "label": "earlier-heaven-direction",
+      "bidirectional": false,
+      "traditionScope": ["tradition.feng-shui-earlier-heaven"]
+    }
+  ]
+}

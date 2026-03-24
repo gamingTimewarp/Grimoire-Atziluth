@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000810"/>
+      <stop offset="100%" stop-color="#001530"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#002255" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#0044aa" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#002255" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#002255" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#88ccff" opacity="0.9">II</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#0044aa" opacity="0.85" filter="url(#glow)">ג</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#335577" opacity="0.8">☽</text>
+
+
+  
+  <text x="150" y="225"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="250" fill="#1155aa" opacity="0.055">ג</text>
+  
+  <!-- Full moon corona layers -->
+  <circle cx="150" cy="128" r="54" fill="#b0ccee" opacity="0.06" filter="url(#softglow)"/>
+  <circle cx="150" cy="128" r="44" fill="#c8ddf5" opacity="0.12" filter="url(#softglow)"/>
+  <circle cx="150" cy="128" r="36"  fill="#ddeeff" opacity="0.22"/>
+  <!-- Full moon disc -->
+  <circle cx="150" cy="128" r="30" fill="#eef5ff" opacity="0.92"/>
+  <!-- Subtle surface texture — maria shadows -->
+  <ellipse cx="140" cy="120"  rx="8"  ry="6"  fill="#c8d8ee" opacity="0.35"/>
+  <ellipse cx="158" cy="133"  rx="6"  ry="4.5" fill="#c8d8ee" opacity="0.28"/>
+  <ellipse cx="144" cy="138" rx="5"  ry="3.5" fill="#c8d8ee" opacity="0.22"/>
+  
+  <!-- Waxing crescent -->
+  <circle cx="68" cy="128" r="20" fill="#d0e4f8" opacity="0.82"/>
+  <circle cx="79" cy="128" r="17.6" fill="#001830" opacity="0.92"/>
+  
+  <!-- Waning crescent -->
+  <circle cx="232" cy="128" r="20" fill="#d0e4f8" opacity="0.82"/>
+  <circle cx="221" cy="128" r="17.6" fill="#001830" opacity="0.92"/>
+  
+  <path d="M68,152 Q150,173.1 232,152"
+        fill="none" stroke="#3366aa" stroke-width="0.8" opacity="0.3"/>
+  
+  <rect x="50" y="88" width="200" height="207"
+        fill="#1a3a66" opacity="0.12"/>
+  <!-- Veil folds — subtle vertical lines -->
+  <line x1="80" y1="88" x2="84" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="105" y1="88" x2="109" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="130" y1="88" x2="134" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="155" y1="88" x2="159" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="180" y1="88" x2="184" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="205" y1="88" x2="209" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  <line x1="230" y1="88" x2="234" y2="295"
+           stroke="#4466aa" stroke-width="0.6" opacity="0.18"/>
+  
+  <!-- Boaz — black pillar (left) -->
+  <rect x="22" y="88" width="28" height="207" rx="3"
+        fill="#0a0a14" stroke="#223355" stroke-width="1" opacity="0.9"/>
+  <!-- Boaz capital -->
+  <rect x="18" y="80" width="36" height="10" rx="2"
+        fill="#0a0a14" stroke="#223355" stroke-width="1" opacity="0.9"/>
+  <!-- Boaz base -->
+  <rect x="18" y="295" width="36" height="8" rx="2"
+        fill="#0a0a14" stroke="#223355" stroke-width="1" opacity="0.9"/>
+
+  <!-- Jachin — white pillar (right) -->
+  <rect x="250" y="88" width="28" height="207" rx="3"
+        fill="#e8eef8" stroke="#99aabb" stroke-width="1" opacity="0.78"/>
+  <!-- Jachin capital -->
+  <rect x="246" y="80" width="36" height="10" rx="2"
+        fill="#e8eef8" stroke="#99aabb" stroke-width="1" opacity="0.78"/>
+  <!-- Jachin base -->
+  <rect x="246" y="295" width="36" height="8" rx="2"
+        fill="#e8eef8" stroke="#99aabb" stroke-width="1" opacity="0.78"/>
+  
+  <!-- Draped robe — lower body pool -->
+  <ellipse cx="150" cy="265" rx="38" ry="18" fill="#7090b8" opacity="0.55"/>
+  <!-- Robe torso -->
+  <path d="M116,250 Q114,200 150,195
+           Q186,200 184,250 Q150,270 116,250 Z"
+        fill="#8aaace" opacity="0.62"/>
+  <!-- Head -->
+  <circle cx="150" cy="178" r="16" fill="#a8c0d8" opacity="0.82"/>
+  <!-- Silver crescent crown on brow -->
+  <path d="M138,168 Q150,158 162,168"
+        fill="none" stroke="#d8eeff" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <!-- Hands folded in lap — subtle -->
+  <ellipse cx="140" cy="242" rx="8" ry="5" fill="#9ab8d0" opacity="0.5"/>
+  <ellipse cx="160" cy="242" rx="8" ry="5" fill="#9ab8d0" opacity="0.5"/>
+  <!-- Bow across lap (secondary attribute — one subtle arc) -->
+  <path d="M122,248 Q150,230 178,248"
+        fill="none" stroke="#7aaace" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="122" y1="248" x2="178" y2="248"
+        stroke="#7aaace" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
+  
+  <!-- Desert ridge / horizon line -->
+  <path d="M18,312 Q80,296 150,302 Q220,306 282,300"
+        fill="none" stroke="#1a3355" stroke-width="1.2" opacity="0.5"/>
+  <!-- Sand dune fill -->
+  <path d="M18,312 Q80,296 150,302
+           Q220,306 282,300 L282,355 L18,355 Z"
+        fill="#0d1e35" opacity="0.5"/>
+
+  <!-- Camel silhouette (walking right) — Gimel -->
+  <!-- Body -->
+  <ellipse cx="100" cy="286" rx="30" ry="13" fill="#0a1628" opacity="0.85"/>
+  <!-- Hump -->
+  <path d="M88,274 Q100,260 112,274"
+        fill="#0a1628" stroke="#0a1628" stroke-width="1" opacity="0.85"/>
+  <!-- Neck -->
+  <path d="M124,280 Q130,264 125,256"
+        fill="none" stroke="#0a1628" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <!-- Head -->
+  <ellipse cx="124" cy="252" rx="9" ry="7" fill="#0a1628" opacity="0.85"/>
+  <!-- Snout -->
+  <rect x="128" y="248" width="10" height="5" rx="2" fill="#0a1628" opacity="0.85"/>
+  <!-- Legs (4, walking) -->
+  <line x1="78"  y1="298" x2="74"  y2="310"
+        stroke="#0a1628" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="90"  y1="298" x2="92"  y2="310"
+        stroke="#0a1628" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="110" y1="298" x2="108" y2="310"
+        stroke="#0a1628" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="122" y1="298" x2="126" y2="310"
+        stroke="#0a1628" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Tail -->
+  <path d="M70,284 Q62,288 64,294"
+        fill="none" stroke="#0a1628" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  
+  <!-- Pool surface -->
+  <ellipse cx="200" cy="336" rx="52" ry="12" fill="#0d2244" opacity="0.7"/>
+  <!-- Reflected moon in pool — smaller, inverted, ghostly -->
+  <circle cx="200" cy="334"  r="10" fill="#c8ddf5" opacity="0.38" filter="url(#softglow)"/>
+  <circle cx="200" cy="334"  r="7"  fill="#ddeeff" opacity="0.45"/>
+  <!-- Ripple rings -->
+  <ellipse cx="200" cy="336" rx="22" ry="5"  fill="none"
+           stroke="#2255aa" stroke-width="0.6" opacity="0.35"/>
+  <ellipse cx="200" cy="336" rx="38" ry="8.5" fill="none"
+           stroke="#2255aa" stroke-width="0.5" opacity="0.22"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#88ccff" letter-spacing="2.5"
+        filter="url(#glow)">The Priestess</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#335577" letter-spacing="3" opacity="0.75">Gimel · Moon · Path 13</text>
+</svg>

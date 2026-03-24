@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "spirit.olympic.aratron",
+      "target": "astrology.planet.saturn",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.bethor",
+      "target": "astrology.planet.jupiter",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.phaleg",
+      "target": "astrology.planet.mars",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.och",
+      "target": "astrology.planet.sol",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.hagith",
+      "target": "astrology.planet.venus",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.ophiel",
+      "target": "astrology.planet.mercury",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "spirit.olympic.phul",
+      "target": "astrology.planet.luna",
+      "label": "serves",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

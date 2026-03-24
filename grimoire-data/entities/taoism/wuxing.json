@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "wuxing.phase.wood",
+      "entityType": "wuxing.phase",
+      "primaryDisplayName": "Wood",
+      "description": "Wood (木 Mù) is the first of the Five Phases (五行 Wǔxíng) in Chinese cosmology, corresponding to spring, the east, growth, and the rising of new life. Wood is the phase of beginnings, expansion, ambition, and flexibility — the sapling bending without breaking, the root splitting stone. In the generative cycle (shēng) Wood feeds Fire. In the controlling cycle (kè) Wood parts Earth (the plough). In Chinese medicine Wood governs the liver and gallbladder, the sinews, and the emotion of anger. Season: Spring. Direction: East. Colour: Green/Blue-green. Planet: Jupiter. Western alchemical element correspondence: Air — both are associated with growth, movement, rising energy, and spring. The trigrams Thunder (Zhen ☳) and Wind (Xun ☴) correspond to Wood.",
+      "secondaryNames": [
+        {
+          "name": "木",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mù",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Moku",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "목",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Mok",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "wuxing",
+        "taoism",
+        "cosmology",
+        "wood"
+      ],
+      "extendedData": {
+        "chineseCharacter": "木",
+        "pinyin": "Mù",
+        "orderNumber": 1,
+        "season": "spring",
+        "direction": "east",
+        "colour": "green",
+        "planet": "astrology.planet.jupiter",
+        "organ": "liver",
+        "pairedOrgan": "gallbladder",
+        "emotion": "anger",
+        "trigrams": [
+          "iching.trigram.thunder",
+          "iching.trigram.wind"
+        ],
+        "generatesPhase": "wuxing.phase.fire",
+        "controlsPhase": "wuxing.phase.earth",
+        "generatedByPhase": "wuxing.phase.water",
+        "controlledByPhase": "wuxing.phase.metal",
+        "westernElement": "astrology.element.air"
+      }
+    },
+    {
+      "canonicalName": "wuxing.phase.fire",
+      "entityType": "wuxing.phase",
+      "primaryDisplayName": "Fire",
+      "description": "Fire (火 Huǒ) is the second of the Five Phases (五行 Wǔxíng), corresponding to summer, the south, heat, and the peak of yang energy. Fire is the phase of growth at its height, joy, communication, consciousness, and the transforming, illuminating principle. In the generative cycle (shēng) Fire creates Earth (ash). In the controlling cycle (kè) Fire melts Metal. In Chinese medicine Fire governs the heart and small intestine (and secondarily the pericardium and triple burner), and is associated with joy. Season: Summer. Direction: South. Colour: Red. Planet: Mars. Western alchemical element correspondence: Fire — direct correspondence as the luminous, transforming, ascending principle. The trigram Fire (Li ☲) corresponds to this phase, as does Heaven (Qian ☰) in some systems.",
+      "secondaryNames": [
+        {
+          "name": "火",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Huǒ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ka",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "화",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Hwa",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "wuxing",
+        "taoism",
+        "cosmology",
+        "fire"
+      ],
+      "extendedData": {
+        "chineseCharacter": "火",
+        "pinyin": "Huǒ",
+        "orderNumber": 2,
+        "season": "summer",
+        "direction": "south",
+        "colour": "red",
+        "planet": "astrology.planet.mars",
+        "organ": "heart",
+        "pairedOrgan": "small intestine",
+        "emotion": "joy",
+        "trigrams": [
+          "iching.trigram.fire"
+        ],
+        "generatesPhase": "wuxing.phase.earth",
+        "controlsPhase": "wuxing.phase.metal",
+        "generatedByPhase": "wuxing.phase.wood",
+        "controlledByPhase": "wuxing.phase.water",
+        "westernElement": "astrology.element.fire"
+      }
+    },
+    {
+      "canonicalName": "wuxing.phase.earth",
+      "entityType": "wuxing.phase",
+      "primaryDisplayName": "Earth",
+      "description": "Earth (土 Tǔ) is the third of the Five Phases (五行 Wǔxíng), associated with the transitional periods between seasons (especially late summer), the centre, and the principle of stability, nourishment, and transformation. Earth is the mediator and stabiliser among the five phases, the fertile ground that nourishes and sustains all things. In the generative cycle (shēng) Earth produces Metal. In the controlling cycle (kè) Earth dams Water. In Chinese medicine Earth governs the spleen and stomach, digestion, and the emotion of worry or over-thinking. Season: Late summer / transitional. Direction: Centre. Colour: Yellow. Planet: Saturn. Western alchemical element correspondence: Earth — direct correspondence as the stable, dense, nourishing, material principle. The trigrams Earth (Kun ☷) and Mountain (Gen ☶) correspond to this phase.",
+      "secondaryNames": [
+        {
+          "name": "土",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tǔ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Do",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "토",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "To",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "wuxing",
+        "taoism",
+        "cosmology",
+        "earth"
+      ],
+      "extendedData": {
+        "chineseCharacter": "土",
+        "pinyin": "Tǔ",
+        "orderNumber": 3,
+        "season": "late summer / transitional",
+        "direction": "centre",
+        "colour": "yellow",
+        "planet": "astrology.planet.saturn",
+        "organ": "spleen",
+        "pairedOrgan": "stomach",
+        "emotion": "worry",
+        "trigrams": [
+          "iching.trigram.earth",
+          "iching.trigram.mountain"
+        ],
+        "generatesPhase": "wuxing.phase.metal",
+        "controlsPhase": "wuxing.phase.water",
+        "generatedByPhase": "wuxing.phase.fire",
+        "controlledByPhase": "wuxing.phase.wood",
+        "westernElement": "astrology.element.earth"
+      }
+    },
+    {
+      "canonicalName": "wuxing.phase.metal",
+      "entityType": "wuxing.phase",
+      "primaryDisplayName": "Metal",
+      "description": "Metal (金 Jīn) is the fourth of the Five Phases (五行 Wǔxíng), corresponding to autumn, the west, and the principle of contraction, harvesting, precision, and letting go. Metal is the phase of gathering inward, of the harvest and the falling leaf, of purification and the refining of what is essential from what is dross. In the generative cycle (shēng) Metal carries Water (the ore from which water springs). In the controlling cycle (kè) Metal chops Wood (the axe). In Chinese medicine Metal governs the lungs and large intestine, and the emotion of grief or sadness. Season: Autumn. Direction: West. Colour: White / metallic. Planet: Venus. Western alchemical element correspondence: Air — both are associated with the clear, cutting, discriminating mind; or sometimes Earth (for the density and solidifying quality of refined metal). The trigrams Heaven (Qian ☰) and Lake (Dui ☱) correspond to Metal.",
+      "secondaryNames": [
+        {
+          "name": "金",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jīn",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kin",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "금",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Geum",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "wuxing",
+        "taoism",
+        "cosmology",
+        "metal"
+      ],
+      "extendedData": {
+        "chineseCharacter": "金",
+        "pinyin": "Jīn",
+        "orderNumber": 4,
+        "season": "autumn",
+        "direction": "west",
+        "colour": "white",
+        "planet": "astrology.planet.venus",
+        "organ": "lungs",
+        "pairedOrgan": "large intestine",
+        "emotion": "grief",
+        "trigrams": [
+          "iching.trigram.heaven",
+          "iching.trigram.lake"
+        ],
+        "generatesPhase": "wuxing.phase.water",
+        "controlsPhase": "wuxing.phase.wood",
+        "generatedByPhase": "wuxing.phase.earth",
+        "controlledByPhase": "wuxing.phase.fire",
+        "westernElement": "astrology.element.air"
+      }
+    },
+    {
+      "canonicalName": "wuxing.phase.water",
+      "entityType": "wuxing.phase",
+      "primaryDisplayName": "Water",
+      "description": "Water (水 Shuǐ) is the fifth of the Five Phases (五行 Wǔxíng), corresponding to winter, the north, and the principle of sinking downward, storing, hiding, and the quiet stillness of dormant potential. Water is the phase of rest and retreat before the next cycle of growth, the wisdom stored in the depths, the will and ambition that waits for the right moment. In the generative cycle (shēng) Water nourishes Wood. In the controlling cycle (kè) Water quenches Fire. In Chinese medicine Water governs the kidneys and bladder, the bones, and the emotion of fear. Season: Winter. Direction: North. Colour: Black / dark blue. Planet: Mercury. Western alchemical element correspondence: Water — direct correspondence as the flowing, hidden, descending, receptive, and purifying element. The trigram Water (Kan ☵) corresponds to this phase.",
+      "secondaryNames": [
+        {
+          "name": "水",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shuǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sui",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "수",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Su",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "wuxing",
+        "taoism",
+        "cosmology",
+        "water"
+      ],
+      "extendedData": {
+        "chineseCharacter": "水",
+        "pinyin": "Shuǐ",
+        "orderNumber": 5,
+        "season": "winter",
+        "direction": "north",
+        "colour": "black",
+        "planet": "astrology.planet.mercury",
+        "organ": "kidneys",
+        "pairedOrgan": "bladder",
+        "emotion": "fear",
+        "trigrams": [
+          "iching.trigram.water"
+        ],
+        "generatesPhase": "wuxing.phase.wood",
+        "controlsPhase": "wuxing.phase.fire",
+        "generatedByPhase": "wuxing.phase.metal",
+        "controlledByPhase": "wuxing.phase.earth",
+        "westernElement": "astrology.element.water"
+      }
+    }
+  ]
+}

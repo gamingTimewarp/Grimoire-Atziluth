@@ -1,0 +1,1317 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "ogham.letter.beith",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Beith",
+      "description": "The first letter of the Ogham alphabet (ᚁ), giving its name to the entire first aicme and to the alphabet itself — 'Ogham' may derive from Ogma, the god of eloquence who is credited with its invention. Beith is the birch tree (Betula pendula), the silver-barked pioneer species that is first to colonise cleared or burned ground, heralding renewal after destruction. In Irish mythological tradition the first Ogham inscription was cut on a birch branch as a warning to Lug mac Elathan: seven of the letter B, signifying that his wife would be carried away seven times to the Otherworld unless the birch protected her. Divinatorily, Beith signifies new beginnings, purification, the clearing away of the old to make space for fresh growth, and the courage to strike out into uninhabited territory. Associated with the goddess Brigid in her aspect as the herald of spring.",
+      "secondaryNames": [
+        {
+          "name": "ᚁ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Birch",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "B",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-beithe"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚁ",
+        "orderBLN": 1,
+        "aicme": "beithe",
+        "treeName": "Birch",
+        "treeLatinName": "Betula pendula",
+        "phoneme": "B",
+        "meaning": "birch, new beginning",
+        "element": "astrology.element.air",
+        "deity": "Brigid",
+        "keywords": [
+          "new beginnings",
+          "purification",
+          "renewal",
+          "pioneer",
+          "clearing",
+          "spring",
+          "inception",
+          "protection"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.luis",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Luis",
+      "description": "The second letter of the Ogham (ᚂ), associated with the rowan tree (Sorbus aucuparia), known in Irish as caorthann. The rowan was one of the most potent protective trees in Celtic tradition — its bright red berries, marked with a five-pointed star at the base, were hung over doorways, tied to cattle, and carried as charms against enchantment. In mythology the rowan is linked to the Tuatha Dé Danann's sacred quicken-tree whose berries could heal the wounded and restore the dead to life; a Fomorian giant, Searbhán Lochlannach, was set to guard it. Luis carries the meaning of protection against hostile forces, of keen vision that pierces illusion, of the quick flame of discernment, and of the vitality of the life-force in its most defended form. Divinatorily it counsels sharpening one's perception and trusting protective instincts.",
+      "secondaryNames": [
+        {
+          "name": "ᚂ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rowan",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "L",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-beithe"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚂ",
+        "orderBLN": 2,
+        "aicme": "beithe",
+        "treeName": "Rowan",
+        "treeLatinName": "Sorbus aucuparia",
+        "phoneme": "L",
+        "meaning": "rowan, protection",
+        "element": "astrology.element.fire",
+        "deity": "Brigid / Tuatha Dé Danann",
+        "keywords": [
+          "protection",
+          "discernment",
+          "vision",
+          "warding",
+          "vitality",
+          "keen sight",
+          "magic resistance",
+          "the quicken-tree"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.fearn",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Fearn",
+      "description": "The third letter (ᚃ), the alder tree (Alnus glutinosa), a tree of wetlands and riverbanks whose wood, when submerged in water, hardens rather than rots — it was the preferred timber for the piles beneath ancient Irish crannóga (lake-dwellings) and the foundations of early Venice. Fearn is sacred to the warrior-god Nuada Airgetlám and to the figure of Bran the Blessed in Welsh tradition, whose severed talking head was carried by his companions as an oracle. The alder's red sap was associated with blood and battle; its wood was used for shields. Divinatorily Fearn speaks of steadfastness under pressure, of foundations that hold when all around is in flood, of the oracle's guidance in difficult times, and of the warrior's willingness to sacrifice for community. It is the rune of the bridge-builder between the realms of the living and the dead.",
+      "secondaryNames": [
+        {
+          "name": "ᚃ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Alder",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "F",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-beithe"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚃ",
+        "orderBLN": 3,
+        "aicme": "beithe",
+        "treeName": "Alder",
+        "treeLatinName": "Alnus glutinosa",
+        "phoneme": "F",
+        "meaning": "alder, steadfastness",
+        "element": "astrology.element.water",
+        "deity": "Nuada / Bran the Blessed",
+        "keywords": [
+          "steadfastness",
+          "foundation",
+          "battle",
+          "oracles",
+          "sacrifice",
+          "bridge between worlds",
+          "endurance under pressure",
+          "crannóg"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.sail",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Sail",
+      "description": "The fourth letter (ᚄ), the willow (Salix alba), which grows in abundance along Ireland's rivers and lakeshores. The willow is one of the great trees of the Otherworld in Irish tradition — it bends without breaking, draws water constantly upward, and weeps in rain as if in perpetual mourning or wisdom. Sacred to the goddess Cailleach Bhéara in her aspect as the winter hag of rivers, and to the poet-seers who cut their wands from its supple branches. The willow's association with water, dreams, and the waxing moon made it the preferred tree for divination and vision-seeking: its bark contains salicin, a precursor of aspirin, and it was used medicinally to ease fever and pain. Divinatorily Sail counsels emotional fluidity, flexibility in the face of the unstoppable, openness to the wisdom carried in dream and feeling, and the cyclical nature of grief and renewal.",
+      "secondaryNames": [
+        {
+          "name": "ᚄ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Willow",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "S",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-beithe"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚄ",
+        "orderBLN": 4,
+        "aicme": "beithe",
+        "treeName": "Willow",
+        "treeLatinName": "Salix alba",
+        "phoneme": "S",
+        "meaning": "willow, flow",
+        "element": "astrology.element.water",
+        "deity": "Cailleach Bhéara",
+        "keywords": [
+          "flexibility",
+          "fluidity",
+          "dreams",
+          "the moon",
+          "grief",
+          "vision",
+          "intuition",
+          "emotional wisdom",
+          "healing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.nion",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Nion",
+      "description": "The fifth and final letter of Aicme Beithe (ᚅ), the ash tree (Fraxinus excelsior). The ash was one of the Three Sacred Trees of Ireland alongside the oak and the yew, and is the cosmic world-tree in both Irish and Norse cosmology — the Irish bile (sacred tree) was often an ash, and the Norse Yggdrasil is described by some scholars as an ash. It is a tree of cosmic order, of connection between the three realms (sky, earth, and underworld), and of the spear — ash wood was the traditional timber for spear-shafts, and the god Lug Lámfhota, the master of all skills, bore an ash spear. Nion in divination speaks of the interconnection of all things, of the world-axis that unites the heavens and the depths, of skill and craftsmanship, and of the clarity of the high viewpoint — to stand in the ash is to stand at the centre of the cosmos.",
+      "secondaryNames": [
+        {
+          "name": "ᚅ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ash",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "N",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-beithe"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚅ",
+        "orderBLN": 5,
+        "aicme": "beithe",
+        "treeName": "Ash",
+        "treeLatinName": "Fraxinus excelsior",
+        "phoneme": "N",
+        "meaning": "ash, world-tree",
+        "element": "astrology.element.air",
+        "deity": "Lug Lámfhota",
+        "keywords": [
+          "world-tree",
+          "cosmic order",
+          "interconnection",
+          "spear",
+          "skill",
+          "the three realms",
+          "bile",
+          "high perspective"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.huath",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Huath",
+      "description": "The sixth letter and first of Aicme Huatha (ᚆ), the hawthorn (Crataegus monogyna), known in Irish as sceach gheal — the bright thorn or fairy thorn. The hawthorn is one of the most ambivalent trees in Irish tradition: it blossoms brilliantly in May (it is the May-tree, the tree of Bealtaine), yet it is considered deeply unlucky to cut, and solitary hawthorns on hillsides are held to be the doorways of the sídhe — cutting them risks catastrophic misfortune. The name Huath itself means 'dread' or 'horror', and the letter is associated with cleansing through fear, with the threshold between the human world and the Otherworld, and with the test of nerve that genuine initiation demands. Divinatorily Huath signals a necessary confrontation with what one fears, the presence of Otherworldly forces, and the purification that only passes through the fire of dread can accomplish.",
+      "secondaryNames": [
+        {
+          "name": "ᚆ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hawthorn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "H",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-huatha"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚆ",
+        "orderBLN": 6,
+        "aicme": "huatha",
+        "treeName": "Hawthorn",
+        "treeLatinName": "Crataegus monogyna",
+        "phoneme": "H",
+        "meaning": "hawthorn, dread",
+        "element": "astrology.element.air",
+        "deity": "the Sídhe / Otherworld powers",
+        "keywords": [
+          "dread",
+          "the fairy thorn",
+          "initiation",
+          "Otherworld threshold",
+          "Bealtaine",
+          "purification through fear",
+          "taboo",
+          "ambivalence"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.dair",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Dair",
+      "description": "The seventh letter (ᚇ), the oak (Quercus robur), king of the Irish forest and the tree most sacred to the druids — the very word 'druid' may derive from a root related to the oak (Old Irish dair). The great oaks of Ireland were the bili, the sacred trees of sovereignty; to fell a king's oak was an act of war. Dair is associated with the Dagda, the 'good god' of the Tuatha Dé Danann — the all-father whose club could kill with one end and restore the dead with the other, and whose cauldron of plenty fed all who came to it. The oak accumulates slowly for centuries, endures storms that break other trees, and provides shelter and food for countless creatures. In divination Dair speaks of strength built over time, of the authority that comes from deep roots, of generosity from abundance, and of the sacred duty of the protector to stand firm against whatever assails the community.",
+      "secondaryNames": [
+        {
+          "name": "ᚇ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Oak",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "D",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-huatha"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚇ",
+        "orderBLN": 7,
+        "aicme": "huatha",
+        "treeName": "Oak",
+        "treeLatinName": "Quercus robur",
+        "phoneme": "D",
+        "meaning": "oak, strength",
+        "element": "astrology.element.earth",
+        "deity": "The Dagda",
+        "keywords": [
+          "strength",
+          "endurance",
+          "sovereignty",
+          "druid",
+          "the sacred bile",
+          "generosity",
+          "kingship",
+          "deep roots",
+          "protection"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.tinne",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Tinne",
+      "description": "The eighth letter (ᚈ), the holly (Ilex aquifolium), one of the few trees that blazes with colour — deep green leaves and blood-red berries — through the darkest months of winter. In Irish tradition holly was a tree of warriors and kingship: its hard, close-grained wood was prized for chariots, spear-hafts, and tool handles, and the name Tinne may connect to tinne, meaning 'bar of metal' or 'ingot'. Holly is linked to the unceasing battle between the Holly King and the Oak King — the contest that governs the turning of the year. In the mythological cycle Cú Chulainn encounters the holly-wielding giant of the ford. Divinatorily Tinne represents the warrior's craft, the courage to act in the darkness, balance between opposites, and the life-force that refuses to yield even when all other growth has stopped — vitality sustained through endurance.",
+      "secondaryNames": [
+        {
+          "name": "ᚈ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Holly",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "T",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-huatha"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚈ",
+        "orderBLN": 8,
+        "aicme": "huatha",
+        "treeName": "Holly",
+        "treeLatinName": "Ilex aquifolium",
+        "phoneme": "T",
+        "meaning": "holly, warrior's craft",
+        "element": "astrology.element.fire",
+        "deity": "Cú Chulainn / Holly King",
+        "keywords": [
+          "warrior",
+          "winter vitality",
+          "balance of opposites",
+          "courage in darkness",
+          "kingship contests",
+          "endurance",
+          "the undying fire",
+          "action"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.coll",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Coll",
+      "description": "The ninth letter (ᚉ), the hazel (Corylus avellana), the tree of wisdom and inspiration in Irish mythology. The nine hazel trees of the Otherworld Well of Segais drop their nuts into the pool below; the nuts become the salmon of wisdom (bradán feasa), and whoever eats the salmon gains all knowledge — as the druid-poet Finn Éces sought for years before his pupil Fionn mac Cumhaill inadvertently tasted the fish and received its wisdom instead. The hazel was the tree of the fili (poet-seer) and of the divining rod; its forked branches were used to find water and treasure. Coll is associated with the god Manannán mac Lir, lord of the Otherworld and of poetic inspiration. In divination Coll speaks of sudden illumination, the gift of wisdom that comes unexpectedly, the creative intelligence that connects disparate things, and the seeker who is ready to receive what has been sought.",
+      "secondaryNames": [
+        {
+          "name": "ᚉ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hazel",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "C",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-huatha"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚉ",
+        "orderBLN": 9,
+        "aicme": "huatha",
+        "treeName": "Hazel",
+        "treeLatinName": "Corylus avellana",
+        "phoneme": "C",
+        "meaning": "hazel, wisdom",
+        "element": "astrology.element.air",
+        "deity": "Manannán mac Lir / Fionn",
+        "keywords": [
+          "wisdom",
+          "inspiration",
+          "the salmon of knowledge",
+          "poetic insight",
+          "divination",
+          "illumination",
+          "the well of Segais",
+          "the fili"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.quert",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Quert",
+      "description": "The tenth and final letter of Aicme Huatha (ᚊ), the wild apple or crab apple (Malus sylvestris), the tree of the Otherworld island of Emhain Abhlach — the 'plain of apple trees', the Irish paradise equivalent to the Greek Hesperides. In the voyage-myth Imram Brain mac Feabhail, the god Manannán approaches Bran from the sea holding a silver apple branch that plays enchanting music: it is the summons to the Otherworld, where apple trees produce fruit at all times of year. The apple's five-petalled blossom traces a pentagram, and when cut in half horizontally the seeds form a five-pointed star — ancient magical symbolism. Quert speaks of beauty, of the eternal youth of the Otherworld (Tír na nÓg), of sensual and spiritual pleasure, of the transformative power of the Otherworldly encounter, and of the invitation to step beyond the known world into the realm of the ever-young.",
+      "secondaryNames": [
+        {
+          "name": "ᚊ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Apple",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Q",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-huatha"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚊ",
+        "orderBLN": 10,
+        "aicme": "huatha",
+        "treeName": "Apple",
+        "treeLatinName": "Malus sylvestris",
+        "phoneme": "Q",
+        "meaning": "apple, Otherworld beauty",
+        "element": "astrology.element.water",
+        "deity": "Manannán mac Lir",
+        "keywords": [
+          "Otherworld",
+          "Tír na nÓg",
+          "beauty",
+          "eternal youth",
+          "paradise",
+          "invitation",
+          "the silver bough",
+          "transformation",
+          "pleasure"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.muin",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Muin",
+      "description": "The eleventh letter and first of Aicme Muine (ᚋ), associated in the medieval kenning-lists with the vine (Vitis vinifera) or bramble, though the kennings also link Muin to the neck, the back, or the upper part of a person — suggesting uprightness, the capacity to hold the head high, and the channel between the body and the mind. The vine connection brings meanings of intoxication, of prophecy induced by wine and mead, and of the harvest of abundance that must be pressed to yield its deepest gift. In Irish poetic tradition the fili could enter the imbas forosnai, the 'illumination of great knowledge', through controlled altered states. Muin in divination speaks of the harvest of accumulated experience, of truths that emerge only when the outer husk is broken, of the gift of eloquence and the joy of the feast, and of the courage to reveal what has long been kept back.",
+      "secondaryNames": [
+        {
+          "name": "ᚋ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vine",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "M",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-muine"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚋ",
+        "orderBLN": 11,
+        "aicme": "muine",
+        "treeName": "Vine",
+        "treeLatinName": "Vitis vinifera",
+        "phoneme": "M",
+        "meaning": "vine, harvest of truth",
+        "element": "astrology.element.water",
+        "deity": "Goibhniu (divine brewer)",
+        "keywords": [
+          "harvest",
+          "intoxication",
+          "prophecy",
+          "eloquence",
+          "the inner revealed",
+          "feast",
+          "imbas forosnai",
+          "abundance",
+          "pressing through"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.gort",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Gort",
+      "description": "The twelfth letter (ᚌ), the ivy (Hedera helix), the great clinging vine of the forest that ascends in a continuous spiral, never taking a straight path but always spiralling toward the light. Ivy was considered one of the most spiritually powerful plants in Celtic tradition — it grows equally in sun and deep shade, remains green through winter, and its spiral growth embodies the Celtic vision of time as cyclical and the soul's journey as an expanding spiral rather than a straight line. Gort is linked to the Otherworld and to the persistence of the soul through change; in the Irish tree-calendar traditions ivy is associated with the month around Samhain. Divinatorily Gort counsels tenacity, the willingness to take the indirect path when the direct one is blocked, the spiritual practice of clinging to the sacred centre as the spiral unfolds, and trust in growth that, while serpentine, is always moving toward the light.",
+      "secondaryNames": [
+        {
+          "name": "ᚌ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ivy",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "G",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-muine"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚌ",
+        "orderBLN": 12,
+        "aicme": "muine",
+        "treeName": "Ivy",
+        "treeLatinName": "Hedera helix",
+        "phoneme": "G",
+        "meaning": "ivy, spiralling tenacity",
+        "element": "astrology.element.earth",
+        "deity": "the Dagda / Otherworld forces",
+        "keywords": [
+          "tenacity",
+          "the spiral path",
+          "persistence",
+          "Samhain",
+          "soul's journey",
+          "indirect approach",
+          "clinging to the centre",
+          "cyclical time"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.ngeadal",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "nGéadal",
+      "description": "The thirteenth letter (ᚍ), associated with the reed (Phragmites australis) — specifically the great river reed of Irish wetlands, which provided material for thatching, basket-weaving, arrow-shafts, and musical pipes. The reed flute or pipe is one of the oldest instruments of humanity, and in Irish tradition the ceol sídhe — the music of the Otherworld — was heard in the wind through the reed beds. NnGéadal also carries associations with the goose (géadh) in some kenning-lists; the wild goose arrives in Ireland from the north in autumn heralding the dark half of the year. The reed bends completely to the wind rather than breaking, yet springs back and remains rooted. Divinatorily nGéadal speaks of flexible strength, of the capacity to be moved without being destroyed, of healing music, of the voice that carries farther than expected, and of the Otherworldly communications that come on the wind.",
+      "secondaryNames": [
+        {
+          "name": "ᚍ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Reed",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ng",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-muine"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚍ",
+        "orderBLN": 13,
+        "aicme": "muine",
+        "treeName": "Reed",
+        "treeLatinName": "Phragmites australis",
+        "phoneme": "Ng",
+        "meaning": "reed, healing music",
+        "element": "astrology.element.water",
+        "deity": "Manannán mac Lir",
+        "keywords": [
+          "flexibility",
+          "music",
+          "the pipe",
+          "Otherworldly communication",
+          "healing sound",
+          "bending without breaking",
+          "the voice",
+          "wetland wisdom"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.straif",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Straif",
+      "description": "The fourteenth letter (ᚎ), the blackthorn (Prunus spinosa), a tree both deeply feared and deeply respected in Irish tradition. The blackthorn is the earliest flowering tree in Ireland, blossoming before it leafs in March before any other, often in the teeth of a late frost — the 'blackthorn winter' is a well-known Irish weather phenomenon where a cold snap follows the flowering. The blackthorn's thorns are long, hard, and prone to causing infection; its wood is dense and dark and was used for the traditional Irish shillelagh fighting stick. Associated with the Morrigan in her most relentless aspect, with cursing and magical coercion, and with the binding power of fate that will not be evaded. Divinatorily Straif is the most demanding letter — it signals coercion, inescapable circumstances, the stripping away of options until only the necessary path remains, and the ruthless clarity that comes when all comfort is removed.",
+      "secondaryNames": [
+        {
+          "name": "ᚎ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Blackthorn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Z/St",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-muine"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚎ",
+        "orderBLN": 14,
+        "aicme": "muine",
+        "treeName": "Blackthorn",
+        "treeLatinName": "Prunus spinosa",
+        "phoneme": "Z",
+        "meaning": "blackthorn, coercion",
+        "element": "astrology.element.earth",
+        "deity": "The Morrigan",
+        "keywords": [
+          "coercion",
+          "fate",
+          "the inescapable",
+          "stripping away",
+          "clarity through hardship",
+          "the shillelagh",
+          "cursing",
+          "blackthorn winter",
+          "ruthlessness"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.ruis",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Ruis",
+      "description": "The fifteenth and final letter of Aicme Muine (ᚏ), the elder tree (Sambucus nigra), a plant with a long dual reputation: deeply sacred for its healing properties (every part is medicinally useful — flowers, berries, bark, and leaves) and simultaneously associated with the dead, with witches, and with the Otherworld. In Irish tradition the elder is the tree at the boundary — it grows at the edge of settlements, between the human world and wild nature, and to cut it without proper propitiation was to invite misfortune. Elder berries ripen at Samhain, the festival of the dead. The Cailleach Bhéara is sometimes connected with the elder as the hag of endings who is also the first bloom of spring renewed. Ruis in divination speaks of endings that enable transformation, of the medicine found at the boundary between life and death, of the wisdom accumulated at the very end of a cycle, and of the elder — the one who has lived long enough to span the worlds.",
+      "secondaryNames": [
+        {
+          "name": "ᚏ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Elder",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "R",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-muine"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚏ",
+        "orderBLN": 15,
+        "aicme": "muine",
+        "treeName": "Elder",
+        "treeLatinName": "Sambucus nigra",
+        "phoneme": "R",
+        "meaning": "elder, the boundary",
+        "element": "astrology.element.water",
+        "deity": "Cailleach Bhéara",
+        "keywords": [
+          "endings",
+          "Samhain",
+          "the boundary",
+          "transformation",
+          "healing",
+          "the dead",
+          "elder wisdom",
+          "propitiation",
+          "medicine at the threshold"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.ailm",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Ailm",
+      "description": "The sixteenth letter and first of Aicme Ailme (ᚐ), the Scots pine or silver fir (Abies alba / Pinus sylvestris). The great pines of the Caledonian forest and the Irish mountains are among the oldest trees in the archipelago; their resinous wood burns even when wet, making them providers of the sacred fire that sustains life through the darkest months. Ailm stands at the threshold of the final aicme and is associated with clarity, far-seeing vision, and the cry of the newborn — the Irish word ailm also carried the sense of the sound made at the first breath of life. The pine stands straight and alone above the treeline on exposed mountain summits; it is the tree of the high place, of the clear view unclouded by the forest canopy. Divinatorily Ailm speaks of objectivity, of the perspective that altitude brings, of the sustaining fire in midwinter darkness, of birth and the raw voice of new life, and of the solitary integrity of the individual who stands apart from the crowd to see truly.",
+      "secondaryNames": [
+        {
+          "name": "ᚐ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pine / Silver Fir",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "A",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-ailme"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚐ",
+        "orderBLN": 16,
+        "aicme": "ailme",
+        "treeName": "Pine / Silver Fir",
+        "treeLatinName": "Abies alba",
+        "phoneme": "A",
+        "meaning": "pine, clarity",
+        "element": "astrology.element.fire",
+        "deity": "Brigid (as keeper of the sacred flame)",
+        "keywords": [
+          "clarity",
+          "far-seeing",
+          "objectivity",
+          "the high place",
+          "birth cry",
+          "sustaining fire",
+          "solitary integrity",
+          "altitude",
+          "midwinter light"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.onn",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Onn",
+      "description": "The seventeenth letter (ᚑ), the gorse or furze (Ulex europaeus), one of the most characteristically Irish shrubs — in Ireland gorse can be found in flower in every month of the year, giving rise to the saying 'kissing is in season when gorse is in bloom.' The blaze of gorse flowers on the hillside in February and March was one of the first signs of returning warmth after winter, and the thorny bushes were used for fuel (gorse burns extremely hot), for animal fodder when crushed, and as a wind-break. Onn is associated with the sun's return, with optimism and cheerfulness in the face of difficulty, and with the capacity to thrive in poor soil where nothing else will grow — a quality much admired in Irish tradition. Divinatorily Onn counsels joy in the midst of hardship, the persistence of warmth and beauty in the bleakest conditions, practical resourcefulness, and the understanding that vitality is never fully extinguished but merely waits its season.",
+      "secondaryNames": [
+        {
+          "name": "ᚑ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gorse",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "O",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-ailme"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚑ",
+        "orderBLN": 17,
+        "aicme": "ailme",
+        "treeName": "Gorse",
+        "treeLatinName": "Ulex europaeus",
+        "phoneme": "O",
+        "meaning": "gorse, perennial vitality",
+        "element": "astrology.element.fire",
+        "deity": "Lug (sun god)",
+        "keywords": [
+          "optimism",
+          "vitality",
+          "perennial blooming",
+          "the sun's return",
+          "joy in hardship",
+          "resourcefulness",
+          "warmth",
+          "thriving in poor conditions"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.ur",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Ur",
+      "description": "The eighteenth letter (ᚒ), the heather (Calluna vulgaris), the defining plant of the Irish and Scottish uplands — vast moorlands that turn purple in August in one of the most spectacular seasonal displays in northern Europe. Heather was enormously practical in traditional life: used for thatching, fuel, bedding, brooms, and the brewing of heather ale, which may be among the oldest alcoholic beverages in the British Isles. In mythology heather is linked to Aine, goddess of the sun, summer, and the midsummer celebration at Knockainey in Limerick, and to themes of luck, romance, and the blessing of the land. The heather moor was also associated with solitude, with the vision that comes in open places, and with the sheep and bees that sustained pastoral communities. Divinatorily Ur speaks of healing of the spirit through immersion in natural beauty, of the romance and wildness of open land, of the practical blessing of abundance in simple things, and of the luck of the midsummer tide.",
+      "secondaryNames": [
+        {
+          "name": "ᚒ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Heather",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "U",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-ailme"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚒ",
+        "orderBLN": 18,
+        "aicme": "ailme",
+        "treeName": "Heather",
+        "treeLatinName": "Calluna vulgaris",
+        "phoneme": "U",
+        "meaning": "heather, healing and luck",
+        "element": "astrology.element.earth",
+        "deity": "Áine",
+        "keywords": [
+          "healing",
+          "luck",
+          "romance",
+          "midsummer",
+          "the moor",
+          "solitude",
+          "natural abundance",
+          "heather ale",
+          "pastoral blessing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.edad",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Edad",
+      "description": "The nineteenth letter (ᚓ), the aspen (Populus tremula), the trembling tree whose leaves quiver ceaselessly in the faintest breeze, making a sound like whispering or muttering voices. In Irish tradition the aspen's constant trembling was understood as the tree's access to the wind of the spirit world — it heard what the wind carried from the Otherworld and could not help but repeat it. Aspen groves were held to be places where the boundary between the worlds was thin. The wood is light and close-grained and was used for shields, while aspen stakes were sometimes used to bind the restless dead in their graves. Edad carries associations with eloquence, with the communication that passes between the living and the dead, with the courage to stand exposed and trembling on the threshold yet continue to speak, and with the transformative power of the spoken word — particularly the word that comes from beyond the ordinary world.",
+      "secondaryNames": [
+        {
+          "name": "ᚓ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Aspen",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "E",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-ailme"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚓ",
+        "orderBLN": 19,
+        "aicme": "ailme",
+        "treeName": "Aspen",
+        "treeLatinName": "Populus tremula",
+        "phoneme": "E",
+        "meaning": "aspen, spirit communication",
+        "element": "astrology.element.air",
+        "deity": "The Morrigan (as shapeshifter between worlds)",
+        "keywords": [
+          "trembling",
+          "Otherworld communication",
+          "eloquence",
+          "the threshold",
+          "spirit speech",
+          "exposed courage",
+          "the whispering tree",
+          "shield-wood"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.idad",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Idad",
+      "description": "The twentieth and final letter of Aicme Ailme and of the twenty core Ogham (ᚔ), the yew (Taxus baccata), the oldest living tree in Ireland and Britain — individual yews in Irish churchyards have been reliably dated to over 4,000 years of age, pre-dating Christianity and the druids alike. The yew is the tree of death and immortality simultaneously: its berries are poisonous, its heartwood almost indestructible, and it grows new trunks from its own fallen branches, making it in practice unkillable. The yew was planted in sacred enclosures and burial grounds throughout Celtic and pre-Celtic tradition as a guardian of the dead and a symbol of perpetual renewal. In Irish mythological tradition the yew is one of the Five Sacred Trees of Ireland, the Bile Tortan being the most celebrated. Idad completes the core alphabet on the deepest note of all — the tree that holds death and immortality in a single form, the final letter that looks back across the whole journey and forward into what cannot yet be named.",
+      "secondaryNames": [
+        {
+          "name": "ᚔ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yew",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "I",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-core",
+        "aicme-ailme"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚔ",
+        "orderBLN": 20,
+        "aicme": "ailme",
+        "treeName": "Yew",
+        "treeLatinName": "Taxus baccata",
+        "phoneme": "I",
+        "meaning": "yew, death and immortality",
+        "element": "astrology.element.earth",
+        "deity": "The Dagda / ancestors",
+        "keywords": [
+          "death",
+          "immortality",
+          "rebirth",
+          "the sacred bile",
+          "antiquity",
+          "guardianship of the dead",
+          "perpetual renewal",
+          "indestructibility",
+          "completion"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.eabhadh",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Éabhadh",
+      "description": "The twenty-first letter and first of the Forfeda — the five supplementary letters added later to extend the Ogham system to cover additional sounds (ᚕ). The forfeda are sometimes called the 'extra letters' or the 'noble letters', and there is debate about whether they had divinatory significance in antiquity or whether that meaning was assigned later. Éabhadh is associated in medieval kenning-lists with the grove or aspen (sometimes the silver fir in alternative traditions), and the phoneme Ea it represents is a diphthong found in Old Irish. As a forfeda letter it carries the sense of going beyond the established order into territory that requires new categories. In divinatory use Éabhadh has been associated with the sacred grove (nemeton) — the open-air temple of the druids, a cleared space within the forest that was simultaneously a meeting-place, a court of law, and a portal to the divine. It speaks of communal sanctity, of the clearing that enables vision, and of new forms of knowing that exceed the conventional alphabet.",
+      "secondaryNames": [
+        {
+          "name": "ᚕ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Grove / Aspen",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ea",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-forfeda",
+        "aicme-forfeda"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚕ",
+        "orderBLN": 21,
+        "aicme": "forfeda",
+        "treeName": "Grove / Aspen",
+        "treeLatinName": "Populus tremula",
+        "phoneme": "Ea",
+        "meaning": "the sacred grove, beyond categories",
+        "element": "astrology.element.air",
+        "deity": "Druids / collective sacred",
+        "keywords": [
+          "nemeton",
+          "sacred grove",
+          "communal sanctity",
+          "beyond the ordinary",
+          "new knowing",
+          "the cleared space",
+          "portal",
+          "druidic assembly"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.or",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Ór",
+      "description": "The twenty-second letter of the extended Ogham (ᚖ), associated with the spindle tree (Euonymus europaeus) or in some versions with gold — the name Ór means 'gold' in Irish, suggesting a connection with solar energy, sovereignty, and the highest value. The spindle tree is named for its hard, fine-grained wood that was used to make spindles and skewers; it is rarely noticed until autumn, when it blazes with shocking pink-and-orange berries and foliage. The association with gold and with the spindle brings together the solar principle (gold as the sun's metal) and the domestic craft of spinning — the thread of fate woven by the goddesses who spin the destiny of human lives, particularly the Norns and their Irish equivalents. Divinatorily Ór speaks of the hidden value that reveals itself unexpectedly, of the thread of fate being actively spun in the present moment, of solar sovereignty and the divine right of the soul's true vocation, and of the wealth that lies within rather than without.",
+      "secondaryNames": [
+        {
+          "name": "ᚖ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spindle Tree",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Oi",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-forfeda",
+        "aicme-forfeda"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚖ",
+        "orderBLN": 22,
+        "aicme": "forfeda",
+        "treeName": "Spindle Tree",
+        "treeLatinName": "Euonymus europaeus",
+        "phoneme": "Oi",
+        "meaning": "gold, fate-thread",
+        "element": "astrology.element.fire",
+        "deity": "Solar sovereignty / fate-spinners",
+        "keywords": [
+          "gold",
+          "hidden value",
+          "the thread of fate",
+          "sovereignty",
+          "spinning",
+          "solar energy",
+          "inner wealth",
+          "unexpected revelation",
+          "vocation"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.uilleann",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Uilleann",
+      "description": "The twenty-third letter (ᚗ), associated with the honeysuckle (Lonicera periclymenum), the woodbine that spirals clockwise up through hedgerows and forest margins, weaving itself around its host with a grip that can deform the wood over which it grows and leave the characteristic twisted patterns seen in walking sticks. Uilleann means 'elbow' in Irish, and the honeysuckle's winding growth makes this connection apt. Honeysuckle was used in Irish folk magic as a protective binding plant — wound three times around something to secure it — and its intensely sweet nocturnal fragrance was associated with the Otherworld and with enchantment. The spiralling binding quality of Uilleann in divination suggests entanglement, the necessity of unbinding from what holds one back, the bittersweet beauty of attachment, and the deeper pattern that emerges when growth follows its own inner logic rather than a straight path. It also speaks of the sweet intoxication of creativity and beauty that can, if unchecked, deform what it clings to.",
+      "secondaryNames": [
+        {
+          "name": "ᚗ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Honeysuckle",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ui",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-forfeda",
+        "aicme-forfeda"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚗ",
+        "orderBLN": 23,
+        "aicme": "forfeda",
+        "treeName": "Honeysuckle",
+        "treeLatinName": "Lonicera periclymenum",
+        "phoneme": "Ui",
+        "meaning": "honeysuckle, binding and enchantment",
+        "element": "astrology.element.water",
+        "deity": "Étaín (enchanted and transformed)",
+        "keywords": [
+          "binding",
+          "enchantment",
+          "the spiral grip",
+          "bittersweet attachment",
+          "inner logic",
+          "unbinding",
+          "Otherworldly fragrance",
+          "entanglement",
+          "woodbine magic"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.ifin",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Ifín",
+      "description": "The twenty-fourth letter (ᚘ), associated with the gooseberry or pine in different manuscript traditions — the kenning-lists are inconsistent for the forfeda, reflecting the later and more speculative nature of these additions. Where the gooseberry (Ribes uva-crispa) is the attribution, the meaning connects to the thorny but sweetly-fruiting plant of the hedgerow — a small, humble plant that conceals its treasure behind sharp defences and requires patience and willingness to endure minor wounds to harvest its fruit. The pine association connects Ifín to Ailm and to the sustained fire and clarity of the high places. The phoneme Io (or Ia) was a rare diphthong in Old Irish, and Ifín represents the outer edge of the standard phonological system — the letter that catches the sounds that almost escape categorisation. Divinatorily Ifín speaks of treasures that require perseverance and minor discomfort to obtain, of the margin of experience where known categories blur, and of the sweetness found in unexpected or overlooked places.",
+      "secondaryNames": [
+        {
+          "name": "ᚘ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gooseberry / Pine",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Io",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-forfeda",
+        "aicme-forfeda"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚘ",
+        "orderBLN": 24,
+        "aicme": "forfeda",
+        "treeName": "Gooseberry",
+        "treeLatinName": "Ribes uva-crispa",
+        "phoneme": "Io",
+        "meaning": "gooseberry, hidden sweetness",
+        "element": "astrology.element.earth",
+        "deity": "Flidais (goddess of the wild and the woods)",
+        "keywords": [
+          "perseverance",
+          "hidden treasure",
+          "thorny defences",
+          "the overlooked",
+          "margin of experience",
+          "sweetness earned",
+          "patience",
+          "boundaries of the known"
+        ]
+      }
+    },
+    {
+      "canonicalName": "ogham.letter.emancholl",
+      "entityType": "ogham.letter",
+      "primaryDisplayName": "Emancholl",
+      "description": "The twenty-fifth and final letter of the Ogham system (ᚙ), associated with the witch hazel (Hamamelis virginiana / Hamamelis mollis) or in some readings with the twin of the hazel — the name Emancholl means 'twin of hazel' (eamhan meaning 'twin' and coll meaning 'hazel'). Witch hazel flowers in the depths of winter, after all its leaves have fallen — bare stems suddenly alive with spidery yellow flowers in November and December, when nothing else dares to bloom. In folk tradition witch hazel branches were used as divining rods above all other woods, and its astringent extract has been used medicinally for centuries to tighten and heal. As the final letter of the extended Ogham, Emancholl holds the whole system within itself as a completion and a doubling-back — the twin of Coll, the hazel of wisdom, appearing at the very end suggests that the journey through all twenty-five letters returns the seeker to wisdom renewed, transformed by the full circuit of experience into something it could not have been at the start.",
+      "secondaryNames": [
+        {
+          "name": "ᚙ",
+          "languageTag": "ogham",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Witch Hazel",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ae",
+          "languageTag": "phoneme",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "ogham",
+        "ogham-forfeda",
+        "aicme-forfeda"
+      ],
+      "extendedData": {
+        "oghamGlyph": "ᚙ",
+        "orderBLN": 25,
+        "aicme": "forfeda",
+        "treeName": "Witch Hazel",
+        "treeLatinName": "Hamamelis mollis",
+        "phoneme": "Ae",
+        "meaning": "twin hazel, wisdom renewed",
+        "element": "astrology.element.air",
+        "deity": "Ogma (inventor of the Ogham)",
+        "keywords": [
+          "completion",
+          "renewal",
+          "the twin",
+          "winter flowering",
+          "divining rod",
+          "wisdom transformed by experience",
+          "doubling back",
+          "healing",
+          "the full circuit"
+        ]
+      }
+    }
+  ]
+}

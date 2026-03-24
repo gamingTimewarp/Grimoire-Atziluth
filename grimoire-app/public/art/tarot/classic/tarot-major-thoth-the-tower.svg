@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0e0202"/>
+      <stop offset="100%" stop-color="#1e0404"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#3a0808" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#aa2200" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#3a0808" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#3a0808" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#dd8866" opacity="0.9">XVI</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#aa2200" opacity="0.85" filter="url(#glow)">פ</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#3a1a10" opacity="0.8">♂</text>
+
+
+    <!-- ═══ Ghost Peh (פ) — mouth of divine decree, tongue of Babel ═══ -->
+    <!-- פ: open curved form with descending inner leg -->
+    <!-- Peh = the mouth Moses failed to use at Meribah; the tongue scattered at Babel -->
+    <g opacity="0.09" fill="none" stroke="#ff6600" stroke-width="14" stroke-linecap="round">
+      <!-- Outer bowl of Peh — wide C-curve opening right -->
+      <path d="M96,82 C76,82 62,98 62,118 C62,146 82,158 108,158 C134,158 148,144 148,124"/>
+      <!-- Inner descending leg — the distinctive element of Peh -->
+      <line x1="118" y1="118" x2="118" y2="192"/>
+      <!-- Foot of inner leg -->
+      <line x1="118" y1="192" x2="102" y2="200"/>
+    </g>
+
+    <!-- ═══ Divine burst — top of card ═══ -->
+    <!-- solarDisk lineage: Fool (free sky) → Hermit (lanterned) → Art (crowned) → Tower (exploded) -->
+    <!-- Here the containment is gone: the light has burst its vessel entirely -->
+    <defs>
+      <radialGradient id="burstGrad" cx="50%" cy="0%" r="55%" fx="50%" fy="0%">
+        <stop offset="0%"   stop-color="#ffcc44" stop-opacity="1"/>
+        <stop offset="18%"  stop-color="#ff6600"  stop-opacity="0.9"/>
+        <stop offset="45%"  stop-color="#ff3300" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ff3300" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="lakeRecede" cx="50%" cy="100%" r="50%">
+        <stop offset="0%"   stop-color="#441100" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#1a0800"  stop-opacity="0.2"/>
+      </radialGradient>
+      <radialGradient id="waterBurst" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#99ccee" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#4488cc"  stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <!-- Burst corona — 16 rays fanning outward from top -->
+    <g opacity="0.72">
+      <line x1="150" y1="50" x2="150" y2="16" stroke="#ff3300" stroke-width="2.5" stroke-opacity="0.7"/><line x1="153.51" y1="50.35" x2="162.88" y2="3.27" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="156.89" y1="51.37" x2="180.61" y2="-5.91" stroke="#ff3300" stroke-width="1.8" stroke-opacity="0.7"/><line x1="160" y1="53.03" x2="178.89" y2="24.76" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="162.73" y1="55.27" x2="196.67" y2="21.33" stroke="#ff3300" stroke-width="2.5" stroke-opacity="0.7"/><line x1="164.97" y1="58" x2="216.52" y2="23.55" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="166.63" y1="61.11" x2="198.04" y2="48.1" stroke="#ff3300" stroke-width="1.8" stroke-opacity="0.7"/><line x1="167.65" y1="64.49" x2="214.73" y2="55.12" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="168" y1="68" x2="230" y2="68" stroke="#ff3300" stroke-width="2.5" stroke-opacity="0.7"/><line x1="167.65" y1="71.51" x2="201" y2="78.14" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="166.63" y1="74.89" x2="210.98" y2="93.26" stroke="#ff3300" stroke-width="1.8" stroke-opacity="0.7"/><line x1="164.97" y1="78" x2="216.52" y2="112.45" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="162.73" y1="80.73" x2="186.77" y2="104.77" stroke="#ff3300" stroke-width="2.5" stroke-opacity="0.7"/><line x1="160" y1="82.97" x2="186.67" y2="122.88" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/><line x1="156.89" y1="84.63" x2="180.61" y2="141.91" stroke="#ff3300" stroke-width="1.8" stroke-opacity="0.7"/><line x1="153.51" y1="85.65" x2="160.14" y2="119" stroke="#ff3300" stroke-width="1" stroke-opacity="0.7"/>
+    </g>
+    <!-- Burst glow fill -->
+    <ellipse cx="150" cy="0" rx="130" ry="110" fill="url(#burstGrad)" opacity="0.85"/>
+    <!-- Burst core disk — the burst containment-vessel -->
+    <circle cx="150" cy="68" r="18" fill="#ffcc44" opacity="0.92"/>
+    <circle cx="150" cy="68" r="11" fill="white"    opacity="0.85"/>
+
+    <!-- ═══ Dove with olive branch — Noaic peace; the Reader's safe harbour ═══ -->
+    <!-- Dove descends from the burst, returning to the ark — the Reader occupies this space -->
+    <g transform="translate(218,82) rotate(-18)">
+      <!-- Body -->
+      <ellipse cx="0" cy="0" rx="14" ry="8" fill="#e8e0d0" opacity="0.95"/>
+      <!-- Head -->
+      <circle cx="13" cy="-4" r="5.5" fill="#e8e0d0" opacity="0.95"/>
+      <!-- Beak -->
+      <path d="M17,-3 L22,-2 L17,-1" fill="#c0b8b0" opacity="0.9"/>
+      <!-- Eye -->
+      <circle cx="15" cy="-5" r="1.2" fill="#333"/>
+      <!-- Tail -->
+      <path d="M-14,0 L-22,5 M-14,1 L-20,-4 M-14,-1 L-21,0"
+            stroke="#c0b8b0" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+      <!-- Right wing (near) -->
+      <path d="M0,-8 C6,-18 14,-16 10,-8" fill="#e8e0d0" stroke="#c0b8b0" stroke-width="0.8" opacity="0.9"/>
+      <!-- Left wing (far, partial) -->
+      <path d="M-4,-6 C-10,-14 -4,-18 2,-10" fill="#c0b8b0" opacity="0.7"/>
+      <!-- Olive branch in beak -->
+      <line x1="20" y1="-2" x2="27" y2="-6" stroke="#5a8832" stroke-width="1.2" opacity="0.9"/>
+      <ellipse cx="25" cy="-7" rx="3" ry="2" fill="#6a9a3a" opacity="0.9" transform="rotate(-20,25,-7)"/>
+      <ellipse cx="28" cy="-5" rx="2.5" ry="1.8" fill="#5a8832" opacity="0.85" transform="rotate(10,28,-5)"/>
+    </g>
+
+    <!-- ═══ Tiny ark — upper-right corner; the Reader's refuge ═══ -->
+    <!-- The Reader is Noah: protected through willing submission to the Great Work -->
+    <g opacity="0.62" transform="translate(248,112)">
+      <!-- Hull -->
+      <path d="M-18,6 C-18,-2 18,-2 18,6 L14,12 L-14,12 Z" fill="#3a2010"/>
+      <!-- Cabin/superstructure -->
+      <rect x="-8" y="-2" width="16" height="8" rx="2" fill="#3a2010" opacity="0.85"/>
+      <!-- Water line -->
+      <path d="M-20,12 C-14,10 -8,13 0,11 C8,9 14,12 20,12"
+            stroke="#4488cc" stroke-width="1.2" fill="none" opacity="0.7"/>
+    </g>
+
+    <!-- ═══ Lightning bolts — Mars scarlet, the completed judgment ═══ -->
+    <!-- In XV the pale bolt was descending; here it has struck in full Martian force -->
+    <!-- Multiple channels — the single judgment now branching through the whole structure -->
+    <!-- Main bolt: burst to ziggurat crown -->
+    <polyline points="150,68 145,88 153,96 144,112 152,118 148,128"
+              fill="none" stroke="#ff3300" stroke-width="3.2" stroke-linejoin="round"
+              opacity="0.98"/>
+    <!-- Main bolt core (bright inner channel) -->
+    <polyline points="150,68 145,88 153,96 144,112 152,118 148,128"
+              fill="none" stroke="#ffcc44" stroke-width="1.4" stroke-linejoin="round"
+              opacity="0.85"/>
+    <!-- Branch bolt left — forking at mid-height -->
+    <polyline points="147,104 138,114 128,118 124,132"
+              fill="none" stroke="#ff3300" stroke-width="1.8" stroke-linejoin="round"
+              opacity="0.75"/>
+    <!-- Branch bolt right — forking toward ziggurat right face -->
+    <polyline points="151,110 160,118 168,116 174,130"
+              fill="none" stroke="#ff3300" stroke-width="1.8" stroke-linejoin="round"
+              opacity="0.75"/>
+    <!-- Impact flash at strike point -->
+    <circle cx="148" cy="128" r="8" fill="#ffcc44" opacity="0.72"/>
+    <circle cx="148" cy="128" r="4" fill="white"    opacity="0.85"/>
+    <!-- Radial sparks at impact -->
+    <line x1="148" y1="128" x2="158" y2="128" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="157.9" y2="136.49" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="148" y2="144" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="140.93" y2="133.66" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="134" y2="128" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="135.27" y2="116.69" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="148" y2="120" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/><line x1="148" y1="128" x2="157.9" y2="119.51" stroke="#ffcc44" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- ═══ Ziggurat (Tower of Babel = Qliphothic Tree) — crumbling ═══ -->
+    <!-- Same 4-tier structure and stone palette as XV, now struck and fractured -->
+    <!-- The crumbling is redemptive, not entropic — the Qliphothic husks are being opened -->
+    <!-- Tier 4 (crown): y=128–162, w=52 → x=122–174 -->
+    <rect x="122" y="128" width="52" height="34" fill="#1c1408" stroke="#2a2010" stroke-width="0.7" opacity="0.95"/>
+    <!-- Crown crack from lightning strike — the Meribah rock moment -->
+    <path d="M148,128 L144,138 L150,142 L146,154 L152,158 L148,162"
+          fill="none" stroke="#0e0806" stroke-width="2.2" opacity="0.9"/>
+    <!-- Mortar lines tier 4 -->
+    <line x1="122" y1="140" x2="174" y2="140" stroke="#2a2010" stroke-width="0.5" opacity="0.5"/>
+    <line x1="122" y1="152" x2="174" y2="152" stroke="#2a2010" stroke-width="0.5" opacity="0.5"/>
+    <line x1="140" y1="128" x2="140" y2="162" stroke="#2a2010" stroke-width="0.4" opacity="0.4"/>
+    <line x1="158" y1="128" x2="158" y2="162" stroke="#2a2010" stroke-width="0.4" opacity="0.4"/>
+
+    <!-- Tier 3: y=162–200, w=84 → x=106–190 -->
+    <rect x="106" y="162" width="84" height="38" fill="#1c1408" stroke="#2a2010" stroke-width="0.7" opacity="0.95"/>
+    <!-- Tier 3 crack continuing from crown -->
+    <path d="M148,162 L142,172 L154,178 L144,188 L152,194 L148,200"
+          fill="none" stroke="#0e0806" stroke-width="1.8" opacity="0.8"/>
+    <!-- Mortar lines tier 3 -->
+    <line x1="106" y1="174" x2="190" y2="174" stroke="#2a2010" stroke-width="0.5" opacity="0.45"/><line x1="106" y1="186" x2="190" y2="186" stroke="#2a2010" stroke-width="0.5" opacity="0.45"/>
+    <line x1="124" y1="162" x2="124" y2="200" stroke="#2a2010" stroke-width="0.4" opacity="0.35"/><line x1="142" y1="162" x2="142" y2="200" stroke="#2a2010" stroke-width="0.4" opacity="0.35"/><line x1="160" y1="162" x2="160" y2="200" stroke="#2a2010" stroke-width="0.4" opacity="0.35"/><line x1="178" y1="162" x2="178" y2="200" stroke="#2a2010" stroke-width="0.4" opacity="0.35"/>
+    <!-- Flying debris tier 3 -->
+    <rect x="96"  y="164" width="8"  height="6"  fill="#1c1408" opacity="0.82" transform="rotate(-12,96,164)"/>
+    <rect x="188" y="168" width="10" height="7"  fill="#1c1408" opacity="0.78" transform="rotate(15,188,168)"/>
+    <rect x="100" y="176" width="6"  height="5"  fill="#1c1408" opacity="0.65" transform="rotate(-8,100,176)"/>
+    <rect x="192" y="172" width="7"  height="5"  fill="#1c1408" opacity="0.6"  transform="rotate(20,192,172)"/>
+
+    <!-- Tier 2: y=200–244, w=116 → x=90–206 -->
+    <rect x="90" y="200" width="116" height="44" fill="#1c1408" stroke="#2a2010" stroke-width="0.7" opacity="0.95"/>
+    <!-- Tier 2 crack -->
+    <path d="M148,200 L144,210 L152,218 L142,228 L150,234 L148,244"
+          fill="none" stroke="#0e0806" stroke-width="1.6" opacity="0.7"/>
+    <!-- Mortar lines tier 2 -->
+    <line x1="90" y1="212" x2="206" y2="212" stroke="#2a2010" stroke-width="0.5" opacity="0.4"/><line x1="90" y1="224" x2="206" y2="224" stroke="#2a2010" stroke-width="0.5" opacity="0.4"/><line x1="90" y1="236" x2="206" y2="236" stroke="#2a2010" stroke-width="0.5" opacity="0.4"/>
+    <line x1="108" y1="200" x2="108" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/><line x1="126" y1="200" x2="126" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/><line x1="144" y1="200" x2="144" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/><line x1="162" y1="200" x2="162" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/><line x1="180" y1="200" x2="180" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/><line x1="198" y1="200" x2="198" y2="244" stroke="#2a2010" stroke-width="0.4" opacity="0.3"/>
+
+    <!-- Tier 1 (base): y=244–296, w=148 → x=74–222 -->
+    <rect x="74" y="244" width="148" height="52" fill="#1c1408" stroke="#2a2010" stroke-width="0.7" opacity="0.95"/>
+    <!-- Mortar lines tier 1 -->
+    <line x1="74" y1="258" x2="222" y2="258" stroke="#2a2010" stroke-width="0.5" opacity="0.35"/><line x1="74" y1="270" x2="222" y2="270" stroke="#2a2010" stroke-width="0.5" opacity="0.35"/><line x1="74" y1="282" x2="222" y2="282" stroke="#2a2010" stroke-width="0.5" opacity="0.35"/>
+    <line x1="92" y1="244" x2="92" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="110" y1="244" x2="110" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="130" y1="244" x2="130" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="148" y1="244" x2="148" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="166" y1="244" x2="166" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="184" y1="244" x2="184" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/><line x1="204" y1="244" x2="204" y2="296" stroke="#2a2010" stroke-width="0.4" opacity="0.25"/>
+
+    <!-- ═══ Qliphothic nodes (Tree of Life positions) — mixed lit / dark ═══ -->
+    <!-- Same 10 positions as XV; lightning begins to fill the hollow husks -->
+    <!-- Kether(148,136): closest to strike → brightest, first to be filled -->
+    <!-- Lower nodes still mostly dark — the purging works downward through the structure -->
+    <circle cx="148" cy="136" r="5.5" fill="#663311" stroke="#ff3300"  stroke-width="1.2" opacity="0.92"/>
+    <circle cx="148" cy="136" r="2.5" fill="#ffcc44"  opacity="0.75"/>
+    <!-- Chokmah(168,158), Binah(128,158) — partially lit -->
+    <circle cx="168" cy="158" r="4.5" fill="#663311" stroke="#dd2200" stroke-width="0.9" opacity="0.82"/>
+    <circle cx="128" cy="158" r="4.5" fill="#663311" stroke="#dd2200" stroke-width="0.9" opacity="0.82"/>
+    <!-- Chesed(178,182), Geburah(118,182) — dim glow -->
+    <circle cx="178" cy="182" r="4"   fill="#663311" stroke="#2a2010"  stroke-width="0.7" opacity="0.65"/>
+    <circle cx="118" cy="182" r="4"   fill="#663311" stroke="#2a2010"  stroke-width="0.7" opacity="0.65"/>
+    <!-- Tiphareth(148,190) — central, mid-lit -->
+    <circle cx="148" cy="190" r="5"   fill="#663311" stroke="#dd2200" stroke-width="0.8" opacity="0.72"/>
+    <!-- Netzach(194,218), Hod(102,218) — still mostly dark -->
+    <circle cx="194" cy="218" r="4"   fill="#150c04"  stroke="#2a2010"  stroke-width="0.6" opacity="0.55"/>
+    <circle cx="102" cy="218" r="4"   fill="#150c04"  stroke="#2a2010"  stroke-width="0.6" opacity="0.55"/>
+    <!-- Yesod(148,232), Malkuth(148,260) — darkest, purging not yet reached -->
+    <circle cx="148" cy="232" r="4.5" fill="#150c04"  stroke="#2a2010"  stroke-width="0.6" opacity="0.45"/>
+    <circle cx="148" cy="264" r="5"   fill="#150c04"  stroke="#2a2010"  stroke-width="0.6" opacity="0.45"/>
+
+    <!-- ═══ Flood water — Meribah struck-rock + Noaic flood converged ═══ -->
+    <!-- Water bursts from the crack at the lightning impact point -->
+    <!-- The same act: God said "speak to the rock" (Peh) — Moses struck it instead -->
+    <!-- The water that punished Moses' disobedience is the same water that drowned the Nephilim -->
+    <defs>
+      <linearGradient id="waterL" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="#99ccee" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#4488cc"  stop-opacity="0.4"/>
+      </linearGradient>
+      <linearGradient id="waterR" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%"   stop-color="#99ccee" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#4488cc"  stop-opacity="0.4"/>
+      </linearGradient>
+    </defs>
+    <!-- Burst from crack point -->
+    <ellipse cx="148" cy="132" rx="12" ry="6" fill="url(#waterBurst)" opacity="0.8"/>
+    <!-- Left water stream down ziggurat face -->
+    <path d="M142,132 C138,148 130,162 118,174 C108,184 96,196 84,216 C76,230 74,252 74,272"
+          fill="none" stroke="#4488cc" stroke-width="3.5" opacity="0.72" stroke-linecap="round"/>
+    <path d="M140,132 C136,146 128,160 116,172 C106,182 94,194 82,214"
+          fill="none" stroke="#99ccee" stroke-width="1.4" opacity="0.55"/>
+    <!-- Right water stream -->
+    <path d="M154,132 C158,148 166,162 178,174 C188,184 200,196 214,218 C220,232 222,254 222,272"
+          fill="none" stroke="#4488cc" stroke-width="3.5" opacity="0.72" stroke-linecap="round"/>
+    <path d="M156,132 C160,146 168,160 180,172 C190,182 202,194 216,216"
+          fill="none" stroke="#99ccee" stroke-width="1.4" opacity="0.55"/>
+    <!-- Cascade drips from tier edges -->
+    <path d="M106,200 C102,208 104,216 100,224" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/><path d="M90,244 C86,252 88,260 84,268" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/><path d="M74,296 C70,304 72,312 68,320" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/>
+    <path d="M190,200 C194,208 192,216 196,224" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/><path d="M206,244 C210,252 208,260 212,268" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/><path d="M222,296 C226,304 224,312 228,320" fill="none" stroke="#4488cc" stroke-width="2" opacity="0.5"/>
+
+    <!-- ═══ Nephilim — giant form embedded in the masonry ═══ -->
+    <!-- Sons of God and daughters of men (Genesis 6:1-4) -->
+    <!-- Holders of divine knowledge who followed Lucifer's pride — they ARE the Tower -->
+    <!-- Purged in the Flood of Water (Noah); typifying Lucifer purged in the Flood of Blood (Armageddon) -->
+    <!-- Their scale dwarfs the architecture: no size or divine lineage resists the divine judgment -->
+    <!-- Near-invisible: opacity ~0.3–0.38 — in the stone, not on it -->
+
+    <!-- Left Nephilim — main figure, torso spanning tier 2 and into tier 1 -->
+    <!-- Head/shoulder at y≈196 (above tier 2 top), torso body to y≈280 -->
+    <g opacity="0.34">
+      <!-- Skull / head (giant — spans 2+ stone courses in implied height) -->
+      <ellipse cx="56" cy="208" rx="26" ry="22" fill="#2a1a08"/>
+      <!-- Jaw -->
+      <path d="M32,218 C34,232 42,238 56,240 C70,238 78,232 80,218"
+            fill="#2a1a08" stroke="none"/>
+      <!-- Eye sockets — hollow, vacant -->
+      <ellipse cx="46" cy="204" rx="7" ry="8" fill="#1c1408" opacity="0.6"/>
+      <ellipse cx="66" cy="204" rx="7" ry="8" fill="#1c1408" opacity="0.6"/>
+      <!-- Torso -->
+      <path d="M30,240 C24,258 22,278 28,296 L84,296 C88,278 86,258 82,240 Z"
+            fill="#2a1a08"/>
+      <!-- Reaching arm — extends leftward out of the masonry toward viewer -->
+      <!-- Forearm breaks through the tier 2 left wall, grasping at air -->
+      <path d="M30,256 C14,252 -2,248 -10,244 C-16,240 -14,232 -8,230 C0,228 16,234 30,240"
+            fill="#2a1a08"/>
+      <!-- Hand (partial, fingertips) -->
+      <path d="M-10,244 C-16,242 -20,238 -18,234 M-8,246 C-14,246 -18,244 -16,240 M-6,248 C-12,250 -16,248 -14,244"
+            stroke="#2a1a08" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Vestigial wing-stub — emerges from the crack between tier 2 and tier 3 on the left face -->
+    <!-- The angelic lineage — now vestigial, being swept by the flood water -->
+    <g opacity="0.28">
+      <path d="M90,200 C68,188 48,182 32,188 C22,192 20,202 28,208 C40,214 60,210 90,210"
+            fill="#181008" stroke="none"/>
+      <!-- Wing-feather traces — barely visible -->
+      <path d="M88,202 C70,192 52,188 36,194 M86,205 C68,196 50,192 34,198"
+            stroke="#181008" stroke-width="1.8" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Second Nephilim — right side, tier 1, even more buried/dissolved -->
+    <!-- Only shoulder-mass and partial arm visible — the flood water already covering most of it -->
+    <g opacity="0.22">
+      <ellipse cx="214" cy="270" rx="22" ry="18" fill="#2a1a08"/>
+      <path d="M214,260 C226,254 238,252 246,256 C252,260 250,268 242,272 C234,274 224,272 214,272"
+            fill="#2a1a08"/>
+    </g>
+
+    <!-- ═══ Fallen King — corrupted gold, chains breaking, being released ═══ -->
+    <!-- XV's chained King now in motion — the fall is liberation for those who submit -->
+    <!-- Left of ziggurat, tilted ~30° clockwise, descending -->
+    <g transform="translate(72,306) rotate(28)" opacity="0.88">
+      <!-- Body -->
+      <rect x="-10" y="-24" width="20" height="36" rx="4" fill="#886622" opacity="0.9"/>
+      <!-- Head -->
+      <circle cx="0" cy="-30" r="9" fill="#886622"/>
+      <!-- Crown (broken) -->
+      <path d="M-9,-38 L-6,-28 M-3,-40 L-1,-28 M3,-40 L2,-28 M8,-38 L6,-28"
+            stroke="#886622" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Broken chain — link still attached at wrist, rest trailing -->
+      <path d="M10,8 C16,12 18,18 14,22 M14,22 C18,26 16,30 12,28"
+            stroke="#555555" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="14" cy="22" r="2.5" fill="none" stroke="#555555" stroke-width="1.8"/>
+    </g>
+
+    <!-- ═══ Fallen Queen — corrupted silver, chains breaking ═══ -->
+    <!-- XV's chained Queen, tilted ~28° counter-clockwise, descending right -->
+    <g transform="translate(228,300) rotate(-26)" opacity="0.85">
+      <!-- Body -->
+      <rect x="-10" y="-24" width="20" height="36" rx="4" fill="#445577" opacity="0.9"/>
+      <!-- Head -->
+      <circle cx="0" cy="-30" r="9" fill="#445577"/>
+      <!-- Hair / veil -->
+      <path d="M-9,-24 C-12,-18 -12,4 -10,12 M9,-24 C12,-18 12,4 10,12"
+            stroke="#445577" stroke-width="2" fill="none" opacity="0.7"/>
+      <!-- Broken chain -->
+      <path d="M-10,8 C-16,12 -18,18 -14,22 M-14,22 C-18,26 -16,30 -12,28"
+            stroke="#555555" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="-14" cy="22" r="2.5" fill="none" stroke="#555555" stroke-width="1.8"/>
+    </g>
+
+    <!-- ═══ Receding Lake of Fire — diminished from XV ═══ -->
+    <!-- Armageddon is prefigured here; the Lake is its destination, not its present state -->
+    <!-- Flood water descending from above meets the receding infernal fire below -->
+    <rect x="0" y="316" width="300" height="104" fill="#1a0800" opacity="0.75"/>
+    <!-- Lake surface texture — receding waves -->
+    <path d="M0,318 C30,315 60,321 90,318 C120,315 150,321 180,318 C210,315 240,321 270,318 C285,316.5 295,319 300,318" fill="none" stroke="#441100" stroke-width="0.8" opacity="0.35"/><path d="M0,324 C30,321 60,327 90,324 C120,321 150,327 180,324 C210,321 240,327 270,324 C285,322.5 295,325 300,324" fill="none" stroke="#441100" stroke-width="0.8" opacity="0.3"/><path d="M0,330 C30,327 60,333 90,330 C120,327 150,333 180,330 C210,327 240,333 270,330 C285,328.5 295,331 300,330" fill="none" stroke="#441100" stroke-width="0.8" opacity="0.24999999999999997"/><path d="M0,336 C30,333 60,339 90,336 C120,333 150,339 180,336 C210,333 240,339 270,336 C285,334.5 295,337 300,336" fill="none" stroke="#441100" stroke-width="0.8" opacity="0.19999999999999996"/><path d="M0,342 C30,339 60,345 90,342 C120,339 150,345 180,342 C210,339 240,345 270,342 C285,340.5 295,343 300,342" fill="none" stroke="#441100" stroke-width="0.8" opacity="0.14999999999999997"/>
+    <!-- Fading flame tongues — smaller than XV, retreating -->
+    <path d="M60,316 C55,305.2 58,298 60,294 C62,298 65,305.2 60,316" fill="#aa3300" opacity="0.28"/><path d="M100,316 C95,307.6 98,302 100,298 C102,302 105,307.6 100,316" fill="#aa3300" opacity="0.36000000000000004"/><path d="M148,316 C143,302.8 146,294 148,290 C150,294 153,302.8 148,316" fill="#dd4400" opacity="0.28"/><path d="M196,316 C191,308.8 194,304 196,300 C198,304 201,308.8 196,316" fill="#aa3300" opacity="0.36000000000000004"/><path d="M240,316 C235,306.4 238,300 240,296 C242,300 245,306.4 240,316" fill="#aa3300" opacity="0.28"/>
+    <!-- Flood/fire junction — water (blue) meeting fire (orange-red) at the surface -->
+    <path d="M0,316 C40,312 80,318 120,314 C160,310 200,318 240,314 C265,312 285,316 300,314"
+          fill="none" stroke="#224466" stroke-width="1.8" opacity="0.45"/>
+  
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#dd8866" letter-spacing="2.5"
+        filter="url(#glow)">THE TOWER</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#3a1a10" letter-spacing="3" opacity="0.75">Peh · Mars · Path 27</text>
+</svg>

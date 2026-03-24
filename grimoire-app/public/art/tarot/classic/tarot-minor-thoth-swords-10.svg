@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090900"/>
+      <stop offset="100%" stop-color="#161600"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#776600" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#999900" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#776600" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- Pip header: number + decanate -->
+  <text x="24" y="45"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="26" font-weight="300" fill="#ffee88">X</text>
+  <!-- Planet symbol -->
+  <text x="150" y="38"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="20" fill="#ccbb00" opacity="0.9">☉</text>
+  <!-- Sign symbol -->
+  <text x="150" y="60"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="18" fill="#999900" opacity="0.75">♊</text>
+  <!-- Decan description (tiny) -->
+  <text x="276" y="45"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,serif"
+        font-size="8.5" fill="#776633" letter-spacing="0.5">Sun in Gemini</text>
+
+  <!-- Pip arrangement: 10 pips -->
+  <g filter="url(#glow)"><g>
+  <polygon points="68,76.84 70.07,94.32 68,96.16 65.93,94.32"
+           fill="#ccbb00"/>
+  <rect x="66.84" y="95.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="57.31" y="93.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="66.34" y="109.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="150,76.84 152.07,94.32 150,96.16 147.93,94.32"
+           fill="#ccbb00"/>
+  <rect x="148.84" y="95.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="139.31" y="93.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="148.34" y="109.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,76.84 234.07,94.32 232,96.16 229.93,94.32"
+           fill="#ccbb00"/>
+  <rect x="230.84" y="95.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="221.31" y="93.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="230.34" y="109.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="68,141.84 70.07,159.32 68,161.16 65.93,159.32"
+           fill="#ccbb00"/>
+  <rect x="66.84" y="160.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="57.31" y="158.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="66.34" y="174.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,141.84 234.07,159.32 232,161.16 229.93,159.32"
+           fill="#ccbb00"/>
+  <rect x="230.84" y="160.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="221.31" y="158.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="230.34" y="174.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="68,245.84 70.07,263.32 68,265.16 65.93,263.32"
+           fill="#ccbb00"/>
+  <rect x="66.84" y="264.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="57.31" y="262.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="66.34" y="278.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,245.84 234.07,263.32 232,265.16 229.93,263.32"
+           fill="#ccbb00"/>
+  <rect x="230.84" y="264.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="221.31" y="262.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="230.34" y="278.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="68,310.84 70.07,328.32 68,330.16 65.93,328.32"
+           fill="#ccbb00"/>
+  <rect x="66.84" y="329.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="57.31" y="327.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="66.34" y="343.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="150,310.84 152.07,328.32 150,330.16 147.93,328.32"
+           fill="#ccbb00"/>
+  <rect x="148.84" y="329.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="139.31" y="327.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="148.34" y="343.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g>
+  <g>
+  <polygon points="232,310.84 234.07,328.32 232,330.16 229.93,328.32"
+           fill="#ccbb00"/>
+  <rect x="230.84" y="329.7" width="2.32" height="14.72"
+        fill="#ccbb00" opacity="0.85"/>
+  <rect x="221.31" y="327.86" width="21.39" height="3.22"
+        rx="1.38" fill="#ccbb00"/>
+  <rect x="230.34" y="343.5" width="3.31" height="5.98"
+        rx="2.76" fill="#ccbb00" opacity="0.6"/>
+</g></g>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#ffee88" letter-spacing="2"
+        filter="url(#glow)">Ruin</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#776633" letter-spacing="3"
+        opacity="0.8">X of Swords</text>
+</svg>

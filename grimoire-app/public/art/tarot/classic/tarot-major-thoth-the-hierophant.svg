@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#150800"/>
+      <stop offset="100%" stop-color="#2a1200"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#662200" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#cc4400" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#662200" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#662200" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ffcc88" opacity="0.9">V</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#cc4400" opacity="0.85" filter="url(#glow)">ו</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#885533" opacity="0.8">♉</text>
+
+
+  
+  <text x="152" y="228"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="252" fill="#771100" opacity="0.065">ו</text>
+  
+  <!-- Pentagram soft outer glow -->
+  <polygon points="150,83 166.46,133.65 123.37,102.35 176.63,102.35 133.54,133.65" fill="none" stroke="#bb3300" stroke-width="3" opacity="0.18" filter="url(#softglow)"/>
+  <!-- Pentagram -->
+  <polygon points="150,83 166.46,133.65 123.37,102.35 176.63,102.35 133.54,133.65" fill="rgba(160,60,0,0.1)" stroke="#cc5500"
+           stroke-width="2" stroke-linejoin="round" opacity="0.88" filter="url(#glow)"/>
+  
+  <line x1="150" y1="252" x2="150" y2="139"
+        stroke="#ffaa55" stroke-width="1.2" stroke-dasharray="3 5"
+        opacity="0.32" filter="url(#glow)"/>
+  
+  <!-- Throne back -->
+  <rect x="106" y="167" width="88" height="90" rx="3"
+        fill="#1e0800" stroke="#441800" stroke-width="1" opacity="0.85"/>
+  <!-- Throne seat -->
+  <rect x="106" y="257" width="88" height="14" rx="2"
+        fill="#160600" stroke="#441800" stroke-width="1" opacity="0.9"/>
+  <!-- Bull-horn armrests (left) — two curved horn shapes -->
+  <path d="M106,243 C96,237 90,225 98,219 C106,215 110,223 108,233"
+        fill="none" stroke="#664422" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <!-- Bull-horn armrests (right) — mirrored -->
+  <path d="M194,243 C204,237 210,225 202,219 C194,215 190,223 192,233"
+        fill="none" stroke="#664422" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  
+  <!-- Tiara bottom ring (widest) -->
+  <ellipse cx="150" cy="155" rx="21" ry="7"
+           fill="#992200" stroke="#cc4400" stroke-width="1" opacity="0.9"/>
+  <!-- Tiara middle ring -->
+  <ellipse cx="150" cy="145" rx="16" ry="6"
+           fill="#aa2200" stroke="#cc4400" stroke-width="1" opacity="0.9"/>
+  <!-- Tiara top ring -->
+  <ellipse cx="150" cy="136" rx="11" ry="5"
+           fill="#bb2200" stroke="#dd4400" stroke-width="1" opacity="0.9"/>
+  <!-- Finial orb + cross -->
+  <circle cx="150" cy="128" r="4" fill="#dd3300" opacity="0.9"/>
+  <line x1="150" y1="122" x2="150" y2="132"
+        stroke="#ffaa44" stroke-width="1.5" opacity="0.82"/>
+  <line x1="146" y1="126" x2="154" y2="126"
+        stroke="#ffaa44" stroke-width="1.5" opacity="0.82"/>
+  
+  <!-- Vestments — robe -->
+  <path d="M116,259 Q114,223 150,217
+           Q186,223 184,259 Q150,273 116,259 Z"
+        fill="#882200" opacity="0.85"/>
+  <!-- Chest stole (vertical decorative band) -->
+  <rect x="143" y="219" width="14" height="38" rx="2"
+        fill="#993300" stroke="#bb5522" stroke-width="0.8" opacity="0.78"/>
+  <!-- Head -->
+  <circle cx="150" cy="193" r="15" fill="#c8a060" opacity="0.88"/>
+
+  <!-- Right arm raised — sign of esotericism -->
+  <line x1="166" y1="223" x2="182" y2="199"
+        stroke="#c8a060" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+  <!-- Palm/wrist -->
+  <ellipse cx="183" cy="196" rx="5" ry="6" fill="#c8a060" opacity="0.78"/>
+  <!-- Two fingers pointing UP (index + middle) -->
+  <line x1="180" y1="191" x2="177" y2="179"
+        stroke="#c8a060" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+  <line x1="184" y1="190" x2="183" y2="178"
+        stroke="#c8a060" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+  <!-- Two fingers pointing DOWN (ring + pinky) -->
+  <line x1="183" y1="201" x2="186" y2="211"
+        stroke="#c8a060" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+  <line x1="187" y1="200" x2="191" y2="209"
+        stroke="#c8a060" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+
+  <!-- Left arm — crook and flail crossed at chest (Osirian) -->
+  <line x1="134" y1="223" x2="120" y2="209"
+        stroke="#c8a060" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <!-- Crook: J-shaped pastoral staff -->
+  <path d="M118,211 Q108,195 116,185 Q124,179 130,187"
+        fill="none" stroke="#ddcc44" stroke-width="2.5" stroke-linecap="round" opacity="0.84"/>
+  <line x1="118" y1="211" x2="138" y2="233"
+        stroke="#ddcc44" stroke-width="2.5" stroke-linecap="round" opacity="0.76"/>
+  <!-- Flail: handle + three beaded chains -->
+  <line x1="140" y1="207" x2="150" y2="227"
+        stroke="#ddcc44" stroke-width="2.5" stroke-linecap="round" opacity="0.76"/>
+  <line x1="146" y1="214" x2="140" y2="225"
+        stroke="#ddcc44" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <line x1="148" y1="214" x2="144" y2="226"
+        stroke="#ddcc44" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <line x1="150" y1="214" x2="150" y2="227"
+        stroke="#ddcc44" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="140" cy="225" r="2.5" fill="#ddcc44" opacity="0.72"/>
+  <circle cx="144" cy="226" r="2.5" fill="#ddcc44" opacity="0.72"/>
+  <circle cx="150" cy="227" r="2.5" fill="#ddcc44" opacity="0.72"/>
+  
+  <!-- Altar stone block -->
+  <rect x="120" y="272" width="60" height="20" rx="2"
+        fill="#281000" stroke="#553322" stroke-width="1.2" opacity="0.92"/>
+  <!-- Altar top slab (slightly proud) -->
+  <rect x="117" y="268" width="66" height="6" rx="1.5"
+        fill="#321400" stroke="#664433" stroke-width="1" opacity="0.88"/>
+  <!-- Bull-horn motif carved into altar face (left) — echoes throne armrests -->
+  <path d="M130,280 C124,276 122,284 128,288"
+        fill="none" stroke="#775533" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Bull-horn motif (right, mirrored) -->
+  <path d="M170,280 C176,276 178,284 172,288"
+        fill="none" stroke="#775533" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Offering flame -->
+  <!-- Flame corona -->
+  <path d="M143,272 L150,244 L157,272 Z"
+        fill="#ff4400" opacity="0.1" filter="url(#softglow)"/>
+  <!-- Flame outer -->
+  <path d="M145,272 L148,254 L150,264 L152,250 L155,272 Z"
+        fill="#ff5500" opacity="0.75"/>
+  <!-- Flame inner -->
+  <path d="M147,272 L150,248 L153,272 Z"
+        fill="#ff3300" opacity="0.55"/>
+  <!-- Flame highlight -->
+  <path d="M149.5,270 L150,254 L150.5,270 Z"
+        fill="#ffee88" opacity="0.65"/>
+  <g opacity="0.72">
+    <!-- Head bowed -->
+    <circle cx="84" cy="284" r="9" fill="#661a00"/>
+    <!-- Body bent forward toward altar -->
+    <path d="M77,292 Q92,306 102,304"
+          fill="none" stroke="#661a00" stroke-width="10" stroke-linecap="round"/>
+    <!-- Outstretched arms toward altar/flame -->
+    <line x1="92" y1="299" x2="106" y2="305"
+          stroke="#661a00" stroke-width="5" stroke-linecap="round"/>
+    <!-- Robe pooled at base -->
+    <ellipse cx="84" cy="313" rx="13" ry="5" fill="#551600" opacity="0.55"/>
+  </g>
+  <g opacity="0.72">
+    <!-- Head bowed -->
+    <circle cx="216" cy="284" r="9" fill="#661a00"/>
+    <!-- Body bent forward toward altar -->
+    <path d="M209,292 Q208,306 198,304"
+          fill="none" stroke="#661a00" stroke-width="10" stroke-linecap="round"/>
+    <!-- Outstretched arms toward altar/flame -->
+    <line x1="208" y1="299" x2="194" y2="305"
+          stroke="#661a00" stroke-width="5" stroke-linecap="round"/>
+    <!-- Robe pooled at base -->
+    <ellipse cx="216" cy="313" rx="13" ry="5" fill="#551600" opacity="0.55"/>
+  </g>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ffcc88" letter-spacing="2.5"
+        filter="url(#glow)">The Hierophant</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#885533" letter-spacing="3" opacity="0.75">Vav · Taurus · Path 16</text>
+</svg>

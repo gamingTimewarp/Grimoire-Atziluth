@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "jyotish.gem.ruby",
+      "target": "astrology.planet.sol",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.pearl",
+      "target": "astrology.planet.luna",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.red-coral",
+      "target": "astrology.planet.mars",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.emerald",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.yellow-sapphire",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.diamond",
+      "target": "astrology.planet.venus",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.blue-sapphire",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "vedic.mahabhuta.akasha",
+      "target": "tattwa.akasha",
+      "label": "tattwa-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "vedic.mahabhuta.vayu",
+      "target": "tattwa.vayu",
+      "label": "tattwa-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "vedic.mahabhuta.tejas",
+      "target": "tattwa.tejas",
+      "label": "tattwa-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "vedic.mahabhuta.apas",
+      "target": "tattwa.apas",
+      "label": "tattwa-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "vedic.mahabhuta.prithivi",
+      "target": "tattwa.prithivi",
+      "label": "tattwa-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.gem.hessonite",
+      "target": "astrology.node.rahu",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    },
+    {
+      "source": "jyotish.gem.cats-eye",
+      "target": "astrology.node.ketu",
+      "label": "planetary-gem",
+      "bidirectional": false,
+      "traditionScope": [
+        "tradition.vedic-jyotish"
+      ]
+    }
+  ]
+}

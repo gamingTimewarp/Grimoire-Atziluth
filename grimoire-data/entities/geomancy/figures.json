@@ -1,0 +1,725 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "geomancy.figure.puer",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Puer",
+      "description": "Puer, the Boy or Youth, is the most martial and aggressive of the geomantic figures, governed by Mars in Aries and embodying the raw, untempered fire of masculine force. Its pattern — single, double, single, double — suggests energy that erupts and subsides in alternating bursts, representing rashness, courage, conflict, and uncontrolled passion. In a reading Puer often signals quarrels, competition, sexual energy, or a young male figure acting impulsively; it is favourable in questions of war, sport, or any endeavour requiring boldness, but inauspicious where patience and diplomacy are needed. The Arabic tradition (Ilm al-Raml) associated this figure with the sword, and it appears frequently in military and legal questions where its martial nature can cut swiftly to resolution. Agrippa lists Puer as mobile in quality, meaning it moves quickly through a chart, rarely settling into a stable outcome.",
+      "secondaryNames": [
+        {
+          "name": "Puer",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الغلام",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "planet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "element": "astrology.element.fire",
+        "quality": "mobile",
+        "innerElement": "fire",
+        "outerElement": "fire",
+        "binaryPattern": "single, double, single, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-tower"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.amissio",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Amissio",
+      "description": "Amissio, meaning Loss, is attributed to Venus operating in her lower, earthly aspect and assigned to Taurus, though some Renaissance authorities place it under Scorpio's influence for its transformative, dissolving quality. Its dot pattern — double, single, double, single — is the inversion of Acquisitio, a visual representation of what was held slipping away through the fingers. In divination Amissio most often signals loss of money, possessions, or relationships, and cautions against financial ventures or any attempt to retain what is already departing; yet because Venus governs it, the figure also carries a note of grace in letting go, and can indicate willing sacrifice or liberality. The Arabic masters saw in Amissio the image of an overturned vessel from which the contents have spilled, emphasising the irreversibility of certain losses. For questions of recovery of lost objects, Amissio in the House of the Thing Sought is a near-certain negative — yet in matters of love it sometimes indicates desire so intense it consumes its object.",
+      "secondaryNames": [
+        {
+          "name": "Amissio",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الخسارة",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "earth",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "planet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "element": "astrology.element.earth",
+        "quality": "mobile",
+        "innerElement": "earth",
+        "outerElement": "earth",
+        "binaryPattern": "double, single, double, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-empress"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.albus",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Albus",
+      "description": "Albus, the White or Pale One, is a figure of cool, refined intelligence attributed to Mercury in Gemini, representing clarity of mind, wisdom, good counsel, and fair judgment. Its dot pattern — double, double, single, double — places a single active point only in the water row, suggesting that beneath a calm, stable exterior lies emotional sensitivity and perceptiveness. In a reading Albus is one of the most favourable figures for matters of commerce, contracts, communication, and intellectual undertakings; it promises clear thinking, honest dealing, and the recovery of things misplaced through careful enquiry. Renaissance geomancers associated Albus with the scholar and the scribe, and it appears as an auspicious omen in any question requiring discernment or the mediation of disputes. The Golden Dawn attributed Albus to the mercurial quality of swift, clear reasoning unmarked by passion or prejudice.",
+      "secondaryNames": [
+        {
+          "name": "Albus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الأبيض",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "air",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "planet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "element": "astrology.element.air",
+        "quality": "stable",
+        "innerElement": "air",
+        "outerElement": "air",
+        "binaryPattern": "double, double, single, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-magician"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.populus",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Populus",
+      "description": "Populus, the People or Congregation, is the most passive and receptive of all the figures, attributed to the Moon in Cancer and composed entirely of double points across all four elemental rows. This all-double pattern makes Populus perfectly stable — a mirror that reflects whatever is placed before it — and in a reading it takes its meaning almost entirely from the figures that accompany it, amplifying their nature rather than asserting its own. On its own merits Populus represents crowds, the public, community, collective opinion, and the principle of multiplicity; it is favourable for questions concerning popular approval, matters affecting many people, and situations where numbers matter. The lunar attribution speaks to its changeable, receptive, and emotional character, as well as its connection to memory, the past, and the subconscious. Some Arabic sources name this figure the 'gathering of all things', seeing in its fullness both abundance and the inertia of the masses.",
+      "secondaryNames": [
+        {
+          "name": "Populus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الجماعة",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "water",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "planet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "element": "astrology.element.water",
+        "quality": "stable",
+        "innerElement": "water",
+        "outerElement": "water",
+        "binaryPattern": "double, double, double, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-high-priestess"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.fortuna-major",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Fortuna Major",
+      "description": "Fortuna Major, the Greater Fortune, is the most powerfully benefic figure in the entire geomantic system, attributed to the Sun in Leo and signifying great success achieved through inner virtue and personal strength rather than through luck alone. Its dot pattern — single, double, double, single — creates a shape that the medieval authorities likened to a mountain or a firmly planted standard, suggesting success that is earned, rooted, and lasting. In any reading Fortuna Major presages triumph, honour, advancement, protection, and the successful resolution of whatever is asked; it is the ultimate positive answer in a yes-or-no reading and greatly strengthens any figure it accompanies. The figure was associated in Hermetic tradition with the solar principle of the Higher Self illuminating the path ahead, and Gerard of Cremona described it as 'entering into the house with great power'. It is most helpful in matters of career, authority, ambition, and situations requiring courage and leadership.",
+      "secondaryNames": [
+        {
+          "name": "Fortuna Major",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الحظ الأكبر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "planet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "element": "astrology.element.fire",
+        "quality": "stable",
+        "innerElement": "fire",
+        "outerElement": "fire",
+        "binaryPattern": "single, double, double, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-sun"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.conjunctio",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Conjunctio",
+      "description": "Conjunctio, the Conjunction or Union, is attributed to Mercury in Virgo and represents the coming together of things that were separated — the recovery of lost items, the reunion of estranged parties, contracts, meetings, and all forms of communication and agreement. Its dot pattern — double, single, single, double — is the structural inverse of Carcer, suggesting that where Carcer imprisons and isolates, Conjunctio opens channels and connects. In a reading Conjunctio is generally favourable, especially for questions of commerce, marriage, partnerships, travel, and any matter requiring two parties to come to terms; its mercurial nature makes it swift and flexible, capable of joining disparate elements together into a coherent whole. The figure is also associated with the recovery of lost things, since Mercury as psychopomp can retrieve what has wandered into hidden places. Agrippa placed Conjunctio among the figures good for all things in which 'company and fellowship' are desired.",
+      "secondaryNames": [
+        {
+          "name": "Conjunctio",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الاجتماع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "air",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "planet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "element": "astrology.element.air",
+        "quality": "stable",
+        "innerElement": "air",
+        "outerElement": "air",
+        "binaryPattern": "double, single, single, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-lovers"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.puella",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Puella",
+      "description": "Puella, the Girl or Maiden, is attributed to Venus in Libra and represents beauty, harmony, peace, pleasure, and the gracious, receptive aspects of the feminine principle. Its dot pattern — double, single, double, double — places a single active point in the air row, giving the figure a slight quality of mental inconstancy beneath its pleasing exterior; the tradition notes that Puella's beauty is sometimes superficial, favouring appearance over substance. In a reading Puella is broadly favourable, especially in matters of love, aesthetics, social relationships, and the arts; it indicates pleasant outcomes, agreeable companions, and situations where tact and charm succeed where force would fail. Medieval geomancers associated Puella with the beloved, the muse, and the agreeable resolution of disputes through compromise. Where Puer acts, Puella negotiates — and her Venusian nature ensures that the outcome, though perhaps less decisive, is usually more lasting.",
+      "secondaryNames": [
+        {
+          "name": "Puella",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الفتاة",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "air",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "planet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "element": "astrology.element.air",
+        "quality": "stable",
+        "innerElement": "air",
+        "outerElement": "air",
+        "binaryPattern": "double, single, double, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.justice"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.rubeus",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Rubeus",
+      "description": "Rubeus, the Red One, is one of the most ominous figures in the geomantic corpus, attributed to Mars in Scorpio and combining martial fire with the dark, transformative waters of Scorpio into a volatile and dangerous compound. Its dot pattern — double, double, double, single — places all activity in the upper rows with a single point only in the earth row, creating an inverted Albus and suggesting that the clarity and wisdom of that figure have been corrupted into passion, vice, and destruction. In a reading Rubeus warns of violence, deception, addiction, lust, and dangerous passions running out of control; it is one of the traditional 'evil' figures and was said to negate the benefit of any favourable figure it accompanied. Yet within the Hermetic tradition Rubeus also carries the seed of Scorpionic transformation — the capacity for deep regeneration through the destruction of what is false — and can indicate situations where something must be utterly broken down before it can be rebuilt. Agrippa advised that when Rubeus appears in the first house, the entire reading should be abandoned.",
+      "secondaryNames": [
+        {
+          "name": "Rubeus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الأحمر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "planet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "element": "astrology.element.fire",
+        "quality": "mobile",
+        "innerElement": "water",
+        "outerElement": "fire",
+        "binaryPattern": "double, double, double, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.death"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.acquisitio",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Acquisitio",
+      "description": "Acquisitio, Gain or Acquisition, is attributed to Jupiter in Sagittarius and represents the principle of successful accumulation — wealth coming in, projects reaching fruition, and endeavours meeting with prosperity and expansion. Its dot pattern — single, double, double, single — appears to mirror Fortuna Minor, but the Golden Dawn and traditional authorities assign it the pattern that captures everything within its grasp, contrasting with Amissio which lets everything fall away. In a reading Acquisitio is one of the most unambiguously fortunate figures, especially for questions of money, business, treasure, and material gain; it promises that what is sought will be found and what is given will be returned with increase. The Jupiterian quality brings not only abundance but also generosity, wisdom, and legal favour — Acquisitio is a good omen for court cases, inheritances, and any expansion of one's domain. Its only caveat is that Jupiterian excess can lead to overreach if the querent is not grounded.",
+      "secondaryNames": [
+        {
+          "name": "Acquisitio",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الاكتساب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "planet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "element": "astrology.element.fire",
+        "quality": "stable",
+        "innerElement": "fire",
+        "outerElement": "fire",
+        "binaryPattern": "single, double, double, single — reversed Amissio structure (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.wheel-of-fortune"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.carcer",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Carcer",
+      "description": "Carcer, the Prison, is attributed to Saturn in Capricorn and stands as the great figure of restriction, limitation, and binding in the geomantic system. Its dot pattern — single, double, double, single — mirrors Fortuna Major and Acquisitio outwardly, but its Saturnine rulership inverts their benefic quality into delay, obstruction, and confinement. In a reading Carcer indicates situations from which there is no easy exit: long illnesses, legal entanglements, imprisonments literal or metaphorical, rigid circumstances, and the weight of karma or consequence pressing down upon the querent. Yet Carcer is not without its positive dimension — Saturn's restrictions also protect and preserve, and the figure can indicate necessary boundaries, contracts that bind both parties, or the completion of a karmic obligation. It is particularly significant in questions of travel (indicating the impossibility of departure), imprisonment, and matters requiring commitment, where its binding nature can be either a sentence or a covenant.",
+      "secondaryNames": [
+        {
+          "name": "Carcer",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "السجن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "earth",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "planet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "element": "astrology.element.earth",
+        "quality": "stable",
+        "innerElement": "earth",
+        "outerElement": "earth",
+        "binaryPattern": "single, double, double, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "favorable": false,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-devil"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.tristitia",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Tristitia",
+      "description": "Tristitia, Sorrow or Sadness, is attributed to Saturn in Aquarius and represents grief, depression, condemnation, downfall, and the weight of misfortune pressing upon the soul. Its dot pattern — double, single, single, single — concentrates activity in the fire row while leaving the lower rows largely inert, suggesting an energy that aspires but cannot manifest, aspirations crushed under the heaviness of circumstance. In a reading Tristitia warns of unhappiness, mourning, disgrace, illness of a long and wasting nature, and situations that seem irremediably bleak; it is considered one of the most inauspicious figures and was said to blight any reading in which it appears prominently. The Aquarian quality introduces an element of detachment — Tristitia's sorrow has the quality of alienation, of being outside looking in, of cold isolation rather than warm grief. Paradoxically, the Hermetic tradition notes that Tristitia can indicate spiritual depth and the kind of suffering that purifies the soul, linking it to Saturn's role as the initiator who strips away illusion.",
+      "secondaryNames": [
+        {
+          "name": "Tristitia",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الحزن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "air",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 11,
+        "planet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "element": "astrology.element.air",
+        "quality": "stable",
+        "innerElement": "earth",
+        "outerElement": "air",
+        "binaryPattern": "double, single, single, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-world"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.laetitia",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Laetitia",
+      "description": "Laetitia, Joy or Happiness, is attributed to Jupiter in Pisces and stands as the most exuberantly positive figure in the geomantic system, pointing upward like a single flame of joy and representing health, delight, beauty, good news, and spiritual grace. Its dot pattern — single, single, single, double — concentrates all activity in the earth row while the upper rows are single and active, creating a shape the medieval masters likened to a bearded man looking upward toward heaven. In a reading Laetitia is an excellent omen for questions of health, happiness, celebration, artistic success, and spiritual matters; its Piscean attribution gives it a dreamy, compassionate quality, and it is especially favourable for questions involving healing, music, poetry, and the mystical life. The Jupiterian rulership adds abundance and optimism — Laetitia does not merely promise satisfaction but overflowing delight. It is considered one of the four 'best' figures in the tradition, alongside Fortuna Major, Acquisitio, and Conjunctio.",
+      "secondaryNames": [
+        {
+          "name": "Laetitia",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الفرح",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 12,
+        "planet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "element": "astrology.element.fire",
+        "quality": "mobile",
+        "innerElement": "water",
+        "outerElement": "fire",
+        "binaryPattern": "single, single, single, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "favorable": true,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-star"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.cauda-draconis",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Cauda Draconis",
+      "description": "Cauda Draconis, the Dragon's Tail or Descending Node, is one of the two nodal figures and is attributed to the South Node of the Moon, associated with the Sagittarius-Scorpio cusp in various traditions. Its dot pattern — single, double, single, single — marks it as a figure of endings, departures, completions, and the release of accumulated karma, carrying with it a sense of things passing away or being sloughed off like a serpent's skin. In a reading Cauda Draconis signifies exits, losses, the conclusion of chapters, and situations that have run their course; it is generally unfavourable except when the question involves ending something harmful, escaping a difficult situation, or completing a long-standing obligation. The Arabic masters associated it with the 'tail' of the celestial dragon devouring the Moon — a draining, dispersing force that carries away what is no longer needed. Like the South Node in natal astrology, Cauda Draconis points to past-life patterns, habitual behaviours, and the release of what must be relinquished for growth to occur.",
+      "secondaryNames": [
+        {
+          "name": "Cauda Draconis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ذنب التنين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 13,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "element": "astrology.element.fire",
+        "quality": "mobile",
+        "innerElement": "earth",
+        "outerElement": "fire",
+        "binaryPattern": "single, double, single, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-moon"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.caput-draconis",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Caput Draconis",
+      "description": "Caput Draconis, the Dragon's Head or Ascending Node, is the companion nodal figure to Cauda Draconis and is attributed to the North Node of the Moon, associated with the Virgo-Capricorn cusp in various Renaissance authorities. Its dot pattern — single, single, double, single — marks it as a figure of beginnings, entries, gain, and the accumulation of new experience, carrying a sense of increase and the energetic inflow of what is yet to come. In a reading Caput Draconis is generally favourable, especially in matters of new ventures, opportunities, journeys outward, and questions where 'entering into' something is desired; it blesses beginnings and is said to double the good effects of any beneficial figure with which it is combined. Like the North Node in natal astrology, it points toward growth, evolution, and the direction in which the soul is meant to travel. The Arabic tradition described it as the devouring mouth of the celestial dragon — not consuming destructively but ingesting experience and turning it into spiritual nourishment.",
+      "secondaryNames": [
+        {
+          "name": "Caput Draconis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "رأس التنين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "earth",
+        "stable"
+      ],
+      "extendedData": {
+        "orderNumber": 14,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "element": "astrology.element.earth",
+        "quality": "stable",
+        "innerElement": "air",
+        "outerElement": "earth",
+        "binaryPattern": "single, single, double, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "favorable": true,
+        "company": "inner",
+        "tarotCard": "tarot.major.rws.the-hermit"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.fortuna-minor",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Fortuna Minor",
+      "description": "Fortuna Minor, the Lesser Fortune, is attributed to the Sun in Leo alongside Fortuna Major, but where the Greater Fortune represents success from inner strength, the Lesser Fortune represents success dependent upon external aid, speed of action, and favourable circumstances. Its dot pattern — double, single, single, double — is the inverse of Fortuna Major's, suggesting a fortune that is reflected from without rather than generated from within — light borrowed from another source rather than self-generated. In a reading Fortuna Minor indicates assistance from others, lucky timing, rapid movement through circumstances, and success that comes quickly but may not endure; it favours the swift and the opportunistic, promising a good outcome if action is taken immediately. Medieval geomancers associated it with the waning solar light — still powerful and benefic, but carrying the implicit caveat that what rises quickly may fall just as fast. It is an excellent omen for questions of speed, travel, competitions where timing matters, and situations where outside intervention is hoped for.",
+      "secondaryNames": [
+        {
+          "name": "Fortuna Minor",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الحظ الأصغر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "fire",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 15,
+        "planet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "element": "astrology.element.fire",
+        "quality": "mobile",
+        "innerElement": "fire",
+        "outerElement": "fire",
+        "binaryPattern": "double, single, single, double (fire, air, water, earth rows)",
+        "dotPattern": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "favorable": true,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-sun"
+      }
+    },
+    {
+      "canonicalName": "geomancy.figure.via",
+      "entityType": "geomancy.figure",
+      "primaryDisplayName": "Via",
+      "description": "Via, the Way or Road, is the perfect complement to Populus — where Populus is all double dots and absolute stillness, Via is all single dots and absolute movement, attributed to the Moon in Cancer and representing a journey, transformation, and the unceasing flow of life along its path. Its all-single pattern makes Via the most active and restless of the geomantic figures, a river that cannot be held in one place, a traveller who cannot remain seated. In a reading Via most literally indicates physical travel, journeys, movement, change of residence, and the progressive unfolding of events — it rarely indicates a static outcome, but rather a situation in transition. Like Populus it derives much of its meaning from context and accompanying figures, but where Populus amplifies the quality of its companions, Via carries them forward in time, indicating that things are moving and will continue to do so. The Moon's attribution underscores Via's quicksilver, ever-changing nature, its sensitivity to the tides of circumstance, and its connection to the soul's pilgrimage through successive embodiments.",
+      "secondaryNames": [
+        {
+          "name": "Via",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "الطريق",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "geomancy",
+        "figure",
+        "water",
+        "mobile"
+      ],
+      "extendedData": {
+        "orderNumber": 16,
+        "planet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "element": "astrology.element.water",
+        "quality": "mobile",
+        "innerElement": "water",
+        "outerElement": "water",
+        "binaryPattern": "single, single, single, single (fire, air, water, earth rows)",
+        "dotPattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "favorable": false,
+        "company": "outer",
+        "tarotCard": "tarot.major.rws.the-chariot"
+      }
+    }
+  ]
+}

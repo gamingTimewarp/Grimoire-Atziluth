@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "qabalah.partzuf.atik-yomin",  "target": "qabalah.sephira.kether",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "qabalah.partzuf.arich-anpin",  "target": "qabalah.sephira.kether",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "qabalah.partzuf.abba",         "target": "qabalah.sephira.chokmah",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "qabalah.partzuf.imma",         "target": "qabalah.sephira.binah",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "qabalah.partzuf.zeir-anpin",   "target": "qabalah.sephira.tiphareth", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "qabalah.partzuf.nukvah",       "target": "qabalah.sephira.malkuth",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] }
+  ]
+}

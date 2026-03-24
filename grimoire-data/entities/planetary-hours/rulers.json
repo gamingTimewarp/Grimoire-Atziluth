@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "planetary-hour.day-ruler.sunday-sun",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Sunday (Sol)",
+      "description": "Sunday, the Day of the Sun. The first day of the week in Western tradition, named for the Sun (Old English: Sunnandæg; Latin: Dies Solis). Sunday is the most auspicious day for solar operations: healing, success, authority, creativity, vitality, dealings with powerful individuals, and the pursuit of honour. In the Chaldean planetary order the Sun governs the first hour of Sunday, and the first hour of each day determines the planetary ruler of that day. Sunday's magical associations include gold, amber, and topaz; the sunflower; the cockerel; the number 6; and all operations working with the principle of light, power, and divine will.",
+      "secondaryNames": [
+        { "name": "Dies Solis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Sunnandæg", "languageTag": "ang", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Sunday",
+        "dayNumber": 0,
+        "planet": "astrology.planet.sol",
+        "latinDayName": "Dies Solis",
+        "magicalAssociations": ["gold", "amber", "topaz", "sunflower", "cockerel", "success", "authority", "healing", "vitality"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.monday-moon",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Monday (Luna)",
+      "description": "Monday, the Day of the Moon. Named for the Moon in virtually all European languages (Old English: Mōnandæg; Latin: Dies Lunae; French: Lundi). Monday governs the lunar sphere: intuition, dreaming, the unconscious, women and the feminine principle, water, the tides, domestic matters, travel by water, and all operations working with cycles of growth. Monday is traditionally associated with silver and moonstone; the willow and white roses; the crab and the moth; and all operations of a receptive, reflective, or psychic nature. The first hour of Monday is governed by the Moon.",
+      "secondaryNames": [
+        { "name": "Dies Lunae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Lundi", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Monday",
+        "dayNumber": 1,
+        "planet": "astrology.planet.luna",
+        "latinDayName": "Dies Lunae",
+        "magicalAssociations": ["silver", "moonstone", "willow", "white roses", "intuition", "dreams", "the unconscious", "cycles", "water travel"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.tuesday-mars",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Tuesday (Mars)",
+      "description": "Tuesday, the Day of Mars. Named for the Norse war-god Tyr (Old English: Tīwesdæg; Latin: Dies Martis; French: Mardi). Tuesday governs the Martian sphere: courage, conflict, competition, surgery, athletic endeavour, sexual passion, protection, banishing, and all operations requiring decisive forceful action. Tuesday is associated with iron and red jasper; the nettle and rue; the hawk and the horse; and operations of war, assertion, breaking obstacles, and the defence of boundaries. The first hour of Tuesday is governed by Mars.",
+      "secondaryNames": [
+        { "name": "Dies Martis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mardi", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Tuesday",
+        "dayNumber": 2,
+        "planet": "astrology.planet.mars",
+        "latinDayName": "Dies Martis",
+        "magicalAssociations": ["iron", "red jasper", "nettle", "rue", "hawk", "courage", "conflict", "surgery", "banishing", "protection"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.wednesday-mercury",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Wednesday (Mercury)",
+      "description": "Wednesday, the Day of Mercury. Named for the Norse god Woden/Odin (Old English: Wōdnesdæg; Latin: Dies Mercurii; French: Mercredi). The identification of Odin with Mercury is apt: both are god of the mind, magic, communication, and the crossing of boundaries between worlds. Wednesday governs the Mercurial sphere: communication, writing, study, trade and commerce, travel, magic, divination, and all matters of the mind and skill. Wednesday is associated with quicksilver, opal, and agate; the fennel and lavender; the monkey and the snake; and all operations of cunning, learning, and craft.",
+      "secondaryNames": [
+        { "name": "Dies Mercurii", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mercredi", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Wednesday",
+        "dayNumber": 3,
+        "planet": "astrology.planet.mercury",
+        "latinDayName": "Dies Mercurii",
+        "magicalAssociations": ["quicksilver", "opal", "agate", "fennel", "lavender", "communication", "trade", "divination", "magic", "travel"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.thursday-jupiter",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Thursday (Jupiter)",
+      "description": "Thursday, the Day of Jupiter. Named for the Norse thunder-god Thor (Old English: Þūnresdæg; Latin: Dies Jovis; French: Jeudi). The identification of Thor with Jupiter is apt: both are the sky-god of thunder, law, and cosmic order. Thursday governs the Jupiterian sphere: expansion, abundance, legal matters, philosophy, travel to distant lands, banking and finance, and all operations of growth, luck, and prosperity. Thursday is associated with tin and sapphire; the oak and hyssop; the eagle and the stag; and all operations of expansion, protection, and the invoking of divine blessing.",
+      "secondaryNames": [
+        { "name": "Dies Jovis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Jeudi", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Thursday",
+        "dayNumber": 4,
+        "planet": "astrology.planet.jupiter",
+        "latinDayName": "Dies Jovis",
+        "magicalAssociations": ["tin", "sapphire", "oak", "hyssop", "eagle", "stag", "expansion", "abundance", "law", "prosperity", "luck"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.friday-venus",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Friday (Venus)",
+      "description": "Friday, the Day of Venus. Named for the Norse goddess Frigg or Freya (Old English: Frīgedæg; Latin: Dies Veneris; French: Vendredi). Both Freya and Venus are goddesses of love, beauty, fertility, and abundance, and the identification is longstanding. Friday governs the Venusian sphere: love and romance, friendship, art and music, beauty, pleasure, harmony, and all operations of attraction and drawing love. Friday is associated with copper, rose quartz, and emerald; the rose and myrtle; the dove and the swan; and all operations of love, beauty, and the healing of relationships.",
+      "secondaryNames": [
+        { "name": "Dies Veneris", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Vendredi", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Friday",
+        "dayNumber": 5,
+        "planet": "astrology.planet.venus",
+        "latinDayName": "Dies Veneris",
+        "magicalAssociations": ["copper", "rose quartz", "emerald", "rose", "myrtle", "dove", "swan", "love", "beauty", "friendship", "art", "attraction"]
+      }
+    },
+    {
+      "canonicalName": "planetary-hour.day-ruler.saturday-saturn",
+      "entityType": "planetary-hour.day-ruler",
+      "primaryDisplayName": "Saturday (Saturn)",
+      "description": "Saturday, the Day of Saturn. Named for the Roman god Saturn (Old English: Sæternesdæg; Latin: Dies Saturni). The seventh and last day of the traditional week, the Sabbath, the day of rest and completion — appropriate for the planet of endings, limitations, and the harvest of what has been sown. Saturday governs the Saturnian sphere: banishing, protection, binding, setting boundaries, dealing with death and endings, working with the ancestors, and all operations requiring discipline, patience, and the confrontation of limitation. Saturday is associated with lead and obsidian; the yew and cypress; the crow and the goat; and all operations of restriction, protection, and the facing of mortality.",
+      "secondaryNames": [
+        { "name": "Dies Saturni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["planetary-hour", "day-ruler", "astrology"],
+      "extendedData": {
+        "dayOfWeek": "Saturday",
+        "dayNumber": 6,
+        "planet": "astrology.planet.saturn",
+        "latinDayName": "Dies Saturni",
+        "magicalAssociations": ["lead", "obsidian", "yew", "cypress", "crow", "goat", "banishing", "protection", "binding", "ancestors", "discipline", "endings"]
+      }
+    }
+  ]
+}

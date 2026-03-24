@@ -1,0 +1,2165 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "angel.shem.vehuiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Vehuiah",
+      "description": "The first of the 72 Shem angels, Vehuiah governs the first 5° of Aries and embodies the pure fire of divine will. He is petitioned for new beginnings, breaking inertia, and igniting the courage to act. His influence kindles initiative and helps those who are paralysed by indecision or self-doubt.",
+      "secondaryNames": [
+        {
+          "name": "וֶהוּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 1,
+        "hebrewName": "והו",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 0,
+        "degreeEnd": 5,
+        "goetiaDemo": "goetia.demon.bael",
+        "element": "astrology.element.fire",
+        "functions": "new beginnings, igniting will, overcoming inertia, courage"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.jeliel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Jeliel",
+      "description": "Jeliel governs 5°–10° of Aries and is the angel of marital harmony, fidelity, and the renewal of love between partners. He is invoked to calm domestic strife, restore trust, and secure the loyalty of those we hold dear. He also helps rulers gain the love and obedience of their people.",
+      "secondaryNames": [
+        {
+          "name": "יֵלִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 2,
+        "hebrewName": "ילי",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 5,
+        "degreeEnd": 10,
+        "goetiaDemo": "goetia.demon.agares",
+        "element": "astrology.element.fire",
+        "functions": "marital peace, fidelity, restoration of love, loyalty"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.sitael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Sitael",
+      "description": "Sitael presides over 10°–15° of Aries and is known as a powerful shield against adversity, misfortune, and those who bear malicious intent. He is called upon for protection in times of danger, to neutralise enemies, and to grant perseverance in the face of obstacles. His name means 'Hope of all Creatures'.",
+      "secondaryNames": [
+        {
+          "name": "סִיטָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 3,
+        "hebrewName": "סיט",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 10,
+        "degreeEnd": 15,
+        "goetiaDemo": "goetia.demon.vassago",
+        "element": "astrology.element.fire",
+        "functions": "protection against adversity, neutralising enemies, perseverance"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.elemiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Elemiah",
+      "description": "Elemiah rules 15°–20° of Aries and channels divine power for those who feel lost, betrayed, or plagued by troublesome travel and difficult journeys. He is invoked to reveal treacherous individuals, resolve professional upheaval, and restore a sense of direction in one's life purpose. He governs the inner drive to reclaim authority over one's own path.",
+      "secondaryNames": [
+        {
+          "name": "עֶלֶמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 4,
+        "hebrewName": "עלמ",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 15,
+        "degreeEnd": 20,
+        "goetiaDemo": "goetia.demon.samigina",
+        "element": "astrology.element.fire",
+        "functions": "divine power, safe travel, exposing traitors, vocational direction"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mahasiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mahasiah",
+      "description": "Mahasiah governs 20°–25° of Aries and brings the gift of peace, harmony, and the capacity to live harmoniously with others. He is particularly associated with the rapid learning of occult sciences, theology, and the liberal arts, and is petitioned by students and seekers of esoteric wisdom. His influence eases discord and promotes a joyful, agreeable disposition.",
+      "secondaryNames": [
+        {
+          "name": "מַהַשִּׁיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 5,
+        "hebrewName": "מהש",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 20,
+        "degreeEnd": 25,
+        "goetiaDemo": "goetia.demon.marbas",
+        "element": "astrology.element.fire",
+        "functions": "peace, learning occult sciences, harmony with others, joyful disposition"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.lelahel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Lelahel",
+      "description": "Lelahel presides over 25°–30° of Aries and radiates divine light, knowledge, and the healing arts. He is called upon to cure illness, illuminate the mind with understanding, and draw fortune and renown to the petitioner. His domain extends to science, art, and all endeavours in which clarity of intellect is required.",
+      "secondaryNames": [
+        {
+          "name": "לֵלָהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aries"
+      ],
+      "extendedData": {
+        "number": 6,
+        "hebrewName": "ללה",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "degreeStart": 25,
+        "degreeEnd": 30,
+        "goetiaDemo": "goetia.demon.valefor",
+        "element": "astrology.element.fire",
+        "functions": "light, knowledge, healing, fortune, renown, art and science"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.achaiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Achaiah",
+      "description": "Achaiah governs 30°–35° of Taurus and is the angel of patience, the discovery of the hidden secrets of nature, and the spreading of enlightenment. He assists those engaged in difficult or long-term research, helping them to persist through hardship and to uncover what lies concealed. He also promotes the spread of educational and practical knowledge.",
+      "secondaryNames": [
+        {
+          "name": "אַכַיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 7,
+        "hebrewName": "אכא",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 30,
+        "degreeEnd": 35,
+        "goetiaDemo": "goetia.demon.amon",
+        "element": "astrology.element.earth",
+        "functions": "patience, discovery of nature's secrets, spreading knowledge"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.cahetel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Cahetel",
+      "description": "Cahetel rules 35°–40° of Taurus and bestows divine blessings upon the earth, promoting fertility, abundance, and success in agricultural and natural pursuits. He is invoked to drive away evil spirits, to consecrate land and harvests, and to give thanks for divine providence. He inspires reverence for the Creator in all living things.",
+      "secondaryNames": [
+        {
+          "name": "כַּהֵתֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 8,
+        "hebrewName": "כהת",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 35,
+        "degreeEnd": 40,
+        "goetiaDemo": "goetia.demon.barbatos",
+        "element": "astrology.element.earth",
+        "functions": "divine blessings, agriculture, fertility, abundance, driving away evil"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.haziel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Haziel",
+      "description": "Haziel presides over 40°–45° of Taurus and embodies divine mercy, unconditional forgiveness, and the restoration of friendship. He is petitioned by those who seek reconciliation with estranged friends or enemies, and by those who desire to receive the merciful grace of heaven. Haziel helps release resentment and opens the heart to compassionate understanding.",
+      "secondaryNames": [
+        {
+          "name": "הַזִּיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 9,
+        "hebrewName": "הזי",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 40,
+        "degreeEnd": 45,
+        "goetiaDemo": "goetia.demon.paimon",
+        "element": "astrology.element.earth",
+        "functions": "divine mercy, forgiveness, friendship, reconciliation"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.aladiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Aladiah",
+      "description": "Aladiah governs 45°–50° of Taurus and bestows divine grace upon those who have erred, offering a second chance and the opportunity for redemption. He is associated with the healing of illness, particularly those arising from karmic causes, and with restoring one's standing in the eyes of heaven. He helps dissolve guilt and transmute past mistakes into wisdom.",
+      "secondaryNames": [
+        {
+          "name": "עֲלַדִּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 10,
+        "hebrewName": "עלד",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 45,
+        "degreeEnd": 50,
+        "goetiaDemo": "goetia.demon.buer",
+        "element": "astrology.element.earth",
+        "functions": "divine grace, health, redemption, dissolving guilt"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.lauviah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Lauviah",
+      "description": "Lauviah (the first) governs 50°–55° of Taurus and grants victory, renown, and the love of great and powerful persons. He is invoked by those who seek recognition for their talents, who wish to rise above obscurity, or who need divine intercession against proud and presumptuous adversaries. He also helps with the clarity needed to achieve public distinction.",
+      "secondaryNames": [
+        {
+          "name": "לָאוּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 11,
+        "hebrewName": "לאו",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 50,
+        "degreeEnd": 55,
+        "goetiaDemo": "goetia.demon.gusion",
+        "element": "astrology.element.earth",
+        "functions": "victory, renown, recognition, overcoming proud adversaries"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.hahaiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Hahaiah",
+      "description": "Hahaiah rules 55°–60° of Taurus and is a refuge for those who seek shelter from adversity and the malice of others. He is petitioned to interpret dreams, to grant access to the hidden wisdom of the higher worlds, and to soften the hearts of those who are harsh or hostile. He aids in translating the symbolic language of sleep visions into practical insight.",
+      "secondaryNames": [
+        {
+          "name": "הַהַעִיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "taurus"
+      ],
+      "extendedData": {
+        "number": 12,
+        "hebrewName": "הַהַע",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "degreeStart": 55,
+        "degreeEnd": 60,
+        "goetiaDemo": "goetia.demon.sitri",
+        "element": "astrology.element.earth",
+        "functions": "refuge, dream interpretation, accessing hidden wisdom, softening hostility"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yezalel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yezalel",
+      "description": "Yezalel governs 60°–65° of Gemini and is the angel of fidelity, memory, and the strengthening of close bonds between people. He is invoked to restore faithfulness in relationships, to sharpen the mind's ability to retain knowledge, and to bring harmony to those who must work or live in close cooperation. He is a patron of scholars and those who must memorise sacred or complex material.",
+      "secondaryNames": [
+        {
+          "name": "יֶזֶלְאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 13,
+        "hebrewName": "יזל",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 60,
+        "degreeEnd": 65,
+        "goetiaDemo": "goetia.demon.beleth",
+        "element": "astrology.element.air",
+        "functions": "fidelity, memory, harmony in cooperation, scholarly retention"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mebahel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mebahel",
+      "description": "Mebahel presides over 65°–70° of Gemini and champions truth, liberty, and justice for those who are oppressed or unjustly accused. He is invoked by those who have been wrongfully treated, to protect the innocent and expose the guilty, and to restore what has been unjustly taken. He governs righteous judgment and the liberation of those in bondage.",
+      "secondaryNames": [
+        {
+          "name": "מֵבַהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 14,
+        "hebrewName": "מבה",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 65,
+        "degreeEnd": 70,
+        "goetiaDemo": "goetia.demon.leraje",
+        "element": "astrology.element.air",
+        "functions": "truth, freedom, justice, protecting the innocent, righteous judgment"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.hariel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Hariel",
+      "description": "Hariel rules 70°–75° of Gemini and governs purification, the strengthening of faith, and the discovery of new methods and techniques for advancing civilisation. He is invoked to cleanse the mind and heart of impure thoughts and habits, to renew devotion, and to bless scientific and artistic endeavour. He also aids those who seek to reform or correct religious institutions.",
+      "secondaryNames": [
+        {
+          "name": "הַרִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 15,
+        "hebrewName": "הרי",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 70,
+        "degreeEnd": 75,
+        "goetiaDemo": "goetia.demon.eligos",
+        "element": "astrology.element.air",
+        "functions": "purification, faith, new methods, cleansing of impure habits"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.hekamiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Hekamiah",
+      "description": "Hekamiah governs 75°–80° of Gemini and is the angel of loyalty, the protection of leaders, and the defeat of traitors. He is petitioned by heads of state, commanders, and those in positions of authority who must navigate treachery and betrayal. He strengthens the bonds of honour between friends and allies and grants the courage to confront disloyalty directly.",
+      "secondaryNames": [
+        {
+          "name": "הֵקַמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 16,
+        "hebrewName": "הקמ",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 75,
+        "degreeEnd": 80,
+        "goetiaDemo": "goetia.demon.zepar",
+        "element": "astrology.element.air",
+        "functions": "loyalty, protection of leaders, defeating traitors, honour"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.lauviah-ii",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Lauviah II",
+      "description": "The second Lauviah governs 80°–85° of Gemini and specialises in revelation, prophetic dreams, and the receipt of divine inspiration during sleep. He is invoked by those who seek insight through dreams, who wish to develop their prophetic gifts, or who require consolation in times of grief and difficulty. He brings the light of celestial wisdom into the darkness of unconscious sleep.",
+      "secondaryNames": [
+        {
+          "name": "לָאוּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 17,
+        "hebrewName": "לאו",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 80,
+        "degreeEnd": 85,
+        "goetiaDemo": "goetia.demon.botis",
+        "element": "astrology.element.air",
+        "functions": "revelation, prophetic dreams, divine inspiration, consolation in grief"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.caliel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Caliel",
+      "description": "Caliel presides over 85°–90° of Gemini and is the angel of absolute justice and the discernment of truth in legal and moral matters. He is invoked during trials, disputes, and legal proceedings to ensure that the truth prevails and that justice is served. He grants clarity to judges, arbitrators, and those who seek to understand the full truth of a complex situation.",
+      "secondaryNames": [
+        {
+          "name": "כַּלִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "gemini"
+      ],
+      "extendedData": {
+        "number": 18,
+        "hebrewName": "כלי",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "degreeStart": 85,
+        "degreeEnd": 90,
+        "goetiaDemo": "goetia.demon.bathin",
+        "element": "astrology.element.air",
+        "functions": "justice, discernment of truth, legal proceedings, moral clarity"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.leuviah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Leuviah",
+      "description": "Leuviah governs 90°–95° of Cancer and grants memory, intelligence, and a joyful, gracious demeanour even in the face of adversity. He is petitioned to improve the capacity for learning and recall, to bestow patience under suffering, and to help the petitioner accept life's trials with equanimity and divine trust. He unlocks the treasures of memory stored in the soul.",
+      "secondaryNames": [
+        {
+          "name": "לֵאוּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 19,
+        "hebrewName": "לוי",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 90,
+        "degreeEnd": 95,
+        "goetiaDemo": "goetia.demon.sallos",
+        "element": "astrology.element.water",
+        "functions": "memory, intelligence, grace, patience in adversity"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.pahaliah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Pahaliah",
+      "description": "Pahaliah rules 95°–100° of Cancer and is the angel of redemption, religious vocation, and the mastery of moral virtue. He is invoked by those who seek to convert others to a spiritual path, to overcome immoral temptations, or to strengthen their commitment to chastity and righteous living. He serves as a guide for those who feel called to a life of priestly or devotional service.",
+      "secondaryNames": [
+        {
+          "name": "פַּהַלִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 20,
+        "hebrewName": "פהל",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 95,
+        "degreeEnd": 100,
+        "goetiaDemo": "goetia.demon.purson",
+        "element": "astrology.element.water",
+        "functions": "redemption, chastity, religious vocation, moral virtue"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.nelkhael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Nelkhael",
+      "description": "Nelkhael governs 100°–105° of Cancer and assists in the learning of mathematics, astronomy, poetry, and the occult arts, as well as the defeat of sorcerers and those who use magic against the petitioner. He is a protector against curses, enchantments, and the malevolent use of esoteric knowledge. He also liberates the mind from ignorance and superstition.",
+      "secondaryNames": [
+        {
+          "name": "נֵלְכָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 21,
+        "hebrewName": "נלכ",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 100,
+        "degreeEnd": 105,
+        "goetiaDemo": "goetia.demon.marax",
+        "element": "astrology.element.water",
+        "functions": "learning occult sciences, defeating sorcerers, protection from curses"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yeiayel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yeiayel",
+      "description": "Yeiayel presides over 105°–110° of Cancer and bestows fame, fortune, and success in commerce, travel, and diplomacy. He is invoked by merchants, explorers, and diplomats who seek divine favour in their ventures abroad, and by those who wish to build an honourable reputation across wide circles. He also offers protection during voyages and foreign ventures.",
+      "secondaryNames": [
+        {
+          "name": "יֵיַאיֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 22,
+        "hebrewName": "ייי",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 105,
+        "degreeEnd": 110,
+        "goetiaDemo": "goetia.demon.ipos",
+        "element": "astrology.element.water",
+        "functions": "renown, fortune, commerce, travel, diplomatic success"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.melahel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Melahel",
+      "description": "Melahel governs 110°–115° of Cancer and is associated with healing through plants, waters, and natural remedies, as well as protection during travel by water. He is petitioned by healers, herbalists, and those suffering from chronic ailments to restore health and vitality. He also grants courage and success when facing hostile or dangerous environments.",
+      "secondaryNames": [
+        {
+          "name": "מֵלָהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 23,
+        "hebrewName": "מלה",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 110,
+        "degreeEnd": 115,
+        "goetiaDemo": "goetia.demon.aim",
+        "element": "astrology.element.water",
+        "functions": "healing, water-related matters, herbal medicine, safe travel"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.haheuiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Haheuiah",
+      "description": "Haheuiah rules 115°–120° of Cancer and provides protection against those who would cause harm through hidden means — including betrayal, conspiracy, and persecution. He is the guardian of exiles, criminals seeking redemption, and those who have been wrongly imprisoned or exiled. He grants divine mercy and ensures that the truth of a person's innocence is eventually revealed.",
+      "secondaryNames": [
+        {
+          "name": "הַהֲעִיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "cancer"
+      ],
+      "extendedData": {
+        "number": 24,
+        "hebrewName": "הַהֲע",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "degreeStart": 115,
+        "degreeEnd": 120,
+        "goetiaDemo": "goetia.demon.naberius",
+        "element": "astrology.element.water",
+        "functions": "protection against adversity, shield from persecution, revealing innocence"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.nith-haiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Nith-Haiah",
+      "description": "Nith-Haiah governs 120°–125° of Leo and grants wisdom, the understanding of magic, and the power to discover the hidden secrets of the higher worlds through dreams and meditation. He is invoked by occultists, Kabbalists, and all who work in the magical arts to receive true and illuminated knowledge. He subdues hostile supernatural forces and brings divine protection to those who work with light.",
+      "secondaryNames": [
+        {
+          "name": "נִיתְהַיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 25,
+        "hebrewName": "נית",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 120,
+        "degreeEnd": 125,
+        "goetiaDemo": "goetia.demon.glasya-labolas",
+        "element": "astrology.element.fire",
+        "functions": "wisdom, magic, occult sciences, illuminated dreams, subduing hostile forces"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.haaiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Haaiah",
+      "description": "Haaiah presides over 125°–130° of Leo and governs political science, diplomacy, and the discovery of secrets in high places. He is invoked by politicians, ambassadors, and those who must navigate complex social hierarchies to achieve their aims. He grants the ability to win the trust and confidence of superiors and to act prudently and discreetly in delicate affairs.",
+      "secondaryNames": [
+        {
+          "name": "הַעַיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 26,
+        "hebrewName": "הַעַ",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 125,
+        "degreeEnd": 130,
+        "goetiaDemo": "goetia.demon.bune",
+        "element": "astrology.element.fire",
+        "functions": "political science, diplomatic secrets, discretion, winning trust"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yeratel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yeratel",
+      "description": "Yeratel governs 130°–135° of Leo and is the propagator of divine light and civilisation, granting victory over adversaries who attack through slander, rumour, or unjust accusation. He is invoked to defend oneself against those who spread malicious falsehoods, and to ensure that the light of truth and righteousness ultimately prevails. He is associated with the spreading of sacred teachings.",
+      "secondaryNames": [
+        {
+          "name": "יֶרָאתֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 27,
+        "hebrewName": "ירת",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 130,
+        "degreeEnd": 135,
+        "goetiaDemo": "goetia.demon.ronove",
+        "element": "astrology.element.fire",
+        "functions": "propagation of light, victory over slander, defence against falsehood"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.seheiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Seheiah",
+      "description": "Seheiah rules 135°–140° of Leo and is the angel of longevity, good health, and protection from fire, lightning, ruin, and sudden catastrophes. He is petitioned to preserve one's health across a long life, to protect property and loved ones from accident, and to provide a forewarning of imminent danger. He calms anxiety and bestows prudent foresight.",
+      "secondaryNames": [
+        {
+          "name": "סֵהֵיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 28,
+        "hebrewName": "סהי",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 135,
+        "degreeEnd": 140,
+        "goetiaDemo": "goetia.demon.berith",
+        "element": "astrology.element.fire",
+        "functions": "health, longevity, protection from fire and catastrophe, prudent foresight"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.reiiel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Reiiel",
+      "description": "Reiiel governs 140°–145° of Leo and grants liberation from visible and invisible enemies, including oppressive external forces and internal obstacles such as doubt and fear. He is invoked by those who feel spiritually or materially besieged, who seek to free themselves from the grip of those who would control or harm them. He inspires zeal for spiritual values and divine justice.",
+      "secondaryNames": [
+        {
+          "name": "רֵיִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 29,
+        "hebrewName": "ריי",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 140,
+        "degreeEnd": 145,
+        "goetiaDemo": "goetia.demon.astaroth",
+        "element": "astrology.element.fire",
+        "functions": "liberation from enemies, breaking control, spiritual zeal, divine justice"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.omael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Omael",
+      "description": "Omael presides over 145°–150° of Leo and governs patience, multiplication of species, and the sciences of chemistry and medicine. He is petitioned by those who require extraordinary patience in the face of lengthy processes, who work in laboratory sciences, or who seek to accelerate the proliferation of life and abundance. He also assists in combating despondency and feelings of hopelessness.",
+      "secondaryNames": [
+        {
+          "name": "עוֹמָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "leo"
+      ],
+      "extendedData": {
+        "number": 30,
+        "hebrewName": "עומ",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "degreeStart": 145,
+        "degreeEnd": 150,
+        "goetiaDemo": "goetia.demon.forneus",
+        "element": "astrology.element.fire",
+        "functions": "patience, multiplication, chemistry, medicine, combating despair"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.lecabel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Lecabel",
+      "description": "Lecabel governs 150°–155° of Virgo and is the angel of resolution, agriculture, and the practical application of knowledge to the earth and its resources. He is invoked by those who seek success in farming, horticulture, engineering, and any discipline requiring methodical and systematic work. He bestows the talent for solving complex problems through logic and mathematical precision.",
+      "secondaryNames": [
+        {
+          "name": "לֵכָבֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 31,
+        "hebrewName": "לכב",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 150,
+        "degreeEnd": 155,
+        "goetiaDemo": "goetia.demon.foras",
+        "element": "astrology.element.earth",
+        "functions": "resolution, agriculture, systematic knowledge, problem solving"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.vasariah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Vasariah",
+      "description": "Vasariah rules 155°–160° of Virgo and embodies divine clemency, justice, and the merciful qualities of a righteous judge or magistrate. He is invoked by those who appear before courts or who seek fair treatment from those in authority, to ensure that judgment is rendered with both rigour and compassion. He also helps those who struggle with the discipline of speaking truthfully and moderating their words.",
+      "secondaryNames": [
+        {
+          "name": "וַסַרִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 32,
+        "hebrewName": "וסר",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 155,
+        "degreeEnd": 160,
+        "goetiaDemo": "goetia.demon.asmodeus",
+        "element": "astrology.element.earth",
+        "functions": "clemency, justice, fair judgment, truthful speech"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yehuiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yehuiah",
+      "description": "Yehuiah governs 160°–165° of Virgo and reveals the divine order underlying all things, granting protection to those who serve legitimate authority and exposing those who subvert it. He is invoked to unmask traitors, conspirators, and those who operate deceptively within hierarchical structures. He helps subordinates and superiors alike to understand their proper roles within a divinely ordered system.",
+      "secondaryNames": [
+        {
+          "name": "יֶהוּיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 33,
+        "hebrewName": "יהו",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 160,
+        "degreeEnd": 165,
+        "goetiaDemo": "goetia.demon.gaap",
+        "element": "astrology.element.earth",
+        "functions": "knowledge of divine order, protection, exposing traitors, hierarchy"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.lehahiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Lehahiah",
+      "description": "Lehahiah presides over 165°–170° of Virgo and promotes obedience, peace between rulers and subjects, and the maintenance of harmonious governance. He is invoked to calm aggression between nations or authorities, to ensure that laws are fair and followed, and to assist those who need to subordinate their ego to serve a greater purpose. He grants the quality of disciplined, humble service.",
+      "secondaryNames": [
+        {
+          "name": "לֵהַחִיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 34,
+        "hebrewName": "להח",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 165,
+        "degreeEnd": 170,
+        "goetiaDemo": "goetia.demon.furfur",
+        "element": "astrology.element.earth",
+        "functions": "obedience, peace between rulers, harmonious governance, humble service"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.chavakhiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Chavakhiah",
+      "description": "Chavakhiah governs 170°–175° of Virgo and oversees reconciliation, the fair division of inheritances, and the restoration of family harmony. He is invoked when siblings or heirs are in dispute, when family bonds have been broken, or when wills and estates must be settled justly. He brings a spirit of generosity, forgiveness, and goodwill to those who are at odds over material and emotional legacies.",
+      "secondaryNames": [
+        {
+          "name": "חֲוַכִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 35,
+        "hebrewName": "חוק",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 170,
+        "degreeEnd": 175,
+        "goetiaDemo": "goetia.demon.marchosias",
+        "element": "astrology.element.earth",
+        "functions": "reconciliation, inheritances, family harmony, generosity"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.menadel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Menadel",
+      "description": "Menadel rules 175°–180° of Virgo and assists in the preservation of one's employment, homeland, and place in life, as well as in recovering what has been lost. He is invoked by those who fear losing their position, their home, or their connections, and by exiles or migrants who long to return to where they belong. He strengthens the sense of rootedness and belonging.",
+      "secondaryNames": [
+        {
+          "name": "מֵנָדֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "virgo"
+      ],
+      "extendedData": {
+        "number": 36,
+        "hebrewName": "מנד",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "degreeStart": 175,
+        "degreeEnd": 180,
+        "goetiaDemo": "goetia.demon.stolas",
+        "element": "astrology.element.earth",
+        "functions": "work, conservation of place, recovering the lost, rootedness"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.aniel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Aniel",
+      "description": "Aniel governs 180°–185° of Libra and grants the power to break negative cycles, overcome siege-like circumstances, and penetrate the mysteries of the natural sciences. He is invoked to obtain victory over persistent obstacles that seem to recur, to gain insight into natural laws, and to inspire the mind to discover new principles. He embodies the persistent, curious intellect seeking to understand creation.",
+      "secondaryNames": [
+        {
+          "name": "עֲנִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 37,
+        "hebrewName": "עני",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 180,
+        "degreeEnd": 185,
+        "goetiaDemo": "goetia.demon.phenex",
+        "element": "astrology.element.air",
+        "functions": "breaking negative patterns, sciences, overcoming persistent obstacles"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.haamiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Haamiah",
+      "description": "Haamiah presides over 185°–190° of Libra and governs ritual magic, sacred ceremonies, the search for divine truth, and the practices that lead to genuine spiritual experience. He is invoked to ensure that magical and religious rituals are conducted correctly and with divine sanction, and to protect the operator against deception by spirits. He is a guardian of the integrity of sacred rites.",
+      "secondaryNames": [
+        {
+          "name": "הַעַמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 38,
+        "hebrewName": "הַעַמ",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 185,
+        "degreeEnd": 190,
+        "goetiaDemo": "goetia.demon.halphas",
+        "element": "astrology.element.air",
+        "functions": "ritual magic, sacred truth, correct ceremony, protection from deceptive spirits"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.rehael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Rehael",
+      "description": "Rehael governs 190°–195° of Libra and promotes healing, the restoration of health, and the deepening of filial respect and love between parents and children. He is invoked by those who are ill, who care for the infirm, and by those who wish to heal fractured bonds with their parents or children. He instils a profound sense of duty and tender regard within family relationships.",
+      "secondaryNames": [
+        {
+          "name": "רֵהַאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 39,
+        "hebrewName": "רהע",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 190,
+        "degreeEnd": 195,
+        "goetiaDemo": "goetia.demon.malphas",
+        "element": "astrology.element.air",
+        "functions": "healing, filial respect, restoring family bonds, care of the infirm"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.ieiazel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Ieiazel",
+      "description": "Ieiazel rules 195°–200° of Libra and brings consolation, liberation from prison (literal or metaphorical), and the release from addiction, grief, or any form of captivity that diminishes the spirit. He is invoked by those who feel trapped, who grieve deeply, or who suffer from psychological bondage. He is a great comforter and the angel of creative inspiration for writers and artists.",
+      "secondaryNames": [
+        {
+          "name": "יֵיַאזֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 40,
+        "hebrewName": "ייז",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 195,
+        "degreeEnd": 200,
+        "goetiaDemo": "goetia.demon.raum",
+        "element": "astrology.element.air",
+        "functions": "consolation, liberation from prison, release from grief, creative inspiration"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.hahahel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Hahahel",
+      "description": "Hahahel governs 200°–205° of Libra and is the angel of sacred mission, faith, and the priesthood. He is invoked by those who feel called to a higher vocation, who dedicate their lives to service, or who face opposition to their spiritual work. He strengthens the conviction of those who spread divine teachings and protects those who carry out a sacred mission against those who would profane or hinder it.",
+      "secondaryNames": [
+        {
+          "name": "הַהַהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 41,
+        "hebrewName": "הַהַה",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 200,
+        "degreeEnd": 205,
+        "goetiaDemo": "goetia.demon.focalor",
+        "element": "astrology.element.air",
+        "functions": "faith, sacred mission, priestly vocation, protection of spiritual work"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mikael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mikael",
+      "description": "Mikael (the Shem angel, distinct from the Archangel Michael) governs 205°–210° of Libra and grants political authority, the ability to uncover conspiracies, and safe travel for those on important diplomatic or governmental missions. He is petitioned by leaders and officials who need to maintain their authority and ensure loyalty among subordinates. He reveals the hidden mechanisms behind political intrigue.",
+      "secondaryNames": [
+        {
+          "name": "מִיכָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "libra"
+      ],
+      "extendedData": {
+        "number": 42,
+        "hebrewName": "מיכ",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "degreeStart": 205,
+        "degreeEnd": 210,
+        "goetiaDemo": "goetia.demon.vepar",
+        "element": "astrology.element.air",
+        "functions": "political authority, uncovering conspiracies, safe diplomatic travel"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.veuliah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Veuliah",
+      "description": "Veuliah governs 210°–215° of Scorpio and grants prosperity, liberation from slavery and oppressive conditions, and victory over those who would keep the petitioner in subjugation. He is invoked by those who feel economically, emotionally, or spiritually enslaved, and by those who fight for justice and freedom. He empowers the will to transform constraint into liberation.",
+      "secondaryNames": [
+        {
+          "name": "וֵאוּלִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 43,
+        "hebrewName": "ואו",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 210,
+        "degreeEnd": 215,
+        "goetiaDemo": "goetia.demon.sabnock",
+        "element": "astrology.element.water",
+        "functions": "prosperity, freeing from slavery, victory, transformation of constraint"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yelahiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yelahiah",
+      "description": "Yelahiah rules 215°–220° of Scorpio and is the angel of courage, military success, and the blessing of weapons and instruments of battle with divine purpose. He is invoked by those facing conflict — physical, legal, or professional — who need to act boldly and decisively. He grants the conviction to fight for a just cause and ensures that those who serve divine will are victorious.",
+      "secondaryNames": [
+        {
+          "name": "יֵלָהִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 44,
+        "hebrewName": "ילה",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 215,
+        "degreeEnd": 220,
+        "goetiaDemo": "goetia.demon.shax",
+        "element": "astrology.element.water",
+        "functions": "courage, military success, righteous conflict, decisive action"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.sealiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Sealiah",
+      "description": "Sealiah governs 220°–225° of Scorpio and renews the will and motivation of those who have become discouraged, stagnant, or crushed by arrogance — their own or others'. He is invoked to re-ignite the vital flame within, to humble those who are swollen with pride, and to restore health and vitality. He is especially helpful for those recovering from burnout or defeat.",
+      "secondaryNames": [
+        {
+          "name": "סֵאַלִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 45,
+        "hebrewName": "סאל",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 220,
+        "degreeEnd": 225,
+        "goetiaDemo": "goetia.demon.vine",
+        "element": "astrology.element.water",
+        "functions": "motivation, will, confounding pride, restoring vitality, overcoming stagnation"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.ariel-shem",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Ariel",
+      "description": "Ariel (the Shem angel) governs 225°–230° of Scorpio and grants revelation, sharp perception, and gratitude for the hidden gifts of existence. He is invoked to sharpen the senses and the mind's ability to perceive subtle realities, to express gratitude for blessings received, and to discover hidden things in nature and the unseen world. He opens the inner eye to see what others overlook.",
+      "secondaryNames": [
+        {
+          "name": "אֲרִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 46,
+        "hebrewName": "ערי",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 225,
+        "degreeEnd": 230,
+        "goetiaDemo": "goetia.demon.bifrons",
+        "element": "astrology.element.water",
+        "functions": "revelation, perception, gratitude, discovering hidden things"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.asaliah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Asaliah",
+      "description": "Asaliah presides over 230°–235° of Scorpio and facilitates the contemplation of divine truth, the elevation of the mind to higher planes of consciousness, and the pursuit of justice inspired by a cosmic sense of rightness. He is invoked by mystics, contemplatives, and those who seek to understand the divine plan from an elevated perspective. He draws the soul upward toward the Source.",
+      "secondaryNames": [
+        {
+          "name": "עֲשַׁלִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 47,
+        "hebrewName": "עשל",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 230,
+        "degreeEnd": 235,
+        "goetiaDemo": "goetia.demon.vual",
+        "element": "astrology.element.water",
+        "functions": "contemplation of divine, justice, elevation of mind, mystical ascent"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mihael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mihael",
+      "description": "Mihael governs 235°–240° of Scorpio and promotes friendship, peace between adversaries, and the fidelity of lovers and spouses. He is invoked to preserve harmony in intimate relationships, to bring warring parties into a spirit of reconciliation, and to foster the deep trust that sustains lasting bonds. He is also associated with fertility and the blessing of children.",
+      "secondaryNames": [
+        {
+          "name": "מִיהָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "scorpio"
+      ],
+      "extendedData": {
+        "number": 48,
+        "hebrewName": "מיה",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "degreeStart": 235,
+        "degreeEnd": 240,
+        "goetiaDemo": "goetia.demon.haagenti",
+        "element": "astrology.element.water",
+        "functions": "friendship, peace, fidelity in love, reconciliation, fertility"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.vehuel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Vehuel",
+      "description": "Vehuel governs 240°–245° of Sagittarius and promotes the elevation of the soul, glorification of the divine, and the reaching of exalted spiritual states. He is invoked by those who seek to transcend the ordinary and to enter into a genuine experience of the sacred, as well as by those who grieve and need the comfort of a higher perspective. He is the angel of those who aspire to greatness of spirit.",
+      "secondaryNames": [
+        {
+          "name": "וֵהוּאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 49,
+        "hebrewName": "והו",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 240,
+        "degreeEnd": 245,
+        "goetiaDemo": "goetia.demon.crocell",
+        "element": "astrology.element.fire",
+        "functions": "elevation, glorification, transcendence, comfort in grief"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.daniel-shem",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Daniel",
+      "description": "Daniel (the Shem angel) governs 245°–250° of Sagittarius and bestows divine grace, eloquence, and the power to console those in distress. He is invoked by speakers, counsellors, and those who work with words and persuasion, as well as by those who need to receive comfort or to offer it to others. He brings the healing power of the spoken word and the grace of compassionate communication.",
+      "secondaryNames": [
+        {
+          "name": "דָּנִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 50,
+        "hebrewName": "דני",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 245,
+        "degreeEnd": 250,
+        "goetiaDemo": "goetia.demon.furcas",
+        "element": "astrology.element.fire",
+        "functions": "divine grace, eloquence, consolation, compassionate communication"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.hahasiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Hahasiah",
+      "description": "Hahasiah presides over 250°–255° of Sagittarius and reveals the universal medicine — the divine principles underlying all healing — and the deepest secrets of alchemical and metaphysical science. He is invoked by healers, alchemists, and those engaged in the pursuit of spiritual and physical wholeness. He elevates medical and philosophical inquiry to its highest, most sacred level.",
+      "secondaryNames": [
+        {
+          "name": "הַהַסִיָה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 51,
+        "hebrewName": "הַהַס",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 250,
+        "degreeEnd": 255,
+        "goetiaDemo": "goetia.demon.balam",
+        "element": "astrology.element.fire",
+        "functions": "universal medicine, secrets of alchemy, healing, metaphysical science"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.imamiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Imamiah",
+      "description": "Imamiah governs 255°–260° of Sagittarius and grants extraordinary strength of character and the power to overcome one's enemies through the force of inner rectitude. He is invoked by those who need to free themselves from the influence of destructive relationships or forces, and by those who are imprisoned — physically or mentally — and seek release. He assists in the patient endurance of hardship.",
+      "secondaryNames": [
+        {
+          "name": "עִמָמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 52,
+        "hebrewName": "עמם",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 255,
+        "degreeEnd": 260,
+        "goetiaDemo": "goetia.demon.alloces",
+        "element": "astrology.element.fire",
+        "functions": "strength, overcoming enemies, liberation, endurance of hardship"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.nanael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Nanael",
+      "description": "Nanael rules 260°–265° of Sagittarius and governs spiritual communication, the acquisition of knowledge of higher worlds, and the study of abstract philosophy and metaphysics. He is invoked by teachers, philosophers, and those who wish to enter into direct interior dialogue with divine intelligence. He is particularly associated with the Kabbalah and meditative practices that still the chattering mind.",
+      "secondaryNames": [
+        {
+          "name": "נָנַאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 53,
+        "hebrewName": "ננא",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 260,
+        "degreeEnd": 265,
+        "goetiaDemo": "goetia.demon.camio",
+        "element": "astrology.element.fire",
+        "functions": "spiritual communication, philosophy, metaphysics, Kabbalah, meditation"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.nithael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Nithael",
+      "description": "Nithael governs 265°–270° of Sagittarius and bestows legitimacy, divine grace upon rulers and institutions, and eloquence in sacred poetry and writing. He is invoked by those who seek to establish or restore rightful authority, who wish their work to carry divine blessing, or who compose sacred texts and hymns. He is the guardian of legitimate succession and ordained power.",
+      "secondaryNames": [
+        {
+          "name": "נִיתְאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "number": 54,
+        "hebrewName": "נית",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "degreeStart": 265,
+        "degreeEnd": 270,
+        "goetiaDemo": "goetia.demon.murmur",
+        "element": "astrology.element.fire",
+        "functions": "legitimacy, divine grace, sacred poetry, rightful authority"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mebahiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mebahiah",
+      "description": "Mebahiah governs 270°–275° of Capricorn and grants clarity of mind, consolation for the childless, and the strengthening of moral and religious conviction. He is invoked by those who seek to understand their moral obligations more clearly, who wish to share their spiritual insights with others, or who feel spiritually isolated and in need of divine companionship. He is the angel of intellectual and ethical lucidity.",
+      "secondaryNames": [
+        {
+          "name": "מֵבַהִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 55,
+        "hebrewName": "מבה",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 270,
+        "degreeEnd": 275,
+        "goetiaDemo": "goetia.demon.orobas",
+        "element": "astrology.element.earth",
+        "functions": "clarity of mind, morality, religious conviction, consolation"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.poyel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Poyel",
+      "description": "Poyel presides over 275°–280° of Capricorn and grants great fortune, modesty, and the joyful fulfilment of material desires aligned with the divine will. He is invoked to attract wealth, success, and recognition, particularly for those whose ambitions are tempered by humility and a genuine desire to serve the greater good. He helps balance the pursuit of material and spiritual riches.",
+      "secondaryNames": [
+        {
+          "name": "פּוֹיֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 56,
+        "hebrewName": "פוי",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 275,
+        "degreeEnd": 280,
+        "goetiaDemo": "goetia.demon.gremory",
+        "element": "astrology.element.earth",
+        "functions": "fortune, modesty, philosophy, material fulfilment"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.nemamiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Nemamiah",
+      "description": "Nemamiah governs 280°–285° of Capricorn and grants discernment, the ability to understand the true causes behind events, and success in military and leadership endeavours. He is invoked by generals, strategists, and those who must make complex decisions under pressure. He frees prisoners of conscience and aids those who fight for a noble cause against difficult opposition.",
+      "secondaryNames": [
+        {
+          "name": "נֵמָמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 57,
+        "hebrewName": "נמם",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 280,
+        "degreeEnd": 285,
+        "goetiaDemo": "goetia.demon.ose",
+        "element": "astrology.element.earth",
+        "functions": "discernment, military victory, understanding causes, freeing prisoners"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.yeialel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Yeialel",
+      "description": "Yeialel rules 285°–290° of Capricorn and governs mental force, the healing of the eyes and conditions related to sight, and the relief of sorrow and depression. He is invoked by those suffering from visual ailments, melancholy, or psychological heaviness, and by those who need extraordinary mental clarity and determination to face difficult truths. He strengthens the inner sight as well as the outer.",
+      "secondaryNames": [
+        {
+          "name": "יֵיַלְאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 58,
+        "hebrewName": "ייל",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 285,
+        "degreeEnd": 290,
+        "goetiaDemo": "goetia.demon.amy",
+        "element": "astrology.element.earth",
+        "functions": "mental force, healing of eyes, relieving sorrow and depression"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.harahel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Harahel",
+      "description": "Harahel governs 290°–295° of Capricorn and presides over intellectual riches, libraries, archives, and the management of financial resources. He is invoked by scholars, archivists, investors, and those who manage wealth or knowledge, to grant wisdom in financial matters and to enrich the mind with useful and rare knowledge. He blesses those who make their intellectual gifts serve the wider community.",
+      "secondaryNames": [
+        {
+          "name": "הַרַהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 59,
+        "hebrewName": "הרה",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 290,
+        "degreeEnd": 295,
+        "goetiaDemo": "goetia.demon.oriax",
+        "element": "astrology.element.earth",
+        "functions": "intellectual riches, financial success, libraries, management of knowledge"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mizrael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mizrael",
+      "description": "Mizrael presides over 295°–300° of Capricorn and governs the healing of mental illness, the repair of dysfunctional psychological states, and the cultivation of virtuous, obedient character. He is invoked by those who suffer from mental disturbance, anxiety, or spiritual oppression, and by those who need to cultivate greater discipline and willingness to serve. He brings order to a disordered inner world.",
+      "secondaryNames": [
+        {
+          "name": "מִזְרָאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "capricorn"
+      ],
+      "extendedData": {
+        "number": 60,
+        "hebrewName": "מזר",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "degreeStart": 295,
+        "degreeEnd": 300,
+        "goetiaDemo": "goetia.demon.vapula",
+        "element": "astrology.element.earth",
+        "functions": "mental healing, obedience, repair of psychological states, order"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.umabel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Umabel",
+      "description": "Umabel governs 300°–305° of Aquarius and cultivates friendship, the feeling of cosmic affinity, and the understanding of astrology and physics as languages of the divine. He is invoked to attract true and lasting friendships, to deepen one's sense of connection to the cosmos, and to understand the hidden correspondences between celestial movements and earthly events. He is the patron of stargazers and cosmic thinkers.",
+      "secondaryNames": [
+        {
+          "name": "עוּמָבֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 61,
+        "hebrewName": "עומ",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 300,
+        "degreeEnd": 305,
+        "goetiaDemo": "goetia.demon.zagan",
+        "element": "astrology.element.air",
+        "functions": "friendship, affinity with cosmic forces, astrology, physics"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.iah-hel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Iah-Hel",
+      "description": "Iah-Hel presides over 305°–310° of Aquarius and is the angel of wisdom, philosophical peace, and retreat from the noise of the material world. He is invoked by those who seek wisdom over wealth, who wish to withdraw into contemplation and simplicity, and who desire to lead a life of philosophical and spiritual depth. He supports those who teach or write about the great questions of existence.",
+      "secondaryNames": [
+        {
+          "name": "יַהַהֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 62,
+        "hebrewName": "יהה",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 305,
+        "degreeEnd": 310,
+        "goetiaDemo": "goetia.demon.valac",
+        "element": "astrology.element.air",
+        "functions": "wisdom, peace, philosophical retreat, contemplative life"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.anuel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Anuel",
+      "description": "Anuel governs 310°–315° of Aquarius and grants the perception of divine unity within the apparent multiplicity of the world, as well as health, wit, and the ability to see the sacred within the profane. He is invoked by those who seek to transcend dualistic thinking, to understand the oneness underlying all appearances, and by those who need healing of body and sharpening of mind. He is the angel of holy laughter.",
+      "secondaryNames": [
+        {
+          "name": "עַנוּאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 63,
+        "hebrewName": "ענו",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 310,
+        "degreeEnd": 315,
+        "goetiaDemo": "goetia.demon.andras",
+        "element": "astrology.element.air",
+        "functions": "perception of divine unity, health, wit, transcending duality"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mehiel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mehiel",
+      "description": "Mehiel rules 315°–320° of Aquarius and protects against adversaries, rash decisions, and the destructive influence of dark forces, while also inspiring writers, professors, and orators. He is invoked for protection in intellectual and spiritual battles, and to receive the gift of eloquent, inspired expression. He guards those whose work involves spreading light through words and ideas.",
+      "secondaryNames": [
+        {
+          "name": "מֵהִיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 64,
+        "hebrewName": "מהי",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 315,
+        "degreeEnd": 320,
+        "goetiaDemo": "goetia.demon.haures",
+        "element": "astrology.element.air",
+        "functions": "protection against adversaries, inspired writing, eloquence, guarding teachers"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.damabiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Damabiah",
+      "description": "Damabiah governs 320°–325° of Aquarius and is associated with wisdom, the construction of ships and great undertakings upon or near water, and success in maritime ventures. He is invoked by navigators, builders, and those who must manage large-scale practical projects with clarity and wisdom. He also bestows wisdom that enables the petitioner to defeat the schemes of their enemies.",
+      "secondaryNames": [
+        {
+          "name": "דָּמַבִּיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 65,
+        "hebrewName": "דמב",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 320,
+        "degreeEnd": 325,
+        "goetiaDemo": "goetia.demon.andrealphus",
+        "element": "astrology.element.air",
+        "functions": "wisdom, naval construction, maritime success, defeating enemies' schemes"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.manakel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Manakel",
+      "description": "Manakel presides over 325°–330° of Aquarius and brings reconciliation, the appeasement of divine wrath, and the calming of turbulent emotions including anger and aggression. He is invoked by those who have transgressed and seek to restore their relationship with the divine, and by those who must navigate volatile interpersonal situations. He also governs the understanding of aquatic life and the symbolism of water.",
+      "secondaryNames": [
+        {
+          "name": "מָנַקֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "aquarius"
+      ],
+      "extendedData": {
+        "number": 66,
+        "hebrewName": "מנק",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "degreeStart": 325,
+        "degreeEnd": 330,
+        "goetiaDemo": "goetia.demon.kimaris",
+        "element": "astrology.element.air",
+        "functions": "reconciliation, appeasement of divine wrath, calming anger"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.eyael",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Eyael",
+      "description": "Eyael governs 330°–335° of Pisces and presides over transformation, the contemplation of sublime and infinite matters, and the consolation of those who face profound change or loss. He is invoked by those undergoing major life transitions, who seek to find meaning in suffering, or who wish to develop an elevated philosophical perspective on the nature of existence and change. He illuminates the hidden beauty within dissolution.",
+      "secondaryNames": [
+        {
+          "name": "עֵיַאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 67,
+        "hebrewName": "עיי",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 330,
+        "degreeEnd": 335,
+        "goetiaDemo": "goetia.demon.amdusias",
+        "element": "astrology.element.water",
+        "functions": "transformation, sublime contemplation, consolation through change"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.habuhiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Habuhiah",
+      "description": "Habuhiah rules 335°–340° of Pisces and governs healing — especially of fertility, infection, and disease — and the blessing of agricultural abundance. He is invoked by healers, farmers, and those who wish to restore bodily health or the health of the land. He also aids those who feel disconnected from nature to re-establish their relationship with the living world.",
+      "secondaryNames": [
+        {
+          "name": "הַבוּהִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 68,
+        "hebrewName": "הַבוּ",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 335,
+        "degreeEnd": 340,
+        "goetiaDemo": "goetia.demon.belial",
+        "element": "astrology.element.water",
+        "functions": "healing, agriculture, fertility, restoring connection to nature"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.rochel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Rochel",
+      "description": "Rochel governs 340°–345° of Pisces and specialises in the restitution of lost or stolen things and the discovery of what has been hidden. He is invoked to find missing objects, people, or information, and to restore what rightfully belongs to the petitioner. He is also associated with clarifying the legal and moral ownership of contested items.",
+      "secondaryNames": [
+        {
+          "name": "רוֹחֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 69,
+        "hebrewName": "רוח",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 340,
+        "degreeEnd": 345,
+        "goetiaDemo": "goetia.demon.decarabia",
+        "element": "astrology.element.water",
+        "functions": "restitution of lost things, finding hidden objects, clarifying ownership"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.jabamiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Jabamiah",
+      "description": "Jabamiah presides over 345°–350° of Pisces and is the angel of alchemy, the regeneration of nature, and the transmutation of base states into elevated ones. He is invoked by alchemists, spiritual practitioners, and those who seek deep personal transformation, as well as those who wish to understand the relationship between matter and spirit. He governs the mystery of how death feeds life and how dissolution precedes regeneration.",
+      "secondaryNames": [
+        {
+          "name": "יַבַמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 70,
+        "hebrewName": "יבמ",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 345,
+        "degreeEnd": 350,
+        "goetiaDemo": "goetia.demon.seere",
+        "element": "astrology.element.water",
+        "functions": "alchemy, regeneration of nature, transmutation, matter and spirit"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.haiaiel",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Haiaiel",
+      "description": "Haiaiel governs 350°–355° of Pisces and grants victory in battle, courage in the face of overwhelming opposition, and the blessing of weapons and instruments used in righteous defence. He is invoked by warriors, activists, and those who must take a courageous stand against injustice. He gives those who fight for the light the strength and tactical intelligence needed to prevail.",
+      "secondaryNames": [
+        {
+          "name": "הַיַיאֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 71,
+        "hebrewName": "היי",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 350,
+        "degreeEnd": 355,
+        "goetiaDemo": "goetia.demon.dantalion",
+        "element": "astrology.element.water",
+        "functions": "victory, courage, arms, righteous defence, tactical intelligence"
+      }
+    },
+    {
+      "canonicalName": "angel.shem.mumiah",
+      "entityType": "angel.shem",
+      "primaryDisplayName": "Mumiah",
+      "description": "Mumiah governs the final 355°–360° of Pisces, completing the full zodiacal cycle, and presides over endings that make way for new beginnings, the mysteries of death and rebirth, health, and the deepest secrets of magic and alchemy. He is invoked at moments of closure and transition, to ensure that what ends does so with grace and that what follows is born into blessing. He is the guardian of the threshold between worlds.",
+      "secondaryNames": [
+        {
+          "name": "מוּמִיָּה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "angel",
+        "shem",
+        "shemhamphorash",
+        "pisces"
+      ],
+      "extendedData": {
+        "number": 72,
+        "hebrewName": "מומ",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "degreeStart": 355,
+        "degreeEnd": 360,
+        "goetiaDemo": "goetia.demon.andromalius",
+        "element": "astrology.element.water",
+        "functions": "endings, new beginnings, health, magic, threshold guardian, death and rebirth"
+      }
+    }
+  ]
+}

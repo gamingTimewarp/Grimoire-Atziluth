@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "letter.latin.a",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "A",
+      "description": "The first letter of the Latin (Roman) alphabet (A, a). Derived from Greek Alpha and ultimately Phoenician aleph (ox). Numerical value 1 in the Latin numeral tradition (A is the first unit). Latin A is the ancestor of A in all modern Western alphabets. In Roman numerals the system uses different letters (I, V, X, L, C, D, M), but A as the first letter carries the symbolic weight of primacy, initiation, and excellence ('A-grade', 'Grade A').",
+      "secondaryNames": [ { "name": "a", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "A", "lowercase": "a", "orderNumber": 1, "letterType": "vowel", "pronunciationClassical": "aː/a" }
+    },
+    {
+      "canonicalName": "letter.latin.b",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "B",
+      "description": "The second letter of the Latin alphabet (B, b). Derived from Greek Beta and Phoenician beth (house). In Roman practice B was the second letter of public inscriptions and documents. In music B denotes the seventh degree of the C-major scale. In logic and algebra B is a standard variable alongside A and C.",
+      "secondaryNames": [ { "name": "b", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "B", "lowercase": "b", "orderNumber": 2, "letterType": "consonant", "pronunciationClassical": "b" }
+    },
+    {
+      "canonicalName": "letter.latin.c",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "C",
+      "description": "The third letter of the Latin alphabet (C, c). Derived from Greek Gamma via an Etruscan adaptation. C originally represented both /k/ and /g/ sounds in early Latin; the letter G was later invented (by adding a bar to C) to distinguish them. In Roman numerals C = 100 (from Latin centum). C is the speed of light in physics (c ≈ 3×10⁸ m/s), perhaps the most fundamental physical constant.",
+      "secondaryNames": [ { "name": "c", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "C", "lowercase": "c", "orderNumber": 3, "letterType": "consonant", "pronunciationClassical": "k", "romanNumeralValue": 100 }
+    },
+    {
+      "canonicalName": "letter.latin.d",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "D",
+      "description": "The fourth letter of the Latin alphabet (D, d). Derived from Greek Delta and Phoenician daleth (door). In Roman numerals D = 500. D is used in music for the second degree of the C-major scale and throughout science and mathematics as a standard variable. The lowercase d in calculus denotes the differential operator.",
+      "secondaryNames": [ { "name": "d", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "D", "lowercase": "d", "orderNumber": 4, "letterType": "consonant", "pronunciationClassical": "d", "romanNumeralValue": 500 }
+    },
+    {
+      "canonicalName": "letter.latin.e",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "E",
+      "description": "The fifth letter of the Latin alphabet (E, e), a vowel. Derived from Greek Epsilon. E is the most common letter in English and the most common in many other European languages. In mathematics e is Euler's number (≈ 2.71828), the base of the natural logarithm and one of the most fundamental constants in mathematics. In physics E commonly denotes energy (E=mc²).",
+      "secondaryNames": [ { "name": "e", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "E", "lowercase": "e", "orderNumber": 5, "letterType": "vowel", "pronunciationClassical": "eː/e" }
+    },
+    {
+      "canonicalName": "letter.latin.f",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "F",
+      "description": "The sixth letter of the Latin alphabet (F, f). Derived from the Semitic letter Vav/Waw via the Greek Digamma (Ϝ). F represents the labio-dental fricative, a sound absent in Greek (which is why Greek had no direct equivalent and Digamma fell out of use as a letter). In physics F denotes force; in music F is the fourth degree of the C-major scale.",
+      "secondaryNames": [ { "name": "f", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "F", "lowercase": "f", "orderNumber": 6, "letterType": "consonant", "pronunciationClassical": "f" }
+    },
+    {
+      "canonicalName": "letter.latin.g",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "G",
+      "description": "The seventh letter of the Latin alphabet (G, g). Invented by the Roman freedman Spurius Carvilius Ruga (around 3rd century BCE) by adding a bar to C to distinguish the /g/ sound from /k/. G was inserted at the seventh position, replacing the archaic letter Zeta which Latin had discarded. In physics G is the gravitational constant; g denotes local gravitational acceleration. In music G is the fifth degree of the C-major scale.",
+      "secondaryNames": [ { "name": "g", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "G", "lowercase": "g", "orderNumber": 7, "letterType": "consonant", "pronunciationClassical": "ɡ" }
+    },
+    {
+      "canonicalName": "letter.latin.h",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "H",
+      "description": "The eighth letter of the Latin alphabet (H, h). Derived from Greek Eta (originally an aspirate marker). H in classical Latin was a light aspirate, which eventually disappeared from speech. The letter has mystical significance as the breath itself — the exhalation, the ruach, the spiritus. In chemistry H is the symbol for hydrogen, the simplest and most abundant element. In physics h is Planck's constant, the fundamental quantum of action.",
+      "secondaryNames": [ { "name": "h", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "H", "lowercase": "h", "orderNumber": 8, "letterType": "consonant", "pronunciationClassical": "h" }
+    },
+    {
+      "canonicalName": "letter.latin.i",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "I",
+      "description": "The ninth letter of the Latin alphabet (I, i), a vowel. Derived from Greek Iota. In classical Latin I served double duty as both the vowel /i:/ and the consonant /j/ (the letter J was not distinguished until the Renaissance). In Roman numerals I = 1, the fundamental unit. I (uppercase) has become the universal English first-person pronoun — the letter of self, of the ego, of the point of consciousness.",
+      "secondaryNames": [ { "name": "i", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "I", "lowercase": "i", "orderNumber": 9, "letterType": "vowel", "pronunciationClassical": "iː/i", "romanNumeralValue": 1 }
+    },
+    {
+      "canonicalName": "letter.latin.k",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "K",
+      "description": "The tenth letter of the Latin alphabet (K, k). Derived directly from Greek Kappa. In Latin K was largely replaced by C for the /k/ sound, and was used mainly before the vowel A (as in Kalendae). Latin K is rare but survives in modern scientific notation: K is the symbol for kelvin (temperature) and potassium (Kalium). In the Kabbalistic tradition K sometimes replaces C in modern English spellings of Qabalah-related terms.",
+      "secondaryNames": [ { "name": "k", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "K", "lowercase": "k", "orderNumber": 10, "letterType": "consonant", "pronunciationClassical": "k" }
+    },
+    {
+      "canonicalName": "letter.latin.l",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "L",
+      "description": "The eleventh letter of the Latin alphabet (L, l). Derived from Greek Lambda and Phoenician lamed (ox-goad). In Roman numerals L = 50. L is used in physics for angular momentum and inductance; in chemistry for litre. The elegant vertically-based form of L anchors it at the base of the alphabetic structure.",
+      "secondaryNames": [ { "name": "l", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "L", "lowercase": "l", "orderNumber": 11, "letterType": "consonant", "pronunciationClassical": "l", "romanNumeralValue": 50 }
+    },
+    {
+      "canonicalName": "letter.latin.m",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "M",
+      "description": "The twelfth letter of the Latin alphabet (M, m). Derived from Greek Mu and Phoenician mem (water). In Roman numerals M = 1000 (from Latin mille). M is the symbol for metre, molar mass, and the prefix mega (10⁶). As the number 1000 in Roman numerals, M represents the supreme completion of counting.",
+      "secondaryNames": [ { "name": "m", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "M", "lowercase": "m", "orderNumber": 12, "letterType": "consonant", "pronunciationClassical": "m", "romanNumeralValue": 1000 }
+    },
+    {
+      "canonicalName": "letter.latin.n",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "N",
+      "description": "The thirteenth letter of the Latin alphabet (N, n). Derived from Greek Nu and Phoenician nun (fish). N is the standard symbol for the set of natural numbers in mathematics. In physics N denotes newtons (force). In chemistry N is the symbol for nitrogen. The letter N with a tilde (Ñ) forms the basis of the Spanish letter ñ, used for the palatal nasal sound.",
+      "secondaryNames": [ { "name": "n", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "N", "lowercase": "n", "orderNumber": 13, "letterType": "consonant", "pronunciationClassical": "n" }
+    },
+    {
+      "canonicalName": "letter.latin.o",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "O",
+      "description": "The fourteenth letter of the Latin alphabet (O, o), a vowel. Derived from Greek Omicron. The circle O is the most cosmologically significant of letter forms: the zero, the void, the divine circle, infinity, the universe viewed from outside. In mathematics O-notation (Big O) describes algorithmic complexity. In chemistry O is oxygen. In physics and mathematics O and 0 (zero) are carefully distinguished but conceptually adjacent.",
+      "secondaryNames": [ { "name": "o", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "O", "lowercase": "o", "orderNumber": 14, "letterType": "vowel", "pronunciationClassical": "oː/o" }
+    },
+    {
+      "canonicalName": "letter.latin.p",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "P",
+      "description": "The fifteenth letter of the Latin alphabet (P, p). Derived from Greek Pi. P is the symbol for pressure in physics; p for momentum. In chemistry P is phosphorus. In logic p is the standard propositional variable. The Latin salutation 'pax' (peace) begins with P, as do 'philosophia' and 'pneuma' (breath, spirit).",
+      "secondaryNames": [ { "name": "p", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "P", "lowercase": "p", "orderNumber": 15, "letterType": "consonant", "pronunciationClassical": "p" }
+    },
+    {
+      "canonicalName": "letter.latin.q",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "Q",
+      "description": "The sixteenth letter of the Latin alphabet (Q, q). Derived from the Phoenician letter Qoph (back of head), passing through Greek Koppa (Ϙ) which was discarded from the standard Greek alphabet. Q in Latin is always followed by U (qu = /kw/). In physics Q denotes heat and electric charge. In mathematics Q denotes the set of rational numbers. Q (query, question) has become a symbol of inquiry itself.",
+      "secondaryNames": [ { "name": "q", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "Q", "lowercase": "q", "orderNumber": 16, "letterType": "consonant", "pronunciationClassical": "kʷ" }
+    },
+    {
+      "canonicalName": "letter.latin.r",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "R",
+      "description": "The seventeenth letter of the Latin alphabet (R, r). Derived from Greek Rho and Phoenician resh (head). R is the 'littera canina' (dog letter) in Latin — the snarling, trilled R. In chemistry R is used for organic substituent groups (the 'R group'). In mathematics R denotes the set of real numbers. The three R's ('reading, 'riting, 'rithmetic) — all beginning with R sounds — are the foundation of basic education.",
+      "secondaryNames": [ { "name": "r", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "R", "lowercase": "r", "orderNumber": 17, "letterType": "consonant", "pronunciationClassical": "r" }
+    },
+    {
+      "canonicalName": "letter.latin.s",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "S",
+      "description": "The eighteenth letter of the Latin alphabet (S, s). Derived from Greek Sigma and Phoenician shin/sin (tooth). The serpentine S-curve (the sigmoid) appears throughout nature (DNA, rivers, the path of evolution). The dollar sign ($) derives from S. In mathematics S denotes summation and surface area; in physics S is entropy. The S-shape is one of the most dynamically beautiful letter forms.",
+      "secondaryNames": [ { "name": "s", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "S", "lowercase": "s", "orderNumber": 18, "letterType": "consonant", "pronunciationClassical": "s" }
+    },
+    {
+      "canonicalName": "letter.latin.t",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "T",
+      "description": "The nineteenth letter of the Latin alphabet (T, t). Derived from Greek Tau and Phoenician taw (mark/cross). The T-cross (crux commissa, the Tau cross) is one of the oldest sacred symbols — the cross of completion on which Osiris was hung, the cross of St. Francis. T is the standard symbol for temperature in physics and time in kinematics. The T-shape is the archetypal crossroads.",
+      "secondaryNames": [ { "name": "t", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "T", "lowercase": "t", "orderNumber": 19, "letterType": "consonant", "pronunciationClassical": "t" }
+    },
+    {
+      "canonicalName": "letter.latin.u",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "U",
+      "description": "The twentieth letter of the Latin alphabet (U, u), a vowel. In classical Latin U and V were the same letter (written V in capitals, u in minuscule) — the distinction between vowel U and consonant V was not formalised until the Renaissance. U is a vowel of depth and interiority — its shape a cup or vessel, gathering and receiving. In chemistry U is uranium; in physics U denotes internal energy.",
+      "secondaryNames": [ { "name": "u", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "U", "lowercase": "u", "orderNumber": 20, "letterType": "vowel", "pronunciationClassical": "uː/u", "note": "Originally the same character as V in classical Latin." }
+    },
+    {
+      "canonicalName": "letter.latin.v",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "V",
+      "description": "The twenty-first letter of the Latin alphabet (V, v). In classical Latin V represented both the vowel /u/ and the consonant /w/. The consonantal value /v/ developed in Vulgar Latin and became standard in medieval Latin. V in Roman numerals = 5. In physics V denotes voltage and volume. The V-shape (the downward-pointing triangle) is the alchemical symbol for water and for the feminine principle.",
+      "secondaryNames": [ { "name": "v", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "V", "lowercase": "v", "orderNumber": 21, "letterType": "consonant", "pronunciationClassical": "w", "romanNumeralValue": 5 }
+    },
+    {
+      "canonicalName": "letter.latin.x",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "X",
+      "description": "The twenty-second letter of the Latin alphabet (X, x). Derived from Greek Xi (or in some traditions, Chi). X = 10 in Roman numerals. X is the universal symbol of the unknown (in algebra, x is the variable to be solved), of crossing out (X marks what is wrong), and of the crossroads. The Chi-Rho monogram uses X (Chi). In physics X-rays take their name from the algebraic X — the unknown rays discovered by Röntgen. X also marks the spot.",
+      "secondaryNames": [ { "name": "x", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "X", "lowercase": "x", "orderNumber": 22, "letterType": "consonant", "pronunciationClassical": "ks", "romanNumeralValue": 10 }
+    },
+    {
+      "canonicalName": "letter.latin.y",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "Y",
+      "description": "The twenty-third letter of the Latin alphabet (Y, y). Derived from Greek Upsilon (Υ), added to the Latin alphabet during the late Republic to write Greek loan words. Y is the 'Pythagorean letter' — the Y-fork of diverging paths, representing the choice between virtue (the harder, ascending path) and vice (the easier, descending path). In mathematics Y is a standard variable; in genetics Y is the male sex chromosome.",
+      "secondaryNames": [ { "name": "y", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "vowel"],
+      "extendedData": { "uppercase": "Y", "lowercase": "y", "orderNumber": 23, "letterType": "vowel", "pronunciationClassical": "y", "note": "The Pythagorean letter — the forking path between virtue and vice." }
+    },
+    {
+      "canonicalName": "letter.latin.z",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "Z",
+      "description": "The twenty-fourth and final letter of the Latin alphabet (Z, z). Derived from Greek Zeta. Like Y, Z was added to the Latin alphabet during the late Republic specifically for writing Greek loan words, placed at the end of the alphabet. Z is the last letter — hence 'from A to Z' means completeness. In mathematics Z denotes the set of integers (from German 'Zahlen', numbers). In physics z is used for various impedance quantities. Zeta functions bear its Greek name.",
+      "secondaryNames": [ { "name": "z", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "Z", "lowercase": "z", "orderNumber": 24, "letterType": "consonant", "pronunciationClassical": "z" }
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.house.1",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "First House",
+      "description": "The House of Self, the Ascendant's domain. The First House represents the self as it presents to the world: the physical body, appearance, temperament, personality, and the manner of approaching life. The Ascendant (rising sign) on the cusp of the First House colours the entire chart. As an angular house it is one of the four most powerful houses. Natural sign: Aries; natural ruler: Mars. In esoteric astrology the First House represents the incarnating soul's initial thrust into physical existence — the first breath, the first impact on the world.",
+      "secondaryNames": [
+        { "name": "House of Self", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Ascendant", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "angular"],
+      "extendedData": {
+        "number": 1,
+        "naturalSign": "aries",
+        "naturalRuler": "astrology.planet.mars",
+        "angularity": "angular",
+        "keywords": ["self", "body", "appearance", "personality", "beginnings", "identity", "vitality"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.2",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Second House",
+      "description": "The House of Possessions and Values. The Second House governs material possessions, money earned through one's own efforts, personal values, self-worth, and the resources one has access to. It represents what one has and what one values — not just materially but in terms of personal talents and inner resources. Natural sign: Taurus; natural ruler: Venus. In esoteric astrology the Second House represents the soul's relationship to material existence and the values by which it navigates the material world.",
+      "secondaryNames": [
+        { "name": "House of Possessions", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Values", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "succedent"],
+      "extendedData": {
+        "number": 2,
+        "naturalSign": "taurus",
+        "naturalRuler": "astrology.planet.venus",
+        "angularity": "succedent",
+        "keywords": ["money", "possessions", "values", "self-worth", "resources", "earned income", "material security"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.3",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Third House",
+      "description": "The House of Communication and Siblings. The Third House governs all forms of communication (writing, speech, teaching), the immediate environment, short journeys, siblings, early education, and the conscious mind's interaction with the immediate world. Natural sign: Gemini; natural ruler: Mercury. In esoteric astrology the Third House represents the mind as it reaches out to gather information from its immediate sphere — the early formation of language and thought patterns that will shape all future consciousness.",
+      "secondaryNames": [
+        { "name": "House of Communication", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["house", "astrology", "cadent"],
+      "extendedData": {
+        "number": 3,
+        "naturalSign": "gemini",
+        "naturalRuler": "astrology.planet.mercury",
+        "angularity": "cadent",
+        "keywords": ["communication", "siblings", "short journeys", "early education", "writing", "speech", "immediate environment"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.4",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Fourth House",
+      "description": "The House of Home and Foundation, the IC (Imum Coeli). The Fourth House governs the home, family of origin, roots, ancestry, the end of life, and the private inner self. The IC is the lowest point of the chart, the most private, the foundation on which everything else is built. Natural sign: Cancer; natural ruler: Moon. In esoteric astrology the Fourth House represents the soul's karmic inheritance — the genetic, ancestral, and past-life material that forms the bedrock of this incarnation.",
+      "secondaryNames": [
+        { "name": "House of Home", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Imum Coeli", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "IC", "languageTag": "en-abbr", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["house", "astrology", "angular"],
+      "extendedData": {
+        "number": 4,
+        "naturalSign": "cancer",
+        "naturalRuler": "astrology.planet.luna",
+        "angularity": "angular",
+        "keywords": ["home", "family", "roots", "ancestry", "foundation", "private self", "end of life", "karma"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.5",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Fifth House",
+      "description": "The House of Creativity and Pleasure. The Fifth House governs creative self-expression, romance, children, play, games, speculation, and joy. It is the house of the heart's delight — what one does for pure pleasure and love. Natural sign: Leo; natural ruler: Sun. In esoteric astrology the Fifth House represents the soul expressing its unique creative contribution — the divine spark (the spiritual children as well as the physical) that one brings into the world.",
+      "secondaryNames": [
+        { "name": "House of Creativity", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Pleasure", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "succedent"],
+      "extendedData": {
+        "number": 5,
+        "naturalSign": "leo",
+        "naturalRuler": "astrology.planet.sol",
+        "angularity": "succedent",
+        "keywords": ["creativity", "romance", "children", "play", "pleasure", "self-expression", "speculation", "the heart"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.6",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Sixth House",
+      "description": "The House of Service and Health. The Sixth House governs daily work routines, health, service to others, employees and employers, diet, and the practical maintenance of life. It is the house of the craftsman — the skilled application of one's capacities in daily service. Natural sign: Virgo; natural ruler: Mercury. In esoteric astrology the Sixth House represents the purification of the lower self through disciplined service — the karma yoga of daily work done with care and consciousness.",
+      "secondaryNames": [
+        { "name": "House of Service", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Health", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "cadent"],
+      "extendedData": {
+        "number": 6,
+        "naturalSign": "virgo",
+        "naturalRuler": "astrology.planet.mercury",
+        "angularity": "cadent",
+        "keywords": ["health", "service", "work", "routines", "employees", "diet", "purification", "daily life"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.7",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Seventh House",
+      "description": "The House of Partnership, the Descendant. The Seventh House governs all one-to-one relationships: marriage, business partnerships, open enemies, and significant others. The Descendant on the cusp of the Seventh represents the qualities we seek in partners — often what we project outward rather than own in ourselves. Natural sign: Libra; natural ruler: Venus. In esoteric astrology the Seventh House represents the soul's relationship with the Other — the mirror that reflects what we cannot yet see in ourselves.",
+      "secondaryNames": [
+        { "name": "House of Partnership", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Descendant", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "angular"],
+      "extendedData": {
+        "number": 7,
+        "naturalSign": "libra",
+        "naturalRuler": "astrology.planet.venus",
+        "angularity": "angular",
+        "keywords": ["marriage", "partnership", "relationships", "open enemies", "contracts", "the Other", "projection"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.8",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Eighth House",
+      "description": "The House of Death and Transformation. The Eighth House governs death, regeneration, other people's money and resources, inheritances, shared finances, sex as a transformative force, the occult, and the deep psyche. As the house of Scorpio it is associated with depth, power, and the taboo. Natural sign: Scorpio; natural ruler: Mars (traditional), Pluto (modern). In esoteric astrology the Eighth House represents the alchemical transformation of the soul through encounter with death, sexuality, and the hidden resources of others.",
+      "secondaryNames": [
+        { "name": "House of Death", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Transformation", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "succedent"],
+      "extendedData": {
+        "number": 8,
+        "naturalSign": "scorpio",
+        "naturalRuler": "astrology.planet.mars",
+        "modernRuler": "astrology.planet.pluto",
+        "angularity": "succedent",
+        "keywords": ["death", "transformation", "shared resources", "inheritance", "sex", "occult", "deep psychology", "regeneration"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.9",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Ninth House",
+      "description": "The House of Philosophy and Long Journeys. The Ninth House governs philosophy, religion, higher education, long-distance travel, foreign lands and peoples, the law (as cosmic principle rather than mundane regulation), and the quest for meaning. It is the house of the centaur-philosopher. Natural sign: Sagittarius; natural ruler: Jupiter. In esoteric astrology the Ninth House represents the soul's search for its cosmic context — the great questions of meaning, origin, and destiny.",
+      "secondaryNames": [
+        { "name": "House of Philosophy", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Higher Education", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "cadent"],
+      "extendedData": {
+        "number": 9,
+        "naturalSign": "sagittarius",
+        "naturalRuler": "astrology.planet.jupiter",
+        "angularity": "cadent",
+        "keywords": ["philosophy", "religion", "higher education", "long journeys", "foreign lands", "law", "meaning", "wisdom"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.10",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Tenth House",
+      "description": "The House of Career and Public Standing, the Midheaven (MC). The Tenth House governs career, public reputation, authority figures, ambitions, and one's contribution to the world. The Midheaven at the cusp of the Tenth is the highest point of the chart — what one is known for, the peak of one's worldly achievement. Natural sign: Capricorn; natural ruler: Saturn. In esoteric astrology the Tenth House represents the soul's purpose in the world — its dharma, the work it has incarnated to accomplish.",
+      "secondaryNames": [
+        { "name": "House of Career", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Midheaven", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "MC", "languageTag": "en-abbr", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["house", "astrology", "angular"],
+      "extendedData": {
+        "number": 10,
+        "naturalSign": "capricorn",
+        "naturalRuler": "astrology.planet.saturn",
+        "angularity": "angular",
+        "keywords": ["career", "reputation", "public standing", "authority", "ambition", "vocation", "legacy", "dharma"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.11",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Eleventh House",
+      "description": "The House of Friends and Hopes. The Eleventh House governs friendships, social networks, groups, humanitarian causes, hopes and wishes, and the collective ideals one aligns with. It is the house of the reformer and the humanist. Natural sign: Aquarius; natural ruler: Saturn (traditional), Uranus (modern). In esoteric astrology the Eleventh House represents the soul's participation in the larger collective and its contribution to the evolving human community beyond personal relationships.",
+      "secondaryNames": [
+        { "name": "House of Friends", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of Hopes", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "succedent"],
+      "extendedData": {
+        "number": 11,
+        "naturalSign": "aquarius",
+        "naturalRuler": "astrology.planet.saturn",
+        "modernRuler": "astrology.planet.uranus",
+        "angularity": "succedent",
+        "keywords": ["friends", "groups", "social networks", "hopes", "wishes", "humanitarian ideals", "the collective", "reform"]
+      }
+    },
+    {
+      "canonicalName": "astrology.house.12",
+      "entityType": "astrology.house",
+      "primaryDisplayName": "Twelfth House",
+      "description": "The House of Hidden Enemies and Undoing, the House of the Unconscious. The Twelfth House governs the hidden, the unconscious, self-undoing, isolation, institutions (prisons, hospitals, monasteries), karmic debts, and the collective unconscious. It is the house of completion, dissolution, and the preparation for a new cycle. Natural sign: Pisces; natural ruler: Jupiter (traditional), Neptune (modern). In esoteric astrology the Twelfth House represents the soul's accumulated karma and the final dissolution of the personal ego into the universal — the mystical return to the Source before the new beginning of the First House.",
+      "secondaryNames": [
+        { "name": "House of Hidden Enemies", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "House of the Unconscious", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["house", "astrology", "cadent"],
+      "extendedData": {
+        "number": 12,
+        "naturalSign": "pisces",
+        "naturalRuler": "astrology.planet.jupiter",
+        "modernRuler": "astrology.planet.neptune",
+        "angularity": "cadent",
+        "keywords": ["hidden enemies", "unconscious", "isolation", "karma", "institutions", "dissolution", "mysticism", "self-undoing", "transcendence"]
+      }
+    }
+  ]
+}

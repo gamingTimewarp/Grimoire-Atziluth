@@ -1,0 +1,14 @@
+{
+  "name": "grimoire-atziluth",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "grimoire-core",
+    "grimoire-app"
+  ],
+  "scripts": {
+    "build:core": "npm run build --workspace=grimoire-core",
+    "dev": "WEBKIT_DISABLE_DMABUF_RENDERER=1 npm run tauri dev --workspace=grimoire-app",
+    "build": "npm run build:core && npm run build --workspace=grimoire-app"
+  }
+}

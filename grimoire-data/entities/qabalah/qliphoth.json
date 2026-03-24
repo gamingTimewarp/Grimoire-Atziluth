@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.qliphoth.thaumiel",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Thaumiel",
+      "description": "The Qliphoth of Kether — the Twin Gods, the shell opposite to the unity of the Crown. Where Kether is the perfect point of primal unity, Thaumiel is the division of that unity into two warring and irreconcilable principles. It is the demonic realm of dualism taken to its absolute extreme, the satanic opposition that denies the possibility of unity. The names associated with Thaumiel include Satan and Moloch. Thaumiel represents the fundamental principle of division — the idea that the universe is not One but an eternal war between two irreconcilable principles. It is the deepest level of the Qliphothic tree.",
+      "secondaryNames": [
+        { "name": "תאומיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Twin Gods", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Contending Forces", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.kether",
+        "sephiraNumber": 1,
+        "hebrewName": "תאומיאל",
+        "meaning": "Twin Gods",
+        "demonicRulers": ["Satan", "Moloch"],
+        "principle": "Absolute division / Cosmic dualism",
+        "treeX": 0.50,
+        "treeY": 0.06
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.chaigidel",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Chaigidel",
+      "description": "The Qliphoth of Chokmah — the Confusion of the Power of God, or the Hinderers. Where Chokmah is the pure creative wisdom, the flash of divine gnosis, Chaigidel represents that wisdom distorted into confusion and the scattering of the divine creative force. This Qliphoth embodies the misuse of creative power — inspiration without grounding, wisdom without form, the light scattered into chaos rather than focused into creation. Associated with Beelzebub (the Lord of Flies, the lord of scattered forces).",
+      "secondaryNames": [
+        { "name": "חיגידאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Hinderers", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.chokmah",
+        "sephiraNumber": 2,
+        "hebrewName": "חיגידאל",
+        "meaning": "Confusion of the Power of God",
+        "demonicRulers": ["Beelzebub"],
+        "principle": "Creative confusion / Scattered force",
+        "treeX": 0.82,
+        "treeY": 0.17
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.satariel",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Satariel",
+      "description": "The Qliphoth of Binah — the Concealers, the shell of hidden and obstructed understanding. Where Binah is the divine understanding that gives form to the creative wisdom of Chokmah, Satariel represents understanding that conceals and distorts rather than clarifies and gives birth. It embodies opacity, deliberate obscuration, and the misuse of limitation — form used to imprison rather than to protect. Associated with Lucifuge Rofocale, the one who flees the light.",
+      "secondaryNames": [
+        { "name": "סטריאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Concealers", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.binah",
+        "sephiraNumber": 3,
+        "hebrewName": "סטריאל",
+        "meaning": "Concealers / The Hidden",
+        "demonicRulers": ["Lucifuge Rofocale"],
+        "principle": "Concealed / Obstructed understanding",
+        "treeX": 0.18,
+        "treeY": 0.17
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.gha-agsheblah",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Gha'agsheblah",
+      "description": "The Qliphoth of Chesed — the Smiters or the Disturbers of All Things. Where Chesed is divine mercy and the generous outpouring of cosmic love, Gha'agsheblah represents that generosity twisted into excess, tyranny of mercy without limits — the smothering love that destroys what it claims to protect. It is associated with Astaroth (the chief of the Goetic demons and one of the three rulers of Hell). This Qliphoth represents the failure of mercy: love without wisdom becomes destruction.",
+      "secondaryNames": [
+        { "name": "גאגשבלה", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Smiters", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.chesed",
+        "sephiraNumber": 4,
+        "hebrewName": "גאגשבלה",
+        "meaning": "The Smiters / Disturbers",
+        "demonicRulers": ["Astaroth"],
+        "principle": "Mercy without wisdom / Destructive excess",
+        "treeX": 0.82,
+        "treeY": 0.40
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.golachab",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Golachab",
+      "description": "The Qliphoth of Geburah — the Burners with Fire or the Flaming Ones. Where Geburah is the divine severity that judges and purges, Golachab represents that severity without the wisdom of Chesed to moderate it — pure destruction without purpose, cruelty for its own sake, the burning that consumes but does not purify. Associated with Asmodeus (the demon of lust and destruction). Golachab is the fire that burns but does not enlighten, the sword that kills but does not sever the cord of illusion.",
+      "secondaryNames": [
+        { "name": "גולחב", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Burners", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Flaming Ones", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.geburah",
+        "sephiraNumber": 5,
+        "hebrewName": "גולחב",
+        "meaning": "Burners with Fire",
+        "demonicRulers": ["Asmodeus"],
+        "principle": "Cruelty / Destruction without purpose",
+        "treeX": 0.18,
+        "treeY": 0.40
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.thagirion",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Thagirion",
+      "description": "The Qliphoth of Tiphareth — the Disputers or the Hagglers, also called Belphegor's sphere. Where Tiphareth is the solar heart of beauty and harmony, Thagirion represents the Antichrist or anti-sun: the disputing principle that destroys harmony through argument and division. It is the principle of ugliness as a philosophical position — the active revolt against beauty, order, and the integration that Tiphareth embodies. The Black Sun of alchemy operates here: Tiphareth's solar light corrupted into the dark sun of the Qliphoth. Associated with Belphegor (the lord of laziness and false discovery).",
+      "secondaryNames": [
+        { "name": "תאגריאון", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Disputers", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Black Sun", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.tiphareth",
+        "sephiraNumber": 6,
+        "hebrewName": "תאגריאון",
+        "meaning": "Disputers / Hagglers",
+        "demonicRulers": ["Belphegor"],
+        "principle": "Anti-harmony / The Black Sun / Disputation",
+        "treeX": 0.50,
+        "treeY": 0.52
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.harab-serapel",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Harab Serapel",
+      "description": "The Qliphoth of Netzach — the Raven of Dispersion, the Ravens of the Burning of God. Where Netzach is the sphere of Venus, love, and the creative emotional force of nature, Harab Serapel represents that love inverted into obsession, lust, and the dispersal of the vital force without purpose. The raven scatters what the dove of Netzach would gather. Associated with Baal (the lord of the storm and the perversion of natural religion). This Qliphoth embodies desire as addiction, the corruption of the aesthetic sense into ugliness and pornography of spirit.",
+      "secondaryNames": [
+        { "name": "הרב שרפל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Ravens of Dispersion", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.netzach",
+        "sephiraNumber": 7,
+        "hebrewName": "הרב שרפל",
+        "meaning": "Raven of Dispersion",
+        "demonicRulers": ["Baal"],
+        "principle": "Lust / Dispersed vital force / Obsession",
+        "treeX": 0.82,
+        "treeY": 0.65
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.samael",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Samael",
+      "description": "The Qliphoth of Hod — the Poison of God, the Liar. Note that the name Samael is here used for the Qliphoth of Hod specifically; elsewhere Samael is a name for Satan or an archangel of Geburah/Mars. In the Qliphothic context of Hod, Samael represents the mercurial intellect turned to falsehood, poisoned logic, and the deliberate misuse of language and symbol to deceive. Where Hod is the sphere of accurate intellectual formulation and magical naming, Samael-of-Hod is the father of lies — the intelligence that uses words to conceal rather than reveal truth. Associated with Adramelech.",
+      "secondaryNames": [
+        { "name": "סמאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Poison of God", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Liar", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.hod",
+        "sephiraNumber": 8,
+        "hebrewName": "סמאל",
+        "meaning": "Poison of God",
+        "demonicRulers": ["Adramelech"],
+        "principle": "Falsehood / Poisoned intellect / Deceptive language",
+        "treeX": 0.18,
+        "treeY": 0.65
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.gamaliel",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Gamaliel",
+      "description": "The Qliphoth of Yesod — the Obscene Ones or the Polluted of God. Where Yesod is the sphere of the Moon and the life-giving astral foundation — the etheric template of health and generation — Gamaliel represents that generative force perverted into obscenity, the astral pollution that distorts the etheric body and corrupts the imagination. It is the realm of wet dreams, obsessive fantasy, and the perversion of the sexual/generative force. Associated with Lilith in her role as the succubus — the night-demon who drains the vital fluid. Gamaliel is the dark side of the astral imagination.",
+      "secondaryNames": [
+        { "name": "גמאליאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Obscene Ones", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.yesod",
+        "sephiraNumber": 9,
+        "hebrewName": "גמאליאל",
+        "meaning": "Polluted of God / Obscene Ones",
+        "demonicRulers": ["Lilith"],
+        "principle": "Perverted generation / Astral pollution / Obsessive fantasy",
+        "treeX": 0.50,
+        "treeY": 0.77
+      }
+    },
+    {
+      "canonicalName": "qabalah.qliphoth.nahemoth",
+      "entityType": "qabalah.qliphoth",
+      "primaryDisplayName": "Nahemoth",
+      "description": "The Qliphoth of Malkuth — the Whisperers or the Daughters of the Night. Where Malkuth is the Kingdom — the physical world sanctified as the dwelling place of the Shekinah — Nahemoth (or Nehemoth) represents matter cut off from spirit: the material world experienced as a prison, a place of meaningless suffering and decay, stripped of its divine ground. The Whisperers are the voices of despair that arise when the material world is experienced as purely material — when the body is seen as a tomb rather than a temple. Associated with Na'amah (the demon of wailing and lamentation). The shell of Malkuth is the outermost shell of existence, the boundary of the Klipothic tree.",
+      "secondaryNames": [
+        { "name": "נחמות", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "The Whisperers", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Nehemoth", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "qliphoth", "tree-of-life"],
+      "extendedData": {
+        "correspondingSephira": "qabalah.sephira.malkuth",
+        "sephiraNumber": 10,
+        "hebrewName": "נחמות",
+        "meaning": "Whisperers / Daughters of the Night",
+        "demonicRulers": ["Na'amah"],
+        "principle": "Matter cut off from spirit / Material despair / The body as prison",
+        "treeX": 0.50,
+        "treeY": 0.93
+      }
+    }
+  ]
+}

@@ -1,0 +1,1517 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.minor.tdm.batons.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "As de Bâtons",
+      "description": "The Ace of Batons in the Tarot de Marseille. A single large club or branch, alive and leafing. Represents the pure creative force of fire, new enterprise, and the seed of ambition.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ace of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 1,
+        "rank": "As",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Deux de Bâtons",
+      "description": "The Two of Batons in the Tarot de Marseille. Two crossing staves with foliage. Represents duality of will, personal power, and the early stages of planning.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Two of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 2,
+        "rank": "Deux",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Trois de Bâtons",
+      "description": "The Three of Batons in the Tarot de Marseille. Three interlocking staves. Represents established strength and the first fruits of enterprise.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Three of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 3,
+        "rank": "Trois",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Quatre de Bâtons",
+      "description": "The Four of Batons in the Tarot de Marseille. Four staves in a stable, symmetrical arrangement. Represents celebration, completion of a phase, and stable creative achievement.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Four of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 4,
+        "rank": "Quatre",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cinq de Bâtons",
+      "description": "The Five of Batons in the Tarot de Marseille. Five staves in a complex, conflicting pattern. Represents strife, competition, and energetic conflict.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Five of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 5,
+        "rank": "Cinq",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six de Bâtons",
+      "description": "The Six of Batons in the Tarot de Marseille. Six staves in a balanced arrangement. Represents victory, triumph, and the joy of success after struggle.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Six of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 6,
+        "rank": "Six",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Sept de Bâtons",
+      "description": "The Seven of Batons in the Tarot de Marseille. Seven staves with one prominent. Represents valor, courage under challenge, and holding firm against adversity.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Seven of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 7,
+        "rank": "Sept",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Huit de Bâtons",
+      "description": "The Eight of Batons in the Tarot de Marseille. Eight staves in swift diagonal movement. Represents swift communication, rapid progress, and news in transit.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Eight of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 8,
+        "rank": "Huit",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Neuf de Bâtons",
+      "description": "The Nine of Batons in the Tarot de Marseille. Nine staves in an arrangement suggesting reserves of strength. Represents resilience, strength in reserve, and preparation for a final push.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Nine of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 9,
+        "rank": "Neuf",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dix de Bâtons",
+      "description": "The Ten of Batons in the Tarot de Marseille. Ten staves in an oppressive, heavy arrangement. Represents burden, oppression, and the weight of too many responsibilities.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ten of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 10,
+        "rank": "Dix",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.valet",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet de Bâtons",
+      "description": "The Page of Batons in the Tarot de Marseille. A young man in motley holds a tall staff. Represents messages, new ideas, and the enthusiastic young person associated with fire.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "rank": "Valet",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.cavalier",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier de Bâtons",
+      "description": "The Knight of Batons in the Tarot de Marseille. A rider on horseback with a staff. Represents energetic action, travel, and the passionate pursuit of adventure.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "rank": "Cavalier",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.reine",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Reine de Bâtons",
+      "description": "The Queen of Batons in the Tarot de Marseille. A crowned woman seated on a throne holds a staff. Represents confident feminine authority and creative leadership.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Queen of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 13,
+        "rank": "Reine",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.batons.roi",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi de Bâtons",
+      "description": "The King of Batons in the Tarot de Marseille. A crowned king enthroned holds a staff. Represents mature mastery of creative fire, leadership, and visionary authority.",
+      "tags": [
+        "batons",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Wands",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "rank": "Roi",
+        "suit": "tarot.suit.tdm.batons",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "As de Coupes",
+      "description": "The Ace of Cups in the Tarot de Marseille. A large ornate chalice. Represents the pure essence of water, love, and spiritual receptivity.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ace of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 15,
+        "rank": "As",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Deux de Coupes",
+      "description": "The Two of Cups in the Tarot de Marseille. Two cups face each other. Represents love, union, partnership, and emotional harmony.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Two of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 16,
+        "rank": "Deux",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Trois de Coupes",
+      "description": "The Three of Cups in the Tarot de Marseille. Three cups in a triangular arrangement. Represents celebration, abundance, and shared emotional joy.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Three of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 17,
+        "rank": "Trois",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Quatre de Coupes",
+      "description": "The Four of Cups in the Tarot de Marseille. Four cups in a stable square. Represents contemplation, emotional stability that risks becoming stagnation.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Four of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 18,
+        "rank": "Quatre",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cinq de Coupes",
+      "description": "The Five of Cups in the Tarot de Marseille. Five cups in an unstable arrangement. Represents loss, disappointment, and emotional upset.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Five of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 19,
+        "rank": "Cinq",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six de Coupes",
+      "description": "The Six of Cups in the Tarot de Marseille. Six cups in harmonious balance. Represents nostalgia, pleasant memories, and emotional fulfillment.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Six of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 20,
+        "rank": "Six",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Sept de Coupes",
+      "description": "The Seven of Cups in the Tarot de Marseille. Seven cups in a scattered, dreamlike arrangement. Represents fantasy, illusion, and the seductive confusion of too many emotional choices.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Seven of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 21,
+        "rank": "Sept",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Huit de Coupes",
+      "description": "The Eight of Cups in the Tarot de Marseille. Eight cups, some turning away. Represents abandonment of the familiar and the search for something deeper.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Eight of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 22,
+        "rank": "Huit",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Neuf de Coupes",
+      "description": "The Nine of Cups in the Tarot de Marseille. Nine cups in an abundant, satisfied arrangement. Represents contentment, material and emotional wellbeing, and desires fulfilled.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Nine of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 23,
+        "rank": "Neuf",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dix de Coupes",
+      "description": "The Ten of Cups in the Tarot de Marseille. Ten cups in a complete, overflowing arrangement. Represents lasting happiness, family harmony, and emotional completion.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ten of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 24,
+        "rank": "Dix",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.valet",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet de Coupes",
+      "description": "The Page of Cups in the Tarot de Marseille. A young man holds a cup. Represents emotional messages, imagination, and tender sensitivity.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 25,
+        "rank": "Valet",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.cavalier",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier de Coupes",
+      "description": "The Knight of Cups in the Tarot de Marseille. A rider bearing a cup. Represents the romantic messenger, emotionally-driven movement, and the pursuit of love.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 26,
+        "rank": "Cavalier",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.reine",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Reine de Coupes",
+      "description": "The Queen of Cups in the Tarot de Marseille. A crowned queen holds a cup with serene authority. Represents deep emotional wisdom, compassion, and intuitive power.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Queen of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 27,
+        "rank": "Reine",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.coupes.roi",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi de Coupes",
+      "description": "The King of Cups in the Tarot de Marseille. An enthroned king holds a cup. Represents mature emotional authority, diplomatic wisdom, and calm mastery of the feeling nature.",
+      "tags": [
+        "coupes",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Cups",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 28,
+        "rank": "Roi",
+        "suit": "tarot.suit.tdm.coupes",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "As d'Épées",
+      "description": "The Ace of Swords in the Tarot de Marseille. A single upright sword with a crown. Represents pure intellect, truth, and the double-edged nature of the mind.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ace of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 29,
+        "rank": "As",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Deux d'Épées",
+      "description": "The Two of Swords in the Tarot de Marseille. Two crossed swords. Represents balanced tension, stalemate, and the difficult equilibrium of opposing forces.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Two of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 30,
+        "rank": "Deux",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Trois d'Épées",
+      "description": "The Three of Swords in the Tarot de Marseille. Three swords in conflict. Represents sorrow, grief, and the pain of separation.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Three of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 31,
+        "rank": "Trois",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Quatre d'Épées",
+      "description": "The Four of Swords in the Tarot de Marseille. Four swords at rest. Represents truce, recuperation, and the peace of temporary withdrawal.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Four of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 32,
+        "rank": "Quatre",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cinq d'Épées",
+      "description": "The Five of Swords in the Tarot de Marseille. Five swords in conflict. Represents defeat, dishonor, and the cost of hollow victory.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Five of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 33,
+        "rank": "Cinq",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six d'Épées",
+      "description": "The Six of Swords in the Tarot de Marseille. Six swords in an ordered arrangement. Represents passage, transition, and moving toward calmer intellectual waters.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Six of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 34,
+        "rank": "Six",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Sept d'Épées",
+      "description": "The Seven of Swords in the Tarot de Marseille. Seven swords in an uncertain arrangement. Represents cunning, strategic retreat, and partial effort.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Seven of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 35,
+        "rank": "Sept",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Huit d'Épées",
+      "description": "The Eight of Swords in the Tarot de Marseille. Eight swords in a restricting pattern. Represents interference, restriction, and feeling trapped by circumstances.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Eight of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 36,
+        "rank": "Huit",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Neuf d'Épées",
+      "description": "The Nine of Swords in the Tarot de Marseille. Nine swords in an ominous arrangement. Represents mental suffering, anxiety, and the dark night of the soul.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Nine of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 37,
+        "rank": "Neuf",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dix d'Épées",
+      "description": "The Ten of Swords in the Tarot de Marseille. Ten swords in a heavy, crushing arrangement. Represents total ruin, painful ending, and the rock bottom of mental suffering.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ten of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 38,
+        "rank": "Dix",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.valet",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet d'Épées",
+      "description": "The Page of Swords in the Tarot de Marseille. A young man with a sword. Represents alertness, new intellectual challenges, and the watchful observer.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 39,
+        "rank": "Valet",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.cavalier",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier d'Épées",
+      "description": "The Knight of Swords in the Tarot de Marseille. An armored rider charging with sword raised. Represents swift intellectual action, aggression, and the bold force of the mind in motion.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 40,
+        "rank": "Cavalier",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.reine",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Reine d'Épées",
+      "description": "The Queen of Swords in the Tarot de Marseille. A crowned queen holding a sword. Represents clear-headed feminine authority, penetrating intelligence, and wisdom through experience.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Queen of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 41,
+        "rank": "Reine",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.epees.roi",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi d'Épées",
+      "description": "The King of Swords in the Tarot de Marseille. An enthroned king with a sword. Represents intellectual authority, rational judgment, and the power of the disciplined mind.",
+      "tags": [
+        "epees",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Swords",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 42,
+        "rank": "Roi",
+        "suit": "tarot.suit.tdm.epees",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "As de Deniers",
+      "description": "The Ace of Coins in the Tarot de Marseille. A single large coin or denier. Represents pure material potential, prosperity, and the seed of earthly abundance.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ace of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 43,
+        "rank": "As",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Deux de Deniers",
+      "description": "The Two of Coins in the Tarot de Marseille. Two coins in an infinity loop. Represents the balance of material forces, adaptability, and financial juggling.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Two of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 44,
+        "rank": "Deux",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Trois de Deniers",
+      "description": "The Three of Coins in the Tarot de Marseille. Three coins in a triangular arrangement. Represents skilled craft, work, and material creation through expertise.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Three of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 45,
+        "rank": "Trois",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Quatre de Deniers",
+      "description": "The Four of Coins in the Tarot de Marseille. Four coins in a stable square. Represents material security, conservation of resources, and earthly stability.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Four of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 46,
+        "rank": "Quatre",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cinq de Deniers",
+      "description": "The Five of Coins in the Tarot de Marseille. Five coins in an unstable arrangement. Represents material difficulty, financial loss, and earthly hardship.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Five of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 47,
+        "rank": "Cinq",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six de Deniers",
+      "description": "The Six of Coins in the Tarot de Marseille. Six coins in a harmonious arrangement. Represents generosity, charity, and the fair distribution of material resources.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Six of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 48,
+        "rank": "Six",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Sept de Deniers",
+      "description": "The Seven of Coins in the Tarot de Marseille. Seven coins in a contemplative arrangement. Represents assessment, patience, and the evaluation of material effort.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Seven of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 49,
+        "rank": "Sept",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Huit de Deniers",
+      "description": "The Eight of Coins in the Tarot de Marseille. Eight coins in a diligent pattern. Represents apprenticeship, craftsmanship, and the steady development of skill.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Eight of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 50,
+        "rank": "Huit",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Neuf de Deniers",
+      "description": "The Nine of Coins in the Tarot de Marseille. Nine coins in an abundant arrangement. Represents material success, self-sufficiency, and the refinement of prosperity.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Nine of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 51,
+        "rank": "Neuf",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dix de Deniers",
+      "description": "The Ten of Coins in the Tarot de Marseille. Ten coins in the pattern of the Tree of Life. Represents lasting material wealth, family legacy, and the fullest earthly abundance.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ten of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 52,
+        "rank": "Dix",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.valet",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet de Deniers",
+      "description": "The Page of Coins in the Tarot de Marseille. A young man holds a coin aloft. Represents study, new financial opportunities, and the diligent student of material affairs.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 53,
+        "rank": "Valet",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.cavalier",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier de Deniers",
+      "description": "The Knight of Coins in the Tarot de Marseille. A rider with a coin, moving slowly and deliberately. Represents methodical material effort, reliability, and diligent progress.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 54,
+        "rank": "Cavalier",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.reine",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Reine de Deniers",
+      "description": "The Queen of Coins in the Tarot de Marseille. A crowned queen with a coin. Represents practical nurturing, earthly generosity, and material abundance shared.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Queen of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 55,
+        "rank": "Reine",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.tdm.deniers.roi",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi de Deniers",
+      "description": "The King of Coins in the Tarot de Marseille. An enthroned king with a coin. Represents material mastery, entrepreneurial authority, and the secure leadership of earthly affairs.",
+      "tags": [
+        "deniers",
+        "minor-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Pentacles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 56,
+        "rank": "Roi",
+        "suit": "tarot.suit.tdm.deniers",
+        "arcana": "minor",
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    }
+  ]
+}

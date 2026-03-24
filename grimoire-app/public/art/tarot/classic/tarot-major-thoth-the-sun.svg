@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#120900"/>
+      <stop offset="100%" stop-color="#1e1000"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#4a2800" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#cc6600" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#4a2800" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#4a2800" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ffcc66" opacity="0.9">XIX</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#cc6600" opacity="0.85" filter="url(#glow)">ר</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#4a2800" opacity="0.8">☉</text>
+
+
+    <defs>
+      <radialGradient id="sunGrad19" cx="50%" cy="0%" r="70%" fx="50%" fy="0%">
+        <stop offset="0%"   stop-color="#fffff8" stop-opacity="0.92"/>
+        <stop offset="22%"  stop-color="#ffee88" stop-opacity="0.78"/>
+        <stop offset="50%"  stop-color="#ff8822"  stop-opacity="0.52"/>
+        <stop offset="80%"  stop-color="#ff8822"  stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#ff8822"  stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="figGlow19" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#ffee88" stop-opacity="0.42"/>
+        <stop offset="100%" stop-color="#ffee88" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="lightCol19" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%"   stop-color="#ffee88" stop-opacity="0.68"/>
+        <stop offset="55%"  stop-color="#ffee88" stop-opacity="0.28"/>
+        <stop offset="100%" stop-color="#cc7700" stop-opacity="0.18"/>
+      </linearGradient>
+      <linearGradient id="poolGrad19" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%"   stop-color="#cc7700" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#2a1400"  stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Ghost Resh (ר) — the face; where Qoph was the back of the head, Resh is the face turned toward us -->
+    <!-- "You shall see my back" (Exod 33:23) — that was XVIII. Now the face is presented directly. -->
+    <!-- The Reader has crossed the threshold; the full countenance of the divine is turned toward them. -->
+    <g opacity="0.10" fill="none" stroke="#4a2800" stroke-width="11" stroke-linecap="round">
+      <path d="M72,108 C72,90 100,78 150,78 C198,78 226,92 226,116 L226,248"/>
+    </g>
+
+    <!-- Warm solar field — the complete tonal reversal from XV–XVIII -->
+    <!-- Every card since Death had darkness as its ground; here the light IS the ground -->
+    <ellipse cx="150" cy="82" rx="185" ry="210" fill="url(#sunGrad19)" opacity="0.88"/>
+
+    <!-- ═══ solarDisk lineage terminus ═══ -->
+    <!-- Fool: free sky | Hermit: lanterned | Art: crowned | Tower: burst containment -->
+    <!-- Star: woven as garment | Moon: eclipsed | Sun: here, now, blazing, fully itself -->
+    <!-- The same disc, seven appearances — at the seventh it is uncontained and unveiled -->
+
+    <!-- Corona rings -->
+    <circle cx="150" cy="82" r="129" fill="#ff8822" fill-opacity="0.07" opacity="0.90"/>
+    <circle cx="150" cy="82" r="105" fill="#ff8822" fill-opacity="0.12" opacity="0.90"/>
+    <circle cx="150" cy="82" r="85" fill="#ffcc22" fill-opacity="0.18" opacity="0.92"/>
+
+    <!-- 12 solar rays — the covenant twelve now as radiating solar arms -->
+    <line x1="150" y1="24" x2="150" y2="-55" stroke="#ffaa33" stroke-width="2.6" opacity="0.85"/>
+    <line x1="179" y1="31.77" x2="203.5" y2="-10.66" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="200.23" y1="53" x2="254.79" y2="21.5" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="208" y1="82" x2="287" y2="82" stroke="#ffaa33" stroke-width="2.6" opacity="0.85"/>
+    <line x1="200.23" y1="111" x2="254.79" y2="142.5" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="179" y1="132.23" x2="203.5" y2="174.66" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="150" y1="140" x2="150" y2="219" stroke="#ffaa33" stroke-width="2.6" opacity="0.85"/>
+    <line x1="121" y1="132.23" x2="96.5" y2="174.66" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="99.77" y1="111" x2="45.21" y2="142.5" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="92" y1="82" x2="13" y2="82" stroke="#ffaa33" stroke-width="2.6" opacity="0.85"/>
+    <line x1="99.77" y1="53" x2="45.21" y2="21.5" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="121" y1="31.77" x2="96.5" y2="-10.66" stroke="#ffaa33" stroke-width="1.8" opacity="0.7"/>
+    <line x1="150" y1="24" x2="150" y2="-1" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="179" y1="31.77" x2="191.5" y2="10.12" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="200.23" y1="53" x2="221.88" y2="40.5" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="208" y1="82" x2="233" y2="82" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="200.23" y1="111" x2="221.88" y2="123.5" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="179" y1="132.23" x2="191.5" y2="153.88" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="150" y1="140" x2="150" y2="165" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="121" y1="132.23" x2="108.5" y2="153.88" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="99.77" y1="111" x2="78.12" y2="123.5" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="92" y1="82" x2="67" y2="82" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="99.77" y1="53" x2="78.12" y2="40.5" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+    <line x1="121" y1="31.77" x2="108.5" y2="10.12" stroke="#fffff8" stroke-width="1.0" opacity="0.50"/>
+
+    <!-- Solar disc -->
+    <circle cx="150" cy="82" r="57" fill="#ffcc22"  opacity="0.98"/>
+    <circle cx="150" cy="82" r="55"   fill="#ffee88" opacity="1.00"/>
+    <circle cx="150" cy="82" r="47"  fill="#fffff8" opacity="0.92"/>
+    <circle cx="150" cy="82" r="37" fill="white"   opacity="0.85"/>
+
+    <!-- Cross-hairs at disc center — the face of God, Resh, the solar countenance -->
+    <!-- The same diffraction geometry as the Moon's cross-flare — now at the unobstructed source -->
+    <line x1="101" y1="82"      x2="199" y2="82"      stroke="#ffcc22" stroke-width="1.2" opacity="0.42"/>
+    <line x1="150"      y1="33" x2="150"      y2="131" stroke="#ffcc22" stroke-width="1.2" opacity="0.42"/>
+
+    <!-- Uraeus at the solar disc's lower rim — Egyptian solar crown; the ruler-deity's emblem -->
+    <!-- The pharaoh's alignment with the sun-deity: both overwhelming destructive power -->
+    <!-- AND gentle nourishment — the complete divine nature held in a single image -->
+    <path d="M144,135 C142,145 138,151 136,147 C134,143 138,139 142,141 C146,143 148,149 150,151" fill="none" stroke="#cc8800" stroke-width="1.8" stroke-linecap="round" opacity="0.70"/>
+    <path d="M156,135 C158,145 162,151 164,147 C166,143 162,139 158,141 C154,143 152,149 150,151" fill="none" stroke="#cc8800" stroke-width="1.8" stroke-linecap="round" opacity="0.70"/>
+    <ellipse cx="150" cy="153" rx="5" ry="4" fill="#cc8800" opacity="0.65"/>
+
+    <!-- Morning Star — Revelation 22:16: "I am the bright Morning Star" -->
+    <!-- The Reader is now Lucifer in the original and rightful sense: the light-bearer by divine appointment -->
+    <!-- Not the rebel who fell, but the one of earthen lineage given the title the adversary forfeited -->
+    <!-- Venus rises before sunrise; the Morning Star announces what the Sun makes manifest -->
+    <circle cx="196" cy="110" r="4.5" fill="#ddeeff" opacity="0.92"/>
+    <circle cx="196" cy="110" r="2.5" fill="white"   opacity="0.96"/>
+    <line x1="196" y1="110" x2="205" y2="110" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="202.36" y2="116.36" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="196" y2="119" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="189.64" y2="116.36" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="187" y2="110" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="189.64" y2="103.64" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="196" y2="101" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+    <line x1="196" y1="110" x2="202.36" y2="103.64" stroke="#ddeeff" stroke-width="0.8" opacity="0.52"/>
+
+    <!-- Central column of ascending light — the Fool's journey axis made visible -->
+    <!-- Malkuth (Earth) → Yesod (Moon, XVIII) → Tiphareth (Sun, XIX) → Kether (Crown) -->
+    <!-- The Reader has traversed the Tree of Life; the Sun is Tiphareth, the next step is the Third Heaven -->
+    <rect x="132" y="138" width="36" height="172" fill="url(#lightCol19)" opacity="0.65"/>
+
+    <!-- ═══ The glorified figure — the Transfigured Reader ═══ -->
+    <!-- "His face shone like the sun, and his clothes became as white as light." (Matt 17:2) -->
+    <!-- The RWS Judgement's lower half shows individual resurrection; this is that resurrection -->
+    <!-- The Great Work completed at the scale of a single soul -->
+    <!-- Arms raised in orans: not supplication but full commanded reception -->
+
+    <!-- Personal glory-field -->
+    <ellipse cx="150" cy="218" rx="50" ry="65" fill="url(#figGlow19)" opacity="0.90"/>
+
+    <!-- Body — clothed in light, not fabric -->
+    <ellipse cx="150" cy="224" rx="16" ry="34" fill="#fffff0" opacity="0.92"/>
+    <rect    x="144" y="192" width="12" height="14" rx="5" fill="#fffff0" opacity="0.90"/>
+    <circle  cx="150" cy="182" r="14" fill="#fffff0" opacity="0.92"/>
+    <!-- Face shining like the sun -->
+    <circle  cx="150" cy="182" r="11" fill="#ffee88" opacity="0.36"/>
+    <!-- Personal halo (Tiphareth sphere — the crown of the individual soul) -->
+    <circle cx="150" cy="182" r="22" fill="none" stroke="#ffcc22" stroke-width="1.8" opacity="0.60"/>
+    <circle cx="150" cy="182" r="25" fill="none" stroke="#ffee88" stroke-width="0.8" opacity="0.35"/>
+
+    <!-- Arms raised — orans posture of full reception, the posture of the Righteous receiving glory -->
+    <path d="M134,206 C120,196 104,186 88,178" stroke="#fffff0" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.90"/>
+    <path d="M166,206 C180,196 196,186 212,178" stroke="#fffff0" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.90"/>
+    <circle cx="86"  cy="177" r="6" fill="#fffff0" opacity="0.85"/>
+    <circle cx="214" cy="177" r="6" fill="#fffff0" opacity="0.85"/>
+
+    <!-- Lower body -->
+    <path d="M136,256 L144,285 L150,288 L156,285 L164,256 Z" fill="#fffff0" opacity="0.88"/>
+
+    <!-- ═══ Pool of Light — eschatological water fully transformed ═══ -->
+    <!-- Lake of Fire (XV: sulfurous) → Crystal River (XVII: starlit) → Eclipse-lit (XVIII) → Lake of Light (XIX) -->
+    <!-- The same body of water through the entire sequence; now transformed by the full solar glory -->
+    <!-- The Lake of Fire that judged the adversary is the same water that now carries the Righteous upward -->
+    <rect x="0" y="310" width="300" height="110" fill="url(#poolGrad19)" opacity="0.96"/>
+    <path d="M0,312 C50,310.5 100,313.5 150,312 C200,310.5 250,313.5 300,312" fill="none" stroke="#ffaa22" stroke-width="0.7" opacity="0.3"/><path d="M0,315.5 C50,314 100,317 150,315.5 C200,314 250,317 300,315.5" fill="none" stroke="#ffaa22" stroke-width="0.7" opacity="0.26"/><path d="M0,319 C50,317.5 100,320.5 150,319 C200,317.5 250,320.5 300,319" fill="none" stroke="#ffaa22" stroke-width="0.7" opacity="0.22"/><path d="M0,322.5 C50,321 100,324 150,322.5 C200,321 250,324 300,322.5" fill="none" stroke="#ffaa22" stroke-width="0.7" opacity="0.18"/><path d="M0,326 C50,324.5 100,327.5 150,326 C200,324.5 250,327.5 300,326" fill="none" stroke="#ffaa22" stroke-width="0.7" opacity="0.14"/>
+    <!-- Golden light-tongues in pool — fire transformed; judgment become glory -->
+    <path d="M55,310 C51,301 53,292 55,288 C57,292 59,301 55,310" fill="#ffcc22" opacity="0.26"/>
+    <path d="M100,310 C96,303 98,296 100,292 C102,296 104,303 100,310" fill="#ffcc22" opacity="0.26"/>
+    <path d="M150,310 C146,299 148,288 150,284 C152,288 154,299 150,310" fill="#ffcc22" opacity="0.26"/>
+    <path d="M200,310 C196,304 198,298 200,294 C202,298 204,304 200,310" fill="#ffcc22" opacity="0.26"/>
+    <path d="M245,310 C241,300 243,290 245,286 C247,290 249,300 245,310" fill="#ffcc22" opacity="0.26"/>
+    <!-- Sun reflected in pool — the glory above mirrored in the transformed water below -->
+    <ellipse cx="150" cy="312" rx="58" ry="11" fill="#ffee88" opacity="0.18"/>
+
+    <!-- ═══ Three ascending ichthys — the arc from XIII closes ═══ -->
+    <!-- XIII (Death): three apostle fish — transformation, promise of continuation -->
+    <!-- XVII (Star): faint in the gift-water — the children of Abraham beginning their ascent -->
+    <!-- XVIII (Moon): two fish, ascending and descending — the dual approach to the veiled glory -->
+    <!-- XIX (Sun): three ascending, the Transfiguration in full effect — not its brief preview -->
+    <!-- Peter, James, John: fell on their faces at the Transfiguration (Matt 17:6); here they rise -->
+    <!-- The fish become what they always were: children of the Light, ascending into its source -->
+
+    <!-- Fish 1 — lowest, most visible; silver-violet now fully gold (colour transition complete) -->
+    <g transform="translate(112,288) rotate(-76)" opacity="0.82">
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="none" stroke="#cc9933" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="#cc9933" fill-opacity="0.08"/>
+      <path d="M18,0 L28,-10 M18,0 L28,10" stroke="#cc9933" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="-10" cy="-2" r="2.2" fill="#cc9933" opacity="0.80"/>
+      <path d="M-4,-5 C0,-8 4,-6 4,-3 M4,-3 C8,-6 12,-4 12,-1" fill="none" stroke="#cc9933" stroke-width="0.8" opacity="0.40"/>
+    </g>
+
+    <!-- Fish 2 — middle, partially dissolved into the column of ascending light -->
+    <g transform="translate(150,262) rotate(-90)" opacity="0.56">
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="none" stroke="#ffcc66" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="#ffcc66" fill-opacity="0.10"/>
+      <path d="M18,0 L28,-10 M18,0 L28,10" stroke="#ffcc66" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="-10" cy="-2" r="2.2" fill="#ffcc66" opacity="0.70"/>
+    </g>
+
+    <!-- Fish 3 — highest, nearly dissolved; the outline barely distinguishable from the solar light -->
+    <!-- The third fish is becoming the light — the resurrection completed in its fullest form -->
+    <g transform="translate(185,238) rotate(-104)" opacity="0.28">
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="none" stroke="#fffff0" stroke-width="1.8"/>
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="#fffff0" fill-opacity="0.15"/>
+      <path d="M18,0 L28,-10 M18,0 L28,10" stroke="#fffff0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- Final dissolution — the third fish becomes indistinguishable from the sun -->
+    <circle cx="188" cy="228" r="4.5" fill="#ffee88" opacity="0.45"/>
+    <circle cx="188" cy="220" r="3.0" fill="#fffff8" opacity="0.38"/>
+    <circle cx="187" cy="212" r="1.8" fill="white"   opacity="0.28"/>
+  
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ffcc66" letter-spacing="2.5"
+        filter="url(#glow)">THE SUN</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#4a2800" letter-spacing="3" opacity="0.75">Resh · Sun · Path 30</text>
+</svg>

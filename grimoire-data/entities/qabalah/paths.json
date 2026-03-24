@@ -1,0 +1,802 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.path.11",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 11 — Aleph",
+      "description": "The Eleventh Path, the Scintillating Consciousness. Connects Kether (1) to Chokmah (2), attributed to the Hebrew letter Aleph (א — Ox) and the element of Air. The first path on the Tree of Life from the Crown to Wisdom; the Fool's leap of divine madness. The Sefer Yetzirah calls it the 'Scintillating Consciousness' — the flash of pure Spirit before form. Golden Dawn attribution: Atu 0, The Fool.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel Merutzatz",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Scintillating Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "air"
+      ],
+      "extendedData": {
+        "pathNumber": 11,
+        "fromSephira": "qabalah.sephira.kether",
+        "toSephira": "qabalah.sephira.chokmah",
+        "hebrewLetter": "letter.hebrew.aleph",
+        "element": "astrology.element.air",
+        "gdTarotCard": "tarot.major.rws.the-fool",
+        "thothTarotCard": "tarot.major.thoth.the-fool",
+        "yetzirahTitle": "The Scintillating Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.12",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 12 — Beth",
+      "description": "The Twelfth Path, the Transparent Consciousness. Connects Kether (1) to Binah (3), attributed to the Hebrew letter Beth (ב — House) and the planet Mercury. The path of the Magician/Magus: the divine messenger who transmits Will from the Crown to Understanding. The Sefer Yetzirah calls it 'Transparent' because it is the pure channel of the divine Word, the logos. Golden Dawn attribution: Atu I, The Magician.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel Bahir",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Transparent Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "mercury"
+      ],
+      "extendedData": {
+        "pathNumber": 12,
+        "fromSephira": "qabalah.sephira.kether",
+        "toSephira": "qabalah.sephira.binah",
+        "hebrewLetter": "letter.hebrew.beth",
+        "planet": "astrology.planet.mercury",
+        "gdTarotCard": "tarot.major.rws.the-magician",
+        "thothTarotCard": "tarot.major.thoth.the-magus",
+        "yetzirahTitle": "The Transparent Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.13",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 13 — Gimel",
+      "description": "The Thirteenth Path, the Uniting Consciousness. Connects Kether (1) to Tiphareth (6) — the longest path on the Tree, crossing the Abyss. Attributed to Gimel (ג — Camel) and the Moon. The camel that crosses the desert of Da'ath; the High Priestess veiled in silver. The Sefer Yetzirah calls it 'Uniting' because it connects the Crown directly to the Beauty at the heart of the Tree, bypassing all other sephiroth. Golden Dawn attribution: Atu II, The High Priestess.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMeyuchad",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Uniting Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "moon"
+      ],
+      "extendedData": {
+        "pathNumber": 13,
+        "fromSephira": "qabalah.sephira.kether",
+        "toSephira": "qabalah.sephira.tiphareth",
+        "hebrewLetter": "letter.hebrew.gimel",
+        "planet": "astrology.planet.luna",
+        "gdTarotCard": "tarot.major.rws.the-high-priestess",
+        "thothTarotCard": "tarot.major.thoth.the-priestess",
+        "yetzirahTitle": "The Uniting Consciousness",
+        "crossesAbyss": true
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.14",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 14 — Daleth",
+      "description": "The Fourteenth Path, the Illuminating Consciousness. Connects Chokmah (2) to Binah (3) — the dyadic path linking the Father-principle to the Mother-principle above the Abyss. Attributed to Daleth (ד — Door) and Venus. The Empress is the door of life between the two primal poles of manifestation. The Sefer Yetzirah calls it 'Illuminating'. Golden Dawn attribution: Atu III, The Empress.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel Meir",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Illuminating Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "venus"
+      ],
+      "extendedData": {
+        "pathNumber": 14,
+        "fromSephira": "qabalah.sephira.chokmah",
+        "toSephira": "qabalah.sephira.binah",
+        "hebrewLetter": "letter.hebrew.daleth",
+        "planet": "astrology.planet.venus",
+        "gdTarotCard": "tarot.major.rws.the-empress",
+        "thothTarotCard": "tarot.major.thoth.the-empress",
+        "yetzirahTitle": "The Illuminating Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.15",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 15 — Heh",
+      "description": "The Fifteenth Path, the Constituting Consciousness. Connects Chokmah (2) to Tiphareth (6), attributed to Heh (ה — Window) and Aries. In the Golden Dawn system this path is attributed to The Emperor (Atu IV). In the Thoth/Thelemic system, following Crowley's reversal ('Tzaddi is not the Star'), Heh is attributed to The Star (Atu XVII). The window of Heh looks out from the Father's wisdom toward the solar heart of the Tree. Golden Dawn: Atu IV, The Emperor. Thoth: Atu XVII, The Star.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMa'amid",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Constituting Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "aries"
+      ],
+      "extendedData": {
+        "pathNumber": 15,
+        "fromSephira": "qabalah.sephira.chokmah",
+        "toSephira": "qabalah.sephira.tiphareth",
+        "hebrewLetter": "letter.hebrew.heh",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "gdTarotCard": "tarot.major.rws.the-emperor",
+        "thothTarotCard": "tarot.major.thoth.the-star",
+        "note": "GD: Emperor (Heh=Emperor). Thoth: The Star (Heh=Star after Crowley's reversal).",
+        "yetzirahTitle": "The Constituting Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.16",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 16 — Vau",
+      "description": "The Sixteenth Path, the Triumphal or Eternal Consciousness. Connects Chokmah (2) to Chesed (4), attributed to Vau (ו — Nail) and Taurus. The path of the Hierophant: the divine teacher who joins Wisdom to Mercy, transmitting the divine instruction from the supernal Father through the great beneficence of Chesed. The nail or hook of Vau joins and fastens — the vau as the copulative 'and' in Hebrew grammar. Golden Dawn attribution: Atu V, The Hierophant.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaNitzchi",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Triumphal Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "taurus"
+      ],
+      "extendedData": {
+        "pathNumber": 16,
+        "fromSephira": "qabalah.sephira.chokmah",
+        "toSephira": "qabalah.sephira.chesed",
+        "hebrewLetter": "letter.hebrew.vau",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "gdTarotCard": "tarot.major.rws.the-hierophant",
+        "thothTarotCard": "tarot.major.thoth.the-hierophant",
+        "yetzirahTitle": "The Triumphal or Eternal Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.17",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 17 — Zayin",
+      "description": "The Seventeenth Path, the Disposing Consciousness. Connects Binah (3) to Tiphareth (6), attributed to Zayin (ז — Sword) and Gemini. The path of The Lovers: the choice between twin paths, the sword of discrimination that divides the true from the false as consciousness descends from Understanding to Beauty. Gemini's twins and Zayin's sword both express the fundamental duality that must be reconciled. Golden Dawn attribution: Atu VI, The Lovers.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaRegesh",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Disposing Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "gemini"
+      ],
+      "extendedData": {
+        "pathNumber": 17,
+        "fromSephira": "qabalah.sephira.binah",
+        "toSephira": "qabalah.sephira.tiphareth",
+        "hebrewLetter": "letter.hebrew.zayin",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "gdTarotCard": "tarot.major.rws.the-lovers",
+        "thothTarotCard": "tarot.major.thoth.the-lovers",
+        "yetzirahTitle": "The Disposing Consciousness"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.18",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 18 — Cheth",
+      "description": "The Eighteenth Path, the House of Influence or Intelligence of the House of Influence. Connects Binah (3) to Geburah (5), attributed to Cheth (ח — Fence) and Cancer. The path of The Chariot: the armoured vehicle of consciousness moving from the Supernal Mother's understanding to the sphere of martial severity. The fence or enclosure of Cheth protects the sacred vessel that carries the Grail. Golden Dawn attribution: Atu VII, The Chariot.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel Beit HaShefa",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Intelligence of the House of Influence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "cancer"
+      ],
+      "extendedData": {
+        "pathNumber": 18,
+        "fromSephira": "qabalah.sephira.binah",
+        "toSephira": "qabalah.sephira.geburah",
+        "hebrewLetter": "letter.hebrew.cheth",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "gdTarotCard": "tarot.major.rws.the-chariot",
+        "thothTarotCard": "tarot.major.thoth.the-chariot",
+        "yetzirahTitle": "Intelligence of the House of Influence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.19",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 19 — Teth",
+      "description": "The Nineteenth Path, the Intelligence of all the Activities of the Spiritual Beings. Connects Chesed (4) to Geburah (5), attributed to Teth (ט — Serpent) and Leo. The path of Strength/Lust: the reconciliation of Mercy and Severity through the taming or ecstatic embrace of the vital serpent-force. Leo's solar fire flows between the two great pillars of the ethical triangle. Golden Dawn attribution: Atu VIII, Strength (numbered 11 in Thoth).",
+      "secondaryNames": [
+        {
+          "name": "Sekhel Sod HaPeulot",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Intelligence of Spiritual Activities",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "leo"
+      ],
+      "extendedData": {
+        "pathNumber": 19,
+        "fromSephira": "qabalah.sephira.chesed",
+        "toSephira": "qabalah.sephira.geburah",
+        "hebrewLetter": "letter.hebrew.teth",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "gdTarotCard": "tarot.major.rws.strength",
+        "thothTarotCard": "tarot.major.thoth.lust",
+        "yetzirahTitle": "Intelligence of all the Activities of the Spiritual Beings"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.20",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 20 — Yod",
+      "description": "The Twentieth Path, the Intelligence of Will. Connects Chesed (4) to Tiphareth (6), attributed to Yod (י — Hand) and Virgo. The path of The Hermit: the divine spark (the Yod, the smallest letter, the seed of all letters) carried as a lantern through the darkness of manifestation from the abundance of Chesed to the solar heart of Tiphareth. Golden Dawn attribution: Atu IX, The Hermit.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaRatzon",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Intelligence of Will",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "virgo"
+      ],
+      "extendedData": {
+        "pathNumber": 20,
+        "fromSephira": "qabalah.sephira.chesed",
+        "toSephira": "qabalah.sephira.tiphareth",
+        "hebrewLetter": "letter.hebrew.yod",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "gdTarotCard": "tarot.major.rws.the-hermit",
+        "thothTarotCard": "tarot.major.thoth.the-hermit",
+        "yetzirahTitle": "The Intelligence of Will"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.21",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 21 — Kaph",
+      "description": "The Twenty-First Path, the Intelligence of Conciliation. Connects Chesed (4) to Netzach (7), attributed to Kaph (כ — Palm) and Jupiter. The path of the Wheel of Fortune/Fortune: the cosmic cycle of Jupiterian expansion and contraction, the palm that grasps and releases, moving from the sphere of divine mercy to the sphere of Venus. Golden Dawn attribution: Atu X, Wheel of Fortune.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaRatzon",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Intelligence of Conciliation",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "jupiter"
+      ],
+      "extendedData": {
+        "pathNumber": 21,
+        "fromSephira": "qabalah.sephira.chesed",
+        "toSephira": "qabalah.sephira.netzach",
+        "hebrewLetter": "letter.hebrew.kaph",
+        "planet": "astrology.planet.jupiter",
+        "gdTarotCard": "tarot.major.rws.wheel-of-fortune",
+        "thothTarotCard": "tarot.major.thoth.fortune",
+        "yetzirahTitle": "The Intelligence of Conciliation"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.22",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 22 — Lamed",
+      "description": "The Twenty-Second Path, the Faithful Intelligence. Connects Geburah (5) to Tiphareth (6), attributed to Lamed (ל — Ox-goad) and Libra. The path of Justice/Adjustment: the scales of Maat weighing the heart, the cosmic equilibrium between Severity and Beauty. Lamed is the tallest Hebrew letter and the pivot of the alphabet, the balancing point between the first 11 and last 11 letters. Golden Dawn attribution: Atu XI, Justice (Atu VIII in Thoth: Adjustment).",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaNe'eman",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Faithful Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "libra"
+      ],
+      "extendedData": {
+        "pathNumber": 22,
+        "fromSephira": "qabalah.sephira.geburah",
+        "toSephira": "qabalah.sephira.tiphareth",
+        "hebrewLetter": "letter.hebrew.lamed",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "gdTarotCard": "tarot.major.rws.justice",
+        "thothTarotCard": "tarot.major.thoth.adjustment",
+        "yetzirahTitle": "The Faithful Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.23",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 23 — Mem",
+      "description": "The Twenty-Third Path, the Stable Intelligence. Connects Geburah (5) to Hod (8), attributed to Mem (מ — Water) and the element of Water. The path of The Hanged Man: voluntary suspension in the waters of dissolution, the purification that flows from divine Severity through the reflective waters of the mind. Water purifies by dissolving the rigid, the impure, the unnecessarily fixed. Golden Dawn attribution: Atu XII, The Hanged Man.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMeyutzav",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Stable Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "water"
+      ],
+      "extendedData": {
+        "pathNumber": 23,
+        "fromSephira": "qabalah.sephira.geburah",
+        "toSephira": "qabalah.sephira.hod",
+        "hebrewLetter": "letter.hebrew.mem",
+        "element": "astrology.element.water",
+        "gdTarotCard": "tarot.major.rws.the-hanged-man",
+        "thothTarotCard": "tarot.major.thoth.the-hanged-man",
+        "yetzirahTitle": "The Stable Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.24",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 24 — Nun",
+      "description": "The Twenty-Fourth Path, the Imaginative Intelligence. Connects Tiphareth (6) to Netzach (7), attributed to Nun (נ — Fish) and Scorpio. The path of Death: the transformative power that moves from the solar heart of Beauty into the waters of Venus-Netzach, the regenerative depth of Scorpionic change. The fish in the waters of the deep — the life-force perpetually cycling through death and rebirth. Golden Dawn attribution: Atu XIII, Death.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaDimyoni",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Imaginative Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "scorpio"
+      ],
+      "extendedData": {
+        "pathNumber": 24,
+        "fromSephira": "qabalah.sephira.tiphareth",
+        "toSephira": "qabalah.sephira.netzach",
+        "hebrewLetter": "letter.hebrew.nun",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "gdTarotCard": "tarot.major.rws.death",
+        "thothTarotCard": "tarot.major.thoth.death",
+        "yetzirahTitle": "The Imaginative Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.25",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 25 — Samekh",
+      "description": "The Twenty-Fifth Path, the Intelligence of Probation or Tentative Intelligence. Connects Tiphareth (6) to Yesod (9), attributed to Samekh (ס — Prop) and Sagittarius. The path of Temperance/Art: the alchemical blending and tempering that aligns the solar Beauty with the lunar Foundation. The arrow of Sagittarius aims from the heart toward the moon — the aspiration from the Higher Self toward the astral vehicle. The support-peg of Samekh holds up the structure of the Middle Pillar. Golden Dawn attribution: Atu XIV, Temperance.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaNisayon",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Tentative Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "pathNumber": 25,
+        "fromSephira": "qabalah.sephira.tiphareth",
+        "toSephira": "qabalah.sephira.yesod",
+        "hebrewLetter": "letter.hebrew.samekh",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "gdTarotCard": "tarot.major.rws.temperance",
+        "thothTarotCard": "tarot.major.thoth.art",
+        "yetzirahTitle": "The Intelligence of Probation"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.26",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 26 — Ayin",
+      "description": "The Twenty-Sixth Path, the Renovating Intelligence. Connects Tiphareth (6) to Hod (8), attributed to Ayin (ע — Eye) and Capricorn. The path of The Devil/Pan: the eye of matter looking out from the solar heart into the sphere of the mercurial intellect. Capricorn's descent into the deepest point of the year — the winter solstice — only to begin the ascent; the materialising force of the creative eye. Golden Dawn attribution: Atu XV, The Devil.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMitchaded",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Renovating Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "capricorn"
+      ],
+      "extendedData": {
+        "pathNumber": 26,
+        "fromSephira": "qabalah.sephira.tiphareth",
+        "toSephira": "qabalah.sephira.hod",
+        "hebrewLetter": "letter.hebrew.ayin",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "gdTarotCard": "tarot.major.rws.the-devil",
+        "thothTarotCard": "tarot.major.thoth.the-devil",
+        "yetzirahTitle": "The Renovating Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.27",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 27 — Peh",
+      "description": "The Twenty-Seventh Path, the Active or Exciting Intelligence. Connects Netzach (7) to Hod (8), attributed to Peh (פ — Mouth) and Mars. The path of The Tower: the explosive force of the divine utterance that destroys false structures, connecting the emotional-instinctive sphere of Venus to the rational intellect of Mercury via the violent creative power of Mars. The mouth speaks, and the word destroys the Tower. Golden Dawn attribution: Atu XVI, The Tower.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMurgash",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Exciting Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "mars"
+      ],
+      "extendedData": {
+        "pathNumber": 27,
+        "fromSephira": "qabalah.sephira.netzach",
+        "toSephira": "qabalah.sephira.hod",
+        "hebrewLetter": "letter.hebrew.peh",
+        "planet": "astrology.planet.mars",
+        "gdTarotCard": "tarot.major.rws.the-tower",
+        "thothTarotCard": "tarot.major.thoth.the-tower",
+        "yetzirahTitle": "The Active or Exciting Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.28",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 28 — Tzaddi",
+      "description": "The Twenty-Eighth Path, the Natural Intelligence. Connects Netzach (7) to Yesod (9), attributed to Tzaddi (צ — Fish-hook) and Aquarius. The most debated attribution in Western esotericism: in the Golden Dawn system, Tzaddi = The Star (Atu XVII); in the Thoth/Thelemic system, Tzaddi = The Emperor (Atu IV). The fish-hook catches the fish from the astral waters; Aquarius pours the water of consciousness into the great reservoir of Yesod. Golden Dawn attribution: Atu XVII, The Star. Thoth attribution: Atu IV, The Emperor.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaTeva'i",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Natural Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "aquarius"
+      ],
+      "extendedData": {
+        "pathNumber": 28,
+        "fromSephira": "qabalah.sephira.netzach",
+        "toSephira": "qabalah.sephira.yesod",
+        "hebrewLetter": "letter.hebrew.tzaddi",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "gdTarotCard": "tarot.major.rws.the-star",
+        "thothTarotCard": "tarot.major.thoth.the-emperor",
+        "note": "GD: Tzaddi=The Star. Thoth: Tzaddi=The Emperor (Crowley's reversal).",
+        "yetzirahTitle": "The Natural Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.29",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 29 — Qoph",
+      "description": "The Twenty-Ninth Path, the Corporeal Intelligence. Connects Netzach (7) to Malkuth (10), attributed to Qoph (ק — Back of the Head) and Pisces. The path of The Moon: the descent from the emotional-instinctive world of Netzach into the physical world of Malkuth via the atavistic, pre-rational lunar consciousness. The back of the head — the primitive brain — connects the emotional world to the material via the ancient pathways of instinct and dreaming. Golden Dawn attribution: Atu XVIII, The Moon.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaGufani",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Corporeal Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "pisces"
+      ],
+      "extendedData": {
+        "pathNumber": 29,
+        "fromSephira": "qabalah.sephira.netzach",
+        "toSephira": "qabalah.sephira.malkuth",
+        "hebrewLetter": "letter.hebrew.qoph",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "gdTarotCard": "tarot.major.rws.the-moon",
+        "thothTarotCard": "tarot.major.thoth.the-moon",
+        "yetzirahTitle": "The Corporeal Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.30",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 30 — Resh",
+      "description": "The Thirtieth Path, the Collective Intelligence. Connects Hod (8) to Yesod (9), attributed to Resh (ר — Head) and the Sun. The path of The Sun: the solar light illuminating the channel between the mercurial intellect of Hod and the lunar foundation of Yesod — the sun that governs both mind and dream, that both analyses and imagines. The head (Resh) as the seat of solar consciousness connecting thought to the astral reservoir. Golden Dawn attribution: Atu XIX, The Sun.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaKlalit",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Collective Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "sun"
+      ],
+      "extendedData": {
+        "pathNumber": 30,
+        "fromSephira": "qabalah.sephira.hod",
+        "toSephira": "qabalah.sephira.yesod",
+        "hebrewLetter": "letter.hebrew.resh",
+        "planet": "astrology.planet.sol",
+        "gdTarotCard": "tarot.major.rws.the-sun",
+        "thothTarotCard": "tarot.major.thoth.the-sun",
+        "yetzirahTitle": "The Collective Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.31",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 31 — Shin",
+      "description": "The Thirty-First Path, the Perpetual Intelligence. Connects Hod (8) to Malkuth (10), attributed to Shin (ש — Tooth) and the element of Fire. The path of Judgement/The Aeon: the divine fire that consumes the old and raises the dead to new life, the consuming flame of the divine tooth that devours illusion and enables resurrection. The fire of Shin connects the analytical intellect of Hod to the physical world of Malkuth — the divine spark animating matter. Golden Dawn attribution: Atu XX, Judgement.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaTamidi",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Perpetual Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "fire"
+      ],
+      "extendedData": {
+        "pathNumber": 31,
+        "fromSephira": "qabalah.sephira.hod",
+        "toSephira": "qabalah.sephira.malkuth",
+        "hebrewLetter": "letter.hebrew.shin",
+        "element": "astrology.element.fire",
+        "gdTarotCard": "tarot.major.rws.judgement",
+        "thothTarotCard": "tarot.major.thoth.the-aeon",
+        "yetzirahTitle": "The Perpetual Intelligence"
+      }
+    },
+    {
+      "canonicalName": "qabalah.path.32",
+      "entityType": "qabalah.path",
+      "primaryDisplayName": "Path 32 — Tau",
+      "description": "The Thirty-Second and final Path, the Administrative Intelligence. Connects Yesod (9) to Malkuth (10), attributed to Tau (ת — Cross/Mark) and Saturn (also Earth). The path of The World/The Universe: the great dance of completion, the crystallisation of the astral foundation into physical manifestation. The cross of Tau is the mark of completion — the X that signs off on the Great Work, the final crystallisation of spirit into matter. Saturn as Lord of Time and Limitation governs the material world's final boundary. Golden Dawn attribution: Atu XXI, The World.",
+      "secondaryNames": [
+        {
+          "name": "Sekhel HaMenhig",
+          "languageTag": "he-trans",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Administrative Intelligence",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "path",
+        "tree-of-life",
+        "saturn",
+        "earth"
+      ],
+      "extendedData": {
+        "pathNumber": 32,
+        "fromSephira": "qabalah.sephira.yesod",
+        "toSephira": "qabalah.sephira.malkuth",
+        "hebrewLetter": "letter.hebrew.tau",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "gdTarotCard": "tarot.major.rws.the-world",
+        "thothTarotCard": "tarot.major.thoth.the-universe",
+        "yetzirahTitle": "The Administrative Intelligence"
+      }
+    }
+  ]
+}

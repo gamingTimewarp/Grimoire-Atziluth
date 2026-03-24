@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.suit.thoth.wands",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Wands",
+      "description": "The suit of Wands in the Thoth deck. Fire element. In Crowley's system, the Knight (King in RWS) is the dominant fiery court card, and the Princess (Page in RWS) is the most earthly.",
+      "tags": [
+        "suit",
+        "tarot",
+        "thoth",
+        "fire"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "deck": "tarot.deck.thoth"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.thoth.cups",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Cups",
+      "description": "The suit of Cups in the Thoth deck. Water element.",
+      "tags": [
+        "suit",
+        "tarot",
+        "thoth",
+        "water"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "deck": "tarot.deck.thoth"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.thoth.swords",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Swords",
+      "description": "The suit of Swords in the Thoth deck. Air element.",
+      "tags": [
+        "suit",
+        "tarot",
+        "thoth",
+        "air"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "deck": "tarot.deck.thoth"
+      }
+    },
+    {
+      "canonicalName": "tarot.suit.thoth.disks",
+      "entityType": "tarot.suit",
+      "primaryDisplayName": "Disks",
+      "description": "The suit of Disks in the Thoth deck (called Pentacles or Coins in other traditions). Earth element. Crowley preferred 'Disks' to emphasise the spinning, dynamic nature of Earth.",
+      "secondaryNames": [
+        {
+          "name": "Coins",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pentacles",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "suit",
+        "tarot",
+        "thoth",
+        "earth"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "deck": "tarot.deck.thoth"
+      }
+    }
+  ]
+}

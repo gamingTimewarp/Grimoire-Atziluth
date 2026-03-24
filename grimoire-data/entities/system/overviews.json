@@ -1,0 +1,2503 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "system.overview.tarot",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tarot",
+      "description": "Tarot is a system of 78 cards divided into the Major Arcana (22 trumps) and Minor Arcana (56 pip and court cards). Originating in 15th-century Europe as playing cards, the tarot was adopted by occultists in the 18th century as a tool for divination and spiritual development. The Hermetic Order of the Golden Dawn created the modern esoteric tarot tradition, attributing each card to the Hebrew alphabet, the Tree of Life, astrology, and Qabalah. The two most widely used modern decks are the Rider-Waite-Smith (1909) and the Thoth Tarot (1944).",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot"
+      ],
+      "extendedData": {
+        "memberEntityType": "tarot.card",
+        "groupByTag": "deck",
+        "note": "Browse by deck: use the Rider-Waite-Smith, Thoth, or Tarot de Marseille deck pages.",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.zodiac",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-decks",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tarot Decks",
+      "description": "An index of tarot and oracle decks in the Grimoire.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "decks"
+      ],
+      "extendedData": {
+        "memberEntityType": "tarot.deck",
+        "relatedOverviews": [
+          "system.overview.major-arcana",
+          "system.overview.tarot",
+          "system.overview.lenormand"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.major-arcana",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Major Arcana",
+      "description": "The 22 trump cards of the tarot (Atu 0–XXI), representing the great archetypal forces and stages of the soul's journey. Each trump is attributed to a Hebrew letter, a path on the Tree of Life, and an astrological factor. The Major Arcana begins with The Fool (0, Aleph, Air) and ends with The World/Universe (XXI, Tau, Saturn/Earth).",
+      "secondaryNames": [
+        {
+          "name": "Trumps",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Major Trumps",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "tarot",
+        "major-arcana"
+      ],
+      "extendedData": {
+        "memberTag": "major-arcana"
+      }
+    },
+    {
+      "canonicalName": "system.overview.goetia",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Goetia",
+      "description": "The Goetia (from the Greek 'goēteia', sorcery) is the first book of the Lesser Key of Solomon (Lemegeton), a 17th-century grimoire. It catalogues 72 demonic spirits (demons) which Solomon is said to have bound into a brass vessel. Each spirit has a rank (King, Duke, Prince, Marquis, etc.), a specific number of legions of spirits under their command, and a seal used to summon them. The system was popularised in the modern era by Aleister Crowley and Samuel Liddell MacGregor Mathers's edition of 1904, and has remained a foundational text of ceremonial magic.",
+      "secondaryNames": [
+        {
+          "name": "Ars Goetia",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The 72 Demons",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "goetia"
+      ],
+      "extendedData": {
+        "memberEntityType": "goetia.demon"
+      }
+    },
+    {
+      "canonicalName": "system.overview.planets",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Planets",
+      "description": "The classical and modern planets used in astrology, alchemy, Hermetic Qabalah, and ceremonial magic. The seven classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn) each rule a day of the week, a metal, a sephira on the Tree of Life, and a sphere of the Ptolemaic cosmos. The three outer planets (Uranus, Neptune, Pluto) were added to the system as they were discovered.",
+      "secondaryNames": [
+        {
+          "name": "Celestial Bodies",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "planets"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.planet"
+      }
+    },
+    {
+      "canonicalName": "system.overview.zodiac",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Zodiac Signs",
+      "description": "The twelve signs of the zodiac, each spanning 30° of the ecliptic. The zodiac is divided into four triplicities (fire, earth, air, water) and three quadruplicities (cardinal, fixed, mutable). In Hermetic Qabalah the twelve signs are attributed to the twelve simple Hebrew letters and the twelve single-digit paths of the Tree of Life.",
+      "secondaryNames": [
+        {
+          "name": "Zodiac",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Signs",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "zodiac"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.zodiac-sign"
+      }
+    },
+    {
+      "canonicalName": "system.overview.elements",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Elements",
+      "description": "The four classical elements — Fire, Water, Air, and Earth — are the foundational categories of Western esoteric cosmology. Rooted in Greek philosophy (Empedocles) and developed through alchemy, astrology, and Hermetic Qabalah, the elements underlie the tarot suits (Wands/Fire, Cups/Water, Swords/Air, Pentacles/Earth), the three Mother Letters of the Hebrew alphabet, and the four Worlds of the Qabalah.",
+      "secondaryNames": [
+        {
+          "name": "Classical Elements",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Four Elements",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "elements"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.element"
+      }
+    },
+    {
+      "canonicalName": "system.overview.hebrew-letters",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Hebrew Letters",
+      "description": "The 22 letters of the Hebrew alphabet are the foundation of Qabalistic cosmology. Each letter is attributed to a path on the Tree of Life, a tarot trump, and an astrological factor. The three Mother Letters (Aleph, Mem, Shin) correspond to the three elements Air, Water, and Fire. The seven Double Letters correspond to the seven classical planets. The twelve Simple Letters correspond to the twelve zodiac signs.",
+      "secondaryNames": [
+        {
+          "name": "Aleph-Bet",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "letter",
+        "hebrew"
+      ],
+      "extendedData": {
+        "memberEntityType": "letter.hebrew"
+      }
+    },
+    {
+      "canonicalName": "system.overview.runes",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Elder Futhark",
+      "description": "The Elder Futhark is the oldest form of the runic alphabet, consisting of 24 runes used by Germanic peoples from around the 2nd to 8th centuries CE. The name 'Futhark' derives from the first six runes (Fehu, Uruz, Thurisaz, Ansuz, Raido, Kenaz). The 24 runes are divided into three groups of eight called aettir (singular: aett): Freya's Eight, Heimdall's Eight, and Tyr's Eight.",
+      "secondaryNames": [
+        {
+          "name": "Runic Alphabet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Futhark",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "runes"
+      ],
+      "extendedData": {
+        "memberEntityType": "rune"
+      }
+    },
+    {
+      "canonicalName": "system.overview.qabalah",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Qabalah",
+      "description": "Hermetic Qabalah (also spelled Kabbalah, Cabala) is the Western esoteric philosophical tradition derived from Jewish Kabbalah and developed through the Renaissance and the 19th–20th century occult revival. Its central symbol is the Tree of Life (Etz Chaim) — a diagram of ten emanations (sephiroth) connected by 22 paths, mapping the structure of the cosmos, the psyche, and the divine. Hermetic Qabalah integrates the sephiroth with the Hebrew alphabet, the Major Arcana of the tarot, astrology, alchemy, and Neoplatonic philosophy into a unified symbolic language. The system was codified in its modern form by the Hermetic Order of the Golden Dawn (founded 1888), and developed further by Aleister Crowley, Dion Fortune, Israel Regardie, and others. The shadow or 'Nightside' of the Tree consists of the ten Qliphoth — the shells or husks of unbalanced divine force — studied in Qabalistic demonology and Thelemic left-hand path traditions.",
+      "secondaryNames": [
+        {
+          "name": "Kabbalah",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cabala",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hermetic Qabalah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah"
+      ],
+      "extendedData": {
+        "relatedOverviews": [
+          "system.overview.sephiroth",
+          "system.overview.qliphoth",
+          "system.overview.paths",
+          "system.overview.four-worlds",
+          "system.overview.hebrew-letters",
+          "system.overview.partzufim"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.sephiroth",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tree of Life",
+      "description": "The Tree of Life (Etz Chaim) is the central diagram of Hermetic Qabalah, consisting of ten emanations (sephiroth) and 22 connecting paths. The sephiroth are arranged on three pillars: the Pillar of Mercy (right), the Pillar of Severity (left), and the Middle Pillar. The Tree maps the structure of divine emanation from the Absolute (Kether) to the manifest world (Malkuth). An interactive Tree of Life diagram is planned for a future phase of this application.",
+      "secondaryNames": [
+        {
+          "name": "Sephiroth",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sefiroth",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Etz Chaim",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "sephiroth",
+        "tree-of-life"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.sephira",
+        "plannedFeature": "Interactive Tree of Life diagram — coming in a future phase."
+      }
+    },
+    {
+      "canonicalName": "system.overview.qliphoth",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tree of Death",
+      "description": "The Tree of Death (also called the Qliphothic Tree or Sitra Achra, 'the Other Side') is the shadow reflection of the Tree of Life, consisting of the ten Qliphoth — the shells or husks of the sephiroth, representing unbalanced or 'broken' divine emanations. The Qliphoth are studied in Qabalistic demonology and left-hand path traditions. An interactive Tree of Death diagram is planned for a future phase of this application.",
+      "secondaryNames": [
+        {
+          "name": "Qliphoth",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Klipoth",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sitra Achra",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "qliphoth",
+        "tree-of-death"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.qliphoth",
+        "plannedFeature": "Interactive Tree of Death diagram — coming in a future phase."
+      }
+    },
+    {
+      "canonicalName": "system.overview.iching",
+      "entityType": "system.overview",
+      "primaryDisplayName": "I Ching",
+      "description": "The I Ching (易經, 'Book of Changes') is a Chinese divination system and philosophical text. It consists of 64 hexagrams, each composed of six lines (either broken yin or solid yang). The hexagrams are formed from pairs of eight trigrams (bagua). Traditionally attributed to the legendary King Wen, with commentary by Confucius. Used for divination, philosophical reflection, and as a model of dynamic change in Taoist and Confucian thought. See also the individual trigram and hexagram pages.",
+      "secondaryNames": [
+        {
+          "name": "Book of Changes",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "易經",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "iching"
+      ],
+      "extendedData": {
+        "memberEntityType": "iching.hexagram",
+        "relatedOverviews": [
+          "system.overview.iching-trigrams"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.yin-yang",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Yin & Yang",
+      "description": "Yin (陰) and Yang (陽) are the two fundamental and complementary principles of Chinese cosmology. Yang is the active, light, creative, masculine principle; Yin is the receptive, dark, sustaining, feminine principle. Neither is superior — balance and dynamic interplay between them is the ideal expressed in the Taijitu (☯). The three 'son' trigrams (Heaven ☰, Thunder ☳, Water ☵, Mountain ☶) are yang; the three 'daughter' trigrams (Earth ☷, Wind ☴, Fire ☲, Lake ☱) are yin. In the I Ching an unbroken line ⚊ is yang, a broken line ⚋ is yin. In Chinese medicine, philosophy, feng shui, and martial arts the yin-yang distinction underlies the organisation of all phenomena.",
+      "secondaryNames": [
+        {
+          "name": "陰陽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Taijitu",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "taoism",
+        "polarity",
+        "yin",
+        "yang"
+      ],
+      "extendedData": {
+        "memberEntityType": "taoism.principle",
+        "relatedOverviews": [
+          "system.overview.iching",
+          "system.overview.wuxing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.wuxing",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five Phases",
+      "description": "The Five Phases (五行 Wǔxíng, also translated as Five Elements or Five Agents) are Wood (木), Fire (火), Earth (土), Metal (金), and Water (水). Unlike the Western four elements (which are substances), the Wuxing are better understood as dynamic phases or processes of change. They interact through two main cycles: the Generating cycle (shēng 生), in which each phase nourishes the next; and the Controlling cycle (kè 克), in which each phase restrains another. The Five Phases underlie Chinese medicine, feng shui, martial arts, music, seasons, flavours, emotions, and the I Ching trigrams.",
+      "secondaryNames": [
+        {
+          "name": "五行",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔxíng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Five Elements",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "taoism",
+        "wuxing",
+        "cosmology"
+      ],
+      "extendedData": {
+        "memberEntityType": "wuxing.phase",
+        "relatedOverviews": [
+          "system.overview.yin-yang",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.western-polarity",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Western Polarity",
+      "description": "The Western esoteric tradition organises the cosmos through a fundamental polarity of Masculine and Feminine principles — not social gender but metaphysical qualities. The Masculine is the active, projective, solar, initiating force; the Feminine is the receptive, form-giving, lunar, sustaining ground. Together they generate all manifest reality. In Hermetic Qabalah the two pillars of the Tree of Life embody this polarity: the right Pillar of Mercy (Masculine) and the left Pillar of Severity (Feminine), balanced by the Middle Pillar. In alchemy the Red King (Sulphur, Masculine) and White Queen (Mercury/Salt, Feminine) unite in the Chymical Wedding to produce the Philosopher's Stone. The Androgynous or Hermaphroditic principle unites both, transcending the duality.",
+      "secondaryNames": [
+        {
+          "name": "Masculine / Feminine",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "western",
+        "polarity",
+        "esoteric"
+      ],
+      "extendedData": {
+        "memberEntityType": "western.polarity",
+        "relatedOverviews": [
+          "system.overview.sephiroth",
+          "system.overview.yin-yang"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.paths",
+      "entityType": "system.overview",
+      "primaryDisplayName": "22 Paths",
+      "description": "The 22 paths of the Tree of Life connect the ten sephiroth, forming the complete structure of the Etz Chaim. Each path is attributed to one of the 22 Hebrew letters and, through them, to a Major Arcana trump, an astrological factor (element, planet, or zodiac sign), and a title from the Sefer Yetzirah. Paths 11–32 run from the uppermost connections of the Supernal Triad down to the path joining Yesod to Malkuth. The three Mother Letters (Aleph, Mem, Shin) govern the elemental paths; the seven Double Letters govern the planetary paths; the twelve Simple Letters govern the zodiacal paths.",
+      "secondaryNames": [
+        {
+          "name": "Paths of the Tree of Life",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "32 Paths of Wisdom",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "paths",
+        "tree-of-life"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.path",
+        "relatedOverviews": [
+          "system.overview.sephiroth",
+          "system.overview.hebrew-letters",
+          "system.overview.major-arcana"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.four-worlds",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Four Worlds",
+      "description": "The Four Worlds (Arba Olamot, ארבע עולמות) of Hermetic Qabalah describe four levels or planes of existence through which divine creative energy descends from the Absolute into matter. From highest to lowest: Atziluth (Emanation, Fire, Wands), Briah (Creation, Water, Cups), Yetzirah (Formation, Air, Swords), and Assiah (Action/Making, Earth, Pentacles). The Tetragrammaton (יהוה) maps onto the four worlds: Yod=Atziluth, Heh=Briah, Vau=Yetzirah, Heh-final=Assiah. The four tarot suits, four elements, four colour scales (King, Queen, Prince, Princess), and four levels of the soul (Chiah, Neshamah, Ruach, Nefesh) all correspond to the Four Worlds.",
+      "secondaryNames": [
+        {
+          "name": "Arba Olamot",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ארבע עולמות",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "four-worlds"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.world",
+        "relatedOverviews": [
+          "system.overview.sephiroth",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.iching-trigrams",
+      "entityType": "system.overview",
+      "primaryDisplayName": "I Ching Trigrams",
+      "description": "The eight trigrams (八卦, bāguà) are the fundamental building blocks of the I Ching. Each trigram consists of three lines — either broken (yin) or unbroken (yang) — and represents a natural force or quality. The 64 hexagrams of the I Ching are formed by combining two trigrams, one above and one below. The eight trigrams are: Heaven (☰), Earth (☷), Thunder (☳), Water (☵), Mountain (☶), Wind (☴), Fire (☲), and Lake (☱).",
+      "secondaryNames": [
+        {
+          "name": "Bagua",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "八卦",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "iching",
+        "trigram"
+      ],
+      "extendedData": {
+        "memberEntityType": "iching.trigram",
+        "relatedOverviews": [
+          "system.overview.iching"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.ogham",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ogham",
+      "description": "Ogham (Ogam) is an early medieval alphabet used to write Primitive Irish and Old Irish, found primarily in inscriptions on standing stones across Ireland and western Britain (4th–7th centuries CE). The script consists of strokes cut across or along a stemline, grouped into four families (aicmí) of five letters each, with a fifth group of five forfeda (additional letters) added later. In the neo-druidic revival and modern Celtic paganism, the Ogham has been adopted as a divinatory alphabet analogous to the Norse runes, with each letter attributed to a tree, seasonal associations, and symbolic meanings drawn from medieval texts such as the Book of Ballymote and Auraicept na n-Éces.",
+      "secondaryNames": [
+        {
+          "name": "Ogam",
+          "languageTag": "ga",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Celtic Alphabet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tree Alphabet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "ogham"
+      ],
+      "extendedData": {
+        "memberEntityType": "ogham.letter",
+        "relatedOverviews": [
+          "system.overview.runes"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chakras",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Chakras",
+      "description": "The chakras (चक्र, 'wheels') are centres of subtle energy described in Tantric and yogic literature, located along the sushumna nadi (central energy channel) of the subtle body. Classical Tantra describes seven primary chakras, from Muladhara at the base of the spine to Sahasrara at the crown. Each chakra governs specific physiological, psychological, and spiritual functions, and is associated with a Sanskrit seed mantra (bija), an element, a colour, a deity, and a number of lotus petals. The system was transmitted to the Western esoteric tradition primarily through Arthur Avalon (John Woodroffe)'s 'The Serpent Power' (1919), and has since been widely integrated with Hermetic Qabalah, where the seven classical chakras are mapped onto seven of the sephiroth.",
+      "secondaryNames": [
+        {
+          "name": "Seven Chakras",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "चक्र",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Energy Centres",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "chakra",
+        "hinduism"
+      ],
+      "extendedData": {
+        "memberEntityType": "chakra",
+        "relatedOverviews": [
+          "system.overview.chakras-extended",
+          "system.overview.sephiroth",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chakras-extended",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Extended Chakras",
+      "description": "Beyond the seven classical chakras, various modern and neo-Tantric teachers have described additional energy centres. Three of the most widely referenced transpersonal chakras are: Bindu (the 'drop' or 'point', located at the back of the crown, associated with the nectar of immortality and cosmic sound); the Soul Star (the eighth chakra above the crown, the repository of the soul's accumulated karma and spiritual purpose across lifetimes); and the Earth Star (the sub-personal chakra below the feet, anchoring the subtle body to the planet and stabilising the root system). These three correspond to Da'ath, Chokmah, and Malkuth in cross-system mappings with Hermetic Qabalah.",
+      "secondaryNames": [
+        {
+          "name": "Transpersonal Chakras",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "chakra",
+        "extended"
+      ],
+      "extendedData": {
+        "memberTag": "chakra-extended",
+        "relatedOverviews": [
+          "system.overview.chakras",
+          "system.overview.sephiroth"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.herbs",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Magical Herbs",
+      "description": "Magical herbalism is one of the oldest and most universal forms of magical practice, found in virtually every folk tradition worldwide. Each plant carries inherent symbolic, energetic, and magical properties determined by its planetary ruler, elemental affiliation, and traditional associations. The seven classical planets each govern a family of plants with corresponding magical uses: Solar herbs for confidence and success; Lunar herbs for psychism and the unconscious; Mercurial herbs for communication and intellect; Venusian herbs for love and beauty; Martial herbs for protection and courage; Jovian herbs for prosperity and expansion; Saturnian herbs for banishing and boundaries. The attributions recorded here draw primarily from Western ceremonial magic, Wicca, Hoodoo, and folk herbalism traditions, following correspondences codified by authors such as Nicholas Culpeper, Scott Cunningham, and Paul Beyerl.",
+      "secondaryNames": [
+        {
+          "name": "Herb Correspondences",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Plant Magic",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "herbs"
+      ],
+      "extendedData": {
+        "memberEntityType": "herb",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.alchemy",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Alchemy",
+      "description": "Alchemy is a philosophical and proto-scientific tradition concerned with the purification and perfection of matter, the soul, and the cosmos. Originating in Hellenistic Egypt and transmitted through Islamic and medieval European scholarship, Hermetic alchemy sought both the physical Philosopher's Stone (capable of transmuting base metals into gold and conferring immortality) and inner spiritual transformation — the 'Great Work' (Magnum Opus). The alchemical system attributes seven planetary metals to the seven classical planets, and describes the process of transformation through a sequence of colour-coded stages (nigredo, albedo, citrinitas, rubedo) and a series of operations (calcination, dissolution, separation, conjunction, fermentation, distillation, coagulation). Alchemy formed one of the primary currents of Hermetic philosophy alongside astrology and Qabalah.",
+      "secondaryNames": [
+        {
+          "name": "Hermetic Alchemy",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Alchymia",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "الكيمياء",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "alchemy"
+      ],
+      "extendedData": {
+        "relatedOverviews": [
+          "system.overview.alchemy-metals",
+          "system.overview.alchemy-stages",
+          "system.overview.planets",
+          "system.overview.sephiroth"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.alchemy-metals",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Alchemical Metals",
+      "description": "The seven alchemical metals are each attributed to one of the seven classical planets and a day of the week. Gold (Sol/Sun) represents the perfected state — the goal of the Great Work. Silver (Luna/Moon) embodies receptivity and reflection. Mercury (Mercurius) is the volatile spirit, the universal solvent, and the trickster medium between fixed and volatile. Copper (Venus) governs beauty and attraction. Iron (Mars) governs force and war. Tin (Jupiter) governs expansion and fortune. Lead (Saturn) is the prima materia — the base, heavy, unrefined starting material from which all transformation begins. In the inner interpretation, the alchemist's own psyche and spirit undergo the corresponding transformations.",
+      "secondaryNames": [
+        {
+          "name": "Planetary Metals",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "alchemy",
+        "metals"
+      ],
+      "extendedData": {
+        "memberEntityType": "alchemy.metal",
+        "relatedOverviews": [
+          "system.overview.alchemy",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.alchemy-stages",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Great Work Stages",
+      "description": "The Magnum Opus (Great Work) of alchemy describes the transformation of the prima materia into the Philosopher's Stone through a sequence of colour-coded stages. The classical three-stage sequence is Nigredo (blackening — putrefaction, dissolution, the death of the ego), Albedo (whitening — purification, illumination, the lunar stage), and Rubedo (reddening — perfection, the union of opposites, the Solar completion). A four-stage sequence adds Citrinitas (yellowing — solar dawn, the emergence of the spirit) between Albedo and Rubedo. Seven alchemical operations underlie these stages: Calcination, Dissolution, Separation, Conjunction, Fermentation, Distillation, and Coagulation. Each operation has both a literal chemical meaning and a spiritual or psychological interpretation in the inner alchemical tradition.",
+      "secondaryNames": [
+        {
+          "name": "Magnum Opus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Alchemical Operations",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "alchemy",
+        "stages"
+      ],
+      "extendedData": {
+        "memberEntityType": "alchemy.stage",
+        "relatedOverviews": [
+          "system.overview.alchemy",
+          "system.overview.alchemy-metals"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.nakshatras",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nakshatras",
+      "description": "The 27 Nakshatras (नक्षत्र, 'lunar mansions') are the fundamental divisions of the sky in Vedic/Jyotish astrology. Each Nakshatra spans exactly 13°20' of sidereal longitude, dividing the full 360° ecliptic into 27 equal parts that mark the Moon's daily progress through the heavens. Each Nakshatra has a presiding deity (devata), a ruling planet (graha), a symbol (pratīka), a power (shakti), and rich mythological associations drawn from the Vedas, Puranas, and classical Jyotish texts. The Nakshatras are older than the twelve-sign zodiac and represent the most ancient layer of Vedic astronomical and astrological knowledge. They are used in Jyotish for natal chart interpretation, muhurtha (electional astrology), compatibility analysis (synastry), and the Vimshottari Dasha planetary period system.",
+      "secondaryNames": [
+        {
+          "name": "Lunar Mansions",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "नक्षत्र",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Asterisms",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "vedic",
+        "astrology",
+        "nakshatra"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.nakshatra",
+        "relatedOverviews": [
+          "system.overview.zodiac",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chinese-zodiac",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Chinese Zodiac",
+      "description": "The Chinese zodiac (生肖, Shēngxiào) is a twelve-year cycle in which each year is assigned to one of twelve animals: Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, and Pig. The system forms part of the broader Ganzhi (干支) sexagenary cycle, which combines ten Heavenly Stems (Tiāngān) and twelve Earthly Branches (Dìzhī) to produce a 60-unit cycle used to track years, months, days, and hours in the Chinese calendar. The Ganzhi cycle integrates the Five Phases (Wuxing), Yin-Yang polarity, and the twelve animals into a comprehensive cosmological system used in Chinese astrology, feng shui, traditional medicine, divination, and daily life throughout East and Southeast Asia.",
+      "secondaryNames": [
+        {
+          "name": "生肖",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shēngxiào",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ganzhi",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "chinese-zodiac",
+        "ganzhi"
+      ],
+      "extendedData": {
+        "relatedOverviews": [
+          "system.overview.chinese-zodiac-animals",
+          "system.overview.chinese-zodiac-stems",
+          "system.overview.chinese-zodiac-branches",
+          "system.overview.wuxing",
+          "system.overview.yin-yang"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chinese-zodiac-animals",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Zodiac Animals",
+      "description": "The twelve animals of the Chinese zodiac each rule one year in the twelve-year cycle, one month, a two-hour period of the day, and one of the twelve Earthly Branches. Each animal has a characteristic set of personality traits, compatibilities, and elemental and yin-yang associations. The legendary order of the animals was determined by a race called by the Jade Emperor, with the Rat arriving first by riding on the Ox's back. The animals cycle in order: Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, Pig.",
+      "secondaryNames": [
+        {
+          "name": "Twelve Animals",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "十二生肖",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "chinese-zodiac",
+        "animals"
+      ],
+      "extendedData": {
+        "memberEntityType": "chinese-zodiac.animal",
+        "relatedOverviews": [
+          "system.overview.chinese-zodiac",
+          "system.overview.chinese-zodiac-branches"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chinese-zodiac-stems",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Heavenly Stems",
+      "description": "The ten Heavenly Stems (天干, Tiāngān) are the Yang component of the Ganzhi sexagenary cycle. They cycle through five pairs, each pair corresponding to one of the Five Phases: Wood (甲Jiǎ/乙Yǐ), Fire (丙Bǐng/丁Dīng), Earth (戊Wù/己Jǐ), Metal (庚Gēng/辛Xīn), Water (壬Rén/癸Guǐ). Within each pair, the first stem is Yang and the second is Yin. The ten stems are used to denote years, months, days, and hours, and in Chinese astrology (BaZi/Four Pillars of Destiny) each pillar of the natal chart consists of a Stem-Branch pair.",
+      "secondaryNames": [
+        {
+          "name": "天干",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tiāngān",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "chinese-zodiac",
+        "stems",
+        "ganzhi"
+      ],
+      "extendedData": {
+        "memberEntityType": "chinese-zodiac.stem",
+        "relatedOverviews": [
+          "system.overview.chinese-zodiac",
+          "system.overview.chinese-zodiac-branches",
+          "system.overview.wuxing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.chinese-zodiac-branches",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Earthly Branches",
+      "description": "The twelve Earthly Branches (地支, Dìzhī) are the Yin component of the Ganzhi sexagenary cycle. Each branch corresponds to one of the twelve zodiac animals, one of the twelve months, a two-hour period of the day, and a compass direction. The branches are assigned to the Five Phases and alternate Yin-Yang: Zi (Rat, Water, Yang), Chou (Ox, Earth, Yin), Yin (Tiger, Wood, Yang), Mao (Rabbit, Wood, Yin), Chen (Dragon, Earth, Yang), Si (Snake, Fire, Yin), Wu (Horse, Fire, Yang), Wei (Goat, Earth, Yin), Shen (Monkey, Metal, Yang), You (Rooster, Metal, Yin), Xu (Dog, Earth, Yang), Hai (Pig, Water, Yin).",
+      "secondaryNames": [
+        {
+          "name": "地支",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dìzhī",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "chinese-zodiac",
+        "branches",
+        "ganzhi"
+      ],
+      "extendedData": {
+        "memberEntityType": "chinese-zodiac.branch",
+        "relatedOverviews": [
+          "system.overview.chinese-zodiac",
+          "system.overview.chinese-zodiac-animals",
+          "system.overview.chinese-zodiac-stems"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.sabbats",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Wheel of the Year",
+      "description": "The Wheel of the Year is the annual cycle of eight seasonal festivals (Sabbats) observed in Wicca, Druidry, and many forms of contemporary paganism. It interweaves the four astronomical solar events — the two solstices (Yule and Litha) and two equinoxes (Ostara and Mabon) — with four cross-quarter days that fall between them (Imbolc, Beltane, Lughnasadh, Samhain). The eight-spoked Wheel was largely synthesised in the mid-20th century by figures including Gerald Gardner, Doreen Valiente, Ross Nichols, and Aidan Kelly, drawing on Celtic, Germanic, and classical sources. The dates given in the Grimoire are astronomically calculated from the Sun's actual position (tropical longitude), and will vary slightly from year to year.",
+      "secondaryNames": [
+        {
+          "name": "Sabbats",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Eight Sabbats",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "sabbat",
+        "calendar"
+      ],
+      "extendedData": {
+        "memberEntityType": "calendar.sabbat",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.zodiac"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.playing-cards",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Playing Cards",
+      "description": "The standard 52-card French-suited deck is the most widely used card deck in the world, consisting of four suits — Hearts, Diamonds, Clubs, and Spades — each with thirteen ranks (Ace through 10, Jack, Queen, King). Two additional Joker cards bring the full deck to 54. The deck descends from Mamluk playing cards introduced to Europe in the 14th century, and was standardised in its French form by the 15th century. Cartomancy with playing cards predates the tarot as a divinatory practice; each suit carries elemental and emotional associations, and the court cards have traditional identities drawn from medieval French card-making. Playing cards correspond directly to the tarot Minor Arcana (minus the Pages) and carry Lenormand inset associations.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "playing-card",
+        "cartomancy"
+      ],
+      "extendedData": {
+        "memberTag": "playing-card",
+        "relatedOverviews": [
+          "system.overview.tarot-decks",
+          "system.overview.lenormand"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.lenormand",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Lenormand",
+      "description": "The Lenormand oracle deck consists of 36 cards, each associated with a playing-card inset, a number, and a central symbolic image drawn from everyday 18th- and 19th-century European life: the Rider, the Clover, the Ship, the House, the Tree, the Clouds, the Snake, the Coffin, the Bouquet, the Scythe, the Whip, the Birds, the Child, the Fox, the Bear, the Stars, the Stork, the Dog, the Tower, the Garden, the Mountain, the Crossroads, the Mice, the Heart, the Ring, the Book, the Letter, the Man, the Woman, the Lily, the Sun, the Moon, the Key, the Fish, the Anchor, and the Cross. Named after the celebrated 19th-century French cartomancer Marie Anne Lenormand, the deck is read primarily through combinations of two or more cards rather than the individual meanings of single cards. Lenormand reading emphasises literal and narrative interpretation, making it distinct from the more symbolic and psychological approach of tarot.",
+      "secondaryNames": [
+        {
+          "name": "Le Grand Jeu",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Petit Lenormand",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "lenormand",
+        "oracle"
+      ],
+      "extendedData": {
+        "memberTag": "lenormand",
+        "relatedOverviews": [
+          "system.overview.tarot"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.geomancy",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Geomancy",
+      "description": "Geomancy (Ilm al-Raml, 'the science of sand') is a method of divination that interprets figures formed by random marks or dots. The 16 geomantic figures, each composed of four rows of one or two points, were systematised by Arabic scholars in the Middle Ages and transmitted to Europe through Latin translations. Heinrich Cornelius Agrippa codified the Western geomantic tradition in Occult Philosophy (1531), assigning planetary, zodiacal, and elemental correspondences. The Golden Dawn further integrated geomancy with the Tree of Life.",
+      "secondaryNames": [
+        {
+          "name": "Ilm al-Raml",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Geomantic Figures",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "geomancy",
+        "divination"
+      ],
+      "extendedData": {
+        "memberEntityType": "geomancy.figure"
+      }
+    },
+    {
+      "canonicalName": "system.overview.angel-orders",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Angelic Orders",
+      "description": "The ten angelic orders (Choirs) are the ranks of angels corresponding to the ten Sephiroth of the Kabbalistic Tree of Life. Drawing on Ezekiel's vision, the Zohar, Pseudo-Dionysius the Areopagite's Celestial Hierarchy, and the Golden Dawn system, each order is attributed a divine name, a world (Olam), and a ruling archangel. From the Chaioth ha-Qadesh of Kether to the Ashim of Malkuth, the orders form a descending hierarchy through which divine power flows into manifest creation.",
+      "secondaryNames": [
+        {
+          "name": "Angelic Choirs",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Heavenly Hierarchies",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "angels",
+        "qabalah"
+      ],
+      "extendedData": {
+        "memberEntityType": "angel.order",
+        "relatedOverviews": [
+          "system.overview.archangels",
+          "system.overview.shem-angels",
+          "system.overview.sephiroth"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.archangels",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Archangels",
+      "description": "The ten archangels of the Kabbalistic tradition are the individual ruling intelligences of the Sephiroth, acting as divine intermediaries between the Godhead and the created world. Derived from Jewish apocalyptic literature, the Zohar, and the Golden Dawn synthesis, each archangel bears a Hebrew name meaning a function or aspect of divinity. From Metatron ('the Prince of the Presence') at Kether to Sandalphon ('the Brother') at Malkuth, they embody the active, dynamic face of each sphere.",
+      "secondaryNames": [
+        {
+          "name": "Archangels of the Sephiroth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "angels",
+        "qabalah",
+        "archangels"
+      ],
+      "extendedData": {
+        "memberEntityType": "angel.archangel",
+        "relatedOverviews": [
+          "system.overview.angel-orders",
+          "system.overview.shem-angels"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.shem-angels",
+      "entityType": "system.overview",
+      "primaryDisplayName": "72 Angels of the Shemhamphorash",
+      "description": "The 72 angels of the Shemhamphorash (the 'Explicit Name') are derived from three verses of Exodus (14:19-21), each 72 letters long; read in boustrophedon, they yield 72 three-letter divine names. Each angel governs five degrees of the zodiac, rules over a five-day period, and is traditionally paired with one of the 72 spirits of the Goetia as its daemonic counterpart. The system was developed by Kabbalistic commentators and was integrated into the Golden Dawn magical curriculum.",
+      "secondaryNames": [
+        {
+          "name": "Shemhamphorash",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "72 Genius Angels",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Angels of the Zodiac",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "angels",
+        "qabalah",
+        "zodiac"
+      ],
+      "extendedData": {
+        "memberEntityType": "angel.shem",
+        "relatedOverviews": [
+          "system.overview.angel-orders",
+          "system.overview.archangels",
+          "system.overview.goetia"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.fixed-stars",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Fixed Stars",
+      "description": "The fixed stars are stars whose positions shift only slowly relative to the ecliptic due to precession, in contrast to the seven classical planets. Traditional Western astrology uses approximately 50 fixed stars of first and second magnitude, attributing each a planetary nature (e.g., 'nature of Jupiter and Mars') derived from Ptolemy's Tetrabiblos and medieval Arabic sources. Fixed stars are used in natal charts (conjunctions within one degree), electional astrology, and the 15 Behenian stars form the basis of a complete system of talismanic magic described by Cornelius Agrippa.",
+      "secondaryNames": [
+        {
+          "name": "Behenian Stars",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Stellar Astrology",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "fixed-stars"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.fixed-star",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.zodiac"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.decans",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Decans",
+      "description": "The 36 decans divide each of the 12 zodiac signs into three 10° segments, yielding 36 sub-divisions of the ecliptic. Originating in ancient Egypt as 36 star-groups (decan-stars) that rose heliacally at ten-day intervals, they were absorbed into Hellenistic astrology and assigned planetary rulers in Chaldean order (Mars, Sun, Venus, Mercury, Moon, Saturn, Jupiter, repeating). The Golden Dawn assigned each decan one of the 36 small tarot cards (2–10 of each suit), linking astrology to the Minor Arcana. Aleister Crowley elaborated these in the Thoth tarot.",
+      "secondaryNames": [
+        {
+          "name": "Faces",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "36 Faces of the Zodiac",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "decan",
+        "tarot"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.decan",
+        "relatedOverviews": [
+          "system.overview.zodiac",
+          "system.overview.planets",
+          "system.overview.tarot"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tattwas",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tattwas",
+      "description": "The tattwas (Sanskrit: tattva, 'thatness' or 'principle') are the five elemental principles of Hindu and Tantric philosophy: Akasha (spirit/ether), Vayu (air), Tejas (fire), Apas (water), and Prithivi (earth). The Golden Dawn adopted the tattwas as a system of geomantic symbols for scrying and astral meditation, each represented by a distinctive coloured geometric shape. The 25 compound tattwas (each primary symbol placed on a background of another) extend the system into nuanced elemental combinations. Each tattwa corresponds to a chakra, a sense organ, and a period of time.",
+      "secondaryNames": [
+        {
+          "name": "Tattvas",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Elemental Principles",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "GD Tattwa Cards",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "tattwas",
+        "elements",
+        "hinduism",
+        "golden-dawn"
+      ],
+      "extendedData": {
+        "memberEntityType": "tattwa",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.chakras"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.kamea",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Planetary Kamea",
+      "description": "The seven planetary magic squares (kamea, from Hebrew קָמֵעַ, 'amulet') are numerical grids in which every row, column, and diagonal sums to the same magic constant. Each square is attributed to one of the seven classical planets: Saturn (3×3), Jupiter (4×4), Mars (5×5), Sol (6×6), Venus (7×7), Mercury (8×8), and Luna (9×9). Described by Cornelius Agrippa in Three Books of Occult Philosophy, the kamea are used to derive planetary seals (sigils) by tracing the digits of a spirit's numerical name across the grid. They remain central to ceremonial magic and talisman construction.",
+      "secondaryNames": [
+        {
+          "name": "Magic Squares",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Planetary Squares",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kameas",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "magic",
+        "kamea",
+        "planets",
+        "numerology"
+      ],
+      "extendedData": {
+        "memberEntityType": "magic.kamea",
+        "relatedOverviews": [
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.olympic-spirits",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Olympic Spirits",
+      "description": "The seven Olympic Spirits (Olympick Spirits) are planetary daemon-rulers described in the Arbatel de Magia Veterum (1575), an anonymous Latin grimoire published in Basel. Each spirit governs one of the seven classical planets and a corresponding portion of the 196 Olympic provinces into which the spirit world is divided. The spirits range from Aratron (Saturn, 49 provinces) through Bethor, Phaleg, Och, Hagith, Ophiel, and Phul (Moon, 7 provinces), with Och (Sun) considered the most beneficent. Unlike demonic hierarchies, the Olympic Spirits are approached directly without ritual conjuration of spirits above and below.",
+      "secondaryNames": [
+        {
+          "name": "Olympick Spirits",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Arbatel Spirits",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "magic",
+        "spirit",
+        "olympic"
+      ],
+      "extendedData": {
+        "memberEntityType": "spirit.olympic",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.kamea"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.planetary-spirits",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Planetary Intelligences & Spirits",
+      "description": "Each of the seven classical planets, according to Cornelius Agrippa's Three Books of Occult Philosophy (1531), is governed by two distinct spirit-forces: an Intelligence (Intelligentia), which is the benefic, directing mind of the planet, and a Spirit (Spiritus), which is the raw elemental force. Their names encode gematria values corresponding to the magic constant of the planet's Kamea (magic square), allowing sigils to be derived by tracing the digits across the grid. Together, Intelligence and Spirit represent the dual nature of each planetary sphere as experienced in practical magic.",
+      "secondaryNames": [
+        {
+          "name": "Planetary Intelligences",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Planetary Spirits",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Agrippa Spirits",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "magic",
+        "spirit",
+        "planets",
+        "agrippa"
+      ],
+      "extendedData": {
+        "memberEntityType": "angel.planetary-intelligence",
+        "note": "Use tag filter 'planetary' to see both Intelligences and Spirits together.",
+        "relatedOverviews": [
+          "system.overview.kamea",
+          "system.overview.planets",
+          "system.overview.olympic-spirits"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.partzufim",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Partzufim",
+      "description": "The Partzufim (singular: Partzuf, 'face' or 'configuration') are the divine Configurations of Lurianic Kabbalah — quasi-personal aspects of the Ein Sof that emerge through the process of Tikkun (repair) following the Shevirat ha-Kelim (Shattering of the Vessels). Developed by Rabbi Isaac Luria (the Ari) in 16th-century Safed, the Partzufim reconceptualise the ten Sephiroth as complete structural personalities rather than static emanations. The six Partzufim — from the most hidden Atik Yomin to the revealed Nukvah — represent the full spectrum of divine self-expression in relationship.",
+      "secondaryNames": [
+        {
+          "name": "Partzuf",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Divine Configurations",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Faces of God",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.partzuf",
+        "relatedOverviews": [
+          "system.overview.sephiroth",
+          "system.overview.qabalah"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.norse-worlds",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nine Worlds",
+      "description": "The Nine Worlds (Old Norse: Níu Heimar) are the realms of Norse cosmology, connected by the world-tree Yggdrasil. Described in the Prose Edda (Snorri Sturluson, c.1220) and the Poetic Edda (Elder Edda), the nine worlds are distributed through the roots, trunk, and branches of Yggdrasil, encompassing all existence from the primordial fire and ice (Muspelheim and Niflheim) to the lands of gods, humans, giants, and the dead. Some scholarly sources identify a tenth world (Nidavellir) by separating the realms of dark elves and dwarves.",
+      "secondaryNames": [
+        {
+          "name": "Níu Heimar",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Nine Realms",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "norse",
+        "cosmology",
+        "yggdrasil"
+      ],
+      "extendedData": {
+        "memberEntityType": "norse.world"
+      }
+    },
+    {
+      "canonicalName": "system.overview.doshas",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Doshas",
+      "description": "The three Doshas (Sanskrit: दोष, doṣa, 'fault' or 'humour') are the fundamental bio-energetic principles of Ayurveda, the traditional Indian system of medicine. Each Dosha is composed of two of the five Tanmatras/Tattwas: Vata (Air + Ether) governs movement; Pitta (Fire + Water) governs transformation; and Kapha (Earth + Water) governs structure. Every person has a unique constitutional balance of the three Doshas (Prakriti), and disease arises when this balance is disturbed (Vikriti). The Dosha system intersects with the Tattwa and chakra systems already present in the Grimoire.",
+      "secondaryNames": [
+        {
+          "name": "Tridosha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ayurvedic Humours",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Constitutional Types",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "ayurveda",
+        "dosha",
+        "hinduism"
+      ],
+      "extendedData": {
+        "memberEntityType": "ayurveda.dosha",
+        "relatedOverviews": [
+          "system.overview.tattwas",
+          "system.overview.chakras"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.greek-deities",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Greek Deities",
+      "description": "The Greek deities in the Grimoire are those with explicit correspondences to existing astrological or Qabalistic entities, or with direct significance to magical practice. The seven classical planet-deities (Helios, Selene, Hermes, Aphrodite, Ares, Zeus, Kronos) form the foundation; magical practitioners (Hecate, Persephone, Dionysus, Hermes Trismegistus) and syncretic figures complete the set. The correspondence system draws on Neoplatonic, Renaissance Hermetic, and Golden Dawn syntheses. Planetary links are two-way for direct personifications and one-way for attributed correspondences.",
+      "secondaryNames": [
+        {
+          "name": "Greek Gods",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Olympian Deities",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hellenic Deities",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "deity",
+        "greek"
+      ],
+      "extendedData": {
+        "memberEntityType": "deity.greek",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.egyptian-deities"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.egyptian-deities",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Egyptian Deities",
+      "description": "The Egyptian Neteru (deities) in the Grimoire are selected for their direct planetary correspondences or central role in magical practice. Ra and Thoth have bidirectional planetary links (as direct solar and mercurial personifications); Hathor links bidirectionally to Venus as the planet's Egyptian identity. Others — Osiris, Isis, Horus, Set, Anubis, Sekhmet, Ma'at, Ptah, Nuit, Nephthys, Bast, and Heka (the god of magic itself) — carry one-way attributed correspondences rooted in the Hermetic, Rosicrucian, and Golden Dawn traditions that systematised Egyptian-Greek synthesis.",
+      "secondaryNames": [
+        {
+          "name": "Egyptian Gods",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Neteru",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Egyptian Pantheon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "deity",
+        "egyptian"
+      ],
+      "extendedData": {
+        "memberEntityType": "deity.egyptian",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.greek-deities"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.enochian-aethyrs",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Enochian Aethyrs",
+      "description": "The 30 Aethyrs (also called Aires) are the concentric sub-planes of the Enochian cosmological system, received by John Dee and Edward Kelley between 1582 and 1587. Each Aethyr has a three-letter name derived from the Enochian language and three Governing Angels drawn from the Elemental Watchtower tablets. Numbered from 30 (outermost) to 1 (innermost), they represent progressively more refined states of spiritual reality. Aleister Crowley's visionary exploration of all 30 Aethyrs (\"The Vision and the Voice,\" Liber 418, 1909) remains the most detailed modern treatment, establishing the 10th Aethyr ZAX as the Abyss and 1st Aethyr LIL as the supreme attainment.",
+      "secondaryNames": [
+        {
+          "name": "Thirty Aethyrs",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Aires",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Enochian Sub-planes",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "enochian",
+        "magic",
+        "aethyr"
+      ],
+      "extendedData": {
+        "memberEntityType": "enochian.aethyr",
+        "relatedOverviews": [
+          "system.overview.qabalah"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.valentinian-aeons",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Valentinian Aeons",
+      "description": "The Valentinian Pleroma consists of 30 divine Aeons in 15 male-female syzygy pairs, emanated from the supreme unknowable Father (Bythos) and Silence (Sige). Systematised by Valentinus of Alexandria (c.100–160 CE), this is one of the most philosophically sophisticated Gnostic cosmologies, synthesising Platonic, Pythagorean, and Christian elements. The drama of creation begins with the fall of Sophia, the 30th Aeon, whose transgression produces the Demiurge and the material world. Cross-references to the Sethian parallel system are shown as related links.",
+      "secondaryNames": [
+        {
+          "name": "Valentinian Pleroma",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "30 Aeons",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Gnostic Aeons",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "gnostic",
+        "valentinian",
+        "pleroma"
+      ],
+      "extendedData": {
+        "memberTag": "valentinian",
+        "relatedOverviews": [
+          "system.overview.sethian-aeons",
+          "system.overview.qabalah"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.sethian-aeons",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Sethian Aeons",
+      "description": "The Sethian (Classical) Gnostic tradition is documented primarily in the Nag Hammadi library (discovered 1945) — texts including the Apocryphon of John, Gospel of the Egyptians, and Trimorphic Protennoia. The system centres on the transcendent Invisible Spirit, the divine Mother Barbelo, and the Self-Begotten Autogenes (Christ), with the Four Luminaries (Harmozel, Oroiael, Daveithai, Eleleth) governing the realms of light. The mythological drama involves Sophia's fall, the creation of the lion-headed Demiurge Yaldabaoth, and the salvific lineage of Seth.",
+      "secondaryNames": [
+        {
+          "name": "Sethian Gnosticism",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Classical Gnostic Aeons",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Barbelo Gnosis",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "gnostic",
+        "sethian",
+        "pleroma"
+      ],
+      "extendedData": {
+        "memberTag": "sethian",
+        "relatedOverviews": [
+          "system.overview.valentinian-aeons"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.jyotish-dasha",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Vimshottari Dasha",
+      "description": "The Vimshottari Dasha ('120-year system') is the most widely used planetary period system in Jyotish (Vedic/Indian astrology). The 120-year cycle is divided into 9 Mahadasha (major periods) ruled by the 7 classical planets plus the two lunar nodes Rahu and Ketu. Within each Mahadasha are 9 Antardasha sub-periods, creating 81 sub-period combinations that describe the changing planetary influences throughout a native's life. The system is calculated from the Moon's position in the Nakshatra at birth.",
+      "secondaryNames": [
+        {
+          "name": "Dasha System",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Planetary Periods",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Vimshottari",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "jyotish",
+        "astrology",
+        "vedic",
+        "dasha"
+      ],
+      "extendedData": {
+        "memberEntityType": "jyotish.mahadasha",
+        "relatedOverviews": [
+          "system.overview.nakshatras",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.arabic-letters",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Arabic Letters (Abjad)",
+      "description": "The 28 Arabic letters with their Abjad numerical values form the basis of Arabic gematria, Islamic letter mysticism (Hurufiyya/Hurufism), and the esoteric traditions of Sufism. The Abjad system assigns values matching the ancient Semitic order (Alif=1 through Ghayn=1000), parallel to Hebrew gematria and Greek isopsephy. Twenty-two of the 28 letters have direct Hebrew cognates from the shared Proto-Semitic ancestor alphabet; the remaining six represent phonemes that developed uniquely in Arabic. The 99 Names of Allah and classical Islamic talismanic magic both rely heavily on Abjad calculations.",
+      "secondaryNames": [
+        {
+          "name": "Abjad",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Arabic Alphabet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hurufiyya",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "arabic",
+        "abjad",
+        "language",
+        "gematria"
+      ],
+      "extendedData": {
+        "memberEntityType": "letter.arabic",
+        "relatedOverviews": [
+          "system.overview.hebrew-letters"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.lunar-mansions",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Lunar Mansions",
+      "description": "The 28 Arabic Lunar Mansions (Manazil al-Qamar) divide the ecliptic into 28 segments of approximately 12°51' each, one for each day of the sidereal lunar month. The system originated in ancient Arabic and Babylonian astronomy and was transmitted to medieval Europe through Arabic astrology. Heinrich Cornelius Agrippa provided the most comprehensive Western treatment in Three Books of Occult Philosophy (Book II), including talismanic images, ruling spirits, and magical applications for each mansion. This system is distinct from the Vedic Nakshatra system, though both share ancient common roots.",
+      "secondaryNames": [
+        {
+          "name": "Manazil al-Qamar",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Arabic Lunar Mansions",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "28 Mansions of the Moon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "lunar-mansion",
+        "arabic",
+        "moon"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.lunar-mansion",
+        "relatedOverviews": [
+          "system.overview.nakshatras",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.pranas",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five Pranas (Vayus)",
+      "description": "The five Pranas (vital airs or Vayus) are the primary currents of prana — life-force — within the subtle body. Each governs a different direction of movement and a different physiological and energetic domain: Prana Vayu (inward), Apana Vayu (downward), Samana Vayu (equalising), Udana Vayu (upward), and Vyana Vayu (pervading). Together they constitute the Pranamaya Kosha (the vital sheath) and are the focus of pranayama practice. Each Vayu corresponds to a different chakra, element, and set of physical functions.",
+      "secondaryNames": [
+        {
+          "name": "Pancha Prana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Five Vayus",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Vital Airs",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "yoga",
+        "prana",
+        "subtle-body"
+      ],
+      "extendedData": {
+        "memberEntityType": "yoga.prana",
+        "relatedOverviews": [
+          "system.overview.koshas",
+          "system.overview.chakras",
+          "system.overview.tattwas"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.koshas",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five Koshas",
+      "description": "The five Koshas (sheaths or layers) are the concentric bodies that veil the Atman (pure Self) in Vedantic philosophy, as described in the Taittiriya Upanishad. From gross to subtle: Annamaya (physical/food body), Pranamaya (vital/pranic body), Manomaya (mental/emotional body), Vijnanamaya (wisdom/intellect body), and Anandamaya (bliss/causal body). Each successively finer sheath corresponds to a different state of consciousness and a different level of yogic practice. Liberation (moksha) requires transcending identification with all five sheaths to rest in the Atman beyond.",
+      "secondaryNames": [
+        {
+          "name": "Pancha Kosha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Five Sheaths",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Bodies of Consciousness",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta"
+      ],
+      "extendedData": {
+        "memberEntityType": "yoga.kosha",
+        "relatedOverviews": [
+          "system.overview.pranas",
+          "system.overview.chakras",
+          "system.overview.doshas"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-suit-cups",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Cups (Suit)",
+      "description": "The Suit of Cups governs the realm of water, emotion, intuition, relationships, and the subconscious. In the Rider-Waite-Smith and Thoth traditions the suit is attributed to the element of Water, the direction West, and the season of Autumn. The cups themselves represent the chalice — vessel of feeling, memory, love, grief, and spiritual vision. Cups correspond to Hearts in playing card tradition, sharing the heart symbol's association with love and sentiment. In the Golden Dawn system Cups correspond to the Hebrew letter He (ה) and the Briah (creative) world.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "suit",
+        "cups",
+        "water"
+      ],
+      "extendedData": {
+        "memberTag": "cups",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.tarot-suit-wands",
+          "system.overview.tarot-suit-swords",
+          "system.overview.tarot-suit-pentacles"
+        ],
+        "playingCardEquivalent": "Hearts",
+        "element": "astrology.element.water"
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-suit-wands",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Wands (Suit)",
+      "description": "The Suit of Wands governs fire, will, creativity, ambition, enterprise, and the life-force. Attributed to the element of Fire, the direction South, and the season of Summer, the wand is the magical instrument of Will — the directed force of conscious intention. Wands correspond to Clubs in playing card tradition. In the Golden Dawn system Wands correspond to the Hebrew letter Yod (י) and the Atziluth (archetypal) world. The Thoth deck calls this suit Wands; some traditions use Staves, Rods, or Batons.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "suit",
+        "wands",
+        "fire"
+      ],
+      "extendedData": {
+        "memberTag": "wands",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.tarot-suit-cups",
+          "system.overview.tarot-suit-swords",
+          "system.overview.tarot-suit-pentacles"
+        ],
+        "playingCardEquivalent": "Clubs",
+        "element": "astrology.element.fire"
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-suit-swords",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Swords (Suit)",
+      "description": "The Suit of Swords governs air, intellect, conflict, communication, clarity, and the cutting of illusion. Attributed to the element of Air, the direction East, and the season of Spring, the sword is the instrument of discrimination and decision. Swords is often the most difficult suit in readings — its cards frequently depict conflict, sorrow, and mental suffering — yet also carry the promise of truth and liberation through clear seeing. Swords correspond to Spades in playing card tradition (from the Spanish espada, sword). In the Golden Dawn system Swords correspond to the Hebrew letter Vav (ו) and the Yetzirah (formative) world.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "suit",
+        "swords",
+        "air"
+      ],
+      "extendedData": {
+        "memberTag": "swords",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.tarot-suit-cups",
+          "system.overview.tarot-suit-wands",
+          "system.overview.tarot-suit-pentacles"
+        ],
+        "playingCardEquivalent": "Spades",
+        "element": "astrology.element.air"
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-suit-pentacles",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Pentacles (Suit)",
+      "description": "The Suit of Pentacles (also Coins, Disks, or Deniers) governs earth, manifestation, material resources, the body, craft, and practical achievement. Attributed to the element of Earth, the direction North, and the season of Winter, the pentacle is the five-pointed star inscribed in a disc — the symbol of the material world structured by spiritual law. Pentacles correspond to Diamonds in playing card tradition, both associated with material wealth. In the Golden Dawn system Pentacles correspond to the Hebrew letter He final (ה) and the Assiah (material) world. The Thoth deck calls this suit Disks.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "suit",
+        "pentacles",
+        "earth"
+      ],
+      "extendedData": {
+        "memberTag": "pentacles",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.tarot-suit-cups",
+          "system.overview.tarot-suit-wands",
+          "system.overview.tarot-suit-swords"
+        ],
+        "playingCardEquivalent": "Diamonds",
+        "element": "astrology.element.earth"
+      }
+    },
+    {
+      "canonicalName": "system.overview.feng-shui-directions",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ba Gua Directions",
+      "description": "The eight trigrams of the Ba Gua (八卦) are each attributed to one of the eight compass directions, defining the foundational spatial map of Feng Shui. Two arrangements exist: the Later Heaven (Wen Wang / 後天八卦), used in most Yang and Yin Feng Shui practice, and the Earlier Heaven (Fu Xi / 先天八卦), used in Ba Zhai and talismanic traditions. In the Later Heaven arrangement — the most widely used — Kan (Water) governs North, Li (Fire) governs South, Zhen (Thunder) governs East, and Dui (Lake) governs West. Each direction also governs a specific Feng Shui life area: North = career, East = family/health, South = fame, West = creativity, and so on for the intercardinals.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "fengshui",
+        "bagua",
+        "direction",
+        "iching"
+      ],
+      "extendedData": {
+        "memberEntityType": "compass.direction",
+        "relatedOverviews": [
+          "system.overview.iching-trigrams",
+          "system.overview.feng-shui-mountains",
+          "system.overview.feng-shui-flying-stars"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.feng-shui-flying-stars",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Flying Stars (Xuan Kong)",
+      "description": "The Nine Flying Stars (九星, Jiǔ Xīng) of Xuan Kong Feng Shui (玄空飛星) are nine numerological forces that cycle through a property's eight directional sectors and center over time. Numbered 1 through 9, each star carries an element, a color, and a set of auspicious or inauspicious influences. Star 1 (White Water) governs career; Star 8 (White Earth) is the most prosperous in the current Period 8/9 cycle; Star 5 (Yellow Earth) is the most feared, associated with misfortune and illness. The system is used to determine favorable sleeping directions, office placement, and room functions based on the natal chart of the building and the current year's star positions.",
+      "secondaryNames": [
+        {
+          "name": "九星",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǔ Xīng",
+          "languageTag": "zh-pinyin",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "fengshui",
+        "flying-star",
+        "numerology"
+      ],
+      "extendedData": {
+        "memberEntityType": "fengshui.flying-star",
+        "relatedOverviews": [
+          "system.overview.feng-shui-directions",
+          "system.overview.wuxing",
+          "system.overview.feng-shui-mountains"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.feng-shui-mountains",
+      "entityType": "system.overview",
+      "primaryDisplayName": "24 Mountains",
+      "description": "The 24 Mountains (二十四山, Èr Shí Sì Shān) divide the compass into 24 sectors of 15° each, providing the highest resolution directional system in classical Feng Shui and the Luopan compass. Each Mountain is named after one of three systems: the eight Heavenly Stems (Ren, Gui, Jia, Yi, Bing, Ding, Geng, Xin), the twelve Earthly Branches (all twelve branch characters), and four of the eight trigrams (Gen, Xun, Kun, Qian). Each of the eight major directions thus contains three mountains: a stem, a branch, and either a stem or trigram flanking the central branch. The 24 Mountains are used to determine precise facing and sitting directions for buildings and tombs, and to read the environmental Qi of surrounding landforms.",
+      "secondaryNames": [
+        {
+          "name": "二十四山",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "fengshui",
+        "mountain",
+        "direction"
+      ],
+      "extendedData": {
+        "memberEntityType": "fengshui.mountain",
+        "relatedOverviews": [
+          "system.overview.feng-shui-directions",
+          "system.overview.feng-shui-flying-stars",
+          "system.overview.iching-trigrams",
+          "system.overview.chinese-zodiac"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.isopsephy",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Isopsephy",
+      "description": "Isopsephy (ἰσοψηφία, from isos 'equal' + psephos 'pebble/vote') is the Greek practice of calculating the numerical value of a word by summing its letters, analogous to Hebrew gematria and Arabic abjad. Each Greek letter carries a fixed value derived from the Phoenician numeral heritage: units (1–9), tens (10–90), and hundreds (100–900). The standard 24-letter alphabet is supplemented by three archaic numerals — Digamma (6), Koppa (90), and Sampi (900) — retained solely for their numerical function. Isopsephy was widely used in Hellenistic religious and magical texts (including the Sibylline Oracles and Greek Magical Papyri), Gnostic systems (notably the Valentinian attribution of divine names), and Neo-Pythagorean philosophy. Notable isopsephic equivalences include ΑΔΑΜ (Adam) = 46, ΘΕΟΣ (God) = 284, and ΝΙΚΗ (Nike/Victory) = 78.",
+      "secondaryNames": [
+        {
+          "name": "Greek Gematria",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ψήφος",
+          "languageTag": "el",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "greek",
+        "numerology",
+        "isopsephy",
+        "gematria"
+      ],
+      "extendedData": {
+        "memberTag": "isopsephy",
+        "relatedOverviews": [
+          "system.overview.greek-deities",
+          "system.overview.hebrew-letters",
+          "system.overview.arabic-letters"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.divine-names",
+      "entityType": "system.overview",
+      "primaryDisplayName": "99 Names of Allah",
+      "description": "The Asma' Allah al-Husna (أسماء الله الحسنى, 'The Most Beautiful Names of God') are the 99 divine attributes of Allah in Islamic theology. Drawn primarily from the Quran and Hadith — particularly a hadith attributed to the Prophet Muhammad stating 'Allah has ninety-nine Names; whoever memorises them will enter Paradise' — the 99 Names form the foundation of Islamic devotional practice, dhikr (remembrance), and esoteric speculation. Each Name describes a divine attribute or quality: mercy, power, knowledge, beauty, justice, and so on. In Islamic mysticism (Sufism) the Names are contemplated as divine archetypes and windows into the nature of Reality. Each Name also carries an Abjad numerical value used in talismanic and esoteric practice.",
+      "secondaryNames": [
+        {
+          "name": "Asma' al-Husna",
+          "languageTag": "ar-transliteration",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "أسماء الله الحسنى",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "memberEntityType": "islamic.divine-name",
+        "relatedOverviews": [
+          "system.overview.arabic-letters",
+          "system.overview.angel-orders"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.enochian-watchtowers",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Enochian Watchtowers",
+      "description": "The Four Watchtowers (Great Watch Tablets) are the elemental tablets at the heart of the Enochian angelic system received by John Dee and Edward Kelley in 1582–1587. Each tablet is a 12×13 grid of letters from which the names of hierarchies of angels are extracted. The Air tablet governs the East, the Fire tablet the South, the Water tablet the West, and the Earth tablet the North. A fifth tablet, the Tablet of Union (containing EXARP, HCOMA, NANTA, BITOM), binds the four together and governs Spirit. The Golden Dawn systematised the Watchtowers into their ceremonial magic practice, attributing each to a Kerubic sign, an elemental grade, and the Lesser Ritual of the Pentagram.",
+      "secondaryNames": [
+        {
+          "name": "Great Watch Tablets",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "enochian",
+        "watchtower",
+        "elemental"
+      ],
+      "extendedData": {
+        "memberEntityType": "enochian.tablet",
+        "relatedOverviews": [
+          "system.overview.enochian-aethyrs",
+          "system.overview.enochian-governors",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.enochian-governors",
+      "entityType": "system.overview",
+      "primaryDisplayName": "91 Governors",
+      "description": "The 91 Governors are zodiacal angels who administer the 30 Aethyrs (Aires) of the Enochian system. Each Aethyr is governed by approximately 3 Governors who oversee the spiritual visions and entities accessible within that Aethyr. The Governors were listed in Dee's diaries as part of the dictated Enochian material. Aleister Crowley and Victor Neuburg famously worked through all 30 Aethyrs in a series of scrying sessions in Algeria (1909), recorded in The Vision and the Voice — revealing each Aethyr's Governor as a distinct spiritual intelligence with a specific vibratory quality.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "enochian",
+        "governor",
+        "angel"
+      ],
+      "extendedData": {
+        "memberEntityType": "enochian.governor",
+        "relatedOverviews": [
+          "system.overview.enochian-aethyrs",
+          "system.overview.enochian-watchtowers"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.norse-deities",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Norse Deities",
+      "description": "The Norse pantheon consists of two divine tribes — the Aesir (gods of war, wisdom, and civilisation, dwelling in Asgard) and the Vanir (gods of fertility, sea, and nature) — united after the Aesir-Vanir War. The major deities are attested in the Prose Edda (Snorri Sturluson, c. 1220) and Poetic Edda. The gods have well-established planetary correspondences through the Germanic weekday names: Odin/Woden = Wednesday (Mercury), Thor = Thursday (Jupiter), Freya/Frigg = Friday (Venus), Tyr = Tuesday (Mars). Norse deities also bear attributions to Elder Futhark runes, with each deity associated with the runes of their domain.",
+      "secondaryNames": [
+        {
+          "name": "Ásatrú",
+          "languageTag": "on",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "norse",
+        "deity",
+        "mythology"
+      ],
+      "extendedData": {
+        "memberEntityType": "norse.deity",
+        "relatedOverviews": [
+          "system.overview.runes",
+          "system.overview.norse-worlds",
+          "system.overview.planets",
+          "system.overview.greek-deities",
+          "system.overview.egyptian-deities"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.sacred-geometry",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Sacred Geometry",
+      "description": "Sacred geometry is the study of geometric forms and proportions considered to embody spiritual or metaphysical significance. From Plato's five regular solids (each attributed to an element in the Timaeus) to the golden ratio φ permeating natural growth patterns, from the Vesica Piscis underlying Christian mandorla imagery to the interlocking circles of the Flower of Life, sacred geometry posits that mathematical structure is not merely descriptive but ontological — that the universe is built from archetypal forms. The tradition runs from Pythagoras through Plato, the mystery schools, Islamic geometric art, Gothic cathedral design, Renaissance sacred art, and into modern Hermetic and New Age systems.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "sacred-geometry",
+        "geometry",
+        "mathematics"
+      ],
+      "extendedData": {
+        "memberEntityType": "geometry.shape",
+        "relatedOverviews": [
+          "system.overview.elements",
+          "system.overview.qabalah",
+          "system.overview.alchemy"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.navaratna",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Navaratna (Nine Gems)",
+      "description": "The Navaratna (नवरत्न, 'Nine Gems') are the nine sacred gemstones of Vedic astrology (Jyotish), each assigned to one of the nine Grahas (planetary forces): Ruby (Sun), Pearl (Moon), Red Coral (Mars), Emerald (Mercury), Yellow Sapphire (Jupiter), Diamond (Venus), Blue Sapphire (Saturn), Hessonite Garnet (Rahu), and Cat's Eye Chrysoberyl (Ketu). Wearing the Navaratna is believed to balance all planetary energies simultaneously — hence the Navaratna ring or pendant was traditionally worn by rulers to receive the full blessing of the cosmos. Each gem is prescribed individually to strengthen or mitigate the influence of its governing planet based on the individual's natal chart.",
+      "secondaryNames": [
+        {
+          "name": "नवरत्न",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Nine Planetary Gems",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "jyotish",
+        "vedic",
+        "gem",
+        "navaratna"
+      ],
+      "extendedData": {
+        "memberEntityType": "jyotish.gem",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.jyotish-dasha",
+          "system.overview.doshas"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.mahabhutas",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Panchamahabhutas",
+      "description": "The Panchamahabhutas (पञ्चमहाभूत, 'Five Great Elements') are the foundational elements of Vedic cosmology: Akasha (Space/Ether), Vayu (Air), Tejas/Agni (Fire), Apas/Jala (Water), and Prithivi (Earth). Each element emerges from the previous in a cascade of increasing density, with each retaining all the qualities of its predecessors plus one new quality (the tanmatra or sense quality): Space → sound, Air → touch, Fire → form/colour, Water → taste, Earth → smell. The Panchamahabhutas underlie Ayurvedic medicine (as the constituents of the three Doshas), Samkhya philosophy, Tantric practice (in the tattwa system), and the understanding of the body as a microcosm of universal elements.",
+      "secondaryNames": [
+        {
+          "name": "पञ्चमहाभूत",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Five Great Elements",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "vedic",
+        "ayurveda",
+        "mahabhuta",
+        "element"
+      ],
+      "extendedData": {
+        "memberEntityType": "vedic.mahabhuta",
+        "relatedOverviews": [
+          "system.overview.doshas",
+          "system.overview.tattwas",
+          "system.overview.chakras",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.rosicrucian",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Rosicrucian Symbolism",
+      "description": "Rosicrucianism is a spiritual and cultural movement originating with three anonymous manifestos published in Germany between 1614 and 1616 (Fama Fraternitatis, Confessio Fraternitatis, Chymical Wedding). The manifestos announced a secret brotherhood (the Rosicrucians, symbolised by the Rose Cross) founded by the legendary Christian Rosenkreuz (1378–1484), who supposedly learned wisdom in the Near East and founded a small brotherhood of healers. Whether a historical reality or a literary fiction designed to catalyse spiritual reform, the manifestos ignited an explosion of esoteric interest and controversy. The Hermetic Order of the Golden Dawn later adopted Rosicrucian symbolism extensively, particularly in their 5=6 Adeptus Minor initiation, the Rose Cross Lamen, and the Vault of the Adepts ritual.",
+      "secondaryNames": [
+        {
+          "name": "Order of the Rosy Cross",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "rosicrucian",
+        "hermetic",
+        "symbolism"
+      ],
+      "extendedData": {
+        "memberEntityType": "rosicrucian.symbol",
+        "relatedOverviews": [
+          "system.overview.qabalah",
+          "system.overview.alchemy",
+          "system.overview.hebrew-letters"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.ba-xian",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eight Immortals",
+      "description": "The Eight Immortals (Ba Xian, 八仙) are a group of legendary figures in Chinese Taoist tradition, each of whom achieved immortality through a unique spiritual path and is associated with a distinctive magical emblem. Originating in Tang and Song dynasty legends and codified by the Yuan dynasty playwright Ma Zhiyuan, the Eight are among the most popular figures in Chinese folk religion. They represent the diversity of paths to immortality — including the military man, the aged hermit, the female practitioner, the scholar, the healer, the musician, the androgyne, and the renunciant — and collectively embody the Taoist ideal of carefree immortal life (xian).",
+      "secondaryNames": [
+        {
+          "name": "八仙",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ba Xian",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Eight Taoist Immortals",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "taoism",
+        "immortal",
+        "chinese"
+      ],
+      "extendedData": {
+        "memberEntityType": "taoism.immortal",
+        "relatedOverviews": [
+          "system.overview.iching",
+          "system.overview.wuxing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.mahjong",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Mahjong Divination",
+      "description": "Mahjong divination is a Chinese oracle tradition using the 42 symbolic tile types of the mahjong set — three numbered suits (Bamboo, Characters/Wan, Circles), four Wind tiles (East, South, West, North), three Dragon tiles (Red, Green, White), four Flower tiles, and four Season tiles — to answer questions about fortune, relationships, and destiny. The tradition draws primarily from Cantonese and Hong Kong practice, where tiles are drawn and interpreted according to their suits, honours, and the traditional symbolic associations of Chinese culture.",
+      "secondaryNames": [
+        {
+          "name": "麻將占卜",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mahjong Oracle",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "divination",
+        "mahjong",
+        "chinese"
+      ],
+      "extendedData": {
+        "memberEntityType": "divination.mahjong-tile",
+        "relatedOverviews": [
+          "system.overview.chinese-zodiac",
+          "system.overview.iching"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tasseomancy",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tasseomancy (Tea Leaf Reading)",
+      "description": "Tasseomancy — from the French tasse (cup) and the Greek manteia (divination) — is the art of reading the shapes formed by tea leaves remaining in a cup after the liquid has been drunk. The tradition developed in Western Europe in the 17th–18th centuries following the introduction of tea. The reader interprets symbols formed near the rim (near future), the sides (medium-term influences), and the base (distant past or deep-seated concerns). This collection contains approximately 90 of the most commonly recognised symbols with their traditional divinatory meanings.",
+      "secondaryNames": [
+        {
+          "name": "Tea Leaf Reading",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tassology",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Teacup Reading",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "divination",
+        "tasseomancy",
+        "fortune-telling"
+      ],
+      "extendedData": {
+        "memberEntityType": "divination.tea-symbol",
+        "relatedOverviews": [
+          "system.overview.geomancy"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.palmistry",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Palmistry",
+      "description": "Palmistry (also chiromancy, from Greek kheir, hand) is the art of reading the lines, mounts, and markings of the hand to determine character and destiny. Originating in ancient India and spreading through Romani tradition into medieval and Renaissance Europe, it was systematised in the 19th century by practitioners such as Cheiro (William John Warner). The palm is divided into the seven planetary mounts (Jupiter, Saturn, Apollo/Sun, Mercury, Venus, Mars, Moon/Luna) and a set of major and minor lines. This collection covers the seven planetary mounts, the Plain of Mars, and the principal lines: Life, Head, Heart, Fate, Apollo/Sun, Mercury/Health, and Marriage.",
+      "secondaryNames": [
+        {
+          "name": "Chiromancy",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hand Reading",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Cheiromancy",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "overview",
+        "divination",
+        "palmistry",
+        "western-occult"
+      ],
+      "extendedData": {
+        "memberEntityType": "palmistry.mount",
+        "relatedOverviews": [
+          "system.overview.planets",
+          "system.overview.sacred-geometry"
+        ]
+      }
+    }
+  ]
+}

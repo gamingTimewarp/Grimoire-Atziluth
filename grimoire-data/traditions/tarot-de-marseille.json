@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.tarot-de-marseille",
+    "displayName": "Tarot de Marseille",
+    "description": "The historical French playing-card tradition, originating in 15th–17th century Italy and France. The TdM uses the original unnumbered ordering of Justice (VIII) and Strength (XI), opposite to the Golden Dawn convention. Primarily an iconographic and historical tradition; esoteric attributions are less formalised than in GD.",
+    "attributionFields": [
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-planet", "displayName": "Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "chakra.classical.muladhara",    "target": "qabalah.sephira.malkuth",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.svadhisthana",  "target": "qabalah.sephira.yesod",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.manipura",      "target": "qabalah.sephira.hod",      "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.anahata",       "target": "qabalah.sephira.tiphareth","label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.vishuddha",     "target": "qabalah.sephira.chesed",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.ajna",          "target": "qabalah.sephira.chokmah",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.sahasrara",     "target": "qabalah.sephira.kether",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.extended.bindu",          "target": "qabalah.sephira.daath",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.extended.soul-star",      "target": "qabalah.sephira.chokmah",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.extended.earth-star",     "target": "qabalah.sephira.malkuth",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] }
+  ]
+}

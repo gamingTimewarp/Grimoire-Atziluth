@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "magic.kamea.saturn",  "target": "astrology.planet.saturn",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.jupiter", "target": "astrology.planet.jupiter", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.mars",    "target": "astrology.planet.mars",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.sol",     "target": "astrology.planet.sol",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.venus",   "target": "astrology.planet.venus",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.mercury", "target": "astrology.planet.mercury", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.kamea.luna",    "target": "astrology.planet.luna",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] }
+  ]
+}

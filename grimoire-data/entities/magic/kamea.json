@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "magic.kamea.saturn",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of Saturn",
+      "description": "The Kamea of Saturn is a 3×3 magic square containing the numbers 1 through 9, in which every row, column, and diagonal sums to 15 — the magic constant — and the total of all cells is 45. It is the smallest non-trivial magic square in Western magical tradition and appears in Cornelius Agrippa's 'Three Books of Occult Philosophy' (1531) as the foundational planetary talisman associated with Saturn, the seventh and outermost sphere of the classical cosmos. The Intelligence of the square is Agiel (אגיאל), whose name in Hebrew gematria yields 45 — equal to the full sum — while the Spirit is Zazel (זאזל), also numerically 45. In talismanic practice the Kamea of Saturn is engraved on lead — Saturn's metal — or drawn in black ink for workings involving time, limitation, discipline, binding, agricultural magic, and the invocation of the powers of Binah, the third sephira with which Saturn is qabbalistically identified.",
+      "secondaryNames": [
+        { "name": "Saturn Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "לוח שבתאי", "languageTag": "he", "visible": true, "sortOrder": 1 },
+        { "name": "Tabula Saturni", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "saturn"],
+      "extendedData": {
+        "planet": "astrology.planet.saturn",
+        "order": 3,
+        "magicConstant": 15,
+        "totalSum": 45,
+        "intelligenceName": "Agiel",
+        "spiritName": "Zazel",
+        "intelligenceNumber": 45,
+        "spiritNumber": 45,
+        "sealDescription": "The seal of Saturn (and of Agiel and Zazel) is derived by tracing a continuous path through the numbers of the kamea in sequential order; the resulting angular sigil is inscribed on Saturnine talismans.",
+        "talismanicUse": "Engraved on lead or drawn in black for workings of binding, limitation, discipline, time magic, agriculture, real estate, and the invocation of Saturnine forces for structure and long-term endurance."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.jupiter",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of Jupiter",
+      "description": "The Kamea of Jupiter is a 4×4 magic square containing the numbers 1 through 16, in which every row, column, and main diagonal sums to 34 — the magic constant — and the total of all cells is 136. Appearing in Agrippa's 'Three Books of Occult Philosophy', this square is attributed to Jupiter, the sixth sphere and the planet of abundance, mercy, and cosmic law. The Intelligence of the square is Iophiel (יופיאל), whose gematria value is 136, equal to the full sum; the Spirit is Hismael (הסמאל), also summing to 136. The Jupiter kamea is traditionally inscribed on tin — Jupiter's metal — or drawn in sky blue or purple, and its talisman is used for workings of prosperity, legal success, favour from authority, healing, and the invocation of the powers of Chesed, the fourth sephira of the Tree of Life. The great benefic's square has long been one of the most popular planetary talismans in Western magic, carried for luck, wealth, and the protection of the powerful.",
+      "secondaryNames": [
+        { "name": "Jupiter Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "לוח צדק", "languageTag": "he", "visible": true, "sortOrder": 1 },
+        { "name": "Tabula Iovis", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "jupiter"],
+      "extendedData": {
+        "planet": "astrology.planet.jupiter",
+        "order": 4,
+        "magicConstant": 34,
+        "totalSum": 136,
+        "intelligenceName": "Iophiel",
+        "spiritName": "Hismael",
+        "intelligenceNumber": 136,
+        "spiritNumber": 136,
+        "sealDescription": "The seal of Jupiter is traced by connecting the numbers 1–16 in sequence through the kamea grid; the resulting sigil is used in Jovial talismanic work and appears in the 'Greater Key of Solomon' and related grimoires.",
+        "talismanicUse": "Inscribed on tin or azure cloth for workings of abundance, wealth, legal favour, healing, protection, promotion, and invocation of the benefic Jovial current associated with Chesed."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.mars",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of Mars",
+      "description": "The Kamea of Mars is a 5×5 magic square containing the numbers 1 through 25, in which every row, column, and main diagonal sums to 65 — the magic constant — and the total of all cells is 325. It is attributed to Mars, the fifth planetary sphere and the planet of will, conflict, and transformative action, and appears in Agrippa's 'Three Books of Occult Philosophy' alongside its spirit hierarchy. The Intelligence of the square is Graphiel (גראפיאל), whose Hebrew gematria is 325, equal to the full sum; the Spirit is Bartzabel (ברצבל), also 325. The Mars kamea is traditionally inscribed on iron — Mars's metal — or drawn in scarlet, and is used for talismans of courage, victory, protection from enemies, physical strength, surgery, and the invocation of the powers of Geburah, the fifth sephira of severity and strength. It may also be used in works of banishing and defensive magic.",
+      "secondaryNames": [
+        { "name": "Mars Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "לוח מאדים", "languageTag": "he", "visible": true, "sortOrder": 1 },
+        { "name": "Tabula Martis", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "mars"],
+      "extendedData": {
+        "planet": "astrology.planet.mars",
+        "order": 5,
+        "magicConstant": 65,
+        "totalSum": 325,
+        "intelligenceName": "Graphiel",
+        "spiritName": "Bartzabel",
+        "intelligenceNumber": 325,
+        "spiritNumber": 325,
+        "sealDescription": "The seal of Mars is derived by tracing the path 1–25 through the kamea; its angular, aggressive sigil is used in martial talismans for courage and victory and appears in Renaissance grimoires associated with Martian workings.",
+        "talismanicUse": "Inscribed on iron or red materials for talismans of courage, victory in conflict, physical strength, protection from enemies, success in surgery or competitive endeavours, and invocation of the Geburah current."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.sol",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of the Sun",
+      "description": "The Kamea of the Sun (Sol) is a 6×6 magic square containing the numbers 1 through 36, in which every row, column, and main diagonal sums to 111 — the magic constant — and the total of all cells is 666, a number famously associated with the Solar Spirit Sorath and with the solar current of mystical power. Described by Agrippa in 'Three Books of Occult Philosophy', this is the largest of the classical planetary squares to have become famous in the Western tradition, its total sum of 666 encoding the full power of the solar sphere. The Intelligence of the square is Nakhiel (נכיאל), whose gematria is 111 — equal to the row sum — and which represents the benevolent solar mind; the Spirit is Sorath (סורת), whose number 666 represents the full sum. The Solar kamea is inscribed on gold or drawn in yellow and gold for talismans of leadership, fame, illumination, healing, prosperity, and the invocation of the powers of Tiphareth, the sixth and central sephira of the Tree of Life.",
+      "secondaryNames": [
+        { "name": "Sun Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Solar Square", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "לוח שמש", "languageTag": "he", "visible": true, "sortOrder": 2 },
+        { "name": "Tabula Solis", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "sol", "sun"],
+      "extendedData": {
+        "planet": "astrology.planet.sol",
+        "order": 6,
+        "magicConstant": 111,
+        "totalSum": 666,
+        "intelligenceName": "Nakhiel",
+        "spiritName": "Sorath",
+        "intelligenceNumber": 111,
+        "spiritNumber": 666,
+        "sealDescription": "The seal of the Sun (and of Nakhiel and Sorath) is traced by following the numbers 1–36 through the kamea grid, producing a distinctive solar sigil widely reproduced in Renaissance and modern grimoires.",
+        "talismanicUse": "Inscribed on gold or drawn in yellow for talismans of leadership, royal authority, fame, healing, illumination, prosperity, and invocation of the solar Tiphareth current; the most prestigious of the planetary kameas."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.venus",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of Venus",
+      "description": "The Kamea of Venus is a 7×7 magic square containing the numbers 1 through 49, in which every row, column, and main diagonal sums to 175 — the magic constant — and the total of all cells is 1225. It is attributed to Venus, the third planetary sphere and the planet of love, beauty, and desire, appearing in Agrippa's 'Three Books of Occult Philosophy'. The Intelligence is Hagiel (הגיאל), whose gematria is 49 — the square's order-number squared, reflecting a special relationship with the 7×7 structure — while the Spirit is Kedemel (קדמאל), summing to 175, equal to the magic constant. The Venus kamea is inscribed on copper — Venus's metal — or drawn in green or rose for talismans of love, attraction, friendship, beauty, artistic success, and harmonious relationships, invoking the powers of Netzach, the seventh sephira of desire and the astral-emotional force underlying all art and love.",
+      "secondaryNames": [
+        { "name": "Venus Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "לוח נוגה", "languageTag": "he", "visible": true, "sortOrder": 1 },
+        { "name": "Tabula Veneris", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "venus"],
+      "extendedData": {
+        "planet": "astrology.planet.venus",
+        "order": 7,
+        "magicConstant": 175,
+        "totalSum": 1225,
+        "intelligenceName": "Hagiel",
+        "spiritName": "Kedemel",
+        "intelligenceNumber": 49,
+        "spiritNumber": 175,
+        "sealDescription": "The seal of Venus is derived by tracing the numbers 1–49 through the kamea; the resulting curving, harmonious sigil is used in Venereal talismanic work for love and attraction and appears in the 'Picatrix' and Agrippa's works.",
+        "talismanicUse": "Inscribed on copper or green and rose materials for talismans of love, romantic attraction, friendship, beauty, artistic inspiration, sexual harmony, and invocation of the Netzach current."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.mercury",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of Mercury",
+      "description": "The Kamea of Mercury is an 8×8 magic square containing the numbers 1 through 64, in which every row, column, and main diagonal sums to 260 — the magic constant — and the total of all cells is 2080. Described in Agrippa's 'Three Books of Occult Philosophy', this square is attributed to Mercury, the second planetary sphere and the planet of mind, communication, and the magical art of writing. The Intelligence of the square is Tiriel (טריאל), whose gematria is 260, equal to the magic constant and to the row sum; the Spirit is Taphthartharath (תפתרתרת), a palindromic name whose gematria is 2080, equal to the full sum of all cells. The Mercury kamea is traditionally inscribed on quicksilver alloys, tin, or yellow materials, and is used in talismans for learning, eloquence, commerce, travel, memory, and magical script — invoking the powers of Hod, the eighth sephira of the formulated mind and the sphere of the divine scribe Thoth-Hermes.",
+      "secondaryNames": [
+        { "name": "Mercury Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "לוח כוכב", "languageTag": "he", "visible": true, "sortOrder": 1 },
+        { "name": "Tabula Mercurii", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "mercury"],
+      "extendedData": {
+        "planet": "astrology.planet.mercury",
+        "order": 8,
+        "magicConstant": 260,
+        "totalSum": 2080,
+        "intelligenceName": "Tiriel",
+        "spiritName": "Taphthartharath",
+        "intelligenceNumber": 260,
+        "spiritNumber": 2080,
+        "sealDescription": "The seal of Mercury is traced by following 1–64 through the kamea grid; its complex, intricate sigil reflects Mercury's quicksilver versatility and is used in talismans for intellectual and mercantile endeavours. The palindromic name of the Spirit Taphthartharath encodes the mirror-symmetry of Mercury's dual nature.",
+        "talismanicUse": "Inscribed on quicksilver alloys or yellow cloth for talismans of eloquence, learning, commerce, travel, memory, writing, magical scripts, and invocation of the Hod current — the sphere of the divine scribe."
+      }
+    },
+    {
+      "canonicalName": "magic.kamea.luna",
+      "entityType": "magic.kamea",
+      "primaryDisplayName": "Kamea of the Moon",
+      "description": "The Kamea of the Moon (Luna) is a 9×9 magic square containing the numbers 1 through 81, in which every row, column, and main diagonal sums to 369 — the magic constant — and the total of all cells is 3321. Attributed to Luna, the first and innermost of the classical seven planetary spheres, this is the largest of the seven planetary kameas and appears in Agrippa's 'Three Books of Occult Philosophy'. The Intelligence of the square is Malka be-Tarshisim ve-ad Ruachoth ve-Shechalim (מלכא בתרשישים ועד רוחות ושחלים — Queen of Tarshish, over spirits and boisterous ones), whose gematria is 3321, equal to the full sum; the Spirit is Schad Barschemoth ha-Shartatan (שד ברשמות השרתן — the demon of the flowing water), also summing to 3321. The Lunar kamea is inscribed on silver — the Moon's metal — or drawn in silver and white, and is used for talismans of psychic sensitivity, dream magic, travel, fertility, the control of tides and cycles, and the invocation of the powers of Yesod, the ninth sephira of the astral foundation and the collective unconscious.",
+      "secondaryNames": [
+        { "name": "Moon Square", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Lunar Square", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "לוח לבנה", "languageTag": "he", "visible": true, "sortOrder": 2 },
+        { "name": "Tabula Lunae", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["kamea", "magic", "planetary", "luna", "moon"],
+      "extendedData": {
+        "planet": "astrology.planet.luna",
+        "order": 9,
+        "magicConstant": 369,
+        "totalSum": 3321,
+        "intelligenceName": "Malka be-Tarshisim ve-ad Ruachoth ve-Shechalim",
+        "spiritName": "Schad Barschemoth ha-Shartatan",
+        "intelligenceNumber": 3321,
+        "spiritNumber": 3321,
+        "sealDescription": "The seal of the Moon is traced by following numbers 1–81 through the 9×9 kamea grid; the resulting large and complex sigil is used in lunar talismanic work for dream magic and psychic workings. The elaborate full names of the Intelligence and Spirit reflect the Moon's complex, multi-layered astral nature.",
+        "talismanicUse": "Inscribed on silver or white cloth for talismans of psychic sensitivity, dream incubation, astral travel, fertility, the management of cycles and tides, safe sea-voyage, and invocation of the Yesod current — the astral foundation of the Tree of Life."
+      }
+    }
+  ]
+}

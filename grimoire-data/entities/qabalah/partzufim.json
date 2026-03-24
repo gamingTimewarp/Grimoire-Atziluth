@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.partzuf.atik-yomin",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Atik Yomin",
+      "description": "Atik Yomin (עַתִּיק יוֹמִין — 'Ancient of Days') is the most concealed of the Partzufim in Lurianic Kabbalah, the innermost hidden kernel dwelling within Kether itself and virtually indistinguishable from the infinite Ein Sof. Also called Atika Qaddisha ('the Holy Ancient One'), it represents the absolute hiddenness of divinity — the point before even the first Sephira can be said to exist as a discrete reality. In Lurianic cosmology it is the concealed interior of Arich Anpin (the outer Kether), related to Kether as the soul is related to the body, and it is the source from which even the highest light of Kether is unknowingly breathed forth. Its Zoharic precursor is the 'Concealed of the Concealed' (Setima de-Setimin) of the Idra Rabba section, and the Golden Dawn adopted the 'Ancient of Days' as one of the supreme divine images associated with Kether and the grade of Ipsissimus. Atik Yomin corresponds to no divine name that can be uttered; if any is attributed, it is the deepest stratum of Eheieh (אֶהְיֶה — 'I Am'), the name of Kether.",
+      "secondaryNames": [
+        {
+          "name": "עַתִּיק יוֹמִין",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atiq Yomin",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Attik Yomin",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Atika Qaddisha",
+          "languageTag": "arc",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Holy Ancient One",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Ancient of Days",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Concealed of the Concealed",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.kether"
+        ],
+        "divineName": "Eheieh",
+        "world": "qabalah.world.atziluth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.partzuf.arich-anpin",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Arich Anpin",
+      "description": "Arich Anpin (אֲרִיךְ אַנְפִּין — 'Long Face' or 'Vast Countenance') is the Partzuf corresponding to Kether as its outer expression and cosmic form, the Macroprosopus of Western Hermetic tradition. In Lurianic Kabbalah, Arich Anpin is the first fully formed Partzuf — the immense, primordial face of divinity that contains all the other configurations within its vast structure, sheltering within itself the hidden Atik Yomin as its innermost soul. Zoharic literature, particularly the Idra Rabba and Idra Zuta, elaborates Arich Anpin's anatomy in extraordinary detail — the thirteen 'Tiqqunim' (supernal corrections or configurations) of its beard, its three heads, its white skull from which the dew of resurrection falls — as a way of describing the highest accessible aspects of the divine being. In the Hermetic Golden Dawn tradition, Arich Anpin (called Macroprosopus) is contrasted with Ze'ir Anpin (Microprosopus) as the vastness of Kether versus the condensed divine personality of the lower sephiroth. Its divine name is Eheieh (אֶהְיֶה), the supreme name of Kether, and its world is the pure Atziluth of the Archetypal World.",
+      "secondaryNames": [
+        {
+          "name": "אֲרִיךְ אַנְפִּין",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Arikh Anpin",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Arikh Anpin",
+          "languageTag": "arc",
+          "visible": false,
+          "sortOrder": 2
+        },
+        {
+          "name": "Macroprosopus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Long Face",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Vast Countenance",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.kether"
+        ],
+        "divineName": "Eheieh",
+        "world": "qabalah.world.atziluth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.partzuf.abba",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Abba",
+      "description": "Abba (אַבָּא — 'Father') is the Partzuf of Chokmah, the second Sephira, representing the supernal paternal principle of divine Wisdom in Lurianic Kabbalah. As the archetypal Father, Abba is the primordial flash of undifferentiated wisdom — the spontaneous arising of the divine idea before it is shaped into form — and he is perpetually united with Imma (the Mother, Binah) in the supernal hieros gamos, from which Ze'ir Anpin and Nukvah are generated and sustained. In Luria's cosmology, Abba functions as the initiating impulse: his seed of wisdom flows into Imma's womb of understanding, and from their eternal union the lower Sephiroth are continuously nourished. The Zoharic antecedent of Abba is the 'upper father' of the primordial couple, and the Golden Dawn identifies Chokmah with the divine name Yah (יָהּ) and the archetypal masculine, the Supernal Father. Abba's consciousness is Chaiah — the vital essence, one of the levels of the soul — and his world is Atziluth.",
+      "secondaryNames": [
+        {
+          "name": "אַבָּא",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Abba",
+          "languageTag": "arc",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Father",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Supernal Father",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.chokmah"
+        ],
+        "divineName": "Yah",
+        "world": "qabalah.world.atziluth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.partzuf.imma",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Imma",
+      "description": "Imma (אִמָּא — 'Mother'), also called Aima, is the Partzuf of Binah, the third Sephira, embodying the supernal maternal principle of divine Understanding in Lurianic Kabbalah. As the archetypal cosmic Mother and the Great Sea of primordial understanding, Imma receives the seed-wisdom of Abba (Chokmah) and gestates within her vast womb of understanding the lower Partzufim — especially Ze'ir Anpin, whom she nurtures through a prolonged 'gestation' that is the central drama of the Lurianic cosmogony. Binah is the first truly defined form — the first boundary, the 'palace' (Heikhal) that gives shape to the formless flash of Chokmah — and Imma expresses this principle as divine Mother, the great womb of Being, the source of all structured creation. The Zoharic tradition calls her 'the great sea', YHVH Elohim (יהוה אלהים) is her divine name in many attributions, and the Golden Dawn associates her with Binah as the Supernal Mother and with Neshamah (the highest soul-stratum). Imma's image as the mournful or joyful Mother recurs throughout Kabbalistic literature, and she is the root of the Shekhinah concept that later descends to Malkuth.",
+      "secondaryNames": [
+        {
+          "name": "אִמָּא",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Aima",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Imma",
+          "languageTag": "arc",
+          "visible": false,
+          "sortOrder": 2
+        },
+        {
+          "name": "Mother",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Supernal Mother",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Great Sea",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.binah"
+        ],
+        "divineName": "YHVH Elohim",
+        "world": "qabalah.world.atziluth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.partzuf.zeir-anpin",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Ze'ir Anpin",
+      "description": "Ze'ir Anpin (זְעֵיר אַנְפִּין — 'Small Face' or 'Short Face') is the central and most elaborated Partzuf in Lurianic Kabbalah, corresponding to the six Sephiroth of the moral triad and emotional-volitional realm: Chesed, Geburah, Tiphareth, Netzach, Hod, and Yesod, understood as a single unified quasi-personal divine configuration. In the Western Hermetic tradition, Ze'ir Anpin is equated with the Microprosopus — the 'lesser countenance' — and is associated with the full spelled-out Tetragrammaton (יהוה), making him the primary face of God as encountered in biblical and liturgical narrative. The cosmic drama of Lurianic cosmology is largely the story of Ze'ir Anpin: his gestation within the womb of Imma (Binah), his birth, growth, and maturation, his union with Nukvah (Malkuth), and his ongoing relationship with Abba and Imma as the divine Son who mediates between the supernal parents and the world of manifestation. Tiphareth is Ze'ir Anpin's heart and centre, and the Partzuf as a whole is sometimes called 'the Son' or 'the King', his marriage to Nukvah constituting the sacred union (yichud) that sustains all creation. The Golden Dawn extensively used Ze'ir Anpin / Microprosopus as a mediating divine figure, and it maps onto the Rosicrucian figure of Christ as the divine Son who redeems the fallen world.",
+      "secondaryNames": [
+        {
+          "name": "זְעֵיר אַנְפִּין",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zeir Anpin",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ze'ir Anpin",
+          "languageTag": "arc",
+          "visible": false,
+          "sortOrder": 2
+        },
+        {
+          "name": "Microprosopus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Small Face",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Short Face",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "The Son",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 6
+        },
+        {
+          "name": "The King",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 7
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.chesed",
+          "qabalah.sephira.geburah",
+          "qabalah.sephira.tiphareth",
+          "qabalah.sephira.netzach",
+          "qabalah.sephira.hod",
+          "qabalah.sephira.yesod"
+        ],
+        "divineName": "YHVH",
+        "world": "qabalah.world.atziluth"
+      }
+    },
+    {
+      "canonicalName": "qabalah.partzuf.nukvah",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Nukvah",
+      "description": "Nukvah (נוּקְבָּא — 'The Female') is the Partzuf of Malkuth, the tenth and final Sephira, embodying the divine feminine principle in its most fully manifested, immanent form. Also called Malkah ('Queen') and the Shekhinah, Nukvah is the divine Bride who stands in perpetual relationship with Ze'ir Anpin (the King, the divine Son) — their sacred union (yichud) being the central telos of Lurianic theurgy: the practitioner's prayer and ritual action are intended to unify the masculine and feminine aspects of the divine and so restore the cosmic wholeness shattered by the Shevirat ha-Kelim ('Breaking of the Vessels'). In the Zoharic tradition Nukvah is the Shekhinah — the indwelling divine presence that accompanies Israel in exile, weeping at the separation from her divine partner — and she is the bridge between the divine world (Atziluth) and the world of creation. The Golden Dawn tradition identifies Malkuth with the divine name Adonai ha-Aretz (אֲדֹנָי הָאָרֶץ — 'Lord of the Earth') and conceives Nukvah/Shekhinah as the Bride of the Tetragrammaton, the final Heh of the divine name. Nukvah is therefore simultaneously the lowest point of divinity and the point at which divinity touches the created world — the earth beneath our feet is her body.",
+      "secondaryNames": [
+        {
+          "name": "נוּקְבָּא",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Nuqba",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Malkah",
+          "languageTag": "he-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Shekhinah",
+          "languageTag": "he-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "The Female",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "The Queen",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "The Bride",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.malkuth"
+        ],
+        "divineName": "Adonai ha-Aretz",
+        "world": "qabalah.world.atziluth"
+      }
+    }
+  ]
+}

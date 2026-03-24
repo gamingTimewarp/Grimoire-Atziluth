@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "ayurveda.dosha.vata",  "target": "tattwa.vayu",     "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "ayurveda.dosha.vata",  "target": "tattwa.akasha",   "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "ayurveda.dosha.pitta", "target": "tattwa.tejas",    "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "ayurveda.dosha.pitta", "target": "tattwa.apas",     "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "ayurveda.dosha.kapha", "target": "tattwa.prithivi", "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "ayurveda.dosha.kapha", "target": "tattwa.apas",     "label": "composed-of", "bidirectional": true, "traditionScope": [], "extendedData": {} }
+  ]
+}

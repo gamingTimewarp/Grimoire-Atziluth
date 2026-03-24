@@ -1,0 +1,3002 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "jyotish.antardasha.ketu-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Ketu Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 4 months and 29 days. The combined influence of Ketu (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.4083,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Ketu Mahadasha",
+      "description": "The Venus Antardasha occurs within the Ketu Mahadasha, lasting approximately 1 year 2 months and 1 day. The combined influence of Ketu (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 1.1667,
+        "durationYearsInt": 1,
+        "durationMonths": 2,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Ketu Mahadasha",
+      "description": "The Sun Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 4 months and 8 days. The combined influence of Ketu (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.35,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Ketu Mahadasha",
+      "description": "The Moon Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 7 months and 3 days. The combined influence of Ketu (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 0.5833,
+        "durationYearsInt": 0,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Ketu Mahadasha",
+      "description": "The Mars Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 4 months and 29 days. The combined influence of Ketu (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.4083,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Ketu Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Ketu Mahadasha, lasting approximately 1 year 0 months and 19 days. The combined influence of Ketu (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 1.05,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 19,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Ketu Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 11 months and 11 days. The combined influence of Ketu (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 0.9333,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Ketu Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Ketu Mahadasha, lasting approximately 1 year 1 month and 10 days. The combined influence of Ketu (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 1.1083,
+        "durationYearsInt": 1,
+        "durationMonths": 1,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.ketu-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Ketu Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Ketu Mahadasha, lasting approximately 0 years 12 months and 2 days. The combined influence of Ketu (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Ketu Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Ketu/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ketu/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "ketu",
+        "mahadashaLordCN": "astrology.node.ketu",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 0.9917,
+        "durationYearsInt": 0,
+        "durationMonths": 12,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.ketu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Venus Mahadasha",
+      "description": "The Venus Antardasha occurs within the Venus Mahadasha, lasting approximately 3 years 4 months and 3 days. The combined influence of Venus (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 3.3333,
+        "durationYearsInt": 3,
+        "durationMonths": 4,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Venus Mahadasha",
+      "description": "The Sun Antardasha occurs within the Venus Mahadasha, lasting approximately 1 year 0 months and 0 days. The combined influence of Venus (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 1.0,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 0,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Venus Mahadasha",
+      "description": "The Moon Antardasha occurs within the Venus Mahadasha, lasting approximately 1 year 8 months and 4 days. The combined influence of Venus (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 1.6667,
+        "durationYearsInt": 1,
+        "durationMonths": 8,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Venus Mahadasha",
+      "description": "The Mars Antardasha occurs within the Venus Mahadasha, lasting approximately 1 year 2 months and 1 day. The combined influence of Venus (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 1.1667,
+        "durationYearsInt": 1,
+        "durationMonths": 2,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Venus Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Venus Mahadasha, lasting approximately 3 years 0 months and 1 day. The combined influence of Venus (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 3.0,
+        "durationYearsInt": 3,
+        "durationMonths": 0,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Venus Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Venus Mahadasha, lasting approximately 2 years 8 months and 4 days. The combined influence of Venus (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 2.6667,
+        "durationYearsInt": 2,
+        "durationMonths": 8,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Venus Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Venus Mahadasha, lasting approximately 3 years 2 months and 2 days. The combined influence of Venus (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 3.1667,
+        "durationYearsInt": 3,
+        "durationMonths": 2,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Venus Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Venus Mahadasha, lasting approximately 2 years 10 months and 5 days. The combined influence of Venus (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 2.8333,
+        "durationYearsInt": 2,
+        "durationMonths": 10,
+        "durationDays": 5,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.venus-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Venus Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Venus Mahadasha, lasting approximately 1 year 2 months and 1 day. The combined influence of Venus (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Venus Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Venus/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "venus",
+        "mahadashaLordCN": "astrology.planet.venus",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 1.1667,
+        "durationYearsInt": 1,
+        "durationMonths": 2,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.venus"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Sun Mahadasha",
+      "description": "The Sun Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 3 months and 20 days. The combined influence of Sun (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.3,
+        "durationYearsInt": 0,
+        "durationMonths": 3,
+        "durationDays": 20,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Sun Mahadasha",
+      "description": "The Moon Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 6 months and 3 days. The combined influence of Sun (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 0.5,
+        "durationYearsInt": 0,
+        "durationMonths": 6,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Sun Mahadasha",
+      "description": "The Mars Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 4 months and 8 days. The combined influence of Sun (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.35,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Sun Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 10 months and 29 days. The combined influence of Sun (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 0.9,
+        "durationYearsInt": 0,
+        "durationMonths": 10,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Sun Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 9 months and 22 days. The combined influence of Sun (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 0.8,
+        "durationYearsInt": 0,
+        "durationMonths": 9,
+        "durationDays": 22,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Sun Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 11 months and 17 days. The combined influence of Sun (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 0.95,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 17,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Sun Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 10 months and 10 days. The combined influence of Sun (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 0.85,
+        "durationYearsInt": 0,
+        "durationMonths": 10,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Sun Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Sun Mahadasha, lasting approximately 0 years 4 months and 8 days. The combined influence of Sun (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.35,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.sun-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Sun Mahadasha",
+      "description": "The Venus Antardasha occurs within the Sun Mahadasha, lasting approximately 1 year 0 months and 0 days. The combined influence of Sun (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Sun Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Sun/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sun/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "sun",
+        "mahadashaLordCN": "astrology.planet.sol",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 1.0,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 0,
+        "mahadashaCN": "jyotish.mahadasha.sun"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Moon Mahadasha",
+      "description": "The Moon Antardasha occurs within the Moon Mahadasha, lasting approximately 0 years 10 months and 4 days. The combined influence of Moon (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 0.8333,
+        "durationYearsInt": 0,
+        "durationMonths": 10,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Moon Mahadasha",
+      "description": "The Mars Antardasha occurs within the Moon Mahadasha, lasting approximately 0 years 7 months and 3 days. The combined influence of Moon (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.5833,
+        "durationYearsInt": 0,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Moon Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Moon Mahadasha, lasting approximately 1 year 6 months and 3 days. The combined influence of Moon (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 1.5,
+        "durationYearsInt": 1,
+        "durationMonths": 6,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Moon Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Moon Mahadasha, lasting approximately 1 year 4 months and 2 days. The combined influence of Moon (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 1.3333,
+        "durationYearsInt": 1,
+        "durationMonths": 4,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Moon Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Moon Mahadasha, lasting approximately 1 year 7 months and 3 days. The combined influence of Moon (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 1.5833,
+        "durationYearsInt": 1,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Moon Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Moon Mahadasha, lasting approximately 1 year 5 months and 2 days. The combined influence of Moon (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 1.4167,
+        "durationYearsInt": 1,
+        "durationMonths": 5,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Moon Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Moon Mahadasha, lasting approximately 0 years 7 months and 3 days. The combined influence of Moon (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.5833,
+        "durationYearsInt": 0,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Moon Mahadasha",
+      "description": "The Venus Antardasha occurs within the Moon Mahadasha, lasting approximately 1 year 8 months and 4 days. The combined influence of Moon (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 1.6667,
+        "durationYearsInt": 1,
+        "durationMonths": 8,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.moon-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Moon Mahadasha",
+      "description": "The Sun Antardasha occurs within the Moon Mahadasha, lasting approximately 0 years 6 months and 3 days. The combined influence of Moon (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Moon Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Moon/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moon/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "moon",
+        "mahadashaLordCN": "astrology.planet.luna",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.5,
+        "durationYearsInt": 0,
+        "durationMonths": 6,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.moon"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Mars Mahadasha",
+      "description": "The Mars Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 4 months and 29 days. The combined influence of Mars (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.4083,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Mars Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Mars Mahadasha, lasting approximately 1 year 0 months and 19 days. The combined influence of Mars (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 1.05,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 19,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Mars Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 11 months and 11 days. The combined influence of Mars (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 0.9333,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Mars Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Mars Mahadasha, lasting approximately 1 year 1 month and 10 days. The combined influence of Mars (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 1.1083,
+        "durationYearsInt": 1,
+        "durationMonths": 1,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Mars Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 12 months and 2 days. The combined influence of Mars (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 0.9917,
+        "durationYearsInt": 0,
+        "durationMonths": 12,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Mars Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 4 months and 29 days. The combined influence of Mars (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.4083,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Mars Mahadasha",
+      "description": "The Venus Antardasha occurs within the Mars Mahadasha, lasting approximately 1 year 2 months and 1 day. The combined influence of Mars (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 1.1667,
+        "durationYearsInt": 1,
+        "durationMonths": 2,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Mars Mahadasha",
+      "description": "The Sun Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 4 months and 8 days. The combined influence of Mars (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.35,
+        "durationYearsInt": 0,
+        "durationMonths": 4,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mars-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Mars Mahadasha",
+      "description": "The Moon Antardasha occurs within the Mars Mahadasha, lasting approximately 0 years 7 months and 3 days. The combined influence of Mars (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mars Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mars/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mars",
+        "mahadashaLordCN": "astrology.planet.mars",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 0.5833,
+        "durationYearsInt": 0,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.mars"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Rahu Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Rahu Mahadasha, lasting approximately 2 years 8 months and 16 days. The combined influence of Rahu (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 2.7,
+        "durationYearsInt": 2,
+        "durationMonths": 8,
+        "durationDays": 16,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Rahu Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Rahu Mahadasha, lasting approximately 2 years 4 months and 27 days. The combined influence of Rahu (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 2.4,
+        "durationYearsInt": 2,
+        "durationMonths": 4,
+        "durationDays": 27,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Rahu Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Rahu Mahadasha, lasting approximately 2 years 10 months and 11 days. The combined influence of Rahu (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 2.85,
+        "durationYearsInt": 2,
+        "durationMonths": 10,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Rahu Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Rahu Mahadasha, lasting approximately 2 years 6 months and 21 days. The combined influence of Rahu (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 2.55,
+        "durationYearsInt": 2,
+        "durationMonths": 6,
+        "durationDays": 21,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Rahu Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Rahu Mahadasha, lasting approximately 1 year 0 months and 19 days. The combined influence of Rahu (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 1.05,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 19,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Rahu Mahadasha",
+      "description": "The Venus Antardasha occurs within the Rahu Mahadasha, lasting approximately 3 years 0 months and 1 day. The combined influence of Rahu (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 3.0,
+        "durationYearsInt": 3,
+        "durationMonths": 0,
+        "durationDays": 1,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Rahu Mahadasha",
+      "description": "The Sun Antardasha occurs within the Rahu Mahadasha, lasting approximately 0 years 10 months and 29 days. The combined influence of Rahu (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.9,
+        "durationYearsInt": 0,
+        "durationMonths": 10,
+        "durationDays": 29,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Rahu Mahadasha",
+      "description": "The Moon Antardasha occurs within the Rahu Mahadasha, lasting approximately 1 year 6 months and 3 days. The combined influence of Rahu (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 1.5,
+        "durationYearsInt": 1,
+        "durationMonths": 6,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.rahu-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Rahu Mahadasha",
+      "description": "The Mars Antardasha occurs within the Rahu Mahadasha, lasting approximately 1 year 0 months and 19 days. The combined influence of Rahu (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Rahu Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Rahu/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rahu/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "rahu",
+        "mahadashaLordCN": "astrology.node.rahu",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 1.05,
+        "durationYearsInt": 1,
+        "durationMonths": 0,
+        "durationDays": 19,
+        "mahadashaCN": "jyotish.mahadasha.rahu"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Jupiter Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Jupiter Mahadasha, lasting approximately 2 years 1 month and 19 days. The combined influence of Jupiter (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 2.1333,
+        "durationYearsInt": 2,
+        "durationMonths": 1,
+        "durationDays": 19,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Jupiter Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Jupiter Mahadasha, lasting approximately 2 years 6 months and 15 days. The combined influence of Jupiter (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 2.5333,
+        "durationYearsInt": 2,
+        "durationMonths": 6,
+        "durationDays": 15,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Jupiter Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Jupiter Mahadasha, lasting approximately 2 years 3 months and 8 days. The combined influence of Jupiter (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 2.2667,
+        "durationYearsInt": 2,
+        "durationMonths": 3,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Jupiter Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Jupiter Mahadasha, lasting approximately 0 years 11 months and 11 days. The combined influence of Jupiter (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.9333,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Jupiter Mahadasha",
+      "description": "The Venus Antardasha occurs within the Jupiter Mahadasha, lasting approximately 2 years 8 months and 4 days. The combined influence of Jupiter (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 2.6667,
+        "durationYearsInt": 2,
+        "durationMonths": 8,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Jupiter Mahadasha",
+      "description": "The Sun Antardasha occurs within the Jupiter Mahadasha, lasting approximately 0 years 9 months and 22 days. The combined influence of Jupiter (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.8,
+        "durationYearsInt": 0,
+        "durationMonths": 9,
+        "durationDays": 22,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Jupiter Mahadasha",
+      "description": "The Moon Antardasha occurs within the Jupiter Mahadasha, lasting approximately 1 year 4 months and 2 days. The combined influence of Jupiter (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 1.3333,
+        "durationYearsInt": 1,
+        "durationMonths": 4,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Jupiter Mahadasha",
+      "description": "The Mars Antardasha occurs within the Jupiter Mahadasha, lasting approximately 0 years 11 months and 11 days. The combined influence of Jupiter (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.9333,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.jupiter-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Jupiter Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Jupiter Mahadasha, lasting approximately 2 years 4 months and 27 days. The combined influence of Jupiter (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Jupiter Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Jupiter/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "jupiter",
+        "mahadashaLordCN": "astrology.planet.jupiter",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 2.4,
+        "durationYearsInt": 2,
+        "durationMonths": 4,
+        "durationDays": 27,
+        "mahadashaCN": "jyotish.mahadasha.jupiter"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Saturn Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Saturn Mahadasha, lasting approximately 3 years 0 months and 4 days. The combined influence of Saturn (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 3.0083,
+        "durationYearsInt": 3,
+        "durationMonths": 0,
+        "durationDays": 4,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Saturn Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Saturn Mahadasha, lasting approximately 2 years 8 months and 13 days. The combined influence of Saturn (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 2.6917,
+        "durationYearsInt": 2,
+        "durationMonths": 8,
+        "durationDays": 13,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Saturn Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Saturn Mahadasha, lasting approximately 1 year 1 month and 10 days. The combined influence of Saturn (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 1.1083,
+        "durationYearsInt": 1,
+        "durationMonths": 1,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Saturn Mahadasha",
+      "description": "The Venus Antardasha occurs within the Saturn Mahadasha, lasting approximately 3 years 2 months and 2 days. The combined influence of Saturn (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 3.1667,
+        "durationYearsInt": 3,
+        "durationMonths": 2,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Saturn Mahadasha",
+      "description": "The Sun Antardasha occurs within the Saturn Mahadasha, lasting approximately 0 years 11 months and 17 days. The combined influence of Saturn (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.95,
+        "durationYearsInt": 0,
+        "durationMonths": 11,
+        "durationDays": 17,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Saturn Mahadasha",
+      "description": "The Moon Antardasha occurs within the Saturn Mahadasha, lasting approximately 1 year 7 months and 3 days. The combined influence of Saturn (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 1.5833,
+        "durationYearsInt": 1,
+        "durationMonths": 7,
+        "durationDays": 3,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Saturn Mahadasha",
+      "description": "The Mars Antardasha occurs within the Saturn Mahadasha, lasting approximately 1 year 1 month and 10 days. The combined influence of Saturn (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 1.1083,
+        "durationYearsInt": 1,
+        "durationMonths": 1,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Saturn Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Saturn Mahadasha, lasting approximately 2 years 10 months and 11 days. The combined influence of Saturn (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 2.85,
+        "durationYearsInt": 2,
+        "durationMonths": 10,
+        "durationDays": 11,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.saturn-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Saturn Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Saturn Mahadasha, lasting approximately 2 years 6 months and 15 days. The combined influence of Saturn (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Saturn Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Saturn/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "saturn",
+        "mahadashaLordCN": "astrology.planet.saturn",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 2.5333,
+        "durationYearsInt": 2,
+        "durationMonths": 6,
+        "durationDays": 15,
+        "mahadashaCN": "jyotish.mahadasha.saturn"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-mercury",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mercury Antardasha in Mercury Mahadasha",
+      "description": "The Mercury Antardasha occurs within the Mercury Mahadasha, lasting approximately 2 years 5 months and 0 days. The combined influence of Mercury (as the major period lord) and Mercury (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Mercury sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Mercury Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Mercury Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "mercury",
+        "antardashaLordCN": "astrology.planet.mercury",
+        "durationYears": 2.4083,
+        "durationYearsInt": 2,
+        "durationMonths": 5,
+        "durationDays": 0,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-ketu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Ketu Antardasha in Mercury Mahadasha",
+      "description": "The Ketu Antardasha occurs within the Mercury Mahadasha, lasting approximately 0 years 12 months and 2 days. The combined influence of Mercury (as the major period lord) and Ketu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Ketu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Ketu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Ketu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "ketu",
+        "antardashaLordCN": "astrology.node.ketu",
+        "durationYears": 0.9917,
+        "durationYearsInt": 0,
+        "durationMonths": 12,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-venus",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Venus Antardasha in Mercury Mahadasha",
+      "description": "The Venus Antardasha occurs within the Mercury Mahadasha, lasting approximately 2 years 10 months and 5 days. The combined influence of Mercury (as the major period lord) and Venus (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Venus sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Venus Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Venus Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "venus",
+        "antardashaLordCN": "astrology.planet.venus",
+        "durationYears": 2.8333,
+        "durationYearsInt": 2,
+        "durationMonths": 10,
+        "durationDays": 5,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-sun",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Sun Antardasha in Mercury Mahadasha",
+      "description": "The Sun Antardasha occurs within the Mercury Mahadasha, lasting approximately 0 years 10 months and 10 days. The combined influence of Mercury (as the major period lord) and Sun (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Sun sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Sun Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Sun Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "sun",
+        "antardashaLordCN": "astrology.planet.sol",
+        "durationYears": 0.85,
+        "durationYearsInt": 0,
+        "durationMonths": 10,
+        "durationDays": 10,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-moon",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Moon Antardasha in Mercury Mahadasha",
+      "description": "The Moon Antardasha occurs within the Mercury Mahadasha, lasting approximately 1 year 5 months and 2 days. The combined influence of Mercury (as the major period lord) and Moon (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Moon sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Moon Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Moon Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "moon",
+        "antardashaLordCN": "astrology.planet.luna",
+        "durationYears": 1.4167,
+        "durationYearsInt": 1,
+        "durationMonths": 5,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-mars",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Mars Antardasha in Mercury Mahadasha",
+      "description": "The Mars Antardasha occurs within the Mercury Mahadasha, lasting approximately 0 years 12 months and 2 days. The combined influence of Mercury (as the major period lord) and Mars (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Mars sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Mars Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Mars Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "mars",
+        "antardashaLordCN": "astrology.planet.mars",
+        "durationYears": 0.9917,
+        "durationYearsInt": 0,
+        "durationMonths": 12,
+        "durationDays": 2,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-rahu",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Rahu Antardasha in Mercury Mahadasha",
+      "description": "The Rahu Antardasha occurs within the Mercury Mahadasha, lasting approximately 2 years 6 months and 21 days. The combined influence of Mercury (as the major period lord) and Rahu (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Rahu sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Rahu Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Rahu Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "rahu",
+        "antardashaLordCN": "astrology.node.rahu",
+        "durationYears": 2.55,
+        "durationYearsInt": 2,
+        "durationMonths": 6,
+        "durationDays": 21,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-jupiter",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Jupiter Antardasha in Mercury Mahadasha",
+      "description": "The Jupiter Antardasha occurs within the Mercury Mahadasha, lasting approximately 2 years 3 months and 8 days. The combined influence of Mercury (as the major period lord) and Jupiter (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Jupiter sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Jupiter Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Jupiter Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "jupiter",
+        "antardashaLordCN": "astrology.planet.jupiter",
+        "durationYears": 2.2667,
+        "durationYearsInt": 2,
+        "durationMonths": 3,
+        "durationDays": 8,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    },
+    {
+      "canonicalName": "jyotish.antardasha.mercury-saturn",
+      "entityType": "jyotish.antardasha",
+      "primaryDisplayName": "Saturn Antardasha in Mercury Mahadasha",
+      "description": "The Saturn Antardasha occurs within the Mercury Mahadasha, lasting approximately 2 years 8 months and 13 days. The combined influence of Mercury (as the major period lord) and Saturn (as the sub-period ruler) determines the quality of events during this time, modulated by the natural relationship between these planets in the Jyotish system. The native typically experiences themes associated with both lords: the overarching Mercury Mahadasha themes color the entire period, while the Saturn sub-lord brings its specific significations to the foreground.",
+      "secondaryNames": [
+        {
+          "name": "Mercury/Saturn Antardasha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercury/Saturn Bhukti",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "jyotish",
+        "dasha",
+        "antardasha",
+        "vimshottari"
+      ],
+      "extendedData": {
+        "mahadashaLord": "mercury",
+        "mahadashaLordCN": "astrology.planet.mercury",
+        "antardashaLord": "saturn",
+        "antardashaLordCN": "astrology.planet.saturn",
+        "durationYears": 2.6917,
+        "durationYearsInt": 2,
+        "durationMonths": 8,
+        "durationDays": 13,
+        "mahadashaCN": "jyotish.mahadasha.mercury"
+      }
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "rosicrucian.symbol.rose-cross",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "Rose Cross",
+      "description": "The Rose Cross is the central and defining symbol of Rosicrucianism — an equal-armed cross (representing the four elements, the four directions, and the crucified lower nature) upon whose centre blooms a red rose (representing the unfolding of the higher nature, the divine love, and the blood of Christ or the alchemical Red Tincture). The cross represents the body and the earthly vehicle; the rose represents the soul awakened through spiritual work; their union at the centre signifies the mystic marriage of matter and spirit, the hermaphroditic union of opposites that is the goal of the Great Work. Different orders assign different numbers of petals to the rose: 5 petals (quintessence, the five wounds of Christ), 7 petals (seven planets), or 22 petals (Hebrew alphabet and Tarot trumps in the Golden Dawn tradition). The symbol synthesises Christian mysticism, Neoplatonism, and alchemical symbolism into a single image of transformation.",
+      "secondaryNames": [
+        { "name": "Crux Rosata", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Rosy Cross", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol", "cross"],
+      "extendedData": {
+        "crossType": "equal-armed (Greek cross)",
+        "rosePosition": "centre of the cross",
+        "roseColour": "red",
+        "symbolism": {
+          "cross": "four elements, crucifixion of lower nature, material world",
+          "rose": "soul awakening, divine love, unfolding consciousness",
+          "union": "alchemical marriage of matter and spirit"
+        },
+        "petalVariants": {
+          "5": "quintessence / five wounds of Christ",
+          "7": "seven planets",
+          "22": "Hebrew alphabet (Golden Dawn)"
+        },
+        "traditions": ["Rosicrucian", "Hermetic", "Golden Dawn", "Christian mysticism", "Alchemy"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.lamen",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "Lamen",
+      "description": "The Rose Cross Lamen is the elaborately symbolic breast-badge worn by Adepts of the Hermetic Order of the Golden Dawn and similar Rosicrucian orders, representing the full flowering of the Rose Cross symbol system into a complete cosmological diagram. In the Golden Dawn version, the cross arms bear the Latin motto 'Yeheshua' in a specific cipher, and the rose at the centre contains 22 petals corresponding to the 22 letters of the Hebrew alphabet (and thus the 22 Tarot trumps and the 22 paths of the Tree of Life), 5 inner petals for the five elements (including Spirit), and three sepals for the three mother letters (Aleph, Mem, Shin). The outer cross arms are coloured according to the four elements and divided into sections relating to the planets and the zodiac. As a personal emblem worn on the chest at the heart centre, the Lamen signifies that the Adept has internalised the cosmological synthesis it represents.",
+      "secondaryNames": [
+        { "name": "Rose Cross Lamen", "languageTag": "en-formal", "visible": true, "sortOrder": 0 },
+        { "name": "Rosen-Kreuz Lamen", "languageTag": "de", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol", "golden-dawn"],
+      "extendedData": {
+        "symbolism": {
+          "outerPetals": "22 — Hebrew alphabet, Tarot trumps, Tree of Life paths",
+          "innerPetals": "5 — five elements including Spirit",
+          "sepals": "3 — three mother letters (Aleph, Mem, Shin)",
+          "crossArms": "four elements, planetary and zodiacal attributions"
+        },
+        "wornAt": "breast (heart centre)",
+        "usedBy": ["Hermetic Order of the Golden Dawn", "AMORC", "Rosicrucian Fellowship"],
+        "traditions": ["Rosicrucian", "Golden Dawn", "Hermetic", "Kabbalistic"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.vault-of-adepts",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "Vault of the Adepts",
+      "description": "The Vault of the Adepts (Gewölbe der Adepten) is the heptagonal chamber described in the Fama Fraternitatis (1614) as the burial vault of Christian Rosenkreuz — a seven-sided room, approximately eight feet in diameter and five feet high, whose every surface is covered with hermetic symbols, each wall corresponding to one of the seven planets, and whose geometry encodes the sevenfold structure of the Rosicrucian universe. The discovery of the vault, 120 years after CRC's death, with his perfectly preserved body and a collection of philosophical treasures within, is the central narrative event of the Fama, and the vault itself functions as a symbol of initiation: the sealed chamber as the initiate's own psyche, the preserved body as the indestructible spiritual essence, and the geometric perfection of the space as the order of the redeemed soul. In the Golden Dawn and subsequent Rosicrucian orders, initiation rituals of the Inner Order (the Second Order) are performed within a physical reconstruction of this vault, with each wall painted in the symbolic colours of its planetary attribution.",
+      "secondaryNames": [
+        { "name": "Gewölbe der Adepten", "languageTag": "de", "visible": true, "sortOrder": 0 },
+        { "name": "Septem Laterum", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "CRC's Tomb", "languageTag": "en-abbrev", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol", "vault"],
+      "extendedData": {
+        "geometry": "heptagonal (7-sided)",
+        "dimensions": "approx. 8 feet wide, 5 feet high",
+        "surfaces": 7,
+        "wallAttributions": "seven classical planets",
+        "symbolism": {
+          "vault": "initiate's psyche, the redeemed soul",
+          "preservedBody": "indestructible spiritual essence",
+          "heptagon": "seven planets, seven stages of initiation"
+        },
+        "firstDescribedIn": "Fama Fraternitatis, 1614",
+        "ritualUse": "Golden Dawn Second Order initiation",
+        "traditions": ["Rosicrucian", "Golden Dawn", "Hermetic"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.inri",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "INRI",
+      "description": "INRI is the famous inscription placed by Pilate over the cross of Jesus (Iesus Nazarenus Rex Iudaeorum, 'Jesus of Nazareth, King of the Jews'), but in Rosicrucian and alchemical tradition it was reinterpreted as a series of esoteric acronyms encoding the philosophical significance of the crucifixion and resurrection. The most common Rosicrucian reading is Igne Natura Renovatur Integra ('By fire, nature is wholly renewed'), pointing to the alchemical process of calcination and transformation by fire as the universal principle of regeneration. Another interpretation is Isis Naturae Regina Ineffabilis ('Isis, ineffable queen of nature'), identifying the redemptive power with the Egyptian goddess of magic and resurrection. The Golden Dawn formula reads the four letters as corresponding to the four elements (Ignis/Fire, Nile/Water, Ruach/Air, Iachin/Earth) or to the four Hebrew letters of the divine name Yod-He-Vau-He, encoding the Tetragrammaton within the crucifixion formula.",
+      "secondaryNames": [
+        { "name": "Iesus Nazarenus Rex Iudaeorum", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Igne Natura Renovatur Integra", "languageTag": "la-esoteric", "visible": true, "sortOrder": 1 },
+        { "name": "Isis Naturae Regina Ineffabilis", "languageTag": "la-esoteric-2", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol", "initialism"],
+      "extendedData": {
+        "interpretations": {
+          "exoteric": "Iesus Nazarenus Rex Iudaeorum — Jesus of Nazareth, King of the Jews",
+          "alchemical": "Igne Natura Renovatur Integra — By fire, nature is wholly renewed",
+          "Egyptian": "Isis Naturae Regina Ineffabilis — Isis, ineffable queen of nature",
+          "GoldenDawn": "Yod-He-Vau-He / four elements"
+        },
+        "traditions": ["Rosicrucian", "Alchemical", "Golden Dawn", "Christian mysticism"],
+        "elementalCorrespondences": {
+          "I": "fire (Ignis)",
+          "N": "water (Nile / Aqua)",
+          "R": "air (Ruach)",
+          "I": "earth (Iachin)"
+        }
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.pelican-phoenix",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "Pelican and Phoenix",
+      "description": "The Pelican and Phoenix are the two great alchemical birds of Rosicrucian initiation, representing successive stages of the Great Work. The Pelican (Pelecanus) feeds her nestlings with blood from her own breast when no other food is available — a behaviour described in medieval bestiaries — and became a Christian and alchemical symbol of self-sacrifice, charity, and the Red Work (rubedo), the sacrifice of ego that nourishes the spiritual offspring; in alchemy the pelican also names the circular distillation vessel (the pelican flask) in which substances are perpetually returned to themselves for purification. The Phoenix (Phoenix) is the mythological bird that, after five hundred years, builds its own funeral pyre and is consumed by flames, only to rise from the ashes reborn and more radiant — the symbol of death-and-resurrection, the completion of the alchemical cycle (multiplicatio), and the Philosopher's Stone in its perfected form. Together they represent the two great stages of mature spiritual life: the willing sacrifice of self, followed by the unconditional renewal of being.",
+      "secondaryNames": [
+        { "name": "Pelicanus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Phoenix", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "Φοῖνιξ", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol", "alchemy"],
+      "extendedData": {
+        "symbolism": {
+          "pelican": "self-sacrifice, rubedo (Red Work), circular distillation, Christ-type",
+          "phoenix": "death-and-resurrection, completion of the Work, the Philosopher's Stone in its glory"
+        },
+        "alchemicalStage": {
+          "pelican": "rubedo",
+          "phoenix": "multiplicatio / final perfection"
+        },
+        "pelicaniFlask": "circular vessel used in alchemy, named for the bird",
+        "traditions": ["Rosicrucian", "Alchemical", "Christian mysticism", "Hermetic"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.fama-fraternitatis",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "Fama Fraternitatis",
+      "description": "The Fama Fraternitatis Rosae Crucis (Report of the Brotherhood of the Rosy Cross, 1614) is the founding manifesto of the Rosicrucian movement — an anonymous pamphlet published in Kassel, Germany, that announced the existence of a secret brotherhood founded by the German knight Christian Rosenkreuz (1378–1484) and called upon the learned of Europe to make themselves known to the brotherhood for the reformation of philosophy, science, and religion. The text narrates CRC's legendary journey to the East (Damcar, Fez, Spain), his accumulation of esoteric wisdom, his founding of the fraternity with three companions, and the discovery of his perfectly preserved body in a heptagonal vault 120 years after his death. The Fama caused an immediate sensation across Europe — hundreds of tracts were published in response, many seeking membership in the brotherhood — but no members of the fraternity ever came forward, leading to the debate (still unresolved) about whether the Rosicrucians existed as a physical organisation or as a literary and philosophical fiction intended to catalyse reform through the power of the idea alone.",
+      "secondaryNames": [
+        { "name": "Fama Fraternitatis Rosae Crucis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Report of the Brotherhood of the Rosy Cross", "languageTag": "en-translation", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "text", "manifesto"],
+      "extendedData": {
+        "publicationDate": "1614",
+        "publicationPlace": "Kassel, Germany",
+        "anonymous": true,
+        "language": "German",
+        "subjects": ["Christian Rosenkreuz", "brotherhood", "Vault of the Adepts", "universal reformation"],
+        "companions": ["Confessio Fraternitatis (1615)", "Chymische Hochzeit (1616)"],
+        "potentialAuthor": "Johann Valentin Andreae (disputed)",
+        "traditions": ["Rosicrucian", "Hermetic", "Lutheran Pietism"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.crc-tomb",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "CRC Tomb",
+      "description": "The CRC Tomb is the legendary burial place of Christian Rosenkreuz (1378–1484), described in the Fama Fraternitatis as an underground heptagonal chamber discovered 120 years after CRC's death in a perfect state of preservation — a vault lit by an artificial sun, containing an altar inscribed with esoteric symbols, the perfectly incorrupt body of the founder, and a collection of books including the vocabulary of Theophrastus Paracelsus and a mirror of great virtue. The discovery of the tomb is presented in the Fama as both a physical event and a spiritual allegory: the sealed chamber as the initiated soul that has completed the work of purification; the preserved body as the resurrection principle; and the 120-year interval as a numerological code (120 = 5 × 24, relating to planetary cycles and the ages of the world). In Rosicrucian and Golden Dawn initiatic practice, the tomb functions as the central death-and-resurrection symbolism of the inner mysteries, with the candidate enacting a ritual death and rebirth within a symbolic reconstruction of the heptagonal vault.",
+      "secondaryNames": [
+        { "name": "Tomb of Christian Rosenkreuz", "languageTag": "en-formal", "visible": true, "sortOrder": 0 },
+        { "name": "Grab des CRC", "languageTag": "de", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "symbol"],
+      "extendedData": {
+        "geometry": "heptagonal",
+        "contents": ["altar", "artificial sun", "preserved body", "books including Paracelsus vocabulary", "mirror"],
+        "yearOfDeath": 1484,
+        "yearOfDiscovery": 1604,
+        "intervalYears": 120,
+        "numerology": "120 = 5 × 24",
+        "symbolism": {
+          "sealedChamber": "purified initiatic soul",
+          "preservedBody": "resurrection principle, incorruptible spiritual body",
+          "artificialSun": "the inner divine light"
+        },
+        "traditions": ["Rosicrucian", "Golden Dawn", "Hermetic"]
+      }
+    },
+    {
+      "canonicalName": "rosicrucian.symbol.vitriol",
+      "entityType": "rosicrucian.symbol",
+      "primaryDisplayName": "VITRIOL",
+      "description": "VITRIOL is the great alchemical and Rosicrucian acronym: Visita Interiora Terrae Rectificando Invenies Occultum Lapidem ('Visit the interior of the earth and by rectifying you will find the hidden stone'), first recorded in the 1625 work Viridarium Chymicum by Daniel Stolcius von Stolcenberg and widely reproduced in alchemical and Masonic iconography thereafter. The acronym encodes the entire programme of the alchemical inner work: descent into the interior (the unconscious, the prima materia, the base matter of the self), rectification (purification, correction of what is disordered), and the discovery of the hidden Philosopher's Stone (the redeemed self, the lapis philosophorum, the divine spark latent within matter). The word 'vitriol' also denotes sulphuric acid (iron vitriol, green vitriol), which in alchemy is the caustic solvent that dissolves all dross — a literal and symbolic parallel to the corrosive psychological honesty that the inner work requires. The phrase is inscribed on the central altar of many Masonic and Rosicrucian lodge-rooms as the statement of the inner lodge's fundamental purpose.",
+      "secondaryNames": [
+        { "name": "Visita Interiora Terrae Rectificando Invenies Occultum Lapidem", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Visit the Interior of the Earth", "languageTag": "en-translation", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["rosicrucian", "hermetic", "alchemy", "initialism"],
+      "extendedData": {
+        "fullLatin": "Visita Interiora Terrae Rectificando Invenies Occultum Lapidem",
+        "fullEnglish": "Visit the interior of the earth and by rectifying you will find the hidden stone",
+        "firstRecorded": "Viridarium Chymicum, 1625 (Daniel Stolcius von Stolcenberg)",
+        "stagesEncoded": {
+          "Visita": "descent into the interior / unconscious",
+          "Rectificando": "purification and correction",
+          "Invenies Occultum Lapidem": "discovery of the Philosopher's Stone / divine self"
+        },
+        "literalMeaning": "vitriol = sulphuric acid, a corrosive solvent",
+        "traditions": ["Rosicrucian", "Alchemical", "Freemasonry", "Hermetic"]
+      }
+    }
+  ]
+}

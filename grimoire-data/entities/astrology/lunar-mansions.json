@@ -1,0 +1,762 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.lunar-mansion.al-sharatain",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Sharatain — 1st Lunar Mansion",
+      "description": "Al-Sharatain (الشرطين), 'The Two Signs', marks the head of the Arabic lunar zodiac at 0°–12°51' tropical Aries, anchored by the bright stars Hamal (Alpha Arietis) and Sheratan (Beta Arietis). These two stars were seen as a pair of signs or marks on the sky, heralding the lunar month's opening with the energy of raw beginning and urgent motion. Agrippa (Occult Philosophy II.33) names this mansion as generally hostile to construction, planting, and marriage but potent for journeys, the freeing of captives, and the destruction of enemies through talismanic magic. Its ruling angel is Geniel, and its character is predominantly unfavorable for creative or nurturing works while lending force to aggressive or expeditionary undertakings.",
+      "secondaryNames": [
+        { "name": "الشرطين", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Two Signs", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alnath", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Geniel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 1,
+        "arabicName": "Al-Sharatain",
+        "arabicScript": "الشرطين",
+        "meaning": "The Two Signs",
+        "startDegree": 0.0,
+        "endDegree": 12.857,
+        "rulingStar": "Hamal (Alpha Arietis) and Sheratan (Beta Arietis)",
+        "rulingSpirit": "Geniel",
+        "rulingPlanet": null,
+        "favorable": false,
+        "agrippaMagic": "Good for journeys and destruction of enemies; bad for building, planting, and marriage",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-butayn",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Butayn — 2nd Lunar Mansion",
+      "description": "Al-Butayn (البطين), 'The Little Belly', occupies 12°51'–25°43' tropical Aries, centred on Mesarthim (Gamma Arietis), the faint third star of Aries forming the belly of the Ram. The name evokes the soft underbelly of the animal, suggesting hidden depths and interior riches concealed beneath an unassuming surface. Agrippa attributes to this mansion powers for finding hidden treasure, the recovery of stolen or lost goods, and the retention of captives — matters of concealment and recovery are its especial domain. Its ruling spirit is Enediel, and the mansion has a mixed character, useful for material discovery but not uniformly benevolent.",
+      "secondaryNames": [
+        { "name": "البطين", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Little Belly", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Albotain", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Enediel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 2,
+        "arabicName": "Al-Butayn",
+        "arabicScript": "البطين",
+        "meaning": "The Little Belly",
+        "startDegree": 12.857,
+        "endDegree": 25.714,
+        "rulingStar": "Mesarthim (Gamma Arietis)",
+        "rulingSpirit": "Enediel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for finding hidden treasures and recovering stolen goods; aids in detaining captives",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-thurayya",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Thurayya — 3rd Lunar Mansion",
+      "description": "Al-Thurayya (الثريا), 'The Many Little Ones', spans 25°43' tropical Aries to 8°34' Taurus and is marked by the Pleiades cluster, with Alcyone (Eta Tauri) as its principal star. The name poetically evokes the multitudinous sparkling of the cluster, like a scattering of tiny lamps against the dark; in Arabic culture the Pleiades were among the most celebrated of all star-groups, closely watched for agricultural and navigational purposes. Agrippa (Occult Philosophy II.34) attributes to this mansion virtues for alchemical operations, safe sea voyages, the ransom of captives, and healing from illness. Its ruling spirit is Amixiel, and its overall character is mixed, powerful for travel and transformation but requiring careful working.",
+      "secondaryNames": [
+        { "name": "الثريا", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Many Little Ones", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Pleiades", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Alchoraya", "languageTag": "la", "visible": true, "sortOrder": 3 },
+        { "name": "Amixiel", "languageTag": "en", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 3,
+        "arabicName": "Al-Thurayya",
+        "arabicScript": "الثريا",
+        "meaning": "The Many Little Ones",
+        "startDegree": 25.714,
+        "endDegree": 38.571,
+        "rulingStar": "Alcyone (Eta Tauri) / Pleiades cluster",
+        "rulingSpirit": "Amixiel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for alchemy, sea voyages, ransom of captives, and healing from illness",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-dabaran",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Dabaran — 4th Lunar Mansion",
+      "description": "Al-Dabaran (الدبران), 'The Follower', spans 8°34'–21°26' tropical Taurus and is marked by the brilliant red star Aldebaran (Alpha Tauri), the Eye of the Bull, which 'follows' the Pleiades across the sky. Aldebaran is one of the four Royal Stars of Persia and one of the 15 Behenian fixed stars of medieval magic — a star of immense power associated with Mars and martial force. Agrippa designates this mansion as malefic in character, suited for works of discord, the destruction of enemies, the separation of lovers, and the ruin of buildings. Its ruling spirit is Azariel, and this mansion demands great caution: its powers, once invoked, incline strongly toward destruction and conflict.",
+      "secondaryNames": [
+        { "name": "الدبران", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Follower", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Aldebaran", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Azariel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 4,
+        "arabicName": "Al-Dabaran",
+        "arabicScript": "الدبران",
+        "meaning": "The Follower",
+        "startDegree": 38.571,
+        "endDegree": 51.429,
+        "rulingStar": "Aldebaran (Alpha Tauri)",
+        "rulingSpirit": "Azariel",
+        "rulingPlanet": null,
+        "favorable": false,
+        "agrippaMagic": "Good for destruction of enemies, discord, separation of lovers, and ruin of buildings",
+        "behenianStar": "Aldebaran"
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-haqa",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Haqa — 5th Lunar Mansion",
+      "description": "Al-Haqa (الهقعة), 'The White Spot', occupies 21°26' tropical Taurus to 4°17' Gemini and is anchored by Lambda Orionis (Meissa) at the head of Orion, a small circular asterism resembling a white patch or mark. The name refers to this distinct bright cluster near Orion's head, a navigational landmark long used by Arabic seafarers and desert travellers. Agrippa praises this mansion as highly benefic for hunting, the taming of wild animals, the pursuit of knowledge and learning, and the success of embassies and deputations. Its ruling spirit is Gabiel, and its generally favorable character makes it one of the more constructive mansions for intellectual and exploratory endeavours.",
+      "secondaryNames": [
+        { "name": "الهقعة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The White Spot", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Almices", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Gabiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 5,
+        "arabicName": "Al-Haqa",
+        "arabicScript": "الهقعة",
+        "meaning": "The White Spot",
+        "startDegree": 51.429,
+        "endDegree": 64.286,
+        "rulingStar": "Lambda Orionis (Meissa) / Orion's Head",
+        "rulingSpirit": "Gabiel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for hunting, taming wild beasts, learning, and the success of embassies",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-hana",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Hana — 6th Lunar Mansion",
+      "description": "Al-Hana (الهنعة), 'The Mark' or 'Brand', spans 4°17'–17°9' tropical Gemini and is marked by Alhena (Gamma Geminorum), the bright star at the foot of Castor. The name connotes a brand or mark made with fire, evoking the permanent inscription of identity upon a surface. Agrippa attributes to this mansion benefic powers for love, friendship, recovery from illness, and freedom of captives held against their will. Its ruling spirit is Dirachiel, and its character is generally favorable, associated with the forging of bonds between people and the restoration of health and liberty. Medieval talismans of this mansion were said to promote goodwill and heal long-standing ailments.",
+      "secondaryNames": [
+        { "name": "الهنعة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Mark", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Athaya", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Dirachiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 6,
+        "arabicName": "Al-Hana",
+        "arabicScript": "الهنعة",
+        "meaning": "The Mark or Brand",
+        "startDegree": 64.286,
+        "endDegree": 77.143,
+        "rulingStar": "Alhena (Gamma Geminorum)",
+        "rulingSpirit": "Dirachiel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for love, friendship, recovery from sickness, and freeing captives",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-dhira",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Dhira — 7th Lunar Mansion",
+      "description": "Al-Dhira (الذراع), 'The Forearm', occupies 17°9'–30° tropical Gemini and is marked by the twin stars Castor (Alpha Geminorum) and Pollux (Beta Geminorum), conceived as the outstretched forearm of the celestial Twins. The image of the forearm conveys reaching, grasping, and the active extension of will into the world. Agrippa names this mansion as benefic, favorable for profit in trade, the growth of love between persons, the deliverance of captives, and the safe passage of messengers and travellers. Its ruling spirit is Scheliel, and the mansion's placement at the heart of Gemini lends it the Mercurial qualities of communication, commerce, and the bridging of distances — whether physical or social.",
+      "secondaryNames": [
+        { "name": "الذراع", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Forearm", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Aldirah", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Scheliel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 7,
+        "arabicName": "Al-Dhira",
+        "arabicScript": "الذراع",
+        "meaning": "The Forearm",
+        "startDegree": 77.143,
+        "endDegree": 90.0,
+        "rulingStar": "Castor (Alpha Geminorum) and Pollux (Beta Geminorum)",
+        "rulingSpirit": "Scheliel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for profit, love, deliverance of captives, and safe travel of messengers",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-nathre",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Nathre — 8th Lunar Mansion",
+      "description": "Al-Nathre (النثرة), 'The Crib' or 'The Manger', spans 0°–12°51' tropical Cancer and is centred on Praesepe (M44), the famous open cluster in Cancer known also as the Beehive, flanked by the stars Asellus Borealis and Asellus Australis. The Arabic name evokes a feeding trough or crib, evoking the nurturing of young creatures. Agrippa attributes to this mansion powers of victory in war, the strengthening of buildings, love between companions, and safe travel by sea. Its ruling spirit is Amnediel, and the mansion is generally benefic, its domestic and nautical associations reflecting Cancer's lunar and oceanic nature.",
+      "secondaryNames": [
+        { "name": "النثرة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Crib", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Praesepe", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Amnediel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 8,
+        "arabicName": "Al-Nathre",
+        "arabicScript": "النثرة",
+        "meaning": "The Crib or Manger",
+        "startDegree": 90.0,
+        "endDegree": 102.857,
+        "rulingStar": "Praesepe (M44 / Beehive Cluster)",
+        "rulingSpirit": "Amnediel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for victory, strengthening buildings, love, and safe sea travel",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-tarf",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Tarf — 9th Lunar Mansion",
+      "description": "Al-Tarf (الطرف), 'The Glance of the Lion' or 'The End', spans 12°51'–25°43' tropical Cancer and is marked by Kappa Cancri, a dim star at the edge of Cancer. The name refers to the eye's glance or the tip or end of something, here indicating the gaze of the Lion turning back toward the Crab. Agrippa assigns to this mansion a malefic character, stating that it hinders journeys, destroys harvests and crops, and brings destruction and infirmity to those under its influence. Its ruling spirit is Barbiel, and the mansion is considered among the least fortunate in the lunar cycle, requiring avoidance for any constructive magical work.",
+      "secondaryNames": [
+        { "name": "الطرف", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Glance of the Lion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Atarf", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Barbiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 9,
+        "arabicName": "Al-Tarf",
+        "arabicScript": "الطرف",
+        "meaning": "The Glance of the Lion",
+        "startDegree": 102.857,
+        "endDegree": 115.714,
+        "rulingStar": "Kappa Cancri",
+        "rulingSpirit": "Barbiel",
+        "rulingPlanet": null,
+        "favorable": false,
+        "agrippaMagic": "Hinders journeys, destroys crops, brings destruction and infirmity",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-jabha",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Jabha — 10th Lunar Mansion",
+      "description": "Al-Jabha (الجبهة), 'The Forehead', spans 25°43' tropical Cancer to 8°34' Leo and is marked by the asterism near the Lion's forehead including Zeta Leonis (Adhafera) and other stars approaching the great star Regulus. The forehead of the Lion evokes regal authority, proud bearing, and the direct confrontational gaze of a ruler. Agrippa attributes to this mansion powers of strength and victory, particularly in war and conflict, as well as the enhancement of buildings and the promotion of goodwill between persons. Its ruling spirit is Ardefiel, and the mansion has a mixed-to-benefic character, potent for martial and political success when properly invoked.",
+      "secondaryNames": [
+        { "name": "الجبهة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Forehead", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Algebha", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Ardefiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 10,
+        "arabicName": "Al-Jabha",
+        "arabicScript": "الجبهة",
+        "meaning": "The Forehead",
+        "startDegree": 115.714,
+        "endDegree": 128.571,
+        "rulingStar": "Zeta Leonis (Adhafera) and nearby stars near Regulus",
+        "rulingSpirit": "Ardefiel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for strength and victory in war, enhancing buildings, and promoting goodwill",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-zubra",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Zubra — 11th Lunar Mansion",
+      "description": "Al-Zubra (الزبرة), 'The Mane', occupies 8°34'–21°26' tropical Leo and is marked by Zosma (Delta Leonis) and Chertan (Theta Leonis), stars forming the back and mane of the Lion. The mane is a symbol of dignity, pride, and the fullness of mature power. Agrippa attributes to this mansion benefic powers for love, the increase of goods and profit, the safety of those travelling by land, and the liberation of captives. Its ruling spirit is Neciel, and this mansion is considered favorable in its overall character, associated with worldly abundance, affectionate bonds, and the successful completion of journeys undertaken under its auspice.",
+      "secondaryNames": [
+        { "name": "الزبرة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Mane", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Azobra", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Neciel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 11,
+        "arabicName": "Al-Zubra",
+        "arabicScript": "الزبرة",
+        "meaning": "The Mane",
+        "startDegree": 128.571,
+        "endDegree": 141.429,
+        "rulingStar": "Zosma (Delta Leonis) and Chertan (Theta Leonis)",
+        "rulingSpirit": "Neciel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for love, increase of wealth, travel by land, and liberation of captives",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-sarfa",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Sarfa — 12th Lunar Mansion",
+      "description": "Al-Sarfa (الصرفة), 'The Changer of the Weather', spans 21°26' tropical Leo to 4°17' Virgo and is marked by Denebola (Beta Leonis), the bright star at the Lion's tail. The name refers to the meteorological transition associated with this portion of the sky — the shift from the height of summer's heat toward cooler autumnal conditions. Agrippa assigns to this mansion powers of friendship, partnership, the harmony of travellers' journeys, and the improvement of harvests and agricultural abundance. Its ruling spirit is Abdizuel, and the mansion is generally benefic, smoothing social relationships and natural cycles when its energies are properly engaged.",
+      "secondaryNames": [
+        { "name": "الصرفة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Changer of the Weather", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alsarpha", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Abdizuel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 12,
+        "arabicName": "Al-Sarfa",
+        "arabicScript": "الصرفة",
+        "meaning": "The Changer of the Weather",
+        "startDegree": 141.429,
+        "endDegree": 154.286,
+        "rulingStar": "Denebola (Beta Leonis)",
+        "rulingSpirit": "Abdizuel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for friendship, harmonious travel, and improving harvests",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-awwa",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Awwa — 13th Lunar Mansion",
+      "description": "Al-Awwa (العوا), 'The Barker' or 'The Howler', occupies 4°17'–17°9' tropical Virgo and is associated with a small asterism of stars including Beta, Eta, Gamma, and Delta Virginis in the area near Vindemiatrix and approaching Spica. The name conjures the image of barking dogs guarding a threshold, or the howling that announces a presence — a liminal, watchful energy. Agrippa attributes to this mansion powers for love, friendship, travel, the freeing of captives, and healing from illness. Its ruling spirit is Jazeriel, and the mansion is broadly benefic, supporting harmonious human relations and the recovery of those who are confined or unwell.",
+      "secondaryNames": [
+        { "name": "العوا", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Barker", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alhaire", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Jazeriel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 13,
+        "arabicName": "Al-Awwa",
+        "arabicScript": "العوا",
+        "meaning": "The Barker or Howler",
+        "startDegree": 154.286,
+        "endDegree": 167.143,
+        "rulingStar": "Beta, Eta, Gamma, Delta Virginis",
+        "rulingSpirit": "Jazeriel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for love, friendship, travel, freeing captives, and healing",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-simak",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Simak — 14th Lunar Mansion",
+      "description": "Al-Simak (السماك), 'The Unarmed One', spans 17°9'–30° tropical Virgo and is anchored by the magnificent first-magnitude star Spica (Alpha Virginis), one of the 15 Behenian stars of medieval magic, associated with Venus and Mercury, and carrying immense benefic power in the Western tradition. The epithet 'Unarmed' distinguishes this Simak from Al-Simak al-Ramih ('The Lance-Bearer', i.e. Arcturus) — the Unarmed Simak bears no weapon, evoking peace, grace, and an unguarded openness. Agrippa names this the fourteenth mansion as highly benefic, excellent for love, friendship, the preservation of health, and the obtaining of any good thing one desires. Its ruling spirit is Ergediel, and of all the twenty-eight mansions this is among the most auspicious for benefic magical workings.",
+      "secondaryNames": [
+        { "name": "السماك", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Unarmed One", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alchimech", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Ergediel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 14,
+        "arabicName": "Al-Simak",
+        "arabicScript": "السماك",
+        "meaning": "The Unarmed One",
+        "startDegree": 167.143,
+        "endDegree": 180.0,
+        "rulingStar": "Spica (Alpha Virginis)",
+        "rulingSpirit": "Ergediel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Highly benefic for love, friendship, health, and obtaining any good desired",
+        "behenianStar": "Spica"
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-ghafr",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Ghafr — 15th Lunar Mansion",
+      "description": "Al-Ghafr (الغفر), 'The Cover' or 'The Veil', occupies 0°–12°51' tropical Libra and is marked by stars around Iota, Kappa, and Lambda Virginis in the trailing edge of Virgo approaching the Scales. The name evokes concealment and protection — the drawing of a veil over something, whether to shelter it or to hide it from view. Agrippa attributes to this mansion powers for digging wells and finding hidden underground waters, the discovery of buried treasure, the rescue of captives, and assisting in building strong foundations. Its ruling spirit is Ataliel, and the mansion has a mixed character — neither strongly malefic nor strongly benefic, but oriented toward uncovering what is hidden beneath the surface.",
+      "secondaryNames": [
+        { "name": "الغفر", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Cover", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Algafra", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Ataliel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 15,
+        "arabicName": "Al-Ghafr",
+        "arabicScript": "الغفر",
+        "meaning": "The Cover or Veil",
+        "startDegree": 180.0,
+        "endDegree": 192.857,
+        "rulingStar": "Iota, Kappa, Lambda Virginis",
+        "rulingSpirit": "Ataliel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for digging wells, finding hidden treasure, rescuing captives, and building foundations",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-zubana",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Zubana — 16th Lunar Mansion",
+      "description": "Al-Zubana (الزبانى), 'The Claws of the Scorpion', spans 12°51'–25°43' tropical Libra and is marked by Zubenelgenubi (Alpha Librae) and Zubeneschamali (Beta Librae), the two principal stars of Libra which in earlier Greek and Arabic astronomy were regarded as the southern and northern claws of the Scorpion before the Scales constellation was formalised. These stars carry an ambivalent legacy — balance and judgment on one hand, the scorpion's potential strike on the other. Agrippa assigns to this mansion powers for commerce and merchants, the increase of harvests and trading profits, travel by sea, and the ransoming of captives. Its ruling spirit is Azeruel, and the mansion is broadly benefic, favouring enterprise and exchange.",
+      "secondaryNames": [
+        { "name": "الزبانى", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Claws of the Scorpion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Azubene", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Azeruel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 16,
+        "arabicName": "Al-Zubana",
+        "arabicScript": "الزبانى",
+        "meaning": "The Claws of the Scorpion",
+        "startDegree": 192.857,
+        "endDegree": 205.714,
+        "rulingStar": "Zubenelgenubi (Alpha Librae) and Zubeneschamali (Beta Librae)",
+        "rulingSpirit": "Azeruel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for commerce, harvest, sea travel, and ransoming captives",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-iklil",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Iklil — 17th Lunar Mansion",
+      "description": "Al-Iklil (الإكليل), 'The Crown of the Scorpion', spans 25°43' tropical Libra to 8°34' Scorpio and is marked by Graffias (Beta Scorpii), Dschubba (Delta Scorpii), and Pi Scorpii — the stars forming the crown or diadem atop the Scorpion's head. The image of a crown suggests both majesty and danger, the highest point of a creature renowned for its lethal capability. Agrippa designates this as a malefic mansion, suited for besieging cities and military campaigns, hindering travellers, and works of discord and destruction aimed at enemies. Its ruling spirit is Adriel, and the mansion's energy is directed toward overcoming fortifications, whether literal or metaphorical, through force rather than persuasion.",
+      "secondaryNames": [
+        { "name": "الإكليل", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Crown of the Scorpion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Acliel", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Adriel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 17,
+        "arabicName": "Al-Iklil",
+        "arabicScript": "الإكليل",
+        "meaning": "The Crown of the Scorpion",
+        "startDegree": 205.714,
+        "endDegree": 218.571,
+        "rulingStar": "Graffias (Beta Scorpii), Dschubba (Delta Scorpii)",
+        "rulingSpirit": "Adriel",
+        "rulingPlanet": null,
+        "favorable": false,
+        "agrippaMagic": "Good for besieging cities, military campaigns, and works of discord against enemies",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-qalb",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Qalb — 18th Lunar Mansion",
+      "description": "Al-Qalb (القلب), 'The Heart of the Scorpion', occupies 8°34'–21°26' tropical Scorpio and is dominated by Antares (Alpha Scorpii), one of the four Royal Stars of Persia and one of the 15 Behenian stars of medieval magic — a great red supergiant that blazes at the very heart of the Scorpion. Antares ('rival of Mars') carries the energy of Mars intensified: courage, passion, extremity, and the capacity for both heroic deeds and catastrophic excess. Agrippa assigns to this mansion mixed powers: it favors building, art, and the creation of new things, yet it also brings discord, warfare, and the danger of shipwreck to those who sail under it. Its ruling spirit is Egibiel, and its character demands careful discernment — immense power is here, but it cuts in both directions.",
+      "secondaryNames": [
+        { "name": "القلب", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Heart of the Scorpion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alcalb", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Egibiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 18,
+        "arabicName": "Al-Qalb",
+        "arabicScript": "القلب",
+        "meaning": "The Heart of the Scorpion",
+        "startDegree": 218.571,
+        "endDegree": 231.429,
+        "rulingStar": "Antares (Alpha Scorpii)",
+        "rulingSpirit": "Egibiel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for building and art; also brings discord and the danger of shipwreck",
+        "behenianStar": "Antares"
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-shawla",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Shawla — 19th Lunar Mansion",
+      "description": "Al-Shawla (الشولة), 'The Sting of the Scorpion', spans 21°26' tropical Scorpio to 4°17' Sagittarius and is marked by Lesath (Upsilon Scorpii) and Shaula (Lambda Scorpii), the two stars at the scorpion's curling stinger — the very tip of the tail poised to strike. The image is unmistakably one of concentrated offensive power, the culmination of the scorpion's lethal capability. Agrippa assigns to this mansion a malefic character suited to sieges, the capture and detention of enemies, venomous creatures and their works, and operations of destruction toward adversaries. Its ruling spirit is Amutiel, and this mansion is among the most martial and hostile in the lunar cycle, appropriate only for aggressive or defensive magical operations.",
+      "secondaryNames": [
+        { "name": "الشولة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Sting of the Scorpion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Exaula", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Amutiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 19,
+        "arabicName": "Al-Shawla",
+        "arabicScript": "الشولة",
+        "meaning": "The Sting of the Scorpion",
+        "startDegree": 231.429,
+        "endDegree": 244.286,
+        "rulingStar": "Lesath (Upsilon Scorpii) and Shaula (Lambda Scorpii)",
+        "rulingSpirit": "Amutiel",
+        "rulingPlanet": null,
+        "favorable": false,
+        "agrippaMagic": "Good for siege warfare, capture of enemies, and works of destruction against adversaries",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-naim",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Naim — 20th Lunar Mansion",
+      "description": "Al-Naim (النعائم), 'The Ostriches', occupies 4°17'–17°9' tropical Sagittarius and is associated with a group of stars including those near the Milky Way in Sagittarius, traditionally imagined as a herd of ostriches drinking from and returning from the celestial river. The dual imagery of ostriches at the river and returning home speaks to the themes of nourishment, wildness tamed, and the successful return of wanderers. Agrippa attributes to this mansion powers for taming animals, the domestication of wild creatures, agricultural improvement, and the increase of goodwill among people. Its ruling spirit is Kyriel; Vega (a Behenian star) sits nearby in Lyra, lending brilliance to this region of sky, and the mansion is generally benefic in character.",
+      "secondaryNames": [
+        { "name": "النعائم", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Ostriches", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Nahaym", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Kyriel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 20,
+        "arabicName": "Al-Naim",
+        "arabicScript": "النعائم",
+        "meaning": "The Ostriches",
+        "startDegree": 244.286,
+        "endDegree": 257.143,
+        "rulingStar": "Stars in Sagittarius near the Galactic stream; Vega (Alpha Lyrae) nearby",
+        "rulingSpirit": "Kyriel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for taming animals, agriculture, and increasing goodwill among people",
+        "behenianStar": "Vega"
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-balda",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Balda — 21st Lunar Mansion",
+      "description": "Al-Balda (البلدة), 'The City' or 'The District', spans 17°9'–30° tropical Sagittarius and is the most sparsely starred of the twenty-eight mansions — an unusually empty region of sky near the Galactic Centre, devoid of bright marker stars. The name 'city' or 'district' may arise from this sense of a bounded territory, a space defined more by its borders than by its contents. Agrippa assigns to this mansion the specific power of enabling escape from captivity and danger, making it useful for those who must flee pursuit or extricate themselves from difficult circumstances. Its ruling spirit is Bethnael, and the mansion has a mixed, introspective character — the empty quarter of the sky that nevertheless offers sanctuary and egress.",
+      "secondaryNames": [
+        { "name": "البلدة", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The City", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Albeldach", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Bethnael", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 21,
+        "arabicName": "Al-Balda",
+        "arabicScript": "البلدة",
+        "meaning": "The City or District",
+        "startDegree": 257.143,
+        "endDegree": 270.0,
+        "rulingStar": "Empty region near Galactic Centre in Sagittarius",
+        "rulingSpirit": "Bethnael",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for escaping captivity and extracting oneself from danger",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-saad-al-dhabih",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Saad al-Dhabih — 22nd Lunar Mansion",
+      "description": "Al-Saad al-Dhabih (سعد الذابح), 'The Lucky Star of the Slaughterer', occupies 0°–12°51' tropical Capricorn and is marked by Dabih (Beta Capricorni), a wide double star at the beginning of Capricorn. The mansion opens the series of four 'Saad' (lucky) mansions that traverse Capricorn and Aquarius, and the name 'slaughterer' refers to the ritual sacrifice that accompanies good fortune — the prosperity that comes with the right expenditure of effort or life-force. Agrippa assigns to this mansion powers for healing the sick, freeing captives, and aiding those suffering from enchantments or magical oppression. Its ruling spirit is Geliel, and the mansion is generally benefic, especially for healing and liberation.",
+      "secondaryNames": [
+        { "name": "سعد الذابح", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Lucky Star of the Slaughterer", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Caadaldeba", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Geliel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 22,
+        "arabicName": "Al-Saad al-Dhabih",
+        "arabicScript": "سعد الذابح",
+        "meaning": "The Lucky Star of the Slaughterer",
+        "startDegree": 270.0,
+        "endDegree": 282.857,
+        "rulingStar": "Dabih (Beta Capricorni)",
+        "rulingSpirit": "Geliel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for healing the sick, freeing captives, and countering enchantments",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-saad-al-bula",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Saad al-Bula — 23rd Lunar Mansion",
+      "description": "Al-Saad al-Bula (سعد بلع), 'The Lucky Star of the Swallower', spans 12°51'–25°43' tropical Capricorn and is marked by Albali (Epsilon Aquarii, just crossing into early Aquarius by modern boundaries) — the star whose name itself means 'the swallower' in Arabic. The swallower evokes the capacity to absorb, digest, and transform — taking in the world and rendering it useful. Agrippa assigns to this mansion the virtues of healing the sick, especially those suffering from chronic ailments, and for works of protective and restorative magic aimed at undoing harmful enchantments. Its ruling spirit is Requiel, and the mansion is benefic in character, associated with the deep healing that comes from absorption and internal transformation.",
+      "secondaryNames": [
+        { "name": "سعد بلع", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Lucky Star of the Swallower", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Caaddebolach", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Requiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 23,
+        "arabicName": "Al-Saad al-Bula",
+        "arabicScript": "سعد بلع",
+        "meaning": "The Lucky Star of the Swallower",
+        "startDegree": 282.857,
+        "endDegree": 295.714,
+        "rulingStar": "Albali (Epsilon Aquarii)",
+        "rulingSpirit": "Requiel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for healing chronic illness and undoing harmful enchantments",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-saad-al-suud",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Saad al-Suud — 24th Lunar Mansion",
+      "description": "Al-Saad al-Suud (سعد السعود), 'The Luckiest of the Lucky' or 'The Most Fortunate of the Fortunate', occupies 25°43' tropical Capricorn to 8°34' Aquarius and is marked by Sadalsuud (Beta Aquarii), whose very name repeats and intensifies the Arabic word for good fortune. This mansion is widely regarded as among the most auspicious of the twenty-eight, a concentration of benevolent celestial influence promising abundance, love, pleasure, and the fulfilment of desires. Agrippa attributes to it powers of love, the enhancement of pleasures and well-being, and success in building and long-term projects. Its ruling spirit is Abrinael, and talismans made under this mansion were held to bring lasting happiness and the goodwill of rulers.",
+      "secondaryNames": [
+        { "name": "سعد السعود", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Luckiest of the Lucky", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Caad Asaad", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Abrinael", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 24,
+        "arabicName": "Al-Saad al-Suud",
+        "arabicScript": "سعد السعود",
+        "meaning": "The Luckiest of the Lucky",
+        "startDegree": 295.714,
+        "endDegree": 308.571,
+        "rulingStar": "Sadalsuud (Beta Aquarii)",
+        "rulingSpirit": "Abrinael",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Highly benefic for love, pleasure, building projects, and obtaining the goodwill of rulers",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-saad-al-akhbiya",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Saad al-Akhbiya — 25th Lunar Mansion",
+      "description": "Al-Saad al-Akhbiya (سعد الأخبية), 'The Lucky Stars of the Tents', spans 8°34'–21°26' tropical Aquarius and is marked by Sadachbia (Gamma Aquarii) and associated stars, which were imagined as a cluster of lucky tent-stars forming the dwellings of desert nomads — the good fortune of shelter and hearth-fire in a wide landscape. The tents evoke community, hospitality, and the shared life of those who travel together and rest under a common sky. Agrippa assigns to this mansion powers for agriculture, profitable planting, sailing, and the discovery of hidden things beneath the earth. Its ruling spirit is Aziel, and the mansion is broadly benefic, associated with the practical good fortune of daily life and productive labour.",
+      "secondaryNames": [
+        { "name": "سعد الأخبية", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Lucky Stars of the Tents", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Caad Ahbia", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Aziel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 25,
+        "arabicName": "Al-Saad al-Akhbiya",
+        "arabicScript": "سعد الأخبية",
+        "meaning": "The Lucky Stars of the Tents",
+        "startDegree": 308.571,
+        "endDegree": 321.429,
+        "rulingStar": "Sadachbia (Gamma Aquarii)",
+        "rulingSpirit": "Aziel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for agriculture, planting, sailing, and finding hidden things underground",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-fargh-al-awwal",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Fargh al-Awwal — 26th Lunar Mansion",
+      "description": "Al-Fargh al-Awwal (الفرغ الأول), 'The First Spout' or 'The First Emptying', spans 21°26' tropical Aquarius to 4°17' Pisces and is marked by Markab (Alpha Pegasi) and Scheat (Beta Pegasi), the two prominent stars of the Great Square of Pegasus. The name refers to the opening of a water vessel or the first part of a channel's outflow, evoking the beginning of a great release or outpouring. Agrippa assigns to this mansion powers for the construction and strengthening of buildings and the promotion of goodwill between merchants and traders. Its ruling spirit is Tagriel, and the mansion has a mixed-to-moderate character, suitable for constructive material undertakings and the establishment of commercial relationships, though not among the most powerfully benefic mansions.",
+      "secondaryNames": [
+        { "name": "الفرغ الأول", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The First Spout", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alfarfac", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Tagriel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 26,
+        "arabicName": "Al-Fargh al-Awwal",
+        "arabicScript": "الفرغ الأول",
+        "meaning": "The First Spout",
+        "startDegree": 321.429,
+        "endDegree": 334.286,
+        "rulingStar": "Markab (Alpha Pegasi) and Scheat (Beta Pegasi)",
+        "rulingSpirit": "Tagriel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for construction of buildings and promoting goodwill among merchants",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-fargh-al-thani",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Fargh al-Thani — 27th Lunar Mansion",
+      "description": "Al-Fargh al-Thani (الفرغ الثاني), 'The Second Spout', spans 4°17'–17°9' tropical Pisces and is marked by Algenib (Gamma Pegasi) at one corner of the Great Square of Pegasus, along with Alpheratz (Alpha Andromedae) — stars that form a distinctive and easily identified quadrilateral in the autumn sky. This second emptying completes the water-vessel imagery of the 26th mansion, suggesting the full release of potential stored within. Agrippa attributes to this mansion powers for love, the deepening of affection between persons, harmony in households, and the promotion of concord generally. Its ruling spirit is Atheniel, and the mansion is benefic in character, associated with the outpouring of warm human feeling and the resolution of interpersonal conflicts.",
+      "secondaryNames": [
+        { "name": "الفرغ الثاني", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Second Spout", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alfarfac Secunda", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Atheniel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 27,
+        "arabicName": "Al-Fargh al-Thani",
+        "arabicScript": "الفرغ الثاني",
+        "meaning": "The Second Spout",
+        "startDegree": 334.286,
+        "endDegree": 347.143,
+        "rulingStar": "Algenib (Gamma Pegasi) and Alpheratz (Alpha Andromedae)",
+        "rulingSpirit": "Atheniel",
+        "rulingPlanet": null,
+        "favorable": true,
+        "agrippaMagic": "Good for love, deepening affection, household harmony, and promoting concord",
+        "behenianStar": null
+      }
+    },
+    {
+      "canonicalName": "astrology.lunar-mansion.al-risha",
+      "entityType": "astrology.lunar-mansion",
+      "primaryDisplayName": "Al-Risha — 28th Lunar Mansion",
+      "description": "Al-Risha (الرشاء), 'The Cord' or 'The Rope', closes the lunar cycle at 17°9'–30° tropical Pisces and is marked by Mirach (Beta Andromedae) and surrounding stars in Andromeda, conceived as the cord binding together the two Fish of Pisces. The image of the cord completes the cycle: that which binds and connects, the final thread before the zodiac returns to its beginning. Agrippa attributes to this mansion powers for fishing and maritime pursuits, the discovery of things lost at sea, the success of searches for hidden or misplaced goods, and works of binding and knot magic. Its ruling spirit is Amnixiel, and the mansion is of mixed character — the ending of a cycle carries both the exhaustion of the old and the potentiality of the imminent new beginning at Al-Sharatain.",
+      "secondaryNames": [
+        { "name": "الرشاء", "languageTag": "ar", "visible": true, "sortOrder": 0 },
+        { "name": "The Cord", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Arrexhe", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Amnixiel", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "lunar-mansion", "arabic", "moon"],
+      "extendedData": {
+        "orderNumber": 28,
+        "arabicName": "Al-Risha",
+        "arabicScript": "الرشاء",
+        "meaning": "The Cord or Rope",
+        "startDegree": 347.143,
+        "endDegree": 360.0,
+        "rulingStar": "Mirach (Beta Andromedae)",
+        "rulingSpirit": "Amnixiel",
+        "rulingPlanet": null,
+        "favorable": null,
+        "agrippaMagic": "Good for fishing, finding lost things at sea, and works of binding magic",
+        "behenianStar": null
+      }
+    }
+  ]
+}

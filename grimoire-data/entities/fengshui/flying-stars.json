@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "fengshui.flying-star.1",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 1 — White Water",
+      "description": "Star 1, Tān Láng (Greedy Wolf), is the first and most auspicious of the nine flying stars, governed by the Water element and assigned the colour white. It is associated with career success, new opportunities, intellectual clarity, and the favour of benefactors; when it visits a sector or palace it brings a surge of positive, flowing energy. In Xuan Kong Feng Shui, Star 1 is considered one of the three auspicious white stars (1, 6, 8) and its presence in a timely period enhances wealth, reputation, and the smooth advancement of plans.",
+      "secondaryNames": [
+        {
+          "name": "贪狼",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tān Láng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Greedy Wolf",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 1,
+        "chineseName": "贪狼",
+        "pinyinName": "Tān Láng",
+        "englishName": "Greedy Wolf",
+        "element": "astrology.element.water",
+        "color": "White",
+        "originalDirection": "North",
+        "auspicious": true,
+        "lifeArea": "Career, opportunities, benefactors"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.2",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 2 — Black Earth",
+      "description": "Star 2, Jù Mén (Great Door), is governed by the Earth element and assigned the colour black; it is one of the three inauspicious stars most feared in classical Feng Shui. It is strongly associated with illness, health setbacks, accidents, and the accumulation of misfortune, particularly when it combines with the annual or monthly 5 Yellow star. Remedies traditionally include six-rod metal wind chimes or metallic objects to exhaust its Earth energy, and sectors it occupies should not be activated through renovation or loud activity.",
+      "secondaryNames": [
+        {
+          "name": "巨门",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jù Mén",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Great Door",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 2,
+        "chineseName": "巨门",
+        "pinyinName": "Jù Mén",
+        "englishName": "Great Door",
+        "element": "astrology.element.earth",
+        "color": "Black",
+        "originalDirection": "Southwest",
+        "auspicious": false,
+        "lifeArea": "Illness, health obstacles, misfortune"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.3",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 3 — Jade Wood",
+      "description": "Star 3, Lù Cún (Prosperity Keeper), is governed by the Wood element and assigned the colour jade green; it is considered inauspicious in most modern periods, associated with conflict, arguments, lawsuits, and misunderstandings. Its quarrelsome, aggressive nature stems from Wood's quality of upward thrusting expansion — when unbalanced, this manifests as disputes and legal entanglements rather than growth. Fire element remedies such as red objects or lighting are classically used to exhaust the Wood energy of Star 3 and reduce its disruptive influence.",
+      "secondaryNames": [
+        {
+          "name": "禄存",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lù Cún",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Prosperity Keeper",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 3,
+        "chineseName": "禄存",
+        "pinyinName": "Lù Cún",
+        "englishName": "Prosperity Keeper",
+        "element": "wuxing.phase.wood",
+        "color": "Jade",
+        "originalDirection": "East",
+        "auspicious": false,
+        "lifeArea": "Conflict, arguments, lawsuits"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.4",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 4 — Green Wood",
+      "description": "Star 4, Wén Qū (Literary Music), is governed by the Wood element and assigned the colour green; it is considered the star of academic excellence, creative inspiration, romance, and literary achievement. When timely and well-positioned, Star 4 bestows scholarly success, artistic talent, and the bloom of new romantic relationships — the classic combination of Star 4 with Star 1 produces the famous 'Peach Blossom' effect that attracts love and social connection. Its influence is gentle and cultivating rather than forceful, making it one of the more refined of the nine stars.",
+      "secondaryNames": [
+        {
+          "name": "文曲",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wén Qū",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Literary Music",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 4,
+        "chineseName": "文曲",
+        "pinyinName": "Wén Qū",
+        "englishName": "Literary Music",
+        "element": "wuxing.phase.wood",
+        "color": "Green",
+        "originalDirection": "Southeast",
+        "auspicious": true,
+        "lifeArea": "Academic success, romance, creativity"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.5",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 5 — Yellow Earth",
+      "description": "Star 5, Lián Zhēn (Pure Virtue / Destroyer), is the most feared of all nine flying stars — a malevolent Earth star assigned the colour yellow and carrying no fixed original trigram, standing alone at the Center as a force of unmitigated misfortune. It is associated with serious illness, financial catastrophe, accidents, death, and all manner of severe misfortune; when it coincides with the annual or period 2 Black, practitioners take urgent countermeasures. The traditional remedy is six-rod metal wind chimes or a wu lou (brass gourd) to drain its Earth energy, and all renovation, loud noise, and ground-breaking in its occupied sector must be rigorously avoided.",
+      "secondaryNames": [
+        {
+          "name": "廉贞",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lián Zhēn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pure Virtue",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 5,
+        "chineseName": "廉贞",
+        "pinyinName": "Lián Zhēn",
+        "englishName": "Pure Virtue",
+        "element": "astrology.element.earth",
+        "color": "Yellow",
+        "originalDirection": "Center",
+        "auspicious": false,
+        "lifeArea": "Misfortune, illness, catastrophe"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.6",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 6 — White Metal",
+      "description": "Star 6, Wǔ Qū (Military Music), is governed by the Metal element and assigned the colour white; it is one of the three auspicious white stars (1, 6, 8) and is associated with authority, military or official power, windfall wealth, and noble patronage. It carries the energy of Heaven (Qian trigram) and its influence is forceful, decisive, and expansive — particularly beneficial for those in leadership, government, or competitive fields. When timely, Star 6 brings recognition, unexpected financial gains, and the support of powerful mentors.",
+      "secondaryNames": [
+        {
+          "name": "武曲",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ Qū",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Military Music",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 6,
+        "chineseName": "武曲",
+        "pinyinName": "Wǔ Qū",
+        "englishName": "Military Music",
+        "element": "wuxing.phase.metal",
+        "color": "White",
+        "originalDirection": "Northwest",
+        "auspicious": true,
+        "lifeArea": "Authority, windfall wealth, noble patronage"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.7",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 7 — Red Metal",
+      "description": "Star 7, Pò Jūn (Army Breaker), is governed by the Metal element and assigned the colour red; it was considered auspicious during Period 7 (1984–2003) but has since become inauspicious and is now associated with robbery, violence, fire hazards, betrayal, and disputes involving weapons or the mouth (arguments, gossip, slander). Its destructive Metal energy cuts and breaks what has been built, and sectors activated by Star 7 may experience theft, accidents, or sudden reversals of fortune. Water element features are traditionally used to weaken its Fire-tainted Metal expression and reduce its harmful effects.",
+      "secondaryNames": [
+        {
+          "name": "破军",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pò Jūn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Army Breaker",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 7,
+        "chineseName": "破军",
+        "pinyinName": "Pò Jūn",
+        "englishName": "Army Breaker",
+        "element": "wuxing.phase.metal",
+        "color": "Red",
+        "originalDirection": "West",
+        "auspicious": false,
+        "lifeArea": "Robbery, disputes, fire hazards"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.8",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 8 — White Earth",
+      "description": "Star 8, Zuǒ Fǔ (Left Assistant), is governed by the Earth element and assigned the colour white; it is the ruling star of Period 8 (2004–2023) and one of the most powerfully auspicious stars in contemporary Feng Shui practice. It is associated with steady wealth accumulation, real estate prosperity, good fortune for children, and the solid, enduring build-up of resources over time. As the youngest Earth star, its energy is stable, grounding, and generative — a mountain of support that grows steadily rather than fluctuating, making it especially favourable for long-term wealth and family wellbeing.",
+      "secondaryNames": [
+        {
+          "name": "左辅",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zuǒ Fǔ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Left Assistant",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 8,
+        "chineseName": "左辅",
+        "pinyinName": "Zuǒ Fǔ",
+        "englishName": "Left Assistant",
+        "element": "astrology.element.earth",
+        "color": "White",
+        "originalDirection": "Northeast",
+        "auspicious": true,
+        "lifeArea": "Wealth accumulation, real estate, family prosperity"
+      }
+    },
+    {
+      "canonicalName": "fengshui.flying-star.9",
+      "entityType": "fengshui.flying-star",
+      "primaryDisplayName": "Star 9 — Purple Fire",
+      "description": "Star 9, Yòu Bì (Right Assistant), is governed by the Fire element and assigned the colour purple; it is considered the future prosperity star and the ruling star of Period 9 (2024–2043), marking it as one of the most auspicious stars in current and upcoming cycles. It is associated with celebrations, joyful events, promotion, recognition, fame, and the illumination of all things — events ruled by Star 9 tend to be big, bright, and socially prominent. Its Fire nature magnifies whatever it encounters, amplifying both the positive and negative qualities of stars it combines with, making careful assessment of its combinations essential in Flying Star analysis.",
+      "secondaryNames": [
+        {
+          "name": "右弼",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yòu Bì",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Right Assistant",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "flying-star"
+      ],
+      "extendedData": {
+        "starNumber": 9,
+        "chineseName": "右弼",
+        "pinyinName": "Yòu Bì",
+        "englishName": "Right Assistant",
+        "element": "astrology.element.fire",
+        "color": "Purple",
+        "originalDirection": "South",
+        "auspicious": true,
+        "lifeArea": "Celebration, fame, future prosperity"
+      }
+    }
+  ]
+}

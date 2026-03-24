@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "deity.greek.helios",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Helios",
+      "description": "Helios is the Greek deity who personifies the Sun itself, driving his blazing chariot across the sky each day from east to west. In esoteric tradition he is not merely a solar symbol but the direct embodiment of solar power, identified with the divine intellect and the life-giving light that animates all creation. In Hermetic and Neoplatonic thought Helios was venerated as the visible image of the supreme deity, corresponding to Tiphareth on the Qabalistic Tree of Life — the sphere of the radiant centre, Christ-consciousness, and gold. His syncretic identification with Apollo as Phoebus Apollo and with the Roman Sol Invictus links him to the entire Western solar current, making him a central figure in theurgic and Hermetic practice.",
+      "secondaryNames": [
+        { "name": "Sol Invictus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Phoebus", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Hyperion", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Sol Invictus",
+        "planetCN": "astrology.planet.sol",
+        "sephiraCN": "qabalah.sephira.tiphareth",
+        "domain": ["sun", "light", "solar power", "divine intellect", "life-force"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.selene",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Selene",
+      "description": "Selene is the Greek Titaness who personifies the Moon, driving her silver chariot across the night sky; she is the direct embodiment of lunar power rather than merely a deity associated with it. In magical tradition she is central to lunar rites, petitioned for love spells, visions, and the drawing down of the Moon. She forms part of the Greek triple goddess alongside Artemis (Moon in the sky) and Hecate (Moon in the underworld), a triform identification that became foundational in Wiccan and modern Pagan practice. Her Qabalistic correspondence is Yesod, the ninth sephira of Foundation, sphere of the astral light and the etheric template, with the secondary correspondence of Chokmah in some GD attributions of the lunar path.",
+      "secondaryNames": [
+        { "name": "Luna", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mene", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Phoebe", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Luna",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": "qabalah.sephira.yesod",
+        "domain": ["moon", "lunar cycles", "night", "tides", "love magic", "visions"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hermes",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hermes",
+      "description": "Hermes is the Olympian messenger-god, patron of magic, alchemy, language, commerce, travellers, and thieves, and the psychopomp who guides souls to the underworld — making him one of the most magically significant deities in the Western tradition. His caduceus (two intertwined serpents on a staff) became the symbol of medicine and is a primary emblem of alchemical and Hermetic philosophy. In Hellenistic Egypt he was syncretised with Thoth to produce the legendary Hermes Trismegistus — 'Thrice-Great Hermes' — the mythical author of the Hermetic Corpus and the legendary father of alchemy, astrology, and theurgy. His Qabalistic correspondence is Hod (eighth sephira, Splendour), sphere of intellect, magic, and communication, and his planetary ruler is Mercury.",
+      "secondaryNames": [
+        { "name": "Mercury", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Hermes Psychopompos", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Hermes Chthonios", "languageTag": "el", "visible": false, "sortOrder": 2 },
+        { "name": "Hermes Trismegistus (ancestor)", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Mercury",
+        "planetCN": "astrology.planet.mercury",
+        "sephiraCN": "qabalah.sephira.hod",
+        "domain": ["magic", "alchemy", "language", "commerce", "travel", "thieves", "psychopomp", "communication"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.aphrodite",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Aphrodite",
+      "description": "Aphrodite is the Greek goddess of love, beauty, desire, and procreation, born from the sea-foam (or, in later myth, daughter of Zeus and Dione), and directly identified with the planet Venus in ancient Hellenic astronomy — the evening and morning star bore her name. In the Hermetic and Golden Dawn traditions she corresponds to Netzach (seventh sephira, Victory), the sphere of the emotions, natural forces, and the magical imagination, attributed to Venus. Her Roman equivalent Venus became so dominant that the two are effectively merged in the Western esoteric tradition, with her influence extending to love magic, beauty rites, fertility work, and the arts. Her golden cestus (girdle of desire), her sacred doves and myrtle, and her identification with the Sumerian Inanna and Phoenician Astarte make her a central node in the cross-cultural Goddess tradition.",
+      "secondaryNames": [
+        { "name": "Venus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Aphrodite Urania", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Aphrodite Pandemos", "languageTag": "el", "visible": false, "sortOrder": 2 },
+        { "name": "Cytherea", "languageTag": "el", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Venus",
+        "planetCN": "astrology.planet.venus",
+        "sephiraCN": "qabalah.sephira.netzach",
+        "domain": ["love", "beauty", "desire", "procreation", "the arts", "fertility"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.ares",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Ares",
+      "description": "Ares is the Greek god of war, courage, and destructive conflict, feared even by his fellow Olympians for his bloodlust and the chaos he unleashed on the battlefield; the planet Mars was named for his Roman equivalent. In Western astrology and the Hermetic tradition, Mars governs the active, aggressive, and martial principle — the force that cuts, separates, and contests — corresponding to Geburah (the fifth sephira, Severity or Strength) on the Qabalistic Tree of Life. Ares in magical practice is invoked for courage, protection, victory in conflict, and the cutting of unwanted ties, his energy balanced by the GD attribution of Geburah as the necessary purgative force that refines the will. His syncretic connections include the Roman Mars (with whom he became essentially identified), the Babylonian Nergal, and figures of martial divine power across cultures.",
+      "secondaryNames": [
+        { "name": "Mars", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Enyalius", "languageTag": "el", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Mars",
+        "planetCN": "astrology.planet.mars",
+        "sephiraCN": "qabalah.sephira.geburah",
+        "domain": ["war", "courage", "conflict", "battle", "martial force"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.zeus",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Zeus",
+      "description": "Zeus is the king of the Olympian gods, ruler of sky and thunder, upholder of divine law and cosmic order, whose eagle, thunderbolt, and oak are among the most potent symbols of sovereign divine power in Western tradition. In Hermetic and Neoplatonic philosophy he represents the Demiurge — the organising intelligence of the cosmos — and his planet Jupiter corresponds to Chesed (the fourth sephira, Mercy and Loving-kindness) on the Qabalistic Tree of Life, the sphere of abundance, expansion, and kingly authority. His Roman equivalent Jupiter gave his name to the largest planet and to Thursday (dies Iovis), and Jupiter's tin is the alchemical metal of the Chesed current. Zeus's role as father of gods and men, lawgiver, and guarantor of oaths makes him a figure of divine sovereignty invoked in theurgy for authority, abundance, and the establishment of right order.",
+      "secondaryNames": [
+        { "name": "Jupiter", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Zeus Olympios", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Zeus Panhellenios", "languageTag": "el", "visible": false, "sortOrder": 2 },
+        { "name": "Jove", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Jupiter",
+        "planetCN": "astrology.planet.jupiter",
+        "sephiraCN": "qabalah.sephira.chesed",
+        "domain": ["sky", "thunder", "divine law", "sovereignty", "justice", "cosmic order"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.kronos",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Kronos",
+      "description": "Kronos is the Titan god of time, harvest, and the fabled Golden Age, who ruled the cosmos before being overthrown by his son Zeus; he devoured his own children lest they supplant him, becoming the archetypal figure of devouring time and inevitable limitation. His Roman equivalent Saturn gave his name to the outermost visible planet, to Saturday, and to the alchemical metal lead — all signatures of the heavy, binding, crystallising quality of the Saturnine current. In Qabalistic correspondence Saturn rules Binah (the third sephira, Understanding), the Great Mother and the dark sea of form, whose understanding is bought at the price of limitation and sorrow; the 49 Gates of Binah are the 49 aspects of Saturnine depth. Kronos/Saturn is also equated with the Grim Reaper, Father Time, and the principle of cosmic contraction that balances Jovian expansion.",
+      "secondaryNames": [
+        { "name": "Saturn", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Cronus", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Father Time", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Saturn",
+        "planetCN": "astrology.planet.saturn",
+        "sephiraCN": "qabalah.sephira.binah",
+        "domain": ["time", "harvest", "the Golden Age", "limitation", "fate", "agriculture"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hecate",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hecate",
+      "description": "Hecate is the goddess of magic, witchcraft, the night, crossroads, necromancy, and the underworld — one of the most powerful and enduring deities of Western magical practice from antiquity to the present day. As Hecate Triformis (three-formed), she rules past, present, and future, appears at the three-way crossroads, and is invoked in the triple goddess formulation with Selene (Moon above) and Persephone (Moon below). In ancient Greek magical papyri (PGM) she is the supreme deity addressed in countless spells, identified with Selene, Artemis, Persephone, and the cosmic World-Soul; in Chaldean Theurgy she is the Cosmic Soul linking the divine Intellect to the material realm. Her Qabalistic resonance is with Yesod (lunar astral plane) and Binah (the dark mother), and her torches, keys, and serpents are among the most charged symbols in the magical tradition.",
+      "secondaryNames": [
+        { "name": "Hekate", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "Hecate Triformis", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "Hecate Chthonia", "languageTag": "el", "visible": false, "sortOrder": 2 },
+        { "name": "Trivia", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Trivia",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": "qabalah.sephira.yesod",
+        "domain": ["magic", "witchcraft", "night", "crossroads", "necromancy", "underworld", "the Moon", "keys", "torches"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.persephone",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Persephone",
+      "description": "Persephone is the queen of the underworld and goddess of spring growth, daughter of Demeter, abducted by Hades to become his queen — her annual return to the surface and descent below is the mythological basis for the Eleusinian Mysteries, the most important mystery religion of ancient Greece. As the maiden who passes between the worlds of the living and the dead, she embodies both the promise of renewal and the reality of death, making her a figure of initiatory death-and-rebirth in Western esoteric tradition. In Hermetic and GD correspondences she is associated with the lunar current as the underworld face of the Moon goddess (the triple goddess: Selene above, Artemis on earth, Persephone below), and also carries associations with Malkuth as the manifest world into which the divine seed descends. Her syncretic connections include the Roman Proserpina, the Babylonian Ereshkigal, and the Sumerian Inanna in her descent.",
+      "secondaryNames": [
+        { "name": "Proserpina", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Kore", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Despoina", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Proserpina",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": "qabalah.sephira.malkuth",
+        "domain": ["underworld", "spring", "rebirth", "Eleusinian Mysteries", "death and renewal", "grain"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hermes-trismegistus",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hermes Trismegistus",
+      "description": "Hermes Trismegistus ('Thrice-Great Hermes') is the legendary syncretic figure who combines the Greek god Hermes with the Egyptian god Thoth, produced in the milieu of Hellenistic Egypt around the first centuries CE, and considered the mythical author of the Hermetic Corpus — the foundational texts of Hermeticism, alchemy, and the Western esoteric tradition. He is not identical with the Olympian Hermes but is a distinct post-divine figure, a seer-prophet who received divine revelation and transmitted it to humanity through texts such as the Poimandres, the Asclepius, and the Emerald Tablet. Hermes Trismegistus is regarded in Hermetic tradition as the progenitor of all esoteric arts: alchemy, astrology, theurgy, and magic — his motto 'As Above, So Below' from the Emerald Tablet is the founding axiom of Hermetic philosophy. His Mercury correspondence is carried through from Hermes, and his cross-cultural synthesis of Greek and Egyptian theology makes him the most emblematic figure of ancient esoteric syncretism.",
+      "secondaryNames": [
+        { "name": "Thrice-Great Hermes", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Mercurius Ter Maximus", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "Tat (as teacher)", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.mercury",
+        "sephiraCN": "qabalah.sephira.hod",
+        "domain": ["Hermeticism", "alchemy", "astrology", "theurgy", "magic", "revelation", "sacred writing"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.dionysus",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Dionysus",
+      "description": "Dionysus is the Greek god of wine, ecstasy, mystery, theatre, vegetation, and transformative dissolution — a deity of paradox who destroys individual boundaries to reveal the divine unity beneath. His Orphic mystery tradition was one of the most influential mystery religions of antiquity, promising initiates a path of death and rebirth leading to divine apotheosis (the Orphic gold tablets preserve his initiatory passwords). In Neoplatonic and Renaissance Hermetic sources — including the Florentine Academy of Ficino and Pico della Mirandola — Dionysus is most commonly attributed to Jupiter as the god of divine abundance, bliss, and the jovial aspect of mystical ecstasy; his Bacchic rites also carry Venusian associations in some traditions. His syncretic connections include the Roman Bacchus/Liber Pater, the Egyptian Osiris (whose resurrection myth mirrors the Dionysian sparagmos), and the Christian Eucharist (wine as divine blood).",
+      "secondaryNames": [
+        { "name": "Bacchus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Liber Pater", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Zagreus", "languageTag": "el", "visible": true, "sortOrder": 2 },
+        { "name": "Iacchus", "languageTag": "el", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Bacchus",
+        "planetCN": "astrology.planet.jupiter",
+        "sephiraCN": null,
+        "domain": ["wine", "ecstasy", "mystery", "theatre", "vegetation", "transformation", "Orphic mysteries"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hephaestus",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hephaestus",
+      "description": "Hephaestus is the divine smith and craftsman of the Olympians, god of fire, volcanoes, metalworking, and the forge — lame from birth or from being hurled from Olympus, he wrought all the divine armour, weapons, and wondrous automata of the gods from his celestial smithy. In Agrippa's Three Books of Occult Philosophy and the broader Renaissance Hermetic tradition, his Roman equivalent Vulcan is attributed to Mars as the planet governing fire, iron, and the violent transformation of matter — the same martial fire that burns in conflict also transforms ore into steel. Some Hermetic and Neoplatonic sources also assign Hephaestus/Vulcan to Saturn, as the laborious, patient craftsman who works through necessity and limitation, linking him to Binah's principle of form-giving. In alchemy he is the divine fire of the furnace that effects transmutation, making him a patron deity of the alchemical art alongside Hermes.",
+      "secondaryNames": [
+        { "name": "Vulcan", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mulciber", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Vulcan",
+        "planetCN": ["astrology.planet.mars", "astrology.planet.saturn"],
+        "sephiraCN": null,
+        "domain": ["fire", "metalworking", "forge", "craftsmanship", "volcanoes", "alchemy", "technology"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.poseidon",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Poseidon",
+      "description": "Poseidon is the Olympian god of the sea, earthquakes, and horses — one of the three great brothers who divided the cosmos after the Titanomachy, with Zeus receiving the sky, Hades the underworld, and Poseidon the seas. In modern astrology the planet Neptune, discovered in 1846 and named for his Roman equivalent, is attributed to him and rules Pisces; in Hermetic and transpersonal astrology Neptune governs the dissolution of ego-boundaries, mystical union, the oceanic unconscious, illusion, and the transcendence of the individual in the larger whole. His trident — the symbol of his power over the depths — became one of the iconic weapons of Western occult iconography, alongside the caduceus of Hermes and the thunderbolt of Zeus. The connection between Poseidon and Neptune is explicitly bidirectional: the planet is the direct modern astronomical expression of the deity's domain, and the god is the mythological anchor of the planet's astrological significations.",
+      "secondaryNames": [
+        { "name": "Neptune", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Poseidon Earthshaker", "languageTag": "el", "visible": false, "sortOrder": 1 },
+        { "name": "Earth-Shaker", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Neptune",
+        "planetCN": "astrology.planet.neptune",
+        "sephiraCN": null,
+        "domain": ["sea", "earthquakes", "horses", "the deep", "storms at sea", "navigation"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.vedic-jyotish",
+    "displayName": "Vedic Jyotish",
+    "description": "Classical Indian astrology (Jyotisha, 'science of light') as codified in texts including the Brihat Parashara Hora Shastra, Brihat Jataka, and Saravali. Uses the sidereal zodiac with Lahiri ayanamsa, 27 lunar mansions (nakshatras), 12 sidereal signs (rashis), and the Lagna (ascendant) as primary orientation. Covers nakshatra attributions, planetary dignities, and the Vedic house system.",
+    "attributionFields": [
+      { "linkLabel": "attributed-nakshatra", "displayName": "Nakshatra", "targetEntityType": "astrology.nakshatra", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-rashi", "displayName": "Rashi (Sidereal Sign)", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-planet", "displayName": "Graha (Planet)", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 2 },
+      { "linkLabel": "attributed-nakshatra-lord", "displayName": "Nakshatra Lord", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 3 }
+    ]
+  }
+}

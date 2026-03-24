@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#020210"/>
+      <stop offset="100%" stop-color="#06042a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#2a1e66" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#6644cc" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#2a1e66" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#2a1e66" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ccaaff" opacity="0.9">XXI</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#6644cc" opacity="0.85" filter="url(#glow)">ת</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#2a1e66" opacity="0.8">♄</text>
+
+
+  <!-- ═══ XXI THE UNIVERSE ════════════════════════════════════════════════ -->
+  <!-- Tau · Saturn · Path 32: Yesod → Malkuth                              -->
+  <!-- King Scale: Indigo                                                    -->
+  <!-- New Heaven and New Earth (Rev 21-22) — the Great Work complete       -->
+  <!-- Eschatological water arc VII/VII: River of Life (Rev 22:1-2)         -->
+  <!-- Dante: Paradiso finale — the River of Light, the Beatific Vision     -->
+  <!-- Christ type: Ascension fulfilled — Man and God restored to union     -->
+  <defs>
+    <!-- Ambient glory — dissolved solarDisk lineage, no discrete point     -->
+    <radialGradient id="gloryGrad21" cx="50%" cy="44%" r="55%">
+      <stop offset="0%"   stop-color="#ccaa44" stop-opacity="0.22"/>
+      <stop offset="40%"  stop-color="#ccaa44" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ccaa44" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Figure inner glow -->
+    <radialGradient id="figGlow21" cx="50%" cy="30%" r="55%">
+      <stop offset="0%"   stop-color="#fffff8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#fffff8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- River of Life gradient -->
+    <linearGradient id="riverGrad21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#b0ccff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#b0ccff" stop-opacity="0.50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ghost Tau — the final letter; the Cross as cosmic completion          -->
+  <!-- Paleo-Hebrew Tau is a cross mark: the seal placed on the righteous   -->
+  <!-- Ezek 9:4 — the same mark, now written over the whole New Creation    -->
+  <!-- XII Hanged Man (the Cross as sacrifice) → XXI Universe (the Cross    -->
+  <!-- as completion): Tau bookends the personal and the cosmic arc         -->
+  <text x="152" y="265"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="310" fill="#3322aa" opacity="0.09">ת</text>
+
+  <!-- Ambient starfield — New Heaven -->
+  <circle cx="36"  cy="90"  r="1.0" fill="#eeddff" opacity="0.38"/>
+  <circle cx="70"  cy="104" r="0.7" fill="#eeddff" opacity="0.28"/>
+  <circle cx="52"  cy="145" r="0.8" fill="#eeddff" opacity="0.32"/>
+  <circle cx="22"  cy="168" r="1.0" fill="#eeddff" opacity="0.24"/>
+  <circle cx="18"  cy="248" r="0.8" fill="#eeddff" opacity="0.20"/>
+  <circle cx="260" cy="93"  r="0.8" fill="#eeddff" opacity="0.36"/>
+  <circle cx="244" cy="137" r="1.0" fill="#eeddff" opacity="0.28"/>
+  <circle cx="276" cy="162" r="0.7" fill="#eeddff" opacity="0.26"/>
+  <circle cx="272" cy="252" r="0.8" fill="#eeddff" opacity="0.20"/>
+
+  <!-- Dissolved solar lineage: ambient glory (no discrete disk)            -->
+  <!-- 8 appearances of the solarDisk: I Magician → IX Hermit → X Wheel    -->
+  <!--   → XIV Art → XV Devil → XVI Tower → XIX Sun → XX Aeon (Hadit)      -->
+  <!-- Here the barrier between Mankind and Godhead has dissolved entirely  -->
+  <ellipse cx="150" cy="186" rx="148" ry="148" fill="url(#gloryGrad21)"/>
+  <line x1="150" y1="186" x2="312" y2="186" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="299.67" y2="247.99" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="264.55" y2="300.55" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="211.99" y2="335.67" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="150" y2="348" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="88.01" y2="335.67" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="35.45" y2="300.55" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="0.33" y2="247.99" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="-12" y2="186" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="0.33" y2="124.01" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="35.45" y2="71.45" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="88.01" y2="36.33" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="150" y2="24" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="211.99" y2="36.33" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="264.55" y2="71.45" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+    <line x1="150" y1="186" x2="299.67" y2="124.01" stroke="#ccaa44" stroke-width="0.7" opacity="0.10"/>
+
+  <!-- ── Wreath of 72 circles — Angels released, 12 Gates ──────────────── -->
+  <!-- 72 = the traditional count of bound angels maintaining creation      -->
+  <!-- Rev 5:11 — ten thousand times ten thousand; here the 72 are freed    -->
+  <!-- Every 6th circle (12 total) = pearl-gate of New Jerusalem            -->
+  <!-- These 12 gate-circles complete the journey of the 12 stars:         -->
+  <!--   XVII crown of Johannine Virgin → XX Judge's right hand → XXI gates -->
+  <circle cx="150" cy="95" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="158.28" cy="95.44" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="166.5" cy="96.75" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="174.59" cy="98.92" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="182.49" cy="101.94" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="190.15" cy="105.77" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="197.5" cy="110.41" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="204.49" cy="115.8" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="211.06" cy="121.9" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="217.18" cy="128.68" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="222.77" cy="136.08" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="227.82" cy="144.04" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="232.27" cy="152.5" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="236.1" cy="161.4" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="239.27" cy="170.67" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="241.76" cy="180.24" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="243.56" cy="190.03" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="244.64" cy="199.98" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="245" cy="210" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="244.64" cy="220.02" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="243.56" cy="229.97" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="241.76" cy="239.76" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="239.27" cy="249.33" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="236.1" cy="258.6" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="232.27" cy="267.5" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="227.82" cy="275.96" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="222.77" cy="283.92" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="217.18" cy="291.32" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="211.06" cy="298.1" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="204.49" cy="304.2" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="197.5" cy="309.59" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="190.15" cy="314.23" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="182.49" cy="318.06" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="174.59" cy="321.08" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="166.5" cy="323.25" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="158.28" cy="324.56" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="150" cy="325" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="141.72" cy="324.56" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="133.5" cy="323.25" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="125.41" cy="321.08" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="117.51" cy="318.06" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="109.85" cy="314.23" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="102.5" cy="309.59" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="95.51" cy="304.2" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="88.94" cy="298.1" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="82.82" cy="291.32" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="77.23" cy="283.92" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="72.18" cy="275.96" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="67.73" cy="267.5" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="63.9" cy="258.6" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="60.73" cy="249.33" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="58.24" cy="239.76" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="56.44" cy="229.97" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="55.36" cy="220.02" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="55" cy="210" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="55.36" cy="199.98" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="56.44" cy="190.03" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="58.24" cy="180.24" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="60.73" cy="170.67" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="63.9" cy="161.4" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="67.73" cy="152.5" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="72.18" cy="144.04" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="77.23" cy="136.08" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="82.82" cy="128.68" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="88.94" cy="121.9" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="95.51" cy="115.8" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="102.5" cy="110.41" r="4.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="109.85" cy="105.77" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="117.51" cy="101.94" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="125.41" cy="98.92" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="133.5" cy="96.75" r="2.5" fill="#aa8822" opacity="0.52"/>
+    <circle cx="141.72" cy="95.44" r="2.5" fill="#aa8822" opacity="0.52"/>
+
+  <!-- ── Four Living Creatures in their proper Johannine context ────────── -->
+  <!-- Rev 4:6-8: full of eyes, six wings, before the Throne               -->
+  <!-- No longer merely the four witnesses of creation (RWS) but the       -->
+  <!-- eternal creatures before the Throne in the New Jerusalem             -->
+
+  <!-- NW — Human face (Aquarius / Reuben) -->
+  <ellipse cx="42" cy="103" rx="13" ry="14" fill="none" stroke="#886644" stroke-width="1.2" opacity="0.70"/>
+  <ellipse cx="42" cy="101" rx="6"  ry="7"  fill="none" stroke="#886644" stroke-width="0.8" opacity="0.52"/>
+  <path d="M30,104 C22,97 16,88 20,82 C24,88 28,95 30,101" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.52"/>
+  <path d="M30,104 C18,101 12,110 16,117 C22,113 27,107 30,106" fill="none" stroke="#886644" stroke-width="0.8" opacity="0.42"/>
+  <path d="M54,104 C62,97 68,88 64,82 C60,88 56,95 54,101" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.52"/>
+  <path d="M54,104 C66,101 72,110 68,117 C62,113 57,107 54,106" fill="none" stroke="#886644" stroke-width="0.8" opacity="0.42"/>
+
+  <!-- NE — Eagle (Scorpio / Dan) -->
+  <ellipse cx="258" cy="101" rx="8" ry="10" fill="none" stroke="#886644" stroke-width="1.2" opacity="0.65"/>
+  <path d="M255,101 L251,105 L258,103" fill="#886644" opacity="0.62"/>
+  <path d="M252,97 C240,90 232,81 236,75 C244,83 250,92 252,98" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.50"/>
+  <path d="M264,97 C276,90 284,81 280,75 C272,83 266,92 264,98" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.50"/>
+  <path d="M252,99 C238,96 230,104 234,112 C240,107 246,101 252,101" fill="none" stroke="#886644" stroke-width="0.7" opacity="0.38"/>
+  <path d="M264,99 C278,96 286,104 282,112 C276,107 270,101 264,101" fill="none" stroke="#886644" stroke-width="0.7" opacity="0.38"/>
+
+  <!-- SW — Bull/Ox (Taurus / Ephraim) -->
+  <ellipse cx="42" cy="316" rx="12" ry="11" fill="none" stroke="#886644" stroke-width="1.2" opacity="0.65"/>
+  <path d="M34,309 C30,301 26,294 29,290 C33,297 36,305 36,309" fill="none" stroke="#886644" stroke-width="1.3" opacity="0.65"/>
+  <path d="M50,309 C54,301 58,294 55,290 C51,297 48,305 48,309" fill="none" stroke="#886644" stroke-width="1.3" opacity="0.65"/>
+  <path d="M31,317 C20,311 14,321 17,329 C23,323 28,318 32,318" fill="none" stroke="#886644" stroke-width="0.8" opacity="0.42"/>
+  <path d="M53,317 C64,311 70,321 67,329 C61,323 56,318 52,318" fill="none" stroke="#886644" stroke-width="0.8" opacity="0.42"/>
+
+  <!-- SE — Lion (Leo / Judah) -->
+  <circle  cx="258" cy="317" r="16" fill="none" stroke="#886644" stroke-width="2.5" opacity="0.30"/>
+  <ellipse cx="258" cy="317" rx="10" ry="11" fill="none" stroke="#886644" stroke-width="1.2" opacity="0.65"/>
+  <path d="M269,311 C280,304 287,295 283,289 C276,297 272,306 270,311" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.50"/>
+  <path d="M269,313 C282,311 290,319 286,327 C280,321 274,315 270,313" fill="none" stroke="#886644" stroke-width="0.7" opacity="0.38"/>
+  <path d="M247,311 C236,304 229,295 233,289 C240,297 244,306 246,311" fill="none" stroke="#886644" stroke-width="0.9" opacity="0.50"/>
+
+  <!-- ── The Figure: New Jerusalem, Bride of Christ ─────────────────────── -->
+  <!-- Rev 19:7-8 — fine linen, bright and clean; the righteousness of the  -->
+  <!-- saints. She is simultaneously: New Jerusalem (Rev 21:2), New Israel, -->
+  <!-- the Bride of the Lamb, and the perfected Great Work — the alchemical  -->
+  <!-- Philosopher's Stone as a Person rather than a substance.             -->
+  <!-- The chemical wedding of VI Lovers and the alchemical process of      -->
+  <!-- XIV Art are here resolved in a Person, not in gold.                  -->
+
+  <!-- Background figure glow -->
+  <ellipse cx="150" cy="196" rx="54" ry="92" fill="url(#figGlow21)"/>
+
+  <!-- Gown — flowing, tapered, luminous linen -->
+  <path d="M138,146 C131,150 117,167 113,188 C109,210 111,234 115,260
+            C118,278 124,291 130,299 L170,299 C176,291 182,278 185,260
+            C189,234 191,210 187,188 C183,167 169,150 162,146 Z"
+        fill="#eeddaa" opacity="0.20"/>
+  <!-- Inner luminosity of the linen -->
+  <path d="M143,149 C138,157 131,172 129,190 C127,212 131,237 138,261
+            L150,263 L162,261 C169,237 173,212 171,190 C169,172 162,157 157,149 Z"
+        fill="#fffff8" opacity="0.13"/>
+
+  <!-- Orans arms — raised in worship and reception -->
+  <path d="M137,159 C131,155 111,147 89,141 C79,138 75,137 73,139"
+        fill="none" stroke="#eeddaa" stroke-width="3.5" stroke-linecap="round" opacity="0.52"/>
+  <path d="M163,159 C169,155 189,147 211,141 C221,138 225,137 227,139"
+        fill="none" stroke="#eeddaa" stroke-width="3.5" stroke-linecap="round" opacity="0.52"/>
+  <!-- Hands -->
+  <ellipse cx="72"  cy="140" rx="5" ry="4" fill="#fffff8" opacity="0.42" transform="rotate(-22,72,140)"/>
+  <ellipse cx="228" cy="140" rx="5" ry="4" fill="#fffff8" opacity="0.42" transform="rotate(22,228,140)"/>
+
+  <!-- Head -->
+  <ellipse cx="150" cy="128" rx="14" ry="16" fill="#fffff8" opacity="0.80"/>
+  <ellipse cx="150" cy="128" rx="10" ry="12" fill="#fffff8" opacity="0.22"/>
+
+  <!-- Personal halo — golden ring, the Lamb's own light about her         -->
+  <circle cx="150" cy="128" r="22" fill="none" stroke="#ccaa44" stroke-width="1.4" opacity="0.62"/>
+  <circle cx="150" cy="128" r="26" fill="none" stroke="#ccaa44" stroke-width="0.6" opacity="0.26"/>
+
+  <!-- Mural crown — New Jerusalem is a city; her crown is architectural    -->
+  <!-- Rev 21:10-21: walls of jasper, foundations of every precious stone  -->
+  <rect x="135" y="110" width="30" height="5"  rx="1" fill="#ddbb55" opacity="0.82"/>
+  <rect x="138" y="102" width="7"  height="9"  rx="1" fill="#ddbb55" opacity="0.82"/>
+  <rect x="147" y="99"  width="7"  height="12" rx="1" fill="#ddbb55" opacity="0.82"/>
+  <rect x="156" y="102" width="7"  height="9"  rx="1" fill="#ddbb55" opacity="0.82"/>
+  <rect x="134" y="99"  width="32" height="18" rx="2" fill="none" stroke="#ffdd66" stroke-width="0.6" opacity="0.32"/>
+
+  <!-- Tetragrammaton on forehead — Rev 22:4: "His name shall be on their foreheads" -->
+  <!-- The seal and completion of the entire deck and the Great Divine Work  -->
+  <!-- This seal was placed on the righteous in Ezek 9:4 (the Tau mark);   -->
+  <!-- the ghost Tau behind the card is the same seal writ cosmologically  -->
+  <text x="150" y="126"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="9" fill="#ffdd66" opacity="0.92" filter="url(#glow)">יהוה</text>
+
+  <!-- ── River of Life — eschatological water arc VII/VII ────────────────── -->
+  <!-- Rev 22:1-2: crystal-clear water flowing from the Throne of God and   -->
+  <!-- the Lamb; the Tree of Life on each bank bearing twelve fruits         -->
+  <!--                                                                        -->
+  <!-- The complete water arc across the eschatological sequence:            -->
+  <!--   XV  Lake of Fire     — Inferno / Descent / Sheol                   -->
+  <!--   XVI Flood of Water   — Purgatorio begins / Noah / Baptismal death  -->
+  <!--   XVII Crystal River   — Milky Way / covenant stars / Lethe          -->
+  <!--   XVIII Eclipse pool   — Purgatorio summit / the Cloud of Unknowing  -->
+  <!--   XIX Lake of Light    — Paradiso opens / Resurrection morning       -->
+  <!--   XX  Flood of Blood   — Final judgment / Armageddon / Rev 14:20     -->
+  <!--   XXI River of Life    — Paradiso finale / Beatific Vision / Rev 22  -->
+  <!--                                                                        -->
+  <!-- Dante: the River of Light in Paradiso XXX flows into the Celestial   -->
+  <!-- Rose and the direct sight of God — the same sequence, same waters    -->
+  <!-- Christ type: Death(XV) → Burial(XVI) → Resurrection(XIX) →          -->
+  <!--              Ascension → Sending(XX) → New Life(XXI)                 -->
+
+  <!-- Tree of Life — left bank -->
+  <line x1="108" y1="310" x2="108" y2="278" stroke="#336633" stroke-width="1.9" opacity="0.62"/>
+  <line x1="108" y1="302" x2="96"  y2="291" stroke="#336633" stroke-width="1.2" opacity="0.52"/>
+  <line x1="108" y1="295" x2="100" y2="283" stroke="#336633" stroke-width="1.0" opacity="0.48"/>
+  <line x1="108" y1="289" x2="116" y2="280" stroke="#336633" stroke-width="1.0" opacity="0.48"/>
+  <line x1="108" y1="284" x2="102" y2="275" stroke="#336633" stroke-width="0.8" opacity="0.42"/>
+  <line x1="108" y1="280" x2="113" y2="272" stroke="#336633" stroke-width="0.8" opacity="0.38"/>
+  <!-- Tree of Life — right bank -->
+  <line x1="192" y1="310" x2="192" y2="278" stroke="#336633" stroke-width="1.9" opacity="0.62"/>
+  <line x1="192" y1="302" x2="204" y2="291" stroke="#336633" stroke-width="1.2" opacity="0.52"/>
+  <line x1="192" y1="295" x2="200" y2="283" stroke="#336633" stroke-width="1.0" opacity="0.48"/>
+  <line x1="192" y1="289" x2="184" y2="280" stroke="#336633" stroke-width="1.0" opacity="0.48"/>
+  <line x1="192" y1="284" x2="198" y2="275" stroke="#336633" stroke-width="0.8" opacity="0.42"/>
+  <line x1="192" y1="280" x2="187" y2="272" stroke="#336633" stroke-width="0.8" opacity="0.38"/>
+
+  <!-- River channel — crystal-clear, flowing from beneath the figure      -->
+  <path d="M118,311 C122,305 128,301 130,296 L170,296 C172,301 178,305 182,311
+            C186,320 185,332 181,342 L119,342 C115,332 114,320 118,311 Z"
+        fill="url(#riverGrad21)" opacity="0.80"/>
+  <!-- River sparkle — crystal surface (Rev 22:1: clear as crystal)        -->
+  <line x1="128" y1="303" x2="135" y2="303" stroke="#b0ccff" stroke-width="0.6" opacity="0.72"/>
+  <line x1="141" y1="306" x2="150" y2="306" stroke="#b0ccff" stroke-width="0.6" opacity="0.62"/>
+  <line x1="156" y1="303" x2="164" y2="303" stroke="#b0ccff" stroke-width="0.6" opacity="0.72"/>
+  <line x1="125" y1="315" x2="136" y2="315" stroke="#b0ccff" stroke-width="0.5" opacity="0.55"/>
+  <line x1="144" y1="319" x2="157" y2="319" stroke="#b0ccff" stroke-width="0.5" opacity="0.55"/>
+  <line x1="164" y1="315" x2="175" y2="315" stroke="#b0ccff" stroke-width="0.5" opacity="0.55"/>
+  <line x1="130" y1="329" x2="139" y2="329" stroke="#b0ccff" stroke-width="0.4" opacity="0.44"/>
+  <line x1="150" y1="333" x2="163" y2="333" stroke="#b0ccff" stroke-width="0.4" opacity="0.44"/>
+  <line x1="168" y1="329" x2="178" y2="329" stroke="#b0ccff" stroke-width="0.4" opacity="0.38"/>
+  
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ccaaff" letter-spacing="2.5"
+        filter="url(#glow)">THE UNIVERSE</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#2a1e66" letter-spacing="3" opacity="0.75">Tau · Saturn · Path 32</text>
+</svg>

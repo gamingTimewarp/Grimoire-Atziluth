@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.aspect.conjunction",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Conjunction",
+      "description": "The Conjunction (0°): two planets occupying the same degree of the zodiac. The most powerful of all aspects, a conjunction fuses the energies of the two planets involved — they cannot be separated, they must act together. The nature of the conjunction depends entirely on the planets involved: a Sun-Jupiter conjunction amplifies both solar self-expression and Jupiterian expansion; a Mars-Saturn conjunction creates tension between impulsive action and cautious limitation. Traditionally neutral to slightly favourable for benefic planets, challenging for malefics. In esoteric astrology the conjunction represents the alchemical marriage — the coniunctio that must be resolved before the Work can continue.",
+      "secondaryNames": [
+        { "name": "☌", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "major"],
+      "extendedData": {
+        "angle": 0,
+        "orb": 10,
+        "nature": "neutral",
+        "symbol": "☌",
+        "classification": "major"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.sextile",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Sextile",
+      "description": "The Sextile (60°): two planets 60 degrees apart. A harmonious aspect of opportunity, ease, and productive exchange. The sextile represents compatible energies that, with some effort and awareness, can be harnessed productively. Unlike the trine (which brings gifts automatically), the sextile requires some initiative to activate — it is potential that rewards engagement. Ptolemy considered it mildly benefic. Sextiles connect signs of compatible elements (fire with air, earth with water) and similar modalities.",
+      "secondaryNames": [
+        { "name": "⚹", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "major"],
+      "extendedData": {
+        "angle": 60,
+        "orb": 6,
+        "nature": "harmonious",
+        "symbol": "⚹",
+        "classification": "major"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.square",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Square",
+      "description": "The Square (90°): two planets 90 degrees apart. One of the most significant challenging aspects — a dynamic tension between two planets whose energies are in fundamental conflict. The square demands resolution and creates the pressure that forces growth. Without squares a chart lacks dynamism; with too many it becomes a field of perpetual struggle. Squares connect signs of the same modality but incompatible elements (e.g., cardinal Aries squares cardinal Cancer — both initiating but fire vs. water). In esoteric astrology the square is the cross of matter — the tension of incarnation that drives the soul to evolve.",
+      "secondaryNames": [
+        { "name": "□", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "major"],
+      "extendedData": {
+        "angle": 90,
+        "orb": 8,
+        "nature": "challenging",
+        "symbol": "□",
+        "classification": "major"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.trine",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Trine",
+      "description": "The Trine (120°): two planets 120 degrees apart. The most harmonious of all aspects — a flowing, easy exchange between planets in the same element (three signs of the same element are 120° apart). Trines represent areas of natural talent, grace, and ease — gifts that may be so natural as to be taken for granted. In mundane astrology trines bring ease and opportunity, sometimes too much comfort. Ptolemy considered the trine the most benefic aspect. In esoteric astrology the trine represents the energy of the divine grace flowing through compatible channels.",
+      "secondaryNames": [
+        { "name": "△", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "major"],
+      "extendedData": {
+        "angle": 120,
+        "orb": 8,
+        "nature": "harmonious",
+        "symbol": "△",
+        "classification": "major"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.opposition",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Opposition",
+      "description": "The Opposition (180°): two planets directly opposite each other across the zodiac. A polarising aspect of tension, projection, and the need for integration. Oppositions represent energies that are complementary but apparently contradictory — the Sun in Aries opposing Moon in Libra, for example, creates tension between the self-assertive will and the need for harmony. The resolution of an opposition is not the victory of one pole over the other but their integration into a higher synthesis. Ptolemy considered it challenging. In esoteric astrology the opposition is the mirror — what is rejected in the self is encountered in the Other.",
+      "secondaryNames": [
+        { "name": "☍", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "major"],
+      "extendedData": {
+        "angle": 180,
+        "orb": 10,
+        "nature": "challenging",
+        "symbol": "☍",
+        "classification": "major"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.semisextile",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Semisextile",
+      "description": "The Semisextile (30°): two planets 30 degrees apart, exactly half a sextile. A minor aspect of mild friction — adjacent signs are always in semisextile and adjacent signs have incompatible elements and modalities (Aries fire-cardinal and Taurus earth-fixed, for example). The semisextile represents energies that must learn to coexist despite their different natures. Some astrologers view it as mildly harmonious, others as mildly irritating — the truth is that it carries both qualities simultaneously, requiring adjustment and acceptance of difference.",
+      "secondaryNames": [
+        { "name": "⚺", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["aspect", "astrology", "minor"],
+      "extendedData": {
+        "angle": 30,
+        "orb": 2,
+        "nature": "neutral",
+        "symbol": "⚺",
+        "classification": "minor"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.quincunx",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Quincunx",
+      "description": "The Quincunx (150°): two planets 150 degrees apart. Also called the Inconjunct. A minor aspect of persistent adjustment and the need for integration between energies that have little in common. Signs in quincunx share neither element, modality, nor polarity — they are fundamentally foreign to each other. The quincunx represents the irritant that cannot be resolved by force (like the square) or dissolved by grace (like the trine) but only worked with through continual, patient adjustment. Health matters and the need for ongoing adaptation are common themes.",
+      "secondaryNames": [
+        { "name": "Inconjunct", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "⚻", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["aspect", "astrology", "minor"],
+      "extendedData": {
+        "angle": 150,
+        "orb": 3,
+        "nature": "challenging",
+        "symbol": "⚻",
+        "classification": "minor"
+      }
+    },
+    {
+      "canonicalName": "astrology.aspect.sesquiquadrate",
+      "entityType": "astrology.aspect",
+      "primaryDisplayName": "Sesquiquadrate",
+      "description": "The Sesquiquadrate (135°): two planets 135 degrees apart (a square plus a semisquare: 90° + 45°). Also called the Sesquisquare or Trioctile. A minor challenging aspect of irritation and friction, similar in quality to the square but more nagging than confrontational. The sesquiquadrate tends to manifest as persistent low-level frustration or misalignment between the two planetary principles involved — the kind of problem that keeps resurfacing without ever reaching the acute crisis that would force resolution. Used by Kepler as part of his harmonic aspect theory.",
+      "secondaryNames": [
+        { "name": "Sesquisquare", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Trioctile", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["aspect", "astrology", "minor"],
+      "extendedData": {
+        "angle": 135,
+        "orb": 2,
+        "nature": "challenging",
+        "symbol": null,
+        "classification": "minor"
+      }
+    }
+  ]
+}

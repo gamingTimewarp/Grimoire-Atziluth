@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.golden-dawn",
+    "displayName": "Golden Dawn",
+    "description": "Standard Western Hermetic attributions as codified by the Hermetic Order of the Golden Dawn, primarily through MacGregor Mathers and Israel Regardie. Based on Liber 777 correspondences. The foundational tradition for most modern Western esoteric tarot practice.",
+    "attributionFields": [
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-planet", "displayName": "Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 2 },
+      { "linkLabel": "attributed-letter", "displayName": "Hebrew Letter", "targetEntityType": "letter.hebrew", "allowMultiple": false, "sortOrder": 3 },
+      { "linkLabel": "attributed-path", "displayName": "Tree of Life Path", "targetEntityType": "qabalah.path", "allowMultiple": false, "sortOrder": 4 },
+      { "linkLabel": "attributed-sephira", "displayName": "Associated Sephira", "targetEntityType": "qabalah.sephira", "allowMultiple": true, "sortOrder": 5 }
+    ]
+  }
+}

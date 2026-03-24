@@ -1,0 +1,957 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "fengshui.mountain.ren",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Ren Mountain",
+      "description": "Ren (壬) is the ninth Heavenly Stem, representing Yang Water — the great ocean, the outward and active expression of the Water element's depth and power. Positioned at the opening of the North sector on the Luopan, Ren Mountain governs career momentum and the confident pursuit of one's path, and a property sitting on or facing Ren draws the expansive, progressive energy of Yang Water to support ambition and forward motion.",
+      "secondaryNames": [
+        {
+          "name": "壬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rén",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "north"
+      ],
+      "extendedData": {
+        "chineseCharacter": "壬",
+        "pinyin": "Rén",
+        "orderNumber": 1,
+        "direction": "North",
+        "compassDegrees": {
+          "from": 337.5,
+          "center": 345,
+          "to": 352.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yang Water"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.zi",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Zi Mountain",
+      "description": "Zi (子) is the first Earthly Branch, corresponding to the Rat and the Water element — the hidden seed of Water at its purest and most concentrated, the midnight hour and the winter solstice point. As the central mountain of the North sector, Zi is the axis of the entire northern quadrant on the Luopan; a Zi-facing or Zi-sitting property sits precisely on the cardinal north and draws career, wisdom, and the hidden depths of Water energy directly into the dwelling.",
+      "secondaryNames": [
+        {
+          "name": "子",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zǐ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "north"
+      ],
+      "extendedData": {
+        "chineseCharacter": "子",
+        "pinyin": "Zǐ",
+        "orderNumber": 2,
+        "direction": "North",
+        "compassDegrees": {
+          "from": 352.5,
+          "center": 0,
+          "to": 7.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.water",
+        "animal": "Rat"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.gui",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Gui Mountain",
+      "description": "Gui (癸) is the tenth and final Heavenly Stem, representing Yin Water — the still pond, the dew drop, the quiet inner knowing that is the most refined and introspective expression of Water. Positioned at the closing edge of the North sector, Gui Mountain imparts a contemplative, psychically sensitive quality; properties sitting or facing Gui are said to favour scholars, seers, and those engaged in inner cultivation, though the still quality of Yin Water can also lead to stagnation if not balanced with activating elements.",
+      "secondaryNames": [
+        {
+          "name": "癸",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Guǐ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "north"
+      ],
+      "extendedData": {
+        "chineseCharacter": "癸",
+        "pinyin": "Guǐ",
+        "orderNumber": 3,
+        "direction": "North",
+        "compassDegrees": {
+          "from": 7.5,
+          "center": 15,
+          "to": 22.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yin Water"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.chou",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Chou Mountain",
+      "description": "Chou (丑) is the second Earthly Branch, corresponding to the Ox and the Earth element — a cold, dense Earth that bridges the depths of winter toward the stirrings of spring. As the opening mountain of the Northeast sector, Chou connects Water's dormancy with Earth's stability and the coming breakthrough of Wood; in Feng Shui it is associated with grounded perseverance, the slow accumulation of resources, and steady progress in learning and self-development.",
+      "secondaryNames": [
+        {
+          "name": "丑",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chǒu",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "northeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "丑",
+        "pinyin": "Chǒu",
+        "orderNumber": 4,
+        "direction": "Northeast",
+        "compassDegrees": {
+          "from": 22.5,
+          "center": 30,
+          "to": 37.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.earth",
+        "animal": "Ox"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.gen",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Gen Mountain",
+      "description": "Gen (艮) is the Mountain trigram — three broken lines below one solid line — representing stillness, the mountain, the youngest son, and the Earth element's most upright and immovable form. As the trigram mountain of the Northeast, Gen is the heart of the knowledge and self-cultivation sector; properties sitting or facing Gen draw the energy of the still mountain that observes and knows, favouring meditation, study, spiritual practice, and the cultivation of inner strength.",
+      "secondaryNames": [
+        {
+          "name": "艮",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gèn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "trigram",
+        "northeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "艮",
+        "pinyin": "Gèn",
+        "orderNumber": 5,
+        "direction": "Northeast",
+        "compassDegrees": {
+          "from": 37.5,
+          "center": 45,
+          "to": 52.5
+        },
+        "mountainType": "trigram",
+        "element": "astrology.element.earth",
+        "trigram": "iching.trigram.mountain"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.yin",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Yin Mountain",
+      "description": "Yin (寅) is the third Earthly Branch, corresponding to the Tiger and the Wood element — the first great surge of Yang Wood energy as spring breaks from the grip of winter. As the closing mountain of the Northeast sector, Yin carries the vigour and boldness of the Tiger; in Feng Shui it is associated with courageous leadership, assertive action, and the initiation of new ventures, though its powerful upward Wood energy must be carefully balanced to avoid excessive yang aggression.",
+      "secondaryNames": [
+        {
+          "name": "寅",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yín",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "northeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "寅",
+        "pinyin": "Yín",
+        "orderNumber": 6,
+        "direction": "Northeast",
+        "compassDegrees": {
+          "from": 52.5,
+          "center": 60,
+          "to": 67.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "wuxing.phase.wood",
+        "animal": "Tiger"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.jia",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Jia Mountain",
+      "description": "Jia (甲) is the first Heavenly Stem, representing Yang Wood — the great tree, the uprush of new life at the start of the cycle, the most forceful and pioneering expression of the Wood element. Positioned at the opening edge of the East sector, Jia Mountain radiates creative expansion and the drive to grow; in Feng Shui it supports health, vitality, new beginnings, and the initiating energy of family and ancestral lineage.",
+      "secondaryNames": [
+        {
+          "name": "甲",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǎ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "east"
+      ],
+      "extendedData": {
+        "chineseCharacter": "甲",
+        "pinyin": "Jiǎ",
+        "orderNumber": 7,
+        "direction": "East",
+        "compassDegrees": {
+          "from": 67.5,
+          "center": 75,
+          "to": 82.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yang Wood"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.mao",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Mao Mountain",
+      "description": "Mao (卯) is the fourth Earthly Branch, corresponding to the Rabbit and the pure Wood element — the full flowering of spring, the east at dawn, the world entirely green and renewing. As the central and cardinal mountain of the East sector, Mao is the axis of the family and health gua; a property sitting or facing Mao draws the purest Wood energy, fostering family harmony, physical vitality, new growth, and the gentle but persistent expansion that is characteristic of healthy Wood.",
+      "secondaryNames": [
+        {
+          "name": "卯",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mǎo",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "east"
+      ],
+      "extendedData": {
+        "chineseCharacter": "卯",
+        "pinyin": "Mǎo",
+        "orderNumber": 8,
+        "direction": "East",
+        "compassDegrees": {
+          "from": 82.5,
+          "center": 90,
+          "to": 97.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "wuxing.phase.wood",
+        "animal": "Rabbit"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.yi",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Yi Mountain",
+      "description": "Yi (乙) is the second Heavenly Stem, representing Yin Wood — the grass, the vine, the flexible creeping plant that adapts to its environment while persisting in its growth. Positioned at the closing edge of the East sector, Yi Mountain imparts a graceful, adaptive quality to properties that sit or face it; in Feng Shui it favours creative flexibility, the nurturing of relationships within the family, and the kind of steady perseverance that overcomes obstacles through suppleness rather than force.",
+      "secondaryNames": [
+        {
+          "name": "乙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yǐ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "east"
+      ],
+      "extendedData": {
+        "chineseCharacter": "乙",
+        "pinyin": "Yǐ",
+        "orderNumber": 9,
+        "direction": "East",
+        "compassDegrees": {
+          "from": 97.5,
+          "center": 105,
+          "to": 112.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yin Wood"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.chen",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Chen Mountain",
+      "description": "Chen (辰) is the fifth Earthly Branch, corresponding to the Dragon and the Earth element — a charged, transitional Earth that holds the memory of spring's Wood and prepares the turn toward Fire and summer. The Dragon is the most powerful and auspicious of the twelve animals, and Chen Mountain is considered a particularly potent mountain in classical Form School Feng Shui; properties with a Dragon mountain at the back or a Dragon-facing orientation are associated with extraordinary fortune and the protection of powerful yang earth energy.",
+      "secondaryNames": [
+        {
+          "name": "辰",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chén",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "southeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "辰",
+        "pinyin": "Chén",
+        "orderNumber": 10,
+        "direction": "Southeast",
+        "compassDegrees": {
+          "from": 112.5,
+          "center": 120,
+          "to": 127.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.earth",
+        "animal": "Dragon"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.xun",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Xun Mountain",
+      "description": "Xun (巽) is the Wind trigram — one solid line below two broken lines — representing gentle penetration, the eldest daughter, and the Wood element's most pervasive and subtle quality. As the trigram mountain of the Southeast, Xun sits at the heart of the classical wealth gua; properties sitting or facing Xun draw the penetrating, circulating energy of wind and wood that disperses stagnation and allows fortune to accumulate steadily, and this mountain is especially favoured in Xuan Kong and San Yuan Feng Shui for activating wealth and opportunity.",
+      "secondaryNames": [
+        {
+          "name": "巽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xùn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "trigram",
+        "southeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "巽",
+        "pinyin": "Xùn",
+        "orderNumber": 11,
+        "direction": "Southeast",
+        "compassDegrees": {
+          "from": 127.5,
+          "center": 135,
+          "to": 142.5
+        },
+        "mountainType": "trigram",
+        "element": "wuxing.phase.wood",
+        "trigram": "iching.trigram.wind"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.si",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Si Mountain",
+      "description": "Si (巳) is the sixth Earthly Branch, corresponding to the Snake and the Fire element — a subtle, intelligent Fire that coils and concentrates, carrying both the transformative power of Fire and the quiet wisdom often attributed to the Snake. Positioned at the closing edge of the Southeast sector, Si Mountain adds a quality of sharp discernment and hidden intelligence to the wealth gua's energy; in Feng Shui properties facing or sitting Si may attract quietly accumulated wealth and resources gained through clever strategy rather than open assertion.",
+      "secondaryNames": [
+        {
+          "name": "巳",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sì",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "southeast"
+      ],
+      "extendedData": {
+        "chineseCharacter": "巳",
+        "pinyin": "Sì",
+        "orderNumber": 12,
+        "direction": "Southeast",
+        "compassDegrees": {
+          "from": 142.5,
+          "center": 150,
+          "to": 157.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.fire",
+        "animal": "Snake"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.bing",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Bing Mountain",
+      "description": "Bing (丙) is the third Heavenly Stem, representing Yang Fire — the blazing noon sun, the great conflagration, the most radiant and outwardly expressed form of the Fire element. Positioned at the opening edge of the South sector, Bing Mountain radiates Fame's most brilliant and expansive energy; in Feng Shui it supports public recognition, charisma, and the kind of forceful reputation that illuminates a person or enterprise across wide social and professional circles.",
+      "secondaryNames": [
+        {
+          "name": "丙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bǐng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "south"
+      ],
+      "extendedData": {
+        "chineseCharacter": "丙",
+        "pinyin": "Bǐng",
+        "orderNumber": 13,
+        "direction": "South",
+        "compassDegrees": {
+          "from": 157.5,
+          "center": 165,
+          "to": 172.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yang Fire"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.wu",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Wu Mountain",
+      "description": "Wu (午) is the seventh Earthly Branch, corresponding to the Horse and the pure Fire element — the high noon, the summer solstice, the fullest blazing peak of yang energy in the annual and daily cycles. As the central and cardinal mountain of the South sector, Wu is the axis of the fame and reputation gua; a property sitting or facing Wu draws the most concentrated Fire energy of the southern quadrant, powerfully supporting visibility, social recognition, and the burning away of obscurity to reveal one's true brilliance.",
+      "secondaryNames": [
+        {
+          "name": "午",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "south"
+      ],
+      "extendedData": {
+        "chineseCharacter": "午",
+        "pinyin": "Wǔ",
+        "orderNumber": 14,
+        "direction": "South",
+        "compassDegrees": {
+          "from": 172.5,
+          "center": 180,
+          "to": 187.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.fire",
+        "animal": "Horse"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.ding",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Ding Mountain",
+      "description": "Ding (丁) is the fourth Heavenly Stem, representing Yin Fire — the candle flame, the hearth fire, the warm steady glow that illuminates intimately rather than broadly. Positioned at the closing edge of the South sector, Ding Mountain imparts a more personal, enduring quality to Fire's fame energy; in Feng Shui it is associated with warmth, artistic sensitivity, and the cultivation of a lasting reputation built through heartfelt expression and genuine connection rather than spectacle.",
+      "secondaryNames": [
+        {
+          "name": "丁",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dīng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "south"
+      ],
+      "extendedData": {
+        "chineseCharacter": "丁",
+        "pinyin": "Dīng",
+        "orderNumber": 15,
+        "direction": "South",
+        "compassDegrees": {
+          "from": 187.5,
+          "center": 195,
+          "to": 202.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yin Fire"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.wei",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Wei Mountain",
+      "description": "Wei (未) is the eighth Earthly Branch, corresponding to the Goat and the Earth element — a warm, late-summer Earth that carries the last heat of Fire within it, nourishing and transitional. As the opening mountain of the Southwest sector, Wei connects the fame of Fire with the receptive, nourishing Earth of the relationships gua; in Feng Shui it favours harmonious partnerships, the cultivation of gentle social bonds, and the kind of warm, steady affection that sustains long-term relationships.",
+      "secondaryNames": [
+        {
+          "name": "未",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wèi",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "southwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "未",
+        "pinyin": "Wèi",
+        "orderNumber": 16,
+        "direction": "Southwest",
+        "compassDegrees": {
+          "from": 202.5,
+          "center": 210,
+          "to": 217.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.earth",
+        "animal": "Goat"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.kun",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Kun Mountain",
+      "description": "Kun (坤) is the Earth trigram — six broken yin lines — representing pure receptivity, the mother, the fertile ground, and the most yielding and nourishing expression of the Earth element. As the trigram mountain of the Southwest and the centre of the relationships gua, Kun Mountain is the axis of all that is yin, maternal, and bonding; properties sitting or facing Kun draw the supreme receptive energy that supports marriage, partnership, family bonds, and the capacity to nurture and be nurtured.",
+      "secondaryNames": [
+        {
+          "name": "坤",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Kūn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "trigram",
+        "southwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "坤",
+        "pinyin": "Kūn",
+        "orderNumber": 17,
+        "direction": "Southwest",
+        "compassDegrees": {
+          "from": 217.5,
+          "center": 225,
+          "to": 232.5
+        },
+        "mountainType": "trigram",
+        "element": "astrology.element.earth",
+        "trigram": "iching.trigram.earth"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.shen",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Shen Mountain",
+      "description": "Shen (申) is the ninth Earthly Branch, corresponding to the Monkey and the Metal element — a clever, quick, yang Metal that begins the long turn from summer toward autumn. As the closing mountain of the Southwest sector, Shen introduces the first cool Metal breath into the warm Earth of the relationships gua; in Feng Shui it is associated with resourcefulness, clever social navigation, and the ability to adapt relationships to changing circumstances with agility and intelligence.",
+      "secondaryNames": [
+        {
+          "name": "申",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shēn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "southwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "申",
+        "pinyin": "Shēn",
+        "orderNumber": 18,
+        "direction": "Southwest",
+        "compassDegrees": {
+          "from": 232.5,
+          "center": 240,
+          "to": 247.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "wuxing.phase.metal",
+        "animal": "Monkey"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.geng",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Geng Mountain",
+      "description": "Geng (庚) is the seventh Heavenly Stem, representing Yang Metal — the great sword, the axe blade, the most forceful and decisive expression of the Metal element's capacity to cut, refine, and define form. Positioned at the opening edge of the West sector, Geng Mountain radiates the creative and disciplined energy of Yang Metal into the creativity and children gua; in Feng Shui it supports strong, decisive creative output, clarity of artistic vision, and the vigorous protection of one's creative lineage.",
+      "secondaryNames": [
+        {
+          "name": "庚",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gēng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "west"
+      ],
+      "extendedData": {
+        "chineseCharacter": "庚",
+        "pinyin": "Gēng",
+        "orderNumber": 19,
+        "direction": "West",
+        "compassDegrees": {
+          "from": 247.5,
+          "center": 255,
+          "to": 262.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yang Metal"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.you",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "You Mountain",
+      "description": "You (酉) is the tenth Earthly Branch, corresponding to the Rooster and the pure Metal element — the harvest, the precise crow of the rooster at dawn, the concentrated essence of Metal at the autumn equinox. As the central and cardinal mountain of the West sector, You is the axis of the creativity and children gua; a property sitting or facing You draws the most refined Metal energy, supporting meticulous craft, disciplined artistry, and the careful raising of children or creative projects with precision and care.",
+      "secondaryNames": [
+        {
+          "name": "酉",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yǒu",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "west"
+      ],
+      "extendedData": {
+        "chineseCharacter": "酉",
+        "pinyin": "Yǒu",
+        "orderNumber": 20,
+        "direction": "West",
+        "compassDegrees": {
+          "from": 262.5,
+          "center": 270,
+          "to": 277.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "wuxing.phase.metal",
+        "animal": "Rooster"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.xin",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Xin Mountain",
+      "description": "Xin (辛) is the eighth Heavenly Stem, representing Yin Metal — the jewel, the fine needle, the polished gem and the precise surgical instrument; the most refined, introspective, and aesthetically sensitive form of Metal. Positioned at the closing edge of the West sector, Xin Mountain imparts elegance, refinement, and artistic sensitivity to the creativity gua's energy; in Feng Shui properties facing or sitting Xin are said to favour jewellers, musicians, writers, and all who work with precision, beauty, and the perfected expression of form.",
+      "secondaryNames": [
+        {
+          "name": "辛",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xīn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "heavenly-stem",
+        "west"
+      ],
+      "extendedData": {
+        "chineseCharacter": "辛",
+        "pinyin": "Xīn",
+        "orderNumber": 21,
+        "direction": "West",
+        "compassDegrees": {
+          "from": 277.5,
+          "center": 285,
+          "to": 292.5
+        },
+        "mountainType": "heavenly-stem",
+        "element": "Yin Metal"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.xu",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Xu Mountain",
+      "description": "Xu (戌) is the eleventh Earthly Branch, corresponding to the Dog and the Earth element — a dry, late-autumn Earth that holds the final warmth of Metal before the descent into Water and winter. As the opening mountain of the Northwest sector, Xu bridges the West's Metal energy with the Heaven trigram's authority; in Feng Shui it is associated with loyal guardianship, protective mentorship, and the steadfast reliability of those who support and guard the household or enterprise.",
+      "secondaryNames": [
+        {
+          "name": "戌",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xū",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "northwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "戌",
+        "pinyin": "Xū",
+        "orderNumber": 22,
+        "direction": "Northwest",
+        "compassDegrees": {
+          "from": 292.5,
+          "center": 300,
+          "to": 307.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.earth",
+        "animal": "Dog"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.qian",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Qian Mountain",
+      "description": "Qian (乾) is the Heaven trigram — six solid yang lines — representing pure creative force, the father, the ruler, and the most powerful and expansive expression of yang energy in all of Chinese cosmology. As the trigram mountain of the Northwest and the heart of the helpful people and travel gua, Qian Mountain is the axis of Heaven's authority and benevolence; properties sitting or facing Qian draw the supreme yang creative force, attracting powerful benefactors, mentors, and auspicious connections with those who hold authority and influence.",
+      "secondaryNames": [
+        {
+          "name": "乾",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qián",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "trigram",
+        "northwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "乾",
+        "pinyin": "Qián",
+        "orderNumber": 23,
+        "direction": "Northwest",
+        "compassDegrees": {
+          "from": 307.5,
+          "center": 315,
+          "to": 322.5
+        },
+        "mountainType": "trigram",
+        "element": "wuxing.phase.metal",
+        "trigram": "iching.trigram.heaven"
+      }
+    },
+    {
+      "canonicalName": "fengshui.mountain.hai",
+      "entityType": "fengshui.mountain",
+      "primaryDisplayName": "Hai Mountain",
+      "description": "Hai (亥) is the twelfth and final Earthly Branch, corresponding to the Pig and the Water element — the quiet, fertile, yin Water that closes the cycle and holds the seed of the next year's beginning. As the closing mountain of the Northwest sector and the last of the 24 Mountains, Hai completes the full circuit of the Luopan; in Feng Shui it brings a quality of completion, deep resources, and the generous, unpretentious abundance associated with the Pig — particularly favourable for the accumulation of hidden reserves and the quiet enjoyment of life's pleasures.",
+      "secondaryNames": [
+        {
+          "name": "亥",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hài",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "fengshui",
+        "mountain",
+        "earthly-branch",
+        "northwest"
+      ],
+      "extendedData": {
+        "chineseCharacter": "亥",
+        "pinyin": "Hài",
+        "orderNumber": 24,
+        "direction": "Northwest",
+        "compassDegrees": {
+          "from": 322.5,
+          "center": 330,
+          "to": 337.5
+        },
+        "mountainType": "earthly-branch",
+        "element": "astrology.element.water",
+        "animal": "Pig"
+      }
+    }
+  ]
+}

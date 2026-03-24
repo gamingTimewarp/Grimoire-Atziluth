@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "traditions": [
+    {
+      "canonicalName": "tradition.feng-shui-later-heaven",
+      "displayName": "Feng Shui — Later Heaven Ba Gua",
+      "shortDescription": "The Wen Wang / Post-Heaven arrangement: Kan→N, Gen→NE, Zhen→E, Xun→SE, Li→S, Kun→SW, Dui→W, Qian→NW. Used in most Yang and Yin Feng Shui applications.",
+      "attributionFields": [
+        {
+          "linkLabel": "later-heaven-direction",
+          "targetEntityType": "compass.direction",
+          "displayName": "Later Heaven Direction"
+        }
+      ]
+    }
+  ]
+}

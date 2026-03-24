@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "jyotish.gem.ruby",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Ruby",
+      "description": "Ruby (Māṇikya) is the gemstone of the Sun (Sūrya) in Vedic astrology. Its deep red colour resonates with solar vitality, courage, and royal authority. Traditionally worn in gold on the ring finger of the right hand, ruby amplifies solar energy — strengthening the self, willpower, and the capacity for leadership. Rubies of the finest quality (pigeon-blood red, from Burma/Myanmar) are among the most prized gemstones in both Western and Vedic traditions.",
+      "secondaryNames": [
+        {
+          "name": "माणिक्य",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Manikya",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "ruby",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Sun",
+        "planetCN": "astrology.planet.sol",
+        "hindiName": "माणिक्य",
+        "sanskritTransliteration": "Manikya"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.pearl",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Pearl",
+      "description": "Pearl (Motī) is the gemstone of the Moon (Chandra) in Vedic astrology. Its luminous white-to-cream colour mirrors the Moon's reflective light, governing emotions, the mind, intuition, and the feminine principle. Pearls are associated with calm, nurturing, and emotional stability. Natural pearls from the sea or freshwater sources are preferred; they are worn in silver on the little finger. The pearl represents the oyster's response to an irritant — a metaphor for spiritual transformation.",
+      "secondaryNames": [
+        {
+          "name": "मोती",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moti",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "pearl",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Moon",
+        "planetCN": "astrology.planet.luna",
+        "hindiName": "मोती",
+        "sanskritTransliteration": "Moti"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.red-coral",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Red Coral",
+      "description": "Red Coral (Moonga, Praval) is the gemstone of Mars (Mangala) in Vedic astrology. Its blood-red to orange-red colour connects it to the martial qualities of energy, courage, determination, and the life-force. Red coral is technically an organic gemstone — the skeletal remains of sea creatures — yet has been prized in Vedic and Mediterranean traditions for millennia. Worn in gold or copper on the ring finger, it is used to strengthen Mars placements and counter its afflictions.",
+      "secondaryNames": [
+        {
+          "name": "मूंगा",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Moonga",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "coral",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Mars",
+        "planetCN": "astrology.planet.mars",
+        "hindiName": "मूंगा",
+        "sanskritTransliteration": "Moonga"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.emerald",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Emerald",
+      "description": "Emerald (Paṇṇā, Marakata) is the gemstone of Mercury (Budha) in Vedic astrology. Its vivid green colour reflects Mercury's association with intelligence, communication, commerce, and the nervous system. Fine emeralds are traditionally worn in gold on the little finger. The Mughal emperors were famous for their love of inscribed emeralds, and the gem appears extensively in both Vedic and Hermetic traditions as a stone of wisdom and eloquence.",
+      "secondaryNames": [
+        {
+          "name": "पन्ना",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Panna",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "emerald",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Mercury",
+        "planetCN": "astrology.planet.mercury",
+        "hindiName": "पन्ना",
+        "sanskritTransliteration": "Panna"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.yellow-sapphire",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Yellow Sapphire",
+      "description": "Yellow Sapphire (Pukhraj, Pushparāga) is the gemstone of Jupiter (Guru/Bṛhaspati) in Vedic astrology. Its golden-yellow colour resonates with Jupiterian qualities of wisdom, prosperity, spiritual knowledge, and good fortune. Yellow sapphire is considered one of the most auspicious gemstones in the Vedic tradition, traditionally worn in gold on the index finger. It is said to strengthen the Guru's benefic influence and attract blessings in education, marriage, and spiritual practice.",
+      "secondaryNames": [
+        {
+          "name": "पुखराज",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pukhraj",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "sapphire",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Jupiter",
+        "planetCN": "astrology.planet.jupiter",
+        "hindiName": "पुखराज",
+        "sanskritTransliteration": "Pukhraj"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.diamond",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Diamond",
+      "description": "Diamond (Hīrā, Vajra) is the gemstone of Venus (Śukra) in Vedic astrology. The hardest natural substance and most brilliant of gems, the diamond resonates with Venusian qualities of beauty, luxury, love, art, and material pleasure. In Sanskrit vajra means both diamond and thunderbolt — connecting the stone's indestructibility with divine lightning. Diamonds are worn in platinum or white gold on the middle finger; their brilliance amplifies Venus's capacity for aesthetic perception and sensory refinement.",
+      "secondaryNames": [
+        {
+          "name": "हीरा",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Heera",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "diamond",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Venus",
+        "planetCN": "astrology.planet.venus",
+        "hindiName": "हीरा",
+        "sanskritTransliteration": "Heera"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.blue-sapphire",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Blue Sapphire",
+      "description": "Blue Sapphire (Nīlam, Nīlamani) is the gemstone of Saturn (Śani) in Vedic astrology and is considered the most powerful — and most dangerous — of the Navaratna. Its deep blue colour resonates with Saturn's qualities of discipline, karma, longevity, detachment, and the working-out of fate. Blue sapphire must be tested before wearing: it is said to bestow sudden wealth or sudden ruin. When well-placed, it brings exceptional discipline, career success, and spiritual depth.",
+      "secondaryNames": [
+        {
+          "name": "नीलम",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Neelam",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "sapphire",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Saturn",
+        "planetCN": "astrology.planet.saturn",
+        "hindiName": "नीलम",
+        "sanskritTransliteration": "Neelam"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.hessonite",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Hessonite Garnet",
+      "description": "Hessonite Garnet (Gomeda, Gomed) is the gemstone of Rahu (the North Lunar Node) in Vedic astrology. Its honey-orange to deep brownish-red colour is distinctive. Rahu is the head of the celestial serpent who periodically swallows the Sun and Moon (eclipses), representing worldly desire, ambition, illusion, and karma from past lives. Hessonite amplifies Rahu's energies — intensifying worldly ambition, fame, and the power to overcome obstacles — but must be worn with caution.",
+      "secondaryNames": [
+        {
+          "name": "गोमेद",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gomed",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "garnet",
+        "hessonite",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Rahu",
+        "planetCN": "jyotish.node.rahu",
+        "hindiName": "गोमेद",
+        "sanskritTransliteration": "Gomed"
+      }
+    },
+    {
+      "canonicalName": "jyotish.gem.cats-eye",
+      "entityType": "jyotish.gem",
+      "primaryDisplayName": "Cat's Eye Chrysoberyl",
+      "description": "Cat's Eye Chrysoberyl (Lahsuniyā, Vaidūrya) is the gemstone of Ketu (the South Lunar Node) in Vedic astrology. Its striking chatoyancy (the optical phenomenon producing a band of light resembling a cat's eye) is caused by fine needle-like inclusions. Ketu represents past-life karma, moksha (liberation), mystical insight, and sudden events. Cat's eye is worn to mitigate Ketu's unpredictable malefic influences and to strengthen intuition, spiritual liberation, and clairvoyance.",
+      "secondaryNames": [
+        {
+          "name": "लहसुनिया",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lahsunia",
+          "languageTag": "sa-transliteration",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chrysoberyl",
+        "cats-eye",
+        "navaratna",
+        "vedic-gem",
+        "jyotish"
+      ],
+      "extendedData": {
+        "planetName": "Ketu",
+        "planetCN": "jyotish.node.ketu",
+        "hindiName": "लहसुनिया",
+        "sanskritTransliteration": "Lahsunia"
+      }
+    }
+  ]
+}

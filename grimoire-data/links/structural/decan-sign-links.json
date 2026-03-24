@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "astrology.decan.aries-1",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aries-2",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aries-3",
+      "target": "astrology.zodiac-sign.aries",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-1",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-2",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-3",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-1",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-2",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-3",
+      "target": "astrology.zodiac-sign.gemini",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-1",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-2",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-3",
+      "target": "astrology.zodiac-sign.cancer",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-1",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-2",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-3",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-1",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-2",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-3",
+      "target": "astrology.zodiac-sign.virgo",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-1",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-2",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-3",
+      "target": "astrology.zodiac-sign.libra",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-1",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-2",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-3",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-1",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-2",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-3",
+      "target": "astrology.zodiac-sign.sagittarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-1",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-2",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-3",
+      "target": "astrology.zodiac-sign.capricorn",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-1",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-2",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-3",
+      "target": "astrology.zodiac-sign.aquarius",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-1",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-2",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-3",
+      "target": "astrology.zodiac-sign.pisces",
+      "label": "belongs-to",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

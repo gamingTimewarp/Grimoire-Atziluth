@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.chaldean-numerology",
+    "displayName": "Chaldean Numerology",
+    "description": "An ancient Babylonian numerological system using values 1–8 only (the number 9 is considered sacred and not assigned to letters). Predates Pythagorean numerology and uses different letter-number associations based on the vibrational sound of each letter rather than sequential position.",
+    "attributionFields": [
+      { "linkLabel": "attributed-number", "displayName": "Chaldean Value", "targetEntityType": "numerology.numeral", "allowMultiple": false, "sortOrder": 0 }
+    ]
+  }
+}

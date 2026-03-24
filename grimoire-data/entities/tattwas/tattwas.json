@@ -1,0 +1,973 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tattwa.akasha",
+      "entityType": "tattwa",
+      "primaryDisplayName": "Akasha",
+      "description": "Akasha (आकाश) is the first and most subtle of the five Hindu tattwa principles, corresponding to the element of Spirit or Ether — the all-pervading, undifferentiated space that is the ground and container of all other elements. Its traditional visual symbol is a black or deep violet oval or egg-shape, representing the cosmic void and the primordial womb of manifestation. In the Golden Dawn system Akasha was used as a tattwa card for deep skrying and pathworking: practitioners would gaze at the symbol to enter the astral plane associated with the spirit current, encountering entities and landscapes that transcended the four gross elements. Akasha corresponds to the sense of hearing (the subtlest physical sense, since sound propagates through ether) and in Tantric cosmology it is the tattwa from which all others emanate and into which all eventually dissolve.",
+      "secondaryNames": [
+        {
+          "name": "आकाश",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ether",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Spirit",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Akasa",
+          "languageTag": "en-variant",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "element",
+        "spirit",
+        "ether",
+        "akasha"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "element": "spirit",
+        "shape": "Black or deep violet oval / egg",
+        "color": "Black or deep violet",
+        "sanskritMeaning": "Sky, space, ether; that which shines or radiates",
+        "sense": "hearing",
+        "chakraCorrespondence": "chakra.classical.vishuddha",
+        "westernElement": "Spirit",
+        "gdUse": "Used in GD tattwa skrying as the gateway to the spiritual planes transcending the four elements; visualised as an egg or oval of deep black-violet light opening into limitless space. Pathworkings through Akasha access the highest spiritual current and encounters with divine presences."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu",
+      "entityType": "tattwa",
+      "primaryDisplayName": "Vayu",
+      "description": "Vayu (वायु) is the tattwa of Air, the element of movement, breath, and the life-force that animates all living things. Its traditional symbol is a blue circle, embodying the all-surrounding, limitless quality of the atmosphere and the perfect symmetry of breath. In the Golden Dawn tattwa system, the blue circle of Vayu was used for skrying the air planes: meditators would enter visions of aerial landscapes, encounter sylphs and beings of the mental-aerial current, and experience states of lightness, clarity, and rapid thought. Vayu corresponds to the sense of touch — the skin's sensitivity to air, pressure, and the movement of wind — and is associated with Anahata (the Heart Chakra) through the element of Air, which governs the breath of life and the circulation of prana.",
+      "secondaryNames": [
+        {
+          "name": "वायु",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Air",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Vāyu",
+          "languageTag": "sa-iast",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "element",
+        "air",
+        "vayu"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "element": "astrology.element.air",
+        "shape": "Blue circle",
+        "color": "Blue (sky blue)",
+        "sanskritMeaning": "Wind, air, breath; the god of wind",
+        "sense": "touch",
+        "chakraCorrespondence": "chakra.classical.anahata",
+        "westernElement": "Air",
+        "gdUse": "Used in GD tattwa skrying as the portal to the air planes; the blue circle is visualised as a doorway through which the skryer enters aerial vistas and encounters sylphs and air-elemental intelligences. Air pathworkings cultivate mental clarity, swiftness of thought, and communication with the angelic intelligences of the eastern quarter."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas",
+      "entityType": "tattwa",
+      "primaryDisplayName": "Tejas",
+      "description": "Tejas (तेजस्) is the tattwa of Fire, representing light, heat, radiance, and the transforming power of combustion and solar energy. Its traditional symbol is an upward-pointing scarlet or red triangle — the same form as the alchemical fire triangle and the GD symbol of the element of Fire — embodying the rising, expansive, and purifying nature of flame. In the Golden Dawn tattwa system, the red triangle of Tejas was used for skrying the fire planes: practitioners entered visions of volcanic landscapes, solar interiors, and the creative fires of spiritual will, encountering salamanders and fiery divine presences. Tejas corresponds to the sense of sight, since light and fire are the preconditions of all visual perception, and is associated in Tantric cosmology with Manipura (the Solar Plexus Chakra).",
+      "secondaryNames": [
+        {
+          "name": "तेजस्",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fire",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Teja",
+          "languageTag": "en-variant",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "element",
+        "fire",
+        "tejas"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "element": "astrology.element.fire",
+        "shape": "Upward-pointing equilateral triangle",
+        "color": "Scarlet / red",
+        "sanskritMeaning": "Brilliance, fire, lustre, heat, energy; the principle of light",
+        "sense": "sight",
+        "chakraCorrespondence": "chakra.classical.manipura",
+        "westernElement": "Fire",
+        "gdUse": "Used in GD tattwa skrying as the portal to the fire planes; the scarlet triangle is visualised as a doorway into realms of solar fire and volcanic creative energy. Fire pathworkings develop will, courage, and the capacity for magical action; the presiding intelligences are the salamanders and the fire angels of the southern quarter."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas",
+      "entityType": "tattwa",
+      "primaryDisplayName": "Apas",
+      "description": "Apas (आपस्) is the tattwa of Water, the element of fluidity, emotion, the reflective and receptive principle, and the astral light. Its traditional symbol is a silver or white crescent with the horns pointing upward — evoking both the cup that holds liquid and the waxing crescent moon that governs the tides and the watery subconscious. In the Golden Dawn system, the silver crescent of Apas was used for skrying the water planes: meditators entered visions of underwater kingdoms, emotional-astral landscapes, and encounters with undines and water-elemental intelligences. Apas corresponds to the sense of taste, since the tongue can only taste substances dissolved in moisture, and is associated in Tantric cosmology with Svadhisthana (the Sacral Chakra).",
+      "secondaryNames": [
+        {
+          "name": "आपस्",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Water",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Āpas",
+          "languageTag": "sa-iast",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "element",
+        "water",
+        "apas"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "element": "astrology.element.water",
+        "shape": "Silver or white crescent, horns pointing upward",
+        "color": "Silver / white",
+        "sanskritMeaning": "Waters, fluid; the principle of liquid and cohesion",
+        "sense": "taste",
+        "chakraCorrespondence": "chakra.classical.svadhisthana",
+        "westernElement": "Water",
+        "gdUse": "Used in GD tattwa skrying as the portal to the water planes; the silver crescent is visualised as a doorway into depths of oceanic astral space, revealing the emotional and psychic undercurrents of the subconscious. Water pathworkings cultivate empathy, psychic sensitivity, and contact with the undines and the angelic intelligences of the western quarter."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi",
+      "entityType": "tattwa",
+      "primaryDisplayName": "Prithivi",
+      "description": "Prithivi (पृथिवी) is the tattwa of Earth, the densest and most manifest of the five elements, representing solidity, stability, materiality, and the physical world of sensation and form. Its traditional symbol is a yellow square — the most stable of geometric forms, the four-cornered foundation that mirrors the four cardinal directions and the fourfold structure of material reality. In the Golden Dawn system, the yellow square of Prithivi was used for skrying the earth planes: practitioners entered visions of caverns, underground landscapes, forests, and physical-elemental realms, encountering gnomes and earth-elemental intelligences. Prithivi corresponds to the sense of smell — the most ancient and directly physical of the senses — and is associated in Tantric cosmology with Muladhara (the Root Chakra), the foundation of the entire energy body.",
+      "secondaryNames": [
+        {
+          "name": "पृथिवी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Earth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Prthivi",
+          "languageTag": "sa-iast",
+          "visible": false,
+          "sortOrder": 2
+        },
+        {
+          "name": "Prithvi",
+          "languageTag": "en-variant",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "element",
+        "earth",
+        "prithivi"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "element": "astrology.element.earth",
+        "shape": "Yellow square",
+        "color": "Yellow (ochre/golden)",
+        "sanskritMeaning": "The wide one; earth, the broad expanse of physical ground",
+        "sense": "smell",
+        "chakraCorrespondence": "chakra.classical.muladhara",
+        "westernElement": "Earth",
+        "gdUse": "Used in GD tattwa skrying as the portal to the earth planes; the yellow square is visualised as a doorway into subterranean realms of physical elemental force. Earth pathworkings develop grounding, physical manifestation ability, and contact with the gnomes and the angelic intelligences of the northern quarter."
+      }
+    },
+    {
+      "canonicalName": "tattwa.akasha-akasha",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Spirit of Spirit",
+      "description": "The combination of Akasha within Akasha represents the pure, undifferentiated spiritual essence contemplating itself — the most abstract and transcendent of all the twenty-five tattwa combinations. This symbol is used in advanced GD pathworkings to access the highest purely spiritual planes beyond all elemental modulation, evoking a state of pure consciousness without content, the void within the void.",
+      "secondaryNames": [
+        {
+          "name": "Akasha of Akasha",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "spirit",
+        "akasha"
+      ],
+      "extendedData": {
+        "outerElement": "spirit",
+        "innerElement": "spirit",
+        "outerTattwa": "tattwa.akasha",
+        "innerTattwa": "tattwa.akasha",
+        "meaning": "Pure spirit contemplating itself, the void within the void. This combination evokes the most abstract spiritual state, beyond all elemental differentiation.",
+        "visualDescription": "A smaller black or deep violet oval centered within a larger black or deep violet oval; two concentric egg-forms in the same colour, distinguished by size alone."
+      }
+    },
+    {
+      "canonicalName": "tattwa.akasha-vayu",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Air of Spirit",
+      "description": "The combination of Vayu (Air) within Akasha (Spirit) unites the all-pervading ether with the element of movement and breath, evoking a spiritual current that is both transcendent and subtly active. This combination governs the highest plane of the air element, the most ethereal and spiritualised expression of mental clarity, breath, and the life-force.",
+      "secondaryNames": [
+        {
+          "name": "Vayu of Akasha",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "spirit",
+        "air",
+        "akasha",
+        "vayu"
+      ],
+      "extendedData": {
+        "outerElement": "spirit",
+        "innerElement": "air",
+        "outerTattwa": "tattwa.akasha",
+        "innerTattwa": "tattwa.vayu",
+        "meaning": "The spiritualised aspect of Air, where the mental and breath-like qualities of Vayu are elevated into the pure spiritual ether. Pathworkings here reach the highest planes of the air current, encountering the most refined aerial intelligences.",
+        "visualDescription": "A smaller blue circle centered within a larger black or deep violet oval; the crisp blue circle floats in the dark egg-shaped field."
+      }
+    },
+    {
+      "canonicalName": "tattwa.akasha-tejas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Fire of Spirit",
+      "description": "The combination of Tejas (Fire) within Akasha (Spirit) places the transforming, radiant fire within the all-containing spiritual ether, evoking the divine creative fire — the light of the logos or the solar spiritual will working through the void. This combination accesses the highest planes of the fire current and the most spiritualised form of will and illumination.",
+      "secondaryNames": [
+        {
+          "name": "Tejas of Akasha",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "spirit",
+        "fire",
+        "akasha",
+        "tejas"
+      ],
+      "extendedData": {
+        "outerElement": "spirit",
+        "innerElement": "fire",
+        "outerTattwa": "tattwa.akasha",
+        "innerTattwa": "tattwa.tejas",
+        "meaning": "The divine or logos-fire within the spiritual ether; the most exalted expression of will, illumination, and creative spiritual power. This combination is associated with the fire of the divine mind rather than physical or elemental flame.",
+        "visualDescription": "A smaller scarlet upward-pointing triangle centered within a larger black or deep violet oval; the vivid red triangle glows against the dark egg-shaped ground."
+      }
+    },
+    {
+      "canonicalName": "tattwa.akasha-apas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Water of Spirit",
+      "description": "The combination of Apas (Water) within Akasha (Spirit) brings the fluid, receptive, and reflective quality of water into the spiritual ether, creating a current of universal compassion, cosmic psychic sensitivity, and the boundless astral sea of the spiritual planes. This combination is associated with the most refined expressions of empathy, psychic receptivity, and the akashic records.",
+      "secondaryNames": [
+        {
+          "name": "Apas of Akasha",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "spirit",
+        "water",
+        "akasha",
+        "apas"
+      ],
+      "extendedData": {
+        "outerElement": "spirit",
+        "innerElement": "water",
+        "outerTattwa": "tattwa.akasha",
+        "innerTattwa": "tattwa.apas",
+        "meaning": "The spiritualised water principle, the cosmic ocean of pure psychic sensitivity and universal compassion within the ether. Pathworkings here access the deepest spiritual levels of the akashic sea and the most refined forms of clairvoyance.",
+        "visualDescription": "A smaller silver or white crescent (horns up) centered within a larger black or deep violet oval; the pale lunar crescent floats within the dark egg of ether."
+      }
+    },
+    {
+      "canonicalName": "tattwa.akasha-prithivi",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Earth of Spirit",
+      "description": "The combination of Prithivi (Earth) within Akasha (Spirit) anchors the most manifest element within the supreme spiritual ether, representing the most spiritualised expression of physical form — the subtle body of the earth or the divine template underlying material creation. This rare combination bridges the highest and lowest, and is used in pathworkings that seek to bring spirit fully into matter.",
+      "secondaryNames": [
+        {
+          "name": "Prithivi of Akasha",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "spirit",
+        "earth",
+        "akasha",
+        "prithivi"
+      ],
+      "extendedData": {
+        "outerElement": "spirit",
+        "innerElement": "earth",
+        "outerTattwa": "tattwa.akasha",
+        "innerTattwa": "tattwa.prithivi",
+        "meaning": "The spiritual essence of Earth, the divine template underlying manifest physical form; spirit fully incarnated into matter. This combination governs the highest plane of the earth current and the akashic record of physical existence.",
+        "visualDescription": "A smaller yellow square centered within a larger black or deep violet oval; the golden square sits, stable and solid, within the dark egg-shaped spiritual field."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu-akasha",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Spirit of Air",
+      "description": "The combination of Akasha (Spirit) within Vayu (Air) places the infinite spiritual void at the heart of the air element, evoking the breath of life, the pneuma that permeates all thought, and the spiritual intelligence animating the winds of the cosmos. This combination is used in pathworkings that seek the highest spiritual intelligence within the air quarter.",
+      "secondaryNames": [
+        {
+          "name": "Akasha of Vayu",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "air",
+        "spirit",
+        "vayu",
+        "akasha"
+      ],
+      "extendedData": {
+        "outerElement": "air",
+        "innerElement": "spirit",
+        "outerTattwa": "tattwa.vayu",
+        "innerTattwa": "tattwa.akasha",
+        "meaning": "The spiritual dimension of Air; the pneuma or divine breath within the atmosphere, the animating intelligence within all movement and thought. This combination accesses the transcendent spiritual core of the air element.",
+        "visualDescription": "A smaller black or deep violet oval centered within a larger blue circle; the dark egg of spirit floats within the luminous sky-blue circle of air."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu-vayu",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Air of Air",
+      "description": "The combination of Vayu within Vayu is pure, undiluted air — the element of thought and breath in its most complete, concentrated expression. This symbol is used in pathworkings dedicated to the air element in its fullness, accessing the mental planes, the realm of pure intellect, and the highest expressions of communication and language.",
+      "secondaryNames": [
+        {
+          "name": "Vayu of Vayu",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "air",
+        "vayu"
+      ],
+      "extendedData": {
+        "outerElement": "air",
+        "innerElement": "air",
+        "outerTattwa": "tattwa.vayu",
+        "innerTattwa": "tattwa.vayu",
+        "meaning": "Pure undiluted Air, the element of mind in its most complete concentration. Governs the highest expressions of intellect, communication, language, and the pure mental planes.",
+        "visualDescription": "A smaller blue circle centered within a larger blue circle; two concentric circles of sky blue, distinguished by size, creating a target-like pattern in pure air-blue."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu-tejas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Fire of Air",
+      "description": "The combination of Tejas (Fire) within Vayu (Air) brings the transforming, energising power of fire into the element of air and thought, evoking the fiery intellect, the lightning of insight, the heated debate, and the passionate inspiration of the creative mind. This combination governs the fire sub-plane of the air quarter.",
+      "secondaryNames": [
+        {
+          "name": "Tejas of Vayu",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "air",
+        "fire",
+        "vayu",
+        "tejas"
+      ],
+      "extendedData": {
+        "outerElement": "air",
+        "innerElement": "fire",
+        "outerTattwa": "tattwa.vayu",
+        "innerTattwa": "tattwa.tejas",
+        "meaning": "The fiery intellect and inspired will within the element of Air; lightning-flash insight, passionate debate, and the creative fire of the mind. This combination governs the fire sub-plane of the air quarter.",
+        "visualDescription": "A smaller scarlet upward-pointing triangle centered within a larger blue circle; the hot red triangle contrasts vividly against the cool blue circle of air."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu-apas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Water of Air",
+      "description": "The combination of Apas (Water) within Vayu (Air) brings the fluid, emotional, and imaginative quality of water into the realm of air and thought, evoking the interplay of emotion and intellect, the poetic imagination, the mists of romantic idealism, and the damp breath of intuition. This combination governs the water sub-plane of the air quarter.",
+      "secondaryNames": [
+        {
+          "name": "Apas of Vayu",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "air",
+        "water",
+        "vayu",
+        "apas"
+      ],
+      "extendedData": {
+        "outerElement": "air",
+        "innerElement": "water",
+        "outerTattwa": "tattwa.vayu",
+        "innerTattwa": "tattwa.apas",
+        "meaning": "The imaginative, emotionally-coloured intellect; poetry, romantic idealism, and the interplay of feeling and thought within the element of Air. This combination governs the water sub-plane of the air quarter.",
+        "visualDescription": "A smaller silver or white crescent (horns up) centered within a larger blue circle; the pale lunar crescent glows within the sky-blue field of air."
+      }
+    },
+    {
+      "canonicalName": "tattwa.vayu-prithivi",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Earth of Air",
+      "description": "The combination of Prithivi (Earth) within Vayu (Air) grounds the mental and aerial qualities of air in practical, material reality, evoking the practical intellect, applied logic, craftsmanship of language, and the earthy common sense that gives thought productive form. This combination governs the earth sub-plane of the air quarter.",
+      "secondaryNames": [
+        {
+          "name": "Prithivi of Vayu",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "air",
+        "earth",
+        "vayu",
+        "prithivi"
+      ],
+      "extendedData": {
+        "outerElement": "air",
+        "innerElement": "earth",
+        "outerTattwa": "tattwa.vayu",
+        "innerTattwa": "tattwa.prithivi",
+        "meaning": "The practical intellect grounded in material reality; applied logic, craftsmanship of language, and the earthy common sense that shapes thought into productive form. This combination governs the earth sub-plane of the air quarter.",
+        "visualDescription": "A smaller yellow square centered within a larger blue circle; the solid golden square sits stably within the airy blue circle, grounding it."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas-akasha",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Spirit of Fire",
+      "description": "The combination of Akasha (Spirit) within Tejas (Fire) places the infinite spiritual void at the heart of the fire element, evoking the divine fire of the spirit — the solar logos, the divine spark of consciousness within the transforming flame, and the spiritual will that underlies all magical and creative power. This is the most spiritualised expression of fire.",
+      "secondaryNames": [
+        {
+          "name": "Akasha of Tejas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "fire",
+        "spirit",
+        "tejas",
+        "akasha"
+      ],
+      "extendedData": {
+        "outerElement": "fire",
+        "innerElement": "spirit",
+        "outerTattwa": "tattwa.tejas",
+        "innerTattwa": "tattwa.akasha",
+        "meaning": "The divine spark of spiritual consciousness within the transforming fire; the solar logos, the sacred flame of the spirit animating all magical will. Pathworkings here reach the highest spiritual dimension of the fire quarter.",
+        "visualDescription": "A smaller black or deep violet oval centered within a larger scarlet upward-pointing triangle; the dark egg of spirit glows mysteriously within the vivid red triangle of fire."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas-vayu",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Air of Fire",
+      "description": "The combination of Vayu (Air) within Tejas (Fire) brings the swift, mental, and communicative quality of air into the element of fire, evoking the flaming intellect, the fiery speech of the orator and prophet, and the spreading power of inspiration that carries fire on the wind. This combination governs the air sub-plane of the fire quarter.",
+      "secondaryNames": [
+        {
+          "name": "Vayu of Tejas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "fire",
+        "air",
+        "tejas",
+        "vayu"
+      ],
+      "extendedData": {
+        "outerElement": "fire",
+        "innerElement": "air",
+        "outerTattwa": "tattwa.tejas",
+        "innerTattwa": "tattwa.vayu",
+        "meaning": "The fiery speech and inspired intellect; the spreading of fire on the wind, prophetic eloquence, and the mental dimension of the fire current. This combination governs the air sub-plane of the fire quarter.",
+        "visualDescription": "A smaller blue circle centered within a larger scarlet upward-pointing triangle; the cool blue circle of air floats within the hot red triangle of fire."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas-tejas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Fire of Fire",
+      "description": "The combination of Tejas within Tejas is pure, concentrated fire — the element of will, transformation, and radiance at its most intense and undiluted. Used in pathworkings dedicated entirely to the fire element, this symbol accesses the full heat of the creative and destructive fire, the core of the salamander kingdoms, and the supreme expression of magical will.",
+      "secondaryNames": [
+        {
+          "name": "Tejas of Tejas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "fire",
+        "tejas"
+      ],
+      "extendedData": {
+        "outerElement": "fire",
+        "innerElement": "fire",
+        "outerTattwa": "tattwa.tejas",
+        "innerTattwa": "tattwa.tejas",
+        "meaning": "Pure undiluted Fire, the element of will and transformation at its most concentrated. Governs the deepest fire planes, the heart of the salamander kingdoms, and the supreme magical will.",
+        "visualDescription": "A smaller scarlet upward-pointing triangle centered within a larger scarlet upward-pointing triangle; two concentric red triangles of fire, the inner one smaller, creating a triangle-within-triangle pattern."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas-apas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Water of Fire",
+      "description": "The combination of Apas (Water) within Tejas (Fire) unites apparent opposites — the fluid, cooling quality of water within the transforming heat of fire — evoking steam, emotional passion, the burning seas of the astral plane, and the alchemical process of dissolution by fire. This deeply paradoxical combination governs the water sub-plane of the fire quarter.",
+      "secondaryNames": [
+        {
+          "name": "Apas of Tejas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "fire",
+        "water",
+        "tejas",
+        "apas"
+      ],
+      "extendedData": {
+        "outerElement": "fire",
+        "innerElement": "water",
+        "outerTattwa": "tattwa.tejas",
+        "innerTattwa": "tattwa.apas",
+        "meaning": "The paradoxical union of fire and water; emotional passion, the burning astral sea, and the alchemical dissolution of form by heat. This combination governs the water sub-plane of the fire quarter and is associated with the intensity of deep emotion.",
+        "visualDescription": "A smaller silver or white crescent (horns up) centered within a larger scarlet upward-pointing triangle; the pale moon-crescent of water floats within the burning red triangle of fire."
+      }
+    },
+    {
+      "canonicalName": "tattwa.tejas-prithivi",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Earth of Fire",
+      "description": "The combination of Prithivi (Earth) within Tejas (Fire) grounds the transforming energy of fire in material form, evoking volcanic earth, the heat of forging and smithcraft, the fire at the earth's core, and the transformative physical processes of combustion and calcination in alchemical work. This combination governs the earth sub-plane of the fire quarter.",
+      "secondaryNames": [
+        {
+          "name": "Prithivi of Tejas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "fire",
+        "earth",
+        "tejas",
+        "prithivi"
+      ],
+      "extendedData": {
+        "outerElement": "fire",
+        "innerElement": "earth",
+        "outerTattwa": "tattwa.tejas",
+        "innerTattwa": "tattwa.prithivi",
+        "meaning": "The fire within the earth; volcanic force, the heat of smithcraft and forging, and the physical transformation of matter by flame. This combination governs the earth sub-plane of the fire quarter.",
+        "visualDescription": "A smaller yellow square centered within a larger scarlet upward-pointing triangle; the stable golden square of earth sits within the burning red triangle of fire."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas-akasha",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Spirit of Water",
+      "description": "The combination of Akasha (Spirit) within Apas (Water) places the infinite spiritual void at the heart of the water element, evoking the cosmic ocean of spiritual consciousness, the akashic sea that underlies all psychic and emotional reality, and the most transcendent, spiritualised expression of empathy and compassion. This combination accesses the highest spiritual dimension of the water quarter.",
+      "secondaryNames": [
+        {
+          "name": "Akasha of Apas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "water",
+        "spirit",
+        "apas",
+        "akasha"
+      ],
+      "extendedData": {
+        "outerElement": "water",
+        "innerElement": "spirit",
+        "outerTattwa": "tattwa.apas",
+        "innerTattwa": "tattwa.akasha",
+        "meaning": "The spiritual ocean, the akashic sea underlying all psychic and emotional reality; the most transcendent expression of empathy, compassion, and cosmic feeling. Pathworkings here access the highest spiritual dimension of the water quarter.",
+        "visualDescription": "A smaller black or deep violet oval centered within a larger silver or white crescent (horns up); the dark egg of spirit rests within the pale lunar crescent of water."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas-vayu",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Air of Water",
+      "description": "The combination of Vayu (Air) within Apas (Water) brings the mental and communicative quality of air into the fluid emotional realm of water, evoking the interplay of thought and feeling, the articulation of emotional truths, the mist and cloud between water and air, and the realm of poetry and psychic imagery. This combination governs the air sub-plane of the water quarter.",
+      "secondaryNames": [
+        {
+          "name": "Vayu of Apas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "water",
+        "air",
+        "apas",
+        "vayu"
+      ],
+      "extendedData": {
+        "outerElement": "water",
+        "innerElement": "air",
+        "outerTattwa": "tattwa.apas",
+        "innerTattwa": "tattwa.vayu",
+        "meaning": "The articulation of emotional truth; the interplay of feeling and thought, the psychic imagery of mist and cloud between water and air. This combination governs the air sub-plane of the water quarter and is associated with poetic and psychic expression.",
+        "visualDescription": "A smaller blue circle centered within a larger silver or white crescent (horns up); the airy blue circle floats within the receptive pale crescent of water."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas-tejas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Fire of Water",
+      "description": "The combination of Tejas (Fire) within Apas (Water) places the transforming fire within the fluid depths of water, evoking the hidden heat of passion, the volcanic undersea vents, the fire of desire within the emotional body, and the power of alchemy where water and fire combine. This paradoxical combination governs the fire sub-plane of the water quarter.",
+      "secondaryNames": [
+        {
+          "name": "Tejas of Apas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "water",
+        "fire",
+        "apas",
+        "tejas"
+      ],
+      "extendedData": {
+        "outerElement": "water",
+        "innerElement": "fire",
+        "outerTattwa": "tattwa.apas",
+        "innerTattwa": "tattwa.tejas",
+        "meaning": "The hidden fire within the waters; passionate desire, volcanic undersea heat, and the alchemical tension of fire and water in the emotional body. This combination governs the fire sub-plane of the water quarter.",
+        "visualDescription": "A smaller scarlet upward-pointing triangle centered within a larger silver or white crescent (horns up); the hot red triangle of fire burns within the cool pale crescent of water."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas-apas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Water of Water",
+      "description": "The combination of Apas within Apas is pure, concentrated water — the element of emotion, reflection, and astral consciousness at its most undiluted. Used in pathworkings dedicated entirely to the water element, this symbol accesses the deepest levels of the emotional-astral plane, the realm of the undines, and the fullness of psychic and empathic sensitivity.",
+      "secondaryNames": [
+        {
+          "name": "Apas of Apas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "water",
+        "apas"
+      ],
+      "extendedData": {
+        "outerElement": "water",
+        "innerElement": "water",
+        "outerTattwa": "tattwa.apas",
+        "innerTattwa": "tattwa.apas",
+        "meaning": "Pure undiluted Water, the element of emotion and psychic consciousness at its most concentrated. Governs the deepest astral-emotional planes and the fullness of empathic and clairvoyant sensitivity.",
+        "visualDescription": "A smaller silver or white crescent (horns up) centered within a larger silver or white crescent (horns up); two concentric crescents of water, the inner one smaller, both pale silver-white."
+      }
+    },
+    {
+      "canonicalName": "tattwa.apas-prithivi",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Earth of Water",
+      "description": "The combination of Prithivi (Earth) within Apas (Water) grounds the fluid qualities of water in material form, evoking the rich loam of waterlogged earth, the tidal estuary where river meets sea, the crystallisation of ice, and the practical application of emotional and psychic sensitivity in daily life. This combination governs the earth sub-plane of the water quarter.",
+      "secondaryNames": [
+        {
+          "name": "Prithivi of Apas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "water",
+        "earth",
+        "apas",
+        "prithivi"
+      ],
+      "extendedData": {
+        "outerElement": "water",
+        "innerElement": "earth",
+        "outerTattwa": "tattwa.apas",
+        "innerTattwa": "tattwa.prithivi",
+        "meaning": "The earth within the waters; the rich estuarial meeting of river and land, the crystallisation of emotion into practical form, and the grounding of psychic sensitivity in everyday reality. This combination governs the earth sub-plane of the water quarter.",
+        "visualDescription": "A smaller yellow square centered within a larger silver or white crescent (horns up); the solid golden square of earth sits within the pale receptive crescent of water."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi-akasha",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Spirit of Earth",
+      "description": "The combination of Akasha (Spirit) within Prithivi (Earth) places the infinite spiritual void at the heart of the densest element, evoking the divine ground of material being, the spiritual essence underlying physical matter, and the mystical insight that pure spirit is immanent in the earth itself. This combination represents the highest spiritual dimension of the physical world.",
+      "secondaryNames": [
+        {
+          "name": "Akasha of Prithivi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "earth",
+        "spirit",
+        "prithivi",
+        "akasha"
+      ],
+      "extendedData": {
+        "outerElement": "earth",
+        "innerElement": "spirit",
+        "outerTattwa": "tattwa.prithivi",
+        "innerTattwa": "tattwa.akasha",
+        "meaning": "The divine ground of material being; spirit immanent within the densest matter, the sacred earth, and the mystical recognition that the physical world is itself a manifestation of spirit. Pathworkings here access the highest spiritual dimension of the earth quarter.",
+        "visualDescription": "A smaller black or deep violet oval centered within a larger yellow square; the dark egg of spirit rests within the stable golden square of earth."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi-vayu",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Air of Earth",
+      "description": "The combination of Vayu (Air) within Prithivi (Earth) brings the mental and communicative quality of air into the stable realm of earth, evoking the conceptualisation of physical work, the dry desert wind across the plains, practical reasoning about material matters, and the intellectual dimension of craftsmanship and agriculture. This combination governs the air sub-plane of the earth quarter.",
+      "secondaryNames": [
+        {
+          "name": "Vayu of Prithivi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "earth",
+        "air",
+        "prithivi",
+        "vayu"
+      ],
+      "extendedData": {
+        "outerElement": "earth",
+        "innerElement": "air",
+        "outerTattwa": "tattwa.prithivi",
+        "innerTattwa": "tattwa.vayu",
+        "meaning": "The intellectual dimension of material work; practical reasoning, the craftsmanship of the skilled artisan, and the mental planning that shapes physical reality. This combination governs the air sub-plane of the earth quarter.",
+        "visualDescription": "A smaller blue circle centered within a larger yellow square; the airy blue circle floats within the grounded golden square of earth."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi-tejas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Fire of Earth",
+      "description": "The combination of Tejas (Fire) within Prithivi (Earth) places the transforming fire within the stable ground of earth, evoking the forge and kiln, the subterranean magma, the volcanic mountain, and the alchemical fire that acts upon and transforms physical matter into higher forms. This combination governs the fire sub-plane of the earth quarter.",
+      "secondaryNames": [
+        {
+          "name": "Tejas of Prithivi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "earth",
+        "fire",
+        "prithivi",
+        "tejas"
+      ],
+      "extendedData": {
+        "outerElement": "earth",
+        "innerElement": "fire",
+        "outerTattwa": "tattwa.prithivi",
+        "innerTattwa": "tattwa.tejas",
+        "meaning": "The fire within the earth; the forge, kiln, and volcanic heat that transform physical matter; the alchemical calcination of earth. This combination governs the fire sub-plane of the earth quarter and is associated with the transforming power of physical labour and industry.",
+        "visualDescription": "A smaller scarlet upward-pointing triangle centered within a larger yellow square; the hot red triangle of fire burns within the stable golden square of earth."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi-apas",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Water of Earth",
+      "description": "The combination of Apas (Water) within Prithivi (Earth) brings the fluid and receptive quality of water into the stable earth element, evoking rich fertile soil, marshland, the sustaining waters of the well and spring, and the emotional grounding and nourishment that physical security provides. This combination governs the water sub-plane of the earth quarter.",
+      "secondaryNames": [
+        {
+          "name": "Apas of Prithivi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "earth",
+        "water",
+        "prithivi",
+        "apas"
+      ],
+      "extendedData": {
+        "outerElement": "earth",
+        "innerElement": "water",
+        "outerTattwa": "tattwa.prithivi",
+        "innerTattwa": "tattwa.apas",
+        "meaning": "The fertile, watered earth; the well, the spring, and the rich loam that nourishes life; emotional grounding through physical security and material nurture. This combination governs the water sub-plane of the earth quarter.",
+        "visualDescription": "A smaller silver or white crescent (horns up) centered within a larger yellow square; the pale lunar crescent of water glows within the solid golden square of earth."
+      }
+    },
+    {
+      "canonicalName": "tattwa.prithivi-prithivi",
+      "entityType": "tattwa.combination",
+      "primaryDisplayName": "Earth of Earth",
+      "description": "The combination of Prithivi within Prithivi is pure, concentrated earth — the element of matter, solidity, and manifestation at its most undiluted and extreme. Used in pathworkings dedicated entirely to the earth element, this symbol accesses the deepest levels of the physical-elemental plane, the realm of the gnomes, and the fullness of material grounding and manifestation.",
+      "secondaryNames": [
+        {
+          "name": "Prithivi of Prithivi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tattwa",
+        "combination",
+        "earth",
+        "prithivi"
+      ],
+      "extendedData": {
+        "outerElement": "earth",
+        "innerElement": "earth",
+        "outerTattwa": "tattwa.prithivi",
+        "innerTattwa": "tattwa.prithivi",
+        "meaning": "Pure undiluted Earth, the element of matter and physical manifestation at its most concentrated. Governs the deepest physical-elemental planes and the fullness of grounding, stability, and material manifestation.",
+        "visualDescription": "A smaller yellow square centered within a larger yellow square; two concentric squares of golden earth-yellow, the inner one smaller, creating a box-within-box pattern of pure earth."
+      }
+    }
+  ]
+}

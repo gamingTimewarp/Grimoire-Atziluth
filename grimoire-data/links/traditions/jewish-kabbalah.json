@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "numerology.digit.1",  "target": "qabalah.sephira.kether",   "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.2",  "target": "qabalah.sephira.chokmah",  "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.3",  "target": "qabalah.sephira.binah",    "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.4",  "target": "qabalah.sephira.chesed",   "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.5",  "target": "qabalah.sephira.geburah",  "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.6",  "target": "qabalah.sephira.tiphareth","label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.7",  "target": "qabalah.sephira.netzach",  "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.8",  "target": "qabalah.sephira.hod",      "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.9",  "target": "qabalah.sephira.yesod",    "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": {} },
+    { "source": "numerology.digit.1",  "target": "qabalah.sephira.malkuth",  "label": "kabbalistic-digit-sephira", "traditionScope": ["jewish-kabbalah"], "extendedData": { "note": "Malkuth corresponds to 10 (perfect completion), which reduces to 1 in Pythagorean reduction, closing the cycle" } },
+
+    { "source": "letter.hebrew.aleph", "target": "astrology.element.air",    "label": "sefer-yetzirah-mother-element", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "mother", "seferYetzirahPosition": "horizontal-upper" } },
+    { "source": "letter.hebrew.mem",   "target": "astrology.element.water",  "label": "sefer-yetzirah-mother-element", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "mother", "seferYetzirahPosition": "horizontal-middle" } },
+    { "source": "letter.hebrew.shin",  "target": "astrology.element.fire",   "label": "sefer-yetzirah-mother-element", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "mother", "seferYetzirahPosition": "horizontal-lower" } },
+
+    { "source": "letter.hebrew.beth",  "target": "astrology.planet.mercury", "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.gimel", "target": "astrology.planet.luna",    "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.daleth","target": "astrology.planet.venus",   "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.kaph",  "target": "astrology.planet.jupiter", "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.peh",   "target": "astrology.planet.mars",    "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.resh",  "target": "astrology.planet.sol",     "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+    { "source": "letter.hebrew.tau",   "target": "astrology.planet.saturn",  "label": "sefer-yetzirah-double-planet",  "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "double" } },
+
+    { "source": "letter.hebrew.heh",   "target": "astrology.zodiac-sign.aries",       "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.vau",   "target": "astrology.zodiac-sign.taurus",      "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.zayin", "target": "astrology.zodiac-sign.gemini",      "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.cheth", "target": "astrology.zodiac-sign.cancer",      "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.teth",  "target": "astrology.zodiac-sign.leo",         "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.yod",   "target": "astrology.zodiac-sign.virgo",       "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.lamed", "target": "astrology.zodiac-sign.libra",       "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.nun",   "target": "astrology.zodiac-sign.scorpio",     "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.samekh","target": "astrology.zodiac-sign.sagittarius", "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.ayin",  "target": "astrology.zodiac-sign.capricorn",  "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.tzaddi","target": "astrology.zodiac-sign.aquarius",   "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } },
+    { "source": "letter.hebrew.qoph",  "target": "astrology.zodiac-sign.pisces",     "label": "sefer-yetzirah-simple-sign", "traditionScope": ["jewish-kabbalah"], "extendedData": { "letterType": "simple" } }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "qabalah.sephira.kether",   "target": "qabalah.qliphoth.thaumiel",     "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.chokmah",  "target": "qabalah.qliphoth.chaigidel",    "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.binah",    "target": "qabalah.qliphoth.satariel",     "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.chesed",   "target": "qabalah.qliphoth.gha-agsheblah","label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.geburah",  "target": "qabalah.qliphoth.golachab",     "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.tiphareth","target": "qabalah.qliphoth.thagirion",    "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.netzach",  "target": "qabalah.qliphoth.harab-serapel","label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.hod",      "target": "qabalah.qliphoth.samael",       "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.yesod",    "target": "qabalah.qliphoth.gamaliel",     "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} },
+    { "source": "qabalah.sephira.malkuth",  "target": "qabalah.qliphoth.nahemoth",     "label": "qliphothic-shell", "traditionScope": [], "extendedData": {} }
+  ]
+}

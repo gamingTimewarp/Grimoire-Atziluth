@@ -1,0 +1,1833 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "divination.tea-symbol.bat",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bat",
+      "description": "The bat is a symbol of ill omen in Western tasseomancy, associated with hidden dangers, obstacles in the dark, and the reversal of plans. Near the rim it warns of immediate difficulties approaching from an unseen quarter, often suggesting a betrayal or project that will not proceed as planned. Near the base it points to deep-seated fears or long-standing obstacles that must be confronted before true progress is possible.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Obstacles, hidden dangers, bad omens",
+        "nearRim": "Difficulties approaching; plans may be disrupted by unseen forces",
+        "nearBase": "Deep-seated fears or old obstacles resurfacing",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bear",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bear",
+      "description": "The bear in tasseomancy carries a dual nature, representing both raw strength and brute danger. A bear facing the handle suggests a powerful ally or a strong-willed person in the querent's circle; facing away it may indicate a stubborn adversary or one's own inflexibility causing problems. Near the rim it urges caution in dealings with domineering individuals, while near the base it may indicate a long period of enforced patience before matters resolve.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Strength, stubbornness, a powerful force",
+        "nearRim": "A dominant person or force nearby; proceed with caution",
+        "nearBase": "A period of waiting; strength building in reserve",
+        "auspicious": null,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bird",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bird",
+      "description": "Birds are among the most classical messengers in tasseomancy, traditionally bringing news from afar. A bird in flight toward the handle signifies good news coming to the querent directly, while a bird flying away suggests news travelling outward or an opportunity departing. Near the rim a bird promises swift tidings, often happy ones; near the base a perched or downward-angled bird may indicate delayed news or a journey postponed.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "News, freedom, messages from afar",
+        "nearRim": "Good news arriving very soon; a pleasant communication",
+        "nearBase": "News delayed; a journey or message still far off",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bull",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bull",
+      "description": "The bull in tea leaf reading symbolises formidable power that can be either an asset or an obstacle depending on orientation. Near the rim and facing the handle it points to a strong-willed helper or the querent's own determination carrying them through; turned away it signifies stubborn opposition, a quarrel, or a situation requiring great endurance. Near the base a bull suggests long-standing struggles that ultimately yield to persistence.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Power, stubbornness, opposition or strength",
+        "nearRim": "A powerful force at work; opposition or determination close at hand",
+        "nearBase": "Enduring struggle; strength accumulated over a long period",
+        "auspicious": null,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.butterfly",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Butterfly",
+      "description": "The butterfly is universally linked to transformation, the soul, and the transience of pleasure across many cultures. In tasseomancy it most often signals a pleasant but passing social experience — enjoyment, flattery, or a flighty admirer who may not be serious. Near the rim it promises immediate delight and social success, though readers caution that the butterfly's nature is fickle; near the base it may indicate transformation in progress, an old self being shed for something new.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Transformation, pleasure, fickle nature",
+        "nearRim": "Social enjoyment, pleasant company, a flirtatious encounter",
+        "nearBase": "Deep transformation underway; shedding an old pattern",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.cat",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Cat",
+      "description": "The cat in tasseomancy traditionally warns of deceit, a false friend, or someone in the querent's circle who presents a pleasing face while concealing their true motives. Victorian tea-leaf manuals consistently linked the cat to treachery in domestic settings, particularly involving a woman. Near the rim it urges the querent to be watchful of a current acquaintance; near the base it suggests a past betrayal whose consequences are still working themselves out.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Deceit, a false friend, treachery",
+        "nearRim": "A deceptive person nearby; be cautious about trust",
+        "nearBase": "Past betrayal still influencing the situation",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.cow",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Cow",
+      "description": "The cow is one of the most benign animal symbols in tasseomancy, associated with agricultural prosperity, maternal nourishment, and steady abundance. It often signals that the querent's material needs will be well met and that patience in practical affairs will be rewarded. Near the rim it promises imminent prosperity and domestic comfort; near the base it suggests long-term security being quietly established.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Prosperity, abundance, material comfort",
+        "nearRim": "Good fortune in material matters; domestic contentment soon",
+        "nearBase": "Long-term abundance building steadily",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.crocodile",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Crocodile",
+      "description": "The crocodile is a symbol of lurking peril in tasseomancy — danger that hides beneath a calm surface and strikes without warning from an unexpected direction. It may represent a business rival who appears friendly, a hidden legal threat, or an emotional situation that conceals destructive potential. Near the rim it warns the querent to be on guard immediately; near the base it suggests old, unresolved dangers that have not fully passed.",
+      "secondaryNames": [
+        {
+          "name": "Alligator",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hidden danger, treachery from unexpected source",
+        "nearRim": "Immediate risk from a hidden enemy; stay alert",
+        "nearBase": "Old threats not yet fully neutralised",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.dog",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Dog",
+      "description": "The dog is one of the most consistently positive symbols in tasseomancy, representing faithfulness, loyal friendship, and steadfast support. A dog near the handle suggests a trusted companion or family member will offer important help; near the rim it promises that reliable friends are close and a matter of trust will be proved well-placed. Near the base a dog may indicate a loyal ally from the past, or a friendship that has weathered long separation.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Loyal friendship, faithful ally, trustworthy support",
+        "nearRim": "A true friend nearby; trust is well placed",
+        "nearBase": "A loyal bond from the past enduring; old friendship revisited",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.dove",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Dove",
+      "description": "The dove carries the oldest and most universal symbolism of peace, love, and the arrival of good tidings — a meaning that has passed intact into tasseomancy from classical and biblical tradition. Near the rim it promises an imminent message of peace or the happy resolution of a quarrel; near the handle it is closely connected to home and romantic happiness. Near the base a dove suggests that peace and reconciliation, though perhaps not immediate, are ultimately assured.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Peace, love, happy news, reconciliation",
+        "nearRim": "Peace and happy news arriving soon; a quarrel resolved",
+        "nearBase": "Peace ultimately assured though perhaps delayed",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.eagle",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Eagle",
+      "description": "The eagle is a symbol of high ambition, commanding power, and the achievement of difficult goals through sustained effort. In tasseomancy it traditionally indicates success in ventures requiring courage and vision, often pointing to advancement in career or public life. Near the rim it signals that the querent is positioned for significant achievement; near the base it indicates ambitions that must be built patiently from the ground up before they soar.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Ambition, power, high achievement, authority",
+        "nearRim": "Success in ambitious undertakings close at hand",
+        "nearBase": "Ambitions require sustained effort; the heights are reachable",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.fish",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Fish",
+      "description": "Fish are among the oldest luck symbols in human culture, and tasseomancy inherits this benevolent tradition fully — a fish in the cup is almost always welcomed as a sign of good fortune, fertility, and abundance. It frequently points to financial improvement, creative productivity, or a fruitful period generally. Near the rim it promises quick gains or a fortunate encounter; near the base it indicates deep, lasting prosperity or a significant birth — literal or metaphorical.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good luck, fertility, abundance, financial gain",
+        "nearRim": "Imminent good fortune; financial or creative gains soon",
+        "nearBase": "Deep and lasting abundance; fertility or creative birth",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.fox",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Fox",
+      "description": "The fox in tasseomancy stands for cunning, slyness, and an enemy who uses intelligence and charm rather than force. It warns the querent to be alert to those who flatter while scheming, and to check business or personal dealings carefully for hidden manipulations. Near the rim it signals an active deceiver in the querent's immediate environment; near the base it may indicate a past deception whose full effects are still unfolding.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Cunning, deception, a scheming enemy",
+        "nearRim": "A clever deceiver actively at work nearby",
+        "nearBase": "Past deception still casting its shadow",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.frog",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Frog",
+      "description": "The frog symbolises transformation, fertility, and new beginnings, drawing on its life-cycle from tadpole to adult as a natural emblem of metamorphosis. In tasseomancy it is a broadly positive sign, indicating a change in circumstances that leads to growth — a new home, a career shift, or the start of a creative project. Near the rim it suggests this transformation is imminent; near the base it indicates a long-term regenerative process quietly underway.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Transformation, new beginning, fertility, change",
+        "nearRim": "A positive change or new start arriving soon",
+        "nearBase": "Long-term transformation building quietly",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.horse",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Horse",
+      "description": "The horse is a vigorous symbol of journey, travel, and the arrival of energetic assistance in tasseomancy. It may indicate a literal journey, or a swift forward movement in affairs that had been stalled. Near the handle it traditionally signifies a visitor coming to the home; near the rim it promises that progress is imminent and help is on its way; near the base it suggests travel or change still some distance in the future.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Journey, helpful visitor, swift progress",
+        "nearRim": "Rapid progress; a journey or energetic helper imminent",
+        "nearBase": "Travel or major change lies further ahead",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.lamb",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Lamb",
+      "description": "The lamb in tasseomancy represents innocence, gentleness, and often a young or vulnerable person who features in the querent's near future. It can signify a child, a naive friend, or a situation requiring gentle handling rather than force. Near the rim it suggests an innocent party or a gentle matter about to arise; near the base it may indicate the querent's own need to approach a situation with patience and softness.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Innocence, gentleness, a young person",
+        "nearRim": "A gentle or innocent matter arising; a young person nearby",
+        "nearBase": "The need for patience and a gentle approach",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.lion",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Lion",
+      "description": "The lion is the king of the animal kingdom and carries corresponding weight in tasseomancy, representing great power, influence, and a figure of authority whose favour or enmity will shape outcomes. Near the handle it suggests the querent themselves possesses or will acquire significant authority; near the rim it may indicate a powerful individual about to enter the picture. Near the base the lion speaks of power that is deeply rooted and must be reckoned with over the long term.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Power, authority, a dominant figure",
+        "nearRim": "A powerful person or force entering the situation",
+        "nearBase": "Long-standing power that must be acknowledged",
+        "auspicious": null,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.mouse",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Mouse",
+      "description": "The mouse in tasseomancy is a symbol of small but persistent loss — money stolen by neglect, resources nibbled away by hidden problems, or timidity preventing bolder action. It may also warn of theft, whether literal or of time and opportunity. Near the rim it alerts the querent to current financial leakage or a timid approach undermining present efforts; near the base it points to a long-standing habit of self-limitation or a past theft whose effects persist.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Theft, petty loss, timidity, poverty",
+        "nearRim": "Small losses or timidity affecting current situation",
+        "nearBase": "Long-standing pattern of loss or self-limitation",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.owl",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Owl",
+      "description": "The owl occupies an ambiguous position in tasseomancy — in some traditions it is purely a bird of ill omen heralding scandal, illness, or misfortune; in others its association with Athena and wisdom redeems it as a warning to think carefully before acting. Most Victorian and Edwardian tea-leaf manuals treat it as a caution symbol. Near the rim it serves as an urgent warning about a current situation; near the base it may represent deep wisdom or a long-standing unheeded warning.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Warning, ill omen, wisdom ignored",
+        "nearRim": "A warning about current plans or behaviour; pay attention",
+        "nearBase": "A deep wisdom or old warning that was not heeded",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.rabbit",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Rabbit",
+      "description": "The rabbit is a widely positive symbol in tasseomancy, drawing on cross-cultural associations with luck, fertility, and abundance — from the European good-luck tradition to the Chinese lunar hare. It often appears when the querent is entering a productive and fortunate phase. Near the rim it promises swift good luck; near the base it signals deep potential for growth and fertility, whether in family, business, or creative work.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good luck, abundance, fertility, quick gains",
+        "nearRim": "Swift good fortune; a lucky period beginning",
+        "nearBase": "Deep fertility and long-term abundance",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.rat",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Rat",
+      "description": "The rat in Western tasseomancy is unambiguously negative, pointing to treachery, rivals who undermine from behind the scenes, and the loss of resources or reputation through the actions of jealous others. It may also warn of unhygienic or dishonest conditions in a business or domestic environment. Near the rim it signals an active rival or betrayer at work right now; near the base it points to a long-running pattern of undermining that must be addressed.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Treachery, rivals, betrayal, loss through enemies",
+        "nearRim": "An active rival or traitor at work; be vigilant",
+        "nearBase": "Long-running treachery or undermining from the past",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.raven",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Raven",
+      "description": "The raven (or crow) brings ill tidings in Western tasseomancy, associated with bad news, misfortune, and in extreme interpretations with grief or bereavement. Its black plumage and carrion associations have made it a harbinger of darkness across European folk tradition. Near the rim it warns of bad news arriving quickly; near the base it may indicate a period of sorrow or loss that lies further in the future or is rooted in the past.",
+      "secondaryNames": [
+        {
+          "name": "Crow",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Bad news, misfortune, sorrow",
+        "nearRim": "Bad news arriving soon; a difficult event near at hand",
+        "nearBase": "A period of sorrow or loss in the deeper future or past",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.snake",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Snake",
+      "description": "The snake is the most contextually variable of all animal symbols in tasseomancy, carrying meanings that span healing, wisdom, and regeneration on one hand, and treachery, temptation, and hidden enemies on the other. In many traditions the coiled snake near the handle represents a wise counsellor; the snake in motion across the cup floor points to a cunning enemy. Near the rim it tends toward warning; near the base it is more likely to signify deep transformation or ancient wisdom.",
+      "secondaryNames": [
+        {
+          "name": "Serpent",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Wisdom or treachery; healing or hidden enemy",
+        "nearRim": "A cunning enemy or deceptive situation nearby",
+        "nearBase": "Deep transformation or ancient wisdom at work",
+        "auspicious": null,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.spider",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Spider",
+      "description": "The spider in tasseomancy is generally regarded as a fortunate sign, particularly when it appears to be weaving its web — an image of patient industry bringing its reward. It promises that hard work will be repaid and that persistence in a creative or commercial enterprise will yield results. Near the rim it signals that rewards for diligent effort are close; near the base it suggests that the foundations of long-term success are being quietly woven.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Industry rewarded, good fortune through hard work",
+        "nearRim": "Rewards for effort arriving soon; fortune favours the diligent",
+        "nearBase": "Patient industry building lasting success",
+        "auspicious": true,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.wolf",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Wolf",
+      "description": "The wolf represents ravenous greed, predatory enemies, and an adversary who operates with pack cunning in tasseomancy. It warns against those who appear sociable but are motivated by self-interest and are willing to take what belongs to others. Near the rim it flags an active greedy or predatory individual in the querent's immediate sphere; near the base it points to a long-standing pattern of exploitation or an old enemy not yet fully dealt with.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Greed, a predatory enemy, exploitation",
+        "nearRim": "A greedy or predatory person active in current affairs",
+        "nearBase": "Long-standing exploitation or an old adversary",
+        "auspicious": false,
+        "category": "animals"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.anchor",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Anchor",
+      "description": "The anchor is one of the most stable and positive symbols in tasseomancy. Near the rim it signals success in business or love; near the base it suggests a long voyage or a need for firm resolve. As a nautical symbol of hope and steadfastness, the anchor traditionally promises stability, safe harbour, and lasting foundations in whatever area of life it appears.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Stability, security, hope, a firm foundation",
+        "nearRim": "Success in business or love; good news coming",
+        "nearBase": "A long journey or the need for deep resolve",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.arrow",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Arrow",
+      "description": "The arrow in tasseomancy is a directional symbol whose meaning shifts sharply with orientation. Pointing upward it signals good news, ambition fulfilled, or a situation moving in the right direction; pointing downward it warns of bad news, a setback, or energy misdirected. Near the rim an upward arrow brings immediate positive news; a downward arrow near the rim urges the querent to change course quickly.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Direction, news — upward good, downward bad",
+        "nearRim": "Imminent news; direction critical — up means good, down means warning",
+        "nearBase": "Long-term direction being set; consider where aims are pointing",
+        "auspicious": null,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.axe",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Axe",
+      "description": "The axe is a symbol of hard labour, obstacles that must be hewn through, and difficulties overcome by determined effort. In tasseomancy it rarely promises ease but consistently rewards fortitude — it tells the querent that the path ahead requires work rather than luck. Near the rim it indicates current difficulties requiring decisive action; near the base it points to a deeply rooted obstacle or a long-standing problem that demands confrontation.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hard work, obstacles overcome through effort",
+        "nearRim": "Current difficulties requiring decisive action",
+        "nearBase": "A deep-rooted obstacle; persistence will ultimately clear it",
+        "auspicious": null,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.basket",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Basket",
+      "description": "The basket in tasseomancy is an emblem of domestic abundance, gifts received, and the rewards of careful household management. A full-looking basket near the rim is a sign that a gift or pleasant domestic event is approaching; near the handle it connects directly to home and family life. Near the base a basket may indicate that domestic matters require more careful tending, or that a family gift or inheritance is a distant prospect.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "A gift, domestic abundance, household rewards",
+        "nearRim": "A gift or pleasant domestic event arriving soon",
+        "nearBase": "A family matter or inheritance in the distant future",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bell",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bell",
+      "description": "The bell is one of the most joyful symbols in tasseomancy, ringing out good news, celebration, and significant announcements. One bell near the rim traditionally heralds a wedding, an engagement, or an important positive announcement; two bells magnify the joy. Near the base a bell may refer to news whose full meaning will only become clear in the distant future, or to an announcement that has its roots in past events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good news, celebration, a wedding or announcement",
+        "nearRim": "Joyful news or celebration imminent; a wedding or engagement likely",
+        "nearBase": "A significant announcement whose roots lie in the past",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.boat",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Boat",
+      "description": "The boat or ship in tasseomancy signifies a journey undertaken with assistance, the safe arrival of help, or the successful navigation of an emotional or practical voyage. Unlike the horse (which suggests land travel and swiftness), the boat implies a measured crossing of uncertain waters with a favourable outcome. Near the rim it promises safe passage and the arrival of needed resources or people; near the base it indicates a voyage still distant or the arrival of help from far away.",
+      "secondaryNames": [
+        {
+          "name": "Ship",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Safe journey, arrival of help, navigating uncertainty",
+        "nearRim": "Safe passage; help or resources arriving soon",
+        "nearBase": "A voyage or arrival of help from far away",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.book",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Book",
+      "description": "The book in tasseomancy promises the revelation of secrets, the acquisition of important knowledge, or a significant legal or official document. An open book suggests information freely given and truth coming to light; a closed book suggests knowledge withheld or a matter still to be uncovered. Near the rim it indicates that an important revelation or document will arrive very soon; near the base it may point to hidden information that has long affected events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Secrets revealed, knowledge, official documents",
+        "nearRim": "An important revelation or document arriving very soon",
+        "nearBase": "Hidden knowledge; long-concealed information affecting events",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bottle",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bottle",
+      "description": "The bottle in tasseomancy carries warnings about excess — particularly around alcohol, pleasure, or self-indulgent spending — but can also be read as a symbol of stored abundance waiting to be opened. The reading depends heavily on context and position: near the rim it cautions against current over-indulgence; near the base it may represent either deep-seated addictive patterns or a legacy of stored goodness yet to be tapped. Some readers interpret a sealed bottle near the handle as a domestic secret.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Excess, caution about indulgence; also stored abundance",
+        "nearRim": "Current over-indulgence requiring moderation",
+        "nearBase": "A deep-seated pattern of excess or a stored resource",
+        "auspicious": null,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.bridge",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Bridge",
+      "description": "The bridge in tasseomancy is a symbol of transition, the crossing from one phase of life to another, and the successful overcoming of obstacles that once seemed impassable. It indicates that the querent is at, or approaching, a crossing point — a decision that cannot be undone, a threshold that will change their circumstances. Near the rim it says the crossing is at hand; near the base it suggests a fundamental transition still some way off but inevitable.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Transition, crossing obstacles, a turning point",
+        "nearRim": "A significant threshold approaching; a crossing point imminent",
+        "nearBase": "A fundamental transition still ahead; prepare for change",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.candle",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Candle",
+      "description": "The candle illuminates darkness in both literal and metaphorical senses — in tasseomancy it stands for truth revealed, spiritual guidance, and the light of understanding brought to a confusing situation. It is also associated with sacred ceremony and the honouring of memory. Near the rim it promises that clarity is coming soon, and that a confusing matter will be illuminated; near the base it may indicate spiritual guidance coming from a deep or ancient source.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Illumination, truth revealed, spiritual guidance",
+        "nearRim": "Clarity arriving soon; a confusing matter becoming clear",
+        "nearBase": "Deep spiritual guidance; wisdom from an ancient or unconscious source",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.chain",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Chain",
+      "description": "The chain in tasseomancy represents binding commitment — which may be a happy marriage bond or an oppressive constraint, depending on other symbols in the cup and the question asked. A chain near the handle often predicts a marriage or serious partnership; near the rim it may warn of a binding obligation about to be entered. Near the base a chain suggests a long-standing bond or obligation that has shaped the querent's path for some time.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Commitment, marriage, also bondage or obligation",
+        "nearRim": "A binding commitment being entered; a partnership formalised",
+        "nearBase": "A long-standing bond or obligation shaping present events",
+        "auspicious": null,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.clock",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Clock",
+      "description": "The clock introduces the theme of time into a tasseomancy reading — it may signal urgency, a deadline approaching, or, in older traditions, a warning about illness followed by recovery. Near the rim it urges the querent to act promptly on a current opportunity or obligation; near the base it may indicate a long-awaited event finally coming due. Some readers interpret the clock as specifically relating to health, predicting either the onset of illness or its resolution.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Time pressure, urgency, a deadline or recovery",
+        "nearRim": "Act now; a deadline or time-sensitive opportunity near at hand",
+        "nearBase": "A long-awaited event finally approaching; time of reckoning",
+        "auspicious": null,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.cloud",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Cloud",
+      "description": "Clouds in tasseomancy represent doubt, uncertainty, and temporary obstacles that obscure the querent's vision or path. The number and density of clouds matters: a single light cloud near the rim indicates a minor uncertainty soon to clear; heavy, dark clouds suggest more serious confusion or hidden troubles ahead. Near the base clouds may represent deep-seated fears or old uncertainties still casting a shadow over present life.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Doubt, uncertainty, hidden troubles, obscured path",
+        "nearRim": "Temporary uncertainty or confusion affecting present plans",
+        "nearBase": "Deep-seated fears or old troubles still clouding matters",
+        "auspicious": false,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.crown",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Crown",
+      "description": "The crown is one of the most powerful positive symbols in tasseomancy, promising honour, success, and the recognition of the querent's worth by others. It may indicate advancement to a position of authority, a public award, or the successful conclusion of a long struggle for status. Near the rim it signals that honour and recognition are very close; near the base it suggests that the seeds of future greatness are being laid, or that a deep aspiration to authority will eventually be fulfilled.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Honour, success, authority, public recognition",
+        "nearRim": "Recognition and honour arriving very soon",
+        "nearBase": "Future greatness in the making; ambitions for authority will be fulfilled",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.cup",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Cup",
+      "description": "The cup appearing within the tea cup is a gentle and benevolent symbol, representing love, emotional happiness, and the fulfilment of the heart's desires. It is particularly associated with romantic and domestic contentment. Near the rim it promises emotional joy and love relationships flourishing imminently; near the handle it emphasises the home as a source of happiness; near the base it may indicate a deep emotional fulfilment that will come to fruition over time.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Love, happiness, emotional fulfilment",
+        "nearRim": "Emotional joy and love arriving soon",
+        "nearBase": "Deep emotional fulfilment coming to fruition over time",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.flag",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Flag",
+      "description": "The flag in tasseomancy is primarily a warning symbol — a signal raised to draw attention to danger or the need for alertness. In military tradition the flag marks territory and signals intent; in tea reading it tells the querent to be watchful of their current position. Near the rim it urges immediate vigilance; near the base it suggests a warning from the past that should not be forgotten as new plans are made.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Warning, alert, danger signal",
+        "nearRim": "Immediate vigilance required; a danger flag raised",
+        "nearBase": "A past warning; do not forget the lessons already learned",
+        "auspicious": false,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.fork",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Fork",
+      "description": "The fork in tasseomancy signals false friends and difficult choices — situations where the road divides and the querent cannot know which path leads to a good outcome, particularly when surrounded by those whose advice cannot be trusted. Near the rim it warns of a tricky decision or unreliable counsel very close at hand; near the base it points to a habitual pattern of indecision or a deep-seated mistrust that is shaping current events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "False friends, difficult choice, unreliable counsel",
+        "nearRim": "A difficult decision near; be wary of advice offered",
+        "nearBase": "A habitual pattern of indecision or mistrust",
+        "auspicious": false,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.gate",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Gate",
+      "description": "The gate is a symbol of threshold and opportunity — a way through that is currently presenting itself to the querent. An open gate near the rim signals that a new path or significant opportunity is available right now and should not be delayed; a closed gate suggests obstacles to entry that must be addressed first. Near the base a gate indicates a long-sought opportunity finally becoming accessible.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Opportunity, a new path opening, a threshold",
+        "nearRim": "A significant opportunity available now; do not hesitate",
+        "nearBase": "A long-sought opening finally becoming accessible",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.gun",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Gun",
+      "description": "The gun is an unambiguously negative symbol in tasseomancy, pointing to conflict, quarrel, and the threat of sudden violent disruption to the querent's circumstances. It may indicate a legal battle, a heated argument with serious consequences, or in extreme readings a physical danger. Near the rim it warns of conflict that is imminent and may be unavoidable; near the base it suggests the lingering effects of a past conflict still poisoning present affairs.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Danger, quarrel, conflict, sudden disruption",
+        "nearRim": "Conflict or danger imminent; a serious quarrel approaching",
+        "nearBase": "Lingering effects of a past conflict",
+        "auspicious": false,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.hammer",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Hammer",
+      "description": "The hammer in tasseomancy is the emblem of determined effort and practical construction — it tells the querent that the task ahead will not complete itself and that direct, sustained work is required. It is not a symbol of violence in this context but of honest craftsmanship and the will to build. Near the rim it says that now is the time to apply effort; near the base it indicates that a long-term project requiring persistent labour will ultimately succeed.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hard work required, determination, practical construction",
+        "nearRim": "Now is the time to apply sustained effort",
+        "nearBase": "A long-term project requiring persistent labour; success through work",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.heart",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Heart",
+      "description": "The heart is the quintessential symbol of love and emotional joy in tasseomancy, and its appearance is almost always welcomed as a positive omen. Near the rim it promises romantic happiness and affection very close at hand; near the handle it speaks of love centred on the home and domestic life; near the base it indicates a love that is deeply rooted and enduring, or an emotional matter whose full expression lies in the future. Two hearts together are a traditional sign of an engagement or lasting partnership.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Love, joy, emotional happiness, romance",
+        "nearRim": "Romantic happiness or affection arriving very soon",
+        "nearBase": "Deep and enduring love; an emotional matter coming to full expression",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.horseshoe",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Horseshoe",
+      "description": "The horseshoe is one of the most universally recognised good-luck symbols in Western folk tradition, and tasseomancy assigns it the same meaning — protection, fortune, and the blessing of unexpected positive turns. It is considered especially powerful when it appears with the open end facing the handle, directing luck toward the querent's home. Near the rim it signals good fortune arriving very soon; near the base it promises a deep and lasting protection over affairs.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good luck, protection, fortunate turns",
+        "nearRim": "Good fortune arriving very soon; a lucky period beginning",
+        "nearBase": "Deep and lasting protection and good fortune",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.house",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "House",
+      "description": "The house in tasseomancy is a strongly domestic symbol, pointing to security, family life, and the conditions of the home. Near the rim it promises stability and domestic happiness about to be established or improved; near the handle it emphasises current domestic conditions as especially significant for the question at hand. Near the base a house suggests that the foundations of long-term security are being laid, or indicates a matter connected to an ancestral home or family legacy.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Security, domestic happiness, family life",
+        "nearRim": "Domestic stability or a new home arriving soon",
+        "nearBase": "Long-term security being established; ancestral or family matters",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.key",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Key",
+      "description": "The key in tasseomancy is a symbol of mysteries solved, doors opened, and new knowledge that unlocks previously inaccessible opportunities. It is almost always a positive sign, suggesting that an answer the querent has been seeking is about to be provided, or that an opportunity previously closed to them is opening. Near the rim it signals an imminent revelation or opening; near the base it indicates deep knowledge or a long-held secret finally coming to light.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Mystery solved, opportunity unlocked, new knowledge",
+        "nearRim": "A revelation or new opening imminent",
+        "nearBase": "A deep secret or long-held knowledge coming to light",
+        "auspicious": true,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.knife",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Knife",
+      "description": "The knife in tasseomancy carries sharp and largely negative associations — conflict, separation, the severing of relationships, and betrayal. A knife pointing toward the handle may suggest a domestic quarrel or the ending of a close relationship; pointing away it may indicate the querent cutting free from something harmful. Near the rim it warns of an imminent painful separation or conflict; near the base it speaks of an old wound or severing that still affects present circumstances.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Conflict, separation, betrayal, severing",
+        "nearRim": "An imminent separation or painful conflict",
+        "nearBase": "An old wound or past severance still affecting the present",
+        "auspicious": false,
+        "category": "objects"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.cross",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Cross",
+      "description": "The cross is one of the most context-dependent symbols in tasseomancy, carrying meanings of both suffering and faith, trial and spiritual protection. Near the rim it may signal a coming period of difficulty or sacrifice; near the handle it often points to a burden carried within the home. In some traditions the cross also represents a crossroads — a decisive moment requiring a spiritual or ethical choice — and its proximity to other symbols significantly colours its meaning.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Suffering, faith, a trial, spiritual protection",
+        "nearRim": "A coming difficulty or sacrifice requiring faith",
+        "nearBase": "A deep spiritual trial; foundational beliefs being tested",
+        "auspicious": null,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.diamond-shape",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Diamond Shape",
+      "description": "A diamond shape in the tea leaves points to wealth, valuable gifts, and the clarity of vision that comes from seeing situations in their true worth. It may indicate financial success, a valuable transaction, or the receipt of a precious gift — whether material or of knowledge. Near the rim it promises wealth or a valuable acquisition close at hand; near the base it suggests deep material potential or a legacy connected to wealth.",
+      "secondaryNames": [
+        {
+          "name": "Diamond",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Wealth, clarity, a valuable gift or opportunity",
+        "nearRim": "Financial success or a valuable acquisition coming soon",
+        "nearBase": "Deep material potential; a legacy or long-term wealth",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.fire",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Fire",
+      "description": "Flames or fire shapes in tasseomancy represent intense passion, creative energy, and transformative force — but also warn of dangerous overreaching or heated conflict. Near the rim they signal passion, urgency, or a heated situation requiring immediate care; near the handle they connect to domestic arguments or passionate relationships at home. Near the base fire suggests a deep creative or destructive force long at work in the querent's life, demanding conscious direction.",
+      "secondaryNames": [
+        {
+          "name": "Flames",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Passion, energy, transformation, also danger",
+        "nearRim": "Intense passion or urgency; a heated situation requiring care",
+        "nearBase": "A deep transformative or destructive force requiring direction",
+        "auspicious": null,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.flower",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Flower",
+      "description": "The flower is a reliably positive symbol in tasseomancy, representing happiness, beauty, love, and the receipt of a sincere compliment or admiring attention. Near the rim it promises a pleasant social encounter or romantic appreciation very soon; near the handle it suggests blooming domestic happiness. Near the base a flower indicates that the seeds of happiness have been planted and are growing slowly toward a joyful expression.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Happiness, beauty, love, a compliment or admiration",
+        "nearRim": "Pleasant social or romantic appreciation arriving soon",
+        "nearBase": "Happiness growing slowly; joy in the making",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.forest",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Forest",
+      "description": "A forest or cluster of trees in the tea leaves represents a complex, tangled situation where the path forward is unclear — the proverbial difficulty of not seeing the wood for the trees. It may also indicate a crowded social situation, opposing interests, or obstacles that multiply and interlock. Near the rim it warns of confusion and complications in present circumstances; near the base it points to deep-rooted complexity or ancestral patterns creating difficulty.",
+      "secondaryNames": [
+        {
+          "name": "Trees",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wood",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Confusion, tangled circumstances, obstacles multiplying",
+        "nearRim": "Present confusion or a complicated situation requiring clarity",
+        "nearBase": "Deep-rooted complexity or ancestral patterns at play",
+        "auspicious": false,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.grapes",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Grapes",
+      "description": "Grapes in tasseomancy carry classical associations with abundance, Bacchanalian celebration, and the rich rewards of harvest. They are a strongly positive symbol pointing to a successful completion of effort, celebratory events, and the enjoyment of well-earned prosperity. Near the rim they promise imminent celebration and abundance; near the base they indicate a deeply satisfying harvest of long-term work, or a celebration connected to a significant life milestone.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Abundance, celebration, the rewards of harvest",
+        "nearRim": "Celebration and abundance arriving soon",
+        "nearBase": "Long-term harvest being reaped; a major life celebration",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.leaf",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Leaf",
+      "description": "A single leaf or small cluster of leaves is a charming good-luck symbol in tasseomancy, pointing to new growth, good news of a modest kind, and the quiet unfolding of positive circumstances. Unlike the dramatic good fortune of the fish or horseshoe, the leaf promises gradual, organic improvement — things growing naturally in the right direction. Near the rim it signals small good news or a new beginning; near the base it indicates the slow, steady growth of something important.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good luck, new growth, gradual improvement",
+        "nearRim": "Small good news or the start of a new growth",
+        "nearBase": "Slow, steady growth of something important",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.lightning-bolt",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Lightning Bolt",
+      "description": "The lightning bolt in tasseomancy represents sudden, dramatic change — a revelation, shock, or disruption that arrives without warning and transforms the situation irrevocably. It may be positive (a sudden breakthrough) or negative (an unexpected crisis), and context from surrounding symbols is essential. Near the rim it warns of a sudden change or revelation imminent; near the base it indicates that a dramatic transformation is rooted in deeper forces already in motion.",
+      "secondaryNames": [
+        {
+          "name": "Lightning",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Sudden change, shock, revelation",
+        "nearRim": "A sudden dramatic change or revelation imminent",
+        "nearBase": "A dramatic transformation rooted in deep forces",
+        "auspicious": null,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.moon",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Moon",
+      "description": "The moon in tasseomancy governs the realm of intuition, dreams, romance, and hidden emotional currents. A full or prominent moon is broadly positive, signifying heightened intuition and romantic opportunity; a crescent often suggests new beginnings or that a matter is in its early, waxing phase. Near the rim the moon promises romance or an intuitive breakthrough soon; near the base it suggests deep psychic or emotional currents that quietly drive present events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Intuition, romance, hidden emotional currents",
+        "nearRim": "Romantic opportunity or intuitive breakthrough approaching",
+        "nearBase": "Deep psychic and emotional currents shaping events",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.mountain",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Mountain",
+      "description": "The mountain in tasseomancy presents the greatest of obstacles — a challenge of formidable scale that will require extraordinary effort to overcome, but which can indeed be overcome. It is not a symbol of defeat but of the magnitude of the work ahead. Near the rim it warns of a great obstacle currently blocking progress; near the base it suggests an enormous challenge that lies further in the future, or that the querent's deepest ambitions require mountainous effort to realise.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Great obstacle, also great achievement through effort",
+        "nearRim": "A major obstacle currently blocking progress",
+        "nearBase": "An enormous challenge ahead; a great ambition requiring extraordinary effort",
+        "auspicious": null,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.rainbow",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Rainbow",
+      "description": "The rainbow is one of the most hopeful symbols in all of tasseomancy, traditionally appearing after a period of difficulty to promise that the storm has passed and better times are at hand. It bridges sky and earth, suggesting that high hopes and practical reality are being reconciled. Near the rim it promises that a difficult period is ending very soon; near the base it offers long-term reassurance that hope and positive outcomes are eventually assured.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hope after trouble, better times ahead",
+        "nearRim": "A difficult period ending; good times approaching very soon",
+        "nearBase": "Long-term assurance that positive outcomes are coming",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.ring",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Ring",
+      "description": "The ring is a symbol of completeness, wholeness, and enduring commitment in tasseomancy. Near the rim it traditionally predicts a forthcoming marriage or the sealing of a significant partnership; near the handle it connects the commitment to home and family. A complete, unbroken ring is extremely positive; a broken ring near the rim warns of a quarrel or separation in a relationship. Near the base a ring indicates a long-standing bond or a completion that is building toward its fulfilment.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Commitment, marriage, completion, wholeness",
+        "nearRim": "A marriage or major partnership commitment approaching",
+        "nearBase": "A long-standing bond building toward its completion",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.rose",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Rose",
+      "description": "The rose is the pre-eminent symbol of love, beauty, and romantic success across Western divination traditions, and tasseomancy is no exception. Its appearance is considered a highly auspicious sign for matters of the heart and for creative or social endeavours where beauty and grace matter. Near the rim it promises a beautiful romance or social success very close at hand; near the base it indicates a deep and enduring love, or a beauty that is slowly coming into full bloom.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Love, beauty, romantic success",
+        "nearRim": "A beautiful romance or social success imminent",
+        "nearBase": "A deep and enduring love slowly coming into full bloom",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.shooting-star",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Shooting Star",
+      "description": "The shooting star in tasseomancy carries the folk-magic tradition of wishing upon a falling star into the cup, promising that a heartfelt wish will be granted or that sudden unexpected good fortune is on its way. It is a symbol of the extraordinary, suggesting an event that lifts circumstances above the ordinary in a flash. Near the rim it promises sudden good luck very soon; near the base it suggests that a long-held wish is beginning its arc toward fulfilment.",
+      "secondaryNames": [
+        {
+          "name": "Falling Star",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "A wish granted, sudden unexpected good fortune",
+        "nearRim": "Sudden good luck or a granted wish arriving very soon",
+        "nearBase": "A long-held wish beginning its arc toward fulfilment",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.star",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Star",
+      "description": "The star is a symbol of hope, divine guidance, and spiritual aspiration in tasseomancy, drawing on the universal human tradition of navigation by the fixed stars. A five-pointed star is especially auspicious, pointing to inspiration and spiritual protection; multiple stars scattered through the cup indicate a generally fortunate period. Near the rim a star promises guidance and hope close at hand; near the base it speaks of a deep spiritual calling or a guiding purpose that shapes the querent's destiny.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hope, guidance, spiritual insight, aspiration",
+        "nearRim": "Guidance and hope close at hand; inspired direction",
+        "nearBase": "A deep spiritual calling or guiding purpose",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.sun",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Sun",
+      "description": "The sun is among the most powerfully positive symbols in the entire tasseomancy lexicon, promising happiness, vitality, power, and outstanding success in whatever matter is at the forefront of the querent's concerns. Its warmth and light dispel confusion and opposition alike. Near the rim it signals that a period of great happiness and success is about to begin; near the base it promises that deep, lasting vitality and life success are in the querent's fundamental nature.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Happiness, power, outstanding success, vitality",
+        "nearRim": "A period of great happiness and success beginning very soon",
+        "nearBase": "Deep, lasting vitality and life success",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.tree",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Tree",
+      "description": "A single tree in tasseomancy represents strength, family roots, and the fulfilment of ambitions through steady growth. It is a symbol of living potential — slow to grow, but enduring. Near the rim it promises that ambitions will flourish and family connections will strengthen; near the handle it specifically connects to family life and domestic roots. Near the base a tree indicates very deep roots — ancestral matters, long-held ambitions, or a strength that has been building for years.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Strength, family roots, ambitions fulfilled through growth",
+        "nearRim": "Ambitions flourishing; family bonds strengthening",
+        "nearBase": "Very deep roots; ancestral strength and long-held ambitions",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.umbrella",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Umbrella",
+      "description": "The umbrella in tasseomancy is a symbol of protection and shelter — someone or something providing a shield against life's difficulties. An open umbrella is more protective than a closed one. Near the rim it suggests that help and protection are available right now and should be accepted; near the base it may indicate a long-standing protection the querent has relied on without fully appreciating, or a shelter being built for the future.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Protection, shelter from trouble, a helpful guardian",
+        "nearRim": "Protection available now; accept the help being offered",
+        "nearBase": "Long-standing protection; a shelter being built for the future",
+        "auspicious": true,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.wave",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Wave",
+      "description": "Waves in tasseomancy represent emotional turbulence, change, and the powerful movement of circumstances beyond the querent's direct control. A single wave may signal a change of emotional mood or circumstances; a series of waves indicates ongoing upheaval. Near the rim they warn of emotional turbulence or change very soon; near the base they point to deep emotional currents or cycles of change that are fundamental to the querent's life pattern.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Emotional turbulence, change, forces beyond direct control",
+        "nearRim": "Emotional upheaval or significant change imminent",
+        "nearBase": "Deep emotional cycles; fundamental life changes",
+        "auspicious": null,
+        "category": "nature"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.letter-a",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Letter A",
+      "description": "Individual letters appearing in tea leaves traditionally point to the initial of a significant person's name — a person who will play a role in the events indicated by surrounding symbols. The letter A, as the first letter of the alphabet, carries additional connotations of beginnings and primary importance. Near the rim it indicates this significant person is nearby or will appear soon; near the base it may indicate a person from the past whose influence is still felt.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "An important initial; a person whose name begins with A",
+        "nearRim": "A significant person with this initial entering the querent's life soon",
+        "nearBase": "A person from the past with this initial still influencing events",
+        "auspicious": null,
+        "category": "letters"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.number-3",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Number 3",
+      "description": "The number three has been considered auspicious and magically significant across virtually every human culture, from the triple goddess to the Christian Trinity. In tasseomancy it signals luck, creativity, and a significant third event or person that resolves or transforms the situation. Near the rim it promises a lucky third occurrence very soon; near the base it suggests that a significant threefold pattern is at work in the querent's life at a deep level.",
+      "secondaryNames": [
+        {
+          "name": "Three",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Luck, creativity, a significant third event",
+        "nearRim": "Lucky third occurrence or creative breakthrough very soon",
+        "nearBase": "A deep threefold pattern at work in the querent's life",
+        "auspicious": true,
+        "category": "letters"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.number-7",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Number 7",
+      "description": "Seven is the number of spiritual completion and good fortune across Western, Middle Eastern, and Asian traditions alike, from the seven days of creation to the seven chakras. In tasseomancy it is one of the most strongly positive numbers, indicating that events are spiritually aligned, that the querent's path is cosmically supported, and that good fortune is accumulating. Near the rim it signals a fortunate phase beginning; near the base it suggests the querent's life is built on spiritually sound foundations.",
+      "secondaryNames": [
+        {
+          "name": "Seven",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Good fortune, spiritual significance, cosmic alignment",
+        "nearRim": "A fortunate and spiritually supported phase beginning",
+        "nearBase": "Life built on spiritually sound foundations",
+        "auspicious": true,
+        "category": "letters"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.number-8",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Number 8",
+      "description": "Eight is the number of material success, worldly power, and the principle of as above, so below — its shape an infinity symbol standing upright. In tasseomancy it promises concrete achievement in business and material life, and may also indicate that cycles of effort are completing in the querent's favour. Near the rim it signals material success and achievement arriving soon; near the base it indicates a deep capacity for material success that is steadily building.",
+      "secondaryNames": [
+        {
+          "name": "Eight",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Material success, worldly power, cycles completing",
+        "nearRim": "Material success and business achievement arriving soon",
+        "nearBase": "A deep capacity for material success steadily building",
+        "auspicious": true,
+        "category": "letters"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.number-13",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Number 13",
+      "description": "Thirteen is the most ambiguous number in tasseomancy, carrying the Western folk association with bad luck and misfortune on one hand, and the older esoteric tradition of thirteen as a number of spiritual transformation and the cycle of lunar months on the other. Its meaning is heavily context-dependent: surrounded by negative symbols it amplifies misfortune; surrounded by positive symbols it may indicate a powerful spiritual transformation. Near the rim it urges particular care; near the base it suggests deep karmic patterns in motion.",
+      "secondaryNames": [
+        {
+          "name": "Thirteen",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Traditional bad luck or powerful spiritual transformation",
+        "nearRim": "Particular care advised; a tricky situation or a test",
+        "nearBase": "Deep karmic or transformative patterns in motion",
+        "auspicious": null,
+        "category": "letters"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.angel",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Angel",
+      "description": "The angel in tasseomancy is among the most powerfully benevolent symbols available, representing divine protection, blessings from a higher source, and good news of a deeply reassuring kind. Its appearance suggests that the querent is watched over and that a favourable outcome has a spiritual guarantee behind it. Near the rim it promises divine blessings and protective good news arriving very soon; near the base it indicates a fundamental spiritual protection underlying all the querent's affairs.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Divine protection, blessings, deeply reassuring good news",
+        "nearRim": "Divine blessings and protection very close at hand",
+        "nearBase": "A fundamental spiritual protection underlying all affairs",
+        "auspicious": true,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.baby",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Baby",
+      "description": "The baby in tasseomancy most directly indicates new beginnings — often a literal pregnancy or birth, but also the birth of a project, creative work, or new phase of life that is entirely fresh and full of potential. It is a consistently positive symbol of innocent new starts. Near the rim it suggests a new beginning or birth arriving very soon; near the base it indicates a new beginning whose roots are being quietly laid, or a birth of deep personal significance.",
+      "secondaryNames": [
+        {
+          "name": "Infant",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "New beginning, a birth, innocent fresh start",
+        "nearRim": "A birth or new beginning arriving very soon",
+        "nearBase": "A new beginning whose foundations are being quietly laid",
+        "auspicious": true,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.child",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Child",
+      "description": "The child figure in tasseomancy represents joy, innocence, and the presence or influence of a young person in the querent's affairs. It may indicate a child in the querent's life, a childlike quality needed in a situation, or a new and inexperienced venture requiring nurturing. Near the rim it suggests a young person or childlike new beginning very close at hand; near the base it indicates a youthful energy or a child's influence that has deep roots in the querent's history.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Joy, innocence, a young person or new start",
+        "nearRim": "A young person or innocent new beginning nearby",
+        "nearBase": "A youthful energy or child's influence rooted in the past",
+        "auspicious": true,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.coffin",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Coffin",
+      "description": "The coffin is one of the most startling symbols in tasseomancy but is rarely read as literal death — rather it signifies the ending of a phase, the completion of a chapter, and the transformation that follows a significant conclusion. Victorian readers consistently interpreted it as illness or the end of a problematic situation rather than bereavement. Near the rim it warns of an ending or significant closure very close; near the base it indicates a deep transformation or long-running ending finally completing.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Ending of a phase, transformation, closure",
+        "nearRim": "A significant ending or closure very close at hand",
+        "nearBase": "A deep transformation or long-running ending completing",
+        "auspicious": null,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.dancer",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Dancer",
+      "description": "The dancer figure in tasseomancy embodies celebration, joy, and the expression of life's pleasurable aspects — though some readers caution that a single dancer may suggest frivolity or a distraction from serious matters. Near the rim it promises festivities, social pleasure, and celebration very soon; near the base it may indicate either a deep capacity for joy that needs expression, or a pattern of avoiding serious matters through distraction.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Celebration, joy, social pleasure, also frivolity",
+        "nearRim": "Festivities and social pleasure arriving very soon",
+        "nearBase": "A deep capacity for joy; or a pattern of joyful avoidance",
+        "auspicious": true,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.devil",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Devil",
+      "description": "The devil figure in tasseomancy represents temptation, a bad influence in the querent's environment, or the querent's own shadow — the darker impulses, compulsions, or self-destructive patterns that undermine higher intentions. It is one of the more serious warning symbols. Near the rim it alerts the querent to an active temptation or bad influence close at hand; near the base it indicates deep-seated shadow patterns or long-standing bad influences that must be consciously addressed.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "Temptation, bad influence, shadow self",
+        "nearRim": "An active temptation or bad influence close at hand",
+        "nearBase": "Deep shadow patterns or long-standing negative influences",
+        "auspicious": false,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.ghost",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Ghost",
+      "description": "The ghost in tasseomancy signals that the past is returning — unresolved issues, people or situations the querent thought were finished, or emotional patterns that have not been fully laid to rest. Near the rim it indicates that something from the past is actively impinging on present circumstances and must be acknowledged; near the base it suggests very deep, perhaps unconscious, past influences that are the hidden architects of current events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "negative"
+      ],
+      "extendedData": {
+        "generalMeaning": "The past returning, unresolved issues, hidden influences",
+        "nearRim": "A past matter actively impinging on the present",
+        "nearBase": "Deep, perhaps unconscious, past influences shaping current events",
+        "auspicious": false,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.human-figure",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Human Figure",
+      "description": "A generic human figure in the tea leaves most commonly indicates that an important person is about to enter or significantly influence the querent's life. The figure's posture, the direction it faces relative to the handle, and surrounding symbols all contribute to identifying this person's role. Near the rim the person is entering imminently; near the base it suggests a significant individual whose influence, perhaps not yet apparent, is deep and long-lasting.",
+      "secondaryNames": [
+        {
+          "name": "Person",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "An important person entering or influencing the querent's life",
+        "nearRim": "A significant person entering the situation very soon",
+        "nearBase": "A person whose deep and lasting influence is not yet fully apparent",
+        "auspicious": null,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.witch",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Witch",
+      "description": "The witch figure in tasseomancy represents hidden power, magical thinking, and cunning intelligence — qualities that may be turned for or against the querent. In some readings it points to a wise woman or magician who can provide esoteric guidance; in others it warns of someone using hidden means to influence the querent's circumstances. Near the rim it suggests magical or hidden forces actively at play right now; near the base it indicates deep occult patterns underlying current events.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Hidden power, magical influence, cunning intelligence",
+        "nearRim": "Hidden or magical forces actively at play",
+        "nearBase": "Deep occult patterns underlying current events",
+        "auspicious": null,
+        "category": "people"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.circle",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Circle",
+      "description": "A clear circle in the tea leaves is a symbol of wholeness, completion, and the gift of fulfillment — it represents a matter coming full cycle and finding its natural resolution. In some traditions a circle near the top of the cup signals a valuable gift or sum of money on its way; near the handle it may represent the completion of a domestic or family matter. Near the base a circle suggests a completion of deep significance, a cycle in the querent's life reaching its natural end.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Completion, wholeness, a gift, a cycle fulfilled",
+        "nearRim": "A matter completing or a gift arriving very soon",
+        "nearBase": "A significant life cycle reaching its natural resolution",
+        "auspicious": true,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.dot-cluster",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Dot Cluster",
+      "description": "A cluster of small dots scattered through the tea leaves is a traditional sign of money — small, unexpected financial gains arriving from multiple sources. The denser the cluster and the higher in the cup, the sooner and more significant the financial benefit. Near the rim dots promise imminent small windfalls; near the base they suggest money accumulating slowly through multiple small channels over a longer period.",
+      "secondaryNames": [
+        {
+          "name": "Dots",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Money, small unexpected gains, financial accumulation",
+        "nearRim": "Imminent small financial windfalls from multiple sources",
+        "nearBase": "Money accumulating steadily through many small channels",
+        "auspicious": true,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.ladder",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Ladder",
+      "description": "The ladder in tasseomancy is the emblem of ambition, advancement, and the step-by-step ascent toward higher status or spiritual development. It may indicate a promotion, a rise in social standing, or spiritual aspiration being rewarded by steady progress. Near the rim it promises a promotion or notable advancement very soon; near the base it indicates that the foundations for an ambitious ascent are being built, rung by patient rung.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Ambition, promotion, step-by-step advancement",
+        "nearRim": "Promotion or social advancement arriving very soon",
+        "nearBase": "Ambitious foundations being carefully built",
+        "auspicious": true,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.question-mark",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Question Mark",
+      "description": "The question mark is a self-referential symbol in tasseomancy — it appears when the reading itself is uncertain, when the querent's own indecision is the central issue, or when important information has not yet come to light. It does not predict a bad outcome but urges patience and the gathering of more facts before acting. Near the rim it signals current uncertainty that must be resolved soon; near the base it points to a deep, fundamental uncertainty or unanswered question at the core of the querent's situation.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Uncertainty, an unanswered question, wait for more information",
+        "nearRim": "Current uncertainty to be resolved; gather more facts before acting",
+        "nearBase": "A deep fundamental question unanswered at the core of affairs",
+        "auspicious": null,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.spiral",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Spiral",
+      "description": "The spiral is one of the oldest symbols of evolution, spiritual growth, and the cyclical movement of time in human art. In tasseomancy it indicates that matters are moving — either inward toward a centre of truth and self-knowledge, or outward toward greater expression and impact in the world. The direction matters: an inward spiral suggests introspection; an outward one suggests expansion. Near the rim it signals an important evolution very soon; near the base it points to a profound, long-running evolutionary process.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "positive"
+      ],
+      "extendedData": {
+        "generalMeaning": "Evolution, spiritual growth, things moving inward or outward",
+        "nearRim": "An important personal evolution beginning very soon",
+        "nearBase": "A profound and long-running evolutionary process at work",
+        "auspicious": true,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.square",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Square",
+      "description": "The square in tasseomancy embodies solid material foundations and the principle of stability, but may also indicate restriction or confinement — the box of obligations, habits, or circumstances that limits freedom. Near the rim a square suggests that stability is being established or that the querent is operating within restrictive conditions right now; near the base it indicates either very deep foundations of security or a long-standing limitation that requires conscious examination.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Stability, solid foundation, also restriction",
+        "nearRim": "Stability being established or a current restriction to navigate",
+        "nearBase": "Very deep foundations or a long-standing limitation",
+        "auspicious": null,
+        "category": "abstract"
+      }
+    },
+    {
+      "canonicalName": "divination.tea-symbol.triangle",
+      "entityType": "divination.tea-symbol",
+      "primaryDisplayName": "Triangle",
+      "description": "The triangle in tasseomancy changes its entire meaning with orientation — pointing upward it is a symbol of ascent, success, and positive ambition, the fire triangle of alchemy rising toward spirit; pointing downward it suggests conflict, instability, and plans undermined. Near the rim the orientation is particularly important as its meaning will manifest very soon; near the base the triangle speaks of deep structural dynamics — upward pointing to foundational success, downward to deep-rooted conflict.",
+      "secondaryNames": [],
+      "tags": [
+        "tasseomancy",
+        "divination-symbol",
+        "neutral"
+      ],
+      "extendedData": {
+        "generalMeaning": "Success if pointing up; conflict if pointing down",
+        "nearRim": "Success or conflict imminent — orientation is critical",
+        "nearBase": "Deep structural success or conflict; foundational dynamics",
+        "auspicious": null,
+        "category": "abstract"
+      }
+    }
+  ]
+}

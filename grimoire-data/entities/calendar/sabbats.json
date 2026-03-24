@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.sabbat.imbolc",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Imbolc",
+      "description": "Imbolc (also Imbolg, Oimelc) is the cross-quarter Sabbat occurring when the Sun reaches 315° tropical longitude, traditionally on or around 1–2 February in the northern hemisphere. The name derives from Old Irish 'i mbolg' ('in the belly'), referring to the pregnancy of ewes and the first stirrings of spring beneath the still-cold earth. Imbolc marks the midpoint between the winter solstice (Yule) and the spring equinox (Ostara), and is sacred to the Celtic goddess Brigid — goddess of fire, smithcraft, poetry, and healing. In the Christian calendar Imbolc was absorbed into Candlemas (2 February), the Feast of the Purification of the Virgin. In Wicca and contemporary neo-paganism, Imbolc is a festival of light, purification, and new beginnings — a time to kindle candles against the dark, to honour creative inspiration, and to welcome the first signs of the returning light. In the southern hemisphere, this solar longitude corresponds to Lughnasadh.",
+      "secondaryNames": [
+        {
+          "name": "Imbolg",
+          "languageTag": "ga",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Oimelc",
+          "languageTag": "ga-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Candlemas",
+          "languageTag": "en-christian",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Brigid's Day",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "cross-quarter",
+        "fire",
+        "brigid",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 315,
+        "type": "cross-quarter",
+        "goddess": "Brigid",
+        "element": "astrology.element.fire",
+        "themes": "Purification, inspiration, first light, new beginnings, Brigid's fire",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.lughnasadh",
+        "approximateDate": "1–2 February (NH) / 1–2 August (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.ostara",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Ostara",
+      "description": "Ostara is the Sabbat of the spring equinox, occurring when the Sun reaches 0° Aries (tropical longitude 0°), around 20–21 March in the northern hemisphere. The name derives from the Old High German goddess Ôstara (Anglo-Saxon: Ēostre), a dawn goddess associated with spring, fertility, and the east — attested by the 8th-century monk Bede. The Germanic goddess's name may also be the etymological root of 'Easter'. At Ostara, day and night are of equal length; thereafter the days lengthen and the light overtakes the dark. In Wicca and modern paganism, Ostara is a festival of balance and new life — of planting seeds (literal and metaphorical), celebrating fertility, and honouring the greening of the earth. Eggs, hares, and flowers are traditional symbols. In the southern hemisphere, this solar longitude corresponds to Mabon.",
+      "secondaryNames": [
+        {
+          "name": "Ēostre",
+          "languageTag": "ang",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spring Equinox",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Vernal Equinox",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "solar",
+        "equinox",
+        "spring",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 0,
+        "type": "solar",
+        "themes": "Balance, new life, fertility, seeds, dawn",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.mabon",
+        "approximateDate": "20–21 March (NH) / 22–23 September (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.beltane",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Beltane",
+      "description": "Beltane (Irish: Bealtaine) is the cross-quarter Sabbat occurring when the Sun reaches 45° tropical longitude, traditionally on or around 1 May in the northern hemisphere. The name derives from Old Irish 'Bel-taine' ('bright fire' or 'lucky fire'), and the festival was one of the four great Gaelic seasonal festivals alongside Samhain, Imbolc, and Lughnasadh. Historically, Beltane was marked by great bonfires on hilltops — cattle were driven between two fires for purification, and dew gathered on the morning of 1 May was considered magically potent. In Celtic mythology, Beltane marks the beginning of the summer half of the year, and the veil between worlds is said to be thin (as at Samhain). In Wicca and modern paganism, Beltane is a festival of sexuality, fertility, the sacred marriage of the God and Goddess, and the peak of spring's vitality. The Maypole, a phallic axis mundi around which ribbons are woven, is a central symbol. In the southern hemisphere, this solar longitude corresponds to Samhain.",
+      "secondaryNames": [
+        {
+          "name": "Bealtaine",
+          "languageTag": "ga",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "May Day",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Walpurgis Night",
+          "languageTag": "de",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "cross-quarter",
+        "fire",
+        "fertility",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 45,
+        "type": "cross-quarter",
+        "themes": "Fertility, sexuality, sacred marriage, fire, vitality, the Maypole",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.samhain",
+        "approximateDate": "1 May (NH) / 1 November (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.litha",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Litha",
+      "description": "Litha is the Sabbat of the summer solstice, occurring when the Sun reaches 90° Cancer (tropical longitude 90°), around 21 June in the northern hemisphere — the longest day of the year. The name 'Litha' is of uncertain ancient origin; it appears in Bede's 'De Temporum Ratione' as the name for the midsummer months. The summer solstice was widely celebrated across ancient Europe: Midsummer bonfires, the Feast of St John the Baptist (24 June), and the traditional fairy lore of Midsummer Night all cluster around this astronomical event. In Norse tradition, Midsummer (Jonsok) was a major festival. In Wicca, Litha is the height of the God's solar power — the moment of the Sun's greatest strength, after which the days begin to shorten toward the return of darkness. It is associated with the Oak King's defeat by the Holly King, solar magic, healing, and the peak of the year's vital force. In the southern hemisphere, this solar longitude corresponds to Yule.",
+      "secondaryNames": [
+        {
+          "name": "Midsummer",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Summer Solstice",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "St John's Eve",
+          "languageTag": "en-christian",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "solar",
+        "solstice",
+        "midsummer",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 90,
+        "type": "solar",
+        "themes": "Solar peak, Oak King, fire, healing, fairies, the turning of the year",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.yule",
+        "approximateDate": "21 June (NH) / 21 December (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.lughnasadh",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Lughnasadh",
+      "description": "Lughnasadh (Irish: Lúnasa, also Lammas) is the cross-quarter Sabbat occurring when the Sun reaches 135° tropical longitude, traditionally on or around 1 August in the northern hemisphere. The name derives from the Irish god Lugh — a solar deity of craftsmanship, artistry, and excellence — combined with 'nasadh' (assembly or gathering). The festival was originally established by Lugh in honour of his foster mother Tailtiu, a goddess of the earth who died of exhaustion after clearing the plains of Ireland for agriculture. Historically it was a great assembly (óenach) for games, markets, and the ratification of political contracts. Lammas ('loaf mass') is the English/Christian equivalent, a harvest thanksgiving when the first loaf baked from the new grain was offered at the church altar. In Wicca and modern paganism, Lughnasadh is the first harvest — a time to give thanks for abundance, to mourn the waning Sun, and to sacrifice (metaphorically) what has ripened and must be cut down so that new life may follow. In the southern hemisphere, this corresponds to Imbolc.",
+      "secondaryNames": [
+        {
+          "name": "Lúnasa",
+          "languageTag": "ga",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lammas",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Loaf Mass",
+          "languageTag": "en-christian",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Lughnasa",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "cross-quarter",
+        "harvest",
+        "lugh",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 135,
+        "type": "cross-quarter",
+        "deity": "Lugh",
+        "themes": "First harvest, grain, craftsmanship, athletic games, sacrifice, abundance",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.imbolc",
+        "approximateDate": "1 August (NH) / 1 February (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.mabon",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Mabon",
+      "description": "Mabon is the Sabbat of the autumn equinox, occurring when the Sun reaches 180° Libra (tropical longitude 180°), around 22–23 September in the northern hemisphere. The name 'Mabon' was adopted by Aidan Kelly in the 1970s from the Welsh mythological figure Mabon ap Modron ('the Great Son of the Great Mother'), though this connection to the equinox has no ancient precedent. The autumn equinox — like the spring equinox — is a moment of balance between day and night, but here the darkness is beginning to win. It is the second harvest festival, associated with wine, the vintage, and the fruiting of trees. In ancient Rome, the Feast of Pomona (goddess of orchards) fell near this date. In Wicca and modern paganism, Mabon is a thanksgiving for the second harvest, a time of reflection and gratitude, and of preparing for the coming darkness. The Descent of the Goddess into the Underworld is a mythological theme. In the southern hemisphere, this corresponds to Ostara.",
+      "secondaryNames": [
+        {
+          "name": "Autumn Equinox",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fall Equinox",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Second Harvest",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "solar",
+        "equinox",
+        "autumn",
+        "harvest",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 180,
+        "type": "solar",
+        "themes": "Balance, second harvest, wine, gratitude, descent into darkness",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.ostara",
+        "approximateDate": "22–23 September (NH) / 20–21 March (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.samhain",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Samhain",
+      "description": "Samhain (Irish: Samhain, 'summer's end') is the cross-quarter Sabbat occurring when the Sun reaches 225° tropical longitude, traditionally on or around 31 October–1 November in the northern hemisphere. Samhain was one of the four principal Gaelic seasonal festivals and marked the beginning of the dark half of the year, when cattle were brought in from summer pasture, the weak were slaughtered and preserved for winter, and the dead were believed to walk freely among the living as the veil between worlds grew thin. It is the origin of the modern Halloween. In Celtic belief, Samhain was the start of the new year — a liminal time outside of ordinary time, when supernatural forces were at their strongest. Communion with ancestors, divination, and the lighting of hearth fires from a sacred communal bonfire were traditional practices. In Wicca and modern paganism, Samhain is the most important Sabbat — the third and final harvest (of the dead), the Witches' New Year, and a time to honour deceased loved ones, work with death magic, and confront endings so that new beginnings may arise. In the southern hemisphere, this corresponds to Beltane.",
+      "secondaryNames": [
+        {
+          "name": "Halloween",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "All Hallows' Eve",
+          "languageTag": "en-christian",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Día de los Muertos",
+          "languageTag": "es",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Witches' New Year",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "cross-quarter",
+        "ancestors",
+        "death",
+        "divination",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 225,
+        "type": "cross-quarter",
+        "themes": "Ancestors, death, the thinning veil, divination, the Witches' New Year, third harvest",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.beltane",
+        "approximateDate": "31 October–1 November (NH) / 30 April–1 May (SH)"
+      }
+    },
+    {
+      "canonicalName": "calendar.sabbat.yule",
+      "entityType": "calendar.sabbat",
+      "primaryDisplayName": "Yule",
+      "description": "Yule (also Midwinter, the Winter Solstice) is the Sabbat occurring when the Sun reaches 270° Capricorn (tropical longitude 270°), around 21 December in the northern hemisphere — the shortest day and longest night of the year. The name Yule derives from Old Norse 'Jól', a major midwinter festival lasting twelve days, characterised by feasting, the burning of the Yule log, and visits from the Wild Hunt. The Roman festival of Saturnalia (17–23 December) also fell near this time, as did Dies Natalis Solis Invicti ('Birth of the Unconquered Sun', 25 December) — which became Christmas. In Germanic tradition, Yule was associated with Odin in his aspect as the wandering gift-giver (the origin of Father Christmas). In Wicca and modern paganism, Yule celebrates the rebirth of the Sun — the darkest moment from which the light begins to return. The Holly King yields to the Oak King; the Goddess gives birth to the God. Yule traditions — evergreen decorations, candles, gifts, feasting — have passed directly into Christmas. In the southern hemisphere, this corresponds to Litha.",
+      "secondaryNames": [
+        {
+          "name": "Winter Solstice",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Midwinter",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Jól",
+          "languageTag": "non",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Christmas",
+          "languageTag": "en-christian",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "sabbat",
+        "solar",
+        "solstice",
+        "midwinter",
+        "calendar"
+      ],
+      "extendedData": {
+        "sunLongitude": 270,
+        "type": "solar",
+        "themes": "Rebirth of the Sun, Holly King, Oak King, evergreens, gifts, the return of light",
+        "hemisphere": "northern",
+        "southernEquivalent": "calendar.sabbat.litha",
+        "approximateDate": "21 December (NH) / 21 June (SH)"
+      }
+    }
+  ]
+}

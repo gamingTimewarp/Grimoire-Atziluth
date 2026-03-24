@@ -1,0 +1,779 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "chinese-zodiac.animal.rat",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Rat",
+      "description": "The Rat (鼠 Shǔ) is the first and most cunning of the twelve zodiac animals, having won the Jade Emperor's race by riding on the Ox's back and leaping to the finish line first — a myth that encapsulates the Rat's hallmark cleverness and resourcefulness. In Chinese culture the Rat is a symbol of good fortune and fertility; a granary full of rats once indicated a prosperous household. Those born in the Year of the Rat are typically quick-witted, adaptable, charming, and sociable, with a sharp instinct for opportunity and an ability to thrive in almost any environment. Rat years tend to bring fresh beginnings, entrepreneurial energy, and fortunate financial prospects, though the restless pace can also invite overextension and conflict born of rivalry. The Rat is most compatible with the Ox, Dragon, and Monkey, and least compatible with the Horse.",
+      "secondaryNames": [
+        {
+          "name": "鼠",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shǔ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "water",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "chineseChar": "鼠",
+        "pinyin": "Shǔ",
+        "earthlyBranch": "chinese-zodiac.branch.zi",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "water",
+        "season": "winter",
+        "direction": "north",
+        "hours": "23:00–01:00",
+        "westernEquivalent": "Sagittarius",
+        "personality": [
+          "clever",
+          "adaptable",
+          "resourceful",
+          "charming",
+          "ambitious",
+          "sociable",
+          "opportunistic"
+        ],
+        "luckyNumbers": [
+          2,
+          3
+        ],
+        "luckyColours": [
+          "blue",
+          "gold",
+          "green"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.ox",
+          "chinese-zodiac.animal.dragon",
+          "chinese-zodiac.animal.monkey"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.ox",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Ox",
+      "description": "The Ox (牛 Niú) is the second zodiac animal, renowned throughout Chinese agrarian culture as the tireless backbone of agriculture — patient, dependable, and immensely strong. According to the zodiac origin myth, the Ox arrived second only because it generously agreed to carry the Rat across the river, a gesture of good faith that the Rat exploited. Those born in the Year of the Ox are characterised by diligence, integrity, and an unwavering determination that makes them formidable in long-term endeavours. Ox years reward sustained effort, methodical planning, and honest dealing, though they can feel slow or stubborn in pace. The Ox harmonises best with the Rat, Snake, and Rooster, and clashes most with the Goat.",
+      "secondaryNames": [
+        {
+          "name": "牛",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Niú",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "earth",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "chineseChar": "牛",
+        "pinyin": "Niú",
+        "earthlyBranch": "chinese-zodiac.branch.chou",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "earth",
+        "season": "winter",
+        "direction": "north-northeast",
+        "hours": "01:00–03:00",
+        "westernEquivalent": "Capricorn",
+        "personality": [
+          "diligent",
+          "reliable",
+          "patient",
+          "stubborn",
+          "honest",
+          "methodical",
+          "strong"
+        ],
+        "luckyNumbers": [
+          1,
+          4
+        ],
+        "luckyColours": [
+          "white",
+          "yellow",
+          "green"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.rat",
+          "chinese-zodiac.animal.snake",
+          "chinese-zodiac.animal.rooster"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.tiger",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Tiger",
+      "description": "The Tiger (虎 Hǔ) is the third zodiac animal and the great protector of the Chinese tradition — venerated as the king of all terrestrial beasts and a ward against evil spirits, with its image placed on children's shoes and household gates to frighten away malevolent forces. The Tiger's position in the race reflects its fierceness: swift and powerful, yet delayed by battling the currents of the river. Those born in the Year of the Tiger are bold, magnetic, and passionately idealistic, inspiring loyalty while chafing at restraint or authority. Tiger years are energetic and unpredictable, marked by courage, dramatic events, and the possibility of rapid change in fortune. Compatible signs include the Horse and Dog, while Monkey and Snake create friction.",
+      "secondaryNames": [
+        {
+          "name": "虎",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hǔ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "wood",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "chineseChar": "虎",
+        "pinyin": "Hǔ",
+        "earthlyBranch": "chinese-zodiac.branch.yin",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "wood",
+        "season": "spring",
+        "direction": "east-northeast",
+        "hours": "03:00–05:00",
+        "westernEquivalent": "Aquarius",
+        "personality": [
+          "brave",
+          "charismatic",
+          "competitive",
+          "unpredictable",
+          "idealistic",
+          "rebellious",
+          "passionate"
+        ],
+        "luckyNumbers": [
+          1,
+          3,
+          4
+        ],
+        "luckyColours": [
+          "blue",
+          "grey",
+          "orange"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.horse",
+          "chinese-zodiac.animal.dog"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.rabbit",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Rabbit",
+      "description": "The Rabbit (兔 Tù) is the fourth zodiac animal, associated in Chinese mythology with the moon, where a jade rabbit is said to dwell beside Chang'e, the moon goddess, perpetually pounding the elixir of immortality. In the Great Race the Rabbit crossed the river by hopping across stepping-stones, nearly missing the finish and finishing fourth. Those born in the Year of the Rabbit are gracious, artistic, and deeply empathetic — natural diplomats who instinctively seek harmony and avoid confrontation, sometimes to the point of evasiveness. Rabbit years tend to be quieter and more auspicious than those of the Tiger or Dragon, favouring negotiation, the arts, and domestic peace. The Rabbit aligns well with the Goat and Pig, and is least compatible with the Rooster.",
+      "secondaryNames": [
+        {
+          "name": "兔",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tù",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "wood",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "chineseChar": "兔",
+        "pinyin": "Tù",
+        "earthlyBranch": "chinese-zodiac.branch.mao",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "wood",
+        "season": "spring",
+        "direction": "east",
+        "hours": "05:00–07:00",
+        "westernEquivalent": "Pisces",
+        "personality": [
+          "gentle",
+          "elegant",
+          "diplomatic",
+          "empathetic",
+          "cautious",
+          "artistic",
+          "evasive"
+        ],
+        "luckyNumbers": [
+          3,
+          4,
+          6
+        ],
+        "luckyColours": [
+          "red",
+          "pink",
+          "purple",
+          "blue"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.goat",
+          "chinese-zodiac.animal.pig",
+          "chinese-zodiac.animal.dog"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.dragon",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Dragon",
+      "description": "The Dragon (龙 Lóng) is the fifth zodiac animal and the only mythological creature in the cycle — a wholly auspicious being in Chinese cosmology, unlike its malevolent Western counterpart. The Chinese dragon is the symbol of the Emperor, of divine power, prosperity, and the yang principle in its most exalted form, commanding rain, rivers, and the celestial realms. In the Great Race the Dragon arrived fifth despite being capable of flight, having paused to bring rain to a drought-stricken village and then to help the Rabbit cross on a log — a generous detour entirely in character. Those born in Dragon years are ambitious, magnanimous, and fiercely independent, often rising to positions of leadership. Dragon years are considered the most auspicious of the cycle, bringing large-scale ambition and dramatic events. Dragons harmonise with the Rat, Monkey, and Rooster.",
+      "secondaryNames": [
+        {
+          "name": "龙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "龍",
+          "languageTag": "zh",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Lóng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "earth",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "chineseChar": "龙",
+        "pinyin": "Lóng",
+        "earthlyBranch": "chinese-zodiac.branch.chen",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "earth",
+        "season": "spring",
+        "direction": "east-southeast",
+        "hours": "07:00–09:00",
+        "westernEquivalent": "Aries",
+        "personality": [
+          "ambitious",
+          "magnanimous",
+          "confident",
+          "independent",
+          "passionate",
+          "impetuous",
+          "charismatic"
+        ],
+        "luckyNumbers": [
+          1,
+          6,
+          7
+        ],
+        "luckyColours": [
+          "gold",
+          "silver",
+          "grey"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.rat",
+          "chinese-zodiac.animal.monkey",
+          "chinese-zodiac.animal.rooster"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.snake",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Snake",
+      "description": "The Snake (蛇 Shé) is the sixth zodiac animal, arriving in the legend by concealing itself in the Horse's hoof and slipping out at the finish line — a demonstration of the Snake's characteristic stealth, strategy, and patience. In Chinese tradition the Snake carries paradoxical associations: it is both feared and revered, linked to wisdom, healing (the snake shedding its skin as metaphor for renewal), and esoteric knowledge. Those born in the Year of the Snake are thoughtful, intuitive, and quietly influential — they prefer to observe and plan before acting, and their judgements are typically incisive. Snake years tend to be reflective and philosophical, bringing hidden information to light and rewarding careful strategy over brute force. Compatible signs are the Ox and Rooster; the Snake clashes with the Tiger and Pig.",
+      "secondaryNames": [
+        {
+          "name": "蛇",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shé",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "fire",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "chineseChar": "蛇",
+        "pinyin": "Shé",
+        "earthlyBranch": "chinese-zodiac.branch.si",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "fire",
+        "season": "summer",
+        "direction": "south-southeast",
+        "hours": "09:00–11:00",
+        "westernEquivalent": "Taurus",
+        "personality": [
+          "intuitive",
+          "wise",
+          "strategic",
+          "mysterious",
+          "elegant",
+          "possessive",
+          "analytical"
+        ],
+        "luckyNumbers": [
+          2,
+          8,
+          9
+        ],
+        "luckyColours": [
+          "red",
+          "light yellow",
+          "black"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.ox",
+          "chinese-zodiac.animal.rooster"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.horse",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Horse",
+      "description": "The Horse (马 Mǎ) is the seventh zodiac animal, a creature of surpassing swiftness and spirit that in the legend was actually tricked by the Snake at the finish line, relegating it to seventh place despite its obvious speed. In Chinese culture the Horse embodies freedom, vitality, and nobility — the war-horse was a symbol of imperial power, and the Horse's image appears throughout Chinese art as an emblem of courage and the open horizon. Those born in the Year of the Horse are energetic, enthusiastic, and freedom-loving, with a natural eloquence and an aversion to constraint that can make sustained commitment difficult. Horse years carry a lively, restless energy that favours travel, communication, and bold strokes of action. Best compatibility is with the Tiger and Dog; the Horse clashes most with the Rat.",
+      "secondaryNames": [
+        {
+          "name": "马",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "馬",
+          "languageTag": "zh",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Mǎ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "fire",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "chineseChar": "马",
+        "pinyin": "Mǎ",
+        "earthlyBranch": "chinese-zodiac.branch.wu",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "fire",
+        "season": "summer",
+        "direction": "south",
+        "hours": "11:00–13:00",
+        "westernEquivalent": "Gemini",
+        "personality": [
+          "energetic",
+          "enthusiastic",
+          "independent",
+          "impatient",
+          "sociable",
+          "eloquent",
+          "restless"
+        ],
+        "luckyNumbers": [
+          2,
+          3,
+          7
+        ],
+        "luckyColours": [
+          "yellow",
+          "green"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.tiger",
+          "chinese-zodiac.animal.dog",
+          "chinese-zodiac.animal.goat"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.goat",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Goat",
+      "description": "The Goat (羊 Yáng) — also rendered as Sheep or Ram — is the eighth zodiac animal, arriving at the race in the comfortable company of the Monkey and Rooster, the three having worked together to get a raft across the river before running to the finish. This spirit of gentle cooperation is central to the Goat's character in Chinese astrology. The Goat is associated with auspiciousness, creativity, and the arts; its image is widely used in New Year imagery as a symbol of harmony and good luck. Those born in the Year of the Goat are tender-hearted, imaginative, and deeply empathetic, preferring peace and beauty to competition and conflict. Goat years favour artistic endeavours, community harmony, and the resolution of disputes. The Goat is most compatible with the Rabbit, Horse, and Pig, and clashes with the Ox.",
+      "secondaryNames": [
+        {
+          "name": "羊",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yáng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "earth",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "chineseChar": "羊",
+        "pinyin": "Yáng",
+        "earthlyBranch": "chinese-zodiac.branch.wei",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "earth",
+        "season": "summer",
+        "direction": "south-southwest",
+        "hours": "13:00–15:00",
+        "westernEquivalent": "Cancer",
+        "personality": [
+          "gentle",
+          "empathetic",
+          "creative",
+          "indecisive",
+          "generous",
+          "peace-loving",
+          "artistic"
+        ],
+        "luckyNumbers": [
+          2,
+          7
+        ],
+        "luckyColours": [
+          "brown",
+          "red",
+          "purple"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.rabbit",
+          "chinese-zodiac.animal.horse",
+          "chinese-zodiac.animal.pig"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.monkey",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Monkey",
+      "description": "The Monkey (猴 Hóu) is the ninth zodiac animal, forever linked in Chinese culture with the divine trickster Sun Wukong — the Monkey King of Journey to the West — whose supernatural ingenuity, irreverence, and boundless energy make him one of the most beloved figures in Chinese literature. In the Great Race the Monkey helped build the raft that carried it, the Goat, and the Rooster to safety, then outpaced the slower Rooster to ninth place. Those born in the Year of the Monkey are inventive, witty, and perpetually curious, with a facility for problem-solving and a restless need for novelty that can shade into mischief or unreliability. Monkey years are lively and changeable, rewarding flexibility and quick thinking. Compatible signs include the Rat and Dragon; the Monkey and Tiger are natural adversaries.",
+      "secondaryNames": [
+        {
+          "name": "猴",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hóu",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "metal",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "chineseChar": "猴",
+        "pinyin": "Hóu",
+        "earthlyBranch": "chinese-zodiac.branch.shen",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "metal",
+        "season": "autumn",
+        "direction": "west-southwest",
+        "hours": "15:00–17:00",
+        "westernEquivalent": "Leo",
+        "personality": [
+          "inventive",
+          "witty",
+          "curious",
+          "mischievous",
+          "adaptable",
+          "clever",
+          "competitive"
+        ],
+        "luckyNumbers": [
+          1,
+          7,
+          8
+        ],
+        "luckyColours": [
+          "white",
+          "blue",
+          "gold"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.rat",
+          "chinese-zodiac.animal.dragon"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.rooster",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Rooster",
+      "description": "The Rooster (鸡 Jī) is the tenth zodiac animal, arriving in the race together with the Goat and Monkey after their cooperative river crossing. The Rooster holds profound symbolic importance in Chinese culture as the herald of dawn — its crow disperses evil spirits and announces the sun — and its image is carved above doorways as a protective talisman. Five virtues are traditionally attributed to the Rooster: literary refinement (its comb resembles a scholar's cap), martial prowess, courage, benevolence, and trustworthiness. Those born in the Year of the Rooster are observant, meticulous, and forthright — often highly organised with an exacting eye for detail that others may experience as bluntness. Rooster years reward diligence and attention to quality. Best compatibility is with the Ox, Dragon, and Snake.",
+      "secondaryNames": [
+        {
+          "name": "鸡",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "雞",
+          "languageTag": "zh",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Jī",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "metal",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "chineseChar": "鸡",
+        "pinyin": "Jī",
+        "earthlyBranch": "chinese-zodiac.branch.you",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "metal",
+        "season": "autumn",
+        "direction": "west",
+        "hours": "17:00–19:00",
+        "westernEquivalent": "Virgo",
+        "personality": [
+          "observant",
+          "meticulous",
+          "punctual",
+          "honest",
+          "organised",
+          "confident",
+          "blunt"
+        ],
+        "luckyNumbers": [
+          5,
+          7,
+          8
+        ],
+        "luckyColours": [
+          "gold",
+          "brown",
+          "yellow"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.ox",
+          "chinese-zodiac.animal.dragon",
+          "chinese-zodiac.animal.snake"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.dog",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Dog",
+      "description": "The Dog (狗 Gǒu) is the eleventh zodiac animal, said to have arrived late in the Great Race because it stopped to bathe and play in the river — a characteristically loyal but easily distracted creature. In Chinese culture the Dog is the faithful guardian of the home and of family, admired above all for its unwavering loyalty and its instinct to protect those it loves. The Dog is associated with the concepts of justice and moral integrity; its celestial duty is to guard the heavenly palace and the gates of the underworld. Those born in the Year of the Dog are loyal, courageous, and deeply principled, with a sharp nose for dishonesty and an abiding need to champion the underdog. Dog years tend to bring a heightened concern for fairness, social justice, and communal welfare. Compatible signs include the Tiger and Horse; the Dragon provokes friction.",
+      "secondaryNames": [
+        {
+          "name": "狗",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gǒu",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "earth",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 11,
+        "chineseChar": "狗",
+        "pinyin": "Gǒu",
+        "earthlyBranch": "chinese-zodiac.branch.xu",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yang",
+        "fixedElement": "earth",
+        "season": "autumn",
+        "direction": "west-northwest",
+        "hours": "19:00–21:00",
+        "westernEquivalent": "Libra",
+        "personality": [
+          "loyal",
+          "courageous",
+          "honest",
+          "principled",
+          "pessimistic",
+          "protective",
+          "anxious"
+        ],
+        "luckyNumbers": [
+          3,
+          4,
+          9
+        ],
+        "luckyColours": [
+          "green",
+          "red",
+          "purple"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.tiger",
+          "chinese-zodiac.animal.rabbit",
+          "chinese-zodiac.animal.horse"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.animal.pig",
+      "entityType": "chinese-zodiac.animal",
+      "primaryDisplayName": "Pig",
+      "description": "The Pig (猪 Zhū) is the twelfth and final zodiac animal, arriving last in the Great Race because it stopped to eat and fell asleep along the way — an image that captures both the Pig's celebrated love of comfort and its philosophical acceptance of life's pleasures. Far from a figure of contempt, the Pig in Chinese tradition is an emblem of wealth, abundance, and good fortune: a plump pig signified a prosperous household, and the character for 'home' (家 jiā) is composed of a pig under a roof. Those born in the Year of the Pig are generous, sincere, and good-humoured — warmly sociable and intensely devoted to those they love, though their trust can make them vulnerable to exploitation. Pig years bring a generally auspicious and easy-going energy, favouring enjoyment, family, and material abundance. Best compatibility is with the Rabbit and Goat; the Snake and Monkey create conflict.",
+      "secondaryNames": [
+        {
+          "name": "猪",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "豬",
+          "languageTag": "zh",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Zhū",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "zodiac-animal",
+        "water",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 12,
+        "chineseChar": "猪",
+        "pinyin": "Zhū",
+        "earthlyBranch": "chinese-zodiac.branch.hai",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yin",
+        "fixedElement": "water",
+        "season": "winter",
+        "direction": "north-northwest",
+        "hours": "21:00–23:00",
+        "westernEquivalent": "Scorpio",
+        "personality": [
+          "generous",
+          "sincere",
+          "compassionate",
+          "naive",
+          "diligent",
+          "indulgent",
+          "good-humoured"
+        ],
+        "luckyNumbers": [
+          2,
+          5,
+          8
+        ],
+        "luckyColours": [
+          "yellow",
+          "grey",
+          "brown"
+        ],
+        "compatibility": [
+          "chinese-zodiac.animal.rabbit",
+          "chinese-zodiac.animal.goat",
+          "chinese-zodiac.animal.tiger"
+        ]
+      }
+    }
+  ]
+}

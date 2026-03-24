@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "ogham.letter.beith",     "target": "celtic.deity.brigid",           "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.luis",      "target": "celtic.deity.brigid",           "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.fearn",     "target": "celtic.deity.nuada",            "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.sail",      "target": "celtic.deity.cailleach",        "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.nion",      "target": "celtic.deity.lugh",             "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.dair",      "target": "celtic.deity.the-dagda",        "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.coll",      "target": "celtic.deity.manannan-mac-lir", "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.quert",     "target": "celtic.deity.manannan-mac-lir", "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.muin",      "target": "celtic.deity.goibhniu",         "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.gort",      "target": "celtic.deity.the-dagda",        "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.ngeadal",   "target": "celtic.deity.manannan-mac-lir", "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.straif",    "target": "celtic.deity.the-morrigan",     "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.ruis",      "target": "celtic.deity.cailleach",        "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.ailm",      "target": "celtic.deity.brigid",           "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.onn",       "target": "celtic.deity.lugh",             "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.ur",        "target": "celtic.deity.aine",             "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.edad",      "target": "celtic.deity.the-morrigan",     "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.idad",      "target": "celtic.deity.the-dagda",        "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.uilleann",  "target": "celtic.deity.etain",            "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.ifin",      "target": "celtic.deity.flidais",          "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] },
+    { "source": "ogham.letter.emancholl", "target": "celtic.deity.ogma",             "label": "attributed-deity", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic"] }
+  ]
+}

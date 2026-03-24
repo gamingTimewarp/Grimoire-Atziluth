@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "angel.order.chaioth-ha-qadesh",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Chaioth ha-Qadesh",
+      "description": "The Chaioth ha-Qadesh, or Holy Living Creatures, are the highest order of angels in the Qabalistic system, dwelling in the supernal realm of Kether and directly attendant upon the throne of Ain Soph Aur. They are identified with the four living creatures seen by Ezekiel in his chariot vision — the lion, the ox, the eagle, and the man — and thus stand as the fourfold guardians of divine manifestation at its most primal. In the Zohar they are described as the first to sound the divine sanctification, their eternal cry of 'Holy, holy, holy' sustaining the very fabric of existence. Pseudo-Dionysius places beings of this rank among the Seraphim of the highest celestial triad, consumed utterly in the fire of divine contemplation and transmitting that fire downward through all subsequent hierarchies.",
+      "secondaryNames": [
+        { "name": "חַיּוֹת הַקָּדֹשׁ", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Holy Living Creatures", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Holy Animals", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["angel", "order", "qabalah", "kether", "atziluth", "throne", "merkabah"],
+      "extendedData": {
+        "orderNumber": 1,
+        "sephiraCorrespondence": "qabalah.sephira.kether",
+        "divineName": "Eheieh",
+        "worldCorrespondence": "Atziluth",
+        "christianEquivalent": "Seraphim"
+      }
+    },
+    {
+      "canonicalName": "angel.order.auphanim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Auphanim",
+      "description": "The Auphanim, whose name means Wheels, are the angelic order of Chokmah, the second sephira, embodying the ceaseless revolution of the primordial heavens and the first differentiation of divine Wisdom into cosmic motion. They are the great wheel-like spirits described in Ezekiel's vision, their rims covered with eyes and their movement governed directly by the spirit of the living creatures above them. In the Zoharic tradition they are associated with the constellations and the primal zodiacal revolutions, serving as the mechanism by which divine archetypes are impressed upon the temporal world. The Golden Dawn placed them in the world of Atziluth alongside the divine name Yah, identifying their constant spinning motion with the dynamic outpouring of creative wisdom that precedes all form.",
+      "secondaryNames": [
+        { "name": "אוֹפַנִּים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Wheels", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Ophanim", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["angel", "order", "qabalah", "chokmah", "atziluth", "wheels", "merkabah", "zodiac"],
+      "extendedData": {
+        "orderNumber": 2,
+        "sephiraCorrespondence": "qabalah.sephira.chokmah",
+        "divineName": "Yah",
+        "worldCorrespondence": "Atziluth",
+        "christianEquivalent": "Cherubim"
+      }
+    },
+    {
+      "canonicalName": "angel.order.aralim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Aralim",
+      "description": "The Aralim, variously translated as Thrones or Mighty Ones, are the angelic host of Binah, the third sephira of Understanding, where divine light is first received into stable form and the concept of time and limitation is born. They are the great heavenly thrones upon which the divine presence rests, giving substance and endurance to the formative impulses descending from the higher sephiroth, and in this capacity they correspond directly to the Thrones described by Pseudo-Dionysius as wholly surrendered to the divine habitation. The Zohar speaks of them as mighty princes of the supernal palace who stand in awe-filled stillness, their entire being a receptive vessel for the light of Ain Soph. In the Golden Dawn system they are linked to the planet Saturn and to the divine name YHVH Elohim, reflecting Binah's qualities of restriction, structure, and the Great Mother who gives birth to all finite existence.",
+      "secondaryNames": [
+        { "name": "אֲרַלִּים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Thrones", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Mighty Ones", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Arelim", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["angel", "order", "qabalah", "binah", "briah", "thrones", "saturn"],
+      "extendedData": {
+        "orderNumber": 3,
+        "sephiraCorrespondence": "qabalah.sephira.binah",
+        "divineName": "YHVH Elohim",
+        "worldCorrespondence": "Briah",
+        "christianEquivalent": "Thrones"
+      }
+    },
+    {
+      "canonicalName": "angel.order.chasmalim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Chasmalim",
+      "description": "The Chasmalim, whose name is commonly rendered as the Brilliant Ones or Shining Ones, are the angelic order of Chesed, the fourth sephira of Mercy and divine loving-kindness. The word Chasmal appears in Ezekiel's vision as a mysterious luminous substance surrounding the divine throne, and rabbinic tradition held it to be either a supernatural fire or a class of speaking-fire beings whose very speech was radiant energy. In the Qabalistic hierarchy they embody the expansive, benevolent, kingly qualities of Chesed, channelling the overflowing grace of divinity into the ordered beneficence that maintains cosmic stability. The Golden Dawn associated them with the divine name El and with Jupiter, placing them as the angelic ministers of divine legislation and the abundance of spiritual mercy flowing downward from the supernal triad.",
+      "secondaryNames": [
+        { "name": "חַשְׁמַלִּים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Brilliant Ones", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Shining Ones", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Chasmalim", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["angel", "order", "qabalah", "chesed", "briah", "jupiter", "mercy"],
+      "extendedData": {
+        "orderNumber": 4,
+        "sephiraCorrespondence": "qabalah.sephira.chesed",
+        "divineName": "El",
+        "worldCorrespondence": "Briah",
+        "christianEquivalent": "Dominions"
+      }
+    },
+    {
+      "canonicalName": "angel.order.seraphim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Seraphim",
+      "description": "The Seraphim, the Fiery Serpents, are the angelic order attributed to Geburah, the fifth sephira of Severity, Strength, and divine justice. The name derives from the Hebrew root meaning to burn, and Isaiah's vision presents them as six-winged beings of consuming fire who fly about the divine throne crying out the thrice-holy sanctification and purifying the prophet's lips with a live coal. In the Qabalistic context their fiery nature expresses the martial, judging, and purifying aspect of divinity — they are the agents of divine wrath and correction who ensure no impurity can approach the sacred. The Golden Dawn, following the medieval angelic hierarchy, placed them in correspondence with the divine name Elohim Gibor and the planet Mars, making them the heavenly host that executes divine sentence and burns away all that is unworthy of ascending the Tree.",
+      "secondaryNames": [
+        { "name": "שְׂרָפִים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Fiery Serpents", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Burning Ones", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["angel", "order", "qabalah", "geburah", "briah", "mars", "fire", "severity"],
+      "extendedData": {
+        "orderNumber": 5,
+        "sephiraCorrespondence": "qabalah.sephira.geburah",
+        "divineName": "Elohim Gibor",
+        "worldCorrespondence": "Briah",
+        "christianEquivalent": "Seraphim"
+      }
+    },
+    {
+      "canonicalName": "angel.order.malachim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Malachim",
+      "description": "The Malachim, meaning Kings or Angels (from the root meaning messenger), are the angelic order of Tiphareth, the sixth sephira and the harmonising heart of the Tree of Life, the sphere of the solar sacrifice and the beauty of divine manifestation. As the royal messengers of the cosmic centre, they stand at the midpoint of the Tree and thus partake of the qualities of all the sephiroth above and below them, serving as divine ambassadors who translate the will of the higher worlds into terms comprehensible to the lower. The Malachim are the angels par excellence, their very name being the common Hebrew word for angels, suggesting that this order represents the ideal angelic type — perfectly balanced, luminous, and mediatory. In the Golden Dawn system they correspond to the divine name YHVH Eloah ve-Daath and the Sun, their kings and warriors of light maintaining the golden equilibrium of being.",
+      "secondaryNames": [
+        { "name": "מַלְאָכִים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Kings", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Angels", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Messengers", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["angel", "order", "qabalah", "tiphareth", "yetzirah", "sun", "beauty", "harmony"],
+      "extendedData": {
+        "orderNumber": 6,
+        "sephiraCorrespondence": "qabalah.sephira.tiphareth",
+        "divineName": "YHVH Eloah ve-Daath",
+        "worldCorrespondence": "Yetzirah",
+        "christianEquivalent": "Virtues"
+      }
+    },
+    {
+      "canonicalName": "angel.order.tarshishim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Tarshishim",
+      "description": "The Tarshishim, also rendered Elohim, are the angelic order of Netzach, the seventh sephira of Victory and desire, which governs instinct, emotion, nature, and the unrefined surge of creative and reproductive force. The name Tarshishim refers to the gleaming, brilliant ones — beings of dazzling, gem-like radiance — and they are the divine powers who animate the natural world with aesthetic beauty, passion, and the life-force that flows through all living things. Some GD documents list this choir simply as the Elohim, linking them to the divine name YHVH Tzabaoth, the Lord of Hosts, who commands the vast armies of nature spirits and elemental intelligences. The Tarshishim mediate the divine creative impulse in its most instinctive and fertile mode, their brilliance expressed in the iridescent beauty of the natural world and the ecstatic surge of creative inspiration.",
+      "secondaryNames": [
+        { "name": "תַּרְשִׁישִׁים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Brilliant Ones", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Elohim", "languageTag": "he-translit", "visible": true, "sortOrder": 2 },
+        { "name": "Shining Ones of Netzach", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["angel", "order", "qabalah", "netzach", "yetzirah", "venus", "nature", "beauty", "victory"],
+      "extendedData": {
+        "orderNumber": 7,
+        "sephiraCorrespondence": "qabalah.sephira.netzach",
+        "divineName": "YHVH Tzabaoth",
+        "worldCorrespondence": "Yetzirah",
+        "christianEquivalent": "Principalities"
+      }
+    },
+    {
+      "canonicalName": "angel.order.beni-elohim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Beni Elohim",
+      "description": "The Beni Elohim, or Sons of God, are the angelic choir of Hod, the eighth sephira of Splendour, which governs intellect, language, magic, communication, and the formative power of the mercurial mind. The title Sons of God appears famously in the Book of Job and Genesis 6, and in the Qabalistic framework they represent divine intellect made angelic — beings who embody the rational and communicative aspects of divinity and who serve as the agents through which the divine mind expresses itself in articulated form and structured knowledge. They are the scribes of heaven, the weavers of magical formula, and the angels who transmit the patterns of divine intelligence downward into the astral and physical planes. The Golden Dawn connected them to Elohim Tzabaoth and to Mercury, making them the angelic hosts who oversee language, symbol, and the precise formulaic structures of sacred science.",
+      "secondaryNames": [
+        { "name": "בְּנֵי אֱלֹהִים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Sons of God", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Children of Elohim", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["angel", "order", "qabalah", "hod", "yetzirah", "mercury", "intellect", "splendour"],
+      "extendedData": {
+        "orderNumber": 8,
+        "sephiraCorrespondence": "qabalah.sephira.hod",
+        "divineName": "Elohim Tzabaoth",
+        "worldCorrespondence": "Yetzirah",
+        "christianEquivalent": "Archangels"
+      }
+    },
+    {
+      "canonicalName": "angel.order.kerubim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Kerubim",
+      "description": "The Kerubim, or Cherubim, are the angelic order of Yesod, the ninth sephira of Foundation, the great astral reflector and sphere of the Moon that gathers and transmits all the influences of the higher sephiroth to Malkuth below. Far removed from the chubby winged infants of Renaissance iconography, the Kerubim of scripture are awesome four-faced, four-winged guardians — the same beings who guarded the gates of Eden with flaming swords and who flanked the Ark of the Covenant. In the Qabalistic system they are the great intermediary angels who govern the astral plane and the etheric foundation of physical reality, holding together the subtle architecture of the world. The Golden Dawn linked them to the divine name Shaddai El Chai and the Moon, making them the guardians of threshold and the angelic hosts who mediate between the invisible world of formation and the visible world of matter.",
+      "secondaryNames": [
+        { "name": "כְּרוּבִים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Cherubim", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Cherubs", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["angel", "order", "qabalah", "yesod", "yetzirah", "moon", "foundation", "astral"],
+      "extendedData": {
+        "orderNumber": 9,
+        "sephiraCorrespondence": "qabalah.sephira.yesod",
+        "divineName": "Shaddai El Chai",
+        "worldCorrespondence": "Yetzirah",
+        "christianEquivalent": "Cherubim"
+      }
+    },
+    {
+      "canonicalName": "angel.order.ashim",
+      "entityType": "angel.order",
+      "primaryDisplayName": "Ashim",
+      "description": "The Ashim, variously called Souls of Fire or Flames of Fire, are the angelic order of Malkuth, the tenth and final sephira, the Kingdom that encompasses all material existence and is the culmination of the entire divine descent through the Tree of Life. Unlike the higher orders who dwell in purely spiritual or astral realms, the Ashim are in some traditions understood as the souls of the righteous who have been elevated to angelic status — the human-divine bridge made permanent — and they inspire and animate the spiritual aspirations of embodied souls. The Zohar describes them as the sparks of divine fire that inhabit the lower world, the immanent divine presence dwelling within the very matter of Malkuth. In the Golden Dawn system they correspond to the divine name Adonai ha-Aretz and the four elements in their combined terrestrial expression, serving as the angels who kindle the divine flame within the heart of physical creation.",
+      "secondaryNames": [
+        { "name": "אִשִּׁים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Flames of Fire", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Souls of Fire", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Ishim", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["angel", "order", "qabalah", "malkuth", "assiah", "earth", "fire", "kingdom", "souls"],
+      "extendedData": {
+        "orderNumber": 10,
+        "sephiraCorrespondence": "qabalah.sephira.malkuth",
+        "divineName": "Adonai ha-Aretz",
+        "worldCorrespondence": "Assiah",
+        "christianEquivalent": "Angels"
+      }
+    }
+  ]
+}

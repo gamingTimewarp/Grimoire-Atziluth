@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "gnostic.valentinian.bythos",
+      "target": "gnostic.sethian.invisible-spirit",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.sige",
+      "target": "gnostic.sethian.barbelo",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.nous",
+      "target": "gnostic.sethian.autogenes",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.sophia",
+      "target": "gnostic.sethian.sophia",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.sophia-fallen",
+      "target": "gnostic.sethian.sophia",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.demiurge",
+      "target": "gnostic.sethian.yaldabaoth",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.logos",
+      "target": "gnostic.sethian.protennoia",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "gnostic.valentinian.anthropos",
+      "target": "gnostic.sethian.adamas",
+      "label": "gnostic-parallel",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

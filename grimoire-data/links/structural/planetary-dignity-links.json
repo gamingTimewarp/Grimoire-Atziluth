@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "astrology.zodiac-sign.aries",
+      "target": "astrology.planet.mars",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aries",
+      "target": "astrology.planet.sol",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aries",
+      "target": "astrology.planet.venus",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aries",
+      "target": "astrology.planet.saturn",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.taurus",
+      "target": "astrology.planet.venus",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.taurus",
+      "target": "astrology.planet.luna",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.taurus",
+      "target": "astrology.planet.mars",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.taurus",
+      "target": "astrology.planet.uranus",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.gemini",
+      "target": "astrology.planet.mercury",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.gemini",
+      "target": "astrology.planet.jupiter",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.cancer",
+      "target": "astrology.planet.luna",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.cancer",
+      "target": "astrology.planet.jupiter",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.cancer",
+      "target": "astrology.planet.saturn",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.cancer",
+      "target": "astrology.planet.mars",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.leo",
+      "target": "astrology.planet.sol",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.leo",
+      "target": "astrology.planet.saturn",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.leo",
+      "target": "astrology.planet.neptune",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.virgo",
+      "target": "astrology.planet.mercury",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.virgo",
+      "target": "astrology.planet.mercury",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.virgo",
+      "target": "astrology.planet.jupiter",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.virgo",
+      "target": "astrology.planet.venus",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.libra",
+      "target": "astrology.planet.venus",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.libra",
+      "target": "astrology.planet.saturn",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.libra",
+      "target": "astrology.planet.mars",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.libra",
+      "target": "astrology.planet.sol",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.scorpio",
+      "target": "astrology.planet.mars",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.scorpio",
+      "target": "astrology.planet.pluto",
+      "label": "modern-ruler",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.scorpio",
+      "target": "astrology.planet.uranus",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.scorpio",
+      "target": "astrology.planet.venus",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.scorpio",
+      "target": "astrology.planet.luna",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.sagittarius",
+      "target": "astrology.planet.jupiter",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.sagittarius",
+      "target": "astrology.planet.mercury",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.capricorn",
+      "target": "astrology.planet.saturn",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.capricorn",
+      "target": "astrology.planet.mars",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.capricorn",
+      "target": "astrology.planet.luna",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.capricorn",
+      "target": "astrology.planet.jupiter",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aquarius",
+      "target": "astrology.planet.saturn",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aquarius",
+      "target": "astrology.planet.uranus",
+      "label": "modern-ruler",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.aquarius",
+      "target": "astrology.planet.sol",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.aquarius",
+      "target": "astrology.planet.neptune",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.pisces",
+      "target": "astrology.planet.jupiter",
+      "label": "traditional-ruler",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.pisces",
+      "target": "astrology.planet.neptune",
+      "label": "modern-ruler",
+      "bidirectional": true,
+      "traditionScope": [
+        "tradition.modern-astrology"
+      ]
+    },
+    {
+      "source": "astrology.zodiac-sign.pisces",
+      "target": "astrology.planet.venus",
+      "label": "exaltation",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.pisces",
+      "target": "astrology.planet.mercury",
+      "label": "detriment",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.zodiac-sign.pisces",
+      "target": "astrology.planet.mercury",
+      "label": "fall",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

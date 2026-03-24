@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "spirit.intelligence.agiel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Agiel",
+      "description": "Agiel (אגיאל) is the Intelligence of Saturn, as codified by Heinrich Cornelius Agrippa in 'Three Books of Occult Philosophy' (Book II, Chapter 22). Intelligences are the benefic, angelic directive forces of their planets — the rational, guiding mind through which the planet's higher virtues are channelled and expressed. Agiel's Hebrew gematria value is 45, which equals the magic constant (row/column/diagonal sum) of the 3×3 Saturn Kamea as well as its full cell sum — encoding Agiel's identity within the very mathematical structure of the square. In practice, Agiel's sigil is derived by tracing the digits of 45 (4 and 5) as a continuous path across the cells of the Saturn Kamea, producing the characteristic Saturnine sigil used on talismans and in ceremonial invocations. As the Intelligence, Agiel represents the highest, most benevolent expression of Saturn's power: discipline, structure, perseverance, and cosmic law.",
+      "secondaryNames": [
+        { "name": "אגיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Agiel", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Agiell", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "saturn"],
+      "extendedData": {
+        "planetCN": "astrology.planet.saturn",
+        "gematriaValue": 45,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.saturn"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.zazel",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Zazel",
+      "description": "Zazel (זאזל) is the Spirit of Saturn, recorded by Agrippa in 'Three Books of Occult Philosophy' (Book II) as the raw, elemental force of the Saturnine sphere. Planetary Spirits are the chthonic, elemental counterparts to the Intelligences — untamed currents of planetary energy rather than its refined, directive aspect. Zazel's Hebrew gematria is 45, identical to the Agiel's value and to the sum of all cells in the 3×3 Saturn Kamea, reflecting how Spirit and Intelligence together comprise the total power of the square. The sigil of Zazel is traced by plotting the digits of 45 on the Kamea grid, producing a seal used to evoke or constrain the spirit's raw Saturnine force in workings of binding, cursing, banishing, or heavy structural magic. As the Spirit, Zazel embodies the raw, elemental force of Saturn — limitation, inertia, restriction, and the cold weight of time.",
+      "secondaryNames": [
+        { "name": "זאזל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Zazel", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "saturn"],
+      "extendedData": {
+        "planetCN": "astrology.planet.saturn",
+        "gematriaValue": 45,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.saturn"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.iophiel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Iophiel",
+      "description": "Iophiel (יופיאל) is the Intelligence of Jupiter, as given by Agrippa in 'Three Books of Occult Philosophy' (Book II). Intelligences function as the benevolent, angelic minds that direct the higher virtues of their planetary spheres, and Iophiel channels the most elevated expression of Jovial energy: cosmic mercy, divine abundance, and expansive wisdom. Iophiel's Hebrew gematria is 136, which equals both the magic constant of the 4×4 Jupiter Kamea (the sum of each row, column, and diagonal) and the full sum of all sixteen cells, mathematically encoding the Intelligence within the structure of the square itself. The sigil of Iophiel is constructed by tracing the digits of 136 (1, 3, 6) as a path through the cells of the Jupiter Kamea. As the Intelligence, Iophiel represents Jupiter's most benefic face: magnanimity, lawful prosperity, and the light of divine grace.",
+      "secondaryNames": [
+        { "name": "יופיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Jophiel", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Iophiel", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "jupiter"],
+      "extendedData": {
+        "planetCN": "astrology.planet.jupiter",
+        "gematriaValue": 136,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.jupiter"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.hismael",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Hismael",
+      "description": "Hismael (הסמאל) is the Spirit of Jupiter, the raw elemental force of the Jovial sphere as recorded by Agrippa in 'Three Books of Occult Philosophy' (Book II). Planetary Spirits embody the untamed, elemental current of their planet — the force beneath the benevolent veneer of the Intelligence. Hismael's Hebrew gematria is 136, matching both the magic constant and the total sum of the 4×4 Jupiter Kamea; Intelligence and Spirit together exhaust the totality of Jovian number-power encoded in the square. The sigil of Hismael is derived by tracing the digits of 136 through the Jupiter Kamea grid, and the resulting seal is employed in ceremonial workings that draw on Jupiter's raw expansive and accumulative force. As the Spirit, Hismael embodies the elemental face of Jupiter: the irresistible drive toward growth, excess, and the sheer momentum of fortune.",
+      "secondaryNames": [
+        { "name": "הסמאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Hismael", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "jupiter"],
+      "extendedData": {
+        "planetCN": "astrology.planet.jupiter",
+        "gematriaValue": 136,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.jupiter"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.graphiel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Graphiel",
+      "description": "Graphiel (גראפיאל) is the Intelligence of Mars, as listed by Agrippa in 'Three Books of Occult Philosophy' (Book II). As Intelligence, Graphiel represents the directed, purposeful, and noble aspect of Martian energy: courage, righteous will, the protection of the innocent, and disciplined force in the service of justice. Graphiel's Hebrew gematria is 325, which equals the total sum of all 25 cells in the 5×5 Mars Kamea, so that Graphiel's very name encodes the full arithmetic power of the square. The sigil of Graphiel is traced by plotting the digits of 325 (3, 2, 5) as a continuous path through the Mars Kamea cells. As the Intelligence, Graphiel governs the highest expression of Martian force — the warrior's virtue rather than wanton aggression.",
+      "secondaryNames": [
+        { "name": "גראפיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Graphiel", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "mars"],
+      "extendedData": {
+        "planetCN": "astrology.planet.mars",
+        "gematriaValue": 325,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.mars"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.bartzabel",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Bartzabel",
+      "description": "Bartzabel (ברצבל) is the Spirit of Mars, recorded in Agrippa's 'Three Books of Occult Philosophy' (Book II) as the raw elemental current of the Martian sphere. Where the Intelligence Graphiel channels Mars's noble, directive will, Bartzabel embodies the untamed, destructive, and elemental force of the planet: conflict, aggression, fire, and the brute momentum of force without restraint. Bartzabel's Hebrew gematria is 325, identical to the full cell-sum of the 5×5 Mars Kamea, encoding the Spirit as the sum total of the square's raw numerical power. The sigil of Bartzabel is traced from the digits of 325 on the Kamea grid, and this seal is used in ceremonies of aggressive magic, battle-workings, and the compulsion of Martian elemental forces. Aleister Crowley notably worked with Bartzabel in a recorded evocation in 1910.",
+      "secondaryNames": [
+        { "name": "ברצבל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Bartzabel", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "mars"],
+      "extendedData": {
+        "planetCN": "astrology.planet.mars",
+        "gematriaValue": 325,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.mars"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.nakhiel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Nakhiel",
+      "description": "Nakhiel (נכיאל) is the Intelligence of the Sun (Sol), as given by Agrippa in 'Three Books of Occult Philosophy' (Book II). Intelligences are the benevolent, angelic governors of their planetary sphere — the higher, directive mind — and Nakhiel channels the most elevated solar virtues: illumination, divine kingship, healing, and the radiant light of consciousness. Nakhiel's Hebrew gematria is 111, which equals the magic constant of the 6×6 Solar Kamea — the sum of every row, column, and main diagonal — encoding the Intelligence as the directive principle of the square rather than its raw sum. The sigil of Nakhiel is traced through the Solar Kamea using the digits of 111 (1, 1, 1), producing a simple but powerful seal used in solar invocations for illumination and healing. As the Intelligence, Nakhiel represents the highest face of the Sun: the benevolent solar king and divine physician.",
+      "secondaryNames": [
+        { "name": "נכיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Nachiel", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Nakhiel", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "sol", "sun"],
+      "extendedData": {
+        "planetCN": "astrology.planet.sol",
+        "gematriaValue": 111,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.sol"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.sorath",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Sorath",
+      "description": "Sorath (סורת) is the Spirit of the Sun, recorded by Agrippa in 'Three Books of Occult Philosophy' (Book II) as the raw elemental force of the solar sphere. Sorath's Hebrew gematria is 666, the notorious 'Number of the Beast' of Revelation 13 — a correspondence that identifies Sorath as the sum total of all 36 cells of the 6×6 Solar Kamea, encoding the fullness of solar power in its most concentrated and elemental form. While the Intelligence Nakhiel governs the enlightened, healing face of the Sun, Sorath embodies the Sun's terrifying, blinding, and consuming aspect — the scorching solar fire that can create or destroy. The sigil of Sorath is derived by tracing the digits of 666 through the Solar Kamea, and this seal appears prominently in Renaissance magical literature and is central to modern solar evocation. Sorath has attracted significant attention in esoteric traditions from Rudolf Steiner's Anthroposophy to Thelema for its identification as the supreme solar adversarial force.",
+      "secondaryNames": [
+        { "name": "סורת", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Sorath", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Shemesh", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "sol", "sun"],
+      "extendedData": {
+        "planetCN": "astrology.planet.sol",
+        "gematriaValue": 666,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.sol"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.hagiel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Hagiel",
+      "description": "Hagiel (הגיאל) is the Intelligence of Venus, as codified by Agrippa in 'Three Books of Occult Philosophy' (Book II). As the Intelligence, Hagiel channels Venus's highest and most refined virtues: spiritual love, divine beauty, aesthetic harmony, and the celestial eros that draws souls toward unity. Hagiel's Hebrew gematria is 49 — not the magic constant of the 7×7 Venus Kamea (which is 175) but rather the order-number squared (7² = 49), reflecting a special structural relationship with the Kamea's 49-cell grid. The sigil of Hagiel is derived by tracing the digits of 49 (4 and 9) as a path through the Venus Kamea, producing a graceful seal used in Venereal invocations for love, beauty, and artistic inspiration. Hagiel governs the refined, spiritual face of Venusian magic: the longing of the soul for beauty and divine union.",
+      "secondaryNames": [
+        { "name": "הגיאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Hagiel", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "venus"],
+      "extendedData": {
+        "planetCN": "astrology.planet.venus",
+        "gematriaValue": 49,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.venus"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.kedemel",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Kedemel",
+      "description": "Kedemel (קדמאל) is the Spirit of Venus, listed by Agrippa in 'Three Books of Occult Philosophy' (Book II) as the raw elemental force of the Venereal sphere. Where the Intelligence Hagiel expresses Venus's spiritual and refined face, Kedemel embodies the planet's raw, instinctual, and elemental Venereal current: desire, sensual attraction, the procreative drive, and the compulsive beauty that captures the will. Kedemel's Hebrew gematria is 175, equal to the magic constant of the 7×7 Venus Kamea — the sum of each row, column, and diagonal — encoding Kedemel as the directive elemental sum of the square's repeated patterns. The sigil of Kedemel is traced from the digits of 175 through the Venus Kamea cells, producing a seal employed in workings of attraction, lust, passion, and compulsive Venereal magic. As Spirit, Kedemel governs the deep, instinctual pull of beauty and desire that operates beneath conscious will.",
+      "secondaryNames": [
+        { "name": "קדמאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Kedemel", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Qdemel", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "venus"],
+      "extendedData": {
+        "planetCN": "astrology.planet.venus",
+        "gematriaValue": 175,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.venus"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.tiriel",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Tiriel",
+      "description": "Tiriel (טריאל) is the Intelligence of Mercury, as given by Agrippa in 'Three Books of Occult Philosophy' (Book II). Mercury possesses a uniquely complex spirit hierarchy: in addition to Tiriel as primary Intelligence and Taphthartharath as Spirit, Agrippa also names a supreme Intelligence of Intelligences — Malkah be-Tarshishim ve-ad Ruachoth be-Shehakim — whose vast name governs the entire intelligential hierarchy of the Mercurial sphere. Tiriel's Hebrew gematria is 260, equal to the magic constant of the 8×8 Mercury Kamea — the sum of each row, column, and diagonal — encoding Tiriel as the repeating directive principle of the square. The sigil of Tiriel is constructed by tracing the digits of 260 (2, 6, 0) through the Mercury Kamea, producing a seal used in invocations for learning, eloquence, divination, commerce, and the magical art of writing. As Intelligence, Tiriel governs Mercury's highest mind: clarity of thought, precision of speech, and the rational ordering of knowledge.",
+      "secondaryNames": [
+        { "name": "טריאל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Tiriel", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "mercury"],
+      "extendedData": {
+        "planetCN": "astrology.planet.mercury",
+        "gematriaValue": 260,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.mercury",
+        "intelligenceOfIntelligences": "Malkah be-Tarshishim ve-ad Ruachoth be-Shehakim"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.taphthartharath",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Taphthartharath",
+      "description": "Taphthartharath (תפתרתרת) is the Spirit of Mercury, recorded by Agrippa in 'Three Books of Occult Philosophy' (Book II) as the raw, elemental force of the Mercurial sphere. Its name is notably palindromic in Hebrew — reading identically forwards and backwards — a formal feature that reflects Mercury's twin-natured, reflective, and trickster qualities. Taphthartharath's gematria is 2080, equal to the total sum of all 64 cells in the 8×8 Mercury Kamea, encoding the Spirit as the exhaustive arithmetic power of the entire square. The sigil of Taphthartharath is traced by plotting the component digits of 2080 through the Kamea grid, and this seal is employed in workings demanding Mercury's most raw and elemental influence: rapid change, cunning, magical deception, the manipulation of information, and the breaking of mental fixity. As Spirit, Taphthartharath embodies Mercury's quicksilver, uncontrolled elemental current — the ceaseless, amoral flow of mind and communication.",
+      "secondaryNames": [
+        { "name": "תפתרתרת", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Taphthartharath", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Taphtharath", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "mercury"],
+      "extendedData": {
+        "planetCN": "astrology.planet.mercury",
+        "gematriaValue": 2080,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.mercury"
+      }
+    },
+    {
+      "canonicalName": "spirit.intelligence.malka-be-tarshisim",
+      "entityType": "angel.planetary-intelligence",
+      "primaryDisplayName": "Malka be-Tarshisim ve-ad Ruachoth Shechakim",
+      "description": "Malka be-Tarshisim ve-ad Ruachoth Shechakim (מלכא בתרשישים ועד רוחות שחקים — 'Queen of Tarshish, unto the Spirits of the Heights') is the Intelligence of the Moon (Luna), as recorded by Agrippa in 'Three Books of Occult Philosophy' (Book II). This entity also appears in Agrippa's Mercury hierarchy as the Intelligence of Intelligences for Mercury (in a variant form: Malkah be-Tarshishim ve-ad Ruachoth be-Shehakim), illustrating the fluid cross-attributions of the lunar and mercurial spheres in Renaissance magical cosmology — both planets sharing swift, reflective, and mediating qualities. The gematria of this vast name is 3321, equal to the total sum of all 81 cells in the 9×9 Moon Kamea, encoding the Intelligence as the complete arithmetic essence of the largest planetary square. The sigil is derived by tracing the component digits of 3321 through the Kamea grid and is used in invocations for psychic sensitivity, dream work, astral travel, and the governance of lunar cycles. As Intelligence, this entity directs the Moon's highest virtues: reflection, receptivity, and the nourishing light of the unconscious mind.",
+      "secondaryNames": [
+        { "name": "מלכא בתרשישים ועד רוחות שחקים", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Malka be-Tarshisim ve-ad Ruachoth Shechakim", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Intelligence of the Moon", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "intelligence", "luna", "moon"],
+      "extendedData": {
+        "planetCN": "astrology.planet.luna",
+        "gematriaValue": 3321,
+        "type": "intelligence",
+        "kameaCN": "magic.kamea.luna"
+      }
+    },
+    {
+      "canonicalName": "spirit.planetary.schedbarschemoth-schartathan",
+      "entityType": "spirit.planetary",
+      "primaryDisplayName": "Schedbarschemoth Schartathan",
+      "description": "Schedbarschemoth Schartathan (שד ברשמות השרתן — 'Demon of the flowing waters, the enchanter') is the Spirit of the Moon (Luna), as listed by Agrippa in 'Three Books of Occult Philosophy' (Book II). Planetary Spirits embody the raw, elemental, and unchannelled force of their sphere; in the Moon's case, this is the tidal, shape-shifting, and instinctual undercurrent of lunar energy — the ebb and flow of emotion, the pull of unconscious compulsions, and the dark face of the astral sea. Schedbarschemoth Schartathan's gematria is 3321, identical to that of its corresponding Intelligence, and equal to the total sum of all 81 cells in the 9×9 Lunar Kamea — making Intelligence and Spirit two faces of the same vast numerical power embedded in the square. The sigil is traced from the digits of 3321 through the Moon Kamea cells and is used in ceremonies invoking or constraining raw lunar forces: tidal magic, dream compulsion, fertility rites, and workings that operate through instinct rather than conscious will. As Spirit, Schedbarschemoth Schartathan governs the Moon's elemental face — the restless astral sea beneath the surface of consciousness.",
+      "secondaryNames": [
+        { "name": "שד ברשמות השרתן", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Schad Barschemoth ha-Shartatan", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Spirit of the Moon", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic", "planetary", "agrippa", "spirit", "luna", "moon"],
+      "extendedData": {
+        "planetCN": "astrology.planet.luna",
+        "gematriaValue": 3321,
+        "type": "spirit",
+        "kameaCN": "magic.kamea.luna"
+      }
+    }
+  ]
+}

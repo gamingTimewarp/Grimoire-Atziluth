@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "astrology.decan.aries-1",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aries-2",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aries-3",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-1",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-2",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.taurus-3",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-1",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-2",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.gemini-3",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-1",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-2",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.cancer-3",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-1",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-2",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.leo-3",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-1",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-2",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.virgo-3",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-1",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-2",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.libra-3",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-1",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-2",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.scorpio-3",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-1",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-2",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.sagittarius-3",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-1",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-2",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.capricorn-3",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-1",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-2",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.aquarius-3",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-1",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-2",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.decan.pisces-3",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

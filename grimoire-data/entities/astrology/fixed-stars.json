@@ -1,0 +1,1168 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.fixed-star.hamal",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Hamal",
+      "description": "Hamal (Alpha Arietis) is the brightest star of Aries, the Ram's Head, sitting at approximately 7°40' Taurus in the tropical zodiac. Of the nature of Jupiter and Mars, it bestows courage and ambition but carries a violent streak — classical authors associate it with wounds to the head, cruelty in battle, and accidents. In electional and horary astrology, Hamal was avoided when choosing times for surgery or any enterprise requiring precision and calm, yet it also confers a bold, independent spirit and the willpower to begin new endeavours.",
+      "secondaryNames": [
+        { "name": "Alpha Arietis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Ras Hammel", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "aries"],
+      "extendedData": {
+        "tropicalLongitude": 7.67,
+        "constellation": "Aries",
+        "magnitude": 2.01,
+        "planetaryNature": "Nature of Jupiter and Mars",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Traditionally used in talismans for courage and military victory; worn for protection against head injuries and attacks from enemies. Its fiery Mars-Jupiter blend makes it potent for initiating bold undertakings and breaking through obstacles.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sheratan",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sheratan",
+      "description": "Sheratan (Beta Arietis), 'the two signs' in Arabic, marks the second horn of the Ram and lies at approximately 3°58' Taurus in the tropical zodiac. Of the nature of Mars and Saturn, it was regarded as a malefic influence by medieval astrologers, associated with lies, accidents, bodily harm, and discord in partnerships. Cornelius Agrippa noted its tendency toward sudden violence and treachery when prominent in a nativity, though it also imparts a tenacious, survival-oriented energy that can overcome adversity.",
+      "secondaryNames": [
+        { "name": "Beta Arietis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Sharatan", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "aries"],
+      "extendedData": {
+        "tropicalLongitude": 3.97,
+        "constellation": "Aries",
+        "magnitude": 2.64,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used cautiously in protective magic, particularly for binding enemies and revealing deceivers; its Mars-Saturn quality makes it effective for magics of constraint and reversal. Best employed under waning moon conditions to neutralise hostile forces.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mesarthim",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mesarthim",
+      "description": "Mesarthim (Gamma Arietis) is the third notable star of Aries, positioned at approximately 3°12' Taurus tropical, historically the first double star to be observed telescopically (in 1664). Sharing the Mars-Saturn nature of its neighbour Sheratan, it carries similarly challenging influences of conflict, rashness, and the capacity for both great destruction and stubborn endurance. In medieval magical practice its position near the vernal equinox point (which it once held in ancient times) gave it symbolic importance as a marker of cosmic beginnings.",
+      "secondaryNames": [
+        { "name": "Gamma Arietis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "First Star in Aries", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "aries"],
+      "extendedData": {
+        "tropicalLongitude": 3.2,
+        "constellation": "Aries",
+        "magnitude": 3.88,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Associated in ancient practice with marking the beginning of new cycles; talismans bearing this star's influence were used for initiation rites and to consecrate the start of major undertakings. Its double-star nature links it symbolically to duality and the reconciliation of opposing forces.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mirach",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mirach",
+      "description": "Mirach (Beta Andromedae) is a brilliant red giant of the nature of Venus, placed at approximately 0°24' Taurus in the tropical zodiac. Classical sources describe it as one of the most benefic fixed stars, conferring beauty, charm, artistic sensitivity, a happy disposition, and success in love and marriage. It is associated with the chained princess Andromeda, whose story of liberation by Perseus gives this star an esoteric connection to rescue, divine intervention, and the power of beauty to transcend bondage.",
+      "secondaryNames": [
+        { "name": "Beta Andromedae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mizar", "languageTag": "ar", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "andromeda"],
+      "extendedData": {
+        "tropicalLongitude": 0.4,
+        "constellation": "Andromeda",
+        "magnitude": 2.06,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Strongly favoured in love magic, beauty talismans, and workings for artistic inspiration; Mirach was incorporated into amulets worn to attract admiration, harmonious relationships, and creative success. Its pure Venus nature makes it one of the most reliable fixed stars for Venusian operations.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.almach",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Almach",
+      "description": "Almach (Gamma Andromedae) is a striking multiple star system — visually a beautiful double of orange and blue-green — positioned at approximately 14°14' Taurus in the tropical zodiac. Of Venusian nature, it shares many of Mirach's benefic qualities: grace, artistic talent, popularity, and favour with those of high social standing. The colour contrast of its double-star components has made it a symbol of complementary opposites harmoniously united, giving Almach an additional esoteric resonance with balanced duality and aesthetic perfection.",
+      "secondaryNames": [
+        { "name": "Gamma Andromedae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Alamak", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "andromeda"],
+      "extendedData": {
+        "tropicalLongitude": 14.23,
+        "constellation": "Andromeda",
+        "magnitude": 2.26,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used in talismans for social grace, artistic endeavour, and winning favour in courts or circles of influence; Almach confers the gift of making an excellent impression and rising through beauty and charm rather than force. Aligns well with workings related to marriage, diplomacy, and aesthetic refinement.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alcyone",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alcyone",
+      "description": "Alcyone (Eta Tauri) is the brightest of the Pleiades star cluster, known as the Seven Sisters, positioned at approximately 0°00' Gemini (29°47' Taurus) in the tropical zodiac. One of the fifteen Behenian stars, it carries the combined nature of the Moon and Mars — simultaneously creative and destructive, associated with grief, accidents, and blindness in classical texts, yet also with poetic inspiration, artistic gifts, and mystical vision. The Pleiades were venerated across ancient cultures as a portal between worlds, a gathering of divine feminine power, and a celestial calendar marker of great importance.",
+      "secondaryNames": [
+        { "name": "Eta Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Seven Sisters", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Thurayya", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus", "behenian", "pleiades"],
+      "extendedData": {
+        "tropicalLongitude": 29.95,
+        "constellation": "Taurus",
+        "magnitude": 2.87,
+        "planetaryNature": "Nature of Moon and Mars",
+        "primaryPlanet": "astrology.planet.luna",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Alcyone — made with crystal and fennel under the Moon — was used for clear sight, eloquence, and protection from evil; it was also invoked for grief work, ancestral communion, and opening channels to the spirit world. Its ambivalent nature demands careful handling: equally potent for healing sorrow and invoking prophetic dreams.",
+        "behenianStar": true,
+        "behenianStone": "Crystal (Rock Crystal)",
+        "behenianHerb": "Fennel"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.aldebaran",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Aldebaran",
+      "description": "Aldebaran (Alpha Tauri), the 'Eye of the Bull', is one of the four Royal Stars of ancient Persia, serving as the Watcher of the East and marking the vernal equinox in approximately 3000 BCE. Positioned at 9°47' Gemini in the tropical zodiac, it is of the nature of Mars and one of the fifteen Behenian stars, conferring great honour, courage, intelligence, and eloquence when well placed. A star of kings and commanders, Aldebaran bestows rapid rise to prominence and military glory, though its power can turn destructive if the native courts excess or betrays the principles of honour.",
+      "secondaryNames": [
+        { "name": "Alpha Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Eye of the Bull", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Dabarān", "languageTag": "ar", "visible": true, "sortOrder": 2 },
+        { "name": "Watcher of the East", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus", "behenian", "royal-star"],
+      "extendedData": {
+        "tropicalLongitude": 9.78,
+        "constellation": "Taurus",
+        "magnitude": 0.87,
+        "planetaryNature": "Nature of Mars",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "The Behenian talisman of Aldebaran — crafted in ruby or garnet with milk thistle — was used to confer honour, protection, and victory over enemies; as the Eastern Royal Star it was invoked for all works of command, leadership, and the righteous use of power. Its talismans were placed in the east of ritual spaces to draw in active, initiating energy.",
+        "behenianStar": true,
+        "behenianStone": "Ruby (or Carbuncle)",
+        "behenianHerb": "Milk Thistle"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.rigel",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Rigel",
+      "description": "Rigel (Beta Orionis) is the brightest star of Orion and one of the most luminous stars in the sky, positioned at 16°50' Gemini in the tropical zodiac. Of the nature of Jupiter and Saturn, it is one of the fifteen Behenian stars and one of the most unambiguously benefic of all fixed stars, conferring wealth, honour, good fortune, technical genius, and enduring fame. Associated with the hunter Orion, Rigel carries a quality of heroic achievement through skill and craftsmanship — it is the star of great builders, engineers, artists, and those who leave a lasting mark on civilisation.",
+      "secondaryNames": [
+        { "name": "Beta Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Rijl Jauzah al-Yusrā", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 16.83,
+        "constellation": "Orion",
+        "magnitude": 0.18,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "The Behenian talisman of Rigel — made in sapphire with horehound — was used to bring wealth, mental acuity, and lasting achievement; it was a premier star for consecrating tools of craft, study, and invention. Magicians sought Rigel's favour for long-term projects requiring both brilliance and discipline.",
+        "behenianStar": true,
+        "behenianStone": "Sapphire",
+        "behenianHerb": "Horehound (Houndstongue)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.capella",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Capella",
+      "description": "Capella (Alpha Aurigae), 'the Little She-Goat', is one of the brightest stars in the northern sky, positioned at 21°51' Gemini in the tropical zodiac. One of the Behenian stars, it partakes of the nature of Mercury and Mars, conferring a brilliant, quick, versatile mind, honours in public life, curiosity, and a love of learning. The mythological she-goat Amalthea, whose horn became the cornucopia, links Capella to themes of nourishment, abundance emerging from sacrifice, and the divine care that sustains the world.",
+      "secondaryNames": [
+        { "name": "Alpha Aurigae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Goat Star", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "auriga", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 21.85,
+        "constellation": "Auriga",
+        "magnitude": 0.08,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Capella — made in sapphire with horehound — was used to gain honour through intellectual brilliance, eloquence, and quick thinking; it was especially prized for scholars, orators, and those seeking recognition in academic or courtly circles. Its goat symbolism connects it to nourishment magic and rituals of abundance.",
+        "behenianStar": true,
+        "behenianStone": "Sapphire",
+        "behenianHerb": "Horehound"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.bellatrix",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Bellatrix",
+      "description": "Bellatrix (Gamma Orionis), the 'Female Warrior' or 'Amazon Star', is the left shoulder of Orion, positioned at 20°57' Gemini in the tropical zodiac. Of the nature of Mars and Mercury, it was said in classical astrology to bestow military success, rash courage, and a tendency to achieve through force and quick decision — but also to bring disgrace and ruin through imprudence. Vivid, combative energy characterises all Bellatrix influences; it is the star of the bold, decisive strategist who wins battles through speed and aggression rather than careful planning.",
+      "secondaryNames": [
+        { "name": "Gamma Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Female Warrior", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Najid", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion"],
+      "extendedData": {
+        "tropicalLongitude": 20.95,
+        "constellation": "Orion",
+        "magnitude": 1.64,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used in workings for swift victory, courage under pressure, and the ability to make decisive tactical choices; Bellatrix was invoked by those preparing for competitions, confrontations, or situations requiring immediate bold action. Its dual Mars-Mercury nature also makes it suitable for sharp-tongued rhetoric and verbal combat.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alnath",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alnath",
+      "description": "Alnath (Beta Tauri), also called El Nath, is the tip of the northern horn of Taurus and simultaneously the foot of the Auriga charioteer, positioned at 22°35' Gemini in the tropical zodiac. Of the nature of Mars and Jupiter, it was considered a star of enterprise, ambition, and headstrong force — capable of driving great achievements when well-directed but prone to violent, destructive excess when afflicted. Its position at the boundary between two constellations gives it a liminal, transitional quality in esoteric thought.",
+      "secondaryNames": [
+        { "name": "Beta Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "El Nath", "languageTag": "ar", "visible": true, "sortOrder": 1 },
+        { "name": "Gamma Aurigae", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus"],
+      "extendedData": {
+        "tropicalLongitude": 22.58,
+        "constellation": "Taurus",
+        "magnitude": 1.68,
+        "planetaryNature": "Nature of Mars and Jupiter",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Employed in talismans for bold enterprise and the breaking of obstacles; its horn symbolism makes it an apt star for workings of initiation, penetration through resistance, and pioneer energy. Mars-Jupiter together here provide both the drive and the expansive vision needed for ambitious undertakings.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mintaka",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mintaka",
+      "description": "Mintaka (Delta Orionis) is the westernmost star of Orion's Belt, positioned at 22°24' Gemini in the tropical zodiac. Of the nature of Saturn and Mercury, it is the first of the Belt's three stars to rise, historically used for navigation and timekeeping across ancient cultures. In esoteric tradition Orion's Belt as a whole was regarded as a cosmic axis or gateway, with Mintaka, Alnilam, and Alnitak representing three degrees of divine emanation — beginnings, centre, and completion.",
+      "secondaryNames": [
+        { "name": "Delta Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mintaka", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
+      "extendedData": {
+        "tropicalLongitude": 22.4,
+        "constellation": "Orion",
+        "magnitude": 2.23,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in workings of navigation, orientation, and finding one's path through difficulty; Mintaka's Saturn-Mercury nature supports structured communication, careful record-keeping, and the deliberate mastery of a craft or science. Its role in the cosmic Belt makes it a useful anchor star for workings involving the three pillars or tripartite structures.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alnilam",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alnilam",
+      "description": "Alnilam (Epsilon Orionis) is the central and brightest star of Orion's Belt, positioned at 23°28' Gemini in the tropical zodiac. Of the nature of Saturn and Jupiter, it represents the midpoint and heart of the Belt's tripartite structure. Alnilam confers a quality of dignified ambition, public honours, and the ability to unite structure (Saturn) with vision (Jupiter) — a combination favoured for those in administrative, judicial, or philosophical roles. In the Hermetic tradition the Belt was sometimes aligned with the three pillars of the Tree of Life.",
+      "secondaryNames": [
+        { "name": "Epsilon Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "String of Pearls", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
+      "extendedData": {
+        "tropicalLongitude": 23.47,
+        "constellation": "Orion",
+        "magnitude": 1.69,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used in talismans for balanced authority — blending discipline with wisdom — and for workings seeking long-term success through principled effort; Alnilam was favoured by scholars and administrators who needed to build enduring institutions. Its central Belt position makes it an anchor for workings involving triplicities or the reconciliation of extremes.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alnitak",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alnitak",
+      "description": "Alnitak (Zeta Orionis) is the easternmost star of Orion's Belt, positioned at 24°34' Gemini in the tropical zodiac, the last of the three Belt stars to rise. Of the nature of Saturn and Jupiter, like its Belt companions, Alnitak is associated with completion, culmination, and the harvest of long labour — the end of a great journey or undertaking. The Horsehead Nebula lies just to the south of this star, giving it a particularly evocative place in modern astronomical imagination as well as traditional significance.",
+      "secondaryNames": [
+        { "name": "Zeta Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Al-Nitak", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
+      "extendedData": {
+        "tropicalLongitude": 24.57,
+        "constellation": "Orion",
+        "magnitude": 1.74,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Favoured in workings of completion, culmination, and the sealing of great works; Alnitak's position as the final Belt star makes it appropriate for endings that open new beginnings, the sealing of oaths, and the completion of long magical operations. Saturn-Jupiter together bring the ability to conclude with both rigour and grace.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.betelgeuse",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Betelgeuse",
+      "description": "Betelgeuse (Alpha Orionis) is the great red supergiant marking Orion's right shoulder, one of the largest stars visible to the naked eye, positioned at 28°45' Gemini in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Mars and Mercury, it bestows honours, riches, military success, and great good fortune — particularly in careers requiring both bravery and intelligence. The star's reddish hue and its eventual fate as a supernova have made it a symbol of both the warrior's glory and the transience of even the greatest power.",
+      "secondaryNames": [
+        { "name": "Alpha Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Beit al-Jauzā", "languageTag": "ar", "visible": true, "sortOrder": 1 },
+        { "name": "Shoulder of Orion", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 28.75,
+        "constellation": "Orion",
+        "magnitude": 0.45,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "The Behenian talisman of Betelgeuse — made in sardonyx or jasper with aristolochia — was used for military success, honours in competitive fields, and protection of the body in battle; its Mars-Mercury combination makes it excellent for workings requiring both courage and tactical cleverness. It was also invoked for good fortune in athletic contests and any arena of open competition.",
+        "behenianStar": true,
+        "behenianStone": "Sardonyx",
+        "behenianHerb": "Aristolochia (Birthwort)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.polaris",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Polaris",
+      "description": "Polaris (Alpha Ursae Minoris), the North Star, is positioned at approximately 28°34' Gemini in the tropical zodiac. Of the nature of Saturn and Venus, it is the one star that does not appear to move, making it the supreme symbol of constancy, unwavering orientation, and the fixed axial point around which all else revolves. In esoteric tradition Polaris was venerated as the gateway of the gods, the 'hole in the sky' through which divine influence poured, and in shamanic traditions worldwide it marks the World Axis (Axis Mundi) connecting earth to the heavens.",
+      "secondaryNames": [
+        { "name": "Alpha Ursae Minoris", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "North Star", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Pole Star", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Cynosura", "languageTag": "la", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "ursa-minor"],
+      "extendedData": {
+        "tropicalLongitude": 28.57,
+        "constellation": "Ursa Minor",
+        "magnitude": 1.98,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used in workings of orientation, constancy, and the finding of true direction; Polaris talismans were carried by travellers and navigators for protection and guidance, and invoked by those seeking steadfastness of purpose when all else was in flux. Its Axis Mundi symbolism makes it appropriate for shamanic journeys, centring meditations, and rituals that establish sacred space.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sirius",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sirius",
+      "description": "Sirius (Alpha Canis Majoris) is the brightest star in the night sky and one of the most celebrated stars in human history, positioned at 14°05' Cancer in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Jupiter and Mars (or sometimes called 'Nature of Jupiter' alone), Sirius was worshipped by the ancient Egyptians as Sopdet, whose heliacal rising marked the flooding of the Nile and the beginning of the agricultural year. It confers great honour, renown, wealth, and the ability to command — truly a royal star of the first magnitude, associated with divine gifts, guardianship, and the highest forms of magical power.",
+      "secondaryNames": [
+        { "name": "Alpha Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Dog Star", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Sopdet", "languageTag": "egy", "visible": true, "sortOrder": 2 },
+        { "name": "Al-Shi'rā", "languageTag": "ar", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 14.08,
+        "constellation": "Canis Major",
+        "magnitude": -1.46,
+        "planetaryNature": "Nature of Jupiter and Mars",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Sirius — made in beryl or crystal with juniper — was used for great honour, the granting of wishes, the acquisition of guardians and helpers, and the highest forms of magical initiation; the Egyptians used its heliacal rising to time sacred rituals and agricultural rites. In Hermetic and Thelemic traditions Sirius holds supreme importance as the Star of the Goddess Isis-Nuit and the source of the magical current.",
+        "behenianStar": true,
+        "behenianStone": "Beryl",
+        "behenianHerb": "Juniper"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.canopus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Canopus",
+      "description": "Canopus (Alpha Carinae) is the second brightest star in the sky, positioned at 14°58' Cancer in the tropical zodiac, though visible only from southern latitudes. Of the nature of Saturn and Jupiter, it was the star by which ancient Egyptian, Arab, and Greek navigators oriented themselves in the southern seas, and its name (possibly derived from the pilot of the fleet of Menelaus) links it permanently to wisdom, wayfinding, and the accumulated knowledge of long voyages. In esoteric tradition Canopus represents the deep wisdom gained through arduous experience and the ability to navigate the unknown.",
+      "secondaryNames": [
+        { "name": "Alpha Carinae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Suhail", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "carina"],
+      "extendedData": {
+        "tropicalLongitude": 14.97,
+        "constellation": "Carina",
+        "magnitude": -0.74,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Invoked in workings of navigation, wisdom-seeking, and the resolution of long journeys both physical and spiritual; Canopus was used in talismans for those facing long ordeals, providing the inner compass that permits survival and success in hostile or unknown territory. Its deep southern position gives it a connection to the underworld, hidden knowledge, and the wisdom of initiatory descent.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.procyon",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Procyon",
+      "description": "Procyon (Alpha Canis Minoris), 'before the dog' in Greek, rises just before Sirius and is positioned at 25°47' Cancer in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Mercury and Mars, it is considered generally fortunate in conferring wealth, sudden fame, and good relationships — but also carries a shadow of capriciousness and the danger of jealousy from one's success. Its role as the forerunner of Sirius gives it associations with heralds, pioneers, and those who prepare the way for greater things.",
+      "secondaryNames": [
+        { "name": "Alpha Canis Minoris", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Little Dog Star", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-minor", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 25.78,
+        "constellation": "Canis Minor",
+        "magnitude": 0.34,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Procyon — made in agate with heliotrope — was used to gain wealth, social favour, and the power to anticipate coming events; as a forerunner star it was invoked to help practitioners stay ahead of circumstances and react with both speed and cunning. Its Mercury-Mars nature also supports workings of rhetoric, quick decision, and competitive intelligence.",
+        "behenianStar": true,
+        "behenianStone": "Agate",
+        "behenianHerb": "Heliotrope (Marigold)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.castor",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Castor",
+      "description": "Castor (Alpha Geminorum) is one of the famous divine twins of Gemini, positioned at 20°14' Cancer in the tropical zodiac. Of the nature of Mercury and Mars, Castor was considered the mortal twin (compared to immortal Pollux) and associated with sudden calamities, violence, and imprisonment, though also with gifts of speech, versatility, and skill in multiple arts. The duality of mortal and immortal, favourable and destructive, runs through all Castor's influences — it is a star of great complexity that rewards nuanced interpretation.",
+      "secondaryNames": [
+        { "name": "Alpha Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Apollo", "languageTag": "la", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 20.23,
+        "constellation": "Gemini",
+        "magnitude": 1.57,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used with care in workings requiring quick wit, communicative brilliance, and versatile skill; Castor's dual nature makes it potent for works of transformation that involve sacrifice or enduring difficulty to gain a gift. Its connection to the mortal-immortal polarity makes it appropriate in meditations on transcendence through suffering.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.pollux",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Pollux",
+      "description": "Pollux (Beta Geminorum) is the brighter of the twin stars of Gemini and the immortal divine twin, positioned at 23°13' Cancer in the tropical zodiac. Of the nature of Mars and Moon, classical authors describe Pollux as generally more fortunate than Castor, conferring boldness, a commanding presence, athletic prowess, and the ability to recover from setbacks — though it also carries undertones of craftiness and aggression. As the immortal twin who shared his immortality with Castor, Pollux embodies the themes of generosity, brotherhood, and the self-transcending power of loyalty.",
+      "secondaryNames": [
+        { "name": "Beta Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Hercules", "languageTag": "la", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 23.22,
+        "constellation": "Gemini",
+        "magnitude": 1.16,
+        "planetaryNature": "Nature of Mars and Moon",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.luna",
+        "magicalUses": "Favoured in talismans for athletic success, competitive dominance, and recovery from injury or defeat; Pollux's immortal quality makes it useful in workings seeking to break cycles of failure and establish a lasting victorious pattern. Its connection to generosity and brotherhood also makes it appropriate for rituals strengthening bonds of loyalty and mutual support.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.praesepe",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Praesepe",
+      "description": "Praesepe (M44, the Beehive Cluster) is an open star cluster in Cancer, positioned at 7°20' Leo in the tropical zodiac, visually appearing as a nebulous patch between the two Asellus stars. One of the fifteen Behenian stars and of the nature of Mars and Moon, the ancient Greeks and Romans used Praesepe as a weather indicator — if the cluster was invisible in otherwise clear skies, storms were predicted. Classically associated with blindness, violence, accidents, and sickness when prominent, it also carries a quality of teeming, collective activity and the mysteries of the hive mind.",
+      "secondaryNames": [
+        { "name": "Messier 44", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Beehive Cluster", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Manger", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Al-Nathra", "languageTag": "ar", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "cancer", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 7.33,
+        "constellation": "Cancer",
+        "magnitude": 3.7,
+        "planetaryNature": "Nature of Mars and Moon",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.luna",
+        "magicalUses": "The Behenian talisman of Praesepe — made in crystal with black hellebore and mugwort — was used for summoning spirits, achieving clairvoyance, and guarding against blindness of both the eyes and the understanding; its nebulous quality links it to the veiled, the hidden, and the mysteries of collective intelligence. Approached with care, it can open psychic perception and reveal concealed threats.",
+        "behenianStar": true,
+        "behenianStone": "Crystal (Rock Crystal)",
+        "behenianHerb": "Black Hellebore (Mugwort)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.north-asellus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "North Asellus",
+      "description": "North Asellus (Gamma Cancri), one of the two Asellus stars or 'little donkeys' flanking Praesepe, is positioned at 7°32' Leo in the tropical zodiac. Of the nature of Mars and Moon, the Aselli are named after the donkeys that carried Dionysus and his companion Silenus into battle during the Gigantomachy — their braying frightened the Giants into flight, winning the day. This mythology links the Aselli to unexpected victories through apparently undignified or non-heroic means, and to the connection between the mundane and divine.",
+      "secondaryNames": [
+        { "name": "Gamma Cancri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Asellus Borealis", "languageTag": "la", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "cancer"],
+      "extendedData": {
+        "tropicalLongitude": 7.53,
+        "constellation": "Cancer",
+        "magnitude": 4.67,
+        "planetaryNature": "Nature of Mars and Moon",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.luna",
+        "magicalUses": "Used in workings where unexpected persistence overcomes seemingly stronger opposition; the North Asellus lends the quality of endurance and the ability to find advantage through means others overlook. Its Dionysian mythology links it to workings of sacred intoxication and the breaking of rational constraints.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.south-asellus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "South Asellus",
+      "description": "South Asellus (Delta Cancri), the southern of the two donkey stars, is positioned at 8°43' Leo in the tropical zodiac. Of the same Mars-Moon nature as its northern companion, it shares the Dionysian mythology and the traditional association with unexpected assistance in difficult circumstances. Classical astrologers noted the Aselli together, and when both Asellus stars are active in a chart, the themes of sacrifice, service, and carrying burdens for a greater cause come prominently into view.",
+      "secondaryNames": [
+        { "name": "Delta Cancri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Asellus Australis", "languageTag": "la", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "cancer"],
+      "extendedData": {
+        "tropicalLongitude": 8.72,
+        "constellation": "Cancer",
+        "magnitude": 3.94,
+        "planetaryNature": "Nature of Mars and Moon",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.luna",
+        "magicalUses": "Employed in workings of humble service, sacrifice for a greater good, and finding strength in apparent weakness; the South Asellus supports those who bear heavy burdens and need the inner fortitude to continue without recognition. Its southern position makes it particularly connected to the emotional and instinctive dimensions of the Mars-Moon polarity.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alphard",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alphard",
+      "description": "Alphard (Alpha Hydrae), 'the Solitary One', is the brightest star of Hydra the Water Serpent, positioned at 27°17' Leo in the tropical zodiac. Of the nature of Saturn and Venus, it is a deeply ambivalent star — associated with profound wisdom, emotional depth, and artistic or poetic gifts, but equally with poison, treachery, excess, and tragedy borne of excessive passion. The Hydra, the many-headed monster slain by Hercules, lends Alphard its themes of the uncontrollable, the regenerative power of darkness, and the hidden serpent wisdom of the depths.",
+      "secondaryNames": [
+        { "name": "Alpha Hydrae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Solitary One", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Fard", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "hydra"],
+      "extendedData": {
+        "tropicalLongitude": 27.28,
+        "constellation": "Hydra",
+        "magnitude": 1.99,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Approached with great care in workings of depth psychology, serpent wisdom, and the transformation of poison into medicine; Alphard was invoked by those seeking to understand the hidden emotional currents underlying behaviour and to transmute destructive passions into creative or healing power. Its solitary quality also makes it useful for works of inner isolation and hermit-like contemplation.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.regulus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Regulus",
+      "description": "Regulus (Alpha Leonis), the 'Heart of the Lion' and 'Little King', is one of the four Royal Stars of ancient Persia, serving as the Watcher of the North, positioned at 29°50' Leo in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Jupiter and Mars, Regulus is the most regal of all fixed stars — conferring great success, high honours, military glory, and the favour of the powerful, provided the native does not seek revenge for injuries received. This crucial condition, found consistently across all classical sources, gives Regulus a deeply moral dimension: greatness is sustained only by magnanimity.",
+      "secondaryNames": [
+        { "name": "Alpha Leonis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Heart of the Lion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Qalb al-Asad", "languageTag": "ar", "visible": true, "sortOrder": 2 },
+        { "name": "Watcher of the North", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Cor Leonis", "languageTag": "la", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["fixed-star", "astrology", "leo", "behenian", "royal-star"],
+      "extendedData": {
+        "tropicalLongitude": 29.83,
+        "constellation": "Leo",
+        "magnitude": 1.36,
+        "planetaryNature": "Nature of Jupiter and Mars",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Regulus — made in granite or red jasper with mugwort — was used to gain the favour of kings and authorities, achieve royal honours, and command the respect of others; as the Northern Royal Star it was invoked for all works of leadership, sovereignty, and noble ambition. Its moral condition — never seek revenge — makes its talisman a reminder that true greatness requires magnanimity.",
+        "behenianStar": true,
+        "behenianStone": "Granite (Red Jasper)",
+        "behenianHerb": "Mugwort (Celandine)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zosma",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zosma",
+      "description": "Zosma (Delta Leonis), located on the back of the Lion, is positioned at 11°19' Virgo in the tropical zodiac. Of the nature of Saturn and Venus — a combination that brings friction between limitation and pleasure — it is traditionally considered a star of burdens, disgrace, and sorrow, though it also bestows sensitivity, introspection, and a compassionate understanding of suffering. Zosma is associated with those who take on the suffering of others, either voluntarily as healers or involuntarily through difficult circumstances.",
+      "secondaryNames": [
+        { "name": "Delta Leonis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Duhr", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "leo"],
+      "extendedData": {
+        "tropicalLongitude": 11.32,
+        "constellation": "Leo",
+        "magnitude": 2.56,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used with awareness in workings of compassion, healing through one's own experience of suffering, and the transmutation of grief into wisdom; Zosma supports the work of those who bear burdens gracefully and who find meaning in sacrifice. Its Saturn-Venus quality connects it to the beauty found within limitation and the grace of accepting one's constraints.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.denebola",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Denebola",
+      "description": "Denebola (Beta Leonis), the tail of the Lion, is positioned at 21°37' Virgo in the tropical zodiac. Of the nature of Saturn and Venus, classical authors associate it with misfortune, disgrace, loss, and enmity — yet paradoxically also with speed, brilliance, and the gift of commanding attention. Its tail position gives it an association with what is behind or overlooked, the sting in the ending, and the consequences of past actions catching up with the present.",
+      "secondaryNames": [
+        { "name": "Beta Leonis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Tail of the Lion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Danab al-Asad", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "leo"],
+      "extendedData": {
+        "tropicalLongitude": 21.62,
+        "constellation": "Leo",
+        "magnitude": 2.14,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Employed in workings of karmic reckoning, uncovering hidden consequences, and the magic of endings and conclusions; Denebola supports workings where the practitioner must face the results of past choices honestly and find the grace to accept what has been left behind. Its swift, brilliant quality also makes it useful for works of quick reversal and fast-moving change.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.vindemiatrix",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Vindemiatrix",
+      "description": "Vindemiatrix (Epsilon Virginis), 'the Grape Gatherer', is positioned at 9°56' Libra in the tropical zodiac. Of the nature of Saturn and Mercury, its heliacal rising in antiquity signalled the time of the grape harvest, hence its name. Classical astrologers associated it with widowhood, the death of partners, and accidents — Ptolemy noted its Saturn-Mercury nature as conducive to sorrow — but it also carries the quality of gathering and completing, of knowing when the season is ripe for harvest.",
+      "secondaryNames": [
+        { "name": "Epsilon Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Grape Gatherer", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Almuredin", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 9.93,
+        "constellation": "Virgo",
+        "magnitude": 2.85,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in workings of harvest magic, knowing when to reap what has been planted, and accepting the natural conclusion of cycles; Vindemiatrix supports those who must gather in what they have cultivated and release what is done. Its association with widowhood connects it to practices of grief, completion, and the wisdom of those who have outlasted their companions.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.spica",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Spica",
+      "description": "Spica (Alpha Virginis) is the brightest star of Virgo, positioned at 23°50' Libra in the tropical zodiac, and one of the most consistently fortunate of all fixed stars across every classical tradition. One of the fifteen Behenian stars and of the nature of Venus and Mars (with some sources adding Mercury), Spica bestows artistic brilliance, scientific achievement, love and recognition, and material success — all with an ease and grace that distinguishes it from stars that bring success only through struggle. The ear of wheat held by the Virgin gives Spica its associations with fertile abundance, nourishment, and the gift that is freely given.",
+      "secondaryNames": [
+        { "name": "Alpha Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Ear of Wheat", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Simāk al-A'zal", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 23.83,
+        "constellation": "Virgo",
+        "magnitude": 1.04,
+        "planetaryNature": "Nature of Venus and Mars",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Spica — made in emerald with sage — was used to gain wealth, love, fame in the arts and sciences, and the protection of the good and wise; it is perhaps the most wholesome of all Behenian star talismans, conferring blessings freely and without the moral conditions attached to some other stars. Spica was a premier star for consecrating any work of beauty, healing, fertility, or artistic excellence.",
+        "behenianStar": true,
+        "behenianStone": "Emerald",
+        "behenianHerb": "Sage"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.arcturus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Arcturus",
+      "description": "Arcturus (Alpha Boötis) is the fourth brightest star in the sky and the brightest north of the celestial equator, positioned at 24°14' Libra in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Jupiter and Mars, it is one of the most benefic of fixed stars, bestowing great success — particularly to those who achieve through their own industry, enterprise, and sheer persistent effort rather than through inheritance or privilege. The name 'Arcturus' means 'Guardian of the Bear', linking it to the role of protector, guide, and faithful keeper.",
+      "secondaryNames": [
+        { "name": "Alpha Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Guardian of the Bear", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Simāk al-Rāmiḥ", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 24.23,
+        "constellation": "Boötes",
+        "magnitude": -0.05,
+        "planetaryNature": "Nature of Jupiter and Mars",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "The Behenian talisman of Arcturus — made in jasper with plantain — was used to gain wealth and honour through one's own persistent effort, to protect one's territory and those in one's care, and to succeed in explorations of new territory whether physical, intellectual, or spiritual. Its guardian quality makes it an excellent star to invoke at the beginning of long journeys or ambitious projects.",
+        "behenianStar": true,
+        "behenianStone": "Jasper",
+        "behenianHerb": "Plantain"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.algorab",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Algorab",
+      "description": "Algorab (Delta Corvi), a star in the Crow or Raven constellation, is positioned at 13°27' Libra in the tropical zodiac. Of the nature of Mars and Saturn, it is one of the more challenging fixed stars, associated with scavenging, destructiveness, overreaching, and the tendency to profit from the misfortunes of others. The Raven in mythology is an ambivalent creature — a messenger, a trickster, a harbinger of ill — and Algorab carries all these qualities: cunning intelligence that can be turned to wise or cruel ends.",
+      "secondaryNames": [
+        { "name": "Delta Corvi", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Al-Ghurāb", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "corvus"],
+      "extendedData": {
+        "tropicalLongitude": 13.45,
+        "constellation": "Corvus",
+        "magnitude": 2.94,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Employed cautiously in workings of divination through omens, in magic using the power of the trickster, and in protective charms against those who would exploit or deceive; the Raven's intelligence, while often turned to dark ends, can also serve as a sharp scout revealing what is hidden. Best used under Saturn-Mars hours for uncovering deception.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zubenelgenubi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zubenelgenubi",
+      "description": "Zubenelgenubi (Alpha Librae), 'the Southern Claw' — a remnant name from when Libra's stars were considered the claws of Scorpio — is positioned at 15°05' Scorpio in the tropical zodiac. Of the nature of Saturn and Mars, it is considered a malefic influence in classical astrology, associated with treachery, poisoning, lying, and the corruption of justice. Its position in the scales suggests the danger of deliberately unbalanced judgement, the willful perversion of fairness for selfish ends.",
+      "secondaryNames": [
+        { "name": "Alpha Librae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Southern Claw", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Zubānā al-Janūbiyya", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "libra"],
+      "extendedData": {
+        "tropicalLongitude": 15.08,
+        "constellation": "Libra",
+        "magnitude": 2.75,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used with extreme caution in defensive magic, binding spells against treacherous enemies, and workings designed to reveal and neutralise injustice; its southern claw position makes it effective for grasping and holding adversaries. Its dangerous nature demands that any work under this star be strictly protective or revelatory rather than offensive.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zubeneschamali",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zubeneschamali",
+      "description": "Zubeneschamali (Beta Librae), 'the Northern Claw', is the brighter of the two Libra alpha stars, positioned at 19°22' Scorpio in the tropical zodiac, and uniquely the only star that some observers report as visually green-tinted to the naked eye. Of the nature of Jupiter and Mercury, it is one of the few Libra stars considered generally fortunate, conferring honours, social distinction, good judgement, and success in positions of trust. Its northern position within the Scales suggests the elevation of true justice and the reward of honest dealing.",
+      "secondaryNames": [
+        { "name": "Beta Librae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Northern Claw", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Zubānā al-Shamāliyya", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "libra"],
+      "extendedData": {
+        "tropicalLongitude": 19.37,
+        "constellation": "Libra",
+        "magnitude": 2.61,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Favoured in workings of justice, diplomacy, arbitration, and the winning of legal or social disputes through fair means; Zubeneschamali supports those who deal honestly and seek to establish righteous order in their affairs. Its Jupiter-Mercury nature combines broad wisdom with precise communication, making it useful for persuasive writing and speech on behalf of just causes.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.unukalhai",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Unukalhai",
+      "description": "Unukalhai (Alpha Serpentis), 'the neck of the Serpent', is positioned at 22°05' Scorpio in the tropical zodiac. Of the nature of Saturn and Mars, it is considered malefic by most classical authorities, associated with sickness, immorality, and difficulties in relationships — yet the Serpent in esoteric tradition is also the keeper of wisdom, the power of healing (as in the caduceus), and the kundalini force. Unukalhai thus presents a profound ambivalence: the poison that heals, the dangerous wisdom that transforms.",
+      "secondaryNames": [
+        { "name": "Alpha Serpentis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Neck of the Serpent", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Unuk al-Hayyah", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "serpens"],
+      "extendedData": {
+        "tropicalLongitude": 22.08,
+        "constellation": "Serpens",
+        "magnitude": 2.63,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used in advanced esoteric work for serpent wisdom, kundalini activation, and the transformation of poisonous emotional patterns into healing wisdom; Unukalhai demands great skill and inner purity in the practitioner, as its energies easily tip toward self-destruction. In healing magic it was invoked to identify and neutralise the deep root of a sickness.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.agena",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Agena",
+      "description": "Agena (Beta Centauri), also called Hadar, is one of the brightest stars in the sky and the knee of the Centaur constellation, positioned at 23°48' Scorpio in the tropical zodiac. Of the nature of Venus and Jupiter, it is considered fortunate, bestowing honour, health, good friendship, and the ability to inspire and lead others. The Centaur Chiron — the wise healer and teacher — gives this star its deepest esoteric resonance: the combination of animal nature and divine wisdom, the ability to heal others while bearing one's own wound.",
+      "secondaryNames": [
+        { "name": "Beta Centauri", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Hadar", "languageTag": "ar", "visible": true, "sortOrder": 1 },
+        { "name": "Knee of the Centaur", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 23.8,
+        "constellation": "Centaurus",
+        "magnitude": 0.61,
+        "planetaryNature": "Nature of Venus and Jupiter",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Favoured in workings of healing, mentorship, and the generous sharing of wisdom and skill; Agena supports all those in the role of teacher, healer, or guide, and is particularly potent for those who heal from their own experience of wounding. Its Venus-Jupiter combination brings the gifts of beauty, abundance, and the capacity to inspire love and loyalty.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.antares",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Antares",
+      "description": "Antares (Alpha Scorpii), the 'Heart of the Scorpion' and 'rival of Mars' (anti-Ares), is one of the four Royal Stars of ancient Persia, serving as the Watcher of the West, positioned at 9°46' Sagittarius in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Mars and Jupiter, Antares is a supergiant of deep red, visually the scorpion's pulsing heart, and was considered the most powerful and dangerous of the Royal Stars — capable of bestowing the greatest honours but equally prone to dramatic reversals when the native courts excess, passion, or obsession. The condition for Antares's favour: act with integrity and curb the passionate, all-or-nothing intensity that is its shadow side.",
+      "secondaryNames": [
+        { "name": "Alpha Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Heart of the Scorpion", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Rival of Mars", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Watcher of the West", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius", "behenian", "royal-star"],
+      "extendedData": {
+        "tropicalLongitude": 9.77,
+        "constellation": "Scorpius",
+        "magnitude": 1.06,
+        "planetaryNature": "Nature of Mars and Jupiter",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "The Behenian talisman of Antares — made in sardonyx with long aristolochia — was used for all works of power, penetration into hidden matters, and the destruction of enemies; as the Western Royal Star it was placed in the west of ritual space to guard against spiritual attack and to provide the force needed for major transformations. Its most sacred use was in initiatory rituals where the candidate faces their deepest fears and passions.",
+        "behenianStar": true,
+        "behenianStone": "Sardonyx",
+        "behenianHerb": "Long Aristolochia (Birthwort)"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.rastaban",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Rastaban",
+      "description": "Rastaban (Beta Draconis), 'the Head of the Dragon', is positioned at 11°58' Sagittarius in the tropical zodiac. Of the nature of Saturn and Mars, it carries challenging influences associated with accidents, violence, loss of property, and sudden misfortune — the serpentine Dragon nature reflected in unpredictable strikes of ill fortune. Yet the Dragon is also a keeper of treasure and a symbol of ancient, chthonic wisdom, and Rastaban can confer fierce protective energy when approached correctly.",
+      "secondaryNames": [
+        { "name": "Beta Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Head of the Dragon", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Alwaid", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 11.97,
+        "constellation": "Draco",
+        "magnitude": 2.79,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used with caution in protective magic invoking the guardian Dragon, binding workings, and operations requiring fierce defence of treasured resources; Rastaban's energy is well-suited to marking boundaries that must not be crossed and establishing the protective perimeter of sacred space. Its Dragon symbolism makes it appropriate for workings of ancient, chthonic magic.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.ras-algethi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Ras Algethi",
+      "description": "Ras Algethi (Alpha Herculis), 'the Head of the Kneeling One', is a beautiful double star marking the head of Hercules, positioned at 16°07' Sagittarius in the tropical zodiac. Of the nature of Mars and Venus, it combines the heroic, active force of the hero with Venus's grace and love of beauty — producing a quality of noble ambition, physical prowess, artistic sensibility, and the capacity for both great deeds and great pleasure. Hercules as a figure represents the highest development of human potential through labour, courage, and the willingness to undertake impossible tasks.",
+      "secondaryNames": [
+        { "name": "Alpha Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Head of the Kneeling One", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Ras al-Jaثī", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 16.12,
+        "constellation": "Hercules",
+        "magnitude": 3.48,
+        "planetaryNature": "Nature of Mars and Venus",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Invoked in workings of heroic endeavour, the undertaking of great labours for noble purpose, and the cultivation of both physical excellence and aesthetic refinement; Ras Algethi supports those who seek to express the highest human potential through disciplined effort and grace. Its Mars-Venus blend makes it appropriate for workings combining passion and beauty.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sabik",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sabik",
+      "description": "Sabik (Eta Ophiuchi) is positioned at 17°58' Sagittarius in the tropical zodiac, in the constellation of the Serpent Bearer. Of the nature of Saturn and Jupiter, it carries an ambivalent influence — associated with waste, perversity, and moral difficulty on the one hand, but also with the deep wisdom of the healer-magician Ophiuchus who holds the serpent. The Serpent Bearer is sometimes considered the mythological Asclepius, the divine physician, giving Sabik connections to medical knowledge and the mysteries of life, death, and restoration.",
+      "secondaryNames": [
+        { "name": "Eta Ophiuchi", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Preceding One", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "ophiuchus"],
+      "extendedData": {
+        "tropicalLongitude": 17.97,
+        "constellation": "Ophiuchus",
+        "magnitude": 2.43,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used in advanced healing magic, workings with serpent wisdom, and meditations on the mysteries of Asclepius and the divine physician; Sabik can access deep layers of medical intuition and the ability to perceive the invisible causes of sickness. Its Saturn-Jupiter quality demands disciplined ethical framework when working with its healing-and-harming dual potential.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.vega",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Vega",
+      "description": "Vega (Alpha Lyrae) is the fifth brightest star in the sky and one of the three stars forming the Summer Triangle, positioned at 15°19' Capricorn in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Venus and Mercury, Vega is one of the most fortunate stars for artistic, musical, and magical talent — bestowing a captivating quality, the ability to enchant through beauty, refined aesthetic sense, and a magnetic personal charm. In ancient times Vega served as the pole star (around 12,000 BCE) and will do so again around 13,727 CE — giving it an additional esoteric quality of cosmic centrality and the long cycles of precession.",
+      "secondaryNames": [
+        { "name": "Alpha Lyrae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Wega", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Al-Nasr al-Wāqi'", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "lyra", "behenian"],
+      "extendedData": {
+        "tropicalLongitude": 15.32,
+        "constellation": "Lyra",
+        "magnitude": 0.03,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "The Behenian talisman of Vega — made in chrysolite (peridot) with winter savory — was used to confer musical and artistic genius, magical power, and a captivating personal magnetism; the lyre of Orpheus, whose music could move all things, is Vega's mythological instrument and its greatest magical gift. It was the premier star for consecrating musical instruments, magical wands of enchantment, and talismans of seduction and beauty.",
+        "behenianStar": true,
+        "behenianStone": "Chrysolite (Peridot)",
+        "behenianHerb": "Winter Savory"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.altair",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Altair",
+      "description": "Altair (Alpha Aquilae), the brightest star of the Eagle constellation and another vertex of the Summer Triangle, is positioned at 1°47' Aquarius in the tropical zodiac. Of the nature of Mars and Jupiter, it confers boldness, ambition, a daring and enterprising spirit, and the capacity for sudden decisive action — but also danger from recklessness and the tendency to overreach. The Eagle in mythology is the king of birds, the carrier of divine lightning, Jupiter's companion — lending Altair an association with soaring ambition and the heights of both achievement and hubris.",
+      "secondaryNames": [
+        { "name": "Alpha Aquilae", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Al-Nasr al-Tā'ir", "languageTag": "ar", "visible": true, "sortOrder": 1 },
+        { "name": "The Flying Eagle", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquila"],
+      "extendedData": {
+        "tropicalLongitude": 1.78,
+        "constellation": "Aquila",
+        "magnitude": 0.77,
+        "planetaryNature": "Nature of Mars and Jupiter",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Invoked in workings of bold enterprise, soaring ambition, and rapid achievement; Altair supports those who must act decisively and take risks in pursuit of great goals, lending the eagle's vision to see the target and the eagle's speed to strike it. Its danger lies in overconfidence, so workings with Altair benefit from the grounding of a Saturn talisman as companion.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.deneb-algedi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Deneb Algedi",
+      "description": "Deneb Algedi (Delta Capricorni), 'the tail of the Goat', is positioned at 23°33' Aquarius in the tropical zodiac. Of the nature of Saturn and Jupiter, it presents the classic paradox of misfortune followed by unexpected reversal and good fortune — as the goat-fish of Capricorn plunges into the deep and emerges transformed. Classical authors noted that planets in conjunction with Deneb Algedi often brought difficulties first but ultimately resolved in beneficial ways, making it a star of the redemptive arc and transformation through hardship.",
+      "secondaryNames": [
+        { "name": "Delta Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Tail of the Goat", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Al-Muhibb", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 23.55,
+        "constellation": "Capricornus",
+        "magnitude": 2.85,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used in workings of transformation through difficulty, finding the hidden blessing within hardship, and the magic of redemptive arcs; Deneb Algedi supports those who have suffered setbacks and seek to understand how their trials are ultimately serving a larger good. Its Saturn-Jupiter axis bridges contraction and expansion in ways that can generate profound spiritual growth.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sadalsuud",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sadalsuud",
+      "description": "Sadalsuud (Beta Aquarii), 'the luckiest of the lucky', is one of the brightest stars of Aquarius, positioned at 23°24' Aquarius in the tropical zodiac. Of the nature of Saturn and Mercury, its Arabic name alone speaks to its traditional reputation as a star of great fortune, benevolent wisdom, and the spring rains that bring fertility to the land. It is associated with the return of light after darkness, the arrival of beneficial change, and the generous outpouring of gifts from a place of deeper understanding.",
+      "secondaryNames": [
+        { "name": "Beta Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Luckiest of the Lucky", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Sa'd al-Su'ūd", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 23.4,
+        "constellation": "Aquarius",
+        "magnitude": 2.87,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in workings of good fortune, the reversal of bad luck, and the calling in of beneficial change; Sadalsuud was used in talismans placed in the home or worn to attract blessings, good news, and the turning of the tide from winter's difficulty to spring's abundance. Its Saturn-Mercury quality combines enduring wisdom with the communication and movement necessary to bring good fortune into manifestation.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.fomalhaut",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Fomalhaut",
+      "description": "Fomalhaut (Alpha Piscis Austrini), 'the Mouth of the Southern Fish', is the fourth Royal Star of ancient Persia, serving as the Watcher of the South, positioned at 3°52' Pisces in the tropical zodiac. One of the fifteen Behenian stars and of the nature of Venus and Mercury, it is the most mystical and spiritually elevated of the four Royal Stars — associated with occult gifts, the magical arts, poetic inspiration, and the ability to perceive invisible realities. It confers fame, fortune, and a quality of otherworldly grace, but its condition is spiritual idealism: when its influence is expressed through base or materialistic ends, the gifts turn to confusion and dissolution.",
+      "secondaryNames": [
+        { "name": "Alpha Piscis Austrini", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Mouth of the Southern Fish", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Fum al-Hūt", "languageTag": "ar", "visible": true, "sortOrder": 2 },
+        { "name": "Watcher of the South", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["fixed-star", "astrology", "piscis-austrinus", "behenian", "royal-star"],
+      "extendedData": {
+        "tropicalLongitude": 3.87,
+        "constellation": "Piscis Austrinus",
+        "magnitude": 1.16,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "The Behenian talisman of Fomalhaut — made in amethyst with fern — was used to gain occult wisdom, magical powers, artistic genius, and inspired vision; as the Southern Royal Star it was placed in the south of ritual space and invoked for all works of clairvoyance, spirit contact, and the highest magical arts. Its spiritual condition makes it the star of choice for dedicating oneself to a life of genuine spiritual service and mystical development.",
+        "behenianStar": true,
+        "behenianStone": "Amethyst",
+        "behenianHerb": "Fern"
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.deneb",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Deneb",
+      "description": "Deneb (Alpha Cygni), the tail of the Swan (Cygnus), is one of the most luminous stars known — estimated to be approximately 100,000 times as bright as the Sun — and is positioned at 5°22' Pisces in the tropical zodiac. Of the nature of Venus and Mercury, Deneb carries the artistic sensitivity and visionary quality associated with the Swan, one of the most mythologically rich constellations: it is Orpheus transformed, Zeus in disguise approaching Leda, the constellation of music, poetry, and divine love. It bestows artistic gifts, psychic sensitivity, and a quality of otherworldly, transcendent beauty.",
+      "secondaryNames": [
+        { "name": "Alpha Cygni", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Tail of the Swan", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Arided", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 5.37,
+        "constellation": "Cygnus",
+        "magnitude": 1.25,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in workings of artistic transcendence, poetic inspiration, and the accessing of otherworldly beauty; Deneb supports practitioners who work with the arts as spiritual practice, musicians, poets, and those who seek to translate divine experience into earthly form. Its swan symbolism links it to soul travel, the passage between worlds, and the beauty of transformation.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.achernar",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Achernar",
+      "description": "Achernar (Alpha Eridani), 'the End of the River', is the ninth brightest star in the sky and marks the end of the celestial river Eridanus, positioned at 15°19' Pisces in the tropical zodiac. Of the nature of Jupiter, it is considered one of the most purely fortunate fixed stars, bestowing success in public life, access to royalty and those in high positions, and a quality of divine favour. Its position at the end of a great river — the river that in Egyptian mythology was the celestial Nile — gives it an association with completion, arrival at the ultimate destination, and the sea of divine being into which all rivers flow.",
+      "secondaryNames": [
+        { "name": "Alpha Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "End of the River", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Ākhir al-Nahr", "languageTag": "ar", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 15.32,
+        "constellation": "Eridanus",
+        "magnitude": 0.46,
+        "planetaryNature": "Nature of Jupiter",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": null,
+        "magicalUses": "Used in workings of completion and arrival — the successful end of long journeys or major life chapters — and for gaining favour with those in authority or royalty; Achernar's pure Jupiter nature makes it excellent for expanding one's circle of influence, gaining patronage, and attracting the benevolence of powerful and wealthy supporters. It was invoked at the conclusion of major ritual cycles as a seal of completion and divine blessing.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.markab",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Markab",
+      "description": "Markab (Alpha Pegasi), 'the Saddle' of the great winged horse Pegasus, is positioned at 23°29' Pisces in the tropical zodiac. Of the nature of Mars and Mercury, it bestows honour, riches, and a reputation for intellectual brilliance, but also carries the danger of accidents, violence, and the swift reversal of fortune characteristic of winged Pegasus — who rises as quickly as he falls. The winged horse represents the soaring intellect, the inspired poetic mind that can access the Muses' spring (the Hippocrene), and the danger of prideful transcendence.",
+      "secondaryNames": [
+        { "name": "Alpha Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Saddle", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 23.48,
+        "constellation": "Pegasus",
+        "magnitude": 2.48,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in workings of intellectual and poetic inspiration, the accessing of higher creative states, and the gaining of honours through brilliance of mind; Markab's winged-horse quality makes it appropriate for meditations involving flight, ascent, and the transcendence of earthly limitation. Its dangerous shadow of reversal means workings under Markab benefit from anchoring in practical groundedness.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.scheat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Scheat",
+      "description": "Scheat (Beta Pegasi) marks the shoulder of Pegasus and is positioned at 29°22' Pisces in the tropical zodiac, very near the end of the zodiac wheel. Of the nature of Mars and Mercury, it is considered one of the most malefic of fixed stars, associated with misfortune, imprisonment, drowning, shipwreck, and extreme reversals — the shadow side of Pegasus's soaring flight is the catastrophic fall. Its position at the very end of the tropical zodiac, just before the return to Aries, gives it an eschatological quality: the dissolution that precedes a new beginning.",
+      "secondaryNames": [
+        { "name": "Beta Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Leg of the Horse", "languageTag": "ar", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 29.37,
+        "constellation": "Pegasus",
+        "magnitude": 2.44,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Approached with extreme care, Scheat can be invoked in workings of radical dissolution, preparation for a new cycle, and the courage to face the abyss before rebirth; it was used by adepts in workings of ego death and initiatory dissolution. Its position at the zodiac's end makes it appropriate for closing rituals, the ending of old cycles, and the willingness to face total uncertainty before a new beginning.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.gnostic-valentinian",
+    "displayName": "Gnostic (Valentinian)",
+    "description": "The Valentinian Gnostic tradition, systematised by Valentinus of Alexandria (c.100–160 CE) and his followers Ptolemy and Heracleon. The Valentinian Pleroma of 30 Aeons in 15 male-female syzygy pairs represents one of the most philosophically sophisticated Gnostic cosmological systems, synthesising Platonic, Pythagorean, and Christian elements. When active, shows Valentinian Aeon cross-references for corresponding Sethian entities.",
+    "attributionFields": [
+      { "linkLabel": "gnostic-parallel", "targetEntityType": "gnostic.aeon", "displayName": "Sethian Parallel" }
+    ]
+  }
+}

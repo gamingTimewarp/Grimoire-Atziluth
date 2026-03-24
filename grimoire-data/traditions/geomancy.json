@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.geomancy",
+    "displayName": "Geomancy",
+    "description": "The Western geomantic tradition, as systematised in the Arabic system (Ilm al-Raml — 'the science of sand') and transmitted through medieval European and Renaissance Hermetic sources including Agrippa's Occult Philosophy, Robert Fludd's Utriusque Cosmi Historia, and the attributions codified by the Hermetic Order of the Golden Dawn. Geomancy assigns each of the sixteen binary figures a governing planet, zodiac sign, and elemental quality, creating a comprehensive symbolic language for divinatory interpretation through the arrangement of odd and even dot rows.",
+    "attributionFields": [
+      { "linkLabel": "attributed-planet", "displayName": "Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-zodiac-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.zodiac-sign", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

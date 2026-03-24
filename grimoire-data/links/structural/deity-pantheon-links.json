@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "deity.greek.hermes",
+      "target": "deity.egyptian.thoth",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.helios",
+      "target": "deity.egyptian.ra",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.aphrodite",
+      "target": "deity.egyptian.hathor",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.zeus",
+      "target": "deity.egyptian.ra",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.zeus",
+      "target": "deity.egyptian.osiris",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.dionysus",
+      "target": "deity.egyptian.osiris",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.persephone",
+      "target": "deity.egyptian.isis",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.ares",
+      "target": "deity.egyptian.horus",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.ares",
+      "target": "deity.egyptian.set",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.hephaestus",
+      "target": "deity.egyptian.ptah",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.hecate",
+      "target": "deity.egyptian.isis",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.hecate",
+      "target": "deity.egyptian.nephthys",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.selene",
+      "target": "deity.egyptian.isis",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.kronos",
+      "target": "deity.egyptian.set",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.hermes-trismegistus",
+      "target": "deity.egyptian.thoth",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.poseidon",
+      "target": "deity.egyptian.osiris",
+      "label": "pantheon-equivalent",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

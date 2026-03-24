@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.hermetic",
+    "displayName": "Hermeticism",
+    "description": "The philosophical and spiritual tradition rooted in the Corpus Hermeticum — a body of Greek and Latin texts written in Egypt between the 1st and 3rd centuries CE and attributed to the legendary Hermes Trismegistus, a syncretic fusion of the Greek Hermes and Egyptian Thoth. Hermeticism encompasses the seven principles of mind, correspondence, vibration, polarity, rhythm, causation, and gender, as well as astrology, alchemy, and theurgy as practical branches. The Renaissance recovery of the Corpus Hermeticum (Ficino, 1463) shaped Western esoteric tradition profoundly, feeding into Rosicrucianism, Freemasonry, and the Golden Dawn. Distinct from but related to tradition.alchemy, which focuses on the laboratory and transformative Work; this tradition covers the broader philosophical framework.",
+    "attributionFields": [
+      {
+        "linkLabel": "attributed-planet",
+        "displayName": "Planetary Correspondence",
+        "targetEntityType": "astrology.planet",
+        "allowMultiple": false,
+        "sortOrder": 0
+      },
+      {
+        "linkLabel": "attributed-alchemical-metal",
+        "displayName": "Alchemical Metal",
+        "targetEntityType": "alchemy.metal",
+        "allowMultiple": false,
+        "sortOrder": 1
+      },
+      {
+        "linkLabel": "attributed-element",
+        "displayName": "Element",
+        "targetEntityType": "astrology.element",
+        "allowMultiple": false,
+        "sortOrder": 2
+      }
+    ]
+  }
+}

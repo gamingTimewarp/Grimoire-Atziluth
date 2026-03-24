@@ -1,0 +1,549 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "enochian.aethyr.tex",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "TEX — 30th Aethyr",
+      "description": "TEX is the outermost and lowest of the 30 Aethyrs, the first and most accessible level of the Enochian cosmological system received by John Dee and Edward Kelley between 1582 and 1587. It forms the threshold between ordinary consciousness and the vast angelic universe arranged in concentric sub-planes above it; approaching TEX is effectively approaching the gate of the entire Enochian hierarchy. In Crowley's scrying of the Aethyrs (Liber 418, 1909–1911), TEX was the first entered and presented dense, chaotic, and turbulent imagery — a vast crowd of souls struggling in confusion, presided over by a black-robed figure; the vision established the tone of the lower Aethyrs as places of strife and multiplicity. The three Governors of TEX — Taoagla, Gemnimb, and Advorpt — are drawn from the Enochian Watchtower tablets and serve as the ruling intelligences ordering the forces within this Aethyr.",
+      "secondaryNames": [
+        { "name": "TEX", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 30th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 30,
+        "governors": ["Taoagla", "Gemnimb", "Advorpt"],
+        "governorCNs": null,
+        "letters": ["T", "E", "X"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.rii",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "RII — 29th Aethyr",
+      "description": "RII is the 29th Aethyr, situated just within the outermost layer of the Enochian cosmological system and still among the lower, more turbulent sub-planes. In the hierarchy of the 30 Aethyrs, the lower levels are associated with denser, more conflicted and fragmented states of being, corresponding broadly to the lower Sephiroth and the manifest world in the synthesis of Enochian magic with the Qabalistic Tree of Life developed by the Golden Dawn. Crowley's vision of RII in Liber 418 continued the theme of confusion and struggle, with imagery of warring armies and elemental chaos pressing upon the seer; only partial clarity of angelic voice emerged. The Governors Doziaal, Labnixp, and Vathmosi govern the forces of this Aethyr according to the Watchtower attributions systematised by Mathers and Westcott.",
+      "secondaryNames": [
+        { "name": "RII", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 29th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 29,
+        "governors": ["Doziaal", "Labnixp", "Vathmosi"],
+        "governorCNs": null,
+        "letters": ["R", "I", "I"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.bag",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "BAG — 28th Aethyr",
+      "description": "BAG is the 28th Aethyr, the third from the outermost in the Enochian system. The lower Aethyrs collectively represent states of consciousness and planes of being progressively further from the unity of the divine source — BAG, along with its immediate neighbours, is characterised in Golden Dawn and Thelemic teaching as a region of elemental and astral tumult. Crowley's scrying here encountered imagery of great elemental force and spiritual struggle, though hints of higher order began to appear in the language and symbolic content of the vision. The Governors Taonglo, Gemnimb, and Vsnarda hold authority over the Aethyr and may be invoked to open and govern its currents according to the Enochian ritual methodology.",
+      "secondaryNames": [
+        { "name": "BAG", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 28th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 28,
+        "governors": ["Taonglo", "Gemnimb", "Vsnarda"],
+        "governorCNs": null,
+        "letters": ["B", "A", "G"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zaa",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZAA — 27th Aethyr",
+      "description": "ZAA is the 27th Aethyr, lying in the lower quartile of the Enochian cosmological hierarchy. The name ZAA resonates with the Enochian root-forms for power and spiritual motion, and the Aethyr is characterised in the tradition as a place where elemental forces begin to become more ordered under the governance of higher intelligences. In Liber 418, Crowley's vision of ZAA presented imagery of vast landscapes and titanic warring figures, with increasing mythological density compared to the outermost Aethyrs, suggesting a level of reality where symbolic meaning begins to consolidate from raw chaotic energy. The Governors Saziami, Mathvla, and Orpamb administer the angelic hierarchy within ZAA according to the Watchtower and subquadrant attributions of the Enochian tablets.",
+      "secondaryNames": [
+        { "name": "ZAA", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 27th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 27,
+        "governors": ["Saziami", "Mathvla", "Orpamb"],
+        "governorCNs": null,
+        "letters": ["Z", "A", "A"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.des",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "DES — 26th Aethyr",
+      "description": "DES is the 26th Aethyr, lying in the lower middle range of the Enochian cosmological system. In the Golden Dawn synthesis of Enochian cosmology with the Qabalah, the lower Aethyrs are often mapped to the outer reaches of Assiah and Yetzirah — the worlds of manifestation and formation — and DES belongs to this domain of dense, formed, yet still largely unredeemed spiritual material. Crowley's experience of DES in Liber 418 included images of kingship, battle, and the first intimations of a divine feminine presence overseeing the lower planes, suggesting this Aethyr as a transitional zone between brute elemental force and incipient order. The Governors Pophand, Nigrana, and Bazchim are the ruling angelic intelligences who maintain the structure and currents of DES.",
+      "secondaryNames": [
+        { "name": "DES", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 26th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 26,
+        "governors": ["Pophand", "Nigrana", "Bazchim"],
+        "governorCNs": null,
+        "letters": ["D", "E", "S"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.vti",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "VTI — 25th Aethyr",
+      "description": "VTI is the 25th Aethyr, situated at the midpoint-approach of the lower Enochian planes. The Aethyr represents a level at which spiritual consciousness is still substantially bound to the forms and conflicts of the lower worlds, yet where the capacity for deeper magical perception begins to manifest more reliably. In Crowley's Liber 418 scrying, VTI was characterised by visions of alchemical and elemental transformation, with imagery drawn from the initiatory vocabulary of the Western esoteric tradition, suggesting that this Aethyr functions as a kind of alchemical crucible within the larger Enochian cosmological scheme. Governors Mirzind, Obuaors, and Ranglam rule the currents of VTI from their positions within the Enochian Watchtower tablets.",
+      "secondaryNames": [
+        { "name": "VTI", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 25th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 25,
+        "governors": ["Mirzind", "Obuaors", "Ranglam"],
+        "governorCNs": null,
+        "letters": ["V", "T", "I"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.nia",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "NIA — 24th Aethyr",
+      "description": "NIA is the 24th Aethyr, occupying the transitional zone between the lower and middle strata of the Enochian cosmological system. In Enochian and Golden Dawn teaching, the middle Aethyrs begin to partake more substantially of the higher formative worlds, and NIA is a level where the consciousness of the seer is tested and begins to be refined rather than merely overwhelmed. Crowley's vision of NIA in Liber 418 presented imagery of a great feminine angelic figure and the interplay of mercy and severity — themes resonant with the Qabalistic pillars — suggesting this Aethyr as a place where moral and spiritual differentiation becomes pronounced. Governors Pocasna, Ugear, and Mircl (also rendered Mirc) hold authority over the forces of NIA.",
+      "secondaryNames": [
+        { "name": "NIA", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 24th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 24,
+        "governors": ["Pocasna", "Ugear", "Mircl"],
+        "governorCNs": null,
+        "letters": ["N", "I", "A"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.tor",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "TOR — 23rd Aethyr",
+      "description": "TOR is the 23rd Aethyr, lying in the lower-middle band of the Enochian cosmological hierarchy. The name TOR connects to notions of force, fortitude, and the Taurean elemental current in some GD correspondences, and the Aethyr is associated in practice with the consolidation of will and the confrontation with the residual lower nature of the magician. In Crowley's Liber 418 scrying, TOR presented visions of great beauty and anguish commingled — a figure of an angel presiding over a landscape of spiritual struggle — marking this level as one where the battle between higher aspiration and lower attachment becomes most psychologically vivid. Governors Ronoamb, Onizimp, and Zaxanin rule the angelic forces within TOR.",
+      "secondaryNames": [
+        { "name": "TOR", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 23rd Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 23,
+        "governors": ["Ronoamb", "Onizimp", "Zaxanin"],
+        "governorCNs": null,
+        "letters": ["T", "O", "R"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.lin",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "LIN — 22nd Aethyr",
+      "description": "LIN is the 22nd Aethyr, positioned at the approach to the middle range of the Enochian planes and corresponding in the GD system to a level where the magician's perception begins to encounter the great initiatory themes of the Western tradition with greater clarity and personal application. In Crowley's scrying of Liber 418, LIN presented a vision dominated by the tarot symbolism of the Fool — the 22nd trump — reinforcing the correspondence of this Aethyr with the Path of Aleph in Qabalistic synthesis and with the principle of pure, unconditioned spirit taking its first step into manifestation. The Governors Ozidaia, Paraoan, and Calzirg administer the forces of LIN according to the Watchtower attributions.",
+      "secondaryNames": [
+        { "name": "LIN", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 22nd Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 22,
+        "governors": ["Ozidaia", "Paraoan", "Calzirg"],
+        "governorCNs": null,
+        "letters": ["L", "I", "N"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.asp",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ASP — 21st Aethyr",
+      "description": "ASP is the 21st Aethyr, situated in the middle band of the Enochian system where the planes of higher formation and emerging spiritual identity become more accessible to trained perception. In the Golden Dawn and Thelemic traditions, the middle Aethyrs are approached after substantial preparation, as they correspond to higher levels of the Yetziratic and Briatic worlds in the Qabalistic synthesis. Crowley's vision of ASP in Liber 418 was marked by imagery of a great angel and the theme of spiritual vocation and testing — the seer confronting the demand for absolute sincerity and the surrender of personal will. Governors Lazdaxi, Parmago, and Doziaal rule the currents of ASP from their positions within the Enochian Watchtower system.",
+      "secondaryNames": [
+        { "name": "ASP", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 21st Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 21,
+        "governors": ["Lazdaxi", "Parmago", "Doziaal"],
+        "governorCNs": null,
+        "letters": ["A", "S", "P"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.chr",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "CHR — 20th Aethyr",
+      "description": "CHR is the 20th Aethyr, occupying the middle of the Enochian cosmological hierarchy and corresponding in integrated GD-Thelemic theory to a plane of heightened angelic and divine presence where the structures of the higher worlds become perceptible. The name CHR resonates with christic and solar imagery in the syncretic vocabulary of late 19th and early 20th century Western esotericism, and the Aethyr is associated with themes of light, solar consciousness, and the sacrificed and triumphant redeemer archetype. In Liber 418, Crowley's vision of CHR brought imagery of solar angels and a bright, painful radiance overwhelming the lower faculties of the seer. Governors Zarzilg, Luciftia, and Poamb govern this Aethyr's forces.",
+      "secondaryNames": [
+        { "name": "CHR", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 20th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 20,
+        "governors": ["Zarzilg", "Luciftia", "Poamb"],
+        "governorCNs": null,
+        "letters": ["C", "H", "R"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.pop",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "POP — 19th Aethyr",
+      "description": "POP is the 19th Aethyr, in the upper-middle strata of the Enochian system. In Golden Dawn Enochian practice, the higher middle Aethyrs require substantial initiatory work to approach with integrity, as the forces encountered become increasingly refined and psychically powerful. The triple repetition of the letter P in the name was noted by Crowley as itself a symbol of multiplication and divine power — P being associated in some Enochian letter attributions with the fire of the spirit. In Liber 418, Crowley's vision of POP involved imagery of a divine feminine figure — a great goddess or cosmic mother — presiding over the waters of manifestation with serene, absolute authority. Governors Torzoxi, Abaiond, and Omagrap rule POP.",
+      "secondaryNames": [
+        { "name": "POP", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 19th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 19,
+        "governors": ["Torzoxi", "Abaiond", "Omagrap"],
+        "governorCNs": null,
+        "letters": ["P", "O", "P"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zen",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZEN — 18th Aethyr",
+      "description": "ZEN is the 18th Aethyr, lying at the upper-middle level of the Enochian cosmological system and corresponding in Qabalistic synthesis to planes bordering on the Briatic world of archetypes and pure forms. The name ZEN carries resonance with concepts of cosmic balance and the marriage of opposites — the Z resonating with Enochian formulas of power and the En suggesting the limitless ground of being (Ain in Hebrew). In Crowley's Liber 418 scrying, ZEN presented visions of extraordinary beauty and philosophical grandeur, including imagery of the Rosy Cross and the union of the mystical marriage of God and creation; this Aethyr is thus associated with the theme of the hieros gamos at a cosmic scale. Governors Nabaomi, Zafasai, and Yalpamb administer its forces.",
+      "secondaryNames": [
+        { "name": "ZEN", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 18th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 18,
+        "governors": ["Nabaomi", "Zafasai", "Yalpamb"],
+        "governorCNs": null,
+        "letters": ["Z", "E", "N"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.tan",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "TAN — 17th Aethyr",
+      "description": "TAN is the 17th Aethyr, lying in the upper reaches of the middle planes of the Enochian system. In the GD and Thelemic synthesis of Enochian cosmology, TAN is associated with the great initiatory themes of the adept grade — the knowledge and conversation of the Holy Guardian Angel and the preparation for the crossing of the Abyss — making it a critically important Aethyr in the magical hierarchy. Crowley's vision of TAN in Liber 418 was dominated by imagery of Babalon and the Beast, figures central to Thelemic cosmology, and by the theme of the adept becoming consumed in the cup of the goddess — pointing toward the ultimate self-dissolution required by the higher initiations. Governors Odraxti, Gemnimb, and Ramaglo rule this Aethyr.",
+      "secondaryNames": [
+        { "name": "TAN", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 17th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 17,
+        "governors": ["Odraxti", "Gemnimb", "Ramaglo"],
+        "governorCNs": null,
+        "letters": ["T", "A", "N"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.lea",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "LEA — 16th Aethyr",
+      "description": "LEA is the 16th Aethyr, positioned in the upper-middle range of the Enochian system where the planes begin to reflect the great archetypal structures of the divine world. LEA is associated in the Thelemic-Enochian synthesis with the manifestation of the divine Word and the cosmic creative principle — themes of sacred language and divine utterance that resonate with the Enochian system's own origins as a received angelic tongue. Crowley's Liber 418 vision of LEA presented imagery of a great initiator and the motif of the city of the pyramid — the ideal form of the magical universe — establishing this Aethyr as a place of cosmic architecture and divine law. Governors Tapamal, Gedoons, and Ambriol hold the authority of LEA.",
+      "secondaryNames": [
+        { "name": "LEA", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 16th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 16,
+        "governors": ["Tapamal", "Gedoons", "Ambriol"],
+        "governorCNs": null,
+        "letters": ["L", "E", "A"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.oxo",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "OXO — 15th Aethyr",
+      "description": "OXO is the 15th Aethyr, lying at the midpoint of the entire system of 30 Aethyrs and thus carrying special significance as the centre and turning point of the Enochian cosmological hierarchy. The palindromic structure of the name OXO has been interpreted by commentators as reflecting the principle of cosmic mirror-symmetry — the below reflecting the above, the outer reflecting the inner — making this Aethyr symbolic of the great equilibrium at the heart of the universe. In Crowley's Liber 418, OXO was a vision of commanding cosmic law and divine mathematics, presided over by a great angelic figure of perfect balance; the imagery emphasised the impersonal, absolute character of the divine order governing all 30 planes. Governors Tahamdo, Nociabi, and Tastoxo rule OXO.",
+      "secondaryNames": [
+        { "name": "OXO", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 15th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 15,
+        "governors": ["Tahamdo", "Nociabi", "Tastoxo"],
+        "governorCNs": null,
+        "letters": ["O", "X", "O"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.uta",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "UTA — 14th Aethyr",
+      "description": "UTA is the 14th Aethyr, entering the upper half of the Enochian cosmological hierarchy where the planes of divine formation and archetype predominate. In the GD and Thelemic integration of Enochian cosmology, UTA and the surrounding Aethyrs correspond broadly to the higher Yetziratic and lower Briatic worlds, regions of great angelic luminosity and increasingly impersonal spiritual force. Crowley's vision of UTA in Liber 418 was characterised by imagery of an angelic city of light and the sense of approaching the great threshold — the intimation that higher, more rigorous initiatory passages lie ahead in the numbered sequence. Governors Tedoand, Vivipos, and Voanamb govern the currents and intelligences of UTA.",
+      "secondaryNames": [
+        { "name": "UTA", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 14th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 14,
+        "governors": ["Tedoand", "Vivipos", "Voanamb"],
+        "governorCNs": null,
+        "letters": ["U", "T", "A"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zim",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZIM — 13th Aethyr",
+      "description": "ZIM is the 13th Aethyr, whose number resonates with the Qabalistic value of unity (echad, 13) and love (ahavah, 13), suggesting a plane where the spiritual principles of divine unity and cosmic love become increasingly manifest in the fabric of the Aethyr itself. The upper Aethyrs from around the 13th onward are considered in GD and Thelemic practice to require true adept-level consciousness for proper entry, as the forces encountered are radically beyond ordinary psychic experience. In Liber 418, Crowley's vision of ZIM involved imagery of the Holy Guardian Angel in its most luminous and overwhelming form — the divine Other whose encounter is the supreme aim of the adept's Great Work. Governors Geamagi, Orancir, and Chapnous rule ZIM.",
+      "secondaryNames": [
+        { "name": "ZIM", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 13th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 13,
+        "governors": ["Geamagi", "Orancir", "Chapnous"],
+        "governorCNs": null,
+        "letters": ["Z", "I", "M"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.loe",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "LOE — 12th Aethyr",
+      "description": "LOE is the 12th Aethyr, standing immediately above the Abyss (ZAX, the 10th) in the sequence of Aethyrs, and it is associated in Thelemic-Enochian cosmology with the exalted states of consciousness belonging to the grade of Master of the Temple — the attainment that lies just beyond the crossing of the Abyss. In practice LOE is considered one of the Aethyrs of the supernal triad of the Tree, where individual consciousness begins to dissolve into the impersonal light of the divine; Crowley's vision here was characterised by a figure of supreme angelic authority pronouncing the laws of the aeon and the dissolution of the separate self. The Governors Tabiori, Doziaal, and Ontanan govern the forces of LOE.",
+      "secondaryNames": [
+        { "name": "LOE", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 12th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 12,
+        "governors": ["Tabiori", "Doziaal", "Ontanan"],
+        "governorCNs": null,
+        "letters": ["L", "O", "E"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.ikh",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "IKH — 11th Aethyr",
+      "description": "IKH is the 11th Aethyr, the plane immediately above the Abyss in the ascending Enochian sequence and one of the most awe-inspiring and rarefied of the upper planes accessible before the great chasm of ZAX. IKH corresponds in the GD synthesis to the supernal triangle on the Tree of Life and to the divine consciousness of Chokmah — the primordial Wisdom — in its Enochian expression. In Crowley's Liber 418, the vision of IKH was one of extraordinary luminosity and transcendence, with imagery of angelic hosts of supreme radiance whose presence reduced all lower categories of thought to silence; this Aethyr is understood as the last stable foothold before the magician must confront the Abyss below and the supernals above. Governors Molpand, Vsnarda, and Ponodol rule IKH.",
+      "secondaryNames": [
+        { "name": "IKH", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 11th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 11,
+        "governors": ["Molpand", "Vsnarda", "Ponodol"],
+        "governorCNs": null,
+        "letters": ["I", "K", "H"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zax",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZAX — 10th Aethyr",
+      "description": "ZAX is the 10th Aethyr and the most cosmologically significant of all the Aethyrs save LIL itself: it is the Abyss, the great chasm in the Enochian and Qabalistic systems that separates the lower seven Aethyrs and the human personality from the supernal three and the divine selfhood. Within ZAX dwells Choronzon (numbered 333, the number of dispersion), the Dweller in the Abyss and the principle of chaos, incoherence, and the dissolution of all form — in the GD and Thelemic systems, Choronzon is the supreme adversary encountered by the magician who attempts to cross from the realm of personality into the realm of the Holy Guardian Angel and beyond. Crowley's famous scrying of ZAX in the Algerian desert in 1909, assisted by Victor Neuburg, is one of the most celebrated and controversial events in the history of modern ceremonial magic: Crowley entered the triangle and invoked Choronzon, who manifested in wildly changing forms — a serpent, a holy man, a naked woman — and attacked Neuburg physically, while pouring forth a torrent of deceptive, reality-dissolving speech designed to shatter the integrity of the magician's consciousness. The ordeal of ZAX in Liber 418 is presented as the initiation of the Master of the Temple — the crossing of the Abyss requires the total sacrifice of the magician's ego, which is cast as a seed into the cup of Babalon, the Great Mother, and dissolved; the traveller who crosses ZAX successfully is no longer a person but a pure vehicle for the divine Will. Governors Lexarph, Comanan, and Tabitom rule this Aethyr — their names are among the most widely invoked in Enochian practice precisely because ZAX is both the great barrier and the great gateway of the entire system.",
+      "secondaryNames": [
+        { "name": "ZAX", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 10th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Abyss", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn", "abyss", "choronzon"],
+      "extendedData": {
+        "aethyrNumber": 10,
+        "governors": ["Lexarph", "Comanan", "Tabitom"],
+        "governorCNs": null,
+        "letters": ["Z", "A", "X"],
+        "zodiacSign": null,
+        "note": "The Abyss; realm of Choronzon (333). The crossing of ZAX is the supreme ordeal of the GD/Thelemic initiatory sequence, corresponding to the grade of Master of the Temple (8°=3□)."
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zip",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZIP — 9th Aethyr",
+      "description": "ZIP is the 9th Aethyr, the first of the supernal Aethyrs above the Abyss — a plane available only to consciousness that has survived the ordeal of ZAX and achieved the grade of Master of the Temple. In the Enochian and Qabalistic synthesis, the Aethyrs from ZIP upward correspond to the supernal Sephiroth — Binah, Chokmah, and Kether — and their associated planes of pure divine being; the modes of consciousness here are radically discontinuous with anything below the Abyss. Crowley's vision of ZIP in Liber 418 was characterised by serene, authoritative imagery of the divine feminine in her most exalted form — the great sea of Binah, the dark fertile womb of manifestation from which all arising forms emerge and to which they return — a stark contrast to the chaos of ZAX below. Governors Oddiorg, Cralpir, and Doanzin hold the forces of ZIP.",
+      "secondaryNames": [
+        { "name": "ZIP", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 9th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 9,
+        "governors": ["Oddiorg", "Cralpir", "Doanzin"],
+        "governorCNs": null,
+        "letters": ["Z", "I", "P"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zid",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZID — 8th Aethyr",
+      "description": "ZID is the 8th Aethyr, a supernal plane corresponding in the Qabalistic-Enochian synthesis to exalted Binah and the upper reaches of the Briatic world — the realm of pure divine understanding, the great dark mother ocean in which individual identity is wholly dissolved. The three Aethyrs beginning with Z (ZAX, ZIP, ZID) form a significant triad in the system, with Z suggesting in Enochian phonology a quality of dynamic, active spiritual force; ZID is the most interior of these, pressing toward the highest and most undifferentiated divine realities. In Liber 418, Crowley's vision of ZID was one of supreme stillness and absolute authority — a divine feminine power of cosmic magnitude utterly beyond any human moral or psychological category. Governors Zamfres, Todnaon, and Pristac rule the forces of ZID.",
+      "secondaryNames": [
+        { "name": "ZID", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 8th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 8,
+        "governors": ["Zamfres", "Todnaon", "Pristac"],
+        "governorCNs": null,
+        "letters": ["Z", "I", "D"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.deo",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "DEO — 7th Aethyr",
+      "description": "DEO is the 7th Aethyr, whose name contains the Latin root for god (Deus) and accordingly signals a plane of intensified divine presence and theophanic revelation within the Enochian system. At this altitude in the Aethyric hierarchy, the seer is approaching the ultimate unity of the system, and the visions become more ineffable and paradoxical — the divine light becoming simultaneously overwhelming and constitutive of all reality. In Liber 418, Crowley's vision of DEO involved encounters with the supreme creative principle in its most luminous masculine aspect — imagery of the divine Father or Logos in its Enochian expression, clothed in radiance and speaking in cosmic law. The Governors Madriiax, Bermale, and Volxdo govern DEO; the name Madriiax is itself one of the most sacred Enochian divine names, appearing in the first Enochian Call as a title of the heavens.",
+      "secondaryNames": [
+        { "name": "DEO", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 7th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 7,
+        "governors": ["Madriiax", "Bermale", "Volxdo"],
+        "governorCNs": null,
+        "letters": ["D", "E", "O"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.maz",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "MAZ — 6th Aethyr",
+      "description": "MAZ is the 6th Aethyr, occupying a position of supreme exaltation in the Enochian system, corresponding in Qabalistic synthesis to the plane of Chokmah — primordial Wisdom, the first differentiation from the limitless light of Kether — and to the highest reaches of the Atziluthic world of pure divine emanation. The number 6 resonates throughout the Western esoteric tradition with the Sephira Tiphareth, solar beauty, and the heart of the Tree, though in the Aethyric context it points toward the supernal rather than the middle pillar; MAZ is accordingly a plane of extraordinary cosmic wisdom and divine will radiating downward through all the lower Aethyrs. In Liber 418, Crowley's vision of MAZ was characterised by a vision of absolute cosmic order and the great angels of the presence — beings so vast and luminous that their nature wholly exceeded the categories available to the seer's mind. Governors Saxtomp, Vavaamp, and Zirzird hold the authority of MAZ.",
+      "secondaryNames": [
+        { "name": "MAZ", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 6th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 6,
+        "governors": ["Saxtomp", "Vavaamp", "Zirzird"],
+        "governorCNs": null,
+        "letters": ["M", "A", "Z"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.lit",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "LIT — 5th Aethyr",
+      "description": "LIT is the 5th Aethyr, a plane of transcendent brilliance standing among the innermost circles of the Enochian cosmological system. The name LIT evokes the Latin for shore or threshold (litus) and also the English cognate of light — both meanings resonating with this Aethyr's position as an approach to the ultimate divine unity. In the GD and Thelemic synthesis, LIT corresponds to the most exalted Atziluthic consciousness, the plane of pure divine will in its most primordial expression before the final unity of LIL. Crowley's vision of LIT in Liber 418 was one of the most challenging to articulate — a flood of divine light and the presence of the highest angelic orders, the Governors functioning less as distinct personalities than as aspects of a single overwhelming radiance. Governors Rogpipe, Lazdaxi, and Selados rule LIT.",
+      "secondaryNames": [
+        { "name": "LIT", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 5th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 5,
+        "governors": ["Rogpipe", "Lazdaxi", "Selados"],
+        "governorCNs": null,
+        "letters": ["L", "I", "T"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.paz",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "PAZ — 4th Aethyr",
+      "description": "PAZ is the 4th Aethyr, standing at the penultimate level of the Enochian cosmological hierarchy before the innermost three. The name PAZ resonates with the Hebrew and Spanish word for peace (paz/shalom) — a quality that characterises the supreme planes of the system, where the warfare and multiplicity of the lower Aethyrs has been entirely transcended and all is resolved into the divine stillness. In the Qabalistic synthesis, PAZ corresponds to the highest Atziluthic planes — the world of pure divine emanation in its most undifferentiated nearness to the source — and entering it requires a consciousness that has wholly surpassed the individual self. Crowley's Liber 418 vision of PAZ was among the most transcendent of all, characterised by an ineffable peace and a sense of cosmic completion permeating every aspect of the vision. Governors Thahaaot, Mirzind, and Saziami govern PAZ.",
+      "secondaryNames": [
+        { "name": "PAZ", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 4th Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 4,
+        "governors": ["Thahaaot", "Mirzind", "Saziami"],
+        "governorCNs": null,
+        "letters": ["P", "A", "Z"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.zom",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ZOM — 3rd Aethyr",
+      "description": "ZOM is the 3rd Aethyr, the third-highest plane in the Enochian system and corresponding in the Qabalistic synthesis to the highest expression of Binah — the great dark mother in her most primordial and universal form — and to the very root of the divine feminine principle as it exists prior to all differentiation. In Liber 418, Crowley's vision of ZOM was of overwhelming grandeur and terror — the abyss of the divine mother seen from within, the totality of cosmic understanding dissolving the last remnants of any limiting self-conception in the seer; the experience was characterised by the paradox of absolute fullness and absolute emptiness coexisting in perfect divine silence. ZOM is the threshold of the ultimate two Aethyrs and represents the final surrender of understanding before pure being and its source are encountered. Governors Samapha, Virooli, and Andispi rule ZOM.",
+      "secondaryNames": [
+        { "name": "ZOM", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 3rd Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 3,
+        "governors": ["Samapha", "Virooli", "Andispi"],
+        "governorCNs": null,
+        "letters": ["Z", "O", "M"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.arn",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "ARN — 2nd Aethyr",
+      "description": "ARN is the 2nd Aethyr, the penultimate plane of the Enochian cosmological system and the last threshold before the ultimate unity of LIL. The name ARN resonates with the Hebrew Aron (the Ark, the vessel of the divine presence) and with the Sanskrit root aruna (the dawn, the primordial reddish light that precedes sunrise) — both images of the divine vessel and the first light before full illumination, perfectly appropriate for an Aethyr standing at the very brink of the supreme unity. In the Qabalistic synthesis, ARN corresponds to the summit of Chokmah — the primordial divine Wisdom at its most exalted — and to the highest flash of the divine Will before it dissolves into the Ain Soph of Kether. Crowley's vision of ARN in Liber 418 described a plane of supreme radiance and authority, where the divine voice spoke in absolute, paradoxical terms that dissolved all conceptual frameworks. Governors Doagnis, Pacasna, and Dialiva rule the 2nd Aethyr.",
+      "secondaryNames": [
+        { "name": "ARN", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 2nd Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 2,
+        "governors": ["Doagnis", "Pacasna", "Dialiva"],
+        "governorCNs": null,
+        "letters": ["A", "R", "N"],
+        "zodiacSign": null
+      }
+    },
+    {
+      "canonicalName": "enochian.aethyr.lil",
+      "entityType": "enochian.aethyr",
+      "primaryDisplayName": "LIL — 1st Aethyr",
+      "description": "LIL is the 1st and highest Aethyr — the innermost, most divine, and most inaccessible plane of the entire Enochian cosmological system, corresponding in Qabalistic synthesis to the supreme Sephira Kether, the Crown, and to the world of Atziluth in its most primordial and undifferentiated expression as pure divine being. The name LIL is interpreted by Enochian scholars in connection with the divine, the night (Lilith, laylah), and the primordial void — and with the city of the gods, the supernal dwelling place of the angelic intelligences who govern all 30 planes as a single divine organism. In Crowley's Liber 418, the vision of LIL was the culmination of the entire working: a vision of absolute unity, light without limit (Ain Soph Aur), and the complete dissolution of the seer into the divine ground — all multiplicity resolved, all opposition transcended, and the entire system of 30 Aethyrs seen as a single perfect jewel of divine consciousness. LIL is the goal of the entire Enochian initiatory sequence, attainable (if at all) only by a consciousness that has crossed the Abyss in ZAX, dissolved in the cup of Babalon, and traversed the remaining supernal Aethyrs in succession; its three Governors — Occodon, Pascomb, and Valgars — are in tradition the highest of all the 91 Enochian Governors, standing at the innermost point of the divine universe.",
+      "secondaryNames": [
+        { "name": "LIL", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The 1st Aethyr", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The City of God", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["enochian", "aethyr", "magic", "golden-dawn"],
+      "extendedData": {
+        "aethyrNumber": 1,
+        "governors": ["Occodon", "Pascomb", "Valgars"],
+        "governorCNs": null,
+        "letters": ["L", "I", "L"],
+        "zodiacSign": null,
+        "note": "The highest Aethyr; the innermost divine unity. Corresponds to Kether and the summit of the Atziluthic world. The ultimate goal of the Enochian initiatory sequence."
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "traditions": [
+    {
+      "canonicalName": "tradition.etteilla",
+      "displayName": "Etteilla Tradition",
+      "shortDescription": "Jean-Baptiste Alliette's 1789 divinatory tarot system — the first purpose-built occult tarot, with unique card ordering, keyword-based divination, and Egyptian origin theory predating the Golden Dawn.",
+      "attributionFields": []
+    }
+  ]
+}

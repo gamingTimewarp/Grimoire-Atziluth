@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.chinese-zodiac",
+    "displayName": "Chinese Zodiac / Ganzhi",
+    "description": "The traditional Chinese calendrical and cosmological system combining the Ten Heavenly Stems (天干 Tiāngān) and Twelve Earthly Branches (地支 Dìzhī) into the sixty-year Ganzhi cycle. Used for Four Pillars of Destiny (BaZi) astrology, year/month/day/hour animal signs, and elemental analysis. Integrates Wu Xing (Five Phases) and Yin-Yang polarity.",
+    "attributionFields": [
+      { "linkLabel": "attributed-zodiac-animal", "displayName": "Zodiac Animal", "targetEntityType": "chinese-zodiac.animal", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-earthly-branch", "displayName": "Earthly Branch", "targetEntityType": "chinese-zodiac.branch", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-heavenly-stem", "displayName": "Heavenly Stem", "targetEntityType": "chinese-zodiac.stem", "allowMultiple": false, "sortOrder": 2 },
+      { "linkLabel": "attributed-wuxing", "displayName": "Wu Xing Phase", "targetEntityType": "wuxing.phase", "allowMultiple": false, "sortOrder": 3 }
+    ]
+  }
+}

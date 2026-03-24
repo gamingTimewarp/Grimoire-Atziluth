@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#011200"/>
+      <stop offset="100%" stop-color="#022a00"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#1a5a1a" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#229922" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#1a5a1a" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#1a5a1a" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#88ee88" opacity="0.9">III</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#229922" opacity="0.85" filter="url(#glow)">ד</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#336633" opacity="0.8">♀</text>
+
+
+  
+  <text x="153" y="228"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="248" fill="#116611" opacity="0.055">ד</text>
+  
+  <!-- Venus symbol ♀ — geometrically drawn, dominant upper anchor -->
+  <circle cx="150" cy="108" r="39" fill="#226622" opacity="0.15" filter="url(#softglow)"/>
+  <circle cx="150" cy="108" r="25" fill="none" stroke="#ddaa22" stroke-width="2.5" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="150" cy="108" r="7.5" fill="#ddaa22" opacity="0.22"/>
+  <!-- Cross below -->
+  <line x1="150"      y1="133"      x2="150"      y2="159"
+        stroke="#ddaa22" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="136" y1="147" x2="164" y2="147"
+        stroke="#ddaa22" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Robe — lower pool of fabric -->
+  <ellipse cx="150" cy="265" rx="52" ry="22" fill="#1a6020" opacity="0.65"/>
+  <!-- Torso/robe body -->
+  <path d="M112,248 Q110,208 150,202
+           Q190,208 188,248 Q150,272 112,248 Z"
+        fill="#226622" opacity="0.78"/>
+  <!-- Head -->
+  <circle cx="150" cy="182" r="16" fill="#c8a060" opacity="0.88"/>
+  <!-- Lotus crown — petals rising above head -->
+  <ellipse cx="114" cy="163.3" rx="5" ry="9"
+                fill="#ddaa44" opacity="0.7"/>
+  <ellipse cx="132" cy="162.7" rx="5" ry="11"
+                fill="#ddaa44" opacity="0.7"/>
+  <ellipse cx="150" cy="161.8" rx="5" ry="14"
+                fill="#ddaa44" opacity="0.88"/>
+  <ellipse cx="168" cy="162.7" rx="5" ry="11"
+                fill="#ddaa44" opacity="0.7"/>
+  <ellipse cx="186" cy="163.3" rx="5" ry="9"
+                fill="#ddaa44" opacity="0.7"/>
+  <!-- Crown band -->
+  <rect x="128" y="160" width="44" height="6" rx="3" fill="#bb8822" opacity="0.78"/>
+  <!-- Right arm — raised to hold wand -->
+  <line x1="170" y1="218" x2="182" y2="210"
+        stroke="#c8a060" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  <!-- Left arm — extended with shield -->
+  <line x1="130" y1="218" x2="119" y2="222"
+        stroke="#c8a060" stroke-width="7" stroke-linecap="round" opacity="0.78"/>
+  
+  <!-- Wand staff -->
+  <line x1="182" y1="210" x2="200" y2="152"
+        stroke="#aa8800" stroke-width="3" stroke-linecap="round" opacity="0.82"/>
+  <!-- Lotus blossom at tip -->
+  <g>
+    <ellipse cx="200"             cy="144.85" rx="4.84" ry="8.8"
+             fill="#ddaa44" opacity="0.88"/>
+    <ellipse cx="193.84" cy="147.38" rx="3.74" ry="6.6"
+             fill="#ddaa44" opacity="0.72" transform="rotate(-22,193.84,147.38)"/>
+    <ellipse cx="206.16" cy="147.38" rx="3.74" ry="6.6"
+             fill="#ddaa44" opacity="0.72" transform="rotate(22,206.16,147.38)"/>
+    <ellipse cx="189"  cy="150.02" rx="2.86" ry="4.95"
+             fill="#ddaa44" opacity="0.52" transform="rotate(-42,189,150.02)"/>
+    <ellipse cx="211"  cy="150.02" rx="2.86" ry="4.95"
+             fill="#ddaa44" opacity="0.52" transform="rotate(42,211,150.02)"/>
+  </g>
+  
+  <!-- Shield disc (ivory) -->
+  <circle cx="98" cy="224" r="25" fill="#f0ecd8" stroke="#bb7722" stroke-width="1.8" opacity="0.92"/>
+  <!-- Pelican body — oval torso -->
+  <ellipse cx="99" cy="229" rx="9" ry="7" fill="#bb4422" opacity="0.78"/>
+  <!-- Neck curving down to pierce breast -->
+  <path d="M104,222 Q110,229 105,236"
+        fill="none" stroke="#bb4422" stroke-width="5" stroke-linecap="round" opacity="0.78"/>
+  <!-- Head -->
+  <circle cx="104" cy="238" r="5.5" fill="#bb4422" opacity="0.78"/>
+  <!-- Long beak pointing down at breast -->
+  <path d="M103,242 L101,232"
+        stroke="#cc9922" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <!-- Blood drops -->
+  <circle cx="95" cy="236" r="1.8" fill="#cc1111" opacity="0.75"/>
+  <circle cx="92" cy="239" r="1.4" fill="#cc1111" opacity="0.65"/>
+  <circle cx="96" cy="241" r="1.2" fill="#cc1111" opacity="0.55"/>
+  <!-- Two chicks below with open beaks -->
+  <circle cx="90" cy="246" r="4"   fill="#994411" opacity="0.65"/>
+  <circle cx="102" cy="246" r="4"   fill="#994411" opacity="0.65"/>
+  <line x1="87" y1="244" x2="93"  y2="243"
+        stroke="#cc9922" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+  <line x1="99"  y1="244" x2="105"  y2="243"
+        stroke="#cc9922" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+  <g filter="url(#glow)">
+  <g>
+    <line x1="32" y1="296" x2="30.2" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="30.2" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="32" y1="296" x2="41" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="31.55" y1="281.5" x2="22.55" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="31.1" y1="267" x2="40.1" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="30.65" y1="252.5" x2="21.65" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="30.2" y1="238" x2="39.2" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="42" y1="296" x2="40.2" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="40.2" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="42" y1="296" x2="51" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="41.55" y1="281.5" x2="32.55" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="41.1" y1="267" x2="50.1" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="40.65" y1="252.5" x2="31.65" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="40.2" y1="238" x2="49.2" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="52" y1="296" x2="50.2" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="50.2" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="52" y1="296" x2="61" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="51.55" y1="281.5" x2="42.55" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="51.1" y1="267" x2="60.1" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="50.65" y1="252.5" x2="41.65" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="50.2" y1="238" x2="59.2" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="62" y1="296" x2="60.2" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="60.2" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="62" y1="296" x2="71" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="61.55" y1="281.5" x2="52.55" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="61.1" y1="267" x2="70.1" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="60.65" y1="252.5" x2="51.65" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="60.2" y1="238" x2="69.2" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="72" y1="296" x2="70.2" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="70.2" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="72" y1="296" x2="81" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="71.55" y1="281.5" x2="62.55" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="71.1" y1="267" x2="80.1" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="70.65" y1="252.5" x2="61.65" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="70.2" y1="238" x2="79.2" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="228" y1="296" x2="229.8" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="229.8" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="228" y1="296" x2="237" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="228.45" y1="281.5" x2="219.45" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="228.9" y1="267" x2="237.9" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="229.35" y1="252.5" x2="220.35" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="229.8" y1="238" x2="238.8" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="238" y1="296" x2="239.8" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="239.8" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="238" y1="296" x2="247" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="238.45" y1="281.5" x2="229.45" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="238.9" y1="267" x2="247.9" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="239.35" y1="252.5" x2="230.35" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="239.8" y1="238" x2="248.8" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="248" y1="296" x2="249.8" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="249.8" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="248" y1="296" x2="257" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="248.45" y1="281.5" x2="239.45" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="248.9" y1="267" x2="257.9" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="249.35" y1="252.5" x2="240.35" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="249.8" y1="238" x2="258.8" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="258" y1="296" x2="259.8" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="259.8" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="258" y1="296" x2="267" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="258.45" y1="281.5" x2="249.45" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="258.9" y1="267" x2="267.9" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="259.35" y1="252.5" x2="250.35" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="259.8" y1="238" x2="268.8" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g>
+  <g>
+    <line x1="268" y1="296" x2="269.8" y2="238"
+          stroke="#998811" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+    <ellipse cx="269.8" cy="231" rx="3" ry="8" fill="#ccaa22" opacity="0.75"/>
+    <line x1="268" y1="296" x2="277" y2="289"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="268.45" y1="281.5" x2="259.45" y2="274.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="268.9" y1="267" x2="277.9" y2="260"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="269.35" y1="252.5" x2="260.35" y2="245.5"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+    <line x1="269.8" y1="238" x2="278.8" y2="231"
+               stroke="#bbaa22" stroke-width="1.2" opacity="0.65"/>
+  </g></g>
+  
+  <!-- River -->
+  <path d="M18,302 Q80,297 150,304 Q220,309 282,302
+           L282,322 Q220,327 150,322 Q80,315 18,322 Z"
+        fill="#0d4433" opacity="0.65"/>
+  <!-- Ripples -->
+  <path d="M62,312 Q71,310 80,312"
+             fill="none" stroke="#226644" stroke-width="0.8" opacity="0.55"/>
+  <path d="M118,312 Q127,310 136,312"
+             fill="none" stroke="#226644" stroke-width="0.8" opacity="0.55"/>
+  <path d="M172,312 Q181,310 190,312"
+             fill="none" stroke="#226644" stroke-width="0.8" opacity="0.55"/>
+  <path d="M228,312 Q237,310 246,312"
+             fill="none" stroke="#226644" stroke-width="0.8" opacity="0.55"/>
+  
+  <g>
+    <circle cx="40" cy="298" r="6" fill="#bb2244" opacity="0.7"/>
+    <circle cx="38.2" cy="296.2" r="3.3" fill="#cc3355" opacity="0.6"/>
+    <circle cx="42.1" cy="296.8" r="2.7" fill="#cc3355" opacity="0.55"/>
+    <circle cx="40" cy="298" r="1.8" fill="#ff8899" opacity="0.45"/>
+  </g> <g>
+    <circle cx="55" cy="295" r="5" fill="#bb2244" opacity="0.7"/>
+    <circle cx="53.5" cy="293.5" r="2.75" fill="#cc3355" opacity="0.6"/>
+    <circle cx="56.75" cy="294" r="2.25" fill="#cc3355" opacity="0.55"/>
+    <circle cx="55" cy="295" r="1.5" fill="#ff8899" opacity="0.45"/>
+  </g> <g>
+    <circle cx="67" cy="297" r="4.5" fill="#bb2244" opacity="0.7"/>
+    <circle cx="65.65" cy="295.65" r="2.48" fill="#cc3355" opacity="0.6"/>
+    <circle cx="68.58" cy="296.1" r="2.03" fill="#cc3355" opacity="0.55"/>
+    <circle cx="67" cy="297" r="1.35" fill="#ff8899" opacity="0.45"/>
+  </g>
+  <g>
+    <circle cx="245" cy="298" r="6" fill="#bb2244" opacity="0.7"/>
+    <circle cx="243.2" cy="296.2" r="3.3" fill="#cc3355" opacity="0.6"/>
+    <circle cx="247.1" cy="296.8" r="2.7" fill="#cc3355" opacity="0.55"/>
+    <circle cx="245" cy="298" r="1.8" fill="#ff8899" opacity="0.45"/>
+  </g> <g>
+    <circle cx="258" cy="295" r="5" fill="#bb2244" opacity="0.7"/>
+    <circle cx="256.5" cy="293.5" r="2.75" fill="#cc3355" opacity="0.6"/>
+    <circle cx="259.75" cy="294" r="2.25" fill="#cc3355" opacity="0.55"/>
+    <circle cx="258" cy="295" r="1.5" fill="#ff8899" opacity="0.45"/>
+  </g> <g>
+    <circle cx="270" cy="297" r="4.5" fill="#bb2244" opacity="0.7"/>
+    <circle cx="268.65" cy="295.65" r="2.48" fill="#cc3355" opacity="0.6"/>
+    <circle cx="271.58" cy="296.1" r="2.03" fill="#cc3355" opacity="0.55"/>
+    <circle cx="270" cy="297" r="1.35" fill="#ff8899" opacity="0.45"/>
+  </g>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#88ee88" letter-spacing="2.5"
+        filter="url(#glow)">The Empress</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#336633" letter-spacing="3" opacity="0.75">Daleth · Venus · Path 14</text>
+</svg>

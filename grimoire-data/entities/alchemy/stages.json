@@ -1,0 +1,355 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "alchemy.stage.nigredo",
+      "entityType": "alchemy.stage",
+      "primaryDisplayName": "Nigredo",
+      "description": "Nigredo, the Blackening, is the first and most feared stage of the Great Work — the descent into primal chaos, corruption, and the death of the old form. In the laboratory, it manifests as calcination (reducing a substance to ash by fire) and putrefaction (the rotting that precedes regeneration), processes through which matter loses all its former qualities and is returned to an undifferentiated prima materia. The ruling planet is Saturn, whose leaden heaviness and cold dissolution govern this threshold, and the colour black signals the utter absence of light — the nigredo of the soul corresponds to the dark night described by mystics across traditions. In Jungian depth psychology, Nigredo maps precisely onto the confrontation with the Shadow — the encounter with the unconscious's repressed contents, depression, disorientation, and the dissolution of the persona — a necessary annihilation of what we thought we were before the deeper self can emerge. Paracelsus called this stage the 'massa confusa,' the confused mass in which all possibilities exist undifferentiated; it is the womb of transformation, not merely an ending but the only doorway through which the Work can begin.",
+      "secondaryNames": [
+        {
+          "name": "The Blackening",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Black Phase",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-stage"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "colour": "black",
+        "associatedPlanet": "astrology.planet.saturn",
+        "associatedMetal": "alchemy.metal.lead",
+        "operations": [
+          "alchemy.operation.calcination",
+          "alchemy.operation.dissolution"
+        ],
+        "symbol": "🜏",
+        "psychologicalCorrespondence": "The confrontation with the Shadow; depression, dissolution of the ego-persona, the dark night of the soul — the necessary death of the false self before authentic transformation can begin."
+      }
+    },
+    {
+      "canonicalName": "alchemy.stage.albedo",
+      "entityType": "alchemy.stage",
+      "primaryDisplayName": "Albedo",
+      "description": "Albedo, the Whitening, emerges from the ashes of Nigredo as the first light after the long darkness — a stage of purification, washing, and the recovery of what is essential from the chaos that preceded it. The laboratory operations of separation (dividing the pure from the impure) and conjunction (uniting the purified opposites) dominate this phase, producing the White Stone or White Tincture, which medieval alchemists believed could transmute base metals into silver. The Moon governs Albedo, and silver is its metal — the lunar light that illuminates without scorching, the reflective consciousness that sees without distorting. Psychologically, Albedo corresponds to the Jungian process of anima/animus integration: the encounter with the soul-figure, the development of a reflective inner life, and the beginning of what Jung called the 'individuation process' proper — the ego's first genuine contact with the deeper self rather than the defended persona. The albedo is sometimes called the 'conjunction of sun and moon within' (the sacred marriage of Sol and Luna, masculine and feminine, conscious and unconscious), and its attainment was regarded as a major milestone — the promise of completion, even if the full gold of Rubedo lay still beyond.",
+      "secondaryNames": [
+        {
+          "name": "The Whitening",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "White Phase",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The White Stone",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-stage"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "colour": "white",
+        "associatedPlanet": "astrology.planet.luna",
+        "associatedMetal": "alchemy.metal.silver",
+        "operations": [
+          "alchemy.operation.separation",
+          "alchemy.operation.conjunction"
+        ],
+        "symbol": "🜈",
+        "psychologicalCorrespondence": "Integration of the anima/animus; development of reflective inner life and encounter with the soul-image; the sacred inner marriage of conscious and unconscious, masculine and feminine principles."
+      }
+    },
+    {
+      "canonicalName": "alchemy.stage.citrinitas",
+      "entityType": "alchemy.stage",
+      "primaryDisplayName": "Citrinitas",
+      "description": "Citrinitas, the Yellowing, is the most neglected of the four classical stages — by the 15th century many alchemical texts had collapsed it into Rubedo, and it was only rediscovered in its full significance through comparative textual scholarship. Where Albedo completes the lunar purification, Citrinitas marks the first emergence of the solar principle — the dawning of golden light, the stirring of spiritual intellect and intuitive wisdom, a transitional awakening between the cool white of purification and the full red heat of completion. Its metal is associated with the early processes of gold-making, and it is governed by Mercury (or sometimes by the Sun in its rising aspect), marking it as a stage of communication, mediation, and the integration of opposites into a new synthesis. In Jungian terms, Citrinitas corresponds to the dawning of the Self as a living reality — the first experiences of what Jung called the 'numinous,' the sense of a larger ordering principle beginning to illuminate the personality from within, the 'solar' consciousness that transcends both the ego-darkness of Nigredo and the reflective lunar world of Albedo. Some Renaissance texts describe it as the stage of intuitive prophecy, solar vision, and the dawning of the philosopher's gold — the inner sun that knows before the mind has caught up.",
+      "secondaryNames": [
+        {
+          "name": "The Yellowing",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xanthosis",
+          "languageTag": "grc",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Yellow Phase",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-stage"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "colour": "yellow",
+        "associatedPlanet": "astrology.planet.mercury",
+        "associatedMetal": "alchemy.metal.mercury",
+        "operations": [
+          "alchemy.operation.fermentation",
+          "alchemy.operation.distillation"
+        ],
+        "symbol": null,
+        "psychologicalCorrespondence": "The dawning of the Self as a numinous reality; solar intuitive wisdom rising above the lunar reflective stage; the first genuine illuminations of the individuation process — the inner sun beginning to shine through the psyche."
+      }
+    },
+    {
+      "canonicalName": "alchemy.stage.rubedo",
+      "entityType": "alchemy.stage",
+      "primaryDisplayName": "Rubedo",
+      "description": "Rubedo, the Reddening, is the culmination of the Great Work — the stage in which the perfected substance achieves its full solar nature, the White Stone is transmuted into the Red Stone, and the Philosopher's Stone itself is produced: the universal medicine capable of transforming base metals into gold and curing all sickness of body, soul, and spirit. The operations of distillation and coagulation crystallise the perfected matter into its final form — a red powder or stone of supreme potency — and the Sun rules this stage absolutely, its metal being gold in its fullest solar expression. The red colour itself carries enormous symbolic weight across traditions: the red of blood that sustains life, the red of fire that purifies and transforms, the red of the dawn that follows the darkest night, and in the mystical alchemy of figures like Michael Maier and Heinrich Khunrath, the red of the incorruptible divine body. In Jung's reading of the alchemical tradition, Rubedo corresponds to the integration of the Self into lived reality — not merely an inner vision of wholeness but its embodiment in the world, what he called the 'coniunctio' in its highest form: the coincidentia oppositorum, the union of all opposites in a living personality that is simultaneously human and divine, temporal and eternal, individual and universal.",
+      "secondaryNames": [
+        {
+          "name": "The Reddening",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Red Stone",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The Philosopher's Stone",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-stage"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "colour": "red",
+        "associatedPlanet": "astrology.planet.sol",
+        "associatedMetal": "alchemy.metal.gold",
+        "operations": [
+          "alchemy.operation.distillation",
+          "alchemy.operation.coagulation"
+        ],
+        "symbol": "🜍",
+        "psychologicalCorrespondence": "The integration and embodiment of the Self in daily life; the coniunctio — the living union of all opposites; the fully individuated personality that holds the tension of human and divine, conscious and unconscious, without collapse or inflation."
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.calcination",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Calcination",
+      "description": "Calcination is the first operation of the Great Work, in which the prima materia — the raw, unworked substance — is subjected to intense fire until it is reduced entirely to a dry, white or grey ash called the 'calx.' In the laboratory, this means heating a metal or mineral repeatedly until all volatile components have burned away and only the incombustible mineral skeleton remains — a process requiring fierce heat, patience, and the willingness to destroy completely. The ruling sign is Aries, whose fiery, pioneering nature initiates the Work, and the associated planet is Mars, lord of the forge, the will, and the application of directed force without mercy. Psychologically, Calcination corresponds to the burning away of ego-rigidity and defensive armour — the experiences of crisis, humiliation, or spiritual emergency that shatter our fixed self-concept and force us to confront what we are made of when everything that was merely habit, performance, or attachment has been consumed; Jung associated this with the confrontation with the Shadow and the dissolution of the persona that initiates genuine depth psychology work.",
+      "secondaryNames": [
+        {
+          "name": "The First Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "element": "astrology.element.fire",
+        "associatedSign": "Aries",
+        "associatedPlanet": "astrology.planet.mars",
+        "symbol": "🜂",
+        "stage": "alchemy.stage.nigredo"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.dissolution",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Dissolution",
+      "description": "Dissolution is the second operation, in which the ash produced by Calcination is dissolved in water or acid — typically in the corrosive waters of vitriol or in the philosophical mercury that dissolves all things — so that what was rigid and ash-like becomes fluid, malleable, and capable of further transformation. Where Calcination destroys by fire, Dissolution destroys by water: it softens, melts, and reconstitutes, allowing hidden qualities to emerge that the fire alone could not release. Scorpio governs this operation, its deep water ruled by Pluto's transformative depth and Mars's cutting force — a sign of the hidden depths, of what lies beneath the surface, of the unconscious tides that dissolve what calcination has broken down. Psychologically, Dissolution corresponds to the surrender of ego-control — the willingness to let the unconscious have its say through dreams, emotion, imagination, and somatic experience — what Jungian practice calls 'active imagination,' the deliberate opening of the ego to the dissolved prima materia of the psyche.",
+      "secondaryNames": [
+        {
+          "name": "The Second Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "element": "astrology.element.water",
+        "associatedSign": "Scorpio",
+        "associatedPlanet": "astrology.planet.mars",
+        "symbol": "🜄",
+        "stage": "alchemy.stage.nigredo"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.separation",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Separation",
+      "description": "Separation is the third operation, in which the dissolved material from Dissolution is sorted, filtered, and divided — the pure is gathered from the impure, the essential from the accidental, the subtle from the gross. In the laboratory this involves filtration, decantation, and the careful isolation of the spirituous parts from the earthy residue, often guided by the criterion that what rises is purer than what sinks. Gemini governs Separation, its airy principle of distinction and discernment making manifest the dual nature of all substances — their volatile 'mercury' and their fixed 'sulphur,' their spirit and their body. Psychologically, Separation is the work of discrimination: learning to distinguish one's own authentic values, desires, and reactions from those inherited, conditioned, or projected onto us by others — the painstaking sorting of the ego's contents that reveals which elements genuinely belong to the self and which are borrowed, false, or no longer useful.",
+      "secondaryNames": [
+        {
+          "name": "The Third Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "element": "astrology.element.air",
+        "associatedSign": "Gemini",
+        "associatedPlanet": "astrology.planet.mercury",
+        "symbol": "🜁",
+        "stage": "alchemy.stage.albedo"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.conjunction",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Conjunction",
+      "description": "Conjunction is the fourth operation — the sacred marriage (hieros gamos) in which the separated and purified opposites are brought together in a new, higher union. What was divided in Separation is now reunited, but no longer as the confused mixture of the original prima materia: this is a conscious, willed union of complementary principles — the fixed and volatile, the sulphur and mercury, the King and Queen, the Sun and Moon — that creates something qualitatively new. Venus and Taurus govern this operation, presiding over the fertile earth in which opposing forces unite and become productive; the element is earth, the grounded, embodied reality of the new synthesis. Psychologically, Conjunction corresponds to the 'coniunctio' in its initial form — the first integration of consciously recognised opposites within the psyche, the union of thinking and feeling, of masculine and feminine inner principles, the synthesis of perspectives that were formerly in irresolvable conflict.",
+      "secondaryNames": [
+        {
+          "name": "The Fourth Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Sacred Marriage",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "element": "astrology.element.earth",
+        "associatedSign": "Taurus",
+        "associatedPlanet": "astrology.planet.venus",
+        "symbol": "🜃",
+        "stage": "alchemy.stage.albedo"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.fermentation",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Fermentation",
+      "description": "Fermentation is the fifth operation and the most mysterious of the seven — it consists of two phases: putrefaction, in which the substance is allowed to rot and die completely, and spiritualisation, in which a new, living, animated principle emerges from the decay as bread rises from yeast or wine from grape-must. The alchemists described it as the point at which the 'philosophical mercury' — the living spirit of transformation — enters the dead matter and animates it from within, converting what was merely chemical into something alive. Cancer governs Fermentation, its lunar waters the medium of gestation and the womb of the new life; the process has no fixed timetable and cannot be forced — it demands patience, trust in the process, and the willingness to remain with what appears to be nothing but rot. Psychologically, Fermentation maps onto what the Romantics called 'negative capability' and what Jung described in the context of the transcendent function: the period of apparent stagnation or depression after a major dissolution, in which the new self is gestating invisibly and only patience and an attitude of receptive trust can midwife its emergence.",
+      "secondaryNames": [
+        {
+          "name": "The Fifth Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "element": "astrology.element.water",
+        "associatedSign": "Cancer",
+        "associatedPlanet": "astrology.planet.luna",
+        "symbol": null,
+        "stage": "alchemy.stage.citrinitas"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.distillation",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Distillation",
+      "description": "Distillation is the sixth operation — the repeated process of heating the fermented substance until its most volatile and spirituous elements ascend as vapour, then condensing them in a cooler vessel above: the pure spirit rises, the impure remains below, and what returns is subtler, more concentrated, and more potent than before. The alchemists typically performed multiple distillations, insisting that seven, nine, or even a thousand repetitions were required to achieve the requisite purity — each cycle raising the subtle above the gross and strengthening the 'quintessence' that would become the Stone. Virgo and Mercury govern this operation — Virgo's discriminating perfectionism and attention to technical detail, Mercury's capacity to move between realms and carry the essential upward. Psychologically, Distillation corresponds to the refinement of inner experience through repetition and conscious attention — the practice of sustained reflection, meditation, or analysis that distils a volatile emotional or cognitive experience into lasting wisdom, separating the essential insight from the reactivity or noise in which it was first embedded.",
+      "secondaryNames": [
+        {
+          "name": "The Sixth Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "element": "astrology.element.air",
+        "associatedSign": "Virgo",
+        "associatedPlanet": "astrology.planet.mercury",
+        "symbol": "🝪",
+        "stage": "alchemy.stage.citrinitas"
+      }
+    },
+    {
+      "canonicalName": "alchemy.operation.coagulation",
+      "entityType": "alchemy.operation",
+      "primaryDisplayName": "Coagulation",
+      "description": "Coagulation is the seventh and final operation — the fixation and crystallisation of the distilled quintessence into the Philosopher's Stone: a solid, permanent, incorruptible form that is simultaneously physical and spiritual, the perfected matter that retains all the virtues of the preceding operations in a stable and transmissible form. In the laboratory, the fully purified substance, which has become increasingly volatile and subtle through Distillation, is at last brought back down into a fixed, incombustible solid — it 'congeals' as the universal medicine and tincture. Capricorn and Saturn govern this final operation, their earth and time principles ensuring that the work achieves lasting, real-world form rather than remaining a mere vision or a volatile gas; the Stone must endure, must be reproducible, must work in the world of matter. Psychologically, Coagulation is the embodiment of the insights of individuation in a lived personality — the permanent integration of shadow, anima/animus, and Self into a consistent, authentic way of being that neither inflates into inflation nor deflates into old patterns, a character made stable by the fire it has passed through.",
+      "secondaryNames": [
+        {
+          "name": "The Seventh Operation",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "alchemy",
+        "alchemy-operation"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "element": "astrology.element.earth",
+        "associatedSign": "Capricorn",
+        "associatedPlanet": "astrology.planet.saturn",
+        "symbol": "🝛",
+        "stage": "alchemy.stage.rubedo"
+      }
+    }
+  ]
+}

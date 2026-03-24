@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "ayurveda.dosha.vata",
+      "entityType": "ayurveda.dosha",
+      "primaryDisplayName": "Vata",
+      "description": "Vata (वात, vāta) derives from the Sanskrit root vā, meaning 'to blow' or 'to move', and is the dosha of movement — it governs every form of motion in the body and mind, from the breath and heartbeat to the firing of nerve impulses, the peristalsis of the gut, and the flow of thought across consciousness. Composed of Vayu (Air) and Akasha (Ether/Space), Vata carries the qualities (gunas) of being dry, light, cold, rough, subtle, and mobile, and when in balance it produces vitality, creativity, adaptability, and enthusiasm; when imbalanced toward excess it generates anxiety, insomnia, constipation, dry skin, and a scattered, fearful mind. Its primary seat is the colon (pakwashaya), and it is especially active in the sense of touch, governing the skin and all tactile perception. Vata dominates the autumn and early winter season, when cold, dry, windy weather aggravates its qualities; the stage of life most associated with Vata is old age, when the body naturally becomes drier and lighter. In Ayurvedic psychology, a Vata-dominant constitution (prakriti) is associated with quickness of mind, artistic sensibility, and spiritual inclination — but also with susceptibility to overwhelm and the need for grounding routines.",
+      "secondaryNames": [
+        { "name": "वात", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Vāta", "languageTag": "sa-iast", "visible": true, "sortOrder": 1 },
+        { "name": "Wind Humour", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Air Humour", "languageTag": "en-alt", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["ayurveda", "dosha", "hinduism", "constitution"],
+      "extendedData": {
+        "orderNumber": 1,
+        "elements": ["tattwa.vayu", "tattwa.akasha"],
+        "westernElements": ["astrology.element.air"],
+        "qualities": ["dry", "light", "cold", "rough", "subtle", "mobile"],
+        "bodySeat": "colon",
+        "season": "autumn",
+        "sense": "touch",
+        "stageOfLife": "old age",
+        "sanskritEtymology": "From vā (to blow, to move)",
+        "balancedQualities": ["vitality", "creativity", "adaptability", "enthusiasm", "quickness of mind"],
+        "imbalanceManifestations": ["anxiety", "insomnia", "constipation", "dry skin", "scattered mind", "fear"]
+      }
+    },
+    {
+      "canonicalName": "ayurveda.dosha.pitta",
+      "entityType": "ayurveda.dosha",
+      "primaryDisplayName": "Pitta",
+      "description": "Pitta (पित्त, pitta) derives from the Sanskrit root tap, meaning 'to heat' or 'to transform', and is the dosha of fire and transformation — it governs all processes of digestion, metabolism, and conversion, both in the physical body (the digestion of food, the metabolism of nutrients, the body's heat regulation) and in the mind (the digestion of experience, the sharpening of intelligence, the perception and discrimination of reality). Composed of Tejas (Fire) and Apas (Water), Pitta carries the qualities of being hot, sharp, light, liquid, oily, and spreading; in balance it produces sharp intelligence, courage, leadership, and clear perception, while in excess it manifests as anger, inflammation, skin rashes, acid digestion, perfectionism, and the tendency to criticism. Its primary seat is the small intestine (grahani), the site of the digestive fire (agni) that Ayurveda regards as the foundation of all health. Pitta dominates the summer season, when heat naturally increases its qualities, and is associated with the stage of adulthood — the years of achievement, ambition, and worldly activity. In Ayurvedic psychology, a Pitta-dominant constitution is associated with the qualities of a natural leader, teacher, or entrepreneur: focused, driven, articulate, and highly organised, but prone to irritability and overheating when their fire is not properly channelled.",
+      "secondaryNames": [
+        { "name": "पित्त", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Pitta", "languageTag": "sa-iast", "visible": false, "sortOrder": 1 },
+        { "name": "Fire Humour", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Bile Humour", "languageTag": "en-alt", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["ayurveda", "dosha", "hinduism", "constitution"],
+      "extendedData": {
+        "orderNumber": 2,
+        "elements": ["tattwa.tejas", "tattwa.apas"],
+        "westernElements": ["astrology.element.fire"],
+        "qualities": ["hot", "sharp", "light", "liquid", "oily", "spreading"],
+        "bodySeat": "small intestine",
+        "season": "summer",
+        "sense": "sight",
+        "stageOfLife": "adulthood",
+        "sanskritEtymology": "From tap (to heat, to transform)",
+        "balancedQualities": ["intelligence", "courage", "leadership", "clarity", "ambition", "perception"],
+        "imbalanceManifestations": ["anger", "inflammation", "skin rashes", "acid digestion", "perfectionism", "criticism"]
+      }
+    },
+    {
+      "canonicalName": "ayurveda.dosha.kapha",
+      "entityType": "ayurveda.dosha",
+      "primaryDisplayName": "Kapha",
+      "description": "Kapha (कफ, kapha) derives from the Sanskrit roots ka (water) and pha (to flourish or fill), and is the dosha of structure, stability, and nourishment — it provides the physical cohesion, lubrication, and immune resilience that hold the body together and sustain its tissues. Composed of Prithivi (Earth) and Apas (Water), Kapha carries the qualities of being heavy, slow, cool, oily, smooth, dense, soft, and stable; in balance it produces strength, endurance, loyalty, calm, and deep compassion, while in excess it manifests as lethargy, weight gain, congestion, depression, possessiveness, and resistance to change. Its primary seats are the lungs, chest, and stomach — the regions where Kapha's mucus and fluid provide structural lubrication for the respiratory and digestive systems. Kapha dominates the spring season, when melting ice and damp warmth aggravate its heavy, moist qualities, and is associated with childhood — the years of rapid growth when the body is building its tissues and the mind is still soft and impressionable. In Ayurvedic psychology, a Kapha-dominant constitution is associated with the qualities of a devoted friend, steadfast caregiver, and natural healer: patient, grounded, deeply empathic, and long-memoried, but prone to attachment, emotional eating, and the hoarding of things or relationships.",
+      "secondaryNames": [
+        { "name": "कफ", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Kapha", "languageTag": "sa-iast", "visible": false, "sortOrder": 1 },
+        { "name": "Earth-Water Humour", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Phlegm Humour", "languageTag": "en-alt", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["ayurveda", "dosha", "hinduism", "constitution"],
+      "extendedData": {
+        "orderNumber": 3,
+        "elements": ["tattwa.prithivi", "tattwa.apas"],
+        "westernElements": ["astrology.element.earth", "astrology.element.water"],
+        "qualities": ["heavy", "slow", "cool", "oily", "smooth", "dense", "soft", "stable"],
+        "bodySeat": "lungs/chest/stomach",
+        "season": "spring",
+        "sense": "taste and smell",
+        "stageOfLife": "childhood",
+        "sanskritEtymology": "From ka (water) + pha (to flourish/fill)",
+        "balancedQualities": ["strength", "endurance", "loyalty", "calm", "compassion", "patience"],
+        "imbalanceManifestations": ["lethargy", "weight gain", "congestion", "depression", "possessiveness", "resistance to change"]
+      }
+    }
+  ]
+}

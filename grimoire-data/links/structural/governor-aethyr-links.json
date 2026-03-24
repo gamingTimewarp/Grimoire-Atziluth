@@ -1,0 +1,635 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "enochian.governor.occodon",
+      "target": "enochian.aethyr.lil",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.pascomb",
+      "target": "enochian.aethyr.lil",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.valgars",
+      "target": "enochian.aethyr.lil",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.doagnis",
+      "target": "enochian.aethyr.arn",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.pacasna",
+      "target": "enochian.aethyr.arn",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.dialoia",
+      "target": "enochian.aethyr.arn",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.samapha",
+      "target": "enochian.aethyr.zom",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.virooli",
+      "target": "enochian.aethyr.zom",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.andispi",
+      "target": "enochian.aethyr.zom",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.thotanp",
+      "target": "enochian.aethyr.paz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.axziarg",
+      "target": "enochian.aethyr.paz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.pothnir",
+      "target": "enochian.aethyr.paz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.lazdixi",
+      "target": "enochian.aethyr.lit",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.nocamal",
+      "target": "enochian.aethyr.lit",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tiarpax",
+      "target": "enochian.aethyr.lit",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.saxtomp",
+      "target": "enochian.aethyr.maz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.vavaamp",
+      "target": "enochian.aethyr.maz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.zirzird",
+      "target": "enochian.aethyr.maz",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.opmacas",
+      "target": "enochian.aethyr.deo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.genadol",
+      "target": "enochian.aethyr.deo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.aspiaon",
+      "target": "enochian.aethyr.deo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.zamfres",
+      "target": "enochian.aethyr.zid",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.todnaon",
+      "target": "enochian.aethyr.zid",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.pristac",
+      "target": "enochian.aethyr.zid",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.oddiorg",
+      "target": "enochian.aethyr.zip",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.cralpir",
+      "target": "enochian.aethyr.zip",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.doanzin",
+      "target": "enochian.aethyr.zip",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.lexarph",
+      "target": "enochian.aethyr.zax",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.comanan",
+      "target": "enochian.aethyr.zax",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tabitom",
+      "target": "enochian.aethyr.zax",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.molpand",
+      "target": "enochian.aethyr.ikh",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.vsnarda",
+      "target": "enochian.aethyr.ikh",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ponodol",
+      "target": "enochian.aethyr.ikh",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tapamal",
+      "target": "enochian.aethyr.loe",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.gedoons",
+      "target": "enochian.aethyr.loe",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ambriol",
+      "target": "enochian.aethyr.loe",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.gecaond",
+      "target": "enochian.aethyr.zim",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.laparin",
+      "target": "enochian.aethyr.zim",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.docepax",
+      "target": "enochian.aethyr.zim",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tedoond",
+      "target": "enochian.aethyr.uta",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.vivipos",
+      "target": "enochian.aethyr.uta",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ooanamb",
+      "target": "enochian.aethyr.uta",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tahamdo",
+      "target": "enochian.aethyr.oxo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.nociabi",
+      "target": "enochian.aethyr.oxo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tastoxo",
+      "target": "enochian.aethyr.oxo",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.cucnrpt",
+      "target": "enochian.aethyr.lea",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.lavacon",
+      "target": "enochian.aethyr.lea",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.sochial",
+      "target": "enochian.aethyr.lea",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.sigmorf",
+      "target": "enochian.aethyr.tan",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.aydropt",
+      "target": "enochian.aethyr.tan",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.tocarzi",
+      "target": "enochian.aethyr.tan",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.nabaomi",
+      "target": "enochian.aethyr.zen",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.zafasai",
+      "target": "enochian.aethyr.zen",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.yalpamb",
+      "target": "enochian.aethyr.zen",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.torzoxi",
+      "target": "enochian.aethyr.pop",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.abaiond",
+      "target": "enochian.aethyr.pop",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.omagrap",
+      "target": "enochian.aethyr.pop",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.zildron",
+      "target": "enochian.aethyr.chr",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.parziba",
+      "target": "enochian.aethyr.chr",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.totocan",
+      "target": "enochian.aethyr.chr",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.chirzpa",
+      "target": "enochian.aethyr.asp",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.toantom",
+      "target": "enochian.aethyr.asp",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.vixpalg",
+      "target": "enochian.aethyr.asp",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ozidaia",
+      "target": "enochian.aethyr.lin",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.paraoan",
+      "target": "enochian.aethyr.lin",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.calzirg",
+      "target": "enochian.aethyr.lin",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ronoamb",
+      "target": "enochian.aethyr.tor",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.onizimp",
+      "target": "enochian.aethyr.tor",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.zaxanin",
+      "target": "enochian.aethyr.tor",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.orcanir",
+      "target": "enochian.aethyr.nia",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.chialps",
+      "target": "enochian.aethyr.nia",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.soageel",
+      "target": "enochian.aethyr.nia",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.mirzind",
+      "target": "enochian.aethyr.vti",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.obvaors",
+      "target": "enochian.aethyr.vti",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.ranglam",
+      "target": "enochian.aethyr.vti",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.pophand",
+      "target": "enochian.aethyr.des",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.nigrana",
+      "target": "enochian.aethyr.des",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.bazchim",
+      "target": "enochian.aethyr.des",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.saziami",
+      "target": "enochian.aethyr.zaa",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.mathvla",
+      "target": "enochian.aethyr.zaa",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.orpamb",
+      "target": "enochian.aethyr.zaa",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.labnixp",
+      "target": "enochian.aethyr.bag",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.focisni",
+      "target": "enochian.aethyr.bag",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.oxlopar",
+      "target": "enochian.aethyr.bag",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.vastrim",
+      "target": "enochian.aethyr.rii",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.odraxti",
+      "target": "enochian.aethyr.rii",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.gmtziam",
+      "target": "enochian.aethyr.rii",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.taoagla",
+      "target": "enochian.aethyr.tex",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.gemnimb",
+      "target": "enochian.aethyr.tex",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "enochian.governor.advorpt",
+      "target": "enochian.aethyr.tex",
+      "label": "governs-aethyr",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

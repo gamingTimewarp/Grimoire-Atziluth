@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "compass.direction.north",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "North",
+      "description": "The northern cardinal direction (0°/360°). In Chinese cosmology North is associated with Winter, the Kan trigram (Water), the colour black, and the Heavenly Stem pair Ren/Gui. In Feng Shui the North sector governs career and life path; activating this area supports professional advancement and sense of purpose. The pole star anchors the northern axis in both Daoist cosmology and Western astrology, making North the direction of stillness at the hub of celestial rotation.",
+      "secondaryNames": [
+        { "name": "N", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "北", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "cardinal"],
+      "extendedData": { "degrees": 0, "abbreviation": "N", "type": "cardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.northeast",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "Northeast",
+      "description": "The northeastern intercardinal direction (45°). In Chinese cosmology Northeast corresponds to the transitional period between Late Winter and Early Spring, the Gen trigram (Mountain), the Earth element, and the Earthly Branch Chou/Yin. In Feng Shui the Northeast sector governs knowledge, self-cultivation, and academic achievement; it is sometimes called the Mountain of Wisdom, and activating it supports study, inner growth, and spiritual development.",
+      "secondaryNames": [
+        { "name": "NE", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "东北", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "intercardinal"],
+      "extendedData": { "degrees": 45, "abbreviation": "NE", "type": "intercardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.east",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "East",
+      "description": "The eastern cardinal direction (90°). In Chinese cosmology East corresponds to Spring, the Zhen trigram (Thunder), the Wood element, and the Heavenly Stem pair Jia/Yi. East is the direction of sunrise and new beginnings, associated with the Azure Dragon, the greening of the world, and the upward surge of yang energy after winter's dormancy. In Feng Shui the East sector governs family relationships and health; nurturing this area fosters harmony among family members and supports physical vitality.",
+      "secondaryNames": [
+        { "name": "E", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "东", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "cardinal"],
+      "extendedData": { "degrees": 90, "abbreviation": "E", "type": "cardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.southeast",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "Southeast",
+      "description": "The southeastern intercardinal direction (135°). In Chinese cosmology Southeast corresponds to the transitional period between Late Spring and Early Summer, the Xun trigram (Wind), the Wood element, and the Earthly Branch Chen/Si. In Feng Shui the Southeast sector is the classical wealth and abundance corner, governing prosperity, financial flow, and fortunate opportunities; it is one of the most carefully attended sectors in Black Hat and Classical Feng Shui alike.",
+      "secondaryNames": [
+        { "name": "SE", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "东南", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "intercardinal"],
+      "extendedData": { "degrees": 135, "abbreviation": "SE", "type": "intercardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.south",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "South",
+      "description": "The southern cardinal direction (180°). In Chinese cosmology South corresponds to Summer, the Li trigram (Fire), the colour red, and the Heavenly Stem pair Bing/Ding. South is the direction of the noon sun and the peak of yang, associated with the Vermilion Bird and the full flowering of life. In Feng Shui the South sector governs fame and reputation; a vibrant South area supports public recognition, social standing, and the clarity of one's vision and purpose.",
+      "secondaryNames": [
+        { "name": "S", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "南", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "cardinal"],
+      "extendedData": { "degrees": 180, "abbreviation": "S", "type": "cardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.southwest",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "Southwest",
+      "description": "The southwestern intercardinal direction (225°). In Chinese cosmology Southwest corresponds to Late Summer, the Kun trigram (Earth), the yellow and brown tones of harvested fields, and the Earthly Branch Wei/Shen. Kun is the supreme yin principle, receptive and nourishing. In Feng Shui the Southwest sector governs relationships, marriage, and romantic partnerships; tending this area with pairs of objects and earth-toned colours supports love, commitment, and the quality of close personal bonds.",
+      "secondaryNames": [
+        { "name": "SW", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "西南", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "intercardinal"],
+      "extendedData": { "degrees": 225, "abbreviation": "SW", "type": "intercardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.west",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "West",
+      "description": "The western cardinal direction (270°). In Chinese cosmology West corresponds to Autumn, the Dui trigram (Lake), the Metal element, the colour white, and the Heavenly Stem pair Geng/Xin. West is the direction of sunset and gathering inward, associated with the White Tiger and the harvest of what has been sown. In Feng Shui the West sector governs creativity, children, and projects; activating this area supports artistic expression, fertility, and the nurturing of new creative endeavours.",
+      "secondaryNames": [
+        { "name": "W", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "西", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "cardinal"],
+      "extendedData": { "degrees": 270, "abbreviation": "W", "type": "cardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.northwest",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "Northwest",
+      "description": "The northwestern intercardinal direction (315°). In Chinese cosmology Northwest corresponds to the transitional period between Late Autumn and Early Winter, the Qian trigram (Heaven), the Metal element, and the Earthly Branch Xu/Hai. Qian is the supreme yang principle, creative and authoritative. In Feng Shui the Northwest sector governs helpful people, mentors, and travel; honouring this sector attracts benefactors, supporters, and the assistance of influential individuals.",
+      "secondaryNames": [
+        { "name": "NW", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "西北", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "intercardinal"],
+      "extendedData": { "degrees": 315, "abbreviation": "NW", "type": "intercardinal" }
+    },
+    {
+      "canonicalName": "compass.direction.center",
+      "entityType": "compass.direction",
+      "primaryDisplayName": "Center",
+      "description": "The central point from which all eight directions radiate. In Chinese cosmology the Center is governed by the Earth element and identified with the Yellow Emperor (Huangdi), the mythic sovereign who harmonises the four cardinal quarters. It is assigned to Flying Star 5 (Lian Zhen, Pure Virtue/Destroyer) in the natal palace of the Xuan Kong system and to the Earth phase across all Five Element cosmologies. In Feng Shui the Center of a space governs overall health and balance; it should remain unobstructed, clean, and free of sha qi to ensure the harmonious flow of energy throughout the entire building.",
+      "secondaryNames": [
+        { "name": "C", "languageTag": "en-abbrev", "visible": true, "sortOrder": 0 },
+        { "name": "中", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["direction", "compass", "center"],
+      "extendedData": { "degrees": null, "abbreviation": "C", "type": "center" }
+    }
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "angel.shem.vehuiah",
+      "target": "goetia.demon.bael",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.jeliel",
+      "target": "goetia.demon.agares",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.sitael",
+      "target": "goetia.demon.vassago",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.elemiah",
+      "target": "goetia.demon.samigina",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mahasiah",
+      "target": "goetia.demon.marbas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lelahel",
+      "target": "goetia.demon.valefor",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.achaiah",
+      "target": "goetia.demon.amon",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.cahetel",
+      "target": "goetia.demon.barbatos",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haziel",
+      "target": "goetia.demon.paimon",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.aladiah",
+      "target": "goetia.demon.buer",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lauviah",
+      "target": "goetia.demon.gusion",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahaiah",
+      "target": "goetia.demon.sitri",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yezalel",
+      "target": "goetia.demon.beleth",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mebahel",
+      "target": "goetia.demon.leraje",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hariel",
+      "target": "goetia.demon.eligos",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hekamiah",
+      "target": "goetia.demon.zepar",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lauviah-ii",
+      "target": "goetia.demon.botis",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.caliel",
+      "target": "goetia.demon.bathin",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.leuviah",
+      "target": "goetia.demon.sallos",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.pahaliah",
+      "target": "goetia.demon.purson",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nelkhael",
+      "target": "goetia.demon.marax",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeiayel",
+      "target": "goetia.demon.ipos",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.melahel",
+      "target": "goetia.demon.aim",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haheuiah",
+      "target": "goetia.demon.naberius",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nith-haiah",
+      "target": "goetia.demon.glasya-labolas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haaiah",
+      "target": "goetia.demon.bune",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeratel",
+      "target": "goetia.demon.ronove",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.seheiah",
+      "target": "goetia.demon.berith",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.reiiel",
+      "target": "goetia.demon.astaroth",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.omael",
+      "target": "goetia.demon.forneus",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lecabel",
+      "target": "goetia.demon.foras",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.vasariah",
+      "target": "goetia.demon.asmodeus",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yehuiah",
+      "target": "goetia.demon.gaap",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.lehahiah",
+      "target": "goetia.demon.furfur",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.chavakhiah",
+      "target": "goetia.demon.marchosias",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.menadel",
+      "target": "goetia.demon.stolas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.aniel",
+      "target": "goetia.demon.phenex",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haamiah",
+      "target": "goetia.demon.halphas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.rehael",
+      "target": "goetia.demon.malphas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.ieiazel",
+      "target": "goetia.demon.raum",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahahel",
+      "target": "goetia.demon.focalor",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mikael",
+      "target": "goetia.demon.vepar",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.veuliah",
+      "target": "goetia.demon.sabnock",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yelahiah",
+      "target": "goetia.demon.shax",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.sealiah",
+      "target": "goetia.demon.vine",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.ariel-shem",
+      "target": "goetia.demon.bifrons",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.asaliah",
+      "target": "goetia.demon.vual",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mihael",
+      "target": "goetia.demon.haagenti",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.vehuel",
+      "target": "goetia.demon.crocell",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.daniel-shem",
+      "target": "goetia.demon.furcas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.hahasiah",
+      "target": "goetia.demon.balam",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.imamiah",
+      "target": "goetia.demon.alloces",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nanael",
+      "target": "goetia.demon.camio",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nithael",
+      "target": "goetia.demon.murmur",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mebahiah",
+      "target": "goetia.demon.orobas",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.poyel",
+      "target": "goetia.demon.gremory",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.nemamiah",
+      "target": "goetia.demon.ose",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.yeialel",
+      "target": "goetia.demon.amy",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.harahel",
+      "target": "goetia.demon.oriax",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mizrael",
+      "target": "goetia.demon.vapula",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.umabel",
+      "target": "goetia.demon.zagan",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.iah-hel",
+      "target": "goetia.demon.valac",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.anuel",
+      "target": "goetia.demon.andras",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mehiel",
+      "target": "goetia.demon.haures",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.damabiah",
+      "target": "goetia.demon.andrealphus",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.manakel",
+      "target": "goetia.demon.kimaris",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.eyael",
+      "target": "goetia.demon.amdusias",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.habuhiah",
+      "target": "goetia.demon.belial",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.rochel",
+      "target": "goetia.demon.decarabia",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.jabamiah",
+      "target": "goetia.demon.seere",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.haiaiel",
+      "target": "goetia.demon.dantalion",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.shem.mumiah",
+      "target": "goetia.demon.andromalius",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

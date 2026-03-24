@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "angel.archangel.metatron",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Metatron",
+      "description": "Metatron is the supreme archangel of Kether, the Prince of the Divine Countenance and the most exalted of all created beings in the Qabalistic and Merkabah traditions. He is identified in 3 Enoch and other Hekhalot texts with the patriarch Enoch who walked with God and was transformed into an angelic being of blazing fire, given seventy-two wings and countless eyes and set upon a throne adjacent to the divine throne itself. His name is interpreted variously as 'one who serves behind the throne,' 'guardian of the gate,' or as a Greek-derived title meaning 'measurer' or 'sharer of the throne,' and he functions as the celestial scribe, the transmitter of divine revelation, and the heavenly vice-regent through whom the Infinite communicates with creation. In the Golden Dawn system he is attributed to Kether along with the divine name Eheieh, and he is the twin of Sandalphon — the two pillars at the apex and base of the manifest Tree.",
+      "secondaryNames": [
+        { "name": "מֶטָטְרוֹן", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Metatron", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Prince of the Countenance", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Youth (Na'ar)", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["archangel", "qabalah", "kether", "enoch", "merkabah", "crown", "scribe"],
+      "extendedData": {
+        "orderNumber": 1,
+        "sephiraCorrespondence": "qabalah.sephira.kether",
+        "hebrewName": "מֶטָטְרוֹן",
+        "etymologyMeaning": "Variously: 'one behind the throne', 'measurer', 'sharer of the divine throne'; possibly Greek or Aramaic in origin",
+        "functions": "Celestial scribe, Prince of the Divine Countenance, transmitter of Torah, guide of souls, vice-regent of creation; identified with the transformed Enoch",
+        "planet": null
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.raziel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Raziel",
+      "description": "Raziel is the archangel of Chokmah, whose name means Secret of God or Herald of God, and he is the keeper of all celestial mysteries, the divine wisdom made angelic. He is the author of the legendary Sefer Raziel ha-Malakh, the Book of the Angel Raziel, which was said to contain the secret knowledge of creation given first to Adam after the Fall, then passed through the patriarchs and eventually attributed to Solomon — a grimoire of cosmic lore encoding the hidden names and mechanisms of existence. Standing at Chokmah, the sphere of primordial Wisdom and the first flash of divine self-knowledge, Raziel embodies the aspect of divinity that knows all things simultaneously and transmits that gnosis to those prepared to receive it. In the Golden Dawn schema he is the archangel who governs the zodiacal sphere and the divine name Yah, and his traditional image shows him wearing a grey cloak that shimmers with colours like the surface of water, carrying a glowing book.",
+      "secondaryNames": [
+        { "name": "רַזִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Raziel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Secret of God", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Herald of God", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["archangel", "qabalah", "chokmah", "wisdom", "mysteries", "gnosis", "sefer-raziel"],
+      "extendedData": {
+        "orderNumber": 2,
+        "sephiraCorrespondence": "qabalah.sephira.chokmah",
+        "hebrewName": "רַזִיאֵל",
+        "etymologyMeaning": "Raz (רָז) = secret, mystery; El (אֵל) = God — 'Secret of God' or 'God's mystery'",
+        "functions": "Keeper of divine secrets and cosmic mysteries, revealer of hidden knowledge, guardian of the Akashic records, author/transmitter of the Sefer Raziel",
+        "planet": null
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.tzaphkiel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Tzaphkiel",
+      "description": "Tzaphkiel is the archangel of Binah, the third sephira of Understanding, and his name is rendered as Contemplation of God or Beholder of God — a fitting title for the archangel who governs the vast, still, dark sea of divine Understanding that receives all things into itself without being diminished. As the ruling intelligence of Binah, the sphere of Saturn and the Great Mother, Tzaphkiel presides over the spiritual contemplation by which the mystic plunges into the abyss of divine darkness and there finds the deepest understanding that transcends rational knowing. In some sources he is called Zaphkiel or Japhkiel, and he is credited with governing the Aralim, the great Thrones who are the angelic choir of his sephira. The Golden Dawn attributed to him the divine name YHVH Elohim and the qualities of sorrow, restriction, and mystical death as the necessary preconditions for the highest spiritual rebirth.",
+      "secondaryNames": [
+        { "name": "צַפְקִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Tzaphkiel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Zaphkiel", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Beholder of God", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Contemplation of God", "languageTag": "en", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["archangel", "qabalah", "binah", "understanding", "saturn", "contemplation"],
+      "extendedData": {
+        "orderNumber": 3,
+        "sephiraCorrespondence": "qabalah.sephira.binah",
+        "hebrewName": "צַפְקִיאֵל",
+        "etymologyMeaning": "Tzaph (צָפָה) = to watch, behold, contemplate; Kiel/El = God — 'Beholder of God' or 'Contemplation of God'",
+        "functions": "Archangel of divine contemplation and understanding, governor of Saturn, overseer of the Aralim, guide into the mystical abyss; associated with sorrow, wisdom through suffering, and the dark night of the soul",
+        "planet": "astrology.planet.saturn"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.tzadkiel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Tzadkiel",
+      "description": "Tzadkiel, whose name means Righteousness of God or Justice of God, is the archangel of Chesed, the fourth sephira of Mercy and divine loving-kindness, and he is the great angelic minister of grace, abundance, and compassionate divine governance. He is the archangel most closely associated with the virtue of forgiveness, and in the Midrash it is Tzadkiel who stayed Abraham's hand at the binding of Isaac, serving as the heavenly voice of divine mercy that prevents judgment from extinguishing life. As archangel of Chesed and of Jupiter, he governs the benefic outpouring of divine blessing, the expansion of consciousness, prosperity of soul, and the kingly generosity that characterises the right exercise of divine authority. In magical tradition he is invoked for matters of mercy, spiritual growth, legal justice, abundance, and the healing of spiritual wounds caused by excessive severity.",
+      "secondaryNames": [
+        { "name": "צַדְקִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Tzadkiel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Zadkiel", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Righteousness of God", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["archangel", "qabalah", "chesed", "mercy", "jupiter", "justice", "abundance"],
+      "extendedData": {
+        "orderNumber": 4,
+        "sephiraCorrespondence": "qabalah.sephira.chesed",
+        "hebrewName": "צַדְקִיאֵל",
+        "etymologyMeaning": "Tzedek (צֶדֶק) = righteousness, justice; El = God — 'Righteousness of God' or 'Justice of God'; note Tzedek is also the Hebrew name for Jupiter",
+        "functions": "Archangel of mercy, compassion, forgiveness, divine grace, and abundance; governor of Jupiter; stays the hand of excessive judgment; patron of legal and spiritual justice",
+        "planet": "astrology.planet.jupiter"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.kamael",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Kamael",
+      "description": "Kamael, whose name means Severity of God or One Who Sees God, is the archangel of Geburah, the fifth sephira of Strength and divine judgment, and he is the great martial archangel who wields the divine sword of justice and courage. He is the chief of the order of Seraphim who correspond to Geburah, and in his person the righteous might of divinity takes angelic form — he is the heavenly warrior, the punisher of transgressors, the guardian of divine law, and the embodiment of the disciplined will necessary to cut through illusion and corruption. Some traditions identify him with or relate him to Samael, the archangel of severity and divine wrath, though the Golden Dawn carefully distinguished the two; Kamael represents the necessary, righteous severity of a just God, while Samael was associated with the qliphothic aspect of Geburah's force. He is attributed to the planet Mars and invoked for courage, strength, justice, overcoming enemies, and the discipline required for genuine spiritual growth.",
+      "secondaryNames": [
+        { "name": "כַּמָאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Kamael", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Camael", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Chamuel", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Severity of God", "languageTag": "en", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["archangel", "qabalah", "geburah", "severity", "mars", "strength", "justice", "warrior"],
+      "extendedData": {
+        "orderNumber": 5,
+        "sephiraCorrespondence": "qabalah.sephira.geburah",
+        "hebrewName": "כַּמָאֵל",
+        "etymologyMeaning": "Ka/Kama (כָּמָה) = severity, burning desire; El = God — commonly 'Severity of God'; also interpreted as 'One Who Sees God'",
+        "functions": "Archangel of divine strength, severity, and martial justice; wielder of the divine sword; governor of Mars; patron of courage, discipline, and righteous conflict; chief of the Seraphim",
+        "planet": "astrology.planet.mars"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.raphael",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Raphael",
+      "description": "Raphael, whose name means Healing of God, is one of the four great archangels named in canonical and deuterocanonical scripture, most fully described in the Book of Tobit where he accompanies Tobias in disguise and effects miraculous healing. In Hermetic Qabalah he is attributed to Tiphareth, the sixth sephira of Beauty and the solar sphere — the heart of the Tree of Life — though some Golden Dawn documents give Michael to Tiphareth and Raphael to Hod; the most widely accepted GD attribution places Raphael at Tiphareth. As the healing archangel of the solar centre, he embodies the regenerative, restorative light of divinity — the same light that heals the blind Tobit's eyes — and he governs medicine, travel, the healing arts, and the reintegration of all that has been fractured or wounded. He stands in the East in the Lesser Banishing Ritual of the Pentagram, and his element is Air in the Golden Dawn system, holding the caduceus of Mercury and the healing serpent staff.",
+      "secondaryNames": [
+        { "name": "רָפָאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Raphael", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Healing of God", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "God Heals", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["archangel", "qabalah", "tiphareth", "healing", "sun", "air", "lbrp", "tobit"],
+      "extendedData": {
+        "orderNumber": 6,
+        "sephiraCorrespondence": "qabalah.sephira.tiphareth",
+        "hebrewName": "רָפָאֵל",
+        "etymologyMeaning": "Rapha (רָפָא) = to heal; El = God — 'Healing of God' or 'God has healed'",
+        "functions": "Archangel of healing, medicine, travel, and wholeness; governor of the Sun (primary GD attribution) and Air; appears in the Book of Tobit; guardian of the East in the LBRP; healer of the earth and of human bodies and souls",
+        "planet": "astrology.planet.sun"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.haniel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Haniel",
+      "description": "Haniel, whose name is rendered as Grace of God, Glory of God, or Joy of God, is the archangel of Netzach, the seventh sephira of Victory, desire, and the divine forces that animate nature, art, and instinctive love. As the angelic regent of Venus and of the sphere that governs the emotional, aesthetic, and sensory dimensions of experience, Haniel embodies the divine grace that moves through beauty, romantic love, creative ecstasy, and the communion with nature spirits and elemental beings. Some traditions give the name as Anael or Aniel, and in medieval magical texts this archangel presides over love, sexuality, the lunar mysteries of women, and the deeper mysteries of pleasure as a spiritual force. Haniel is sometimes described in visions as a being of rose and emerald radiance, carrying a lantern like the full moon, expressing the way in which the light of higher consciousness flows through the yearning and delight of the Netzach sphere.",
+      "secondaryNames": [
+        { "name": "הַנִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Haniel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Anael", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Aniel", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Grace of God", "languageTag": "en", "visible": true, "sortOrder": 4 },
+        { "name": "Joy of God", "languageTag": "en", "visible": true, "sortOrder": 5 }
+      ],
+      "tags": ["archangel", "qabalah", "netzach", "venus", "grace", "beauty", "love", "nature"],
+      "extendedData": {
+        "orderNumber": 7,
+        "sephiraCorrespondence": "qabalah.sephira.netzach",
+        "hebrewName": "הַנִיאֵל",
+        "etymologyMeaning": "Han/Chen (חֵן) = grace, favour; El = God — 'Grace of God' or 'Favour of God'; also interpreted from Hanah = joy",
+        "functions": "Archangel of love, grace, beauty, art, and the pleasures of the natural world; governor of Venus; patron of romantic love, aesthetic inspiration, lunar mysteries, and the connection with nature spirits",
+        "planet": "astrology.planet.venus"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.michael",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Michael",
+      "description": "Michael, whose name is the rhetorical question Who is like God? — implying the answer 'no one' — is the greatest of the four canonical archangels, the prince of the heavenly host, and the defender of divine sovereignty against all adversarial forces. His most celebrated deed is the defeat of the Dragon in the war in heaven described in Revelation 12, and he appears throughout Jewish, Christian, and Islamic tradition as the champion of God's people, the weigher of souls at the last judgment, and the guardian of Israel. In Hermetic Qabalah, the Golden Dawn attributed Michael primarily to Hod, the eighth sephira of Splendour and Mercury, though other authoritative GD documents and many earlier sources place him at Tiphareth; in the LBRP he stands in the South, associated with Fire. His traditional image shows him in shining armour, wielding a flaming sword or a spear, standing victorious over the serpent or dragon — the eternal image of divine order triumphant over chaos.",
+      "secondaryNames": [
+        { "name": "מִיכָאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Michael", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Mikhael", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Who is like God?", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Prince of the Heavenly Host", "languageTag": "en", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["archangel", "qabalah", "hod", "tiphareth", "mercury", "fire", "sun", "warrior", "lbrp"],
+      "extendedData": {
+        "orderNumber": 8,
+        "sephiraCorrespondence": "qabalah.sephira.hod",
+        "hebrewName": "מִיכָאֵל",
+        "etymologyMeaning": "Mi (מִי) = who; Kha (כָ) = like; El (אֵל) = God — 'Who is like God?' (rhetorical, implying no one)",
+        "functions": "Prince of the heavenly host, champion of divine order, guardian against adversarial forces, weigher of souls; governor of Hod (Mercury) in primary GD system; stands South in the LBRP (Fire); also attributed to Tiphareth in some GD sources and many earlier traditions",
+        "planet": "astrology.planet.mercury"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.gabriel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Gabriel",
+      "description": "Gabriel, whose name means Strength of God or Hero of God, is the great archangel of divine annunciation and revelation, attributed in Hermetic Qabalah to Yesod, the ninth sephira of Foundation and the sphere of the Moon. He is the divine messenger par excellence: in Daniel he interprets visions; in the Talmud he destroys the armies of Sennacherib; in the New Testament he announces to Mary the incarnation of the divine Word; in the Quran he is the angel of revelation who delivered the entirety of the Quran to the Prophet. As the archangel of Yesod, he governs the astral plane, the Moon, dreams, vision, the etheric foundation of the physical world, and all matters of psychic perception and the unconscious. In the LBRP he stands in the West, associated with Water — the reflective, receptive, psychic element that mirrors the nature of the lunar sphere he governs.",
+      "secondaryNames": [
+        { "name": "גַּבְרִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Gabriel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Strength of God", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Hero of God", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Jibril", "languageTag": "ar-translit", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["archangel", "qabalah", "yesod", "moon", "water", "annunciation", "revelation", "lbrp"],
+      "extendedData": {
+        "orderNumber": 9,
+        "sephiraCorrespondence": "qabalah.sephira.yesod",
+        "hebrewName": "גַּבְרִיאֵל",
+        "etymologyMeaning": "Gavar (גָּבַר) = strength, hero, mighty one; El = God — 'Strength of God' or 'Hero of God'",
+        "functions": "Archangel of divine annunciation, revelation, and the lunar sphere; governor of dreams, vision, astral travel, and psychic perception; messenger of the incarnation in Christian tradition; angel of revelation (Jibril) in Islamic tradition; stands West in the LBRP (Water)",
+        "planet": "astrology.planet.moon"
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.sandalphon",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Sandalphon",
+      "description": "Sandalphon is the archangel of Malkuth, the tenth sephira of the Kingdom, the sphere of earth and of manifest physical existence, and he stands as the twin of Metatron — the two great pillars at the base and apex of the angelic hierarchy who together span the entire length of the Tree of Life from matter to the Infinite. Like Metatron, he is identified in the Hekhalot literature with a transformed human prophet — in his case the prophet Elijah who was taken up to heaven in a chariot of fire — and he is described in the Talmud as so tall that his stature exceeds the height of his twin by a five-hundred-year journey. Sandalphon's function in the Qabalistic system is to gather the prayers and spiritual aspirations of all beings in Malkuth and weave them into garlands or crowns that rise upward through the Tree to the divine throne, making him the great mediator between the earthly and the divine, the angel who sanctifies matter itself. His Greek name is often interpreted as 'co-brother' or 'twin brother,' reflecting his inseparable relationship with Metatron and the mirroring of heaven in earth.",
+      "secondaryNames": [
+        { "name": "סַנְדַּלְפוֹן", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Sandalphon", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Twin Brother of Metatron", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Co-Brother", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["archangel", "qabalah", "malkuth", "earth", "kingdom", "elijah", "prayers", "earth-angel"],
+      "extendedData": {
+        "orderNumber": 10,
+        "sephiraCorrespondence": "qabalah.sephira.malkuth",
+        "hebrewName": "סַנְדַּלְפוֹן",
+        "etymologyMeaning": "Greek-derived: possibly from 'syn' (together/co-) + 'adelphos' (brother) — 'Co-brother' or 'Twin Brother'; identified with the deified prophet Elijah",
+        "functions": "Archangel of earth and manifest existence; twin of Metatron; identified with Elijah; weaves the prayers of embodied souls into crowns ascending the Tree; governs the sanctification of matter; mediator between the physical world and the divine",
+        "planet": null
+      }
+    },
+    {
+      "canonicalName": "angel.archangel.uriel",
+      "entityType": "angel.archangel",
+      "primaryDisplayName": "Uriel",
+      "description": "Uriel, whose name means Light of God or Fire of God, is the archangel attributed to Daath in some Qabalistic systems — the hidden pseudo-sephira of Knowledge that straddles the Abyss between the supernal triad and the lower seven sephiroth. Though Daath is not a standard sephira of the Tree and receives no numbered position, Uriel is assigned to it in certain GD and post-GD sources as the archangel of gnosis, the deep knowledge that comes only through crossing the Abyss. In the LBRP and the wider Western magical tradition he stands in the North, associated with Earth and the element of stability and endurance. He appears in 2 Esdras and the Book of Enoch as the revealer of cosmic secrets and the guide through the underworld, and in 4 Ezra he interprets visions and wrestles with the prophet's theological questions — functions that align him with the mysteries of Daath as the sphere where the unity of Kether is first experienced as division and knowledge.",
+      "secondaryNames": [
+        { "name": "אוּרִיאֵל", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Uriel", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Auriel", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Light of God", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Fire of God", "languageTag": "en", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["archangel", "qabalah", "daath", "earth", "north", "gnosis", "abyss", "lbrp"],
+      "extendedData": {
+        "orderNumber": null,
+        "sephiraCorrespondence": "qabalah.sephira.daath",
+        "hebrewName": "אוּרִיאֵל",
+        "etymologyMeaning": "Ur (אוּר) = light, fire; El = God — 'Light of God' or 'Fire of God'",
+        "functions": "Archangel of Daath (Knowledge) in some systems; revealer of cosmic mysteries; guardian of the North (Earth) in the LBRP; interpreter of visions and guide through the Abyss; associated with gnosis, the hidden knowledge of the universe",
+        "planet": null
+      }
+    }
+  ]
+}

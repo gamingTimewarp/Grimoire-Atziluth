@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.world.atziluth",
+      "entityType": "qabalah.world",
+      "primaryDisplayName": "Atziluth",
+      "description": "The first and highest of the Four Worlds of the Hermetic Qabalah — the World of Emanation. Atziluth is the divine world, the realm of pure spirit, the fire of the godhead. The Tetragrammaton is most directly expressed here as pure Will (Yod). In Atziluth the sephiroth are identified with the divine names themselves: Kether as Eheieh, Chokmah as Yah, and so forth. The tarot suits correspond to the four worlds: Wands (Fire) corresponds to Atziluth, reflecting the primordial, undifferentiated creative impulse. The colour scale of Atziluth is the 'King Scale', the most brilliant and elemental colours. Nothing in Atziluth has yet separated from the godhead; it is pure potential radiating outward.",
+      "secondaryNames": [
+        {
+          "name": "אצילות",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "World of Emanation",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Olam Atziluth",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "four-worlds",
+        "fire"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "hebrewName": "אצילות",
+        "meaning": "Emanation / Nobility",
+        "element": "astrology.element.fire",
+        "tetragrammatonLetter": "letter.hebrew.yod",
+        "tarotSuit": "tarot.suit.rws.wands",
+        "colourScale": "King Scale",
+        "sephiroth": [
+          "qabalah.sephira.kether",
+          "qabalah.sephira.chokmah",
+          "qabalah.sephira.binah"
+        ],
+        "keywords": [
+          "emanation",
+          "fire",
+          "spirit",
+          "divine names",
+          "pure will",
+          "godhead",
+          "archetypes"
+        ],
+        "polarity": "western.polarity.masculine",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "qabalah.world.briah",
+      "entityType": "qabalah.world",
+      "primaryDisplayName": "Briah",
+      "description": "The second of the Four Worlds — the World of Creation. Briah is the archangelic world, the realm where divine impulse takes on form as creative thought. The Tetragrammaton's first Heh (the feminine, receptive principle) governs Briah. It corresponds to the element of Water and the tarot suit of Cups. The archangels (Metatron, Ratziel, Tzaphkiel, etc.) are the great builders of Briah, translating the divine fire of Atziluth into the intelligible patterns of creation. The colour scale of Briah is the 'Queen Scale'. Briah corresponds roughly to the Platonic world of ideal forms — not yet the astral, but the clear, crystalline intelligence that precedes the astral. In Briah the sephiroth are expressed as archangels.",
+      "secondaryNames": [
+        {
+          "name": "בריאה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "World of Creation",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Olam Briah",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "four-worlds",
+        "water"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "hebrewName": "בריאה",
+        "meaning": "Creation",
+        "element": "astrology.element.water",
+        "tetragrammatonLetter": "letter.hebrew.heh",
+        "tarotSuit": "tarot.suit.rws.cups",
+        "colourScale": "Queen Scale",
+        "sephiroth": [
+          "qabalah.sephira.chesed",
+          "qabalah.sephira.geburah",
+          "qabalah.sephira.tiphareth"
+        ],
+        "keywords": [
+          "creation",
+          "water",
+          "archangels",
+          "Platonic forms",
+          "divine thought",
+          "intelligible world"
+        ],
+        "polarity": "western.polarity.feminine",
+        "yinYang": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "qabalah.world.yetzirah",
+      "entityType": "qabalah.world",
+      "primaryDisplayName": "Yetzirah",
+      "description": "The third of the Four Worlds — the World of Formation. Yetzirah is the astral world, the realm of angels, thought-forms, and the subtle emotional-mental substance that underlies physical manifestation. The Tetragrammaton's Vau (the connector) governs Yetzirah, corresponding to the element of Air and the tarot suit of Swords. The angelic choirs (Chayoth, Auphanim, Aralim, etc.) operate in Yetzirah, as does the magician's imagination and the astral body. The colour scale of Yetzirah is the 'Prince Scale'. In Yetzirah patterns of thought and desire take shape in the astral light before descending into physical matter. The sefer Yetzirah ('Book of Formation') takes its name from this world.",
+      "secondaryNames": [
+        {
+          "name": "יצירה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "World of Formation",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Olam Yetzirah",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "four-worlds",
+        "air"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "hebrewName": "יצירה",
+        "meaning": "Formation",
+        "element": "astrology.element.air",
+        "tetragrammatonLetter": "letter.hebrew.vau",
+        "tarotSuit": "tarot.suit.rws.swords",
+        "colourScale": "Prince Scale",
+        "sephiroth": [
+          "qabalah.sephira.netzach",
+          "qabalah.sephira.hod",
+          "qabalah.sephira.yesod"
+        ],
+        "keywords": [
+          "formation",
+          "air",
+          "angels",
+          "astral",
+          "thought-forms",
+          "imagination",
+          "subtle matter"
+        ],
+        "polarity": "western.polarity.masculine",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "qabalah.world.assiah",
+      "entityType": "qabalah.world",
+      "primaryDisplayName": "Assiah",
+      "description": "The fourth and lowest of the Four Worlds — the World of Action or Making. Assiah is the physical world of matter, action, and sensory experience. The Tetragrammaton's final Heh (the feminine in manifestation) governs Assiah, corresponding to the element of Earth and the tarot suit of Pentacles/Disks/Coins. The spirits (Klipoth — the shells or husks) operate at the outer boundary of Assiah. The colour scale of Assiah is the 'Princess Scale'. In Assiah the four elements are expressed as the actual physical elements of nature. The sephiroth are experienced in Assiah as the planets and material forces of the physical cosmos — Kether as the Primum Mobile, Chokmah as the Zodiac, and so on through the planetary spheres to Malkuth as the Earth itself.",
+      "secondaryNames": [
+        {
+          "name": "עשייה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "World of Action",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "World of Making",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Olam Assiah",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "four-worlds",
+        "earth"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "hebrewName": "עשייה",
+        "meaning": "Action / Making",
+        "element": "astrology.element.earth",
+        "tetragrammatonLetter": "letter.hebrew.heh",
+        "tarotSuit": "tarot.suit.rws.pentacles",
+        "colourScale": "Princess Scale",
+        "sephiroth": [
+          "qabalah.sephira.malkuth"
+        ],
+        "keywords": [
+          "action",
+          "earth",
+          "matter",
+          "physical world",
+          "making",
+          "manifestation",
+          "Klipoth",
+          "shells"
+        ],
+        "polarity": "western.polarity.feminine",
+        "yinYang": "taoism.principle.yin"
+      }
+    }
+  ]
+}

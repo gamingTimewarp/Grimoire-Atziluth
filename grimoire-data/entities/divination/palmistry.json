@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "palmistry.mount.jupiter",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Jupiter",
+      "description": "The Mount of Jupiter lies at the base of the index finger and governs ambition, leadership, spirituality, and the desire for honour. A well-developed Mount of Jupiter indicates a confident, ambitious personality with natural authority; overdevelopment suggests arrogance or excessive self-importance. In palmistry's planetary symbolism this mount reflects the Jupiterian qualities of expansion, wisdom, and the aspiration toward higher ideals.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "jupiter"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.jupiter",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.saturn",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Saturn",
+      "description": "The Mount of Saturn lies at the base of the middle finger and governs discipline, responsibility, prudence, and the lessons of karma. A developed Saturn mount indicates seriousness, depth of thought, and a fatalistic tendency; it is associated with the love of solitude and philosophical reflection. An overdeveloped mount may indicate pessimism or an overly heavy preoccupation with fate and mortality.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "saturn"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.saturn",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.apollo",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Apollo",
+      "description": "The Mount of Apollo (Sun) lies at the base of the ring finger and governs creativity, artistic talent, brilliance, fame, and the capacity for happiness. A well-developed Apollo mount indicates a charismatic, expressive personality with gifts in the arts; the ring finger is the finger of the Sun in the ancient palmistic tradition. This mount is associated with radiance, generosity, and the solar quality of warmth.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "apollo",
+        "sun"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.sol",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.mercury",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Mercury",
+      "description": "The Mount of Mercury lies at the base of the little finger and governs communication, commerce, intelligence, wit, and healing. A prominent Mercury mount indicates quick thinking, verbal facility, and business acumen; it is strongly associated with the healing arts when the Mercury finger (little finger) is long and the mount well-developed. The little finger's historical association with pledges ('pinky promise') echoes Mercury's role as the messenger and keeper of contracts.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "mercury"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.mercury",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.venus",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Venus",
+      "description": "The Mount of Venus is the large fleshy pad at the base of the thumb (the thenar eminence) and governs love, sensuality, vitality, passion, and the physical life-force. It is perhaps the most immediately visible mount \u2014 a full, firm Mount of Venus indicates warmth, physical health, and emotional generosity. In planetary symbolism Venus governs aesthetic pleasure and interpersonal affection, and this mount mirrors those qualities in the hand.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "venus"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.venus",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.luna",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Luna",
+      "description": "The Mount of Luna (Moon) is the fleshy pad on the outer edge of the palm opposite the thumb (the hypothenar eminence) and governs imagination, intuition, the subconscious, and the poetic faculty. A well-developed Mount of Luna indicates a rich inner life, psychic sensitivity, and creative or artistic gifts; when overdeveloped it may point to escapism or living too much in fantasy. Palmists read the luna mount for dreaming capacity, mystical gifts, and connection to the rhythms of the body.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "luna",
+        "moon"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.luna",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.mars-inner",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Inner Mars",
+      "description": "The Mount of Inner Mars (Mars Positive, Active Mars) lies between the Mount of Venus and the Mount of Jupiter, on the thumb side of the palm just above the thenar eminence. It governs physical courage, endurance, and the active, aggressive expression of martial energy. A firm development here indicates boldness in the face of opposition; it is the Mars of action, forward momentum, and self-assertion.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "mars"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.mars",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.mount.mars-outer",
+      "entityType": "palmistry.mount",
+      "primaryDisplayName": "Mount of Outer Mars",
+      "description": "The Mount of Outer Mars (Mars Negative, Passive Mars) lies on the percussion edge of the palm between the Mount of Mercury and the Mount of Luna. It governs moral courage, resistance, perseverance under pressure, and the capacity to endure hardship without flinching. Where Inner Mars is the courage to act, Outer Mars is the courage to endure. Both Mars mounts together frame the Plain of Mars \u2014 the central palm \u2014 which indicates the balance of the martial temperament.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "mount",
+        "mars"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.mars",
+        "mountType": "planetary"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.heart",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Heart Line",
+      "description": "The Heart Line (also called the Mensal Line) runs horizontally across the upper palm from the percussion edge toward the Jupiter or Saturn mount. It governs emotional life, romantic relationships, and the capacity for love and empathy. A long, clear, unbroken Heart Line indicates emotional depth, loyalty, and warmth; a chained or broken line suggests emotional turbulence, heartbreak, or complexity in relationships. Its starting point and ending position modulate meaning significantly.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "heart"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.head",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Head Line",
+      "description": "The Head Line runs horizontally across the middle of the palm, usually beginning at or near the Life Line's origin beneath the Jupiter mount. It governs intellect, reasoning, mental approach, and the nature of one's thinking. A straight, clear Head Line indicates logical, concrete thinking; a sloping line curving toward the Luna mount suggests imagination, intuition, and creative or artistic thought. The depth and length of the Head Line indicate mental stamina and the scope of intellectual ambition.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "head"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.life",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Life Line",
+      "description": "The Life Line arcs around the Mount of Venus from between the thumb and index finger down toward the wrist. Contrary to popular belief, its length does not indicate lifespan \u2014 rather it shows the quality, vitality, and nature of one's physical energy and life experience. A strong, deep Life Line indicates robust constitution and full engagement with life; a faint or broken line may indicate periods of illness, significant change, or disrupted energy.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "life"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.fate",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Fate Line",
+      "description": "The Fate Line (Saturn Line) runs vertically up the palm from the base toward the Saturn mount or middle finger. It represents the role of destiny, career, and external circumstances in the life \u2014 the degree to which one's path feels guided, fated, or constrained. A strong, clear Fate Line from the wrist indicates a clear sense of direction and destiny from an early age; the line may start at various points and break or change direction, indicating shifts in life course.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "fate",
+        "saturn"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.apollo",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Apollo Line",
+      "description": "The Apollo Line (Sun Line) runs vertically toward the ring finger (Apollo finger) and governs success, recognition, creativity, and talent coming to fruition. It is not present in all hands; when it appears clearly it is considered a sign of artistic talent, fame, or the capacity for significant achievement. The Apollo Line augments and completes the Fate Line \u2014 where the Fate Line shows the drive, the Apollo Line shows the recognition and reward.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "apollo",
+        "sun"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.mercury",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Mercury Line",
+      "description": "The Mercury Line (Health Line or Liver Line) runs diagonally from the lower palm up toward the Mercury mount. Its presence and quality are used to assess the state of health, digestive function, and business acumen. Paradoxically, an absent Mercury Line is often considered a sign of robust health; when present, a clear unbroken line indicates good vitality and mercurial gifts, while a chained or broken line may indicate digestive sensitivity or health concerns.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "mercury",
+        "health"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.marriage",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Marriage Lines",
+      "description": "The Marriage Lines (Affection Lines or Relationship Lines) are small horizontal lines on the percussion edge of the palm below the little finger (Mercury finger). They indicate significant committed relationships or deep emotional bonds, not necessarily legal marriage. Multiple lines suggest multiple significant relationships; depth and clarity indicate the significance and quality of the bond. These short lines must be read in conjunction with the Heart Line for a full picture of the emotional life.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "marriage",
+        "relationships"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.girdle-venus",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Girdle of Venus",
+      "description": "The Girdle of Venus is a curved line (or series of lines) that arcs above the Heart Line, connecting the space between the Jupiter and Saturn mounts to the space between the Apollo and Mercury mounts. It indicates heightened emotional sensitivity, sensory responsiveness, and an intense inner life. Traditionally associated with artistic sensitivity and sometimes restlessness; in its clearest form it marks individuals with profound aesthetic perception and powerful emotional responses to beauty.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "girdle-of-venus"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.intuition",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Line of Intuition",
+      "description": "The Line of Intuition (Lunar Line) is a curved line on the percussion edge of the palm that arcs from the Mount of Luna upward toward the Mount of Mercury. It indicates psychic sensitivity, strong intuition, and empathic gifts. When clearly marked it suggests someone who reads environments and people effortlessly, operating much on gut feeling and inner knowing. It is more common in people with strong Luna mount development and is particularly associated with clairvoyant and healing abilities.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "intuition",
+        "psychic"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    },
+    {
+      "canonicalName": "palmistry.line.simian",
+      "entityType": "palmistry.line",
+      "primaryDisplayName": "Simian Line",
+      "description": "The Simian Line occurs when the Heart Line and Head Line are fused into a single horizontal crease running across the entire palm. Found in roughly 4\u20135% of hands, it indicates an intense personality in which emotion and intellect are not easily separated \u2014 the person thinks with their heart and feels with their head simultaneously. Historically considered a challenging mark (associated with single-minded intensity), modern palmists view it as a sign of powerful focus, all-or-nothing commitment, and extraordinary potential when the energy is channelled well.",
+      "secondaryNames": [],
+      "tags": [
+        "palmistry",
+        "line",
+        "simian"
+      ],
+      "extendedData": {
+        "lineType": "major"
+      }
+    }
+  ]
+}

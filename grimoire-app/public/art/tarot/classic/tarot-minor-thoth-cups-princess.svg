@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000410"/>
+      <stop offset="100%" stop-color="#000f28"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#003377" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#0044aa" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#003377" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#003377" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- Court header -->
+  <text x="150" y="46"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="11" fill="#224466" letter-spacing="4"
+        opacity="0.9">PRINCESS OF CUPS</text>
+
+  <!-- Dual elemental gradient strip -->
+  <defs>
+    <linearGradient id="dualgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#337722" stop-opacity="0.2"/>
+      <stop offset="50%"  stop-color="#337722" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#1155cc"  stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="77" width="276" height="274" fill="url(#dualgrad)" rx="4"/>
+
+  <!-- Large rank element triangle -->
+  <polygon points="150,266.5 85,156 215,156" fill="none" stroke="#337722" stroke-width="7.8" opacity="0.8"/>
+<line x1="111" y1="192.4" x2="189" y2="192.4"
+      stroke="#337722" stroke-width="7.8" opacity="0.8"/>
+
+  <!-- Large suit pip centered -->
+  <g filter="url(#glow)"><g opacity="0.85">
+  <path d="M120.24,153
+           Q117.76,190 140.08,205
+           L145.66,223 L154.34,223
+           Q159.92,205 182.24,190
+           Q179.76,153 150,155 Z"
+        fill="#1155cc"/>
+  <rect x="145.66" y="222" width="8.68" height="14"
+        fill="#1155cc"/>
+  <rect x="131.4" y="234" width="37.2" height="8"
+        rx="4" fill="#1155cc"/>
+</g></g>
+
+  <!-- Elemental attribution -->
+  <text x="150" y="313"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="12" fill="#77bbff" letter-spacing="2" opacity="0.8">Earth of Water</text>
+
+  <!-- Small corner element triangles -->
+  <polygon points="32,113.4 18,89.6 46,89.6" fill="none" stroke="#337722" stroke-width="2" opacity="0.8"/>
+<line x1="23.6" y1="97.44" x2="40.4" y2="97.44"
+      stroke="#337722" stroke-width="2" opacity="0.8"/>
+  <polygon points="268,113.4 254,89.6 282,89.6" fill="none" stroke="#1155cc" stroke-width="2" opacity="0.8"/>
+  <polygon points="32,347.4 18,323.6 46,323.6" fill="none" stroke="#337722" stroke-width="2" opacity="0.8"/>
+<line x1="23.6" y1="331.44" x2="40.4" y2="331.44"
+      stroke="#337722" stroke-width="2" opacity="0.8"/>
+  <polygon points="268,347.4 254,323.6 282,323.6" fill="none" stroke="#1155cc" stroke-width="2" opacity="0.8"/>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#77bbff" letter-spacing="2"
+        filter="url(#glow)">Princess of Cups</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#224466" letter-spacing="3"
+        opacity="0.8">Earth of Water</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "planetary-hour.day-ruler.sunday-sun",       "target": "astrology.planet.sol",     "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Sunday",    "dayNumber": 0 } },
+    { "source": "planetary-hour.day-ruler.monday-moon",      "target": "astrology.planet.luna",    "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Monday",    "dayNumber": 1 } },
+    { "source": "planetary-hour.day-ruler.tuesday-mars",     "target": "astrology.planet.mars",    "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Tuesday",   "dayNumber": 2 } },
+    { "source": "planetary-hour.day-ruler.wednesday-mercury","target": "astrology.planet.mercury", "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Wednesday", "dayNumber": 3 } },
+    { "source": "planetary-hour.day-ruler.thursday-jupiter", "target": "astrology.planet.jupiter", "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Thursday",  "dayNumber": 4 } },
+    { "source": "planetary-hour.day-ruler.friday-venus",     "target": "astrology.planet.venus",   "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Friday",    "dayNumber": 5 } },
+    { "source": "planetary-hour.day-ruler.saturday-saturn",  "target": "astrology.planet.saturn",  "label": "day-ruled-by", "traditionScope": [], "extendedData": { "dayOfWeek": "Saturday",  "dayNumber": 6 } }
+  ]
+}

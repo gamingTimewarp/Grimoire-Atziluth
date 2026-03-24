@@ -1,0 +1,1293 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.minor.rws.wands.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Wands",
+      "description": "The Ace of Wands represents the pure, raw energy of fire — the spark of inspiration, creative potential, and new beginnings. A hand emerges from a cloud grasping a living wand, symbolizing divine creative force offered to humanity.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 1,
+        "rank": "Ace",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "New beginnings, inspiration, creative spark, enthusiasm, potential, courage, willpower",
+        "reversedMeaning": "Delays, lack of motivation, creative blocks, false starts, procrastination"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Wands",
+      "description": "A figure stands on a castle parapet holding a globe, looking out over the sea. One wand is fixed to the wall, one held in hand. Represents personal power, planning, and the contemplation of future ventures.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 2,
+        "rank": "2",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Future planning, progress, decisions, discovery, personal power, boldness",
+        "reversedMeaning": "Fear of unknown, lack of planning, playing it safe, bad planning, disappointment"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Wands",
+      "description": "A figure stands watching ships sail out to sea, three wands planted firmly behind him. Represents the expansion of one's vision, enterprise, and the first results of effort. Trade and commerce are symbolized by the sailing ships.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 3,
+        "rank": "3",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Expansion, foresight, looking ahead, enterprise, trade, overseas opportunities",
+        "reversedMeaning": "Obstacles, delays, lack of foresight, unexpected setbacks, playing too small"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Wands",
+      "description": "Four wands form a canopy decorated with flowers and garlands. Figures celebrate in the background. Represents completion, celebration, harmony, and the joy of achievement. A card of homecoming and festivity.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 4,
+        "rank": "4",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Celebration, joy, harmony, homecoming, community, stability, prosperity",
+        "reversedMeaning": "Lack of support, instability, conflict at home, delayed celebrations, feeling unwelcome"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Wands",
+      "description": "Five young men brandish wands in apparent conflict, though the battle may be a game or competition. Represents struggle, conflict, competition, and the challenges that come with ambition and assertion.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 5,
+        "rank": "5",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Competition, conflict, strife, tension, rivalry, disagreement, struggle for dominance",
+        "reversedMeaning": "Avoiding conflict, finding agreement, compromise, suppressed aggression, hidden rivalry"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Wands",
+      "description": "A victorious figure on horseback wears a laurel wreath while crowds cheer. A wand adorned with a wreath is held aloft. Represents victory, public recognition, success after struggle, and triumphant achievement.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 6,
+        "rank": "6",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Victory, public recognition, success, progress, self-confidence, acclaim",
+        "reversedMeaning": "Egotism, fall from grace, lack of confidence, failed expectations, disloyalty"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Wands",
+      "description": "A figure stands on high ground fending off six attacking wands from below with his own wand. Represents defensiveness, perseverance, maintaining one's position under challenge, and courage in adversity.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 7,
+        "rank": "7",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Challenge, competition, perseverance, defensiveness, holding your ground, courage",
+        "reversedMeaning": "Giving up, overwhelmed, lack of confidence, yielding unnecessarily, exhaustion"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Wands",
+      "description": "Eight wands fly through a clear sky over a green landscape, moving swiftly toward their destination. Represents swift action, rapid progress, communication, and the quick movement of events. Often associated with travel and messages.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 8,
+        "rank": "8",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Swift action, rapid progress, movement, travel, communications, news, momentum",
+        "reversedMeaning": "Delays, frustration, rethinking plans, scattered energy, missed communications"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Wands",
+      "description": "A weary but wary figure leans on a wand with eight others planted behind him. He is bandaged but not defeated. Represents resilience, persistence, last-stand courage, and the strength that comes from having survived hardship.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 9,
+        "rank": "9",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Resilience, courage, persistence, test of faith, boundaries, stamina, last stand",
+        "reversedMeaning": "Paranoia, exhaustion, reluctance to adapt, stubbornness, feeling overwhelmed"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Wands",
+      "description": "A figure struggles to carry ten heavy wands toward a town in the distance. Represents burden, overcommitment, hard work, responsibility, and the weight of ambition taken too far. The goal is in sight but the load is crushing.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 10,
+        "rank": "10",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Burden, overcommitment, hard work, completion, responsibility, stress, duty",
+        "reversedMeaning": "Doing it all yourself, collapse, burnout, inability to delegate, dropping responsibilities"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Page of Wands",
+      "description": "A young figure in a decorated tunic holds a wand upright, gazing at it with wonder and enthusiasm. Salamanders adorn his tunic. Represents the enthusiastic beginner, a creative messenger, fresh ideas, and the first stirrings of passion.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 11,
+        "rank": "Page",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Enthusiasm, exploration, discovery, free spirit, creative potential, new ideas, messages",
+        "reversedMeaning": "Immaturity, lack of direction, reckless, pessimism, unreliable, hasty decisions"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Wands",
+      "description": "An armored knight rides a rearing horse through a desert landscape, his wand raised. His armor is decorated with salamanders. Represents adventurous action, impulsiveness, passion, and the courageous pursuit of goals.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 12,
+        "rank": "Knight",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Action, adventure, fearlessness, hot-headed, energetic pursuit, travel, passion",
+        "reversedMeaning": "Impulsiveness, recklessness, arrogance, scattered energy, delays in action"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Wands",
+      "description": "A confident queen sits on a sunflower-decorated throne, holding a wand and a sunflower. A black cat sits at her feet. Represents confident leadership, charisma, determination, and a warm, vivacious personality with creative authority.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 13,
+        "rank": "Queen",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Courage, confidence, independence, social butterfly, determination, vibrancy, leadership",
+        "reversedMeaning": "Demanding, temperamental, jealousy, selfishness, insecurity, manipulation"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.wands.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "King of Wands",
+      "description": "A powerful king sits on a throne decorated with lions and salamanders, holding a wand. A salamander at his feet completes the fire symbolism. Represents visionary leadership, entrepreneurial spirit, and mature mastery of creative fire.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 14,
+        "rank": "King",
+        "suit": "tarot.suit.rws.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Natural-born leader, vision, entrepreneur, honor, boldness, inspiring, big-picture thinking",
+        "reversedMeaning": "Impulsiveness, arrogance, domineering, ruthlessness, hot-tempered, high expectations"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Cups",
+      "description": "A divine hand emerges from clouds offering a chalice overflowing with five streams of water. A dove descends bearing a communion wafer. Represents the pure essence of emotional experience, love, intuition, and spiritual connection.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 15,
+        "rank": "Ace",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "New feelings, love, intuition, spiritual experience, emotional beginnings, overflowing joy",
+        "reversedMeaning": "Emotional loss, blocked creativity, emptiness, repressed emotions, spiritual disconnection"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Cups",
+      "description": "A man and woman exchange cups beneath the symbol of the caduceus topped with a lion's head. Represents partnership, union, mutual attraction, and the beginning of a deep connection between two people.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 16,
+        "rank": "2",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Partnership, unity, love, mutual attraction, connection, balance, romance",
+        "reversedMeaning": "Imbalance in relationship, broken communication, disharmony, bad partnership"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Cups",
+      "description": "Three women dance in a circle, each raising a cup in celebration. Fruits and flowers surround them. Represents community, celebration, friendship, and the joy of shared emotional experiences.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 17,
+        "rank": "3",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Celebration, friendship, community, creativity, reunions, social gatherings, joy",
+        "reversedMeaning": "Overindulgence, gossip, isolation, social exclusion, creative blocks"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Cups",
+      "description": "A figure sits in meditation under a tree, three cups before him, while a divine hand offers a fourth cup from a cloud. He appears to ignore the offered gift. Represents contemplation, apathy, and missing opportunities through introspection.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 18,
+        "rank": "4",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Meditation, contemplation, apathy, reevaluation, boredom, missed opportunity",
+        "reversedMeaning": "Sudden awareness, new perspective, motivation, seizing opportunity, emerging from withdrawal"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Cups",
+      "description": "A cloaked figure mourns over three spilled cups, while two full cups stand behind him. A bridge leads to a distant castle. Represents loss, grief, and regret, but also the reminder that not all is lost.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 19,
+        "rank": "5",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Loss, grief, regret, sorrow, disappointment, partial loss, emotional turmoil",
+        "reversedMeaning": "Acceptance, moving on, finding peace, releasing regret, forgiveness, recovery"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Cups",
+      "description": "Two children in a garden with six cups filled with flowers. An older child offers a cup to a younger one. Represents nostalgia, childhood memories, innocence, and revisiting the past with fondness.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 20,
+        "rank": "6",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Nostalgia, happy memories, childhood, innocence, reunions, past influences, gifts",
+        "reversedMeaning": "Living in the past, naivety, unrealistic idealism, stuck in old patterns"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Cups",
+      "description": "A silhouetted figure faces seven cups in the clouds, each filled with different visions — castles, jewels, a wreath, a dragon, a snake, a human figure, and a face. Represents fantasy, illusion, wishful thinking, and the challenge of too many options.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 21,
+        "rank": "7",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Fantasy, illusion, wishful thinking, choices, confusion, temptation, daydreaming",
+        "reversedMeaning": "Clarity, making choices, sober reality, determination, overcoming illusions"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Cups",
+      "description": "A figure walks away into the mountains at night, leaving eight cups behind. The moon illuminates the scene. Represents withdrawal, abandonment, and the courage to walk away from what no longer fulfills.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 22,
+        "rank": "8",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Withdrawal, abandonment, disillusionment, leaving behind, seeking deeper meaning, walking away",
+        "reversedMeaning": "Drifting, fear of moving on, aimlessness, staying in unfulfilling situations"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Cups",
+      "description": "A smug, satisfied man sits before nine cups displayed on a curved shelf behind him. Known as the 'wish card.' Represents contentment, satisfaction, wishes fulfilled, and emotional abundance.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 23,
+        "rank": "9",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Contentment, satisfaction, wishes fulfilled, pleasure, emotional abundance, gratitude",
+        "reversedMeaning": "Inner happiness lacking, materialism, greed, overindulgence, dissatisfaction"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Cups",
+      "description": "A joyful couple raises their arms toward ten cups arranged in a rainbow arc, while their children dance nearby before a peaceful home. Represents lasting happiness, family harmony, emotional fulfillment, and the completion of the emotional journey.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 24,
+        "rank": "10",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Happiness, family harmony, emotional fulfillment, bliss, peace, lasting joy, divine love",
+        "reversedMeaning": "Broken home, family conflict, misalignment of values, shattered dreams"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Page of Cups",
+      "description": "A young figure holds a cup from which a fish peers out, surprising the youth. Represents intuitive messages, new emotional experiences, creative imagination, and psychic sensitivity in its early stages.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 25,
+        "rank": "Page",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Creative opportunity, intuitive message, romantic beginnings, emotional sensitivity, dreams",
+        "reversedMeaning": "Emotional immaturity, creative blocks, escapism, disappointment in love"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Cups",
+      "description": "A knight in fish-decorated armor rides calmly on a white horse, offering a cup. His helmet bears wings. Represents the romantic idealist, a messenger of love, and emotionally-driven action.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 26,
+        "rank": "Knight",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Romance, charm, imagination, beauty, following the heart, invitation, a romantic person",
+        "reversedMeaning": "Moodiness, unrealistic expectations, jealousy, deceit, emotional manipulation"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Cups",
+      "description": "A queen on a seaside throne gazes at an elaborate closed cup. Mermaids adorn her throne. Represents emotional depth, intuition, compassion, and the mature wisdom of the emotional realm.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 27,
+        "rank": "Queen",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Compassion, care, emotional security, intuition, nurturing, empathy, calm",
+        "reversedMeaning": "Emotional insecurity, codependency, giving too much, martyrdom, smothering"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.cups.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "King of Cups",
+      "description": "A mature king sits on a stone throne in a turbulent sea, holding a cup and scepter with calm authority. A fish leaps in the background. Represents emotional mastery, diplomatic wisdom, and compassionate leadership.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 28,
+        "rank": "King",
+        "suit": "tarot.suit.rws.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Emotional balance, generosity, diplomacy, wisdom, counseling, calm authority",
+        "reversedMeaning": "Emotional manipulation, moodiness, volatility, using emotions as weapons"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Swords",
+      "description": "A divine hand emerges from clouds grasping a sword crowned with a golden crown and laurel branches. Represents the pure force of intellect, mental clarity, truth, and the power of decisive thought.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 29,
+        "rank": "Ace",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Breakthrough, clarity, truth, mental force, justice, sharp mind, new ideas",
+        "reversedMeaning": "Confusion, brutality, chaos, misuse of power, clouded judgment"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Swords",
+      "description": "A blindfolded woman sits before a sea, holding two crossed swords. The crescent moon illuminates the night sky. Represents difficult decisions, stalemate, denial, and the need to weigh two opposing forces.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 30,
+        "rank": "2",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Difficult decisions, stalemate, denial, blocked emotions, indecision, avoidance",
+        "reversedMeaning": "Indecision, confusion, information overload, no right choice, emotional dishonesty"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Swords",
+      "description": "Three swords pierce a red heart against a stormy grey sky with rain. One of the most clearly symbolic cards in the deck. Represents heartbreak, grief, sorrow, and the pain of loss or separation.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 31,
+        "rank": "3",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Heartbreak, grief, sorrow, loss, separation, emotional pain, betrayal",
+        "reversedMeaning": "Recovery, releasing pain, forgiveness, healing grief, optimism after sorrow"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Swords",
+      "description": "A knight's effigy lies in prayer on a tomb. Three swords hang above him, one lies beneath. A stained-glass window illuminates the scene. Represents rest, recovery, contemplation, and the necessary pause before renewed action.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 32,
+        "rank": "4",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Rest, restoration, contemplation, sanctuary, recuperation, meditation, preparation",
+        "reversedMeaning": "Restlessness, burnout, recovery, awakening, inability to rest"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Swords",
+      "description": "A smirking figure collects swords while two defeated opponents walk away in shame. The sky is stormy and unsettled. Represents hollow victory, conflict with unethical means, defeat, and the aftermath of battle where no one truly wins.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 33,
+        "rank": "5",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Conflict, defeat, hollow victory, dishonorable means, betrayal, bullying, sabotage",
+        "reversedMeaning": "Reconciliation, overcoming conflict, moving past grievances, desire for peace"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Swords",
+      "description": "A ferryman poles a boat carrying a woman and child across calm waters, six swords planted in the prow. Represents transition, moving on, mental clarity after difficulty, and a journey toward calmer waters.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 34,
+        "rank": "6",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Transition, moving on, change, escape, gradual improvement, calmer times ahead",
+        "reversedMeaning": "Stuck in the past, inability to move on, unfinished business, rough passage"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Swords",
+      "description": "A figure tiptoes away from a military camp carrying five swords, leaving two behind. He looks back with a sly expression. Represents deception, trickery, strategic thinking, and the use of cunning rather than direct force.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 35,
+        "rank": "7",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Deception, trickery, strategy, stealth, cunning, theft, dishonesty",
+        "reversedMeaning": "Coming clean, confession, rethinking approach, conscience, being caught"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Swords",
+      "description": "A woman stands blindfolded and loosely bound by ropes, eight swords planted in a semicircle around her. A distant castle and water surround the scene. Represents restriction, feeling trapped, self-imposed limitations, and powerlessness.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 36,
+        "rank": "8",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Restriction, imprisonment, victim mentality, self-imposed limitation, fear, silence",
+        "reversedMeaning": "Freedom, release, seeing clearly, self-limiting beliefs removed, empowerment"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Swords",
+      "description": "A figure sits upright in bed, head in hands, with nine swords arranged horizontally on the wall. The darkness of night surrounds the scene. Represents anxiety, nightmares, worry, and the mental suffering of sleepless dread.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 37,
+        "rank": "9",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Anxiety, nightmares, depression, mental anguish, fear, worry, sleeplessness",
+        "reversedMeaning": "Release from anxiety, facing fears, recovery, inner turmoil being addressed"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Swords",
+      "description": "A figure lies face-down with ten swords plunged into his back. A calm sea and brightening horizon appear in the distance. Represents painful endings, rock bottom, crisis, and the dramatic but necessary end of a difficult cycle.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 38,
+        "rank": "10",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Painful endings, ruin, crisis, betrayal, back-stabbing, rock bottom, collapse",
+        "reversedMeaning": "Recovery, regeneration, survival, dawn after darkness, resisting painful end"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Page of Swords",
+      "description": "A young figure stands on a hilltop, sword raised, with a turbulent windy sky behind. Birds fly in scattered formation. Represents mental alertness, inquisitiveness, new ideas, and the early development of intellectual powers.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 39,
+        "rank": "Page",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Curiosity, restlessness, mental energy, vigilance, news, surveillance, new ideas",
+        "reversedMeaning": "Reckless, impatient, all talk no action, scatter-brained, deception"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Swords",
+      "description": "An armored knight charges forward on a white horse at full gallop, sword raised. Birds flee before him. Represents intellectual ambition, swift decisive action, and the force of mind cutting through obstacles.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 40,
+        "rank": "Knight",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Ambition, assertiveness, drive, fast-thinking, communicative, focused, sharp mind",
+        "reversedMeaning": "Recklessness, argumentative, harsh speech, missing the point, rushing"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Swords",
+      "description": "A queen sits on a cloud-adorned throne, holding a sword upright, one hand raised as if beckoning. Her expression is stern but wise. Represents clear perception, independence, direct communication, and wisdom earned through experience.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 41,
+        "rank": "Queen",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Perceptive, clear-headed, direct communication, independent, rational, unbiased",
+        "reversedMeaning": "Cold-hearted, bitter, cruel, resentful, poor judgment, isolated"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.swords.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "King of Swords",
+      "description": "A stern king sits upright on a stone throne, sword raised, facing forward. His gaze is direct and penetrating. Represents authority, intellectual power, ethical judgment, and the mastery of truth and clarity.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 42,
+        "rank": "King",
+        "suit": "tarot.suit.rws.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Mental clarity, authority, truth, ethical leadership, discipline, fair judgment",
+        "reversedMeaning": "Manipulative, tyrannical, abusive of power, cold, ruthless, irrational"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Pentacles",
+      "description": "A divine hand emerges from clouds holding a golden pentacle over a lush garden. An archway of flowers leads to distant mountains. Represents the pure essence of material manifestation, abundance, and new earthly beginnings.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 43,
+        "rank": "Ace",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "New financial opportunity, prosperity, abundance, manifestation, new career, security",
+        "reversedMeaning": "Missed opportunity, lack of planning, greed, financial insecurity, instability"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Pentacles",
+      "description": "A young man juggles two pentacles connected by an infinity loop, while ships ride turbulent waves behind him. Represents balance, adaptability, time management, and the juggling of multiple responsibilities.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 44,
+        "rank": "2",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Multiple priorities, time management, balance, adaptability, juggling finances",
+        "reversedMeaning": "Imbalance, disorganized, overwhelmed, poor financial decisions, instability"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Pentacles",
+      "description": "A sculptor works on a cathedral while two figures consult plans. Three pentacles adorn the arch above. Represents teamwork, collaboration, skilled craft, learning, and the recognition of expertise.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 45,
+        "rank": "3",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Teamwork, collaboration, learning, implementation, mastery, skilled work, planning",
+        "reversedMeaning": "Lack of teamwork, poor work quality, misalignment, no growth, mediocrity"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Pentacles",
+      "description": "A crowned figure grips a pentacle to his chest, one under each foot, and one balanced on his crown. A city lies behind him. Represents possessiveness, material security, conservation, and the shadow of miserliness.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 46,
+        "rank": "4",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Security, conserving resources, stability, saving, possessiveness, control",
+        "reversedMeaning": "Greed, materialism, instability, miserliness, financial loss, blocked energy"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Pentacles",
+      "description": "Two ragged figures trudge through snow past a church window glowing with five pentacles. One is on crutches. Represents hardship, poverty, insecurity, and feelings of being left out in the cold or spiritually bereft.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 47,
+        "rank": "5",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Financial loss, poverty, hardship, insecurity, isolation, worry, spiritual crisis",
+        "reversedMeaning": "Recovery from hardship, improved finances, spiritual awakening, accepting help"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Pentacles",
+      "description": "A wealthy merchant weighs coins on a scale, distributing them to two kneeling beggars. Represents generosity, charity, power imbalance, and the complex dynamics of giving and receiving.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 48,
+        "rank": "6",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Generosity, charity, giving, sharing wealth, receiving help, fairness, balance",
+        "reversedMeaning": "Strings attached, inequality, one-sided giving, debt, exploitation"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Pentacles",
+      "description": "A farmer leans on his hoe, contemplating his crop of seven pentacles growing on a vine. Represents patience, long-term thinking, investment, and the assessment of one's progress and effort.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 49,
+        "rank": "7",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Assessment, patience, sustainable results, long-term view, investment, harvest",
+        "reversedMeaning": "Impatience, lack of reward, limited success, procrastination, poor investment"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Pentacles",
+      "description": "An apprentice craftsman carves pentacles with diligent focus, six completed and hung, one in hand. Represents diligence, craftsmanship, mastery through practice, and dedicated application of skill.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 50,
+        "rank": "8",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Apprenticeship, skill development, craftsmanship, diligence, mastery, perfectionism",
+        "reversedMeaning": "Lack of focus, mediocrity, lack of ambition, poor workmanship, perfectionism as a flaw"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Pentacles",
+      "description": "An elegant woman walks through a lush garden of pentacles, a hooded falcon on her gloved hand. Snails are at her feet. Represents material success, self-sufficiency, luxury, and the refinement of a life well-cultivated.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 51,
+        "rank": "9",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Abundance, luxury, self-sufficiency, independence, refinement, financial security",
+        "reversedMeaning": "Overworking, materialism, financial setbacks, dependency, reckless spending"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Pentacles",
+      "description": "An elderly patriarch sits surrounded by his family and two dogs in an archway adorned with ten pentacles arranged in the Tree of Life pattern. Represents lasting wealth, legacy, family tradition, and material completion.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 52,
+        "rank": "10",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Legacy, inheritance, family, affluence, permanence, long-term success, establishment",
+        "reversedMeaning": "Family conflict, financial failure, loss of legacy, instability, crime"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Page of Pentacles",
+      "description": "A young figure stands in a lush meadow, gazing up at a pentacle held aloft in both hands. Represents diligent study, new financial opportunities, ambition, and the beginning of practical learning.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 53,
+        "rank": "Page",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Ambition, diligence, financial opportunity, new beginnings, studious, grounded",
+        "reversedMeaning": "Lack of progress, procrastination, learn from failure, missed opportunities"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Pentacles",
+      "description": "A heavily armored knight sits on a still black horse in a plowed field, examining a pentacle. Represents methodical progress, diligence, conservative but reliable action, and the steady pursuit of material goals.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 54,
+        "rank": "Knight",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Hard work, productivity, routine, conservatism, reliability, patience, methodical",
+        "reversedMeaning": "Laziness, boredom, stuck in a rut, complacency, stubbornness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Pentacles",
+      "description": "A luxuriously robed queen sits on a flowered throne in a garden, tenderly cradling a pentacle. A rabbit runs at her feet. Represents practical nurturing, material comfort, domestic abundance, and earthy generosity.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 55,
+        "rank": "Queen",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Nurturing, practical, providing financially, warmth, working mother, security",
+        "reversedMeaning": "Financial dependency, smothering, neglect, insecurity, poor work-life balance"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.rws.pentacles.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "King of Pentacles",
+      "description": "A wealthy king sits on a throne decorated with bulls and vines, surrounded by a garden and holding a golden scepter and pentacle. A bull's head adorns his throne. Represents entrepreneurial mastery, material abundance, and secure leadership.",
+      "tags": [
+        "pentacles",
+        "minor-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 56,
+        "rank": "King",
+        "suit": "tarot.suit.rws.pentacles",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Abundance, wealth, business savvy, security, discipline, success, reliable",
+        "reversedMeaning": "Stubborn, materialism, financially inept, corruption, obstinate"
+      }
+    }
+  ]
+}

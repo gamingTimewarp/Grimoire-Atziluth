@@ -1,0 +1,959 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.major.thoth.the-fool",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Fool",
+      "description": "Atu 0. The Fool of the Thoth deck: the pure Spirit prior to manifestation, the divine madness of absolute freedom. Attributed to Aleph (א) and the element of Air. In Crowley's reading the Fool is not the naive wayfarer of RWS but the eternal child Harpocrates — silence and zero containing all. He leaps into the abyss with a white solar energy and a tiger (his own unconscious) nipping at him, carrying the bag that holds the four elements. The Green Man, the Spring Fool, and the Dionysiac reveller collapse into one image of creative chaos.",
+      "secondaryNames": [
+        {
+          "name": "Le Mat",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu 0",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 0,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.aleph",
+        "element": "astrology.element.air",
+        "astrological": null,
+        "qabalisticPath": "qabalah.path.11",
+        "uprightMeaning": "Ecstatic freedom; spontaneous action without forethought; the zero-point of pure potentiality; the holy madness that precedes creation; courage to leap into the unknown.",
+        "reversedMeaning": "Folly turning destructive; recklessness without insight; mania divorced from will; the abyss swallowing rather than liberating.",
+        "authorNotes": "The figure is the Green Man in mid-leap — ecstatic, not reckless. Harris's tiger becomes a white crocodile (Sebek, Egyptian god of matter and time) lurking below: what the Fool transcends rather than what threatens him. The solar disk inside the card uses the same colour palette as the Hermit's lantern (Atu IX) and Babalon's nimbus (Atu XI) — the same uncreated light, encountered at the beginning and end of the numbered journey. An air-vortex spiral fills the background: Air as motion, not weather.\n\nThe Fool's letter, Aleph, is the first letter of Adam (אדם) — the moulded clay-man of Genesis 2:7, animated by nishmat chayyim, the divine breath. Aleph is Air; the elemental attribution is not incidental but identifies the Fool as the specific act that made Adam human rather than merely ground. In Kabbalistic tradition Adam Kadmon — the Primordial Adam — is the cosmic archetype onto whom the entire Tree of Life is mapped; the deck's 22 paths trace his story. The Fool leaps from the tohu wa-bohu of Genesis 1:2 — the formless void before the first creative word — but the cliff is real. The figure is ecstatic because he is innocent, and innocent because he does not yet know what the descent will cost. The Great Work of Man's redemption begins not with the creation but with the Fall, and the Fall begins here."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-magus",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Magus",
+      "description": "Atu I. Called 'The Magus' in Thoth (not 'The Magician'). Attributed to Beth (ב) and Mercury (Hermes-Thoth). The Magus is the Word — the logos that transforms pure Will into manifest utterance. Crowley identifies him with Thoth himself, scribe of the gods, wielder of the Caduceus. He is the juggler of realities, surrounded by the symbols of the four suits in perpetual motion: he does not possess them but transmits them. Unlike the commanding RWS Magician, the Thoth Magus is mercurial, ambiguous, even tricky — for Mercury is also the trickster god.",
+      "secondaryNames": [
+        {
+          "name": "The Magician",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Bateleur",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu I",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "The Magician",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 1,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.beth",
+        "element": null,
+        "astrological": "astrology.planet.mercury",
+        "qabalisticPath": "qabalah.path.12",
+        "uprightMeaning": "Skill and dexterity; the Will operating through communication; craft, cunning, and adaptability; the divine messenger; magic as alignment between intent and action.",
+        "reversedMeaning": "Trickery and manipulation; verbal dishonesty; will scattered by cleverness; the mercurial mind untethered from deeper purpose.",
+        "authorNotes": "The Caduceus is the single dominant emblem — not the cluttered 'table of implements' of RWS. The Ape of Thoth (Cynocephalus) crouches below as scribe: Mercury's shadow, the one who copies but does not originate. This distinguishes the Magus from the Magician — he is Thoth himself, the divine Word (Logos) made transmitter, not a conjurer assembling props. The mercurial ambiguity Crowley emphasised is present in the ape: it writes, but it writes what it is told.\n\nOf the historical figures who embody the Magus archetype, Moses is the most complete — and in the Thoth deck specifically, the most inevitable. Acts 7:22 places him at the exact intersection the deck requires: \"educated in all the wisdom of the Egyptians,\" yet the direct recipient of Hebrew revelation. He is the node where the two root traditions of Western esotericism converge. The Caduceus that dominates the card is Moses's own instrument: the staff that became a serpent before Pharaoh (Exodus 7:10), that parted the sea, that drew water from rock — and that was finally lifted as the bronze serpent in the wilderness (Numbers 21:9), the sign John identifies with the Crucifixion (John 3:14). Moses does not merely carry a staff; he carries the prototype of the Caduceus. The letter Beth opens the Torah — בְּרֵאשִׁית, \"In the beginning\" — so the Magus's own letter is the first letter Moses wrote under divine dictation. He is not merely Hermes the messenger but Hermes Trismegistus: prophet, priest, and king; the thrice-great figure who receives revelation, mediates it through covenant, and rules by it. The Ape of Thoth writes what it is told; Moses wrote what God dictated — the same relationship, raised to its highest possible expression."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-priestess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Priestess",
+      "description": "Atu II. Called 'The Priestess' in Thoth (not 'The High Priestess'). Attributed to Gimel (ג) and the Moon. She is Babalon veiled; the Shekinah; the subconscious feminine principle through which all manifestation flows. Lady Frieda Harris painted her with silver light, transparent veils, and a camel at her feet (Gimel means camel). She is the silver bow-and-arrow of Artemis, the crystal globe, the flowing waters of the unconscious. In Thoth she is perhaps the most purely kabbalistic of all the major arcana — the hidden path crossing the Abyss on the Tree of Life.",
+      "secondaryNames": [
+        {
+          "name": "The High Priestess",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Papesse",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu II",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "The High Priestess",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 2,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.gimel",
+        "element": null,
+        "astrological": "astrology.planet.luna",
+        "qabalisticPath": "qabalah.path.13",
+        "uprightMeaning": "Deep intuition and mystery; the hidden knowledge accessible only through silence; the feminine as cosmic principle; initiation; the unconscious as teacher.",
+        "reversedMeaning": "Hidden dangers; the unconscious overwhelming reason; secrets used to manipulate; false intuition or delusion mistaken for insight.",
+        "authorNotes": "Boaz (black) and Jachin (white) pillars frame the veil, read Qabalistically as the two pillars of the Tree of Life (Severity and Mercy). The moon is shown in three phases simultaneously — full disk flanked by waxing and waning crescents — to represent the Priestess as container of all lunar states rather than one moment. The camel (Gimel, her letter) appears reflected in a desert pool below: the Great Cross-Desert path already underway in the image.\n\nThe Thoth tradition's attribution to Isis resolves naturally into a Marian identification. Isis is the maternal virgin — the goddess who conceives and bears the divine child without corruption of her nature — and Mary occupies precisely this role: Theotokos, the unassuming girl of Luke 1:38 who becomes the vessel of the Incarnation through receptivity rather than power. The three-phase moon holds this simultaneously: waxing (the Annunciation), full (the bearing of the divine child), waning (the Pietà). The letter Gimel means camel, and the camel's path from Kether to Tiphareth is the literal path of descent from the divine Crown to the human Sun — the Incarnation as topography. The Magi's journey on camels to the nativity is the eschatological announcement of what the Priestess bears in concealment; the same figures appear at the pool in XVII The Star. The veil before which she sits is the Temple veil concealing the Shekinah: Mary as the new Ark of the Covenant, whose arrival in Luke 1:39-45 deliberately echoes the language of the Ark coming to David in 2 Samuel 6. She does not originate the glory she contains; she reflects it — which is the Moon's own nature. In Revelation 12:1, the Woman Clothed with the Sun has the moon under her feet: she has passed through and beyond the lunar phase. The High Priestess is this Woman before her solar investiture — still veiled, still the unassuming girl, the Moon that does not yet know it is about to be eclipsed by the Sun it carries."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-empress",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Empress",
+      "description": "Atu III. Attributed to Daleth (ד) and Venus. The Empress in Thoth is Nuit's earthly aspect — the great generative feminine, the green world in full bloom, the creative power of nature expressing itself through beauty and abundance. Harris painted her amid spirals of green growth, pregnant with the world, her shield bearing a pelican feeding its young (resurrection through self-sacrifice). She is also Isis and Hathor, the sky-cow and the throne. The Empress is Venus as Aphrodite Ourania (celestial) and Aphrodite Pandemos (earthly) unified.",
+      "secondaryNames": [
+        {
+          "name": "L'Impératrice",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu III",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 3,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.daleth",
+        "element": null,
+        "astrological": "astrology.planet.venus",
+        "qabalisticPath": "qabalah.path.14",
+        "uprightMeaning": "Fertile creativity; abundance of nature; sensuous beauty; the generative feminine; art as sacred act; material prosperity arising from natural law.",
+        "reversedMeaning": "Creative blockage; smothering or possessive love; indulgence blocking growth; luxury as escapism; the green world turning to wilderness.",
+        "authorNotes": "The Venus symbol (♀) is drawn geometrically and made the compositional anchor — larger and more dominant than in Harris. The Pelican-in-her-Piety (feeding young from her own breast) represents the Daleth principle of creative self-giving love: Venus as the force that sustains the world by perpetual sacrifice, not merely desire. The lotus crown is Egyptian rather than Roman, acknowledging the Empress as Isis-Hathor as much as Aphrodite.\n\nDaleth means door — and the door of the Passover is the precise image the letter inhabits. In Exodus 12, the lamb's blood was applied to the doorposts: the Daleth marked in sacrifice, the Angel of Death passing over it. But the Passover lamb was not merely sacrificed; it was eaten (Exodus 12:8) — the same animal that purchased life through its blood also fed the household through its flesh. Protection and nourishment were not two acts but one. The Pelican-in-her-Piety, already present in the card, enacts this dual function exactly: she wounds herself at once to protect and to feed. The Eucharist is the typological completion of both — Christ as the Passover Lamb (1 Corinthians 5:7) sacrificed and consumed, his flesh and blood offered to feed his children (John 6:53-56), so that the blood on the door and the meal within the house are revealed as inseparable halves of a single act of love. The Empress's Venusian self-giving is not sentiment but this: the willingness to become the door, the sacrifice, and the meal simultaneously. The Holy Grail that the Chariot (VII) carries forward and Babalon (XI) holds aloft is first seeded here, in the Daleth — love expressed through sacrifice and received as nourishment."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-emperor",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Emperor",
+      "description": "Atu IV. Attributed to Tzaddi (צ) and Aries — the key Thelemic difference from the Golden Dawn system, where Heh was assigned to The Emperor. Crowley wrote 'Tzaddi is not the Star' (AL I:57), meaning he moved The Star to Heh and The Emperor to Tzaddi. In the image, the Emperor sits on a cubic stone throne, crimson-armoured, carrying the orb and sceptre of Mars — for Aries is the martial fire of Spring, the founding principle of civilisation and law. He represents the organised Will of Spirit imposing structure upon matter: the Tetragrammaton's Yod expressed through earthly power.",
+      "secondaryNames": [
+        {
+          "name": "L'Empereur",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu IV",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 4,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.tzaddi",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.aries",
+        "qabalisticPath": "qabalah.path.28",
+        "note": "In Thoth, The Emperor is attributed to Tzaddi (צ) and The Star to Heh (ה) — the reverse of the Golden Dawn system. See Liber AL I:57.",
+        "uprightMeaning": "Ordered authority; the rational structuring of power; martial discipline imposing civilising form; fatherhood; constitutional rule; leadership grounded in law.",
+        "reversedMeaning": "Tyranny and rigidity; authority without wisdom; the state crushing individuality; stagnation from excessive control; impotent rule.",
+        "authorNotes": "Ram-horn curls are incorporated into the crown (Aries, his astrological sign) rather than a generic imperial crown. The shield bears a heraldic phoenix (Mars/fire: the endurance of the military principle through destruction). The ground is bare red rock — Mars's colour, the element of fire in its most unyielding form. The cubic throne emphasises the Emperor's function as the stabiliser of form: he is the container that makes manifestation possible.\n\nThe ram-horn crown and the fire-red ground point to the same historical figure: Abraham. The ram is the substitutionary sacrifice of the Akedah (Genesis 22:13), caught in the thicket in place of Isaac — the typological foundation of the Passover lamb and the Christ-Lamb that follows it. The covenant between God and Abraham was sealed by fire: the smoking firepot and flaming torch that passed between the pieces in Genesis 15:17, establishing the bond unilaterally by divine fire before any human law existed. Abraham is the Emperor in the most precise sense — not merely a king but the founder of covenantal civilisation, the archetypal father from whom all Abrahamic tradition descends. The Tzaddi attribution also finds its natural home here. Tzaddi is the fishhook, and Abraham is the hook cast into history by the promise of Genesis 15:5: \"count the stars if you can; so shall your offspring be.\" The children of Abraham are the stars; the stars are the fish the Tzaddi draws from the waters of time. In XVII The Star, those covenant-children appear in their fullness — the Ichthys ascending, the Milky Way as the sea of descendants made visible. But the hook was cast here, at IV. Tzaddi belongs to the Emperor not by assignment but by emergence: the fishhook is not the catch, and the Emperor is not the Star — but the Star is what the Emperor's Tzaddi draws forth."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-hierophant",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hierophant",
+      "description": "Atu V. Attributed to Vau (ו) and Taurus. In Thoth the Hierophant is Osiris enthroned — the ancient dying-and-rising god who mediates between the divine and human worlds. He holds the staff of the Three Aeons (the triple wand) and is surrounded by the four kerubic symbols. Crowley emphasises the Hierophant's role as the bridge between formless mystery and incarnate teaching: the inner secret that outer religion veils. His five-pointed pentagram sign and the dancing maidens and children before him hint at initiatory mysteries beyond orthodox religion.",
+      "secondaryNames": [
+        {
+          "name": "The Pope",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Pape",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu V",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 5,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.vau",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.taurus",
+        "qabalisticPath": "qabalah.path.16",
+        "uprightMeaning": "Transmission of sacred teaching; initiation; the outer husk of inner mystery; tradition as living inheritance; the priest as mediator of cosmic law.",
+        "reversedMeaning": "Dogma and orthodoxy crushing the spirit; false authority in spiritual matters; tradition as prison; the letter killing the spirit it was meant to embody.",
+        "authorNotes": "Bull-horn motifs appear on both the throne armrests and the altar face (Taurus, his sign), and the Hierophant holds the crook and flail crossed at his chest — the Osirian posture, asserting the Egyptian lineage of the priestly office. The hand gesture (two fingers up, two down) enacts 'As above, so below' rather than a papal blessing. A kneeling figure at the altar flame acknowledges the devotee: the Hierophant is defined by his congregation.\n\nWith Moses as the Magus, the Hierophant's identity is unambiguous: he is Aaron, the Kohen Gadol, the Mosaic original High Priest. The bull-horn motifs already on the altar are Aaron's own sacrificial instrument — on Yom Kippur, the High Priest offered a bull as his sin offering before entering the Holy of Holies (Leviticus 16:3-6). No figure in Hebrew tradition is more precisely identified with the Bull of Taurus. The letter Vav means nail or hook, and the silver hooks (vavim) of the Tabernacle curtains (Exodus 27:10-11) were the literal connectors of the sanctuary — Aaron's priestly office is the Vav in structural fact, the nail joining the divine ordinance received by Moses to the congregation assembled below. The Osirian posture connects Aaron to the Aeon of Osiris, and the three 2000-year Aeons find their natural priestly lineage here: Melchizedek as the pre-Mosaic archetype (Genesis 14:18 — priest of El Elyon before the covenant was institutionalised, offering bread and wine), Aaron inaugurating the Levitical order, and the new era superseding it. Hebrews 7:11 states plainly that the Levitical priesthood's imperfection necessitates a new order — the Melchizedekian priesthood that Christ fulfils. The Thelemic three-aeon structure is not a rejection of this typology but its secular echo. The Hierophant stands at the middle term, the institutional form that the eschatological arc will ultimately transcend — which is precisely the position Hebrews assigns to Aaron."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-lovers",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Lovers",
+      "description": "Atu VI. Attributed to Zayin (ז) and Gemini. In Thoth this card is radically different from RWS: it depicts the Royal Marriage — the alchemical coniunctio of the Red King and White Queen under the blessing of Hermit above (Orpheus/Perseus). Harris painted an elaborate hermetic wedding presided over by an aged priest, uniting opposites at a cosmic level. The marriage is not romantic but sacred and transformative — the union of conscious and unconscious, male and female principles, to produce the androgynous Hermetic Child. The black and white brothers stand behind as the twin polarities being reconciled.",
+      "secondaryNames": [
+        {
+          "name": "Les Amoureux",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu VI",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 6,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.zayin",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.gemini",
+        "qabalisticPath": "qabalah.path.17",
+        "uprightMeaning": "Sacred union of opposites; the alchemical marriage; conscious choice to unite rather than separate; inspiration arising from polarity reconciled; the androgynous self.",
+        "reversedMeaning": "Irresolution; the refusal to commit to integration; false union; superficial relationship lacking deeper hermetic purpose; divided loyalties.",
+        "authorNotes": "Crowley reinterpreted this card as the Alchemical Marriage rather than a romantic choice. The Rebis (alchemical hermaphrodite) stands at centre as the synthesis produced by the union of King (solar) and Queen (lunar). Zain, the sword, is drawn as the vertical axis passing through the Rebis — it both divides and unites, the same function as the Hebrew letter of the path. Eros is blindfolded: divine love operates without discrimination. A caduceus on the altar grounds the whole scene in Mercury-as-Gemini.\n\nThe biblical warrant for reading the Lovers as eschatological typology is direct. Genesis 2:24 — \"the two shall become one flesh\" — is the Rebis described in scriptural language, the alchemical union already present in the first marriage. The King James rendering uses the word \"cleave\": an English autoantonym that means both to cut apart and to bind together, enacting in a single word the double function already noted of Zayin. Paul quotes Genesis 2:24 in Ephesians 5:31-32 and immediately identifies the referent: \"this mystery is profound, and I am saying that it refers to Christ and the church.\" The μυστήριον — the precise concern of the esoteric tradition — is the marriage itself, and Paul names it as the type of the final union depicted in XXI. The chemical wedding that begins here is the same act that the New Jerusalem completes."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-chariot",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Chariot",
+      "description": "Atu VII. Attributed to Cheth (ח) and Cancer. The Charioteer in Thoth is armoured in moonlit silver, holding the Holy Grail — for Cancer is the sign of the divine vessel. The four Sphinxes (the four kerubs) draw the chariot not as warring forces to be controlled but as unified creative powers moving together. The canopy of stars above him is Nuit herself. Crowley's Chariot is less about conquest than about the mystical vehicle of consciousness carrying the Grail of divine understanding through the waters of manifestation.",
+      "secondaryNames": [
+        {
+          "name": "Le Chariot",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu VII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 7,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.cheth",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.cancer",
+        "qabalisticPath": "qabalah.path.18",
+        "uprightMeaning": "Triumph through integrated forces; the sacred vessel carrying divine wisdom; mastery not through domination but through harmony; spiritual victory; the Grail quest.",
+        "reversedMeaning": "Forces pulling in different directions; defensive rigidity; victory sought for ego rather than spirit; the vessel cracked and leaking; over-control that stifles forward motion.",
+        "authorNotes": "The Holy Grail is borne aloft by the knight — this same vessel reappears in Lust (Atu XI) carried by Babalon, establishing the cups lineage across the major arcana. The chariot wheels are drawn as the Cancer glyph (♋) — two conjoined circles — so the card's astrological attribution is structurally present. The four Kerubic beasts (Ezekiel's living creatures) harness the chariot: Will disciplined by the fourfold world. Armour plates are crab-carapace segments: the hard protective shell of Cancer.\n\nThe four beasts are Ezekiel's living creatures, but the vision that develops them eschatologically is Daniel's. In Daniel 7, the chariot-throne of the Ancient of Days appears after the four beast-kingdoms are judged — the Chariot is the vehicle of that judgment, and Daniel is its prophet. Cheth means fence or hedge — an enclosure of protection — and Daniel is the Protected Prophet precisely in this sense: in Daniel 1:8-16 he refuses the king's food and wine in the heart of Babylon, adhering to Mosaic dietary law against the command of his captors, and is found healthier than those who ate from the royal table. The hedge is not miraculous intervention but the Law maintained from within — the same discipline of Will that the Chariot already embodies. Where Lust (XI) is Babylon from within, the Chariot is the divine hedge around the prophet it cannot consume."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.adjustment",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Adjustment",
+      "description": "Atu VIII. Called 'Adjustment' in Thoth (not 'Justice'). Attributed to Lamed (ל) and Libra. In Thoth the card is numbered 8, restoring the traditional pre-Waite Marseille order (Waite moved it to 11). Crowley rejected the word 'Justice' as too human and legalistic: 'Adjustment' expresses the cosmic equilibrium of cause and effect, karma as impersonal law rather than moral judgement. Harris painted the figure as a masked, double-headed dancer perfectly balanced on her toe-points, her scales not held but inherent in her own structure. She is Maat, the Egyptian goddess of truth and cosmic order, whose feather weighs the heart of the dead.",
+      "secondaryNames": [
+        {
+          "name": "Justice",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Justice",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu VIII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Justice",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 8,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.lamed",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.libra",
+        "qabalisticPath": "qabalah.path.22",
+        "note": "Numbered 8 in Thoth, restoring pre-Waite traditional order. The RWS equivalent Justice is numbered 11.",
+        "uprightMeaning": "Cosmic equilibrium; karma as impersonal adjustment; precise cause and effect; the weight of truth; clarity arising from perfect balance; the accounting of the soul.",
+        "reversedMeaning": "Imbalance; evading the consequences of action; false scales; injustice wielded as power; karma deferred but not cancelled; self-deception about one's true weight.",
+        "authorNotes": "Crowley renamed 'Justice' to 'Adjustment' to shift the emphasis from static legal judgment to dynamic equilibrium — cosmic balance as an active process. The figure, sword, and scales are composed with strict bilateral symmetry about the exact centre-line of the card: the SVG geometry enacts the principle. The scales weigh Ma'at's feather against the Heart (the Egyptian psychostasia). Alpha (Α) appears above the feather, Libra/Omega (♎) below: the midpoint of the alphabet at the midpoint of the cards, closing one half of the journey.\n\nThe Alpha and Omega placed at the card's midpoint have a precise scriptural locus: Revelation 22:12-13, where God declares \"I am the Alpha and the Omega, the first and the last, the beginning and the end\" — the announcement that immediately precedes the New Jerusalem and the River of Life. The Omega is not merely the end of the Greek alphabet or a formal symbol of completion: it is the divine attribute of the Last Judgment that Atu XX depicts. Adjustment stands at the exact centre of the deck and announces, in the same symbol, both the principle by which the journey will be adjudicated and its ultimate conclusion. The scales do not merely balance; they are already weighing toward the Aeon."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-hermit",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hermit",
+      "description": "Atu IX. Attributed to Yod (י) and Virgo. The Thoth Hermit is Adept and Analyst: he carries his lantern (the Sun contained in the dark, Logos concealed in matter) and a staff. Before him Cerberus waits. His cloak is covered with ears of wheat (Virgo, the harvest), and the Hebrew letter Yod — the seed of all the other letters — is the spark of the divine fire he carries into darkness. Crowley identifies him with Mercury in his role as psychopomp, guide of souls, the silence after the Word. He is the solitary seeker who has gone beyond the fellowship of the Chariot into individual illumination.",
+      "secondaryNames": [
+        {
+          "name": "L'Ermite",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu IX",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 9,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.yod",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.virgo",
+        "qabalisticPath": "qabalah.path.20",
+        "uprightMeaning": "Solitary illumination; the divine spark carried through darkness; inner wisdom found in silence; the analyst who sees through surface phenomena; sacred aloneness.",
+        "reversedMeaning": "Isolation becoming alienation; wisdom hoarded rather than shared; the light hidden under a bushel; withdrawal as avoidance; the seeker lost in the wilderness.",
+        "authorNotes": "The solar disk inside the hexagonal lantern is generated by the same function with the same colour palette as the Fool's sun (Atu 0): the uncreated light, now enclosed and carried — wisdom made portable. The Fool leapt toward open sky; the Hermit walks a mountain path lit by his own lantern. The hexagonal cage (Virgo: the hidden harvest) encloses the light. A three-headed dog (Cerberus) walks at his feet: the threshold guardian he has already passed. The cowl conceals the head — Virgo as concealment of the inner sun.\n\nAt the Magus, Moses is Hermes Trismegistus — the thrice-great, the cosmic lawgiver and divine scribe. At the Hermit he is simply Hermes: the wanderer, the solitary figure in the wilderness of Midian, not yet the lawgiver but about to become him. The distinction matters. The Fool and the Hermit mirror each other as threshold figures, both standing at the beginning of a new covenant: the Fool at the last moment of Adamic fellowship with God, expelled from Eden into the long descent of history; the Hermit at the first moment of Mosaic fellowship, alone in the wilderness before the burning bush calls him forward. Both are beginnings. The three covenants — Adamic, Mosaic, Christological — are the same progression Crowley named as his three Thelemic Aeons, and the Hermit stands at the hinge between the first and second. The lamp's enclosed solar disk is the burning bush: the uncreated fire that does not consume its vessel, YHWH's presence held at the precise distance Moses could endure. Yod is the hand that writes the Pentateuch, but more precisely: Yod is the first letter of the Tetragrammaton (יהוה), and Moses was the first designated proclaimer of that Name. Exodus 6:3 states it plainly — the patriarchs knew God as El Shaddai, but by the name YHWH he did not make himself known to them. The Hermit carries the Name in his lantern before he has yet spoken it aloud."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.fortune",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Fortune",
+      "description": "Atu X. Called 'Fortune' in Thoth (not 'Wheel of Fortune'). Attributed to Kaph (כ) and Jupiter. Harris painted the wheel with a Sphinx at the top and three alchemical animals on the rim — the Hermanubis (Mercury) rising, the Typhon (Set) descending, and the Sphinx holding the sword of equilibrium. The three alchemical principles Sulphur, Salt, and Mercury are inscribed on the spokes. Fortune for Crowley is not lucky chance but the cosmic principle of cyclical change — the Wheel is the universe itself in its eternal rotation, and understanding this frees one from attachment to any particular turn of the wheel.",
+      "secondaryNames": [
+        {
+          "name": "Wheel of Fortune",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Roue de Fortune",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu X",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Wheel of Fortune",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 10,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.kaph",
+        "element": null,
+        "astrological": "astrology.planet.jupiter",
+        "qabalisticPath": "qabalah.path.21",
+        "uprightMeaning": "The cosmic cycle; change as universal law; expansion and contraction; fortune understood as impersonal rotation of forces; liberation through non-attachment to outcomes.",
+        "reversedMeaning": "Caught on the wheel; unable to accept change; mistaking a temporary high for permanent gain; the gambler's fallacy; resistance to inevitable cycles.",
+        "authorNotes": "The Wheel is drawn as a weaving loom, not merely a spinning wheel — Crowley's emphasis on the Moirai (the three Fates). The three figures are identified: Sphinx as Lachesis (the Measurer, holding a taut thread at the still point); Hermanubis as Clotho (ascending, spinning the thread of new life); Typhon/Set as Atropos (descending, the cutter of endings). Warp threads are clipped to the wheel using SVG clipPath — the loom metaphor is structural, not decorative. The Ophion serpent coils the World Egg at the hub: primordial creative force within the wheel of becoming.\n\nThe wheel's visual prototype in the Kabbalistic tradition is Ezekiel's ophanim — the wheel within a wheel of Ezekiel 1:15-21, rims covered with eyes, moved by the spirit of the living creatures. The distinction from the Moirae is exact: the Moirae are mechanical fate, operating blindly; the ophanim have eyes built into their rims and are driven by divine spirit. The YHWH inscription on the Thoth Wheel makes the same claim — this is Providence, not Fortune: a wheel whose turning is seen. The figure whose arc most completely manifests all three wheel-positions is Nebuchadnezzar of Babylon. Hermanubis ascending is the young conqueror rising to the greatest empire of the ancient world. The Sphinx at the still point is Nebuchadnezzar at his apex, holding Daniel's divine interpretations and his own ambition in equal measure — the measurer holding both threads before one is cut. Typhon descending is Daniel 4's fulfilment: driven from men to live as a beast in the field, his hair like eagle's feathers and his nails like bird's claws, the King of Monsters made literal by the chaos of Set. The descent is triggered by Daniel 4:30 — \"Is not this great Babylon, which I have built?\" — the city named in its moment of maximum pride. But the wheel is a cycle, not an arc: Daniel 4:34-37 records Nebuchadnezzar's restoration, his reason returned, his eyes lifted to heaven, his voice raised in praise of YHWH. Hermanubis rises again. This is why the Sphinx does not represent the apex of tragedy but the tension of a cycle in motion. It also carries a typological implication for Lust (XI): the Whore inherits the title Nebuchadnezzar claimed at the moment the wheel turned against him — and as Nebuchadnezzar was ultimately restored to acknowledge divine sovereignty, so Revelation 21:24-26 places even the kings of the earth bringing their glory into the New Jerusalem, whose gates are never shut. The wheel at X turns toward Babylon at XI; it does not stop there."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.lust",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Lust",
+      "description": "Atu XI. Called 'Lust' in Thoth (not 'Strength'). Attributed to Teth (ט) and Leo, and numbered 11, restoring the pre-Waite traditional order. Crowley chose 'Lust' deliberately: not base desire but the divine creative appetite — Babalon riding the Beast, the Scarlet Woman upon the Lion-Serpent of the Abyss. Harris painted the most ecstatically alive of all the Thoth atus: Babalon crowned with ten horns, holding the Holy Grail aloft while the many-headed Beast below her roars. The Lust Crowley names is not the opposite of spirit but its fullest expression — the rapture of Thelema, the union of Hadit and Nuit, the sacred fire of Will fulfilled.",
+      "secondaryNames": [
+        {
+          "name": "Strength",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Force",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu XI",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Strength",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.teth",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.leo",
+        "qabalisticPath": "qabalah.path.19",
+        "note": "Numbered 11 in Thoth, restoring pre-Waite traditional order. The RWS equivalent Strength is numbered 8.",
+        "uprightMeaning": "The divine creative fire; Thelemic ecstasy; strength as vital appetite rather than suppression; Babalon's rapture; the will fully expressed without shame; the Beast tamed by love.",
+        "reversedMeaning": "Creative force misdirected into cruelty; lustful appetite without spiritual grounding; the beast unchained from wisdom; vital force squandered; shame distorting natural desire.",
+        "authorNotes": "The RWS 'Strength' depicts a woman taming a lion — this image has a deep Daniellic root: Daniel in the lions' den (Dan 6), the prophet preserved by faith rather than power. Crowley renamed the card 'Lust' and made the woman Babalon (Rev 17), but this art restores the Daniellic chain explicitly: the Hand on the Wall (Dan 5:5) appears on the left, and the den-arch frames the scene. The Beast is Johannine rather than generic: serpentine/draconic form, seven crowns, ten horns (Rev 13:1). The number 666 is inscribed as נרון קסר (Neron Qesar = Nero Caesar) — the Gematria identification in Revelation 13:18 read as a cipher for a specific tyrant, not a mystical absolute. Babalon's nimbus uses the same solarDisk palette as The Fool, The Hermit, and The Hanged Man — the same uncreated light. מנא מנא תקל (Dan 5:25) is branded on the Beast's flank: the judgment is the Beast's credential, not its condemnation.\n\nLust is the card where the eschatological sequence formally opens. Fortune (X) named Babylon at the wheel's turning point; XI is inside the city that name built. The Holy Grail carried in purity by the Chariot (VII) is the same cup Babalon raises here — the vessel of the covenant lineage passing through the hand of the adversary, not lost but held in a different grip. Daniel, whose hedge was established at VII, moves through this same Babylon; the Chariot and Lust describe the same city from opposite perspectives. The solarDisk palette already noted in Babalon's nimbus confirms what Fortune's cycle implied: the uncreated light is present even within Babylon, as it was present even in Nebuchadnezzar at his most monstrous. The deepest eschatological tension the card carries is between the Whore of Revelation 17 and the Bride of Revelation 21 — the same woman-archetype in two modes, one named at XI and one revealed at XXI. The deck traces the full distance between them."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-hanged-man",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hanged Man",
+      "description": "Atu XII. Attributed to Mem (מ) and Water. The Hanged Man in Thoth hangs from an Ankh cross — the loop of life — from a Tau cross below it, the figure's posture echoing the Egyptian Ankh. He is suspended in a sea of green dissolution, accepting death as transformation. Crowley stresses the Egyptian connection: this is Osiris slain and dismembered, surrendering to the waters of the unconscious to be reconstituted. The voluntary sacrifice — not martyrdom but conscious submission to a deeper process — enables the resurrection that follows.",
+      "secondaryNames": [
+        {
+          "name": "Le Pendu",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.mem",
+        "element": "astrology.element.water",
+        "astrological": null,
+        "qabalisticPath": "qabalah.path.23",
+        "uprightMeaning": "Voluntary surrender to transformation; sacrificial consciousness; seeing reality from the inverted perspective; the ego dissolved so the deeper self may emerge; suspension as initiation.",
+        "reversedMeaning": "Pointless sacrifice; martyrdom for ego; refusing to let go; the sacrifice that does not transform; stagnation disguised as spiritual practice.",
+        "authorNotes": "Harris's depiction of the Hanged Man is among the most explicitly Christian images in the Thoth deck: hung from an Ankh with three nails, Nehushtan coiled on the stem. This art strengthens each element. The Ankh is the crux ansata — the Egyptian life-symbol adopted by Coptic Christianity precisely because it asserts that the Cross is a life-symbol. Three nails (two hands, one foot): the Catholic three-nail form of the Crucifixion. Palms open in the orans posture: kenotic offering, not struggle. The halo pours downward (rays weighted toward the nadir by angle-dependent opacity): kenosis as optics. This is the fourth and final appearance of the solarDisk palette (Fool / Hermit / Babalon / Hanged Man) — the same uncreated light now given entirely away. Nehushtan (Num 21:8-9; John 3:14) is the Teth-serpent of Lust (Atu XI) on a new axis: desire elevated into healing. A grain of wheat (John 12:24) lies below — the seed that must fall and die. A rock-cut tomb (Matt 27:60, the borrowed tomb) anchors the base: the Hanged Man faces Death directly. The rolled stone is displaced but not sealed — ajar."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.death",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Death",
+      "description": "Atu XIII. Attributed to Nun (נ) and Scorpio. In Thoth, Death is the dancing skeleton with the scythe who moves through a grey-green world of dissolution and rebirth. The bubbles rising from the decomposing forms below him carry the seeds of new life — Scorpio as the sign of death and regeneration, the scorpion, the serpent, and the eagle. Harris painted the skeleton in a kinetic, almost joyful posture of transformation. Crowley emphasised that Nun means 'fish' — the life in the waters of the unconscious — and that this card represents not annihilation but the perpetual motion of life-force through forms.",
+      "secondaryNames": [
+        {
+          "name": "La Mort",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XIII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 13,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.nun",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.scorpio",
+        "qabalisticPath": "qabalah.path.24",
+        "uprightMeaning": "Transformation as universal law; death of the old self; regeneration through dissolution; Scorpionic depth of change; the scorpion becoming the eagle; life force moving between forms.",
+        "reversedMeaning": "Clinging to what must end; fear of change preventing growth; the dead past choking the living present; transformation resisted until it becomes rupture rather than renewal.",
+        "authorNotes": "TdM and RWS identify Death as Thanatos / the Pale Rider of Revelation 6:8. Harris produced a more neutral skeletal figure. This art replaces the skeleton with Azrael — the Angel of Death as divine executor (Exodus 12:23): God's instrument, not an autonomous force or personification of mortality. The distinction matters Qabalistically: path 24 runs from Geburah (Severity) to Tiphareth (Beauty) — it is a transformative passage, not a terminus. Six wings (Isaiah 6:2) mark Azrael as seraph: upper pair spread in flight, middle pair folded across the face (the angel's identity is veiled; only obedience is visible), lower pair pointing down. Scorpio's three traditional forms are all present: scorpion at the feet (the stinging death), eagle silhouette above the head (transcendence), phoenix amber glow at the crown (rebirth from ash). The Passover doorpost (Exodus 12:22-23) stands on the left: blood tau-cross on the lintel marks the saved, two Ichthys fish carved in the stone. Three Ichthys fish swim in the Abyss water below — Peter, James, John: the three Apostles of the Transfiguration, Gethsemane, and the 153-fish haul (John 21:11); the three witnesses of 1 John 5:8. The green shoot at the doorpost base is the grain of Atu XII germinated. The bitter drop at the sword tip: divine justice measured, not wrathful. Cards XI–XII–XIII form a Johannine arc: Lust (Babylon, the past judgment), The Hanged Man (the willing sacrifice, the present witness), Death (the prophetic future that gives the sacrifice its meaning)."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.art",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Art",
+      "description": "Atu XIV. Called 'Art' in Thoth (not 'Temperance'). Attributed to Samekh (ס) and Sagittarius. In the most explicitly alchemical of all the major atus, a hermaphroditic figure pours fire and water simultaneously between two grails while the red lion and white eagle (Sol and Luna, Sulphur and Salt) have exchanged their colours from the Lovers card — the alchemical work of integration is complete. The figure's motto 'VITRIOL' arches above (Visita Interiora Terrae Rectificando Invenies Occultum Lapidem). Crowley rejected 'Temperance' as falsely moralistic: the card is not about moderation but about the Great Work — the transmutation of base matter into gold.",
+      "secondaryNames": [
+        {
+          "name": "Temperance",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Tempérance",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu XIV",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Temperance",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.samekh",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.sagittarius",
+        "qabalisticPath": "qabalah.path.25",
+        "uprightMeaning": "The alchemical Great Work; transmutation of opposites into gold; the integration of fire and water, red and white; spiritual transformation through the process of art and making; VITRIOL.",
+        "reversedMeaning": "The alchemical process interrupted; premature synthesis; mistaking moderation for transformation; the work abandoned mid-process; mixing without transmuting.",
+        "authorNotes": "Art (XIV) is the Great Work in process — alchemical Solve et Coagula made visible. The figure is the Rebis of card VI returned: where the Lovers stood apart, here they have been fused. The dual face (solar-gold left, lunar-silver right) and the blended garment of lion and eagle show that the opposing principles of Sulphur and Mercury have not merely been joined but transmuted into something new. Every visual element is a continuation of an earlier card's line: the stone plinth from Lovers' altar is the cauldron base, scaled double; the caduceus that stood in miniature on that altar now runs the full height of the card as the structural axis; the King and Queen's arms become the single figure's arms, pouring the mixed streams back into themselves rather than outward; the solar disk that followed the Fool into the Hermit's lantern reappears at the crown, now set in the lunate crescent. The crossed streams — fire into water, water into fire — form a great X at the card's centre, echoing the crossing of paths in the Hanged Man, but here the tension is generative rather than suspending. The arrow of Sagittarius, replacing the Zain axis of Gemini, descends directly into the cauldron: the arrow does not wound; it carries the quintessence down into the Work. VITRIOL inscribed on the cauldron rim is the alchemical injunction — Visita Interiora Terrae Rectificando Invenies Occultum Lapidem — visit the interior of the earth, and by rectifying you shall find the hidden stone. The indigo and deep blue of the card's field shifts the palette from the Lovers' gold: the marriage is complete; the gold has been dissolved into the Work itself."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-devil",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Devil",
+      "description": "Atu XV. Attributed to Ayin (ע) and Capricorn. In Thoth, The Devil is Pan — the All-God, not the Christian adversary. Harris depicted a goat-headed figure with vast, creative energy expressed through explicit generative imagery: the phallus, the creative force of nature raw and unashamed. Below him two female figures with serpent tails dance joyously — the creative and destructive aspects of nature in cosmic play. Crowley's Devil is the life force of the universe operating at the material level — Capricorn as the sign of earthly attainment and the winter solstice, the god who descends to the lowest point in order to rise again. To know Pan is to know that all restrictions are ultimately mental.",
+      "secondaryNames": [
+        {
+          "name": "Le Diable",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XV",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 15,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.ayin",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.capricorn",
+        "qabalisticPath": "qabalah.path.26",
+        "uprightMeaning": "Pan and the creative life force; the joy of material existence; sexuality as sacred energy; freedom from false restrictions; the divine within the animal; earthy attainment.",
+        "reversedMeaning": "The life force as prison rather than liberation; creative energy bound by materialism; Pan as tempter rather than liberator; enslavement to appetite; the shadow of the All-God.",
+        "authorNotes": "The Devil (XV) is the Shadow of the Great Work — every force that resists or inverts it, gathered into a single image. The Qliphothic Tree and the Tower of Babel are merged into one ziggurat: they are always the same structure. The ten dark nodes in Tree of Life positions are the Qliphoth, the hollow shells that parody the Sephiroth — the same pattern of divine emanation turned inward and downward. The lightning that strikes the Tower is already descending; the judgment is not future but present, inscribed into the card as a completed fact. Capricorn is the sea-goat, and the sea is the Lake of Fire: sulphuric, sulfurous, the ultimate destination of every force that opposes the Divine Work, as in Revelation 20:10. The Nachash — the Edenic serpent, whose voice gave the command that built Babel — rises from the Lake, and its coils become the chains that bind the King and Queen. These figures are the Lovers of card VI seen from the opposite shore: the same gold and silver, the same opposition of solar and lunar principle, but now corrupted and bound rather than in creative tension. The caduceus of Art descends into the card inverted: the healing axis becomes the staff of material power, wings entering the Lake rather than rising toward light. The inverted pentagram above the goat-head is the same five-pointed geometry as the Lovers' rose-cross, reversed. The Beast whose shadow falls on the ziggurat is the same Beast from card XI (Lust) — one of the Devil's faces, his appetite made manifest. The figure does not command the lightning: it is already falling. For the Reader who has followed the path of the Hanged Man, Death, and Art, this card is not a threat but a marker — the adversarial forces are identified, already overcome. The chains are not the Reader's."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-tower",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Tower",
+      "description": "Atu XVI. Attributed to Peh (פ) and Mars. The Tower in Thoth depicts the Eye of Shiva (the Eye of Horus) destroying the tower of false certainty with a bolt of lightning. The Tower is Babel — the structure built by the ego to reach God by its own efforts, which must be destroyed so that actual spiritual experience can begin. The falling figures are the human figures of pride and ambition, freed by their fall. For Crowley this is a positive destruction — the collapse of the false self that the true self, the Holy Guardian Angel, can be encountered. Mars as the god of action here acts as divine surgeon rather than mere destroyer.",
+      "secondaryNames": [
+        {
+          "name": "La Maison-Dieu",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The House of God",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu XVI",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 16,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.peh",
+        "element": null,
+        "astrological": "astrology.planet.mars",
+        "qabalisticPath": "qabalah.path.27",
+        "uprightMeaning": "Liberating destruction; the collapse of false structures; the Eye of Shiva opening; sudden revelation that overturns worldly constructs; breakthrough through breakdown; divine surgery.",
+        "reversedMeaning": "Destruction without liberation; chaos serving no purpose; pride rebuilt in new forms; the rubble of collapse used to build new prisons; catastrophe not yet integrated.",
+        "authorNotes": "The Tower (XVI) is attributed to Peh — the Hebrew letter meaning 'mouth', the faculty of speech. This attribution is not incidental. When Israel was without water in the wilderness, God commanded Moses to speak to the rock — to use Peh, the mouth, the instrument of divine communication. Moses struck it instead. The water flowed; the people were saved; and Moses was sealed from entering the Promised Land of Canaan for this single act of impatience. The water that bursts from the struck stone at the lightning impact point is simultaneously the flood that drowned the Nephilim and the water from Meribah: the same disobedience of the mouth, the same judgment, the same gift. Even the greatest practitioner, the supreme Hermetic archetype, is not immune from divine judgment when they substitute material force for the divine word. The Tower and the Devil are the same structure viewed from two angles: the ziggurat that was the Qliphothic Tree in XV is here the Tower of Babel, struck. Where the Tower was latent in the Devil, the Devil is present in the Tower through the Nephilim — the sons of God who followed Lucifer's pride and took wives from among humanity (Genesis 6:1-4), becoming the giant holders of divine knowledge who corrupted it for material power. Their forms are embedded in the masonry at giant scale because they are the architecture: the Tower was always their monument. The Flood of Water that purged the Nephilim prefigures the Flood of Blood at Armageddon (Revelation 19) by which Lucifer himself is defeated. The Lake of Fire shown in card XV (Revelation 20:10) is the aftermath of the battle shown here — the two cards read as a sequential eschatological unit. The dove with olive branch is the Noaic peace-covenant: it descends toward the tiny ark in the corner, and the Reader occupies that space. The one who has followed the path of the Hanged Man, Death, Art, and the Devil's defeat is not among the Nephilim falling from the Tower; they are Noah, protected through willing submission to the Great Work, watching the purging complete from the sanctuary of the ark. The scattering of languages at Babel, born from the same event, was the birthplace of hidden knowledge — the necessity of mystery traditions, Kabbalah, and esoteric practice arises precisely from the moment the universal tongue was withdrawn. The Tower does not destroy wisdom; it forces it underground, where it becomes the esoteric inheritance that the Reader now holds. The Qliphothic nodes in the masonry begin to fill with light from the top down as the lightning strikes: the hollow husks, once the shells of divine emanation that turned inward, are being opened. The purging is redemptive, not entropic."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-star",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Star",
+      "description": "Atu XVII. Attributed to Heh (ה) and Aquarius — the key Thelemic difference from the Golden Dawn, where Tzaddi was assigned to The Star and Heh to The Emperor. Following 'Tzaddi is not the Star' (AL I:57), Crowley assigned Heh to The Star. Nuit, the night sky, the goddess who is the body of the stars, pours the waters of infinity from two cups while the great star above her blazes. The Star in Thoth is the aspiration toward Nuit — the longing of the point (Hadit/the individual) to unite with the infinite circumference. Aquarius as the Water-Bearer pours the waters of consciousness into the universal sea; Heh as the window looking out to infinity.",
+      "secondaryNames": [
+        {
+          "name": "L'Étoile",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XVII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 17,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.heh",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.aquarius",
+        "qabalisticPath": "qabalah.path.15",
+        "note": "In Thoth, The Star is attributed to Heh (ה) and The Emperor to Tzaddi (צ) — the reverse of the Golden Dawn system. See Liber AL I:57.",
+        "uprightMeaning": "Nuit as the infinite body of stars; hope arising from cosmic perspective; the individual aspiring to the universal; the waters of consciousness poured freely; Aquarian vision.",
+        "reversedMeaning": "Cosmic hope curdled into disappointed idealism; the infinite as overwhelming rather than liberating; Nuit unreachable; the star glimpsed but not attained.",
+        "authorNotes": "The Star (XVII) is the first card of pure revelation: after the Tower's purging there is nothing remaining to oppose the light, and the card shows the divine gift flowing without impediment. Every element converges on a single synthesis — the water and the stars are the same substance. The Abrahamic covenant is stated as 'your descendants shall be as numerous as the stars' (Genesis 15:5): the water Nuit pours is this same gift, flowing ceaselessly, indiscriminate, uncountable. The Milky Way was perceived by ancient peoples as a river of light in the sky — not metaphorically but observationally. Nuit is the night sky and the water-bearer simultaneously; the apparent conflict between her Egyptian identity (body of stars) and her Aquarian attribution (pouring water) dissolves entirely: she pours the Milky Way. The water becomes stars as it rises; the stars become water as they fall. The Heh/Tzaddi attribution debate — Crowley declared 'Tzaddi is not the Star' (Liber AL I:57) — is resolved not by choosing one letter but by recognising that both are always present simultaneously. Heh (ה, window) is the flowing water, the aperture through which the divine gift passes — the crystal river of Revelation 22:1, clear as crystal, proceeding from the throne of God. Tzaddi (fishhook) is the one who draws the fish from that water. The fish are the Ichthys — the apostles, and by Paul's attribution in Galatians 3:29 ('if you belong to Christ then you are Abraham's offspring'), the Children of Abraham. The descendants promised as stars are the same as those drawn from the waters as fish: the fishhook draws what the window pours, and neither makes sense without the other. The three faint Ichthys shapes in the left stream are the same three apostle fish from Death (XIII), now swimming in the water of gift rather than transformation — they have arrived at what was promised. The central figure is simultaneously Nuit and the Johannine Virgin of Revelation 12:1: clothed with the sun (the solarDisk that has traced through the entire deck from the Fool's free sky through the Hermit's lantern, Art's crown, and the Tower's burst containment, is here woven into her garment — no longer a separate held object but the substance of her being), with the crescent moon beneath her feet (the Priestess's crescent from card II, now placed in its proper subordinate station — reflected light below, direct light above), and the crown of twelve stars (twelve tribes, twelve apostles, twelve zodiac signs: the number that bridges the astronomical, the genealogical, and the apostolic; Joseph's dream of the eleven stars bowing to the twelfth in Genesis 37 and John's vision in Revelation 12 depict the same stars). The right stream ascends and dissolves back into the starfield: the cycle is completed — consciousness descends as water, returns as light, in the same motion as prayer and providence. The three Magi stand at the pool's edge: the supreme Hermetic archetype, known primarily as students of stars who followed the Star of Bethlehem to its source. They are the Reader's own figure in the card — the one who pursues divine light wherever it leads. Their reflection in the mirror pool completes the Hermetic axiom: as above, so below. The pool is the crystal river; the earth has become a mirror of heaven. The Tower silhouette at the lower-left is nearly invisible — the adversary reduced to the margin of the card, the storm complete."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-moon",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Moon",
+      "description": "Atu XVIII. Attributed to Qoph (ק) and Pisces. The Moon in Thoth descends its path through an increasingly complex and strange world — from the scarab beetle at the bottom pushing the solar disc (Khepri, the dawn sun), through the jackal-headed Anubis figures flanking the pool, up to the towers of the material world, and the Moon above with its golden light concealing the Sun. Qoph means 'back of the head' — the reptilian brain, the ancient atavistic consciousness, the world that exists before rational thought. Harris painted a dreamlike scene of cellular forms, pools, and ancient guardians — the membrane between the waking and unconscious world.",
+      "secondaryNames": [
+        {
+          "name": "La Lune",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XVIII",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 18,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.qoph",
+        "element": null,
+        "astrological": "astrology.zodiac-sign.pisces",
+        "qabalisticPath": "qabalah.path.29",
+        "uprightMeaning": "The atavistic deep mind; the back of the head where ancient instinct lives; the dreamworld and the threshold of initiation; Pisces as the final dissolution before Aries; the scarab pushing toward dawn.",
+        "reversedMeaning": "Overwhelmed by the unconscious; the dreamworld becoming nightmare; psychic confusion; the path through the underworld without the guide of Anubis; fear of the deep mind.",
+        "authorNotes": "The Moon (XVIII) is the patron-star of the entire esoteric tradition. Its function is not to illuminate directly but to mediate: to take the overwhelming radiance of the Sun and render it into a gentle luminescence that can be borne. The Hebrew letter Qoph means 'back of the head' — and this is precisely what Moses saw when he asked to see the glory of God. God placed him in the cleft of the rock and covered him with His hand; Moses saw only the back, the receding Shekinah Glory, the trailing presence after the full face had passed (Exodus 33:22-23). The esoteric tradition is what can be known from that angle: not the face of God but its echo, its residue, its reflection in a pool. The Solar Eclipse crystallises this precisely. The Moon is ordinarily the reflector of sunlight — the harsh solar rays rendered gentle and navigable. But during an eclipse, the Moon becomes the only moment when one can gaze directly at the Sun: it provides just enough cover to allow approach. The corona visible at eclipse — the Sun's chromosphere and outer atmosphere, ordinarily invisible against the solar disc — is the Shekinah itself: divine glory perceptible precisely because the full disc is veiled. The Moon does not merely diminish the light; it creates a condition in which the light can be seen more truly than at any other time. The corona rays are arranged as three Seraphic wing-pairs (Isaiah 6:2: 'with two he covered his face, with two he covered his feet, and with two he flew'). The Moon IS the Seraph before the divine throne: the dark eclipse disc is the covered face, the downward rays pointing toward the path cover the feet and direct the Reader, the lateral rays are the flying wings. The Seraph does not hide the divine glory out of reluctance but out of reverence and care — if it could usher the Reader into the full presence, it would; it understands that it must not. It is the compass-needle: pointing past itself, away from itself, toward the Sun. The clear moonlit path is its primary gift — not the light, but the direction. The diffraction cross-flare in the corona is what light naturally does at eclipse through any aperture. It is present because of optics; its resonance with the Crucifixion is present because of history. Matthew 27:45 records three hours of darkness at the Crucifixion — the Sun's warmth temporarily withdrawn from a world that had just rejected it. The eclipse in this card holds that three-day silence: the period between Cross and Resurrection when the divine light was veiled, waiting. The eclipse is always temporary; the waiting is always purposive. The word 'lunacy' comes from Luna. Those overwhelmed by incomprehensible divine knowledge without the Moon's mediation become lunar — the Moon gives its name to the condition caused by its absence. The esoteric tradition speaks in whispers and encoded symbols not by choice but by necessity: the Daniellic and Johannine apocalypses deliver their knowledge in visions and symbols precisely because the full unmediated knowledge would shatter the recipient. John writes explicitly that those for whom the knowledge is intended will find it apparent; those not prepared will find only riddles. The two Pisces fish in the mirror pool continue the ichthys lineage from Death (XIII, three fish of transformation) and the Star (XVII, three fish in the gift-water). Here they are two: one ascending toward the eclipse light, one descending into the mystery on the veil's far side. Both directions are the same Great Work — the Pisces binding cord holds them together. The Priestess's pillars (card II) flank the path: the same threshold of Boaz and Jachin, now approached from the far side of the entire journey. The pool reflects the eclipse: a second veil, the same light gentled again by water. Each degree of approach the Moon permits is approved."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-sun",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Sun",
+      "description": "Atu XIX. Attributed to Resh (ר) and the Sun. In Thoth, two naked children (the Divine Twins, the Rose-Gold Dawn) dance and play before the great solar disc, their gesture forming a figure-8 of infinity. The butterfly at the top and the green hills below signal the earthly paradise of natural joy unashamed. Unlike the RWS Sun with its single child, Thoth emphasises the dyadic nature of solar consciousness — the twin pillars of reason and intuition, the marriage of the alchemical twins who completed their union in Art (Atu XIV) and now play freely. This is the consciousness illuminated from without and within simultaneously.",
+      "secondaryNames": [
+        {
+          "name": "Le Soleil",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Atu XIX",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 19,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.resh",
+        "element": null,
+        "astrological": "astrology.planet.sol",
+        "qabalisticPath": "qabalah.path.30",
+        "uprightMeaning": "Solar illumination; the divine twins in joy; consciousness that is both rational and intuitive; the Great Work completed; earthly paradise; clarity without shadow; the children of the sun freed.",
+        "reversedMeaning": "The light too bright; ego-inflation masquerading as enlightenment; the sun as scorching rather than warming; pride in illumination; the twins separated again.",
+        "authorNotes": "The Sun (XIX) is the complete, unmediated divine presence — the solarDisk that has traced through the entire deck arrives here at full scale and full power. It appeared as the Fool's free sky (distant, small), the Hermit's lantern (enclosed), Art's crown (held), the Tower's burst containment (exploded), the Star's garment (woven into the Goddess), and the Moon's eclipse (veiled). At the seventh appearance it simply is: blazing, uncontained, unveiled. The Moon did its work; the veil has lifted. The Hebrew letter is Resh (ר), meaning 'face' or 'head'. Where Qoph (XVIII) was the back of the head — what Moses saw of God as He passed — Resh is the face turned directly toward the Reader. The Reader has crossed the threshold. The full countenance of the divine is now presented without mediation. The Reader at this point stands in the position of Lucifer — not the fallen adversary of card XV, but the original meaning of the name: helel ben shachar, light-bearer, son of the dawn (Isaiah 14:12, Vulgate). In Revelation 22:16 Christ says 'I am the bright Morning Star' — the same title. The adversary's great humiliation is that the name he claimed was always the title of the one who ascends to full divine presence by right: and that one turns out to be of earthen lineage, the soul who completed the Great Work. The Morning Star in the card's corona is this — the Venus that precedes the sunrise, announcing what the full solar glory will make manifest. The three ascending ichthys complete the arc begun in Death (XIII). The three apostle fish in XIII carried the promise of resurrection and continuation. In the Star (XVII) they were faint in the gift-water — the children of Abraham beginning to move. In the Moon (XVIII) they were two, ascending and descending, the dual approach to the veiled glory. Here they are three and ascending: Peter, James, and John, the three witnesses of the Transfiguration (Matthew 17:1-8), now in the full event rather than its brief preview. The Transfiguration was a foretaste; this card is the Resurrection in full effect. The third fish dissolves entirely into the solar light — the boundary between the ascending soul and the divine presence it enters ceases to be distinguishable. In the Passion typology running through the deck: the Moon held the three-day silence of Holy Saturday; the Sun is Easter Sunday, the Resurrection, the cause of the Abrahamic holy day shifting from the Saturday Sabbath to the Sun-day — the day of the Morning Star, the New Dawn. In the Hermetic journey of Moses: he was denied the Promised Land in the body for striking the rock rather than speaking to it (XVIII's Meribah connection), but the tradition of the Harrowing of Hell holds that Christ freed the righteous dead — including Moses — between Crucifixion and Resurrection. The supreme Hermetic archetype, denied Canaan in the flesh, ascends freely in the spirit. On the Tree of Life, the Sun is the patron of Tiphareth (Beauty, Sephira 6), the central sphere of the middle pillar and the solar heart of the Tree. The Moon corresponds to Yesod (Foundation, Sephira 9). The Reader has ascended: Malkuth (Earth, 10) through Yesod (Moon) to Tiphareth (Sun), and the next step is Kether — the Crown, the Third Heaven. The pool transformed from the Lake of Fire (XV, sulfurous judgment) through the Crystal River (XVII-XVIII, starlit and moonlit) into the Lake of Light: the same body of water through five cards, transformed by each station of the ascent. The Egyptian solar ruler attributed his power to alignment with the solar deity — Ra, Aten, Amun-Ra — understanding the sun as simultaneously destructive, overwhelming, and gently nourishing. Both faces are true simultaneously; the uraeus at the solar disc's rim is this royal emblem, subtle."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-aeon",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Aeon",
+      "description": "Atu XX. Called 'The Aeon' in Thoth (not 'Judgement'). Attributed to Shin (ש) and Fire. This is the most distinctively Thelemic of all the Thoth cards — Crowley replaced the Christian imagery of the Last Judgement with the proclamation of the Aeon of Horus. The triple-deity composition shows Nuit arching across the top (infinite space), Hadit as the contracted point of view (the winged serpent), and Horus-Ra-Hoor-Khuit enthroned below — the new aeon's divine child. The Aeon declares that the Aeon of Osiris (death and resurrection) has ended; the new Aeon of Horus has begun. The card represents cosmic transformation, not personal judgement, and the dawning of a new era of human consciousness.",
+      "secondaryNames": [
+        {
+          "name": "Judgement",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Last Judgement",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Le Jugement",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Atu XX",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Judgement",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 20,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.shin",
+        "element": "astrology.element.fire",
+        "astrological": null,
+        "qabalisticPath": "qabalah.path.31",
+        "uprightMeaning": "The dawning of a new Aeon; cosmic transformation beyond personal judgement; the Thelemic proclamation; Horus enthroned; the shift from Osirian religion to a new dispensation; rebirth at the civilisational level.",
+        "reversedMeaning": "Failure to hear the aeon's call; attachment to the old dispensation; cosmic change resisted; the old judgement imposed where the new freedom is needed; the herald's trumpet unheeded.",
+        "authorNotes": "Crowley did not depart from the RWS tradition so much as deepen it. Where RWS Judgement shows the individual resurrection — souls rising from graves to a sounding angel — XIX The Sun already depicts this more completely: the glorified figure ascending in the full presence of the divine light, the three Ichthys completing their ascent, the Lake of Fire transformed into the Lake of Light. The Aeon is therefore free to depict what follows: the actual Apocalypse of the Seven Seals, Seven Trumpets, Seven Bowls, and Four Horsemen. This is no longer foreshadowing — this is the Battle of Armageddon.\n\nThe card completes several lineages established across the deck. The Hadit winged solar disk appears here for the eighth and final time in its most complete form, having grown from the small disk above the Magician (I) through the Hermit's lamp (IX), the Wheel (X), Art (XIV), the Devil (XV), the Tower (XVI), the Star (XVII), and the Sun (XIX). Hadit now bears full Egypto-Johannine wings — the same imagery used by John in Revelation 12 for the Woman clothed with the Sun, here resolved in the figure of the Cosmic Judge.\n\nThe Cosmic Judge synthesises the Ancient of Days (Daniel 7:9-14) and the Cosmic Christ of Revelation 1:13-16 and 19:11-16: eyes of fire, seven stars in the right hand, the double-edged sword proceeding from the mouth as a crossguard ray of light. The seven stars were last seen scattered as the crown of the Johannine Virgin (XVII). They are now gathered in the Judge's right hand — the constellation has come home.\n\nThe Hebrew letter Shin (Fire) appears at opacity 0.26, more visible than any other ghost letterform in the deck, because the fire of Shin is not background texture but the substance of the card itself. Its three prongs rise from the Flood of Blood to the top of the card, flanking the Judge and the winged disk — the divine fire that consumes all that is opposed to it.\n\nThe Four Horsemen (Revelation 6:1-8) are rendered as pure colour: white (conquest), red (war), black (famine), pale green (death). No detail is necessary — the colours alone have been sufficient identification since Dürer. Their simplicity against the overwhelming imagery of judgement reflects their instrumental, impersonal role.\n\nThe Flood of Blood completes the eschatological water arc that began at XV The Devil (Lake of Fire) and has run through XVI (Flood of Water / Noaic type), XVII (Crystal River / Milky Way), XVIII (Eclipse pool), XIX (Lake of Light), and now XX (Flood of Blood). This is Revelation 14:20 — blood flowing from the winepress of divine wrath to the height of a horse's bridle for 1,600 stadia. The mountains of Megiddo (Armageddon) rise from the blood. The Flood of Water at XVI was explicitly noted as the type; this is the antitype.\n\nNuit arches over all — the cosmic container, unchanged from Her role in XVII. She is the sky-goddess who holds the stars even as they fall. The twelve stars along Her arc are the same twelve that crowned the Johannine Virgin. The Aeon is not the end of Nuit; it is the end of the present order within Her."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.thoth.the-universe",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Universe",
+      "description": "Atu XXI. Called 'The Universe' in Thoth (not 'The World'). Attributed to Tau (ת) and Saturn (also Earth). The Universe is Harris's most geometrically complex card — a naked dancing figure (the Daughter, Malkah, the Shekinah) moves within a great oval of serpent-light, surrounded by the four kerubs (the fixed signs of the zodiac: Lion, Eagle, Man, Bull) and holding the twin wands of Ra and Osiris. The great oval is the cosmic egg of Nuit. Saturn as the Lord of Completion presides over the final card of the major arcana, which represents not 'the World' in the mundane sense but the Universe as the total field of existence — matter as the final crystallisation of Spirit, the dance of Malkuth at the base of the Tree.",
+      "secondaryNames": [
+        {
+          "name": "The World",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Monde",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Atu XXI",
+          "languageTag": "en-abbr",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "The World",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "thoth",
+        "atu"
+      ],
+      "extendedData": {
+        "cardNumber": 21,
+        "suit": "major",
+        "deck": "tarot.deck.thoth",
+        "hebrewLetter": "letter.hebrew.tau",
+        "element": "astrology.element.earth",
+        "astrological": "astrology.planet.saturn",
+        "qabalisticPath": "qabalah.path.32",
+        "uprightMeaning": "The great completion; matter as the crystallisation of Spirit; the dance of Malkuth; cosmic totality integrated; attainment of the Great Work in its material expression; the dancing Shekinah; the Universe as home.",
+        "reversedMeaning": "The completion withheld; the final steps not taken; the Universe as prison rather than home; the dance halted before the final resolution; the work left incomplete; Saturn as the Lord of Limitations rather than Completion.",
+        "authorNotes": "Crowley's renaming of XXI from 'The World' to 'The Universe' is not a departure from tradition but its clarification: this is not the world in a local or physical sense but the New Heaven and New Earth of Revelation 21-22 — the cosmological fulfilment of the entire Great Work. Where 0 The Fool opened with formless void (Genesis 1:2, 'the earth was without form, and void'), XXI closes with the Work complete at every scale simultaneously: personal, historical, and cosmological.\n\nThe figure is not the traditional naked World-dancer but the New Jerusalem herself — the Bride of the Lamb (Rev 19:7-8, 21:2). She is simultaneously New Jerusalem, New Israel, the perfected Church, and the fulfilled Johannine type of both Israel and Mary. She stands in orans posture: not merely dancing in the world but receiving the fullness of divine glory. Her mural crown is architectural, because she is a city. The Tetragrammaton יהוה is written on her forehead (Rev 22:4: 'His name shall be on their foreheads') — the seal of the deck and the Great Divine Work. This same seal was placed on the righteous in Ezekiel 9:4 as the Tau mark; the ghost Tau behind the card is that same seal written cosmologically.\n\nThe Hebrew letter Tau is the Cross. In Paleo-Hebrew, Tau was literally a cross mark — the final letter of the alphabet, the Omega. XII The Hanged Man (Mem/Water) depicts the Cross as sacrifice; XXI The Universe (Tau/Saturn) depicts the Cross as cosmic completion. These two cards bookend the personal and the cosmic consequences of the same event.\n\nThe 72 circles encircling the figure are not merely Harris's astrological divisions. They are the 72 angels released — no longer bound to maintaining the structure of the old Creation (compare Rev 7:1-3: four angels holding back the four winds). Their 12 super-divisions are the 12 gates of New Jerusalem (Rev 21:12). These 12 gate-circles are the culmination of the 12-star lineage running through the deck: the crown of the Johannine Virgin (XVII), the Judge's right hand (XX), and now the pearl-gates of the eternal city.\n\nThe Four Living Creatures of Revelation 4:6-8 — Lion (Leo), Bull (Taurus), Human (Aquarius), Eagle (Scorpio) — appear in their proper Johannine context. The RWS tradition already placed them at the corners of the World card; here they are no longer witnesses of the old creation but the eternal creatures before the Throne in the New Jerusalem.\n\nThe solarDisk lineage, which appeared in eight discrete forms from I The Magician through XX The Aeon (as Hadit), dissolves here entirely into ambient radiance. Revelation 21:23 states: 'the city has no need of sun or moon to shine on it, for the glory of God gives it light, and its lamp is the Lamb.' The formal barrier between Mankind and Godhead has dissolved; the disk that was held at arm's length in the Hermit's lantern (IX) is now the ambient light of the whole card. This is the alchemical union the deck has been building toward: the Lovers' chemical wedding (VI), the alchemical process of Art (XIV), and here the product revealed as a Person.\n\nThe River of Life (Rev 22:1-2) flows from beneath the figure with the Tree of Life on each bank. This is the seventh and final station of the eschatological water arc: XV Lake of Fire (Descent / Inferno) → XVI Flood of Water (Purgation / Baptism) → XVII Crystal River (Milky Way / Covenant stars) → XVIII Eclipse pool (Threshold / Cloud of Unknowing) → XIX Lake of Light (Resurrection / Paradiso opens) → XX Flood of Blood (Armageddon / Rev 14:20) → XXI River of Life (Beatific Vision / Rev 22). The sequence mirrors both Dante's Divine Comedy — Inferno, Purgatorio, Paradiso — and the Christ-type arc of Descent, Burial, Resurrection, and Ascension. Dante drew on the same Johannine and alchemical sources as the Tarot tradition; the resonance is structural, not coincidental. The River of Dante's Paradiso XXX, the River of Light flowing into the Celestial Rose and the direct sight of God, is the same river."
+      }
+    }
+  ]
+}

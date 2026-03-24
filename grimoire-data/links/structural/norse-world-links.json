@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "norse.world.asgard",   "target": "norse.world.midgard", "label": "connected-by-bifrost", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "norse.world.niflheim", "target": "norse.world.helheim", "label": "encompasses",           "bidirectional": true, "traditionScope": [], "extendedData": {} }
+  ]
+}

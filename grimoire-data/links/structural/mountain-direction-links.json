@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "fengshui.mountain.ren",
+      "target": "compass.direction.north",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.zi",
+      "target": "compass.direction.north",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.gui",
+      "target": "compass.direction.north",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.chou",
+      "target": "compass.direction.northeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.gen",
+      "target": "compass.direction.northeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.yin",
+      "target": "compass.direction.northeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.jia",
+      "target": "compass.direction.east",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.mao",
+      "target": "compass.direction.east",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.yi",
+      "target": "compass.direction.east",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.chen",
+      "target": "compass.direction.southeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xun",
+      "target": "compass.direction.southeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.si",
+      "target": "compass.direction.southeast",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.bing",
+      "target": "compass.direction.south",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.wu",
+      "target": "compass.direction.south",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.ding",
+      "target": "compass.direction.south",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.wei",
+      "target": "compass.direction.southwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.kun",
+      "target": "compass.direction.southwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.shen",
+      "target": "compass.direction.southwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.geng",
+      "target": "compass.direction.west",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.you",
+      "target": "compass.direction.west",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xin",
+      "target": "compass.direction.west",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xu",
+      "target": "compass.direction.northwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.qian",
+      "target": "compass.direction.northwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.hai",
+      "target": "compass.direction.northwest",
+      "label": "mountain-direction",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.ren",
+      "target": "chinese-zodiac.stem.ren",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.gui",
+      "target": "chinese-zodiac.stem.gui",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.jia",
+      "target": "chinese-zodiac.stem.jia",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.yi",
+      "target": "chinese-zodiac.stem.yi",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.bing",
+      "target": "chinese-zodiac.stem.bing",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.ding",
+      "target": "chinese-zodiac.stem.ding",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.geng",
+      "target": "chinese-zodiac.stem.geng",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xin",
+      "target": "chinese-zodiac.stem.xin",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.zi",
+      "target": "chinese-zodiac.branch.zi",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.chou",
+      "target": "chinese-zodiac.branch.chou",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.yin",
+      "target": "chinese-zodiac.branch.yin",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.mao",
+      "target": "chinese-zodiac.branch.mao",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.chen",
+      "target": "chinese-zodiac.branch.chen",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.si",
+      "target": "chinese-zodiac.branch.si",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.wu",
+      "target": "chinese-zodiac.branch.wu",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.wei",
+      "target": "chinese-zodiac.branch.wei",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.shen",
+      "target": "chinese-zodiac.branch.shen",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.you",
+      "target": "chinese-zodiac.branch.you",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xu",
+      "target": "chinese-zodiac.branch.xu",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.hai",
+      "target": "chinese-zodiac.branch.hai",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.gen",
+      "target": "iching.trigram.mountain",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.xun",
+      "target": "iching.trigram.wind",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.kun",
+      "target": "iching.trigram.earth",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "fengshui.mountain.qian",
+      "target": "iching.trigram.heaven",
+      "label": "mountain-correspondence",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

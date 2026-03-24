@@ -1,0 +1,871 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.major.rws.the-fool",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Fool",
+      "description": "The Fool stands at the edge of a precipice, carefree and unaware of danger, a small dog nipping at his heels. Numbered 0, he represents pure potential, the divine child, the beginning before all beginnings. In the GD system attributed to Aleph and the element Air.",
+      "secondaryNames": [
+        {
+          "name": "Le Mat",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Il Matto",
+          "languageTag": "it",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Le Mat",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 0,
+        "rank": "The Fool",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "New beginnings, innocence, spontaneity, a free spirit, leap of faith, unlimited potential.",
+        "reversedMeaning": "Recklessness, risk-taking, naivety, foolishness, lack of direction, poor judgment."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-magician",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Magician",
+      "description": "The Magician stands before an altar bearing the four suit symbols—a wand, cup, sword, and pentacle—his right hand pointing a wand skyward, his left pointing to the earth. He channels divine will into manifestation. Attributed to Beth and Mercury in the GD system.",
+      "secondaryNames": [
+        {
+          "name": "Le Bateleur",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Juggler",
+          "languageTag": "en-historical",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The Magus",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Le Bateleur",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 1,
+        "rank": "The Magician",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Willpower, desire, creation, manifestation, resourcefulness, skill, mastery.",
+        "reversedMeaning": "Manipulation, cunning, trickery, illusion, wasted talent, untapped potential."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-high-priestess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The High Priestess",
+      "description": "The High Priestess sits between two pillars, Boaz and Jachin, before the veil of the Temple. She holds a scroll of the Torah and wears the crescent moon at her feet. She guards the threshold of the unconscious. Attributed to Gimel and the Moon.",
+      "secondaryNames": [
+        {
+          "name": "La Papesse",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Popess",
+          "languageTag": "en-historical",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The Priestess",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "La Papesse",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 2,
+        "rank": "The High Priestess",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Intuition, subconscious, mystery, inner knowledge, divine feminine, withdrawal.",
+        "reversedMeaning": "Secrets, withdrawal, silence, repressed feelings, disconnection from intuition."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-empress",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Empress",
+      "description": "The Empress sits on a throne among abundant nature—wheat, trees, a waterfall. She is crowned with twelve stars and bears the symbol of Venus. She is the great mother, fertility, and the abundance of the natural world. Attributed to Daleth and Venus.",
+      "secondaryNames": [
+        {
+          "name": "L'Impératrice",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "L'Impératrice",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 3,
+        "rank": "The Empress",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Femininity, beauty, nature, abundance, fertility, nurturing, creativity.",
+        "reversedMeaning": "Dependence, smothering, disharmony with nature, creative block, neglect."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-emperor",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Emperor",
+      "description": "The Emperor sits on a throne adorned with ram heads, holding an ankh scepter. The mountains behind him speak of enduring authority. He is structure, law, and the archetypal father. Attributed to Heh and Aries in the GD system.",
+      "secondaryNames": [
+        {
+          "name": "L'Empereur",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "L'Empereur",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 4,
+        "rank": "The Emperor",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Authority, structure, stability, protection, father figure, discipline, leadership.",
+        "reversedMeaning": "Tyranny, rigidity, inflexibility, domination, excessive control, abuse of power."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-hierophant",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hierophant",
+      "description": "The Hierophant sits between two pillars, his right hand raised in the gesture of esotericism, giving a blessing to two monks at his feet. He is the mediator between the divine and human, the keeper of sacred tradition. Attributed to Vau and Taurus.",
+      "secondaryNames": [
+        {
+          "name": "Le Pape",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Pope",
+          "languageTag": "en-historical",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The High Priest",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        },
+        {
+          "name": "Le Pape",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 5,
+        "rank": "The Hierophant",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Tradition, institutions, spiritual guidance, conformity, education, shared beliefs.",
+        "reversedMeaning": "Rebellion, unconventionality, subversiveness, challenging the status quo, personal freedom."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-lovers",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Lovers",
+      "description": "A man and woman stand naked beneath an angel in the sky, the Tree of Knowledge and the Tree of Life behind them. They face a choice. The card represents duality, union, and conscious decision. Attributed to Zayin and Gemini.",
+      "secondaryNames": [
+        {
+          "name": "L'Amoureux",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "L'Amoureux",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 6,
+        "rank": "The Lovers",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Love, harmony, relationships, values alignment, choices, partnerships.",
+        "reversedMeaning": "Disharmony, imbalance, misalignment of values, difficult choices, broken relationships."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-chariot",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Chariot",
+      "description": "A warrior rides a chariot pulled by two sphinxes, one black, one white—opposites in tension. The city recedes behind him; he moves forward through mastery of opposing forces. Attributed to Cheth and Cancer.",
+      "secondaryNames": [
+        {
+          "name": "Le Chariot",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Chariot",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 7,
+        "rank": "The Chariot",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Direction, control, willpower, success, determination, conquest, self-discipline.",
+        "reversedMeaning": "Lack of control, aggression, obstacles, no direction, scattered energy."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.strength",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Strength",
+      "description": "A woman gently closes the mouth of a lion. Above her head floats the lemniscate. She tames the beast through love and inner strength, not force. In the GD system this card is numbered VIII (Thoth places it at XI). Attributed to Teth and Leo.",
+      "secondaryNames": [
+        {
+          "name": "La Force",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fortitude",
+          "languageTag": "en-historical",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Lust",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "La Force",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 8,
+        "rank": "Strength",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Courage, patience, compassion, inner strength, soft control, influence.",
+        "reversedMeaning": "Weakness, self-doubt, lack of confidence, raw emotion, cowardice."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-hermit",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hermit",
+      "description": "An old man stands alone at the peak of a mountain, holding a lantern with a six-pointed star and a staff. He shines his light to guide others, but his journey is solitary. Attributed to Yod and Virgo.",
+      "secondaryNames": [
+        {
+          "name": "L'Ermite",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "L'Ermite",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 9,
+        "rank": "The Hermit",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Introspection, solitude, inner guidance, wisdom, soul-searching, withdrawal.",
+        "reversedMeaning": "Isolation, loneliness, exile, withdrawal from the world, disconnection."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.wheel-of-fortune",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Wheel of Fortune",
+      "description": "A great wheel turns in the heavens, with Anubis ascending, a serpent descending, and a sphinx atop. Four creatures in the corners represent the fixed signs of the zodiac. The wheel turns—what is up must come down. Attributed to Kaph and Jupiter.",
+      "secondaryNames": [
+        {
+          "name": "La Roue de Fortune",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fortune",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "La Roue de Fortune",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 10,
+        "rank": "Wheel of Fortune",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Good luck, karma, life cycles, destiny, turning point, fate.",
+        "reversedMeaning": "Bad luck, resistance to change, breaking cycles, no control over external forces."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.justice",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Justice",
+      "description": "A crowned figure sits between two pillars holding a sword upright in the right hand and scales in the left. Justice sees clearly and without sentiment. In the GD system numbered XI (TdM places it at VIII). Attributed to Lamed and Libra.",
+      "secondaryNames": [
+        {
+          "name": "La Justice",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Adjustment",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "La Justice",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "rank": "Justice",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Fairness, truth, cause and effect, law, balance, accountability.",
+        "reversedMeaning": "Unfairness, dishonesty, lack of accountability, avoiding consequences."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-hanged-man",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Hanged Man",
+      "description": "A man hangs upside down from a T-shaped wooden frame by one foot, his other leg bent to form a cross. His face is serene; a halo surrounds his head. He has chosen voluntary suspension. Attributed to Mem and Water.",
+      "secondaryNames": [
+        {
+          "name": "Le Pendu",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Pendu",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "rank": "The Hanged Man",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Pause, surrender, letting go, new perspectives, sacrifice, contemplation.",
+        "reversedMeaning": "Delay, resistance, stalling, indecision, refusing to let go."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.death",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Death",
+      "description": "A skeletal figure in black armour rides a white horse. Before him, a king lies fallen; a bishop begs; a child and woman look on. Behind, the sun rises between two towers. He is transformation, not literal death. Attributed to Nun and Scorpio.",
+      "secondaryNames": [
+        {
+          "name": "La Mort",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Mort",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 13,
+        "rank": "Death",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Endings, change, transformation, transition, letting go, inevitable change.",
+        "reversedMeaning": "Resistance to change, stagnation, holding on, inability to move forward."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.temperance",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Temperance",
+      "description": "An androgynous angel pours water between two cups, one foot on land, one in water. A glowing triangle on the chest and a solar crown above. The art of balanced mixture—alchemy of the soul. Attributed to Samekh and Sagittarius.",
+      "secondaryNames": [
+        {
+          "name": "Tempérance",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Art",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tempérance",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "rank": "Temperance",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Balance, moderation, patience, purpose, higher learning, alchemy.",
+        "reversedMeaning": "Imbalance, excess, self-indulgence, lack of patience, misalignment."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-devil",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Devil",
+      "description": "Baphomet sits on a half-cube throne. A naked man and woman are chained to it by loose chains—they could escape, but choose not to. The Devil represents bondage to materialism, shadow self, and unconscious drives. Attributed to Ayin and Capricorn.",
+      "secondaryNames": [
+        {
+          "name": "Le Diable",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Diable",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 15,
+        "rank": "The Devil",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Shadow self, attachment, addiction, restriction, materialism, sexuality.",
+        "reversedMeaning": "Releasing limiting beliefs, detachment, freedom, reclaiming power."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-tower",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Tower",
+      "description": "A tall tower is struck by lightning, its crown blown off, flames erupting. Two figures fall from the height. Sudden, catastrophic revelation destroys what was built on false foundations. Attributed to Peh and Mars.",
+      "secondaryNames": [
+        {
+          "name": "La Maison Dieu",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The House of God",
+          "languageTag": "en-translation",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "La Maison-Dieu",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 16,
+        "rank": "The Tower",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Upheaval, chaos, sudden change, revelation, destruction of false structures.",
+        "reversedMeaning": "Avoiding disaster, delaying the inevitable, fear of change, resisting necessary upheaval."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-star",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Star",
+      "description": "A naked woman kneels by a pool, pouring water from two jugs—one onto land, one into water. Eight stars shine above her, one large and central. She is renewal, hope, and the return of light after darkness. Attributed to Tzaddi and Aquarius in the GD system.",
+      "secondaryNames": [
+        {
+          "name": "L'Étoile",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "L'Étoile",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 17,
+        "rank": "The Star",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Hope, faith, renewal, inspiration, serenity, spiritual connection.",
+        "reversedMeaning": "Despair, faithlessness, discouragement, hopelessness, disconnection."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-moon",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Moon",
+      "description": "A full moon shines between two towers. A crayfish emerges from a pool below. A dog and a wolf howl at the moon. The path ahead is uncertain, lit only by reflected light. Illusion, dreams, and the depths of the unconscious. Attributed to Qoph and Pisces.",
+      "secondaryNames": [
+        {
+          "name": "La Lune",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "La Lune",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 18,
+        "rank": "The Moon",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Illusion, fear, subconscious, dreams, the unknown, deception, confusion.",
+        "reversedMeaning": "Releasing fear, repressed emotion, inner confusion, confusion clearing."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-sun",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Sun",
+      "description": "A radiant sun shines over a joyful naked child riding a white horse, surrounded by sunflowers. The sun illuminates all—this is joy, vitality, and clarity. The most unambiguously positive card in the Major Arcana. Attributed to Resh and the Sun.",
+      "secondaryNames": [
+        {
+          "name": "Le Soleil",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Le Soleil",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 19,
+        "rank": "The Sun",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Joy, success, positivity, vitality, clarity, confidence, abundance.",
+        "reversedMeaning": "Temporary depression, negativity, sadness, blocked joy, unrealistic optimism."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.judgement",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Judgement",
+      "description": "The archangel Gabriel blows his trumpet from the clouds. Below, naked figures rise from their coffins, arms outstretched, ascending. This is the final call, rebirth, and awakening. Attributed to Shin and Fire in the GD system.",
+      "secondaryNames": [
+        {
+          "name": "Le Jugement",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Last Judgement",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "The Aeon",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Le Jugement",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 20,
+        "rank": "Judgement",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Judgement, rebirth, absolution, inner calling, reflection, reckoning.",
+        "reversedMeaning": "Self-doubt, indecision, failure to heed the call, avoiding responsibility."
+      }
+    },
+    {
+      "canonicalName": "tarot.major.rws.the-world",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The World",
+      "description": "A dancing figure, draped in a purple sash, is surrounded by a laurel wreath. In the four corners are the same four creatures as the Wheel of Fortune—the fixed signs. This is completion, integration, and wholeness. Attributed to Tau and Saturn.",
+      "secondaryNames": [
+        {
+          "name": "Le Monde",
+          "languageTag": "fr",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Universe",
+          "languageTag": "thoth-crowley",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Le Monde",
+          "languageTag": "tarot-de-marseille",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "rider-waite-smith"
+      ],
+      "extendedData": {
+        "cardNumber": 21,
+        "rank": "The World",
+        "suit": null,
+        "arcana": "major",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.rider-waite-smith",
+        "uprightMeaning": "Completion, integration, accomplishment, travel, wholeness, fulfilment.",
+        "reversedMeaning": "Seeking personal closure, shortcuts, incomplete cycles, lack of completion."
+      }
+    }
+  ]
+}

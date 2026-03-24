@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#060a03"/>
+      <stop offset="100%" stop-color="#0d1606"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#334d1a" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#66aa33" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#334d1a" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#334d1a" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#ccee88" opacity="0.9">IX</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#66aa33" opacity="0.85" filter="url(#glow)">י</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#4a6a22" opacity="0.8">♍</text>
+
+
+  
+  <text x="152" y="228"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="252" fill="#2e4a10" opacity="0.065">י</text>
+  
+  <!-- Egg outer glow — same palette as solarDisk's outer glow ring -->
+  <ellipse cx="94" cy="120" rx="75.6" ry="76.8"
+           fill="#fffde0" opacity="0.05" filter="url(#softglow)"/>
+  <ellipse cx="94" cy="120" rx="54" ry="57.6"
+           fill="#fffbe8" opacity="0.09" filter="url(#softglow)"/>
+  <!-- Egg body -->
+  <ellipse cx="94" cy="120" rx="36" ry="48"
+           fill="#e8dca8" opacity="0.22" stroke="#b8a860" stroke-width="1.2"/>
+  <!-- Ophion's upper coil: sweeps left-side up, over the crown, down right-side -->
+  <path d="M58,114
+           C50,92 94,62 130,114
+           C138,136 136,148 130,154"
+        fill="none" stroke="#6a8a38" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+  <!-- Ophion's lower coil: continues under the base, back up the left -->
+  <path d="M130,154
+           C126,178 94,176 58,154
+           C50,134 50,122 58,114"
+        fill="none" stroke="#6a8a38" stroke-width="2.5" stroke-linecap="round" opacity="0.42"/>
+  <!-- Serpent head at egg crown -->
+  <ellipse cx="96" cy="64" rx="4" ry="3"
+           fill="#6a8a38" opacity="0.62"/>
+  <!-- Tongue -->
+  <line x1="96" y1="67" x2="96" y2="70"
+        stroke="#6a8a38" stroke-width="1" opacity="0.55"/>
+  
+  <!-- Mountain body (fills lower half of card) -->
+  <path d="M18,352 L18,318 Q48,288 78,304 Q112,320 144,286
+           Q162,275 182,268
+           Q202,278 224,284 Q254,296 282,312 L282,352 Z"
+        fill="#090e04" opacity="0.96"/>
+  <!-- Peak crest highlight (faint) -->
+  <path d="M162,271 L182,268 L202,273"
+        fill="none" stroke="#3a5820" stroke-width="1" opacity="0.38"/>
+  
+  <!-- The path — every step the Fool will take, already walked by the Hermit -->
+  <path d="M40,350 Q62,338 80,322 Q102,306 124,296 Q148,284 164,277 Q174,273 182,270"
+        fill="none" stroke="#7aaa44" stroke-width="3" stroke-linecap="round"
+        opacity="0.18" filter="url(#softglow)"/>
+  <path d="M40,350 Q62,338 80,322 Q102,306 124,296 Q148,284 164,277 Q174,273 182,270"
+        fill="none" stroke="#5a7a30" stroke-width="1.4" stroke-linecap="round" opacity="0.28"/>
+  
+  <!-- Light cone (forward glow, aimed leftward — into the darkness ahead) -->
+  <path d="M132,210 L60,186 L60,234 Z"
+        fill="#fff5b0" opacity="0.055" filter="url(#softglow)"/>
+  <!-- solarDisk() — the Fool's sun, enclosed: identical function call, identical colours -->
+  <g>
+  <circle cx="132" cy="210" r="23.87" fill="#fffde0" opacity="0.18" filter="url(#softglow)"/>
+  <circle cx="132" cy="210" r="16.5" fill="#fffbe8" opacity="0.45" filter="url(#softglow)"/>
+  <circle cx="132" cy="210" r="11" fill="#fff5b0" opacity="0.88"/>
+  <line x1="147" y1="210"
+               x2="155.87"       y2="210"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="145.86" y1="215.74"
+               x2="149.78"       y2="217.37"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="142.61" y1="220.61"
+               x2="148.88"       y2="226.88"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="137.74" y1="223.86"
+               x2="139.37"       y2="227.78"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="132" y1="225"
+               x2="132"       y2="233.87"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="126.26" y1="223.86"
+               x2="124.63"       y2="227.78"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="121.39" y1="220.61"
+               x2="115.12"       y2="226.88"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="118.14" y1="215.74"
+               x2="114.22"       y2="217.37"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="117" y1="210"
+               x2="108.13"       y2="210"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="118.14" y1="204.26"
+               x2="114.22"       y2="202.63"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="121.39" y1="199.39"
+               x2="115.12"       y2="193.12"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="126.26" y1="196.14"
+               x2="124.63"       y2="192.22"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="132" y1="195"
+               x2="132"       y2="186.13"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="137.74" y1="196.14"
+               x2="139.37"       y2="192.22"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+  <line x1="142.61" y1="199.39"
+               x2="148.88"       y2="193.12"
+               stroke="#ffee66" stroke-width="1.5" opacity="0.65"/>
+  <line x1="145.86" y1="204.26"
+               x2="149.78"       y2="202.63"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.65"/>
+</g>
+  <!-- Hexagonal cage (drawn over the disk — the enclosing form, Virgo hiding the harvest) -->
+  <path d="M147.59,201 L147.59,219 L132,228 L116.41,219 L116.41,201 L132,192 Z" fill="none" stroke="#bb9933" stroke-width="2.2" opacity="0.9"/>
+  <!-- Cage cross-bars -->
+  <line x1="147.59" y1="201" x2="116.41" y2="219"
+        stroke="#bb9933" stroke-width="0.9" opacity="0.5"/>
+  <line x1="147.59" y1="219" x2="116.41" y2="201"
+        stroke="#bb9933" stroke-width="0.9" opacity="0.5"/>
+  <line x1="132" y1="228" x2="132" y2="192"
+        stroke="#bb9933" stroke-width="0.9" opacity="0.5"/>
+  <!-- Handle -->
+  <line x1="132" y1="192" x2="132" y2="185"
+        stroke="#bb9933" stroke-width="1.5" opacity="0.75"/>
+  <path d="M127,185 Q132,179 137,185"
+        fill="none" stroke="#bb9933" stroke-width="1.5" opacity="0.7"/>
+  <g><text x="155.87" y="210"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="149.78" y="217.37"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="148.88" y="226.88"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="139.37" y="227.78"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="132" y="233.87"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="124.63" y="227.78"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="115.12" y="226.88"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="114.22" y="217.37"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="108.13" y="210"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="114.22" y="202.63"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="115.12" y="193.12"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="124.63" y="192.22"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="132" y="186.13"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="139.37" y="192.22"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text>
+  <text x="148.88" y="193.12"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="9" fill="#ffee66"
+           opacity="0.62">י</text>
+  <text x="149.78" y="202.63"
+           text-anchor="middle" dominant-baseline="middle"
+           font-family="'Times New Roman','FreeSerif',serif"
+           font-size="6.5" fill="#ffee66"
+           opacity="0.38">י</text></g>
+  
+  <!-- Walking staff — tall, held behind (The Fool's wand grown into a pillar of experience) -->
+  <line x1="218" y1="176" x2="218" y2="272"
+        stroke="#5a4420" stroke-width="4" stroke-linecap="round" opacity="0.84"/>
+  <!-- Knob at top -->
+  <circle cx="218" cy="174" r="4" fill="#6a5222" opacity="0.78"/>
+  <!-- Ferrule at base -->
+  <ellipse cx="218" cy="272" rx="3" ry="2" fill="#8a6633" opacity="0.72"/>
+  
+  <!-- Long robes (olive-green, draping to ground) -->
+  <path d="M170,234
+           Q166,268 173,268
+           Q186,273 199,268
+           Q204,268 200,234
+           Q186,244 170,234 Z"
+        fill="#293d12" opacity="0.9"/>
+  <!-- Torso/chest -->
+  <ellipse cx="186" cy="222" rx="12" ry="15" fill="#2e4418" opacity="0.88"/>
+  <!-- Cowl hood (drawn over head — the hidden Sun, Virgo concealing the harvest) -->
+  <path d="M172,208
+           Q166,176 181,162
+           Q194,156 197,174
+           Q201,198 198,208 Z"
+        fill="#1d2d0c" opacity="0.92"/>
+  <!-- Head (partially visible inside cowl) -->
+  <circle cx="184" cy="180" r="11" fill="#a88050" opacity="0.6"/>
+  <!-- Forward arm (figure's right, reaching leftward toward the lantern) -->
+  <line x1="174" y1="220" x2="151" y2="215"
+        stroke="#2a3d12" stroke-width="8" stroke-linecap="round" opacity="0.88"/>
+  <!-- Back arm (figure's left, reaching rightward-downward to grip the staff) -->
+  <line x1="198" y1="224" x2="216" y2="266"
+        stroke="#2a3d12" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+  
+  <!-- Body -->
+  <ellipse cx="216" cy="287" rx="18" ry="10" fill="#182808" opacity="0.84"/>
+  <!-- Legs -->
+  <line x1="208" y1="296" x2="208" y2="304"
+           stroke="#182808" stroke-width="3.5" stroke-linecap="round" opacity="0.78"/>
+  <line x1="214" y1="296" x2="214" y2="304"
+           stroke="#182808" stroke-width="3.5" stroke-linecap="round" opacity="0.78"/>
+  <line x1="220" y1="296" x2="220" y2="304"
+           stroke="#182808" stroke-width="3.5" stroke-linecap="round" opacity="0.78"/>
+  <line x1="226" y1="296" x2="226" y2="304"
+           stroke="#182808" stroke-width="3.5" stroke-linecap="round" opacity="0.78"/>
+  <!-- Three necks -->
+  <line x1="210" y1="278" x2="202" y2="266"
+        stroke="#182808" stroke-width="5" stroke-linecap="round" opacity="0.84"/>
+  <line x1="216" y1="278" x2="216" y2="264"
+        stroke="#182808" stroke-width="5" stroke-linecap="round" opacity="0.84"/>
+  <line x1="222" y1="278" x2="230" y2="266"
+        stroke="#182808" stroke-width="5" stroke-linecap="round" opacity="0.84"/>
+  <!-- Three heads -->
+  <circle cx="202" cy="262" r="7" fill="#182808" opacity="0.84"/>
+  <circle cx="216" cy="260" r="7" fill="#182808" opacity="0.84"/>
+  <circle cx="230" cy="262" r="7" fill="#182808" opacity="0.84"/>
+  <!-- Six eyes — orange-gold (the thrice-watchful guardian) -->
+  <circle cx="200" cy="261" r="1.5" fill="#cc6600" opacity="0.72"/>
+  <circle cx="204" cy="261" r="1.5" fill="#cc6600" opacity="0.72"/>
+  <circle cx="214"  cy="259" r="1.5" fill="#cc6600" opacity="0.72"/>
+  <circle cx="218"  cy="259" r="1.5" fill="#cc6600" opacity="0.72"/>
+  <circle cx="228" cy="261" r="1.5" fill="#cc6600" opacity="0.72"/>
+  <circle cx="232" cy="261" r="1.5" fill="#cc6600" opacity="0.72"/>
+  
+  <line x1="252" y1="304" x2="252" y2="350"
+               stroke="#8a7a22" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+<ellipse cx="252" cy="304" rx="3" ry="7" fill="#a89430" opacity="0.52"/>
+  <line x1="261" y1="308" x2="261" y2="350"
+               stroke="#8a7a22" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+<ellipse cx="261" cy="308" rx="3" ry="7" fill="#a89430" opacity="0.52"/>
+  <line x1="269" y1="312" x2="269" y2="350"
+               stroke="#8a7a22" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+<ellipse cx="269" cy="312" rx="3" ry="7" fill="#a89430" opacity="0.52"/>
+  <line x1="276" y1="316" x2="276" y2="350"
+               stroke="#8a7a22" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+<ellipse cx="276" cy="316" rx="3" ry="7" fill="#a89430" opacity="0.52"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#ccee88" letter-spacing="2.5"
+        filter="url(#glow)">The Hermit</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#4a6a22" letter-spacing="3" opacity="0.75">Yod · Virgo · Path 20</text>
+</svg>

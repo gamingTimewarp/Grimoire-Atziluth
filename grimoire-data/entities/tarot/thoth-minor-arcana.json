@@ -1,0 +1,1454 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.minor.thoth.wands.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Wands",
+      "description": "The root of the powers of Fire. A great flaming torch or club, blazing with divine creative energy. In the Thoth system, this represents the pure Yod of Atziluth — the fiery creative impulse at its most primal.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 1,
+        "rank": "Ace",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Creative force, primal energy, will, spiritual fire, new enterprise, courage",
+        "reversedMeaning": "Blocked will, creative drought, sterile ambition, false starts"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Wands",
+      "description": "Dominion. Mars in Aries — the fiercest manifestation of fire. Two crossed wands in the form of a cross over a rose cross background. Represents raw power, authority, and the will to dominate through force of personality.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 2,
+        "rank": "2",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Dominion, authority, power, boldness, will, command, direct action",
+        "reversedMeaning": "Domineering, abuse of power, hastiness, ruthlessness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Wands",
+      "description": "Virtue. Sun in Aries — the natural beneficence of fire. Three wands arranged like a trident with lotus heads. Represents established strength, completed effort, virtue, and the confident expression of creative will.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 3,
+        "rank": "3",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Virtue, confidence, established strength, leadership, creative expression, foresight",
+        "reversedMeaning": "Arrogance, pomposity, vain confidence, squandered strength"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Wands",
+      "description": "Completion. Venus in Aries — beauty and harmony arising from fire. Four wands topped with rams' heads and doves. Represents completion, settlement, and the harmonious completion of a creative work.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 4,
+        "rank": "4",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Completion, settlement, social success, beauty, harmony, perfected work",
+        "reversedMeaning": "Unreliability, inconstancy, wavering, lack of completion"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Wands",
+      "description": "Strife. Saturn in Leo — the destructive limitation of fire's proud expression. Five wands in conflict. Represents violent struggle, quarrel, and the disruption of established order through competitive strife.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 5,
+        "rank": "5",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Strife, violent struggle, competition, contest, boldness in conflict",
+        "reversedMeaning": "Litigation, quarrels, cruelty, vexation, destructive conflict"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Wands",
+      "description": "Victory. Jupiter in Leo — the triumphant expansion of fire. Six wands forming a nexus pattern. Represents victory gained through noble effort, fulfillment of desire, and the expression of pride in achievement.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 6,
+        "rank": "6",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Victory, pride, nobility, love, conceit satisfied, desire fulfilled",
+        "reversedMeaning": "Pride leading to fall, arrogance, unstable success"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Wands",
+      "description": "Valour. Mars in Leo — courage under fire. Seven wands in conflict, with one prominent wand holding the center. Represents courage and the ability to maintain one's ground against overwhelming opposition.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 7,
+        "rank": "7",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Valour, courage, holding firm, opposition met with bravery, possible victory",
+        "reversedMeaning": "Indecision, wavering, embarrassment, danger from enemies"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Wands",
+      "description": "Swiftness. Mercury in Sagittarius — the swift communicative arrow of fire. Eight wands arranged as light rays. Represents swift movement, rapid communication, and the rapid resolution of matters through decisive action.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 8,
+        "rank": "8",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Swiftness, speed, rapidity, hasty communications, too-swift action, electric energy",
+        "reversedMeaning": "Jealousy, dispute, avarice, stagnation"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Wands",
+      "description": "Strength. Moon in Sagittarius — the reflective, gathered strength of fire. Nine wands in a balanced arrangement. Represents the recovery and gathering of strength, great force in reserve, and powerful defensive capability.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 9,
+        "rank": "9",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Strength, recovery, great force, health, success in completion, power held in reserve",
+        "reversedMeaning": "Obstacles, adversity, difficulty, weakness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Wands",
+      "description": "Oppression. Saturn in Sagittarius — the crushing limitation of fire's expansive nature. Ten wands arranged as crossed clubs in a heavy, burdensome pattern. Represents cruel and overbearing force, exhausted strength, and oppressive power.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 10,
+        "rank": "10",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Oppression, cruelty, malice, overbearing force, injustice, falsity",
+        "reversedMeaning": "Cunning, deceiving, unkindness — oppression turned inward"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.princess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Princess of Wands",
+      "description": "The earthly manifestation of fire's creative force. The Princess (equivalent to RWS Page) stands energetically, holding a wand with a tiger at her feet. Represents brilliance, courage, beauty, and sudden creative force that can be destructive if undisciplined.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Wands",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "rank": "Princess",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Brilliance, courage, beauty, force, sudden energy, enthusiasm, the earth of fire",
+        "reversedMeaning": "Superficiality, theatrical, cruelty, domineering, unstable"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.prince",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Prince of Wands",
+      "description": "The airy aspect of fire — swift and fiery in action. The Prince (equivalent to RWS Knight) rides a chariot drawn by a lion. Represents swift, violent, and impulsive action; passionate energy that can be constructive or destructive.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Wands",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "rank": "Prince",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Swift energy, fiery action, generosity, arrogance in nobility, the air of fire",
+        "reversedMeaning": "Impulsiveness, rashness, insolent, ruthless"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Wands",
+      "description": "The watery aspect of fire — adaptable, nurturing fire. The Queen sits on a throne holding a wand topped with a pine cone, a leopard at her side. Represents adaptable and steady fire, command, beauty, and fierce protectiveness.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 13,
+        "rank": "Queen",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Adaptability, persistent energy, command, will, authority, the water of fire",
+        "reversedMeaning": "Sternness, prejudice, obstinacy, domineering, tyrannical"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.wands.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Wands",
+      "description": "The fiery aspect of fire — the purest, most concentrated fire. The Knight (equivalent to RWS King) charges on a flaming horse. Represents pure, active, volatile fire energy; swift, fierce, and noble, yet potentially rash and destructive.",
+      "tags": [
+        "wands",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Wands",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "rank": "Knight",
+        "suit": "tarot.suit.thoth.wands",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Fire of fire, pure will, swiftness, activity, generosity, fierceness, the true king of fire",
+        "reversedMeaning": "Cruel, intolerant, violent, rash decisions, fanatical"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Cups",
+      "description": "The root of the powers of Water. A great lotus cup overflowing with radiant streams. Represents pure emotional and spiritual potential, the divine feminine in its fullness, and the unconditioned love at the heart of existence.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 15,
+        "rank": "Ace",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Fertility, productiveness, beauty, pleasure, happiness, spiritual love",
+        "reversedMeaning": "Falsehood, barrenness, untruth, blocked emotion"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Cups",
+      "description": "Love. Venus in Cancer — the beauty and tenderness of emotional union. Two cups with a lotus between them. Represents love, harmony, and the pleasure of two hearts in perfect accord.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 16,
+        "rank": "2",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Love, harmony, pleasure, warmth, tenderness, friendship, emotional union",
+        "reversedMeaning": "Folly, waste, cross purposes, misunderstood love"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Cups",
+      "description": "Abundance. Mercury in Cancer — the communicative joy of emotional plenty. Three cups overflowing into each other. Represents abundance, pleasure, and the celebration of emotional richness shared with others.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 17,
+        "rank": "3",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Abundance, joy, plenty, pleasure, hospitality, healing, celebration",
+        "reversedMeaning": "Excess, overindulgence, dissolution, sensuality gone wrong"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Cups",
+      "description": "Luxury. Moon in Cancer — the surfeit of emotional comfort. Four cups in a stable arrangement with lotus flowers. Represents the excess of pleasure that leads to dissatisfaction, the boredom of too much comfort.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 18,
+        "rank": "4",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Luxury, mixed pleasure, apprehension, blended delight and unease",
+        "reversedMeaning": "Disgust, aversion, crossing desires, discontent"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Cups",
+      "description": "Disappointment. Mars in Scorpio — the violent disruption of emotional peace. Five cups in troubled arrangement. Represents disappointment, sorrow, and the emotional suffering that comes when expectations are not met.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 19,
+        "rank": "5",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Disappointment, sorrow, unkindness, treachery, bitter news",
+        "reversedMeaning": "Vain regret, idle sorrow, crying over spilt milk"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Cups",
+      "description": "Pleasure. Sun in Scorpio — the transformative warmth of deep emotional pleasure. Six cups in harmonious arrangement overflowing. Represents beauty, harmony in pleasure, and the past returning in a positive way.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 20,
+        "rank": "6",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Pleasure, harmony, beauty, delight, enjoyment, wish fulfillment",
+        "reversedMeaning": "Past stagnation, wishful thinking, imperfect pleasure"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Cups",
+      "description": "Debauch. Venus in Scorpio — the perversion of pleasure into excess and corruption. Seven cups in a deteriorated arrangement, many leaking or spilling. Represents debauchery, corruption of desire, and the dissolution of the will through indulgence.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 21,
+        "rank": "7",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Debauch, corruption, illusory success, deceit, promises unfulfilled",
+        "reversedMeaning": "Slight tendency toward evil — still passive corruption"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Cups",
+      "description": "Indolence. Saturn in Pisces — the inertia and depression of still waters. Eight cups in a tired, drooping arrangement. Represents indolence, abandonment of effort, and the disappointment that comes from failed enterprise.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 22,
+        "rank": "8",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Indolence, abandoned success, misery, disappointment, giving up",
+        "reversedMeaning": "Instability, lack of persistence, wasted effort"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Cups",
+      "description": "Happiness. Jupiter in Pisces — the expansive joy of spiritual water. Nine cups in a balanced, overflowing arrangement. Represents complete happiness, satisfaction in material and emotional realms.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 23,
+        "rank": "9",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Complete success, wish fulfilled, happiness, physical well-being, plenty",
+        "reversedMeaning": "Overconfidence, material gain at spiritual expense"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Cups",
+      "description": "Satiety. Mars in Pisces — the disruption of perfect contentment by aggression. Ten cups overflowing but with an unsettled quality. Represents satiety, surfeit, and the completion that paradoxically brings a new unrest.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 24,
+        "rank": "10",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Satiety, gluttony, culmination of wish, peace, and then — the problem of too much",
+        "reversedMeaning": "Excessive indulgence, wanton dissipation"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.princess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Princess of Cups",
+      "description": "The earthy aspect of water — dreams made tangible. The Princess stands by water holding a crystal cup. Represents gentle and loving nature, psychic gifts, romantic dreams, and the beautiful imagination of deep waters.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Cups",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 25,
+        "rank": "Princess",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Gentle, kind, tender, imaginative, psychic, the earth of water",
+        "reversedMeaning": "Selfish, luxurious, idle, dissipated"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.prince",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Prince of Cups",
+      "description": "The airy aspect of water — intellectual emotion, sublimated feeling. The Prince in a chariot drawn by an eagle. Represents the subtle, crafty personality driven by desire beneath an exterior of calm; secretly intense.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Cups",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 26,
+        "rank": "Prince",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Subtlety, secret power, artistic sensitivity, the air of water, inner intensity",
+        "reversedMeaning": "Ruthless, violent, crafty for evil ends"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Cups",
+      "description": "The watery aspect of water — pure psychic power and emotional intelligence. The Queen sits on a throne with water imagery, crayfish and shells at her feet. Represents imagination, dream, and psychic perception at its deepest.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 27,
+        "rank": "Queen",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Psychic, imaginative, reflective, poetic, tranquil, the water of water",
+        "reversedMeaning": "Selfish, vain, unstable, possible vice, dishonesty"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.cups.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Cups",
+      "description": "The fiery aspect of water — passionate feeling, the ardor of the deep. The Knight rides a white horse over water. Represents the sublimated passion and the beauty of emotional depth in motion.",
+      "tags": [
+        "cups",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Cups",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 28,
+        "rank": "Knight",
+        "suit": "tarot.suit.thoth.cups",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Grace, poetry, beauty in action, romance, the fire of water",
+        "reversedMeaning": "Idle, untruthful, acting from selfish emotion"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Swords",
+      "description": "The root of the powers of Air. A great upright sword crowned with a divine crown, emanating light. Represents the pure intellect as a double-edged force — capable of truth and destruction in equal measure.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 29,
+        "rank": "Ace",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Invoked or Evoked force, a double-edged sword, triumph of mind, clarity",
+        "reversedMeaning": "Disaster, misfortune, calamity unleashed"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Swords",
+      "description": "Peace. Moon in Libra — the rational balance achieved through equal opposing forces. Two swords crossed. Represents a temporary truce, the peace of a balanced mind, and intellectual equilibrium.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 30,
+        "rank": "2",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Peace, balanced power, equipoise, restored peace, yet uneasy calm",
+        "reversedMeaning": "Indecision, confusion, inability to make peace last"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Swords",
+      "description": "Sorrow. Saturn in Libra — the weight of cold logic inflicting grief. Three swords piercing a rose. Represents unhappy love, deep sorrow, and the pain of clear-eyed reality severing illusion.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 31,
+        "rank": "3",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Sorrow, unhappy love, strife, disruption, tears, separation",
+        "reversedMeaning": "Mental alienation, loss, distraction"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Swords",
+      "description": "Truce. Jupiter in Libra — a temporary but stable ceasefire. Four swords in a cross arrangement. Represents a retreat to gather strength, a necessary pause, and the establishment of peace through treaty.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 32,
+        "rank": "4",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Truce, rest, recuperation, retreat, armed peace, temporary respite",
+        "reversedMeaning": "Caution, circumspection, precaution"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Swords",
+      "description": "Defeat. Venus in Aquarius — the beauty of idealism crushed by practical defeat. Five swords in disarray. Represents defeat, surrender, and the sometimes necessary acknowledgment that a battle is lost.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 33,
+        "rank": "5",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Defeat, loss, failure, dishonor, malice, treachery",
+        "reversedMeaning": "Weakness, ignoble surrender, slander"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Swords",
+      "description": "Science. Mercury in Aquarius — the precision of intellect applied to universal truth. Six swords in a perfectly balanced geometric arrangement. Represents earning success through the careful application of intelligence and method.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 34,
+        "rank": "6",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Science, earned success, beauty, skill, intelligence applied, systematic effort",
+        "reversedMeaning": "Conceit, self-assertion, insolence"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Swords",
+      "description": "Futility. Moon in Aquarius — the dreamlike detachment undermining the sword's purpose. Seven swords in an unstable arrangement. Represents unstable effort, partial success, and the futility of action without commitment.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 35,
+        "rank": "7",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Futility, unsteadiness, partial success, journey, evasion",
+        "reversedMeaning": "Babbling, unstable effort, scattered energy"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Swords",
+      "description": "Interference. Jupiter in Gemini — the scattered, interfering energy that disrupts clear thinking. Eight swords in a chaotic pattern. Represents narrow, restricted action, and the petty mind that interferes with larger progress.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 36,
+        "rank": "8",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Interference, restriction, petty restrictions, narrowness, bickering",
+        "reversedMeaning": "Unavoidable difficulty, ill will"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Swords",
+      "description": "Cruelty. Mars in Gemini — the violent lacerating force of destructive thought. Nine swords dripping blood. Represents despair, cruelty, and the mental torment of destructive thought patterns.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 37,
+        "rank": "9",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Despair, cruelty, pitilessness, malice, suffering, illness of mind",
+        "reversedMeaning": "Doubt, shamelessness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Swords",
+      "description": "Ruin. Sun in Gemini — the final dissolution of intellect when used against itself. Ten swords in total destruction. Represents complete ruin, the final destruction of a way of thinking, and the ultimate defeat of the mind by its own devices.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 38,
+        "rank": "10",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Ruin, disruption, death, defeat, undeniable end, catastrophic loss",
+        "reversedMeaning": "Malice, gathering of fatal forces"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.princess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Princess of Swords",
+      "description": "The earthy aspect of air — thought made concrete. The Princess stands in a stormy landscape with a sword raised. Represents a keen, even cutting intellect applied to earthly matters; a skillful logician and debater.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Swords",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 39,
+        "rank": "Princess",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Keen observation, logic, the earth of air, decisive minor action",
+        "reversedMeaning": "Frivolity, deceit, unreliable"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.prince",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Prince of Swords",
+      "description": "The airy aspect of air — pure intellectual power in motion. The Prince charges on a winged chariot. Represents skill in language and ideas, but a tendency to be all intellect with no feeling.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Swords",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 40,
+        "rank": "Prince",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Skill, the air of air, diligence, swift intellect, cleverness",
+        "reversedMeaning": "Cunning, impracticality, tyranny"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Swords",
+      "description": "The watery aspect of air — perception and feeling blended with sharp intellect. The Queen holds a severed head in one hand. Represents keen perception, grief transmuted into clear-eyed wisdom, and truth without sentiment.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [],
+      "extendedData": {
+        "cardNumber": 41,
+        "rank": "Queen",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Perceptive, subtle, keen intellect, the water of air, sorrow experienced and transcended",
+        "reversedMeaning": "Cruel, sly, deceitful, unscrupulous"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.swords.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Swords",
+      "description": "The fiery aspect of air — the most active and volatile of all air energies. The Knight rides a galloping horse. Represents intense, purposeful intellect; the capacity for great good or great harm through the power of the mind.",
+      "tags": [
+        "swords",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Swords",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 42,
+        "rank": "Knight",
+        "suit": "tarot.suit.thoth.swords",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Fierce, subtle, clever, the fire of air, great power of mind, strong will",
+        "reversedMeaning": "Impractical, unstable, fanatic, cruel"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Disks",
+      "description": "The root of the powers of Earth. A great golden disk marked with a complex mandala. Represents the material world's pure creative potential, solid manifestation, and the ground of all physical existence.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ace of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 43,
+        "rank": "Ace",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Material gain, prosperity, wealth, contentment, the root of earth's power",
+        "reversedMeaning": "Prosperity without satisfaction, false material success"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Disks",
+      "description": "Change. Jupiter in Capricorn — expansive change in earth matters. Two disks joined by an infinity symbol. Represents harmonious change, pleasant alternation, and the natural fluctuation of material fortune.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Two of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 44,
+        "rank": "2",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Change, harmonious fluctuation, juggling resources, pleasant change",
+        "reversedMeaning": "Instability, disquiet, forced change"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Disks",
+      "description": "Works. Mars in Capricorn — applied energy producing tangible results. Three disks in a triangular arrangement. Represents skilled labor, construction, and the pride of work accomplished through focused effort.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Three of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 45,
+        "rank": "3",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Work, building, skilled construction, commercial success, creativity applied",
+        "reversedMeaning": "Mediocrity, pettiness, weakness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Disks",
+      "description": "Power. Sun in Capricorn — the solidity and stability of earthly power. Four disks in a castle-like arrangement. Represents law and order, earthly power well established, and the material security that comes from discipline.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Four of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 46,
+        "rank": "4",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Power, earthly power, law and order, material security, rigid establishment",
+        "reversedMeaning": "Hoard, miserliness, hindrance"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Disks",
+      "description": "Worry. Mercury in Taurus — the restless mind disrupting material stability. Five disks in an inverted pentagram arrangement. Represents material loss, anxiety, and the mental suffering caused by financial insecurity.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Five of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 47,
+        "rank": "5",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Worry, material trouble, poverty, anxiety, loss, ruin, squalor",
+        "reversedMeaning": "Chaos, disorder, greed leading to ruin"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Disks",
+      "description": "Success. Moon in Taurus — the fruitful, abundant earth in its most stable expression. Six disks in a perfect hexagonal arrangement. Represents material success, generosity in prosperity, and the just reward of effort.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Six of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 48,
+        "rank": "6",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Success, material gain, prosperity, generosity, present success",
+        "reversedMeaning": "Desire for wealth, vanity, pride"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Disks",
+      "description": "Failure. Saturn in Taurus — the contraction and limitation of earth's bounty. Seven disks in a heavy, downward-pressing arrangement. Represents unproductive labor, failure despite effort, and the frustration of unrewarded work.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Seven of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 49,
+        "rank": "7",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Failure, unprofitable work, blight, unrewarded effort, hoping against hope",
+        "reversedMeaning": "Anxiety, little gain for much effort"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Disks",
+      "description": "Prudence. Sun in Virgo — the careful, analytical application of practical skill. Eight disks in a careful arrangement. Represents skill in craft, careful work, and the intelligent application of practical knowledge.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Eight of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 50,
+        "rank": "8",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Prudence, skill, craft, diligence in practice, intelligent mastery",
+        "reversedMeaning": "Overcaution, timidity, pettiness"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Disks",
+      "description": "Gain. Venus in Virgo — the beauty of material abundance refined. Nine disks in a satisfying arrangement. Represents material gain, accomplishment, and the prosperity that comes from skill and virtue.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Nine of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 51,
+        "rank": "9",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Material gain, wisdom applied, prosperity, favorable enterprise, skill rewarded",
+        "reversedMeaning": "Vain worry about material things, deceit"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Disks",
+      "description": "Wealth. Mercury in Virgo — communication and intelligence completing the material world. Ten disks arranged in the Tree of Life pattern. Represents complete material wealth, inheritance, and the fullest possible earthly success.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Ten of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 52,
+        "rank": "10",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Wealth, inheritance, prosperity, riches, material success complete",
+        "reversedMeaning": "Fraud, gambling, dullness, oppression"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.princess",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Princess of Disks",
+      "description": "The earthy aspect of earth — the most material of all court cards. The Princess stands in a grove, holding a disk carved with a flower. Represents pragmatic, generous, and diligent earth; the thoughtful student of material wisdom.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Page of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 53,
+        "rank": "Princess",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Generous, diligent, benevolent, the earth of earth, material wisdom",
+        "reversedMeaning": "Wasteful, prodigal, indolent, luxurious without sense"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.prince",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Prince of Disks",
+      "description": "The airy aspect of earth — methodical intelligence applied to earthly matters. The Prince drives a chariot pulled by a bull. Represents patient, laborious, and careful activity; the engineer and master craftsman.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Knight of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 54,
+        "rank": "Prince",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Methodical, patient, laborious, reliable, the air of earth, careful manager",
+        "reversedMeaning": "Animal, brutal, dull, enslaved to matter"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Queen of Disks",
+      "description": "The watery aspect of earth — the receptive and nurturing earth. The Queen sits on a throne in a fruitful landscape. Represents the mothering, nurturing force of the earth; sensual, practical, and deeply generous.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Queen of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 55,
+        "rank": "Queen",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Nuturing, sensual, practical, generous, the water of earth, domestic wisdom",
+        "reversedMeaning": "Dull, servile, foolish, possibly a trustworthy person gone wrong"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.thoth.disks.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Knight of Disks",
+      "description": "The fiery aspect of earth — the most stubborn and hardworking of all knights. The Knight sits on a heavy draft horse, holding a disk. Represents slow, methodical, but invincible material force; the farmer king.",
+      "tags": [
+        "disks",
+        "minor-arcana",
+        "tarot",
+        "thoth"
+      ],
+      "secondaryNames": [
+        {
+          "name": "King of Pentacles",
+          "languageTag": "en-rws",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 56,
+        "rank": "Knight",
+        "suit": "tarot.suit.thoth.disks",
+        "arcana": "minor",
+        "reversalsApplicable": true,
+        "sourceDeck": "tarot.deck.thoth",
+        "uprightMeaning": "Laborious, patient, heavy, material mastery, the fire of earth, reliable provider",
+        "reversedMeaning": "Sluggish, idle, stupid, bovine"
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "numerology.digit.1",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "1",
+      "description": "The number One: the monad, the primal unity from which all numbers emerge. In Pythagorean numerology One represents the principle of initiation, leadership, independence, originality, and the creative will. It corresponds to the Sun (solar consciousness, ego, individuality). The Tarot correspondence is The Magician (Atu I) — the skilled Will transmitting divine impulse into action. One is the point, the undivided self, the first breath. Its shadow is isolation and egotism — the leader who cannot follow. Qabalistic correspondence: Kether (the Crown, unity, the point).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 1,
+        "planetaryCorrespondence": "astrology.planet.sol",
+        "tarotCorrespondence": "tarot.major.rws.the-magician",
+        "qabalisticCorrespondence": "qabalah.sephira.kether",
+        "isMasterNumber": false,
+        "keywords": ["initiation", "leadership", "independence", "originality", "will", "creation", "unity", "self"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.2",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "2",
+      "description": "The number Two: the dyad, the first division of unity into polarity. In Pythagorean numerology Two represents partnership, balance, diplomacy, sensitivity, and receptivity. It corresponds to the Moon (intuition, the unconscious, the reflective and receptive principle). The Tarot correspondence is The High Priestess (Atu II) — the lunar guardian of hidden mysteries who sits between the twin pillars of polarity. Two is the mirror, the other, the capacity to listen and receive. Its shadow is indecision, dependency, and loss of self in relationship. Qabalistic correspondence: Chokmah (Wisdom, the dyad, the first emanation).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 2,
+        "planetaryCorrespondence": "astrology.planet.luna",
+        "tarotCorrespondence": "tarot.major.rws.the-high-priestess",
+        "qabalisticCorrespondence": "qabalah.sephira.chokmah",
+        "isMasterNumber": false,
+        "keywords": ["partnership", "balance", "diplomacy", "sensitivity", "receptivity", "intuition", "polarity", "the other"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.3",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "3",
+      "description": "The number Three: the first true number (as the Pythagoreans said, one is unity, two is polarity, three is the first number). Three represents creative expression, joy, communication, optimism, and the synthesis that emerges from the tension of the dyad. It corresponds to Jupiter (expansion, abundance, the generative force). The Tarot correspondence is The Empress (Atu III) — the great creative Mother, the generative feminine principle, the abundance of nature. Three is the triangle, the triad, the first stable form. Its shadow is scattered creative energy and superficiality. Qabalistic correspondence: Binah (Understanding, the fertile Mother).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 3,
+        "planetaryCorrespondence": "astrology.planet.jupiter",
+        "tarotCorrespondence": "tarot.major.rws.the-empress",
+        "qabalisticCorrespondence": "qabalah.sephira.binah",
+        "isMasterNumber": false,
+        "keywords": ["creativity", "expression", "joy", "communication", "optimism", "synthesis", "abundance", "the triad"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.4",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "4",
+      "description": "The number Four: stability, structure, limitation, hard work, and the foundation of the material world. In Pythagorean numerology Four represents discipline, order, and the patient building of lasting structures. It corresponds to Uranus (in Pythagorean numerology — the higher octave that disrupts and rebuilds). The Tarot correspondence is The Emperor (Atu IV) — ordered authority, rational structure, the builder of civilisation. Four is the square, the four elements, the four directions — the foundational form of material existence. Its shadow is rigidity and excessive control. Qabalistic correspondence: Chesed (Mercy, the first sephira below the Abyss).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 4,
+        "planetaryCorrespondence": "astrology.planet.uranus",
+        "tarotCorrespondence": "tarot.major.rws.the-emperor",
+        "qabalisticCorrespondence": "qabalah.sephira.chesed",
+        "isMasterNumber": false,
+        "keywords": ["stability", "structure", "discipline", "order", "hard work", "limitation", "foundation", "the square"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.5",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "5",
+      "description": "The number Five: change, freedom, adventure, versatility, and the dynamic life force that breaks through limitation. In Pythagorean numerology Five represents the pentagram — the five-pointed star of humanity (four elements plus Spirit). It corresponds to Mercury (communication, adaptability, the swift messenger). The Tarot correspondence is The Hierophant (Atu V) — the mediating teacher, but also in esoteric numerology the five as the number of Geburah (the testing force). Five seeks experience and refuses stagnation. Its shadow is restlessness and the inability to commit. Qabalistic correspondence: Geburah (Severity, the testing force, the number 5).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 5,
+        "planetaryCorrespondence": "astrology.planet.mercury",
+        "tarotCorrespondence": "tarot.major.rws.the-hierophant",
+        "qabalisticCorrespondence": "qabalah.sephira.geburah",
+        "isMasterNumber": false,
+        "keywords": ["change", "freedom", "adventure", "versatility", "Mercury", "pentagram", "the five senses", "humanity"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.6",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "6",
+      "description": "The number Six: harmony, love, responsibility, nurturing, beauty, and the home. In Pythagorean numerology Six is the perfect number (equal to the sum of its divisors: 1+2+3=6) and represents the principle of cosmic balance. It corresponds to Venus (love, beauty, harmony, relationship). The Tarot correspondence is The Lovers (Atu VI) — the sacred union, the alchemical marriage, the heart's choice. Six is the Star of David (two interlocking triangles), the macrocosm and microcosm unified. Its shadow is self-sacrifice to the point of martyrdom. Qabalistic correspondence: Tiphareth (Beauty, the heart of the Tree, the solar centre).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 6,
+        "planetaryCorrespondence": "astrology.planet.venus",
+        "tarotCorrespondence": "tarot.major.rws.the-lovers",
+        "qabalisticCorrespondence": "qabalah.sephira.tiphareth",
+        "isMasterNumber": false,
+        "keywords": ["harmony", "love", "responsibility", "nurturing", "beauty", "home", "balance", "the perfect number"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.7",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "7",
+      "description": "The number Seven: mystery, introspection, spiritual seeking, wisdom, and the inner life. In Pythagorean numerology Seven is the sacred and magical number par excellence — the seven days of creation, the seven classical planets, the seven notes of the musical scale, the seven seals. It corresponds to Neptune (in Pythagorean numerology — the higher octave of the Moon, governing spiritual vision and the unconscious depths). The Tarot correspondence is The Chariot (Atu VII) — the triumphant vehicle of spiritual consciousness. Seven is the seeker, the lone mystic, the philosopher. Its shadow is isolation and misanthropic withdrawal. Qabalistic correspondence: Netzach (Victory, the seventh sephira).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 7,
+        "planetaryCorrespondence": "astrology.planet.neptune",
+        "tarotCorrespondence": "tarot.major.rws.the-chariot",
+        "qabalisticCorrespondence": "qabalah.sephira.netzach",
+        "isMasterNumber": false,
+        "keywords": ["mystery", "introspection", "spiritual seeking", "wisdom", "inner life", "the seven", "sacred", "solitude"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.8",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "8",
+      "description": "The number Eight: power, ambition, material success, authority, and the law of cause and effect. Eight is the number of infinity (∞ on its side), of the lemniscate that appears above the Magician and the woman with the Lion. In Pythagorean numerology Eight represents Saturn — the cosmic taskmaster whose law of karma (as you sow, so shall you reap) governs the eighth sphere. The Tarot correspondence is Strength (Atu VIII in RWS; Adjustment/Justice in Thoth). Eight is the builder who understands that power must be earned through discipline. Its shadow is materialism and abuse of power. Qabalistic correspondence: Hod (Splendour, the eighth sephira).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 8,
+        "planetaryCorrespondence": "astrology.planet.saturn",
+        "tarotCorrespondence": "tarot.major.rws.strength",
+        "qabalisticCorrespondence": "qabalah.sephira.hod",
+        "isMasterNumber": false,
+        "keywords": ["power", "ambition", "material success", "authority", "karma", "infinity", "discipline", "the lemniscate"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.9",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "9",
+      "description": "The number Nine: completion, compassion, universal love, humanitarianism, and the wisdom that comes from having passed through all the previous numbers. Nine is the last single digit, the final stage before return to unity (10 = 1+0 = 1). Any number multiplied by 9 reduces to 9 (9×9=81, 8+1=9) — Nine always returns to itself, reflecting its universality. It corresponds to Mars in Pythagorean numerology. The Tarot correspondence is The Hermit (Atu IX) — the wise elder who carries his light through the darkness to share with others. Its shadow is martyrdom and impractical idealism. Qabalistic correspondence: Yesod (Foundation, the ninth sephira).",
+      "tags": ["numerology", "digit"],
+      "extendedData": {
+        "value": 9,
+        "planetaryCorrespondence": "astrology.planet.mars",
+        "tarotCorrespondence": "tarot.major.rws.the-hermit",
+        "qabalisticCorrespondence": "qabalah.sephira.yesod",
+        "isMasterNumber": false,
+        "keywords": ["completion", "compassion", "universal love", "humanitarianism", "wisdom", "endings", "the elder", "service"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.11",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "11",
+      "description": "The Master Number Eleven: the first master number, carrying an intensified vibration of the Two (1+1=2) but amplified to a higher octave. Eleven represents spiritual illumination, intuition elevated to psychic sensitivity, the channel between the human and divine worlds, and the visionary who sees what others cannot. It is the number of the Messenger, the spiritual teacher, the light-bringer whose insight illuminates the dark. Unlike the balanced diplomat of Two, Eleven must learn to ground its heightened sensitivity in practical expression. The double One of Eleven represents the individual will amplified and reflected — the human becoming the divine mirror.",
+      "tags": ["numerology", "digit", "master-number"],
+      "extendedData": {
+        "value": 11,
+        "reducedValue": 2,
+        "planetaryCorrespondence": "astrology.planet.luna",
+        "tarotCorrespondence": "tarot.major.rws.justice",
+        "qabalisticCorrespondence": null,
+        "isMasterNumber": true,
+        "keywords": ["illumination", "intuition", "psychic sensitivity", "the messenger", "spiritual insight", "the channel", "visionary"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.22",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "22",
+      "description": "The Master Number Twenty-Two: the Master Builder, the most powerful of the three master numbers, carrying the heightened vibration of the Four (2+2=4) elevated to the level of universal creation. Twenty-Two represents the capacity to turn the most ambitious spiritual vision into physical reality — the architect of civilisations, the builder of lasting structures that serve all humanity. It corresponds to the 22 letters of the Hebrew alphabet and the 22 major arcana paths of the Tree of Life, suggesting that the Master Builder has access to the full range of creative archetypes. The shadow of Twenty-Two is grandiosity and the weight of enormous potential unrealised.",
+      "tags": ["numerology", "digit", "master-number"],
+      "extendedData": {
+        "value": 22,
+        "reducedValue": 4,
+        "planetaryCorrespondence": "astrology.planet.uranus",
+        "tarotCorrespondence": null,
+        "qabalisticCorrespondence": null,
+        "isMasterNumber": true,
+        "keywords": ["master builder", "universal creation", "civilisation", "grand vision made real", "22 paths", "the great architect"]
+      }
+    },
+    {
+      "canonicalName": "numerology.digit.33",
+      "entityType": "numerology.digit",
+      "primaryDisplayName": "33",
+      "description": "The Master Number Thirty-Three: the Master Teacher, rarest and highest of the master numbers, carrying the vibration of the Six (3+3=6) amplified to the level of universal love and compassionate service. Thirty-Three is the number of the Christ consciousness in numerological tradition (the age of Jesus at his crucifixion; 33 vertebrae of the human spine; 33° of Freemasonry). It represents the capacity to transmit divine love, wisdom, and healing to the world — not through personal self-aggrandisement but through utterly selfless service to the upliftment of humanity. Most carriers of a 33 Life Path express their gifts more modestly through the 6 vibration; the full 33 expression is extremely rare.",
+      "tags": ["numerology", "digit", "master-number"],
+      "extendedData": {
+        "value": 33,
+        "reducedValue": 6,
+        "planetaryCorrespondence": "astrology.planet.venus",
+        "tarotCorrespondence": null,
+        "qabalisticCorrespondence": null,
+        "isMasterNumber": true,
+        "keywords": ["master teacher", "universal love", "selfless service", "Christ consciousness", "compassion", "healing", "the highest vibration"]
+      }
+    }
+  ]
+}

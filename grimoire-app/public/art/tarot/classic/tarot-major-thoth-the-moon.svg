@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0e0408"/>
+      <stop offset="100%" stop-color="#180810"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#3a1028" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#882244" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#3a1028" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#3a1028" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#cc88bb" opacity="0.9">XVIII</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#882244" opacity="0.85" filter="url(#glow)">ק</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#3a1028" opacity="0.8">♓</text>
+
+
+    <defs>
+      <radialGradient id="coronaGrad18" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#ffbb44" stop-opacity="0"/>
+        <stop offset="38%"  stop-color="#ffbb44" stop-opacity="0.55"/>
+        <stop offset="62%"  stop-color="#cc5522" stop-opacity="0.45"/>
+        <stop offset="82%"  stop-color="#882211" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#882211" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="fieldGlow18" cx="50%" cy="42%" r="56%">
+        <stop offset="0%"   stop-color="#d0c8e8" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#d0c8e8" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="pathGrad18" x1="50%" y1="100%" x2="50%" y2="0%">
+        <stop offset="0%"   stop-color="#e8e0f4" stop-opacity="0.42"/>
+        <stop offset="100%" stop-color="#e8e0f4" stop-opacity="0.82"/>
+      </linearGradient>
+      <linearGradient id="poolGrad18" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%"   stop-color="#0c0818" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#050310"  stop-opacity="1"/>
+      </linearGradient>
+      <clipPath id="poolClip18">
+        <rect x="0" y="310" width="300" height="110"/>
+      </clipPath>
+    </defs>
+
+    <!-- Soft moonlight field — the Moon gives what it has: reflected light, not its own -->
+    <ellipse cx="150" cy="195" rx="165" ry="190" fill="url(#fieldGlow18)"/>
+
+    <!-- Ghost Qoph (ק) — the back of the head; what Moses saw as God passed (Exod 33:23) -->
+    <!-- "You shall see my back, but my face shall not be seen" -->
+    <!-- The descending right leg crosses below the baseline — into the pool zone, into the depths -->
+    <!-- Esotericism operates from this angle: knowledge granted from behind, after the presence has moved on -->
+    <g opacity="0.09" fill="none" stroke="#6655aa" stroke-width="11" stroke-linecap="round">
+      <path d="M80,152 C80,126 108,112 148,112 C188,112 216,126 216,152 C216,174 198,188 150,188"/>
+      <line x1="80"  y1="152" x2="80"  y2="244"/>
+      <line x1="216" y1="152" x2="216" y2="318"/>
+    </g>
+
+    <!-- Eclipse corona — the Sun's glory, tolerable only because the Moon stands before it -->
+    <!-- "The Shekinah Glory made tolerable by human sense" -->
+    <circle cx="150" cy="90" r="120" fill="url(#coronaGrad18)" opacity="0.80"/>
+    <circle cx="150" cy="90" r="88" fill="#cc5522" fill-opacity="0.10" opacity="0.88"/>
+    <circle cx="150" cy="90" r="66" fill="#ffbb44" fill-opacity="0.14" opacity="0.90"/>
+
+    <!-- Corona rays — three Seraphic wing-pairs arranged around the eclipse disc -->
+    <!-- The Moon IS the Seraph: not passive but actively covering, actively pointing -->
+    <!-- It would usher the Reader to full presence if it could; understanding that it must not -->
+    <line x1="150" y1="48" x2="150" y2="-10" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="166.07" y1="51.2" x2="193.63" y2="-15.32" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="179.7" y1="60.3" x2="202.33" y2="37.67" stroke="#ffbb44" stroke-width="1" opacity="0.38"/>
+    <line x1="188.8" y1="73.93" x2="242.39" y2="51.73" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="192" y1="90" x2="264" y2="90" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="188.8" y1="106.07" x2="268.26" y2="138.98" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="179.7" y1="119.7" x2="210.81" y2="150.81" stroke="#ffbb44" stroke-width="1.6" opacity="0.55"/>
+    <line x1="166.07" y1="128.8" x2="182.91" y2="169.45" stroke="#ffbb44" stroke-width="1.6" opacity="0.55"/>
+    <line x1="150" y1="132" x2="150" y2="176" stroke="#ffbb44" stroke-width="1.6" opacity="0.55"/>
+    <line x1="133.93" y1="128.8" x2="117.09" y2="169.45" stroke="#ffbb44" stroke-width="1.6" opacity="0.55"/>
+    <line x1="120.3" y1="119.7" x2="69.39" y2="170.61" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="111.2" y1="106.07" x2="31.74" y2="138.98" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="108" y1="90" x2="50" y2="90" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <line x1="111.2" y1="73.93" x2="81.63" y2="61.68" stroke="#ffbb44" stroke-width="1" opacity="0.38"/>
+    <line x1="120.3" y1="60.3" x2="97.67" y2="37.67" stroke="#ffbb44" stroke-width="1" opacity="0.38"/>
+    <line x1="133.93" y1="51.2" x2="111.73" y2="-2.39" stroke="#ffbb44" stroke-width="2" opacity="0.72"/>
+    <!-- Wing-pair inner bright cores -->
+    <line x1="150" y1="48" x2="150" y2="28" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="166.07" y1="51.2" x2="173.73" y2="32.72" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="188.8" y1="73.93" x2="207.28" y2="66.27" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="192" y1="90" x2="212" y2="90" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="188.8" y1="106.07" x2="207.28" y2="113.73" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="120.3" y1="119.7" x2="106.16" y2="133.84" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="111.2" y1="106.07" x2="92.72" y2="113.73" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="108" y1="90" x2="88" y2="90" stroke="white" stroke-width="0.9" opacity="0.38"/>
+    <line x1="133.93" y1="51.2" x2="126.27" y2="32.72" stroke="white" stroke-width="0.9" opacity="0.38"/>
+
+    <!-- Diffraction cross-flare — natural eclipse optics; theologically resonant with the Crucifixion -->
+    <!-- "From noon until three in the afternoon darkness came over all the land." (Matt 27:45) -->
+    <!-- The darkness that attended the Crucifixion: God's warmth temporarily withdrawn -->
+    <!-- The cross-flare is present because of what light does; its meaning is present because of what occurred -->
+    <line x1="58" y1="90"    x2="242" y2="90"    stroke="#ffbb44" stroke-width="0.9" opacity="0.20"/>
+    <line x1="150"    y1="-2" x2="150"    y2="182" stroke="#ffbb44" stroke-width="0.9" opacity="0.20"/>
+
+    <!-- Moon disc — the covered face of the Seraph; the cleft in the rock (Exod 33:22) -->
+    <!-- The presence is not absent here: it is here, averted for our protection -->
+    <!-- solarDisk lineage terminus: Fool(free) Hermit(lantern) Art(crown) Tower(burst) Star(garment) Moon(eclipsed) -->
+    <!-- The same light, the same disk — here it hides so the Reader may approach -->
+    <circle cx="150" cy="90" r="40" fill="#0c0e18" opacity="0.98"/>
+    <circle cx="150" cy="90" r="38"   fill="#0c0e18" opacity="1.00"/>
+    <!-- Limbal ring — thin gold ring where the Sun's chromosphere shows at the disc edge -->
+    <circle cx="150" cy="90" r="38" fill="none"
+            stroke="#ffbb44" stroke-width="2.0" opacity="0.62"/>
+    <!-- Subtle disc surface texture (the back of the head — texture, not blankness) -->
+    <circle cx="141" cy="84" r="6.5" fill="#0c0e18" stroke="#161a28" stroke-width="0.6" opacity="0.52"/>
+    <circle cx="161" cy="97" r="5.5" fill="#0c0e18" stroke="#161a28" stroke-width="0.6" opacity="0.42"/>
+
+    <!-- Two pillars (Boaz & Jachin) flanking the path — echoing the Priestess (II) -->
+    <!-- The gateway: same threshold as card II, now approached from the far side -->
+    <!-- Left pillar -->
+    <rect x="68"  y="148" width="20" height="140" rx="3" fill="#2a1838" stroke="#3c2852" stroke-width="0.8" opacity="0.92"/>
+    <rect x="64"  y="143" width="28" height="8"   rx="2" fill="#3c2852" opacity="0.85"/>
+    <rect x="66"  y="138" width="24" height="6"   rx="2" fill="#2a1838"  opacity="0.70"/>
+    <rect x="64"  y="288" width="28" height="8"   rx="2" fill="#3c2852" opacity="0.68"/>
+    <ellipse cx="78"  cy="148" rx="14" ry="5" fill="#ffbb44" opacity="0.10"/>
+    <!-- Right pillar -->
+    <rect x="212" y="148" width="20" height="140" rx="3" fill="#2a1838" stroke="#3c2852" stroke-width="0.8" opacity="0.92"/>
+    <rect x="208" y="143" width="28" height="8"   rx="2" fill="#3c2852" opacity="0.85"/>
+    <rect x="210" y="138" width="24" height="6"   rx="2" fill="#2a1838"  opacity="0.70"/>
+    <rect x="208" y="288" width="28" height="8"   rx="2" fill="#3c2852" opacity="0.68"/>
+    <ellipse cx="222" cy="148" rx="14" ry="5" fill="#ffbb44" opacity="0.10"/>
+
+    <!-- The clear path — the Moon's primary gift; not the light itself but the direction -->
+    <!-- "If the Moon could, it would usher the Reader into the full presence of the Sun" -->
+    <!-- It is the compass-needle: pointing past itself, away from itself, toward the eclipse -->
+    <!-- Path brightens as it nears the eclipse — the Reader's eyes adjusting as they approach -->
+    <path d="M110,310 L140,150 L160,150 L190,310 Z" fill="url(#pathGrad18)" opacity="0.72"/>
+    <line x1="110" y1="310" x2="140" y2="150" stroke="#e8e0f4" stroke-width="1.0" opacity="0.36"/>
+    <line x1="190" y1="310" x2="160" y2="150" stroke="#e8e0f4" stroke-width="1.0" opacity="0.36"/>
+    <!-- Moonlit paving stones narrowing in perspective toward the eclipse -->
+    <ellipse cx="144" cy="225" rx="9" ry="4.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,144,225)"/>
+    <ellipse cx="141" cy="248" rx="11" ry="5.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,141,248)"/>
+    <ellipse cx="138" cy="272" rx="10" ry="5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,138,272)"/>
+    <ellipse cx="135" cy="294" rx="9" ry="4.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,135,294)"/>
+    <ellipse cx="156" cy="235" rx="9" ry="4.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,156,235)"/>
+    <ellipse cx="159" cy="258" rx="11" ry="5.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,159,258)"/>
+    <ellipse cx="162" cy="280" rx="10" ry="5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,162,280)"/>
+    <ellipse cx="165" cy="298" rx="9" ry="4.5" fill="#e8e0f4" opacity="0.13" transform="rotate(-2,165,298)"/>
+
+    <!-- Mirror pool — XVII's crystal river, now lit by the eclipse rather than open starfield -->
+    <!-- The same living water; now a second veil: the eclipse reflected, gentled further -->
+    <!-- Even approaching by reflection is a step closer — the Moon approves each degree of approach -->
+    <rect x="0" y="310" width="300" height="110" fill="url(#poolGrad18)" opacity="0.96"/>
+    <ellipse cx="150" cy="312" rx="85" ry="10" fill="#cc5522" opacity="0.10"/>
+    <path d="M0,312 C50,310.5 100,313.5 150,312 C200,310.5 250,313.5 300,312" fill="none" stroke="#d0c8e8" stroke-width="0.6" opacity="0.18"/><path d="M0,315.5 C50,314 100,317 150,315.5 C200,314 250,317 300,315.5" fill="none" stroke="#d0c8e8" stroke-width="0.6" opacity="0.15"/><path d="M0,319 C50,317.5 100,320.5 150,319 C200,317.5 250,320.5 300,319" fill="none" stroke="#d0c8e8" stroke-width="0.6" opacity="0.12"/><path d="M0,322.5 C50,321 100,324 150,322.5 C200,321 250,324 300,322.5" fill="none" stroke="#d0c8e8" stroke-width="0.6" opacity="0.09"/><path d="M0,326 C50,324.5 100,327.5 150,326 C200,324.5 250,327.5 300,326" fill="none" stroke="#d0c8e8" stroke-width="0.6" opacity="0.06"/>
+    <!-- Eclipse reflected in the pool — a second, softer approach to the same light -->
+    <g clip-path="url(#poolClip18)" opacity="0.28">
+      <g transform="scale(1,-1) translate(0,-620)">
+        <circle cx="150" cy="90" r="103" fill="url(#coronaGrad18)" opacity="0.85"/>
+        <circle cx="150" cy="90" r="40"  fill="#0c0e18" opacity="0.90"/>
+        <circle cx="150" cy="90" r="38"    fill="#0c0e18" opacity="1"/>
+        <circle cx="150" cy="90" r="38"    fill="none" stroke="#ffbb44" stroke-width="1.6" opacity="0.55"/>
+      </g>
+    </g>
+
+    <!-- Two Pisces fish — the ichthys lineage: XIII (transformation) XVII (gift) XVIII (dual path) -->
+    <!-- One ascending toward the eclipse light (the Reader's arc through the deck) -->
+    <!-- One descending into the mystery on the far side of the veil -->
+    <!-- The Pisces binding cord holds them together: both directions are one Great Work -->
+
+    <!-- Fish 1: ascending -->
+    <g transform="translate(86,358) rotate(-48)" opacity="0.72">
+      <ellipse cx="0" cy="0" rx="19" ry="9.5" fill="none" stroke="#8870c8" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="19" ry="9.5" fill="#c0b0e8" fill-opacity="0.07"/>
+      <path d="M19,0 L30,-10 M19,0 L30,10" stroke="#8870c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="-10" cy="-2.5" r="2.4" fill="#8870c8" opacity="0.82"/>
+      <path d="M-5,-6 C0,-9 5,-7 5,-4 M5,-4 C9,-7 14,-5 14,-2" fill="none" stroke="#8870c8" stroke-width="0.8" opacity="0.40"/>
+    </g>
+
+    <!-- Fish 2: descending -->
+    <g transform="translate(214,368) rotate(132)" opacity="0.66">
+      <ellipse cx="0" cy="0" rx="19" ry="9.5" fill="none" stroke="#8870c8" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="19" ry="9.5" fill="#c0b0e8" fill-opacity="0.07"/>
+      <path d="M19,0 L30,-10 M19,0 L30,10" stroke="#8870c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="-10" cy="-2.5" r="2.4" fill="#8870c8" opacity="0.78"/>
+      <path d="M-5,-6 C0,-9 5,-7 5,-4 M5,-4 C9,-7 14,-5 14,-2" fill="none" stroke="#8870c8" stroke-width="0.8" opacity="0.36"/>
+    </g>
+
+    <!-- Pisces binding cord — both paths are the same Work -->
+    <path d="M102,343 C126,336 148,340 170,348 C192,356 210,364 214,368"
+          fill="none" stroke="#8870c8" stroke-width="0.9" stroke-dasharray="3,4" opacity="0.32"/>
+  
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#cc88bb" letter-spacing="2.5"
+        filter="url(#glow)">THE MOON</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#3a1028" letter-spacing="3" opacity="0.75">Qoph · Pisces · Path 29</text>
+</svg>

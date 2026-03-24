@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "letter.greek.alpha",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Alpha",
+      "description": "The first letter of the Greek alphabet (Α, α). Numerical value 1. Alpha represents the beginning, the primal unity, the first principle — 'I am the Alpha and the Omega' (Revelation 1:8). In Pythagorean number mysticism Alpha as One is the monad, the indivisible first principle. As the first Greek vowel, Alpha carries the breath of life. In Hermetic and Gnostic traditions Alpha and Omega together span the complete divine order. Derived from the Phoenician aleph (ox).",
+      "secondaryNames": [
+        {
+          "name": "Α",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "α",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Α",
+        "lowercase": "α",
+        "numericalValue": 1,
+        "orderNumber": 1,
+        "letterType": "vowel",
+        "pronunciationIPA": "a"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.beta",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Beta",
+      "description": "The second Greek letter (Β, β). Numerical value 2. Beta derives from the Phoenician beth (house). As the number 2 it represents duality, the dyad, the primal division of unity into polarity. In isopsephy (Greek gematria) Beta initiates the counting of words whose numeric sum encodes divine meanings. Beta gives its name to the familiar 'alphabet' (alpha + beta).",
+      "secondaryNames": [
+        {
+          "name": "Β",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "β",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Β",
+        "lowercase": "β",
+        "numericalValue": 2,
+        "orderNumber": 2,
+        "letterType": "consonant",
+        "pronunciationIPA": "b"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.gamma",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Gamma",
+      "description": "The third Greek letter (Γ, γ). Numerical value 3. Derived from Phoenician gimel (camel). The gamma has the shape of a right angle, suggesting the principle of perpendicular opposition. In mathematics and science gamma represents numerous constants (the gamma function, gamma radiation, the Euler–Mascheroni constant). In isopsephy the number 3 corresponds to the triad and the synthesis of opposites.",
+      "secondaryNames": [
+        {
+          "name": "Γ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "γ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Γ",
+        "lowercase": "γ",
+        "numericalValue": 3,
+        "orderNumber": 3,
+        "letterType": "consonant",
+        "pronunciationIPA": "ɡ"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.delta",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Delta",
+      "description": "The fourth Greek letter (Δ, δ). Numerical value 4. Derived from Phoenician daleth (door). The uppercase Delta Δ is a triangle — the fundamental geometric form, the first stable shape. As the number 4 Delta corresponds to the square, the four elements, the four directions. In mathematics delta (Δ) denotes change or difference. The Pythagorean tetraktys (1+2+3+4=10) culminates in the fourth level, completing the triangle.",
+      "secondaryNames": [
+        {
+          "name": "Δ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "δ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Δ",
+        "lowercase": "δ",
+        "numericalValue": 4,
+        "orderNumber": 4,
+        "letterType": "consonant",
+        "pronunciationIPA": "d"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.epsilon",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Epsilon",
+      "description": "The fifth Greek letter (Ε, ε), a vowel. Numerical value 5. 'Epsilon' means 'bare E' or 'simple E' (to distinguish it from the diphthong Eta). As the number 5 it corresponds to the pentagram, the human microcosm, the five senses. In isopsephy the vowel epsilon carries the force of 5, the number of humanity (four elements + spirit). Dedicated at Delphi, the letter E was inscribed on the entrance to Apollo's temple.",
+      "secondaryNames": [
+        {
+          "name": "Ε",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ε",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ε",
+        "lowercase": "ε",
+        "numericalValue": 5,
+        "orderNumber": 5,
+        "letterType": "vowel",
+        "pronunciationIPA": "e"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.zeta",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Zeta",
+      "description": "The sixth Greek letter (Ζ, ζ). Numerical value 7. Note: Zeta is the sixth letter but has value 7 because the ancient letter Digamma (ϝ) originally occupied the sixth position with value 6, and was later dropped from the standard alphabet. As the number 7 Zeta corresponds to the seven classical planets, the seven days of the week, and the seventh heaven of mystical tradition. The Riemann Zeta function, one of mathematics' great mysteries, takes its symbol from this letter.",
+      "secondaryNames": [
+        {
+          "name": "Ζ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ζ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ζ",
+        "lowercase": "ζ",
+        "numericalValue": 7,
+        "orderNumber": 6,
+        "letterType": "consonant",
+        "pronunciationIPA": "z",
+        "note": "Value 7 because archaic Digamma (Ϝ=6) was dropped from the standard alphabet."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.eta",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Eta",
+      "description": "The seventh Greek letter (Η, η), a vowel representing the long E sound. Numerical value 8. As 8 in isopsephy, Eta corresponds to the number of Saturn and cosmic completion. Eta is used in numerous scientific constants and in physics represents efficiency. In the Gnostic system of letter-mysticism the seven Greek vowels (α, ε, η, ι, ο, υ, ω) correspond to the seven spheres, with Eta representing one of the middle planetary spheres.",
+      "secondaryNames": [
+        {
+          "name": "Η",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "η",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Η",
+        "lowercase": "η",
+        "numericalValue": 8,
+        "orderNumber": 7,
+        "letterType": "vowel",
+        "pronunciationIPA": "ɛː"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.theta",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Theta",
+      "description": "The eighth Greek letter (Θ, θ). Numerical value 9. The theta's cross-within-circle form is one of the most symbolically resonant letter-shapes in the Greek alphabet — it appears in numerous esoteric diagrams representing the divine circle crossed by the horizontal and vertical axes. Ancient Greeks sometimes used Theta as an abbreviation for Thanatos (death). In modern physics theta angles are central to wave equations and quantum mechanics.",
+      "secondaryNames": [
+        {
+          "name": "Θ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "θ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Θ",
+        "lowercase": "θ",
+        "numericalValue": 9,
+        "orderNumber": 8,
+        "letterType": "consonant",
+        "pronunciationIPA": "tʰ"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.iota",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Iota",
+      "description": "The ninth Greek letter (Ι, ι), a vowel. Numerical value 10. As the number 10, Iota is the decad — the Pythagorean completion (1+2+3+4=10), the return to unity from a higher level. Iota is the smallest Greek letter, giving rise to the expression 'not one iota' (Matthew 5:18). The slender, vertical form of Iota connects it to the Hebrew Yod (also the smallest letter, from which all others are built). As the divine spark in the smallest possible form.",
+      "secondaryNames": [
+        {
+          "name": "Ι",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ι",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ι",
+        "lowercase": "ι",
+        "numericalValue": 10,
+        "orderNumber": 9,
+        "letterType": "vowel",
+        "pronunciationIPA": "i"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.kappa",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Kappa",
+      "description": "The tenth Greek letter (Κ, κ). Numerical value 20. Derived from Phoenician kaph (palm). As the number 20 in isopsephy, Kappa marks a transition to the tens (20, 30, etc.), which carry the same archetypal energies as the units but on a higher octave. In physics and mathematics kappa is used for thermal conductivity, curvature, and various constants. The letter's angular form suggests branching or divergence.",
+      "secondaryNames": [
+        {
+          "name": "Κ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "κ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Κ",
+        "lowercase": "κ",
+        "numericalValue": 20,
+        "orderNumber": 10,
+        "letterType": "consonant",
+        "pronunciationIPA": "k"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.lambda",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Lambda",
+      "description": "The eleventh Greek letter (Λ, λ). Numerical value 30. Derived from Phoenician lamed (ox-goad). The inverted V shape of Lambda echoes the alchemical symbol for fire (a triangle pointing upward) when inverted. In physics lambda (λ) is the universal symbol for wavelength. In cosmology the cosmological constant (Einstein's 'greatest blunder') is denoted Λ. Lambda calculus is the theoretical foundation of functional programming.",
+      "secondaryNames": [
+        {
+          "name": "Λ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "λ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Λ",
+        "lowercase": "λ",
+        "numericalValue": 30,
+        "orderNumber": 11,
+        "letterType": "consonant",
+        "pronunciationIPA": "l"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.mu",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Mu",
+      "description": "The twelfth Greek letter (Μ, μ). Numerical value 40. Derived from Phoenician mem (water). As the Hebrew Mem is the mother letter of water, so Greek Mu carries associated fluidity. In physics mu (μ) is the symbol for the micrometre, the coefficient of friction, magnetic permeability, and the muon. The prefix 'micro-' (μ) denotes one millionth. In mathematics mu functions appear in number theory.",
+      "secondaryNames": [
+        {
+          "name": "Μ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "μ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Μ",
+        "lowercase": "μ",
+        "numericalValue": 40,
+        "orderNumber": 12,
+        "letterType": "consonant",
+        "pronunciationIPA": "m"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.nu",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Nu",
+      "description": "The thirteenth Greek letter (Ν, ν). Numerical value 50. Derived from Phoenician nun (fish). As the Hebrew Nun is attributed to Death and Scorpio (the transformative depths), Nu in isopsephy at value 50 corresponds to the transformative potential of the number — completion (50 = 5×10, humanity multiplied by the decad). In physics nu (ν) is the symbol for frequency, kinematic viscosity, and the neutrino.",
+      "secondaryNames": [
+        {
+          "name": "Ν",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ν",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ν",
+        "lowercase": "ν",
+        "numericalValue": 50,
+        "orderNumber": 13,
+        "letterType": "consonant",
+        "pronunciationIPA": "n"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.xi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Xi",
+      "description": "The fourteenth Greek letter (Ξ, ξ). Numerical value 60. Also pronounced 'Ksi'. Xi's triple horizontal bar form makes it visually distinctive. In physics xi (Ξ, ξ) denotes the cascade baryon and displacement in wave equations. The number 60 was significant to the Babylonians as the base of their sexagesimal number system (from which we inherit 60 seconds, 60 minutes, 360 degrees).",
+      "secondaryNames": [
+        {
+          "name": "Ξ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ξ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ksi",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ξ",
+        "lowercase": "ξ",
+        "numericalValue": 60,
+        "orderNumber": 14,
+        "letterType": "consonant",
+        "pronunciationIPA": "ks"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.omicron",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Omicron",
+      "description": "The fifteenth Greek letter (Ο, ο), a short vowel. Numerical value 70. 'Omicron' means 'small O' (to distinguish it from the long O, Omega). As the number 70, Omicron corresponds to the value of the Hebrew Ayin (eye) — the organ of perception, the eye of consciousness looking out through the circle of its own form. The circle Ο is perhaps the most symbolically complete of all letter forms: the zero, the void, the divine circle, the eternal return.",
+      "secondaryNames": [
+        {
+          "name": "Ο",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ο",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ο",
+        "lowercase": "ο",
+        "numericalValue": 70,
+        "orderNumber": 15,
+        "letterType": "vowel",
+        "pronunciationIPA": "o"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.pi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Pi",
+      "description": "The sixteenth Greek letter (Π, π). Numerical value 80. Pi is perhaps the most famous of all Greek letters outside of academia — the irrational number π ≈ 3.14159... is the ratio of a circle's circumference to its diameter, connecting the circle (divine perfection, the divine circle) to linear measurement. That this ratio is irrational (cannot be expressed as a fraction of whole numbers) was a profound discovery, suggesting that perfect circularity exceeds rational capture — a fact of great esoteric significance.",
+      "secondaryNames": [
+        {
+          "name": "Π",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "π",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Π",
+        "lowercase": "π",
+        "numericalValue": 80,
+        "orderNumber": 16,
+        "letterType": "consonant",
+        "pronunciationIPA": "p"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.rho",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Rho",
+      "description": "The seventeenth Greek letter (Ρ, ρ). Numerical value 100. The loop-topped Rho bears a visual resemblance to the letter P in Latin (from which P derives). In physics rho (ρ) denotes density. In statistics it denotes the correlation coefficient. The Chi-Rho monogram (☧) — combining the first two letters of the Greek 'Christos' — uses Rho as its second element, making it one of the most significant letters in early Christian symbolism.",
+      "secondaryNames": [
+        {
+          "name": "Ρ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ρ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ρ",
+        "lowercase": "ρ",
+        "numericalValue": 100,
+        "orderNumber": 17,
+        "letterType": "consonant",
+        "pronunciationIPA": "r"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.sigma",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Sigma",
+      "description": "The eighteenth Greek letter (Σ, σ/ς). Numerical value 200. Sigma has two lowercase forms: σ (medial, used in the middle of a word) and ς (final, used at the end of a word). In mathematics Σ (capital sigma) denotes summation — the adding-together of a series. In statistics σ (lowercase) denotes the standard deviation. As the number 200, sigma carries the doubled-century energy of completion and totality.",
+      "secondaryNames": [
+        {
+          "name": "Σ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "σ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Σ",
+        "lowercase": "σ",
+        "finalForm": "ς",
+        "numericalValue": 200,
+        "orderNumber": 18,
+        "letterType": "consonant",
+        "pronunciationIPA": "s"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.tau",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Tau",
+      "description": "The nineteenth Greek letter (Τ, τ). Numerical value 300. Tau shares its name with the Hebrew Tau/Tav (the last Hebrew letter, meaning 'cross' or 'mark'). The T-cross (Tau cross, or crux commissa) is one of the oldest sacred symbols — the cross of completion. As the number 300, Tau in isopsephy carries the same numerical value as the Hebrew Shin (300) — the mother letter of fire. The mathematical constant τ (tau) = 2π, argued by some to be more fundamental than π alone.",
+      "secondaryNames": [
+        {
+          "name": "Τ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "τ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Τ",
+        "lowercase": "τ",
+        "numericalValue": 300,
+        "orderNumber": 19,
+        "letterType": "consonant",
+        "pronunciationIPA": "t"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.upsilon",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Upsilon",
+      "description": "The twentieth Greek letter (Υ, υ), a vowel. Numerical value 400. 'Upsilon' means 'simple U/Y'. The Y-shape of Upsilon (particularly the capital) was used in Pythagorean symbolism as the 'Letter of Pythagoras' — the Y-fork representing the divergence of two life paths (the path of virtue ascending, the path of vice descending). This made Upsilon one of the most morally and philosophically significant letter-shapes in antiquity.",
+      "secondaryNames": [
+        {
+          "name": "Υ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "υ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Υ",
+        "lowercase": "υ",
+        "numericalValue": 400,
+        "orderNumber": 20,
+        "letterType": "vowel",
+        "pronunciationIPA": "y",
+        "note": "The 'Letter of Pythagoras' — the Y-fork representing the choice between two paths."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.phi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Phi",
+      "description": "The twenty-first Greek letter (Φ, φ). Numerical value 500. Phi is perhaps the most mathematically significant letter after Pi — φ (lowercase phi) denotes the golden ratio: φ = (1+√5)/2 ≈ 1.618... The golden ratio appears throughout nature (the nautilus shell, the arrangement of sunflower seeds, the proportions of the human body) and throughout sacred art and architecture. The Parthenon, the Great Pyramid, and Leonardo's Vitruvian Man all embody φ. It is the ratio most closely associated with divine proportion and aesthetic harmony.",
+      "secondaryNames": [
+        {
+          "name": "Φ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "φ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Φ",
+        "lowercase": "φ",
+        "numericalValue": 500,
+        "orderNumber": 21,
+        "letterType": "consonant",
+        "pronunciationIPA": "pʰ",
+        "note": "φ denotes the golden ratio (1.618...), the divine proportion."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.chi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Chi",
+      "description": "The twenty-second Greek letter (Χ, χ). Numerical value 600. Chi's X-shape makes it the most visually distinctive of the Greek letters. The Chi-Rho monogram (☧) — the Christogram — combines Chi with Rho as the first two letters of 'Χριστός' (Christos). In Plato's Timaeus, the World-Soul is described as fashioned in the shape of the letter Chi (X) — two circles intersecting at right angles, one the circle of the same (the ecliptic) and one the circle of the different (the celestial equator). This makes Chi the letter of cosmic structure.",
+      "secondaryNames": [
+        {
+          "name": "Χ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "χ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Χ",
+        "lowercase": "χ",
+        "numericalValue": 600,
+        "orderNumber": 22,
+        "letterType": "consonant",
+        "pronunciationIPA": "kʰ",
+        "note": "Plato's Timaeus uses Chi to describe the structure of the World-Soul."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.psi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Psi",
+      "description": "The twenty-third Greek letter (Ψ, ψ). Numerical value 700. The trident-shaped Psi connects it to Poseidon (Neptune), the god of the sea, whose trident it resembles. In modern usage ψ is most famously the symbol for the quantum wavefunction in physics — the fundamental description of a quantum system's state. In psychology the psi symbol has been adopted to denote psychic phenomena. The combination of ancient depth (the sea, the unconscious) and modern physics (the wavefunction) gives Psi a remarkably rich symbolic resonance.",
+      "secondaryNames": [
+        {
+          "name": "Ψ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ψ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ψ",
+        "lowercase": "ψ",
+        "numericalValue": 700,
+        "orderNumber": 23,
+        "letterType": "consonant",
+        "pronunciationIPA": "ps"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.omega",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Omega",
+      "description": "The twenty-fourth and final Greek letter (Ω, ω), a long vowel. Numerical value 800. 'Omega' means 'great O' or 'big O'. As the final letter of the Greek alphabet, Omega is the complement of Alpha — 'I am the Alpha and the Omega, the beginning and the end' (Revelation 1:8; 21:6; 22:13). Omega represents completion, the final return to source, the fullness of divine expression. In physics Ω (capital) denotes the ohm (unit of electrical resistance) and the cosmological density parameter. In mathematics ω is used for ordinal numbers and angular frequency.",
+      "secondaryNames": [
+        {
+          "name": "Ω",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ω",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "vowel",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ω",
+        "lowercase": "ω",
+        "numericalValue": 800,
+        "orderNumber": 24,
+        "letterType": "vowel",
+        "pronunciationIPA": "oː"
+      }
+    },
+    {
+      "canonicalName": "letter.greek.digamma",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Digamma",
+      "description": "An archaic Greek letter (Ϝ, ϝ) that occupied the sixth position in the early Greek alphabet, between Epsilon and Zeta. Numerical value 6. Digamma fell out of use in classical Greek writing but was retained in the Milesian numeral system as the number 6. Its double-gamma shape gave rise to its medieval name. In isopsephy Digamma supplies the value 6, corresponding to the number of Venus, the Vau of the Hebrew alphabet, and the hexagram. Though absent from standard 24-letter Greek, Digamma remains part of the full isopsephic counting system.",
+      "secondaryNames": [
+        {
+          "name": "Ϝ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ϝ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Wau",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "archaic",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ϝ",
+        "lowercase": "ϝ",
+        "numericalValue": 6,
+        "orderNumber": 6,
+        "letterType": "consonant",
+        "pronunciationIPA": "w",
+        "note": "Archaic letter retained in the numeral system only. Cognate with Latin F and Hebrew Vav."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.koppa",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Koppa",
+      "description": "An archaic Greek letter (Ϟ, ϟ) that was placed between Pi and Rho in the early Greek alphabet. Numerical value 90. Koppa was derived from the Phoenician Qoph (100) but assigned the value 90 in the Greek system. It fell out of everyday use in classical Greek but was preserved as a numeral symbol. The letter's hooked circle form carries echoes of the ouroboros. As the number 90, Koppa fills the gap between the eighties (Pi=80) and the hundreds (Rho=100) in isopsephy.",
+      "secondaryNames": [
+        {
+          "name": "Ϟ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ϟ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Qoppa",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "archaic",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ϟ",
+        "lowercase": "ϟ",
+        "numericalValue": 90,
+        "orderNumber": 17,
+        "letterType": "consonant",
+        "pronunciationIPA": "q",
+        "note": "Archaic letter retained as numeral 90. Derived from Phoenician Qoph; cognate with Hebrew Qoph (=100)."
+      }
+    },
+    {
+      "canonicalName": "letter.greek.sampi",
+      "entityType": "letter.greek",
+      "primaryDisplayName": "Sampi",
+      "description": "An archaic Greek letter (Ϡ, ϡ) that was placed at the end of the numeral alphabet after Omega. Numerical value 900. Sampi's exact original phonetic value is uncertain — it may have represented an affricative or sibilant sound (possibly similar to -ts- or -ss-). Its name 'Sampi' is medieval, meaning 'like Pi'. As the highest value in the standard isopsephic system (with Mu suffix numbers like 900 being very rare in surviving examples), Sampi completes the classical Greek numeral system and represents the approach toward the divine thousand.",
+      "secondaryNames": [
+        {
+          "name": "Ϡ",
+          "languageTag": "el-upper",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "ϡ",
+          "languageTag": "el-lower",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "greek",
+        "consonant",
+        "archaic",
+        "isopsephy"
+      ],
+      "extendedData": {
+        "uppercase": "Ϡ",
+        "lowercase": "ϡ",
+        "numericalValue": 900,
+        "orderNumber": 25,
+        "letterType": "consonant",
+        "pronunciationIPA": "ts",
+        "note": "Archaic letter retained as numeral 900. Placed after Omega. Completes the Greek numeral alphabet."
+      }
+    }
+  ]
+}

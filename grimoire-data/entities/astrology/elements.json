@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.element.fire",
+      "entityType": "astrology.element",
+      "primaryDisplayName": "Fire",
+      "description": "The element of Fire: the first and most active element, associated with spirit, will, creative energy, passion, courage, and transformation. In Hermetic tradition Fire corresponds to the Tetragrammaton's Yod and the World of Atziluth (Emanation). The three fire signs are Aries (cardinal), Leo (fixed), and Sagittarius (mutable). Fire is hot and dry. Its humour is choler (yellow bile), governing ambition, anger, and vital creative force. In alchemy fire is the transforming agent, the calcinating heat that purifies gross matter. The salamander is its traditional elemental creature. In the Qabalah Fire corresponds to the Pillar of Mercy (Chokmah-Chesed-Netzach on the right) and to the mother letter Shin. Tarot suit: Wands (Batons/Rods). Direction: South. Season: Summer.",
+      "secondaryNames": [
+        {
+          "name": "Ignis",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Πῦρ",
+          "languageTag": "el",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "element",
+        "astrology",
+        "fire"
+      ],
+      "extendedData": {
+        "signs": [
+          "aries",
+          "leo",
+          "sagittarius"
+        ],
+        "tarotSuit": "tarot.suit.rws.wands",
+        "qabalisticWorld": "qabalah.world.atziluth",
+        "tetragrammatonLetter": "letter.hebrew.yod",
+        "humour": "choler",
+        "direction": "south",
+        "season": "summer",
+        "quality": "hot and dry",
+        "elementalCreature": "salamander",
+        "motherLetter": "letter.hebrew.shin",
+        "polarity": "western.polarity.masculine",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "astrology.element.earth",
+      "entityType": "astrology.element",
+      "primaryDisplayName": "Earth",
+      "description": "The element of Earth: the densest and most material element, associated with the physical body, money, work, practical skills, patience, endurance, and the fertility of the natural world. In Hermetic tradition Earth corresponds to the Tetragrammaton's final Heh and the World of Assiah (Action/Making). The three earth signs are Taurus (fixed), Virgo (mutable), and Capricorn (cardinal). Earth is cold and dry. Its humour is melancholy (black bile), governing introspection, stability, and the weight of the material world. The gnome is its traditional elemental creature. Tarot suit: Pentacles (Coins/Disks). Direction: North. Season: Winter.",
+      "secondaryNames": [
+        {
+          "name": "Terra",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Γῆ",
+          "languageTag": "el",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "element",
+        "astrology",
+        "earth"
+      ],
+      "extendedData": {
+        "signs": [
+          "taurus",
+          "virgo",
+          "capricorn"
+        ],
+        "tarotSuit": "tarot.suit.rws.pentacles",
+        "qabalisticWorld": "qabalah.world.assiah",
+        "tetragrammatonLetter": "letter.hebrew.heh",
+        "humour": "melancholy",
+        "direction": "north",
+        "season": "winter",
+        "quality": "cold and dry",
+        "elementalCreature": "gnome",
+        "motherLetter": null,
+        "polarity": "western.polarity.feminine",
+        "yinYang": "taoism.principle.yin"
+      }
+    },
+    {
+      "canonicalName": "astrology.element.air",
+      "entityType": "astrology.element",
+      "primaryDisplayName": "Air",
+      "description": "The element of Air: the light, mobile, communicative element associated with intellect, language, thought, social connection, and the breath of life. In Hermetic tradition Air corresponds to the Tetragrammaton's Vau and the World of Yetzirah (Formation). The three air signs are Gemini (mutable), Libra (cardinal), and Aquarius (fixed). Air is hot and moist. Its humour is blood (sanguine), governing sociability, intellectual optimism, and the life-force as breath. The sylph is its traditional elemental creature. In the Qabalah Air is the mediating element between Fire above and Water below — the breath (Ruach) that blends and transmits. Mother letter Aleph. Tarot suit: Swords. Direction: East. Season: Spring.",
+      "secondaryNames": [
+        {
+          "name": "Aer",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ἀήρ",
+          "languageTag": "el",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "element",
+        "astrology",
+        "air"
+      ],
+      "extendedData": {
+        "signs": [
+          "gemini",
+          "libra",
+          "aquarius"
+        ],
+        "tarotSuit": "tarot.suit.rws.swords",
+        "qabalisticWorld": "qabalah.world.yetzirah",
+        "tetragrammatonLetter": "letter.hebrew.vau",
+        "humour": "sanguine",
+        "direction": "east",
+        "season": "spring",
+        "quality": "hot and moist",
+        "elementalCreature": "sylph",
+        "motherLetter": "letter.hebrew.aleph",
+        "polarity": "western.polarity.masculine",
+        "yinYang": "taoism.principle.yang"
+      }
+    },
+    {
+      "canonicalName": "astrology.element.water",
+      "entityType": "astrology.element",
+      "primaryDisplayName": "Water",
+      "description": "The element of Water: the flowing, receptive, emotional, and unconscious element, associated with feeling, intuition, the deep mind, cleansing, and the lunar principle. In Hermetic tradition Water corresponds to the Tetragrammaton's first Heh and the World of Briah (Creation). The three water signs are Cancer (cardinal), Scorpio (fixed), and Pisces (mutable). Water is cold and moist. Its humour is phlegm (phlegmatic), governing passivity, emotional sensitivity, and the dreaming mind. The undine is its traditional elemental creature. Mother letter Mem. Tarot suit: Cups (Chalices/Goblets). Direction: West. Season: Autumn.",
+      "secondaryNames": [
+        {
+          "name": "Aqua",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ὕδωρ",
+          "languageTag": "el",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "element",
+        "astrology",
+        "water"
+      ],
+      "extendedData": {
+        "signs": [
+          "cancer",
+          "scorpio",
+          "pisces"
+        ],
+        "tarotSuit": "tarot.suit.rws.cups",
+        "qabalisticWorld": "qabalah.world.briah",
+        "tetragrammatonLetter": "letter.hebrew.heh",
+        "humour": "phlegmatic",
+        "direction": "west",
+        "season": "autumn",
+        "quality": "cold and moist",
+        "elementalCreature": "undine",
+        "motherLetter": "letter.hebrew.mem",
+        "polarity": "western.polarity.feminine",
+        "yinYang": "taoism.principle.yin"
+      }
+    }
+  ]
+}

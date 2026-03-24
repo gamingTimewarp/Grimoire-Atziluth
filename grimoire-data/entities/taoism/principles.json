@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "taoism.principle.yang",
+      "entityType": "taoism.principle",
+      "primaryDisplayName": "Yang",
+      "description": "Yang (陽) is one of the two fundamental and complementary principles of Chinese cosmology, philosophy, and traditional medicine. Yang is the active, creative, light, warm, ascending, and expansive principle — the bright face of the mountain, the sun, the sky. It is not good or bad in itself; balance between yin and yang is the ideal. In the I Ching yang is represented by an unbroken line (⚊). The three yang trigrams are: Heaven (Qian ☰, pure yang), Thunder (Zhen ☳, eldest son), Water (Kan ☵, middle son), and Mountain (Gen ☶, youngest son). In Chinese medicine yang governs the exterior and the function of organs; yin governs the interior and substance. Yang corresponds broadly to: light, day, sun, summer, fire, heat, activity, the masculine, heaven, ascending, outward, and the initiating creative impulse. It is the complement and counterpart of Yin, never truly separate — the Taijitu (☯) symbol shows each containing a seed of the other.",
+      "secondaryNames": [
+        {
+          "name": "陽",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "⚊",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Yō",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "양",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Yang",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "taoism",
+        "polarity",
+        "yang",
+        "cosmology"
+      ],
+      "extendedData": {
+        "chineseCharacter": "陽",
+        "iChingLine": "⚊",
+        "taijituSymbol": "☯",
+        "qualities": [
+          "active",
+          "light",
+          "warm",
+          "ascending",
+          "expansive",
+          "creative",
+          "masculine",
+          "hard",
+          "dry"
+        ],
+        "naturalCorrespondences": [
+          "sun",
+          "day",
+          "summer",
+          "fire",
+          "heaven",
+          "south"
+        ],
+        "westernElement": "astrology.element.fire",
+        "complement": "taoism.principle.yin",
+        "westernPolarity": "western.polarity.masculine",
+        "westernElements": [
+          "astrology.element.fire",
+          "astrology.element.air"
+        ],
+        "trigrams": [
+          "iching.trigram.heaven",
+          "iching.trigram.thunder",
+          "iching.trigram.water",
+          "iching.trigram.mountain"
+        ],
+        "planets": [
+          "astrology.planet.sol",
+          "astrology.planet.mars",
+          "astrology.planet.jupiter"
+        ]
+      }
+    },
+    {
+      "canonicalName": "taoism.principle.yin",
+      "entityType": "taoism.principle",
+      "primaryDisplayName": "Yin",
+      "description": "Yin (陰) is one of the two fundamental and complementary principles of Chinese cosmology, philosophy, and traditional medicine. Yin is the receptive, dark, cool, descending, contracting, and sustaining principle — the shaded face of the mountain, the moon, the earth. It is not inferior to Yang; balance between the two is the ideal. In the I Ching yin is represented by a broken line (⚋). The four yin trigrams are: Earth (Kun ☷, pure yin), Wind (Xun ☴, eldest daughter), Fire (Li ☲, middle daughter), and Lake (Dui ☱, youngest daughter). In Chinese medicine yin governs the interior and substance of organs; yang governs function and exterior. Yin corresponds broadly to: darkness, night, moon, winter, water, cold, rest, the feminine, earth, descending, inward, and the receiving sustaining ground. It is the complement and counterpart of Yang — the Taijitu (☯) symbol shows each containing a seed of the other.",
+      "secondaryNames": [
+        {
+          "name": "陰",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "⚋",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "In",
+          "languageTag": "ja-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "음",
+          "languageTag": "ko",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Eum",
+          "languageTag": "ko-translit",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "taoism",
+        "polarity",
+        "yin",
+        "cosmology"
+      ],
+      "extendedData": {
+        "chineseCharacter": "陰",
+        "iChingLine": "⚋",
+        "taijituSymbol": "☯",
+        "qualities": [
+          "receptive",
+          "dark",
+          "cool",
+          "descending",
+          "contracting",
+          "sustaining",
+          "feminine",
+          "soft",
+          "moist"
+        ],
+        "naturalCorrespondences": [
+          "moon",
+          "night",
+          "winter",
+          "water",
+          "earth",
+          "north"
+        ],
+        "westernElement": "astrology.element.water",
+        "complement": "taoism.principle.yang",
+        "westernPolarity": "western.polarity.feminine",
+        "westernElements": [
+          "astrology.element.water",
+          "astrology.element.earth"
+        ],
+        "trigrams": [
+          "iching.trigram.earth",
+          "iching.trigram.wind",
+          "iching.trigram.fire",
+          "iching.trigram.lake"
+        ],
+        "planets": [
+          "astrology.planet.luna",
+          "astrology.planet.venus",
+          "astrology.planet.mercury",
+          "astrology.planet.saturn"
+        ]
+      }
+    }
+  ]
+}

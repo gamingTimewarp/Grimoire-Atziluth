@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "numerology.digit.1", "target": "astrology.planet.sol",     "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 1 = Sun" } },
+    { "source": "numerology.digit.2", "target": "astrology.planet.luna",    "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 2 = Moon" } },
+    { "source": "numerology.digit.3", "target": "astrology.planet.jupiter", "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 3 = Jupiter" } },
+    { "source": "numerology.digit.4", "target": "astrology.planet.uranus",  "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 4 = Uranus (some systems use Rahu/North Node)" } },
+    { "source": "numerology.digit.5", "target": "astrology.planet.mercury", "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 5 = Mercury" } },
+    { "source": "numerology.digit.6", "target": "astrology.planet.venus",   "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 6 = Venus" } },
+    { "source": "numerology.digit.7", "target": "astrology.planet.neptune", "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 7 = Neptune (some systems use Ketu/South Node)" } },
+    { "source": "numerology.digit.8", "target": "astrology.planet.saturn",  "label": "chaldean-digit-planet", "traditionScope": ["chaldean-numerology"], "extendedData": { "note": "Chaldean: 8 = Saturn" } },
+
+    { "source": "numerology.digit.1", "target": "letter.latin.a",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["A", "I", "Q", "Y"], "note": "J is a medieval variant of I with no separate classical Latin entity" } },
+    { "source": "numerology.digit.1", "target": "letter.latin.i",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.1", "target": "letter.latin.q",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.1", "target": "letter.latin.y",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.2", "target": "letter.latin.b",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["B", "K", "R"] } },
+    { "source": "numerology.digit.2", "target": "letter.latin.k",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.2", "target": "letter.latin.r",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.3", "target": "letter.latin.c",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["C", "G", "L", "S"] } },
+    { "source": "numerology.digit.3", "target": "letter.latin.g",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.3", "target": "letter.latin.l",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.3", "target": "letter.latin.s",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.4", "target": "letter.latin.d",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["D", "M", "T"] } },
+    { "source": "numerology.digit.4", "target": "letter.latin.m",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.4", "target": "letter.latin.t",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.5", "target": "letter.latin.e",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["E", "H", "N", "X"] } },
+    { "source": "numerology.digit.5", "target": "letter.latin.h",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.5", "target": "letter.latin.n",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.5", "target": "letter.latin.x",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.6", "target": "letter.latin.u",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["U", "V"], "note": "W is a medieval addition not present in the classical 24-letter Latin alphabet; it carries the value of V (6) in Chaldean practice" } },
+    { "source": "numerology.digit.6", "target": "letter.latin.v",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.7", "target": "letter.latin.o",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["O", "Z"] } },
+    { "source": "numerology.digit.7", "target": "letter.latin.z",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.8", "target": "letter.latin.f",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": { "letters": ["F", "P"], "note": "9 is not assigned to letters in the Chaldean system — it is sacred and reserved" } },
+    { "source": "numerology.digit.8", "target": "letter.latin.p",  "label": "chaldean-digit-letter", "traditionScope": ["chaldean-numerology"], "extendedData": {} }
+  ]
+}

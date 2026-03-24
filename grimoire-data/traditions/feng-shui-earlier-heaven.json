@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "traditions": [
+    {
+      "canonicalName": "tradition.feng-shui-earlier-heaven",
+      "displayName": "Feng Shui — Earlier Heaven Ba Gua",
+      "shortDescription": "The Fu Xi / Pre-Heaven arrangement: Qian→S, Dui→SE, Li→E, Zhen→NE, Xun→SW, Kan→W, Gen→NW, Kun→N. Opposite pairs face each other: Qian↔Kun (S↔N), Li↔Kan (E↔W), Dui↔Zhen (SE↔NE), Xun↔Gen (SW↔NW). Used in Ba Zhai and some talismanic traditions.",
+      "attributionFields": [
+        {
+          "linkLabel": "earlier-heaven-direction",
+          "targetEntityType": "compass.direction",
+          "displayName": "Earlier Heaven Direction"
+        }
+      ]
+    }
+  ]
+}

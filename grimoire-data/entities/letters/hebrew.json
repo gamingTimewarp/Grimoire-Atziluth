@@ -1,0 +1,996 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "letter.hebrew.aleph",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Aleph",
+      "description": "The first Hebrew letter (א), a mother letter attributed to the element of Air. Numerical value 1. Aleph means 'ox' and represents the primal breath, the divine creative wind (Ruach Elohim) moving over the waters of creation. In the Golden Dawn and Thoth systems Aleph is attributed to The Fool (Atu 0) — the pure spirit leaping into manifestation before form has set. Aleph is the silent letter, the breath before the word, the Ain Soph made manifest. Its path on the Tree of Life connects Kether to Chokmah (Path 11), the axis of the first lightning-bolt of creation.",
+      "secondaryNames": [
+        {
+          "name": "א",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Alef",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Alef",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "mother-letter",
+        "air"
+      ],
+      "extendedData": {
+        "letterForm": "א",
+        "finalForm": null,
+        "numericalValue": 1,
+        "letterMeaning": "ox",
+        "letterGroup": "mother",
+        "element": "astrology.element.air",
+        "planet": null,
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-fool",
+        "thothTarotCard": "tarot.major.thoth.the-fool",
+        "qabalisticPath": "11",
+        "pathFrom": "qabalah.sephira.kether",
+        "pathTo": "qabalah.sephira.chokmah",
+        "orderNumber": 1
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.beth",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Beth",
+      "description": "The second Hebrew letter (ב), a double letter attributed to Mercury. Numerical value 2. Beth means 'house' or 'tent' — the first dwelling, the container of consciousness. As the first letter of the Torah ('Bereshit'), Beth represents the beginning of manifest creation, the first word of the divine text. It is attributed to The Magician/The Magus (Atu I) in both the Golden Dawn and Thoth systems: the skilled practitioner who transmits divine will into manifest form. Its path connects Kether to Binah (Path 12), the channel through which the Father's will reaches the Mother's receptive understanding.",
+      "secondaryNames": [
+        {
+          "name": "ב",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Bet",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "mercury"
+      ],
+      "extendedData": {
+        "letterForm": "ב",
+        "finalForm": null,
+        "numericalValue": 2,
+        "letterMeaning": "house",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.mercury",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-magician",
+        "thothTarotCard": "tarot.major.thoth.the-magus",
+        "qabalisticPath": "12",
+        "pathFrom": "qabalah.sephira.kether",
+        "pathTo": "qabalah.sephira.binah",
+        "orderNumber": 2
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.gimel",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Gimel",
+      "description": "The third Hebrew letter (ג), a double letter attributed to the Moon. Numerical value 3. Gimel means 'camel' — the beast of burden that crosses the great desert, linking civilisation to the wilderness. On the Tree of Life its path (Path 13) crosses the Abyss, connecting Kether directly to Tiphareth — the longest path on the Tree, spanning from the summit of existence to its heart. The camel is the symbol of this crossing: it carries its own water and sustenance through the wasteland of Da'ath. Attributed to The High Priestess/The Priestess (Atu II): the veiled lunar guardian who mediates between the highest and the heart.",
+      "secondaryNames": [
+        {
+          "name": "ג",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Giml",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "moon"
+      ],
+      "extendedData": {
+        "letterForm": "ג",
+        "finalForm": null,
+        "numericalValue": 3,
+        "letterMeaning": "camel",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.luna",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-high-priestess",
+        "thothTarotCard": "tarot.major.thoth.the-priestess",
+        "qabalisticPath": "13",
+        "pathFrom": "qabalah.sephira.kether",
+        "pathTo": "qabalah.sephira.tiphareth",
+        "orderNumber": 3
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.daleth",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Daleth",
+      "description": "The fourth Hebrew letter (ד), a double letter attributed to Venus. Numerical value 4. Daleth means 'door' — the threshold of manifestation, the gate through which spirit enters the world. Its path (Path 14) connects Chokmah (the Father-principle, pure yang) to Binah (the Mother-principle, pure yin), forming the creative dyad above the Abyss. Attributed to The Empress (Atu III): the generative feminine principle, the door of life through which all beings enter. Venus as the planet of love and beauty governs this letter's gentle but inexorable pull toward manifestation.",
+      "secondaryNames": [
+        {
+          "name": "ד",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dalet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dalet",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "venus"
+      ],
+      "extendedData": {
+        "letterForm": "ד",
+        "finalForm": null,
+        "numericalValue": 4,
+        "letterMeaning": "door",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.venus",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-empress",
+        "thothTarotCard": "tarot.major.thoth.the-empress",
+        "qabalisticPath": "14",
+        "pathFrom": "qabalah.sephira.chokmah",
+        "pathTo": "qabalah.sephira.binah",
+        "orderNumber": 4
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.heh",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Heh",
+      "description": "The fifth Hebrew letter (ה), a simple letter attributed to Aries in the Golden Dawn system — where it is assigned to The Emperor (Atu IV). In the Thoth/Thelemic system, Crowley declared 'Tzaddi is not the Star' (Liber AL I:57), reassigning Heh to The Star (Atu XVII) and Tzaddi to The Emperor. Numerical value 5. Heh means 'window' — the aperture through which the breath of divine consciousness looks out into creation. As the second and fifth letters of the Tetragrammaton (יהוה), Heh appears twice: once as the first Heh (Binah/Water/Ama) and once as the final Heh (Malkuth/Earth/the manifest world). Path 15 (GD: Emperor) connects Chokmah to Tiphareth.",
+      "secondaryNames": [
+        {
+          "name": "ה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "He",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "He",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "aries"
+      ],
+      "extendedData": {
+        "letterForm": "ה",
+        "finalForm": null,
+        "numericalValue": 5,
+        "letterMeaning": "window",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "gdTarotCard": "tarot.major.rws.the-emperor",
+        "thothTarotCard": "tarot.major.thoth.the-star",
+        "note": "In GD tradition: Heh=Emperor (path 15). In Thoth/Thelemic: Heh=The Star, Tzaddi=The Emperor.",
+        "qabalisticPath": "15",
+        "pathFrom": "qabalah.sephira.chokmah",
+        "pathTo": "qabalah.sephira.tiphareth",
+        "orderNumber": 5
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.vau",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Vau",
+      "description": "The sixth Hebrew letter (ו), a simple letter attributed to Taurus. Numerical value 6. Vau means 'nail' or 'hook' — that which joins and fastens, the copulative conjunction 'and' in Hebrew grammar, the connector of heaven and earth. As the third letter of the Tetragrammaton (יהוה), Vau corresponds to Tiphareth and the Son-principle — the divine mediator between the supernals and the manifest world. Attributed to The Hierophant (Atu V): the earthly teacher who joins students to the divine mysteries through the sacrament of teaching. Path 16 connects Chokmah to Chesed.",
+      "secondaryNames": [
+        {
+          "name": "ו",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vav",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Waw",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Vav",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "taurus"
+      ],
+      "extendedData": {
+        "letterForm": "ו",
+        "finalForm": null,
+        "numericalValue": 6,
+        "letterMeaning": "nail",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "gdTarotCard": "tarot.major.rws.the-hierophant",
+        "thothTarotCard": "tarot.major.thoth.the-hierophant",
+        "qabalisticPath": "16",
+        "pathFrom": "qabalah.sephira.chokmah",
+        "pathTo": "qabalah.sephira.chesed",
+        "orderNumber": 6
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.zayin",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Zayin",
+      "description": "The seventh Hebrew letter (ז), a simple letter attributed to Gemini. Numerical value 7. Zayin means 'sword' or 'weapon' — the discriminating intelligence that cuts through illusion, the sword of the intellect that divides true from false. Gemini as the sign of the Twins brings out its dyadic nature: the sword that both separates and unites, the intellect that perceives duality. Attributed to The Lovers (Atu VI): the choice between two paths, the alchemical Royal Marriage that reconciles opposites. Path 17 connects Binah to Tiphareth.",
+      "secondaryNames": [
+        {
+          "name": "ז",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zain",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "gemini"
+      ],
+      "extendedData": {
+        "letterForm": "ז",
+        "finalForm": null,
+        "numericalValue": 7,
+        "letterMeaning": "sword",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "gdTarotCard": "tarot.major.rws.the-lovers",
+        "thothTarotCard": "tarot.major.thoth.the-lovers",
+        "qabalisticPath": "17",
+        "pathFrom": "qabalah.sephira.binah",
+        "pathTo": "qabalah.sephira.tiphareth",
+        "orderNumber": 7
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.cheth",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Cheth",
+      "description": "The eighth Hebrew letter (ח), a simple letter attributed to Cancer. Numerical value 8. Cheth means 'fence' or 'field' — the enclosure that protects, the walled garden, the chariot's armour. Cancer as the sign of the divine vessel, the shell and the water it carries, emphasises Cheth's protective and containing qualities. Attributed to The Chariot (Atu VII): the armoured vehicle of consciousness that carries the Holy Grail through the waters of manifestation. Path 18 connects Binah to Geburah, the channel from the Supernal Mother to divine power.",
+      "secondaryNames": [
+        {
+          "name": "ח",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chet",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "cancer"
+      ],
+      "extendedData": {
+        "letterForm": "ח",
+        "finalForm": null,
+        "numericalValue": 8,
+        "letterMeaning": "fence",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "gdTarotCard": "tarot.major.rws.the-chariot",
+        "thothTarotCard": "tarot.major.thoth.the-chariot",
+        "qabalisticPath": "18",
+        "pathFrom": "qabalah.sephira.binah",
+        "pathTo": "qabalah.sephira.geburah",
+        "orderNumber": 8
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.teth",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Teth",
+      "description": "The ninth Hebrew letter (ט), a simple letter attributed to Leo. Numerical value 9. Teth means 'serpent' — the coiled creative life force, the kundalini of the spine, the serpent of wisdom and transformation. Leo as the sign of the lion and solar fire connects to the vital creative energy that Teth embodies. Attributed to Strength/Lust (Atu VIII in RWS; Atu XI in Thoth): the taming or ecstatic union with the lion of desire. The serpent and the lion are both symbols of the untamed vital force brought into service by spiritual will. Path 19 connects Chesed to Geburah, mercy to severity.",
+      "secondaryNames": [
+        {
+          "name": "ט",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tet",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "leo"
+      ],
+      "extendedData": {
+        "letterForm": "ט",
+        "finalForm": null,
+        "numericalValue": 9,
+        "letterMeaning": "serpent",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "gdTarotCard": "tarot.major.rws.strength",
+        "thothTarotCard": "tarot.major.thoth.lust",
+        "qabalisticPath": "19",
+        "pathFrom": "qabalah.sephira.chesed",
+        "pathTo": "qabalah.sephira.geburah",
+        "orderNumber": 9
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.yod",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Yod",
+      "description": "The tenth Hebrew letter (י), a simple letter attributed to Virgo. Numerical value 10. Yod is the smallest Hebrew letter — a single, seed-like stroke from which all other letters are constructed. Its name means 'hand' or 'fist': the divine hand that plants the seed, the initial creative act. As the first letter of the Tetragrammaton (יהוה), Yod represents the Father-principle, the pure masculine creative spark. Attributed to The Hermit (Atu IX): the old man carrying his lantern (the divine Yod, the creative spark) into the darkness of matter. Path 20 connects Chesed to Tiphareth.",
+      "secondaryNames": [
+        {
+          "name": "י",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yud",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Iod",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "virgo"
+      ],
+      "extendedData": {
+        "letterForm": "י",
+        "finalForm": null,
+        "numericalValue": 10,
+        "letterMeaning": "hand",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "gdTarotCard": "tarot.major.rws.the-hermit",
+        "thothTarotCard": "tarot.major.thoth.the-hermit",
+        "qabalisticPath": "20",
+        "pathFrom": "qabalah.sephira.chesed",
+        "pathTo": "qabalah.sephira.tiphareth",
+        "orderNumber": 10
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.kaph",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Kaph",
+      "description": "The eleventh Hebrew letter (כ/ך), a double letter attributed to Jupiter. Numerical value 20 (final form: 500). Kaph means 'palm of the hand' — the cupped hand that grasps and receives, the vessel of fortune. Jupiter as the planet of expansion, abundance, and cosmic law governs this letter's associations with cycles of growth and contraction. Attributed to The Wheel of Fortune/Fortune (Atu X): the cosmic cycle, the expansion and contraction of the wheel of existence. Path 21 connects Chesed to Netzach, the channel of Jupiterian abundance flowing into the sphere of Venus.",
+      "secondaryNames": [
+        {
+          "name": "כ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Kaf",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kaf",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "jupiter"
+      ],
+      "extendedData": {
+        "letterForm": "כ",
+        "finalForm": "ך",
+        "numericalValue": 20,
+        "finalFormValue": 500,
+        "letterMeaning": "palm",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.jupiter",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.wheel-of-fortune",
+        "thothTarotCard": "tarot.major.thoth.fortune",
+        "qabalisticPath": "21",
+        "pathFrom": "qabalah.sephira.chesed",
+        "pathTo": "qabalah.sephira.netzach",
+        "orderNumber": 11
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.lamed",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Lamed",
+      "description": "The twelfth Hebrew letter (ל), a simple letter attributed to Libra. Numerical value 30. Lamed is the tallest Hebrew letter, its name meaning 'ox-goad' — the tool that guides the ox, the principle of just direction. It is also understood as representing learning (the root 'l-m-d' means 'to learn' or 'to teach'): the principle of cosmic instruction and adjustment. Attributed to Justice/Adjustment (Atu XI in RWS; Atu VIII in Thoth). Lamed occupies the pivotal centre of the Hebrew alphabet (12th of 22). Path 22 connects Geburah to Tiphareth — severity balanced by the harmonising centre.",
+      "secondaryNames": [
+        {
+          "name": "ל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "libra"
+      ],
+      "extendedData": {
+        "letterForm": "ל",
+        "finalForm": null,
+        "numericalValue": 30,
+        "letterMeaning": "ox-goad",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "gdTarotCard": "tarot.major.rws.justice",
+        "thothTarotCard": "tarot.major.thoth.adjustment",
+        "qabalisticPath": "22",
+        "pathFrom": "qabalah.sephira.geburah",
+        "pathTo": "qabalah.sephira.tiphareth",
+        "orderNumber": 12
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.mem",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Mem",
+      "description": "The thirteenth Hebrew letter (מ/ם), a mother letter attributed to the element of Water. Numerical value 40 (final form: 600). Mem means 'water' — the primal waters of creation, the amniotic fluid, the unconscious depths from which all life emerges. As the great mother letter of water, Mem presides over dissolution, purification, and the womb of transformation. Attributed to The Hanged Man (Atu XII): the voluntary suspension in the waters of the unconscious, the surrender to dissolution that enables rebirth. Path 23 connects Geburah to Hod — severity purified through the waters of the mind.",
+      "secondaryNames": [
+        {
+          "name": "מ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "mother-letter",
+        "water"
+      ],
+      "extendedData": {
+        "letterForm": "מ",
+        "finalForm": "ם",
+        "numericalValue": 40,
+        "finalFormValue": 600,
+        "letterMeaning": "water",
+        "letterGroup": "mother",
+        "element": "astrology.element.water",
+        "planet": null,
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-hanged-man",
+        "thothTarotCard": "tarot.major.thoth.the-hanged-man",
+        "qabalisticPath": "23",
+        "pathFrom": "qabalah.sephira.geburah",
+        "pathTo": "qabalah.sephira.hod",
+        "orderNumber": 13
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.nun",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Nun",
+      "description": "The fourteenth Hebrew letter (נ/ן), a simple letter attributed to Scorpio. Numerical value 50 (final form: 700). Nun means 'fish' — the living creature in the waters of the deep, the life-force that swims in the unconscious. Fish were the hieroglyphic sign of life in Egypt, the Ichthys of early Christianity. Scorpio as the sign of death and regeneration, ruled by Mars and Pluto, governs the transformative power of this letter. Attributed to Death (Atu XIII): the transformative reaper, not ending but perpetual renewal. Path 24 connects Tiphareth to Netzach — the solar centre transformed through the Venusian sphere of desire and emotion.",
+      "secondaryNames": [
+        {
+          "name": "נ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "scorpio"
+      ],
+      "extendedData": {
+        "letterForm": "נ",
+        "finalForm": "ן",
+        "numericalValue": 50,
+        "finalFormValue": 700,
+        "letterMeaning": "fish",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "gdTarotCard": "tarot.major.rws.death",
+        "thothTarotCard": "tarot.major.thoth.death",
+        "qabalisticPath": "24",
+        "pathFrom": "qabalah.sephira.tiphareth",
+        "pathTo": "qabalah.sephira.netzach",
+        "orderNumber": 14
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.samekh",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Samekh",
+      "description": "The fifteenth Hebrew letter (ס), a simple letter attributed to Sagittarius. Numerical value 60. Samekh means 'prop' or 'support' — the pillar that upholds, the tent-peg, the support structure of the spirit. Its round, enclosing shape suggests the Ouroboros serpent and the cyclical nature of spiritual aspiration. Sagittarius as the archer aims toward the divine and the centaur bridges animal and human. Attributed to Temperance/Art (Atu XIV): the alchemical process of tempering and transmutation, the blending of opposites into gold. Path 25 connects Tiphareth to Yesod — the solar heart aligned with the lunar foundation.",
+      "secondaryNames": [
+        {
+          "name": "ס",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Samech",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "letterForm": "ס",
+        "finalForm": null,
+        "numericalValue": 60,
+        "letterMeaning": "prop",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "gdTarotCard": "tarot.major.rws.temperance",
+        "thothTarotCard": "tarot.major.thoth.art",
+        "qabalisticPath": "25",
+        "pathFrom": "qabalah.sephira.tiphareth",
+        "pathTo": "qabalah.sephira.yesod",
+        "orderNumber": 15
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.ayin",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Ayin",
+      "description": "The sixteenth Hebrew letter (ע), a simple letter attributed to Capricorn. Numerical value 70. Ayin means 'eye' — the organ of vision, the perceiver of the material world. In Hebrew mysticism Ayin also connects to Ayin (Nothingness, the void), contrasting the eye of perception with the eye of the Absolute. Capricorn as the goat/sea-goat embodies material attainment and the descent into matter for the purpose of ascent. Attributed to The Devil (Atu XV): in the GD system, the material creative force; in Thoth, Pan, the All-God of nature. Path 26 connects Tiphareth to Hod — solar consciousness flowing into the mercurial intellect.",
+      "secondaryNames": [
+        {
+          "name": "ע",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ayn",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "capricorn"
+      ],
+      "extendedData": {
+        "letterForm": "ע",
+        "finalForm": null,
+        "numericalValue": 70,
+        "letterMeaning": "eye",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "gdTarotCard": "tarot.major.rws.the-devil",
+        "thothTarotCard": "tarot.major.thoth.the-devil",
+        "qabalisticPath": "26",
+        "pathFrom": "qabalah.sephira.tiphareth",
+        "pathTo": "qabalah.sephira.hod",
+        "orderNumber": 16
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.peh",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Peh",
+      "description": "The seventeenth Hebrew letter (פ/ף), a double letter attributed to Mars. Numerical value 80 (final form: 800). Peh means 'mouth' — the organ of speech, the creative and destructive power of the word. The mouth speaks creation and curses; Mars as the god of war and action drives the letter's violent associations. Attributed to The Tower (Atu XVI): the lightning-bolt utterance of divine destruction, the Tower of Babel struck down by the mouth of God. The letter Peh contains within it the letter Beth (the house), hinting at the house being destroyed. Path 27 connects Netzach to Hod — passion and intellect bridged by the power of the spoken word.",
+      "secondaryNames": [
+        {
+          "name": "פ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pe",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pe",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "mars"
+      ],
+      "extendedData": {
+        "letterForm": "פ",
+        "finalForm": "ף",
+        "numericalValue": 80,
+        "finalFormValue": 800,
+        "letterMeaning": "mouth",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.mars",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-tower",
+        "thothTarotCard": "tarot.major.thoth.the-tower",
+        "qabalisticPath": "27",
+        "pathFrom": "qabalah.sephira.netzach",
+        "pathTo": "qabalah.sephira.hod",
+        "orderNumber": 17
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.tzaddi",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Tzaddi",
+      "description": "The eighteenth Hebrew letter (צ/ץ), a simple letter whose attribution is the most debated in the Western esoteric tradition. Numerical value 90 (final form: 900). Tzaddi means 'fish-hook' — that which catches the fish from the waters, the tool of the spiritual fisher. In the Golden Dawn system, Tzaddi is attributed to The Star (Atu XVII). Crowley reversed this: 'Tzaddi is not the Star' (Liber AL I:57) — reassigning Tzaddi to The Emperor (Atu IV) and Heh to The Star. Thus in Thoth: Tzaddi=Emperor (path 28), while in GD: Tzaddi=The Star (path 28 also, though the card assigned differs).",
+      "secondaryNames": [
+        {
+          "name": "צ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tsadi",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sadhe",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Tsadi",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "aquarius"
+      ],
+      "extendedData": {
+        "letterForm": "צ",
+        "finalForm": "ץ",
+        "numericalValue": 90,
+        "finalFormValue": 900,
+        "letterMeaning": "fish-hook",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "gdTarotCard": "tarot.major.rws.the-star",
+        "thothTarotCard": "tarot.major.thoth.the-emperor",
+        "note": "In GD: Tzaddi=The Star. In Thoth: Tzaddi=The Emperor (Crowley's reversal, Liber AL I:57).",
+        "qabalisticPath": "28",
+        "pathFrom": "qabalah.sephira.netzach",
+        "pathTo": "qabalah.sephira.yesod",
+        "orderNumber": 18
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.qoph",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Qoph",
+      "description": "The nineteenth Hebrew letter (ק), a simple letter attributed to Pisces. Numerical value 100. Qoph means 'back of the head' — the occiput, the most primitive and ancient part of the human brain, the reptilian consciousness that predates rational thought. Pisces as the last sign of the zodiac, the dissolution before rebirth, governs the deep unconscious waters that Qoph traverses. Attributed to The Moon (Atu XVIII): the atavistic dreamworld, the threshold of the unconscious, the ancient pre-rational mind awakened by the lunar tide. Path 29 connects Netzach to Malkuth — the emotional-intuitive sphere connected to material manifestation.",
+      "secondaryNames": [
+        {
+          "name": "ק",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Koph",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "simple-letter",
+        "pisces"
+      ],
+      "extendedData": {
+        "letterForm": "ק",
+        "finalForm": null,
+        "numericalValue": 100,
+        "letterMeaning": "back of the head",
+        "letterGroup": "simple",
+        "element": null,
+        "planet": null,
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "gdTarotCard": "tarot.major.rws.the-moon",
+        "thothTarotCard": "tarot.major.thoth.the-moon",
+        "qabalisticPath": "29",
+        "pathFrom": "qabalah.sephira.netzach",
+        "pathTo": "qabalah.sephira.malkuth",
+        "orderNumber": 19
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.resh",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Resh",
+      "description": "The twentieth Hebrew letter (ר), a double letter attributed to the Sun. Numerical value 200. Resh means 'head' — the summit of the body, the seat of consciousness, the solar centre of the microcosm. The Sun as the light-giver and centre of the solar system governs Resh's illuminating quality. Attributed to The Sun (Atu XIX): solar consciousness, clarity, and the divine twins playing in the light of day. Path 30 connects Hod to Yesod — the mercurial intellect flowing into the lunar foundation, illuminated by solar consciousness.",
+      "secondaryNames": [
+        {
+          "name": "ר",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "sun"
+      ],
+      "extendedData": {
+        "letterForm": "ר",
+        "finalForm": null,
+        "numericalValue": 200,
+        "letterMeaning": "head",
+        "letterGroup": "double",
+        "element": null,
+        "planet": "astrology.planet.sol",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-sun",
+        "thothTarotCard": "tarot.major.thoth.the-sun",
+        "qabalisticPath": "30",
+        "pathFrom": "qabalah.sephira.hod",
+        "pathTo": "qabalah.sephira.yesod",
+        "orderNumber": 20
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.shin",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Shin",
+      "description": "The twenty-first Hebrew letter (ש), a mother letter attributed to the element of Fire. Numerical value 300. Shin means 'tooth' — the consuming power of fire, the devouring flame that transforms. As a mother letter of fire, Shin represents divine fire, the celestial flame (as opposed to Aleph's air and Mem's water), the Ruach HaKodesh (Holy Spirit). Attributed to Judgement/The Aeon (Atu XX): the trumpet of divine fire summoning the dead to resurrection, or in Thoth, the proclamation of the new Aeon of Horus. Path 31 connects Hod to Malkuth — the mercurial rational mind connected to the material world by the divine fire.",
+      "secondaryNames": [
+        {
+          "name": "ש",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sin",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "mother-letter",
+        "fire"
+      ],
+      "extendedData": {
+        "letterForm": "ש",
+        "finalForm": null,
+        "numericalValue": 300,
+        "letterMeaning": "tooth",
+        "letterGroup": "mother",
+        "element": "astrology.element.fire",
+        "planet": null,
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.judgement",
+        "thothTarotCard": "tarot.major.thoth.the-aeon",
+        "qabalisticPath": "31",
+        "pathFrom": "qabalah.sephira.hod",
+        "pathTo": "qabalah.sephira.malkuth",
+        "orderNumber": 21
+      }
+    },
+    {
+      "canonicalName": "letter.hebrew.tau",
+      "entityType": "letter.hebrew",
+      "primaryDisplayName": "Tau",
+      "description": "The twenty-second and final Hebrew letter (ת), a double letter attributed to Saturn (and Earth). Numerical value 400. Tau means 'cross' or 'mark' — the sign of completion, the X or T that marks the end and the beginning, the cross of the four elements. As the last letter of the Hebrew alphabet, Tau is the completion of all things, the crystallisation of spirit into matter. Saturn as the Lord of Time, Limitation, and Completion governs Tau's finality. Attributed to The World/The Universe (Atu XXI): the great dance of completion, the final manifestation of the divine in material form. Path 32 connects Yesod to Malkuth — the lunar foundation crystallised into the earth.",
+      "secondaryNames": [
+        {
+          "name": "ת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tav",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tav",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "letter",
+        "hebrew",
+        "double-letter",
+        "saturn"
+      ],
+      "extendedData": {
+        "letterForm": "ת",
+        "finalForm": null,
+        "numericalValue": 400,
+        "letterMeaning": "cross",
+        "letterGroup": "double",
+        "element": "astrology.element.earth",
+        "planet": "astrology.planet.saturn",
+        "zodiacSign": null,
+        "gdTarotCard": "tarot.major.rws.the-world",
+        "thothTarotCard": "tarot.major.thoth.the-universe",
+        "qabalisticPath": "32",
+        "pathFrom": "qabalah.sephira.yesod",
+        "pathTo": "qabalah.sephira.malkuth",
+        "orderNumber": 22
+      }
+    }
+  ]
+}

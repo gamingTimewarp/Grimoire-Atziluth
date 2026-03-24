@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "yoga.prana.prana-vayu",
+      "entityType": "yoga.prana",
+      "primaryDisplayName": "Prana Vayu",
+      "description": "Prana Vayu (प्राण वायु) is the inward-moving vital air associated with the chest, heart, and lungs — the primary life-force governing inhalation and the intake of sensory experience. It is the fundamental animating current, the master Vayu from which the other four derive their power. Located in the region from the throat to the navel, it moves upward and inward, drawing in prana from food, breath, and environment. Imbalance manifests as respiratory disorders, heart problems, and anxiety. It corresponds to the air element and the Anahata (heart) chakra.",
+      "secondaryNames": [
+        {
+          "name": "Prana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Prana Vata",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Inward Breath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "yoga",
+        "prana",
+        "vayu",
+        "subtle-body",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "direction": "inward/upward",
+        "location": "chest, heart, lungs",
+        "element": "astrology.element.air",
+        "function": "inhalation, reception, assimilation"
+      }
+    },
+    {
+      "canonicalName": "yoga.prana.apana-vayu",
+      "entityType": "yoga.prana",
+      "primaryDisplayName": "Apana Vayu",
+      "description": "Apana Vayu (अपान वायु) is the downward and outward-moving vital air located in the pelvic region and lower abdomen, governing all processes of elimination — exhalation, defecation, urination, menstruation, and childbirth. It is the counterpart to Prana Vayu and represents the principle of releasing what is no longer needed. In yogic and tantric practice, drawing Apana upward to unite with Prana (via Mula Bandha and Kumbhaka pranayama) is a central technique for awakening Kundalini. It corresponds to the earth element and the Muladhara chakra.",
+      "secondaryNames": [
+        {
+          "name": "Apana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Apana Vata",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Downward Breath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "yoga",
+        "prana",
+        "vayu",
+        "subtle-body",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "direction": "downward/outward",
+        "location": "pelvis, lower abdomen, colon",
+        "element": "astrology.element.earth",
+        "function": "elimination, reproduction, expulsion"
+      }
+    },
+    {
+      "canonicalName": "yoga.prana.samana-vayu",
+      "entityType": "yoga.prana",
+      "primaryDisplayName": "Samana Vayu",
+      "description": "Samana Vayu (समान वायु) is the equalising vital air located in the navel and solar plexus, governing digestion, assimilation, and integration of all nourishment — physical and energetic. The name means 'equal' or 'balancing' (sama), reflecting its role as the mediating force between upward Prana and downward Apana. It is associated with the digestive fire (Agni) and the Manipura chakra and fire element. In meditation, Samana supports concentration by gathering diffuse energies to the centre.",
+      "secondaryNames": [
+        {
+          "name": "Samana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Samana Vata",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Equalising Breath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "yoga",
+        "prana",
+        "vayu",
+        "subtle-body",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "direction": "centripetal/equalising",
+        "location": "navel, solar plexus, small intestine",
+        "element": "astrology.element.fire",
+        "function": "digestion, assimilation, integration"
+      }
+    },
+    {
+      "canonicalName": "yoga.prana.udana-vayu",
+      "entityType": "yoga.prana",
+      "primaryDisplayName": "Udana Vayu",
+      "description": "Udana Vayu (उदान वायु) is the upward-moving vital air in the throat and head, governing speech, expression, swallowing, and conscious exhalation. It is associated with the Vishuddha (throat) chakra and the ether/space element. In yogic philosophy, Udana governs the journey of consciousness at death — a well-cultivated Udana is said to guide the dying person to higher planes. It also governs enthusiasm, willpower, and the capacity for spiritual ascent and levitation in advanced practice.",
+      "secondaryNames": [
+        {
+          "name": "Udana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Udana Vata",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Upward Breath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "yoga",
+        "prana",
+        "vayu",
+        "subtle-body",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "direction": "upward",
+        "location": "throat, head, face",
+        "element": "ether/space",
+        "function": "speech, swallowing, expression, spiritual ascent"
+      }
+    },
+    {
+      "canonicalName": "yoga.prana.vyana-vayu",
+      "entityType": "yoga.prana",
+      "primaryDisplayName": "Vyana Vayu",
+      "description": "Vyana Vayu (व्यान वायु) is the all-pervasive vital air that circulates throughout the entire body, governing the cardiovascular and nervous systems, muscular coordination, and the distribution of prana to every cell. Unlike the other Vayus, it has no single primary seat — it permeates all tissues and serves as the connective integrating force supporting the other four. It is associated with all-pervasive space (Akasha) and the principle of expansion. In practice, Vyana carries the effects of pranayama throughout the body and is cultivated for energetic sensitivity.",
+      "secondaryNames": [
+        {
+          "name": "Vyana",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vyana Vata",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pervading Breath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "yoga",
+        "prana",
+        "vayu",
+        "subtle-body",
+        "ayurveda"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "direction": "pervasive/outward",
+        "location": "whole body",
+        "element": "ether/space",
+        "function": "circulation, distribution, coordination"
+      }
+    }
+  ]
+}

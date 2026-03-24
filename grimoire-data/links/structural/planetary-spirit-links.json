@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "spirit.intelligence.agiel",                    "target": "astrology.planet.saturn",  "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.zazel",                       "target": "astrology.planet.saturn",  "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.iophiel",                  "target": "astrology.planet.jupiter", "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.hismael",                     "target": "astrology.planet.jupiter", "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.graphiel",                 "target": "astrology.planet.mars",    "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.bartzabel",                   "target": "astrology.planet.mars",    "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.nakhiel",                  "target": "astrology.planet.sol",     "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.sorath",                      "target": "astrology.planet.sol",     "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.hagiel",                   "target": "astrology.planet.venus",   "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.kedemel",                     "target": "astrology.planet.venus",   "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.tiriel",                   "target": "astrology.planet.mercury", "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.taphthartharath",             "target": "astrology.planet.mercury", "label": "embodies", "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.intelligence.malka-be-tarshisim",       "target": "astrology.planet.luna",    "label": "serves",   "bidirectional": true, "traditionScope": [] },
+    { "source": "spirit.planetary.schedbarschemoth-schartathan","target": "astrology.planet.luna",    "label": "embodies", "bidirectional": true, "traditionScope": [] }
+  ]
+}

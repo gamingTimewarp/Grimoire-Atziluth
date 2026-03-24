@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name={{package.productName}}
+Comment=Esoteric reference & practice app
+Exec={{app-name}}
+Icon={{package.identifier}}
+Type=Application
+Categories=Education;
+StartupWMClass={{app-name}}

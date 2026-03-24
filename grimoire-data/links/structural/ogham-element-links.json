@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "ogham.letter.beith",     "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.luis",      "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.fearn",     "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.sail",      "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.nion",      "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.huath",     "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.dair",      "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.tinne",     "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.coll",      "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.quert",     "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.muin",      "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.gort",      "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.ngeadal",   "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.straif",    "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.ruis",      "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.ailm",      "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.onn",       "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.ur",        "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.edad",      "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.idad",      "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.eabhadh",   "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.or",        "target": "astrology.element.fire",  "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.uilleann",  "target": "astrology.element.water", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.ifin",      "target": "astrology.element.earth", "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] },
+    { "source": "ogham.letter.emancholl", "target": "astrology.element.air",   "label": "attributed-element", "bidirectional": true, "traditionScope": ["tradition.celtic-druidic", "tradition.ogham-bln"] }
+  ]
+}

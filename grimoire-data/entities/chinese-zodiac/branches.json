@@ -1,0 +1,557 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "chinese-zodiac.branch.zi",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Zǐ",
+      "description": "Zǐ (子) is the first Earthly Branch, associated with the Rat and with Yang Water — the deep stillness of midnight and the hidden potential of water before it stirs into motion. Its two-hour period (23:00–01:00) spans the precise turn of midnight, making Zǐ the hinge-point of the day, the moment when one day yields to the next in darkness and silence. In the Four Pillars system Zǐ is the month pillar corresponding to the eleventh lunar month (approximately December), the depth of winter in the northern hemisphere, when the yang principle begins its imperceptible return. The character 子 itself depicts a swaddled infant, carrying connotations of new beginning, seed, and the descendant — reflecting the paradox that in greatest darkness the next cycle is already latent.",
+      "secondaryNames": [
+        {
+          "name": "子",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Rat",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "water",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "chineseChar": "子",
+        "pinyin": "Zǐ",
+        "associatedAnimal": "chinese-zodiac.animal.rat",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yang",
+        "direction": "north",
+        "season": "winter",
+        "hoursStart": 23,
+        "hoursEnd": 1,
+        "month": 11,
+        "westernMonthApprox": "December"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.chou",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Chǒu",
+      "description": "Chǒu (丑) is the second Earthly Branch, associated with the Ox and with Yin Earth — the cold, frozen soil of deep winter that holds the promise of spring locked within its crust. Its two-hour period (01:00–03:00) is the hour when yin energy is at its most concentrated and the world lies in its deepest sleep. In Four Pillars Chǒu corresponds to the twelfth lunar month (approximately January), the final month of winter when the earth begins the slow process of warming from below even as the surface remains frozen. Chǒu is a storage branch in Chinese astrology, serving as a reservoir for Metal and Water energies, and it sits at the transitional boundary between the death of winter and the first stirring of spring.",
+      "secondaryNames": [
+        {
+          "name": "丑",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chǒu",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ox",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "earth",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "chineseChar": "丑",
+        "pinyin": "Chǒu",
+        "associatedAnimal": "chinese-zodiac.animal.ox",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yin",
+        "direction": "north-northeast",
+        "season": "winter",
+        "hoursStart": 1,
+        "hoursEnd": 3,
+        "month": 12,
+        "westernMonthApprox": "January"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.yin",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Yín",
+      "description": "Yín (寅) is the third Earthly Branch, associated with the Tiger and Yang Wood — the bold, dramatic surge of spring energy as it breaks through the winter's resistance in the early morning hours before dawn. Its period (03:00–05:00) captures the liminal dark that precedes sunrise, when the world holds its breath before the first light appears — an energy matching the Tiger's fierce potency. In Four Pillars Yín opens the first lunar month (approximately February) and is considered the true beginning of spring in the Chinese agricultural calendar, even while the air may still carry winter's chill. Yín is the branch most strongly associated with the wood element's upward thrust and is frequently significant in charts indicating leadership, pioneering spirit, and dramatic transformation.",
+      "secondaryNames": [
+        {
+          "name": "寅",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yín",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tiger",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "wood",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "chineseChar": "寅",
+        "pinyin": "Yín",
+        "associatedAnimal": "chinese-zodiac.animal.tiger",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yang",
+        "direction": "east-northeast",
+        "season": "spring",
+        "hoursStart": 3,
+        "hoursEnd": 5,
+        "month": 1,
+        "westernMonthApprox": "February"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.mao",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Mǎo",
+      "description": "Mǎo (卯) is the fourth Earthly Branch, associated with the Rabbit and Yin Wood — the gentle, spreading energy of spring in full awakening, the east in its purest directional expression, and the hour of sunrise when darkness yields completely to the returning light. Its two-hour period (05:00–07:00) is the hour of dawn, of emergence from sleep, of the world reasserting itself after night — qualities that resonate with the Rabbit's association with the moon and the renewal of day. In Four Pillars Mǎo corresponds to the second lunar month (approximately March), when spring is established and all growing things reach upward with confident vigour. Mǎo holds the purest expression of Yin Wood among the twelve branches and is associated in Chinese medicine with the liver meridian reaching its daily peak.",
+      "secondaryNames": [
+        {
+          "name": "卯",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mǎo",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Rabbit",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "wood",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "chineseChar": "卯",
+        "pinyin": "Mǎo",
+        "associatedAnimal": "chinese-zodiac.animal.rabbit",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yin",
+        "direction": "east",
+        "season": "spring",
+        "hoursStart": 5,
+        "hoursEnd": 7,
+        "month": 2,
+        "westernMonthApprox": "March"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.chen",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Chén",
+      "description": "Chén (辰) is the fifth Earthly Branch, associated with the Dragon and Yang Earth — the dynamic, thunderous energy of late spring when growth is at its most spectacular and the rains arrive to nourish an earth brimming with vitality. Its period (07:00–09:00) is mid-morning, the first productive hours of the day when energy is fully awake and moving outward. In Four Pillars Chén corresponds to the third lunar month (approximately April), the climax of spring, and it is one of the four storage branches, housing Water within its Earth matrix — a combination that makes it particularly associated with rivers, mists, and the fertile muddy soils of the growing season. Chén is also the most auspicious of the branches in many Chinese astrological traditions, befitting its guardianship by the dragon, the mightiest of all celestial creatures.",
+      "secondaryNames": [
+        {
+          "name": "辰",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chén",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dragon",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "earth",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "chineseChar": "辰",
+        "pinyin": "Chén",
+        "associatedAnimal": "chinese-zodiac.animal.dragon",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yang",
+        "direction": "east-southeast",
+        "season": "spring",
+        "hoursStart": 7,
+        "hoursEnd": 9,
+        "month": 3,
+        "westernMonthApprox": "April"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.si",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Sì",
+      "description": "Sì (巳) is the sixth Earthly Branch, associated with the Snake and Yin Fire — the warmth and brightness of late morning as the sun climbs toward its zenith and the world reaches peak alertness. Its period (09:00–11:00) is a time of sharp focus and methodical activity, qualities that resonate with the Snake's cool intelligence and strategic patience. In Four Pillars Sì corresponds to the fourth lunar month (approximately May), the transition from spring to summer when fire energy intensifies and the earth warms deeply. Sì holds a concentrated expression of Yin Fire and is also associated in some traditions with Metal within its hidden stems, giving it a complex character that blends the illuminating quality of fire with a reflective, cutting discernment — much like the Snake itself.",
+      "secondaryNames": [
+        {
+          "name": "巳",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sì",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Snake",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "fire",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "chineseChar": "巳",
+        "pinyin": "Sì",
+        "associatedAnimal": "chinese-zodiac.animal.snake",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yin",
+        "direction": "south-southeast",
+        "season": "summer",
+        "hoursStart": 9,
+        "hoursEnd": 11,
+        "month": 4,
+        "westernMonthApprox": "May"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.wu",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Wǔ",
+      "description": "Wǔ (午) is the seventh Earthly Branch, associated with the Horse and Yang Fire — the blazing intensity of solar noon, the apex of yang energy in the daily cycle, and the full expression of the south direction. Its period (11:00–13:00) covers midday, when the sun stands highest and casts the shortest shadow — a moment of pure visibility and maximum outward energy. In Four Pillars Wǔ corresponds to the fifth lunar month (approximately June), midsummer, when Fire energy peaks and the days are longest. Wǔ is the branch that opposes Zǐ (midnight, Yang Water) across the compass, and together they represent the polarity of noon and midnight, fire and water, the two great turning-points of the daily cycle. Its character 午 was originally a depiction of a pestle — a tool of vigorous, repetitive action — linking it to the productive vigour of the noon hour.",
+      "secondaryNames": [
+        {
+          "name": "午",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Horse",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "fire",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "chineseChar": "午",
+        "pinyin": "Wǔ",
+        "associatedAnimal": "chinese-zodiac.animal.horse",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yang",
+        "direction": "south",
+        "season": "summer",
+        "hoursStart": 11,
+        "hoursEnd": 13,
+        "month": 5,
+        "westernMonthApprox": "June"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.wei",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Wèi",
+      "description": "Wèi (未) is the eighth Earthly Branch, associated with the Goat and Yin Earth — the warm, drowsy, nourishing energy of early afternoon when the heat of noon begins to soften and the body naturally inclines toward rest and digestion. Its period (13:00–15:00) corresponds to the post-meridian lull, a time suited to quiet creativity, gentle conversation, and artistic pursuits that resonate with the Goat's peaceful, artistic temperament. In Four Pillars Wèi corresponds to the sixth lunar month (approximately July), late summer, when Earth energy is at its most receptive and nourishing. Like Chǒu and Chén, Wèi is a storage branch, harbouring Wood energy within its Earth matrix — a combination associated with lush, productive soil at the height of the growing season.",
+      "secondaryNames": [
+        {
+          "name": "未",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wèi",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Goat",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "earth",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "chineseChar": "未",
+        "pinyin": "Wèi",
+        "associatedAnimal": "chinese-zodiac.animal.goat",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yin",
+        "direction": "south-southwest",
+        "season": "summer",
+        "hoursStart": 13,
+        "hoursEnd": 15,
+        "month": 6,
+        "westernMonthApprox": "July"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.shen",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Shēn",
+      "description": "Shēn (申) is the ninth Earthly Branch, associated with the Monkey and Yang Metal — the alert, quicksilver energy of mid-afternoon when the mind sharpens again after the post-noon dip and the day's tasks are pursued with renewed vigour. Its period (15:00–17:00) is an hour of renewed productivity, communication, and clever problem-solving, qualities that mirror the Monkey's ingenious, lively character. In Four Pillars Shēn corresponds to the seventh lunar month (approximately August), the beginning of autumn when Metal energy starts to assert itself and the harvest approaches. Shēn is the branch that clashes with Yín (Tiger, Yang Wood) in the branch opposition system — a dramatic tension between the bold creative force of wood and the sharp, cutting clarity of metal.",
+      "secondaryNames": [
+        {
+          "name": "申",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shēn",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Monkey",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "metal",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "chineseChar": "申",
+        "pinyin": "Shēn",
+        "associatedAnimal": "chinese-zodiac.animal.monkey",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yang",
+        "direction": "west-southwest",
+        "season": "autumn",
+        "hoursStart": 15,
+        "hoursEnd": 17,
+        "month": 7,
+        "westernMonthApprox": "August"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.you",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Yǒu",
+      "description": "Yǒu (酉) is the tenth Earthly Branch, associated with the Rooster and Yin Metal — the precise, refined, and discriminating energy of late afternoon as the sun declines toward the horizon and the day's work moves toward completion and assessment. Its period (17:00–19:00) is the hour of the rooster's crow at dusk, which in Chinese tradition signals the close of the productive day and the warding-off of evil influences as darkness approaches. In Four Pillars Yǒu corresponds to the eighth lunar month (approximately September), the heart of autumn, when Metal energy is at its most concentrated and the harvest is gathered and assessed. Yǒu holds the purest expression of Yin Metal among the twelve branches, making it particularly associated with precision instruments, refined craftsmanship, and the discriminating judgement of what is gold and what is dross.",
+      "secondaryNames": [
+        {
+          "name": "酉",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yǒu",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Rooster",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "metal",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "chineseChar": "酉",
+        "pinyin": "Yǒu",
+        "associatedAnimal": "chinese-zodiac.animal.rooster",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yin",
+        "direction": "west",
+        "season": "autumn",
+        "hoursStart": 17,
+        "hoursEnd": 19,
+        "month": 8,
+        "westernMonthApprox": "September"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.xu",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Xū",
+      "description": "Xū (戌) is the eleventh Earthly Branch, associated with the Dog and Yang Earth — the gathering dusk of early evening, when the day's activities wind down, the household gathers, and the watchful Dog takes up its guardian post at the threshold between the inhabited world and the darkness beyond. Its period (19:00–21:00) is the hour of communal gathering, storytelling, and the settling of the household before night deepens. In Four Pillars Xū corresponds to the ninth lunar month (approximately October), late autumn when Earth energy draws inward and the last warmth of the year is stored. Xū is another of the four storage branches, harbouring Fire energy within its Earth matrix — the last embers of the year's warmth banked against the coming winter.",
+      "secondaryNames": [
+        {
+          "name": "戌",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xū",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dog",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "earth",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 11,
+        "chineseChar": "戌",
+        "pinyin": "Xū",
+        "associatedAnimal": "chinese-zodiac.animal.dog",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yang",
+        "direction": "west-northwest",
+        "season": "autumn",
+        "hoursStart": 19,
+        "hoursEnd": 21,
+        "month": 9,
+        "westernMonthApprox": "October"
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.branch.hai",
+      "entityType": "chinese-zodiac.branch",
+      "primaryDisplayName": "Hài",
+      "description": "Hài (亥) is the twelfth and final Earthly Branch, associated with the Pig and Yin Water — the deep, still darkness of late night when the world rests completely and consciousness dissolves into the undifferentiated waters of sleep. Its period (21:00–23:00) is the hour before midnight, the final stretch of the day before the cycle begins again with Zǐ. In Four Pillars Hài corresponds to the tenth lunar month (approximately November), the onset of winter when Water energy descends into the earth and all life withdraws into dormancy. As the last branch, Hài carries a quality of completion, dissolution, and the gestation of what will emerge in the next cycle — the Pig's contented rest containing within it the seeds of the Rat's coming resourcefulness. Hài combines powerfully with Mǎo and Wèi to form the Wood trine, one of the most potent three-branch combinations in Chinese astrology.",
+      "secondaryNames": [
+        {
+          "name": "亥",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hài",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pig",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "earthly-branch",
+        "water",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 12,
+        "chineseChar": "亥",
+        "pinyin": "Hài",
+        "associatedAnimal": "chinese-zodiac.animal.pig",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yin",
+        "direction": "north-northwest",
+        "season": "winter",
+        "hoursStart": 21,
+        "hoursEnd": 23,
+        "month": 10,
+        "westernMonthApprox": "November"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.node.rahu",
+      "entityType": "astrology.node",
+      "primaryDisplayName": "Rahu",
+      "description": "Rahu (Sanskrit: राहु) is the North Node of the Moon, one of the two shadow planets (Chaya Grahas) recognised in Jyotish. It is not a physical body but the ascending intersection point of the Moon's orbital path with the ecliptic, and its influence is considered profound and fated. Rahu is associated with worldly ambition, insatiable desire, illusion (Maya), foreign lands and cultures, technology, innovation, and karmic hunger — it represents the area of life where the soul seeks new experience in this incarnation. Though classified as a malefic, Rahu can deliver extraordinary material success, sudden rise, and worldly fame, particularly when well-placed or conjunct strong benefics; its shadow side manifests as obsession, deception, restlessness, and an inability to be satisfied. In mythological terms, Rahu is the severed head of the demon Svarbhanu, who swallowed the nectar of immortality and was beheaded by Vishnu's discus — it swallows the Sun and Moon to create eclipses and perpetually pursues what it can never fully possess.",
+      "secondaryNames": [
+        { "name": "राहु", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Dragon's Head", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "North Node", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "☊", "languageTag": "symbol", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha"],
+      "extendedData": {
+        "nature": "malefic",
+        "exaltedIn": "gemini",
+        "debilitatedIn": "sagittarius",
+        "alternateExaltation": "taurus",
+        "alternateDebilitation": "scorpio",
+        "exaltationDebated": true,
+        "planetCN": null,
+        "karakaFor": ["foreign lands", "technology", "innovation", "illusion", "ambition", "material desire"],
+        "directionOfMotion": "retrograde",
+        "cyclePeriod": "18 years (nodal cycle)"
+      }
+    },
+    {
+      "canonicalName": "astrology.node.ketu",
+      "entityType": "astrology.node",
+      "primaryDisplayName": "Ketu",
+      "description": "Ketu (Sanskrit: केतु) is the South Node of the Moon, the descending intersection of the Moon's orbital path with the ecliptic, and the complementary shadow planet to Rahu. Always placed exactly 180° opposite Rahu, Ketu represents the accumulated karmic residue of past lives — the gifts, skills, and experiences the soul has already mastered and must now release or transcend. It is associated with spirituality, liberation (Moksha), asceticism, psychic insight, sudden losses that prove to be gifts, and the dissolution of ego. Ketu is classified as a malefic but is considered among the most spiritually elevating of all grahas; natives with a prominent Ketu may experience worldly detachment, mystical experiences, and deep intuitive or occult abilities. In mythology, Ketu is the severed tail of the demon Svarbhanu — headless, it acts without the intellect's cunning, operating from pure instinct, past-life memory, and the pull toward the formless absolute.",
+      "secondaryNames": [
+        { "name": "केतु", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Dragon's Tail", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "South Node", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "☋", "languageTag": "symbol", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha"],
+      "extendedData": {
+        "nature": "malefic",
+        "exaltedIn": "sagittarius",
+        "debilitatedIn": "gemini",
+        "alternateExaltation": "scorpio",
+        "alternateDebilitation": "taurus",
+        "exaltationDebated": true,
+        "planetCN": null,
+        "karakaFor": ["moksha", "spirituality", "past-life karma", "psychic ability", "renunciation", "dissolution"],
+        "directionOfMotion": "retrograde",
+        "cyclePeriod": "18 years (nodal cycle)"
+      }
+    }
+  ]
+}

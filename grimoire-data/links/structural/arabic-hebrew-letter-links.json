@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "letter.arabic.alif",
+      "target": "letter.hebrew.aleph",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ba",
+      "target": "letter.hebrew.beth",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.jim",
+      "target": "letter.hebrew.gimel",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.dal",
+      "target": "letter.hebrew.daleth",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ha",
+      "target": "letter.hebrew.heh",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.waw",
+      "target": "letter.hebrew.vau",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.zayn",
+      "target": "letter.hebrew.zayin",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ha-khaa",
+      "target": "letter.hebrew.cheth",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ta",
+      "target": "letter.hebrew.teth",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ya",
+      "target": "letter.hebrew.yod",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.kaf",
+      "target": "letter.hebrew.kaph",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.lam",
+      "target": "letter.hebrew.lamed",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.mim",
+      "target": "letter.hebrew.mem",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.nun",
+      "target": "letter.hebrew.nun",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.sin",
+      "target": "letter.hebrew.samekh",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ayn",
+      "target": "letter.hebrew.ayin",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.fa",
+      "target": "letter.hebrew.peh",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.sad",
+      "target": "letter.hebrew.tzaddi",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.qaf",
+      "target": "letter.hebrew.qoph",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ra",
+      "target": "letter.hebrew.resh",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.shin",
+      "target": "letter.hebrew.shin",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "letter.arabic.ta-taw",
+      "target": "letter.hebrew.tau",
+      "label": "cognate-letter",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

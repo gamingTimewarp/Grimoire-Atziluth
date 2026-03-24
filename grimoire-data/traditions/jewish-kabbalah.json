@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.jewish-kabbalah",
+    "displayName": "Jewish Kabbalah",
+    "description": "Traditional Jewish Kabbalistic attributions drawing from the Sefer Yetzirah, Sefer ha-Zohar, and related classical sources. Distinct from Western Hermetic Qabalah in its theological context, divine name systems, and angelic hierarchies. Does not include tarot attributions.",
+    "attributionFields": [
+      { "linkLabel": "attributed-divine-name", "displayName": "Divine Name (God Name)", "targetEntityType": "letter.hebrew", "allowMultiple": true, "sortOrder": 0 },
+      { "linkLabel": "attributed-angel", "displayName": "Archangel", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-planet", "displayName": "Mundane Chakra (Planet)", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 2 },
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 3 },
+      { "linkLabel": "attributed-letter", "displayName": "Hebrew Letter", "targetEntityType": "letter.hebrew", "allowMultiple": false, "sortOrder": 4 },
+      { "linkLabel": "attributed-color", "displayName": "Color Scale", "allowMultiple": true, "sortOrder": 5 }
+    ]
+  }
+}

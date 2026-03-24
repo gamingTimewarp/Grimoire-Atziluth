@@ -1,0 +1,741 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.sephira.daath",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Da'ath",
+      "description": "The hidden or false sephira, situated at the intersection of the Abyss on the Tree of Life between the Supernal Triad (Kether, Chokmah, Binah) and the lower seven sephiroth. Da'ath is not one of the ten canonical sephiroth but is often described as the 'non-sephira', the gateway of the Abyss, the knowledge that is neither wisdom (Chokmah) nor understanding (Binah) but their child — a dangerous, liminal space. It corresponds to the neck in the human body, connecting the head to the body, the divine to the manifest. In practical Qabalah, Da'ath represents hidden or occult knowledge, the crossing point of the Abyss that the adept must traverse to reach the Supernals. It is associated with Pluto and the throat chakra in some modern correspondences. The Qliphothic counterpart of Da'ath is the realm of the Shells beyond the Abyss, sometimes called the 'Black Brotherhood' — those who have crossed the Abyss and identified themselves with their knowledge rather than surrendering to the Supernals.",
+      "secondaryNames": [
+        {
+          "name": "דעת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Daath",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Da'at",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Knowledge",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Da'at",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "abyss",
+        "hidden"
+      ],
+      "extendedData": {
+        "number": null,
+        "hebrewName": "דעת",
+        "meaning": "Knowledge",
+        "divineName": null,
+        "archangel": null,
+        "angelicChoir": null,
+        "planet": null,
+        "pillar": "qabalah.pillar.equilibrium",
+        "triangle": "supernal",
+        "note": "Da'ath is the hidden pseudo-sephira at the Abyss, not counted among the ten canonical sephiroth.",
+        "keywords": [
+          "knowledge",
+          "abyss",
+          "hidden",
+          "crossing",
+          "Pluto",
+          "throat",
+          "non-sephira",
+          "gnosis"
+        ],
+        "polarity": "western.polarity.androgynous",
+        "treeX": 0.5,
+        "treeY": 0.28
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.kether",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Kether",
+      "description": "The first sephira, the Crown, the summit of the Tree of Life. Kether is the first point of manifestation from the Ain Soph Aur (the Limitless Light), the primal unity before all differentiation. It corresponds to the point, the monad, the still centre of the turning world. In the Hermetic Qabalah its divine name is Eheieh (אהיה — 'I Am That I Am'), its archangel is Metatron, its angelic choir the Chayoth ha-Qodesh. Its planet (if any) is the Primum Mobile (the First Mover), the outermost sphere. The three supernals — Kether, Chokmah, and Binah — are separated from the lower sephiroth by the Abyss (Da'ath). Kether's colour in the four worlds: Brilliance (Atziluth), White brilliance (Briah), White brilliance with golden flecks (Yetzirah), White flecked gold (Assiah).",
+      "secondaryNames": [
+        {
+          "name": "כתר",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Crown",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Keter",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Keter",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "supernal"
+      ],
+      "extendedData": {
+        "number": 1,
+        "hebrewName": "כתר",
+        "meaning": "Crown",
+        "divineName": "Eheieh",
+        "divineNameHebrew": "אהיה",
+        "archangel": "Metatron",
+        "angelicChoir": "Chayoth ha-Qodesh",
+        "planet": "primum-mobile",
+        "world": "qabalah.world.atziluth",
+        "pillar": "qabalah.pillar.equilibrium",
+        "triangle": "supernal",
+        "qliphothicShell": "Thaumiel",
+        "gdColour": "Brilliance",
+        "keywords": [
+          "unity",
+          "crown",
+          "point",
+          "monad",
+          "first cause",
+          "divine will"
+        ],
+        "polarity": "western.polarity.androgynous",
+        "treeX": 0.5,
+        "treeY": 0.06
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.chokmah",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Chokmah",
+      "description": "The second sephira, Wisdom, the first emanation from Kether. Chokmah is the great Father-principle, the primordial masculine Yang, the flash of divine creativity before form. It is associated with the Zodiac (the sphere of the fixed stars), the universal life-force in its undifferentiated state. Its divine name is Yah (יה), a contracted form of the Tetragrammaton, representing the Yod — the masculine, active, initiating spark. The archangel is Ratziel, keeper of the divine secrets. Chokmah as pure wisdom is not the organised wisdom of Binah but the intuitive, instantaneous flash of gnosis. In the four worlds Chokmah is the realm of Atziluth, the world of Emanation, and corresponds to the element of Fire above the Abyss.",
+      "secondaryNames": [
+        {
+          "name": "חכמה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wisdom",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chokhmah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Hokhmah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Chokhmah",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "supernal"
+      ],
+      "extendedData": {
+        "number": 2,
+        "hebrewName": "חכמה",
+        "meaning": "Wisdom",
+        "divineName": "Yah",
+        "divineNameHebrew": "יה",
+        "archangel": "Ratziel",
+        "angelicChoir": "Auphanim",
+        "planet": "zodiac",
+        "world": "qabalah.world.atziluth",
+        "pillar": "qabalah.pillar.mercy",
+        "triangle": "supernal",
+        "qliphothicShell": "Chaigidel",
+        "gdColour": "Soft blue",
+        "keywords": [
+          "wisdom",
+          "father",
+          "yang",
+          "creative flash",
+          "zodiac",
+          "the Word"
+        ],
+        "polarity": "western.polarity.masculine",
+        "treeX": 0.82,
+        "treeY": 0.17
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.binah",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Binah",
+      "description": "The third sephira, Understanding, the great Mother-principle above the Abyss. Binah receives the creative flash of Chokmah and gives it form, organisation, and limitation. She is Ama (the dark sterile Mother) and Aima (the bright fertile Mother), the cosmic womb from which all form is born. Her planet is Saturn — the limiting, defining principle that gives shape to the formless. Her divine name is YHVH Elohim (יהוה אלהים), the divine name in the world of form. The archangel is Tzaphkiel. Binah is the top of the Pillar of Severity. From her flows the Abyss (Da'ath) and the lower sephiroth. She is Isis and the Black Madonna; the throne upon which Chokmah sits. Sorrows are attributed to her because form = limitation.",
+      "secondaryNames": [
+        {
+          "name": "בינה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Understanding",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "supernal",
+        "saturn"
+      ],
+      "extendedData": {
+        "number": 3,
+        "hebrewName": "בינה",
+        "meaning": "Understanding",
+        "divineName": "YHVH Elohim",
+        "divineNameHebrew": "יהוה אלהים",
+        "archangel": "Tzaphkiel",
+        "angelicChoir": "Aralim",
+        "planet": "astrology.planet.saturn",
+        "world": "qabalah.world.briah",
+        "pillar": "qabalah.pillar.severity",
+        "triangle": "supernal",
+        "qliphothicShell": "Satariel",
+        "gdColour": "Crimson",
+        "keywords": [
+          "understanding",
+          "mother",
+          "yin",
+          "form",
+          "limitation",
+          "womb",
+          "sorrow",
+          "Saturn"
+        ],
+        "polarity": "western.polarity.feminine",
+        "treeX": 0.18,
+        "treeY": 0.17
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.chesed",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Chesed",
+      "description": "The fourth sephira, Mercy or Lovingkindness, the first sephira below the Abyss and the first that can be comprehended by the human mind. Chesed is the great Father of the lower world, the divine grace and abundance that flows unceasingly from the Supernals through the Abyss. It is associated with Jupiter — expansion, law, kingship, and cosmic benevolence. Its divine name is El (אל), the simplest and most fundamental name of God meaning 'The Strong One'. The archangel is Tzadkiel. Chesed represents the ideal world of the Platonic forms — the divine architect who designs the structure that Geburah will test and Tiphareth will harmonise. It is the top of the Pillar of Mercy below the Abyss.",
+      "secondaryNames": [
+        {
+          "name": "חסד",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mercy",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hesed",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Gedullah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Gedulah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Gedulah",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 5
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "jupiter"
+      ],
+      "extendedData": {
+        "number": 4,
+        "hebrewName": "חסד",
+        "meaning": "Mercy / Lovingkindness",
+        "divineName": "El",
+        "divineNameHebrew": "אל",
+        "archangel": "Tzadkiel",
+        "angelicChoir": "Chasmalim",
+        "planet": "astrology.planet.jupiter",
+        "world": "qabalah.world.briah",
+        "pillar": "qabalah.pillar.mercy",
+        "triangle": "ethical",
+        "qliphothicShell": "Gha'agsheblah",
+        "gdColour": "Deep violet",
+        "keywords": [
+          "mercy",
+          "grace",
+          "abundance",
+          "Jupiter",
+          "law",
+          "kingship",
+          "Platonic forms",
+          "love"
+        ],
+        "polarity": "western.polarity.masculine",
+        "treeX": 0.82,
+        "treeY": 0.4
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.geburah",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Geburah",
+      "description": "The fifth sephira, Severity or Strength, the divine force of judgement and limitation in the ethical triangle. Geburah is Mars — the warrior, the surgeon, the pruner of excess. It tests and destroys what is not strong enough to survive, removing the unnecessary so that the essential may thrive. Its divine name is Elohim Gibor (אלהים גבור), 'God Almighty' or 'God of Hosts'. The archangel is Kamael or Samael. Geburah is the top of the Pillar of Severity below the Abyss. Without Geburah, the unchecked mercy of Chesed would dissolve all form into undifferentiated bliss. The two together (Chesed and Geburah) constitute the dynamic tension of the ethical triangle, balanced by Tiphareth at the centre.",
+      "secondaryNames": [
+        {
+          "name": "גבורה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Severity",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Gevurah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Pachad",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Din",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Gevurah",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 5
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "mars"
+      ],
+      "extendedData": {
+        "number": 5,
+        "hebrewName": "גבורה",
+        "meaning": "Severity / Strength",
+        "divineName": "Elohim Gibor",
+        "divineNameHebrew": "אלהים גבור",
+        "archangel": "Kamael",
+        "angelicChoir": "Seraphim",
+        "planet": "astrology.planet.mars",
+        "world": "qabalah.world.briah",
+        "pillar": "qabalah.pillar.severity",
+        "triangle": "ethical",
+        "qliphothicShell": "Golachab",
+        "gdColour": "Orange",
+        "keywords": [
+          "severity",
+          "strength",
+          "Mars",
+          "judgement",
+          "destruction",
+          "courage",
+          "discipline",
+          "pruning"
+        ],
+        "polarity": "western.polarity.feminine",
+        "treeX": 0.18,
+        "treeY": 0.4
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.tiphareth",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Tiphareth",
+      "description": "The sixth sephira, Beauty, the heart of the Tree of Life and the great centre of balance. Tiphareth harmonises all the sephiroth above it (the Supernals and the ethical triangle) and channels their energies to the sephiroth below. Its planet is the Sun — the light-giver, the harmoniser, the Christ/Osiris/Tiphereth figure who sacrifices himself and is reborn. Its divine name is YHVH Eloah VaDa'ath (יהוה אלוה ודעת). The archangel is Raphael (or Michael in some systems). Tiphareth is the sphere of the Holy Guardian Angel, the Higher Self, the solar consciousness of the initiate. All paths of the major arcana from the ethical and astral triangles meet here. It is the centre of the middle pillar and the mediator between the higher and lower Selves.",
+      "secondaryNames": [
+        {
+          "name": "תפארת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Beauty",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tiphereth",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Tiferet",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Tiferet",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "sun"
+      ],
+      "extendedData": {
+        "number": 6,
+        "hebrewName": "תפארת",
+        "meaning": "Beauty",
+        "divineName": "YHVH Eloah VaDa'ath",
+        "divineNameHebrew": "יהוה אלוה ודעת",
+        "archangel": "Raphael",
+        "angelicChoir": "Malachim",
+        "planet": "astrology.planet.sol",
+        "world": "qabalah.world.briah",
+        "pillar": "qabalah.pillar.equilibrium",
+        "triangle": "ethical",
+        "qliphothicShell": "Thagirion",
+        "gdColour": "Clear yellow",
+        "keywords": [
+          "beauty",
+          "harmony",
+          "Sun",
+          "heart",
+          "sacrifice",
+          "rebirth",
+          "Holy Guardian Angel",
+          "Christ",
+          "Osiris"
+        ],
+        "polarity": "western.polarity.masculine",
+        "treeX": 0.5,
+        "treeY": 0.52
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.netzach",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Netzach",
+      "description": "The seventh sephira, Victory or Eternity, the sphere of Venus and the astral plane of emotion, art, and instinct. Netzach is the first sephira of the astral triangle (Netzach, Hod, Yesod), the realm of feeling, desire, and the group mind of nature. Its planet Venus governs love, beauty, art, and the magnetic attractive power that draws souls into manifestation. The divine name is YHVH Tzabaoth (יהוה צבאות), 'Lord of Hosts'. The archangel is Haniel. Netzach corresponds to the 'win' — the exuberant overflow of creative energy — and to the nature spirits (Elementals). In the initiatory system, the task of Netzach is to transmute instinctual desire into spiritual aspiration.",
+      "secondaryNames": [
+        {
+          "name": "נצח",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Victory",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Eternity",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "venus"
+      ],
+      "extendedData": {
+        "number": 7,
+        "hebrewName": "נצח",
+        "meaning": "Victory / Eternity",
+        "divineName": "YHVH Tzabaoth",
+        "divineNameHebrew": "יהוה צבאות",
+        "archangel": "Haniel",
+        "angelicChoir": "Elohim",
+        "planet": "astrology.planet.venus",
+        "world": "qabalah.world.yetzirah",
+        "pillar": "qabalah.pillar.mercy",
+        "triangle": "astral",
+        "qliphothicShell": "Harab Serapel",
+        "gdColour": "Amber",
+        "keywords": [
+          "victory",
+          "Venus",
+          "desire",
+          "art",
+          "instinct",
+          "nature",
+          "emotion",
+          "group mind",
+          "Elementals"
+        ],
+        "polarity": "western.polarity.feminine",
+        "treeX": 0.82,
+        "treeY": 0.65
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.hod",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Hod",
+      "description": "The eighth sephira, Splendour or Glory, the sphere of Mercury and the rational intellect, language, magic, and science. Hod is the complement of Netzach in the astral triangle: where Netzach is feeling and instinct, Hod is thought and analysis. The divine name is Elohim Tzabaoth (אלהים צבאות). The archangel is Michael (or Raphael in some systems). Mercury governs Hod's domains of communication, writing, commerce, travel, and the manipulation of symbols — including the symbols of magical practice. The sphere of Hod is where ritual magic operates: the crafting of names and forms that shape the subtle bodies. Hod represents the formulated mind of the trained magician.",
+      "secondaryNames": [
+        {
+          "name": "הוד",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Splendour",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Glory",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "mercury"
+      ],
+      "extendedData": {
+        "number": 8,
+        "hebrewName": "הוד",
+        "meaning": "Splendour / Glory",
+        "divineName": "Elohim Tzabaoth",
+        "divineNameHebrew": "אלהים צבאות",
+        "archangel": "Michael",
+        "angelicChoir": "Beni Elohim",
+        "planet": "astrology.planet.mercury",
+        "world": "qabalah.world.yetzirah",
+        "pillar": "qabalah.pillar.severity",
+        "triangle": "astral",
+        "qliphothicShell": "Samael",
+        "gdColour": "Violet purple",
+        "keywords": [
+          "splendour",
+          "Mercury",
+          "intellect",
+          "language",
+          "magic",
+          "science",
+          "ritual",
+          "names",
+          "symbols"
+        ],
+        "polarity": "western.polarity.masculine",
+        "treeX": 0.18,
+        "treeY": 0.65
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.yesod",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Yesod",
+      "description": "The ninth sephira, Foundation, the sphere of the Moon and the astral plane in its most immediate sense. Yesod is the great reservoir of the astral light, the Akasha, the etheric template that underlies physical manifestation. Its planet the Moon governs the tides of the astral world, the subconscious mind, the collective unconscious, and the subtle sexual/generative energy (the vital fluid of the body). The divine name is Shaddai El Chai (שדי אל חי), 'Almighty Living God'. The archangel is Gabriel. Yesod is the 'treasure house of images' (the Sphere of the Akashic records), the place where magical operations in Hod become visualised patterns in the astral light that Malkuth then crystallises into physical form.",
+      "secondaryNames": [
+        {
+          "name": "יסוד",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Foundation",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "moon"
+      ],
+      "extendedData": {
+        "number": 9,
+        "hebrewName": "יסוד",
+        "meaning": "Foundation",
+        "divineName": "Shaddai El Chai",
+        "divineNameHebrew": "שדי אל חי",
+        "archangel": "Gabriel",
+        "angelicChoir": "Cherubim",
+        "planet": "astrology.planet.luna",
+        "world": "qabalah.world.yetzirah",
+        "pillar": "qabalah.pillar.equilibrium",
+        "triangle": "astral",
+        "qliphothicShell": "Gamaliel",
+        "gdColour": "Violet",
+        "keywords": [
+          "foundation",
+          "Moon",
+          "astral",
+          "subconscious",
+          "Akasha",
+          "etheric",
+          "vital force",
+          "generation"
+        ],
+        "polarity": "western.polarity.masculine",
+        "treeX": 0.5,
+        "treeY": 0.77
+      }
+    },
+    {
+      "canonicalName": "qabalah.sephira.malkuth",
+      "entityType": "qabalah.sephira",
+      "primaryDisplayName": "Malkuth",
+      "description": "The tenth sephira, the Kingdom, the material world — the final crystallisation of the divine creative impulse into physical form. Malkuth is Earth: the planet, the body, the physical universe as experienced through the senses. It receives and integrates all the energies of the nine sephiroth above it. Its divine name is Adonai ha-Aretz (אדני הארץ), 'Lord of the Earth'. The archangel is Sandalphon (twin of Metatron). Malkuth has four sub-quarters corresponding to the four elements and is associated with the Shekinah — the divine feminine presence dwelling in the material world, the bride awaiting reunion with the divine groom (Tiphareth). The Great Work is the raising of Malkuth to Kether: the sanctification of the material by the spiritual.",
+      "secondaryNames": [
+        {
+          "name": "מלכות",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Kingdom",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Malkhut",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Malkouth",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Malkhut",
+          "languageTag": "jewish-kabbalah",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "sephira",
+        "tree-of-life",
+        "earth"
+      ],
+      "extendedData": {
+        "number": 10,
+        "hebrewName": "מלכות",
+        "meaning": "Kingdom",
+        "divineName": "Adonai ha-Aretz",
+        "divineNameHebrew": "אדני הארץ",
+        "archangel": "Sandalphon",
+        "angelicChoir": "Ashim",
+        "planet": "astrology.planet.earth",
+        "world": "qabalah.world.assiah",
+        "pillar": "qabalah.pillar.equilibrium",
+        "triangle": "material",
+        "qliphothicShell": "Nahemoth",
+        "gdColour": "Yellow (citrine, olive, russet, black quartered)",
+        "keywords": [
+          "kingdom",
+          "Earth",
+          "matter",
+          "body",
+          "Shekinah",
+          "physical world",
+          "manifestation",
+          "completion"
+        ],
+        "polarity": "western.polarity.feminine",
+        "treeX": 0.5,
+        "treeY": 0.93
+      }
+    }
+  ]
+}

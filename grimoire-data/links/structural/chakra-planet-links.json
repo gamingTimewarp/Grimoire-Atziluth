@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "chakra.classical.muladhara",    "target": "astrology.planet.saturn",  "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.svadhisthana",  "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.manipura",      "target": "astrology.planet.sol",     "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.anahata",       "target": "astrology.planet.venus",   "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.vishuddha",     "target": "astrology.planet.mercury", "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.ajna",          "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.classical.sahasrara",     "target": "astrology.planet.sol",     "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.extended.bindu",          "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": [] },
+    { "source": "chakra.extended.earth-star",     "target": "astrology.planet.saturn",  "label": "attributed-planet", "bidirectional": true, "traditionScope": [] }
+  ]
+}

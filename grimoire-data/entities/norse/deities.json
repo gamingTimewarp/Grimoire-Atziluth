@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "norse.deity.odin",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Odin",
+      "description": "Odin (Óðinn) is the Allfather and chief of the Aesir, the most complex and paradoxical of the Norse gods — simultaneously a god of wisdom, war, poetry, death, and sorcery. He sacrificed one eye to Mimir's well to drink of cosmic wisdom, and hung himself on Yggdrasil for nine days and nights to discover the runes. Odin wanders the nine worlds in disguise as a grey-cloaked wanderer, gathering knowledge and weaving fate; his two ravens Huginn (Thought) and Muninn (Memory) fly forth each day to bring him news of all that transpires. As patron of the seiðr magic, the berserker warriors, the skalds, and the hanged dead, Odin embodies the liminal figure who transcends all categories.",
+      "secondaryNames": [
+        { "name": "Woden", "languageTag": "ang", "visible": true, "sortOrder": 0 },
+        { "name": "Óðinn", "languageTag": "non", "visible": true, "sortOrder": 1 },
+        { "name": "Allfather", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 },
+        { "name": "Wotan", "languageTag": "de", "visible": true, "sortOrder": 3 },
+        { "name": "Grímnir", "languageTag": "non", "visible": false, "sortOrder": 4 },
+        { "name": "Gangleri", "languageTag": "non", "visible": false, "sortOrder": 5 }
+      ],
+      "tags": ["deity", "norse", "aesir", "wisdom", "war", "magic", "poetry", "death"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["wisdom", "war", "magic", "poetry", "death", "runes"],
+        "planetCN": "astrology.planet.mercury",
+        "weekday": "Wednesday",
+        "weekdayEtymology": "Woden's day (Old English: Wōdnesdæg)",
+        "runesCNs": ["rune.elder-futhark.ansuz", "rune.elder-futhark.othala"],
+        "greekEquivalent": "Hermes",
+        "romanEquivalent": "Mercurius"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.thor",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Thor",
+      "description": "Thor (Þórr) is the son of Odin and the earth goddess Jörð, the mightiest warrior of the Aesir and beloved protector of both gods and humanity. Armed with Mjölnir (his hammer), the belt Megingjörð that doubles his strength, and iron gauntlets, Thor roams the heavens in his goat-drawn chariot, and the rumble of thunder is the sound of his passage. He is the fierce enemy of the Jotnar (giants) who constantly threaten the cosmic order, yet also the warm patron of farmers, fishermen, and ordinary people — the red-bearded defender who keeps the worlds safe. At Ragnarok, Thor will slay the Midgard Serpent Jormungandr but take only nine steps before falling to its venom.",
+      "secondaryNames": [
+        { "name": "Þórr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Donar", "languageTag": "de", "visible": true, "sortOrder": 1 },
+        { "name": "Thunaer", "languageTag": "ang", "visible": false, "sortOrder": 2 },
+        { "name": "Thunderer", "languageTag": "en-epithet", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "norse", "aesir", "thunder", "strength", "protection", "war"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["thunder", "strength", "protection", "farming", "storms", "war"],
+        "planetCN": "astrology.planet.jupiter",
+        "weekday": "Thursday",
+        "weekdayEtymology": "Thor's day (Old English: Þūnresdæg, later Þōrrsdagr)",
+        "runesCNs": ["rune.elder-futhark.thurisaz", "rune.elder-futhark.uruz"],
+        "greekEquivalent": "Zeus",
+        "romanEquivalent": "Iuppiter"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.freyr",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Freyr",
+      "description": "Freyr (Freyr, 'Lord') is the foremost of the Vanir gods, a deity of fertility, sunshine, rain, peace, and plenty who was given to the Aesir as a hostage after the Aesir-Vanir war. He rules over Alfheim (the realm of the elves) and possesses the magical ship Skidbladnir (which can be folded into a pocket), the golden-bristled boar Gullinbursti, and a self-swinging sword that fights on its own — which he tragically gave away for love of the giantess Gerðr. Freyr embodies the sacred king who sacrifices himself for the fertility of the land, and his mythology is rich with solar imagery, phallic symbolism, and the eternal tension between abundance and sacrifice. He will die at Ragnarok at the hands of Surtr, having given away his invincible sword.",
+      "secondaryNames": [
+        { "name": "Freyr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Ing", "languageTag": "ang", "visible": true, "sortOrder": 1 },
+        { "name": "Ingvi-Freyr", "languageTag": "non", "visible": true, "sortOrder": 2 },
+        { "name": "Lord", "languageTag": "en-translation", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "norse", "vanir", "fertility", "prosperity", "sun", "peace"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Vanir",
+        "domain": ["fertility", "prosperity", "sunshine", "rain", "peace", "elves"],
+        "planetCN": "astrology.planet.sol",
+        "runesCNs": ["rune.elder-futhark.ingwaz", "rune.elder-futhark.fehu"],
+        "greekEquivalent": "Dionysus",
+        "romanEquivalent": "Liber"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.freya",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Freya",
+      "description": "Freya (Freyja, 'Lady') is the most renowned of the Vanir goddesses and a supreme mistress of seiðr magic, the Norse shamanic tradition of spinning fate and sending out the soul to other realms. She drives a chariot drawn by two cats, wears the magical falcon-feather cloak, and possesses the precious Brísingamen necklace — a cosmic treasure she obtained through a four-night union with the four dwarves who forged it. Freya presides over love, beauty, lust, and war, and she has first claim on half of all battle-slain, taking her pick of the noble dead to her hall Fólkvangr before Odin claims the rest for Valhalla. The ambiguity of her relationship with Frigg (they may be two aspects of a single goddess) has long been a subject of scholarly debate.",
+      "secondaryNames": [
+        { "name": "Freyja", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Lady", "languageTag": "en-translation", "visible": false, "sortOrder": 1 },
+        { "name": "Vanadís", "languageTag": "non", "visible": true, "sortOrder": 2 },
+        { "name": "Mardöll", "languageTag": "non", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "norse", "vanir", "love", "beauty", "magic", "war", "seidr"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Vanir",
+        "domain": ["love", "beauty", "seiðr magic", "war", "death", "fertility"],
+        "planetCN": "astrology.planet.venus",
+        "weekday": "Friday",
+        "weekdayEtymology": "Freyja's day (Old English: Frīgedæg, attributed to both Frigg and Freyja)",
+        "runesCNs": ["rune.elder-futhark.fehu", "rune.elder-futhark.berkano"],
+        "greekEquivalent": "Aphrodite",
+        "romanEquivalent": "Venus"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.tyr",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Tyr",
+      "description": "Tyr (Týr) is the one-handed god of justice, law, righteous war, and single combat — one of the oldest of the Germanic divine names, cognate with the Proto-Indo-European sky-father *Dyeus. His defining myth is the binding of Fenrir: the gods needed to bind the monstrous wolf but no chain could hold it, so Tyr placed his sword-hand in Fenrir's mouth as a pledge of good faith while the gods bound it with the magical ribbon Gleipnir, knowing full well the wolf would bite off his hand when the bond held. This act of self-sacrifice for the safety of the cosmos defines Tyr as the god of principled action — the willingness to pay the personal cost of justice. He presided over the Thing (legal assembly) and governed honourable battle rather than the chaotic violence of Odin's berserkers.",
+      "secondaryNames": [
+        { "name": "Týr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Tiw", "languageTag": "ang", "visible": true, "sortOrder": 1 },
+        { "name": "Ziu", "languageTag": "de", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "aesir", "justice", "law", "war", "sacrifice"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["justice", "law", "righteous war", "single combat", "the Thing"],
+        "planetCN": "astrology.planet.mars",
+        "weekday": "Tuesday",
+        "weekdayEtymology": "Tiw's day (Old English: Tīwesdæg)",
+        "runesCNs": ["rune.elder-futhark.tiwaz"],
+        "greekEquivalent": "Ares",
+        "romanEquivalent": "Mars"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.loki",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Loki",
+      "description": "Loki is the trickster of the Norse pantheon — a jötunn by birth who became a blood-brother of Odin and a constant companion of the Aesir, at once their most useful ally and most dangerous enemy. His nature is transformative and liminal: he can change shape and sex at will, and among his children are the wolf Fenrir, the Midgard Serpent Jormungandr, and Hel herself — as well as, remarkably, Odin's eight-legged horse Sleipnir (whom Loki birthed in mare form). Loki is the agent of chaos who is also necessary for creativity; he solves problems by unconventional means that create new problems. After engineering the death of Baldur and mocking the gods at the feast of Ægir, he was bound beneath a mountain with a serpent dripping venom on his face — his writhing causes earthquakes — to await Ragnarok, when he will steer the ship Naglfar against the gods.",
+      "secondaryNames": [
+        { "name": "Loki Laufeyjarson", "languageTag": "non", "visible": false, "sortOrder": 0 },
+        { "name": "Lodur", "languageTag": "non", "visible": false, "sortOrder": 1 },
+        { "name": "Trickster", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "aesir", "trickster", "transformation", "chaos", "fire"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["trickery", "transformation", "chaos", "fire", "cunning", "shapeshifting"],
+        "runesCNs": ["rune.elder-futhark.dagaz", "rune.elder-futhark.kenaz"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.baldur",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Baldur",
+      "description": "Baldur (Baldr) is the most beautiful and beloved of the Aesir — the radiant god of light, purity, and summer sunshine, son of Odin and Frigg, whose death is the pivotal catastrophe that signals the approach of Ragnarok. Frigg extracted oaths from every living thing not to harm her son, but neglected mistletoe as too young and insignificant; Loki discovered this and guided the blind god Höðr's hand to throw a mistletoe dart that killed Baldur instantly. He now resides in Hel's realm, awaiting the great renewal after Ragnarok when he will return alongside Höðr to inherit the new world. Baldur is a figure of the dying-and-rising solar divinity found across Indo-European mythologies, and many scholars have connected his myth to those of Osiris, Adonis, and Christ.",
+      "secondaryNames": [
+        { "name": "Baldr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Phol", "languageTag": "de", "visible": false, "sortOrder": 1 },
+        { "name": "The Shining One", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "aesir", "light", "beauty", "purity", "sun", "death"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["light", "purity", "beauty", "love", "summer sun", "prophecy"],
+        "planetCN": "astrology.planet.sol",
+        "runesCNs": ["rune.elder-futhark.sowilo"],
+        "greekEquivalent": "Apollo",
+        "romanEquivalent": "Apollo"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.heimdall",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Heimdall",
+      "description": "Heimdall (Heimdallr) is the watchman of the gods — the eternally vigilant guardian of Bifrost, the rainbow bridge between Asgard and the other worlds, who requires less sleep than a bird and can hear grass growing and wool forming on sheep. He blows the Gjallarhorn (whose blast will summon all beings at Ragnarok), and his golden-toothed, white-clad figure stands at the boundary between the divine and mortal worlds. In the Eddic poem Rígsþula, Heimdall (disguised as Rígr) travels through the human world and fathers the three ancestral classes of humanity: thralls, farmers, and jarls. He and Loki are destined to slay each other at Ragnarok in their final confrontation.",
+      "secondaryNames": [
+        { "name": "Heimdallr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Rígr", "languageTag": "non", "visible": true, "sortOrder": 1 },
+        { "name": "The White God", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 },
+        { "name": "Gullintanni", "languageTag": "non", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "norse", "aesir", "vigilance", "dawn", "guardian"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["vigilance", "dawn", "Bifrost", "the rainbow bridge", "progenitor of humanity"],
+        "planetCN": "astrology.planet.luna",
+        "runesCNs": ["rune.elder-futhark.mannaz", "rune.elder-futhark.hagalaz"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.frigg",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Frigg",
+      "description": "Frigg (Frigg) is the queen of Asgard, wife of Odin, and the supreme goddess of marriage, motherhood, fate, and foresight — she is said to know the fates of all beings but remains silent about what she knows. As the grief-stricken mother of Baldur, she extracted oaths from all living things to protect her son, and her anguish at his death (caused by the single exception she overlooked) makes her one of the most humanly poignant figures in Norse mythology. Frigg spins the clouds on her golden distaff in her hall Fensalir (the Fen-halls), and her twelve handmaidens represent aspects of the domestic and cosmic arts. The long-standing scholarly question of whether Frigg and Freya were originally the same goddess (given their shared etymological root, overlapping domains, and shared claim to Friday) has not been definitively resolved.",
+      "secondaryNames": [
+        { "name": "Frigg", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Fricka", "languageTag": "de", "visible": true, "sortOrder": 1 },
+        { "name": "Queen of Asgard", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "aesir", "marriage", "motherhood", "fate", "foresight"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["marriage", "motherhood", "fate", "foresight", "domestic arts", "clouds"],
+        "planetCN": "astrology.planet.venus",
+        "weekday": "Friday",
+        "weekdayEtymology": "Frigg's day (Old English: Frīgedæg — some sources attribute to Frigg, others to Freyja)",
+        "runesCNs": ["rune.elder-futhark.berkano", "rune.elder-futhark.perthro"],
+        "greekEquivalent": "Hera",
+        "romanEquivalent": "Iuno"
+      }
+    },
+    {
+      "canonicalName": "norse.deity.skadi",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Skadi",
+      "description": "Skadi (Skaði) is the giantess goddess of winter, mountains, skiing, and the hunt — one of the jötnar who became associated with the Aesir through marriage to Njord. She came to Asgard seeking compensation for the slaying of her father Thiazi, and was permitted to choose a husband from among the gods by looking only at their feet; she chose what she thought were Baldur's feet but selected Njord instead. The marriage between the mountain-dwelling winter goddess and the coastal sea god proved incompatible: he could not bear the howling of wolves in her mountain halls, she could not bear the crying of seabirds at the shore. Skadi is a fierce, independent figure — an early archetype of the hunter-goddess of the Norse north.",
+      "secondaryNames": [
+        { "name": "Skaði", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Öndurguð", "languageTag": "non", "visible": false, "sortOrder": 1 },
+        { "name": "Skiing Goddess", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "jotun", "winter", "hunting", "mountains"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Jotun/Aesir-associated",
+        "domain": ["winter", "mountains", "hunting", "skiing", "cold"],
+        "planetCN": "astrology.planet.saturn",
+        "runesCNs": ["rune.elder-futhark.isa", "rune.elder-futhark.hagalaz"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.njord",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Njord",
+      "description": "Njord (Njörðr) is the Vanir god of the sea, wind, fishing, and coastal trade — the patron of seafarers, fisherfolk, and those whose livelihood depends on the bounty of the ocean. He was sent to the Aesir as a hostage at the end of the Aesir-Vanir war, along with his children Freyr and Freya, and became one of the most beloved of the Norse gods. Njord dwells in his hall Nóatún (Ship-enclosure) on the shore of the sea, and his power extends over the winds and the sea's calm or storm. The ancient association of Njord with the cult of Nerthus (the earth-mother described by Tacitus among the Germanic peoples) suggests a deep male-female complementarity at the root of Vanir religion.",
+      "secondaryNames": [
+        { "name": "Njörðr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Lord of the Sea", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "vanir", "sea", "wind", "fishing", "prosperity"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Vanir",
+        "domain": ["sea", "wind", "fishing", "coastal trade", "calm weather"],
+        "planetCN": "astrology.planet.neptune",
+        "runesCNs": ["rune.elder-futhark.laguz"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.idun",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Idun",
+      "description": "Idun (Iðunn) is the goddess of youth and eternal renewal, the keeper of the golden apples that maintain the immortality and vigour of the Aesir gods. Without her apples, the gods would grow old and feeble; she is therefore indispensable to the divine order in a way that grants her quiet power despite her gentle nature. The myth of Idun's abduction by the giant Thiazi (engineered by Loki under compulsion) depicts the catastrophic effect of her absence: the gods age rapidly, their hair turning white and their strength failing, until Loki rescues her from Jotunheim in the form of a falcon. Idun's golden apples are the Norse equivalent of ambrosia — the food of divine immortality — and she represents the eternal freshness of nature's spring renewal.",
+      "secondaryNames": [
+        { "name": "Iðunn", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Keeper of the Apples", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "aesir", "youth", "renewal", "immortality"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["youth", "renewal", "golden apples", "immortality", "spring"],
+        "runesCNs": ["rune.elder-futhark.berkano", "rune.elder-futhark.fehu"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.mimir",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Mimir",
+      "description": "Mimir is the wisest of all beings in Norse mythology — a figure of primordial memory and deep cosmic knowledge who guards the Well of Wisdom (Mímisbrunnr) beneath one of Yggdrasil's roots. Odin sacrificed his eye to Mimir's well to drink of its waters and gain incomprehensible wisdom; in some accounts Mimir himself drinks from the well each morning with the Gjallarhorn to maintain his boundless knowledge. Mimir was sent to the Vanir as a hostage after the Aesir-Vanir war, but was decapitated when the Vanir felt cheated by the exchange; Odin preserved his head with herbs and spells and consults it for counsel in moments of great crisis. As the personification of memory and wisdom in its deepest form, Mimir represents the unconscious knowing that lies beneath ordinary experience.",
+      "secondaryNames": [
+        { "name": "Mímir", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Mím", "languageTag": "non", "visible": false, "sortOrder": 1 },
+        { "name": "Guardian of the Well", "languageTag": "en-epithet", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "norse", "wisdom", "memory", "well", "counsel"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Jotun/Other",
+        "domain": ["wisdom", "memory", "the Well of Wisdom", "prophecy", "counsel"],
+        "planetCN": "astrology.planet.mercury",
+        "runesCNs": ["rune.elder-futhark.ansuz", "rune.elder-futhark.perthro"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.hel",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Hel",
+      "description": "Hel is the daughter of Loki and the giantess Angrboda, and the ruler of Helheim — the realm of those who die of illness, old age, and all causes other than honourable battle. Her appearance is half alive and half corpse-pale, her demeanour cold and imperious; Odin cast her into the underworld and charged her with governance of the nine worlds' dead who come to her realm. Hel is neither evil nor good in the Norse conception but impartial and absolute — she enforces the rule that the dead do not return, as demonstrated when she refused to release Baldur even at Frigg's tearful request (insisting that every being in the nine worlds weep for him, and finding that the giantess Thökk — Loki in disguise — would not). Her hall is Éljúðnir (Damp with Sleet) and her realm is separated from Midgard by the river Gjöll and its golden bridge.",
+      "secondaryNames": [
+        { "name": "Hel", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Mistress of the Dead", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "death", "underworld", "ruler"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["death", "the underworld", "the dishonoured dead", "fate", "Helheim"],
+        "runesCNs": ["rune.elder-futhark.hagalaz", "rune.elder-futhark.isa"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.bragi",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Bragi",
+      "description": "Bragi is the god of poetry, eloquence, and music — the divine skald who composes and recites the great poems of the gods, his tongue said to be inscribed with runes to give him unmatched skill with words. He is the husband of Idun, and the two of them form a complementary pair: Idun sustaining the body's immortality with her apples while Bragi preserves the memory of great deeds through poetry. In the Eddic poem Lokasenna, Bragi is unusually cautious and reluctant to fight — a trait that Loki mocks as cowardice, though Bragi's power lies in word rather than weapon. The name Bragi is also associated with the legendary skald Bragi Boddason (c. 9th century), and it is debated whether the god and the man are distinct or whether the skald was deified after death.",
+      "secondaryNames": [
+        { "name": "Bragi", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "God of Skalds", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "aesir", "poetry", "eloquence", "music"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["poetry", "eloquence", "music", "skalds", "memory"],
+        "planetCN": "astrology.planet.mercury",
+        "runesCNs": ["rune.elder-futhark.ansuz", "rune.elder-futhark.raidho"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.var",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Vár",
+      "description": "Vár (Vár, 'pledge' or 'beloved') is the Norse goddess of sacred oaths, agreements, and solemn vows — one of the twelve divine Ásynjur (goddesses) listed in the Prose Edda. She listens to the oaths and pledges made between men and women, particularly those of betrothal and marriage, and punishes those who break them; nothing sworn in her name can be violated without consequence. Vár represents the binding power of the spoken word — the magical and moral force that makes a promise more than mere speech, transforming it into a sacred covenant with cosmic implications. In Norse society, where honour was the primary social currency, oath-breaking (níð) was among the gravest possible offences, and Vár's oversight of these bonds reflects that cultural priority.",
+      "secondaryNames": [
+        { "name": "Vár", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Goddess of Oaths", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "aesir", "oaths", "agreements", "law"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Aesir",
+        "domain": ["oaths", "agreements", "sacred promises", "betrothal", "law"],
+        "runesCNs": ["rune.elder-futhark.tiwaz", "rune.elder-futhark.perthro"]
+      }
+    },
+    {
+      "canonicalName": "norse.deity.surtr",
+      "entityType": "norse.deity",
+      "primaryDisplayName": "Surtr",
+      "description": "Surtr (Surtr, 'the black one' or 'the swarthy') is the primordial fire giant who rules Muspelheim — the realm of fire in the Norse cosmogony — and who will play the decisive role at Ragnarok, when he leads his army of fire-giants over Bifrost and engulfs the world in flame. His flaming sword is described as brighter than the sun itself, and it is by this sword that Freyr will be slain (having unwisely given away his own magical self-wielding sword for love of Gerðr). Surtr is not simply a villain but an elemental and cosmological force — fire as the necessary destroyer who makes way for the new world, paralleling the role of fire in alchemical transformation. In some cosmological readings, Muspelheim and its fire existed before the world was formed, making Surtr one of the oldest beings in the Norse cosmos.",
+      "secondaryNames": [
+        { "name": "Surtr", "languageTag": "non", "visible": true, "sortOrder": 0 },
+        { "name": "Lord of Muspelheim", "languageTag": "en-epithet", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "norse", "jotun", "fire", "destruction", "ragnarok"],
+      "extendedData": {
+        "pantheon": "Norse/Germanic",
+        "tribe": "Jotun",
+        "domain": ["fire", "Muspelheim", "Ragnarok", "destruction", "primordial forces"],
+        "planetCN": "astrology.planet.mars",
+        "runesCNs": ["rune.elder-futhark.kenaz", "rune.elder-futhark.tiwaz"]
+      }
+    }
+  ]
+}

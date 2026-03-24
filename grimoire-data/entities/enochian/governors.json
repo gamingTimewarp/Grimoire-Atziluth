@@ -1,0 +1,1265 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "enochian.governor.occodon",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OCCODON",
+      "description": "OCCODON governs the first sub-region of the First Aethyr (LIL), the highest and most transcendent of the 30 Aethyrs. As a Governor angel, OCCODON oversees the spirits and scrying visions available to adepts who have opened this innermost Aethyr, standing at the very summit of the Enochian angelic hierarchy.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lil",
+        "aethyrNumber": 1,
+        "aethyrName": "LIL",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.pascomb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PASCOMB",
+      "description": "PASCOMB governs the second sub-region of the First Aethyr (LIL), the supreme plane of the Enochian cosmological system. As a Governor angel, PASCOMB directs the angelic forces and visionary currents of LIL available to those who have traversed the entire initiatory sequence of the 30 Aethyrs.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lil",
+        "aethyrNumber": 1,
+        "aethyrName": "LIL",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.valgars",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VALGARS",
+      "description": "VALGARS governs the third sub-region of the First Aethyr (LIL), the innermost and most divine plane of the Enochian system. As a Governor angel, VALGARS presides over the deepest currents of LIL, ruling with OCCODON and PASCOMB over the ultimate unity at the crown of the Enochian universe.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lil",
+        "aethyrNumber": 1,
+        "aethyrName": "LIL",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.doagnis",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "DOAGNIS",
+      "description": "DOAGNIS governs the first sub-region of the Second Aethyr (ARN), the penultimate plane of the Enochian system standing at the threshold of ultimate divine unity. As a Governor angel, DOAGNIS oversees the spirits and visions of ARN available to adepts approaching the summit of Enochian initiation.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.arn",
+        "aethyrNumber": 2,
+        "aethyrName": "ARN",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.pacasna",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PACASNA",
+      "description": "PACASNA governs the second sub-region of the Second Aethyr (ARN), a plane of supreme radiance and divine authority in the Enochian hierarchy. As a Governor angel, PACASNA directs the angelic intelligences and visionary currents that characterise the near-ultimate station of ARN.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.arn",
+        "aethyrNumber": 2,
+        "aethyrName": "ARN",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.dialoia",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "DIALOIA",
+      "description": "DIALOIA governs the third sub-region of the Second Aethyr (ARN), the last plane before the absolute unity of LIL in the Enochian cosmological sequence. As a Governor angel, DIALOIA presides over the innermost currents of ARN together with DOAGNIS and PACASNA.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.arn",
+        "aethyrNumber": 2,
+        "aethyrName": "ARN",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.samapha",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SAMAPHA",
+      "description": "SAMAPHA governs the first sub-region of the Third Aethyr (ZOM), a plane of overwhelming divine grandeur corresponding to the highest expression of the Briatic world in Qabalistic synthesis. As a Governor angel, SAMAPHA oversees the angelic forces and transcendent visions that characterise the experience of ZOM.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zom",
+        "aethyrNumber": 3,
+        "aethyrName": "ZOM",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.virooli",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VIROOLI",
+      "description": "VIROOLI governs the second sub-region of the Third Aethyr (ZOM), one of the three innermost planes of the Enochian system. As a Governor angel, VIROOLI directs the currents of ZOM that reflect the dissolution of individual consciousness into the vast divine maternal sea at the root of all manifestation.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zom",
+        "aethyrNumber": 3,
+        "aethyrName": "ZOM",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.andispi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ANDISPI",
+      "description": "ANDISPI governs the third sub-region of the Third Aethyr (ZOM), a plane of transcendent stillness at the threshold of the two highest Aethyrs. As a Governor angel, ANDISPI presides with SAMAPHA and VIROOLI over the forces of ZOM, governing the final surrender of understanding before pure divine being is encountered.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zom",
+        "aethyrNumber": 3,
+        "aethyrName": "ZOM",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.thotanp",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "THOTANP",
+      "description": "THOTANP governs the first sub-region of the Fourth Aethyr (PAZ), a plane of ineffable peace and cosmic completion near the summit of the Enochian system. As a Governor angel, THOTANP oversees the spirits and visions of PAZ available to adepts whose consciousness has surpassed the individual self.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.paz",
+        "aethyrNumber": 4,
+        "aethyrName": "PAZ",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.axziarg",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "AXZIARG",
+      "description": "AXZIARG governs the second sub-region of the Fourth Aethyr (PAZ), whose name PAZ resonates with divine peace at the highest reaches of the Enochian cosmological hierarchy. As a Governor angel, AXZIARG directs the angelic intelligences and transcendent currents within this exalted Aethyr.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.paz",
+        "aethyrNumber": 4,
+        "aethyrName": "PAZ",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.pothnir",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "POTHNIR",
+      "description": "POTHNIR governs the third sub-region of the Fourth Aethyr (PAZ), one of the innermost planes of the Enochian system corresponding to the highest Atziluthic planes of the Qabalistic Tree. As a Governor angel, POTHNIR presides with THOTANP and AXZIARG over the unified forces of the peaceful, transcendent PAZ.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.paz",
+        "aethyrNumber": 4,
+        "aethyrName": "PAZ",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.lazdixi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "LAZDIXI",
+      "description": "LAZDIXI governs the first sub-region of the Fifth Aethyr (LIT), a plane of transcendent brilliance approaching the ultimate divine unity at the crown of the Enochian system. As a Governor angel, LAZDIXI oversees the angelic forces and luminous visions available within LIT to adepts of the highest initiatory grade.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lit",
+        "aethyrNumber": 5,
+        "aethyrName": "LIT",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.nocamal",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "NOCAMAL",
+      "description": "NOCAMAL governs the second sub-region of the Fifth Aethyr (LIT), whose name LIT evokes both threshold and light — a plane of divine radiance standing just below the summit of the Enochian cosmological sequence. As a Governor angel, NOCAMAL directs the currents of pure divine light that characterise this Aethyr.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lit",
+        "aethyrNumber": 5,
+        "aethyrName": "LIT",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tiarpax",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TIARPAX",
+      "description": "TIARPAX governs the third sub-region of the Fifth Aethyr (LIT), one of the most elevated planes of the Enochian system corresponding to the primordial expression of divine will. As a Governor angel, TIARPAX presides with LAZDIXI and NOCAMAL over the forces of LIT, governing the last approach before the three innermost Aethyrs.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lit",
+        "aethyrNumber": 5,
+        "aethyrName": "LIT",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.saxtomp",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SAXTOMP",
+      "description": "SAXTOMP governs the first sub-region of the Sixth Aethyr (MAZ), a plane of supreme exaltation corresponding in Qabalistic synthesis to the primordial Wisdom of Chokmah. As a Governor angel, SAXTOMP oversees the spirits and revelations within MAZ available to consciousness that has transcended the individual self.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.maz",
+        "aethyrNumber": 6,
+        "aethyrName": "MAZ",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.vavaamp",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VAVAAMP",
+      "description": "VAVAAMP governs the second sub-region of the Sixth Aethyr (MAZ), one of the most exalted planes of the Enochian system where the great angels of the divine presence reside. As a Governor angel, VAVAAMP directs the cosmic wisdom and angelic forces that characterise the experience of MAZ.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.maz",
+        "aethyrNumber": 6,
+        "aethyrName": "MAZ",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.zirzird",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ZIRZIRD",
+      "description": "ZIRZIRD governs the third sub-region of the Sixth Aethyr (MAZ), a plane of extraordinary cosmic order and divine will at the summit of the Enochian hierarchy's supernal expression. As a Governor angel, ZIRZIRD presides with SAXTOMP and VAVAAMP over the luminous angelic forces of MAZ.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.maz",
+        "aethyrNumber": 6,
+        "aethyrName": "MAZ",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.opmacas",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OPMACAS",
+      "description": "OPMACAS governs the first sub-region of the Seventh Aethyr (DEO), a plane of intense divine presence and theophanic revelation whose very name resonates with divinity. As a Governor angel, OPMACAS oversees the angelic forces and luminous visions that characterise the experience of DEO for adepts of the upper grades.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.deo",
+        "aethyrNumber": 7,
+        "aethyrName": "DEO",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.genadol",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "GENADOL",
+      "description": "GENADOL governs the second sub-region of the Seventh Aethyr (DEO), a supernal plane where the supreme creative principle in its most luminous masculine aspect is encountered. As a Governor angel, GENADOL directs the divine intelligences and overwhelming radiance that pervade the DEO Aethyr.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.deo",
+        "aethyrNumber": 7,
+        "aethyrName": "DEO",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.aspiaon",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ASPIAON",
+      "description": "ASPIAON governs the third sub-region of the Seventh Aethyr (DEO), a plane of cosmic law and divine Logos at the upper reaches of the Enochian system. As a Governor angel, ASPIAON presides with OPMACAS and GENADOL over the forces of DEO, the Aethyr of divine presence whose name echoes the Latin for god.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.deo",
+        "aethyrNumber": 7,
+        "aethyrName": "DEO",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.zamfres",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ZAMFRES",
+      "description": "ZAMFRES governs the first sub-region of the Eighth Aethyr (ZID), a supernal plane of supreme stillness and absolute divine authority beyond the Abyss. As a Governor angel, ZAMFRES oversees the spirits and transcendent visions within ZID available to masters who have crossed the great chasm of ZAX.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zid",
+        "aethyrNumber": 8,
+        "aethyrName": "ZID",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.todnaon",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TODNAON",
+      "description": "TODNAON governs the second sub-region of the Eighth Aethyr (ZID), corresponding in Qabalistic synthesis to the exalted heights of Binah and the upper Briatic world. As a Governor angel, TODNAON directs the profound, ineffable currents of ZID where individual consciousness has been wholly dissolved into divine being.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zid",
+        "aethyrNumber": 8,
+        "aethyrName": "ZID",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.pristac",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PRISTAC",
+      "description": "PRISTAC governs the third sub-region of the Eighth Aethyr (ZID), one of the innermost supernal planes of the Enochian system accessible only to consciousness that has transcended the Abyss. As a Governor angel, PRISTAC presides with ZAMFRES and TODNAON over the forces of ZID, the Aethyr of dynamic divine power pressing toward the highest union.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zid",
+        "aethyrNumber": 8,
+        "aethyrName": "ZID",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.oddiorg",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ODDIORG",
+      "description": "ODDIORG governs the first sub-region of the Ninth Aethyr (ZIP), the first plane above the Abyss accessible only to consciousness that has survived the ordeal of ZAX. As a Governor angel, ODDIORG oversees the angelic forces and visions of ZIP, a serene supernal plane associated with the great sea of Binah.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zip",
+        "aethyrNumber": 9,
+        "aethyrName": "ZIP",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.cralpir",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "CRALPIR",
+      "description": "CRALPIR governs the second sub-region of the Ninth Aethyr (ZIP), the first of the supernal Aethyrs above the great chasm and a plane of exalted divine feminine presence. As a Governor angel, CRALPIR directs the currents of ZIP corresponding to the highest Briatic and Atziluthic levels of divine feminine power.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zip",
+        "aethyrNumber": 9,
+        "aethyrName": "ZIP",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.doanzin",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "DOANZIN",
+      "description": "DOANZIN governs the third sub-region of the Ninth Aethyr (ZIP), a supernal plane of serene divine authority radically discontinuous with consciousness below the Abyss. As a Governor angel, DOANZIN presides with ODDIORG and CRALPIR over the forces of ZIP, holding the deepest gateway above the great chasm of ZAX.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zip",
+        "aethyrNumber": 9,
+        "aethyrName": "ZIP",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.lexarph",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "LEXARPH",
+      "description": "LEXARPH governs the first sub-region of the Tenth Aethyr (ZAX), the Abyss — the most cosmologically significant plane in the Enochian system and the dwelling of Choronzon, the Dweller in the Abyss. As a Governor angel, LEXARPH oversees the initiation of the Abyss crossing and is among the most widely invoked of all Enochian Governor angels.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zax",
+        "aethyrNumber": 10,
+        "aethyrName": "ZAX",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.comanan",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "COMANAN",
+      "description": "COMANAN governs the second sub-region of the Tenth Aethyr (ZAX), the Abyss that separates the lower seven Aethyrs from the supernal planes in the Enochian and Qabalistic synthesis. As a Governor angel, COMANAN directs the initiatory forces of ZAX through which the magician's ego must be dissolved before the supernal Aethyrs can be entered.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zax",
+        "aethyrNumber": 10,
+        "aethyrName": "ZAX",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tabitom",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TABITOM",
+      "description": "TABITOM governs the third sub-region of the Tenth Aethyr (ZAX), the Abyss and supreme ordeal of the Enochian initiatory sequence. As a Governor angel, TABITOM presides with LEXARPH and COMANAN over the forces of ZAX, which Crowley famously scryed in the Algerian desert in 1909 in the most celebrated working in the history of modern ceremonial magic.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zax",
+        "aethyrNumber": 10,
+        "aethyrName": "ZAX",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.molpand",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "MOLPAND",
+      "description": "MOLPAND governs the first sub-region of the Eleventh Aethyr (IKH), the last stable plane before the magician must confront the Abyss of ZAX below and the supernals above. As a Governor angel, MOLPAND oversees the luminous angelic forces of IKH, a plane of extraordinary radiance corresponding to the supernal triangle of the Tree of Life.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.ikh",
+        "aethyrNumber": 11,
+        "aethyrName": "IKH",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.vsnarda",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VSNARDA",
+      "description": "VSNARDA governs the second sub-region of the Eleventh Aethyr (IKH), a plane of awe-inspiring transcendence immediately below the Abyss in the ascending Enochian sequence. As a Governor angel, VSNARDA directs the supernal currents of IKH where the highest reaches of divine Wisdom become accessible to trained magical perception.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.ikh",
+        "aethyrNumber": 11,
+        "aethyrName": "IKH",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ponodol",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PONODOL",
+      "description": "PONODOL governs the third sub-region of the Eleventh Aethyr (IKH), the highest Aethyr accessible before the great chasm of ZAX must be confronted. As a Governor angel, PONODOL presides with MOLPAND and VSNARDA over the forces of IKH, a plane where angelic hosts of supreme radiance reduce all lower categories of thought to silence.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.ikh",
+        "aethyrNumber": 11,
+        "aethyrName": "IKH",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tapamal",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TAPAMAL",
+      "description": "TAPAMAL governs the first sub-region of the Twelfth Aethyr (LOE), a plane standing immediately above the Abyss in the ascending sequence and associated with the exalted consciousness of the Master of the Temple grade. As a Governor angel, TAPAMAL oversees the angelic forces and revelations of LOE available to adepts beyond the crossing of ZAX.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.loe",
+        "aethyrNumber": 12,
+        "aethyrName": "LOE",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.gedoons",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "GEDOONS",
+      "description": "GEDOONS governs the second sub-region of the Twelfth Aethyr (LOE), a plane where individual consciousness begins to dissolve into the impersonal light of the divine. As a Governor angel, GEDOONS directs the forces of LOE that pronounce the laws of the aeon and preside over the dissolution of the separate self.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.loe",
+        "aethyrNumber": 12,
+        "aethyrName": "LOE",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ambriol",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "AMBRIOL",
+      "description": "AMBRIOL governs the third sub-region of the Twelfth Aethyr (LOE), one of the supernal planes of the Enochian system corresponding to the highest levels of the divine Tree. As a Governor angel, AMBRIOL presides with TAPAMAL and GEDOONS over the forces of LOE, a plane of supreme angelic authority standing just above the great Abyss.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.loe",
+        "aethyrNumber": 12,
+        "aethyrName": "LOE",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.gecaond",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "GECAOND",
+      "description": "GECAOND governs the first sub-region of the Thirteenth Aethyr (ZIM), a plane resonating with the Qabalistic values of unity and love corresponding to the number 13. As a Governor angel, GECAOND oversees the forces of ZIM where the Holy Guardian Angel appears in its most luminous and overwhelming form.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zim",
+        "aethyrNumber": 13,
+        "aethyrName": "ZIM",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.laparin",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "LAPARIN",
+      "description": "LAPARIN governs the second sub-region of the Thirteenth Aethyr (ZIM), a plane requiring true adept-level consciousness for proper entry into its radically trans-human angelic forces. As a Governor angel, LAPARIN directs the currents of ZIM through which the divine Other whose encounter is the supreme aim of the adept's Great Work is encountered.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zim",
+        "aethyrNumber": 13,
+        "aethyrName": "ZIM",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.docepax",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "DOCEPAX",
+      "description": "DOCEPAX governs the third sub-region of the Thirteenth Aethyr (ZIM), a plane of divine unity and cosmic love at the upper reaches of the Enochian hierarchy. As a Governor angel, DOCEPAX presides with GECAOND and LAPARIN over the angelic forces of ZIM, whose number 13 resonates with the Qabalistic principles of unity and love.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zim",
+        "aethyrNumber": 13,
+        "aethyrName": "ZIM",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tedoond",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TEDOOND",
+      "description": "TEDOOND governs the first sub-region of the Fourteenth Aethyr (UTA), a plane entering the upper half of the Enochian cosmological hierarchy where planes of divine formation and archetype predominate. As a Governor angel, TEDOOND oversees the luminous angelic forces of UTA and the intimation of great threshold experiences ahead.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.uta",
+        "aethyrNumber": 14,
+        "aethyrName": "UTA",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.vivipos",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VIVIPOS",
+      "description": "VIVIPOS governs the second sub-region of the Fourteenth Aethyr (UTA), a plane corresponding broadly to the higher Yetziratic and lower Briatic worlds in Qabalistic synthesis. As a Governor angel, VIVIPOS directs the angelic city of light and the forces of approaching divine threshold that characterise UTA.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.uta",
+        "aethyrNumber": 14,
+        "aethyrName": "UTA",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ooanamb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OOANAMB",
+      "description": "OOANAMB governs the third sub-region of the Fourteenth Aethyr (UTA), a plane of great angelic luminosity at the entrance to the upper half of the Enochian system. As a Governor angel, OOANAMB presides with TEDOOND and VIVIPOS over the currents of UTA, governing the increasingly refined spiritual forces of this elevated plane.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.uta",
+        "aethyrNumber": 14,
+        "aethyrName": "UTA",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tahamdo",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TAHAMDO",
+      "description": "TAHAMDO governs the first sub-region of the Fifteenth Aethyr (OXO), the midpoint of the entire 30-Aethyr system and a plane of cosmic mirror-symmetry and perfect equilibrium. As a Governor angel, TAHAMDO oversees the forces of OXO, the palindromic Aethyr of divine law and absolute cosmic balance at the heart of the Enochian universe.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.oxo",
+        "aethyrNumber": 15,
+        "aethyrName": "OXO",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.nociabi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "NOCIABI",
+      "description": "NOCIABI governs the second sub-region of the Fifteenth Aethyr (OXO), the symbolic centre and turning point of the Enochian cosmological sequence. As a Governor angel, NOCIABI directs the forces of OXO, a plane of commanding cosmic law and divine mathematics presided over by great angelic figures of perfect balance.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.oxo",
+        "aethyrNumber": 15,
+        "aethyrName": "OXO",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tastoxo",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TASTOXO",
+      "description": "TASTOXO governs the third sub-region of the Fifteenth Aethyr (OXO), the midpoint Aethyr whose palindromic name reflects the principle of cosmic symmetry. As a Governor angel, TASTOXO presides with TAHAMDO and NOCIABI over the impersonal, absolute character of the divine order governing all 30 planes.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.oxo",
+        "aethyrNumber": 15,
+        "aethyrName": "OXO",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.cucnrpt",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "CUCNRPT",
+      "description": "CUCNRPT governs the first sub-region of the Sixteenth Aethyr (LEA), a plane associated with divine cosmic architecture and the manifestation of sacred language. As a Governor angel, CUCNRPT oversees the forces of LEA where the divine Word and cosmic creative principle are encountered in their Enochian expression.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lea",
+        "aethyrNumber": 16,
+        "aethyrName": "LEA",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.lavacon",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "LAVACON",
+      "description": "LAVACON governs the second sub-region of the Sixteenth Aethyr (LEA), a plane reflecting the great archetypal structures of the divine world in the upper-middle range of the Enochian hierarchy. As a Governor angel, LAVACON directs the forces of LEA associated with the ideal form of the magical universe and divine law.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lea",
+        "aethyrNumber": 16,
+        "aethyrName": "LEA",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.sochial",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SOCHIAL",
+      "description": "SOCHIAL governs the third sub-region of the Sixteenth Aethyr (LEA), a plane of cosmic architecture and sacred creative principle in the upper Enochian hierarchy. As a Governor angel, SOCHIAL presides with CUCNRPT and LAVACON over the forces of LEA, holding the authority of the Aethyr's angelic hierarchy within the Watchtower system.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lea",
+        "aethyrNumber": 16,
+        "aethyrName": "LEA",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.sigmorf",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SIGMORF",
+      "description": "SIGMORF governs the first sub-region of the Seventeenth Aethyr (TAN), a plane critically associated with the great initiatory themes of the adept grade and the Knowledge and Conversation of the Holy Guardian Angel. As a Governor angel, SIGMORF oversees the forces of TAN where the adept confronts the demand for absolute sincerity and self-dissolution.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tan",
+        "aethyrNumber": 17,
+        "aethyrName": "TAN",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.aydropt",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "AYDROPT",
+      "description": "AYDROPT governs the second sub-region of the Seventeenth Aethyr (TAN), a plane dominated in Thelemic cosmology by the imagery of Babalon and the Beast. As a Governor angel, AYDROPT directs the forces of TAN through which the adept undergoes the consuming transformation of being dissolved in the cup of the great goddess.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tan",
+        "aethyrNumber": 17,
+        "aethyrName": "TAN",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.tocarzi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TOCARZI",
+      "description": "TOCARZI governs the third sub-region of the Seventeenth Aethyr (TAN), a plane at the upper reaches of the middle Enochian hierarchy where the preparation for crossing the Abyss begins in earnest. As a Governor angel, TOCARZI presides with SIGMORF and AYDROPT over the initiatory forces of TAN pointing toward ultimate self-dissolution.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tan",
+        "aethyrNumber": 17,
+        "aethyrName": "TAN",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.nabaomi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "NABAOMI",
+      "description": "NABAOMI governs the first sub-region of the Eighteenth Aethyr (ZEN), a plane of extraordinary beauty and philosophical grandeur bordering on the Briatic world of archetypes. As a Governor angel, NABAOMI oversees the forces of ZEN associated with the hieros gamos, the mystical marriage of God and creation at a cosmic scale.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zen",
+        "aethyrNumber": 18,
+        "aethyrName": "ZEN",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.zafasai",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ZAFASAI",
+      "description": "ZAFASAI governs the second sub-region of the Eighteenth Aethyr (ZEN), a plane of the Rosy Cross and the union of mystical opposites in the Enochian upper-middle hierarchy. As a Governor angel, ZAFASAI directs the forces of ZEN where divine balance and the marriage of opposites become the dominant spiritual reality for the scrying adept.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zen",
+        "aethyrNumber": 18,
+        "aethyrName": "ZEN",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.yalpamb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "YALPAMB",
+      "description": "YALPAMB governs the third sub-region of the Eighteenth Aethyr (ZEN), a plane of cosmic balance and the marriage of divine opposites at the upper-middle level of the Enochian system. As a Governor angel, YALPAMB presides with NABAOMI and ZAFASAI over the forces of ZEN, administering the angelic hierarchy within this Aethyr of divine union.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zen",
+        "aethyrNumber": 18,
+        "aethyrName": "ZEN",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.torzoxi",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TORZOXI",
+      "description": "TORZOXI governs the first sub-region of the Nineteenth Aethyr (POP), a plane of the divine feminine in her most absolutely authoritative cosmic form. As a Governor angel, TORZOXI oversees the forces of POP where a great goddess or cosmic mother presides over the waters of manifestation with serene and absolute authority.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.pop",
+        "aethyrNumber": 19,
+        "aethyrName": "POP",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.abaiond",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ABAIOND",
+      "description": "ABAIOND governs the second sub-region of the Nineteenth Aethyr (POP), a plane in the upper-middle strata of the Enochian system requiring substantial initiatory work to approach with integrity. As a Governor angel, ABAIOND directs the currents of POP where the divine cosmic mother principle governs the deep waters of manifestation.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.pop",
+        "aethyrNumber": 19,
+        "aethyrName": "POP",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.omagrap",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OMAGRAP",
+      "description": "OMAGRAP governs the third sub-region of the Nineteenth Aethyr (POP), a plane whose triple-P name suggests multiplication and divine power in the Enochian letter attributions. As a Governor angel, OMAGRAP presides with TORZOXI and ABAIOND over the forces of POP, the Aethyr of the cosmic mother and the fire of the spirit.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.pop",
+        "aethyrNumber": 19,
+        "aethyrName": "POP",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.zildron",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ZILDRON",
+      "description": "ZILDRON governs the first sub-region of the Twentieth Aethyr (CHR), a plane at the middle of the Enochian cosmological hierarchy associated with solar consciousness and divine light. As a Governor angel, ZILDRON oversees the bright, painful radiance and solar angelic forces that pervade the CHR Aethyr.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.chr",
+        "aethyrNumber": 20,
+        "aethyrName": "CHR",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.parziba",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PARZIBA",
+      "description": "PARZIBA governs the second sub-region of the Twentieth Aethyr (CHR), a plane resonating with christic and solar imagery at the midpoint of the Enochian hierarchy. As a Governor angel, PARZIBA directs the forces of CHR associated with the sacrificed and triumphant redeemer archetype in its Enochian expression.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.chr",
+        "aethyrNumber": 20,
+        "aethyrName": "CHR",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.totocan",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TOTOCAN",
+      "description": "TOTOCAN governs the third sub-region of the Twentieth Aethyr (CHR), a plane of heightened angelic and divine presence at the centre of the Enochian cosmological sequence. As a Governor angel, TOTOCAN presides with ZILDRON and PARZIBA over the solar angelic forces of CHR, the Aethyr of light and divine radiance.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.chr",
+        "aethyrNumber": 20,
+        "aethyrName": "CHR",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.chirzpa",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "CHIRZPA",
+      "description": "CHIRZPA governs the first sub-region of the Twenty-First Aethyr (ASP), a plane of the middle band where higher spiritual identity and the demand for absolute sincerity become pronounced. As a Governor angel, CHIRZPA oversees the forces of ASP through which a great angel tests the adept with the requirement for total surrender of personal will.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.asp",
+        "aethyrNumber": 21,
+        "aethyrName": "ASP",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.toantom",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TOANTOM",
+      "description": "TOANTOM governs the second sub-region of the Twenty-First Aethyr (ASP), a plane in the middle band corresponding to the higher levels of the Yetziratic and Briatic worlds in Qabalistic synthesis. As a Governor angel, TOANTOM directs the forces of ASP that confront the adept with the theme of absolute spiritual vocation.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.asp",
+        "aethyrNumber": 21,
+        "aethyrName": "ASP",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.vixpalg",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VIXPALG",
+      "description": "VIXPALG governs the third sub-region of the Twenty-First Aethyr (ASP), a plane approached after substantial preparation due to its correspondence with higher levels of the Enochian hierarchy. As a Governor angel, VIXPALG presides with CHIRZPA and TOANTOM over the forces of ASP in the Enochian Watchtower system.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.asp",
+        "aethyrNumber": 21,
+        "aethyrName": "ASP",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ozidaia",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OZIDAIA",
+      "description": "OZIDAIA governs the first sub-region of the Twenty-Second Aethyr (LIN), a plane corresponding to the Path of Aleph in Qabalistic synthesis and to the principle of unconditioned spirit. As a Governor angel, OZIDAIA oversees the forces of LIN where the Fool's pure unconditioned step into manifestation becomes the dominant visionary theme.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lin",
+        "aethyrNumber": 22,
+        "aethyrName": "LIN",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.paraoan",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "PARAOAN",
+      "description": "PARAOAN governs the second sub-region of the Twenty-Second Aethyr (LIN), a plane whose number 22 resonates with the Fool and the 22nd tarot trump in Crowley's synthesis. As a Governor angel, PARAOAN directs the initiatory forces of LIN where the magician's perception begins encountering great Western esoteric themes with personal application.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lin",
+        "aethyrNumber": 22,
+        "aethyrName": "LIN",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.calzirg",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "CALZIRG",
+      "description": "CALZIRG governs the third sub-region of the Twenty-Second Aethyr (LIN), a plane associated with the principle of pure unconditioned spirit entering manifestation. As a Governor angel, CALZIRG presides with OZIDAIA and PARAOAN over the forces of LIN according to the Watchtower attributions of the Enochian system.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.lin",
+        "aethyrNumber": 22,
+        "aethyrName": "LIN",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ronoamb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "RONOAMB",
+      "description": "RONOAMB governs the first sub-region of the Twenty-Third Aethyr (TOR), a plane where the battle between higher aspiration and lower attachment becomes most psychologically vivid. As a Governor angel, RONOAMB oversees the forces of TOR through which the consolidation of will and confrontation with the residual lower nature of the magician occurs.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tor",
+        "aethyrNumber": 23,
+        "aethyrName": "TOR",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.onizimp",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ONIZIMP",
+      "description": "ONIZIMP governs the second sub-region of the Twenty-Third Aethyr (TOR), a plane in the lower-middle band of the hierarchy associated with force, fortitude, and the Taurean elemental current. As a Governor angel, ONIZIMP directs the forces of TOR where visions of great beauty and anguish commingle in the spiritual landscape.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tor",
+        "aethyrNumber": 23,
+        "aethyrName": "TOR",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.zaxanin",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ZAXANIN",
+      "description": "ZAXANIN governs the third sub-region of the Twenty-Third Aethyr (TOR), a plane where spiritual struggle and the confrontation with the lower nature define the visionary experience. As a Governor angel, ZAXANIN presides with RONOAMB and ONIZIMP over the angelic forces of TOR within the Enochian Watchtower system.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tor",
+        "aethyrNumber": 23,
+        "aethyrName": "TOR",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.orcanir",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ORCANIR",
+      "description": "ORCANIR governs the first sub-region of the Twenty-Fourth Aethyr (NIA), a transitional plane between the lower and middle strata of the Enochian system where moral and spiritual differentiation become pronounced. As a Governor angel, ORCANIR oversees the forces of NIA where the seer is tested and begins to be refined rather than merely overwhelmed.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.nia",
+        "aethyrNumber": 24,
+        "aethyrName": "NIA",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.chialps",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "CHIALPS",
+      "description": "CHIALPS governs the second sub-region of the Twenty-Fourth Aethyr (NIA), a plane associated with the interplay of mercy and severity resonant with the Qabalistic pillars. As a Governor angel, CHIALPS directs the refining forces of NIA through which the adept's consciousness is tested and purified at this transitional level.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.nia",
+        "aethyrNumber": 24,
+        "aethyrName": "NIA",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.soageel",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SOAGEEL",
+      "description": "SOAGEEL governs the third sub-region of the Twenty-Fourth Aethyr (NIA), a plane where a great feminine angelic figure presides over the interplay of cosmic mercy and severity. As a Governor angel, SOAGEEL presides with ORCANIR and CHIALPS over the forces of NIA, holding authority over this transitional Aethyr of refinement.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.nia",
+        "aethyrNumber": 24,
+        "aethyrName": "NIA",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.mirzind",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "MIRZIND",
+      "description": "MIRZIND governs the first sub-region of the Twenty-Fifth Aethyr (VTI), a plane functioning as an alchemical crucible within the larger Enochian cosmological scheme. As a Governor angel, MIRZIND oversees the forces of VTI where alchemical and elemental transformation imagery characterises the initiatory experience.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.vti",
+        "aethyrNumber": 25,
+        "aethyrName": "VTI",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.obvaors",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OBVAORS",
+      "description": "OBVAORS governs the second sub-region of the Twenty-Fifth Aethyr (VTI), a plane at the midpoint-approach of the lower Enochian planes where deeper magical perception begins to manifest reliably. As a Governor angel, OBVAORS directs the transformative alchemical forces of VTI available to adepts undertaking the inner work of this Aethyr.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.vti",
+        "aethyrNumber": 25,
+        "aethyrName": "VTI",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.ranglam",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "RANGLAM",
+      "description": "RANGLAM governs the third sub-region of the Twenty-Fifth Aethyr (VTI), a plane of alchemical crucible energy where elemental transformation is the primary initiatory theme. As a Governor angel, RANGLAM presides with MIRZIND and OBVAORS over the forces of VTI according to the Enochian Watchtower attributions.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.vti",
+        "aethyrNumber": 25,
+        "aethyrName": "VTI",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.pophand",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "POPHAND",
+      "description": "POPHAND governs the first sub-region of the Twenty-Sixth Aethyr (DES), a transitional zone between brute elemental force and incipient order in the lower-middle range of the Enochian system. As a Governor angel, POPHAND oversees the forces of DES where themes of kingship, battle, and incipient divine feminine presence characterise the visionary experience.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.des",
+        "aethyrNumber": 26,
+        "aethyrName": "DES",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.nigrana",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "NIGRANA",
+      "description": "NIGRANA governs the second sub-region of the Twenty-Sixth Aethyr (DES), a plane corresponding to the outer reaches of the formative worlds in the Qabalistic synthesis of Enochian cosmology. As a Governor angel, NIGRANA directs the forces of DES where elemental material begins to come under the governance of higher intelligences.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.des",
+        "aethyrNumber": 26,
+        "aethyrName": "DES",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.bazchim",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "BAZCHIM",
+      "description": "BAZCHIM governs the third sub-region of the Twenty-Sixth Aethyr (DES), a plane in the lower-middle range associated with the dense, formed spiritual material of the outer worlds. As a Governor angel, BAZCHIM presides with POPHAND and NIGRANA over the ruling angelic intelligences that maintain the structure and currents of DES.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.des",
+        "aethyrNumber": 26,
+        "aethyrName": "DES",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.saziami",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "SAZIAMI",
+      "description": "SAZIAMI governs the first sub-region of the Twenty-Seventh Aethyr (ZAA), a plane in the lower quartile where elemental forces begin to become more ordered under higher intelligences. As a Governor angel, SAZIAMI oversees the forces of ZAA where vast landscapes and titanic mythological imagery begin to consolidate from raw chaotic energy.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zaa",
+        "aethyrNumber": 27,
+        "aethyrName": "ZAA",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.mathvla",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "MATHVLA",
+      "description": "MATHVLA governs the second sub-region of the Twenty-Seventh Aethyr (ZAA), a plane whose name resonates with Enochian root-forms for power and spiritual motion. As a Governor angel, MATHVLA directs the forces of ZAA where symbolic meaning begins to consolidate from the raw chaotic energy of the lower planes.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zaa",
+        "aethyrNumber": 27,
+        "aethyrName": "ZAA",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.orpamb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ORPAMB",
+      "description": "ORPAMB governs the third sub-region of the Twenty-Seventh Aethyr (ZAA), a plane in the lower quartile of the Enochian hierarchy where elemental forces are progressively ordered. As a Governor angel, ORPAMB presides with SAZIAMI and MATHVLA over the angelic hierarchy within ZAA according to the Watchtower and subquadrant attributions of the Enochian tablets.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.zaa",
+        "aethyrNumber": 27,
+        "aethyrName": "ZAA",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.labnixp",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "LABNIXP",
+      "description": "LABNIXP governs the first sub-region of the Twenty-Eighth Aethyr (BAG), the third from the outermost in the Enochian system and a region of elemental and astral tumult. As a Governor angel, LABNIXP oversees the forces of BAG where great elemental force and spiritual struggle are the primary characteristics of the initiatory experience.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.bag",
+        "aethyrNumber": 28,
+        "aethyrName": "BAG",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.focisni",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "FOCISNI",
+      "description": "FOCISNI governs the second sub-region of the Twenty-Eighth Aethyr (BAG), one of the lower planes of the Enochian system characterised by dense elemental and astral energy. As a Governor angel, FOCISNI directs the forces of BAG where hints of higher order begin to appear amid the elemental confusion of the lower Aethyrs.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.bag",
+        "aethyrNumber": 28,
+        "aethyrName": "BAG",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.oxlopar",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "OXLOPAR",
+      "description": "OXLOPAR governs the third sub-region of the Twenty-Eighth Aethyr (BAG), a plane in the lower range of the Enochian cosmological system corresponding broadly to the outer reaches of Assiah and Yetzirah. As a Governor angel, OXLOPAR presides with LABNIXP and FOCISNI over the turbulent angelic forces of BAG.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.bag",
+        "aethyrNumber": 28,
+        "aethyrName": "BAG",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.vastrim",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "VASTRIM",
+      "description": "VASTRIM governs the first sub-region of the Twenty-Ninth Aethyr (RII), the second from the outermost in the Enochian system and a plane still among the lower, more turbulent sub-planes. As a Governor angel, VASTRIM oversees the forces of RII where warring armies and elemental chaos press upon the consciousness of the scrying adept.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.rii",
+        "aethyrNumber": 29,
+        "aethyrName": "RII",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.odraxti",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ODRAXTI",
+      "description": "ODRAXTI governs the second sub-region of the Twenty-Ninth Aethyr (RII), a plane situated just within the outermost layer of the Enochian cosmological system and associated with dense, conflicted states of being. As a Governor angel, ODRAXTI directs the forces of RII where only partial clarity of angelic voice emerges through the elemental confusion.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.rii",
+        "aethyrNumber": 29,
+        "aethyrName": "RII",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.gmtziam",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "GMTZIAM",
+      "description": "GMTZIAM governs the third sub-region of the Twenty-Ninth Aethyr (RII), one of the lower and most accessible planes of the Enochian system and a gateway into the hierarchy for adepts beginning the Aethyric sequence. As a Governor angel, GMTZIAM presides with VASTRIM and ODRAXTI over the turbulent forces of RII.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.rii",
+        "aethyrNumber": 29,
+        "aethyrName": "RII",
+        "orderInAethyr": 3
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.taoagla",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "TAOAGLA",
+      "description": "TAOAGLA governs the first sub-region of the Thirtieth Aethyr (TEX), the outermost and lowest of the 30 Aethyrs and the first and most accessible level of the entire Enochian cosmological system. As a Governor angel, TAOAGLA oversees the spirits and visions at the threshold between ordinary consciousness and the vast angelic universe above.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tex",
+        "aethyrNumber": 30,
+        "aethyrName": "TEX",
+        "orderInAethyr": 1
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.gemnimb",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "GEMNIMB",
+      "description": "GEMNIMB governs the second sub-region of the Thirtieth Aethyr (TEX), the outermost gateway of the Enochian system first entered by Crowley in his 1909 Algerian scrying of Liber 418. As a Governor angel, GEMNIMB directs the dense, chaotic, and turbulent imagery that characterises TEX as a place of strife, multiplicity, and threshold experience.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tex",
+        "aethyrNumber": 30,
+        "aethyrName": "TEX",
+        "orderInAethyr": 2
+      }
+    },
+    {
+      "canonicalName": "enochian.governor.advorpt",
+      "entityType": "enochian.governor",
+      "primaryDisplayName": "ADVORPT",
+      "description": "ADVORPT governs the third sub-region of the Thirtieth Aethyr (TEX), the outermost plane of the Enochian system and the gate of the entire Enochian hierarchy. As a Governor angel, ADVORPT presides with TAOAGLA and GEMNIMB over the ruling intelligences of TEX, ordering the forces within this most accessible and threshold-like of all the Aethyrs.",
+      "secondaryNames": [],
+      "tags": ["enochian", "governor", "angel"],
+      "extendedData": {
+        "aethyrCN": "enochian.aethyr.tex",
+        "aethyrNumber": 30,
+        "aethyrName": "TEX",
+        "orderInAethyr": 3
+      }
+    }
+  ]
+}

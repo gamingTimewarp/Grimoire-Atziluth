@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.alchemy",
+    "displayName": "Hermetic Alchemy",
+    "description": "The Western alchemical tradition as transmitted through Graeco-Egyptian, Arabic, and European sources, including the Emerald Tablet, works of Jabir ibn Hayyan, Paracelsus, and the corpus of 16th–18th century alchemical literature. Associates entities with the seven planetary metals, the four stages of the Great Work, and the seven alchemical operations. Bridged to Hermeticism, Neoplatonism, and the Qabalah.",
+    "attributionFields": [
+      { "linkLabel": "attributed-alchemical-metal", "displayName": "Planetary Metal", "targetEntityType": "alchemy.metal", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-alchemical-stage", "displayName": "Great Work Stage", "targetEntityType": "alchemy.stage", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-planet", "displayName": "Ruling Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

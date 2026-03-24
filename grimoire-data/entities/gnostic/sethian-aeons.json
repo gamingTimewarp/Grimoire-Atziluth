@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "gnostic.sethian.invisible-spirit",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "The Invisible Spirit",
+      "description": "The Invisible Spirit is the supreme, utterly transcendent Monad of the Sethian cosmological system — the ultimate unknowable source that precedes all being, name, and description. In the Apocryphon of John the divine revealer explicitly states that it is impossible to predicate anything of the Invisible Spirit: it is not a god, not a being, not a substance, not a quantity, not even \"light\" in any ordinary sense — for all positive descriptions fall infinitely short of its nature. Unlike the Valentinian Bythos, who is at least approachable through the idea of \"depth,\" the Sethian Invisible Spirit is even more radically apophatic: it can only be described by negation. Yet from the Invisible Spirit the entire Pleromatic order flows — first through its own self-contemplation, then through the emanation of Barbelo. The Invisible Spirit is also called \"the Father\" in Sethian texts, though the title does not imply any limiting gender but simply the absolute origin of all that follows.",
+      "secondaryNames": [
+        { "name": "The Father", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Monad", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The One", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Pneuma Aoraton", "languageTag": "grc", "visible": true, "sortOrder": 3 },
+        { "name": "The Perfect Aeon", "languageTag": "en", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "Trimorphic Protennoia", "Three Steles of Seth"],
+        "valentinianParallel": "gnostic.valentinian.bythos",
+        "role": "Supreme unknowable Monad; ultimate source of the entire Sethian Pleroma"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.barbelo",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Barbelo",
+      "description": "Barbelo is the supreme feminine principle and the first thought (Protennoia) of the Invisible Spirit — the divine Mother who arises when the Spirit turns and beholds itself, producing this luminous self-reflection as the first act of emanation. She is triple-natured, sometimes described as simultaneously Father, Mother, and Son, which makes her a kind of self-contained trinity within the Sethian system; she is both the womb of subsequent emanations and the mirror in which the Invisible Spirit first becomes knowable to itself. The name Barbelo has been variously etymologised: one prominent reading derives it from Coptic/Hebrew elements meaning \"God is in four\" (connecting to the Tetragrammaton), though no etymology commands universal scholarly agreement. In the Apocryphon of John she approaches the Invisible Spirit and requests five spiritual qualities — foreknowledge, incorruptibility, eternal life, truth, and the divine Word — each of which becomes an Aeon. Barbelo is among the most important divine feminine figures in all of Gnostic literature, standing alongside the Valentinian Sophia and the Neoplatonic World Soul as a key conceptualisation of divine femininity.",
+      "secondaryNames": [
+        { "name": "Protennoia", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "First Thought", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Divine Mother", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Pronoia", "languageTag": "grc", "visible": true, "sortOrder": 3 },
+        { "name": "Barbelo the Perfect Aeon", "languageTag": "en", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "Trimorphic Protennoia", "Zostrianos", "Allogenes"],
+        "valentinianParallel": "gnostic.valentinian.sige",
+        "role": "First emanation of the Invisible Spirit; divine Mother; supreme feminine principle of the Sethian trinity"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.autogenes",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Autogenes",
+      "description": "Autogenes (\"Self-Begotten\" / \"Self-Generated\") is the divine Son, the third member of the Sethian trinity of Father-Mother-Son, emanated from the union of the Invisible Spirit and Barbelo. His title reflects a fundamental Sethian theological claim: the divine Son is not produced by any external act of generation but arises spontaneously from the self-contemplating fullness of the higher divine pair — he is in this sense his own cause, \"self-begotten\" from the perspective of any level below him. Autogenes is identified in Sethian texts with the divine Christ, the Anointed One who will descend to illuminate the Gnostic elect in the material world. He emanates the Four Luminaries (Harmozel, Oroiael, Daveithai, and Eleleth) together with their associated triads of qualities, structuring the upper Pleromatic order into four great aeons of light. As the divine Son who is also Christ, Autogenes bridges the cosmic and historical dimensions of Sethian Gnosticism.",
+      "secondaryNames": [
+        { "name": "Self-Begotten", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Divine Son", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Christ", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "The Anointed", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "Three Steles of Seth", "Zostrianos"],
+        "valentinianParallel": "gnostic.valentinian.nous",
+        "role": "Divine Son; third person of the Sethian trinity; Christ-figure; emanator of the Four Luminaries"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.harmozel",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Harmozel",
+      "description": "Harmozel is the First of the Four Luminaries (Tetrad of Light), the great Aeons of Light emanated by Autogenes to structure the Pleromatic heavens. He governs the first and highest of the four light-worlds (also called Aeons), presiding over a realm characterised by grace (charis), truth (aletheia), and form (morphe) — qualities that suggest his realm is closest to the pure, formative, shaping power of the divine. Harmozel's light-world is the dwelling place of the divine Adam, variously called Adam Kadmon, Geradamas, or Pigeradamas — the celestial prototype of humanity who exists in perfect spiritual form in this highest light-realm. The Four Luminaries function as an ordered cosmos within the Pleroma, each governing a distinct category of spiritual beings and a distinct register of divine qualities. In the Apocryphon of John, Harmozel is presented as a great light-Aeon who receives the spiritual prototype of humanity under his care.",
+      "secondaryNames": [
+        { "name": "First Luminary", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Armozel", "languageTag": "cop", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "Trimorphic Protennoia"],
+        "valentinianParallel": null,
+        "role": "First Luminary; ruler of the first light-world; governs grace, truth, and form; presides over Geradamas/Adamas"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.oroiael",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Oroiael",
+      "description": "Oroiael is the Second Luminary, ruler of the second great light-world within the Sethian Pleroma. His realm is associated with perception (epinoia), memory (mneme), and love (agape) — qualities that together suggest a more reflective, relational mode of divine existence compared to Harmozel's shaping formative grace. Oroiael presides over the divine Seth, the son of the heavenly Adam (Adamas/Geradamas), making his light-world the immediate dwelling of the spiritual ancestor of the Gnostic elect. Because the Sethian tradition understood itself as the \"seed of Seth,\" Oroiael's realm has a special significance for Sethian community identity: it is the celestial homeland of their divine progenitor. In the Apocryphon of John and related texts, Oroiael appears alongside the other three Luminaries as part of the orderly heavenly hierarchy that Autogenes establishes.",
+      "secondaryNames": [
+        { "name": "Second Luminary", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Oriel", "languageTag": "en", "visible": false, "sortOrder": 1 },
+        { "name": "Oroiael", "languageTag": "cop", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians"],
+        "valentinianParallel": null,
+        "role": "Second Luminary; ruler of the second light-world; governs perception, memory, and love; presides over Seth"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.daveithai",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Daveithai",
+      "description": "Daveithai is the Third Luminary and ruler of the third light-world of the Sethian Pleroma. His realm is characterised by understanding (synesis), love (agape in some lists), and idea or form — qualities suggesting a more intellectual and conceptual mode of divine reality compared to his predecessors. Daveithai presides over the seed of Seth, meaning the souls of the Gnostic elect themselves find their celestial home in his realm — giving him a special soteriological significance as the heavenly ruler who \"owns\" the saved community in their pre-existent and post-redemption states. His name has been tentatively linked to David, suggesting a possible Jewish scriptural resonance, though this etymology is uncertain. Together with Harmozel, Oroiael, and Eleleth he forms the fourfold structure of Pleromatic light that governs the pre-material and post-material states of all spiritual beings.",
+      "secondaryNames": [
+        { "name": "Third Luminary", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Daveithe", "languageTag": "cop", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians"],
+        "valentinianParallel": null,
+        "role": "Third Luminary; ruler of the third light-world; governs understanding and idea; presides over the seed of Seth (the Gnostic elect)"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.eleleth",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Eleleth",
+      "description": "Eleleth is the Fourth and final Luminary, ruler of the fourth light-world — the lowest of the four Pleromatic Aeons of Light and the one most adjacent to the dramatic events that unfold at the boundary between the Pleroma and the sub-divine realm. His realm is associated with perfection (teleiotes), peace (eirene), and wisdom (sophia), and it is in connection with his realm that Sophia (as the twelfth Aeon) acts impulsively and produces Yaldabaoth. Eleleth presides over the souls of penitents — those who have sinned but are capable of repentance — giving his realm a distinctive pastoral character among the four light-worlds. In the Apocryphon of John it is Eleleth who appears to Norea (in \"The Thought of Norea\") and reveals to her the truth of her divine origin, making him also a figure of revelation and mercy to the marginalised. The name Eleleth has been linked to the Hebrew concept of God's eternity or exaltedness.",
+      "secondaryNames": [
+        { "name": "Fourth Luminary", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Eleleth the Great Angel", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "The Thought of Norea"],
+        "valentinianParallel": null,
+        "role": "Fourth Luminary; ruler of the fourth light-world; governs perfection, peace, and wisdom; presides over souls of penitents; associated with Sophia's fall"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.sophia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Sophia",
+      "description": "Sophia (\"Wisdom\") in the Sethian texts is the twelfth Aeon — directly associated with Eleleth's realm — and the Aeon whose impulsive, unauthorised creative act sets the entire dramatic action in motion. Without the consent of the Invisible Spirit and without a consort, Sophia wills to produce a being in imitation of the divine self-generation above her; her act produces an imperfect, lion-faced creature (Yaldabaoth) whom she immediately regrets. After Yaldabaoth's creation she is confined to the ninth sphere, repenting and mourning, while the higher powers work to repair the damage. The Pistis Sophia (a separate text) develops this drama at great length, showing Sophia's multiple falls and rescues across successive cosmic spheres. Unlike the Valentinian Sophia, whose restoration is the climax of a relatively settled soteriological narrative, the Sethian Sophia remains more dynamically embattled — an ongoing figure of divine potential compromised by impulsive action, slowly redeemed through the long work of gnosis-transmission.",
+      "secondaryNames": [
+        { "name": "Wisdom", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Pistis Sophia", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "Sophia of the Ninth", "languageTag": "en", "visible": false, "sortOrder": 2 },
+        { "name": "Sapientia", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Pistis Sophia", "Gospel of the Egyptians", "On the Origin of the World"],
+        "valentinianParallel": "gnostic.valentinian.sophia",
+        "role": "Twelfth Aeon; impulsive creator of Yaldabaoth; figure of fallen and progressively redeemed Wisdom; associated with Eleleth's realm"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.yaldabaoth",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Yaldabaoth",
+      "description": "Yaldabaoth is the Demiurge of the Sethian system — the imperfect, arrogant, lion-headed serpent creator-god produced by Sophia's unauthorised act of creation, born without a divine male consort and therefore inherently deficient and ignorant of the higher divine realm. He seizes a portion of his mother's divine light-power and uses it to create the material heavens and earth, setting up a hierarchy of seven planetary Archons (and sometimes twelve zodiacal Archons) to govern the sub-divine cosmos. His most notorious act is the boastful declaration \"I am a jealous God and there is no other God beside me\" (Exodus 20:5 / Isaiah 45:5), which the Sethian texts read as an inadvertent self-exposure of ignorance: a truly supreme God would not need to assert uniqueness. Yaldabaoth is also called Saklas (\"Fool\" in Aramaic) and Samael (\"Blind God\" in Hebrew), names that drive home the theological point: this creator is not evil in a Manichaean sense but genuinely foolish, blind to what lies above him. Despite his limitations he possesses stolen divine light, and the entire Sethian soteriological project aims to recover that light through gnosis.",
+      "secondaryNames": [
+        { "name": "Sakla", "languageTag": "arc", "visible": true, "sortOrder": 0 },
+        { "name": "Saklas", "languageTag": "arc", "visible": true, "sortOrder": 1 },
+        { "name": "Samael", "languageTag": "he", "visible": true, "sortOrder": 2 },
+        { "name": "The Demiurge", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "The Lion-faced Serpent", "languageTag": "en", "visible": true, "sortOrder": 4 },
+        { "name": "Ialdabaoth", "languageTag": "grc", "visible": true, "sortOrder": 5 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "On the Origin of the World", "Hypostasis of the Archons", "Gospel of Judas"],
+        "valentinianParallel": "gnostic.valentinian.demiurge",
+        "role": "Demiurge; son of Sophia; ignorant creator of the material world; ruler of the seven planetary Archons; possessor of stolen divine light"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.adamas",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Adamas",
+      "description": "Adamas (also called Geradamas or Pigeradamas — \"the holy Adam\" in Coptic) is the divine Heavenly Adam, the perfect spiritual prototype of humanity who dwells in Harmozel's first light-world in a condition of uncorrupted spiritual glory. He is the celestial archetype of which the earthly Adam fashioned by Yaldabaoth is a material copy — the Demiurge creates the physical Adam precisely because he (having glimpsed the divine image of Adamas reflected in the water below) tries to recreate this luminous being in matter, though the copy inevitably falls short. Adamas is the father of the divine Seth, and his dwelling in Harmozel represents the original, unfallen state of humanity as it exists in the divine Mind. The mythological movement from Adamas in the Pleroma to the earthly Adam in matter is the Sethian account of how the human being came to exist: not as a free divine creation but as an imperfect material imitation of a prior spiritual reality. Restoring the link between earthly humans and their celestial archetype is one of the goals of Sethian gnosis.",
+      "secondaryNames": [
+        { "name": "Geradamas", "languageTag": "cop", "visible": true, "sortOrder": 0 },
+        { "name": "Pigeradamas", "languageTag": "cop", "visible": true, "sortOrder": 1 },
+        { "name": "Adam Kadmon", "languageTag": "he", "visible": true, "sortOrder": 2 },
+        { "name": "The Heavenly Adam", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Perfect Man", "languageTag": "en", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "Gospel of the Egyptians", "Three Steles of Seth"],
+        "valentinianParallel": "gnostic.valentinian.anthropos",
+        "role": "Divine Heavenly Adam; celestial archetype of humanity; father of the divine Seth; dwells in Harmozel's realm"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.seth",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Seth",
+      "description": "Seth is the divine Son of Adamas (Geradamas), the spiritual ancestor of the Gnostic elect, and the central salvific figure of the entire Sethian tradition — the tradition names itself after him and understands its members as the \"seed of Seth,\" spiritually descended from this celestial progenitor. In the Sethian mythological scheme, Seth descends into the world multiple times — through Jesus of Nazareth among others — to illuminate, protect, and gather the scattered members of his spiritual seed. His celestial dwelling-place is Oroiael's second light-world, where he exists in perfect spiritual form as the divine elder brother and shepherd of the Gnostic community. The emphasis on Seth rather than Abel or Isaac as the salvific ancestral figure represents a striking revaluation of the biblical genealogy: in Sethian thought it is the third son of Adam, the \"other seed\" appointed by God after Abel's murder (Genesis 4:25), who carries the true divine lineage. The Gospel of the Egyptians contains an extended hymn to Seth as the divine Saviour who descends to rescue the immovable race.",
+      "secondaryNames": [
+        { "name": "The Divine Seth", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Great Seth", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Incorruptible Seed", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Gospel of the Egyptians", "Three Steles of Seth", "Apocalypse of Adam", "Zostrianos"],
+        "valentinianParallel": null,
+        "role": "Divine Son of Adamas; spiritual ancestor of the Gnostic elect (the 'seed of Seth'); salvific figure who descends to illuminate the world; dwells in Oroiael's realm"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.protennoia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Trimorphic Protennoia",
+      "description": "Trimorphic Protennoia (\"First Thought in Three Forms\") is a divine revelation figure who descends to the world three times in three different modes — as Voice (the Father principle), as Speech (the Mother principle), and as Word (the Son/Logos principle) — making her a fluid, triadic manifestation of the entire divine triad within the world. She is closely related to Barbelo, the supreme First Thought of the Invisible Spirit, and her three descents function as a kind of progressive revelation: each visitation deepens the illumination available to the spiritual elect. The Trimorphic Protennoia text (Nag Hammadi Codex XIII) presents her final descent as the Word who puts on Jesus and redeems the Gnostic community, offering a Sethian parallel and possibly a source for the Johannine prologue (John 1:1–18). Her triadic self-description — \"I am Father, I am Mother, I am Son\" — reflects the Sethian understanding that the highest divine principles are not three separate beings but a single threefold reality manifesting through different modes. As the personification of divine First Thought descending into matter, she is both a cosmic figure and an immediately present divine voice addressing the reader.",
+      "secondaryNames": [
+        { "name": "First Thought", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Protennoia", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "The Triple-Powered One", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Voice, Speech, and Word", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Trimorphic Protennoia (NHC XIII,1)", "Gospel of the Egyptians"],
+        "valentinianParallel": "gnostic.valentinian.logos",
+        "role": "Divine First Thought descending in three forms (Voice/Speech/Word); revealer and redeemer of the Gnostic elect; closely related to Barbelo; possible source for the Johannine Logos"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.norea",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Norea",
+      "description": "Norea is a uniquely Sethian feminine salvific figure who appears across several Nag Hammadi texts — daughter of Adam and Eve, sister-wife of Seth in some versions, and in others a daughter of Eve associated with Naamah. In the Hypostasis of the Archons, Norea attempts to board Noah's Ark and is violently denied entry by the Archons, who then attempt to rape her; she cries out to the divine realm for help and is rescued by the great Angel Eleleth, who reveals to her the true nature of the divine order and her own imperishable divine origin. The text \"The Thought of Norea\" (NHC IX,2) is a brief but exalted hymn in which Norea praises the divine and is promised restoration to her Pleromatic home. Norea represents the feminine principle of spiritual defiance — refusing submission to the Archons, asserting her divine ancestry, and being vindicated. Her story can be read as a mythological encoding of the Gnostic community's own experience: marginalised, attacked by the powers of the world, but ultimately protected by higher divine forces.",
+      "secondaryNames": [
+        { "name": "Orea", "languageTag": "cop", "visible": true, "sortOrder": 0 },
+        { "name": "Noria", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Naamah", "languageTag": "he", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Hypostasis of the Archons (NHC II,4)", "The Thought of Norea (NHC IX,2)", "On the Origin of the World"],
+        "valentinianParallel": null,
+        "role": "Feminine salvific figure; daughter of Adam and Eve; defies the Archons; rescued by Eleleth; promises restoration to Pleromatic home"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.twelve-archons",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "The Twelve Archons",
+      "description": "The Twelve Archons are the twelve rulers created by Yaldabaoth to govern the twelve heavenly spheres corresponding to the signs of the zodiac, imprisoning souls within the cyclic structure of astrological fate. In the Apocryphon of John and related texts, each Archon is assigned a name drawn from ancient Semitic and Egyptian demonology (names include Adonaios, Astaphaios, Sabaoth, Adoni, Adonin, Sabbataios among others), emphasising that what the surrounding cultures venerate as gods and planetary rulers are in reality sub-divine powers of bondage. The correspondence of twelve Archons to twelve zodiac signs represents a systematic Gnostic critique of astrology: the stars do not reveal divine wisdom but impose material fate, and the Archons who govern them actively work to keep souls ignorant of their true divine origin. Gnosis — specifically the knowledge of the divine names and the Pleromatic hierarchy — is the means by which the ascending soul passes through and beyond the Archons' domains. The Twelve Archons are distinguished from the Seven Archons (planetary rulers) as a separate but related tier of the cosmic prison structure.",
+      "secondaryNames": [
+        { "name": "The Zodiacal Rulers", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Twelve Powers", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Twelve Cosmic Rulers", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "On the Origin of the World", "Pistis Sophia"],
+        "valentinianParallel": null,
+        "role": "Twelve rulers of the zodiacal heavens; created by Yaldabaoth; agents of astrological fate; keepers of souls in the material prison"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.seven-archons",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "The Seven Archons",
+      "description": "The Seven Archons, or Planetary Rulers, are the seven sub-divine powers created by Yaldabaoth to govern the seven planetary spheres of the ancient geocentric cosmos — Saturn, Jupiter, Mars, the Sun, Venus, Mercury, and the Moon. In the Apocryphon of John their names are recorded as Athoth (the face of a sheep), Eloaio (the face of a donkey), Astaphaios (the face of a hyena), Iao (the face of a serpent with seven heads), Sabaoth (the face of a dragon), Adonin (the face of an ape), and Sabbataios (the face of a flaming fire). These grotesque animal-faced rulers correspond to the seven planetary deities of Babylonian and Hellenistic cosmology — Saturn, Jupiter, etc. — recast as demonic prison-wardens who measure out human fate in hours and years. Each Archon holds a portion of the divine light stolen from Sophia, and each planetary sphere they govern is a barrier the ascending soul must pass through on its way back to the Pleroma. Knowledge of their names and their corresponding powers is soteriologically crucial: the Gnostic soul that knows the true names of the Archons can pass through each sphere unimpeded.",
+      "secondaryNames": [
+        { "name": "The Seven Planetary Rulers", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Seven Powers", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Athoth, Eloaio, Astaphaios, Iao, Sabaoth, Adonin, Sabbataios", "languageTag": "grc", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "On the Origin of the World", "Hypostasis of the Archons", "Pistis Sophia"],
+        "valentinianParallel": null,
+        "role": "Seven rulers of the planetary spheres; created by Yaldabaoth; barrier to the ascending soul; correspond to the seven classical planets; hold stolen divine light"
+      }
+    },
+    {
+      "canonicalName": "gnostic.sethian.ennoia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Ennoia / Epinoia",
+      "description": "Ennoia (\"Thought\") and Epinoia (\"Insight\" / \"After-thought\") are closely related divine principles in the Sethian texts: Ennoia is the divine Thought placed secretly within the physical Adam by the higher powers, and Epinoia is often a more specific term for the luminous salvific spark hidden within humanity to guide it toward gnosis. In the Apocryphon of John, the \"luminous Epinoia\" is sent by the Invisible Spirit to assist Adam — hidden inside him, invisible to Yaldabaoth — and it is this hidden divine intelligence that enables Adam (and through Adam, humanity) to access knowledge of the higher realm despite the Demiurge's best efforts to prevent it. Ennoia and Epinoia are thus both the primordial divine Thought (related to Barbelo/Protennoia at the highest level) and the interior gnosis-spark within each human being, creating a vertical axis of continuity between the supreme divine and the individual seeker. The Simonian tradition (Simon Magus) also features an Ennoia figure — his consort Helena — suggesting this was a widely shared Gnostic theological concept.",
+      "secondaryNames": [
+        { "name": "Epinoia", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Luminous Epinoia", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Thought", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Insight", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Zoe (in some texts)", "languageTag": "en", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "sethian", "pleroma"],
+      "extendedData": {
+        "textSources": ["Apocryphon of John", "On the Origin of the World", "Hypostasis of the Archons"],
+        "valentinianParallel": null,
+        "role": "Divine Thought/Insight hidden within Adam; the salvific gnosis-spark within humanity; bridge between the supreme divine and the individual human seeker"
+      }
+    }
+  ]
+}

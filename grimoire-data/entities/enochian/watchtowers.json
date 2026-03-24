@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "enochian.tablet.union",
+      "entityType": "enochian.tablet",
+      "primaryDisplayName": "Tablet of Union",
+      "description": "The Tablet of Union, also known as the Black Cross or EHNB tablet, is the central binding tablet placed at the intersection of the Four Watchtowers in the Great Table arrangement. It contains four divine names — EXARP (Air), HCOMA (Water), NANTA (Earth), and BITOM (Fire) — each governing one of the elemental tablets and together forming a unifying formula that binds all four into a single coherent system. The Tablet of Union governs the fifth element, Spirit or Aethyr, and in Enochian practice serves as the linchpin of the Great Table: invoking it activates the entire structure and draws down the highest angelic governance over all elemental operations.",
+      "secondaryNames": [
+        {
+          "name": "Tablet of Union",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Black Cross Tablet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "EHNB Tablet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "enochian",
+        "watchtower",
+        "tablet-of-union",
+        "spirit"
+      ],
+      "extendedData": {
+        "element": "Spirit",
+        "divineNames": [
+          "EXARP",
+          "HCOMA",
+          "NANTA",
+          "BITOM"
+        ],
+        "dimensions": "4x5",
+        "squareCount": 20
+      }
+    },
+    {
+      "canonicalName": "enochian.tablet.air",
+      "entityType": "enochian.tablet",
+      "primaryDisplayName": "Air Watchtower",
+      "description": "The Air Watchtower is the Great Tablet of the East, one of the four foundational elemental squares received by John Dee and Edward Kelley between 1582 and 1587. It governs the element of Air and all airy intelligences, angels, and magical operations associated with mind, communication, breath, and the eastern quarter of the ritual space. The tablet's 156 lettered squares are arranged in four sub-quadrants flanking a central cross, and contain the supreme divine name ORO IBAH AOZPI together with six Senior angels and a hierarchy of lesser angels used in specific Enochian invocations.",
+      "secondaryNames": [
+        {
+          "name": "Air Watchtower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Great Tablet of the East",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tablet of Air",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "enochian",
+        "watchtower",
+        "air"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "direction": "East",
+        "divineName": "ORO IBAH AOZPI",
+        "dimensions": "12x13",
+        "squareCount": 156,
+        "seniors": [
+          "HABIORO",
+          "AAOZAIF",
+          "HTMORDA",
+          "AHAOZPI",
+          "HIPOTGA",
+          "AVTOTAR"
+        ]
+      }
+    },
+    {
+      "canonicalName": "enochian.tablet.water",
+      "entityType": "enochian.tablet",
+      "primaryDisplayName": "Water Watchtower",
+      "description": "The Water Watchtower is the Great Tablet of the West, governing the element of Water and all watery intelligences associated with emotion, intuition, purification, and the western quarter of the ritual space. Received as part of Dee and Kelley's Enochian workings, its 156 squares contain the supreme divine name MPH ARSL GAIOL and six Senior angels whose names are drawn directly from the tablet's letter array. In Enochian invocation practice, the Water Watchtower is called upon for works of healing, scrying, prophetic vision, and the governance of spirits belonging to the watery element.",
+      "secondaryNames": [
+        {
+          "name": "Water Watchtower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Great Tablet of the West",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tablet of Water",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "enochian",
+        "watchtower",
+        "water"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "direction": "West",
+        "divineName": "MPH ARSL GAIOL",
+        "dimensions": "12x13",
+        "squareCount": 156,
+        "seniors": [
+          "LSRAHPM",
+          "SAIINOV",
+          "LAOAXRP",
+          "SLGAIOL",
+          "LIGDISA",
+          "SOAIZNT"
+        ]
+      }
+    },
+    {
+      "canonicalName": "enochian.tablet.earth",
+      "entityType": "enochian.tablet",
+      "primaryDisplayName": "Earth Watchtower",
+      "description": "The Earth Watchtower is the Great Tablet of the North, governing the element of Earth and all earthy intelligences associated with material manifestation, stability, endurance, and the northern quarter of the ritual space. Its 156 lettered squares are arranged around the central cross of the tablet and encode the supreme divine name MOR DIAL HCTGA alongside six Senior angels extracted from the tablet's grid. The Earth Watchtower is invoked in operations concerned with the physical world, material prosperity, consecration of the body, and the governance of gnomes and terrestrial spirits within the Enochian hierarchy.",
+      "secondaryNames": [
+        {
+          "name": "Earth Watchtower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Great Tablet of the North",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tablet of Earth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "enochian",
+        "watchtower",
+        "earth"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "direction": "North",
+        "divineName": "MOR DIAL HCTGA",
+        "dimensions": "12x13",
+        "squareCount": 156,
+        "seniors": [
+          "LAIDROM",
+          "ACZINOR",
+          "LZINOPO",
+          "LHCTGA",
+          "AHMLLCU",
+          "ACMBICU"
+        ]
+      }
+    },
+    {
+      "canonicalName": "enochian.tablet.fire",
+      "entityType": "enochian.tablet",
+      "primaryDisplayName": "Fire Watchtower",
+      "description": "The Fire Watchtower is the Great Tablet of the South, governing the element of Fire and all fiery intelligences associated with will, transformation, purification by fire, and the southern quarter of the ritual space. Among the four elemental tablets it carries the most intense and volatile energies; its supreme divine name OIP TEAA PDOCE and six Senior angels encode the governing hierarchy of fire within the Enochian system. In ritual practice, the Fire Watchtower is called upon for works of will, courage, divine inspiration, banishing, and the governance of salamanders and fiery spirits within the Enochian angelic hierarchy.",
+      "secondaryNames": [
+        {
+          "name": "Fire Watchtower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Great Tablet of the South",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tablet of Fire",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "enochian",
+        "watchtower",
+        "fire"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "direction": "South",
+        "divineName": "OIP TEAA PDOCE",
+        "dimensions": "12x13",
+        "squareCount": 156,
+        "seniors": [
+          "AAETPIO",
+          "ADAEOET",
+          "ALNKVLD",
+          "AAPDOCE",
+          "ANODOIN",
+          "ARINNAP"
+        ]
+      }
+    }
+  ]
+}

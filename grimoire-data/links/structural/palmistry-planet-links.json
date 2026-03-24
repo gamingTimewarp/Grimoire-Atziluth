@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "palmistry.mount.jupiter",
+      "target": "astrology.planet.jupiter",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.saturn",
+      "target": "astrology.planet.saturn",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.apollo",
+      "target": "astrology.planet.sol",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.mercury",
+      "target": "astrology.planet.mercury",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.venus",
+      "target": "astrology.planet.venus",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.luna",
+      "target": "astrology.planet.luna",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.mars-inner",
+      "target": "astrology.planet.mars",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "palmistry.mount.mars-outer",
+      "target": "astrology.planet.mars",
+      "label": "planetary-mount",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "hermetic.principle.mentalism",        "target": "astrology.planet.sol",     "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.correspondence",   "target": "astrology.planet.mercury", "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.vibration",        "target": "astrology.planet.mercury", "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.polarity",         "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.rhythm",           "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.cause-and-effect", "target": "astrology.planet.saturn",  "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] },
+    { "source": "hermetic.principle.gender",           "target": "astrology.planet.venus",   "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.hermetic"] }
+  ]
+}

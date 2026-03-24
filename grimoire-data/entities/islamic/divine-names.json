@@ -1,0 +1,3241 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "islamic.divine-name.ar-rahman",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Raḥmān",
+      "description": "The Most Gracious, whose mercy encompasses all of creation without exception. This name appears in the opening verse of the Quran (Al-Fatiha) and is one of the two names most closely associated with the Divine Essence itself. In Sufi tradition, Ar-Rahman is understood as the breath of the Merciful (nafas ar-rahman) through which all existence is sustained and expressed. It signifies a vast, all-encompassing mercy that extends even to those who do not acknowledge it.",
+      "secondaryNames": [
+        {
+          "name": "الرحمن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Beneficent / The Most Gracious",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرحمن",
+        "transliteration": "Ar-Raḥmān",
+        "meaning": "The Most Gracious / The Beneficent",
+        "abjadValue": 298,
+        "orderNumber": 1,
+        "quranicReference": "1:1"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-rahim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Raḥīm",
+      "description": "The Most Merciful, whose mercy is specifically directed toward the believers and the repentant. While Ar-Rahman denotes the universal mercy of God, Ar-Rahim emphasizes a more intimate, special mercy reserved for those who turn to Him. This name also appears in the Basmala and throughout the Quran. In Sufi mysticism, Ar-Rahim represents the mercy that draws the seeker into closeness with the Divine, the compassionate response to sincere turning.",
+      "secondaryNames": [
+        {
+          "name": "الرحيم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Merciful",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرحيم",
+        "transliteration": "Ar-Raḥīm",
+        "meaning": "The Most Merciful",
+        "abjadValue": 258,
+        "orderNumber": 2,
+        "quranicReference": "1:1"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-malik",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Malik",
+      "description": "The King and Sovereign of all existence, whose dominion is absolute and eternal. Unlike earthly kings whose power is delegated and transient, Al-Malik possesses sovereignty by His very nature. This name appears in Surah Al-Hashr (59:23) and Surah Al-Mu'minun (23:116). In Sufi thought, meditating on Al-Malik dissolves the illusion of self-sovereignty and reveals the heart's ultimate dependence on the one true King.",
+      "secondaryNames": [
+        {
+          "name": "الملك",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The King / The Sovereign",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الملك",
+        "transliteration": "Al-Malik",
+        "meaning": "The King / The Sovereign",
+        "abjadValue": 90,
+        "orderNumber": 3,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-quddus",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Quddūs",
+      "description": "The Holy, utterly pure and free from all defect, limitation, and imperfection. Al-Quddus derives from the root q-d-s meaning purity and sanctity, indicating a transcendence beyond any conceivable flaw. This name appears in Surah Al-Hashr (59:23) and Al-Jumu'ah (62:1). In Islamic mysticism, contemplating Al-Quddus purifies the heart of attachments and impurities, aligning the seeker with the sanctity inherent in the divine nature.",
+      "secondaryNames": [
+        {
+          "name": "القدوس",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Holy / The Pure",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القدوس",
+        "transliteration": "Al-Quddūs",
+        "meaning": "The Holy / The Pure",
+        "abjadValue": 170,
+        "orderNumber": 4,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.as-salam",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "As-Salām",
+      "description": "The Source of Peace, the one from whom all true peace originates and flows. As-Salam is free from all imperfection and is the wellspring of safety, soundness, and wholeness. This name appears in Surah Al-Hashr (59:23) alongside Al-Quddus. Sufi masters teach that the greeting of peace (as-salamu alaykum) is a reminder that peace is not merely social but ontological — grounded in the divine name — and that the heart finds rest only in returning to this source.",
+      "secondaryNames": [
+        {
+          "name": "السلام",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Source of Peace",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "السلام",
+        "transliteration": "As-Salām",
+        "meaning": "The Source of Peace / The Flawless",
+        "abjadValue": 131,
+        "orderNumber": 5,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mumin",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mu'min",
+      "description": "The Guardian of Faith, the Bestower of security and belief. Al-Mu'min grants safety to His creation and affirms the truthfulness of His messengers, confirming faith in the hearts of believers. This name appears in Surah Al-Hashr (59:23). In Sufi tradition, Al-Mu'min is the name through which the divine protection operates, and the believer who invokes it seeks to have their inner faith strengthened and authenticated by God Himself.",
+      "secondaryNames": [
+        {
+          "name": "المؤمن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Guardian of Faith / The Faithful",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المؤمن",
+        "transliteration": "Al-Mu'min",
+        "meaning": "The Guardian of Faith / The Faithful",
+        "abjadValue": 136,
+        "orderNumber": 6,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muhaymin",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muhaymin",
+      "description": "The Protector and Overseer, the one who watches over and guards all things with perfect vigilance. Al-Muhaymin combines the meanings of guardian, witness, and controller — one who maintains the integrity of all that exists. This name appears in Surah Al-Hashr (59:23). Sufi commentators relate this name to divine providence: nothing escapes the watchful care of Al-Muhaymin, and the seeker finds in this name assurance that the path is guarded.",
+      "secondaryNames": [
+        {
+          "name": "المهيمن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Protector / The Overseer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المهيمن",
+        "transliteration": "Al-Muhaymin",
+        "meaning": "The Protector / The Overseer",
+        "abjadValue": 145,
+        "orderNumber": 7,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-aziz",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Azīz",
+      "description": "The Mighty and Invincible, whose power cannot be overcome or diminished. Al-Aziz derives from 'izza, meaning honor, might, and rareness — He is the one of absolute invincibility and incomparable dignity. This name appears throughout the Quran, often paired with Al-Hakim. In Sufi metaphysics, Al-Aziz represents the aspect of divine power that renders all other strength relative and dependent; true honor belongs only to God.",
+      "secondaryNames": [
+        {
+          "name": "العزيز",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Mighty / The Invincible",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العزيز",
+        "transliteration": "Al-'Azīz",
+        "meaning": "The Mighty / The Invincible",
+        "abjadValue": 94,
+        "orderNumber": 8,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-jabbar",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Jabbār",
+      "description": "The Compeller and the Restorer of the broken. Al-Jabbar carries a dual meaning: the one who compels all things to His will and, more tenderly, the one who sets right what is broken and heals the wounded. This name appears in Surah Al-Hashr (59:23). In Sufi spirituality, Al-Jabbar is invoked when one feels shattered or overwhelmed; the divine compulsion to repair and restore is the merciful face of this mighty name.",
+      "secondaryNames": [
+        {
+          "name": "الجبار",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Compeller / The Restorer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الجبار",
+        "transliteration": "Al-Jabbār",
+        "meaning": "The Compeller / The Restorer",
+        "abjadValue": 206,
+        "orderNumber": 9,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mutakabbir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mutakabbir",
+      "description": "The Supremely Great, the one who rightfully asserts greatness because true greatness belongs to Him alone. Unlike human pride, which is a defect, divine kibr (greatness) is a perfection — it is the recognition that magnificence in its ultimate form resides only in God. This name appears in Surah Al-Hashr (59:23). Sufis contemplate Al-Mutakabbir to dissolve ego-driven pride, recognizing that the only legitimate claim to greatness is the divine.",
+      "secondaryNames": [
+        {
+          "name": "المتكبر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Supremely Great / The Majestic",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المتكبر",
+        "transliteration": "Al-Mutakabbir",
+        "meaning": "The Supremely Great / The Majestic",
+        "abjadValue": 662,
+        "orderNumber": 10,
+        "quranicReference": "59:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-khaliq",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Khāliq",
+      "description": "The Creator, the one who brings all things into existence from nothing according to His will and design. Al-Khaliq derives from khalq — measuring, determining, and creating — indicating a purposeful and precise act of origination. This name appears in Surah Al-Hashr (59:24) and elsewhere. In Sufi cosmology, the creative act is an expression of divine love: God created because, as the hadith qudsi says, He was a hidden treasure who loved to be known.",
+      "secondaryNames": [
+        {
+          "name": "الخالق",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Creator",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الخالق",
+        "transliteration": "Al-Khāliq",
+        "meaning": "The Creator",
+        "abjadValue": 731,
+        "orderNumber": 11,
+        "quranicReference": "59:24"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-bari",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Bāri'",
+      "description": "The Evolver and Originator, the one who distinguishes and separates created things from one another, giving each its unique form. Al-Bari' implies the act of differentiating — creating discrete, individuated beings from the undifferentiated potentiality. This name appears in Surah Al-Hashr (59:24). Sufi thinkers see in Al-Bari' the divine act of theophany (tajalli) through which the infinite manifests in finite, distinct forms without losing its unity.",
+      "secondaryNames": [
+        {
+          "name": "البارئ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Evolver / The Originator",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "البارئ",
+        "transliteration": "Al-Bāri'",
+        "meaning": "The Evolver / The Originator",
+        "abjadValue": 214,
+        "orderNumber": 12,
+        "quranicReference": "59:24"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-musawwir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muṣawwir",
+      "description": "The Fashioner of Forms, the divine artist who shapes and gives form to all created things. Al-Musawwir derives from sawwara — to give form or image — and describes God as the one who bestows upon each thing its particular appearance, character, and distinct individuality. This name appears in Surah Al-Hashr (59:24). In Sufi metaphysics, every beautiful form in creation is a theophanic image (sura) of one of the divine attributes.",
+      "secondaryNames": [
+        {
+          "name": "المصور",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Fashioner of Forms / The Shaper",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المصور",
+        "transliteration": "Al-Muṣawwir",
+        "meaning": "The Fashioner of Forms / The Shaper",
+        "abjadValue": 336,
+        "orderNumber": 13,
+        "quranicReference": "59:24"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-ghaffar",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ghaffār",
+      "description": "The Ever-Forgiving, the one who repeatedly and abundantly covers and conceals the sins of His servants. Al-Ghaffar comes from the root gh-f-r meaning to cover, protect, and forgive — like a helmet that shields. The intensive form indicates perpetual, boundless forgiveness. This name appears in Surah Sad (38:66) and Surah Az-Zumar (39:5). Sufi masters teach that Al-Ghaffar is the name to invoke when overwhelmed by guilt, for God's covering mercy is inexhaustible.",
+      "secondaryNames": [
+        {
+          "name": "الغفار",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Ever-Forgiving / The Repeatedly Forgiving",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الغفار",
+        "transliteration": "Al-Ghaffār",
+        "meaning": "The Ever-Forgiving",
+        "abjadValue": 1281,
+        "orderNumber": 14,
+        "quranicReference": "38:66"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-qahhar",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Qahhār",
+      "description": "The Subduer, the Irresistible, the one who dominates all things and reduces them to absolute submission. Al-Qahhar derives from qahara — to overcome and overwhelm — indicating that nothing in creation can resist the divine will. This name appears in Surah Yusuf (12:39) and elsewhere. In Sufi practice, Al-Qahhar is the name that subdues the lower self (nafs); the mystic prays for this quality to vanquish the ego's resistance to spiritual truth.",
+      "secondaryNames": [
+        {
+          "name": "القهار",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Subduer / The Dominant",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القهار",
+        "transliteration": "Al-Qahhār",
+        "meaning": "The Subduer / The Dominant",
+        "abjadValue": 306,
+        "orderNumber": 15,
+        "quranicReference": "12:39"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wahhab",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wahhāb",
+      "description": "The Bestower, the one who gives freely and abundantly without expectation of return or recompense. Al-Wahhab indicates pure, unconditional generosity — a giving that flows from the divine nature itself. This name appears in Surah Al-Imran (3:8) and Surah Sad (38:9). In Sufi thought, Al-Wahhab is the name associated with divine grace (wahba) — gifts that come without human merit, given solely out of divine munificence and love.",
+      "secondaryNames": [
+        {
+          "name": "الوهاب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Bestower / The Giver of Gifts",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الوهاب",
+        "transliteration": "Al-Wahhāb",
+        "meaning": "The Bestower / The Giver of Gifts",
+        "abjadValue": 14,
+        "orderNumber": 16,
+        "quranicReference": "3:8"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-razzaq",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Razzāq",
+      "description": "The Provider, the one who continually supplies sustenance to all creatures — physical, spiritual, and subtle. Ar-Razzaq derives from rizq — provision — and the intensive form indicates ongoing, perpetual provision. This name appears in Surah Adh-Dhariyat (51:58). Sufi masters extend the concept of rizq beyond bread and wealth to include spiritual nourishment, meaning, and the breath of life itself; all provision flows ultimately from this divine name.",
+      "secondaryNames": [
+        {
+          "name": "الرزاق",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Provider / The Sustainer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرزاق",
+        "transliteration": "Ar-Razzāq",
+        "meaning": "The Provider / The Sustainer",
+        "abjadValue": 308,
+        "orderNumber": 17,
+        "quranicReference": "51:58"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-fattah",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Fattāḥ",
+      "description": "The Opener, the one who opens all doors — of provision, mercy, knowledge, and spiritual realization. Al-Fattah derives from fataha — to open, conquer, and judge — and implies that every breakthrough and victory is ultimately by divine permission. This name appears in Surah Saba (34:26). In Sufi practice, Al-Fattah is invoked when seeking removal of obstacles; the Sufi understands every spiritual station attained as a fath (opening) granted by God.",
+      "secondaryNames": [
+        {
+          "name": "الفتاح",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Opener / The Conqueror",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الفتاح",
+        "transliteration": "Al-Fattāḥ",
+        "meaning": "The Opener / The Conqueror",
+        "abjadValue": 489,
+        "orderNumber": 18,
+        "quranicReference": "34:26"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-alim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Alīm",
+      "description": "The All-Knowing, whose knowledge is total, eternal, and encompasses every manifest and hidden thing without limit or error. Al-Alim's knowledge precedes creation and remains perfect regardless of what occurs. This name appears throughout the Quran, most notably in Ayat al-Kursi (2:255). In Sufi epistemology, all human knowledge is a dim reflection of divine knowledge; the mystic's journey is toward increasing unveiling (kashf) of what Al-Alim already knows completely.",
+      "secondaryNames": [
+        {
+          "name": "العليم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Knowing / The Omniscient",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العليم",
+        "transliteration": "Al-'Alīm",
+        "meaning": "The All-Knowing / The Omniscient",
+        "abjadValue": 150,
+        "orderNumber": 19,
+        "quranicReference": "2:255"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-qabid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Qābiḍ",
+      "description": "The Constrictor, the one who withholds and contracts according to divine wisdom and mercy. Al-Qabid holds back provision, life, and spiritual states — not as cruelty but as a necessary complementary force to Al-Basit. This name appears in Surah Al-Baqarah (2:245). Sufi masters describe the mystical states of qabd (contraction) and bast (expansion) as two movements of the spiritual heart; both are gifts from God teaching the seeker detachment and trust.",
+      "secondaryNames": [
+        {
+          "name": "القابض",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Constrictor / The Withholder",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القابض",
+        "transliteration": "Al-Qābiḍ",
+        "meaning": "The Constrictor / The Withholder",
+        "abjadValue": 903,
+        "orderNumber": 20,
+        "quranicReference": "2:245"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-basit",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Bāsiṭ",
+      "description": "The Expander, the one who opens and extends provision, mercy, and spiritual states with generosity. Al-Basit is the complementary pair of Al-Qabid, and together they describe the divine rhythm of contraction and expansion that governs all of existence. This name is implied in Surah Al-Baqarah (2:245). In Sufi spirituality, the state of bast is one of spiritual openness, joy, and expansiveness — a gift from Al-Basit that must not lead to spiritual heedlessness.",
+      "secondaryNames": [
+        {
+          "name": "الباسط",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Expander / The Extender",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الباسط",
+        "transliteration": "Al-Bāsiṭ",
+        "meaning": "The Expander / The Extender",
+        "abjadValue": 72,
+        "orderNumber": 21,
+        "quranicReference": "2:245"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-khafid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Khāfiḍ",
+      "description": "The Abaser, the one who lowers the arrogant and humbles those who exalt themselves unlawfully. Al-Khafid is the complementary force to Ar-Rafi — together they describe divine justice that equalizes, lowering what is raised in pride and elevating what is lowered in humility. This name is found in hadith and classical Sufi lists. In Islamic spirituality, Al-Khafid reminds the seeker that all elevation and abasement ultimately rests with God alone.",
+      "secondaryNames": [
+        {
+          "name": "الخافض",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Abaser / The Humiliator of the Arrogant",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الخافض",
+        "transliteration": "Al-Khāfiḍ",
+        "meaning": "The Abaser / The Humiliator of the Arrogant",
+        "abjadValue": 1481,
+        "orderNumber": 22
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-rafi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Rāfi'",
+      "description": "The Exalter, the one who raises the station of believers, prophets, and the humble in spirit. Ar-Rafi' pairs with Al-Khafid as the elevating force of divine justice and mercy. This name appears in Surah Al-Waqi'ah (56:3) in its verbal form. In Sufi teaching, the highest elevation is spiritual — the raising of the heart to the divine presence. The Prophet Muhammad is called the rafi' (exalter) because his mission lifts humanity toward God.",
+      "secondaryNames": [
+        {
+          "name": "الرافع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Exalter / The Elevator",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرافع",
+        "transliteration": "Ar-Rāfi'",
+        "meaning": "The Exalter / The Elevator",
+        "abjadValue": 351,
+        "orderNumber": 23,
+        "quranicReference": "56:3"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muizz",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mu'izz",
+      "description": "The Bestower of Honor, the one who grants dignity, respect, and elevation to whom He wills. Al-Mu'izz derives from 'izza — honor and might — and represents the divine capacity to clothe the servant with glory. This name appears in Surah Al-Imran (3:26) paired with Al-Muzill. In Sufi understanding, true honor ('izza) comes only from God; the seeker who honors God above all else is in turn honored, while the one who seeks honor from other than God will ultimately be diminished.",
+      "secondaryNames": [
+        {
+          "name": "المعز",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Bestower of Honor / The Honorer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المعز",
+        "transliteration": "Al-Mu'izz",
+        "meaning": "The Bestower of Honor / The Honorer",
+        "abjadValue": 117,
+        "orderNumber": 24,
+        "quranicReference": "3:26"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muzill",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muzill",
+      "description": "The Humiliator, the one who abases and disgraces those who are arrogant, unjust, or opposed to the divine order. Al-Muzill is the counterpart to Al-Mu'izz and together they express divine justice — honor and humiliation are entirely in God's hands. This name appears in Surah Al-Imran (3:26). Sufi masters teach that this name should be invoked only to protect from oppressors, not from vengeful motives; its deeper lesson is that all worldly honor is fleeting.",
+      "secondaryNames": [
+        {
+          "name": "المذل",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Humiliator / The Degrader",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المذل",
+        "transliteration": "Al-Muzill",
+        "meaning": "The Humiliator / The Degrader",
+        "abjadValue": 770,
+        "orderNumber": 25,
+        "quranicReference": "3:26"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.as-sami",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "As-Samī'",
+      "description": "The All-Hearing, who hears every sound, prayer, whisper, and inner secret without any being hidden from Him. As-Sami' indicates hearing that is total, immediate, and eternal — encompassing the silent prayer of the heart as readily as spoken words. This name appears frequently throughout the Quran. In Sufi practice, consciousness of As-Sami' transforms speech and inner dialogue; the mystic learns to speak and think only what they would have God hear, which is everything.",
+      "secondaryNames": [
+        {
+          "name": "السميع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Hearing / The All-Listening",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "السميع",
+        "transliteration": "As-Samī'",
+        "meaning": "The All-Hearing",
+        "abjadValue": 180,
+        "orderNumber": 26,
+        "quranicReference": "2:127"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-basir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Baṣīr",
+      "description": "The All-Seeing, whose vision penetrates every manifest and hidden reality with perfect clarity. Al-Basir sees not only the exterior of things but their innermost nature, intention, and essence. This name frequently appears paired with As-Sami' throughout the Quran. In Sufi metaphysics, Al-Basir represents the divine light (nur) by which all things are seen; the mystic's quest for inner sight (basirah) is participation in this divine quality of seeing through the veil of appearances.",
+      "secondaryNames": [
+        {
+          "name": "البصير",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Seeing / The All-Beholding",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "البصير",
+        "transliteration": "Al-Baṣīr",
+        "meaning": "The All-Seeing",
+        "abjadValue": 302,
+        "orderNumber": 27,
+        "quranicReference": "4:58"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hakam",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥakam",
+      "description": "The Judge, the ultimate arbitrator whose verdicts are perfectly just, final, and cannot be overturned. Al-Hakam derives from hukm — judgment and authority — and indicates that the divine word is the only truly binding law. This name appears in Surah Al-An'am (6:114). In Sufi jurisprudence, Al-Hakam is the name that grounds Islamic law in its divine source; the mystic who submits to divine judgment finds inner peace in knowing that true justice exists.",
+      "secondaryNames": [
+        {
+          "name": "الحكم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Judge / The Arbitrator",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحكم",
+        "transliteration": "Al-Ḥakam",
+        "meaning": "The Judge / The Arbitrator",
+        "abjadValue": 68,
+        "orderNumber": 28,
+        "quranicReference": "6:114"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-adl",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Adl",
+      "description": "The Just, whose justice is absolute, impartial, and perfectly balanced. Al-Adl is not merely one who acts justly but is Justice itself — the divine attribute from which all earthly conceptions of fairness derive their meaning. This name is found in classical hadith collections. In Sufi ethics, Al-Adl teaches the mystic to cultivate inner justice: giving each faculty, relationship, and spiritual station its due — an interior balance reflecting the cosmic justice of the divine.",
+      "secondaryNames": [
+        {
+          "name": "العدل",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Just / The Equitable",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العدل",
+        "transliteration": "Al-'Adl",
+        "meaning": "The Just / The Equitable",
+        "abjadValue": 104,
+        "orderNumber": 29
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-latif",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Laṭīf",
+      "description": "The Subtle, the Gentle, the Most Refined — the one who perceives the finest details and acts through imperceptible, gracious means. Al-Latif indicates both subtlety of perception and subtlety of action: God penetrates even the smallest and most concealed things, working through gentle and delicate means. This name appears in Surah Al-An'am (6:103) and Ash-Shura (42:19). Sufi masters prize Al-Latif as the name of divine kindness that works invisibly in the soul's transformation.",
+      "secondaryNames": [
+        {
+          "name": "اللطيف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Subtle / The Gentle",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "اللطيف",
+        "transliteration": "Al-Laṭīf",
+        "meaning": "The Subtle / The Gentle",
+        "abjadValue": 129,
+        "orderNumber": 30,
+        "quranicReference": "6:103"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-khabir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Khabīr",
+      "description": "The All-Aware, the one who has complete inner knowledge of the hidden nature and subtle realities of all things. Al-Khabir differs from Al-Alim in that it emphasizes awareness of the inner, subtle, and concealed dimensions — the texture and quality of things, not merely their fact. This name frequently pairs with Al-Latif in the Quran (e.g., 6:103). In Sufi teaching, Al-Khabir invites the seeker into a quality of deep interior awareness of the divine presence within all phenomena.",
+      "secondaryNames": [
+        {
+          "name": "الخبير",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Aware / The Knower of Subtleties",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الخبير",
+        "transliteration": "Al-Khabīr",
+        "meaning": "The All-Aware / The Knower of Subtleties",
+        "abjadValue": 812,
+        "orderNumber": 31,
+        "quranicReference": "6:103"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-halim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥalīm",
+      "description": "The Forbearing, the one who withholds punishment despite having full knowledge of wrongdoing and full power to act. Al-Halim is not merely patient in the sense of enduring hardship but actively forbears — choosing to delay retribution out of wisdom and mercy, granting time for repentance. This name appears in Surah Al-Baqarah (2:225) and elsewhere. Sufi masters see in Al-Halim the divine gentleness that guides rather than compels, educating through patience.",
+      "secondaryNames": [
+        {
+          "name": "الحليم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Forbearing / The Clement",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحليم",
+        "transliteration": "Al-Ḥalīm",
+        "meaning": "The Forbearing / The Clement",
+        "abjadValue": 88,
+        "orderNumber": 32,
+        "quranicReference": "2:225"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-azim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Aẓīm",
+      "description": "The Magnificent, the Supremely Great, whose greatness transcends all comprehension and comparison. Al-Azim describes a divine grandeur that overwhelms the mind and cannot be adequately conceptualized by created beings. This name appears in Ayat al-Kursi (2:255), one of the most exalted verses of the Quran. In Sufi devotion, Al-Azim is central to the contemplation of divine majesty (jalal); standing before this name dissolves the ego's self-importance in the face of true greatness.",
+      "secondaryNames": [
+        {
+          "name": "العظيم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Magnificent / The Supremely Great",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العظيم",
+        "transliteration": "Al-'Aẓīm",
+        "meaning": "The Magnificent / The Supremely Great",
+        "abjadValue": 1020,
+        "orderNumber": 33,
+        "quranicReference": "2:255"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-ghafur",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ghafūr",
+      "description": "Al-Ghafūr (The All-Forgiving) encompasses the full scope of divine forgiveness — not merely forgiving once but perpetually and completely. While Al-Ghaffār (Name 14) emphasises the repeated act of forgiveness, Al-Ghafūr stresses the depth and totality of each act. In Sufi practice this Name is invoked for complete release from the weight of past errors and for spiritual purification.",
+      "secondaryNames": [
+        {
+          "name": "الغفور",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Forgiving",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الغفور",
+        "transliteration": "Al-Ghafūr",
+        "meaning": "The All-Forgiving",
+        "abjadValue": 1286,
+        "orderNumber": 34
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ash-shakur",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ash-Shakūr",
+      "description": "Ash-Shakūr (The Appreciative) denotes God's quality of gratitude and recognition of even the smallest acts of devotion, rewarding them immeasurably. This Name teaches that divine generosity flows in response to sincere effort, however modest. In Sufi understanding Shakūr reveals that the divine relationship is one of mutual exchange: the servant worships and God acknowledges, multiplies, and returns.",
+      "secondaryNames": [
+        {
+          "name": "الشكور",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Appreciative",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الشكور",
+        "transliteration": "Ash-Shakūr",
+        "meaning": "The Appreciative",
+        "abjadValue": 526,
+        "orderNumber": 35
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-ali",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Alī",
+      "description": "Al-'Alī (The Most High) affirms the absolute transcendence and exaltation of God above all creation. This Name is closely paired with Al-Kabīr and Al-Mutakabbir, together constituting the divine attributes of supreme majesty. In devotional practice Al-'Alī is contemplated to cultivate humility and to recognise the smallness of the ego before the infinitely exalted Reality.",
+      "secondaryNames": [
+        {
+          "name": "العلي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Most High",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العلي",
+        "transliteration": "Al-'Alī",
+        "meaning": "The Most High",
+        "abjadValue": 110,
+        "orderNumber": 36,
+        "quranicReference": "2:255"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-kabir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Kabīr",
+      "description": "Al-Kabīr (The Greatest) expresses the infinite magnitude of the divine reality, which exceeds all measurement and comparison. No concept, form, or being can contain or equal God's greatness. In gnostic Islam this Name points to the abyss between created knowing and the boundless divine being — all greatness in the world is but a borrowed reflection of Al-Kabīr.",
+      "secondaryNames": [
+        {
+          "name": "الكبير",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Greatest",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الكبير",
+        "transliteration": "Al-Kabīr",
+        "meaning": "The Greatest",
+        "abjadValue": 232,
+        "orderNumber": 37
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hafiz",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥafīẓ",
+      "description": "Al-Ḥafīẓ (The Preserver) is the guardian who maintains and protects all things in their proper order, preventing loss and decay. The Quran uses this Name when describing God's care over the heavens and over the souls of the faithful. In talismanic practice this Name is written for protection of persons, property, and sacred knowledge.",
+      "secondaryNames": [
+        {
+          "name": "الحفيظ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Preserver",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحفيظ",
+        "transliteration": "Al-Ḥafīẓ",
+        "meaning": "The Preserver",
+        "abjadValue": 998,
+        "orderNumber": 38
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muqit",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muqīt",
+      "description": "Al-Muqīt (The Nourisher/Sustainer) signifies the divine power that provides the precise sustenance each being requires at each moment — physical, spiritual, and existential. The root also carries meanings of witness and overseer, making this Name one who both sees the need and supplies it. In Sufi teaching Al-Muqīt governs the inner nourishment of the heart on its path.",
+      "secondaryNames": [
+        {
+          "name": "المقيت",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Nourisher",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المقيت",
+        "transliteration": "Al-Muqīt",
+        "meaning": "The Nourisher",
+        "abjadValue": 550,
+        "orderNumber": 39,
+        "quranicReference": "4:85"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hasib",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥasīb",
+      "description": "Al-Ḥasīb (The Reckoner/Sufficient Reckoner) refers to God as the one who takes complete account of all deeds and provides sufficiently for all needs. The root ḥasaba means both to count/reckon and to be sufficient — this Name thus encompasses divine accounting and divine sufficiency simultaneously. On the Day of Reckoning (Yawm al-Ḥisāb) it is Al-Ḥasīb who holds the final account.",
+      "secondaryNames": [
+        {
+          "name": "الحسيب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Reckoner",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحسيب",
+        "transliteration": "Al-Ḥasīb",
+        "meaning": "The Reckoner",
+        "abjadValue": 80,
+        "orderNumber": 40,
+        "quranicReference": "4:6"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-jalil",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Jalīl",
+      "description": "Al-Jalīl (The Majestic) expresses the awesome, sublime quality of divine glory that evokes reverence and awe in all who behold its traces. In Islamic mysticism the divine attributes are divided into Jalāl (majesty, awe, power) and Jamāl (beauty, mercy, love) — Al-Jalīl is the supreme expression of the Jalāl pole. This Name is contemplated when seeking to overcome ego-resistance through the overwhelming reality of divine greatness.",
+      "secondaryNames": [
+        {
+          "name": "الجليل",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Majestic",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الجليل",
+        "transliteration": "Al-Jalīl",
+        "meaning": "The Majestic",
+        "abjadValue": 73,
+        "orderNumber": 41
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-karim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Karīm",
+      "description": "Al-Karīm (The Most Generous/Noble) encompasses both nobility of character and boundless generosity. In Arabic karīm implies giving freely without expectation of return, and nobility that expresses itself through largesse. God is Al-Karīm in that divine gifts flow continuously to all beings regardless of their worthiness — a generosity that is structural rather than conditional.",
+      "secondaryNames": [
+        {
+          "name": "الكريم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Most Generous",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الكريم",
+        "transliteration": "Al-Karīm",
+        "meaning": "The Most Generous",
+        "abjadValue": 270,
+        "orderNumber": 42,
+        "quranicReference": "27:40"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-raqib",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Raqīb",
+      "description": "Ar-Raqīb (The Watchful/Ever-Observant) is the divine witness who observes every action, thought, and movement of the heart with complete and perfect attention. Unlike surveillance that might be evaded, divine watchfulness is total and simultaneous with existence itself. This Name inspires ihsān — the practice of worshipping God as if one sees Him, knowing that He sees.",
+      "secondaryNames": [
+        {
+          "name": "الرقيب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Watchful",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرقيب",
+        "transliteration": "Ar-Raqīb",
+        "meaning": "The Watchful",
+        "abjadValue": 312,
+        "orderNumber": 43,
+        "quranicReference": "4:1"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mujib",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mujīb",
+      "description": "Al-Mujīb (The Responsive) is the Name that answers prayer — the divine quality of being ever-present, ever-attentive to every call and petition. No sincere prayer goes unheard or unanswered, though the answer may come in unexpected form or time. In Sufi understanding Al-Mujīb teaches that prayer is never a one-way communication but always a genuine dialogue with the living divine.",
+      "secondaryNames": [
+        {
+          "name": "المجيب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Responsive",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المجيب",
+        "transliteration": "Al-Mujīb",
+        "meaning": "The Responsive",
+        "abjadValue": 55,
+        "orderNumber": 44,
+        "quranicReference": "11:61"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wasi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wāsi'",
+      "description": "Al-Wāsi' (The All-Encompassing/Vast) expresses the infinite scope and breadth of divine reality, knowledge, mercy, and power — nothing lies outside its reach. The Quran uses this Name alongside Al-'Alīm to indicate that God's knowledge encompasses everything within His vast being. In practice this Name is contemplated to dissolve feelings of limitation and to expand one's sense of spiritual possibility.",
+      "secondaryNames": [
+        {
+          "name": "الواسع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Encompassing",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الواسع",
+        "transliteration": "Al-Wāsi'",
+        "meaning": "The All-Encompassing",
+        "abjadValue": 137,
+        "orderNumber": 45,
+        "quranicReference": "2:115"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hakim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥakīm",
+      "description": "Al-Ḥakīm (The Wise) refers to the divine wisdom that underlies all creation and governance — every event, law, and arrangement proceeds from perfect wisdom even when it exceeds human comprehension. This Name is the most frequently paired with Al-'Alīm (The All-Knowing) in the Quran, indicating that divine knowledge is never divorced from wisdom. In Sufi philosophy Al-Ḥakīm governs the hidden intelligibility of existence.",
+      "secondaryNames": [
+        {
+          "name": "الحكيم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Wise",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحكيم",
+        "transliteration": "Al-Ḥakīm",
+        "meaning": "The Wise",
+        "abjadValue": 78,
+        "orderNumber": 46,
+        "quranicReference": "2:129"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wadud",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wadūd",
+      "description": "Al-Wadūd (The Loving/Most Affectionate) is the Name of pure divine love — a warm, intimate, steadfast love that seeks the wellbeing of the beloved. Unlike mercy which responds to need, love in this sense is its own self-generating quality. In Sufi spirituality Al-Wadūd is the foundation of the mystical path: God loves the seeker, and the seeker returns to God impelled by love.",
+      "secondaryNames": [
+        {
+          "name": "الودود",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Loving",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الودود",
+        "transliteration": "Al-Wadūd",
+        "meaning": "The Loving",
+        "abjadValue": 20,
+        "orderNumber": 47,
+        "quranicReference": "85:14"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-majid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Majīd",
+      "description": "Al-Majīd (The Glorious) combines majesty and generosity — the Arabic majīd denotes one whose glory shines outward and whose nobility blesses all who come near. This Name appears in the Quranic account of the angels announcing the birth of Isaac to Abraham, emphasising that divine glory perpetually generates blessing. The Throne Verse ends with a phrase invoking this quality.",
+      "secondaryNames": [
+        {
+          "name": "المجيد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Glorious",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المجيد",
+        "transliteration": "Al-Majīd",
+        "meaning": "The Glorious",
+        "abjadValue": 57,
+        "orderNumber": 48,
+        "quranicReference": "11:73"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-baith",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Bā'ith",
+      "description": "Al-Bā'ith (The Resurrector/Raiser) is the Name that sends forth — it governs the resurrection of the dead, the raising up of prophets, and the awakening of the heart from spiritual torpor. This Name is central to Islamic eschatology: God is the one who will literally raise all the dead on the Last Day for judgment. Inwardly, Al-Bā'ith is invoked to awaken the dormant spiritual faculties.",
+      "secondaryNames": [
+        {
+          "name": "الباعث",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Resurrector",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الباعث",
+        "transliteration": "Al-Bā'ith",
+        "meaning": "The Resurrector",
+        "abjadValue": 573,
+        "orderNumber": 49
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ash-shahid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ash-Shahīd",
+      "description": "Ash-Shahīd (The Witness/The Ever-Present) is the Name of divine witnessing — God bears absolute witness to all events, all speech, and all inner states simultaneously, from every perspective at once. Unlike human witnessing which is partial and sequential, divine shahāda is total and simultaneous. The Arabic root also gives the word shahīd (martyr), one who bears ultimate witness through self-offering.",
+      "secondaryNames": [
+        {
+          "name": "الشهيد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Witness",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الشهيد",
+        "transliteration": "Ash-Shahīd",
+        "meaning": "The Witness",
+        "abjadValue": 319,
+        "orderNumber": 50
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-haqq",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥaqq",
+      "description": "Al-Ḥaqq (The Truth/The Real) is perhaps the most metaphysically fundamental of all the Names — God is reality itself, the ground of all being, the standard against which all other things are measured as more or less real. In Sufi metaphysics Al-Ḥaqq is a name for the absolute divine being prior to all attributes: Ibn Arabi famously used 'al-Ḥaqq' as a near-synonym for God in his writings on oneness of being (waḥdat al-wujūd).",
+      "secondaryNames": [
+        {
+          "name": "الحق",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Truth",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحق",
+        "transliteration": "Al-Ḥaqq",
+        "meaning": "The Truth",
+        "abjadValue": 108,
+        "orderNumber": 51,
+        "quranicReference": "22:62"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wakil",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wakīl",
+      "description": "Al-Wakīl (The Trustee/Disposer of Affairs) is the Name invoked by those who entrust their affairs entirely to God — the one who can be completely relied upon to manage, protect, and provide. The practice of tawakkul (reliance on God) is the living expression of this Name: having done one's due diligence, one releases the outcome to Al-Wakīl. 'God is sufficient for us and how excellent a trustee He is' (Quran 3:173).",
+      "secondaryNames": [
+        {
+          "name": "الوكيل",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Trustee",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الوكيل",
+        "transliteration": "Al-Wakīl",
+        "meaning": "The Trustee",
+        "abjadValue": 66,
+        "orderNumber": 52,
+        "quranicReference": "3:173"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-qawi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Qawī",
+      "description": "Al-Qawī (The Strong) affirms the divine power that is the ultimate source of all strength in existence. No force can overcome it and no effort can exhaust it. This Name is paired with Al-Azīz and Al-Matīn to describe the indestructible, self-sustaining nature of divine power — a power that does not require exertion or rest.",
+      "secondaryNames": [
+        {
+          "name": "القوي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Strong",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القوي",
+        "transliteration": "Al-Qawī",
+        "meaning": "The Strong",
+        "abjadValue": 116,
+        "orderNumber": 53
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-matin",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Matīn",
+      "description": "Al-Matīn (The Firm/Steadfast) expresses the quality of divine power that is immovably stable — the firmness that sustains all existence without wavering, tiring, or being subject to entropy. In Sufi practice contemplation of Al-Matīn is medicine for the heart caught in anxiety and instability: beneath the flux of creation lies the absolute firmness of the divine ground.",
+      "secondaryNames": [
+        {
+          "name": "المتين",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Firm",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المتين",
+        "transliteration": "Al-Matīn",
+        "meaning": "The Firm",
+        "abjadValue": 500,
+        "orderNumber": 54,
+        "quranicReference": "51:58"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wali-friend",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Walī",
+      "description": "Al-Walī (The Protecting Friend/Guardian-Patron) refers to the intimate divine friendship and patronage extended to those who draw near through devotion. The awliyā' (pl. of walī) — the saints and friends of God — are those who have drawn so close to the divine that they reflect divine qualities in the world. This Name governs the entire tradition of Islamic sainthood (wilāya).",
+      "secondaryNames": [
+        {
+          "name": "الولي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Protecting Friend",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الولي",
+        "transliteration": "Al-Walī",
+        "meaning": "The Protecting Friend",
+        "abjadValue": 46,
+        "orderNumber": 55,
+        "quranicReference": "2:257"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hamid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥamīd",
+      "description": "Al-Ḥamīd (The Praiseworthy) refers to God as intrinsically worthy of all praise — not because praise is demanded but because the divine nature is such that genuine perception of it naturally produces gratitude and praise. The Prophet Muḥammad's name itself comes from the same root (Ḥ-M-D), making this Name deeply connected to prophetic consciousness.",
+      "secondaryNames": [
+        {
+          "name": "الحميد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Praiseworthy",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحميد",
+        "transliteration": "Al-Ḥamīd",
+        "meaning": "The Praiseworthy",
+        "abjadValue": 62,
+        "orderNumber": 56
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muhsi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muḥṣī",
+      "description": "Al-Muḥṣī (The Counter/Enumerator) refers to the divine capacity to enumerate, account for, and hold in awareness every single thing that exists — every atom, every movement, every thought. This Name is the basis of divine omniscience as a kind of perfect inventory of all being. In eschatological terms Al-Muḥṣī underlies the complete accounting that awaits all souls.",
+      "secondaryNames": [
+        {
+          "name": "المحصي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Counter",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المحصي",
+        "transliteration": "Al-Muḥṣī",
+        "meaning": "The Counter",
+        "abjadValue": 148,
+        "orderNumber": 57
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mubdi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mubdi'",
+      "description": "Al-Mubdi' (The Originator/Initiator) is the Name of the first creative act — the bringing-forth of all existence from non-existence. While Al-Khāliq (Name 11) emphasises the craft of creation, Al-Mubdi' emphasises pure origination: there was nothing, and then there was. In Sufi cosmogony Al-Mubdi' corresponds to the primordial creative command 'Kun!' (Be!).",
+      "secondaryNames": [
+        {
+          "name": "المبدئ",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Originator",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المبدئ",
+        "transliteration": "Al-Mubdi'",
+        "meaning": "The Originator",
+        "abjadValue": 56,
+        "orderNumber": 58
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mu'īd",
+      "description": "Al-Mu'īd (The Restorer/Repeater) is the complementary Name to Al-Mubdi' — the one who brings back, restores, and repeats creation. The Quran repeatedly invokes this Name in the context of resurrection: just as God originated existence, so He is able to restore it. This Name also carries the sense of returning something to its proper state after disruption.",
+      "secondaryNames": [
+        {
+          "name": "المعيد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Restorer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المعيد",
+        "transliteration": "Al-Mu'īd",
+        "meaning": "The Restorer",
+        "abjadValue": 124,
+        "orderNumber": 59
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muhyi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muḥyī",
+      "description": "Al-Muḥyī (The Giver of Life) refers to the divine power that animates existence — both the physical life of the body and the spiritual life of the heart. God gives life not only at physical birth but at every moment, since existence itself is a continuous act of divine bestowing. In Sufi understanding the deeper application is the enlivening of the dead heart through remembrance and love.",
+      "secondaryNames": [
+        {
+          "name": "المحيي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Giver of Life",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المحيي",
+        "transliteration": "Al-Muḥyī",
+        "meaning": "The Giver of Life",
+        "abjadValue": 68,
+        "orderNumber": 60
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mumit",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mumīt",
+      "description": "Al-Mumīt (The Taker of Life) is paired with Al-Muḥyī and holds equal dignity — death in Islamic understanding is not the opposite of divine care but one of its expressions. God takes life as a return home, a transition to a fuller mode of existence. The contemplation of Al-Mumīt is recommended in traditions of memento mori practice to cultivate detachment from the world and focus on what endures.",
+      "secondaryNames": [
+        {
+          "name": "المميت",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Taker of Life",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المميت",
+        "transliteration": "Al-Mumīt",
+        "meaning": "The Taker of Life",
+        "abjadValue": 490,
+        "orderNumber": 61
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hayy",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ḥayy",
+      "description": "Al-Ḥayy (The Ever-Living) is the Name of pure divine life that is self-subsisting, without beginning, without end, and without dependence on anything external. This Name appears in the famous Throne Verse (Ayat al-Kursi, 2:255) alongside Al-Qayyūm, forming the dyad of living and self-sustaining. In the hadith tradition Al-Ḥayy is one of the Ism al-A'ẓam — the Greatest Names capable of granting any petition.",
+      "secondaryNames": [
+        {
+          "name": "الحي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Ever-Living",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الحي",
+        "transliteration": "Al-Ḥayy",
+        "meaning": "The Ever-Living",
+        "abjadValue": 18,
+        "orderNumber": 62,
+        "quranicReference": "2:255"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-qayyum",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Qayyūm",
+      "description": "Al-Qayyūm (The Self-Subsisting/Eternal Sustainer) is the Name that denotes God as the ontological ground and continuous support of all existence — everything stands because Al-Qayyūm holds it upright. This Name is paired with Al-Ḥayy in the Throne Verse and together they constitute what some scholars regard as the supreme divine Name (Ism al-A'ẓam). Without Al-Qayyūm, creation would instantaneously dissolve.",
+      "secondaryNames": [
+        {
+          "name": "القيوم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Self-Subsisting",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القيوم",
+        "transliteration": "Al-Qayyūm",
+        "meaning": "The Self-Subsisting",
+        "abjadValue": 156,
+        "orderNumber": 63,
+        "quranicReference": "2:255"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wajid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wājid",
+      "description": "Al-Wājid (The Finder/The One Who Finds) denotes the divine quality of having, finding, and possessing — specifically the richness of one who lacks nothing and finds everything immediately available. This Name is related to the root wajada meaning both 'to find' and 'to feel/experience', suggesting a God who is present to all experience. In mystical interpretation Al-Wājid is the experiencer of all being.",
+      "secondaryNames": [
+        {
+          "name": "الواجد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Finder",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الواجد",
+        "transliteration": "Al-Wājid",
+        "meaning": "The Finder",
+        "abjadValue": 14,
+        "orderNumber": 64
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-majid-noble",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mājidd",
+      "description": "Al-Mājidd (The Noble/Illustrious) is a form of Al-Majīd emphasising the emanating quality of divine nobility — glory that radiates outward and ennobles all it touches. While Al-Majīd (Name 48) appears in the Quran, Al-Mājidd appears in the Hadith tradition. The distinction is subtle: Majīd is the inherent attribute of glory, Mājidd is that glory actively manifesting and bestowing honour.",
+      "secondaryNames": [
+        {
+          "name": "الماجد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Noble",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الماجد",
+        "transliteration": "Al-Mājidd",
+        "meaning": "The Noble",
+        "abjadValue": 48,
+        "orderNumber": 65
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wahid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wāḥid",
+      "description": "Al-Wāḥid (The One) is the foundational Name of divine unity — God as the singular, undivided, incomparable One. This is the central affirmation of Islamic theology (tawḥīd). Al-Wāḥid differs from Al-Aḥad: Wāḥid is the One in the sense of the first number (one among potential others, though none exist in reality), while Aḥad is the absolutely unique One that admits no comparison whatsoever.",
+      "secondaryNames": [
+        {
+          "name": "الواحد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The One",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الواحد",
+        "transliteration": "Al-Wāḥid",
+        "meaning": "The One",
+        "abjadValue": 19,
+        "orderNumber": 66,
+        "quranicReference": "13:16"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-ahad",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Aḥad",
+      "description": "Al-Aḥad (The Unique/Absolutely One) is the Name that transcends all comparison or numerical sense — not 'one' as opposed to 'many' but the absolute singularity beyond all duality. This is the Name of Surat al-Ikhlāṣ (112:1–4): 'Say: He is God, the One (Aḥad); God the Eternal Refuge; He neither begets nor is born; nor is there any equivalent to Him.' In Sufi thought Al-Aḥad points to the divine essence beyond all Names and attributes.",
+      "secondaryNames": [
+        {
+          "name": "الأحد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Unique",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الأحد",
+        "transliteration": "Al-Aḥad",
+        "meaning": "The Unique",
+        "abjadValue": 13,
+        "orderNumber": 67,
+        "quranicReference": "112:1"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.as-samad",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Aṣ-Ṣamad",
+      "description": "Aṣ-Ṣamad (The Eternal/The Absolute) is perhaps the most conceptually dense of all the Names, appearing only in Surat al-Ikhlāṣ. Classical commentators gave it many interpretations: the one who is needed by all but needs nothing; the solid, impenetrable, self-sufficient being; the eternal refuge to whom all turn. In Sufi metaphysics Aṣ-Ṣamad is the Name of absolute being — pure existence requiring no ground.",
+      "secondaryNames": [
+        {
+          "name": "الصمد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Eternal",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الصمد",
+        "transliteration": "Aṣ-Ṣamad",
+        "meaning": "The Eternal",
+        "abjadValue": 134,
+        "orderNumber": 68,
+        "quranicReference": "112:2"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-qadir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Qādir",
+      "description": "Al-Qādir (The All-Powerful/Able) refers to the divine power that is total, free, and without limitation — the power to do anything, to create any possibility, without effort or fatigue. This Name is distinguished from Al-Muqtadir (Name 70) in that Qādir emphasises the quality of power as such, while Muqtadir emphasises its active, continuous deployment. Both Names assert that divine power is self-originating.",
+      "secondaryNames": [
+        {
+          "name": "القادر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The All-Powerful",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "القادر",
+        "transliteration": "Al-Qādir",
+        "meaning": "The All-Powerful",
+        "abjadValue": 305,
+        "orderNumber": 69
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muqtadir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muqtadir",
+      "description": "Al-Muqtadir (The Powerful/Dominant) denotes divine power in its active, overwhelming expression — power that prevails over all resistance and establishes itself in all affairs. Where Al-Qādir is the quality of having power, Al-Muqtadir is its vigorous deployment. The Quran pairs this Name with accounts of divine justice: 'At a seat of honour with a Sovereign, Omnipotent (Muqtadir)' (54:55).",
+      "secondaryNames": [
+        {
+          "name": "المقتدر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Powerful",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المقتدر",
+        "transliteration": "Al-Muqtadir",
+        "meaning": "The Powerful",
+        "abjadValue": 744,
+        "orderNumber": 70,
+        "quranicReference": "18:45"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muqaddim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muqaddim",
+      "description": "Al-Muqaddim (The Expediter/He Who Brings Forward) has the power to advance or bring forward whatever He wills — to give precedence, to promote, to move things ahead of their apparent time. This Name governs divine priority: some things are brought forward by divine will while others are held back (Al-Mu'akhkhir, Name 72). Together these Names express the divine governance of timing and sequence.",
+      "secondaryNames": [
+        {
+          "name": "المقدم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Expediter",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المقدم",
+        "transliteration": "Al-Muqaddim",
+        "meaning": "The Expediter",
+        "abjadValue": 184,
+        "orderNumber": 71
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muakhkhir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mu'akhkhir",
+      "description": "Al-Mu'akhkhir (The Delayer/He Who Holds Back) is the complementary Name to Al-Muqaddim — the divine power to delay, defer, and hold things back until the proper moment. In human terms this Name teaches patience: apparent delay is not absence but divine timing. In Sufi understanding Al-Mu'akhkhir governs the tarbiya (spiritual education) that requires maturation before the fruit appears.",
+      "secondaryNames": [
+        {
+          "name": "المؤخر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Delayer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المؤخر",
+        "transliteration": "Al-Mu'akhkhir",
+        "meaning": "The Delayer",
+        "abjadValue": 846,
+        "orderNumber": 72
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-awwal",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Awwal",
+      "description": "Al-Awwal (The First) asserts that God precedes all things — there is no beginning before the divine beginning. This Name is part of the famous quaternity with Al-Ākhir, Az-Ẓāhir, and Al-Bāṭin (Quran 57:3): 'He is the First and the Last, the Outwardly Manifest and the Inwardly Hidden, and He is Knowing of everything.' In Sufi cosmogony Al-Awwal is contemplated to reach the origin prior to all existence.",
+      "secondaryNames": [
+        {
+          "name": "الأول",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The First",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الأول",
+        "transliteration": "Al-Awwal",
+        "meaning": "The First",
+        "abjadValue": 37,
+        "orderNumber": 73,
+        "quranicReference": "57:3"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-akhir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ākhir",
+      "description": "Al-Ākhir (The Last) asserts that God remains after all things have ceased — there is no ending beyond the divine presence. This Name is the complement of Al-Awwal: God bookends all existence, being both its origin and its destination. In eschatological contemplation Al-Ākhir teaches that the soul's final resting place is not void but in the presence of the eternal One who outlasts all creation.",
+      "secondaryNames": [
+        {
+          "name": "الآخر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Last",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الآخر",
+        "transliteration": "Al-Ākhir",
+        "meaning": "The Last",
+        "abjadValue": 801,
+        "orderNumber": 74,
+        "quranicReference": "57:3"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.az-zahir",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Az-Ẓāhir",
+      "description": "Az-Ẓāhir (The Manifest/The Outwardly Evident) declares that God is apparent in all things — the divine is not hidden from those who look with seeing eyes but blazes forth in every created form. This is the exoteric or external face of the divine. In the hadith Qudsi: 'I was a hidden treasure and I loved to be known, so I created creation.' The creation is the manifestation of Az-Ẓāhir.",
+      "secondaryNames": [
+        {
+          "name": "الظاهر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Manifest",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الظاهر",
+        "transliteration": "Az-Ẓāhir",
+        "meaning": "The Manifest",
+        "abjadValue": 1106,
+        "orderNumber": 75,
+        "quranicReference": "57:3"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-batin",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Bāṭin",
+      "description": "Al-Bāṭin (The Hidden/The Inwardly Concealed) is the complement of Az-Ẓāhir — while God is fully manifest, the inner reality of that manifestation remains hidden to surface perception. The divine essence is forever beyond full comprehension even as it pours through all forms. Sufi practice aims at the inner (bāṭin) dimension of all reality, seeking the hidden face that illuminates the manifest.",
+      "secondaryNames": [
+        {
+          "name": "الباطن",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Hidden",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الباطن",
+        "transliteration": "Al-Bāṭin",
+        "meaning": "The Hidden",
+        "abjadValue": 62,
+        "orderNumber": 76,
+        "quranicReference": "57:3"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-wali-governor",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wālī",
+      "description": "Al-Wālī (The Governor/Ruling Patron) is the Name of divine governance and lordship over all affairs. As governor, God administers the cosmos from within and without, maintaining justice and providential order. This Name is distinct from Al-Walī (Name 55) — Wālī refers to governing authority and administration while Walī refers to intimate friendship and patronage.",
+      "secondaryNames": [
+        {
+          "name": "الوالي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Governor",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الوالي",
+        "transliteration": "Al-Wālī",
+        "meaning": "The Governor",
+        "abjadValue": 47,
+        "orderNumber": 77
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mutaali",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muta'ālī",
+      "description": "Al-Muta'ālī (The Self-Exalted/Supremely Exalted) expresses divine transcendence as a self-generated quality: God does not receive exaltation from outside but is exalted by the sheer nature of divine being. This Name is the supreme expression of tanzīh — the principle of divine incomparability and transcendence above all limitation, deficiency, or dependency.",
+      "secondaryNames": [
+        {
+          "name": "المتعالي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Self Exalted",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المتعالي",
+        "transliteration": "Al-Muta'ālī",
+        "meaning": "The Self Exalted",
+        "abjadValue": 551,
+        "orderNumber": 78,
+        "quranicReference": "13:9"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-barr",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Barr",
+      "description": "Al-Barr (The Source of All Goodness/The Beneficent) denotes God as the origin and fountain of all virtue and beneficence in existence. While Al-Raḥmān and Al-Raḥīm describe mercy in its responsive aspect, Al-Barr describes goodness as a proactive, outflowing quality. In Sufi understanding all goodness in the world — beauty, truth, love, justice — is ultimately a trace of Al-Barr.",
+      "secondaryNames": [
+        {
+          "name": "البر",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Source of All Goodness",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "البر",
+        "transliteration": "Al-Barr",
+        "meaning": "The Source of All Goodness",
+        "abjadValue": 202,
+        "orderNumber": 79,
+        "quranicReference": "52:28"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.at-tawwab",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "At-Tawwāb",
+      "description": "At-Tawwāb (The Acceptor of Repentance/The Ever-Returning) is the Name of divine responsiveness to sincere turning (tawba). The Arabic root t-w-b means to turn or return — God turns toward the repentant soul as the soul turns toward God. This mutual turning is one of the most intimate expressions of the divine-human relationship in the Quran.",
+      "secondaryNames": [
+        {
+          "name": "التواب",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Acceptor of Repentance",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "التواب",
+        "transliteration": "At-Tawwāb",
+        "meaning": "The Acceptor of Repentance",
+        "abjadValue": 409,
+        "orderNumber": 80,
+        "quranicReference": "2:37"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muntaqim",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muntaqim",
+      "description": "Al-Muntaqim (The Avenger/Requiter of injustice) is the Name of divine justice that requites wrongdoing and vindicates the oppressed. This Name is not vengefulness but cosmic justice — the principle that no wrong goes unaddressed in the long arc of existence. In the Quran Al-Muntaqim is invoked in the context of communities that persisted in injustice; it represents the guarantor of ultimate moral order.",
+      "secondaryNames": [
+        {
+          "name": "المنتقم",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Avenger",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المنتقم",
+        "transliteration": "Al-Muntaqim",
+        "meaning": "The Avenger",
+        "abjadValue": 630,
+        "orderNumber": 81,
+        "quranicReference": "32:22"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-afuww",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-'Afuww",
+      "description": "Al-'Afuww (The Pardoner/The Effacer) goes beyond forgiveness to complete obliteration of wrongdoing — the divine quality that erases sin as if it never occurred, leaving no trace, record, or consequence. While Al-Ghafūr forgives by veiling the sin, Al-'Afuww eliminates it entirely. In the famous Hadith of the Night of Power (Laylat al-Qadr) the Prophet taught the supplication: 'O God, You are Al-'Afuww, You love to pardon, so pardon me.'",
+      "secondaryNames": [
+        {
+          "name": "العفو",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Pardoner",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "العفو",
+        "transliteration": "Al-'Afuww",
+        "meaning": "The Pardoner",
+        "abjadValue": 156,
+        "orderNumber": 82
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-rauf",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Ra'ūf",
+      "description": "Ar-Ra'ūf (The Compassionate/The Clement) is one of the most tender of the divine Names, expressing a warm, gentle compassion that responds to vulnerability with softness. This Name is given to the Prophet Muḥammad in the Quran (9:128): 'There has come to you a messenger... full of concern for you, to the believers is he kind (Ra'ūf) and compassionate (Raḥīm).' Thus the human prophet embodies divine compassion.",
+      "secondaryNames": [
+        {
+          "name": "الرؤوف",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Compassionate",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرؤوف",
+        "transliteration": "Ar-Ra'ūf",
+        "meaning": "The Compassionate",
+        "abjadValue": 292,
+        "orderNumber": 83,
+        "quranicReference": "9:128"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.malik-ul-mulk",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Mālik al-Mulk",
+      "description": "Mālik al-Mulk (The Possessor of All Sovereignty) asserts that all power, dominion, and authority belong ultimately and exclusively to God — no human king or power holds genuine sovereignty except as a loan from the divine. The Quran expresses this in a magnificent passage (3:26): 'Say: O God, Master of the Kingdom, You give power to whom You will and You take power from whom You will.' All political authority is derivative and temporary.",
+      "secondaryNames": [
+        {
+          "name": "مالك الملك",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Owner of All Sovereignty",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "مالك الملك",
+        "transliteration": "Mālik al-Mulk",
+        "meaning": "Owner of All Sovereignty",
+        "abjadValue": 212,
+        "orderNumber": 84,
+        "quranicReference": "3:26"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.dhul-jalali",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Dhū al-Jalāl wa-l-Ikrām",
+      "description": "Dhū al-Jalāl wa-l-Ikrām (The Lord of Majesty and Bounty) is the Name that closes the 99 Names in many traditional enumerations and appears at the end of Surat al-Raḥmān, repeated as a refrain: 'And which of the favours of your Lord do you deny?' This Name unites the two poles of divine being — Jalāl (awesome majesty, transcendence, power) and Ikrām (generosity, nearness, honour bestowed on the servant).",
+      "secondaryNames": [
+        {
+          "name": "ذو الجلال والإكرام",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lord of Majesty and Bounty",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "ذو الجلال والإكرام",
+        "transliteration": "Dhū al-Jalāl wa-l-Ikrām",
+        "meaning": "Lord of Majesty and Bounty",
+        "abjadValue": 1100,
+        "orderNumber": 85,
+        "quranicReference": "55:27"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-muqsit",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Muqsiṭ",
+      "description": "Al-Muqsiṭ (The Equitable/The Just Dealer) refers to God as the one who establishes and maintains absolute equity and justice — giving each being precisely what is due to it. This Name governs cosmic balance and the principle of mizan (the scale of justice). In social ethics Al-Muqsiṭ is the foundation for the Islamic emphasis on justice as a divine quality that humans are called to embody.",
+      "secondaryNames": [
+        {
+          "name": "المقسط",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Equitable",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المقسط",
+        "transliteration": "Al-Muqsiṭ",
+        "meaning": "The Equitable",
+        "abjadValue": 209,
+        "orderNumber": 86
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-jami",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Jāmi'",
+      "description": "Al-Jāmi' (The Gatherer/The Collector) is the Name of divine synthesis — the power that draws together what is scattered and unites what is separated. On the cosmic level Al-Jāmi' will gather all beings for the Day of Assembly (Yawm al-Jam'). On the spiritual level this Name governs the gathering of the scattered self toward unity and the drawing-together of the community of the faithful.",
+      "secondaryNames": [
+        {
+          "name": "الجامع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Gatherer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الجامع",
+        "transliteration": "Al-Jāmi'",
+        "meaning": "The Gatherer",
+        "abjadValue": 114,
+        "orderNumber": 87
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-ghani",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Ghanī",
+      "description": "Al-Ghanī (The Self-Sufficient/The Rich) is the Name of absolute divine independence — God has no need of anything and is enriched by nothing outside of Himself. All wealth, all fullness, all sufficiency flow from Al-Ghanī to the created world; none of it enriches the divine. This Name is the root of the Sufi practice of faqr (spiritual poverty): recognising one's complete dependence on the infinitely self-sufficient One.",
+      "secondaryNames": [
+        {
+          "name": "الغني",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Self-Sufficient",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الغني",
+        "transliteration": "Al-Ghanī",
+        "meaning": "The Self-Sufficient",
+        "abjadValue": 1060,
+        "orderNumber": 88,
+        "quranicReference": "35:15"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mughni",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Mughnī",
+      "description": "Al-Mughnī (The Enricher/The One Who Satisfies) is the active expression of Al-Ghanī — not only self-sufficient but the source of enrichment for all beings. True wealth of any kind — material, relational, spiritual — comes from Al-Mughnī. In Sufi teaching the genuine ghinā (richness) is not material wealth but the heart's satisfaction in God: 'Real richness is not abundance of worldly goods but richness of the soul' (Hadith).",
+      "secondaryNames": [
+        {
+          "name": "المغني",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Enricher",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المغني",
+        "transliteration": "Al-Mughnī",
+        "meaning": "The Enricher",
+        "abjadValue": 1100,
+        "orderNumber": 89
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-mani",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Māni'",
+      "description": "Al-Māni' (The Preventer/The Withholder) is the Name that withholds what is harmful, protects against what should not come, and establishes the boundaries of divine wisdom. What God prevents, no force can bring to pass. In spiritual practice this Name is invoked for protection — particularly for preventing spiritual and physical harm from reaching those under divine care.",
+      "secondaryNames": [
+        {
+          "name": "المانع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Preventer",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "المانع",
+        "transliteration": "Al-Māni'",
+        "meaning": "The Preventer",
+        "abjadValue": 161,
+        "orderNumber": 90
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ad-darr",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Aḍ-Ḍārr",
+      "description": "Aḍ-Ḍārr (The Distresser/The Afflicter) is paired with An-Nāfi' (Name 92) and refers to God's sovereign power to bring harm, trial, and difficulty — not as cruelty but as the divine instrument of purification, testing, and awakening. No harm comes to any soul except by divine permission and within a larger wisdom. Aḍ-Ḍārr teaches that even difficulty serves the divine purpose of drawing the soul back to its source.",
+      "secondaryNames": [
+        {
+          "name": "الضار",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Distresser",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الضار",
+        "transliteration": "Aḍ-Ḍārr",
+        "meaning": "The Distresser",
+        "abjadValue": 1001,
+        "orderNumber": 91
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.an-nafi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "An-Nāfi'",
+      "description": "An-Nāfi' (The Propitious/The Benefiter) is the complement of Aḍ-Ḍārr — the Name of divine benefit and blessing. God is the sole ultimate source of good, and all benefit that flows through any channel has its origin in An-Nāfi'. In Sufi practice these two paired Names (Ḍārr/Nāfi') are contemplated together to develop equanimity: both trial and blessing come from the same loving wisdom.",
+      "secondaryNames": [
+        {
+          "name": "النافع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Propitious",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "النافع",
+        "transliteration": "An-Nāfi'",
+        "meaning": "The Propitious",
+        "abjadValue": 201,
+        "orderNumber": 92
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.an-nur",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "An-Nūr",
+      "description": "An-Nūr (The Light) is one of the most beloved of the divine Names, the subject of the 'Light Verse' (Ayat al-Nūr, 24:35) — one of the Quran's most celebrated passages: 'God is the Light of the heavens and the earth. The parable of His light is as if there were a niche and within it a lamp...' In Islamic mysticism An-Nūr is the primordial light from which all illumination derives; the Prophet Muḥammad is described as a lamp (sirāj) carrying this light.",
+      "secondaryNames": [
+        {
+          "name": "النور",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Light",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "النور",
+        "transliteration": "An-Nūr",
+        "meaning": "The Light",
+        "abjadValue": 256,
+        "orderNumber": 93,
+        "quranicReference": "24:35"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-hadi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Hādī",
+      "description": "Al-Hādī (The Guide) is the Name of divine guidance — the one who leads souls to truth, to righteousness, and ultimately to the divine presence itself. The Quran repeatedly invokes divine guidance (hidāya) as the supreme gift: 'You do not guide whom you love but God guides whom He wills' (28:56). In Sufi practice the spiritual guide (murshid) is understood as a vehicle of Al-Hādī's action in the world.",
+      "secondaryNames": [
+        {
+          "name": "الهادي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Guide",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الهادي",
+        "transliteration": "Al-Hādī",
+        "meaning": "The Guide",
+        "abjadValue": 20,
+        "orderNumber": 94,
+        "quranicReference": "22:54"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-badi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Badī'",
+      "description": "Al-Badī' (The Incomparable Originator/The Wonderful) refers to God as the originator of forms and realities that have no prior model — each creation is unprecedented, singular, a new expression of the inexhaustible divine creativity. The word badī' is the root of the Arabic term for Baroque or novel (badi'), the style of poetry that produces surprising new meanings. God's creation is forever fresh, never repetitive.",
+      "secondaryNames": [
+        {
+          "name": "البديع",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Incomparable",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "البديع",
+        "transliteration": "Al-Badī'",
+        "meaning": "The Incomparable",
+        "abjadValue": 86,
+        "orderNumber": 95,
+        "quranicReference": "2:117"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-baqi",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Bāqī",
+      "description": "Al-Bāqī (The Everlasting/The Enduring) is the Name of absolute permanence — God alone truly endures while all created things pass away. 'All that is with you will end, and what is with God will endure (yabqā)' (16:96). In Sufi theology the great transformation (fanā') is followed by baqā' — not annihilation but the subsistence of the self in God, participating in the everlasting through union with Al-Bāqī.",
+      "secondaryNames": [
+        {
+          "name": "الباقي",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Everlasting",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الباقي",
+        "transliteration": "Al-Bāqī",
+        "meaning": "The Everlasting",
+        "abjadValue": 113,
+        "orderNumber": 96,
+        "quranicReference": "16:96"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.al-warith",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Al-Wārith",
+      "description": "Al-Wārith (The Inheritor) refers to God as the ultimate heir of all things — when all created owners and possessors have passed away, everything returns to its original owner, the divine. 'We are the inheritors' (15:23) declares the Quran. This Name contains a teaching on non-attachment: nothing truly belongs to any creature; all things are held in trust and will return to their divine source.",
+      "secondaryNames": [
+        {
+          "name": "الوارث",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Inheritor",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الوارث",
+        "transliteration": "Al-Wārith",
+        "meaning": "The Inheritor",
+        "abjadValue": 707,
+        "orderNumber": 97,
+        "quranicReference": "15:23"
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.ar-rashid",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Ar-Rashīd",
+      "description": "Ar-Rashīd (The Righteous Teacher/The Rightly-Guiding) refers to the divine quality of establishing right guidance that leads to good ends. The word rushd implies mature, correct judgment and the guidance that produces genuine benefit. In Islamic ethics rushd is the quality of sound discernment — Al-Rashīd is thus the divine source of all genuine wisdom and right guidance that leads both individuals and communities toward flourishing.",
+      "secondaryNames": [
+        {
+          "name": "الرشيد",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Righteous Teacher",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الرشيد",
+        "transliteration": "Ar-Rashīd",
+        "meaning": "The Righteous Teacher",
+        "abjadValue": 514,
+        "orderNumber": 98
+      }
+    },
+    {
+      "canonicalName": "islamic.divine-name.as-sabur",
+      "entityType": "islamic.divine-name",
+      "primaryDisplayName": "Aṣ-Ṣabūr",
+      "description": "Aṣ-Ṣabūr (The Patient/The Most Forbearing) closes the 99 Names with the quality of infinite divine patience — God's forbearance in withholding punishment, giving creation time to find its way, and enduring all things without haste or irritation. In a Hadith: 'No one is more patient than God in hearing hurtful things.' This patience is not passivity but active mercy holding open the door of return for as long as possible.",
+      "secondaryNames": [
+        {
+          "name": "الصبور",
+          "languageTag": "ar",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Patient",
+          "languageTag": "en-meaning",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "islamic",
+        "divine-name",
+        "asma-al-husna"
+      ],
+      "extendedData": {
+        "arabicText": "الصبور",
+        "transliteration": "Aṣ-Ṣabūr",
+        "meaning": "The Patient",
+        "abjadValue": 298,
+        "orderNumber": 99
+      }
+    }
+  ]
+}

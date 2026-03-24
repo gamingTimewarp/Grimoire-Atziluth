@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "geomancy.figure.puer",          "target": "astrology.planet.mars",               "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.puer",          "target": "astrology.zodiac-sign.aries",          "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.amissio",       "target": "astrology.planet.venus",              "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.amissio",       "target": "astrology.zodiac-sign.taurus",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.albus",         "target": "astrology.planet.mercury",            "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.albus",         "target": "astrology.zodiac-sign.gemini",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.populus",       "target": "astrology.planet.luna",               "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.populus",       "target": "astrology.zodiac-sign.cancer",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.fortuna-major", "target": "astrology.planet.sol",                "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.fortuna-major", "target": "astrology.zodiac-sign.leo",            "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.conjunctio",    "target": "astrology.planet.mercury",            "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.conjunctio",    "target": "astrology.zodiac-sign.virgo",          "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.puella",        "target": "astrology.planet.venus",              "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.puella",        "target": "astrology.zodiac-sign.libra",          "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.rubeus",        "target": "astrology.planet.mars",               "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.rubeus",        "target": "astrology.zodiac-sign.scorpio",        "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.acquisitio",    "target": "astrology.planet.jupiter",            "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.acquisitio",    "target": "astrology.zodiac-sign.sagittarius",    "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.carcer",        "target": "astrology.planet.saturn",             "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.carcer",        "target": "astrology.zodiac-sign.capricorn",      "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.tristitia",     "target": "astrology.planet.saturn",             "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.tristitia",     "target": "astrology.zodiac-sign.aquarius",       "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.laetitia",      "target": "astrology.planet.jupiter",            "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.laetitia",      "target": "astrology.zodiac-sign.pisces",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.cauda-draconis", "target": "astrology.zodiac-sign.sagittarius",   "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.caput-draconis", "target": "astrology.zodiac-sign.virgo",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.fortuna-minor", "target": "astrology.planet.sol",                "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.fortuna-minor", "target": "astrology.zodiac-sign.leo",            "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+
+    { "source": "geomancy.figure.via",           "target": "astrology.planet.luna",               "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.via",           "target": "astrology.zodiac-sign.cancer",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.major.tdm.le-mat",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Mat",
+      "description": "The Fool of the Tarot de Marseille. An unnumbered card, Le Mat (The Madman) depicts a wandering figure with a bindle, often shown being bitten by a dog. Represents freedom, folly, and the spirit of pure possibility unbound by convention.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Fool",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Fool",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 0,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-bateleur",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Bateleur",
+      "description": "The Juggler or Mountebank of the Tarot de Marseille. A showman at a table with cups and balls, a hat in the shape of a lemniscate. Represents skill, manual dexterity, the art of illusion, and nascent creative power.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Magician",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Magician",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 1,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-papesse",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Papesse",
+      "description": "The Female Pope of the Tarot de Marseille. A seated woman in papal vestments holding an open book. Represents hidden wisdom, occult knowledge, and the feminine principle of spiritual authority.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The High Priestess",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The High Priestess",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 2,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-imperatrice",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "L'Impératrice",
+      "description": "The Empress of the Tarot de Marseille. A crowned woman seated on a throne holding a scepter and shield with an eagle. Represents creative fertility, earthly power, material abundance, and feminine authority.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Empress",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Empress",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 3,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-empereur",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "L'Empereur",
+      "description": "The Emperor of the Tarot de Marseille. A crowned, armored figure seated in profile holding a scepter. Represents temporal authority, rational order, law, and masculine power.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Emperor",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Emperor",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 4,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-pape",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Pape",
+      "description": "The Pope of the Tarot de Marseille. A seated pontiff in triple tiara giving a blessing to two tonsured monks. Represents spiritual authority, religious tradition, and the transmission of sacred knowledge.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Hierophant",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Hierophant",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 5,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.l-amoureux",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "L'Amoureux",
+      "description": "The Lover of the Tarot de Marseille. A young man stands between two women while Cupid aims his arrow from above. Represents choice, love, temptation, and the crossroads between vice and virtue.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Lovers",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Lovers",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 6,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-chariot",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Chariot",
+      "description": "The Chariot of the Tarot de Marseille. A crowned warrior rides a chariot pulled by two horses of different colors. Represents triumph through will, control of opposing forces, and victorious movement.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Chariot",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Chariot",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 7,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-justice",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Justice",
+      "description": "Justice, card VIII in the Tarot de Marseille (opposite to RWS numbering). A seated figure holds scales in one hand and a sword in the other. Represents impartial judgment, legal matters, and the principle of cosmic equity.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Justice",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Justice",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 8,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.l-ermite",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "L'Ermite",
+      "description": "The Hermit of the Tarot de Marseille. An aged figure in a cloak holding a lantern and a staff. Represents withdrawal from worldly affairs, inner guidance, the wisdom of solitude, and the slow walk of spiritual maturity.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Hermit",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Hermit",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 9,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-roue-de-fortune",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Roue de Fortune",
+      "description": "The Wheel of Fortune of the Tarot de Marseille. A great wheel with allegorical figures ascending and descending. Represents the cycles of fate, inevitable change, and the turning of destiny beyond human control.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Wheel of Fortune",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wheel of Fortune",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 10,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-force",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Force",
+      "description": "Strength, card XI in the Tarot de Marseille (opposite to RWS numbering). A figure opens or closes the mouth of a lion. Represents spiritual strength, courage, and the power of love and gentleness over brute force.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Strength",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Strength",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-pendu",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Pendu",
+      "description": "The Hanged Man of the Tarot de Marseille. A man hangs by one foot from a wooden gallows, his face serene. Represents voluntary sacrifice, suspension of action, reversal of perspective, and enlightenment through surrender.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Hanged Man",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Hanged Man",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-mort",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Mort",
+      "description": "Death, the traditionally nameless card of the Tarot de Marseille. A skeletal figure mows down heads, hands, and feet. Represents inevitable transformation, the end of one cycle, and the clearing away that makes room for new growth.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Death",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Death",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 13,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.temperance",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Tempérance",
+      "description": "Temperance of the Tarot de Marseille. An angel pours liquid between two vessels, a foot in the water. Represents moderation, flow, alchemy of the soul, and the balanced blending of opposing forces.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Temperance",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Temperance",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-diable",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Diable",
+      "description": "The Devil of the Tarot de Marseille. A composite beast on a plinth with two chained figures below. Represents bondage to material desire, shadow forces, and the chains of unconscious compulsion.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Devil",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Devil",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 15,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-maison-dieu",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Maison-Dieu",
+      "description": "The House of God (Tower) of the Tarot de Marseille. A tower is struck by lightning, people fall from its heights. Represents sudden catastrophe, the destruction of false structures, and revelatory upheaval.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Tower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Tower",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 16,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.l-etoile",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "L'Étoile",
+      "description": "The Star of the Tarot de Marseille. A naked figure pours two urns by a river under a great eight-pointed star. Represents hope, inspiration, serenity, and the healing renewal that follows catastrophe.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Star",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Star",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 17,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.la-lune",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Lune",
+      "description": "The Moon of the Tarot de Marseille. A moon with a human profile shines over a path between two towers, with lobster and dogs. Represents the unconscious, illusion, the dangers of the night path, and psychic mystery.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Moon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Moon",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 18,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-soleil",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Soleil",
+      "description": "The Sun of the Tarot de Marseille. Two children dance beneath a radiant sun. Represents joy, vitality, clarity, the warmth of consciousness, and the triumph of light over darkness.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The Sun",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The Sun",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 19,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-jugement",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Jugement",
+      "description": "Judgement of the Tarot de Marseille. An angel blows a trumpet from clouds while the dead rise from tombs. Represents awakening, renewal, the call to higher purpose, and the final reckoning of one's life.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "Judgement",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Judgement",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 20,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.tdm.le-monde",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Le Monde",
+      "description": "The World of the Tarot de Marseille. A dancing androgynous figure in a laurel wreath is surrounded by the four evangelists. Represents completion, integration, cosmic consciousness, and the successful culmination of the entire journey.",
+      "tags": [
+        "major-arcana",
+        "tarot",
+        "tarot-de-marseille"
+      ],
+      "secondaryNames": [
+        {
+          "name": "The World",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "The World",
+          "languageTag": "golden-dawn",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "extendedData": {
+        "cardNumber": 21,
+        "sourceDeck": "tarot.deck.tarot-de-marseille"
+      }
+    }
+  ]
+}

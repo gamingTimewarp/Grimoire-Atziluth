@@ -1,0 +1,1069 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Batons",
+      "description": "Etteilla's Ace of Batons (Wands) signified birth, nativity, and new beginnings in the most literal sense — the start of a project, enterprise, or life. His system grounded this card firmly in the material world of work and practical initiative.",
+      "secondaryNames": [
+        { "name": "As de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "Ace",
+        "rankNumber": 1,
+        "uprightKeywords": ["birth", "new enterprise", "origin"],
+        "reversedKeywords": ["decline", "ruin", "cancellation"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.ace"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Batons",
+      "description": "Etteilla read the Two of Batons as grief and tribulation, emphasising the painful friction that arises when two forces or people are in opposition. A more sorrowful card in his system than the visionary planner of the RWS.",
+      "secondaryNames": [
+        { "name": "Deux de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "2",
+        "rankNumber": 2,
+        "uprightKeywords": ["grief", "tribulation", "sorrow"],
+        "reversedKeywords": ["surprise", "astonishment", "unexpected event"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.2"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Batons",
+      "description": "Etteilla's Three of Batons signified enterprise and established strength, though with an undertone of commercial risk. It pointed to a confident venture already underway, with the practical outcomes of trade and business endeavour.",
+      "secondaryNames": [
+        { "name": "Trois de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "3",
+        "rankNumber": 3,
+        "uprightKeywords": ["enterprise", "venture", "commerce"],
+        "reversedKeywords": ["cessation", "end of effort", "business failure"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.3"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Batons",
+      "description": "The Four of Batons in Etteilla's system meant society, sociability, and agreement among people — the harmonious coming-together of community rather than RWS's celebratory homecoming. It indicated good social relations, helpful associations, and practical cooperation.",
+      "secondaryNames": [
+        { "name": "Quatre de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "4",
+        "rankNumber": 4,
+        "uprightKeywords": ["society", "agreement", "community"],
+        "reversedKeywords": ["prosperity", "abundance", "wealth"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.4"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Batons",
+      "description": "Etteilla read the Five of Batons as gold, money, and richness — a strongly positive financial card that diverges sharply from the RWS image of competitive struggle. In his divinatory system, fives of Batons pointed to material wealth and profitable undertakings.",
+      "secondaryNames": [
+        { "name": "Cinq de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "5",
+        "rankNumber": 5,
+        "uprightKeywords": ["gold", "wealth", "riches"],
+        "reversedKeywords": ["legal disputes", "litigation", "conflict over money"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.5"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Batons",
+      "description": "The Six of Batons indicated domestic concerns, the country estate, and rural matters in Etteilla's system. It pointed to household management, country matters, and practical domestic life rather than the public triumph of the RWS Six of Wands.",
+      "secondaryNames": [
+        { "name": "Six de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "6",
+        "rankNumber": 6,
+        "uprightKeywords": ["country matters", "domestic", "rural concern"],
+        "reversedKeywords": ["good news", "announcement", "message"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.6"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Batons",
+      "description": "Etteilla read the Seven of Batons as conversations, negotiations, and deliberations — the exchange of words and ideas in service of a practical goal. This differs from RWS's defensive stance; Etteilla saw the seven as the active management of competing interests through speech.",
+      "secondaryNames": [
+        { "name": "Sept de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "7",
+        "rankNumber": 7,
+        "uprightKeywords": ["conversation", "negotiation", "deliberation"],
+        "reversedKeywords": ["indecision", "uncertainty", "hesitation in discussion"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.7"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Batons",
+      "description": "Etteilla's Eight of Batons indicated a young, dark-haired country person — a significator-style meaning that reflects his more personalised, person-centred reading approach. In positional readings this card often identified a specific individual involved in the situation.",
+      "secondaryNames": [
+        { "name": "Huit de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "8",
+        "rankNumber": 8,
+        "uprightKeywords": ["young person", "countryside", "rural figure"],
+        "reversedKeywords": ["displeasure", "quarrel", "domestic discord"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.8"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Batons",
+      "description": "The Nine of Batons in Etteilla's system meant delay and suspension — a pause in practical proceedings, plans held in abeyance. While RWS depicts a weary but resilient defender, Etteilla focused on the practical reality of obstacle and the need for patience before progress.",
+      "secondaryNames": [
+        { "name": "Neuf de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "9",
+        "rankNumber": 9,
+        "uprightKeywords": ["delay", "suspension", "obstacle"],
+        "reversedKeywords": ["adversity", "calamity", "difficulty"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.9"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Batons",
+      "description": "Etteilla read the Ten of Batons as treachery and duplicity — a warning of betrayal in practical or business matters. This is darker than the RWS burden-bearer and reflects Etteilla's concern with deceit as a primary life hazard that the diviner must warn the querent against.",
+      "secondaryNames": [
+        { "name": "Dix de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "10",
+        "rankNumber": 10,
+        "uprightKeywords": ["treachery", "betrayal", "duplicity"],
+        "reversedKeywords": ["obstacles", "difficulties", "impediments"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.10"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet of Batons",
+      "description": "The Valet (Page/Jack) of Batons in Etteilla's system represented a young, dark, country person — a reliable messenger or helper from a rural background. Court cards in Etteilla's system served strongly as significators for actual people in the querent's life.",
+      "secondaryNames": [
+        { "name": "Valet de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "Page",
+        "rankNumber": 11,
+        "uprightKeywords": ["young person", "messenger", "country"],
+        "reversedKeywords": ["indecision", "hesitation", "uncertainty"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.page"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier of Batons",
+      "description": "The Cavalier (Knight) of Batons signified a departure, change of residence, or flight — a person or situation in motion. In Etteilla's system this card often literally indicated someone moving away or a change of dwelling rather than the RWS adventurous quest.",
+      "secondaryNames": [
+        { "name": "Cavalier de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "Knight",
+        "rankNumber": 12,
+        "uprightKeywords": ["departure", "change of residence", "journey"],
+        "reversedKeywords": ["rupture", "breakup", "discord"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.knight"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dame of Batons",
+      "description": "The Dame (Queen) of Batons represented a dark, virtuous, country woman — a honest, trustworthy woman of practical temperament. Etteilla's queens were strongly tied to the physical description and character of real women in the querent's life.",
+      "secondaryNames": [
+        { "name": "Dame de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "Queen",
+        "rankNumber": 13,
+        "uprightKeywords": ["dark woman", "virtue", "honesty"],
+        "reversedKeywords": ["jealousy", "inconstancy", "contradiction"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.queen"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.wands.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi of Batons",
+      "description": "The Roi (King) of Batons represented a dark, honest, country man — a straightforward, trustworthy person of rural or practical background. Etteilla's kings were read primarily as significant male figures in the querent's life rather than as archetypal forces.",
+      "secondaryNames": [
+        { "name": "Roi de Bâtons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "wands"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Wands",
+        "rank": "King",
+        "rankNumber": 14,
+        "uprightKeywords": ["honest man", "country", "dark complexion"],
+        "reversedKeywords": ["severity", "strictness", "austerity"],
+        "correspondingRWSCard": "tarot.minor.rws.wands.king"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Coupes",
+      "description": "Etteilla's Ace of Coupes (Cups) signified a table, feast, and abundance — the fullness of love and hospitality made manifest in a shared meal or celebration. This grounded the elemental water energy in literal domestic joy and conviviality.",
+      "secondaryNames": [
+        { "name": "As de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "Ace",
+        "rankNumber": 1,
+        "uprightKeywords": ["feast", "abundance", "love"],
+        "reversedKeywords": ["change", "transformation", "mutation"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.ace"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Coupes",
+      "description": "The Two of Coupes in Etteilla's system meant love, passion, and the meeting of hearts — closely aligned with RWS in this case. It often pointed to a specific romantic relationship or the beginning of a loving partnership in the querent's life.",
+      "secondaryNames": [
+        { "name": "Deux de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "2",
+        "rankNumber": 2,
+        "uprightKeywords": ["love", "passion", "union"],
+        "reversedKeywords": ["desire", "lust", "crossed love"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.2"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Coupes",
+      "description": "Etteilla's Three of Coupes represented success, victory, and good fortune in emotional or social matters — the joy of achievement shared with others. This aligns with RWS's celebratory image of three women dancing together in joyful completion.",
+      "secondaryNames": [
+        { "name": "Trois de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "3",
+        "rankNumber": 3,
+        "uprightKeywords": ["success", "victory", "good fortune"],
+        "reversedKeywords": ["excess", "over-indulgence", "sensual pleasure"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.3"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Coupes",
+      "description": "Etteilla read the Four of Coupes as boredom, disgust, and dissatisfaction — an emotional numbness or satiation with what one has. This matches the RWS image of a figure turning away from offered cups, though Etteilla framed it more as active displeasure than passive contemplation.",
+      "secondaryNames": [
+        { "name": "Quatre de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "4",
+        "rankNumber": 4,
+        "uprightKeywords": ["boredom", "disgust", "dissatisfaction"],
+        "reversedKeywords": ["novelty", "new acquaintance", "fresh prospect"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.4"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Coupes",
+      "description": "The Five of Coupes indicated inheritance and a legacy received — the practical benefit that comes after a period of loss or grief. Etteilla's interpretation is more practically oriented than RWS's focus on mourning over spilled cups, pointing to the material outcome of a bereavement.",
+      "secondaryNames": [
+        { "name": "Cinq de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "5",
+        "rankNumber": 5,
+        "uprightKeywords": ["inheritance", "legacy", "bequest"],
+        "reversedKeywords": ["loss", "ruin", "regret"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.5"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Coupes",
+      "description": "Etteilla read the Six of Coupes as the past and memory — a card of what has been, those who came before, and old connections. This anticipates the RWS nostalgia meaning and connects to Etteilla's cosmological view of tarot as a repository of ancestral wisdom.",
+      "secondaryNames": [
+        { "name": "Six de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "6",
+        "rankNumber": 6,
+        "uprightKeywords": ["the past", "memory", "old acquaintance"],
+        "reversedKeywords": ["the future", "renewal", "what is to come"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.6"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Coupes",
+      "description": "The Seven of Coupes signified thought, intelligence, and ideas — mental projects and imaginings. Etteilla's reading is more literal and less illusory than RWS's cup of visions; he saw this card as indicating active reflection and the planning of emotional or creative projects.",
+      "secondaryNames": [
+        { "name": "Sept de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "7",
+        "rankNumber": 7,
+        "uprightKeywords": ["thought", "intelligence", "project"],
+        "reversedKeywords": ["desire", "wish", "fantasy"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.7"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Coupes",
+      "description": "Etteilla's Eight of Coupes represented a fair-haired person and the colour blonde — one of several cards in his system used primarily as a physical description of a person in the querent's life, reflecting the cartomantic tradition of significators.",
+      "secondaryNames": [
+        { "name": "Huit de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "8",
+        "rankNumber": 8,
+        "uprightKeywords": ["fair person", "blonde", "light-complexioned"],
+        "reversedKeywords": ["joy", "satisfaction", "contentment"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.8"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Coupes",
+      "description": "The Nine of Coupes indicated victory and success — what is desired will be obtained. This aligns closely with its RWS counterpart as the 'wish card', and represents one of Etteilla's most straightforwardly positive cards for emotional and material satisfaction.",
+      "secondaryNames": [
+        { "name": "Neuf de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "9",
+        "rankNumber": 9,
+        "uprightKeywords": ["victory", "success", "wish granted"],
+        "reversedKeywords": ["imperfection", "modest success", "good enough"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.9"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Coupes",
+      "description": "Etteilla read the Ten of Coupes as the town and city — the social environment, the urban community, and the collective household of society. This contrasts with the RWS happy family under a rainbow, grounding the card in civic and communal life rather than domestic bliss.",
+      "secondaryNames": [
+        { "name": "Dix de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "10",
+        "rankNumber": 10,
+        "uprightKeywords": ["town", "city", "community"],
+        "reversedKeywords": ["vexation", "displeasure", "discord"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.10"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet of Coupes",
+      "description": "The Valet of Coupes in Etteilla's system represented a fair, studious young person — a youth inclined toward learning, arts, or intellectual pursuits. In the cartomantic tradition this card often pointed to a student or a young person of refined sensibility.",
+      "secondaryNames": [
+        { "name": "Valet de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "Page",
+        "rankNumber": 11,
+        "uprightKeywords": ["fair youth", "student", "studious"],
+        "reversedKeywords": ["seduction", "flattery", "deception"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.page"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier of Coupes",
+      "description": "The Cavalier of Coupes signified arrival, approach, and the coming of a message or person bearing good news in emotional matters. His arrival card contrasts with the departure meaning of the Cavalier of Batons, forming one of Etteilla's movement pairs.",
+      "secondaryNames": [
+        { "name": "Cavalier de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "Knight",
+        "rankNumber": 12,
+        "uprightKeywords": ["arrival", "approach", "invitation"],
+        "reversedKeywords": ["duplicity", "cunning", "fraud"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.knight"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dame of Coupes",
+      "description": "The Dame of Coupes represented a fair, honest, and devoted woman — a loyal, virtuous woman of light complexion who was a trustworthy figure in the querent's life. When used as a significator she represented the querent herself if fair-haired.",
+      "secondaryNames": [
+        { "name": "Dame de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "Queen",
+        "rankNumber": 13,
+        "uprightKeywords": ["fair woman", "honesty", "devotion"],
+        "reversedKeywords": ["dishonesty", "faithlessness", "bad faith"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.queen"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.cups.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi of Coupes",
+      "description": "The Roi of Coupes represented a fair-complexioned, honest man of good character — a liberal, open-hearted person who could be trusted. In predictive readings he often identified a specific fair-haired man of importance in the querent's situation.",
+      "secondaryNames": [
+        { "name": "Roi de Coupes", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "cups"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Cups",
+        "rank": "King",
+        "rankNumber": 14,
+        "uprightKeywords": ["fair man", "honesty", "liberality"],
+        "reversedKeywords": ["dishonesty", "double-dealing", "vice"],
+        "correspondingRWSCard": "tarot.minor.rws.cups.king"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Épées",
+      "description": "Etteilla's Ace of Épées (Swords) signified extreme matters — excess, pregnancy, and decisive cutting force. This unusual pairing of fertility and extremity reflects his Egyptian-influenced symbolism: the sword as the primordial creative-destructive force of beginning.",
+      "secondaryNames": [
+        { "name": "As d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "Ace",
+        "rankNumber": 1,
+        "uprightKeywords": ["excess", "pregnancy", "extreme force"],
+        "reversedKeywords": ["birth", "beginning", "conception"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.ace"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Épées",
+      "description": "The Two of Épées signified friendship and affection — an unusual meaning for a swords card, but in Etteilla's system it represented the peace achieved between two forces, a truce or alliance sealed. This differs markedly from the RWS image of blocked, avoidant equilibrium.",
+      "secondaryNames": [
+        { "name": "Deux d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "2",
+        "rankNumber": 2,
+        "uprightKeywords": ["friendship", "affection", "alliance"],
+        "reversedKeywords": ["falsehood", "duplicity", "false friendship"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.2"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Épées",
+      "description": "Etteilla's Three of Épées indicated distance and separation — a departure or physical separation from those one loves. The grief of parting is central, and like RWS's heart-piercing image, this card warned of sorrow arising from loss of connection.",
+      "secondaryNames": [
+        { "name": "Trois d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "3",
+        "rankNumber": 3,
+        "uprightKeywords": ["separation", "distance", "departure"],
+        "reversedKeywords": ["error", "distraction", "confusion"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.3"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Épées",
+      "description": "The Four of Épées meant solitude and retreat — a period of enforced or chosen rest, often in the context of illness or recovery. This resonates with the RWS image of a recumbent knight on a tomb, though Etteilla read it more as practical withdrawal than contemplative rest.",
+      "secondaryNames": [
+        { "name": "Quatre d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "4",
+        "rankNumber": 4,
+        "uprightKeywords": ["solitude", "retreat", "rest"],
+        "reversedKeywords": ["prudence", "economy", "recovery"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.4"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Épées",
+      "description": "Etteilla's Five of Épées signified grief, mourning, and loss — a card of sorrow following defeat or humiliation. This aligns with the RWS image of a victorious figure gathering fallen swords while defeated opponents leave in despair.",
+      "secondaryNames": [
+        { "name": "Cinq d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "5",
+        "rankNumber": 5,
+        "uprightKeywords": ["grief", "mourning", "loss"],
+        "reversedKeywords": ["burial", "ceremony", "funerary rite"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.5"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Épées",
+      "description": "The Six of Épées in Etteilla's system meant a route, a road, and travel undertaken after difficulty. The journey element aligns with RWS's boat-crossing imagery, though Etteilla emphasised the literal road rather than the metaphorical passage from turbulence to calmer waters.",
+      "secondaryNames": [
+        { "name": "Six d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "6",
+        "rankNumber": 6,
+        "uprightKeywords": ["road", "route", "travel"],
+        "reversedKeywords": ["declaration", "announcement", "disclosure"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.6"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Épées",
+      "description": "Etteilla's Seven of Épées signified hope — the persistence of expectation and wish despite apparent difficulty. This is one of the more surprising inversions in his system, where what RWS reads as cunning theft Etteilla reads as the hope that one may yet prevail.",
+      "secondaryNames": [
+        { "name": "Sept d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "7",
+        "rankNumber": 7,
+        "uprightKeywords": ["hope", "wish", "expectation"],
+        "reversedKeywords": ["counsel", "advice", "wise guidance"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.7"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Épées",
+      "description": "The Eight of Épées indicated criticism and blame — the experience of being censured, hindered, or calumniated by others. This connects to the RWS image of a bound and blindfolded figure, though Etteilla focused on the social dimension of criticism rather than self-imposed restriction.",
+      "secondaryNames": [
+        { "name": "Huit d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "8",
+        "rankNumber": 8,
+        "uprightKeywords": ["criticism", "blame", "censure"],
+        "reversedKeywords": ["caution", "discretion", "careful action"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.8"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Épées",
+      "description": "Etteilla's Nine of Épées represented the cleric and ecclesiastic — a person of religion or the church. This meaning differs dramatically from the RWS nightmare card, reflecting the older cartomantic function of suit cards as social typologies rather than psychological states.",
+      "secondaryNames": [
+        { "name": "Neuf d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "9",
+        "rankNumber": 9,
+        "uprightKeywords": ["cleric", "church", "piety"],
+        "reversedKeywords": ["reasonable fear", "justified suspicion", "valid doubt"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.9"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Épées",
+      "description": "The Ten of Épées signified tears and weeping — grief at its most acute and abundant. This aligns with the RWS image of a figure face-down with ten swords in the back, though Etteilla read the emotional expression of loss rather than the moment of catastrophic defeat.",
+      "secondaryNames": [
+        { "name": "Dix d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "10",
+        "rankNumber": 10,
+        "uprightKeywords": ["tears", "weeping", "grief"],
+        "reversedKeywords": ["advantage", "profit", "benefit despite pain"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.10"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet of Épées",
+      "description": "The Valet of Épées represented a spy or intruder — a cunning young person who watches, listens, and reports. In Etteilla's practical system this card warned that someone was observing the querent's affairs with unfriendly intent.",
+      "secondaryNames": [
+        { "name": "Valet d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "Page",
+        "rankNumber": 11,
+        "uprightKeywords": ["spy", "secret watcher", "cunning"],
+        "reversedKeywords": ["unforeseen event", "surprise", "unexpected action"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.page"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier of Épées",
+      "description": "The Cavalier of Épées in Etteilla's system signified a skilled, aggressive soldier or adversary — a person of forceful action and military bearing. This aligns with the RWS Knight of Swords charging forward, though Etteilla placed greater emphasis on the human opponent.",
+      "secondaryNames": [
+        { "name": "Cavalier d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "Knight",
+        "rankNumber": 12,
+        "uprightKeywords": ["soldier", "adversary", "forceful person"],
+        "reversedKeywords": ["extravagance", "incapacity", "folly"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.knight"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dame of Épées",
+      "description": "The Dame of Épées represented a widow or a woman who has suffered loss — a dark woman of mature years who carries the marks of grief and experience. Etteilla's system closely tied the Swords queens to mourning and difficult female experience.",
+      "secondaryNames": [
+        { "name": "Dame d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "Queen",
+        "rankNumber": 13,
+        "uprightKeywords": ["widow", "loss", "grief"],
+        "reversedKeywords": ["malice", "bigotry", "narrow-mindedness"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.queen"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.swords.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi of Épées",
+      "description": "The Roi of Épées represented a dark man of authority and legal power — a lawyer, judge, or man of the sword with decisive authority. In readings he indicated a powerful, potentially threatening male figure whose decisions or judgements would significantly affect the querent.",
+      "secondaryNames": [
+        { "name": "Roi d'Épées", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "swords"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Swords",
+        "rank": "King",
+        "rankNumber": 14,
+        "uprightKeywords": ["judge", "lawyer", "authority"],
+        "reversedKeywords": ["cruelty", "perversity", "wickedness"],
+        "correspondingRWSCard": "tarot.minor.rws.swords.king"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.ace",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ace of Deniers",
+      "description": "Etteilla's Ace of Deniers (Pentacles/Coins) signified perfect contentment and total satisfaction — the realisation of material wellbeing and security. This aligns closely with the RWS Ace of Pentacles as the seed of material prosperity and practical fulfilment.",
+      "secondaryNames": [
+        { "name": "As de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "Ace",
+        "rankNumber": 1,
+        "uprightKeywords": ["contentment", "satisfaction", "material wellbeing"],
+        "reversedKeywords": ["wealth badly used", "miserliness", "greed"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.ace"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.2",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Two of Deniers",
+      "description": "The Two of Deniers indicated embarrassment and difficulty in managing multiple financial demands — a juggling of resources and priorities. This aligns with the RWS image of a juggler balancing two pentacles, though Etteilla emphasised practical difficulty over playful skill.",
+      "secondaryNames": [
+        { "name": "Deux de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "2",
+        "rankNumber": 2,
+        "uprightKeywords": ["embarrassment", "difficulty", "financial juggling"],
+        "reversedKeywords": ["letters", "written message", "correspondence"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.2"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.3",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Three of Deniers",
+      "description": "Etteilla's Three of Deniers represented noble work, skilled craft, and a high-quality piece of workmanship. This closely matches the RWS image of a skilled craftsman working in a cathedral, emphasising mastery, expertise, and the pride of skilled labour.",
+      "secondaryNames": [
+        { "name": "Trois de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "3",
+        "rankNumber": 3,
+        "uprightKeywords": ["skilled work", "craftsmanship", "quality"],
+        "reversedKeywords": ["mediocrity", "puerility", "poor quality"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.3"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.4",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Four of Deniers",
+      "description": "The Four of Deniers signified a gift and legacy received — a tangible, material benefit given to the querent. Etteilla's reading is more benevolently generous than the RWS miser clutching his coins, focusing on the reception of material blessing rather than its hoarding.",
+      "secondaryNames": [
+        { "name": "Quatre de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "4",
+        "rankNumber": 4,
+        "uprightKeywords": ["gift", "legacy", "material benefit"],
+        "reversedKeywords": ["obstacles", "delay", "postponed gain"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.4"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.5",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Five of Deniers",
+      "description": "Etteilla's Five of Deniers indicated a lover or mistress — an unmarried romantic partner, suggesting the card's territory was love affairs alongside material concerns. This differs from RWS's poverty and hardship reading, though both suggest something outside conventional bounds.",
+      "secondaryNames": [
+        { "name": "Cinq de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "5",
+        "rankNumber": 5,
+        "uprightKeywords": ["lover", "mistress", "romantic affair"],
+        "reversedKeywords": ["disorder", "chaos", "ruin"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.5"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.6",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Six of Deniers",
+      "description": "The Six of Deniers in Etteilla's system meant the present moment — what is current, immediate, and now in the querent's material affairs. This temporal meaning makes it a card of the present tense in a reading, distinct from the RWS interpretation of generosity and giving.",
+      "secondaryNames": [
+        { "name": "Six de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "6",
+        "rankNumber": 6,
+        "uprightKeywords": ["present moment", "now", "current affairs"],
+        "reversedKeywords": ["desire", "ambition", "aspiration"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.6"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.7",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Seven of Deniers",
+      "description": "Etteilla's Seven of Deniers meant money and financial gain — a straightforwardly positive financial card representing the accumulation of funds. This contrasts with the RWS introspective farmer pausing to assess his harvest, though both involve the result of material effort.",
+      "secondaryNames": [
+        { "name": "Sept de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "7",
+        "rankNumber": 7,
+        "uprightKeywords": ["money", "financial gain", "income"],
+        "reversedKeywords": ["worry about money", "financial anxiety", "concern"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.7"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.8",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Eight of Deniers",
+      "description": "The Eight of Deniers signified a dark young girl — a significator for a young woman of dark complexion, one of Etteilla's characteristically person-centred readings. In context it identified an important young woman in the querent's financial or practical affairs.",
+      "secondaryNames": [
+        { "name": "Huit de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "8",
+        "rankNumber": 8,
+        "uprightKeywords": ["dark young woman", "skill", "craftswoman"],
+        "reversedKeywords": ["usury", "excessive interest", "exploitation"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.8"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.9",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Nine of Deniers",
+      "description": "Etteilla's Nine of Deniers meant accomplishment and effect — the card that shows results materialising and efforts bearing fruit. This aligns with the RWS image of a prosperous figure in a garden of plenty, though Etteilla focused on the practical outcome rather than independent luxury.",
+      "secondaryNames": [
+        { "name": "Neuf de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "9",
+        "rankNumber": 9,
+        "uprightKeywords": ["accomplishment", "results", "effect"],
+        "reversedKeywords": ["deception", "bad faith", "false promise"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.9"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.10",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Ten of Deniers",
+      "description": "The Ten of Deniers signified house, dwelling, and the family home — the culmination of material effort in the establishment of a secure household. This aligns with the RWS theme of family legacy and material prosperity passed across generations.",
+      "secondaryNames": [
+        { "name": "Dix de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "10",
+        "rankNumber": 10,
+        "uprightKeywords": ["house", "home", "family dwelling"],
+        "reversedKeywords": ["chance", "fate", "fortune"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.10"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.page",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Valet of Deniers",
+      "description": "The Valet of Deniers represented a dark, studious young person devoted to learning and practical studies. In financial readings he indicated a young person who would become useful in practical or commercial matters, a reliable apprentice or diligent student.",
+      "secondaryNames": [
+        { "name": "Valet de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "Page",
+        "rankNumber": 11,
+        "uprightKeywords": ["studious youth", "dark young person", "diligence"],
+        "reversedKeywords": ["luxury", "prodigality", "wastefulness"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.page"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.knight",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Cavalier of Deniers",
+      "description": "The Cavalier of Deniers in Etteilla's system signified a useful, practical person who could be employed to accomplish material tasks — a steady, serviceable helper in financial or professional matters. Unlike the RWS slow and methodical knight, Etteilla emphasised practical utility.",
+      "secondaryNames": [
+        { "name": "Cavalier de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "Knight",
+        "rankNumber": 12,
+        "uprightKeywords": ["useful person", "practical helper", "steady worker"],
+        "reversedKeywords": ["idleness", "stagnation", "inertia"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.knight"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.queen",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Dame of Deniers",
+      "description": "The Dame of Deniers represented a dark, wealthy, generous woman — a woman of property and substance who was reliable and charitable. In readings she identified an older or established woman of financial means whose influence on the querent's material affairs was beneficial.",
+      "secondaryNames": [
+        { "name": "Dame de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "Queen",
+        "rankNumber": 13,
+        "uprightKeywords": ["wealthy woman", "generosity", "dark woman"],
+        "reversedKeywords": ["doubt", "suspicion", "uncertainty"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.queen"
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.etteilla.pentacles.king",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Roi of Deniers",
+      "description": "The Roi of Deniers represented a dark, successful man of commerce and property — a wealthy merchant, landowner, or businessman. He was the embodiment of material success and practical achievement, a patron or powerful financial figure in the querent's world.",
+      "secondaryNames": [
+        { "name": "Roi de Deniers", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "minor-arcana", "etteilla", "pentacles"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "suit": "Pentacles",
+        "rank": "King",
+        "rankNumber": 14,
+        "uprightKeywords": ["wealthy man", "merchant", "successful businessman"],
+        "reversedKeywords": ["vice", "weakness", "corruption"],
+        "correspondingRWSCard": "tarot.minor.rws.pentacles.king"
+      }
+    }
+  ]
+}

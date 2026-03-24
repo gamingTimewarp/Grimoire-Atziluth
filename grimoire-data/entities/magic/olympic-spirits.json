@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "spirit.olympic.aratron",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Aratron",
+      "description": "Aratron is the Olympic Spirit of Saturn, governing 49 of the 196 Olympic provinces. He is described in the Arbatel de Magia Veterum (1575) as able to convert any living thing into stone, to teach alchemy, magic, and medicine, and to make men invisible. He rules over all things attributed to Saturn: time, lead, the aged, death, binding, and melancholy. Aratron appears on the first hour of Saturday and governs a cycle of 490 years. He rules 17,640,000 spirits and commands the generation of minerals, vegetation from the earth, and can reveal hidden treasures.",
+      "secondaryNames": [
+        {
+          "name": "Saturni Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of Saturn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "saturn",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.saturn",
+        "olympicProvinces": 49,
+        "yearCycle": 490,
+        "dayOfAppearance": "Saturday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.bethor",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Bethor",
+      "description": "Bethor is the Olympic Spirit of Jupiter, governing 42 of the 196 Olympic provinces. Described in the Arbatel (1575), he commands all things under Jupiter: wealth, friendship, dignities, counsel, and the binding of spirits to the service of men. Bethor can transport precious stones and make men fortunate in commercial ventures, raise men to honour, and reconcile the spirits of the air and treasures of the sea. He appears on the first hour of Thursday and governs a cycle of 420 years.",
+      "secondaryNames": [
+        {
+          "name": "Iovis Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of Jupiter",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "jupiter",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.jupiter",
+        "olympicProvinces": 42,
+        "yearCycle": 420,
+        "dayOfAppearance": "Thursday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.phaleg",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Phaleg",
+      "description": "Phaleg is the Olympic Spirit of Mars, governing 35 of the 196 Olympic provinces. According to the Arbatel (1575), he rules all things martial: war, military victory, courage, conflict, and the martial arts. He can make men great in military matters and confer honours in the field of battle. Phaleg appears on the first hour of Tuesday and governs a cycle of 350 years. He commands fire, iron, and all weapons of war.",
+      "secondaryNames": [
+        {
+          "name": "Martis Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of Mars",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "mars",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.mars",
+        "olympicProvinces": 35,
+        "yearCycle": 350,
+        "dayOfAppearance": "Tuesday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.och",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Och",
+      "description": "Och is the Olympic Spirit of the Sun, governing 28 of the 196 Olympic provinces and considered the most benevolent of the seven. The Arbatel (1575) describes him as conferring perfect health, wisdom, and the ultimate philosopher's stone — the ability to convert anything into gold and to prolong life to 600 years with perfect health. He rules all solar things: gold, light, kings, physicians, and divine revelation. Och appears on the first hour of Sunday and governs a cycle of 280 years.",
+      "secondaryNames": [
+        {
+          "name": "Solis Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of the Sun",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "sol",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.sol",
+        "olympicProvinces": 28,
+        "yearCycle": 280,
+        "dayOfAppearance": "Sunday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.hagith",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Hagith",
+      "description": "Hagith is the Olympic Spirit of Venus, governing 21 of the 196 Olympic provinces. The Arbatel (1575) describes her as ruling all things venereal: love, beauty, friendship, music, and the arts. She can transform copper into gold and gold into copper, confer extraordinary beauty and love upon the petitioner, and reconcile enemies. Hagith appears on the first hour of Friday and governs a cycle of 210 years. She rules over a vast number of aerial spirits.",
+      "secondaryNames": [
+        {
+          "name": "Veneris Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of Venus",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "venus",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.venus",
+        "olympicProvinces": 21,
+        "yearCycle": 210,
+        "dayOfAppearance": "Friday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.ophiel",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Ophiel",
+      "description": "Ophiel is the Olympic Spirit of Mercury, governing 14 of the 196 Olympic provinces. According to the Arbatel (1575), he rules all mercurial matters: science, commerce, language, divination, travel, and quick-wittedness. He can teach all arts and sciences, make men swift, reveal hidden knowledge, and confer the ability to transmute quicksilver into the philosopher's stone. Ophiel appears on the first hour of Wednesday and governs a cycle of 140 years.",
+      "secondaryNames": [
+        {
+          "name": "Mercurii Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of Mercury",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "mercury",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.mercury",
+        "olympicProvinces": 14,
+        "yearCycle": 140,
+        "dayOfAppearance": "Wednesday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    },
+    {
+      "canonicalName": "spirit.olympic.phul",
+      "entityType": "spirit.olympic",
+      "primaryDisplayName": "Phul",
+      "description": "Phul is the Olympic Spirit of the Moon, governing 7 of the 196 Olympic provinces — the smallest number, reflecting the Moon's innermost orbital position. The Arbatel (1575) describes him as ruling all things lunar: water, dreams, the tides, silver, and the unconscious. He can prolong life to 300 years, transmute any metal into silver, heal diseases of water and phlegm, and command the spirits of the waters. Phul appears on the first hour of Monday and governs a cycle of 70 years.",
+      "secondaryNames": [
+        {
+          "name": "Lunae Daemon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spirit of the Moon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "magic",
+        "spirit",
+        "olympic",
+        "luna",
+        "arbatel"
+      ],
+      "extendedData": {
+        "planetCN": "astrology.planet.luna",
+        "olympicProvinces": 7,
+        "yearCycle": 70,
+        "dayOfAppearance": "Monday",
+        "hourOfAppearance": 1,
+        "source": "Arbatel de Magia Veterum (1575)"
+      }
+    }
+  ]
+}

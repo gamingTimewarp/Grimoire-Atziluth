@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "hermetic.principle.mentalism",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Mentalism",
+      "description": "The first and foundational Hermetic principle: The All is Mind; the Universe is Mental. All that exists is a thought or creation of THE ALL — the Infinite Living Mind. Matter, energy, space, and time are modes of consciousness. Understanding this principle allows the practitioner to influence reality by working at the level of mind. Expressed in the phrase attributed to Hermes: 'The lips of Wisdom are closed, except to the ears of Understanding.'",
+      "secondaryNames": [
+        { "name": "The All is Mind", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 1,
+        "axiom": "THE ALL is MIND; The Universe is Mental.",
+        "domain": ["mind", "consciousness", "reality", "divine intellect"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.correspondence",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Correspondence",
+      "description": "The second Hermetic principle: As above, so below; as below, so above. The laws governing the cosmos operate identically at every scale — the macrocosm is reflected in the microcosm. The movements of celestial bodies mirror the patterns of human life; the structure of the atom echoes the structure of the solar system. This principle is the philosophical basis for astrology, alchemy, and all systems of symbolic correspondence. It enables the practitioner to deduce higher truths by studying lower manifestations.",
+      "secondaryNames": [
+        { "name": "As Above, So Below", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 2,
+        "axiom": "As above, so below; as below, so above.",
+        "domain": ["correspondence", "analogy", "macrocosm", "microcosm", "astrology"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.vibration",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Vibration",
+      "description": "The third Hermetic principle: Nothing rests; everything moves; everything vibrates. Matter, energy, mind, and spirit are all in constant motion, differing only in rate and mode of vibration. Solid matter vibrates slowly; spirit vibrates at so high a rate as to appear at rest. Sound, light, heat, and thought are all forms of vibration. The Hermeticist who understands this principle can raise or lower their own vibration — and thereby influence the conditions of their life and consciousness.",
+      "secondaryNames": [
+        { "name": "Everything Vibrates", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 3,
+        "axiom": "Nothing rests; everything moves; everything vibrates.",
+        "domain": ["vibration", "motion", "frequency", "energy", "sound"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.polarity",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Polarity",
+      "description": "The fourth Hermetic principle: Everything is dual; everything has poles; everything has its pair of opposites. Hot and cold are the same thing — degrees of the same phenomenon. Love and hate, light and darkness, good and evil are poles of the same continuum. The practitioner of mental transmutation works by shifting along the poles rather than opposing them outright, transmuting fear into courage, hatred into love, doubt into certainty — not by destroying the lower quality but by raising the vibration along the same axis.",
+      "secondaryNames": [
+        { "name": "Everything is Dual", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 4,
+        "axiom": "Everything is Dual; everything has poles; everything has its pair of opposites.",
+        "domain": ["duality", "polarity", "opposites", "transmutation", "balance"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.rhythm",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Rhythm",
+      "description": "The fifth Hermetic principle: Everything flows, out and in; everything has its tides; all things rise and fall; the pendulum-swing manifests in everything. The advance and retreat of the tides, the waxing and waning of the moon, the rise and fall of civilisations — all obey this principle. What swings to the right must swing to the left. The adept learns to neutralise the rhythm's negative swing by rising to a higher plane of consciousness, refusing to be swept along by the tide while remaining aware of its motion.",
+      "secondaryNames": [
+        { "name": "The Law of Rhythm", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 5,
+        "axiom": "Everything flows, out and in; everything has its tides.",
+        "domain": ["rhythm", "cycles", "tides", "seasons", "time"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.cause-and-effect",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Cause and Effect",
+      "description": "The sixth Hermetic principle: Every cause has its effect; every effect has its cause. Nothing happens by chance — chance is a name for an unrecognised cause. The chain of causation is infinite, extending backward and forward without break. What appears as chance is merely the meeting of unrecognised causes. Most people are effects rather than causes — they are moved by the currents of circumstance, emotion, and circumstance. The Master Hermeticist rises above this mechanical causation by acting as a cause rather than drifting as an effect.",
+      "secondaryNames": [
+        { "name": "The Law of Causation", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Karma", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 6,
+        "axiom": "Every Cause has its Effect; every Effect has its Cause.",
+        "domain": ["causation", "karma", "fate", "law", "consequence"]
+      }
+    },
+    {
+      "canonicalName": "hermetic.principle.gender",
+      "entityType": "hermetic.principle",
+      "primaryDisplayName": "Gender",
+      "description": "The seventh Hermetic principle: Gender is in everything; everything has its masculine and feminine principles. This principle is not limited to biological sex but describes two complementary modes of energy present throughout creation. The masculine principle is directive, projective, and generative; the feminine is receptive, creative, and formative. Neither can create without the other. In the mind, the masculine is the directing will and the feminine is the imaginative faculty. The Great Work requires the harmonious integration of both within the practitioner.",
+      "secondaryNames": [
+        { "name": "The Law of Gender", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hermetic", "hermetic-principle"],
+      "extendedData": {
+        "principleNumber": 7,
+        "axiom": "Gender is in everything; everything has its Masculine and Feminine Principles.",
+        "domain": ["gender", "masculine", "feminine", "polarity", "creation", "will", "imagination"]
+      }
+    }
+  ]
+}

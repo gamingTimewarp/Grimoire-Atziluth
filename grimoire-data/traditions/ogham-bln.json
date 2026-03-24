@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.ogham-bln",
+    "displayName": "Ogham — Beith-Luis-Nion Order",
+    "description": "The traditional scholarly ordering of the Ogham alphabet as recorded in the medieval Irish manuscripts Ogham Tract (14th c., Book of Ballymote) and Auraicept na n-Éces (Scholars' Primer). The Beith-Luis-Nion order names the alphabet after its first three letters (B-L-N rather than B-L-F), and groups the 20 core characters into four Aicme (families) of five. This is the standard reference order used by modern scholars and most divinatory practitioners. The five Forfeda (additional letters) are appended after the core twenty.",
+    "attributionFields": [
+      { "linkLabel": "attributed-tree", "displayName": "Sacred Tree / Plant", "targetEntityType": "herb", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-element", "displayName": "Element", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-planet", "displayName": "Planetary Ruler", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

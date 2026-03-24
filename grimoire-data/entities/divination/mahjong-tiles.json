@@ -1,0 +1,1625 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-1",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "1 of Bamboo",
+      "description": "The 1-Bamboo tile bears the image of a bird — traditionally a sparrow or peacock — heralding news, messages, and singular focus breaking through obstacles. A solitary force channelled with precision becomes unstoppable; this tile signals a fresh start rooted in natural strength.",
+      "secondaryNames": [
+        {
+          "name": "一索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yī Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 1,
+        "chineseCharacter": "一索",
+        "pinyin": "Yī Suǒ",
+        "divinatoryMeaning": "A singular focus leads to breakthrough; the bird image heralds good news and the arrival of a message. New beginnings rooted in natural vitality are favoured.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-2",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "2 of Bamboo",
+      "description": "Two bamboo sticks represent partnership and the supple strength of cooperation — bamboo bends in the wind but never breaks, and two stalks together are stronger than either alone. This tile counsels flexible alliance and mutual support in shared endeavours.",
+      "secondaryNames": [
+        {
+          "name": "二索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Èr Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 2,
+        "chineseCharacter": "二索",
+        "pinyin": "Èr Suǒ",
+        "divinatoryMeaning": "Flexible cooperation and partnership yield resilient results. Two forces working in harmony can weather storms that would topple a single standing stalk.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-3",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "3 of Bamboo",
+      "description": "Three bamboo stalks invoke community, creative growth, and the expanding grove — what began as a seed is now a living, spreading network of green vitality. This tile speaks of social ties, creative expression, and the upward momentum of a young venture finding its footing.",
+      "secondaryNames": [
+        {
+          "name": "三索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sān Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 3,
+        "chineseCharacter": "三索",
+        "pinyin": "Sān Suǒ",
+        "divinatoryMeaning": "Community and creative growth are at the fore; social bonds multiply like a bamboo grove spreading underground. A project or relationship is gaining healthy momentum.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-4",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "4 of Bamboo",
+      "description": "Four is the number of death (死, sǐ) in Chinese tradition, sharing its sound with the word for dying, and so this tile urges careful planning and respect for limits before proceeding. Yet the sturdy four-cornered foundation also speaks of structural integrity — proceed with caution and a sound plan, and obstacles can be overcome.",
+      "secondaryNames": [
+        {
+          "name": "四索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sì Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 4,
+        "chineseCharacter": "四索",
+        "pinyin": "Sì Suǒ",
+        "divinatoryMeaning": "Caution and thorough planning are required; do not rush forward without checking the foundations. The inauspicious resonance of four demands respect, but careful preparation can transform a potential setback into solid ground.",
+        "auspicious": false,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-5",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "5 of Bamboo",
+      "description": "The 5-Bamboo stands at the centre of the suit, embodying balance, the pivot point, and the capacity to hold opposing forces in equilibrium — like the hollow core of a bamboo stalk that gives it both lightness and tensile strength. This tile signals a moment of poise from which decisive action becomes possible.",
+      "secondaryNames": [
+        {
+          "name": "五索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 5,
+        "chineseCharacter": "五索",
+        "pinyin": "Wǔ Suǒ",
+        "divinatoryMeaning": "Balance and centredness mark this moment; competing demands can be held in equilibrium. Find the pivot point and the path forward becomes clear.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-6",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "6 of Bamboo",
+      "description": "Six bamboo stalks rise in harmony, a number associated in Chinese tradition with smooth roads and easy advancement — 六六大順 (liù liù dà shùn), 'everything proceeds smoothly.' This tile promises forward momentum with few obstacles, progress unfolding naturally like bamboo reaching toward sunlight.",
+      "secondaryNames": [
+        {
+          "name": "六索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Liù Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 6,
+        "chineseCharacter": "六索",
+        "pinyin": "Liù Suǒ",
+        "divinatoryMeaning": "Smooth progress and easy advancement are indicated; obstacles give way and the road ahead is clear. Allow natural momentum to carry you forward rather than forcing the pace.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-7",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "7 of Bamboo",
+      "description": "Seven carries the energy of surprising good fortune and the completion of a lucky cycle — in Chinese divination, seven resonates with togetherness and the reunion of separated elements. This tile heralds an unexpected turn for the better, a stroke of luck arriving when least expected.",
+      "secondaryNames": [
+        {
+          "name": "七索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qī Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 7,
+        "chineseCharacter": "七索",
+        "pinyin": "Qī Suǒ",
+        "divinatoryMeaning": "Surprising good fortune arrives unexpectedly, turning a difficult situation in a favourable direction. A reunion or lucky coincidence is at hand.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-8",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "8 of Bamboo",
+      "description": "Eight is the supreme lucky number in Chinese culture — 八 (bā) resonates with 發 (fā), meaning to prosper and flourish — and eight bamboo stalks represent great vitality, abundant growth, and prosperous energy flowing freely. This is among the most auspicious tiles in the bamboo suit.",
+      "secondaryNames": [
+        {
+          "name": "八索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bā Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 8,
+        "chineseCharacter": "八索",
+        "pinyin": "Bā Suǒ",
+        "divinatoryMeaning": "Great prosperity and flourishing vitality are indicated; the energy of growth is at its peak. Conditions are exceptionally favourable for expansion, health, and abundant returns.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.bamboo-9",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "9 of Bamboo",
+      "description": "Nine is the highest single digit and the number of ultimate completion and longevity in Chinese tradition — the bamboo grove has reached its full, towering height and the cycle is fulfilled. This tile marks the satisfying conclusion of a long-running matter and the beginning of a new cycle beyond it.",
+      "secondaryNames": [
+        {
+          "name": "九索",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǔ Suǒ",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "bamboo-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Bamboo",
+        "number": 9,
+        "chineseCharacter": "九索",
+        "pinyin": "Jiǔ Suǒ",
+        "divinatoryMeaning": "A long cycle reaches its ultimate completion; what was begun is now fully realised and fulfilled. The end of this chapter contains within it the seed of the next.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-1",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "1 of Wan",
+      "description": "The 1-Wan tile shows a single 萬 (ten-thousand) character, invoking the singular concentrated power of ambition not yet dispersed into the world — the self as centre and origin of all future achievement. This tile signals personal power, self-reliance, and the authority to lead one's own destiny.",
+      "secondaryNames": [
+        {
+          "name": "一萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yī Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 1,
+        "chineseCharacter": "一萬",
+        "pinyin": "Yī Wàn",
+        "divinatoryMeaning": "Personal power and self-determined leadership are highlighted; the individual's will is the origin of all that follows. Stand in your own authority and chart your own course.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-2",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "2 of Wan",
+      "description": "Two ten-thousand characters face each other in a balance of ambitions — this tile speaks of diplomacy between competing interests, negotiation, and the productive tension of two equally matched wills finding common ground. Resolution comes through conversation and mutual acknowledgment rather than dominance.",
+      "secondaryNames": [
+        {
+          "name": "二萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Èr Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 2,
+        "chineseCharacter": "二萬",
+        "pinyin": "Èr Wàn",
+        "divinatoryMeaning": "Diplomacy and negotiation between competing ambitions will yield better results than unilateral action. Balance of power is the key theme; find the agreement that honours both parties.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-3",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "3 of Wan",
+      "description": "Three 萬 characters represent the spread of wealth through communication, creative enterprise, and networking — ambition finding expression and multiplying through social and intellectual channels. This tile favours writers, traders, and those whose wealth flows from words and ideas.",
+      "secondaryNames": [
+        {
+          "name": "三萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sān Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 3,
+        "chineseCharacter": "三萬",
+        "pinyin": "Sān Wàn",
+        "divinatoryMeaning": "Creative wealth flows through communication, networking, and the expression of ideas. Reputation and intellectual output are valuable assets at this time.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-4",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "4 of Wan",
+      "description": "The inauspicious resonance of four pervades this tile, counselling extreme caution in financial and business dealings — contracts should be scrutinised, and ventures not yet begun should be delayed until a more favourable time. The fire of ambition must be banked carefully to avoid burning through resources.",
+      "secondaryNames": [
+        {
+          "name": "四萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sì Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 4,
+        "chineseCharacter": "四萬",
+        "pinyin": "Sì Wàn",
+        "divinatoryMeaning": "Caution is essential in financial and professional matters; scrutinise contracts and delay major launches until timing improves. The ambitions of fire risk consuming themselves if not carefully managed.",
+        "auspicious": false,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-5",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "5 of Wan",
+      "description": "The 5-Wan occupies the middle of the suit, representing the middle path of moderate and sustainable success — neither the heights of great fortune nor the depths of loss, but a steady, reliable sufficiency. This tile counsels contentment with honest progress and warns against overreaching.",
+      "secondaryNames": [
+        {
+          "name": "五萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 5,
+        "chineseCharacter": "五萬",
+        "pinyin": "Wǔ Wàn",
+        "divinatoryMeaning": "Moderate, steady success is available through the middle path; contentment with honest progress is more sustainable than ambitious overreach. Accept sufficient gains rather than gambling them for greater ones.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-6",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "6 of Wan",
+      "description": "The 6-Wan brings the smooth-road energy of six into the realm of career and worldly ambition — a favourable time for promotions, recognition, and the professional advancement that rewards sustained effort. Honours and official recognition are possible for those who have prepared.",
+      "secondaryNames": [
+        {
+          "name": "六萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Liù Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 6,
+        "chineseCharacter": "六萬",
+        "pinyin": "Liù Wàn",
+        "divinatoryMeaning": "Career advancement and professional recognition arrive smoothly for those who have laid proper groundwork. Official doors open and status improves without undue conflict.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-7",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "7 of Wan",
+      "description": "The 7-Wan channels spiritual wealth and earned wisdom — the worldly ambitions of the Wan suit here turn inward, and the greatest prize is insight, understanding, or the mastery of a craft rather than material accumulation. This tile honours the scholar and the seeker.",
+      "secondaryNames": [
+        {
+          "name": "七萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qī Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 7,
+        "chineseCharacter": "七萬",
+        "pinyin": "Qī Wàn",
+        "divinatoryMeaning": "Spiritual wealth and wisdom are the true achievements available now; the most valuable gain is insight or mastery rather than money. Scholarly or contemplative pursuits are richly rewarded.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-8",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "8 of Wan",
+      "description": "Eight ten-thousand characters represent spectacular financial success — the lucky resonance of 八/發 amplified through the Wan suit's association with wealth and worldly achievement creates the most materially prosperous tile of the suit. Significant financial windfalls or career triumphs are possible.",
+      "secondaryNames": [
+        {
+          "name": "八萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bā Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 8,
+        "chineseCharacter": "八萬",
+        "pinyin": "Bā Wàn",
+        "divinatoryMeaning": "Great financial success and career triumph are strongly indicated; the double luck of eight and the Wan suit combine into a powerful prosperity omen. Major windfalls and landmark achievements are within reach.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wan-9",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "9 of Wan",
+      "description": "Nine ten-thousand characters mark the supreme achievement of worldly ambition — a pinnacle of status, recognition, and accomplishment reached through sustained effort across many cycles. This tile does not merely promise wealth; it signifies the completion of a life's work or a generation-spanning goal.",
+      "secondaryNames": [
+        {
+          "name": "九萬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǔ Wàn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "wan-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Wan",
+        "number": 9,
+        "chineseCharacter": "九萬",
+        "pinyin": "Jiǔ Wàn",
+        "divinatoryMeaning": "Supreme achievement and the completion of long-held ambitions are at hand; a life's work reaches its ultimate expression. What was striven for across many cycles is now fully realised.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-1",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "1 of Circles",
+      "description": "The 1-Circle shows a single coin or disc — the primordial unit of material exchange, the first coin saved, and the seed of all future accumulation. This tile represents the starting point of a financial endeavour and the principle that every fortune begins with a single coin placed wisely.",
+      "secondaryNames": [
+        {
+          "name": "一筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yī Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 1,
+        "chineseCharacter": "一筒",
+        "pinyin": "Yī Tǒng",
+        "divinatoryMeaning": "The first coin is placed; a new material endeavour or savings plan begins with a single decisive step. Every great accumulation starts from this point of origin.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-2",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "2 of Circles",
+      "description": "Two coins together evoke partnership in material matters — a couple combining resources, a small but growing nest egg, or the first meaningful savings that begin to take on a life of their own. This tile suggests modest but real financial progress through collaboration or patient accumulation.",
+      "secondaryNames": [
+        {
+          "name": "二筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Èr Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 2,
+        "chineseCharacter": "二筒",
+        "pinyin": "Èr Tǒng",
+        "divinatoryMeaning": "Modest financial progress through partnership or patient saving is indicated; two coins together multiply their potential. Shared resources and combined efforts yield steady material gains.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-3",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "3 of Circles",
+      "description": "Three coins represent the small but tangible gains of diligent effort — the satisfaction of seeing money accumulate through consistent work, and the early returns of an investment beginning to pay off. This tile is a quiet confirmation that the material path chosen is sound.",
+      "secondaryNames": [
+        {
+          "name": "三筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sān Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 3,
+        "chineseCharacter": "三筒",
+        "pinyin": "Sān Tǒng",
+        "divinatoryMeaning": "Small, tangible gains confirm that the chosen material path is sound; diligent effort is beginning to pay visible dividends. This is a time to stay the course rather than switching strategies.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-4",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "4 of Circles",
+      "description": "Four circles carry the cautionary resonance of the unlucky four — a warning that clinging too tightly to money, or making financial decisions driven by fear of loss, may itself invite the very loss feared. This tile counsels releasing unhealthy attachment to material security while still exercising prudent care.",
+      "secondaryNames": [
+        {
+          "name": "四筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sì Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 4,
+        "chineseCharacter": "四筒",
+        "pinyin": "Sì Tǒng",
+        "divinatoryMeaning": "Caution is needed in financial matters, particularly around hoarding or fear-driven decisions; clinging too tightly can paradoxically invite loss. Review financial habits and release unhealthy attachments to money.",
+        "auspicious": false,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-5",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "5 of Circles",
+      "description": "Five coins arranged in a circle echo the shape of the suit itself — completion in miniature, a cycle of material exchange that returns to its starting point enriched. This tile signals the satisfying closure of a financial cycle, the repayment of a debt, or the realisation of a saving goal.",
+      "secondaryNames": [
+        {
+          "name": "五筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wǔ Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 5,
+        "chineseCharacter": "五筒",
+        "pinyin": "Wǔ Tǒng",
+        "divinatoryMeaning": "A material cycle reaches completion; debts are settled, goals are met, and the circle closes. This is a moment of financial equilibrium before the next cycle begins.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-6",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "6 of Circles",
+      "description": "The 6-Circle brings the smooth-road luck of six into material and financial matters — money flows without unusual friction, transactions proceed as planned, and financial relationships are harmonious. This is a favourable time for investments, expenditures, and financial agreements.",
+      "secondaryNames": [
+        {
+          "name": "六筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Liù Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 6,
+        "chineseCharacter": "六筒",
+        "pinyin": "Liù Tǒng",
+        "divinatoryMeaning": "Good financial luck flows smoothly; money moves without unusual friction and material arrangements proceed harmoniously. A favourable period for financial agreements, investments, or significant purchases.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-7",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "7 of Circles",
+      "description": "Seven circles bring an unexpected windfall or surprise income — money arrives from an unanticipated source, a forgotten investment pays off, or a random opportunity yields real material gain. This tile is a pleasant surprise in financial readings, promising unplanned prosperity.",
+      "secondaryNames": [
+        {
+          "name": "七筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qī Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 7,
+        "chineseCharacter": "七筒",
+        "pinyin": "Qī Tǒng",
+        "divinatoryMeaning": "Unexpected money or surprise financial good fortune is on its way; an unanticipated source yields real material gain. Stay alert for unplanned opportunities.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-8",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "8 of Circles",
+      "description": "Eight circles combine the supreme luck of eight with the material energy of the coin suit, creating a powerfully auspicious omen of wealth accumulation and financial abundance. Major savings goals, investment returns, and property or business gains are all within the scope of this tile.",
+      "secondaryNames": [
+        {
+          "name": "八筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bā Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 8,
+        "chineseCharacter": "八筒",
+        "pinyin": "Bā Tǒng",
+        "divinatoryMeaning": "Wealth accumulation and financial abundance are powerfully indicated; major gains in savings, investment, property, or business are possible. This is among the most materially auspicious tiles in the oracle.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.circle-9",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "9 of Circles",
+      "description": "Nine coins complete the Circles suit with the fullness of material completion — a long cycle of earning, saving, and exchange reaches its natural end in sufficiency and satisfaction. This tile does not merely mean having money; it means having enough, and knowing it.",
+      "secondaryNames": [
+        {
+          "name": "九筒",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǔ Tǒng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "circle-suit",
+        "mahjong-suited"
+      ],
+      "extendedData": {
+        "suit": "Circles",
+        "number": 9,
+        "chineseCharacter": "九筒",
+        "pinyin": "Jiǔ Tǒng",
+        "divinatoryMeaning": "Great material completion is reached; a long cycle of financial effort arrives at true sufficiency. The deepest meaning of this tile is not wealth but contentment — knowing that you have enough.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wind-east",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "East Wind",
+      "description": "The East Wind tile bears the character 東 and represents the direction of sunrise, spring, and all fresh beginnings — in Chinese cosmology the East is the home of the Green Dragon and the Wood element, source of growth and new life. As the seat wind in mahjong, East also connotes leadership, the position of greatest advantage, and the one who sets the tone for others.",
+      "secondaryNames": [
+        {
+          "name": "東",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dōng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "East Wind",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "wind-tile"
+      ],
+      "extendedData": {
+        "suit": "Winds",
+        "number": null,
+        "chineseCharacter": "東",
+        "pinyin": "Dōng",
+        "divinatoryMeaning": "New beginnings, leadership, and the initiative that sets events in motion are strongly favoured. Rise early, act first, and claim the advantageous position before others do.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": "East"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wind-south",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "South Wind",
+      "description": "The South Wind tile bears the character 南 and brings the warmth of summer, the blazing energy of peak achievement, and the abundant good fortune associated with the Fire element and the Red Phoenix of the south. South is the direction of visibility, recognition, and the fullness of life expressed openly.",
+      "secondaryNames": [
+        {
+          "name": "南",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Nán",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "South Wind",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "wind-tile"
+      ],
+      "extendedData": {
+        "suit": "Winds",
+        "number": null,
+        "chineseCharacter": "南",
+        "pinyin": "Nán",
+        "divinatoryMeaning": "Warmth, good fortune, and the brightness of full recognition are incoming; what was hidden becomes visible and what was potential becomes actual. A period of prosperity and social success is indicated.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": "South"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wind-west",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "West Wind",
+      "description": "The West Wind tile bears the character 西 and carries the energies of sunset, autumn, harvest, and the Metal element — a time when energy consolidates, what has been grown is gathered in, and cycles approach their natural conclusion. The White Tiger of the west governs endings that are also completions.",
+      "secondaryNames": [
+        {
+          "name": "西",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xī",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "West Wind",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "wind-tile"
+      ],
+      "extendedData": {
+        "suit": "Winds",
+        "number": null,
+        "chineseCharacter": "西",
+        "pinyin": "Xī",
+        "divinatoryMeaning": "Harvest, completion, and the gathering-in of what has been grown are the themes of this tile; endings are imminent but they are natural and fulfilling rather than abrupt. Release what is finished and accept the fullness of what has been achieved.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": "West"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.wind-north",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "North Wind",
+      "description": "The North Wind tile bears the character 北 and embodies winter, the Black Tortoise of the deep north, the Water element, and the hardships and challenges that test inner strength. North is the direction of hidden depths, inner development, and the necessary darkness that makes spring possible.",
+      "secondaryNames": [
+        {
+          "name": "北",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Běi",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "North Wind",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "wind-tile"
+      ],
+      "extendedData": {
+        "suit": "Winds",
+        "number": null,
+        "chineseCharacter": "北",
+        "pinyin": "Běi",
+        "divinatoryMeaning": "Challenges, hardship, or a period of withdrawal and inner development are indicated; the winter of the north demands patience and the nurturing of inner resources. Difficulties are real but they cultivate strength and depth that will be essential later.",
+        "auspicious": false,
+        "element": "astrology.element.water",
+        "direction": "North"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.dragon-red",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Red Dragon",
+      "description": "The Red Dragon tile bears the character 中 (Zhōng, centre/middle/to hit the mark) and is one of the most powerful honour tiles — it represents hitting the bull's-eye, finding the centre, success achieved through precision and alignment with one's true purpose. In the oracle context it signals that the seeker is on target and action taken now will strike true.",
+      "secondaryNames": [
+        {
+          "name": "中",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zhōng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chun",
+          "languageTag": "zh-cantonese-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Centre Dragon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "dragon-tile"
+      ],
+      "extendedData": {
+        "suit": "Dragons",
+        "number": null,
+        "chineseCharacter": "中",
+        "pinyin": "Zhōng",
+        "divinatoryMeaning": "Success through precision and alignment; the seeker is hitting the mark and actions taken now will find their target. Central focus and staying true to purpose are the keys to the outcome indicated.",
+        "auspicious": true,
+        "element": "astrology.element.earth",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.dragon-green",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Green Dragon",
+      "description": "The Green Dragon tile bears the character 發 (Fā, to prosper, flourish, launch, send forth) and is the most overtly auspicious tile in the entire game — its presence in a reading signals wealth, flourishing, and the active sending-forth of prosperous energy into the world. 發 is the character cried at New Year celebrations and written on red envelopes.",
+      "secondaryNames": [
+        {
+          "name": "發",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fā",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Fat",
+          "languageTag": "zh-cantonese-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Prosperity Dragon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "dragon-tile"
+      ],
+      "extendedData": {
+        "suit": "Dragons",
+        "number": null,
+        "chineseCharacter": "發",
+        "pinyin": "Fā",
+        "divinatoryMeaning": "Wealth, prosperity, and flourishing abundance are powerfully indicated; this is the oracle's clearest signal of material and vital success. Launch new endeavours, send forth your energy, and expect generous returns.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.dragon-white",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "White Dragon",
+      "description": "The White Dragon tile is traditionally blank — 白 (Bái, white/blank) — and represents the clean slate, purity, the void from which all possibilities arise, and the fresh beginning that only comes when the past has been fully released. Some traditions see this tile as a mirror reflecting back whatever energy the reader brings; others see it as divine emptiness.",
+      "secondaryNames": [
+        {
+          "name": "白",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bái",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Baak",
+          "languageTag": "zh-cantonese-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Blank Dragon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-honor",
+        "dragon-tile"
+      ],
+      "extendedData": {
+        "suit": "Dragons",
+        "number": null,
+        "chineseCharacter": "白",
+        "pinyin": "Bái",
+        "divinatoryMeaning": "A clean slate and a fresh beginning are offered; the past is released and the field of possibility is open and empty. Purity of intention and a willingness to begin again are the gifts and requirements of this tile.",
+        "auspicious": true,
+        "element": "astrology.element.earth",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.flower-plum",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Plum Blossom",
+      "description": "The Plum Blossom flower tile (梅, Méi) depicts the flowering plum tree that blooms in the dead of winter — one of the Four Gentlemen of Chinese painting and the supreme symbol of perseverance, elegance, and the courage to flourish in adversity. The plum does not wait for spring; it creates its own.",
+      "secondaryNames": [
+        {
+          "name": "梅",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Méi",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Plum Blossom Flower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "flower-tile"
+      ],
+      "extendedData": {
+        "suit": "Flowers",
+        "number": null,
+        "chineseCharacter": "梅",
+        "pinyin": "Méi",
+        "divinatoryMeaning": "Perseverance in adversity yields beauty and breakthrough; the capacity to flourish in difficult conditions is both the challenge and the gift of this tile. Do not wait for conditions to improve — bloom now.",
+        "auspicious": true,
+        "element": "astrology.element.water",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.flower-orchid",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Orchid",
+      "description": "The Orchid flower tile (蘭, Lán) represents one of the Four Gentlemen of Chinese art — the orchid blooms in hidden valleys and is found only by those refined enough to seek it out. Associated with scholarly achievement, moral refinement, and the quiet excellence of the true gentleman or gentlewoman.",
+      "secondaryNames": [
+        {
+          "name": "蘭",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lán",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Orchid Flower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "flower-tile"
+      ],
+      "extendedData": {
+        "suit": "Flowers",
+        "number": null,
+        "chineseCharacter": "蘭",
+        "pinyin": "Lán",
+        "divinatoryMeaning": "Refinement, scholarly achievement, and quiet excellence are the themes; recognition comes not through display but through the genuine cultivation of character and skill. Seek the hidden valley where the orchid grows.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.flower-chrysanthemum",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Chrysanthemum",
+      "description": "The Chrysanthemum flower tile (菊, Jú) is the flower of autumn and one of the Four Gentlemen — it blooms late in the year when other flowers have faded, and is a symbol of longevity, completion, and the dignified graceful acceptance of a cycle's natural end. Associated with the Double Ninth festival and the honouring of ancestors.",
+      "secondaryNames": [
+        {
+          "name": "菊",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jú",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chrysanthemum Flower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "flower-tile"
+      ],
+      "extendedData": {
+        "suit": "Flowers",
+        "number": null,
+        "chineseCharacter": "菊",
+        "pinyin": "Jú",
+        "divinatoryMeaning": "Longevity, graceful completion, and the dignity of a cycle reaching its natural end are the gifts of this tile. Honour what is concluding and trust that long effort has earned a worthy harvest.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.flower-bamboo",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Bamboo Flower",
+      "description": "The Bamboo flower tile (竹, Zhú) depicts the bamboo plant in its role as one of the Four Gentlemen — distinct from the Bamboo suit's sticks of counting, this tile celebrates bamboo as a living symbol of flexibility, resilience, and the strength that comes from being hollow at the centre. The bamboo that survives the storm does so by yielding.",
+      "secondaryNames": [
+        {
+          "name": "竹",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Zhú",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Bamboo Flower Tile",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "flower-tile"
+      ],
+      "extendedData": {
+        "suit": "Flowers",
+        "number": null,
+        "chineseCharacter": "竹",
+        "pinyin": "Zhú",
+        "divinatoryMeaning": "Flexibility and resilience are the keys; strength lies not in rigidity but in the capacity to bend without breaking and to recover quickly. Empty yourself of ego and you will be unbreakable.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": null
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.season-spring",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Spring",
+      "description": "The Spring season tile (春, Chūn) is the first of the four season bonus tiles, embodying new beginnings, birth, vitality, and the eruption of potential that has been gathering through the long winter. Spring energy is irresistible and creative — it breaks through frozen ground and does not ask permission.",
+      "secondaryNames": [
+        {
+          "name": "春",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chūn",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Spring Season",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "season-tile"
+      ],
+      "extendedData": {
+        "suit": "Seasons",
+        "number": null,
+        "chineseCharacter": "春",
+        "pinyin": "Chūn",
+        "divinatoryMeaning": "New beginnings, birth, and irresistible vitality break through; potential that has been waiting through a long dormant period now erupts into life. The time to begin is now, without hesitation.",
+        "auspicious": true,
+        "element": "wuxing.phase.wood",
+        "direction": "East"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.season-summer",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Summer",
+      "description": "The Summer season tile (夏, Xià) represents the peak of the year's energy — full development, maximum vitality, the long days when everything is in bloom and nothing holds back. Summer is the moment of greatest expression, when what was planted in spring stands in full sun.",
+      "secondaryNames": [
+        {
+          "name": "夏",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xià",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Summer Season",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "season-tile"
+      ],
+      "extendedData": {
+        "suit": "Seasons",
+        "number": null,
+        "chineseCharacter": "夏",
+        "pinyin": "Xià",
+        "divinatoryMeaning": "Peak energy, full development, and maximum expression are available; this is the time to act boldly and let nothing hold back the full force of your vitality. Do not conserve — pour out everything you have.",
+        "auspicious": true,
+        "element": "astrology.element.fire",
+        "direction": "South"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.season-autumn",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Autumn",
+      "description": "The Autumn season tile (秋, Qiū) brings the harvest energy of the year's third season — completion, gathering-in, the wisdom of knowing what to keep and what to release, and the bittersweet beauty of change. Autumn asks: what has the year produced, and are you willing to let go of what is no longer needed?",
+      "secondaryNames": [
+        {
+          "name": "秋",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Qiū",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Autumn Season",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "season-tile"
+      ],
+      "extendedData": {
+        "suit": "Seasons",
+        "number": null,
+        "chineseCharacter": "秋",
+        "pinyin": "Qiū",
+        "divinatoryMeaning": "Harvest and completion call for the wisdom of knowing what to keep and what to release; the cycle has produced real fruit that must now be gathered in. Let go of what is finished and receive the fullness of what has been grown.",
+        "auspicious": true,
+        "element": "wuxing.phase.metal",
+        "direction": "West"
+      }
+    },
+    {
+      "canonicalName": "divination.mahjong-tile.season-winter",
+      "entityType": "divination.mahjong-tile",
+      "primaryDisplayName": "Winter",
+      "description": "The Winter season tile (冬, Dōng) embodies the season of rest, stillness, inner development, and the challenges that build character — the long darkness before the dawn that makes spring so vivid. Winter demands patience, conservation of resources, and the courage to remain still when everything seems frozen.",
+      "secondaryNames": [
+        {
+          "name": "冬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dōng",
+          "languageTag": "zh-pinyin",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Winter Season",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "mahjong",
+        "divination",
+        "mahjong-bonus",
+        "season-tile"
+      ],
+      "extendedData": {
+        "suit": "Seasons",
+        "number": null,
+        "chineseCharacter": "冬",
+        "pinyin": "Dōng",
+        "divinatoryMeaning": "Rest, inner development, and patient endurance through a difficult or dormant period are required; conserve resources and trust the process of invisible growth. The hardship of winter prepares the ground for an extraordinary spring.",
+        "auspicious": false,
+        "element": "astrology.element.water",
+        "direction": "North"
+      }
+    }
+  ]
+}

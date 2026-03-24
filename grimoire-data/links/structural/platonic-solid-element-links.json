@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "geometry.shape.tetrahedron",
+      "target": "astrology.element.fire",
+      "label": "elemental-form",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "geometry.shape.cube",
+      "target": "astrology.element.earth",
+      "label": "elemental-form",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "geometry.shape.octahedron",
+      "target": "astrology.element.air",
+      "label": "elemental-form",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "geometry.shape.icosahedron",
+      "target": "astrology.element.water",
+      "label": "elemental-form",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "geometry.shape.dodecahedron",
+      "target": "tattwa.akasha",
+      "label": "elemental-form",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

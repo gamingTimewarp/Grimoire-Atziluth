@@ -1,0 +1,632 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "gnostic.valentinian.bythos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Bythos",
+      "description": "Bythos (\"Depth\") is the supreme First Father and absolute source of the Valentinian Pleroma — the primordial Monad who existed before all being, beyond all thought, name, or comprehension. He is utterly self-contained, dwelling in eternal repose within infinite pre-cosmic abyss; his fullness is so complete that it overflows into creation without diminishing him. He is also called Proarche (\"Before the Beginning\"), Propator (\"Fore-Father\"), and Proapator, titles that insist on his ontological priority over even the Aeons he generates. Together with his eternal consort Sige, he contemplates himself in silence across infinite ages before the first projections of the Ogdoad emerge from their union. In the Valentinian system Bythos is the ultimate mystery — not an absent God but a fullness so absolute it cannot be named without already falsifying it.",
+      "secondaryNames": [
+        { "name": "Proarche", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Propator", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "Proapator", "languageTag": "grc", "visible": true, "sortOrder": 2 },
+        { "name": "The Depth", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Bythus", "languageTag": "la", "visible": true, "sortOrder": 4 },
+        { "name": "The Father", "languageTag": "en", "visible": true, "sortOrder": 5 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.sige",
+        "gender": "male",
+        "greekMeaning": "Depth / Abyss"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.sige",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Sige",
+      "description": "Sige (\"Silence\") is the eternal feminine consort of Bythos and the second pole of the primordial syzygy from which the entire Valentinian Pleroma unfolds. Her silence is not an absence but a pregnant, contemplative fullness — the divine Thought that contains all possibilities before any Word is spoken. In several Valentinian sub-schools she is also called Ennoia (\"Thought\") or Charis (\"Grace\"), emphasising her role as the medium through which Bythos's self-knowledge becomes generative. The Ogdoad's first emanation, Nous, arises when Bythos's desire to be known is received and held within Sige's contemplative embrace. Sige thus functions as the cosmic womb of manifestation, the eternal pause before the first divine utterance.",
+      "secondaryNames": [
+        { "name": "Ennoia", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Charis", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "Silence", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Grace", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Sigé", "languageTag": "fr", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.bythos",
+        "gender": "female",
+        "greekMeaning": "Silence / Stillness"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.nous",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Nous",
+      "description": "Nous (\"Mind\") is the first direct emanation of Bythos and Sige and the only Aeon able to comprehend the Father in his fullness — a capacity that earns him the title Monogenes, the Only-Begotten. He is also called Paternal Mind, because he alone receives the fullness of the Father's self-knowledge and holds it as a living intelligence. In the Valentinian mythological drama, Nous becomes the agent of salvation: when the Pleroma is disrupted by Sophia's fall, it is through Nous (acting as or through the Aeon Christ) that the restoration is initiated. Together with his consort Aletheia he forms the second syzygy of the Ogdoad, the pair of Mind and Truth that underlies all rational participation in divine reality. Many Valentinian commentators identify Nous with the Christ of the Johannine prologue — the Logos who was with God and was God.",
+      "secondaryNames": [
+        { "name": "Monogenes", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Only-Begotten", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Paternal Mind", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Mens", "languageTag": "la", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.aletheia",
+        "gender": "male",
+        "greekMeaning": "Mind / Intellect"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.aletheia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Aletheia",
+      "description": "Aletheia (\"Truth\") is the feminine consort of Nous and the fourth Aeon of the Ogdoad, completing the syzygy of divine Mind and divine Truth. She is not truth as a propositional fact but Truth as a living, self-disclosing presence — the very transparency of the divine to itself when it is known by Mind. As consort of the Only-Begotten, Aletheia participates in the act of divine self-comprehension that is the foundational event of Valentinian theology; the union of Nous and Aletheia is the paradigm for all subsequent syzygy-pairs in the Pleroma. In several sources she is characterised as the mirror in which Bythos sees his own reflection without distortion. Her union with Nous produces Logos and Zoe, extending the pattern of rational-life dyads through the Decad.",
+      "secondaryNames": [
+        { "name": "Truth", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Veritas", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.nous",
+        "gender": "female",
+        "greekMeaning": "Truth"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.logos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Logos",
+      "description": "Logos (\"Word\" / \"Reason\") is the fifth Aeon and the first of the second syzygy in the Ogdoad, emanated from the union of Nous and Aletheia. He is the divine rational principle through which the Father's self-knowledge becomes articulate — the intelligible Word that structures and mediates all subsequent divine emanations. In Valentinian exegesis of the Johannine prologue, this Aeon Logos is the pre-existent Christ before the Incarnation; the descended Christ of history is the Aeon Logos operating through the human vehicle of Jesus. His role in the drama is complex: when Sophia falls, Logos and Zoe respond by emanating the Decad of ten Aeons as part of the ongoing harmonisation of the Pleroma. Some Valentinian sources credit Logos with a redemptive speech-act that helps stabilise what Sophia's passion had disturbed.",
+      "secondaryNames": [
+        { "name": "Word", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Reason", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Verbum", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.zoe",
+        "gender": "male",
+        "greekMeaning": "Word / Reason / Speech"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.zoe",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Zoe",
+      "description": "Zoe (\"Life\") is the sixth Aeon and consort of Logos, together forming the third syzygy of the Ogdoad. She is divine Life not as biological vitality but as the primordial energy that animates and sustains the entire Pleroma — the active, dynamic complement to Logos's rational structure. Zoe participates with Logos in the emanation of the Decad, the ten Aeons who extend divine life through the Pleroma's middle register. In the Valentinian soteriology she represents the life-principle that must be restored within fallen creation; sparks of her essence (pneumata) are held captive in matter and must be gathered back through gnosis. Her name echoes the Johannine declaration \"in him was life\" (John 1:4), confirming the Valentinian reading of Logos-and-Zoe as the cosmic Christ-life dyad.",
+      "secondaryNames": [
+        { "name": "Life", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Vita", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.logos",
+        "gender": "female",
+        "greekMeaning": "Life"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.anthropos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Anthropos",
+      "description": "Anthropos (\"Humanity\" / \"Primordial Human\") is the seventh Aeon and the male principle of the fourth syzygy of the Ogdoad, emanated from Nous and Aletheia alongside Logos and Zoe. He is the divine archetype or ideal Form of humanity — the celestial Human who exists in the Pleroma before any earthly Adam is shaped from clay. This Valentinian figure synthesises the Platonic concept of the Form of Man with the Jewish notion of Adam Kadmon (the primordial cosmic man) and foreshadows the Pauline \"heavenly man\" (1 Corinthians 15). Together with his consort Ekklesia he emanates the Dodecad of twelve Aeons. Anthropos as an Aeon means that humanity itself — not as a fallen creature but in its deepest spiritual essence — has a place within the divine Fullness.",
+      "secondaryNames": [
+        { "name": "Primordial Human", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Homo", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Adam Kadmon", "languageTag": "he", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.ekklesia",
+        "gender": "male",
+        "greekMeaning": "Human / Humanity / Man"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.ekklesia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Ekklesia",
+      "description": "Ekklesia (\"Assembly\" / \"Church\") is the eighth and final Aeon of the Ogdoad, the feminine consort of Anthropos and the heavenly archetype of the earthly Church. She represents the divine gathering — the perfect, ideal community of spiritual beings united in the Pleroma, of which any earthly congregation is only a dim reflection. As consort of the divine Anthropos, Ekklesia ensures that human spirituality is never purely individual: the celestial template of humanity is inherently communal, gathered together in divine fellowship. She and Anthropos together project the Dodecad (twelve Aeons), continuing the process of Pleromatic self-elaboration. Her presence in the Ogdoad is a striking theological statement: the Church, for Valentinians, is not merely a human institution but an eternal reality woven into the very fabric of divine being.",
+      "secondaryNames": [
+        { "name": "Assembly", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Church", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Ecclesia", "languageTag": "la", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "ogdoad",
+        "syzygyPartner": "gnostic.valentinian.anthropos",
+        "gender": "female",
+        "greekMeaning": "Assembly / Gathering / Congregation"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.bythios",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Bythios",
+      "description": "Bythios (\"Deep\" / \"Abyssal\") is the ninth Aeon and the first male principle of the Decad, the ten Aeons emanated by Logos and Zoe as a second wave of Pleromatic self-expression. His name echoes that of Bythos, the supreme Father, suggesting that even at this level of emanation the fundamental character of the source — infinite depth — continues to resonate through the system. He forms a syzygy with Mixis, his feminine complement, the principle of mingling or harmonious blending. Together this pair expresses the idea that depth and union are among the first qualities that arise when Word and Life generate a new tier of existence. The Decad as a whole is interpreted numerologically by some Valentinian teachers as corresponding to the Pythagorean Tetractys.",
+      "secondaryNames": [
+        { "name": "Bythus", "languageTag": "la", "visible": false, "sortOrder": 0 },
+        { "name": "Deep", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.mixis",
+        "gender": "male",
+        "greekMeaning": "Deep / Abyssal"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.mixis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Mixis",
+      "description": "Mixis (\"Mingling\" / \"Blending\") is the tenth Aeon and female principle of the first syzygy of the Decad, consort of Bythios. She represents the principle of creative admixture — the way in which different qualities and essences interpenetrate each other to generate richer, more complex forms of being. In the Pythagorean underpinning of Valentinian thought, the mingling of principles is how number generates form, and Mixis thus carries a quasi-mathematical significance as the process of synthesis. She is listed in Irenaeus's account of the Ptolemaic Valentinian school (Adversus Haereses I.1) as part of the precise enumeration of the thirty Aeons. Like all the Decad Aeons, she occupies a mediating position between the foundational Ogdoad above and the more differentiated Dodecad below.",
+      "secondaryNames": [
+        { "name": "Mingling", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Mixture", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.bythios",
+        "gender": "female",
+        "greekMeaning": "Mixing / Mingling / Blending"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.ageratos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Ageratos",
+      "description": "Ageratos (\"Ageless\" / \"Undying\") is the eleventh Aeon and the second male principle of the Decad, forming a syzygy with Henosis. His name proclaims the immunity of the Pleromatic order to time's corrosion: within the divine Fullness, nothing grows old or decays. Ageratos thus embodies the Valentinian conviction that spiritual reality stands outside the entropic processes that characterise the material world created by the ignorant Demiurge. The contrast between his agelessness and the relentless aging of material creatures would have been a pointed theological statement for Valentinian communities living in a mortal world. He is documented in Irenaeus's list of the Decad Aeons in the Ptolemaic branch of Valentinian thought.",
+      "secondaryNames": [
+        { "name": "Ageless", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Ever-Young", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.henosis",
+        "gender": "male",
+        "greekMeaning": "Ageless / Undying / Without Old Age"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.henosis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Henosis",
+      "description": "Henosis (\"Union\" / \"Oneness\") is the twelfth Aeon, the feminine consort of Ageratos and the second female principle of the Decad. Her name points to the state of perfect unity that characterises existence within the Pleroma — the absolute non-separation of divine beings from each other and from the Father. In Neoplatonic philosophy, Henosis is the technical term for the soul's ultimate return to and merger with the One; the Valentinians appear to have deliberately chosen this philosophically charged term to express the quality of divine cohesion. Henosis as a feminine Aeon suggests that union is not a passive or inert state but an active, generative principle — the feminine complementarity to Ageratos's ageless persistence. She and Ageratos together signify that the Pleromatic order is both eternal and united.",
+      "secondaryNames": [
+        { "name": "Union", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Oneness", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.ageratos",
+        "gender": "female",
+        "greekMeaning": "Union / Oneness / Unity"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.autophyes",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Autophyes",
+      "description": "Autophyes (\"Self-produced\" / \"Self-growing\") is the thirteenth Aeon and the third male principle of the Decad, paired with Hedone. His name signifies an aspect of the divine nature that is self-generating, self-sustaining, and autonomous — qualities that belong inherently to the Pleromatic order rather than derived ones. The Valentinian system is careful to distinguish the Aeons' mode of being (which participates in divine self-sufficiency) from the Demiurge's pretence of self-generation (which is an error born of ignorance). Autophyes embodies the genuine article: a mode of existence that is not dependent on any external cause because it draws its being from the overflowing fullness of Bythos. His coupling with Hedone (Pleasure) suggests an ancient link between self-production and joyful vitality.",
+      "secondaryNames": [
+        { "name": "Self-produced", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Self-begotten", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.hedone",
+        "gender": "male",
+        "greekMeaning": "Self-produced / Self-grown / Naturally Begotten"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.hedone",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Hedone",
+      "description": "Hedone (\"Pleasure\" / \"Joy\") is the fourteenth Aeon and the feminine consort of Autophyes, constituting the third syzygy of the Decad. In ordinary Greek usage hedone carries the sense of sensory pleasure; as a divine Aeon, however, Hedone represents the pure spiritual delight that the divine beings experience in their mutual contemplation and in the knowledge of the Father — pleasure wholly free from lack, grasping, or satiation. This redemption of pleasure into a Pleromatic quality is characteristic of Valentinian thinking, which tends to revalue experiences normally regarded as dangerous by ascetic philosophies. Hedone paired with Autophyes suggests that genuine self-realisation is intrinsically joyful — that authentic spiritual existence is not grim self-denial but luminous gladness. Irenaeus records her in his enumeration of the Decad.",
+      "secondaryNames": [
+        { "name": "Pleasure", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Joy", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Voluptas", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.autophyes",
+        "gender": "female",
+        "greekMeaning": "Pleasure / Delight / Joy"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.akinetos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Akinetos",
+      "description": "Akinetos (\"Unmoved\" / \"Immovable\") is the fifteenth Aeon and the fourth male principle of the Decad, paired with Syncrasis. His name evokes Aristotle's Unmoved Mover — the divine principle that is the source of all motion yet is itself unaffected by movement or change. In the Valentinian context this quality of absolute stability is projected into the Pleroma itself: the Pleromatic order is the unshaken ground beneath all Aeons, regardless of whatever perturbations may arise at the margins (such as Sophia's passion). Akinetos embodies divine immutability not as inertness but as the perfect self-possession of a being that needs nothing outside itself. His partner Syncrasis (Blending) creates an interesting theological tension: immovability joined to harmonious mixture suggests that stability and integration are complementary.",
+      "secondaryNames": [
+        { "name": "Immovable", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Unmoved", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.syncrasis",
+        "gender": "male",
+        "greekMeaning": "Unmoved / Immovable / Without Motion"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.syncrasis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Syncrasis",
+      "description": "Syncrasis (\"Blending\" / \"Commingling\") is the sixteenth Aeon and the fourth female principle of the Decad, consort of Akinetos. The word syncrasis in ancient medicine and philosophy referred to the harmonious mixing of qualities or humours that produces health and balance; as a Pleromatic Aeon, she represents the divine harmony achieved when all the Aeons are perfectly interblended into a unified whole. Her coupling with Akinetos (Immovable) suggests that this perfect blending is achieved not through restless change but through a stable, unshakeable integration of differences. Syncrasis thus personifies the inner coherence of the Pleroma — the quality that makes thirty distinct Aeons one body rather than a chaotic plurality. She is recorded in Irenaeus's Ptolemaic list.",
+      "secondaryNames": [
+        { "name": "Blending", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Commixture", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.akinetos",
+        "gender": "female",
+        "greekMeaning": "Blending / Mixture / Harmonious Commingling"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.monogenes-decad",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Monogenes (of the Decad)",
+      "description": "The seventeenth Aeon, another bearer of the title Monogenes (\"Only-Begotten\"), is the fifth and final male principle of the Decad, paired with Makaria. The repetition of the Monogenes title at this level of the Pleroma is theologically significant: it suggests that the quality of being \"only-begotten\" — unique, singular, the perfect expression of its source — is not confined to Nous at the summit but reverberates as an archetype through successive levels of Pleromatic reality. This Monogenes of the Decad carries the imprint of the Father's uniqueness into the middle tier of the thirty Aeons. He represents the moment at which the Word-and-Life dyad above produces its own singular, irreducible expression. Some scholars distinguish him from Nous by noting that his uniqueness is relative to his own generative level.",
+      "secondaryNames": [
+        { "name": "Monogenes", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Only-Begotten", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.makaria",
+        "gender": "male",
+        "greekMeaning": "Only-Begotten / Unique"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.makaria",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Makaria",
+      "description": "Makaria (\"Blessedness\" / \"Beatitude\") is the eighteenth Aeon, the fifth and final female principle of the Decad, and consort of the Monogenes of the Decad. Her name denotes the state of perfect happiness, fulfilment, and divine favour — the beatitude of beings whose existence is wholly oriented towards and immersed in the divine Good. In Greek philosophical tradition, makaria (or eudaimonia) was the highest goal of human life; in the Valentinian system, Makaria is the living Aeon-form of that ultimate state, showing that the blessed life that mortals seek through philosophy already exists as a divine principle in the Pleroma. As the culminating female Aeon of the Decad, she seals the Logos-and-Zoe register of emanation on a note of blessedness before the twelve Aeons of the Dodecad unfold.",
+      "secondaryNames": [
+        { "name": "Blessedness", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Beatitude", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Beatitudo", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "decad",
+        "syzygyPartner": "gnostic.valentinian.monogenes-decad",
+        "gender": "female",
+        "greekMeaning": "Blessedness / Happiness / Beatitude"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.paracletos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Paracletos",
+      "description": "Paracletos (\"Advocate\" / \"Comforter\") is the nineteenth Aeon and first male principle of the Dodecad, the twelve Aeons generated by Anthropos and Ekklesia. His title is identical to the Johannine name for the Holy Spirit (John 14:16), and the Valentinians appear to have deliberately placed this Aeon at the head of the Dodecad to assert that the Paraclete of the Gospel narrative is a cosmic, Pleromatic reality, not merely a post-resurrection gift. Paracletos as an Aeon is the divine Advocate who intercedes, encourages, and supports — qualities that flow from the divine Humanity (Anthropos) into the third tier of the Pleroma. He is paired with Pistis (Faith), suggesting that the Comforter's presence is the ground condition for genuine trust in divine reality. In the larger Valentinian soteriology, the Paraclete function continues outside the Pleroma as the Spirit who works within pneumatic humans.",
+      "secondaryNames": [
+        { "name": "Paraclete", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Advocate", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Comforter", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.pistis",
+        "gender": "male",
+        "greekMeaning": "Advocate / Comforter / One Called Alongside"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.pistis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Pistis",
+      "description": "Pistis (\"Faith\") is the twentieth Aeon, the feminine consort of Paracletos and first female principle of the Dodecad. As a divine Aeon, Pistis is not the tentative faith of human beings groping in the dark but the confident, luminous trust of beings who know the Father because they exist within his Fullness. The Pistis of the Pleroma is thus the archetype of which human faith is the fragmented echo — a distinction that becomes important in Valentinian pastoral theology, which valued gnosis (direct knowledge) over mere pistis. Interestingly, Pistis is also the name given to Sophia in one of the most important Gnostic texts, the Pistis Sophia, suggesting some fluidity between these figures. Within the Dodecad, Pistis paired with Paracletos creates a syzygy of trust and advocacy: faith requires and receives its advocate.",
+      "secondaryNames": [
+        { "name": "Faith", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Fides", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.paracletos",
+        "gender": "female",
+        "greekMeaning": "Faith / Trust / Confidence"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.patricos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Patricos",
+      "description": "Patricos (\"Fatherly\" / \"Paternal\") is the twenty-first Aeon and second male principle of the Dodecad, paired with Elpis. His name resonates with the supreme Father, Bythos, projecting a quality of fatherliness into the lower tier of the Pleroma — as if the divine generativity and protective care of the supreme source are carried as a quality all the way down through the Aeon hierarchy. Patricos embodies the relational aspect of divine fatherhood: care, generativity, transmission of essence, and the authority that grounds and legitimates all other authorities. He is documented in Irenaeus's careful enumeration of the thirty Aeons in the Ptolemaic Valentinian branch. His coupling with Elpis (Hope) creates a resonant theological pair: fatherly presence generates hope.",
+      "secondaryNames": [
+        { "name": "Fatherly", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Paternal", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.elpis",
+        "gender": "male",
+        "greekMeaning": "Fatherly / Paternal / Of the Father"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.elpis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Elpis",
+      "description": "Elpis (\"Hope\") is the twenty-second Aeon, feminine consort of Patricos and second female principle of the Dodecad. In the Pleroma, Hope is not the desperate wish of beings who fear the worst but the serene, well-founded expectation of beings who already know the Good and move toward its fuller disclosure. Elpis in classical and Pauline thought (Romans 8:24) occupies a transitional space between present partial knowledge and future complete fulfilment; as a Pleromatic Aeon she represents this forward-facing quality of divine existence. Her pairing with Patricos (the Fatherly) makes theological sense: hope is grounded in the trustworthiness of the Father who generates it. In the broader Valentinian soteriology, hope is among the virtues cultivated in pneumatic Christians as they work toward the ultimate restoration of all spiritual particles.",
+      "secondaryNames": [
+        { "name": "Hope", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Spes", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.patricos",
+        "gender": "female",
+        "greekMeaning": "Hope / Expectation"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.metrikos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Metrikos",
+      "description": "Metrikos (\"Motherly\" / \"Maternal\") is the twenty-third Aeon and the third male principle of the Dodecad — though his name is feminine in connotation, revealing that the Valentinian system consciously mirrors Patricos (the Fatherly) with Metrikos (the Motherly) even in a nominally male Aeon. This naming reflects the Valentinian insistence on a divine reality in which both fatherly and motherly qualities are fully realised and honoured at every level of emanation. Metrikos embodies nurturing, sustaining, and matrix-like qualities — the receptive and formative aspect of divine care. He is paired with Agape (Love), a pairing that suggests motherly nature is most fully expressed in unconditional loving. As the Anthropos-and-Ekklesia register of the Dodecad unfolds, both fatherly and motherly divine qualities are explicitly included.",
+      "secondaryNames": [
+        { "name": "Motherly", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Maternal", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.agape",
+        "gender": "male",
+        "greekMeaning": "Motherly / Maternal / Of the Mother"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.agape",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Agape",
+      "description": "Agape (\"Love\") is the twenty-fourth Aeon, feminine consort of Metrikos and third female principle of the Dodecad. In the Christian-Gnostic synthesis of Valentinianism, agape is the highest and most self-giving form of love — love that does not depend on the worthiness of its object because it flows from an inexhaustible divine source. As a Pleromatic Aeon, Agape is not a moral achievement but an ontological fact: love is woven into the structure of divine being at every level. Her position as consort of the Motherly Aeon reinforces the maternal character of divine love: the Pleroma loves as a mother loves — without condition, without limit. In Pauline theology (1 Corinthians 13), agape is the greatest of all gifts; the Valentinians make this gift a cosmic reality by enshrining it as an eternal Aeon.",
+      "secondaryNames": [
+        { "name": "Love", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Caritas", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.metrikos",
+        "gender": "female",
+        "greekMeaning": "Love / Unconditional Love"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.ainos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Ainos",
+      "description": "Ainos (\"Praise\") is the twenty-fifth Aeon and the fourth male principle of the Dodecad, paired with Synesis. He represents the eternal act of glorification by which the Aeons reflect back to the Father the beauty and goodness that flow from him — a kind of cosmic liturgy that is not imposed as a duty but arises spontaneously from beings who perceive the divine reality clearly. Ainos as an Aeon establishes praise as a structural feature of divine existence, not a merely human or ecclesiastical practice. The idea that praise is woven into the very architecture of spiritual reality resonates with Platonic notions of the Beautiful as self-diffusing and with Jewish and Christian doxologies. His pairing with Synesis (Understanding) suggests that genuine praise arises only when the nature of the one praised is truly understood.",
+      "secondaryNames": [
+        { "name": "Praise", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Laus", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.synesis",
+        "gender": "male",
+        "greekMeaning": "Praise / Hymn / Glorification"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.synesis",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Synesis",
+      "description": "Synesis (\"Understanding\" / \"Comprehension\") is the twenty-sixth Aeon, the fourth female principle of the Dodecad and consort of Ainos. Synesis denotes a form of practical understanding — the capacity to grasp what is said, to recognise the import of a situation, to perceive relationships between things. As a Pleromatic Aeon she represents a mode of divine intelligence that is comprehensive, relational, and attentive rather than merely formal or analytical. Her coupling with Ainos (Praise) creates a rich theological dyad: understanding generates praise, and praise deepens understanding in a mutually reinforcing cycle. Synesis was highly valued in late antique wisdom traditions; in 1 Corinthians 1:19, Paul cites the Hebrew prophet's promise that God will destroy the synesis of the wise — only to restore it, in the Valentinian reading, to those who attain gnosis.",
+      "secondaryNames": [
+        { "name": "Understanding", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Comprehension", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Intellectus", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.ainos",
+        "gender": "female",
+        "greekMeaning": "Understanding / Comprehension / Insight"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.ecclesiasticus",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Ecclesiasticus",
+      "description": "Ecclesiasticus (\"Of the Church\" / \"Churchly\") is the twenty-seventh Aeon and the fifth male principle of the Dodecad, paired with Makariotes. His name echoes Ekklesia (the eighth Aeon of the Ogdoad) and confirms that the quality of divine gathering and ecclesial community — first expressed at the summit of the Ogdoad — reverberates and re-expresses itself in the Dodecad at a more differentiated level. Ecclesiasticus as an Aeon suggests that the Church in its deepest sense is not a human institution at all but a layered, cosmic reality extending through multiple planes of divine being. He embodies the quality of the communal, of belonging and assembly, as it appears within the third great triad of Pleromatic pairs. His pairing with Makariotes (Blessedness) brings the theme of blessed community to the fore.",
+      "secondaryNames": [
+        { "name": "Of the Church", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Churchly", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.makariotes",
+        "gender": "male",
+        "greekMeaning": "Of the Church / Ecclesial"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.makariotes",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Makariotes",
+      "description": "Makariotes (\"Blessedness\" / \"the Blessed State\") is the twenty-eighth Aeon, fifth female principle of the Dodecad, and consort of Ecclesiasticus. She is closely related to Makaria (the eighteenth Aeon of the Decad) but represents a richer, more communally inflected form of divine blessedness — blessedness as experienced within the gathering of all Aeons rather than as a quality of an individual divine being. Makariotes embodies the joy and fulfilment of the entire Pleromatic community as it rests in the knowledge and love of the Father. Her position near the end of the Dodecad gives her name a summarising quality: the culmination of the divine hierarchy's middle and lower registers is a state of blessed communal gathering. She is documented in Irenaeus's systematic list of the thirty Aeons.",
+      "secondaryNames": [
+        { "name": "Blessedness", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "The Blessed State", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.ecclesiasticus",
+        "gender": "female",
+        "greekMeaning": "Blessedness / The State of Being Blessed"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.theletos",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Theletos",
+      "description": "Theletos (\"Desired\" / \"Willing\" / \"Willed\") is the twenty-ninth Aeon, the sixth and final male principle of the Dodecad, paired with Sophia. His name carries the double meaning of something that is desired (passive) and something that wills (active) — the last great divine quality before the Pleroma reaches its terminal Aeon. As the penultimate Aeon, Theletos stands on the boundary between the complete, harmonious Pleroma and the catastrophic drama that erupts in Sophia. Some interpretations read his name as indicating that the highest divine Will is expressed precisely in the desire to know and be known — and that Sophia's fatal desire is in some sense an imitation of or echo from this penultimate Aeon. His pairing with Sophia gives his name a tragic resonance: the Willed or Desired one is paired with the Aeon whose excessive desire causes the Pleroma's disruption.",
+      "secondaryNames": [
+        { "name": "Desired", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Willed", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Voluntarius", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.sophia",
+        "gender": "male",
+        "greekMeaning": "Desired / Willed / Willing"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.sophia",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Sophia",
+      "description": "Sophia (\"Wisdom\") is the thirtieth and final Aeon of the Valentinian Pleroma, the outermost and youngest of all the divine emanations and the catalyst of the entire Gnostic mythological drama. Being the most distant from Bythos and lacking the mediating function of Horos (the Limit), she develops an uncontrollable desire to know and comprehend the Father directly — a passion (pathos) that her nature and position cannot sustain. This unconsented striving produces a formless substance outside the Pleroma, which becomes the material for both fallen Sophia Achamoth and ultimately the created world. Sophia's transgression is not moral evil but a structural excess: she is wisdom at the limits of the system, where wisdom's own desire for its source can tip over into catastrophe. After the crisis she is stabilised within the Pleroma by the boundary Aeon Horos and by the intercession of the newly emanated Christ; the drama of her rescue forms the backbone of Valentinian soteriology.",
+      "secondaryNames": [
+        { "name": "Wisdom", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Sapientia", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "Higher Sophia", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Sophia Above", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "dodecad",
+        "syzygyPartner": "gnostic.valentinian.theletos",
+        "gender": "female",
+        "greekMeaning": "Wisdom"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.sophia-fallen",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Sophia Achamoth",
+      "description": "Sophia Achamoth (\"Lower Sophia\" / \"Sophia of the Middle\") is not a member of the Pleroma but its most important exile — the passionate residue or shadow-image cast off when the higher Sophia's straining toward the Father collapsed and was expelled by the boundary Aeon Horos. Her name Achamoth derives from the Hebrew chokhmah (wisdom), preserving the connection to her Pleromatic origin even in fallen form. Stripped of the divine Form she had in the Pleroma, she wanders in the void between fullness and matter, subject to grief, fear, longing, and bewilderment — and these very passions become the raw material out of which the Demiurge fashions the material cosmos. The Christ and the Holy Spirit are sent to give her Form and comfort; her eventual illumination and redemption is the goal toward which the entire Valentinian history of salvation moves. Traces of her pneumatic substance (spiritual sparks) have been scattered into human beings, who must recover gnosis in order to restore those sparks and complete her restoration.",
+      "secondaryNames": [
+        { "name": "Achamoth", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "Lower Sophia", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Sophia of the Middle", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Fallen Wisdom", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Prounikos", "languageTag": "grc", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "extra",
+        "syzygyPartner": null,
+        "gender": "female",
+        "greekMeaning": "Achamoth from Hebrew chokhmah (Wisdom); Lower / Fallen Sophia"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.christ",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Christ / The Saviour",
+      "description": "The Aeon Christ (also called The Saviour or Soter) is jointly emanated by all the Aeons acting together, at the direction of Nous, in response to the crisis caused by Sophia's fall — making him the product of the entire Pleroma's unanimous will to heal. As a Pleromatic Aeon he descends upon the human Jesus at the moment of baptism, indwelling him as a divine garment, and withdraws before the Passion; the spiritual Christ cannot suffer, so the death is endured by the purely human vehicle. His primary mission is dual: first he gives Form to the distraught Sophia Achamoth, establishing the conditions for her eventual restoration; second he reveals the Father to those pneumatic humans who are capable of receiving gnosis. The Valentinian Christ is thus an Aeon of gnosis and restoration rather than primarily of substitutionary atonement. He is also identified by some Valentinian teachers with Nous/Monogenes, creating a complex layering of the Christ-function across different levels of the Pleroma.",
+      "secondaryNames": [
+        { "name": "Soter", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "The Saviour", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "The Common Fruit of the Pleroma", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "Jesus", "languageTag": "en", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "extra",
+        "syzygyPartner": null,
+        "gender": "male",
+        "greekMeaning": "Christ (Anointed); Soter (Saviour)"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.demiurge",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "The Demiurge",
+      "description": "The Demiurge (\"Craftsman\" / \"Artisan\") is not himself an Aeon of the Pleroma but the ignorant sub-creator produced by the passions of fallen Sophia Achamoth — he is psychic (soul-stuff) rather than pneumatic, fashioned from the emotional residue of her fear and grief. He creates the material world and humanity sincerely believing himself to be the only God, unaware that above him lies an entire Pleromatic hierarchy of true divine beings; his declaration \"I am a jealous God and there is none beside me\" (Exodus 20:5) is, for the Valentinians, an inadvertent confession of ignorance rather than a statement of divine sovereignty. He corresponds to the God of the Old Testament in the Valentinian exegetical scheme, though he is not evil — merely limited, a craftsman doing his best with inferior materials according to patterns of which he has only a dim, instinctive sense. He is equated in Western Gnostic sources with the lion-headed Yaldabaoth of the Sethian tradition and sometimes called Saklas (\"Fool\") or Samael (\"Blind God\"). Despite his ignorance, some Valentinian sources describe him as just and even honourable within his limited sphere.",
+      "secondaryNames": [
+        { "name": "Craftsman", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Demiurgos", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "Yaldabaoth", "languageTag": "cop", "visible": true, "sortOrder": 2 },
+        { "name": "Saklas", "languageTag": "cop", "visible": true, "sortOrder": 3 },
+        { "name": "Samael", "languageTag": "he", "visible": true, "sortOrder": 4 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "extra",
+        "syzygyPartner": null,
+        "gender": "male",
+        "greekMeaning": "Demiurge: Craftsman / Public Worker / Creator of the material world"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.limit",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "Horos",
+      "description": "Horos (\"Limit\" / \"Boundary\"), also called Stauros (\"Cross\") and Cross-bearer (Staurophoros), is the boundary Aeon that separates the infinite depth of Bythos from the finite Pleromatic system — an ontological firewall that preserves the stability of the Pleroma. When Sophia's excess desire threatens to dissolve the entire Pleromatic order by drawing all Aeons into sympathetic crisis, it is Horos who intervenes as the principle of limit, expelling the formless passion outside the Pleroma and sealing the boundary. His other name, Stauros (Cross), gave later Valentinian commentators an exegetical opportunity: the Cross of Christ, they argued, is a visible, historical echo of this cosmic Cross-principle that establishes the boundary between spiritual and material, light and darkness. Horos thus occupies a pivotal structural role: he is the condition of possibility for both Pleromatic stability and for the subsequent drama of creation and redemption outside the Pleroma.",
+      "secondaryNames": [
+        { "name": "Horos", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Stauros", "languageTag": "grc", "visible": true, "sortOrder": 1 },
+        { "name": "The Limit", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "The Cross", "languageTag": "en", "visible": true, "sortOrder": 3 },
+        { "name": "Cross-bearer", "languageTag": "en", "visible": true, "sortOrder": 4 },
+        { "name": "Staurophoros", "languageTag": "grc", "visible": true, "sortOrder": 5 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "extra",
+        "syzygyPartner": null,
+        "gender": "male",
+        "greekMeaning": "Horos: Limit / Boundary; Stauros: Cross / Stake"
+      }
+    },
+    {
+      "canonicalName": "gnostic.valentinian.holy-spirit",
+      "entityType": "gnostic.aeon",
+      "primaryDisplayName": "The Holy Spirit",
+      "description": "The Holy Spirit (Pneuma Hagion) in Valentinian teaching occupies a complex position between the Pleromatic Aeons and the material world: sent by the higher Pleroma to comfort and form the distraught Sophia Achamoth, and subsequently working within pneumatic human beings to awaken the spiritual particles (pneumata) that were scattered into matter. In some Valentinian schools the Holy Spirit is identified with the Aeon Sophia herself in her restored state; in others, the Spirit is a distinct divine hypostasis sent as the agent of illumination. The Spirit's role is to reveal gnosis from within — not through external law or ritual but through interior awakening of the divine spark already present in the pneumatic person. The Valentinian pneumatology is thus intensely experiential and interior, and the Holy Spirit is its divine engine. In eschatological terms, the Spirit's work is complete when all pneumatic particles have been gathered and returned to the Pleroma, at which point the material world ceases.",
+      "secondaryNames": [
+        { "name": "Pneuma Hagion", "languageTag": "grc", "visible": true, "sortOrder": 0 },
+        { "name": "Spiritus Sanctus", "languageTag": "la", "visible": false, "sortOrder": 1 },
+        { "name": "Pneuma", "languageTag": "grc", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["gnostic", "valentinian", "pleroma"],
+      "extendedData": {
+        "pleromaGroup": "extra",
+        "syzygyPartner": null,
+        "gender": "neuter",
+        "greekMeaning": "Pneuma Hagion: Holy Spirit / Holy Breath / Divine Wind"
+      }
+    }
+  ]
+}

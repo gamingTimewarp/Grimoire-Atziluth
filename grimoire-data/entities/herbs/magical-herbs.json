@@ -1,0 +1,3115 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "herb.bay-laurel",
+      "entityType": "herb",
+      "primaryDisplayName": "Bay Laurel",
+      "description": "Bay Laurel (Laurus nobilis) is an aromatic evergreen tree native to the Mediterranean, bearing glossy dark leaves long used in cooking and ceremony. In the ancient world it was sacred to Apollo and crowned victors, prophets, and poets — its smoke was inhaled by the Oracle at Delphi to induce prophetic vision. Ruled by the Sun and associated with the element of Fire, it carries solar qualities of success, clarity, and victory. A versatile and safe herb used in abundance; no notable safety concerns.",
+      "secondaryNames": [
+        {
+          "name": "Laurus nobilis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sweet Bay",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "True Laurel",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "purification",
+        "divination",
+        "success",
+        "solar"
+      ],
+      "extendedData": {
+        "botanicalName": "Laurus nobilis",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "prophetic dreaming",
+          "wishes and manifestation",
+          "purification of sacred spaces",
+          "success and victory workings",
+          "protection against negative energy",
+          "enhancing psychic vision"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.calendula",
+      "entityType": "herb",
+      "primaryDisplayName": "Calendula",
+      "description": "Calendula (Calendula officinalis), also called pot marigold, is a bright orange-yellow flowering annual whose petals track the movement of the sun. Its vivid solar colour and diurnal habit made it a natural symbol of solar energy in the Western magical tradition. Ruled by the Sun and Fire, it is used in workings of legal matters, prophetic dreaming, and protection, as well as to strengthen and consecrate. Calendula is widely safe for topical and culinary use; avoid in pregnancy in large medicinal doses.",
+      "secondaryNames": [
+        {
+          "name": "Calendula officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Pot Marigold",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "legal",
+        "prophetic",
+        "solar",
+        "healing"
+      ],
+      "extendedData": {
+        "botanicalName": "Calendula officinalis",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "legal success and justice",
+          "prophetic dreaming",
+          "protection of home",
+          "consecration of tools",
+          "healing workings",
+          "attracting positive energy"
+        ],
+        "safetyNote": "Avoid large medicinal doses during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.chamomile",
+      "entityType": "herb",
+      "primaryDisplayName": "Chamomile",
+      "description": "Chamomile (Matricaria chamomilla) is a daisy-like herb whose small white-petalled flowers with golden centres have been used for millennia as a gentle healer and calming agent. Its golden disc associates it with the Sun, lending it solar qualities of luck, prosperity, and calm radiance. Ruled by the Sun with a Fire element, chamomile tea is a classic aid for sleep and anxiety; magically it draws money, removes hexes, and promotes peaceful sleep and love. Generally considered very safe; rare allergy in those sensitive to Asteraceae plants.",
+      "secondaryNames": [
+        {
+          "name": "Matricaria chamomilla",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "German Chamomile",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Roman Chamomile",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "money",
+        "luck",
+        "sleep",
+        "purification",
+        "solar",
+        "love"
+      ],
+      "extendedData": {
+        "botanicalName": "Matricaria chamomilla",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "drawing money and luck",
+          "peaceful sleep and rest",
+          "hex removal and purification",
+          "love and calming",
+          "meditation enhancement",
+          "blessing offerings"
+        ],
+        "safetyNote": "Rare allergic reactions in those sensitive to the Asteraceae (daisy) family."
+      }
+    },
+    {
+      "canonicalName": "herb.cinnamon",
+      "entityType": "herb",
+      "primaryDisplayName": "Cinnamon",
+      "description": "Cinnamon (Cinnamomum verum) is the dried inner bark of a tropical tree native to Sri Lanka, prized since antiquity as one of the most valuable spices in the world. Its warming, stimulating quality and fiery energy place it firmly under the rule of the Sun and the element of Fire. In magical practice it is used to accelerate workings, raise spiritual vibration, attract money, and fuel passion and success. Cinnamon essential oil is highly concentrated and can irritate skin; use diluted.",
+      "secondaryNames": [
+        {
+          "name": "Cinnamomum verum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "True Cinnamon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ceylon Cinnamon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "money",
+        "success",
+        "passion",
+        "solar",
+        "acceleration",
+        "love"
+      ],
+      "extendedData": {
+        "botanicalName": "Cinnamomum verum",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "accelerating spell work",
+          "attracting money and prosperity",
+          "fuelling passion and desire",
+          "raising spiritual vibration",
+          "consecration and blessing",
+          "solar and fire rituals"
+        ],
+        "safetyNote": "Cinnamon essential oil is a strong irritant; always dilute before skin contact. Cassia cinnamon (Cinnamomum cassia) may cause issues in large quantities."
+      }
+    },
+    {
+      "canonicalName": "herb.clove",
+      "entityType": "herb",
+      "primaryDisplayName": "Clove",
+      "description": "Clove (Syzygium aromaticum) is the dried flower bud of a tropical tree, sharply aromatic and intensely warming — qualities that link it to the Sun and the Fire element. It has a long history in protective magic, being used to banish hostile forces, drive away negativity, and attract friendship and love. Its antiseptic properties mirror its magical quality of purification. Used in sachets, incense, and charms for protection, money, and mental clarity. Generally safe in culinary amounts; clove oil can irritate mucous membranes.",
+      "secondaryNames": [
+        {
+          "name": "Syzygium aromaticum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Eugenia caryophyllata",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "money",
+        "friendship",
+        "purification",
+        "solar"
+      ],
+      "extendedData": {
+        "botanicalName": "Syzygium aromaticum",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "protection and banishing negativity",
+          "attracting friendship and love",
+          "money and prosperity",
+          "purification of spaces",
+          "mental clarity",
+          "stopping gossip and slander"
+        ],
+        "safetyNote": "Clove essential oil can irritate mucous membranes and sensitive skin; use with caution."
+      }
+    },
+    {
+      "canonicalName": "herb.frankincense",
+      "entityType": "herb",
+      "primaryDisplayName": "Frankincense",
+      "description": "Frankincense (Boswellia sacra and related species) is the aromatic resin of the Boswellia tree, harvested by scoring the bark and collecting the hardened sap. One of the oldest and most venerated ritual substances in the world, it has been burned in sacred spaces across cultures for millennia. Ruled by the Sun and Fire, it raises vibration, purifies, and is said to drive away all evil while drawing divine blessing. It is a cornerstone of ceremonial and temple incense. Safe for burning; avoid ingesting resin in large quantities.",
+      "secondaryNames": [
+        {
+          "name": "Boswellia sacra",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Olibanum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "purification",
+        "protection",
+        "solar",
+        "consecration",
+        "spirituality"
+      ],
+      "extendedData": {
+        "botanicalName": "Boswellia sacra",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "purification and consecration",
+          "raising spiritual vibration",
+          "driving away negative entities",
+          "solar and divine invocation",
+          "meditation and prayer",
+          "blessing and protection"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.juniper",
+      "entityType": "herb",
+      "primaryDisplayName": "Juniper",
+      "description": "Juniper (Juniperus communis) is a hardy evergreen shrub or small tree bearing dark blue-black berries used in gin production and folk medicine. Its sharp, clearing scent and purifying fire smoke have made it a traditional tool for banishing negative spirits and cleansing ritual space. Associated with the Sun and Fire, juniper is used in protective sachets, purification incenses, and workings to break curses. Juniper berries are safe in moderate use; avoid medicinal doses during pregnancy as they can stimulate the uterus.",
+      "secondaryNames": [
+        {
+          "name": "Juniperus communis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Juniper",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "purification",
+        "banishing",
+        "solar"
+      ],
+      "extendedData": {
+        "botanicalName": "Juniperus communis",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "purification and cleansing space",
+          "banishing negative energy and spirits",
+          "protection workings",
+          "breaking curses and hexes",
+          "anti-theft charms",
+          "health and vitality"
+        ],
+        "safetyNote": "Avoid medicinal doses during pregnancy. Do not confuse with toxic juniper species (e.g. Juniperus sabina)."
+      }
+    },
+    {
+      "canonicalName": "herb.rosemary",
+      "entityType": "herb",
+      "primaryDisplayName": "Rosemary",
+      "description": "Rosemary (Salvia rosmarinus, formerly Rosmarinus officinalis) is a fragrant Mediterranean shrub with needle-like leaves and small blue flowers, long associated with memory, fidelity, and the dead. In the Western magical tradition it is ruled by the Sun and Fire, giving it strong protective and purifying qualities. It has historically substituted for more expensive herbs in workings, as it was said by old practitioners that 'rosemary can be used in place of any herb.' It promotes mental clarity, love, and loyalty, and is burned or carried for protection. Safe in culinary use; avoid large medicinal doses in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Salvia rosmarinus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rosmarinus officinalis",
+          "languageTag": "la",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Dew of the Sea",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "purification",
+        "memory",
+        "love",
+        "solar",
+        "fidelity"
+      ],
+      "extendedData": {
+        "botanicalName": "Salvia rosmarinus",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "protection of home and person",
+          "purification and cleansing",
+          "memory enhancement and mental clarity",
+          "love and fidelity workings",
+          "consecration of tools",
+          "funerary and ancestral rites"
+        ],
+        "safetyNote": "Avoid large medicinal doses during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.st-johns-wort",
+      "entityType": "herb",
+      "primaryDisplayName": "St. John's Wort",
+      "description": "St. John's Wort (Hypericum perforatum) is a perennial herb bearing bright yellow five-petalled flowers that bloom around the summer solstice — historically associated with Midsummer and the feast of St. John the Baptist. Its solar colour and solstice bloom time cement its association with the Sun and Fire. Magically it is one of the most powerful protective herbs, traditionally burned on Midsummer bonfires and hung in doorways to repel evil spirits and protect against lightning. It is also widely used as a mood-elevating herb. Note: interacts significantly with many pharmaceutical medications.",
+      "secondaryNames": [
+        {
+          "name": "Hypericum perforatum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hypericum",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tipton's Weed",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "protection",
+        "midsummer",
+        "anti-evil",
+        "solar",
+        "healing"
+      ],
+      "extendedData": {
+        "botanicalName": "Hypericum perforatum",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "Midsummer rites and solstice celebrations",
+          "protection against evil spirits and witchcraft",
+          "banishing depression and despair",
+          "courage and strength",
+          "divination and dream work",
+          "protection of home"
+        ],
+        "safetyNote": "Significant pharmaceutical interactions — notably reduces effectiveness of hormonal contraceptives, antiretrovirals, and cyclosporine. Causes photosensitivity in high doses. Consult a doctor before use alongside any medication."
+      }
+    },
+    {
+      "canonicalName": "herb.copal",
+      "entityType": "herb",
+      "primaryDisplayName": "Copal",
+      "description": "Copal is a category of aromatic tree resins from the genus Bursera and related trees, used extensively in Mesoamerican sacred ritual for thousands of years. It is one of the primary ritual incenses of Aztec and Maya traditions, burned as an offering to the sun and higher divine forces. In the broader Western magical framework it is associated with the Sun and Fire, used to purify, consecrate, and open communication with elevated spiritual powers. Its clean, bright smoke clears dense energy and creates sacred space. Safe for burning as incense.",
+      "secondaryNames": [
+        {
+          "name": "Bursera copallifera",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "White Copal",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "purification",
+        "consecration",
+        "solar",
+        "offering",
+        "spirituality"
+      ],
+      "extendedData": {
+        "botanicalName": "Bursera copallifera",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "purification and consecration",
+          "solar offerings and ritual",
+          "opening communication with higher powers",
+          "clearing dense or stagnant energy",
+          "space cleansing",
+          "ancestor and deity offerings"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.sunflower",
+      "entityType": "herb",
+      "primaryDisplayName": "Sunflower",
+      "description": "The sunflower (Helianthus annuus) is perhaps the most literally solar of all plants — its name means 'sun-flower' in Greek, and its large golden head tracks the sun during growth (heliotropism). Native to the Americas, it was cultivated as a sacred crop and brought to Europe in the sixteenth century. Associated naturally with the Sun and Fire, it is used magically for wishes, fertility, loyalty, and to attract good fortune. The seeds carry the energy of abundance. Entirely safe and edible.",
+      "secondaryNames": [
+        {
+          "name": "Helianthus annuus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "wishes",
+        "fertility",
+        "luck",
+        "solar",
+        "abundance"
+      ],
+      "extendedData": {
+        "botanicalName": "Helianthus annuus",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "wish magic and manifestation",
+          "attracting good fortune and luck",
+          "fertility and abundance",
+          "solar invocations",
+          "loyalty and fidelity",
+          "joy and optimism workings"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.mugwort",
+      "entityType": "herb",
+      "primaryDisplayName": "Mugwort",
+      "description": "Mugwort (Artemisia vulgaris) is a common aromatic perennial herb named for the goddess Artemis (Diana), who presided over the moon, dreams, and the liminal. It is one of the oldest and most celebrated herbs in the cunning folk and magical tradition, burned or drunk as a tea to enhance psychic awareness and vivid dreaming. Ruled by the Moon and associated with the element of Earth (or Water in some traditions), it opens the inner eye, strengthens the astral body, and aids in all forms of divination. Avoid in pregnancy — it is a traditional emmenagogue.",
+      "secondaryNames": [
+        {
+          "name": "Artemisia vulgaris",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cronewort",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sailor's Tobacco",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "earth",
+        "divination",
+        "dreaming",
+        "psychic",
+        "astral",
+        "lunar"
+      ],
+      "extendedData": {
+        "botanicalName": "Artemisia vulgaris",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "prophetic and lucid dreaming",
+          "psychic awareness enhancement",
+          "scrying and divination",
+          "astral projection and travel",
+          "protection during travel",
+          "opening the third eye"
+        ],
+        "safetyNote": "Do not use during pregnancy — traditional emmenagogue that can stimulate uterine contractions. Avoid in large quantities if sensitive to the Artemisia genus."
+      }
+    },
+    {
+      "canonicalName": "herb.jasmine",
+      "entityType": "herb",
+      "primaryDisplayName": "Jasmine",
+      "description": "Jasmine (Jasminum officinale and related species) is a climbing vine bearing intensely fragrant white or pale yellow flowers that bloom primarily at night — a quintessential lunar quality. Its nocturnal perfume, white flowers, and association with feminine beauty and spirituality make it a natural Moon herb. Ruled by the Moon and Water, jasmine is used in love magic, prophetic dreaming, wealth attraction, and moon rituals. The scent alone is said to attract love and wealth. Generally safe; essential oil should be diluted.",
+      "secondaryNames": [
+        {
+          "name": "Jasminum officinale",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Jasmine",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "love",
+        "dreaming",
+        "money",
+        "lunar",
+        "feminine"
+      ],
+      "extendedData": {
+        "botanicalName": "Jasminum officinale",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love attraction and romance",
+          "prophetic dreaming",
+          "attracting money and wealth",
+          "moon rituals and lunar workings",
+          "spiritual love and soul connection",
+          "enhancing feminine energy"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.white-willow",
+      "entityType": "herb",
+      "primaryDisplayName": "White Willow",
+      "description": "White Willow (Salix alba) is a graceful tree that grows along waterways and river banks, its trailing branches reflecting in still water — an image of the Moon itself. Associated with the Moon and Water, willow is the tree of poets, lovers, and the grief-stricken; to 'wear the willow' was to mourn a lost love. Magically it is used for love, healing, moon magic, and the release of sorrow. Its bark contains salicin, the precursor to aspirin. Bark tea is generally safe at moderate doses; avoid with blood-thinning medications or aspirin allergy.",
+      "secondaryNames": [
+        {
+          "name": "Salix alba",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Willow Bark",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "love",
+        "healing",
+        "grief",
+        "lunar",
+        "feminine"
+      ],
+      "extendedData": {
+        "botanicalName": "Salix alba",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love magic and attraction",
+          "moon rituals and lunar spells",
+          "healing and pain relief",
+          "releasing grief and sorrow",
+          "psychic and intuitive enhancement",
+          "water and emotion workings"
+        ],
+        "safetyNote": "Avoid if allergic to aspirin (salicylates). Caution with blood-thinning medications."
+      }
+    },
+    {
+      "canonicalName": "herb.myrrh",
+      "entityType": "herb",
+      "primaryDisplayName": "Myrrh",
+      "description": "Myrrh (Commiphora myrrha) is a bittersweet aromatic resin from a thorny tree native to northeastern Africa and the Arabian Peninsula, one of the most ancient ritual substances known to humanity. Paired with frankincense throughout history in temple rites, it is ruled by the Moon and Water (though some assign it Saturn or the Sun), giving it qualities of protection, healing, and consecration. Myrrh is associated with the cthonic lunar realm, with purification of the dead, and with binding spiritual covenants. It is burned to consecrate, banish evil, and deepen meditative states. Safe for burning; avoid internal use in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Commiphora myrrha",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "purification",
+        "consecration",
+        "protection",
+        "lunar",
+        "healing"
+      ],
+      "extendedData": {
+        "botanicalName": "Commiphora myrrha",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "purification and consecration",
+          "protection against evil",
+          "deepening meditation and trance",
+          "funerary and ancestral rites",
+          "healing workings",
+          "binding and sealing spells"
+        ],
+        "safetyNote": "Avoid ingesting medicinally during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.lemon-balm",
+      "entityType": "herb",
+      "primaryDisplayName": "Lemon Balm",
+      "description": "Lemon Balm (Melissa officinalis) is a gentle, lemon-scented herb in the mint family, long celebrated as a herb of joy, longevity, and calm. The Greek name Melissa means 'bee' — bees were sacred to the moon goddesses — and the plant itself is beloved by pollinators. Ruled by the Moon and Water, lemon balm is used in love magic, healing, and workings to uplift the spirit and promote success. As a nervine tea it calms anxiety and improves sleep. Considered very safe; mild sedative interaction with certain medications.",
+      "secondaryNames": [
+        {
+          "name": "Melissa officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Melissa",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Bee Balm",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "love",
+        "healing",
+        "success",
+        "lunar",
+        "calming"
+      ],
+      "extendedData": {
+        "botanicalName": "Melissa officinalis",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and friendship magic",
+          "uplift and joy workings",
+          "healing of emotional wounds",
+          "longevity and health",
+          "success in studies",
+          "calming and peace"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.poppy",
+      "entityType": "herb",
+      "primaryDisplayName": "Poppy",
+      "description": "The Opium Poppy (Papaver somniferum) and its relatives have been associated with sleep, dreams, and death since ancient times — attributes linking them firmly to the Moon. The goddess Demeter was often depicted holding poppies; they were associated with Hypnos (Sleep) and Morpheus (Dreams). Ruled by the Moon and Water, poppy seeds are used in fertility, sleep, luck, and confusion spells. The seeds themselves contain negligible alkaloids and are widely used as food. However, the plant's dried latex (raw opium) is a controlled narcotic substance and must not be extracted.",
+      "secondaryNames": [
+        {
+          "name": "Papaver somniferum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Opium Poppy",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "sleep",
+        "dreaming",
+        "fertility",
+        "luck",
+        "lunar"
+      ],
+      "extendedData": {
+        "botanicalName": "Papaver somniferum",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "sleep and dreaming magic",
+          "fertility and abundance",
+          "luck and invisibility",
+          "confusion and misdirection",
+          "dream pillows",
+          "moon goddess invocations"
+        ],
+        "safetyNote": "Poppy seeds are safe for culinary and magical use. The plant's latex (opium) is a controlled substance in most jurisdictions; do not extract or consume. Growing may be restricted in some regions."
+      }
+    },
+    {
+      "canonicalName": "herb.aloe-vera",
+      "entityType": "herb",
+      "primaryDisplayName": "Aloe Vera",
+      "description": "Aloe Vera (Aloe vera) is a succulent plant whose thick, gel-filled leaves have been used for skin healing and soothing since ancient Egypt. Its cooling, moist nature and association with the feminine principle of nurturing and healing connect it to the Moon and Water. Magically it is used for protection, luck, beauty, and healing, and is often placed in the home to ward off accidents and negative energy. The gel is safe for topical use; ingesting aloe latex (the bitter yellow layer) can cause digestive irritation.",
+      "secondaryNames": [
+        {
+          "name": "Aloe vera",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Burn Plant",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "protection",
+        "healing",
+        "luck",
+        "lunar",
+        "beauty"
+      ],
+      "extendedData": {
+        "botanicalName": "Aloe vera",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "protection of home against accidents",
+          "healing and soothing",
+          "beauty and glamour magic",
+          "luck attraction",
+          "lunar workings",
+          "blessing and nurturing"
+        ],
+        "safetyNote": "Topical gel is safe. Avoid ingesting aloe latex (the bitter yellow sap beneath the skin) — it is a strong laxative and can cause kidney damage in excess."
+      }
+    },
+    {
+      "canonicalName": "herb.camphor",
+      "entityType": "herb",
+      "primaryDisplayName": "Camphor",
+      "description": "Camphor (Cinnamomum camphora) is a crystalline aromatic substance obtained from the wood of the camphor laurel tree, notable for its cool, intensely penetrating scent. This cooling quality connects it to the Moon and Water in the Western magical tradition. Camphor is a traditional purification agent in many cultures, burned or placed to drive away spirits and cleanse spaces. Its sharp odour is said to make locations inhospitable to lower entities. Used in very small quantities; camphor is toxic in large amounts and must never be ingested.",
+      "secondaryNames": [
+        {
+          "name": "Cinnamomum camphora",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Camphor Tree",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "purification",
+        "banishing",
+        "lunar",
+        "protection"
+      ],
+      "extendedData": {
+        "botanicalName": "Cinnamomum camphora",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "space purification and clearing",
+          "banishing unwanted spirits",
+          "celibacy and chastity workings",
+          "prophetic dreams when burned lightly",
+          "protection during travel",
+          "cooling and calming workings"
+        ],
+        "safetyNote": "Toxic if ingested — even small amounts can cause serious harm. Keep away from children and pets. Do not burn in large quantities in enclosed spaces."
+      }
+    },
+    {
+      "canonicalName": "herb.gardenia",
+      "entityType": "herb",
+      "primaryDisplayName": "Gardenia",
+      "description": "Gardenia (Gardenia jasminoides) is an evergreen shrub bearing creamy white flowers of exquisite fragrance, blooming in the warm months and associated with love, peace, and spiritual attainment. Its white blossoms and hypnotic nocturnal scent link it to the Moon and Water. Magically gardenias are used to attract love, promote healing, foster peace, and enhance spiritual awareness. They are placed on altars to draw beneficial lunar energies. The plant is safe for humans but toxic to cats and dogs.",
+      "secondaryNames": [
+        {
+          "name": "Gardenia jasminoides",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cape Jasmine",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "love",
+        "healing",
+        "peace",
+        "lunar",
+        "spirituality"
+      ],
+      "extendedData": {
+        "botanicalName": "Gardenia jasminoides",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love attraction and romance",
+          "peace and harmony",
+          "healing and recovery",
+          "spiritual awareness and elevation",
+          "moon altar offerings",
+          "protection through love"
+        ],
+        "safetyNote": "Toxic to cats and dogs; keep away from pets."
+      }
+    },
+    {
+      "canonicalName": "herb.white-rose",
+      "entityType": "herb",
+      "primaryDisplayName": "White Rose",
+      "description": "The White Rose (Rosa alba and white-flowered Rosa cultivars) is the most lunar of roses — its pure white petals, association with the Virgin Mary, and connection to silence and the hidden arts (sub rosa) place it firmly under lunar rulership. Associated with the Moon and Water, white roses are used in magic for purity, secrecy, peace, truth, and spiritual love as opposed to erotic love. They are placed on altars for divination, used in moon water preparations, and carried as charms for psychic development. Safe and edible; rose hips are nutritious.",
+      "secondaryNames": [
+        {
+          "name": "Rosa alba",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Alba Rose",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "luna",
+        "water",
+        "purity",
+        "divination",
+        "peace",
+        "lunar",
+        "psychic",
+        "secrecy"
+      ],
+      "extendedData": {
+        "botanicalName": "Rosa alba",
+        "planet": "astrology.planet.luna",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "purification and purity",
+          "secrecy and silence (sub rosa)",
+          "divination and psychic development",
+          "peace and truth workings",
+          "spiritual love",
+          "moon water and lunar ritual"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.lavender",
+      "entityType": "herb",
+      "primaryDisplayName": "Lavender",
+      "description": "Lavender (Lavandula angustifolia) is a fragrant Mediterranean shrub with spikes of small purple-blue flowers, one of the most widely used aromatic herbs in the world. Its airy scent and association with communication, clarity, and mental ease link it to Mercury and the element of Air. Magically lavender is used to promote love, peace, clarity of mind, purification, and to ease sleep. It is placed under pillows, added to bath waters, and burned in purification rituals. Widely considered very safe; essential oil should be diluted for skin use.",
+      "secondaryNames": [
+        {
+          "name": "Lavandula angustifolia",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "English Lavender",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "True Lavender",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "love",
+        "purification",
+        "sleep",
+        "peace",
+        "mental-clarity"
+      ],
+      "extendedData": {
+        "botanicalName": "Lavandula angustifolia",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "love and romance",
+          "purification and cleansing",
+          "peaceful sleep and relaxation",
+          "mental clarity and focus",
+          "calming anxiety",
+          "protection and blessing"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.fennel",
+      "entityType": "herb",
+      "primaryDisplayName": "Fennel",
+      "description": "Fennel (Foeniculum vulgare) is a tall, feathery-leaved herb with a distinctive anise flavour, sacred to Mercury in the classical tradition. Greek legend holds that Prometheus brought fire from Olympus hidden in a stalk of fennel (narthex), associating it with the transmission of sacred knowledge. Ruled by Mercury and Air, fennel is used magically for protection, purification, healing, and warding off malefic spirits. Hung over doors on Midsummer, it was said to repel witchcraft. Generally safe in culinary amounts; avoid large medicinal doses in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Foeniculum vulgare",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sweet Fennel",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "protection",
+        "purification",
+        "healing",
+        "warding"
+      ],
+      "extendedData": {
+        "botanicalName": "Foeniculum vulgare",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "protection and warding of spaces",
+          "purification rites",
+          "healing and digestive wellness",
+          "courage in adversity",
+          "Midsummer protective rites",
+          "transmission of knowledge"
+        ],
+        "safetyNote": "Avoid large medicinal doses during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.dill",
+      "entityType": "herb",
+      "primaryDisplayName": "Dill",
+      "description": "Dill (Anethum graveolens) is a tall, airy annual herb with feathery blue-green leaves and flat-topped yellow flower heads, commonly used in pickling and Scandinavian cooking. Its light, airy nature and traditional use in communication magic link it to Mercury and the element of Air. Dill is used magically to attract money, protect against hexes, and to strengthen the mind. Hanging dill over a cradle was a traditional charm to protect infants. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Anethum graveolens",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "money",
+        "protection",
+        "mental-clarity",
+        "hex-breaking"
+      ],
+      "extendedData": {
+        "botanicalName": "Anethum graveolens",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "attracting money and prosperity",
+          "protection against hexes and malice",
+          "strengthening the mind and memory",
+          "protecting children and infants",
+          "love and lust spells",
+          "good fortune"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.peppermint",
+      "entityType": "herb",
+      "primaryDisplayName": "Peppermint",
+      "description": "Peppermint (Mentha x piperita) is a hybrid mint with a sharp, cooling menthol scent that is immediately stimulating and clarifying to the mind. Its crisp, mental-clarity-inducing quality naturally associates it with Mercury and the element of Air. Magically peppermint is used to attract money, promote healing, raise psychic vibration, and purify. It is carried or burned to promote travel without mishap and to speed communication. Widely safe; essential oil should not be used near the faces of infants or young children.",
+      "secondaryNames": [
+        {
+          "name": "Mentha x piperita",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Brandy Mint",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "money",
+        "healing",
+        "psychic",
+        "purification",
+        "travel"
+      ],
+      "extendedData": {
+        "botanicalName": "Mentha x piperita",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "attracting money",
+          "healing and recovery",
+          "raising psychic vibration",
+          "purification",
+          "safe travel",
+          "mental clarity and focus"
+        ],
+        "safetyNote": "Do not apply essential oil near the face of infants or young children — the menthol can cause respiratory distress."
+      }
+    },
+    {
+      "canonicalName": "herb.marjoram",
+      "entityType": "herb",
+      "primaryDisplayName": "Marjoram",
+      "description": "Marjoram (Origanum majorana) is a sweet, delicate herb closely related to oregano, traditionally associated with happiness, love, and the protection of the home. Sacred to Aphrodite in classical antiquity — the goddess was said to have grown it on Olympus — it carries a Venusian warmth, but many herbal magicians assign it to Mercury and Air for its communicative, clarifying aromatic. Used in love sachets, protection charms, and grief-healing workings; said to comfort the bereaved. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Origanum majorana",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sweet Marjoram",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "love",
+        "protection",
+        "grief",
+        "happiness"
+      ],
+      "extendedData": {
+        "botanicalName": "Origanum majorana",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "love and happiness",
+          "protection of home",
+          "grief and bereavement healing",
+          "protection against depression",
+          "health and wellness",
+          "prosperity"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.parsley",
+      "entityType": "herb",
+      "primaryDisplayName": "Parsley",
+      "description": "Parsley (Petroselinum crispum) is a biennial herb widely used as a culinary garnish but with a long and complex magical history. In classical antiquity it was associated with the dead and with chthonic deities — funeral feasts used parsley garlands — yet in the modern magical tradition it is assigned to Mercury and Air as a herb of communication, purification, and protection. It is used to cleanse spaces of negative energy after conflict, to carry for protection, and in prosperity workings. Safe in culinary amounts; medicinal doses of parsley seed oil should be avoided in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Petroselinum crispum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "purification",
+        "protection",
+        "prosperity",
+        "cleansing"
+      ],
+      "extendedData": {
+        "botanicalName": "Petroselinum crispum",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "purification and cleansing after conflict",
+          "protection of home and person",
+          "prosperity and fertility",
+          "cleansing ritual tools",
+          "communication and clarity",
+          "funerary and ancestral rites"
+        ],
+        "safetyNote": "Avoid medicinal doses of parsley seed oil during pregnancy. Culinary use is safe."
+      }
+    },
+    {
+      "canonicalName": "herb.horehound",
+      "entityType": "herb",
+      "primaryDisplayName": "Horehound",
+      "description": "White Horehound (Marrubium vulgare) is a bitter, woolly-leaved herb of dry wastelands and roadsides, long used as a cough remedy and one of the traditional bitter herbs of Passover. Its long use in vocal and respiratory healing links it naturally to Mercury and Air — the planet and element of the voice and breath. Magically horehound is used for mental clarity, protection against magical attack, and exorcism of negative forces. It was a key ingredient in the four thieves' formula in some regional traditions. Generally safe; excess can cause mild laxative effect.",
+      "secondaryNames": [
+        {
+          "name": "Marrubium vulgare",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "White Horehound",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "protection",
+        "exorcism",
+        "mental-clarity",
+        "healing"
+      ],
+      "extendedData": {
+        "botanicalName": "Marrubium vulgare",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "protection against magical attack",
+          "exorcism and banishing",
+          "mental clarity and focus",
+          "healing the voice and respiratory system",
+          "breaking confusion or glamours",
+          "strength of will"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.caraway",
+      "entityType": "herb",
+      "primaryDisplayName": "Caraway",
+      "description": "Caraway (Carum carvi) is a biennial plant bearing feathery leaves and ridged aromatic seeds widely used in European breads, cheeses, and liqueurs. Its sharp, clarifying aroma and association with mental sharpness and communication place it under Mercury and Air. Magically caraway is used in spells for faithfulness and anti-theft (carried in stolen items it was thought to compel the thief to return), and it is also used in love and mental clarity work. Seeds burned as incense promote focus during study. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Carum carvi",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Meridian Fennel",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "fidelity",
+        "anti-theft",
+        "mental-clarity",
+        "love"
+      ],
+      "extendedData": {
+        "botanicalName": "Carum carvi",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "fidelity and faithfulness workings",
+          "anti-theft charms",
+          "mental clarity during study",
+          "love and attraction",
+          "protection of possessions",
+          "focus and memory"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.lemongrass",
+      "entityType": "herb",
+      "primaryDisplayName": "Lemongrass",
+      "description": "Lemongrass (Cymbopogon citratus) is a tall tropical grass with a bright, fresh citrus scent widely used in Asian cuisine and aromatherapy. Its bright, uplifting, communicative energy places it under Mercury and Air in the magical tradition. It is used to cleanse and open psychic pathways, promote clarity of thought, and attract luck and money. Lemongrass tea is drunk before divination to sharpen intuition. Also used in lust and passion spells in some traditions. Safe in culinary and aromatic use; essential oil should be diluted.",
+      "secondaryNames": [
+        {
+          "name": "Cymbopogon citratus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "West Indian Lemongrass",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mercury",
+        "air",
+        "psychic",
+        "luck",
+        "money",
+        "clarity",
+        "divination"
+      ],
+      "extendedData": {
+        "botanicalName": "Cymbopogon citratus",
+        "planet": "astrology.planet.mercury",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "opening psychic pathways",
+          "mental clarity and focus",
+          "attracting luck and money",
+          "divination preparation",
+          "cleansing and purification",
+          "lust and passion"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.rose",
+      "entityType": "herb",
+      "primaryDisplayName": "Rose",
+      "description": "The Rose (Rosa species) is the quintessential herb of Venus — the goddess of love herself was said to have created the rose, and no flower is more universally associated with romantic love. Ruled by Venus and Water, the rose governs all matters of love, desire, beauty, friendship, and the heart. Its thorns also represent the paradoxical pain of love and its protective capacity. Used in love spells, beauty rituals, divination of romantic questions, and to attract peaceful, harmonious relationships. Rose hips are nutritious. Entirely safe.",
+      "secondaryNames": [
+        {
+          "name": "Rosa species",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Red Rose",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "beauty",
+        "friendship",
+        "harmony",
+        "feminine"
+      ],
+      "extendedData": {
+        "botanicalName": "Rosa species",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love attraction and romance",
+          "beauty and glamour",
+          "friendship and harmony",
+          "divination of love questions",
+          "peace and healing",
+          "honouring Venus and love deities"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.thyme",
+      "entityType": "herb",
+      "primaryDisplayName": "Thyme",
+      "description": "Thyme (Thymus vulgaris) is a small, hardy aromatic shrub beloved by bees and long associated with courage, the faerie folk, and the strength of the spirit. In medieval Europe carrying thyme gave warriors courage in battle, and it was placed on coffins to ensure the soul's safe passage. Ruled by Venus and Water, thyme is used magically for courage, purification, fairy contact, healing, sleep, and the development of psychic abilities. Safe in culinary use; avoid large medicinal doses in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Thymus vulgaris",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Garden Thyme",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "courage",
+        "purification",
+        "faerie",
+        "healing",
+        "psychic"
+      ],
+      "extendedData": {
+        "botanicalName": "Thymus vulgaris",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "courage in adversity",
+          "purification of ritual space",
+          "fairy contact and communication",
+          "healing workings",
+          "peaceful sleep",
+          "developing psychic sight"
+        ],
+        "safetyNote": "Avoid large medicinal doses during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.yarrow",
+      "entityType": "herb",
+      "primaryDisplayName": "Yarrow",
+      "description": "Yarrow (Achillea millefolium) is a robust perennial herb with flat-topped clusters of small white or pale pink flowers and finely dissected feathery leaves. Named for Achilles, who was said to use it to staunch his warriors' wounds, yarrow is one of the oldest medicinal plants known. Ruled by Venus and Water, it is associated with love, courage, healing, and divination. The dried stalks of yarrow are the traditional tool for casting the I Ching, and it has a long association with the divinatory arts. May cause allergic reaction in those sensitive to the Asteraceae family.",
+      "secondaryNames": [
+        {
+          "name": "Achillea millefolium",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Milfoil",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Soldier's Woundwort",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "courage",
+        "healing",
+        "divination",
+        "protection"
+      ],
+      "extendedData": {
+        "botanicalName": "Achillea millefolium",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and attraction",
+          "courage and warrior energy",
+          "wound healing and blood-stopping",
+          "I Ching and divination",
+          "protection and banishing",
+          "psychic development"
+        ],
+        "safetyNote": "May cause allergic reaction in those sensitive to the daisy (Asteraceae) family. Avoid large doses during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.vervain",
+      "entityType": "herb",
+      "primaryDisplayName": "Vervain",
+      "description": "Vervain (Verbena officinalis) is one of the most sacred herbs in the Western magical tradition — revered by the Druids as one of their most holy plants, used by Roman priests to purify altars, and included in virtually every historical list of magical herbs. Ruled by Venus and Earth (or Water), it is a universal magical herb used for protection, purification, love, peace, and the strengthening of all magical work. Carrying or wearing vervain was believed to make the bearer invisible to enemies and increase their magical power. Avoid in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Verbena officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Holy Herb",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Herb of Grace",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "earth",
+        "protection",
+        "purification",
+        "love",
+        "peace",
+        "magical-power"
+      ],
+      "extendedData": {
+        "botanicalName": "Verbena officinalis",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "protection against evil and magical attack",
+          "purification of altars and ritual space",
+          "amplifying all magical workings",
+          "love and peace",
+          "invisibility and concealment",
+          "Druidic and priestly rites"
+        ],
+        "safetyNote": "Avoid during pregnancy — traditional emmenagogue."
+      }
+    },
+    {
+      "canonicalName": "herb.catnip",
+      "entityType": "herb",
+      "primaryDisplayName": "Catnip",
+      "description": "Catnip (Nepeta cataria) is a perennial herb in the mint family that famously produces a euphoric response in cats; the nepetalactone compounds mimic feline pheromones. Associated with Venus and Water, catnip is used in love and beauty magic, particularly to draw a specific person to you through attraction. It is also used in cat magic and to attract good luck and happiness. As a mild nervine for humans, it calms anxiety and aids sleep. The plant's attraction for cats symbolises its power to draw what you desire. Generally safe.",
+      "secondaryNames": [
+        {
+          "name": "Nepeta cataria",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Catmint",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "beauty",
+        "luck",
+        "happiness",
+        "cat-magic"
+      ],
+      "extendedData": {
+        "botanicalName": "Nepeta cataria",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and attraction magic",
+          "beauty spells",
+          "cat and animal magic",
+          "drawing good luck and happiness",
+          "calming and peace",
+          "friendship bonds"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.elder-flower",
+      "entityType": "herb",
+      "primaryDisplayName": "Elder Flower",
+      "description": "Elder (Sambucus nigra) is a sacred tree of the European folk tradition — home to the Elder Mother spirit, who must be asked permission before any part of the tree is taken. Its white flat-topped flower clusters bloom in early summer, and the deep purple berries ripen in autumn. Ruled by Venus and Water (though some traditions assign it Saturn), elder is used for protection, blessings, faerie contact, and healing. The flowers are safe to eat and are made into cordials and wine; the raw berries and green parts can cause nausea — berries must be cooked before consumption.",
+      "secondaryNames": [
+        {
+          "name": "Sambucus nigra",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Elderflower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Elder Tree",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "protection",
+        "faerie",
+        "healing",
+        "blessing",
+        "ancestral"
+      ],
+      "extendedData": {
+        "botanicalName": "Sambucus nigra",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "protection and warding of home",
+          "faerie contact and offerings",
+          "healing and recovery",
+          "ancestral veneration",
+          "blessings and abundance",
+          "exorcism"
+        ],
+        "safetyNote": "Raw elder berries cause nausea and vomiting — must be cooked before eating. Leaves, bark, and roots contain toxic glycosides and should not be consumed."
+      }
+    },
+    {
+      "canonicalName": "herb.violet",
+      "entityType": "herb",
+      "primaryDisplayName": "Violet",
+      "description": "The Sweet Violet (Viola odorata) is a small woodland herb bearing delicate, deeply fragrant purple (or white) flowers in early spring, one of the first signs of the season's turn. Associated with Venus and Water, violets are herbs of love, modesty, healing, and luck. In ancient Greece they were used to make wine and were associated with Persephone. Magically they are carried for luck and love, placed in dream pillows to induce restful sleep, and used in workings to ease grief and bring peace. Edible and generally safe.",
+      "secondaryNames": [
+        {
+          "name": "Viola odorata",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sweet Violet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "luck",
+        "healing",
+        "peace",
+        "sleep"
+      ],
+      "extendedData": {
+        "botanicalName": "Viola odorata",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and romance",
+          "luck attraction",
+          "healing and grief relief",
+          "peaceful sleep",
+          "modesty and protection",
+          "Persephone and underworld rites"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.apple-blossom",
+      "entityType": "herb",
+      "primaryDisplayName": "Apple Blossom",
+      "description": "Apple Blossom (Malus domestica) refers to the fragrant pink-white flowers of the apple tree, one of the most sacred trees in the Western magical tradition. The apple tree is associated with immortality (the apples of the Hesperides), love (Venus/Aphrodite's golden apple), and the faerie realm (the Isle of Avalon means 'isle of apples'). Ruled by Venus and Water, apple blossoms are used in love magic, beauty spells, and workings to connect with the otherworldly. Entirely safe; apple seeds contain trace cyanogenic glycosides and should not be eaten in large quantities.",
+      "secondaryNames": [
+        {
+          "name": "Malus domestica",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Apple Tree Flower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "beauty",
+        "faerie",
+        "immortality",
+        "otherworld"
+      ],
+      "extendedData": {
+        "botanicalName": "Malus domestica",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and desire magic",
+          "beauty and glamour",
+          "otherworld and faerie contact",
+          "immortality and longevity",
+          "prosperity and abundance",
+          "garden blessings"
+        ],
+        "safetyNote": "Apple seeds contain amygdalin (a cyanogenic glycoside); do not eat large quantities of seeds."
+      }
+    },
+    {
+      "canonicalName": "herb.geranium",
+      "entityType": "herb",
+      "primaryDisplayName": "Geranium",
+      "description": "The Scented Geranium (Pelargonium species, particularly P. graveolens) is a tender perennial bearing fragrant leaves that mimic the scent of rose — making it a traditional substitute for rose in magical work. Associated with Venus and Water, geraniums are used for love, health, protection, and fertility. They are planted near doorways to keep negative energy from entering the home. Rose-scented geranium oil is widely used in perfumery. The plant is considered safe for humans but mildly toxic to cats and dogs.",
+      "secondaryNames": [
+        {
+          "name": "Pelargonium graveolens",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rose Geranium",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "protection",
+        "fertility",
+        "health"
+      ],
+      "extendedData": {
+        "botanicalName": "Pelargonium graveolens",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and attraction",
+          "protection of home",
+          "fertility and abundance",
+          "health and healing",
+          "happiness and peace",
+          "rose substitute in magical formulae"
+        ],
+        "safetyNote": "Mildly toxic to cats and dogs."
+      }
+    },
+    {
+      "canonicalName": "herb.myrtle",
+      "entityType": "herb",
+      "primaryDisplayName": "Myrtle",
+      "description": "Myrtle (Myrtus communis) is an evergreen Mediterranean shrub with small glossy leaves, fragrant white flowers, and dark berries, sacred to Aphrodite/Venus throughout the ancient Greek and Roman world. Myrtle wreaths crowned brides at weddings and adorned the goddess of love's temples. Ruled by Venus and Water, myrtle is used in love magic, marriage blessings, fertility, and workings to bring lasting happiness and peace to relationships. It is also associated with immortality and is planted on graves in Mediterranean tradition. Safe for use.",
+      "secondaryNames": [
+        {
+          "name": "Myrtus communis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Myrtle",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "marriage",
+        "fertility",
+        "immortality",
+        "peace"
+      ],
+      "extendedData": {
+        "botanicalName": "Myrtus communis",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love and marriage blessings",
+          "fertility workings",
+          "lasting happiness in relationships",
+          "peace and harmony",
+          "immortality and longevity",
+          "Aphrodite/Venus veneration"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.strawberry-leaf",
+      "entityType": "herb",
+      "primaryDisplayName": "Strawberry Leaf",
+      "description": "The Strawberry plant (Fragaria vesca, the wild strawberry) produces trifoliate leaves and sweet red fruits, both of which carry Venusian energy. The fruit is a traditional symbol of love and sensuality; the leaves are used in love sachets and prosperity workings. Associated with Venus and Water, strawberry is carried to attract love, used in workings for luck and good fortune, and prepared as a tea to lift the spirits. The plant is entirely safe and its leaves make a pleasant mild herbal tea.",
+      "secondaryNames": [
+        {
+          "name": "Fragaria vesca",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wild Strawberry",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "water",
+        "love",
+        "luck",
+        "prosperity",
+        "happiness"
+      ],
+      "extendedData": {
+        "botanicalName": "Fragaria vesca",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "love attraction",
+          "luck and good fortune",
+          "prosperity and abundance",
+          "lifting the spirit and mood",
+          "fertility workings",
+          "offerings to Venus"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.basil",
+      "entityType": "herb",
+      "primaryDisplayName": "Basil",
+      "description": "Basil (Ocimum basilicum) is a warmly aromatic annual herb central to Mediterranean and South Asian cooking, with a long magical history that differs strikingly across cultures. In some European folk traditions basil was associated with the devil; in Haitian Vodou it is sacred to Erzulie (love); in Hindu tradition it is the sacred Tulsi, an avatar of Lakshmi. In the Western planetary tradition basil is assigned to Mars and Fire for its heating, stimulating quality. It is used for protection, love, wealth, and exorcism. Safe in culinary amounts.",
+      "secondaryNames": [
+        {
+          "name": "Ocimum basilicum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sweet Basil",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tulsi",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "protection",
+        "love",
+        "money",
+        "exorcism",
+        "martial"
+      ],
+      "extendedData": {
+        "botanicalName": "Ocimum basilicum",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "protection against evil",
+          "love and passion",
+          "attracting wealth and prosperity",
+          "exorcism and banishing",
+          "courage and strength",
+          "business success"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.ginger",
+      "entityType": "herb",
+      "primaryDisplayName": "Ginger",
+      "description": "Ginger (Zingiber officinale) is the rhizome of a tropical plant native to Southeast Asia, intensely warming and stimulating with a fiery, sharp flavour. Its heating quality firmly associates it with Mars and Fire. Magically ginger is used to accelerate the power of any spell, to attract adventure and success in risky ventures, to fire up love and passion, and to add energy to money workings. Carrying ginger root is said to make the bearer's magical power more potent. Safe in culinary and medicinal amounts; avoid very large doses.",
+      "secondaryNames": [
+        {
+          "name": "Zingiber officinale",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "love",
+        "money",
+        "success",
+        "acceleration",
+        "martial"
+      ],
+      "extendedData": {
+        "botanicalName": "Zingiber officinale",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "accelerating magical workings",
+          "love and passion",
+          "money and success attraction",
+          "courage and power",
+          "adventure and risk-taking",
+          "amplifying personal magical power"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.nettle",
+      "entityType": "herb",
+      "primaryDisplayName": "Stinging Nettle",
+      "description": "The Stinging Nettle (Urtica dioica) is a familiar European weed whose leaves are covered with hollow silica needles that inject an irritating fluid on contact — a very Martian quality. Yet nettle is also one of the most nutritious wild plants available, used as food and medicine for millennia. Ruled by Mars and Fire, nettle is used in protective magic to break jinxes and send back negative energy, in exorcism, and to strengthen willpower and courage. Dried or cooked nettle loses its sting and is nutritious and safe.",
+      "secondaryNames": [
+        {
+          "name": "Urtica dioica",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Nettle",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "protection",
+        "exorcism",
+        "hex-breaking",
+        "courage",
+        "martial"
+      ],
+      "extendedData": {
+        "botanicalName": "Urtica dioica",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "breaking hexes and returning them",
+          "exorcism and banishing",
+          "protection in dangerous situations",
+          "courage and willpower",
+          "lust and passion",
+          "healing and nutrition"
+        ],
+        "safetyNote": "Fresh leaves cause a stinging rash on contact; handle with gloves. Dried or cooked nettle is entirely safe and nutritious."
+      }
+    },
+    {
+      "canonicalName": "herb.pine",
+      "entityType": "herb",
+      "primaryDisplayName": "Pine",
+      "description": "Pine (Pinus sylvestris and related species) is a resinous evergreen conifer associated with strength, immortality, and regeneration across many cultures. Its resin burns with a sharp, clearing smoke, and its needles remain green through winter — a symbol of endurance. Ruled by Mars and Air (some traditions say Earth), pine is used in workings of purification, strength, prosperity, and protection. Pine cones are fertility symbols. Pine resin burned as incense drives away evil and cleanses space. Safe for burning; pine needle tea is safe in small amounts but avoid in pregnancy.",
+      "secondaryNames": [
+        {
+          "name": "Pinus sylvestris",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Scots Pine",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "air",
+        "protection",
+        "purification",
+        "strength",
+        "prosperity",
+        "fertility"
+      ],
+      "extendedData": {
+        "botanicalName": "Pinus sylvestris",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "purification and cleansing of space",
+          "protection and warding",
+          "strength and endurance",
+          "prosperity and abundance",
+          "fertility",
+          "immortality and regeneration rites"
+        ],
+        "safetyNote": "Avoid medicinal pine needle preparations during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.dragons-blood",
+      "entityType": "herb",
+      "primaryDisplayName": "Dragon's Blood",
+      "description": "Dragon's Blood is the deep red resin obtained from Dracaena and Daemonorops palm trees, named for its vivid blood-like colour. One of the most powerful magical resins, it is used to amplify the strength of any working, charge protective charms, and banish evil with force. Ruled by Mars and Fire, its fiery red colour and intense, commanding energy make it a quintessential Martial herb. It is often added to incense to dramatically increase the power and intensity of a spell. Safe for burning as incense; avoid ingesting.",
+      "secondaryNames": [
+        {
+          "name": "Dracaena draco",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sanguis Draconis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "protection",
+        "banishing",
+        "power",
+        "amplification",
+        "martial"
+      ],
+      "extendedData": {
+        "botanicalName": "Dracaena draco",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "amplifying magical power",
+          "protection and warding",
+          "banishing evil with force",
+          "charging protective charms",
+          "commanding and compelling",
+          "love and passion"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.wormwood",
+      "entityType": "herb",
+      "primaryDisplayName": "Wormwood",
+      "description": "Wormwood (Artemisia absinthium) is a silver-grey aromatic shrub of great bitterness, the primary ingredient in absinthe, and a herb with an ancient reputation for enhancing psychic vision and opening communication with spirits of the dead. Assigned to Mars and Fire in many planetary systems, it carries an intense, dark energy used in necromancy, divination, scrying, and hex-breaking. Burned to call spirits or left as an offering at graves. The thujone content makes it toxic in large amounts; absinthe made with it was historically associated with madness.",
+      "secondaryNames": [
+        {
+          "name": "Artemisia absinthium",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Green Ginger",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "necromancy",
+        "divination",
+        "psychic",
+        "hex-breaking",
+        "ancestral"
+      ],
+      "extendedData": {
+        "botanicalName": "Artemisia absinthium",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "spirit communication and necromancy",
+          "psychic vision enhancement",
+          "scrying",
+          "hex-breaking",
+          "ancestral rites",
+          "banishing enemies"
+        ],
+        "safetyNote": "Contains thujone, which is toxic in large amounts. High-dose internal use causes convulsions and neurological damage. Use only in small quantities for incense; do not ingest preparations of the pure herb regularly."
+      }
+    },
+    {
+      "canonicalName": "herb.rue",
+      "entityType": "herb",
+      "primaryDisplayName": "Rue",
+      "description": "Rue (Ruta graveolens) is a strongly aromatic Mediterranean shrub with distinctive blue-green lobed leaves, historically called 'the herb of grace' and widely regarded as the single most powerful anti-hex herb in the European magical tradition. Assigned to Mars and Fire (some say Saturn), it is used to break curses, banish the evil eye, cleanse magical contamination, and protect against witchcraft. It was hung in doorways, worn in sachets, and used in holy water. Its bitter sap is a strong photosensitiser and can cause blistering on contact with sun-exposed skin.",
+      "secondaryNames": [
+        {
+          "name": "Ruta graveolens",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Herb of Grace",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Herb of Repentance",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "hex-breaking",
+        "protection",
+        "purification",
+        "anti-evil-eye",
+        "martial"
+      ],
+      "extendedData": {
+        "botanicalName": "Ruta graveolens",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "breaking curses and hexes",
+          "evil eye protection and removal",
+          "clearing magical contamination",
+          "protection against witchcraft",
+          "purification",
+          "exorcism"
+        ],
+        "safetyNote": "The plant's sap is a strong photosensitiser — contact followed by sun exposure can cause severe blistering. Wear gloves when handling. A traditional abortifacient; avoid entirely during pregnancy."
+      }
+    },
+    {
+      "canonicalName": "herb.tobacco",
+      "entityType": "herb",
+      "primaryDisplayName": "Tobacco",
+      "description": "Tobacco (Nicotiana tabacum) is a sacred plant of enormous importance in the indigenous cultures of the Americas, where it serves as a primary ritual offering, a vehicle for prayer, and a means of communication with the spirit world. In Western magical herbalism it is assigned to Mars and Fire for its powerful, stimulating, commanding energy. It is used in offerings to spirits and ancestors, in spirit communication, in commanding and compelling workings, and as a powerful offering in folk magic traditions. Highly addictive; smoke causes serious health risks with regular exposure.",
+      "secondaryNames": [
+        {
+          "name": "Nicotiana tabacum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "spirit-communication",
+        "offering",
+        "commanding",
+        "ancestral"
+      ],
+      "extendedData": {
+        "botanicalName": "Nicotiana tabacum",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "spirit and ancestor offerings",
+          "communication with the dead",
+          "commanding and compelling workings",
+          "clearing and purification by smoke",
+          "prayer and petition transmission",
+          "banishing"
+        ],
+        "safetyNote": "Tobacco is highly addictive due to nicotine content. Regular smoking is a serious health hazard. Nicotine is acutely toxic in concentrated forms — handle fresh leaves with gloves."
+      }
+    },
+    {
+      "canonicalName": "herb.thistle",
+      "entityType": "herb",
+      "primaryDisplayName": "Thistle",
+      "description": "The Thistle (Cirsium and Carduus species) is a prickly, armoured plant that has guarded itself against predators with sharp spines — a perfect expression of the energy of Mars. National symbol of Scotland, the thistle represents resilience, protection, and the fierce repelling of enemies. Assigned to Mars and Fire, it is used in protection spells, hex-breaking, to heal melancholy, and to increase strength and vitality. Thistledown blown on the wind carries wishes. Safe to handle when dried; wear gloves with fresh plants.",
+      "secondaryNames": [
+        {
+          "name": "Cirsium vulgare",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Thistle",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "fire",
+        "protection",
+        "hex-breaking",
+        "strength",
+        "wishes"
+      ],
+      "extendedData": {
+        "botanicalName": "Cirsium vulgare",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "protection and warding",
+          "hex-breaking",
+          "healing melancholy and depression",
+          "strength and vitality",
+          "wishes on the wind",
+          "resilience and endurance"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.patchouli",
+      "entityType": "herb",
+      "primaryDisplayName": "Patchouli",
+      "description": "Patchouli (Pogostemon cablin) is a tropical herb in the mint family with large, fragrant leaves whose distinctive earthy, musky, dark scent has made it a staple of perfumery, incense, and the magical tradition. Though its earthy quality might suggest Saturn or Venus, in many Western traditions patchouli is assigned to Mars for its commanding, grounding, intensely physical energy. It is used to attract money, love, and lust; to draw fertility; and as a grounding base for incense blends. One of the most widely used magical perfume bases. Safe.",
+      "secondaryNames": [
+        {
+          "name": "Pogostemon cablin",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "mars",
+        "earth",
+        "money",
+        "love",
+        "lust",
+        "fertility",
+        "grounding"
+      ],
+      "extendedData": {
+        "botanicalName": "Pogostemon cablin",
+        "planet": "astrology.planet.mars",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "attracting money and prosperity",
+          "love and lust",
+          "fertility and abundance",
+          "grounding and stabilising",
+          "incense base for amplification",
+          "physical and sexual energy"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.sage",
+      "entityType": "herb",
+      "primaryDisplayName": "Sage",
+      "description": "Common Sage (Salvia officinalis) is an aromatic Mediterranean shrub long associated with wisdom, longevity, and the preservation of health — its very name comes from the Latin salvere, 'to be well.' Jupiter's expansive, benevolent, wisdom-granting influence is reflected in sage's traditional virtues. Used for purification, wisdom, granting wishes, and extending life, sage also aids in the grieving process. The practice of burning dried sage to cleanse a space (sometimes conflated with Native American smudging) is one of the most widespread modern magical practices. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Salvia officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Common Sage",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Garden Sage",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "wisdom",
+        "purification",
+        "wishes",
+        "longevity",
+        "protection"
+      ],
+      "extendedData": {
+        "botanicalName": "Salvia officinalis",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "purification and space clearing",
+          "wisdom and clarity of mind",
+          "wish magic",
+          "longevity and health",
+          "honouring ancestors and the dead",
+          "protection"
+        ],
+        "safetyNote": "Avoid large medicinal doses during pregnancy (though culinary amounts are fine). Thujone content in pure essential oil requires caution."
+      }
+    },
+    {
+      "canonicalName": "herb.hyssop",
+      "entityType": "herb",
+      "primaryDisplayName": "Hyssop",
+      "description": "Hyssop (Hyssopus officinalis) is a fragrant, bushy Mediterranean herb mentioned throughout the Bible as a purification herb — used to sprinkle holy water in cleansing rites. In Psalm 51 David prays 'purge me with hyssop and I shall be clean.' Assigned to Jupiter and Fire (or Air), hyssop is used above all else for ritual purification, cleansing from spiritual contamination, and the lifting of guilt and sin. It purifies the aura, clears old energy, and prepares the practitioner for sacred work. Safe in culinary use; avoid in epilepsy as the essential oil can trigger seizures.",
+      "secondaryNames": [
+        {
+          "name": "Hyssopus officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "fire",
+        "purification",
+        "cleansing",
+        "blessing",
+        "sacred"
+      ],
+      "extendedData": {
+        "botanicalName": "Hyssopus officinalis",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "ritual purification and cleansing",
+          "lifting guilt and spiritual contamination",
+          "aura cleansing",
+          "preparing for sacred work",
+          "protection",
+          "blessing sacred spaces"
+        ],
+        "safetyNote": "Avoid the essential oil if susceptible to epilepsy — it contains pinocamphone which may trigger seizures in large amounts. Culinary use is safe."
+      }
+    },
+    {
+      "canonicalName": "herb.dandelion",
+      "entityType": "herb",
+      "primaryDisplayName": "Dandelion",
+      "description": "The Dandelion (Taraxacum officinale) is a persistent, abundant, cheerfully golden-flowered weed that grows in virtually every temperate lawn and meadow. Its solar yellow flowers, planetary clock-like seed heads, and its use in divination (blow the seeds and count the breaths to learn the hour) associate it with both Sun and Jupiter in various traditions. Ruled by Jupiter and Air, dandelion is used in wish magic (blowing the seeds), divination, calling spirits, and attracting luck and wealth. Every part is edible and highly nutritious.",
+      "secondaryNames": [
+        {
+          "name": "Taraxacum officinale",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lion's Tooth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pissenlit",
+          "languageTag": "fr",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "wishes",
+        "divination",
+        "luck",
+        "spirit-communication",
+        "abundance"
+      ],
+      "extendedData": {
+        "botanicalName": "Taraxacum officinale",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "wish magic via seed dispersal",
+          "divination",
+          "calling and communicating with spirits",
+          "attracting luck and wealth",
+          "enhancing psychic abilities",
+          "abundance and prosperity"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.agrimony",
+      "entityType": "herb",
+      "primaryDisplayName": "Agrimony",
+      "description": "Agrimony (Agrimonia eupatoria) is a slender perennial herb of hedgerows and field edges, bearing small yellow flowers on a tapering spike and hooked seed burrs that cling to passing animals. It has a long history in European folk medicine and magic, associated with Jupiter and Air. One of its most celebrated magical uses is as a 'return to sender' herb — placed in a witch bottle or sachets, it is said to reflect spells and curses back to their sender. It also promotes deep sleep, restores energy, and supports justice and legal work.",
+      "secondaryNames": [
+        {
+          "name": "Agrimonia eupatoria",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Church Steeples",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "protection",
+        "hex-returning",
+        "sleep",
+        "justice",
+        "legal"
+      ],
+      "extendedData": {
+        "botanicalName": "Agrimonia eupatoria",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "reflecting and returning curses",
+          "protection via reversal",
+          "deep and healing sleep",
+          "justice and legal workings",
+          "energy restoration",
+          "witch bottle ingredient"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.borage",
+      "entityType": "herb",
+      "primaryDisplayName": "Borage",
+      "description": "Borage (Borago officinalis) is a cheerful annual herb with rough, bristly leaves and intensely blue star-shaped flowers — the colour of Jupiter's expansive, optimistic energy. The old saying 'borage for courage' encapsulates its primary magical use. Ruled by Jupiter and Air, borage is used in workings of courage, psychic powers, and protection, and its flowers are offered to Jupiter in ritual. The flowers are edible and commonly used to decorate salads and summer drinks. Avoid large internal doses of the whole herb as it contains low-level pyrrolizidine alkaloids.",
+      "secondaryNames": [
+        {
+          "name": "Borago officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Starflower",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "courage",
+        "psychic",
+        "protection",
+        "optimism"
+      ],
+      "extendedData": {
+        "botanicalName": "Borago officinalis",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "courage and bravery",
+          "psychic powers",
+          "protection",
+          "Jupiter invocations",
+          "lifting depression and heaviness",
+          "optimism and joy"
+        ],
+        "safetyNote": "Contains low levels of pyrrolizidine alkaloids in the whole plant — avoid consuming the herb in large or repeated doses. The flowers, used occasionally as food garnish, are considered safe."
+      }
+    },
+    {
+      "canonicalName": "herb.cedar",
+      "entityType": "herb",
+      "primaryDisplayName": "Cedar",
+      "description": "Cedar (Cedrus libani and related species, including Western Red Cedar Thuja plicata) is a majestic, aromatic evergreen associated with the divine and the sacred in cultures from Lebanon to the Pacific Northwest. The Cedars of Lebanon were used to build Solomon's Temple. In Western magical tradition cedar is assigned to Jupiter (or Sun) and Fire, and its wood and dried foliage are burned for purification, to attract money, and to strengthen psychic powers. Cedar chests protect precious items from negative energy. Generally safe for incense use.",
+      "secondaryNames": [
+        {
+          "name": "Cedrus libani",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cedar of Lebanon",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "fire",
+        "purification",
+        "money",
+        "psychic",
+        "protection",
+        "sacred"
+      ],
+      "extendedData": {
+        "botanicalName": "Cedrus libani",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "purification and sacred space",
+          "attracting money and prosperity",
+          "strengthening psychic powers",
+          "protection of home and valuables",
+          "healing",
+          "solar and divine invocations"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.nutmeg",
+      "entityType": "herb",
+      "primaryDisplayName": "Nutmeg",
+      "description": "Nutmeg (Myristica fragrans) is the seed of a tropical tree native to the Banda Islands (Spice Islands) of Indonesia — once one of the most valuable trade commodities in the world. Its warm, rich, exotic quality places it under Jupiter and Fire. Magically nutmeg is used in luck, money attraction, and travel spells; carried as a lucky charm or added to sachets to draw prosperity. Its warming, expansive quality also makes it useful in love workings. Note that nutmeg is toxic in large amounts — whole nutmegs eaten in quantity cause severe hallucinogenic and physical illness.",
+      "secondaryNames": [
+        {
+          "name": "Myristica fragrans",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "fire",
+        "luck",
+        "money",
+        "love",
+        "travel",
+        "prosperity"
+      ],
+      "extendedData": {
+        "botanicalName": "Myristica fragrans",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "luck and good fortune",
+          "money attraction",
+          "love and fidelity",
+          "safe travel",
+          "prosperity",
+          "psychic vision enhancement"
+        ],
+        "safetyNote": "Toxic in large amounts — two whole nutmegs can cause severe nutmeg poisoning (tachycardia, hallucinations, seizures). Culinary pinches are perfectly safe."
+      }
+    },
+    {
+      "canonicalName": "herb.star-anise",
+      "entityType": "herb",
+      "primaryDisplayName": "Star Anise",
+      "description": "Star Anise (Illicium verum) is the star-shaped seed pod of a small evergreen tree native to southern China and Vietnam, with a warm, sweet anise flavour used in Chinese five-spice and many Asian cuisines. Its beautiful eight-pointed star shape makes it a natural magical symbol of abundance and good fortune. Assigned to Jupiter and Air (or Fire), star anise is burned in incense to increase psychic powers, bring luck, and purify ritual space. The stars are also used as lucky charms. Safe in culinary use; do not confuse with the unrelated toxic Japanese Star Anise (Illicium anisatum).",
+      "secondaryNames": [
+        {
+          "name": "Illicium verum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "luck",
+        "psychic",
+        "purification",
+        "money",
+        "abundance"
+      ],
+      "extendedData": {
+        "botanicalName": "Illicium verum",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "increasing psychic powers",
+          "luck and good fortune",
+          "purification of ritual space",
+          "money and abundance",
+          "protection",
+          "clarity and insight"
+        ],
+        "safetyNote": "Do not confuse with Japanese Star Anise (Illicium anisatum), which is toxic. Ensure correct botanical sourcing."
+      }
+    },
+    {
+      "canonicalName": "herb.meadowsweet",
+      "entityType": "herb",
+      "primaryDisplayName": "Meadowsweet",
+      "description": "Meadowsweet (Filipendula ulmaria) is a tall, fragrant perennial of damp meadows and riverbanks, bearing creamy-white frothy flower clusters with an intoxicating sweet almond scent. One of the three most sacred herbs of the Druids (alongside vervain and water mint), it was used in bridal garlands and ceremonial strewing. Associated with Jupiter and Air, meadowsweet is used for love, happiness, peace, and divination. It also contains salicylates — it was the original source plant from which aspirin was derived. Avoid with aspirin allergy or blood-thinning medications.",
+      "secondaryNames": [
+        {
+          "name": "Filipendula ulmaria",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Queen of the Meadow",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Bride of the Meadow",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "jupiter",
+        "air",
+        "love",
+        "happiness",
+        "peace",
+        "divination",
+        "druidic"
+      ],
+      "extendedData": {
+        "botanicalName": "Filipendula ulmaria",
+        "planet": "astrology.planet.jupiter",
+        "element": "astrology.element.air",
+        "magicalUses": [
+          "love and happiness",
+          "peace and harmony",
+          "divination",
+          "Druidic sacred rites",
+          "bridal blessings",
+          "joy and festivity"
+        ],
+        "safetyNote": "Contains salicylates — avoid if allergic to aspirin. Caution with blood-thinning medications."
+      }
+    },
+    {
+      "canonicalName": "herb.comfrey",
+      "entityType": "herb",
+      "primaryDisplayName": "Comfrey",
+      "description": "Comfrey (Symphytum officinale) is a robust perennial with large, coarse leaves and drooping clusters of purple-pink tubular flowers, long celebrated as a wound-healing herb — its old name knitbone reflects its traditional use for mending fractures. Ruled by Saturn and Earth, comfrey is used in magic for protection in travel, safety workings, and binding. The root and leaves were carried by travellers for safety and used to ensure the safe return home. Contains pyrrolizidine alkaloids — safe for external use but internal use is restricted.",
+      "secondaryNames": [
+        {
+          "name": "Symphytum officinale",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Knitbone",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Boneset",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "protection",
+        "travel",
+        "binding",
+        "healing",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Symphytum officinale",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "protection during travel",
+          "binding workings",
+          "safe return home",
+          "healing of bones and wounds",
+          "stability and grounding",
+          "property protection"
+        ],
+        "safetyNote": "Contains pyrrolizidine alkaloids (PAs) which are hepatotoxic. Internal use (teas, tinctures) is restricted or banned in many countries. External use only is recommended."
+      }
+    },
+    {
+      "canonicalName": "herb.valerian",
+      "entityType": "herb",
+      "primaryDisplayName": "Valerian",
+      "description": "Valerian (Valeriana officinalis) is a tall perennial plant with pinnate leaves and small pink-white flower clusters, known chiefly for its root, which has a strong, distinctive smell (often likened to unwashed feet) that cats find irresistible. Ruled by Saturn (or sometimes Mercury) and Earth, valerian is one of the most powerful sleep and relaxation herbs available, and magically it is used in protection, purification, love spells, and to break discord. Its ability to calm and sedate links it to Saturnian depth and the slowing of energy. Avoid combining with sedative medications.",
+      "secondaryNames": [
+        {
+          "name": "Valeriana officinalis",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Spikenard",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "All-heal",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "sleep",
+        "protection",
+        "purification",
+        "love",
+        "calming"
+      ],
+      "extendedData": {
+        "botanicalName": "Valeriana officinalis",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "sleep and rest magic",
+          "protection and warding",
+          "purification",
+          "love and harmony",
+          "breaking discord between people",
+          "calming chaotic situations"
+        ],
+        "safetyNote": "May enhance the effect of sedative medications — avoid combining with benzodiazepines, alcohol, or other CNS depressants."
+      }
+    },
+    {
+      "canonicalName": "herb.mullein",
+      "entityType": "herb",
+      "primaryDisplayName": "Mullein",
+      "description": "Mullein (Verbascum thapsus) is a tall, striking biennial producing a dense rosette of soft, woolly silver-grey leaves in its first year and a tall spike of yellow flowers in its second. Its association with Saturnine qualities is reflected in its appearance — austere, grey, and ancient-looking. Ruled by Saturn and Fire (the dried stalk was traditionally dipped in tallow and used as a torch), mullein is used for protection against evil spirits, in divination, and in workings to provide courage and summon spirits. The leaves have long been smoked for respiratory conditions. Use caution if smoking.",
+      "secondaryNames": [
+        {
+          "name": "Verbascum thapsus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Great Mullein",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hag's Taper",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "fire",
+        "protection",
+        "divination",
+        "spirit-communication",
+        "courage",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Verbascum thapsus",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "protection against nightmares and evil spirits",
+          "spirit communication and necromancy",
+          "divination",
+          "courage workings",
+          "exorcism",
+          "cleansing by torchlight"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.mandrake",
+      "entityType": "herb",
+      "primaryDisplayName": "Mandrake",
+      "description": "Mandrake (Mandragora officinarum) is perhaps the most legendary herb of the European magical tradition — its forked, humanoid root inspired centuries of elaborate lore, including the belief that it screamed when pulled from the earth. It belongs to the nightshade family and contains tropane alkaloids (atropine, scopolamine, hyoscyamine). Ruled by Saturn and Earth, it is a herb of power, fertility, and protection — the root was carried as a powerful magical talisman. Widely substituted with American Mandrake (Podophyllum peltatum) in practice, which is also toxic. Never ingest.",
+      "secondaryNames": [
+        {
+          "name": "Mandragora officinarum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Satan's Apple",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Circe's Plant",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "power",
+        "fertility",
+        "protection",
+        "talisman",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Mandragora officinarum",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "carried as a powerful magical talisman",
+          "protection and warding",
+          "fertility and abundance",
+          "attracting money and love",
+          "amplifying magical power",
+          "necromantic rites"
+        ],
+        "safetyNote": "TOXIC — contains atropine, scopolamine, and hyoscyamine. Do not ingest any part of the plant. Skin contact with the leaves or root sap may cause irritation. Fatal in sufficient doses."
+      }
+    },
+    {
+      "canonicalName": "herb.cypress",
+      "entityType": "herb",
+      "primaryDisplayName": "Cypress",
+      "description": "The Mediterranean Cypress (Cupressus sempervirens) is a tall, dark, column-like evergreen tree planted in graveyards across the Mediterranean world, strongly associated with mourning, the dead, and the underworld. Its sombre appearance, connection to funerary rites, and use in marking the boundary between the living and dead associate it naturally with Saturn and Earth. Magically cypress is used in workings of comfort in grief, ancestral contact, longevity, and accepting change and endings. Cypress essential oil is used in transition and loss workings. Safe.",
+      "secondaryNames": [
+        {
+          "name": "Cupressus sempervirens",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Italian Cypress",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "grief",
+        "ancestral",
+        "longevity",
+        "transition",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Cupressus sempervirens",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "grief and bereavement support",
+          "ancestral contact and necromancy",
+          "accepting endings and transitions",
+          "longevity and time",
+          "funerary rites",
+          "boundary and threshold work"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.oak-bark",
+      "entityType": "herb",
+      "primaryDisplayName": "Oak Bark",
+      "description": "The Oak (Quercus robur) is the great sacred tree of many European cultures — the tree of Zeus/Jupiter in classical antiquity, of the Druids (the word 'druid' may derive from a root meaning 'oak knowledge'), of Thor, and of countless folk traditions. Despite Jupiter's claim on the living tree, some traditions assign the oak's bark — with its austerity, hardness, and long-enduring strength — to Saturn and Earth. It is used in protective magic, strength workings, and long-term endurance. Bark preparations are used medicinally as astringents. Safe in moderate amounts.",
+      "secondaryNames": [
+        {
+          "name": "Quercus robur",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "English Oak",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pedunculate Oak",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "protection",
+        "strength",
+        "endurance",
+        "druidic",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Quercus robur",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "protection and strength",
+          "endurance and stability",
+          "Druidic rites",
+          "healing and longevity",
+          "luck and fertility (acorns)",
+          "grounding and anchoring"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.yew",
+      "entityType": "herb",
+      "primaryDisplayName": "Yew",
+      "description": "The Yew (Taxus baccata) is one of the longest-lived trees in the world — some specimens exceed 4,000 years in age. Found in ancient churchyards across Britain, it stands at the boundary between the living and the dead. Ruled by Saturn and Earth, it is the tree of death, rebirth, and immortality — for while almost all parts of the yew are lethally toxic, the red aril (the berry flesh) is sweet and edible. Magically yew is associated with journeys to the underworld, necromantic rites, and contact with deep ancestral time. Extremely toxic — treat with great care.",
+      "secondaryNames": [
+        {
+          "name": "Taxus baccata",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "English Yew",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "earth",
+        "death",
+        "rebirth",
+        "ancestral",
+        "necromancy",
+        "saturnine"
+      ],
+      "extendedData": {
+        "botanicalName": "Taxus baccata",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "underworld journeys",
+          "contact with ancestors and the dead",
+          "death and rebirth rites",
+          "immortality workings",
+          "channelling deep time",
+          "ancestor veneration at graveyards"
+        ],
+        "safetyNote": "EXTREMELY TOXIC — the bark, needles, and seeds contain taxine alkaloids that are lethal in small quantities. Even handling large amounts should be done with care. The only non-toxic part is the red aril flesh (not the seed within). Keep away from children and livestock."
+      }
+    },
+    {
+      "canonicalName": "herb.belladonna",
+      "entityType": "herb",
+      "primaryDisplayName": "Belladonna",
+      "description": "Belladonna (Atropa belladonna), or Deadly Nightshade, is one of the most famous and dangerous plants in the Western magical tradition — historically used in flying ointments to produce out-of-body visions, and a component of the witch's pharmacopoeia. Its name means 'beautiful woman' in Italian, as its juice was used to dilate pupils for cosmetic effect. Ruled by Saturn and Water, it contains high concentrations of tropane alkaloids (atropine, scopolamine, hyoscyamine). Used magically for protection, astral travel, and transformation — but exclusively in the form of the whole plant as a symbol or talisman. Never ingest.",
+      "secondaryNames": [
+        {
+          "name": "Atropa belladonna",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Deadly Nightshade",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Devil's Berries",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "water",
+        "astral-travel",
+        "protection",
+        "vision",
+        "saturnine",
+        "danger"
+      ],
+      "extendedData": {
+        "botanicalName": "Atropa belladonna",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "protection and warding through fear",
+          "astral projection and trance (historically)",
+          "transformation workings",
+          "Saturn invocations",
+          "flying ointment traditions (historical study only)",
+          "death and rebirth symbolism"
+        ],
+        "safetyNote": "DEADLY POISON — all parts of the plant contain atropine and scopolamine. As few as three berries can kill a child; 10-20 berries can kill an adult. Handle only with gloves. Do not ingest under any circumstances. Do not use in flying ointments or any topical preparation without specialist medical knowledge."
+      }
+    },
+    {
+      "canonicalName": "herb.aconite",
+      "entityType": "herb",
+      "primaryDisplayName": "Aconite",
+      "description": "Aconite (Aconitum napellus), also known as Wolfsbane or Monkshood, is a strikingly beautiful perennial with deep purple-blue helmet-shaped flowers, found in mountain meadows across Europe and Asia. It is one of the most toxic plants known — its active alkaloid aconitine affects the heart and nervous system rapidly, and even skin contact with the root can cause numbness. Ruled by Saturn and Water, it has a long association in the Western magical tradition with werewolves, poison, and the protective banishment of dangerous beings. Used only as a symbol or in sealed containers — never in any preparation for ingestion or skin contact.",
+      "secondaryNames": [
+        {
+          "name": "Aconitum napellus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wolfsbane",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Monkshood",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Devil's Helmet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "herb",
+        "saturn",
+        "water",
+        "protection",
+        "banishing",
+        "saturnine",
+        "danger",
+        "werewolf-lore"
+      ],
+      "extendedData": {
+        "botanicalName": "Aconitum napellus",
+        "planet": "astrology.planet.saturn",
+        "element": "astrology.element.water",
+        "magicalUses": [
+          "banishing dangerous entities and spirits",
+          "protection in extremis",
+          "transformation and shapeshifting lore",
+          "lycanthropy associations (historical)",
+          "Saturn and death workings (symbolic)",
+          "invisibility workings"
+        ],
+        "safetyNote": "LETHAL POISON — one of the most toxic plants known. Aconitine causes rapid cardiac and neurological failure. Skin contact with the root juice causes numbness, tingling, and can be absorbed transdermally. Do not handle without gloves. Do not ingest any part under any circumstances. Fatal in very small quantities. Keep entirely away from children."
+      }
+    }
+  ]
+}

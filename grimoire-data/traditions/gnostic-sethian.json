@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.gnostic-sethian",
+    "displayName": "Gnostic (Sethian)",
+    "description": "The Sethian Gnostic tradition, the earliest and most extensive of the classical Gnostic schools, documented in the Nag Hammadi library (discovered 1945) and the Codex Brucianus. The Sethian system centres on the transcendent Invisible Spirit, the divine Mother Barbelo, and the salvific lineage of Seth. When active, shows Sethian Aeon cross-references for corresponding Valentinian entities.",
+    "attributionFields": [
+      { "linkLabel": "gnostic-parallel", "targetEntityType": "gnostic.aeon", "displayName": "Valentinian Parallel" }
+    ]
+  }
+}

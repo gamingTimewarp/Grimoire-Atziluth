@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <filter id="carve" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Stone tablet background -->
+  <rect width="200" height="280" rx="10" fill="#28231e"/>
+  <!-- Inner stone face with slight lighter tone -->
+  <rect x="7" y="7" width="186" height="266" rx="7"
+        fill="#3a332c" stroke="#504840" stroke-width="1"/>
+  <!-- Subtle vertical grain lines to suggest stone -->
+  <line x1="50"  y1="20" x2="48"  y2="260" stroke="#302a24" stroke-width="0.5" opacity="0.6"/>
+  <line x1="100" y1="15" x2="102" y2="265" stroke="#302a24" stroke-width="0.5" opacity="0.4"/>
+  <line x1="150" y1="18" x2="152" y2="262" stroke="#302a24" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Rune glyph (carved ivory) -->
+  <text x="100" y="148"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="'Noto Sans Runic','Segoe UI Historic','FreeSerif',FreeSerif,serif"
+        font-size="108"
+        fill="#c8b880"
+        filter="url(#carve)"
+        opacity="0.92">&#x16B1;</text>
+
+  <!-- Rune name -->
+  <text x="100" y="252"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="13"
+        fill="#8a7a58"
+        letter-spacing="3">RAIDHO</text>
+</svg>

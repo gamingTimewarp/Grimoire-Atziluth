@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.enochian",
+    "displayName": "Enochian",
+    "description": "The angelic magical system received by John Dee and Edward Kelley between 1582 and 1589, later systematised and expanded by the Hermetic Order of the Golden Dawn. Encompasses 30 Aethyrs (aerial realms or Calls), 91 Governors who rule their sub-regions, four elemental Great Watchtower Tablets (Air, Water, Earth, Fire) and the central Tablet of Union, the 21-letter Enochian alphabet, and an extensive hierarchy of angelic and demonic names. The Aethyrs were explored visually by Aleister Crowley in The Vision and the Voice (1909).",
+    "attributionFields": [
+      {
+        "linkLabel": "governs-aethyr",
+        "displayName": "Governs Aethyr",
+        "targetEntityType": "enochian.aethyr",
+        "allowMultiple": false,
+        "sortOrder": 0
+      },
+      {
+        "linkLabel": "attributed-element",
+        "displayName": "Element",
+        "targetEntityType": "astrology.element",
+        "allowMultiple": false,
+        "sortOrder": 1
+      }
+    ]
+  }
+}

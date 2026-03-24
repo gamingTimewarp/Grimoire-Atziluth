@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020600"/>
+      <stop offset="100%" stop-color="#081208"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#245518" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#336622" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#245518" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#245518" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- Pip header: number + decanate -->
+  <text x="24" y="45"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="26" font-weight="300" fill="#99cc77">VIII</text>
+  <!-- Planet symbol -->
+  <text x="150" y="38"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="20" fill="#448833" opacity="0.9">☉</text>
+  <!-- Sign symbol -->
+  <text x="150" y="60"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="18" fill="#336622" opacity="0.75">♍</text>
+  <!-- Decan description (tiny) -->
+  <text x="276" y="45"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,serif"
+        font-size="8.5" fill="#336622" letter-spacing="0.5">Sun in Virgo</text>
+
+  <!-- Pip arrangement: 8 pips -->
+  <g filter="url(#glow)"><g>
+  <circle cx="68" cy="98" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="68,78.25 79.61,113.97 49.22,91.9 86.78,91.9 56.39,113.97" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="232" cy="98" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="232,78.25 243.61,113.97 213.22,91.9 250.78,91.9 220.39,113.97" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="68" cy="157.8" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="68,138.05 79.61,173.77 49.22,151.7 86.78,151.7 56.39,173.77" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="232" cy="157.8" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="232,138.05 243.61,173.77 213.22,151.7 250.78,151.7 220.39,173.77" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="68" cy="272.2" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="68,252.45 79.61,288.17 49.22,266.1 86.78,266.1 56.39,288.17" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="232" cy="272.2" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="232,252.45 243.61,288.17 213.22,266.1 250.78,266.1 220.39,288.17" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="68" cy="332" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="68,312.25 79.61,347.97 49.22,325.9 86.78,325.9 56.39,347.97" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g>
+  <g>
+  <circle cx="232" cy="332" r="24.08" fill="none" stroke="#448833" stroke-width="2.52"/>
+  <polygon points="232,312.25 243.61,347.97 213.22,325.9 250.78,325.9 220.39,347.97" fill="none" stroke="#448833" stroke-width="2.52" stroke-linejoin="round"/>
+</g></g>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#99cc77" letter-spacing="2"
+        filter="url(#glow)">Prudence</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#336622" letter-spacing="3"
+        opacity="0.8">VIII of Disks</text>
+</svg>

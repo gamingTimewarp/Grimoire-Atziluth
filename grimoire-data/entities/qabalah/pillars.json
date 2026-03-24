@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.pillar.mercy",
+      "entityType": "qabalah.pillar",
+      "primaryDisplayName": "Pillar of Mercy",
+      "description": "The right-hand pillar of the Tree of Life, the Pillar of Mercy or Compassion (also called the Pillar of Wisdom). It comprises Chokmah (2), Chesed (4), and Netzach (7). This pillar represents the positive, expansive, masculine-active force in the divine economy — the outpouring of grace, wisdom, and creative energy. In the human body it corresponds to the right side. In the initiatory tradition it is associated with the Boaz pillar of Solomon's Temple. Its qualities are expansion, grace, abundance, and the outward movement of the divine will.",
+      "secondaryNames": [
+        { "name": "Pillar of Compassion", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Pillar of Wisdom", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Right Pillar", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "pillar", "tree-of-life"],
+      "extendedData": {
+        "side": "right",
+        "sephiroth": ["qabalah.sephira.chokmah", "qabalah.sephira.chesed", "qabalah.sephira.netzach"],
+        "templeColumn": "Jachin",
+        "keywords": ["mercy", "expansion", "grace", "wisdom", "masculine", "active"]
+      }
+    },
+    {
+      "canonicalName": "qabalah.pillar.severity",
+      "entityType": "qabalah.pillar",
+      "primaryDisplayName": "Pillar of Severity",
+      "description": "The left-hand pillar of the Tree of Life, the Pillar of Severity or Strength (also called the Pillar of Understanding). It comprises Binah (3), Geburah (5), and Hod (8). This pillar represents the limiting, contracting, feminine-receptive force — the principle of form, judgement, and necessary restriction. Without the Pillar of Severity, the unchecked mercy of the right pillar would dissolve all form into undifferentiated light. In the human body it corresponds to the left side. In the initiatory tradition it is associated with the Jachin pillar of Solomon's Temple (attribution varies by source). Its qualities are limitation, judgement, form, and the inward movement that gives structure to creative energy.",
+      "secondaryNames": [
+        { "name": "Pillar of Strength", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Pillar of Understanding", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Left Pillar", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "pillar", "tree-of-life"],
+      "extendedData": {
+        "side": "left",
+        "sephiroth": ["qabalah.sephira.binah", "qabalah.sephira.geburah", "qabalah.sephira.hod"],
+        "templeColumn": "Boaz",
+        "keywords": ["severity", "limitation", "form", "understanding", "feminine", "receptive"]
+      }
+    },
+    {
+      "canonicalName": "qabalah.pillar.equilibrium",
+      "entityType": "qabalah.pillar",
+      "primaryDisplayName": "Middle Pillar",
+      "description": "The central pillar of the Tree of Life, the Pillar of Equilibrium or Mildness. It comprises Kether (1), Da'ath (hidden), Tiphareth (6), Yesod (9), and Malkuth (10). This pillar is the great axis of the Tree — the spine of the Adam Kadmon, the channel through which the divine light descends from the unmanifest Ain Soph through the Supernals to the material world, and through which the Great Work of ascent is accomplished. It balances the two side pillars. The 'Middle Pillar Exercise' in the Hermetic tradition is a foundational magical practice centred on this axis. Its qualities are balance, integration, the reconciliation of opposites, and the direct path of ascent and descent.",
+      "secondaryNames": [
+        { "name": "Pillar of Mildness", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Pillar of Equilibrium", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Central Pillar", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "pillar", "tree-of-life"],
+      "extendedData": {
+        "side": "middle",
+        "sephiroth": ["qabalah.sephira.kether", "qabalah.sephira.daath", "qabalah.sephira.tiphareth", "qabalah.sephira.yesod", "qabalah.sephira.malkuth"],
+        "templeColumn": null,
+        "keywords": ["equilibrium", "balance", "integration", "middle way", "axis", "ascent"]
+      }
+    }
+  ]
+}

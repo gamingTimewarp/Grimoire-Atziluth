@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "geometry.shape.vesica-piscis",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Vesica Piscis",
+      "description": "The Vesica Piscis is formed by the intersection of two equal circles whose centres each lie on the circumference of the other, producing a lens-shaped region whose width-to-height ratio is 1 to √3. The shape is one of the most ancient and widespread symbols in sacred geometry, appearing in Euclid's Elements as the foundation of basic geometric constructions, and in Pythagorean and Neoplatonic philosophy as an emblem of the generative principle — the womb from which all geometric forms emerge. In Christian iconography it became the mandorla (almond-halo) surrounding Christ or the Virgin, signifying the boundary between heaven and earth, the divine passing into the world. The fish shape also gave rise to the ichthys (Christian fish symbol), and the geometry encodes proportions found in Gothic cathedral design, sacred architecture, and the human body.",
+      "secondaryNames": [
+        { "name": "Vessel of the Fish", "languageTag": "en-translation", "visible": true, "sortOrder": 0 },
+        { "name": "Mandorla", "languageTag": "it", "visible": true, "sortOrder": 1 },
+        { "name": "Ichthys", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["sacred-geometry", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "constructedFrom": "two equal intersecting circles",
+          "widthToHeightRatio": "1:√3",
+          "interiorAngle": 60,
+          "curveType": "circular arcs"
+        },
+        "numericalSignificance": ["√3", "duality", "2"],
+        "traditions": ["Pythagorean", "Christian", "Islamic", "Gothic architecture"],
+        "architecturalUse": "proportioning system for Gothic cathedrals"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.flower-of-life",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Flower of Life",
+      "description": "The Flower of Life is a geometric figure composed of multiple evenly-spaced, overlapping circles arranged within a hexagonal grid, forming a flower-like pattern with six-fold symmetry — the full pattern uses 19 complete circles surrounded by a bounding circle. It is among the oldest known sacred symbols, carved into the Temple of Osiris at Abydos, Egypt (variously dated but possibly over 6,000 years old), and found in ancient sites across Mesopotamia, India, China, and medieval Europe. Esoteric tradition holds that the Flower of Life contains the templates of all existence, encoding the five Platonic solids, the Kabbalah's Tree of Life, and the mathematical ratios of the physical universe within its overlapping arcs. Modern sacred geometry teachers (particularly Drunvalo Melchizedek) consider it the primary symbol of the Merkaba (light-body) tradition and a geometric map of creation.",
+      "secondaryNames": [
+        { "name": "Flos Vitae", "languageTag": "la", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["sacred-geometry", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "circleCount": 19,
+          "symmetry": "hexagonal (6-fold)",
+          "gridType": "close-packed hexagonal",
+          "boundingShape": "circle"
+        },
+        "numericalSignificance": ["6", "19", "7"],
+        "traditions": ["Egyptian", "Pythagorean", "Kabbalistic", "New Age"],
+        "contains": ["Seed of Life", "Fruit of Life", "Metatron's Cube", "Platonic solids", "Tree of Life"],
+        "historicalSites": ["Temple of Osiris, Abydos", "Ephesus", "Masada", "various medieval European cathedrals"]
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.seed-of-life",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Seed of Life",
+      "description": "The Seed of Life consists of seven circles of equal size arranged so that six surround a central seventh, each circle centred on the circumference of the central circle — forming the inner core of the Flower of Life. Geometrically this is the densest possible packing of seven equal circles in a plane, and the pattern arises naturally when a circle is divided by its own radius. The seven circles are widely associated with the seven days of creation in the Abrahamic traditions, the seven classical planets, the seven chakras, and the seven notes of the diatonic scale — all instances of the fundamental seven-fold structure that recurs throughout nature and esoteric cosmology. As the generative heart of the larger Flower of Life pattern, the Seed of Life is understood to encode the blueprint of life before it has fully expressed itself.",
+      "secondaryNames": [
+        { "name": "Genesis Pattern", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["sacred-geometry", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "circleCount": 7,
+          "symmetry": "hexagonal (6-fold)",
+          "relationship": "core of the Flower of Life"
+        },
+        "numericalSignificance": ["7", "6", "1"],
+        "traditions": ["Abrahamic", "Pythagorean", "Kabbalistic"],
+        "associations": ["seven days of creation", "seven planets", "seven chakras", "seven musical notes"]
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.metatrons-cube",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Metatron's Cube",
+      "description": "Metatron's Cube is a complex two-dimensional figure derived from the Fruit of Life (the 13-circle pattern extracted from the Flower of Life) by drawing straight lines from the centre of each circle to the centre of every other circle, producing 78 lines total. The resulting figure contains within it the two-dimensional projections of all five Platonic solids — the tetrahedron, cube, octahedron, dodecahedron, and icosahedron — simultaneously, and is understood in Kabbalistic and Hermetic tradition as the geometric blueprint of all three-dimensional forms. It is named for the archangel Metatron, who in Kabbalistic tradition is the divine scribe and the highest of the angels, said to have constructed the universe according to this geometric template. The figure is used in meditative practice as a focus for accessing divine order, activating the light-body, and understanding the mathematical structure underlying physical reality.",
+      "secondaryNames": [
+        { "name": "Fruit of Life (extended)", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["sacred-geometry", "geometry", "qabalah"],
+      "extendedData": {
+        "geometricProperties": {
+          "circleCount": 13,
+          "lineCount": 78,
+          "symmetry": "hexagonal (6-fold)",
+          "containsPlatonicSolids": true
+        },
+        "numericalSignificance": ["13", "78"],
+        "traditions": ["Kabbalistic", "Hermetic", "New Age"],
+        "contains": ["tetrahedron", "cube", "octahedron", "dodecahedron", "icosahedron"],
+        "angelicAttribution": "Metatron"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.sri-yantra",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Sri Yantra",
+      "description": "The Sri Yantra (श्री यन्त्र, 'sacred instrument') is the most revered and geometrically complex yantra in the Hindu and Tantric traditions, formed by nine interlocking triangles — five pointing downward (representing Shakti, the divine feminine) and four pointing upward (representing Shiva, the divine masculine) — arranged around a central point (bindu) and producing a pattern of 43 smaller triangles. The construction of a mathematically perfect Sri Yantra is extraordinarily difficult; the nine triangles must be arranged so that all intersection points are simultaneous, a problem that occupied Indian mathematicians for centuries. In Tantric cosmology the Sri Yantra encodes the entire process of cosmic emanation from the primordial unity of Shiva-Shakti outward through increasingly differentiated levels of manifestation, culminating in the outermost square (representing the physical world). It is used as a focus of deep meditation (upasana) and is said to contain all other yantras within itself.",
+      "secondaryNames": [
+        { "name": "श्री यन्त्र", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Shri Yantra", "languageTag": "sa-roman", "visible": true, "sortOrder": 1 },
+        { "name": "Shri Chakra", "languageTag": "sa-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["sacred-geometry", "geometry", "hinduism", "tantra"],
+      "extendedData": {
+        "geometricProperties": {
+          "triangleCount": 9,
+          "smallerTrianglesGenerated": 43,
+          "upwardTriangles": 4,
+          "downwardTriangles": 5,
+          "centralPoint": "bindu"
+        },
+        "numericalSignificance": ["9", "43", "5", "4"],
+        "traditions": ["Hindu", "Tantric", "Shaiva", "Shakta"],
+        "cosmologicalMeaning": "map of cosmic emanation from Shiva-Shakti unity to manifest world",
+        "practiceUse": "yantra meditation (upasana)",
+        "origin": "India, vedic tradition"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.tetrahedron",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Tetrahedron",
+      "description": "The tetrahedron is the simplest of the five Platonic solids — the convex polyhedron with four equilateral triangular faces, four vertices, and six edges, the minimum number of faces needed to enclose three-dimensional space. Plato, in the Timaeus, assigned the tetrahedron to the element of Fire, reasoning that its sharp points and minimum volume make it the most penetrating and mobile of the solids, the one that most resembles the leaping, piercing quality of flame. In Hermetic and sacred geometry traditions the tetrahedron embodies active, initiatory energy: the upward-pointing tetrahedron represents masculine, solar, fiery force, while the downward-pointing tetrahedron (the Star Tetrahedron or Merkaba when interlocked) represents feminine, lunar, watery reception. The self-dual nature of the tetrahedron — it maps onto itself under duality operations — makes it the most primordial and self-contained of the Platonic forms.",
+      "secondaryNames": [
+        { "name": "Triangular Pyramid", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Fire Solid", "languageTag": "en-hermetic", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["sacred-geometry", "platonic-solid", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "faces": 4,
+          "vertices": 4,
+          "edges": 6,
+          "faceShape": "equilateral triangle",
+          "schlafliSymbol": "{3,3}",
+          "dualSolid": "self-dual"
+        },
+        "elementalAttributionRWS": "fire",
+        "elementCN": "astrology.element.fire",
+        "numericalSignificance": ["4", "3"],
+        "traditions": ["Platonic", "Hermetic", "Pythagorean"],
+        "qabalisticAttributions": "Chokmah (Wisdom) in some systems"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.cube",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Cube",
+      "description": "The cube (hexahedron) is the most familiar of the Platonic solids — the perfectly regular solid with six square faces, eight vertices, and twelve edges, embodying the three dimensions of physical space in equal measure. Plato assigned the cube to the element of Earth in the Timaeus, on the grounds of its stability and solidity: it sits flat and immovable on any face, just as earth is the most stable and stationary of the elements. In Hermetic and Kabbalistic tradition the cube corresponds to the material world (the cube of space underlies certain Kabbalah systems), the physical body, and the number eight (its vertex count) — which in Hebrew gematria relates to infinity and the octave. Metatron's Cube contains the projection of the hexahedron, and the ancient Romans used cubic stone altars (cubilia) as the most stable foundation for sacred objects and votive offerings.",
+      "secondaryNames": [
+        { "name": "Hexahedron", "languageTag": "el-root", "visible": true, "sortOrder": 0 },
+        { "name": "Earth Solid", "languageTag": "en-hermetic", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["sacred-geometry", "platonic-solid", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "faces": 6,
+          "vertices": 8,
+          "edges": 12,
+          "faceShape": "square",
+          "schlafliSymbol": "{4,3}",
+          "dualSolid": "octahedron"
+        },
+        "elementalAttributionRWS": "earth",
+        "elementCN": "astrology.element.earth",
+        "numericalSignificance": ["6", "8", "12"],
+        "traditions": ["Platonic", "Hermetic", "Pythagorean", "Kabbalistic"]
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.octahedron",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Octahedron",
+      "description": "The octahedron is a Platonic solid with eight equilateral triangular faces, six vertices, and twelve edges — it is the dual of the cube, meaning the vertex of one corresponds to the face of the other. Plato assigned it to the element of Air in the Timaeus, reasoning that air particles are smoother and more mobile than fire (tetrahedron) but more active than water (icosahedron). The octahedron has perfect symmetry in three axes and a natural tendency to rotate freely when held at two opposite vertices, which reinforces its association with the element of movement, breath, and the intellect. In Hermetic tradition the octahedron corresponds to the Ruach (the breath-soul in Kabbalah), the mediating principle between the upper fire and the lower water, and to the sphere of Mercury which governs communication and the intellect.",
+      "secondaryNames": [
+        { "name": "Air Solid", "languageTag": "en-hermetic", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["sacred-geometry", "platonic-solid", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "faces": 8,
+          "vertices": 6,
+          "edges": 12,
+          "faceShape": "equilateral triangle",
+          "schlafliSymbol": "{3,4}",
+          "dualSolid": "cube"
+        },
+        "elementalAttributionRWS": "air",
+        "elementCN": "astrology.element.air",
+        "numericalSignificance": ["8", "6"],
+        "traditions": ["Platonic", "Hermetic", "Pythagorean"]
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.dodecahedron",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Dodecahedron",
+      "description": "The dodecahedron is a Platonic solid with twelve pentagonal faces, twenty vertices, and thirty edges — the rarest and most mysterious of the five Platonic solids, and the one whose faces are based on the pentagon (and therefore encode the golden ratio φ throughout their proportions). Plato, in the Timaeus, assigned the dodecahedron to the cosmos itself (the fifth element, aether or quintessence), saying that the gods used it for the arrangement of the heavens; the twelve faces were associated with the twelve signs of the zodiac. Its intimate relationship with the golden ratio and the icosahedron (its dual) makes it a symbol of the harmony underlying the apparent complexity of the physical cosmos. In Renaissance Hermeticism the dodecahedron represented the quinta essentia — the transcendent fifth substance beyond the four terrestrial elements — and it appeared in Luca Pacioli's De Divina Proportione illustrated by Leonardo da Vinci.",
+      "secondaryNames": [
+        { "name": "Aether Solid", "languageTag": "en-hermetic", "visible": true, "sortOrder": 0 },
+        { "name": "Cosmic Solid", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["sacred-geometry", "platonic-solid", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "faces": 12,
+          "vertices": 20,
+          "edges": 30,
+          "faceShape": "regular pentagon",
+          "schlafliSymbol": "{5,3}",
+          "dualSolid": "icosahedron",
+          "goldenRatioRelation": "pentagon faces encode φ throughout"
+        },
+        "elementalAttributionRWS": "aether/cosmos",
+        "numericalSignificance": ["12", "20", "5"],
+        "traditions": ["Platonic", "Hermetic", "Pythagorean", "Renaissance"],
+        "qabalisticAttributions": "Kether in some systems; the supernal world"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.icosahedron",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Icosahedron",
+      "description": "The icosahedron is a Platonic solid with twenty equilateral triangular faces, twelve vertices, and thirty edges — the dual of the dodecahedron. Plato assigned it to the element of Water in the Timaeus, reasoning that its many faces make it the smoothest and most fluid of the solids (after the sphere), and that its round appearance corresponds to the flowing, yielding quality of water. The icosahedron appears throughout nature: many viruses have icosahedral symmetry (the optimal structure for a protein shell enclosing maximum volume), and buckminsterfullerene (C₆₀) is related to the truncated icosahedron. In Hermetic tradition it corresponds to the Nephesh (the animal soul in Kabbalah) and the emotional, instinctual life — the watery depths of the unconscious. Its twelve vertices correspond to the twelve signs of the zodiac in some esoteric systems.",
+      "secondaryNames": [
+        { "name": "Water Solid", "languageTag": "en-hermetic", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["sacred-geometry", "platonic-solid", "geometry"],
+      "extendedData": {
+        "geometricProperties": {
+          "faces": 20,
+          "vertices": 12,
+          "edges": 30,
+          "faceShape": "equilateral triangle",
+          "schlafliSymbol": "{3,5}",
+          "dualSolid": "dodecahedron"
+        },
+        "elementalAttributionRWS": "water",
+        "elementCN": "astrology.element.water",
+        "numericalSignificance": ["20", "12"],
+        "traditions": ["Platonic", "Hermetic", "Pythagorean"]
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.golden-ratio",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Golden Ratio",
+      "description": "The golden ratio (φ ≈ 1.6180339887…) is the irrational number defined by the proportion in which a line is divided such that the ratio of the whole to the larger segment equals the ratio of the larger segment to the smaller; algebraically it is the positive root of x² = x + 1. It appears throughout natural growth patterns — the spiral arrangements of sunflower seeds, pinecone scales, nautilus shells, and galaxy arms — and was called the 'divine proportion' (divina proportione) by Luca Pacioli in 1509, with illustrations by Leonardo da Vinci. Euclid called it the 'extreme and mean ratio' and used it in the construction of the regular pentagon and dodecahedron; the Parthenon, many Gothic cathedrals, and numerous Renaissance artworks are claimed to encode it in their proportions. In Pythagorean and esoteric tradition φ represents the living principle of harmonic self-similarity — the mathematical signature of growth, beauty, and the divine ordering of nature.",
+      "secondaryNames": [
+        { "name": "Divine Proportion", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "φ (phi)", "languageTag": "el-symbol", "visible": true, "sortOrder": 1 },
+        { "name": "Sectio Aurea", "languageTag": "la", "visible": true, "sortOrder": 2 },
+        { "name": "Golden Section", "languageTag": "en-alt", "visible": true, "sortOrder": 3 },
+        { "name": "Extreme and Mean Ratio", "languageTag": "en-euclidean", "visible": false, "sortOrder": 4 }
+      ],
+      "tags": ["sacred-geometry", "geometry", "number"],
+      "extendedData": {
+        "geometricProperties": {
+          "value": 1.6180339887,
+          "algebraicDefinition": "positive root of x² = x + 1",
+          "continued_fraction": "[1; 1, 1, 1, ...]",
+          "type": "irrational algebraic number",
+          "symbol": "φ"
+        },
+        "numericalSignificance": ["φ", "Fibonacci sequence", "pentagonal symmetry"],
+        "naturalOccurrences": ["phyllotaxis", "nautilus shell", "sunflower spirals", "galaxy arms"],
+        "traditions": ["Pythagorean", "Platonic", "Renaissance", "Islamic architecture"],
+        "architecturalUse": "Parthenon, Gothic cathedrals, Renaissance art"
+      }
+    },
+    {
+      "canonicalName": "geometry.shape.tree-of-life-geometry",
+      "entityType": "geometry.shape",
+      "primaryDisplayName": "Tree of Life (Geometric)",
+      "description": "The Tree of Life (Etz Chaim) is the central diagram of Kabbalistic cosmology — a geometric arrangement of ten spheres (Sephiroth) connected by twenty-two paths (corresponding to the letters of the Hebrew alphabet) that encodes the structure of divine emanation, the human soul, and the physical universe simultaneously. Geometrically, the arrangement embeds a specific set of proportional relationships: the three vertical columns (pillars) are in golden-ratio proportions in many traditional drawings, and the figure can be derived from the Flower of Life pattern. The ten Sephiroth map onto the four Kabbalistic worlds, the anatomy of Adam Kadmon (Primordial Man), the planets, the angelic orders, and the Hebrew alphabet in a comprehensive symbol-system that has served as the backbone of Western esotericism since at least the 12th century. The diagram was first printed in the Portae Lucis (1516) and became central to Renaissance Hermeticism, Rosicrucianism, and later to the Hermetic Order of the Golden Dawn.",
+      "secondaryNames": [
+        { "name": "Etz Chaim", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "עץ חיים", "languageTag": "he-script", "visible": true, "sortOrder": 1 },
+        { "name": "Otz Chiim", "languageTag": "he-romanized", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["sacred-geometry", "geometry", "qabalah"],
+      "extendedData": {
+        "geometricProperties": {
+          "sphereCount": 10,
+          "pathCount": 22,
+          "columnCount": 3,
+          "arrangement": "three pillars with ten sephiroth"
+        },
+        "numericalSignificance": ["10", "22", "32", "3"],
+        "traditions": ["Kabbalistic", "Hermetic", "Rosicrucian", "Golden Dawn"],
+        "derivedFrom": "Flower of Life (disputed)",
+        "firstPrinted": "Portae Lucis, 1516"
+      }
+    }
+  ]
+}

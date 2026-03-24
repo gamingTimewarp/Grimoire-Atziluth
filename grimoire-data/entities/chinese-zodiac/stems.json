@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "chinese-zodiac.stem.jia",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Jiǎ",
+      "description": "Jiǎ (甲) is the first of the Ten Heavenly Stems and the elder yang aspect of Wood, representing the vigorous upward thrust of new growth — the sprouting seed splitting open its shell with irresistible force. As the opening of the entire stem cycle, Jiǎ carries the energy of initiation, leadership, and uncompromising idealism, much as spring's first growth breaks through cold soil without hesitation. In traditional Chinese astrology its planetary association is Jupiter, the great expander, and its direction is due east where the sun rises and the year begins. In the sexagenary cycle (gānzhī) Jiǎ pairs sequentially with the six yang earthly branches to produce thirty of the sixty pillar combinations that structure the Four Pillars (Bāzì) calendar system.",
+      "secondaryNames": [
+        {
+          "name": "甲",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jiǎ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kinoe",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "wood",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "chineseChar": "甲",
+        "pinyin": "Jiǎ",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yang",
+        "direction": "east",
+        "season": "spring",
+        "planet": "astrology.planet.jupiter",
+        "keywords": [
+          "initiation",
+          "leadership",
+          "pioneering",
+          "idealism",
+          "growth",
+          "courage",
+          "ambition"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.yi",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Yǐ",
+      "description": "Yǐ (乙) is the second Heavenly Stem and the yin aspect of Wood — not the bold sapling of Jiǎ but the supple vine and trailing grass that bend gracefully around obstacles rather than confronting them directly. Where Jiǎ charges forward, Yǐ works through subtlety, adaptability, and aesthetic sensitivity, embodying the Daoist virtue of yielding as a form of strength. Its planetary ruler in the traditional Chinese system is also Jupiter, but Yǐ's expression is inward and artistic rather than outward and commanding. In Four Pillars astrology a Yǐ day master is often associated with charm, creativity, and an intuitive intelligence that prefers indirect influence over open authority.",
+      "secondaryNames": [
+        {
+          "name": "乙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Yǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kinoto",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "wood",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "chineseChar": "乙",
+        "pinyin": "Yǐ",
+        "wuxingElement": "wuxing.phase.wood",
+        "polarity": "taoism.principle.yin",
+        "direction": "east",
+        "season": "spring",
+        "planet": "astrology.planet.jupiter",
+        "keywords": [
+          "adaptability",
+          "subtlety",
+          "creativity",
+          "charm",
+          "flexibility",
+          "artistry",
+          "endurance"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.bing",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Bǐng",
+      "description": "Bǐng (丙) is the third Heavenly Stem and the yang aspect of Fire — the blazing sun at its zenith, radiantly outward, warming all things without discrimination. Bǐng represents the expansive, joyful energy of midsummer: brightness, warmth, communication, and an open-hearted generosity that can sometimes lack boundaries. Its planetary association is Mars, the fiery activator, and its direction is south, the realm of heat and the full expression of yang. In Four Pillars Bǐng day masters are characteristically extroverted, inspiring, and emotionally transparent — they illuminate those around them but may burn out through over-giving.",
+      "secondaryNames": [
+        {
+          "name": "丙",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Bǐng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hinoe",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "fire",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "chineseChar": "丙",
+        "pinyin": "Bǐng",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yang",
+        "direction": "south",
+        "season": "summer",
+        "planet": "astrology.planet.mars",
+        "keywords": [
+          "brilliance",
+          "warmth",
+          "generosity",
+          "extroversion",
+          "enthusiasm",
+          "visibility",
+          "joy"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.ding",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Dīng",
+      "description": "Dīng (丁) is the fourth Heavenly Stem and the yin aspect of Fire — not the sun of Bǐng but the candle, the hearth-fire, the precisely directed flame of the craftsman's forge. Dīng's fire is contained, focused, and purposeful, capable of sustained illumination where the blazing sun would consume. Its planetary ruler is Mars, but the expression is refined, cautious, and deeply perceptive rather than sweeping. In Four Pillars Dīng day masters are known for their emotional depth, intuitive precision, and the quiet but steady influence they exert on those around them — the flame that inspires contemplation rather than the blaze that commands attention.",
+      "secondaryNames": [
+        {
+          "name": "丁",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dīng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hinoto",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "fire",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "chineseChar": "丁",
+        "pinyin": "Dīng",
+        "wuxingElement": "wuxing.phase.fire",
+        "polarity": "taoism.principle.yin",
+        "direction": "south",
+        "season": "summer",
+        "planet": "astrology.planet.mars",
+        "keywords": [
+          "precision",
+          "insight",
+          "warmth",
+          "contemplation",
+          "focus",
+          "depth",
+          "nurture"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.wu",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Wù",
+      "description": "Wù (戊) is the fifth Heavenly Stem and the yang aspect of Earth — the great mountain, the broad plain, the steadfast and immovable centre of the compass. As the yang Earth stem Wù represents stability at its most monumental: grounding, containing, and sustaining all things through sheer solidity and trustworthiness. Its planetary association is Saturn, the planet of discipline and structure, and its direction is the centre, the pivot around which all other directions revolve. In Four Pillars Wù day masters are typically reliable, principled, and methodical, with a gravitational quality that draws others to depend on them — but they must guard against inflexibility.",
+      "secondaryNames": [
+        {
+          "name": "戊",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wù",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tsuchinoe",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "earth",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "chineseChar": "戊",
+        "pinyin": "Wù",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yang",
+        "direction": "centre",
+        "season": "late summer / transitional",
+        "planet": "astrology.planet.saturn",
+        "keywords": [
+          "stability",
+          "reliability",
+          "solidity",
+          "trustworthiness",
+          "groundedness",
+          "endurance",
+          "principle"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.ji",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Jǐ",
+      "description": "Jǐ (己) is the sixth Heavenly Stem and the yin aspect of Earth — not the mountain of Wù but the fertile garden soil, the moist loam that receives the seed and nurtures growth with quiet, patient care. Jǐ Earth is receptive, nourishing, and deeply attuned to the needs of others, making it a profoundly yin expression of the stabilising principle. Its planetary ruler is Saturn, and it shares the central direction with Wù, but where Wù holds steady, Jǐ sustains and nurtures. In Four Pillars astrology Jǐ day masters are characteristically empathetic, detail-oriented, and quietly indispensable — the steady ground that enables everything else to flourish.",
+      "secondaryNames": [
+        {
+          "name": "己",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Tsuchinoto",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "earth",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "chineseChar": "己",
+        "pinyin": "Jǐ",
+        "wuxingElement": "wuxing.phase.earth",
+        "polarity": "taoism.principle.yin",
+        "direction": "centre",
+        "season": "late summer / transitional",
+        "planet": "astrology.planet.saturn",
+        "keywords": [
+          "nourishment",
+          "receptivity",
+          "patience",
+          "empathy",
+          "fertility",
+          "detail",
+          "service"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.geng",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Gēng",
+      "description": "Gēng (庚) is the seventh Heavenly Stem and the yang aspect of Metal — raw ore, the sword, the axe, the unyielding hardness of refined metal before it is shaped. Gēng represents the principle of decisive severance: cutting away what is unnecessary, harvesting what is ripe, and facing truth without sentimentality. Its planetary ruler in the traditional system is Venus, here understood as the refining, clarifying principle rather than a soft or romantic one, and its direction is west, the realm of sunset and the harvest season. In Four Pillars Gēng day masters are forthright, determined, and courageous — sometimes blunt to the point of aggression, but always direct.",
+      "secondaryNames": [
+        {
+          "name": "庚",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gēng",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kanoe",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "metal",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "chineseChar": "庚",
+        "pinyin": "Gēng",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yang",
+        "direction": "west",
+        "season": "autumn",
+        "planet": "astrology.planet.venus",
+        "keywords": [
+          "decisiveness",
+          "courage",
+          "forthrightness",
+          "strength",
+          "harvesting",
+          "precision",
+          "resolve"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.xin",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Xīn",
+      "description": "Xīn (辛) is the eighth Heavenly Stem and the yin aspect of Metal — the polished jewel, the fine blade, the delicate instrument of precision rather than raw force. Where Gēng is the broadsword, Xīn is the surgeon's scalpel: exquisitely refined, discriminating, and aesthetically exacting. Its planetary ruler is Venus, and in this yin expression the Venusian qualities of beauty, elegance, and refined taste come to the fore alongside the Metal qualities of clarity and discernment. In Four Pillars Xīn day masters are sensitive, perceptive, and often possess a sharp critical faculty paired with a genuine love of beauty and craftsmanship.",
+      "secondaryNames": [
+        {
+          "name": "辛",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Xīn",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kanoto",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "metal",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "chineseChar": "辛",
+        "pinyin": "Xīn",
+        "wuxingElement": "wuxing.phase.metal",
+        "polarity": "taoism.principle.yin",
+        "direction": "west",
+        "season": "autumn",
+        "planet": "astrology.planet.venus",
+        "keywords": [
+          "refinement",
+          "elegance",
+          "discernment",
+          "sensitivity",
+          "aesthetics",
+          "precision",
+          "beauty"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.ren",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Rén",
+      "description": "Rén (壬) is the ninth Heavenly Stem and the yang aspect of Water — the vast ocean, the great river, the tremendous reservoir of potential energy held in water at its most expansive and powerful. Rén represents depth of wisdom, strategic vision, the capacity to contain multitudes, and the inexorable force of water that can wear away stone or sweep all before it when released. Its planetary ruler is Mercury, here understood as the quicksilver intelligence that moves between realms, and its direction is north, the realm of winter, depth, and hidden reserves. In Four Pillars Rén day masters are typically visionary, adaptable, and quietly magnetic — their depth often conceals formidable power.",
+      "secondaryNames": [
+        {
+          "name": "壬",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rén",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Mizunoe",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "water",
+        "yang"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "chineseChar": "壬",
+        "pinyin": "Rén",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yang",
+        "direction": "north",
+        "season": "winter",
+        "planet": "astrology.planet.mercury",
+        "keywords": [
+          "depth",
+          "wisdom",
+          "vision",
+          "adaptability",
+          "power",
+          "strategy",
+          "resourcefulness"
+        ]
+      }
+    },
+    {
+      "canonicalName": "chinese-zodiac.stem.gui",
+      "entityType": "chinese-zodiac.stem",
+      "primaryDisplayName": "Guǐ",
+      "description": "Guǐ (癸) is the tenth and final Heavenly Stem and the yin aspect of Water — not the ocean of Rén but the gentle rain, the dew on morning grass, the underground spring quietly nourishing roots in darkness. Guǐ is the most yin of all ten stems: receptive, intuitive, and deeply connected to the invisible currents of feeling and perception that underlie surface reality. As the last of the ten stems it carries an energy of completion and transition — the rain that ends one cycle and prepares the ground for the next Jiǎ. Its planetary ruler is Mercury, and in Four Pillars Guǐ day masters are characterised by heightened intuition, emotional sensitivity, and an almost psychic attunement to their environment.",
+      "secondaryNames": [
+        {
+          "name": "癸",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Guǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Mizunoto",
+          "languageTag": "ja-translit",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "chinese-zodiac",
+        "heavenly-stem",
+        "water",
+        "yin"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "chineseChar": "癸",
+        "pinyin": "Guǐ",
+        "wuxingElement": "wuxing.phase.water",
+        "polarity": "taoism.principle.yin",
+        "direction": "north",
+        "season": "winter",
+        "planet": "astrology.planet.mercury",
+        "keywords": [
+          "intuition",
+          "receptivity",
+          "sensitivity",
+          "completion",
+          "transition",
+          "perception",
+          "mystery"
+        ]
+      }
+    }
+  ]
+}

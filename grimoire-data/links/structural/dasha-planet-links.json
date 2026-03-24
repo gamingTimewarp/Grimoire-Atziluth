@@ -1,0 +1,635 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "jyotish.mahadasha.ketu",
+      "target": "astrology.node.ketu",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.venus",
+      "target": "astrology.planet.venus",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.sun",
+      "target": "astrology.planet.sol",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.moon",
+      "target": "astrology.planet.luna",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.mars",
+      "target": "astrology.planet.mars",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.rahu",
+      "target": "astrology.node.rahu",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.jupiter",
+      "target": "astrology.planet.jupiter",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.saturn",
+      "target": "astrology.planet.saturn",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.mahadasha.mercury",
+      "target": "astrology.planet.mercury",
+      "label": "ruled-by",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-ketu",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-venus",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-sun",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-moon",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-mars",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-rahu",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-jupiter",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-saturn",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.ketu-mercury",
+      "target": "jyotish.mahadasha.ketu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-venus",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-sun",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-moon",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-mars",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-rahu",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-jupiter",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-saturn",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-mercury",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.venus-ketu",
+      "target": "jyotish.mahadasha.venus",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-sun",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-moon",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-mars",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-rahu",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-jupiter",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-saturn",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-mercury",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-ketu",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.sun-venus",
+      "target": "jyotish.mahadasha.sun",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-moon",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-mars",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-rahu",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-jupiter",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-saturn",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-mercury",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-ketu",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-venus",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.moon-sun",
+      "target": "jyotish.mahadasha.moon",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-mars",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-rahu",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-jupiter",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-saturn",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-mercury",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-ketu",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-venus",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-sun",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mars-moon",
+      "target": "jyotish.mahadasha.mars",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-rahu",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-jupiter",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-saturn",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-mercury",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-ketu",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-venus",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-sun",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-moon",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.rahu-mars",
+      "target": "jyotish.mahadasha.rahu",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-jupiter",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-saturn",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-mercury",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-ketu",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-venus",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-sun",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-moon",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-mars",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.jupiter-rahu",
+      "target": "jyotish.mahadasha.jupiter",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-saturn",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-mercury",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-ketu",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-venus",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-sun",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-moon",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-mars",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-rahu",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.saturn-jupiter",
+      "target": "jyotish.mahadasha.saturn",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-mercury",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-ketu",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-venus",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-sun",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-moon",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-mars",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-rahu",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-jupiter",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    },
+    {
+      "source": "jyotish.antardasha.mercury-saturn",
+      "target": "jyotish.mahadasha.mercury",
+      "label": "part-of",
+      "bidirectional": false,
+      "traditionScope": []
+    }
+  ]
+}

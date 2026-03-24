@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "angel.order.chaioth-ha-qadesh",
+      "target": "qabalah.sephira.kether",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.auphanim",
+      "target": "qabalah.sephira.chokmah",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.aralim",
+      "target": "qabalah.sephira.binah",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.chasmalim",
+      "target": "qabalah.sephira.chesed",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.seraphim",
+      "target": "qabalah.sephira.geburah",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.malachim",
+      "target": "qabalah.sephira.tiphareth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.tarshishim",
+      "target": "qabalah.sephira.netzach",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.beni-elohim",
+      "target": "qabalah.sephira.hod",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.kerubim",
+      "target": "qabalah.sephira.yesod",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "angel.order.ashim",
+      "target": "qabalah.sephira.malkuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

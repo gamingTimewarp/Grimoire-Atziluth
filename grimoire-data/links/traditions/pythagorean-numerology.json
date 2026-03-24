@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "numerology.digit.1", "target": "astrology.planet.sol",     "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["leadership", "unity", "origin", "individuality"] } },
+    { "source": "numerology.digit.2", "target": "astrology.planet.luna",    "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["duality", "receptivity", "cooperation", "sensitivity"] } },
+    { "source": "numerology.digit.3", "target": "astrology.planet.jupiter", "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["creativity", "expression", "expansion", "joy"] } },
+    { "source": "numerology.digit.4", "target": "astrology.planet.uranus",  "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["stability", "structure", "foundation", "discipline"] } },
+    { "source": "numerology.digit.5", "target": "astrology.planet.mercury", "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["freedom", "change", "versatility", "adventure"] } },
+    { "source": "numerology.digit.6", "target": "astrology.planet.venus",   "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["harmony", "beauty", "responsibility", "nurturing"] } },
+    { "source": "numerology.digit.7", "target": "astrology.planet.neptune", "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["analysis", "introspection", "wisdom", "mysticism"] } },
+    { "source": "numerology.digit.8", "target": "astrology.planet.saturn",  "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["power", "abundance", "authority", "karma"] } },
+    { "source": "numerology.digit.9", "target": "astrology.planet.mars",    "label": "pythagorean-digit-planet", "traditionScope": ["pythagorean-numerology"], "extendedData": { "keywords": ["completion", "humanitarianism", "wisdom", "compassion"] } },
+
+    { "source": "numerology.digit.1", "target": "tarot.major.rws.the-magician",      "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.2", "target": "tarot.major.rws.the-high-priestess","label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.3", "target": "tarot.major.rws.the-empress",       "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.4", "target": "tarot.major.rws.the-emperor",       "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.5", "target": "tarot.major.rws.the-hierophant",    "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.6", "target": "tarot.major.rws.the-lovers",        "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.7", "target": "tarot.major.rws.the-chariot",       "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} },
+    { "source": "numerology.digit.8", "target": "tarot.major.rws.strength",           "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": { "note": "Some systems use Justice=8 (Marseille/Thoth tradition); Pythagorean numerology most commonly pairs 8 with Strength (RWS system)" } },
+    { "source": "numerology.digit.9", "target": "tarot.major.rws.the-hermit",        "label": "pythagorean-digit-tarot", "traditionScope": ["pythagorean-numerology"], "extendedData": {} }
+  ]
+}

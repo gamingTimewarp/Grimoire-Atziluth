@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "jyotish.mahadasha.ketu",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Ketu Mahadasha",
+      "description": "Ketu Mahadasha spans 7 years and is ruled by Ketu, the South Node of the Moon — the headless shadow planet of past-life karma, spiritual liberation, and dissolution. This period often initiates a withdrawal from worldly affairs, compelling the native inward toward introspection, renunciation, and a reckoning with inherited patterns from prior incarnations; what has been over-cultivated in past lives now loses its grip, and what was neglected pulls urgently at the soul. Career and material life may feel uncertain or suddenly disrupted, while spiritual sensibility, occult insight, and psychic receptivity typically deepen; health challenges relating to the nervous system or sudden, inexplicable ailments are not uncommon. Unlike Western astrology's South Node — which is primarily treated as a point of depletion or release within the birth chart — Ketu in Jyotish is a living planetary force whose Dasha actively reshapes the native's life trajectory, often marking a pivot from worldly ambition toward inner seeking.",
+      "secondaryNames": [
+        { "name": "Ketu Dasha", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "South Node Period", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "केतु दशा", "languageTag": "sa", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "ketu", "lunar-node"],
+      "extendedData": {
+        "lord": "ketu",
+        "lordCN": "astrology.node.ketu",
+        "durationYears": 7,
+        "durationMonths": 84,
+        "orderInCycle": 1,
+        "nature": "malefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.venus",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Venus Mahadasha",
+      "description": "Venus Mahadasha spans 20 years — the longest of all nine Mahadashas — and is ruled by Shukra (Venus), the great benefic of Jyotish, preceptor of the asuras and the planet of wealth, beauty, sensuality, the arts, and worldly pleasure. This is often experienced as a long season of material prosperity, romantic fulfilment, creative flourishing, and the enjoyment of life's finer dimensions; careers in the arts, fashion, entertainment, luxury goods, diplomacy, or finance are particularly favoured. The extended span means that Venus's domains — relationships, aesthetic refinement, financial accumulation — are woven deeply into a significant portion of the native's adult life, and the shadow of this period can be over-indulgence, attachment to comfort, or the difficulty of relinquishing pleasure when the cycle ends. Unlike Venus in Western astrology — where it is primarily a natal significator of love style and aesthetic taste — Shukra in Jyotish carries a broader portfolio as the planet of vehicle, spouse, semen, and the refined enjoyment of all earthly experience, making its Dasha one of the most consequential periods for establishing the material foundations of life.",
+      "secondaryNames": [
+        { "name": "Shukra Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Shukra Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Venus Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "शुक्र दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "venus", "shukra"],
+      "extendedData": {
+        "lord": "venus",
+        "lordCN": "astrology.planet.venus",
+        "durationYears": 20,
+        "durationMonths": 240,
+        "orderInCycle": 2,
+        "nature": "benefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.sun",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Sun Mahadasha",
+      "description": "Sun Mahadasha spans 6 years and is ruled by Surya (the Sun), the king of the grahas, representing the soul (Atma), authority, father, government, and the vital force of self-expression. This period tends to bring matters of leadership, career advancement, recognition, and identity to the fore; natives often step into positions of authority or visibility, and questions of reputation, pride, and power are tested through the events of these 6 years. The Sun's placement and strength in the natal chart powerfully conditions whether this Mahadasha brings honour and vitality or hubris and conflict with authority figures; health themes related to the heart, eyes, and bones may surface. In Western astrology the Sun is primarily the ego and the conscious self within the natal chart, whereas in Jyotish Surya is also the Atma-karaka — the significator of the eternal soul — and its Dasha carries a deeper flavour of dharmic purpose and the native's fundamental life mission.",
+      "secondaryNames": [
+        { "name": "Surya Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Surya Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Sun Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "सूर्य दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "sun", "surya"],
+      "extendedData": {
+        "lord": "sun",
+        "lordCN": "astrology.planet.sol",
+        "durationYears": 6,
+        "durationMonths": 72,
+        "orderInCycle": 3,
+        "nature": "malefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.moon",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Moon Mahadasha",
+      "description": "Moon Mahadasha spans 10 years and is ruled by Chandra (the Moon), the planet of mind (Manas), emotions, mother, home, nourishment, and the fluctuating inner life. This period is typically experienced as emotionally rich and psychologically formative — the native's inner world rises to the surface, making it a time of heightened sensitivity, nurturing relationships, domestic focus, and creative or intuitive surges; the Moon's waxing and waning nature means the period often moves in cycles of growth and release. Career directions related to the public, food, care, water, and the feminine principle are often activated, and the native's relationship with their mother or with their own need for security becomes a central theme. Chandra in Jyotish governs the mind far more comprehensively than the Western Moon — it is the seat of perception, memory, and psychological stability — so its Dasha is particularly significant in shaping the native's fundamental orientation toward reality, often determining whether the 10-year arc is one of emotional flourishing or, if Chandra is afflicted, of restlessness and mental turbulence.",
+      "secondaryNames": [
+        { "name": "Chandra Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Chandra Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Moon Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "चन्द्र दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "moon", "chandra"],
+      "extendedData": {
+        "lord": "moon",
+        "lordCN": "astrology.planet.luna",
+        "durationYears": 10,
+        "durationMonths": 120,
+        "orderInCycle": 4,
+        "nature": "benefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.mars",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Mars Mahadasha",
+      "description": "Mars Mahadasha spans 7 years and is ruled by Mangala (Mars), the warrior planet of drive, courage, ambition, land, brothers, and the vital martial force. This period typically brings a surge of energy, initiative, and competitive drive; real estate, engineering, military or police matters, surgery, sports, and any endeavour requiring decisive action are often highlighted, and the native may find themselves called to assert boundaries or fight for what they value. The shadow of this Mahadasha lies in aggression, accidents, conflicts, and an excess of Pitta energy — impulsiveness and confrontation with adversaries are common themes, particularly if Mars is badly placed or hemmed by malefics in the natal chart. Whereas Western astrology views Mars primarily as the personal drive and desire nature, Jyotish's Mangala extends to sovereignty over land and property (Bhumi Karaka), the younger siblings, and the raw life-force (Bala), giving its Dasha a broader scope in determining material struggles and achievements in the physical world.",
+      "secondaryNames": [
+        { "name": "Mangala Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Mangala Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Mars Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "मंगल दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "mars", "mangala"],
+      "extendedData": {
+        "lord": "mars",
+        "lordCN": "astrology.planet.mars",
+        "durationYears": 7,
+        "durationMonths": 84,
+        "orderInCycle": 5,
+        "nature": "malefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.rahu",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Rahu Mahadasha",
+      "description": "Rahu Mahadasha spans 18 years and is ruled by Rahu, the North Node of the Moon — the shadow planet of ambition, obsession, worldly desire, foreignness, and the relentless hunger for experience. This is often the most turbulent and transformative of the Mahadashas: Rahu breaks social conventions, drives the native toward unfamiliar territory, and amplifies whatever it touches to an almost obsessive degree, creating rapid and sometimes chaotic change in career, relationships, residence, and identity. The native may achieve remarkable worldly success and sudden rise in status, particularly in fields connected with technology, media, politics, or cross-cultural endeavour, yet the sense of satisfaction remains elusive — Rahu's headless nature means it consumes without the wisdom to know when it has had enough. Unlike Western astrology's North Node, which indicates a point of growth and evolutionary direction in a static chart, Rahu in Jyotish is a living planetary force during its Dasha, actively generating events; its 18-year span means an entire chapter of life — often the most worldly and ambition-driven — is coloured by its boundary-dissolving, illusion-generating force.",
+      "secondaryNames": [
+        { "name": "Rahu Dasha", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "North Node Period", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "राहु दशा", "languageTag": "sa", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "rahu", "lunar-node"],
+      "extendedData": {
+        "lord": "rahu",
+        "lordCN": "astrology.node.rahu",
+        "durationYears": 18,
+        "durationMonths": 216,
+        "orderInCycle": 6,
+        "nature": "malefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.jupiter",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Jupiter Mahadasha",
+      "description": "Jupiter Mahadasha spans 16 years and is ruled by Guru (Jupiter), the greatest benefic in Jyotish — the planet of wisdom, dharma, higher learning, children, wealth, grace, and divine blessing. This Mahadasha is generally regarded as the most auspicious in the cycle, bringing expansion in all areas that Jupiter signifies: knowledge, spirituality, marriage (for women), children, financial growth, teaching, law, and the receipt of divine grace; natives often describe this period as one of sustained good fortune, moral clarity, and a sense that life is moving in accordance with a higher purpose. The quality of the period depends considerably on Jupiter's natal strength and house placement, but even a weak Guru Dasha tends to carry an underlying current of protection and optimism. In Western astrology Jupiter is primarily an indicator of abundance, luck, and expansion in the natal chart, but Jyotish's Guru carries the additional dignity of being the Dhi Karaka (significator of intelligence and discernment) and the preceptor of the gods (Devacharya), lending its Dasha a quality of moral and spiritual mentorship that extends well beyond mere good fortune.",
+      "secondaryNames": [
+        { "name": "Guru Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Guru Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Jupiter Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "गुरु दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "jupiter", "guru"],
+      "extendedData": {
+        "lord": "jupiter",
+        "lordCN": "astrology.planet.jupiter",
+        "durationYears": 16,
+        "durationMonths": 192,
+        "orderInCycle": 7,
+        "nature": "benefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.saturn",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Saturn Mahadasha",
+      "description": "Saturn Mahadasha spans 19 years and is ruled by Shani (Saturn), the great taskmaster of Jyotish — the planet of karma, discipline, delays, longevity, the common people, labour, service, and the slow, relentless maturing of the soul. This is often one of the most demanding of the Mahadashas: Saturn demands hard work, patience, and the willing acceptance of responsibility; it strips away what is no longer earned, tests the native's integrity, and often brings periods of restriction, loss, and confrontation with mortality or limitation before the rewards of discipline finally arrive. Career in fields of governance, law, agriculture, construction, social service, or any area requiring sustained effort over time may be activated, and the native often rises — if at all — only after considerable struggle and refinement. Unlike Western astrology's Saturn, which functions primarily as the Saturnine principle within the natal chart and in transits, Shani in Jyotish is the supreme Karma-karaka — the planet most directly responsible for the dispensation of past-life karma in this life — making its 19-year Dasha the period most likely to feel fated, consequential, and irreversible in its demands on the native's character.",
+      "secondaryNames": [
+        { "name": "Shani Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Shani Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Saturn Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "शनि दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "saturn", "shani"],
+      "extendedData": {
+        "lord": "saturn",
+        "lordCN": "astrology.planet.saturn",
+        "durationYears": 19,
+        "durationMonths": 228,
+        "orderInCycle": 8,
+        "nature": "malefic"
+      }
+    },
+    {
+      "canonicalName": "jyotish.mahadasha.mercury",
+      "entityType": "jyotish.mahadasha",
+      "primaryDisplayName": "Mercury Mahadasha",
+      "description": "Mercury Mahadasha spans 17 years and is ruled by Budha (Mercury), the planet of intellect, communication, trade, analysis, skill, discrimination, and the nervous system. This period typically activates the native's intellectual and communicative capacities: writing, teaching, business, mathematics, technology, trade, and all forms of information-handling flourish; the native often undertakes significant study, builds commercial ventures, or develops a specialised skill-set that forms the intellectual foundation of their livelihood. Mercury is considered functionally benefic or malefic depending on its house rulership in the natal chart, making this one of the Mahadashas where context is especially decisive — a well-placed Budha can deliver remarkable analytical brilliance and financial acumen, while an afflicted one may bring duplicity, nervous disorders, or scattering of energies. In contrast to Western astrology's Mercury, which governs communication and lower mind primarily through natal placement and transits, Jyotish's Budha is the significator of maternal uncles, skin, and commercial intelligence, and as the closest planet to the Sun it carries a quality of discriminative intelligence (Viveka) that links it to the spiritual capacity for clear discernment.",
+      "secondaryNames": [
+        { "name": "Budha Mahadasha", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Budha Dasha", "languageTag": "sa", "visible": true, "sortOrder": 1 },
+        { "name": "Mercury Dasha", "languageTag": "en", "visible": true, "sortOrder": 2 },
+        { "name": "बुध दशा", "languageTag": "sa", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["jyotish", "dasha", "vimshottari", "mercury", "budha"],
+      "extendedData": {
+        "lord": "mercury",
+        "lordCN": "astrology.planet.mercury",
+        "durationYears": 17,
+        "durationMonths": 204,
+        "orderInCycle": 9,
+        "nature": "neutral"
+      }
+    }
+  ]
+}

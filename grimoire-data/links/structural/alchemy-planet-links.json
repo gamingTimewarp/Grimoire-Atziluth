@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "alchemy.metal.gold",    "target": "astrology.planet.sol",     "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.silver",  "target": "astrology.planet.luna",    "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.mercury", "target": "astrology.planet.mercury", "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.copper",  "target": "astrology.planet.venus",   "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.iron",    "target": "astrology.planet.mars",    "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.tin",     "target": "astrology.planet.jupiter", "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] },
+    { "source": "alchemy.metal.lead",    "target": "astrology.planet.saturn",  "label": "attributed-planet", "bidirectional": true, "traditionScope": ["tradition.alchemy"] }
+  ]
+}

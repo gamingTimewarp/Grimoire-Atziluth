@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "yoga.kosha.annamaya",
+      "entityType": "yoga.kosha",
+      "primaryDisplayName": "Annamaya Kosha",
+      "description": "Annamaya Kosha (अन्नमय कोश) — the 'food body' — is the outermost and grossest of the five layers, composed of and sustained by physical food (anna). It encompasses the physical body with all its organs, bones, tissues, and metabolic processes. In Vedantic philosophy (Taittiriya Upanishad), it is not the true Self but the gross vehicle through which subtler bodies operate. Yoga asana, diet, and physical care are the primary tools for this kosha. It corresponds to the earth element and the waking state of consciousness.",
+      "secondaryNames": [
+        {
+          "name": "Food Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Physical Sheath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Gross Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Anna-maya-kosha",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta",
+        "hinduism"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "type": "gross",
+        "element": "astrology.element.earth",
+        "stateOfConsciousness": "waking (jagrat)",
+        "correspondingBody": "physical"
+      }
+    },
+    {
+      "canonicalName": "yoga.kosha.pranamaya",
+      "entityType": "yoga.kosha",
+      "primaryDisplayName": "Pranamaya Kosha",
+      "description": "Pranamaya Kosha (प्राणमय कोश) — the 'vital body' — is the second kosha, composed of the five Pranas (Vayus) and their associated Nadis (energy channels). It is the energetic blueprint underlying the physical body and governs all vital processes through prana circulation. The Pranamaya Kosha slightly extends beyond the physical body and corresponds to what Western esoteric tradition calls the etheric or vital body. Pranayama and Nadi work (Ida, Pingala, Sushumna) are the primary practices for purifying this sheath.",
+      "secondaryNames": [
+        {
+          "name": "Vital Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Energy Sheath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pranic Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Etheric Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta",
+        "hinduism"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "type": "subtle",
+        "element": "water/air",
+        "stateOfConsciousness": "waking and dreaming",
+        "correspondingBody": "etheric/vital"
+      }
+    },
+    {
+      "canonicalName": "yoga.kosha.manomaya",
+      "entityType": "yoga.kosha",
+      "primaryDisplayName": "Manomaya Kosha",
+      "description": "Manomaya Kosha (मनोमय कोश) — the 'mind body' — is the third kosha, the seat of the lower mind (manas), emotions, desires, instincts, and sensory processing. It receives and processes sensory input into feelings and habitual thought patterns, and contains the samskaras (impressions) of past experiences. The Manomaya Kosha generates the sense of personal emotional identity and is the primary source of psychological suffering. Meditation, mantra, and yogic discipline are the tools for purifying it.",
+      "secondaryNames": [
+        {
+          "name": "Mental Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mind Sheath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Emotional Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Astral Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta",
+        "hinduism"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "type": "subtle",
+        "element": "astrology.element.fire",
+        "stateOfConsciousness": "dreaming (svapna)",
+        "correspondingBody": "astral/mental"
+      }
+    },
+    {
+      "canonicalName": "yoga.kosha.vijnanamaya",
+      "entityType": "yoga.kosha",
+      "primaryDisplayName": "Vijnanamaya Kosha",
+      "description": "Vijnanamaya Kosha (विज्ञानमय कोश) — the 'wisdom body' — is the fourth kosha, the seat of higher intellect (buddhi) and the faculty of discrimination (viveka). Where the Manomaya Kosha processes experience through emotional reaction, the Vijnanamaya discerns truth from falsehood and Self from non-Self. In Vedanta it is the closest sheath to pure consciousness and the vehicle of spiritual insight. Jnana yoga, self-inquiry (atma-vichara), and scriptural study develop and dissolve identification with this sheath.",
+      "secondaryNames": [
+        {
+          "name": "Wisdom Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Intellect Sheath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Causal Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Buddhic Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta",
+        "hinduism"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "type": "subtle-causal",
+        "element": "astrology.element.air",
+        "stateOfConsciousness": "deep sleep boundary",
+        "correspondingBody": "causal/buddhic"
+      }
+    },
+    {
+      "canonicalName": "yoga.kosha.anandamaya",
+      "entityType": "yoga.kosha",
+      "primaryDisplayName": "Anandamaya Kosha",
+      "description": "Anandamaya Kosha (आनन्दमय कोश) — the 'bliss body' — is the innermost and subtlest of the five sheaths, the veil of bliss (ananda) closest to the Atman. It is the seed-body (karana sharira) containing latent impressions (vasanas) of all past lives and carrying the karmic blueprint across incarnations. Experienced as deep peace and undifferentiated joy in dreamless sleep and samadhi, it is nonetheless a sheath and a limitation on pure consciousness. In Advaita Vedanta, even this most refined body must be transcended to realise the attributeless Brahman.",
+      "secondaryNames": [
+        {
+          "name": "Bliss Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Causal Sheath",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Seed Body",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Karana Sharira",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        }
+      ],
+      "tags": [
+        "yoga",
+        "kosha",
+        "subtle-body",
+        "vedanta",
+        "hinduism"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "type": "causal",
+        "element": "ether/space",
+        "stateOfConsciousness": "deep sleep (sushupti) and samadhi",
+        "correspondingBody": "causal/bliss"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1079 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "rune.elder-futhark.fehu",
+      "entityType": "rune",
+      "primaryDisplayName": "Fehu",
+      "description": "The first rune of the Elder Futhark (ᚠ). Its name means 'cattle' or 'livestock' — in the Norse economy, cattle were wealth. Fehu represents moveable wealth, prosperity, abundance, and the life-force as it circulates freely. Unlike fixed wealth (land), Fehu is dynamic — it flows, grows, and must be managed well or it dissipates. Associated with Freyja, the Vanir goddess of love, fertility, and wealth. Fehu is the beginning of the Futhark, the first spark of creative abundance manifested.",
+      "secondaryNames": [
+        {
+          "name": "ᚠ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Feoh",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Fe",
+          "languageTag": "no",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚠ",
+        "orderNumber": 1,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "F",
+        "meaning": "cattle, wealth",
+        "element": "astrology.element.fire",
+        "deity": "Freyja",
+        "keywords": [
+          "wealth",
+          "abundance",
+          "cattle",
+          "prosperity",
+          "dynamic fortune",
+          "life-force"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.uruz",
+      "entityType": "rune",
+      "primaryDisplayName": "Uruz",
+      "description": "The second rune (ᚢ). Its name means 'aurochs' — the wild, powerful, now-extinct European cattle. Uruz represents primal strength, untamed vital force, the power of nature in its raw state, physical health, and the energy of transformation. The aurochs was one of the most dangerous animals in ancient Europe; to hunt it was a test of courage. Uruz is the force that shapes raw potential (Fehu's wealth) into physical form — the formative energy of the primordial.",
+      "secondaryNames": [
+        {
+          "name": "ᚢ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚢ",
+        "orderNumber": 2,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "U",
+        "meaning": "aurochs, primal strength",
+        "element": "astrology.element.earth",
+        "deity": "Thor",
+        "keywords": [
+          "strength",
+          "vitality",
+          "health",
+          "primal force",
+          "aurochs",
+          "endurance",
+          "shapeshifting"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.thurisaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Thurisaz",
+      "description": "The third rune (ᚦ). Its name connects to 'Thurs' (giant/thurse) and to Thor (Þórr). Thurisaz represents the force of the giant — reactive, destructive, but also protective. It is the thorn that wounds but also defends, the lightning of Thor that destroys the monstrous Jötnar. Thurisaz is a rune of conflict, challenge, applied force, and the breaking of obstacles. It can also represent a gateway or threshold — the moment of crisis that transforms.",
+      "secondaryNames": [
+        {
+          "name": "ᚦ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Thorn",
+          "languageTag": "ang",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚦ",
+        "orderNumber": 3,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "TH",
+        "meaning": "giant, thorn",
+        "element": "astrology.element.fire",
+        "deity": "Thor",
+        "keywords": [
+          "force",
+          "destruction",
+          "giants",
+          "thorn",
+          "protection",
+          "conflict",
+          "threshold"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.ansuz",
+      "entityType": "rune",
+      "primaryDisplayName": "Ansuz",
+      "description": "The fourth rune (ᚨ). Its name means 'Aesir god' or 'divine breath' — specifically associated with Odin (Óðinn), the god of wisdom, magic, poetry, and the runes themselves. Ansuz represents divine communication, inspiration, the spoken word, breath as the vehicle of consciousness, and the shamanic transmission of knowledge. It is the rune of the skald (poet) and the völva (seeress), of inspiration from the divine source, of the magical power of names and words.",
+      "secondaryNames": [
+        {
+          "name": "ᚨ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Os",
+          "languageTag": "ang",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚨ",
+        "orderNumber": 4,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "A",
+        "meaning": "god, divine breath",
+        "element": "astrology.element.air",
+        "deity": "Odin",
+        "keywords": [
+          "communication",
+          "inspiration",
+          "Odin",
+          "wisdom",
+          "the Word",
+          "breath",
+          "poetry",
+          "shamanic transmission"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.raidho",
+      "entityType": "rune",
+      "primaryDisplayName": "Raidho",
+      "description": "The fifth rune (ᚱ). Its name means 'ride' or 'journey' — both physical travel and the larger journey of the soul. Raidho represents movement, the road, the chariot-ride, pilgrimage, and the cosmic order of cycles (the sun's daily ride across the sky). It is a rune of right action, of moving in alignment with one's will, of the journey undertaken at the right time and in the right direction. Associated with the divine principle of cosmic order (Ríta) and the god Ing/Freyr.",
+      "secondaryNames": [
+        {
+          "name": "ᚱ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rad",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚱ",
+        "orderNumber": 5,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "R",
+        "meaning": "riding, journey",
+        "element": "astrology.element.air",
+        "deity": "Ing/Freyr",
+        "keywords": [
+          "journey",
+          "travel",
+          "right action",
+          "the road",
+          "cosmic order",
+          "chariot",
+          "pilgrimage",
+          "movement"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.kenaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Kenaz",
+      "description": "The sixth rune (ᚲ). Its name means 'torch' or 'controlled fire' — the fire that illuminates and crafts rather than destroys. Kenaz represents knowledge, craft, skill, inner illumination, the fire of consciousness, and the creative spark. It is the torch in the darkness, the forge-fire that shapes metal, the creative intelligence of the craftsman and the artist. Associated with Loki (the trickster fire) and with creative knowledge more broadly.",
+      "secondaryNames": [
+        {
+          "name": "ᚲ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Cen",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚲ",
+        "orderNumber": 6,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "K",
+        "meaning": "torch, knowledge",
+        "element": "astrology.element.fire",
+        "deity": "Loki",
+        "keywords": [
+          "knowledge",
+          "craft",
+          "torch",
+          "illumination",
+          "creativity",
+          "skill",
+          "inner fire",
+          "the forge"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.gebo",
+      "entityType": "rune",
+      "primaryDisplayName": "Gebo",
+      "description": "The seventh rune (ᚷ). Its name means 'gift' — and in Norse culture gifts created bonds of obligation and reciprocity. Gebo represents the sacred principle of gift-exchange (the 'gift economy'), partnership, union, and the equilibrium of giving and receiving. The X-shape of Gebo suggests intersection, crossing, and the meeting of two paths. It is a rune of connection, contract, and sacred covenant. Without a giving, there can be no receiving; Gebo holds both in perfect tension.",
+      "secondaryNames": [
+        {
+          "name": "ᚷ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Gyfu",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚷ",
+        "orderNumber": 7,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "G",
+        "meaning": "gift",
+        "element": "astrology.element.air",
+        "deity": "Odin/Freyr",
+        "keywords": [
+          "gift",
+          "exchange",
+          "partnership",
+          "union",
+          "reciprocity",
+          "contract",
+          "blessing"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.wunjo",
+      "entityType": "rune",
+      "primaryDisplayName": "Wunjo",
+      "description": "The eighth rune (ᚹ). Its name means 'joy', 'delight', or 'perfection'. Wunjo completes the first aett (Freya's Eight) on a note of joy and harmony — the fulfillment of all the preceding forces. It represents happiness, harmony, belonging, and the pleasure of the clan at peace and flourishing. Wunjo is the joy that arises naturally when things are in right relationship — not forced or manufactured, but the spontaneous delight of being in one's proper place.",
+      "secondaryNames": [
+        {
+          "name": "ᚹ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wyn",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "first-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚹ",
+        "orderNumber": 8,
+        "aett": "freya",
+        "aettNumber": 1,
+        "phoneme": "W/V",
+        "meaning": "joy, perfection",
+        "element": "astrology.element.earth",
+        "deity": "Odin/Woden",
+        "keywords": [
+          "joy",
+          "harmony",
+          "happiness",
+          "perfection",
+          "belonging",
+          "fulfillment",
+          "clan peace"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.hagalaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Hagalaz",
+      "description": "The ninth rune (ᚺ), the first rune of Heimdall's Aett (the second group of eight). Its name means 'hail' — the destructive weather that destroys crops and disrupts the established order. Hagalaz represents disruption, radical change, natural catastrophe, and the cosmic force of transformation that cannot be bargained with or avoided. Yet hail melts into water — the destruction is not final but preparatory. Hagalaz is the rune of the cosmic seed of change (the hailstone as the seed of the world-tree in some kennings).",
+      "secondaryNames": [
+        {
+          "name": "ᚺ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hægl",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚺ",
+        "orderNumber": 9,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "H",
+        "meaning": "hail",
+        "element": "ice/water",
+        "deity": "Heimdall",
+        "keywords": [
+          "disruption",
+          "hail",
+          "radical change",
+          "crisis",
+          "natural forces",
+          "the cosmic seed",
+          "unavoidable transformation"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.nauthiz",
+      "entityType": "rune",
+      "primaryDisplayName": "Nauthiz",
+      "description": "The tenth rune (ᚾ). Its name means 'need' or 'necessity' — the constraint that necessity imposes. Nauthiz represents hardship, friction, the fire of need (the need-fire kindled by rubbing two sticks together in extremity), and the strength that arises from working against resistance. The Norn Skuld is associated with Nauthiz — necessity as the force that shapes the future. Nauthiz is the rune of endurance, of finding the inner resource that only constraint can reveal.",
+      "secondaryNames": [
+        {
+          "name": "ᚾ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Nyd",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᚾ",
+        "orderNumber": 10,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "N",
+        "meaning": "need, necessity",
+        "element": "astrology.element.fire",
+        "deity": "Norns",
+        "keywords": [
+          "need",
+          "necessity",
+          "hardship",
+          "constraint",
+          "the need-fire",
+          "endurance",
+          "Skuld",
+          "inner strength"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.isa",
+      "entityType": "rune",
+      "primaryDisplayName": "Isa",
+      "description": "The eleventh rune (ᛁ). Its name means 'ice'. A single vertical line, Isa is the most minimal of runes — pure stillness, the contracted state of water, the ego crystallised into its most fixed and impenetrable form. Ice stops all movement and growth; yet ice preserves what it holds. Isa represents ego-consciousness, concentration, introspection, the stillness before the thaw, and the necessity of standing still when the forces of change are too powerful to act against. Associated with Niflheim (the realm of ice) and the primordial void.",
+      "secondaryNames": [
+        {
+          "name": "ᛁ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Is",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛁ",
+        "orderNumber": 11,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "I",
+        "meaning": "ice",
+        "element": "ice",
+        "deity": "Verdandi (Norn)",
+        "keywords": [
+          "ice",
+          "stillness",
+          "ego",
+          "concentration",
+          "preservation",
+          "stasis",
+          "Niflheim"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.jera",
+      "entityType": "rune",
+      "primaryDisplayName": "Jera",
+      "description": "The twelfth rune (ᛃ). Its name means 'year' or 'harvest' — the completion of the agricultural cycle. Jera represents the natural cycles of time, the law of cause and effect (you reap what you sow), the patient work of a whole year culminating in harvest, and the joy of completion. There is no shortcut in Jera — the year must run its course. It is a rune of natural justice, of patience, of the certainty that the cycle will complete if the work has been done.",
+      "secondaryNames": [
+        {
+          "name": "ᛃ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ger",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛃ",
+        "orderNumber": 12,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "J/Y",
+        "meaning": "year, harvest",
+        "element": "astrology.element.earth",
+        "deity": "Freyr",
+        "keywords": [
+          "harvest",
+          "year",
+          "cycles",
+          "patience",
+          "karma",
+          "natural law",
+          "completion",
+          "reward for work"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.eihwaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Eihwaz",
+      "description": "The thirteenth rune (ᛇ). Its name means 'yew tree'. The yew (Taxus baccata) is the sacred tree of death and immortality in Northern European tradition — poisonous yet producing the berries of life, the wood of the war-bow that kills, the tree planted in churchyards for 4,000 years. Eihwaz is the vertical axis mundi — the world-tree Yggdrasil is often identified with the yew. It represents endurance, the death-passage, initiation, the hidden spine of the universe, and the transformation that only death can bring.",
+      "secondaryNames": [
+        {
+          "name": "ᛇ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Eoh",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛇ",
+        "orderNumber": 13,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "EI",
+        "meaning": "yew tree",
+        "element": "earth/death",
+        "deity": "Odin (Yggdrasil)",
+        "keywords": [
+          "yew",
+          "death",
+          "initiation",
+          "world-tree",
+          "endurance",
+          "transformation",
+          "axis mundi",
+          "immortality through death"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.perthro",
+      "entityType": "rune",
+      "primaryDisplayName": "Perthro",
+      "description": "The fourteenth rune (ᛈ). Its name and meaning are the most debated in runic scholarship — possible interpretations include 'dice cup' (the vessel from which lots are cast), 'womb' (the vessel of birth), 'pear tree', or a now-lost word. Perthro is associated with the Norns and the casting of lots (örlög), with fate, luck, the hidden, and the mystery of what is yet unrevealed. It is the rune of mystery, of the womb of destiny, of the game of life whose outcome is uncertain until the dice are cast.",
+      "secondaryNames": [
+        {
+          "name": "ᛈ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛈ",
+        "orderNumber": 14,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "P",
+        "meaning": "dice cup / mystery / womb",
+        "element": "astrology.element.water",
+        "deity": "Norns",
+        "keywords": [
+          "fate",
+          "mystery",
+          "chance",
+          "the hidden",
+          "womb of destiny",
+          "lots",
+          "Norns",
+          "örlög"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.algiz",
+      "entityType": "rune",
+      "primaryDisplayName": "Algiz",
+      "description": "The fifteenth rune (ᛉ). Its name means 'elk' or 'protection'. The forked shape of Algiz resembles elk antlers, a protective raised hand, or the shape of the sedge grass (elhaz) that cuts those who try to grasp it. Algiz is the rune of protection, of the guardian spirit, of the bridge between worlds (the Bifrost). It is associated with the Valkyries and with the power of Odin's protective shield. The inverted Algiz (ᛦ) is sometimes called the death rune — used in some traditions for graves.",
+      "secondaryNames": [
+        {
+          "name": "ᛉ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Elhaz",
+          "languageTag": "proto-germanic",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Eolh",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛉ",
+        "orderNumber": 15,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "Z/R",
+        "meaning": "elk, protection",
+        "element": "astrology.element.air",
+        "deity": "Valkyries/Odin",
+        "keywords": [
+          "protection",
+          "elk",
+          "guardian",
+          "the Valkyries",
+          "Bifrost",
+          "divine shield",
+          "sanctuary"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.sowilo",
+      "entityType": "rune",
+      "primaryDisplayName": "Sowilo",
+      "description": "The sixteenth rune (ᛊ). Its name means 'sun'. Sowilo is the solar rune — the energy of the sun as life-giver, victory-bringer, the force that drives away the darkness and guides the ship (the sun was the ultimate navigation marker for ancient seafarers). It is a rune of success, vitality, spiritual illumination, and the will-to-victory. The lightning-bolt shape connects it to both the sun's energy and to Thor's lightning. Sowilo brings clarity, purification by light, and the solar force that supports all growth.",
+      "secondaryNames": [
+        {
+          "name": "ᛊ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sigel",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Sol",
+          "languageTag": "no",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "second-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛊ",
+        "orderNumber": 16,
+        "aett": "heimdall",
+        "aettNumber": 2,
+        "phoneme": "S",
+        "meaning": "sun",
+        "element": "astrology.element.fire",
+        "deity": "Sól (sun goddess)",
+        "keywords": [
+          "sun",
+          "victory",
+          "vitality",
+          "illumination",
+          "guidance",
+          "success",
+          "solar energy",
+          "purification"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.tiwaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Tiwaz",
+      "description": "The seventeenth rune (ᛏ), the first of Tyr's Aett (the third group of eight). Its name is Tyr — the one-handed god of justice, law, and righteous battle. Tyr sacrificed his hand to bind the Fenris wolf (by placing it in the wolf's mouth as a pledge of trust, knowing the wolf would bite it off when the magical binding held). Tiwaz is the rune of warrior honour, of self-sacrifice for the greater good, of justice, and of righteous battle. The upward-pointing arrow of Tiwaz aims at the heavens.",
+      "secondaryNames": [
+        {
+          "name": "ᛏ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Tir",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛏ",
+        "orderNumber": 17,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "T",
+        "meaning": "Tyr, justice",
+        "element": "astrology.element.air",
+        "deity": "Tyr",
+        "keywords": [
+          "justice",
+          "honour",
+          "Tyr",
+          "self-sacrifice",
+          "righteous battle",
+          "law",
+          "warrior virtue"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.berkano",
+      "entityType": "rune",
+      "primaryDisplayName": "Berkano",
+      "description": "The eighteenth rune (ᛒ). Its name means 'birch tree'. The birch is the first tree to leaf in spring — the harbinger of new beginnings, of growth after winter. Berkano represents the birch goddess (sometimes identified with Frigg or Freyja), the nurturing mother, birth, fertility, the cyclical renewal of life, and the hidden protective force of the Earth Mother. Berkano is also associated with healing and purification (birch bark was used medicinally). It is the rune of new beginnings that arise naturally from death and winter.",
+      "secondaryNames": [
+        {
+          "name": "ᛒ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Beorc",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛒ",
+        "orderNumber": 18,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "B",
+        "meaning": "birch tree",
+        "element": "astrology.element.earth",
+        "deity": "Frigg/Freyja",
+        "keywords": [
+          "birth",
+          "renewal",
+          "birch",
+          "fertility",
+          "mother",
+          "new beginnings",
+          "healing",
+          "spring"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.ehwaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Ehwaz",
+      "description": "The nineteenth rune (ᛖ). Its name means 'horse'. The horse was the sacred animal of the Germanic peoples — a symbol of nobility, swiftness, partnership, and the capacity to carry the rider between worlds (the shamanic horse as vehicle of soul-travel). Ehwaz represents the bond between horse and rider — the perfect partnership where two become one movement. It is a rune of loyal partnership, of movement and journey, and of the shamanic ability to project consciousness beyond the body.",
+      "secondaryNames": [
+        {
+          "name": "ᛖ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Eh",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛖ",
+        "orderNumber": 19,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "E",
+        "meaning": "horse",
+        "element": "earth/air",
+        "deity": "Odin (Sleipnir)",
+        "keywords": [
+          "horse",
+          "partnership",
+          "loyalty",
+          "movement",
+          "soul-travel",
+          "noble cooperation",
+          "Sleipnir"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.mannaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Mannaz",
+      "description": "The twentieth rune (ᛗ). Its name means 'man' or 'humanity'. Mannaz is the rune of the human being — not in the gender-specific sense but in the sense of homo sapiens, the thinking creature made in the image of the divine. It represents intelligence, self-knowledge, the social nature of humanity, and the awareness of mortality that distinguishes humanity from animals. Mannaz is associated with Heimdall (who is said to have fathered the three classes of humanity) and with the Eddic figure of Mimir.",
+      "secondaryNames": [
+        {
+          "name": "ᛗ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Man",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛗ",
+        "orderNumber": 20,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "M",
+        "meaning": "man, humanity",
+        "element": "astrology.element.air",
+        "deity": "Heimdall/Odin",
+        "keywords": [
+          "humanity",
+          "intelligence",
+          "self-knowledge",
+          "the social self",
+          "mortality",
+          "cooperative mind",
+          "Mimir"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.laguz",
+      "entityType": "rune",
+      "primaryDisplayName": "Laguz",
+      "description": "The twenty-first rune (ᛚ). Its name means 'water' or 'lake'. Laguz is the rune of water in all its forms — the lake, the sea, the unconscious, the flow of life, the instinctual emotional life, and the tidal pull of the moon. It is a rune of intuition (water as the element of the inner, pre-rational knowing), of the deep subconscious, of the ocean of the collective unconscious, and of the life-force as it flows through all living things. Laguz is also a rune of leek (life-force herb) in some traditions.",
+      "secondaryNames": [
+        {
+          "name": "ᛚ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lagu",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛚ",
+        "orderNumber": 21,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "L",
+        "meaning": "water, lake",
+        "element": "astrology.element.water",
+        "deity": "Njord",
+        "keywords": [
+          "water",
+          "intuition",
+          "the unconscious",
+          "flow",
+          "the sea",
+          "emotions",
+          "life-force",
+          "the moon's pull"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.ingwaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Ingwaz",
+      "description": "The twenty-second rune (ᛜ). Its name means 'Ing' — the god Ing or Ingvi-Freyr, the god of fertility, peace, and the sacred king who sacrifices himself for the land. Ingwaz represents stored potential, the seed that contains the whole future plant, the gestating power, and the completion of one cycle preparatory to a new beginning. The diamond/lozenge shape of Ingwaz contains all four directions within its four points. Ingwaz is the rune of the sacred masculine in its nurturing, peaceful aspect — the lord who ensures the harvest.",
+      "secondaryNames": [
+        {
+          "name": "ᛜ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ing",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛜ",
+        "orderNumber": 22,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "NG",
+        "meaning": "Ing/Freyr",
+        "element": "astrology.element.earth",
+        "deity": "Ing/Freyr",
+        "keywords": [
+          "fertility",
+          "the seed",
+          "stored potential",
+          "Freyr",
+          "peace",
+          "sacred king",
+          "gestation",
+          "new beginnings"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.dagaz",
+      "entityType": "rune",
+      "primaryDisplayName": "Dagaz",
+      "description": "The twenty-third rune (ᛞ). Its name means 'day' — specifically the liminal moment of dawn and dusk, the threshold between night and day. Dagaz is the rune of breakthrough, of the moment when darkness transforms into light, of awakening and enlightenment. The butterfly-shape of Dagaz represents transformation — the old form dissolved and the new one emerging. It is the rune of the solstice (the turning point), of mystical illumination, and of the paradox that the moment of greatest darkness is the moment from which the light returns.",
+      "secondaryNames": [
+        {
+          "name": "ᛞ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dæg",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛞ",
+        "orderNumber": 23,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "D",
+        "meaning": "day, dawn",
+        "element": "fire/air",
+        "deity": "Heimdall/Odin",
+        "keywords": [
+          "day",
+          "dawn",
+          "breakthrough",
+          "enlightenment",
+          "the threshold",
+          "transformation",
+          "solstice",
+          "awakening"
+        ]
+      }
+    },
+    {
+      "canonicalName": "rune.elder-futhark.othala",
+      "entityType": "rune",
+      "primaryDisplayName": "Othala",
+      "description": "The twenty-fourth and final rune (ᛟ). Its name means 'ancestral estate' or 'heritage' — the inherited land and the ancestral legacy that cannot be bought or sold but only inherited and passed on. Othala completes the Elder Futhark on a note of rootedness, ancestry, and the sacred inheritance of both land and wisdom. It represents the ancestral homeland, the genetic and spiritual inheritance from one's forebears, tribal identity, and the sacred enclosure that protects the family. Othala is the house of the ancestors — the foundation from which the whole Futhark cycle began with Fehu's wealth.",
+      "secondaryNames": [
+        {
+          "name": "ᛟ",
+          "languageTag": "runic",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Ethel",
+          "languageTag": "ang",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "rune",
+        "elder-futhark",
+        "third-aett"
+      ],
+      "extendedData": {
+        "runeGlyph": "ᛟ",
+        "orderNumber": 24,
+        "aett": "tyr",
+        "aettNumber": 3,
+        "phoneme": "O",
+        "meaning": "ancestral estate, heritage",
+        "element": "astrology.element.earth",
+        "deity": "Odin/ancestors",
+        "keywords": [
+          "ancestry",
+          "heritage",
+          "ancestral estate",
+          "inheritance",
+          "homeland",
+          "tribe",
+          "sacred enclosure",
+          "completion"
+        ]
+      }
+    }
+  ]
+}

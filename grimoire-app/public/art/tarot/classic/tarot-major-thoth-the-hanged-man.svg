@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#020810"/>
+      <stop offset="100%" stop-color="#040e22"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Outer border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#1a3a6a" stroke-width="1.5"/>
+  <!-- Inner accent border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#3a6aaa" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Header separator -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#1a3a6a" stroke-width="0.8" opacity="0.5"/>
+  <!-- Footer separator -->
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#1a3a6a" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Card number (top-left) -->
+  <text x="24" y="48"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="22" font-weight="300" fill="#88bbee" opacity="0.9">XII</text>
+
+  <!-- Hebrew letter (top-centre) -->
+  <text x="150" y="40"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="26" fill="#3a6aaa" opacity="0.85" filter="url(#glow)">מ</text>
+
+  <!-- Attribution (top-right, small) -->
+  <text x="276" y="48"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="11" fill="#2a4a7a" opacity="0.8">▽</text>
+
+
+  
+  <text x="152" y="224"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Times New Roman','FreeSerif',serif"
+        font-size="252" fill="#020c20" opacity="0.12">מ</text>
+  
+  <!-- Water of the Abyss — Mem (water = this path's element) -->
+  <!-- Romans 6:4: "buried with him through baptism into death" — the waters of willing descent -->
+  <path d="M18,286 Q42,280 68,286 Q96,292 122,286 Q148,280 172,286 Q196,292 222,286 Q250,280 282,286"
+        fill="none" stroke="#0a1428" stroke-width="1.2" opacity="0.65"/>
+  <path d="M18,293 Q44,288 72,293 Q100,298 126,293 Q152,288 178,293 Q204,298 230,293 Q258,288 282,293"
+        fill="none" stroke="#0a1428" stroke-width="0.9" opacity="0.45"/>
+  <path d="M18,299 Q46,295 76,299 Q104,303 130,299 Q154,295 178,299 Q204,303 232,299 Q260,295 282,299"
+        fill="none" stroke="#0a1428" stroke-width="0.7" opacity="0.30"/>
+  
+  <!-- Ankh (☥) — crux ansata; the cross that pre-figures the Cross (Coptic adoption) -->
+  <!-- Glow halos -->
+  <line x1="150" y1="79" x2="150" y2="322"
+        stroke="#c8a830" stroke-width="14" opacity="0.06" filter="url(#softglow)"/>
+  <line x1="104" y1="190" x2="196" y2="190"
+        stroke="#c8a830" stroke-width="12" opacity="0.06" filter="url(#softglow)"/>
+  <!-- Stem — rooted through the rock into the tomb; the life-symbol planted in death -->
+  <line x1="150" y1="96" x2="150" y2="322"
+        stroke="#c8a830" stroke-width="3.5" stroke-linecap="round" opacity="0.88"/>
+  <!-- Crossbar — the crucifix arm; hand nails here -->
+  <line x1="104" y1="190" x2="196" y2="190"
+        stroke="#c8a830" stroke-width="3.5" stroke-linecap="round" opacity="0.88"/>
+  <!-- Loop (oval) — the handle of the crux ansata; also the O of eternity -->
+  <ellipse cx="150" cy="96" rx="24" ry="17"
+           fill="none" stroke="#c8a830" stroke-width="3.5" opacity="0.90"/>
+  <ellipse cx="150" cy="96" rx="28" ry="21"
+           fill="none" stroke="#c8a830" stroke-width="1.2" opacity="0.20" filter="url(#glow)"/>
+  
+  <!-- Rock ground — hewn stone (Joseph's tomb was cut from rock, Matt 27:60) -->
+  <path d="M18,302 Q46,295 80,303 Q110,307 128,301
+           Q150,304 172,301 Q192,307 220,303
+           Q254,295 282,302 L282,352 L18,352 Z"
+        fill="#141420" opacity="0.94"/>
+  <!-- Hewn rock face — crack lines (cut stone, not natural earth) -->
+  <line x1="36"  y1="308"  x2="30"  y2="322" stroke="#0a0a14" stroke-width="1"   opacity="0.55"/>
+  <line x1="84"  y1="305"  x2="78"  y2="318" stroke="#0a0a14" stroke-width="1"   opacity="0.50"/>
+  <line x1="200" y1="306"  x2="207" y2="320" stroke="#0a0a14" stroke-width="1"   opacity="0.50"/>
+  <line x1="252" y1="305"  x2="258" y2="317" stroke="#0a0a14" stroke-width="1"   opacity="0.50"/>
+  <line x1="54"  y1="320" x2="46"  y2="334" stroke="#0a0a14" stroke-width="0.8" opacity="0.38"/>
+  <line x1="234" y1="318" x2="242" y2="330" stroke="#0a0a14" stroke-width="0.8" opacity="0.38"/>
+  <!-- Tomb interior — dark, but luminous; the empty tomb is not dark (it never needed to be) -->
+  <path d="M128,345
+           L128,322
+           A22,20 0 0,1 172,322
+           L172,345 Z"
+        fill="#030110" opacity="0.96"/>
+  <!-- Interior glow — same solarDisk palette: the light the figure carries is already inside -->
+  <circle cx="150" cy="336" r="20" fill="#fffde0" opacity="0.06" filter="url(#softglow)"/>
+  <circle cx="150" cy="333" r="12" fill="#fffbe8" opacity="0.12" filter="url(#softglow)"/>
+  <circle cx="150" cy="330"  r="6"  fill="#fff5b0" opacity="0.16"/>
+  <!-- Arch stone surround -->
+  <path d="M125,345
+           L125,322
+           A25,23 0 0,1 175,322
+           L175,345"
+        fill="none" stroke="#0a0a14" stroke-width="2.2" opacity="0.75"/>
+  <!-- Rolled stone — displaced to right; ajar, not sealed -->
+  <!-- The borrowed tomb needed only three days; the stone was always going to move -->
+  <ellipse cx="190" cy="348" rx="13" ry="15"
+           fill="#141420" stroke="#0a0a14" stroke-width="1.5" opacity="0.88"/>
+  <line x1="184" y1="344"
+        x2="188" y2="358"
+        stroke="#0a0a14" stroke-width="0.9" opacity="0.55"/>
+  <line x1="192" y1="346"
+        x2="195" y2="359"
+        stroke="#0a0a14" stroke-width="0.8" opacity="0.42"/>
+  <!-- Water at threshold — lapping at the tomb entrance (Mem-baptism at the door of death) -->
+  <path d="M18,303 Q120,299 126,303"
+        fill="none" stroke="#0a1428" stroke-width="0.8" opacity="0.45"/>
+  <path d="M174,303 Q192,299 282,303"
+        fill="none" stroke="#0a1428" stroke-width="0.8" opacity="0.45"/>
+  
+  <!-- Grain of wheat — John 12:24; the seed that must fall and die to bear fruit -->
+  <!-- Threads forward to Death (XIII) and back to The Empress (III, Venus/grain) -->
+  <ellipse cx="155" cy="296" rx="5" ry="8" fill="#c8a830" opacity="0.70"
+           transform="rotate(18,155,296)"/>
+  <!-- Husk lines (grain texture) -->
+  <line x1="152" y1="291" x2="158" y2="301"
+        stroke="#a08020" stroke-width="0.7" opacity="0.50"
+        transform="rotate(18,155,296)"/>
+  <line x1="151" y1="295" x2="159" y2="299"
+        stroke="#a08020" stroke-width="0.5" opacity="0.38"
+        transform="rotate(18,155,296)"/>
+  <!-- Awn -->
+  <line x1="158" y1="290" x2="163" y2="282"
+        stroke="#c8a830" stroke-width="0.8" stroke-linecap="round" opacity="0.55"
+        transform="rotate(18,155,296)"/>
+  
+  <!-- Nehushtan — the Brass Serpent on the pole (Num 21:8-9; John 3:14) -->
+  <!-- The Teth-serpent of Lust (card XI) elevated: same creature, new axis -->
+  <!-- Left coil around stem -->
+  <path d="M135,265
+           C130,277 147,285 154,277
+           C166,269 168,284 157,295"
+        fill="none" stroke="#a87830" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Right coil -->
+  <path d="M165,265
+           C170,275 155,283 148,275"
+        fill="none" stroke="#a87830" stroke-width="3.5" stroke-linecap="round" opacity="0.72"/>
+  <!-- Scale marks -->
+  <path d="M137,267 L141,273"
+        stroke="#a87830" stroke-width="0.8" opacity="0.52"/>
+  <path d="M161,272 L157,278"
+        stroke="#a87830" stroke-width="0.8" opacity="0.52"/>
+  <!-- Serpent head — raised, facing LEFT-UPWARD (elevated, not striking) -->
+  <ellipse cx="130" cy="256" rx="7.5" ry="5"
+           fill="#a87830" stroke="#7a5420" stroke-width="0.8" opacity="0.92"
+           transform="rotate(-28,130,256)"/>
+  <!-- Eye — gold, same palette as the halo: the serpent and the light share the same fire -->
+  <circle cx="126" cy="254" r="1.6" fill="#ffcc44" opacity="0.85"/>
+  <!-- Tongue -->
+  <path d="M123,258 L118,255"
+        stroke="#cc3300" stroke-width="1" stroke-linecap="round" opacity="0.68"/>
+  <path d="M118,255 L115,253"
+        stroke="#cc3300" stroke-width="0.8" stroke-linecap="round" opacity="0.55"/>
+  <path d="M118,255 L114,257"
+        stroke="#cc3300" stroke-width="0.8" stroke-linecap="round" opacity="0.55"/>
+  
+  <!-- Figure — Water-element deep indigo; last human figure in the major arcana journey -->
+  <!-- Right leg straight (nailed foot) -->
+  <line x1="150" y1="113" x2="148" y2="144"
+        stroke="#1a2a5a" stroke-width="9" stroke-linecap="round" opacity="0.88"/>
+  <!-- Left leg bent at knee (Hanged Man posture — free leg crosses behind) -->
+  <line x1="150" y1="113" x2="162" y2="133"
+        stroke="#1a2a5a" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <line x1="162" y1="133" x2="170" y2="154"
+        stroke="#1a2a5a" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+  <!-- Hip -->
+  <ellipse cx="150" cy="162" rx="10" ry="7" fill="#1a2a5a" opacity="0.86"/>
+  <!-- Torso -->
+  <ellipse cx="150" cy="176" rx="11" ry="15"
+           fill="#1a2a5a" opacity="0.88"/>
+  <!-- Left arm along crossbar — open palm at end (orans through the nail) -->
+  <line x1="139" y1="190" x2="106" y2="190"
+        stroke="#1a2a5a" stroke-width="9" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm — mirror -->
+  <line x1="161" y1="190" x2="194" y2="190"
+        stroke="#1a2a5a" stroke-width="9" stroke-linecap="round" opacity="0.88"/>
+  <!-- Left open palm — ellipse oriented outward: not clenched, offered -->
+  <ellipse cx="104" cy="190" rx="5.5" ry="3.5" fill="#2a3a7a" opacity="0.80"/>
+  <!-- Right open palm -->
+  <ellipse cx="196" cy="190" rx="5.5" ry="3.5" fill="#2a3a7a" opacity="0.80"/>
+  <!-- Neck -->
+  <line x1="150" y1="190" x2="150" y2="201"
+        stroke="#1a2a5a" stroke-width="8" stroke-linecap="round" opacity="0.88"/>
+  <!-- Head — inverted; crown of head points toward the tomb below -->
+  <circle cx="150" cy="213" r="12" fill="#1a2a5a" opacity="0.90"/>
+  <!-- Face: serene, eyes open — no agony; the Hanged Man contemplates, does not struggle -->
+  <circle cx="146" cy="212" r="2" fill="#2a3a7a" opacity="0.60"/>
+  <circle cx="154" cy="212" r="2" fill="#2a3a7a" opacity="0.60"/>
+  
+  <!-- Halo — fourth appearance of the solar light (Fool / Hermit / Babalon / Hanged Man) -->
+  <!-- Rays poured downward: kenosis as optics; the light deliberately given to the Abyss -->
+  <circle cx="150" cy="227" r="26.04" fill="#fffde0" opacity="0.14" filter="url(#softglow)"/>
+  <circle cx="150" cy="227" r="18"  fill="#fffbe8" opacity="0.36" filter="url(#softglow)"/>
+  <circle cx="150" cy="227" r="12"            fill="#fff5b0" opacity="0.85"/>
+  <line x1="165" y1="227"
+               x2="176.04"  y2="227"
+               stroke="#ffee66" stroke-width="1.3" opacity="0.46"/>
+  <line x1="163.86" y1="232.74"
+               x2="169.4"  y2="235.04"
+               stroke="#ffee66" stroke-width="0.91" opacity="0.57"/>
+  <line x1="160.61" y1="237.61"
+               x2="168.41"  y2="245.41"
+               stroke="#ffee66" stroke-width="1.65" opacity="0.66"/>
+  <line x1="155.74" y1="240.86"
+               x2="158.04"  y2="246.4"
+               stroke="#ffee66" stroke-width="1.08" opacity="0.72"/>
+  <line x1="150" y1="242"
+               x2="150"  y2="253.04"
+               stroke="#ffee66" stroke-width="1.8" opacity="0.74"/>
+  <line x1="144.26" y1="240.86"
+               x2="141.96"  y2="246.4"
+               stroke="#ffee66" stroke-width="1.08" opacity="0.72"/>
+  <line x1="139.39" y1="237.61"
+               x2="131.59"  y2="245.41"
+               stroke="#ffee66" stroke-width="1.65" opacity="0.66"/>
+  <line x1="136.14" y1="232.74"
+               x2="130.6"  y2="235.04"
+               stroke="#ffee66" stroke-width="0.91" opacity="0.57"/>
+  <line x1="135" y1="227"
+               x2="123.96"  y2="227"
+               stroke="#ffee66" stroke-width="1.3" opacity="0.46"/>
+  <line x1="136.14" y1="221.26"
+               x2="130.6"  y2="218.96"
+               stroke="#ffee66" stroke-width="0.69" opacity="0.35"/>
+  <line x1="139.39" y1="216.39"
+               x2="131.59"  y2="208.59"
+               stroke="#ffee66" stroke-width="0.95" opacity="0.26"/>
+  <line x1="144.26" y1="213.14"
+               x2="141.96"  y2="207.6"
+               stroke="#ffee66" stroke-width="0.52" opacity="0.2"/>
+  <line x1="150" y1="212"
+               x2="150"  y2="200.96"
+               stroke="#ffee66" stroke-width="0.8" opacity="0.18"/>
+  <line x1="155.74" y1="213.14"
+               x2="158.04"  y2="207.6"
+               stroke="#ffee66" stroke-width="0.52" opacity="0.2"/>
+  <line x1="160.61" y1="216.39"
+               x2="168.41"  y2="208.59"
+               stroke="#ffee66" stroke-width="0.95" opacity="0.26"/>
+  <line x1="163.86" y1="221.26"
+               x2="169.4"  y2="218.96"
+               stroke="#ffee66" stroke-width="0.69" opacity="0.35"/>
+  
+  <!-- Nail through foot — at stem just below loop (foot nail = one of three) -->
+  <circle cx="150" cy="113" r="4.5" fill="#7a6030" opacity="0.90"/>
+  <circle cx="150" cy="113" r="2"   fill="#3a2a10" opacity="0.75"/>
+  <!-- Nail through left hand — at left end of crossbar -->
+  <circle cx="104" cy="190" r="4" fill="#7a6030" opacity="0.88"/>
+  <circle cx="104" cy="190" r="1.8" fill="#3a2a10" opacity="0.70"/>
+  <!-- Nail through right hand — at right end of crossbar (mirror, deliberate symmetry) -->
+  <circle cx="196" cy="190" r="4" fill="#7a6030" opacity="0.88"/>
+  <circle cx="196" cy="190" r="1.8" fill="#3a2a10" opacity="0.70"/>
+
+  <!-- Card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="17" fill="#88bbee" letter-spacing="2.5"
+        filter="url(#glow)">THE HANGED MAN</text>
+
+  <!-- Hebrew name / path -->
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#2a4a7a" letter-spacing="3" opacity="0.75">Mem · Water · Path 23</text>
+</svg>

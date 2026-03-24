@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "tarot.minor.rws.cups.ace",
+      "target": "playing.card.hearts.ace",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.2",
+      "target": "playing.card.hearts.2",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.3",
+      "target": "playing.card.hearts.3",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.4",
+      "target": "playing.card.hearts.4",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.5",
+      "target": "playing.card.hearts.5",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.6",
+      "target": "playing.card.hearts.6",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.7",
+      "target": "playing.card.hearts.7",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.8",
+      "target": "playing.card.hearts.8",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.9",
+      "target": "playing.card.hearts.9",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.10",
+      "target": "playing.card.hearts.10",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.page",
+      "target": "playing.card.hearts.jack",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.queen",
+      "target": "playing.card.hearts.queen",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.cups.king",
+      "target": "playing.card.hearts.king",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.ace",
+      "target": "playing.card.clubs.ace",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.2",
+      "target": "playing.card.clubs.2",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.3",
+      "target": "playing.card.clubs.3",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.4",
+      "target": "playing.card.clubs.4",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.5",
+      "target": "playing.card.clubs.5",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.6",
+      "target": "playing.card.clubs.6",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.7",
+      "target": "playing.card.clubs.7",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.8",
+      "target": "playing.card.clubs.8",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.9",
+      "target": "playing.card.clubs.9",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.10",
+      "target": "playing.card.clubs.10",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.page",
+      "target": "playing.card.clubs.jack",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.queen",
+      "target": "playing.card.clubs.queen",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.wands.king",
+      "target": "playing.card.clubs.king",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.ace",
+      "target": "playing.card.spades.ace",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.2",
+      "target": "playing.card.spades.2",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.3",
+      "target": "playing.card.spades.3",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.4",
+      "target": "playing.card.spades.4",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.5",
+      "target": "playing.card.spades.5",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.6",
+      "target": "playing.card.spades.6",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.7",
+      "target": "playing.card.spades.7",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.8",
+      "target": "playing.card.spades.8",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.9",
+      "target": "playing.card.spades.9",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.10",
+      "target": "playing.card.spades.10",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.page",
+      "target": "playing.card.spades.jack",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.queen",
+      "target": "playing.card.spades.queen",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.swords.king",
+      "target": "playing.card.spades.king",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.ace",
+      "target": "playing.card.diamonds.ace",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.2",
+      "target": "playing.card.diamonds.2",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.3",
+      "target": "playing.card.diamonds.3",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.4",
+      "target": "playing.card.diamonds.4",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.5",
+      "target": "playing.card.diamonds.5",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.6",
+      "target": "playing.card.diamonds.6",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.7",
+      "target": "playing.card.diamonds.7",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.8",
+      "target": "playing.card.diamonds.8",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.9",
+      "target": "playing.card.diamonds.9",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.10",
+      "target": "playing.card.diamonds.10",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.page",
+      "target": "playing.card.diamonds.jack",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.queen",
+      "target": "playing.card.diamonds.queen",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "tarot.minor.rws.pentacles.king",
+      "target": "playing.card.diamonds.king",
+      "label": "playing-card-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    }
+  ]
+}

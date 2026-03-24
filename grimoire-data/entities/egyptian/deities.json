@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "deity.egyptian.ra",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Ra / Amun-Ra",
+      "description": "Ra is the supreme solar creator deity of ancient Egypt, king of the gods, who sails through the sky each day in his solar barque and through the underworld each night, undergoing death and resurrection before rising again at dawn — the foundational myth of Egyptian solar theology. Amun-Ra is the great syncretism of Ra with Amun (the hidden god), producing a deity who is simultaneously visible solar radiance and invisible cosmic mystery, worshipped especially from the New Kingdom onward at Karnak as the universal hidden-yet-manifest godhead. In Hermetic and Western esoteric tradition Ra/Amun-Ra directly personifies the Sun as a cosmic creative force, corresponding to Tiphareth on the Qabalistic Tree of Life and to the Hermetic principle of the divine solar fire animating all life. His syncretic connections include Helios in the Greco-Roman world, Atum the primordial creator, and the later equation with Zeus-Ammon in Hellenistic syncretism.",
+      "secondaryNames": [
+        { "name": "Amun-Ra", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Atum", "languageTag": "egy", "visible": true, "sortOrder": 1 },
+        { "name": "Ra-Horakhty", "languageTag": "egy", "visible": false, "sortOrder": 2 },
+        { "name": "Zeus-Ammon", "languageTag": "el", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Sol",
+        "planetCN": "astrology.planet.sol",
+        "sephiraCN": "qabalah.sephira.tiphareth",
+        "domain": ["sun", "creation", "solar barque", "kingship", "divine light", "resurrection at dawn"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.thoth",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Thoth",
+      "description": "Thoth is the Egyptian god of wisdom, writing, magic, the Moon, and divine law — scribe of the gods, keeper of cosmic records, and the deity who invented hieroglyphic writing, mathematics, and all the sacred sciences. In the Hermetic tradition he is directly identified with Hermes, producing the syncretic Hermes Trismegistus ('Thrice-Great Hermes'), the mythical author of the Hermetic Corpus and legendary father of alchemy, astrology, and Western occultism — making Thoth the Egyptian root of the entire Hermetic current. The Golden Dawn firmly attributes Thoth to Mercury and to Hod (eighth sephira, Splendour), sphere of intellect, language, and ritual magic; Aleister Crowley named his tarot deck the Thoth Tarot in direct reference to this attribution and to Thoth's role as the supreme magician. His ibis head, baboon form, and Moon-disk crown link him simultaneously to the lunar and mercurial currents, reflecting his dual role as measurer of time (Moon) and communicator of divine intellect (Mercury).",
+      "secondaryNames": [
+        { "name": "Djehuty", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Hermes Trismegistus (ancestor)", "languageTag": "el", "visible": false, "sortOrder": 1 },
+        { "name": "Thoth Ibis", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Mercury",
+        "planetCN": "astrology.planet.mercury",
+        "sephiraCN": "qabalah.sephira.hod",
+        "domain": ["wisdom", "writing", "magic", "the Moon", "divine law", "mathematics", "sacred science", "time"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.osiris",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Osiris",
+      "description": "Osiris is the Egyptian god of the underworld, death, resurrection, and fertility — murdered by his brother Set, resurrected by his sister-wife Isis, and seated as judge of the dead in the Hall of Two Truths, where the heart is weighed against the feather of Ma'at. His myth of death and resurrection became the archetype for countless mystery religions and initiation rites in the ancient world, from the Osirian mysteries of Egypt to later Hermetic and Rosicrucian traditions where the candidate undergoes a symbolic death (as Osiris) and rebirth (as Horus). In the Golden Dawn tradition Osiris is attributed to Chokmah (the second sephira, Wisdom), the primordial masculine principle, the first emanation from Kether that contains the seed of all creation; he is also aligned with Saturn as lord of death and time in some Hermetic attributions. His Greco-Roman syncretism with Dionysus (Osiris-Dionysus) and Serapis further cemented his role as the universal dying-and-rising god of the ancient Mediterranean.",
+      "secondaryNames": [
+        { "name": "Ausar", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Osiris Onnophris", "languageTag": "egy", "visible": false, "sortOrder": 1 },
+        { "name": "Serapis", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.saturn",
+        "sephiraCN": "qabalah.sephira.chokmah",
+        "domain": ["underworld", "death", "resurrection", "fertility", "divine kingship", "judgment of the dead", "grain"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.isis",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Isis",
+      "description": "Isis is the supreme goddess of magic and healing in the Egyptian pantheon — the great enchantress who resurrected Osiris, conceived Horus by him, and became the protective mother of the divine pharaoh; she is regarded as the most skilled magician of all the gods. In the Greco-Roman world she became the most widely worshipped goddess of the ancient Mediterranean, her mysteries spreading from Egypt to Rome, Britain, and beyond, absorbing aspects of Hathor, Aphrodite, Demeter, and the lunar goddesses in a vast syncretic current. The Golden Dawn associates her primarily with Binah (the third sephira, Understanding), the Great Sea and the Dark Mother — and also with Venus as goddess of love, beauty, and the healing power of desire; her star is Sirius (Sopdet), whose heliacal rising marked the Egyptian New Year. Her winged throne-crown, the Tyet (Isis knot), and the sistrum are central symbols in ceremonial magic and modern Goddess spirituality.",
+      "secondaryNames": [
+        { "name": "Aset", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Isis Myrionymos", "languageTag": "el", "visible": false, "sortOrder": 1 },
+        { "name": "The Lady of Ten Thousand Names", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.venus",
+        "sephiraCN": "qabalah.sephira.binah",
+        "domain": ["magic", "healing", "motherhood", "nature", "love", "protection", "resurrection", "the throne"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.horus",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Horus",
+      "description": "Horus is the solar sky god of ancient Egypt, son of Osiris and Isis, the divine falcon whose eyes are the Sun and Moon, and the mythological prototype of the living pharaoh — every king of Egypt was the earthly embodiment of Horus and at death became Osiris. The Eye of Horus (Wedjat) is one of the most potent protective symbols in the entire Western magical tradition, inscribed on amulets, magical tools, and protective charms from antiquity to the present. In Hermetic and Thelemic tradition Horus takes on particular significance: Crowley proclaimed the Aeon of Horus in 1904, declaring a new spiritual age of the Crowned and Conquering Child to replace the dying Aeon of Osiris. As a solar deity Horus carries a subordinate solar attribution to Ra/Amun-Ra — he is the solar eye, the manifest solar power in action rather than the primordial solar creator — giving him a one-way correspondence to the Sun and the sphere of Tiphareth.",
+      "secondaryNames": [
+        { "name": "Heru", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Horus the Elder", "languageTag": "en", "visible": false, "sortOrder": 1 },
+        { "name": "Ra-Horakhty", "languageTag": "egy", "visible": false, "sortOrder": 2 },
+        { "name": "Harpocrates", "languageTag": "el", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.sol",
+        "sephiraCN": "qabalah.sephira.tiphareth",
+        "domain": ["sky", "sun", "divine pharaoh", "falcon", "solar eye", "protection", "war", "kingship"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.set",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Set",
+      "description": "Set is the Egyptian god of chaos, storms, the desert, and war — adversary of Osiris (whom he murdered) and of Horus (with whom he battled for the throne of Egypt), yet also paradoxically one of the most powerful divine protectors of the solar barque against the serpent Apophis in the underworld. In Greco-Roman syncretism Set was identified with Typhon (Set-Typhon), the monstrous adversary of Zeus, and through this equation with the planet Mars as the god of destructive, chaotic martial force. In the Western Left-Hand Path tradition Set has been rehabilitated as a deity of self-deification, individuation, and the magical Will by the Temple of Set; in Thelemic tradition he is associated with the Qliphothic current and the tunnel of Set. His planetary attribution to Mars via the Set-Typhon identification is attested in ancient magical papyri (PGM), where Set-Typhon is invoked with Martian planetary hours.",
+      "secondaryNames": [
+        { "name": "Seth", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Set-Typhon", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Sutekh", "languageTag": "egy", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.mars",
+        "sephiraCN": null,
+        "domain": ["chaos", "storms", "desert", "war", "conflict", "the adversary", "strength", "protection against Apophis"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.anubis",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Anubis",
+      "description": "Anubis is the jackal-headed Egyptian god of embalming, funerary rites, and the psychopomp who guides souls through the Duat (underworld) to the Hall of Two Truths for the Weighing of the Heart against the feather of Ma'at. As the god who invented the art of mummification (wrapping the body of Osiris after his murder by Set), Anubis is the master of the liminal space between life and death, the guardian of the tomb and protector of the deceased. In Hermetic tradition his function as psychopomp — the guide of souls between worlds — directly parallels that of Hermes/Mercury, and the two are identified in some ancient sources; this Hermes-Anubis syncretism (Hermanubis) was significant in Greco-Roman Egypt, attributed to Mercury as the planet of communication and passage between realms. His black colour (symbolising fertile Nile soil and the black of mummification, not evil) and scales of judgement make him central to Western magical practice around death, transition, and the afterlife.",
+      "secondaryNames": [
+        { "name": "Anpu", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Hermanubis", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Imy-ut", "languageTag": "egy", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.mercury",
+        "sephiraCN": null,
+        "domain": ["embalming", "death rites", "psychopomp", "underworld", "protection of the dead", "judgment", "the tomb"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.hathor",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Hathor",
+      "description": "Hathor is the Egyptian cow-goddess of love, beauty, music, fertility, joy, and the sky — one of the most ancient and widely worshipped deities of Egypt, whose name means 'House of Horus' (the sky as the celestial house of the solar hawk). She is directly identified with the planet Venus in Egyptian astronomical tradition, where Venus is called 'the star of Hathor,' making her the Egyptian direct personification of the Venusian principle alongside Aphrodite in the Greek tradition — both independently anchoring the bidirectional deity-planet link with astrology.planet.venus. In Greco-Roman syncretism she was identified with Aphrodite/Venus, Isis, and the generative Mother Goddess; her sistrum (a sacred rattle) and menat necklace are instruments of joy and magical protection. The Golden Dawn and Hermetic tradition attributes her to Netzach (seventh sephira, Victory), sphere of the emotions, desire, and the natural world, corresponding to Venus.",
+      "secondaryNames": [
+        { "name": "Het-Heru", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Lady of the West", "languageTag": "en", "visible": false, "sortOrder": 1 },
+        { "name": "Mistress of Dendera", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Venus",
+        "planetCN": "astrology.planet.venus",
+        "sephiraCN": "qabalah.sephira.netzach",
+        "domain": ["love", "beauty", "music", "fertility", "joy", "the sky", "motherhood", "the dead", "dancing"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.maat",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Ma'at",
+      "description": "Ma'at is the Egyptian goddess of truth, justice, cosmic order, and balance — the principle of Ma'at (right order, harmony, truth) that underlies all Egyptian religion, law, and cosmology, without which the universe would collapse into chaos. Her feather (the feather of truth) is weighed against the heart of the deceased in the Hall of Two Truths presided over by Osiris and Anubis, determining the soul's worthiness for eternal life — making her scales the central image of divine justice in the ancient world. In Hermetic tradition she is strongly associated with Libra (the scales) as the zodiac sign of balance and justice, and her principle of cosmic order (Ma'at) corresponds to the Qabalistic concept of Tiphereth as the harmonising centre of the Tree of Life. Her ostrich feather, scales, and throne (the hieroglyphic determinative of Ma'at) are among the most potent symbols of divine law and the necessary condition for spiritual advancement.",
+      "secondaryNames": [
+        { "name": "Maat", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Lady of Truth", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": "qabalah.sephira.tiphareth",
+        "domain": ["truth", "justice", "cosmic order", "balance", "law", "the feather", "the scales", "divine harmony"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.ptah",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Ptah",
+      "description": "Ptah is the Egyptian creator god and divine craftsman of Memphis — he who created the world through divine utterance (his heart conceived and his tongue commanded), making him the patron of all craftsmen, architects, artists, and builders; his name may be the origin of the Greek 'Aigyptos' (Egypt). As the divine demiurge who fashioned the cosmos through thought and word, Ptah corresponds to the Neoplatonic Demiurge and to the Qabalistic principle of Binah (form-giving limitation) or Chokmah (the creative will); in the Greco-Roman period he was syncretised with Hephaestus/Vulcan as the divine craftsman. In Hermetic tradition Ptah-Hephaestus is attributed to Saturn as the demiurgic creator who works through necessity, limitation, and the patient formation of matter — the craftsman-principle of cosmic construction. His tight-wrapped mummiform body, blue cap, and medjat sceptre make him immediately recognisable as the primordial creative force in Egyptian iconography.",
+      "secondaryNames": [
+        { "name": "Ptah-Sokar", "languageTag": "egy", "visible": false, "sortOrder": 0 },
+        { "name": "Ptah-Sokar-Osiris", "languageTag": "egy", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Vulcan",
+        "planetCN": "astrology.planet.saturn",
+        "sephiraCN": null,
+        "domain": ["creation", "craftsmanship", "architecture", "the arts", "divine utterance", "Memphis", "builders"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.sekhmet",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Sekhmet",
+      "description": "Sekhmet is the lion-headed goddess of war, fire, and healing — the Eye of Ra in her most terrifying aspect, sent to destroy humanity in the myth of the Destruction of Mankind, and only stopped when the fields were flooded with red beer (mistaken for blood) to quench her bloodlust. As the 'Powerful One', she embodies the divine wrath that both destroys and protects, making her the patron of physicians and healers (who are her priests, since she who sends pestilence can also cure it) as well as the goddess of war and the hot desert wind. In Greco-Roman syncretism Sekhmet's martial and destructive aspect was identified with the destructive principle of Mars, aligning her with the planet of war, fire, and violent transformation. The GD and Hermetic tradition attributes her Martian energy to Geburah on the Tree of Life — the sephira of severity, purgation, and the destructive force that maintains cosmic balance.",
+      "secondaryNames": [
+        { "name": "Sachmet", "languageTag": "egy", "visible": false, "sortOrder": 0 },
+        { "name": "Lady of Flame", "languageTag": "en", "visible": false, "sortOrder": 1 },
+        { "name": "Eye of Ra", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.mars",
+        "sephiraCN": "qabalah.sephira.geburah",
+        "domain": ["war", "fire", "healing", "divine wrath", "pestilence", "protection", "the lion", "the desert wind"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.nuit",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Nuit / Nut",
+      "description": "Nut (or Nuit) is the Egyptian sky goddess who arches her star-covered body over the earth in the form of the heavens — she who swallows the Sun each evening and gives birth to him anew each morning, and into whose body the dead ascend to be reborn among the stars. As the vast expanse of the starry sky, Nuit represents the infinite feminine divine that encompasses all of space and time, the body of heaven that holds the cosmic order of the stars. In Thelemic tradition, Crowley's Liber AL vel Legis (The Book of the Law, 1904) opens with the voice of Nuit as the supreme feminine principle: 'I am Infinite Space and the Infinite Stars thereof' — making her the central goddess of the Thelemic system. The GD tradition sometimes associates Nuit with Saturn/Binah as the vast dark expanse (the great sea, the night sky) that receives and contains all stars; in Thelema she transcends any single sephirothic correspondence as the infinite totality.",
+      "secondaryNames": [
+        { "name": "Nut", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Nuit", "languageTag": "fr", "visible": true, "sortOrder": 1 },
+        { "name": "Lady of the Stars", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.saturn",
+        "sephiraCN": "qabalah.sephira.binah",
+        "domain": ["sky", "stars", "heaven", "the night", "cosmic expanse", "mother of the gods", "infinite space", "Thelema"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.heka",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Heka",
+      "description": "Heka is the Egyptian god of magic and medicine — unique among the Egyptian deities in that he is not a deity who uses magic but is literally the personification of magic (heka) itself, the primordial force that preceded creation and enabled Ra to create the world. In Egyptian cosmology heka is the divine force inherent in all things, the principle by which the gods exercise their powers and by which human magicians operate; Heka (the deity) is therefore the source-principle of all magical action in the Egyptian universe. He is considered one of the most ancient of Egyptian divinities, present at the moment of creation and described as existing 'before duality came into being' — making him a pre-cosmic, absolute magical force rather than a deity with a particular domain. Heka holds no clear classical planetary attribution in Hermetic or GD tradition, as his nature as the raw principle of magic transcends the planetary system of correspondences.",
+      "secondaryNames": [
+        { "name": "Heka the Magician", "languageTag": "en", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["magic", "heka", "medicine", "primordial force", "creation", "the power of words", "pre-cosmic magic"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.nephthys",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Nephthys",
+      "description": "Nephthys is the Egyptian goddess of death, protective magic, mourning, lamentation, and hidden knowledge — sister of Isis, Osiris, and Set, and wife of Set, yet who aided Isis in the resurrection of Osiris and stands at the foot of the bier as one of the two great guardian goddesses of the dead. Where Isis represents the visible, radiant, life-giving aspect of the divine feminine, Nephthys represents the dark, hidden, protective, and funerary aspect — the shadow of Isis, present wherever death and hidden things are found. In Hermetic tradition she is associated with the dark or hidden face of the Moon, the waning and new Moon that carries hidden potency; some sources align her with the Qabalistic Binah as the dark maternal principle, or with the 13th path (the High Priestess in Tarot) as the veil between the seen and unseen. Her role as mourner, protector of the dead, and keeper of hidden knowledge makes her particularly significant in left-hand path traditions and in work with the ancestors.",
+      "secondaryNames": [
+        { "name": "Nebet-Het", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Lady of the House", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": null,
+        "domain": ["death", "protective magic", "mourning", "lamentation", "hidden knowledge", "the dark Moon", "the dead"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.bast",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Bast / Bastet",
+      "description": "Bast (later Bastet) is the Egyptian cat goddess of protection, home, fertility, music, and joy — originally depicted as a fierce lion-headed goddess of war and the solar Eye of Ra, but by the Late Period she had become the gentle cat-headed goddess of domesticity, the hearth, and protection of the household. In later Egyptian religion and into the Greco-Roman period, Bast became increasingly identified as a lunar deity — the gentle protective Moon as opposed to the fierce solar power of Sekhmet — and some Hermetic sources attribute her to the Venus current as the goddess of beauty, pleasure, and feminine grace. Her role as protector of cats (sacred animals in Egypt), patron of musicians and dancers, and guardian of the home makes her widely invoked in modern Wicca and Paganism; her festival at Bubastis was one of the most jubilant in the Egyptian calendar. In Western esoteric tradition her planetary attribution is debated: lunar for her protective night-aspect, Venusian for her beauty and pleasure-aspect.",
+      "secondaryNames": [
+        { "name": "Bastet", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Ailuros", "languageTag": "el", "visible": false, "sortOrder": 1 },
+        { "name": "Lady of Bubastis", "languageTag": "en", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Diana",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": null,
+        "domain": ["protection", "home", "cats", "fertility", "music", "joy", "dancing", "the Moon", "the domestic hearth"]
+      }
+    }
+  ]
+}

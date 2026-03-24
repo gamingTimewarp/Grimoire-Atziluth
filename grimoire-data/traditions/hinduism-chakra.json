@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tradition": {
+    "canonicalName": "tradition.hinduism-chakra",
+    "displayName": "Hinduism / Chakra System",
+    "description": "The Tantric and Yogic chakra system as described in classical Sanskrit texts including the Sat-Chakra-Nirupana (1577), the Shiva Samhita, and the Gorakshashataka. Covers the seven classical chakras of the subtle body (sūkṣma-śarīra), their Sephirothic correspondences, planetary attributions, seed mantras, deities, and psychological functions.",
+    "attributionFields": [
+      { "linkLabel": "attributed-chakra", "displayName": "Chakra", "targetEntityType": "chakra", "allowMultiple": false, "sortOrder": 0 },
+      { "linkLabel": "attributed-planet", "displayName": "Ruling Planet", "targetEntityType": "astrology.planet", "allowMultiple": false, "sortOrder": 1 },
+      { "linkLabel": "attributed-element", "displayName": "Tattva (Element)", "targetEntityType": "astrology.element", "allowMultiple": false, "sortOrder": 2 }
+    ]
+  }
+}

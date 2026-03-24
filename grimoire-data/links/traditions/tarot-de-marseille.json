@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "tarot.major.tdm.la-justice",         "target": "tarot.major.tdm.la-force",  "label": "tdm-pre-waite-numbering-swap", "traditionScope": ["tarot-de-marseille"], "extendedData": { "tdmJusticeNumber": 8, "tdmForceNumber": 11, "note": "In the Marseille tradition Justice=8 and La Force=11. Waite swapped these to Justice=11 and Strength=8 in 1910, which the RWS and GD codified. Crowley restored the original Marseille order in the Thoth deck." } },
+    { "source": "tarot.major.tdm.le-mat",             "target": "tarot.major.tdm.le-monde",  "label": "tdm-unnumbered-bookends",      "traditionScope": ["tarot-de-marseille"], "extendedData": { "note": "Le Mat (The Fool) is traditionally unnumbered in the Marseille tradition and can be placed at the beginning or end of the major arcana sequence, or outside it entirely. This ambiguity was resolved by Waite who fixed it at 0." } },
+
+    { "source": "tarot.major.tdm.le-mat",             "target": "astrology.element.air",      "label": "tdm-traditional-element",     "traditionScope": ["tarot-de-marseille"], "extendedData": { "source": "pre-GD folk attribution" } },
+    { "source": "tarot.major.tdm.le-jugement",        "target": "astrology.element.fire",     "label": "tdm-traditional-element",     "traditionScope": ["tarot-de-marseille"], "extendedData": { "source": "pre-GD folk attribution" } },
+
+    { "source": "tarot.suit.tdm.batons",              "target": "astrology.element.fire",     "label": "tdm-suit-element",            "traditionScope": ["tarot-de-marseille"], "extendedData": {} },
+    { "source": "tarot.suit.tdm.coupes",              "target": "astrology.element.water",    "label": "tdm-suit-element",            "traditionScope": ["tarot-de-marseille"], "extendedData": {} },
+    { "source": "tarot.suit.tdm.epees",               "target": "astrology.element.air",      "label": "tdm-suit-element",            "traditionScope": ["tarot-de-marseille"], "extendedData": {} },
+    { "source": "tarot.suit.tdm.deniers",             "target": "astrology.element.earth",    "label": "tdm-suit-element",            "traditionScope": ["tarot-de-marseille"], "extendedData": {} }
+  ]
+}

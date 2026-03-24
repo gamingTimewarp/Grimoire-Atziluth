@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0100"/>
+      <stop offset="100%" stop-color="#280500"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="420" rx="10" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect x="5" y="5" width="290" height="410" rx="8"
+        fill="none" stroke="#7a1200" stroke-width="1.5"/>
+  <!-- Inner decorative border -->
+  <rect x="11" y="11" width="278" height="398" rx="5"
+        fill="none" stroke="#bb1e00" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Separator lines -->
+  <line x1="18" y1="76" x2="282" y2="76" stroke="#7a1200" stroke-width="0.8" opacity="0.6"/>
+  <line x1="18" y1="352" x2="282" y2="352" stroke="#7a1200" stroke-width="0.8" opacity="0.6"/>
+
+
+  <!-- Pip header: number + decanate -->
+  <text x="24" y="45"
+        text-anchor="start" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="26" font-weight="300" fill="#ffcc44">X</text>
+  <!-- Planet symbol -->
+  <text x="150" y="38"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="20" fill="#ee4400" opacity="0.9">♄</text>
+  <!-- Sign symbol -->
+  <text x="150" y="60"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI Symbol','Apple Symbols','DejaVu Sans',sans-serif"
+        font-size="18" fill="#bb1e00" opacity="0.75">♐</text>
+  <!-- Decan description (tiny) -->
+  <text x="276" y="45"
+        text-anchor="end" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,serif"
+        font-size="8.5" fill="#994422" letter-spacing="0.5">Saturn in Sagittarius</text>
+
+  <!-- Pip arrangement: 10 pips -->
+  <g filter="url(#glow)"><g>
+  <line x1="68" y1="118.24" x2="68" y2="85.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="68" cy="81.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="68" cy="118.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="150" y1="118.24" x2="150" y2="85.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="150" cy="81.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="150" cy="118.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="232" y1="118.24" x2="232" y2="85.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="232" cy="81.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="232" cy="118.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="68" y1="183.24" x2="68" y2="150.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="68" cy="146.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="68" cy="183.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="232" y1="183.24" x2="232" y2="150.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="232" cy="146.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="232" cy="183.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="68" y1="287.24" x2="68" y2="254.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="68" cy="250.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="68" cy="287.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="232" y1="287.24" x2="232" y2="254.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="232" cy="250.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="232" cy="287.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="68" y1="352.24" x2="68" y2="319.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="68" cy="315.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="68" cy="352.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="150" y1="352.24" x2="150" y2="319.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="150" cy="315.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="150" cy="352.24" r="3.68" fill="#ee4400"/>
+</g>
+  <g>
+  <line x1="232" y1="352.24" x2="232" y2="319.12"
+        stroke="#ee4400" stroke-width="5.06" stroke-linecap="round"/>
+  <ellipse cx="232" cy="315.44" rx="5.47" ry="7.82" fill="#ee4400"/>
+  <circle cx="232" cy="352.24" r="3.68" fill="#ee4400"/>
+</g></g>
+
+  <!-- Footer: card title -->
+  <text x="150" y="374"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="16" fill="#ffcc44" letter-spacing="2"
+        filter="url(#glow)">Oppression</text>
+  <text x="150" y="396"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
+        font-size="9" fill="#994422" letter-spacing="3"
+        opacity="0.8">X of Wands</text>
+</svg>

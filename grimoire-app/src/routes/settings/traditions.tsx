@@ -1,0 +1,338 @@
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useEffect, useState } from 'react'
+import { useEngineStore } from '@/stores/engine'
+import type { Tradition } from '@grimoire/core'
+import {
+  loadTraditionSettings, saveTraditionSettings,
+  TRADITION_SYSTEMS, TRADITION_DISPLAY_NAMES,
+} from '@/lib/tradition-store'
+import type { TraditionSettings, AstrologyMode, HouseSystem } from '@/lib/tradition-store'
+import { Button } from '@/components/ui/Button'
+import { ArrowLeft, ExternalLink } from 'lucide-react'
+
+export const Route = createFileRoute('/settings/traditions')({
+  component: TraditionsPage,
+})
+
+function TraditionsPage() {
+  const navigate   = useNavigate()
+  const { engine } = useEngineStore()
+  const [settings, setSettings] = useState<TraditionSettings>(() => loadTraditionSettings())
+  const [traditions, setTraditions] = useState<Map<string, Tradition>>(new Map())
+  const [saved, setSaved] = useState(false)
+
+  useEffect(() => {
+    if (!engine) return
+    engine.adapter.listTraditions().then(list => {
+      setTraditions(new Map(list.map(t => [t.canonicalName, t])))
+    }).catch(console.error)
+  }, [engine])
+
+  const save = (next: TraditionSettings) => {
+    setSettings(next)
+    saveTraditionSettings(next)
+    setSaved(true)
+    setTimeout(() => setSaved(false), 1500)
+  }
+
+  const toggleActive = (cn: string) => {
+    const active = settings.activeTraditions.includes(cn)
+    const next = active
+      ? settings.activeTraditions.filter(t => t !== cn)
+      : [...settings.activeTraditions, cn]
+    save({ ...settings, activeTraditions: next })
+  }
+
+  const setPrimary = (systemId: string, cn: string) => {
+    // Primary implies active
+    const next = settings.activeTraditions.includes(cn)
+      ? settings.activeTraditions
+      : [...settings.activeTraditions, cn]
+    save({
+      ...settings,
+      activeTraditions: next,
+      primaryBySystem: { ...settings.primaryBySystem, [systemId]: cn },
+    })
+  }
+
+  const setAstrologyMode = (mode: AstrologyMode) => {
+    save({ ...settings, astrologyMode: mode })
+  }
+
+  const setHouseSystem = (hs: HouseSystem) => {
+    save({ ...settings, houseSystem: hs })
+  }
+
+  return (
+    <div style={{ maxWidth: '640px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings' })}>
+          <ArrowLeft size={13} /> Settings
+        </Button>
+        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Traditions</h1>
+        {saved && <span style={{ fontSize: '12px', color: 'var(--color-accent)', marginLeft: 'auto' }}>Saved</span>}
+      </div>
+
+      <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginBottom: '28px', lineHeight: '1.6' }}>
+        Active traditions determine which correspondences and attribution links are shown
+        throughout the app. The primary tradition for each system determines which names
+        and romanisations are displayed.
+      </p>
+
+      {/* Tradition systems */}
+      {TRADITION_SYSTEMS.map(system => (
+        <div key={system.id} style={{ marginBottom: '28px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+          <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '4px' }}>
+            {system.label}
+          </div>
+          <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '16px' }}>
+            {system.description}
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {system.id === 'qabalah' && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid var(--color-border)' }}>
+                <div>
+                  <div style={{ fontSize: '13px', color: 'var(--color-text)' }}>Show Da'ath</div>
+                  <div style={{ fontSize: '11px', color: 'var(--color-text-muted)', marginTop: '2px' }}>
+                    Display the hidden sephira Da'ath on the Tree of Life.
+                  </div>
+                </div>
+                <button
+                  onClick={() => save({ ...settings, showDaath: !settings.showDaath })}
+                  style={{
+                    width: '36px', height: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer',
+                    padding: 0, flexShrink: 0, position: 'relative', transition: 'background 0.15s',
+                    background: settings.showDaath ? 'var(--color-accent)' : 'var(--color-border)',
+                  }}
+                >
+                  <div style={{
+                    width: '14px', height: '14px', borderRadius: '50%', background: '#fff',
+                    position: 'absolute', top: '3px', left: settings.showDaath ? '19px' : '3px',
+                    transition: 'left 0.15s',
+                  }} />
+                </button>
+              </div>
+            )}
+            {system.traditionCNs.map(cn => {
+              const tradition = traditions.get(cn)
+              const displayName = tradition?.displayName ?? TRADITION_DISPLAY_NAMES[cn] ?? cn.split('.').pop() ?? cn
+              const isActive  = settings.activeTraditions.includes(cn)
+              const isPrimary = settings.primaryBySystem[system.id] === cn
+              return (
+                <div key={cn} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  {/* Active toggle */}
+                  <button
+                    onClick={() => toggleActive(cn)}
+                    title={isActive ? 'Deactivate' : 'Activate'}
+                    style={{
+                      width: '32px', height: '18px', borderRadius: '9px', border: 'none',
+                      cursor: 'pointer', padding: 0, flexShrink: 0,
+                      background: isActive ? 'var(--color-accent)' : 'var(--color-border)',
+                      position: 'relative', transition: 'background 0.15s',
+                    }}
+                  >
+                    <div style={{
+                      width: '12px', height: '12px', borderRadius: '50%', background: '#fff',
+                      position: 'absolute', top: '3px', left: isActive ? '17px' : '3px',
+                      transition: 'left 0.15s',
+                    }} />
+                  </button>
+
+                  {/* Name */}
+                  <span style={{ flex: 1, fontSize: '13px', color: isActive ? 'var(--color-text)' : 'var(--color-text-subtle)' }}>
+                    {displayName}
+                  </span>
+
+                  {/* Primary radio */}
+                  <button
+                    onClick={() => setPrimary(system.id, cn)}
+                    title="Set as primary"
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: '5px',
+                      background: 'none', border: 'none', cursor: 'pointer',
+                      fontSize: '11px', color: isPrimary ? 'var(--color-accent)' : 'var(--color-text-subtle)',
+                      padding: '2px 6px', borderRadius: '4px', fontFamily: 'inherit',
+                    }}
+                  >
+                    <div style={{
+                      width: '12px', height: '12px', borderRadius: '50%', flexShrink: 0,
+                      border: `2px solid ${isPrimary ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                      background: isPrimary ? 'var(--color-accent)' : 'transparent',
+                    }} />
+                    Primary
+                  </button>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      ))}
+
+      {/* Astrology mode */}
+      <div style={{ marginBottom: '28px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '4px' }}>Astrology</div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '16px' }}>
+          Zodiac system used for planetary positions and natal charts.
+          Sidereal uses the Lahiri ayanamsa. IAU enables Ophiuchus.
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {([
+            { id: 'tropical' as AstrologyMode, label: 'Tropical',       desc: 'Standard Western astrology, aligned to the vernal equinox (0° Aries).' },
+            { id: 'sidereal' as AstrologyMode, label: 'Sidereal',       desc: 'Star-aligned zodiac using the Lahiri ayanamsa (~24° offset from tropical).' },
+            { id: 'iau'      as AstrologyMode, label: 'IAU (13 signs)', desc: 'Astronomical constellation boundaries including Ophiuchus.' },
+            { id: 'vedic'    as AstrologyMode, label: 'Vedic (Jyotish)',desc: 'Sidereal zodiac with 27 nakshatra lunar mansions. Uses Lahiri ayanamsa.' },
+          ] as const).map(opt => (
+            <button
+              key={opt.id}
+              onClick={() => setAstrologyMode(opt.id)}
+              style={{
+                display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '10px 12px',
+                background: settings.astrologyMode === opt.id ? 'rgba(180,156,90,0.08)' : 'transparent',
+                border: `1px solid ${settings.astrologyMode === opt.id ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+                borderRadius: '6px', cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit',
+              }}
+            >
+              <div style={{
+                width: '14px', height: '14px', borderRadius: '50%', flexShrink: 0, marginTop: '2px',
+                border: `2px solid ${settings.astrologyMode === opt.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                background: settings.astrologyMode === opt.id ? 'var(--color-accent)' : 'transparent',
+              }} />
+              <div>
+                <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '2px' }}>{opt.label}</div>
+                <div style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>{opt.desc}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* House system */}
+      <div style={{ marginBottom: '28px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '4px' }}>House System</div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '16px' }}>
+          Method used to divide the sky into astrological houses.
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          {([
+            { id: 'placidus'      as HouseSystem, label: 'Placidus',      desc: 'Semi-arc method. Most widely used in modern Western astrology. May be inaccurate above 66° latitude.' },
+            { id: 'koch'          as HouseSystem, label: 'Koch',          desc: 'Birthplace system. Uses the MC\'s diurnal semi-arc to divide the houses. Similar to Placidus in mid-latitudes.' },
+            { id: 'regiomontanus' as HouseSystem, label: 'Regiomontanus', desc: 'Divides the celestial equator into 12 equal parts from RAMC, projected via the Zenith to the ecliptic.' },
+            { id: 'campanus'      as HouseSystem, label: 'Campanus',      desc: 'Divides the prime vertical (East–Zenith–West–Nadir) into 12 equal arcs, projected to the ecliptic.' },
+            { id: 'porphyry'      as HouseSystem, label: 'Porphyry',      desc: 'Divides each quadrant arc (ASC–IC–DSC–MC) into three equal parts. Works at all latitudes.' },
+            { id: 'morinus'       as HouseSystem, label: 'Morinus',       desc: 'Divides the equator into 12 equal parts from RAMC, projected to the ecliptic without latitude. Latitude-independent.' },
+            { id: 'whole-sign'    as HouseSystem, label: 'Whole Sign',    desc: 'Each house occupies an entire sign, starting from the Ascendant\'s sign. Works at all latitudes.' },
+            { id: 'equal'         as HouseSystem, label: 'Equal House',   desc: 'Houses are equal 30° arcs starting from the exact degree of the Ascendant.' },
+          ] as const).map(opt => (
+            <button
+              key={opt.id}
+              onClick={() => setHouseSystem(opt.id)}
+              style={{
+                padding: '10px 12px', display: 'flex', alignItems: 'flex-start', gap: '12px',
+                background: settings.houseSystem === opt.id ? 'rgba(180,156,90,0.08)' : 'transparent',
+                border: `1px solid ${settings.houseSystem === opt.id ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+                borderRadius: '6px', cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit',
+              }}
+            >
+              <div style={{
+                width: '14px', height: '14px', borderRadius: '50%', flexShrink: 0, marginTop: '2px',
+                border: `2px solid ${settings.houseSystem === opt.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                background: settings.houseSystem === opt.id ? 'var(--color-accent)' : 'transparent',
+              }} />
+              <div>
+                <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '2px' }}>{opt.label}</div>
+                <div style={{ fontSize: '11px', color: 'var(--color-text-muted)' }}>{opt.desc}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Custom traditions */}
+      <div style={{ marginBottom: '28px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+          <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Custom Traditions</div>
+          <button
+            onClick={() => navigate({ to: '/custom/traditions' })}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '11px', color: 'var(--color-text-subtle)', display: 'flex', alignItems: 'center', gap: '4px', fontFamily: 'inherit', padding: 0 }}
+          >
+            <ExternalLink size={11} /> Manage
+          </button>
+        </div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '16px' }}>
+          User-defined traditions with custom relationship types and display names for existing entities.
+        </div>
+        {traditions.size > 0 ? (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {[...traditions.values()].filter(t => !t.isBuiltIn).map(t => {
+              const cn = t.canonicalName
+              const isActive = settings.activeTraditions.includes(cn)
+              return (
+                <div key={cn} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <button
+                    onClick={() => toggleActive(cn)}
+                    title={isActive ? 'Deactivate' : 'Activate'}
+                    style={{
+                      width: '32px', height: '18px', borderRadius: '9px', border: 'none',
+                      cursor: 'pointer', padding: 0, flexShrink: 0,
+                      background: isActive ? 'var(--color-accent)' : 'var(--color-border)',
+                      position: 'relative', transition: 'background 0.15s',
+                    }}
+                  >
+                    <div style={{
+                      width: '12px', height: '12px', borderRadius: '50%', background: '#fff',
+                      position: 'absolute', top: '3px', left: isActive ? '17px' : '3px',
+                      transition: 'left 0.15s',
+                    }} />
+                  </button>
+                  <span style={{ flex: 1, fontSize: '13px', color: isActive ? 'var(--color-text)' : 'var(--color-text-subtle)' }}>
+                    {t.displayName}
+                  </span>
+                  <span style={{ fontSize: '10px', color: 'var(--color-text-subtle)', fontFamily: 'monospace' }}>
+                    {cn}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        ) : (
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+            No custom traditions yet.{' '}
+            <button onClick={() => navigate({ to: '/custom/traditions' })} style={{ background: 'none', border: 'none', color: 'var(--color-accent)', cursor: 'pointer', fontSize: 'inherit', fontFamily: 'inherit', padding: 0 }}>
+              Create one →
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Custom content */}
+      <div style={{ marginBottom: '28px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '16px' }}>Custom Content</div>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div>
+            <div style={{ fontSize: '13px', color: 'var(--color-text)' }}>Show custom entities</div>
+            <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginTop: '2px' }}>
+              Include user-created entities in reference search and study sessions.
+            </div>
+          </div>
+          <button
+            onClick={() => save({ ...settings, customEnabled: !settings.customEnabled })}
+            style={{
+              width: '36px', height: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer',
+              padding: 0, flexShrink: 0, position: 'relative', transition: 'background 0.15s',
+              background: settings.customEnabled ? 'var(--color-accent)' : 'var(--color-border)',
+            }}
+          >
+            <div style={{
+              width: '14px', height: '14px', borderRadius: '50%', background: '#fff',
+              position: 'absolute', top: '3px', left: settings.customEnabled ? '19px' : '3px',
+              transition: 'left 0.15s',
+            }} />
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+

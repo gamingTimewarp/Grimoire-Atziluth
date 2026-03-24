@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "norse.deity.odin",  "target": "astrology.planet.mercury", "label": "deity-planet", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.thor",  "target": "astrology.planet.jupiter", "label": "deity-planet", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.freya", "target": "astrology.planet.venus",   "label": "deity-planet", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.frigg", "target": "astrology.planet.venus",   "label": "deity-planet", "bidirectional": false, "traditionScope": [] },
+    { "source": "norse.deity.tyr",   "target": "astrology.planet.mars",    "label": "deity-planet", "bidirectional": false, "traditionScope": [] }
+  ]
+}

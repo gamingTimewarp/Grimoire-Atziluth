@@ -1,0 +1,1525 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.nakshatra.ashvini",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Ashvini",
+      "description": "Ashvini (Sanskrit: अश्विनी) takes its name from the Ashvins, the twin divine physicians of Vedic cosmology, meaning 'born of a horse' or 'horse woman' — the asterism's presiding image is a horse's head. As the first nakshatra, Ashvini initiates the lunar zodiac at 0° sidereal Aries, imbuing it with the raw energy of beginnings, speed, and pioneering impulse. Its ruling deity, the twin Ashvin brothers (Dasra and Nasatya), are celestial healers who restore sight to the blind and youth to the aged, conferring upon this mansion themes of miraculous healing, swift rescue, and rejuvenation. The nature of Ashvini is Deva (divine) and its primary motivation is Dharma, pointing to an inherent orientation toward right action and light. Astrologically, Ashvini bestows vitality, swiftness, instinctual courage, and the capacity to initiate new ventures with alacrity; its shadow lies in impatience and a tendency to leap before looking.",
+      "secondaryNames": [
+        {
+          "name": "अश्विनी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Asvini",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Aswini",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "ketu",
+        "aries"
+      ],
+      "extendedData": {
+        "orderNumber": 1,
+        "startLongitude": 0.0,
+        "endLongitude": 13.333,
+        "lord": "astrology.planet.ketu",
+        "deity": "Ashvins (Dasra and Nasatya)",
+        "symbol": "Horse head",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "astrology.element.earth",
+        "keywords": [
+          "beginnings",
+          "speed",
+          "healing",
+          "vitality",
+          "courage",
+          "pioneering",
+          "swiftness",
+          "rejuvenation",
+          "twins"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.bharani",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Bharani",
+      "description": "Bharani (Sanskrit: भरणी) derives from a root meaning 'the bearer' or 'she who bears', reflecting both the capacity to carry and to sustain — and, more darkly, to endure the full weight of consequence. Its symbol, the yoni (womb), speaks to the primal creative and destructive feminine force: birth and death are two faces of the same door. The presiding deity is Yama, the lord of death and dharmic accountability, who weighs the souls of the departed against the feather of righteousness. Bharani is of Manushya (human) nature, driven by the motivation of Artha (material purpose), and its ruling planet is Venus — an unexpected pairing that highlights the Venusian love of beauty alongside the Yamaian confrontation with mortality and moral reckoning. Astrologically, Bharani confers fierce resolve, the ability to bear extremity, sexual and creative magnetism, and a capacity for transformation through endurance; its challenges involve transgression, excess, and the temptations of the underworld.",
+      "secondaryNames": [
+        {
+          "name": "भरणी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Barani",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "venus",
+        "aries"
+      ],
+      "extendedData": {
+        "orderNumber": 2,
+        "startLongitude": 13.333,
+        "endLongitude": 26.667,
+        "lord": "astrology.planet.venus",
+        "deity": "Yama",
+        "symbol": "Yoni (vulva/womb)",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "artha",
+        "quality": "fixed",
+        "element": "astrology.element.earth",
+        "keywords": [
+          "bearing",
+          "endurance",
+          "death",
+          "transformation",
+          "sexuality",
+          "creativity",
+          "moral reckoning",
+          "restraint",
+          "fertility",
+          "the womb"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.krittika",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Krittika",
+      "description": "Krittika (Sanskrit: कृत्तिका) is named for the Pleiades cluster (the Krittikas), a group of six nurses or foster mothers in Vedic myth who suckled the war-god Kartikeya (Skanda) after his birth. The Sanskrit root krit means 'to cut', and the symbol — a razor or flame — reflects the nakshatra's piercing, purifying energy. Agni, the god of fire, is the ruling deity; as the divine sacrificial fire, Agni both nourishes and destroys, purifying whatever it touches. The Sun rules Krittika, lending it solar qualities of brilliance, authority, and the uncompromising illumination of truth. Of Rakshasa (demonic) nature yet motivated by Kama (desire), Krittika is a complex constellation: it cuts away impurity, forges strength through trial, and confers formidable determination, but its shadow involves severity, aggression, and the misuse of cutting power.",
+      "secondaryNames": [
+        {
+          "name": "कृत्तिका",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Kritika",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Karthika",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "sun",
+        "aries",
+        "taurus"
+      ],
+      "extendedData": {
+        "orderNumber": 3,
+        "startLongitude": 26.667,
+        "endLongitude": 40.0,
+        "lord": "astrology.planet.sol",
+        "deity": "Agni",
+        "symbol": "Razor or flame",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "kama",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "cutting",
+          "purification",
+          "fire",
+          "authority",
+          "brilliance",
+          "severity",
+          "the Pleiades",
+          "nourishment",
+          "determination",
+          "courage"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.rohini",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Rohini",
+      "description": "Rohini (Sanskrit: रोहिणी) means 'the red one' or 'the growing one', named for the ruddy star Aldebaran (α Tauri), the eye of the Bull and one of the four royal stars of antiquity. In Vedic myth, Rohini was the most beloved of the Moon's twenty-seven wives (the nakshatras themselves), and the Moon was said to linger longest in her mansion — hence the Moon is exalted in Taurus, within Rohini's span. The presiding deity is Brahma or Prajapati, the creator, reflecting themes of fertility, abundance, and generative power. Rohini is of Manushya nature and motivated by Moksha (liberation), suggesting that through beauty and earthly fulfilment the soul may paradoxically find release. Astrologically, Rohini is considered one of the most auspicious nakshatras: it bestows beauty, charisma, sensuality, creativity, material prosperity, and a magnetic draw — with its shadow in possessiveness, vanity, and attachment.",
+      "secondaryNames": [
+        {
+          "name": "रोहिणी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Rohani",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "luna",
+        "taurus"
+      ],
+      "extendedData": {
+        "orderNumber": 4,
+        "startLongitude": 40.0,
+        "endLongitude": 53.333,
+        "lord": "astrology.planet.luna",
+        "deity": "Brahma / Prajapati",
+        "symbol": "Chariot or ox cart",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "fixed",
+        "element": "astrology.element.earth",
+        "keywords": [
+          "beauty",
+          "fertility",
+          "abundance",
+          "sensuality",
+          "creativity",
+          "prosperity",
+          "charisma",
+          "magnetism",
+          "Aldebaran",
+          "Moon's beloved"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.mrigashira",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Mrigashira",
+      "description": "Mrigashira (Sanskrit: मृगशिरा) translates as 'deer's head' (mriga = deer/animal, shira = head), and its symbol is accordingly the head of a deer — gentle, alert, ever-seeking. In Vedic myth, this asterism marks the spot where Brahma's daughter Rohini fled from him in the form of a deer, and Soma (the Moon god) is the ruling deity, lending the nakshatra a quality of perpetual longing and the search for the beloved. Mars is the planetary lord, which creates a fascinating tension between the Martian drive and the Soman sensitivity. Mrigashira is of Deva nature and motivated by Moksha, suggesting a spiritualised restlessness — the seeker who wanders in quest of ultimate truth. Astrologically, this nakshatra confers curiosity, gentleness, sensory refinement, a love of travel and exploration, and a poetic sensitivity; its shadow lies in indecisiveness and a romantic restlessness that never quite settles.",
+      "secondaryNames": [
+        {
+          "name": "मृगशिरा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mrigasiras",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Mrigazhirisham",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mars",
+        "taurus",
+        "gemini"
+      ],
+      "extendedData": {
+        "orderNumber": 5,
+        "startLongitude": 53.333,
+        "endLongitude": 66.667,
+        "lord": "astrology.planet.mars",
+        "deity": "Soma (Chandra)",
+        "symbol": "Deer's head",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "dual",
+        "element": "astrology.element.earth",
+        "keywords": [
+          "seeking",
+          "gentleness",
+          "curiosity",
+          "wandering",
+          "sensitivity",
+          "beauty",
+          "romance",
+          "spiritual quest",
+          "the deer",
+          "travel"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.ardra",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Ardra",
+      "description": "Ardra (Sanskrit: आर्द्रा) means 'moist' or 'the moist one', associated with the monsoon rains that both destroy and replenish — a nakshatra of storm and renewal. Its symbol is a teardrop or diamond (in some traditions, the teardrop of grief; in others, the jewel-like clarity that follows the storm), and the presiding deity is Rudra, the howling storm-god who is the fierce, pre-Shiva face of elemental destruction and liberation. Rahu, the shadow planet of the north lunar node, governs Ardra, amplifying its themes of upheaval, unconventional thinking, and the raw edge of experience. Of Manushya (human) nature with Kama motivation, Ardra persons feel intensely and think unconventionally, often breaking through established structures. Astrologically, Ardra confers fierce intellect, penetrating analytical ability, emotional depth, and a capacity for radical transformation through crisis; its shadow involves turbulence, grief, and destructive impulses that require integration.",
+      "secondaryNames": [
+        {
+          "name": "आर्द्रा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Arudra",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Thiruvadhirai",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "rahu",
+        "gemini"
+      ],
+      "extendedData": {
+        "orderNumber": 6,
+        "startLongitude": 66.667,
+        "endLongitude": 80.0,
+        "lord": "astrology.planet.rahu",
+        "deity": "Rudra",
+        "symbol": "Teardrop or diamond",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "kama",
+        "quality": "movable",
+        "element": "astrology.element.water",
+        "keywords": [
+          "storm",
+          "grief",
+          "renewal",
+          "intellect",
+          "destruction",
+          "transformation",
+          "Rudra",
+          "the monsoon",
+          "upheaval",
+          "analytical power"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.punarvasu",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Punarvasu",
+      "description": "Punarvasu (Sanskrit: पुनर्वसु) combines punar ('again', 'return') with vasu ('good', 'ray of light', 'gem'), yielding 'the return of the light' or 'good again' — a nakshatra of renewal, restoration, and the joy of coming home after long wandering. The symbol is a quiver of arrows, suggesting readiness and purposeful aim that has been replenished. Aditi, the mother of the gods and goddess of boundless space and freedom, is the ruling deity — her nature is infinite, forgiving, and encompassing. Jupiter governs Punarvasu, reinforcing the themes of wisdom, expansion, optimism, and the philosophical resilience that allows the native to return from loss or exile renewed. Of Deva nature and motivated by Artha, Punarvasu confers generosity, philosophical depth, resilience, and a fundamentally optimistic worldview; its shadow involves idealism that may lose touch with practical limits.",
+      "secondaryNames": [
+        {
+          "name": "पुनर्वसु",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Punarpusam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "jupiter",
+        "gemini",
+        "cancer"
+      ],
+      "extendedData": {
+        "orderNumber": 7,
+        "startLongitude": 80.0,
+        "endLongitude": 93.333,
+        "lord": "astrology.planet.jupiter",
+        "deity": "Aditi",
+        "symbol": "Quiver of arrows",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "artha",
+        "quality": "movable",
+        "element": "astrology.element.water",
+        "keywords": [
+          "renewal",
+          "return",
+          "restoration",
+          "optimism",
+          "resilience",
+          "wisdom",
+          "freedom",
+          "home",
+          "abundance",
+          "the goddess Aditi"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.pushya",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Pushya",
+      "description": "Pushya (Sanskrit: पुष्य) means 'the nourisher' or 'the blossomer', derived from pushti ('nourishment', 'blooming') — and it is considered by many classical Vedic sources to be the most auspicious of all twenty-seven nakshatras, the king of nakshatras. Its symbols include the lotus (spiritual unfolding and purity), a circle, and an arrow — together evoking the perfectly aimed intention manifesting as radiant abundance. The presiding deity is Brihaspati (Jupiter as the divine teacher of the gods), making this nakshatra doubly Jupiterian, since Saturn is also the planetary lord — a remarkable tension between expansion and constraint that produces disciplined wisdom. Of Deva nature and motivated by Dharma, Pushya confers nurturing care, devotional depth, community-minded generosity, and a talent for supporting others toward flourishing; its challenges involve excessive caution, over-dependency, and a paternalistic tendency.",
+      "secondaryNames": [
+        {
+          "name": "पुष्य",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Poosam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pushyami",
+          "languageTag": "te",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "saturn",
+        "cancer"
+      ],
+      "extendedData": {
+        "orderNumber": 8,
+        "startLongitude": 93.333,
+        "endLongitude": 106.667,
+        "lord": "astrology.planet.saturn",
+        "deity": "Brihaspati",
+        "symbol": "Lotus, arrow, or circle",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "astrology.element.water",
+        "keywords": [
+          "nourishment",
+          "auspiciousness",
+          "abundance",
+          "wisdom",
+          "devotion",
+          "community",
+          "care",
+          "the lotus",
+          "spiritual discipline",
+          "divine teacher"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.ashlesha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Ashlesha",
+      "description": "Ashlesha (Sanskrit: आश्लेषा) means 'the embracer' or 'the clinging one', from shlesha ('embrace', 'clinging') — the image of the coiled serpent encircling its object is the primary symbol and evoking both the kundalini shakti coiled at the base of the spine and the serpentine wisdom of the Nagas. The ruling deities are the Nagas, the divine serpents who guard the underworld's treasures and possess both venom and the nectar of wisdom; Mercury governs this nakshatra, adding serpentine intelligence, persuasion, and the quick tongue. Of Rakshasa (demonic) nature and motivated by Dharma, Ashlesha combines cunning insight with a deep moral core that is often concealed beneath a shrewd exterior. Astrologically, Ashlesha bestows penetrating psychological perception, occult sensitivity, healing power (snake venom as medicine), strategic intelligence, and the capacity to access hidden knowledge; its shadow involves manipulation, possessiveness, poison (literal or metaphorical), and the coiled resentment of unexpressed power.",
+      "secondaryNames": [
+        {
+          "name": "आश्लेषा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Aslesha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Ayilyam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mercury",
+        "cancer"
+      ],
+      "extendedData": {
+        "orderNumber": 9,
+        "startLongitude": 106.667,
+        "endLongitude": 120.0,
+        "lord": "astrology.planet.mercury",
+        "deity": "Nagas (divine serpents)",
+        "symbol": "Coiled serpent",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "astrology.element.water",
+        "keywords": [
+          "cunning",
+          "serpent power",
+          "kundalini",
+          "psychology",
+          "occult",
+          "healing",
+          "manipulation",
+          "wisdom",
+          "hidden knowledge",
+          "the Nagas"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.magha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Magha",
+      "description": "Magha (Sanskrit: मघा) means 'the mighty one' or 'the generous', related to maha ('great') and connoting regal magnificence. Its symbol is a throne or palanquin — the seat of kingship — and the nakshatra opens the sidereal sign of Leo at 0°, reinforcing its imperial quality. The presiding deities are the Pitrs (Pitrs or Manes), the honoured ancestors who dwell in the lunar sphere, making Magha the nakshatra most intimately connected to lineage, ancestral heritage, and the duties of descent. Ketu, the south lunar node, rules Magha — the karmic significator of past lives and accumulated wisdom. Of Rakshasa nature and motivated by Artha, Magha confers natural authority, pride in one's heritage, strong lineage consciousness, charismatic leadership, and the gravitas of one who carries the weight of ancestry; its shadow involves arrogance, elitism, and attachment to past glories that impede present growth.",
+      "secondaryNames": [
+        {
+          "name": "मघा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Makha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Magam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "ketu",
+        "leo"
+      ],
+      "extendedData": {
+        "orderNumber": 10,
+        "startLongitude": 120.0,
+        "endLongitude": 133.333,
+        "lord": "astrology.planet.ketu",
+        "deity": "Pitrs (ancestors)",
+        "symbol": "Throne or palanquin",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "artha",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "royalty",
+          "ancestry",
+          "authority",
+          "lineage",
+          "kingship",
+          "past lives",
+          "heritage",
+          "pride",
+          "leadership",
+          "the Pitrs"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.purva-phalguni",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Purva Phalguni",
+      "description": "Purva Phalguni (Sanskrit: पूर्वा फाल्गुनी) translates as 'the former reddish one' or 'the first of the reddish pair', one of a matching pair of nakshatras with Uttara Phalguni; its name likely refers to the reddish colour of the star Zosma (δ Leonis). The symbol is the front legs of a couch or marriage bed, suggesting rest, pleasure, conjugal love, and creative fruition. The presiding deity is Bhaga, the Vedic god of marital happiness, inheritance, and conjugal bliss — also a god of good fortune and the sharing of wealth. Venus rules this nakshatra, intensifying its themes of sensual pleasure, artistic creativity, and romantic fulfilment. Of Manushya nature and motivated by Kama, Purva Phalguni confers magnetism, artistic talent, joy of embodied life, romantic ardour, and creative abundance; its shadow lies in self-indulgence, vanity, and the diffusion of energy through excessive pleasure-seeking.",
+      "secondaryNames": [
+        {
+          "name": "पूर्वा फाल्गुनी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Poorvaphalguni",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pubba",
+          "languageTag": "te",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "venus",
+        "leo"
+      ],
+      "extendedData": {
+        "orderNumber": 11,
+        "startLongitude": 133.333,
+        "endLongitude": 146.667,
+        "lord": "astrology.planet.venus",
+        "deity": "Bhaga",
+        "symbol": "Front legs of a couch",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "kama",
+        "quality": "fixed",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "pleasure",
+          "creativity",
+          "romance",
+          "conjugal love",
+          "artistry",
+          "luxury",
+          "rest",
+          "beauty",
+          "good fortune",
+          "sensuality"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.uttara-phalguni",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Uttara Phalguni",
+      "description": "Uttara Phalguni (Sanskrit: उत्तर फाल्गुनी) means 'the latter reddish one' or 'the second of the reddish pair', centred on Denebola (β Leonis) and bridging sidereal Leo into Virgo. The symbol is the back legs of a couch — evoking not merely rest but the stable foundation of partnership, the durability of the union that Purva Phalguni initiated. The presiding deity is Aryaman, the Aditya who governs contracts, friendship, honour, and the noble bonds between equals; he oversees marriage compacts and the rites of hospitality. The Sun rules this nakshatra, lending dignity, solar confidence, and a sense of purpose to all Aryaman's relational themes. Of Manushya nature and motivated by Moksha, Uttara Phalguni confers reliability, kindness, organisational skill, social grace, and the capacity to build lasting partnerships; its shadow involves dependence on others' approval and a tendency toward rigid adherence to social convention.",
+      "secondaryNames": [
+        {
+          "name": "उत्तर फाल्गुनी",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Uttaraphalguni",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Uttaram",
+          "languageTag": "te",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "sun",
+        "leo",
+        "virgo"
+      ],
+      "extendedData": {
+        "orderNumber": 12,
+        "startLongitude": 146.667,
+        "endLongitude": 160.0,
+        "lord": "astrology.planet.sol",
+        "deity": "Aryaman",
+        "symbol": "Back legs of a couch",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "fixed",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "partnership",
+          "dignity",
+          "contracts",
+          "friendship",
+          "honour",
+          "reliability",
+          "social grace",
+          "durability",
+          "marriage",
+          "Denebola"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.hasta",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Hasta",
+      "description": "Hasta (Sanskrit: हस्त) means simply 'hand', and the open hand — or fist — is both its symbol and its essence: the skilled hand that creates, heals, and crafts. The five stars of Hasta (traditionally identified with Corvus, the Crow) were imagined as the five fingers of the cosmic hand. The presiding deity is Savitar (or Surya), the stimulating, animating aspect of the Sun — the solar force that sets all things in motion and bestows creative energy. The Moon governs Hasta, adding sensitivity, adaptability, and dexterity of mind to the solar creativity. Of Deva nature and motivated by Moksha, Hasta confers exceptional manual skill, practical ingenuity, healing ability, wit, and a playful cleverness; its shadow involves trickery, manipulation through sleight of hand, and a tendency to use cleverness at the expense of depth.",
+      "secondaryNames": [
+        {
+          "name": "हस्त",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hastam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "luna",
+        "virgo"
+      ],
+      "extendedData": {
+        "orderNumber": 13,
+        "startLongitude": 160.0,
+        "endLongitude": 173.333,
+        "lord": "astrology.planet.luna",
+        "deity": "Savitar / Surya",
+        "symbol": "Open hand or fist",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "moksha",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "skill",
+          "dexterity",
+          "craftsmanship",
+          "healing",
+          "the hand",
+          "ingenuity",
+          "wit",
+          "adaptability",
+          "practical creativity",
+          "Savitar"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.chitra",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Chitra",
+      "description": "Chitra (Sanskrit: चित्रा) means 'brilliant', 'beautiful', 'variegated', 'the bright one' — centred on the brilliant blue-white star Spica (α Virginis), one of the brightest stars in the sky. The symbol is a bright jewel or lustrous pearl: the concentrated radiance of perfected craftsmanship. The ruling deity is Tvashtar (also called Vishvakarman), the divine artisan of the gods, who fashioned the weapons of Indra and the celestial vehicles of the divine — the supreme cosmic craftsman. Mars rules Chitra, infusing artistic brilliance with the Martian drive toward excellence and the desire to make one's mark. Of Rakshasa nature and motivated by Kama, Chitra confers aesthetic brilliance, creative ambition, a compelling personal beauty or style, architectural and design talent, and an eye for perfection; its shadow involves vanity, perfectionism as a tyrant, and the Martian tendency to compete even within the realm of beauty.",
+      "secondaryNames": [
+        {
+          "name": "चित्रा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chithirai",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mars",
+        "virgo",
+        "libra"
+      ],
+      "extendedData": {
+        "orderNumber": 14,
+        "startLongitude": 173.333,
+        "endLongitude": 186.667,
+        "lord": "astrology.planet.mars",
+        "deity": "Tvashtar / Vishvakarman",
+        "symbol": "Bright jewel or pearl",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "kama",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "brilliance",
+          "beauty",
+          "artistry",
+          "craftsmanship",
+          "Spica",
+          "design",
+          "perfection",
+          "jewel",
+          "ambition",
+          "the divine artisan"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.swati",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Swati",
+      "description": "Swati (Sanskrit: स्वाती) means 'sword', 'self-going', or 'good goer' — a nakshatra of independence, self-direction, and the capacity to move freely like the wind. Its star is Arcturus (α Bootis), one of the brightest stars in the northern sky, and its symbol is a young plant shoot bending in the wind — a beautiful image of resilience through flexibility, of the living thing that survives the storm precisely because it does not rigidly resist. Vayu, the god of wind and breath, is the ruling deity, conferring lightness, movement, and the intelligence that circulates like air through all things. Rahu governs Swati, amplifying its themes of unconventional independence and worldly ambition. Of Deva nature and motivated by Artha, Swati confers social grace, diplomatic intelligence, commercial acumen, flexibility, and a genuine respect for independence — both one's own and others'; its shadow involves inconsistency, superficiality, and indecision born of seeing too many sides.",
+      "secondaryNames": [
+        {
+          "name": "स्वाती",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Chothi",
+          "languageTag": "ml",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "rahu",
+        "libra"
+      ],
+      "extendedData": {
+        "orderNumber": 15,
+        "startLongitude": 186.667,
+        "endLongitude": 200.0,
+        "lord": "astrology.planet.rahu",
+        "deity": "Vayu",
+        "symbol": "Young plant shoot bending in wind",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "female",
+        "motivation": "artha",
+        "quality": "movable",
+        "element": "astrology.element.air",
+        "keywords": [
+          "independence",
+          "flexibility",
+          "wind",
+          "diplomacy",
+          "commerce",
+          "freedom",
+          "adaptability",
+          "Arcturus",
+          "social grace",
+          "Vayu"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.vishakha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Vishakha",
+      "description": "Vishakha (Sanskrit: विशाखा) means 'forked branch' or 'having many branches', suggesting the profusion of goals, paths, and possibilities that characterise this nakshatra's restless ambition. The symbol is a decorated triumphal gateway or arch — the monumental entrance that proclaims victory. The paired deities are Indra (king of the gods, lord of thunder and victory) and Agni (fire), making this the only nakshatra with a compound ruling deity; together they represent the triumphant pursuit of goals through both power and purifying intention. Jupiter rules Vishakha, expanding the Indra-Agni themes into a philosophical drive for achievement and the wisdom to know what truly matters. Of Rakshasa nature and motivated by Dharma, Vishakha confers intense determination, competitive zeal, the capacity to focus single-mindedly on a distant goal, and an expansive vision; its shadow involves frustrated ambition, envy, aggression, and the bitter taste of goals attained but not fulfilling.",
+      "secondaryNames": [
+        {
+          "name": "विशाखा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Visakam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "jupiter",
+        "libra",
+        "scorpio"
+      ],
+      "extendedData": {
+        "orderNumber": 16,
+        "startLongitude": 200.0,
+        "endLongitude": 213.333,
+        "lord": "astrology.planet.jupiter",
+        "deity": "Indra and Agni",
+        "symbol": "Decorated gateway or triumphal arch",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "ambition",
+          "victory",
+          "purpose",
+          "determination",
+          "Indra",
+          "triumph",
+          "competitive drive",
+          "goals",
+          "expansion",
+          "the gateway"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.anuradha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Anuradha",
+      "description": "Anuradha (Sanskrit: अनुराधा) means 'following Radha', 'subsequent to Vishakha', or 'kindly', suggesting the grace that follows the fierce ambition of Vishakha — the quality of loyalty, friendship, and the warmth that binds hearts together. The symbol is a lotus — the flower of beauty and spiritual unfoldment arising from muddy waters — or alternatively a staff, symbol of authority and the capacity to support others. Mitra, the Vedic god of friendship, covenant, and the light of the morning sun, is the ruling deity; Mitra establishes agreements, honours bonds between individuals, and ensures the smooth cooperation of diverse powers. Saturn governs Anuradha, lending perseverance, discipline, and a sober awareness of the work that genuine friendship and devotion require. Of Deva nature and motivated by Dharma, Anuradha confers organisational ability, deep loyalty, occult interest, the gift of sincere friendship, and the capacity to maintain devotion across great distances and difficulties.",
+      "secondaryNames": [
+        {
+          "name": "अनुराधा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Anusham",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "saturn",
+        "scorpio"
+      ],
+      "extendedData": {
+        "orderNumber": 17,
+        "startLongitude": 213.333,
+        "endLongitude": 226.667,
+        "lord": "astrology.planet.saturn",
+        "deity": "Mitra",
+        "symbol": "Lotus or staff",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "friendship",
+          "loyalty",
+          "devotion",
+          "cooperation",
+          "the lotus",
+          "covenant",
+          "occult",
+          "organisation",
+          "Mitra",
+          "perseverance"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.jyeshtha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Jyeshtha",
+      "description": "Jyeshtha (Sanskrit: ज्येष्ठा) means 'the eldest', 'the chief', 'the most senior' — the name of the eldest daughter, who must shoulder the greatest responsibility and authority in the family. Its star is Antares (α Scorpii), the brilliant heart of the Scorpion and one of the four great royal stars of antiquity; Antares blazes red as a rival to Mars, and its power is unmistakable. The symbol is a circular talisman (the earring or necklace of Indra) and an umbrella — both symbols of regal authority and protection. Indra himself, king of the gods and slayer of Vritra the dragon of obstruction, is the ruling deity. Mercury governs Jyeshtha, combining Indraic power with Mercurial wit and the communication of authority. Of Rakshasa nature and motivated by Artha, Jyeshtha confers leadership ability, protective strength, the courage to take responsibility, and a commanding presence; its shadow involves arrogance, jealousy, isolation, and the heavy burden of the eldest who must always be strong.",
+      "secondaryNames": [
+        {
+          "name": "ज्येष्ठा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jyestha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Kettai",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mercury",
+        "scorpio"
+      ],
+      "extendedData": {
+        "orderNumber": 18,
+        "startLongitude": 226.667,
+        "endLongitude": 240.0,
+        "lord": "astrology.planet.mercury",
+        "deity": "Indra",
+        "symbol": "Circular talisman or umbrella",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "artha",
+        "quality": "movable",
+        "element": "astrology.element.air",
+        "keywords": [
+          "seniority",
+          "authority",
+          "leadership",
+          "protection",
+          "Antares",
+          "Indra",
+          "responsibility",
+          "power",
+          "the eldest",
+          "commanding presence"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.moola",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Moola",
+      "description": "Moola (Sanskrit: मूल) means 'root', 'foundation', or 'the root star', and it opens sidereal Sagittarius at 0° — directly opposite the galactic centre. The symbol is a bunch of roots tied together, evoking both the power hidden beneath the surface and the need to uproot what is false or overgrown. The ruling deity is Nirriti, the goddess of dissolution, decay, and the breaking apart of what has outlived its usefulness — a fearsome feminine power who dwells in the south-west, the direction of death. Ketu, the south node, governs Moola, making this a nakshatra of karmic dissolution, radical inquiry, and the willingness to go to the root of all things even when it means tearing up the surface. Of Rakshasa nature and motivated by Kama, Moola confers a penetrating philosophical mind, the courage to investigate roots and causes, a fascination with the hidden and the esoteric, and the ability to dismantle what is rotten; its shadow involves destructive extremism, self-undoing, and a compulsive return to origins.",
+      "secondaryNames": [
+        {
+          "name": "मूल",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mula",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Moolam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "ketu",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "orderNumber": 19,
+        "startLongitude": 240.0,
+        "endLongitude": 253.333,
+        "lord": "astrology.planet.ketu",
+        "deity": "Nirriti",
+        "symbol": "Bunch of roots tied together",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "kama",
+        "quality": "fixed",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "roots",
+          "dissolution",
+          "foundation",
+          "inquiry",
+          "galactic centre",
+          "Nirriti",
+          "karmic",
+          "esoteric",
+          "destruction of the false",
+          "going deep"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.purva-ashadha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Purva Ashadha",
+      "description": "Purva Ashadha (Sanskrit: पूर्वाषाढा) means 'the former invincible one' or 'the earlier victory', the first of the Ashadha pair situated in the heart of Sagittarius. The symbol is a fan or a winnowing basket — implements of wind, of separating the grain from the chaff, of purification through discernment. The ruling deity is Apas, the goddess (or godlings) of the primordial waters, the cosmic ocean from which all things emerge and into which they dissolve; she bestows purification, emotional depth, and the invincible resilience of water that flows around any obstacle. Venus governs Purva Ashadha, adding beauty, artistic depth, and the romantic idealism of one who believes in a better vision. Of Manushya nature and motivated by Moksha, this nakshatra confers conviction, philosophical idealism, the gift of eloquent persuasion, and a proud independence of spirit; its shadow involves arrogance, over-confidence in one's rightness, and the inflexibility of one too certain of victory.",
+      "secondaryNames": [
+        {
+          "name": "पूर्वाषाढा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Poorvaashadha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pooradam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "venus",
+        "sagittarius"
+      ],
+      "extendedData": {
+        "orderNumber": 20,
+        "startLongitude": 253.333,
+        "endLongitude": 266.667,
+        "lord": "astrology.planet.venus",
+        "deity": "Apas (water goddess)",
+        "symbol": "Fan or winnowing basket",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "movable",
+        "element": "astrology.element.water",
+        "keywords": [
+          "invincibility",
+          "purification",
+          "idealism",
+          "conviction",
+          "water",
+          "eloquence",
+          "the fan",
+          "resilience",
+          "philosophical pride",
+          "Apas"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.uttara-ashadha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Uttara Ashadha",
+      "description": "Uttara Ashadha (Sanskrit: उत्तराषाढा) means 'the latter invincible one' or 'the later victory', bridging the final degrees of Sagittarius into early Capricorn. The symbol is an elephant tusk — ivory being both beautiful and formidably strong — or a small bed, suggesting rest after the decisive battle has been won. The ruling deities are the Vishvadevas, the ten universal gods (Kratu, Daksha, Vasu, Satya, Kala, Kama, Dhriti, Kuru, Pururavas, Madravas) who collectively embody all virtues; their plurality suggests the universality of Uttara Ashadha's victories, which are not merely personal but benefit all beings. The Sun governs this nakshatra, lending the quiet but unwavering solar confidence of lasting achievement. Of Manushya nature and motivated by Moksha, Uttara Ashadha confers integrity, restrained power, leadership without arrogance, long-term vision, and victories that endure because they are just; its shadow involves inflexibility and a crushing weight of responsibility.",
+      "secondaryNames": [
+        {
+          "name": "उत्तराषाढा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Uttaraashadha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Uthradam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "sun",
+        "sagittarius",
+        "capricorn"
+      ],
+      "extendedData": {
+        "orderNumber": 21,
+        "startLongitude": 266.667,
+        "endLongitude": 280.0,
+        "lord": "astrology.planet.sol",
+        "deity": "Vishvadevas (ten universal gods)",
+        "symbol": "Elephant tusk or small bed",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "fixed",
+        "element": "astrology.element.fire",
+        "keywords": [
+          "lasting victory",
+          "integrity",
+          "universal virtue",
+          "endurance",
+          "the Vishvadevas",
+          "leadership",
+          "justice",
+          "long-term vision",
+          "restraint",
+          "elephant tusk"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.shravana",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Shravana",
+      "description": "Shravana (Sanskrit: श्रवण) means 'hearing', 'the ear', or 'the learned one' — the nakshatra of attentive listening, the capacity to receive wisdom from all sources, and the preservation and transmission of sacred learning. Its symbol is three footprints in a row (the three strides of Vishnu who crossed the universe in three steps) or an ear. Vishnu himself, the preserver and cosmic order-maintainer, is the ruling deity; his three strides connect earth, sky, and heaven, suggesting Shravana's role as connector and communicator across realms. The Moon governs Shravana, adding receptivity, empathy, and the memory required to absorb and retain sacred teaching. Of Deva nature and motivated by Artha, Shravana confers exceptional listening ability, intellectual curiosity, a talent for learning and teaching, cultural sensitivity, and the capacity to connect disparate traditions; its shadow involves rumour-mongering (the ear that also gossips), a tendency to accumulate knowledge without integration.",
+      "secondaryNames": [
+        {
+          "name": "श्रवण",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sravana",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Thiruvonam",
+          "languageTag": "ml",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "luna",
+        "capricorn"
+      ],
+      "extendedData": {
+        "orderNumber": 22,
+        "startLongitude": 280.0,
+        "endLongitude": 293.333,
+        "lord": "astrology.planet.luna",
+        "deity": "Vishnu",
+        "symbol": "Three footprints or an ear",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "male",
+        "motivation": "artha",
+        "quality": "movable",
+        "element": "astrology.element.air",
+        "keywords": [
+          "hearing",
+          "learning",
+          "listening",
+          "Vishnu",
+          "preservation",
+          "teaching",
+          "wisdom",
+          "the ear",
+          "three strides",
+          "transmission"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.dhanishtha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Dhanishtha",
+      "description": "Dhanishtha (Sanskrit: धनिष्ठा) means 'the wealthiest', 'the most famous', or 'the swiftest' — from dhana (wealth, property, music) and ishtha (most loved, most desired). The symbol is a drum or a flute — musical instruments whose vibrations create and dissolve forms, evoking the cosmic sound (nāda) that underlies all creation. The Eight Vasus (the elemental deity-group who embody the principles of wind, water, fire, sky, earth, sun, moon, and stars) are the ruling deities, reflecting Dhanishtha's connection to all material and musical abundance. Mars governs Dhanishtha, lending drive, ambition, and the desire for recognition to the Vasu themes of elemental mastery. Of Rakshasa nature and motivated by Dharma, Dhanishtha confers musical talent, rhythmic intelligence, wealth acquisition, boldness, and the ability to move swiftly through material realms; its shadow involves materialism, the restless desire for more, and difficulties with sharing or intimacy.",
+      "secondaryNames": [
+        {
+          "name": "धनिष्ठा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Dhanistha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Avittam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mars",
+        "capricorn",
+        "aquarius"
+      ],
+      "extendedData": {
+        "orderNumber": 23,
+        "startLongitude": 293.333,
+        "endLongitude": 306.667,
+        "lord": "astrology.planet.mars",
+        "deity": "Eight Vasus",
+        "symbol": "Drum or flute",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "vedic.mahabhuta.akasha",
+        "keywords": [
+          "wealth",
+          "music",
+          "rhythm",
+          "fame",
+          "abundance",
+          "the Vasus",
+          "elemental mastery",
+          "the drum",
+          "boldness",
+          "cosmic sound"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.shatabhisha",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Shatabhisha",
+      "description": "Shatabhisha (Sanskrit: शतभिषज्) means 'the hundred physicians' or 'possessing a hundred healers', from shata (hundred) and bhishaj (healer, physician) — a nakshatra of hidden healing power, vast remedial capacity, and the mystery of the circle that contains all things. Its symbol is an empty circle or a ring (sometimes 'a hundred stars', referencing the faint stars of Aquarius that make up this asterism), evoking both the void that is full and the magic circle that contains and protects. Varuna, the great Vedic god of cosmic order, the celestial ocean, and moral law — who measures out the paths of the stars and punishes those who violate sacred vows — is the ruling deity. Rahu governs Shatabhisha, amplifying its themes of mystery, healing, and unconventional paths. Of Rakshasa nature and motivated by Dharma, Shatabhisha confers healing ability, scientific and technical aptitude, a philosophical solitude, and the capacity to perceive hidden patterns; its shadow involves isolation, eccentric rigidity, and the difficulty of forming warm human connections.",
+      "secondaryNames": [
+        {
+          "name": "शतभिषज्",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shatabhisha",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Chathayam",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "rahu",
+        "aquarius"
+      ],
+      "extendedData": {
+        "orderNumber": 24,
+        "startLongitude": 306.667,
+        "endLongitude": 320.0,
+        "lord": "astrology.planet.rahu",
+        "deity": "Varuna",
+        "symbol": "Empty circle or hundred stars",
+        "nature": "rakshasa",
+        "gana": "rakshasa",
+        "gender": "female",
+        "motivation": "dharma",
+        "quality": "movable",
+        "element": "vedic.mahabhuta.akasha",
+        "keywords": [
+          "healing",
+          "mystery",
+          "the circle",
+          "Varuna",
+          "cosmic order",
+          "solitude",
+          "science",
+          "hidden patterns",
+          "the ocean",
+          "hundred physicians"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.purva-bhadrapada",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Purva Bhadrapada",
+      "description": "Purva Bhadrapada (Sanskrit: पूर्वभाद्रपदा) means 'the former auspicious foot' or 'the first of the blessed steps', one of a pair of nakshatras named for the 'lucky feet' (bhadra = good, auspicious; pada = foot, step). The symbol is a sword or a two-faced man — the double-faced quality evoking the paradox of a nakshatra that is outwardly auspicious but harbours a deeply transformative, even terrifying inner nature. The ruling deity is Aja Ekapad, the one-footed unborn cosmic goat or serpent — an obscure and primal deity associated with the flash of lightning, the primordial fire in the sky, and the singular leap across the abyss between worlds. Jupiter governs this nakshatra, lending philosophical vision to Aja Ekapad's fierce energy. Of Manushya nature and motivated by Artha, Purva Bhadrapada confers passionate idealism, oratorical power, transformative fury, ascetic intensity, and the capacity for visionary sacrifice; its shadow involves fanaticism, ruthless focus, and a burning intensity that can scorch those nearby.",
+      "secondaryNames": [
+        {
+          "name": "पूर्वभाद्रपदा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Poorvabhadrapada",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Pooruruttathi",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "jupiter",
+        "aquarius",
+        "pisces"
+      ],
+      "extendedData": {
+        "orderNumber": 25,
+        "startLongitude": 320.0,
+        "endLongitude": 333.333,
+        "lord": "astrology.planet.jupiter",
+        "deity": "Aja Ekapad",
+        "symbol": "Sword or two-faced man",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "male",
+        "motivation": "artha",
+        "quality": "fixed",
+        "element": "vedic.mahabhuta.akasha",
+        "keywords": [
+          "transformation",
+          "idealism",
+          "passion",
+          "the sword",
+          "visionary",
+          "asceticism",
+          "duality",
+          "lightning",
+          "primal fire",
+          "sacrifice"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.uttara-bhadrapada",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Uttara Bhadrapada",
+      "description": "Uttara Bhadrapada (Sanskrit: उत्तरभाद्रपदा) means 'the latter auspicious foot' or 'the final blessed steps', and its symbol is the back legs of a funeral cot or a serpent in the deep — both images of what remains after the fire has done its work, the aftermath in which wisdom is distilled from loss. The ruling deity is Ahir Budhnya, the serpent of the deep waters or the depths of the atmosphere — a chthonic, watery serpent who dwells in the oceanic foundations of the cosmos, related to the cosmic serpent Ananta upon whom Vishnu rests. Saturn governs this nakshatra, grounding its deep wisdom in the slow patience of time and the willingness to descend into the depths. Of Manushya nature and motivated by Kama, Uttara Bhadrapada confers profound depth of character, compassion, the ability to remain serene in the face of suffering, visionary wisdom, and the capacity to help others through grief and transition; its shadow involves excessive withdrawal, procrastination, and an otherworldliness that avoids practical engagement.",
+      "secondaryNames": [
+        {
+          "name": "उत्तरभाद्रपदा",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Uttarabhadrapada",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Uttarattathi",
+          "languageTag": "ta",
+          "visible": false,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "saturn",
+        "pisces"
+      ],
+      "extendedData": {
+        "orderNumber": 26,
+        "startLongitude": 333.333,
+        "endLongitude": 346.667,
+        "lord": "astrology.planet.saturn",
+        "deity": "Ahir Budhnya",
+        "symbol": "Back legs of a funeral cot or serpent",
+        "nature": "manushya",
+        "gana": "manushya",
+        "gender": "male",
+        "motivation": "kama",
+        "quality": "fixed",
+        "element": "vedic.mahabhuta.akasha",
+        "keywords": [
+          "depth",
+          "wisdom",
+          "compassion",
+          "the serpent",
+          "cosmic ocean",
+          "patience",
+          "grief",
+          "serenity",
+          "Ahir Budhnya",
+          "the depths"
+        ]
+      }
+    },
+    {
+      "canonicalName": "astrology.nakshatra.revati",
+      "entityType": "astrology.nakshatra",
+      "primaryDisplayName": "Revati",
+      "description": "Revati (Sanskrit: रेवती) means 'the wealthy one', 'the prosperous', or 'the abundant' — and as the final nakshatra, it carries the summation of all twenty-seven mansions within itself, the completion of the lunar zodiac at 30° sidereal Pisces. Its symbol is a fish or a pair of fish (which is also the symbol of Pisces), and in some traditions a drum (the drum that guides the traveller home). The ruling deity is Pushan, the Vedic god of safe journeys, the shepherd of souls, the guardian of roads and pathways who guides both the living on their travels and the dead on the journey to the other world; he also nourishes cattle and protects all who are on the path. Mercury governs Revati, lending Pushan's gentle shepherd wisdom a quick, communicative, and navigational intelligence. Of Deva nature and motivated by Moksha, Revati confers abundance, compassion, spiritual sensitivity, a gift for nurturing and guiding others, artistic sensibility, and a deep connection to the divine; as the nakshatra of completion, its shadow involves an unwillingness to move forward and a nostalgic clinging to what has passed.",
+      "secondaryNames": [
+        {
+          "name": "रेवती",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Revathi",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "nakshatra",
+        "vedic-astrology",
+        "mercury",
+        "pisces"
+      ],
+      "extendedData": {
+        "orderNumber": 27,
+        "startLongitude": 346.667,
+        "endLongitude": 360.0,
+        "lord": "astrology.planet.mercury",
+        "deity": "Pushan",
+        "symbol": "Fish or pair of fish",
+        "nature": "deva",
+        "gana": "deva",
+        "gender": "female",
+        "motivation": "moksha",
+        "quality": "movable",
+        "element": "vedic.mahabhuta.akasha",
+        "keywords": [
+          "completion",
+          "abundance",
+          "safe journey",
+          "Pushan",
+          "the shepherd",
+          "compassion",
+          "nurturing",
+          "the fish",
+          "moksha",
+          "the final mansion"
+        ]
+      }
+    }
+  ]
+}

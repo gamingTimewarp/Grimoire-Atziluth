@@ -1,0 +1,1373 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.decan.aries-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aries First Decan",
+      "description": "The 1st decan of Aries spans 0–10° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Aries and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 2 of Wands — Dominion — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aries Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Aries",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aries",
+        "signCN": "astrology.zodiac-sign.aries",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 2,
+        "thothTitle": "Dominion",
+        "thothCard": "tarot.thoth.2-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.aries-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aries Second Decan",
+      "description": "The 2nd decan of Aries spans 10–20° of the tropical zodiac. Ruled by Sun in the Chaldean decan system, it carries the combined qualities of Aries and Sun's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 3 of Wands — Virtue — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aries Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Aries",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aries",
+        "signCN": "astrology.zodiac-sign.aries",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.sol",
+        "rulingPlanetName": "Sun",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 3,
+        "thothTitle": "Virtue",
+        "thothCard": "tarot.thoth.3-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.aries-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aries Third Decan",
+      "description": "The 3rd decan of Aries spans 20–30° of the tropical zodiac. Ruled by Venus in the Chaldean decan system, it carries the combined qualities of Aries and Venus's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 4 of Wands — Completion — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aries Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Aries",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aries",
+        "signCN": "astrology.zodiac-sign.aries",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.venus",
+        "rulingPlanetName": "Venus",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 4,
+        "thothTitle": "Completion",
+        "thothCard": "tarot.thoth.4-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.taurus-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Taurus First Decan",
+      "description": "The 1st decan of Taurus spans 0–10° of the tropical zodiac. Ruled by Mercury in the Chaldean decan system, it carries the combined qualities of Taurus and Mercury's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 5 of Disks — Worry — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Taurus Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Taurus",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "taurus",
+        "signCN": "astrology.zodiac-sign.taurus",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.mercury",
+        "rulingPlanetName": "Mercury",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 5,
+        "thothTitle": "Worry",
+        "thothCard": "tarot.thoth.5-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.taurus-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Taurus Second Decan",
+      "description": "The 2nd decan of Taurus spans 10–20° of the tropical zodiac. Ruled by Moon in the Chaldean decan system, it carries the combined qualities of Taurus and Moon's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 6 of Disks — Success — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Taurus Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Taurus",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "taurus",
+        "signCN": "astrology.zodiac-sign.taurus",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.luna",
+        "rulingPlanetName": "Moon",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 6,
+        "thothTitle": "Success",
+        "thothCard": "tarot.thoth.6-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.taurus-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Taurus Third Decan",
+      "description": "The 3rd decan of Taurus spans 20–30° of the tropical zodiac. Ruled by Saturn in the Chaldean decan system, it carries the combined qualities of Taurus and Saturn's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 7 of Disks — Failure — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Taurus Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Taurus",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "taurus",
+        "signCN": "astrology.zodiac-sign.taurus",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.saturn",
+        "rulingPlanetName": "Saturn",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 7,
+        "thothTitle": "Failure",
+        "thothCard": "tarot.thoth.7-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.gemini-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Gemini First Decan",
+      "description": "The 1st decan of Gemini spans 0–10° of the tropical zodiac. Ruled by Jupiter in the Chaldean decan system, it carries the combined qualities of Gemini and Jupiter's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 8 of Swords — Interference — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Gemini Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Gemini",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "gemini",
+        "signCN": "astrology.zodiac-sign.gemini",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "rulingPlanetName": "Jupiter",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 8,
+        "thothTitle": "Interference",
+        "thothCard": "tarot.thoth.8-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.gemini-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Gemini Second Decan",
+      "description": "The 2nd decan of Gemini spans 10–20° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Gemini and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 9 of Swords — Cruelty — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Gemini Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Gemini",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "gemini",
+        "signCN": "astrology.zodiac-sign.gemini",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 9,
+        "thothTitle": "Cruelty",
+        "thothCard": "tarot.thoth.9-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.gemini-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Gemini Third Decan",
+      "description": "The 3rd decan of Gemini spans 20–30° of the tropical zodiac. Ruled by Sun in the Chaldean decan system, it carries the combined qualities of Gemini and Sun's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 10 of Swords — Ruin — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Gemini Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Gemini",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "gemini",
+        "signCN": "astrology.zodiac-sign.gemini",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.sol",
+        "rulingPlanetName": "Sun",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 10,
+        "thothTitle": "Ruin",
+        "thothCard": "tarot.thoth.10-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.cancer-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Cancer First Decan",
+      "description": "The 1st decan of Cancer spans 0–10° of the tropical zodiac. Ruled by Venus in the Chaldean decan system, it carries the combined qualities of Cancer and Venus's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 2 of Cups — Love — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Cancer Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Cancer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "cancer",
+        "signCN": "astrology.zodiac-sign.cancer",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.venus",
+        "rulingPlanetName": "Venus",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 2,
+        "thothTitle": "Love",
+        "thothCard": "tarot.thoth.2-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.cancer-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Cancer Second Decan",
+      "description": "The 2nd decan of Cancer spans 10–20° of the tropical zodiac. Ruled by Mercury in the Chaldean decan system, it carries the combined qualities of Cancer and Mercury's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 3 of Cups — Abundance — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Cancer Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Cancer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "cancer",
+        "signCN": "astrology.zodiac-sign.cancer",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.mercury",
+        "rulingPlanetName": "Mercury",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 3,
+        "thothTitle": "Abundance",
+        "thothCard": "tarot.thoth.3-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.cancer-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Cancer Third Decan",
+      "description": "The 3rd decan of Cancer spans 20–30° of the tropical zodiac. Ruled by Moon in the Chaldean decan system, it carries the combined qualities of Cancer and Moon's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 4 of Cups — Luxury — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Cancer Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Cancer",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "cancer",
+        "signCN": "astrology.zodiac-sign.cancer",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.luna",
+        "rulingPlanetName": "Moon",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 4,
+        "thothTitle": "Luxury",
+        "thothCard": "tarot.thoth.4-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.leo-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Leo First Decan",
+      "description": "The 1st decan of Leo spans 0–10° of the tropical zodiac. Ruled by Saturn in the Chaldean decan system, it carries the combined qualities of Leo and Saturn's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 5 of Wands — Strife — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Leo Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Leo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "leo",
+        "signCN": "astrology.zodiac-sign.leo",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.saturn",
+        "rulingPlanetName": "Saturn",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 5,
+        "thothTitle": "Strife",
+        "thothCard": "tarot.thoth.5-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.leo-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Leo Second Decan",
+      "description": "The 2nd decan of Leo spans 10–20° of the tropical zodiac. Ruled by Jupiter in the Chaldean decan system, it carries the combined qualities of Leo and Jupiter's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 6 of Wands — Victory — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Leo Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Leo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "leo",
+        "signCN": "astrology.zodiac-sign.leo",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "rulingPlanetName": "Jupiter",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 6,
+        "thothTitle": "Victory",
+        "thothCard": "tarot.thoth.6-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.leo-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Leo Third Decan",
+      "description": "The 3rd decan of Leo spans 20–30° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Leo and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 7 of Wands — Valour — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Leo Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Leo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "leo",
+        "signCN": "astrology.zodiac-sign.leo",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 7,
+        "thothTitle": "Valour",
+        "thothCard": "tarot.thoth.7-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.virgo-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Virgo First Decan",
+      "description": "The 1st decan of Virgo spans 0–10° of the tropical zodiac. Ruled by Sun in the Chaldean decan system, it carries the combined qualities of Virgo and Sun's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 8 of Disks — Prudence — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Virgo Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Virgo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "virgo",
+        "signCN": "astrology.zodiac-sign.virgo",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.sol",
+        "rulingPlanetName": "Sun",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 8,
+        "thothTitle": "Prudence",
+        "thothCard": "tarot.thoth.8-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.virgo-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Virgo Second Decan",
+      "description": "The 2nd decan of Virgo spans 10–20° of the tropical zodiac. Ruled by Venus in the Chaldean decan system, it carries the combined qualities of Virgo and Venus's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 9 of Disks — Gain — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Virgo Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Virgo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "virgo",
+        "signCN": "astrology.zodiac-sign.virgo",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.venus",
+        "rulingPlanetName": "Venus",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 9,
+        "thothTitle": "Gain",
+        "thothCard": "tarot.thoth.9-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.virgo-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Virgo Third Decan",
+      "description": "The 3rd decan of Virgo spans 20–30° of the tropical zodiac. Ruled by Mercury in the Chaldean decan system, it carries the combined qualities of Virgo and Mercury's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 10 of Disks — Wealth — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Virgo Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Virgo",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "virgo",
+        "signCN": "astrology.zodiac-sign.virgo",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.mercury",
+        "rulingPlanetName": "Mercury",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 10,
+        "thothTitle": "Wealth",
+        "thothCard": "tarot.thoth.10-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.libra-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Libra First Decan",
+      "description": "The 1st decan of Libra spans 0–10° of the tropical zodiac. Ruled by Moon in the Chaldean decan system, it carries the combined qualities of Libra and Moon's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 2 of Swords — Peace — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Libra Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Libra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "libra",
+        "signCN": "astrology.zodiac-sign.libra",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.luna",
+        "rulingPlanetName": "Moon",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 2,
+        "thothTitle": "Peace",
+        "thothCard": "tarot.thoth.2-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.libra-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Libra Second Decan",
+      "description": "The 2nd decan of Libra spans 10–20° of the tropical zodiac. Ruled by Saturn in the Chaldean decan system, it carries the combined qualities of Libra and Saturn's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 3 of Swords — Sorrow — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Libra Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Libra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "libra",
+        "signCN": "astrology.zodiac-sign.libra",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.saturn",
+        "rulingPlanetName": "Saturn",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 3,
+        "thothTitle": "Sorrow",
+        "thothCard": "tarot.thoth.3-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.libra-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Libra Third Decan",
+      "description": "The 3rd decan of Libra spans 20–30° of the tropical zodiac. Ruled by Jupiter in the Chaldean decan system, it carries the combined qualities of Libra and Jupiter's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 4 of Swords — Truce — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Libra Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Libra",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "libra",
+        "signCN": "astrology.zodiac-sign.libra",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "rulingPlanetName": "Jupiter",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 4,
+        "thothTitle": "Truce",
+        "thothCard": "tarot.thoth.4-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.scorpio-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Scorpio First Decan",
+      "description": "The 1st decan of Scorpio spans 0–10° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Scorpio and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 5 of Cups — Disappointment — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Scorpio Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Scorpio",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "scorpio",
+        "signCN": "astrology.zodiac-sign.scorpio",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 5,
+        "thothTitle": "Disappointment",
+        "thothCard": "tarot.thoth.5-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.scorpio-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Scorpio Second Decan",
+      "description": "The 2nd decan of Scorpio spans 10–20° of the tropical zodiac. Ruled by Sun in the Chaldean decan system, it carries the combined qualities of Scorpio and Sun's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 6 of Cups — Pleasure — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Scorpio Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Scorpio",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "scorpio",
+        "signCN": "astrology.zodiac-sign.scorpio",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.sol",
+        "rulingPlanetName": "Sun",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 6,
+        "thothTitle": "Pleasure",
+        "thothCard": "tarot.thoth.6-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.scorpio-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Scorpio Third Decan",
+      "description": "The 3rd decan of Scorpio spans 20–30° of the tropical zodiac. Ruled by Venus in the Chaldean decan system, it carries the combined qualities of Scorpio and Venus's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 7 of Cups — Debauch — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Scorpio Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Scorpio",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "scorpio",
+        "signCN": "astrology.zodiac-sign.scorpio",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.venus",
+        "rulingPlanetName": "Venus",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 7,
+        "thothTitle": "Debauch",
+        "thothCard": "tarot.thoth.7-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.sagittarius-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Sagittarius First Decan",
+      "description": "The 1st decan of Sagittarius spans 0–10° of the tropical zodiac. Ruled by Mercury in the Chaldean decan system, it carries the combined qualities of Sagittarius and Mercury's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 8 of Wands — Swiftness — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Sagittarius Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Sagittarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "sagittarius",
+        "signCN": "astrology.zodiac-sign.sagittarius",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.mercury",
+        "rulingPlanetName": "Mercury",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 8,
+        "thothTitle": "Swiftness",
+        "thothCard": "tarot.thoth.8-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.sagittarius-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Sagittarius Second Decan",
+      "description": "The 2nd decan of Sagittarius spans 10–20° of the tropical zodiac. Ruled by Moon in the Chaldean decan system, it carries the combined qualities of Sagittarius and Moon's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 9 of Wands — Strength — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Sagittarius Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Sagittarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "sagittarius",
+        "signCN": "astrology.zodiac-sign.sagittarius",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.luna",
+        "rulingPlanetName": "Moon",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 9,
+        "thothTitle": "Strength",
+        "thothCard": "tarot.thoth.9-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.sagittarius-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Sagittarius Third Decan",
+      "description": "The 3rd decan of Sagittarius spans 20–30° of the tropical zodiac. Ruled by Saturn in the Chaldean decan system, it carries the combined qualities of Sagittarius and Saturn's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 10 of Wands — Oppression — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Sagittarius Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Sagittarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "sagittarius",
+        "signCN": "astrology.zodiac-sign.sagittarius",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.saturn",
+        "rulingPlanetName": "Saturn",
+        "thothSuit": "tarot.suit.thoth.wands",
+        "thothNumber": 10,
+        "thothTitle": "Oppression",
+        "thothCard": "tarot.thoth.10-of-wands"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.capricorn-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Capricorn First Decan",
+      "description": "The 1st decan of Capricorn spans 0–10° of the tropical zodiac. Ruled by Jupiter in the Chaldean decan system, it carries the combined qualities of Capricorn and Jupiter's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 2 of Disks — Change — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Capricorn Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Capricorn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "capricorn",
+        "signCN": "astrology.zodiac-sign.capricorn",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "rulingPlanetName": "Jupiter",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 2,
+        "thothTitle": "Change",
+        "thothCard": "tarot.thoth.2-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.capricorn-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Capricorn Second Decan",
+      "description": "The 2nd decan of Capricorn spans 10–20° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Capricorn and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 3 of Disks — Works — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Capricorn Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Capricorn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "capricorn",
+        "signCN": "astrology.zodiac-sign.capricorn",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 3,
+        "thothTitle": "Works",
+        "thothCard": "tarot.thoth.3-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.capricorn-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Capricorn Third Decan",
+      "description": "The 3rd decan of Capricorn spans 20–30° of the tropical zodiac. Ruled by Sun in the Chaldean decan system, it carries the combined qualities of Capricorn and Sun's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 4 of Disks — Power — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Capricorn Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Capricorn",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "capricorn",
+        "signCN": "astrology.zodiac-sign.capricorn",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.sol",
+        "rulingPlanetName": "Sun",
+        "thothSuit": "tarot.suit.thoth.disks",
+        "thothNumber": 4,
+        "thothTitle": "Power",
+        "thothCard": "tarot.thoth.4-of-disks"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.aquarius-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aquarius First Decan",
+      "description": "The 1st decan of Aquarius spans 0–10° of the tropical zodiac. Ruled by Venus in the Chaldean decan system, it carries the combined qualities of Aquarius and Venus's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 5 of Swords — Defeat — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aquarius Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Aquarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aquarius",
+        "signCN": "astrology.zodiac-sign.aquarius",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.venus",
+        "rulingPlanetName": "Venus",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 5,
+        "thothTitle": "Defeat",
+        "thothCard": "tarot.thoth.5-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.aquarius-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aquarius Second Decan",
+      "description": "The 2nd decan of Aquarius spans 10–20° of the tropical zodiac. Ruled by Mercury in the Chaldean decan system, it carries the combined qualities of Aquarius and Mercury's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 6 of Swords — Science — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aquarius Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Aquarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aquarius",
+        "signCN": "astrology.zodiac-sign.aquarius",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.mercury",
+        "rulingPlanetName": "Mercury",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 6,
+        "thothTitle": "Science",
+        "thothCard": "tarot.thoth.6-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.aquarius-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Aquarius Third Decan",
+      "description": "The 3rd decan of Aquarius spans 20–30° of the tropical zodiac. Ruled by Moon in the Chaldean decan system, it carries the combined qualities of Aquarius and Moon's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 7 of Swords — Futility — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Aquarius Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Aquarius",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "aquarius",
+        "signCN": "astrology.zodiac-sign.aquarius",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.luna",
+        "rulingPlanetName": "Moon",
+        "thothSuit": "tarot.suit.thoth.swords",
+        "thothNumber": 7,
+        "thothTitle": "Futility",
+        "thothCard": "tarot.thoth.7-of-swords"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.pisces-1",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Pisces First Decan",
+      "description": "The 1st decan of Pisces spans 0–10° of the tropical zodiac. Ruled by Saturn in the Chaldean decan system, it carries the combined qualities of Pisces and Saturn's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 8 of Cups — Indolence — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Pisces Decan 1",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "0–10° Pisces",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "pisces",
+        "signCN": "astrology.zodiac-sign.pisces",
+        "decanNumber": 1,
+        "startDegree": 0,
+        "endDegree": 10,
+        "rulingPlanet": "astrology.planet.saturn",
+        "rulingPlanetName": "Saturn",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 8,
+        "thothTitle": "Indolence",
+        "thothCard": "tarot.thoth.8-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.pisces-2",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Pisces Second Decan",
+      "description": "The 2nd decan of Pisces spans 10–20° of the tropical zodiac. Ruled by Jupiter in the Chaldean decan system, it carries the combined qualities of Pisces and Jupiter's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 9 of Cups — Happiness — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Pisces Decan 2",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "10–20° Pisces",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "pisces",
+        "signCN": "astrology.zodiac-sign.pisces",
+        "decanNumber": 2,
+        "startDegree": 10,
+        "endDegree": 20,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "rulingPlanetName": "Jupiter",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 9,
+        "thothTitle": "Happiness",
+        "thothCard": "tarot.thoth.9-of-cups"
+      }
+    },
+    {
+      "canonicalName": "astrology.decan.pisces-3",
+      "entityType": "astrology.decan",
+      "primaryDisplayName": "Pisces Third Decan",
+      "description": "The 3rd decan of Pisces spans 20–30° of the tropical zodiac. Ruled by Mars in the Chaldean decan system, it carries the combined qualities of Pisces and Mars's influence. In the Thoth tarot system developed by Aleister Crowley and Lady Frieda Harris, this decan corresponds to the 10 of Cups — Satiety — whose imagery reflects the psychological and elemental qualities of this ten-degree arc. The decans originate in ancient Egyptian astrology, where each was associated with a decan-star (star group) rising heliacally during that period; Hellenistic astrologers later merged them with the Chaldean planetary sequence.",
+      "secondaryNames": [
+        {
+          "name": "Pisces Decan 3",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "20–30° Pisces",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "astrology",
+        "decan",
+        "zodiac"
+      ],
+      "extendedData": {
+        "signSlug": "pisces",
+        "signCN": "astrology.zodiac-sign.pisces",
+        "decanNumber": 3,
+        "startDegree": 20,
+        "endDegree": 30,
+        "rulingPlanet": "astrology.planet.mars",
+        "rulingPlanetName": "Mars",
+        "thothSuit": "tarot.suit.thoth.cups",
+        "thothNumber": 10,
+        "thothTitle": "Satiety",
+        "thothCard": "tarot.thoth.10-of-cups"
+      }
+    }
+  ]
+}

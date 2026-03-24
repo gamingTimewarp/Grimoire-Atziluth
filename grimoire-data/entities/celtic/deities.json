@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "celtic.deity.brigid",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Brigid",
+      "description": "One of the most beloved goddesses of the Tuatha Dé Danann, Brigid is a triple goddess whose three aspects preside over poetry and inspiration, healing and medicine, and smithcraft and metalwork — the three fires of the hearth, the forge, and the poet's lamp. She is the daughter of the Dagda and is closely associated with the sacred flame, holy wells, and the threshold between winter and spring. Her festival is Imbolc (1 February), when the first stirrings of spring are felt in the earth. The enduring veneration of St. Brigid of Kildare, who shares her feast day and her sacred flame, is thought to preserve much of the goddess's cultus under a Christian form.",
+      "secondaryNames": [
+        { "name": "Brigit", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Bríd", "languageTag": "ga", "visible": false, "sortOrder": 1 },
+        { "name": "Bride", "languageTag": "sco", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["poetry", "healing", "smithcraft", "fire", "wells", "spring"],
+        "festival": "imbolc",
+        "symbols": ["flame", "sacred well", "Brigid's cross", "white cow"],
+        "consort": null,
+        "parentCNs": ["celtic.deity.the-dagda"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.lugh",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Lugh",
+      "description": "God of light, skill, and all arts, Lugh is known as Lugh Lámfhota ('of the Long Arm') for his skill with the spear, and Lugh Samhildánach ('of Many Skills') for his mastery of every craft. When refused entry to Tara because every role was already filled, he claimed he alone possessed every skill simultaneously. He led the Tuatha Dé Danann in the Second Battle of Mag Tuired, slaying his own grandfather Balor with a sling-stone or spear through the evil eye. His festival is Lughnasadh (1 August), a harvest celebration he instituted to honour his foster-mother Tailtiu. Associated with the sun, lightning, and the harvest.",
+      "secondaryNames": [
+        { "name": "Lug Lámfhota", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Lleu Llaw Gyffes", "languageTag": "cy", "visible": true, "sortOrder": 1 },
+        { "name": "Lugus", "languageTag": "la", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["light", "skill", "crafts", "sun", "harvest", "lightning", "music", "poetry"],
+        "festival": "lughnasadh",
+        "symbols": ["spear", "sun disc", "raven", "sling"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.the-dagda",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "The Dagda",
+      "description": "The Dagda ('The Good God') is the father deity and chieftain of the Tuatha Dé Danann, a god of fertility, agriculture, wisdom, seasons, and masculine virility. He possesses three great treasures: a cauldron of plenty (Coire Ansic) that satisfies all hunger and cannot be emptied; a great club so large it must be wheeled — one end kills the living and the other restores the dead; and a magical harp (Uaithne) that controls the seasons and the emotions of all who hear it. Despite his rough, lustful, and gluttonous appearance, he is among the most powerful and wise of the gods. Also called Eochaid Ollathair ('All-Father') and Ruadh Rofhessa ('The Mighty One of Perfect Knowledge').",
+      "secondaryNames": [
+        { "name": "Eochaid Ollathair", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Ruadh Rofhessa", "languageTag": "ga", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["fertility", "agriculture", "wisdom", "seasons", "life", "death", "time"],
+        "symbols": ["cauldron of plenty", "great club", "magic harp"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.the-morrigan",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "The Morrígan",
+      "description": "The Morrígan ('Great Queen' or 'Phantom Queen') is a shape-shifting goddess of fate, war, sovereignty, and prophecy, most often appearing as a crow or raven on the battlefield. She is sometimes understood as a triple goddess comprising Badb (the battle crow who drives warriors to frenzy), Macha (associated with sovereignty and the land), and Nemain (panic and the madness of battle). She confronts heroes to test and challenge them — most famously Cú Chulainn, whose repeated rejection of her advances sealed his doom. She prophesies the outcome of battles and washes the armour of the doomed at river fords. The washer at the ford (bean nighe) is her most ominous form.",
+      "secondaryNames": [
+        { "name": "Mórrígan", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Badb", "languageTag": "ga", "visible": true, "sortOrder": 1 },
+        { "name": "Macha", "languageTag": "ga", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["fate", "war", "sovereignty", "prophecy", "death", "transformation", "battle"],
+        "symbols": ["crow", "raven", "red hair", "ford", "blood"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.manannan-mac-lir",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Manannán mac Lir",
+      "description": "God of the sea and lord of the Otherworld (Tír na nÓg, the Land of the Ever-Young), Manannán mac Lir ('Son of the Sea') is the great Irish sea deity and psychopomp. He rides a magical horse across the waves as if over dry land, wears a cloak of many colours that shifts like the sea's surface, and carries a sword called Fragarach ('The Answerer') that can cut through any armour and compels truth. He provides the Feast of Immortality (Fled Goibhnenn in some versions) and the Mantle of Invisibility, and guides souls to the Blessed Isles. He is also a great trickster and shapeshifter. His Welsh cognate is Manawydan fab Llŷr.",
+      "secondaryNames": [
+        { "name": "Manannán mac Lir", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Manawydan fab Llŷr", "languageTag": "cy", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["sea", "otherworld", "afterlife", "weather", "magic", "trickery", "shapeshifting"],
+        "symbols": ["sea", "horse", "cloak", "sword Fragarach", "crane bag"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.nuada",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Nuada",
+      "description": "Nuada Airgeadlámh ('of the Silver Arm/Hand') was the first king of the Tuatha Dé Danann in Ireland. He lost his hand in the First Battle of Mag Tuired, making him unfit to rule by the law requiring a king to be physically whole. The divine physician Dian Cécht fashioned him a fully functional silver arm, but it was later replaced with one of living flesh grown by Dian Cécht's son Miach. Nuada eventually regained his throne and wielded one of the Four Treasures of the Tuatha Dé Danann: the invincible sword of Nuada, from whose wounds none could escape. He was slain by Balor of the Evil Eye at the Second Battle. His Welsh cognate is Nudd/Lludd Llaw Eraint.",
+      "secondaryNames": [
+        { "name": "Nuada Airgeadlámh", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Nudd", "languageTag": "cy", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["sovereignty", "kingship", "healing", "leadership"],
+        "symbols": ["silver arm", "sword", "crown"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.goibhniu",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Goibhniu",
+      "description": "Goibhniu (also Goibniu, 'Smith') is the divine smith of the Tuatha Dé Danann, one of the three divine craftsmen alongside Creidhne (the metalworker) and Luchta/Luchtar (the wright). He forges weapons of supernatural quality — every spear thrown from his forge flies true and every wound it inflicts proves fatal. He also presides over the Feast of Goibhniu (Fled Goibhnenn), where the ale he brews confers immortality on those who drink it, preserving the gods from old age and death. His Welsh cognate is Gofannon, son of Dôn. He is also associated with the magical art of transformation, turning base materials into instruments of power.",
+      "secondaryNames": [
+        { "name": "Goibniu", "languageTag": "ga", "visible": true, "sortOrder": 0 },
+        { "name": "Gofannon", "languageTag": "cy", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["smithcraft", "brewing", "immortality", "weapons", "crafts"],
+        "symbols": ["forge", "hammer", "ale cauldron"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.cailleach",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Cailleach Bhéara",
+      "description": "The Cailleach ('the Hag' or 'the Veiled One'), most fully attested as the Cailleach Bhéara of the Beara Peninsula, is a primordial goddess of winter, storms, and the shaping of the landscape. She is among the oldest supernatural beings in Celtic tradition, predating the gods and perhaps associated with the pre-Indo-European substrate. She creates mountains by dropping stones from her apron, carves valleys and lochs with her staff, and calls up winter storms. She alternates between winter hag and summer maiden through a cycle of renewal, living for countless ages by periodically being transformed back into youth. She embodies the dark, cold, and destructive side of nature — the principle of winter and necessary hardship.",
+      "secondaryNames": [
+        { "name": "Cailleach Bheur", "languageTag": "gd", "visible": true, "sortOrder": 0 },
+        { "name": "The Hag of Winter", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["celtic", "deity", "scottish", "irish"],
+      "extendedData": {
+        "pantheon": "pre-gaelic",
+        "domain": ["winter", "storms", "landscape", "time", "age", "darkness"],
+        "symbols": ["staff", "apron", "blue face", "deer herd"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.aine",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Áine",
+      "description": "Áine (pronounced approximately 'AWN-ya', meaning 'brightness', 'splendour', or 'joy') is a goddess of love, summer, sovereignty, wealth, and the sun. She is the queen of the Munster faeries and is associated with Lough Gur in County Limerick, where her sacred hill Cnoc Áine was the site of midsummer celebrations. Her name resonates with the Old Irish word for ring or a shining brightness. She is also connected to cattle, crops, and the fertility of the land. Some traditions identify her with the moon (particularly the summer moon), and she is sometimes seen as a dual figure with Grian ('Sun'), together representing the light half and dark half of the year.",
+      "secondaryNames": [
+        { "name": "Aine", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["love", "summer", "sun", "sovereignty", "cattle", "fertility", "joy"],
+        "festival": "midsummer",
+        "symbols": ["sun", "cattle", "Lough Gur", "red mare"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.etain",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Étaín",
+      "description": "Étaín is a goddess of beauty, grace, and transformation, the central figure of the mythological cycle Tochmarc Étaíne (The Wooing of Étaín). She is the most beautiful woman in Ireland, married to Midir of the Sídhe, but the jealousy of his first wife Fuamnach leads to a series of transformations: she is turned first into a pool of water, then a worm, and then a fly of immense beauty and fragrance. She is swallowed and reborn as a human woman, living out a mortal life before being recognised and reclaimed by Midir. Her story embodies metempsychosis, divine beauty surviving transformation, and the persistence of the soul through successive forms.",
+      "secondaryNames": [
+        { "name": "Édaín", "languageTag": "ga", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["beauty", "transformation", "rebirth", "soul", "enchantment"],
+        "symbols": ["butterfly", "fly", "pool of water", "gold cup"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.flidais",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Flidais",
+      "description": "Flidais is a goddess of the wild — of the forest, hunting, and untamed nature. She is the mistress of wild animals; in her care the deer of the wild yield milk as readily as domestic cattle. She owns a magical herd of deer that could provide enough milk to sustain an army. She is a shape-shifter and huntress associated with the wilderness beyond the settled world. Her cult may overlap with that of other wild goddesses such as Artemis and Diana in the comparative tradition. She appears in the Ulster Cycle, where she is abducted by Fergus mac Róich. Her name is thought to derive from Old Irish words related to 'rule' or 'sovereignty of the wild'.",
+      "secondaryNames": [],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["hunting", "wild animals", "forest", "nature", "shapeshifting", "cattle"],
+        "symbols": ["deer", "bow", "forest", "wild herd"]
+      }
+    },
+    {
+      "canonicalName": "celtic.deity.ogma",
+      "entityType": "celtic.deity",
+      "primaryDisplayName": "Ogma",
+      "description": "Ogma (also Oghma, Ogmios in Gaul) is the god of eloquence, language, poetry, and physical strength among the Tuatha Dé Danann. He is credited with inventing the Ogham alphabet — the earliest form of written Irish — and his name is preserved in its very title. He is also Ogma Grianainech ('of the sun-like countenance'), and is depicted as a warrior of great might who combines brute strength with mastery of words. His Gaulish cognate Ogmios is depicted as an aged Heracles figure leading a chain of willing followers by threads of gold attached to their ears — a striking image of eloquence binding hearts. He is keeper of the tradition of the sacred and binding word.",
+      "secondaryNames": [
+        { "name": "Oghma", "languageTag": "ga", "visible": false, "sortOrder": 0 },
+        { "name": "Ogmios", "languageTag": "la", "visible": true, "sortOrder": 1 },
+        { "name": "Ogma Grianainech", "languageTag": "ga", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["celtic", "deity", "tuatha-de-danann", "irish"],
+      "extendedData": {
+        "pantheon": "tuatha-de-danann",
+        "domain": ["eloquence", "language", "poetry", "writing", "strength", "binding"],
+        "symbols": ["Ogham stave", "chains of gold", "sun face", "club"]
+      }
+    }
+  ]
+}
