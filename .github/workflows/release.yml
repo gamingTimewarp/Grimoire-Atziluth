@@ -62,6 +62,10 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Build grimoire-core
+        run: npm run build
+        working-directory: grimoire-core
+
       - name: Build and publish
         uses: tauri-apps/tauri-action@v0
         env:
@@ -110,10 +114,12 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Build grimoire-core
+        run: npm run build
+        working-directory: grimoire-core
+
       - name: Initialise Android project
         working-directory: grimoire-app
-        env:
-          NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
         run: npm run tauri android init
 
       - name: Set up release signing
@@ -135,8 +141,6 @@ jobs:
 
       - name: Build Android APK
         working-directory: grimoire-app
-        env:
-          NDK_HOME: ${{ env.ANDROID_NDK_HOME }}
         run: npm run tauri android build -- --apk
 
       - name: Upload APK to release
