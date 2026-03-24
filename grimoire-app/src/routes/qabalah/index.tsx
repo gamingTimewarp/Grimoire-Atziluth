@@ -13,9 +13,16 @@ export const Route = createFileRoute('/qabalah/')({
 const TREE_ASPECT = 760 / 500
 
 function computeTreeSize(): number {
-  // Subtract page header (~60px) + main content vertical padding (~64px)
+  const isMobile = window.innerWidth < 600
+  if (isMobile) {
+    // Mobile: 48px top bar + 16px×2 main padding + ~80px page header
+    const availH = window.innerHeight - 48 - 80 - 32
+    const availW = window.innerWidth - 32 // 16px page padding each side
+    const fromH = Math.floor(availH / TREE_ASPECT)
+    return Math.min(Math.max(Math.min(fromH, availW), 220), 860)
+  }
+  // Desktop: no top bar, 64px vertical padding, ~60px page header
   const availH = window.innerHeight - 60 - 64
-  // Convert available height → width using aspect ratio, cap at container max
   return Math.min(Math.max(Math.floor(availH / TREE_ASPECT), 280), 860)
 }
 
@@ -85,12 +92,14 @@ function QabalahPage() {
         </div>
       </div>
 
-      <TreeOfLife
-        mode={mode}
-        onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
-        size={treeSize}
-        showDaath={loadTraditionSettings().showDaath}
-      />
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <TreeOfLife
+          mode={mode}
+          onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+          size={treeSize}
+          showDaath={loadTraditionSettings().showDaath}
+        />
+      </div>
     </div>
   )
 }

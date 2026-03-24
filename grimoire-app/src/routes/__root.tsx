@@ -127,12 +127,15 @@ function RootLayout() {
         {/* Top bar */}
         <div style={{
           height: '48px',
+          paddingTop: 'env(safe-area-inset-top)',
+          paddingLeft: '16px',
+          paddingRight: '16px',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '0 16px',
           background: 'var(--color-surface-1)',
           borderBottom: '1px solid var(--color-border)',
           flexShrink: 0,
           zIndex: 10,
+          boxSizing: 'content-box',
         }}>
           <div>
             <span style={{ fontSize: '10px', letterSpacing: '0.15em', color: 'var(--color-accent)', textTransform: 'uppercase', fontWeight: 600 }}>Grimoire </span>

@@ -70,11 +70,13 @@ export function SpreadGrid({
   }
 
   return (
+    <div style={{ overflowX: 'auto', overflowY: 'visible' }}>
     <div style={{
       display: 'grid',
       gridTemplateColumns: `repeat(${cols}, ${W}px)`,
       gridTemplateRows: `repeat(${rows}, ${H}px)`,
       gap: `${GAP}px`,
+      width: 'fit-content',
     }}>
       {Array.from(cellMap.entries()).map(([key, cellPositions]) => {
         const [xStr, yStr] = key.split(',')
@@ -197,6 +199,7 @@ export function SpreadGrid({
           </div>
         )
       })}
+    </div>
     </div>
   )
 }
