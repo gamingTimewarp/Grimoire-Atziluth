@@ -135,16 +135,28 @@ jobs:
         working-directory: grimoire-app/src-tauri/gen/android
         run: |
           echo "$ANDROID_KEYSTORE" | base64 --decode > keystore.jks
+          # storeFile path is relative to the Gradle :app module dir (gen/android/app/),
+          # so ../keystore.jks resolves to gen/android/keystore.jks
           cat > key.properties <<EOF
           storePassword=$ANDROID_KEYSTORE_PASSWORD
           keyPassword=$ANDROID_KEY_PASSWORD
           keyAlias=$ANDROID_KEY_ALIAS
-          storeFile=keystore.jks
+          storeFile=../keystore.jks
           EOF
 
       - name: Build Android APK
         working-directory: grimoire-app
         run: npm run tauri android build -- --apk
+
+      - name: Rename APK
+        run: |
+          VERSION="${{ github.ref_name }}"
+          VERSION="${VERSION#v}"
+          APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
+          mv "${APK_DIR}/app-universal-release.apk" \
+             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk" 2>/dev/null || \
+          mv "${APK_DIR}/app-universal-release-unsigned.apk" \
+             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
 
       - name: Upload APK to release
         uses: softprops/action-gh-release@v2
