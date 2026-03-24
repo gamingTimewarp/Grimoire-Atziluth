@@ -13,6 +13,10 @@ grimoire-app/src-tauri/target/
 grimoire-app/src-tauri/gen/android/
 grimoire-app/src-tauri/gen/apple/
 
+# ── Android signing keystore (never commit — backed up separately) ────────────
+*.jks
+*.keystore
+
 # ── User data (SQLite — stored in OS app-data dir at runtime, but safety net) ─
 *.db
 *.db-shm
