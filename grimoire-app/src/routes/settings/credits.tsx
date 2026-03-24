@@ -24,7 +24,7 @@ function CreditsPage() {
           Grimoire Atziluth uses artwork and data from the following open-licensed sources.
         </p>
         <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', whiteSpace: 'nowrap', marginLeft: '16px' }}>
-          v1.0.0-rc
+          v1.0.0
         </span>
       </div>
 

@@ -13,7 +13,7 @@ import { applyCustomCss } from '../__root'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
 import { Button } from '@/components/ui/Button'
-import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle } from 'lucide-react'
+import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield } from 'lucide-react'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
 
 export const Route = createFileRoute('/settings/')({
@@ -83,11 +83,12 @@ function SettingsPage() {
           { to: '/settings/accessibility',icon: Eye,        label: 'Accessibility',desc: 'Colour vision modes, dyslexia font, reduced motion, and card captions.' },
           { to: '/settings/data',         icon: HardDrive,  label: 'Data',         desc: 'Export a full backup or import a previously saved backup file.' },
           { to: '/settings/credits',      icon: ScrollText, label: 'Credits',      desc: 'Art pack licences and third-party attributions.' },
+          { to: '/settings/privacy',      icon: Shield,     label: 'Privacy Policy', desc: 'How your data is stored and why nothing leaves your device.' },
         ].map(({ to, icon: Icon, label, desc }) => (
           <button
             key={to}
             type="button"
-            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/credits' })}
+            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/credits' | '/settings/privacy' })}
             style={{ padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '6px', border: '1px solid var(--color-border)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px', transition: 'border-color 0.15s', width: '100%', fontFamily: 'inherit', textAlign: 'left' }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
