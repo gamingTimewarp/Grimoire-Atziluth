@@ -117,14 +117,19 @@ jobs:
         run: npm run tauri android init
 
       - name: Set up release signing
-        if: ${{ secrets.ANDROID_KEYSTORE != '' }}
+        if: env.ANDROID_KEYSTORE != ''
+        env:
+          ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         working-directory: grimoire-app/src-tauri/gen/android
         run: |
-          echo "${{ secrets.ANDROID_KEYSTORE }}" | base64 --decode > keystore.jks
+          echo "$ANDROID_KEYSTORE" | base64 --decode > keystore.jks
           cat > key.properties <<EOF
-          storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
-          keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}
+          storePassword=$ANDROID_KEYSTORE_PASSWORD
+          keyPassword=$ANDROID_KEY_PASSWORD
+          keyAlias=$ANDROID_KEY_ALIAS
           storeFile=keystore.jks
           EOF
 
