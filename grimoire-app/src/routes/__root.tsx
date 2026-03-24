@@ -7,7 +7,6 @@ import { useEngineStore } from '@/stores/engine'
 import { initReadingDb } from '@/lib/reading-db'
 import { initNatalDb } from '@/lib/natal-db'
 import { initQuizDb } from '@/lib/quiz-db'
-import { initCustomDb } from '@/lib/custom-db'
 import { createDailyReadingIfAbsent } from '@/lib/daily-reading'
 import { loadAndApplyTheme } from '@/lib/theme-store'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
@@ -45,7 +44,6 @@ function RootLayout() {
     initReadingDb().catch(console.error)
     initNatalDb().catch(console.error)
     initQuizDb().catch(console.error)
-    initCustomDb().catch(console.error)
 
     // Apply compact window setting (removes Tauri's minWidth constraint if enabled)
     if (localStorage.getItem('grimoire:compact-window') === 'true') {

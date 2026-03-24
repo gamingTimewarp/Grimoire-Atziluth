@@ -8,7 +8,7 @@ import { create } from 'zustand'
 import { InMemoryAdapter, createGrimoireEngine } from '@grimoire/core'
 import type { GrimoireEngine } from '@grimoire/core'
 import { loadBundledSeedData } from '@/lib/seed-loader'
-import { seedCustomIntoEngine } from '@/lib/custom-db'
+import { initCustomDb, seedCustomIntoEngine } from '@/lib/custom-db'
 
 type Status = 'idle' | 'loading' | 'ready' | 'error'
 
@@ -40,6 +40,7 @@ export const useEngineStore = create<EngineStore>((set, get) => ({
       const engine = await createGrimoireEngine(adapter)
       const seeder = new Seeder(engine, false)
       await seeder.seedIfNeeded(seedData)
+      await initCustomDb()
       await seedCustomIntoEngine(adapter)
 
       set({ engine, status: 'ready' })
