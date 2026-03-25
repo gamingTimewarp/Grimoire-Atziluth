@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "links": [
+  { "source": "rune.elder-futhark.fehu", "target": "letter.latin.f", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.fehu", "target": "letter.greek.phi", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.fehu", "target": "letter.arabic.fa", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.uruz", "target": "letter.latin.u", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.uruz", "target": "letter.greek.upsilon", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.uruz", "target": "letter.hebrew.vau", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.uruz", "target": "letter.arabic.waw", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.thurisaz", "target": "letter.latin.thorn", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.thurisaz", "target": "letter.greek.theta", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.thurisaz", "target": "letter.arabic.tha", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.ansuz", "target": "letter.latin.a", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.ansuz", "target": "letter.greek.alpha", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.ansuz", "target": "letter.hebrew.aleph", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.ansuz", "target": "letter.arabic.alif", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.raidho", "target": "letter.latin.r", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.raidho", "target": "letter.greek.rho", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.raidho", "target": "letter.hebrew.resh", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.raidho", "target": "letter.arabic.ra", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.kenaz", "target": "letter.latin.k", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.kenaz", "target": "letter.greek.kappa", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.kenaz", "target": "letter.hebrew.kaph", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.kenaz", "target": "letter.arabic.kaf", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.gebo", "target": "letter.latin.g", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.gebo", "target": "letter.greek.gamma", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.gebo", "target": "letter.hebrew.gimel", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.gebo", "target": "letter.arabic.jim", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.wunjo", "target": "letter.latin.v", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.wunjo", "target": "letter.latin.w", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.wunjo", "target": "letter.greek.digamma", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.wunjo", "target": "letter.hebrew.vau", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.wunjo", "target": "letter.arabic.waw", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.hagalaz", "target": "letter.latin.h", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.hagalaz", "target": "letter.greek.eta", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.hagalaz", "target": "letter.hebrew.heh", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.hagalaz", "target": "letter.arabic.ha", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.nauthiz", "target": "letter.latin.n", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.nauthiz", "target": "letter.greek.nu", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.nauthiz", "target": "letter.hebrew.nun", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.nauthiz", "target": "letter.arabic.nun", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.isa", "target": "letter.latin.i", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.isa", "target": "letter.greek.iota", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.isa", "target": "letter.hebrew.yod", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.isa", "target": "letter.arabic.ya", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.jera", "target": "letter.latin.i", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.jera", "target": "letter.latin.j", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.jera", "target": "letter.latin.y", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.jera", "target": "letter.greek.iota", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.jera", "target": "letter.hebrew.yod", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.jera", "target": "letter.arabic.ya", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.eihwaz", "target": "letter.latin.i", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.eihwaz", "target": "letter.greek.iota", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.perthro", "target": "letter.latin.p", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.perthro", "target": "letter.greek.pi", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.perthro", "target": "letter.hebrew.peh", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.algiz", "target": "letter.latin.z", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.algiz", "target": "letter.greek.zeta", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.algiz", "target": "letter.hebrew.zayin", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.algiz", "target": "letter.arabic.zayn", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.sowilo", "target": "letter.latin.s", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.sowilo", "target": "letter.greek.sigma", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.sowilo", "target": "letter.hebrew.shin", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.sowilo", "target": "letter.arabic.sin", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.tiwaz", "target": "letter.latin.t", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.tiwaz", "target": "letter.greek.tau", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.tiwaz", "target": "letter.hebrew.tau", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.tiwaz", "target": "letter.arabic.ta-taw", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.berkano", "target": "letter.latin.b", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.berkano", "target": "letter.greek.beta", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.berkano", "target": "letter.hebrew.beth", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.berkano", "target": "letter.arabic.ba", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.ehwaz", "target": "letter.latin.e", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.ehwaz", "target": "letter.greek.epsilon", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.ehwaz", "target": "letter.hebrew.heh", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.mannaz", "target": "letter.latin.m", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.mannaz", "target": "letter.greek.mu", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.mannaz", "target": "letter.hebrew.mem", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.mannaz", "target": "letter.arabic.mim", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.laguz", "target": "letter.latin.l", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.laguz", "target": "letter.greek.lambda", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.laguz", "target": "letter.hebrew.lamed", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.laguz", "target": "letter.arabic.lam", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.dagaz", "target": "letter.latin.d", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.dagaz", "target": "letter.greek.delta", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.dagaz", "target": "letter.hebrew.daleth", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.dagaz", "target": "letter.arabic.dal", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.othala", "target": "letter.latin.o", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.othala", "target": "letter.greek.omega", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.othala", "target": "letter.hebrew.ayin", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+  { "source": "rune.elder-futhark.othala", "target": "letter.arabic.ayn", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+  { "source": "rune.elder-futhark.ingwaz", "target": "letter.latin.eng", "label": "cognate-letter", "bidirectional": true, "traditionScope": [], "extendedData": {} }
+  ]
+}

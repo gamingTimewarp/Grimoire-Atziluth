@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "astrology.element.fire",  "target": "wuxing.phase.fire",  "label": "corresponds-wuxing", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.water", "target": "wuxing.phase.water", "label": "corresponds-wuxing", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.earth", "target": "wuxing.phase.earth", "label": "corresponds-wuxing", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.air",   "target": "wuxing.phase.wood",  "label": "corresponds-wuxing", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Wood (木) encompasses wind, growth, and expansive movement — the closest Wuxing analogue to the Western Air element." } },
+
+    { "source": "astrology.element.fire",  "target": "iching.trigram.fire",    "label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.water", "target": "iching.trigram.water",   "label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.earth", "target": "iching.trigram.earth",   "label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.earth", "target": "iching.trigram.mountain","label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Mountain (Gen, ☶) is Earth-element in the Wuxing system, representing stillness and solidity." } },
+    { "source": "astrology.element.air",   "target": "iching.trigram.wind",    "label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "astrology.element.air",   "target": "iching.trigram.heaven",  "label": "corresponds-trigram", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Heaven (Qian, ☰) represents the sky and expansive Yang force, a secondary correspondence to the Western Air element." } }
+  ]
+}

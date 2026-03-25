@@ -94,7 +94,14 @@ export function getNakshatra(siderealLon: number): Nakshatra {
   return NAKSHATRAS[getNakshatraIndex(siderealLon)]
 }
 
-export const PLANETS = [
+export type PlanetDef = {
+  readonly name: string
+  readonly body: Astronomy.Body | null  // null = computed body (lunar nodes)
+  readonly symbol: string
+  readonly canonicalName: string
+}
+
+export const PLANETS: readonly PlanetDef[] = [
   { name: 'Sol',     body: Astronomy.Body.Sun,     symbol: '☉', canonicalName: 'astrology.planet.sol'     },
   { name: 'Luna',    body: Astronomy.Body.Moon,    symbol: '☽', canonicalName: 'astrology.planet.luna'    },
   { name: 'Mercury', body: Astronomy.Body.Mercury, symbol: '☿', canonicalName: 'astrology.planet.mercury' },
@@ -105,9 +112,11 @@ export const PLANETS = [
   { name: 'Uranus',  body: Astronomy.Body.Uranus,  symbol: '♅', canonicalName: 'astrology.planet.uranus'  },
   { name: 'Neptune', body: Astronomy.Body.Neptune, symbol: '♆', canonicalName: 'astrology.planet.neptune' },
   { name: 'Pluto',   body: Astronomy.Body.Pluto,   symbol: '♇', canonicalName: 'astrology.planet.pluto'   },
-] as const
+  { name: 'Rahu',    body: null,                   symbol: '☊', canonicalName: 'astrology.node.rahu'      },
+  { name: 'Ketu',    body: null,                   symbol: '☋', canonicalName: 'astrology.node.ketu'      },
+]
 
-export type Planet = typeof PLANETS[number]
+export type Planet = PlanetDef
 
 /** Planets fast enough to produce monthly ingresses worth showing on the calendar grid */
 export const INGRESS_PLANETS = PLANETS.slice(0, 5) // Sun, Moon, Mercury, Venus, Mars
@@ -315,24 +324,51 @@ function eclipticLon(body: Astronomy.Body, date: Date): number {
   return normLon(Astronomy.EclipticLongitude(body, date))
 }
 
+// ─── Lunar node positions ─────────────────────────────────────────────────────
+
+/**
+ * Mean ascending node (Rahu) tropical longitude using Meeus Ch.22 formula.
+ * Accurate to within ~0.1° for dates near J2000. Pass isKetu=true for Ketu (South Node).
+ */
+function getMeanNodeLongitude(date: Date, isKetu = false): number {
+  const JD = date.getTime() / 86400000 + 2440587.5
+  const T  = (JD - 2451545.0) / 36525
+  const omega = normLon(125.04452 - 1934.136261 * T + 0.0020708 * T * T + (T * T * T) / 450000)
+  return isKetu ? normLon(omega + 180) : omega
+}
+
 // ─── Planetary positions ──────────────────────────────────────────────────────
 
-export function getPlanetPositions(date: Date, mode: AstrologyMode = 'tropical'): PlanetPosition[] {
+const NODE_CNS = new Set(['astrology.node.rahu', 'astrology.node.ketu'])
+
+export function getPlanetPositions(
+  date: Date,
+  mode: AstrologyMode = 'tropical',
+  options: { showNodes?: boolean } = {},
+): PlanetPosition[] {
+  const { showNodes = true } = options
+  const planets = showNodes ? PLANETS : PLANETS.filter(p => !NODE_CNS.has(p.canonicalName))
   const next = new Date(date.getTime() + 86400000)
-  return PLANETS.map(planet => {
-    const tropLon  = eclipticLon(planet.body, date)
+  const isKetu = (p: PlanetDef) => p.canonicalName === 'astrology.node.ketu'
+  return planets.map(planet => {
+    const tropLon  = planet.body !== null
+      ? eclipticLon(planet.body, date)
+      : getMeanNodeLongitude(date, isKetu(planet))
     const { lon, signIndex, nakshatraIndex } = applyMode(tropLon, mode, date)
     const lon2 = (() => {
-      const tl2 = eclipticLon(planet.body, next)
+      const tl2 = planet.body !== null
+        ? eclipticLon(planet.body, next)
+        : getMeanNodeLongitude(next, isKetu(planet))
       return applyMode(tl2, mode, next).lon
     })()
     const degTotal  = lon % 30
     const degree    = Math.floor(degTotal)
     const minutes   = Math.floor((degTotal - degree) * 60)
 
-    // Sun and Moon don't retrograde (geocentric)
+    // Sun and Moon never retrograde (geocentric). Nodes always do — suppress the flag
+    // since it's permanently true and therefore non-informative to display.
     let retrograde = false
-    if (planet.body !== Astronomy.Body.Sun && planet.body !== Astronomy.Body.Moon) {
+    if (planet.body !== null && planet.body !== Astronomy.Body.Sun && planet.body !== Astronomy.Body.Moon) {
       let diff = lon2 - lon
       if (diff > 180) diff -= 360
       if (diff < -180) diff += 360
@@ -488,14 +524,14 @@ export function getIngressesForMonth(year: number, month: number, mode: Astrolog
   for (const planet of INGRESS_PLANETS) {
     // Start 1 step before month to catch ingresses right at the boundary
     let t = new Date(monthStart.getTime() - STEP_MS)
-    let prevSign = signFn(eclipticLon(planet.body, t))
+    let prevSign = signFn(eclipticLon(planet.body!, t))
 
     while (t < monthEnd) {
       const tNext = new Date(t.getTime() + STEP_MS)
-      const currSign = signFn(eclipticLon(planet.body, tNext))
+      const currSign = signFn(eclipticLon(planet.body!, tNext))
 
       if (currSign !== prevSign) {
-        const exactTime = binarySearchIngress(planet.body, t, tNext, currSign, signFn)
+        const exactTime = binarySearchIngress(planet.body!, t, tNext, currSign, signFn)
         if (exactTime >= monthStart && exactTime < monthEnd) {
           ingresses.push({ planet, sign: signs[currSign] as ZodiacSign, time: exactTime })
         }
@@ -1060,8 +1096,9 @@ export function getNatalChart(
   lon: number,
   system: HouseSystem = 'whole-sign',
   mode: AstrologyMode = 'tropical',
+  options: { showNodes?: boolean } = {},
 ): NatalChartData {
-  const planets   = getPlanetPositions(birthDate, mode)
+  const planets   = getPlanetPositions(birthDate, mode, options)
   const houses    = getHouses(birthDate, lat, lon, system)
   const aspects   = getAspects(planets)
   const lots      = computeHermeticLots(planets, houses, mode, birthDate)

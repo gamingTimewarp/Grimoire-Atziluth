@@ -1,6 +1,6 @@
 # Grimoire Atziluth â€” User Manual
 
-**Version 1.0.0-rc**
+**Version 1.0.0**
 
 ---
 
@@ -556,3 +556,4 @@ A read-only shortcut reference is also available inside the app at **Settings â†
 ---
 
 *Grimoire Atziluth v1.0.0*
+

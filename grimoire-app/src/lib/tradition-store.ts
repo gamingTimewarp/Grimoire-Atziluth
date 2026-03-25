@@ -25,6 +25,8 @@ export interface TraditionSettings {
   astrologyMode: AstrologyMode
   houseSystem: HouseSystem
   showDaath: boolean
+  /** Whether lunar nodes (Rahu/Ketu) appear in sky charts and natal wheels */
+  showNodes: boolean
   /** Whether user-created entities appear in reference, search, and study */
   customEnabled: boolean
 }
@@ -207,6 +209,7 @@ const DEFAULTS: TraditionSettings = {
   astrologyMode: 'tropical',
   houseSystem: 'placidus',
   showDaath: true,
+  showNodes: true,
   customEnabled: true,
 }
 

@@ -83,6 +83,15 @@
       "extendedData": { "uppercase": "I", "lowercase": "i", "orderNumber": 9, "letterType": "vowel", "pronunciationClassical": "iː/i", "romanNumeralValue": 1 }
     },
     {
+      "canonicalName": "letter.latin.j",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "J",
+      "description": "J is a letter of the Latin alphabet derived from I, representing the consonantal /j/ sound (as in Latin 'iuvenis', youth). The distinction between vowel I and consonant J was formalised by Renaissance grammarians, chiefly Pierre de la Ramée (Ramus) in the 16th century, and J was gradually accepted as a separate letter. In English J typically represents the affricate /dʒ/. In many European languages (German, Dutch, Scandinavian) J retains the original /j/ value. As a descendant of I/Y, J carries the phonemic lineage of the Proto-Germanic /j/ initial sound preserved in the rune Jera.",
+      "secondaryNames": [ { "name": "j", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant"],
+      "extendedData": { "uppercase": "J", "lowercase": "j", "orderNumber": 10, "letterType": "consonant", "pronunciationClassical": "j", "note": "A medieval/Renaissance differentiation of I, representing the consonantal /j/ sound." }
+    },
+    {
       "canonicalName": "letter.latin.k",
       "entityType": "letter.latin",
       "primaryDisplayName": "K",
@@ -191,6 +200,15 @@
       "extendedData": { "uppercase": "V", "lowercase": "v", "orderNumber": 21, "letterType": "consonant", "pronunciationClassical": "w", "romanNumeralValue": 5 }
     },
     {
+      "canonicalName": "letter.latin.w",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "W",
+      "description": "W is a letter of the Latin alphabet representing the labio-velar approximant /w/. Created in the medieval period by scribes doubling the letter V (or U) to represent the /w/ sound of Germanic languages — hence its name 'double-u'. It entered widespread use in the 11th century, largely through the influence of Norman scribes writing Old English. W is used in English, German, Polish, and many other European languages, though its value varies (/v/ in German, /v/ in Polish). In physics W denotes the watt and the W boson. W is the direct descendant of Latin V and Greek Digamma in representing the /w/ phoneme.",
+      "secondaryNames": [ { "name": "w", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant", "medieval"],
+      "extendedData": { "uppercase": "W", "lowercase": "w", "letterType": "consonant", "pronunciationClassical": "w", "note": "Medieval letter formed by doubling V; represents the /w/ sound absent from classical Latin." }
+    },
+    {
       "canonicalName": "letter.latin.x",
       "entityType": "letter.latin",
       "primaryDisplayName": "X",
@@ -216,6 +234,24 @@
       "secondaryNames": [ { "name": "z", "languageTag": "la-lower", "visible": true, "sortOrder": 0 } ],
       "tags": ["letter", "latin", "consonant"],
       "extendedData": { "uppercase": "Z", "lowercase": "z", "orderNumber": 24, "letterType": "consonant", "pronunciationClassical": "z" }
+    },
+    {
+      "canonicalName": "letter.latin.eng",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "Ŋ",
+      "description": "Eng (Ŋ, ŋ) is a letter representing the velar nasal consonant /ŋ/, the sound of 'ng' in 'sing' or 'ring'. Invented by the phonetician Alexander John Ellis in the 19th century as part of an early phonetic alphabet, and later adopted into the International Phonetic Alphabet (IPA). Eng is used as a standard letter in several languages including Sami, Fula, and Hausa. Its form is a stylised combination of N with a descender, visually suggesting the nasal quality. The phoneme /ŋ/ is represented in the Elder Futhark by the rune Ingwaz, named for the god Ing (Freyr).",
+      "secondaryNames": [ { "name": "ŋ", "languageTag": "und-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant", "ipa", "phonetic"],
+      "extendedData": { "uppercase": "Ŋ", "lowercase": "ŋ", "letterType": "consonant", "pronunciationClassical": "ŋ", "note": "Represents the velar nasal /ŋ/; standard IPA symbol and letter in several world languages." }
+    },
+    {
+      "canonicalName": "letter.latin.thorn",
+      "entityType": "letter.latin",
+      "primaryDisplayName": "Þ",
+      "description": "Thorn (Þ, þ) is a letter of the Old English, Old Norse, and Icelandic alphabets representing the dental fricative sounds /θ/ (voiceless, as in 'thin') and /ð/ (voiced, as in 'this'). Borrowed directly from the Elder Futhark rune Thurisaz (ᚦ), whose name and shape it shares. Thorn was used throughout the Anglo-Saxon period and persisted in Middle English, gradually being replaced by the digraph 'th'. A debased form of thorn survived into early modern printing, where it was often rendered as 'y' (giving rise to pseudo-archaic forms like 'ye olde'). Thorn remains in active use in modern Icelandic.",
+      "secondaryNames": [ { "name": "þ", "languageTag": "ang-lower", "visible": true, "sortOrder": 0 } ],
+      "tags": ["letter", "latin", "consonant", "old-english", "medieval"],
+      "extendedData": { "uppercase": "Þ", "lowercase": "þ", "letterType": "consonant", "pronunciationClassical": "θ/ð", "note": "Derived directly from the Elder Futhark rune Thurisaz." }
     }
   ]
 }

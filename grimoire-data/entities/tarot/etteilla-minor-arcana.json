@@ -815,6 +815,7 @@
         "rankNumber": 1,
         "uprightKeywords": ["contentment", "satisfaction", "material wellbeing"],
         "reversedKeywords": ["wealth badly used", "miserliness", "greed"],
+        "planetaryAttribution": null,
         "correspondingRWSCard": "tarot.minor.rws.pentacles.ace"
       }
     },
@@ -834,6 +835,7 @@
         "rankNumber": 2,
         "uprightKeywords": ["embarrassment", "difficulty", "financial juggling"],
         "reversedKeywords": ["letters", "written message", "correspondence"],
+        "planetaryAttribution": "astrology.planet.mercury",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.2"
       }
     },
@@ -853,6 +855,7 @@
         "rankNumber": 3,
         "uprightKeywords": ["skilled work", "craftsmanship", "quality"],
         "reversedKeywords": ["mediocrity", "puerility", "poor quality"],
+        "planetaryAttribution": "astrology.planet.venus",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.3"
       }
     },
@@ -872,6 +875,7 @@
         "rankNumber": 4,
         "uprightKeywords": ["gift", "legacy", "material benefit"],
         "reversedKeywords": ["obstacles", "delay", "postponed gain"],
+        "planetaryAttribution": "astrology.planet.luna",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.4"
       }
     },
@@ -891,6 +895,7 @@
         "rankNumber": 5,
         "uprightKeywords": ["lover", "mistress", "romantic affair"],
         "reversedKeywords": ["disorder", "chaos", "ruin"],
+        "planetaryAttribution": "astrology.planet.mars",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.5"
       }
     },
@@ -910,6 +915,7 @@
         "rankNumber": 6,
         "uprightKeywords": ["present moment", "now", "current affairs"],
         "reversedKeywords": ["desire", "ambition", "aspiration"],
+        "planetaryAttribution": "astrology.planet.jupiter",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.6"
       }
     },
@@ -929,6 +935,7 @@
         "rankNumber": 7,
         "uprightKeywords": ["money", "financial gain", "income"],
         "reversedKeywords": ["worry about money", "financial anxiety", "concern"],
+        "planetaryAttribution": "astrology.planet.saturn",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.7"
       }
     },
@@ -948,6 +955,7 @@
         "rankNumber": 8,
         "uprightKeywords": ["dark young woman", "skill", "craftswoman"],
         "reversedKeywords": ["usury", "excessive interest", "exploitation"],
+        "planetaryAttribution": "astrology.node.rahu",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.8"
       }
     },
@@ -967,6 +975,7 @@
         "rankNumber": 9,
         "uprightKeywords": ["accomplishment", "results", "effect"],
         "reversedKeywords": ["deception", "bad faith", "false promise"],
+        "planetaryAttribution": "astrology.node.ketu",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.9"
       }
     },
@@ -986,6 +995,7 @@
         "rankNumber": 10,
         "uprightKeywords": ["house", "home", "family dwelling"],
         "reversedKeywords": ["chance", "fate", "fortune"],
+        "planetaryAttribution": "astrology.element.earth",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.10"
       }
     },
@@ -1005,6 +1015,7 @@
         "rankNumber": 11,
         "uprightKeywords": ["studious youth", "dark young person", "diligence"],
         "reversedKeywords": ["luxury", "prodigality", "wastefulness"],
+        "planetaryAttribution": "astrology.element.earth",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.page"
       }
     },
@@ -1024,6 +1035,7 @@
         "rankNumber": 12,
         "uprightKeywords": ["useful person", "practical helper", "steady worker"],
         "reversedKeywords": ["idleness", "stagnation", "inertia"],
+        "planetaryAttribution": "astrology.element.earth",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.knight"
       }
     },
@@ -1043,6 +1055,7 @@
         "rankNumber": 13,
         "uprightKeywords": ["wealthy woman", "generosity", "dark woman"],
         "reversedKeywords": ["doubt", "suspicion", "uncertainty"],
+        "planetaryAttribution": "astrology.element.earth",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.queen"
       }
     },
@@ -1062,6 +1075,7 @@
         "rankNumber": 14,
         "uprightKeywords": ["wealthy man", "merchant", "successful businessman"],
         "reversedKeywords": ["vice", "weakness", "corruption"],
+        "planetaryAttribution": "astrology.element.earth",
         "correspondingRWSCard": "tarot.minor.rws.pentacles.king"
       }
     }

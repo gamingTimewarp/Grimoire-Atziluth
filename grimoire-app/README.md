@@ -1,7 +1,17 @@
-# Tauri + React + Typescript
+# grimoire-app
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Tauri 2 application package for Grimoire Atziluth.
 
-## Recommended IDE Setup
+See the [root README](../README.md) for full project documentation, setup instructions, and architecture notes.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Development
+
+```bash
+# From this directory
+npm run tauri dev     # start dev window
+npm run tauri build   # produce a native installer
+npm run build         # build the web frontend only (for CI)
+npm test              # run Vitest unit tests
+```
+
+Output bundles land in `src-tauri/target/release/bundle/`.

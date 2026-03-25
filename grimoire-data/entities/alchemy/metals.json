@@ -7,18 +7,39 @@
       "primaryDisplayName": "Gold",
       "description": "Gold is the supreme metal of the alchemical tradition — the King of metals, the perfected end-state toward which all other metals were believed to be naturally tending through geological time, and the very substance the Great Work aimed to produce and embody. In Hermetic theory, gold is the only metal already in a state of perfection: it does not tarnish, corrode, or diminish; it endures all tests of fire and acid; it radiates the warm, incorruptible light of the Sun made solid. The Solar correspondence is not arbitrary — the Sun was understood as the heart of the cosmic system, and gold as its terrestrial reflection, both sharing the quality of self-sufficient, radiating being that sustains and vivifies everything around it. In Jungian depth psychology, the gold of the alchemists is the image of the Self — not the ego that seeks and strives, but the deeper ordering centre of the psyche that the ego ultimately serves; to make gold is to make real, embodied, the gold of authentic selfhood that was always present as potential but required the fires of the Great Work to actualise.",
       "secondaryNames": [
-        { "name": "Aurum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Sol", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Aurum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sol",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 1,
         "planet": "astrology.planet.sol",
         "atomicSymbol": "Au",
-        "alchemicalSymbol": "�gold",
+        "alchemicalSymbol": "☉",
         "associatedStage": "alchemy.stage.rubedo",
         "colour": "gold",
-        "qualities": ["perfection", "incorruptibility", "solar warmth", "nobility", "permanence", "self-sufficiency", "completion"]
+        "qualities": [
+          "perfection",
+          "incorruptibility",
+          "solar warmth",
+          "nobility",
+          "permanence",
+          "self-sufficiency",
+          "completion"
+        ]
       }
     },
     {
@@ -27,18 +48,39 @@
       "primaryDisplayName": "Silver",
       "description": "Silver is the lunar metal, second in the hierarchy of perfection, associated with the Moon in all ancient cosmological systems from Mesopotamia to Renaissance Europe — a correspondence grounded in silver's brilliant white reflective surface, its tidal responsiveness, and its sympathetic resonance with the pearl-white light of the Moon. In Hermetic theory, silver is the metal of Albedo — the whitened, purified substance produced by the first successful phase of the Great Work, representing not the final solar gold but the intermediate lunar state of purification: cool, clear, reflective, receptive. Mythologically, silver belongs to the world of Diana/Artemis/Selene — the huntress, the guardian of the threshold between worlds, the keeper of the mysteries of birth and death — and to Isis, whose silver wings shelter the mysteries of resurrection. Psychologically, silver in the alchemical sense represents the development of reflective consciousness and the integration of the unconscious — the lunar quality of inner sight, the capacity to know by reflection rather than direct solar illumination, the anima in her purified, integrated form as inner wisdom.",
       "secondaryNames": [
-        { "name": "Argentum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Luna", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Argentum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Luna",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 2,
         "planet": "astrology.planet.luna",
         "atomicSymbol": "Ag",
-        "alchemicalSymbol": "🜾",
+        "alchemicalSymbol": "☽",
         "associatedStage": "alchemy.stage.albedo",
         "colour": "silver-white",
-        "qualities": ["purity", "reflection", "lunar receptivity", "intuition", "the unconscious", "feminine wisdom", "changeability"]
+        "qualities": [
+          "purity",
+          "reflection",
+          "lunar receptivity",
+          "intuition",
+          "the unconscious",
+          "feminine wisdom",
+          "changeability"
+        ]
       }
     },
     {
@@ -47,11 +89,29 @@
       "primaryDisplayName": "Mercury",
       "description": "Quicksilver (Hydrargyrum — 'liquid silver') is the most philosophically significant of all the metals in alchemy, because unlike every other metal it is liquid at room temperature: it moves, it changes form, it runs between the fingers, it reflects like a mirror, and it dissolves gold itself when the two are brought into contact. This uncanny quality made it the symbol of the prima materia — the original, undifferentiated substance of all matter — and of the Mercurius duplex, the 'double Mercury' of the philosophers: simultaneously the base starting material and the perfected end-product of the Work, the solvent and the Stone, the hermaphroditic principle that contains all opposites. Mercury corresponds to Hermes Trismegistus, the thrice-great master of the Hermetic tradition, and to the planet Mercury, divine messenger and psychopomp who moves between all worlds. Psychologically, mercury represents the transcendent function — the psyche's own capacity to move between opposites and generate symbols that dissolve fixed positions; it is the spirit of transformation itself, the element that cannot be pinned down, the autonomous dynamism of the unconscious.",
       "secondaryNames": [
-        { "name": "Quicksilver", "languageTag": "en", "visible": true, "sortOrder": 0 },
-        { "name": "Hydrargyrum", "languageTag": "grc", "visible": false, "sortOrder": 1 },
-        { "name": "Mercurius", "languageTag": "la", "visible": true, "sortOrder": 2 }
+        {
+          "name": "Quicksilver",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Hydrargyrum",
+          "languageTag": "grc",
+          "visible": false,
+          "sortOrder": 1
+        },
+        {
+          "name": "Mercurius",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 2
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 3,
         "planet": "astrology.planet.mercury",
@@ -59,7 +119,16 @@
         "alchemicalSymbol": "☿",
         "associatedStage": "alchemy.stage.nigredo",
         "colour": "silver-liquid",
-        "qualities": ["fluidity", "transformation", "the prima materia", "dissolution", "mediation", "quickening", "hermaphroditism", "the psychopomp"]
+        "qualities": [
+          "fluidity",
+          "transformation",
+          "the prima materia",
+          "dissolution",
+          "mediation",
+          "quickening",
+          "hermaphroditism",
+          "the psychopomp"
+        ]
       }
     },
     {
@@ -68,10 +137,23 @@
       "primaryDisplayName": "Copper",
       "description": "Copper is the metal of Venus, and the correspondence carries the full weight of that goddess's mythology: copper was sacred to Aphrodite on the island of Cyprus (from which both Kypros and the Latin cuprum derive their names), and its warm reddish-orange tone, its malleability, its conductivity of heat, and its use in the making of mirrors all align it with Venusian qualities of beauty, receptivity, and the harmonious union of opposites. In the Hermetic system, copper occupies a middle position in the hierarchy of metals — less noble than gold, silver, or tin, but warmer and more beautiful than iron or lead — corresponding to Venus's position between the Sun and Moon above and the outer planets below. Alchemically, copper is associated with the operation of Conjunction, the sacred marriage of opposites, and with the production of the 'green lion' — the vitriol solution of copper salts that the alchemists used as one of their most powerful solvents. Psychologically, copper represents the principle of Eros — not mere sexuality but the connecting, harmonising, beautifying force that draws opposites into relationship, the aesthetic and relational intelligence that recognises kinship beneath difference.",
       "secondaryNames": [
-        { "name": "Cuprum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Venus", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Cuprum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Venus",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 4,
         "planet": "astrology.planet.venus",
@@ -79,7 +161,16 @@
         "alchemicalSymbol": "♀",
         "associatedStage": "alchemy.stage.albedo",
         "colour": "copper-red",
-        "qualities": ["beauty", "harmony", "love", "receptivity", "conductivity", "aesthetic sensibility", "the sacred marriage", "Eros"]
+        "qualities": [
+          "beauty",
+          "harmony",
+          "love",
+          "receptivity",
+          "conductivity",
+          "aesthetic sensibility",
+          "the sacred marriage",
+          "Eros"
+        ]
       }
     },
     {
@@ -88,10 +179,23 @@
       "primaryDisplayName": "Iron",
       "description": "Iron is the metal of Mars — hard, red (in its oxides), magnetic, the material of weapons, tools, and the forge, governed by the red planet of war, will, and directed physical force. In ancient cosmology the correspondence was self-evident: Mars was the patron of warriors and iron was what warriors were made of, the metal that cut, killed, protected, and built; even meteoritic iron, which fell from the sky and was the only iron available before smelting technology, was associated with the divine martial principle descending from heaven. In the alchemical hierarchy, iron is one of the less perfect metals — it corrodes, it rusts into red powder, it is heavy and difficult to work with precision — yet this difficulty is itself a virtue: iron is the metal of resistance, of the friction that strengthens, of the quality that must be overcome and mastered before the Work can proceed. Psychologically, iron corresponds to the martial qualities of ego-strength, willpower, and the capacity to act decisively and sustain effort against resistance — but also to the Nigredo's destructive fire, the calcination that burns away what is not essential, and the Jungian shadow-figure of the warrior whose aggression must be transformed, not eliminated.",
       "secondaryNames": [
-        { "name": "Ferrum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Mars", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Ferrum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mars",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 5,
         "planet": "astrology.planet.mars",
@@ -99,7 +203,16 @@
         "alchemicalSymbol": "♂",
         "associatedStage": "alchemy.stage.nigredo",
         "colour": "iron-grey",
-        "qualities": ["strength", "will", "force", "conflict", "endurance", "the forge", "directed aggression", "resistance"]
+        "qualities": [
+          "strength",
+          "will",
+          "force",
+          "conflict",
+          "endurance",
+          "the forge",
+          "directed aggression",
+          "resistance"
+        ]
       }
     },
     {
@@ -108,10 +221,23 @@
       "primaryDisplayName": "Tin",
       "description": "Tin is the metal of Jupiter — silvery-white, light, malleable, with the distinctive 'tin cry' that it produces when bent (a property that struck ancient metallurgists as uncanny and divine), and used in the making of bronze (the metal of the Bronze Age civilisation) and pewter. Jupiter, the largest planet and traditional lord of wisdom, law, abundance, and philosophical truth, governs tin through a correspondence that sees in the metal's expansive, generous, easily-worked qualities the reflection of Jovian magnanimity. In the alchemical Great Work, tin occupies an important mediating position — between the base metals of iron and lead below and the noble metals above — and was associated with the operation of Distillation and with the philosophical 'Jupiter' who refines and elevates. Mythologically, Jupiter/Zeus was the sky-father, the king of gods, the principle of divine law and cosmic order made available to human understanding, and tin as his metal shares this quality of accessible wisdom — less rarefied than gold, less purely intellectual than mercury, but generously supportive of human flourishing.",
       "secondaryNames": [
-        { "name": "Stannum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Jupiter", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Stannum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jupiter",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 6,
         "planet": "astrology.planet.jupiter",
@@ -119,7 +245,16 @@
         "alchemicalSymbol": "♃",
         "associatedStage": "alchemy.stage.citrinitas",
         "colour": "silver-white",
-        "qualities": ["expansion", "wisdom", "abundance", "generosity", "philosophical truth", "law", "magnanimity", "beneficence"]
+        "qualities": [
+          "expansion",
+          "wisdom",
+          "abundance",
+          "generosity",
+          "philosophical truth",
+          "law",
+          "magnanimity",
+          "beneficence"
+        ]
       }
     },
     {
@@ -128,10 +263,23 @@
       "primaryDisplayName": "Lead",
       "description": "Lead is the base metal par excellence — the heaviest, dullest, most inert of the seven planetary metals, the metal of Saturn and thus of time, limitation, melancholy, and the sheer weight of material existence. Saturn, the outermost of the classical planets and the lord of boundaries, was regarded as the coldest, driest, and most malefic influence in traditional astrology, and lead shares all these qualities: it is cold to the touch, it deadens sound, it is toxic, and it was historically associated with the melancholic temperament and with the depressive heaviness of the saturnine personality. Yet in alchemy lead is not merely negative: it is the prima materia, the raw beginning from which all the other metals may theoretically be produced through the operations of the Great Work — the very baseness of lead makes it the most generative starting point, since it has the furthest to travel. Psychologically, lead corresponds to the initial condition of the unexamined life — the weight of unconscious conditioning, repression, and unlived potential — but also to the Saturnian virtues of patience, discipline, and the willingness to submit to the slow work of time that ultimately produces gold; in Jungian terms, lead is the prima materia of the Self, the unrealised wholeness waiting beneath the heaviness of the uninitiated ego.",
       "secondaryNames": [
-        { "name": "Plumbum", "languageTag": "la", "visible": true, "sortOrder": 0 },
-        { "name": "Saturn", "languageTag": "alchemy", "visible": false, "sortOrder": 1 }
+        {
+          "name": "Plumbum",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Saturn",
+          "languageTag": "alchemy",
+          "visible": false,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["alchemy", "alchemy-metal"],
+      "tags": [
+        "alchemy",
+        "alchemy-metal"
+      ],
       "extendedData": {
         "orderNumber": 7,
         "planet": "astrology.planet.saturn",
@@ -139,7 +287,16 @@
         "alchemicalSymbol": "♄",
         "associatedStage": "alchemy.stage.nigredo",
         "colour": "dull grey",
-        "qualities": ["heaviness", "base matter", "time", "limitation", "melancholy", "the prima materia", "Saturnine patience", "the beginning of the Work"]
+        "qualities": [
+          "heaviness",
+          "base matter",
+          "time",
+          "limitation",
+          "melancholy",
+          "the prima materia",
+          "Saturnine patience",
+          "the beginning of the Work"
+        ]
       }
     }
   ]

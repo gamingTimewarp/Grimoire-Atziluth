@@ -23,7 +23,9 @@ import { Route as AstrologyIndexRouteImport } from './routes/astrology/index'
 import { Route as StudySettingsRouteImport } from './routes/study/settings'
 import { Route as StudySessionRouteImport } from './routes/study/session'
 import { Route as SettingsTraditionsRouteImport } from './routes/settings/traditions'
+import { Route as SettingsPrivacyRouteImport } from './routes/settings/privacy'
 import { Route as SettingsNavRouteImport } from './routes/settings/nav'
+import { Route as SettingsManualRouteImport } from './routes/settings/manual'
 import { Route as SettingsDataRouteImport } from './routes/settings/data'
 import { Route as SettingsCreditsRouteImport } from './routes/settings/credits'
 import { Route as SettingsArtRouteImport } from './routes/settings/art'
@@ -112,9 +114,19 @@ const SettingsTraditionsRoute = SettingsTraditionsRouteImport.update({
   path: '/settings/traditions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SettingsPrivacyRoute = SettingsPrivacyRouteImport.update({
+  id: '/settings/privacy',
+  path: '/settings/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SettingsNavRoute = SettingsNavRouteImport.update({
   id: '/settings/nav',
   path: '/settings/nav',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsManualRoute = SettingsManualRouteImport.update({
+  id: '/settings/manual',
+  path: '/settings/manual',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsDataRoute = SettingsDataRouteImport.update({
@@ -223,7 +235,9 @@ export interface FileRoutesByFullPath {
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
+  '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
   '/study/session': typeof StudySessionRoute
   '/study/settings': typeof StudySettingsRoute
@@ -257,7 +271,9 @@ export interface FileRoutesByTo {
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
+  '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
   '/study/session': typeof StudySessionRoute
   '/study/settings': typeof StudySettingsRoute
@@ -292,7 +308,9 @@ export interface FileRoutesById {
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
+  '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
   '/study/session': typeof StudySessionRoute
   '/study/settings': typeof StudySettingsRoute
@@ -328,7 +346,9 @@ export interface FileRouteTypes {
     | '/settings/art'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/manual'
     | '/settings/nav'
+    | '/settings/privacy'
     | '/settings/traditions'
     | '/study/session'
     | '/study/settings'
@@ -362,7 +382,9 @@ export interface FileRouteTypes {
     | '/settings/art'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/manual'
     | '/settings/nav'
+    | '/settings/privacy'
     | '/settings/traditions'
     | '/study/session'
     | '/study/settings'
@@ -396,7 +418,9 @@ export interface FileRouteTypes {
     | '/settings/art'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/manual'
     | '/settings/nav'
+    | '/settings/privacy'
     | '/settings/traditions'
     | '/study/session'
     | '/study/settings'
@@ -431,7 +455,9 @@ export interface RootRouteChildren {
   SettingsArtRoute: typeof SettingsArtRoute
   SettingsCreditsRoute: typeof SettingsCreditsRoute
   SettingsDataRoute: typeof SettingsDataRoute
+  SettingsManualRoute: typeof SettingsManualRoute
   SettingsNavRoute: typeof SettingsNavRoute
+  SettingsPrivacyRoute: typeof SettingsPrivacyRoute
   SettingsTraditionsRoute: typeof SettingsTraditionsRoute
   StudySessionRoute: typeof StudySessionRoute
   StudySettingsRoute: typeof StudySettingsRoute
@@ -547,11 +573,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsTraditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/settings/privacy': {
+      id: '/settings/privacy'
+      path: '/settings/privacy'
+      fullPath: '/settings/privacy'
+      preLoaderRoute: typeof SettingsPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/settings/nav': {
       id: '/settings/nav'
       path: '/settings/nav'
       fullPath: '/settings/nav'
       preLoaderRoute: typeof SettingsNavRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings/manual': {
+      id: '/settings/manual'
+      path: '/settings/manual'
+      fullPath: '/settings/manual'
+      preLoaderRoute: typeof SettingsManualRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings/data': {
@@ -695,7 +735,9 @@ const rootRouteChildren: RootRouteChildren = {
   SettingsArtRoute: SettingsArtRoute,
   SettingsCreditsRoute: SettingsCreditsRoute,
   SettingsDataRoute: SettingsDataRoute,
+  SettingsManualRoute: SettingsManualRoute,
   SettingsNavRoute: SettingsNavRoute,
+  SettingsPrivacyRoute: SettingsPrivacyRoute,
   SettingsTraditionsRoute: SettingsTraditionsRoute,
   StudySessionRoute: StudySessionRoute,
   StudySettingsRoute: StudySettingsRoute,

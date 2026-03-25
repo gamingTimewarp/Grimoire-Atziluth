@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "calendar.sabbat.ostara",     "target": "astrology.zodiac-sign.aries",     "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 0 } },
+    { "source": "calendar.sabbat.litha",      "target": "astrology.zodiac-sign.cancer",    "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 0 } },
+    { "source": "calendar.sabbat.mabon",      "target": "astrology.zodiac-sign.libra",     "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 0 } },
+    { "source": "calendar.sabbat.yule",       "target": "astrology.zodiac-sign.capricorn", "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 0 } },
+    { "source": "calendar.sabbat.imbolc",     "target": "astrology.zodiac-sign.aquarius",  "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 15 } },
+    { "source": "calendar.sabbat.beltane",    "target": "astrology.zodiac-sign.taurus",    "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 15 } },
+    { "source": "calendar.sabbat.lughnasadh", "target": "astrology.zodiac-sign.leo",       "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 15 } },
+    { "source": "calendar.sabbat.samhain",    "target": "astrology.zodiac-sign.scorpio",   "label": "sun-at-sign", "bidirectional": true, "traditionScope": [], "extendedData": { "sunDegree": 15 } }
+  ]
+}

@@ -4,7 +4,7 @@
  * Layout: Ascendant fixed at 9 o'clock (left). Ecliptic increases counter-clockwise.
  */
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import type { NatalChartData, PlanetPosition, Aspect, LotPosition } from '@/lib/astro-engine'
 import { getSignsForMode, IAU_BOUNDARIES } from '@/lib/astro-engine'
 import type { AstrologyMode } from '@/lib/astro-engine'
@@ -95,6 +95,11 @@ export type WheelChartProps = {
   size?: number
   mode?: AstrologyMode
   onNavigate?: (canonicalName: string) => void
+  /** Called whenever the hovered element key changes (or clears). Use to render the
+   *  tooltip externally (e.g. outside the wheel container). */
+  onHoverChange?: (key: string | null) => void
+  /** Set to false to suppress the built-in inline tooltip. Default: true. */
+  showTooltip?: boolean
 }
 
 const HOUSE_NAMES = [
@@ -109,7 +114,7 @@ const SIGN_ELEMENTS_IAU = ['Fire','Earth','Air','Water','Fire','Earth','Air','Wa
 
 const LOT_COLOR = 'var(--color-accent)'
 
-export function WheelChart({ chart, transitChart, size = 500, mode = 'tropical', onNavigate }: WheelChartProps) {
+export function WheelChart({ chart, transitChart, size = 500, mode = 'tropical', onNavigate, onHoverChange, showTooltip = true }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
   // hovered: 'n:PlanetName', 't:PlanetName', 'l:LotCanonicalName', 's:signIndex', 'h:houseIndex'
@@ -117,6 +122,8 @@ export function WheelChart({ chart, transitChart, size = 500, mode = 'tropical',
   const [showNatal,    setShowNatal]    = useState(true)
   const [showTransits, setShowTransits] = useState(true)
   const [showLots,     setShowLots]     = useState(true)
+
+  useEffect(() => { onHoverChange?.(hovered) }, [hovered])
 
   const scale = size / 500
 
@@ -349,7 +356,7 @@ export function WheelChart({ chart, transitChart, size = 500, mode = 'tropical',
       </svg>
 
       {/* Hover tooltip */}
-      {hovered && (() => {
+      {showTooltip && hovered && (() => {
         const signs = getSignsForMode(mode)
         const elements = mode === 'iau' ? SIGN_ELEMENTS_IAU : SIGN_ELEMENTS
 
@@ -471,6 +478,94 @@ export function WheelChart({ chart, transitChart, size = 500, mode = 'tropical',
           )}
         </div>
       )}
+    </div>
+  )
+}
+
+// ─── Standalone tooltip ───────────────────────────────────────────────────────
+// Renders the same tooltip content as WheelChart's inline tooltip, but as a
+// standalone component so callers can place it anywhere in the DOM tree.
+
+export function WheelChartTooltip({
+  hoveredKey,
+  chart,
+  mode = 'tropical',
+  onNavigate,
+  style,
+}: {
+  hoveredKey: string
+  chart: NatalChartData
+  mode?: AstrologyMode
+  onNavigate?: (cn: string) => void
+  style?: React.CSSProperties
+}) {
+  const signs    = getSignsForMode(mode)
+  const elements = mode === 'iau' ? SIGN_ELEMENTS_IAU : SIGN_ELEMENTS
+  const { planets, lots } = chart
+
+  const base: React.CSSProperties = {
+    display: 'inline-block',
+    background: 'var(--color-surface-3)',
+    border: '1px solid var(--color-border)',
+    borderRadius: '6px',
+    padding: '6px 12px',
+    fontSize: '12px',
+    color: 'var(--color-text)',
+    whiteSpace: 'nowrap',
+    pointerEvents: 'none',
+    ...style,
+  }
+
+  if (hoveredKey.startsWith('s:')) {
+    const i    = Number(hoveredKey.slice(2))
+    const sign = signs[i]
+    if (!sign) return null
+    return (
+      <div style={base}>
+        {sign.symbol} {sign.name}
+        <span style={{ color: 'var(--color-text-subtle)', marginLeft: '8px' }}>{elements[i]}</span>
+        {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      </div>
+    )
+  }
+
+  if (hoveredKey.startsWith('h:')) {
+    const i = Number(hoveredKey.slice(2))
+    return (
+      <div style={base}>
+        House {i + 1}
+        <span style={{ color: 'var(--color-text-subtle)', marginLeft: '8px' }}>{HOUSE_NAMES[i]}</span>
+        {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      </div>
+    )
+  }
+
+  if (hoveredKey.startsWith('l:')) {
+    const cn = hoveredKey.slice(2)
+    const lp = lots?.find(l => l.lot.canonicalName === cn)
+    if (!lp) return null
+    const sign = signs[lp.signIndex]
+    return (
+      <div style={{ ...base, border: '1px solid var(--color-accent-muted)' }}>
+        <span style={{ color: LOT_COLOR, marginRight: '6px' }}>{lp.lot.symbol}</span>
+        {lp.lot.name} — {lp.degree}°{String(lp.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
+        {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      </div>
+    )
+  }
+
+  const isTransit = hoveredKey.startsWith('t:')
+  const name      = hoveredKey.slice(2)
+  const source    = isTransit ? [] as typeof planets : planets
+  const pos       = source.find(p => p.planet.name === name)
+  if (!pos) return null
+  const sign = signs[pos.signIndex]
+  return (
+    <div style={base}>
+      {isTransit && <span style={{ color: TRANSIT_COLOR, marginRight: '6px', fontSize: '10px' }}>transit</span>}
+      {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
+      {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
+      {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
     </div>
   )
 }

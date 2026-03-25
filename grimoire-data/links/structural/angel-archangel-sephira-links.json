@@ -2,72 +2,72 @@
   "version": 1,
   "links": [
     {
-      "source": "angel.archangel.metatron",
-      "target": "qabalah.sephira.kether",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.kether",
+      "target": "angel.archangel.metatron",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.raziel",
-      "target": "qabalah.sephira.chokmah",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.chokmah",
+      "target": "angel.archangel.raziel",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.tzaphkiel",
-      "target": "qabalah.sephira.binah",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.binah",
+      "target": "angel.archangel.tzaphkiel",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.tzadkiel",
-      "target": "qabalah.sephira.chesed",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.chesed",
+      "target": "angel.archangel.tzadkiel",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.kamael",
-      "target": "qabalah.sephira.geburah",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.geburah",
+      "target": "angel.archangel.kamael",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.raphael",
-      "target": "qabalah.sephira.tiphareth",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.tiphareth",
+      "target": "angel.archangel.raphael",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.haniel",
-      "target": "qabalah.sephira.netzach",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.netzach",
+      "target": "angel.archangel.haniel",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.michael",
-      "target": "qabalah.sephira.hod",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.hod",
+      "target": "angel.archangel.michael",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.gabriel",
-      "target": "qabalah.sephira.yesod",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.yesod",
+      "target": "angel.archangel.gabriel",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     },
     {
-      "source": "angel.archangel.sandalphon",
-      "target": "qabalah.sephira.malkuth",
-      "label": "corresponds-to",
+      "source": "qabalah.sephira.malkuth",
+      "target": "angel.archangel.sandalphon",
+      "label": "attributed-archangel",
       "bidirectional": true,
       "traditionScope": []
     }

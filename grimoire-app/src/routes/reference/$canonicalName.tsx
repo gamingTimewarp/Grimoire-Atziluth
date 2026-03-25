@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -12,6 +12,7 @@ import type { JournalEntry } from '@/lib/reading-db'
 import { getEntityAnnotation, saveEntityAnnotation } from '@/lib/custom-db'
 import { recordRecentEntity } from '@/lib/recent-entities'
 import { artGroupForEntityType, classicArtUrl } from '@/lib/art-store'
+import { EntityArt } from '@/components/ui/EntityArt'
 import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { useReadingStore } from '@/stores/reading'
 import { TRADITION_DISPLAY_NAMES } from '@/lib/tradition-store'
@@ -83,15 +84,20 @@ function EntityDetailPage() {
         // Load members for overview entities and decks
         let memberEntityType: string | null = null
         let memberTag: string | null = null
+        let memberList: string[] | null = null
 
         if (e.entityType === 'system.overview') {
           memberEntityType = typeof e.extendedData.memberEntityType === 'string' ? e.extendedData.memberEntityType : null
           memberTag = typeof e.extendedData.memberTag === 'string' ? e.extendedData.memberTag : null
+          memberList = Array.isArray(e.extendedData.members) ? e.extendedData.members as string[] : null
         } else if (e.entityType.includes('deck')) {
           memberTag = canonicalName.split('.').pop() ?? null
         }
 
-        if (memberEntityType || memberTag) {
+        if (memberList) {
+          const fetched = await Promise.all(memberList.map(cn => engine.adapter.getEntityByCanonicalName(cn)))
+          setMembers(fetched.filter((m): m is BaseEntity => m !== null))
+        } else if (memberEntityType || memberTag) {
           const filter: { entityType?: string; tags?: string[] } = {}
           if (memberEntityType) filter.entityType = memberEntityType
           if (memberTag) filter.tags = [memberTag]
@@ -190,12 +196,16 @@ function EntityDetailPage() {
 
   // Outgoing: links where we're the source
   const outgoing = visibleLinks.filter(l => l.sourceCanonicalName === canonicalName)
-  // Incoming bidirectional: where we're the target and the link is symmetric — show in correspondences too
+  // Incoming bidirectional: where we're the target and the link is symmetric
   const incomingBidi = visibleLinks.filter(l => l.targetCanonicalName === canonicalName && l.bidirectional)
   // Incoming non-bidirectional: "referenced by" section
   const incomingUnidi = visibleLinks.filter(l => l.targetCanonicalName === canonicalName && !l.bidirectional)
 
-  const correspondences = [...outgoing, ...incomingBidi]
+  // Attribution links (attributed-*): properties the entity has — shown in Attributes
+  // Correspondence links: entities that ARE the same thing in some way — shown in Correspondences
+  const isAttribution = (l: Link) => l.label.startsWith('attributed-')
+  const attributionLinks  = [...outgoing, ...incomingBidi].filter(isAttribution)
+  const correspondences   = [...outgoing, ...incomingBidi].filter(l => !isAttribution(l))
 
   const navToEntity = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
 
@@ -285,7 +295,20 @@ function EntityDetailPage() {
 
       {/* Author Notes — symbolic interpretation notes for generated Thoth cards */}
       {typeof entity.extendedData.authorNotes === 'string' && (
-        <Section title="Author Notes">
+        <Section
+          title="Author Notes"
+          action={
+            <button
+              onClick={() => navigate({ to: '/settings/credits', hash: 'thoth-licence' })}
+              title="View licence information"
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex', color: 'var(--color-text-subtle)' }}
+              onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+              onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+            >
+              <Info size={13} />
+            </button>
+          }
+        >
           <p style={{ fontSize: '14px', color: 'var(--color-text-muted)', lineHeight: '1.7', margin: 0 }}>
             {entity.extendedData.authorNotes}
           </p>
@@ -295,10 +318,15 @@ function EntityDetailPage() {
       {/* Upright / Reversed meanings */}
       <MeaningsSection data={entity.extendedData} />
 
-      {/* Extended data — type-specific fields */}
-      {Object.keys(entity.extendedData).length > 0 && (
+      {/* Extended data + attribution links — type-specific fields and tradition attributions */}
+      {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
           <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} />
+          {attributionLinks.length > 0 && (
+            <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
+              <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
+            </div>
+          )}
         </Section>
       )}
 
@@ -467,9 +495,6 @@ const RELATED_OVERVIEWS: Record<string, Array<{ canonicalName: string; label: st
   ],
   // Letters (virtual)
   'system.overview.letters': [
-    { canonicalName: 'system.overview.hebrew-letters',   label: 'Hebrew Letters'         },
-    { canonicalName: 'system.overview.arabic-letters',   label: 'Arabic Letters'         },
-    { canonicalName: 'system.overview.isopsephy',        label: 'Greek (Isopsephy)'      },
     { canonicalName: 'tradition.pythagorean-numerology', label: 'Pythagorean Numerology' },
     { canonicalName: 'tradition.chaldean-numerology',    label: 'Chaldean Numerology'    },
   ],
@@ -482,19 +507,60 @@ const RELATED_OVERVIEWS: Record<string, Array<{ canonicalName: string; label: st
  * Uses an onError handler to silently hide itself if the image file doesn't exist
  * (e.g. for tarot decks that haven't been downloaded yet, or symbolic-only entities).
  */
+const CARD_ART_GROUPS = new Set(['tarot-rws', 'tarot-tdm', 'tarot-thoth', 'tarot-etteilla', 'lenormand'])
+
+// Entity types that have symbolic renderers in EntityArt but no art group
+const SYMBOLIC_ENTITY_TYPES = new Set([
+  'astrology.planet', 'astrology.node', 'astrology.element', 'astrology.zodiac-sign',
+  'iching.hexagram', 'letter.hebrew',
+])
+
 function EntityArtPanel({ entity }: { entity: BaseEntity }) {
   const group = artGroupForEntityType(entity.entityType, entity.canonicalName)
   const [hidden, setHidden] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
+  // EntityArt-rendered entities: runes, metals, and symbolic-only entity types
+  const useEntityArt = (group === 'runes' || group === 'alchemy-metals')
+    || (!group && SYMBOLIC_ENTITY_TYPES.has(entity.entityType))
+
+  if (useEntityArt) {
+    const rw = 80
+    const rh = Math.round(rw * 1.4)
+    return (
+      <>
+        <div
+          onClick={() => setLightboxOpen(true)}
+          title="Click to zoom"
+          style={{ float: 'right', marginLeft: '20px', marginBottom: '12px', cursor: 'zoom-in' }}
+        >
+          <EntityArt entity={entity} width={rw} height={rh} />
+        </div>
+        {lightboxOpen && (
+          <div
+            onClick={() => setLightboxOpen(false)}
+            style={{
+              position: 'fixed', inset: 0, zIndex: 9999,
+              background: 'rgba(0,0,0,0.85)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'zoom-out',
+            }}
+          >
+            <EntityArt entity={entity} width={200} height={280} />
+          </div>
+        )}
+      </>
+    )
+  }
+
   if (!group || hidden) return null
 
-  const url = classicArtUrl(group, entity.canonicalName)
-
   // Cards (tarot / lenormand) use portrait aspect ratio; others (runes, geomancy, mahjong) square-ish
-  const isCard = group === 'tarot' || group === 'lenormand'
+  const isCard = CARD_ART_GROUPS.has(group)
   const w = isCard ? 108 : 80
   const h = isCard ? Math.round(w * 1.4) : 80
+
+  const url = classicArtUrl(group, entity.canonicalName)
 
   return (
     <>
@@ -540,7 +606,7 @@ function MemberGrid({ members, onNavigate }: { members: BaseEntity[]; onNavigate
   const firstWithArt = members.find(m => artGroupForEntityType(m.entityType, m.canonicalName) !== null)
   const artGroup = firstWithArt ? artGroupForEntityType(firstWithArt.entityType, firstWithArt.canonicalName) : null
   const showArt = artGroup !== null
-  const isCard = artGroup === 'tarot' || artGroup === 'lenormand'
+  const isCard = artGroup !== null && CARD_ART_GROUPS.has(artGroup)
 
   if (showArt) {
     // Art-card grid: portrait tiles for tarot/lenormand, square for others
@@ -590,7 +656,7 @@ function MemberArtTile({
 }) {
   const group = artGroupForEntityType(member.entityType, member.canonicalName)
   const [imgFailed, setImgFailed] = useState(false)
-  const url = group ? classicArtUrl(group, member.canonicalName) : null
+  const url = (group && group !== 'runes') ? classicArtUrl(group, member.canonicalName) : null
 
   return (
     <button
@@ -606,7 +672,9 @@ function MemberArtTile({
       onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
       onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
     >
-      {url && !imgFailed ? (
+      {group === 'runes' ? (
+        <EntityArt entity={member} width={tileW} height={tileH} />
+      ) : url && !imgFailed ? (
         <img
           src={url}
           alt={member.primaryDisplayName}
@@ -780,7 +848,7 @@ function BookmarkButton({ canonicalName }: { canonicalName: string }) {
 
 /** Returns true if a string looks like a canonical name (≥3 dot-separated lowercase segments). */
 function looksLikeCanonicalName(s: string): boolean {
-  return /^[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*){2,}$/.test(s)
+  return /^[a-z][a-z0-9-]*(\.[a-z0-9][a-z0-9-]*){2,}$/.test(s)
 }
 
 /** Recursively extract all string leaves from a value (handles arrays and nested objects). */
@@ -877,14 +945,14 @@ function ExtendedDataTable({
   linkedNames: Map<string, string>
   onNavigate: (canonicalName: string) => void
 }) {
-  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords'])
+  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'treeX', 'treeY'])
   const entries = Object.entries(data).filter(([k, v]) => !HIDDEN_KEYS.has(k) && v !== null && v !== undefined && v !== '')
   if (!entries.length) return null
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(120px, auto) 1fr', gap: '8px 16px' }}>
       {entries.map(([key, value]) => (
         <React.Fragment key={key}>
-          <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', alignSelf: 'start', paddingTop: '2px' }}>
+          <span style={{ fontSize: '12px', color: 'var(--color-accent)', alignSelf: 'start', paddingTop: '2px' }}>
             {key.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())}
           </span>
           <div style={{ fontSize: '13px', color: 'var(--color-text)', wordBreak: 'break-word' }}>
@@ -952,6 +1020,24 @@ function ExtendedValue({
     return <span style={{ color: 'var(--color-text-subtle)' }}>—</span>
   }
 
+  // Plain object: render as nested key → value pairs
+  if (typeof value === 'object') {
+    const entries = Object.entries(value as Record<string, unknown>)
+    if (entries.length === 0) return <span style={{ color: 'var(--color-text-subtle)' }}>—</span>
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+        {entries.map(([k, v]) => (
+          <div key={k}>
+            <span style={{ color: 'var(--color-text-subtle)', fontSize: '11px' }}>
+              {k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())}:{' '}
+            </span>
+            <ExtendedValue value={v} linkedNames={linkedNames} onNavigate={onNavigate} />
+          </div>
+        ))}
+      </div>
+    )
+  }
+
   // Number or other primitive
   return <span>{String(value)}</span>
 }
@@ -978,11 +1064,12 @@ function formatTraditionScope(scope: string): string {
 
 // ─── Link list ────────────────────────────────────────────────────────────────
 
-function LinkList({ links, selfName, linkedNames, onNavigate }: {
+function LinkList({ links, selfName, linkedNames, onNavigate, stripAttributedPrefix = false }: {
   links: Link[]
   selfName: string
   linkedNames: Map<string, string>
   onNavigate: (canonicalName: string) => void
+  stripAttributedPrefix?: boolean
 }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -990,7 +1077,8 @@ function LinkList({ links, selfName, linkedNames, onNavigate }: {
         const isSource = link.sourceCanonicalName === selfName
         const otherCn = isSource ? link.targetCanonicalName : link.sourceCanonicalName
         const displayName = linkedNames.get(otherCn) ?? formatSlug(otherCn.split('.').pop() ?? otherCn)
-        const rawLabel = formatSlug(link.label)
+        let rawLabel = formatSlug(link.label)
+        if (stripAttributedPrefix) rawLabel = rawLabel.replace(/^Attributed /i, '')
         const label = isSource ? rawLabel : `↩ ${rawLabel}`
         return (
           <div key={link.id} style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap' }}>

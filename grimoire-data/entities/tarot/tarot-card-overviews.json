@@ -1,0 +1,802 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "tarot.major.overview.the-fool",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Fool",
+      "description": "The Fool as rendered across the four supported decks. In the Tarot de Marseille he is Le Mat — the unnumbered wanderer outside the sequence. Thoth retains the name and Crowley's imagery of the Green Man. Etteilla has no equivalent; he replaced the position with 'Etteilla — The Questioner', making the Fool unique to the three Hermetic decks.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 0,
+        "members": [
+          "tarot.major.rws.the-fool",
+          "tarot.major.thoth.the-fool",
+          "tarot.major.tdm.le-mat"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-magician",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Magician",
+      "description": "The Magician (I) across four decks. TdM names him Le Bateleur — the street conjurer. Thoth renames him The Magus, emphasising his role as divine Word and mediator of will. Etteilla retains The Magician.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 1,
+        "members": [
+          "tarot.major.rws.the-magician",
+          "tarot.major.thoth.the-magus",
+          "tarot.major.tdm.le-bateleur",
+          "tarot.major.etteilla.the-magician"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-high-priestess",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The High Priestess",
+      "description": "The High Priestess (II) across four decks. TdM names her La Papesse — the female Pope, evoking the legend of Pope Joan. Thoth names her The Priestess, stripping the papal reference and centering her as pure lunar gnosis.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 2,
+        "members": [
+          "tarot.major.rws.the-high-priestess",
+          "tarot.major.thoth.the-priestess",
+          "tarot.major.tdm.la-papesse",
+          "tarot.major.etteilla.the-high-priestess"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-empress",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Empress",
+      "description": "The Empress (III) across four decks. All four traditions render her as the fertile, enthroned mother-goddess, attributed to Venus. The name is consistent across RWS, Thoth, and Etteilla; TdM calls her La Impératrice.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 3,
+        "members": [
+          "tarot.major.rws.the-empress",
+          "tarot.major.thoth.the-empress",
+          "tarot.major.tdm.la-imperatrice",
+          "tarot.major.etteilla.the-empress"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-emperor",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Emperor",
+      "description": "The Emperor (IV) across four decks. Consistently the archetype of temporal authority, Aries, and the paternal principle. TdM names him La Emperour.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 4,
+        "members": [
+          "tarot.major.rws.the-emperor",
+          "tarot.major.thoth.the-emperor",
+          "tarot.major.tdm.la-empereur",
+          "tarot.major.etteilla.the-emperor"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-hierophant",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Hierophant",
+      "description": "The Hierophant (V) across four decks. TdM names him Le Pape — the Pope — the spiritual authority of the Church. RWS and Etteilla use Hierophant; Thoth retains it but reframes him as initiator into the mysteries rather than ecclesiastical authority.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 5,
+        "members": [
+          "tarot.major.rws.the-hierophant",
+          "tarot.major.thoth.the-hierophant",
+          "tarot.major.tdm.le-pape",
+          "tarot.major.etteilla.the-hierophant"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-lovers",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Lovers",
+      "description": "The Lovers (VI) across four decks. TdM calls it L'Amoureux — a young man choosing between two women — an explicit scene of moral choice. RWS shifts to Adam and Eve. Thoth elaborates into a alchemical marriage of opposites under the figure of Perseus and Andromeda.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 6,
+        "members": [
+          "tarot.major.rws.the-lovers",
+          "tarot.major.thoth.the-lovers",
+          "tarot.major.tdm.l-amoureux",
+          "tarot.major.etteilla.the-lovers"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-chariot",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Chariot",
+      "description": "The Chariot (VII) across four decks. Consistently the triumphant will in control of opposing forces, attributed to Cancer. All four decks depict an armoured figure driving a chariot pulled by opposing beasts or sphinxes.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 7,
+        "members": [
+          "tarot.major.rws.the-chariot",
+          "tarot.major.thoth.the-chariot",
+          "tarot.major.tdm.le-chariot",
+          "tarot.major.etteilla.the-chariot"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.strength",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Strength",
+      "description": "Strength (VIII in RWS; XI in TdM and Thoth) across four decks. Waite and Smith swapped the positions of Strength and Justice. Thoth renames the card Lust, refocusing it on Babalon riding the Beast — ecstatic, creative will rather than gentle restraint.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 8,
+        "members": [
+          "tarot.major.rws.strength",
+          "tarot.major.thoth.lust",
+          "tarot.major.tdm.la-force",
+          "tarot.major.etteilla.strength"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-hermit",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Hermit",
+      "description": "The Hermit (IX) across four decks. The solitary seeker with the lantern. All four decks are broadly consistent in imagery. Thoth adds Cerberus at his feet, emphasising mastery over the underworld.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 9,
+        "members": [
+          "tarot.major.rws.the-hermit",
+          "tarot.major.thoth.the-hermit",
+          "tarot.major.tdm.l-ermite",
+          "tarot.major.etteilla.the-hermit"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.wheel-of-fortune",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Wheel of Fortune",
+      "description": "Wheel of Fortune (X) across four decks. TdM shows La Roue de Fortune with ascending and descending figures. Thoth renames it Fortune and adds the Sphynx, Hermanubis, and Typhon, placing the Wheel in a cosmic rather than fatalistic frame.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 10,
+        "members": [
+          "tarot.major.rws.wheel-of-fortune",
+          "tarot.major.thoth.fortune",
+          "tarot.major.tdm.la-roue-de-fortune",
+          "tarot.major.etteilla.the-wheel-of-fortune"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.justice",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Justice",
+      "description": "Justice (XI in RWS; VIII in TdM and Thoth) across four decks. Waite and Smith swapped Justice and Strength. Thoth renames the card Adjustment, shifting emphasis from legal justice to the cosmic principle of equilibrium — the Maat of the Egyptian tradition.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 11,
+        "members": [
+          "tarot.major.rws.justice",
+          "tarot.major.thoth.adjustment",
+          "tarot.major.tdm.la-justice",
+          "tarot.major.etteilla.justice"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-hanged-man",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Hanged Man",
+      "description": "The Hanged Man (XII) across four decks. The suspended figure, voluntary sacrifice and reversal of perspective. TdM's Le Pendu holds bags of coins. RWS adds the halo. Thoth's figure hangs from the ankh with serpents, connecting the sacrifice to Osiris.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 12,
+        "members": [
+          "tarot.major.rws.the-hanged-man",
+          "tarot.major.thoth.the-hanged-man",
+          "tarot.major.tdm.le-pendu",
+          "tarot.major.etteilla.the-hanged-man"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.death",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Death",
+      "description": "Death (XIII) across four decks. The skeleton and scythe of transformation. TdM's La Mort shows only the skeleton. RWS adds the mounted knight with the white rose. Thoth shows the Egyptian skeleton wielding the scythe of the New Aeon.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 13,
+        "members": [
+          "tarot.major.rws.death",
+          "tarot.major.thoth.death",
+          "tarot.major.tdm.la-mort",
+          "tarot.major.etteilla.death"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.temperance",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Temperance",
+      "description": "Temperance (XIV) across four decks. Thoth renames the card Art — the Great Work of alchemy and the union of opposites — replacing the temperance virtue with active transformation. TdM and Etteilla retain Temperance; RWS adds the angel Iris above a pool.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 14,
+        "members": [
+          "tarot.major.rws.temperance",
+          "tarot.major.thoth.art",
+          "tarot.major.tdm.temperance",
+          "tarot.major.etteilla.temperance"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-devil",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Devil",
+      "description": "The Devil (XV) across four decks. Consistently the archetype of bondage, materialism, and Set or Pan. All four decks show a horned figure with chained figures. Thoth's imagery draws on Pan-Priapus and the goat of Mendes.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 15,
+        "members": [
+          "tarot.major.rws.the-devil",
+          "tarot.major.thoth.the-devil",
+          "tarot.major.tdm.le-diable",
+          "tarot.major.etteilla.the-devil"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-tower",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Tower",
+      "description": "The Tower (XVI) across four decks. TdM names it La Maison Dieu — the House of God — a falling tower struck by lightning. Thoth retains The Tower with the Eye of Shiva destroying the old aeon. RWS adds the crown and two falling figures.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 16,
+        "members": [
+          "tarot.major.rws.the-tower",
+          "tarot.major.thoth.the-tower",
+          "tarot.major.tdm.la-maison-dieu",
+          "tarot.major.etteilla.the-tower"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-star",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Star",
+      "description": "The Star (XVII) across four decks. The naked figure pouring water beneath a great star. Etteilla calls his card The Stars (plural). Thoth's Star shows Nuit, the infinite sky, arched over the cosmos.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 17,
+        "members": [
+          "tarot.major.rws.the-star",
+          "tarot.major.thoth.the-star",
+          "tarot.major.tdm.l-etoile",
+          "tarot.major.etteilla.the-stars"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-moon",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Moon",
+      "description": "The Moon (XVIII) across four decks. The moon, the path, the crayfish, the howling dogs or wolves. All four decks are broadly consistent. Thoth's Moon adds the Egyptian scarab rising from the waters.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 18,
+        "members": [
+          "tarot.major.rws.the-moon",
+          "tarot.major.thoth.the-moon",
+          "tarot.major.tdm.la-lune",
+          "tarot.major.etteilla.the-moon"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-sun",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The Sun",
+      "description": "The Sun (XIX) across four decks. The great luminary of vitality, consciousness, and spiritual illumination. Etteilla titles his card The Lighted Torch — The Sun. Thoth's Sun shows the Rose of Tiphareth with twin children.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 19,
+        "members": [
+          "tarot.major.rws.the-sun",
+          "tarot.major.thoth.the-sun",
+          "tarot.major.tdm.le-soleil",
+          "tarot.major.etteilla.the-sun"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.judgement",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Judgement",
+      "description": "Judgement (XX) across four decks. Thoth replaces the Judgement card entirely with The Aeon — the proclamation of the Thelemic Aeon of Horus supplanting the Aeon of Osiris. TdM's Le Jugement and Etteilla's The Last Judgment show the angel sounding the trumpet of resurrection.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 20,
+        "members": [
+          "tarot.major.rws.judgement",
+          "tarot.major.thoth.the-aeon",
+          "tarot.major.tdm.le-jugement",
+          "tarot.major.etteilla.the-last-judgment"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.major.overview.the-world",
+      "entityType": "system.overview",
+      "primaryDisplayName": "The World",
+      "description": "The World (XXI) across four decks. Thoth renames it The Universe, showing Nuit arched over the cosmic globe with the Fool descending into matter. TdM's Le Monde and RWS show a dancing figure within a laurel wreath.",
+      "tags": [
+        "tarot",
+        "major-arcana",
+        "tarot-overview",
+        "tarot-major-overview"
+      ],
+      "extendedData": {
+        "cardNumber": 21,
+        "members": [
+          "tarot.major.rws.the-world",
+          "tarot.major.thoth.the-universe",
+          "tarot.major.tdm.le-monde",
+          "tarot.major.etteilla.the-world"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.page",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Page of Wands",
+      "description": "Page of Wands across four decks (Fire suit). Thoth renames this rank Princess of Wands. TdM calls the rank Valet (de Batons).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.wands.page",
+          "tarot.minor.thoth.wands.princess",
+          "tarot.minor.tdm.batons.valet",
+          "tarot.minor.etteilla.wands.page"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.knight",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Knight of Wands",
+      "description": "Knight of Wands across four decks (Fire suit). Thoth renames this rank Prince of Wands. TdM calls the rank Cavalier (de Batons).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.wands.knight",
+          "tarot.minor.thoth.wands.prince",
+          "tarot.minor.tdm.batons.cavalier",
+          "tarot.minor.etteilla.wands.knight"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.queen",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Queen of Wands",
+      "description": "Queen of Wands across four decks (Fire suit). Thoth renames this rank Queen of Wands. TdM calls the rank Reine (de Batons).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.wands.queen",
+          "tarot.minor.thoth.wands.queen",
+          "tarot.minor.tdm.batons.reine",
+          "tarot.minor.etteilla.wands.queen"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.king",
+      "entityType": "system.overview",
+      "primaryDisplayName": "King of Wands",
+      "description": "King of Wands across four decks (Fire suit). Thoth renames this rank Knight of Wands. TdM calls the rank Roi (de Batons). Note: the Thoth Knight corresponds to the RWS King — Crowley elevated the mounted knight to the senior court position.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.wands.king",
+          "tarot.minor.thoth.wands.knight",
+          "tarot.minor.tdm.batons.roi",
+          "tarot.minor.etteilla.wands.king"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.page",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Page of Cups",
+      "description": "Page of Cups across four decks (Water suit). Thoth renames this rank Princess of Cups. TdM calls the rank Valet (de Coupes).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.cups.page",
+          "tarot.minor.thoth.cups.princess",
+          "tarot.minor.tdm.coupes.valet",
+          "tarot.minor.etteilla.cups.page"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.knight",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Knight of Cups",
+      "description": "Knight of Cups across four decks (Water suit). Thoth renames this rank Prince of Cups. TdM calls the rank Cavalier (de Coupes).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.cups.knight",
+          "tarot.minor.thoth.cups.prince",
+          "tarot.minor.tdm.coupes.cavalier",
+          "tarot.minor.etteilla.cups.knight"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.queen",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Queen of Cups",
+      "description": "Queen of Cups across four decks (Water suit). Thoth renames this rank Queen of Cups. TdM calls the rank Reine (de Coupes).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.cups.queen",
+          "tarot.minor.thoth.cups.queen",
+          "tarot.minor.tdm.coupes.reine",
+          "tarot.minor.etteilla.cups.queen"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.king",
+      "entityType": "system.overview",
+      "primaryDisplayName": "King of Cups",
+      "description": "King of Cups across four decks (Water suit). Thoth renames this rank Knight of Cups. TdM calls the rank Roi (de Coupes). Note: the Thoth Knight corresponds to the RWS King — Crowley elevated the mounted knight to the senior court position.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.cups.king",
+          "tarot.minor.thoth.cups.knight",
+          "tarot.minor.tdm.coupes.roi",
+          "tarot.minor.etteilla.cups.king"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.page",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Page of Swords",
+      "description": "Page of Swords across four decks (Air suit). Thoth renames this rank Princess of Swords. TdM calls the rank Valet (de Epees).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.swords.page",
+          "tarot.minor.thoth.swords.princess",
+          "tarot.minor.tdm.epees.valet",
+          "tarot.minor.etteilla.swords.page"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.knight",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Knight of Swords",
+      "description": "Knight of Swords across four decks (Air suit). Thoth renames this rank Prince of Swords. TdM calls the rank Cavalier (de Epees).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.swords.knight",
+          "tarot.minor.thoth.swords.prince",
+          "tarot.minor.tdm.epees.cavalier",
+          "tarot.minor.etteilla.swords.knight"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.queen",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Queen of Swords",
+      "description": "Queen of Swords across four decks (Air suit). Thoth renames this rank Queen of Swords. TdM calls the rank Reine (de Epees).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.swords.queen",
+          "tarot.minor.thoth.swords.queen",
+          "tarot.minor.tdm.epees.reine",
+          "tarot.minor.etteilla.swords.queen"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.king",
+      "entityType": "system.overview",
+      "primaryDisplayName": "King of Swords",
+      "description": "King of Swords across four decks (Air suit). Thoth renames this rank Knight of Swords. TdM calls the rank Roi (de Epees). Note: the Thoth Knight corresponds to the RWS King — Crowley elevated the mounted knight to the senior court position.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.swords.king",
+          "tarot.minor.thoth.swords.knight",
+          "tarot.minor.tdm.epees.roi",
+          "tarot.minor.etteilla.swords.king"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.page",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Page of Pentacles",
+      "description": "Page of Pentacles across four decks (Earth suit). Thoth renames this rank Princess of Disks. TdM calls the rank Valet (de Deniers).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.pentacles.page",
+          "tarot.minor.thoth.disks.princess",
+          "tarot.minor.tdm.deniers.valet",
+          "tarot.minor.etteilla.pentacles.page"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.knight",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Knight of Pentacles",
+      "description": "Knight of Pentacles across four decks (Earth suit). Thoth renames this rank Prince of Disks. TdM calls the rank Cavalier (de Deniers).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.pentacles.knight",
+          "tarot.minor.thoth.disks.prince",
+          "tarot.minor.tdm.deniers.cavalier",
+          "tarot.minor.etteilla.pentacles.knight"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.queen",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Queen of Pentacles",
+      "description": "Queen of Pentacles across four decks (Earth suit). Thoth renames this rank Queen of Disks. TdM calls the rank Reine (de Deniers).",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.pentacles.queen",
+          "tarot.minor.thoth.disks.queen",
+          "tarot.minor.tdm.deniers.reine",
+          "tarot.minor.etteilla.pentacles.queen"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.king",
+      "entityType": "system.overview",
+      "primaryDisplayName": "King of Pentacles",
+      "description": "King of Pentacles across four decks (Earth suit). Thoth renames this rank Knight of Disks. TdM calls the rank Roi (de Deniers). Note: the Thoth Knight corresponds to the RWS King — Crowley elevated the mounted knight to the senior court position.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview",
+        "tarot-court-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.rws.pentacles.king",
+          "tarot.minor.thoth.disks.knight",
+          "tarot.minor.tdm.deniers.roi",
+          "tarot.minor.etteilla.pentacles.king"
+        ]
+      }
+    }
+  ]
+}

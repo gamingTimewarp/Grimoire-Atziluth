@@ -5,7 +5,7 @@
       "canonicalName": "qabalah.pillar.mercy",
       "entityType": "qabalah.pillar",
       "primaryDisplayName": "Pillar of Mercy",
-      "description": "The right-hand pillar of the Tree of Life, the Pillar of Mercy or Compassion (also called the Pillar of Wisdom). It comprises Chokmah (2), Chesed (4), and Netzach (7). This pillar represents the positive, expansive, masculine-active force in the divine economy — the outpouring of grace, wisdom, and creative energy. In the human body it corresponds to the right side. In the initiatory tradition it is associated with the Boaz pillar of Solomon's Temple. Its qualities are expansion, grace, abundance, and the outward movement of the divine will.",
+      "description": "The right-hand pillar of the Tree of Life, the Pillar of Mercy or Compassion (also called the Pillar of Wisdom). It comprises Chokmah (2), Chesed (4), and Netzach (7). This pillar represents the positive, expansive, masculine-active force in the divine economy — the outpouring of grace, wisdom, and creative energy. In the human body it corresponds to the right side. In the initiatory tradition it is associated with the Jachin pillar of Solomon's Temple. Its qualities are expansion, grace, abundance, and the outward movement of the divine will.",
       "secondaryNames": [
         { "name": "Pillar of Compassion", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
         { "name": "Pillar of Wisdom", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
@@ -16,6 +16,7 @@
         "side": "right",
         "sephiroth": ["qabalah.sephira.chokmah", "qabalah.sephira.chesed", "qabalah.sephira.netzach"],
         "templeColumn": "Jachin",
+        "polarity": "western.polarity.masculine",
         "keywords": ["mercy", "expansion", "grace", "wisdom", "masculine", "active"]
       }
     },
@@ -23,7 +24,7 @@
       "canonicalName": "qabalah.pillar.severity",
       "entityType": "qabalah.pillar",
       "primaryDisplayName": "Pillar of Severity",
-      "description": "The left-hand pillar of the Tree of Life, the Pillar of Severity or Strength (also called the Pillar of Understanding). It comprises Binah (3), Geburah (5), and Hod (8). This pillar represents the limiting, contracting, feminine-receptive force — the principle of form, judgement, and necessary restriction. Without the Pillar of Severity, the unchecked mercy of the right pillar would dissolve all form into undifferentiated light. In the human body it corresponds to the left side. In the initiatory tradition it is associated with the Jachin pillar of Solomon's Temple (attribution varies by source). Its qualities are limitation, judgement, form, and the inward movement that gives structure to creative energy.",
+      "description": "The left-hand pillar of the Tree of Life, the Pillar of Severity or Strength (also called the Pillar of Understanding). It comprises Binah (3), Geburah (5), and Hod (8). This pillar represents the limiting, contracting, feminine-receptive force — the principle of form, judgement, and necessary restriction. Without the Pillar of Severity, the unchecked mercy of the right pillar would dissolve all form into undifferentiated light. In the human body it corresponds to the left side. In the initiatory tradition it is associated with the Boaz pillar of Solomon's Temple. Its qualities are limitation, judgement, form, and the inward movement that gives structure to creative energy.",
       "secondaryNames": [
         { "name": "Pillar of Strength", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
         { "name": "Pillar of Understanding", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
@@ -34,6 +35,7 @@
         "side": "left",
         "sephiroth": ["qabalah.sephira.binah", "qabalah.sephira.geburah", "qabalah.sephira.hod"],
         "templeColumn": "Boaz",
+        "polarity": "western.polarity.feminine",
         "keywords": ["severity", "limitation", "form", "understanding", "feminine", "receptive"]
       }
     },
@@ -52,6 +54,7 @@
         "side": "middle",
         "sephiroth": ["qabalah.sephira.kether", "qabalah.sephira.daath", "qabalah.sephira.tiphareth", "qabalah.sephira.yesod", "qabalah.sephira.malkuth"],
         "templeColumn": null,
+        "polarity": "western.polarity.androgynous",
         "keywords": ["equilibrium", "balance", "integration", "middle way", "axis", "ascent"]
       }
     }

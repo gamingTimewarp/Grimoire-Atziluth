@@ -4,7 +4,7 @@
     {
       "source": "iching.trigram.heaven",
       "target": "tarot.major.thoth.the-sun",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 30, "note": "Primary 777 Key Scale 2 (Chokmah, Sephira); trump attribution is Key 30 (The Sun)" }
@@ -12,7 +12,7 @@
     {
       "source": "iching.trigram.lake",
       "target": "tarot.major.thoth.art",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 14, "note": "777 Key Scale 14 (Art, Samekh/Sagittarius) — primary trump attribution" }
@@ -20,7 +20,7 @@
     {
       "source": "iching.trigram.lake",
       "target": "tarot.major.thoth.the-hanged-man",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 23, "note": "777 Key Scale 23 (The Hanged Man, Mem/Water) — secondary attribution" }
@@ -28,7 +28,7 @@
     {
       "source": "iching.trigram.fire",
       "target": "tarot.major.thoth.fortune",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 21, "note": "Primary 777 Key Scale 6 (Tiphareth, Sephira); first trump attribution is Key 21 (Fortune)" }
@@ -36,7 +36,7 @@
     {
       "source": "iching.trigram.fire",
       "target": "tarot.major.thoth.the-sun",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 30, "note": "777 Key Scale 30 (The Sun, Resh/Sol) — secondary attribution shared with Heaven" }
@@ -44,7 +44,7 @@
     {
       "source": "iching.trigram.thunder",
       "target": "tarot.major.thoth.the-tower",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 27, "note": "777 Key Scale 27 (The Tower, Peh/Mars)" }
@@ -52,7 +52,7 @@
     {
       "source": "iching.trigram.thunder",
       "target": "tarot.major.thoth.the-aeon",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 31, "note": "777 Key Scale 31 (The Aeon, Shin/Fire)" }
@@ -60,7 +60,7 @@
     {
       "source": "iching.trigram.wind",
       "target": "tarot.major.thoth.the-fool",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 11, "note": "777 Key Scale 11 (The Fool, Aleph/Air) — primary attribution" }
@@ -68,7 +68,7 @@
     {
       "source": "iching.trigram.wind",
       "target": "tarot.major.thoth.the-magus",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 12, "note": "777 Key Scale 12 (The Magus, Beth/Mercury) — secondary attribution" }
@@ -76,7 +76,7 @@
     {
       "source": "iching.trigram.water",
       "target": "tarot.major.thoth.the-priestess",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 13, "note": "Primary 777 Key Scale 10 (Malkuth, Sephira); first trump attribution is Key 13 (The Priestess, Gimel/Luna)" }
@@ -84,7 +84,7 @@
     {
       "source": "iching.trigram.water",
       "target": "tarot.major.thoth.the-universe",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 32, "note": "777 Key Scale 32 (The Universe, Tau/Saturn-Earth) — secondary attribution" }
@@ -92,7 +92,7 @@
     {
       "source": "iching.trigram.mountain",
       "target": "tarot.major.thoth.the-universe",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": "32bis", "note": "777 Key Scale 32 bis (The Universe, Earth face) — Gen associated with the elemental Earth aspect of path 32" }
@@ -100,7 +100,7 @@
     {
       "source": "iching.trigram.earth",
       "target": "tarot.major.thoth.the-priestess",
-      "label": "trigram-tarot",
+      "label": "attributed-trigram",
       "bidirectional": true,
       "traditionScope": ["tradition.thoth-crowley"],
       "extendedData": { "keyScale": 13, "note": "Primary 777 Key Scale 3 (Binah, Sephira); trump attribution is Key 13 (The Priestess, Gimel/Luna)" }

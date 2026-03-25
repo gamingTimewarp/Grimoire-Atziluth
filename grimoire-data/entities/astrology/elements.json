@@ -27,9 +27,9 @@
       ],
       "extendedData": {
         "signs": [
-          "aries",
-          "leo",
-          "sagittarius"
+          "astrology.zodiac-sign.aries",
+          "astrology.zodiac-sign.leo",
+          "astrology.zodiac-sign.sagittarius"
         ],
         "tarotSuit": "tarot.suit.rws.wands",
         "qabalisticWorld": "qabalah.world.atziluth",
@@ -70,9 +70,9 @@
       ],
       "extendedData": {
         "signs": [
-          "taurus",
-          "virgo",
-          "capricorn"
+          "astrology.zodiac-sign.taurus",
+          "astrology.zodiac-sign.virgo",
+          "astrology.zodiac-sign.capricorn"
         ],
         "tarotSuit": "tarot.suit.rws.pentacles",
         "qabalisticWorld": "qabalah.world.assiah",
@@ -113,9 +113,9 @@
       ],
       "extendedData": {
         "signs": [
-          "gemini",
-          "libra",
-          "aquarius"
+          "astrology.zodiac-sign.gemini",
+          "astrology.zodiac-sign.libra",
+          "astrology.zodiac-sign.aquarius"
         ],
         "tarotSuit": "tarot.suit.rws.swords",
         "qabalisticWorld": "qabalah.world.yetzirah",
@@ -156,9 +156,9 @@
       ],
       "extendedData": {
         "signs": [
-          "cancer",
-          "scorpio",
-          "pisces"
+          "astrology.zodiac-sign.cancer",
+          "astrology.zodiac-sign.scorpio",
+          "astrology.zodiac-sign.pisces"
         ],
         "tarotSuit": "tarot.suit.rws.cups",
         "qabalisticWorld": "qabalah.world.briah",

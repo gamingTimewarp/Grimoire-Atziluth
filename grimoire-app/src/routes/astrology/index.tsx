@@ -95,11 +95,11 @@ function CurrentSkyPanel() {
     listNatalCharts().then(records => {
       const self = records.find(r => r.isSelf)
       if (!self) return
-      const { astrologyMode, houseSystem } = loadTraditionSettings()
+      const { astrologyMode, houseSystem, showNodes } = loadTraditionSettings()
       const birthDate = self.birthTime
         ? new Date(`${self.birthDate}T${self.birthTime}:00`)
         : new Date(`${self.birthDate}T12:00:00`)
-      const c = getNatalChart(birthDate, self.birthLat ?? 0, self.birthLon ?? 0, houseSystem, astrologyMode)
+      const c = getNatalChart(birthDate, self.birthLat ?? 0, self.birthLon ?? 0, houseSystem, astrologyMode, { showNodes })
       setSelfChart(c)
     }).catch(() => {})
   }, [])
@@ -108,12 +108,12 @@ function CurrentSkyPanel() {
     setSpinning(true)
     const date = getEffectiveDate()
     const loc  = getHomeLocation()
-    const { astrologyMode, houseSystem } = loadTraditionSettings()
+    const { astrologyMode, houseSystem, showNodes } = loadTraditionSettings()
     setNoLoc(!loc)
     setMode(astrologyMode)
     setTimeout(() => {
       try {
-        const c = getNatalChart(date, loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode)
+        const c = getNatalChart(date, loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes })
         setChart(c)
         setAsOf(date)
         if (selfChart) {
@@ -226,7 +226,7 @@ function CurrentSkyPanel() {
                   >
                     {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.symbol} {sign.name}
                   </span>
-                  <span style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
+                  <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
                 </React.Fragment>
               )
             })}

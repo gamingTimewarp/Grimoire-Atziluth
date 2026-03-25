@@ -32,6 +32,7 @@ function ChartDetailPage() {
   const tradSettings = loadTraditionSettings()
   const astrologyMode: AstrologyMode = tradSettings.astrologyMode
   const houseSystem = tradSettings.houseSystem
+  const showNodes = tradSettings.showNodes
 
   useEffect(() => {
     getNatalChartById(id)
@@ -46,7 +47,7 @@ function ChartDetailPage() {
       : new Date(`${record.birthDate}T12:00:00`)
     const lat = record.birthLat ?? 0
     const lon = record.birthLon ?? 0
-    return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode)
+    return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode, { showNodes })
   }, [record])
 
   // Compute transit chart (current sky) when transit overlay is enabled
@@ -54,7 +55,7 @@ function ChartDetailPage() {
     if (!showTransits || !chart) return null
     const loc = getHomeLocation()
     try {
-      return getNatalChart(new Date(), loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode)
+      return getNatalChart(new Date(), loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes })
     } catch { return null }
   }, [showTransits, chart])
 
@@ -195,7 +196,7 @@ function PositionsTable({ chart, navigate, compact, hasBirthTime }: {
               >
                 {sign.symbol} {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.name}
               </span>
-              <span style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
+              <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
             </React.Fragment>
           )
         })}

@@ -12,8 +12,8 @@ The name comes from *Atziluth* — the highest of the Four Worlds in Qabalah, th
 |------|-----------|
 | **Divination** | 12 decks, 14 spreads, reversals, clarifier cards, reading question/intention field |
 | **Journal** | Combined reading + journal timeline, rich text, entity linking, astrological snapshot per entry |
-| **Reference** | 24+ entity types, 35+ browse categories, full-text search, multi-tradition attributions, personal annotations |
-| **Astrology** | Natal charts, current sky, transit-to-natal aspects, Chiron + major asteroids, tropical/sidereal/IAU modes, 6 house systems |
+| **Reference** | 24+ entity types, 36+ browse categories, full-text search, multi-tradition attributions, personal annotations; SVG art panels for planets, elements, zodiac signs, and lunar nodes |
+| **Astrology** | Natal charts, current sky, transit-to-natal aspects, Chiron + major asteroids, tropical/sidereal/IAU modes, 6 house systems; Lunar Nodes (Rahu/Ketu) in reference with full Jyotish descriptions |
 | **Qabalah** | Interactive Tree of Life + Nightside Tree, gematria calculator, numerology (Pythagorean + Chaldean) |
 | **Study** | SM-2 spaced repetition, 4 question modes, 14-day accuracy sparkline, per-type progress tracking |
 | **Customisation** | Custom entities/spreads/decks/traditions, 7 theme presets + full colour editor, 6 accessibility modes, custom CSS |

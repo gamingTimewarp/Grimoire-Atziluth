@@ -4,6 +4,7 @@ import { saveNatalChart, updateNatalChart, getNatalChartById } from '@/lib/natal
 import type { NatalChartRecord } from '@/lib/natal-db'
 import { loadSettings } from '@/lib/settings-store'
 import { Button } from '@/components/ui/Button'
+import { DateInput } from '@/components/ui/DateInput'
 
 export const Route = createFileRoute('/astrology/new')({
   validateSearch: (s: Record<string, unknown>) => ({
@@ -123,7 +124,7 @@ function NewChartPage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
           <div>
             {label('Birth Date')}
-            <input type="date" value={date} onChange={e => setDate(e.target.value)} style={{ ...inputStyle, colorScheme: 'dark' }} />
+            <DateInput value={date} onChange={setDate} style={{ ...inputStyle, colorScheme: 'dark' }} />
           </div>
           <div>
             {label('Birth Time (optional)')}

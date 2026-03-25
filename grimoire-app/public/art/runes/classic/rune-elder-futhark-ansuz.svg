@@ -22,7 +22,7 @@
   <text x="100" y="148"
         text-anchor="middle"
         dominant-baseline="middle"
-        font-family="'Noto Sans Runic','Segoe UI Historic','FreeSerif',FreeSerif,serif"
+        font-family="'BabelStone Runic','Noto Sans Runic','Segoe UI Historic','FreeSerif',FreeSerif,serif"
         font-size="108"
         fill="#c8b880"
         filter="url(#carve)"

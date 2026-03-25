@@ -5,7 +5,7 @@ import {
 } from '@/lib/art-store'
 import type { ArtSettings, ArtPackId, ArtGroup, ArtGroupConfig } from '@/lib/art-store'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, HelpCircle, FolderOpen, X } from 'lucide-react'
+import { ArrowLeft, HelpCircle, FolderOpen, X, Search } from 'lucide-react'
 import { openPath } from '@tauri-apps/plugin-opener'
 import { resourceDir, join } from '@tauri-apps/api/path'
 
@@ -18,6 +18,7 @@ function ArtPacksPage() {
   const [artSettings, setArtSettings] = useState<ArtSettings>(() => loadArtSettings())
   const [saved, setSaved]             = useState(false)
   const [guideOpen, setGuideOpen]     = useState(false)
+  const [query, setQuery]             = useState('')
 
   const openArtDirectory = async () => {
     try {
@@ -60,6 +61,23 @@ function ArtPacksPage() {
         file is absent.
       </p>
 
+      {/* Search */}
+      <div style={{ position: 'relative', marginBottom: '20px' }}>
+        <Search size={14} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-subtle)', pointerEvents: 'none' }} />
+        <input
+          type="text"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search art groups…"
+          style={{
+            width: '100%', boxSizing: 'border-box',
+            padding: '8px 12px 8px 32px',
+            background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', outline: 'none',
+          }}
+        />
+      </div>
+
       {/* Import / Add packs button */}
       <div style={{ marginBottom: '28px', display: 'flex', gap: '8px', alignItems: 'center' }}>
         <Button variant="ghost" size="sm" onClick={openArtDirectory}>
@@ -85,16 +103,28 @@ function ArtPacksPage() {
       )}
 
       {/* Pack groups */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
-        {ART_GROUPS.map(group => (
-          <GroupSection
-            key={group.id}
-            group={group}
-            current={artSettings.packByGroup[group.id] ?? 'symbolic'}
-            onSelect={pack => setArtPack(group.id, pack)}
-          />
-        ))}
-      </div>
+      {(() => {
+        const q = query.trim().toLowerCase()
+        const visible = q
+          ? ART_GROUPS.filter(g => g.label.toLowerCase().includes(q) || g.description.toLowerCase().includes(q))
+          : ART_GROUPS
+        return (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
+            {visible.length === 0 ? (
+              <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)', padding: '24px 0', textAlign: 'center' }}>
+                No results for "{query}"
+              </div>
+            ) : visible.map(group => (
+              <GroupSection
+                key={group.id}
+                group={group}
+                current={artSettings.packByGroup[group.id] ?? 'symbolic'}
+                onSelect={pack => setArtPack(group.id, pack)}
+              />
+            ))}
+          </div>
+        )
+      })()}
     </div>
   )
 }
@@ -242,12 +272,16 @@ function ArtPackCard({
 
 function SymbolicPreview({ groupId }: { groupId: ArtGroup }) {
   switch (groupId) {
-    case 'tarot':         return <TarotSymbolicPreview />
-    case 'runes':         return <RuneSymbolicPreview />
-    case 'geomancy':      return <GeomancySymbolicPreview />
-    case 'mahjong':       return <MahjongSymbolicPreview />
-    case 'lenormand':     return <LenormandSymbolicPreview />
-    case 'playing-cards': return <PlayingCardSymbolicPreview />
+    case 'tarot-rws':
+    case 'tarot-tdm':
+    case 'tarot-thoth':
+    case 'tarot-etteilla': return <TarotSymbolicPreview />
+    case 'runes':          return <RuneSymbolicPreview />
+    case 'geomancy':       return <GeomancySymbolicPreview />
+    case 'mahjong':        return <MahjongSymbolicPreview />
+    case 'lenormand':      return <LenormandSymbolicPreview />
+    case 'playing-cards':  return <PlayingCardSymbolicPreview />
+    case 'alchemy-metals': return <AlchemyMetalSymbolicPreview />
   }
 }
 
@@ -291,6 +325,18 @@ function RuneSymbolicPreview() {
   return (
     <div style={{ display: 'flex', gap: '5px' }}>
       {['ᚠ', 'ᚢ', 'ᚦ'].map(g => (
+        <div key={g} style={previewCard}>
+          <span style={{ fontSize: '22px', lineHeight: 1, color: 'var(--color-text)' }}>{g}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function AlchemyMetalSymbolicPreview() {
+  return (
+    <div style={{ display: 'flex', gap: '5px' }}>
+      {['☉', '☽', '♂'].map(g => (
         <div key={g} style={previewCard}>
           <span style={{ fontSize: '22px', lineHeight: 1, color: 'var(--color-text)' }}>{g}</span>
         </div>
@@ -383,13 +429,16 @@ function PlayingCardSymbolicPreview() {
 // ─── Import guide ─────────────────────────────────────────────────────────────
 
 function ImportGuide({ onClose }: { onClose: () => void }) {
-  const FILE_CONVENTIONS: { group: ArtGroup; ext: string; example: string }[] = [
-    { group: 'tarot',         ext: 'jpg / svg', example: 'tarot-major-rws-the-fool.jpg' },
-    { group: 'runes',         ext: 'svg',       example: 'rune-elder-futhark-fehu.svg' },
-    { group: 'geomancy',      ext: 'svg',       example: 'geomancy-figure-via.svg' },
-    { group: 'mahjong',       ext: 'svg',       example: 'divination-mahjong-tile-bamboo-1.svg' },
-    { group: 'lenormand',     ext: 'svg',       example: 'playing-card-hearts-9.svg' },
-    { group: 'playing-cards', ext: 'svg',       example: 'playing-card-spades-ace.svg' },
+  const FILE_CONVENTIONS: { group: ArtGroup; dir: string; ext: string; example: string }[] = [
+    { group: 'tarot-rws',     dir: 'art/tarot/',         ext: 'jpg',       example: 'tarot-major-rws-the-fool.jpg' },
+    { group: 'tarot-tdm',     dir: 'art/tarot/',         ext: 'jpg',       example: 'tarot-major-tdm-le-mat.jpg' },
+    { group: 'tarot-thoth',   dir: 'art/tarot/',         ext: 'svg',       example: 'tarot-major-thoth-the-fool.svg' },
+    { group: 'tarot-etteilla',dir: 'art/tarot/',         ext: 'jpg',       example: 'tarot-major-etteilla-etteilla.jpg' },
+    { group: 'runes',         dir: 'art/runes/',         ext: 'svg',       example: 'rune-elder-futhark-fehu.svg' },
+    { group: 'geomancy',      dir: 'art/geomancy/',      ext: 'svg',       example: 'geomancy-figure-via.svg' },
+    { group: 'mahjong',       dir: 'art/mahjong/',       ext: 'svg',       example: 'divination-mahjong-tile-bamboo-1.svg' },
+    { group: 'lenormand',     dir: 'art/playing-cards/', ext: 'svg',       example: 'playing-card-hearts-9.svg' },
+    { group: 'playing-cards', dir: 'art/playing-cards/', ext: 'svg',       example: 'playing-card-spades-ace.svg' },
   ]
 
   return (
@@ -421,9 +470,10 @@ function ImportGuide({ onClose }: { onClose: () => void }) {
       {/* Directory structure example */}
       <div style={{ marginBottom: '16px', padding: '10px 12px', background: 'var(--color-surface-3)', borderRadius: '4px', fontFamily: 'monospace', fontSize: '10px', color: 'var(--color-text-subtle)', lineHeight: '1.7' }}>
         art/<br/>
-        {'  '}tarot/<br/>
+        {'  '}tarot/  <span style={{ opacity: 0.5 }}>(shared by all four tarot decks)</span><br/>
         {'    '}<span style={{ color: 'var(--color-accent)' }}>classic</span>/tarot-major-rws-the-fool.jpg<br/>
-        {'    '}<span style={{ color: 'var(--color-accent)' }}>my-new-pack</span>/tarot-major-rws-the-fool.jpg<br/>
+        {'    '}<span style={{ color: 'var(--color-accent)' }}>classic</span>/tarot-major-thoth-the-fool.svg<br/>
+        {'    '}<span style={{ color: 'var(--color-accent)' }}>my-pack</span>/tarot-major-rws-the-fool.jpg<br/>
         {'  '}runes/<br/>
         {'    '}<span style={{ color: 'var(--color-accent)' }}>classic</span>/rune-elder-futhark-fehu.svg<br/>
         {'  '}playing-cards/<br/>
@@ -448,8 +498,8 @@ function ImportGuide({ onClose }: { onClose: () => void }) {
                 {ART_GROUPS.find(g => g.id === row.group)?.label ?? row.group}
               </span>
               <span style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', fontSize: '10px' }}>
+                <span style={{ opacity: 0.5 }}>{row.dir}<span style={{ color: 'var(--color-accent)' }}>{'<pack-id>'}</span>/</span>
                 <span style={{ color: 'var(--color-accent)' }}>{row.example}</span>
-                <span style={{ opacity: 0.6 }}> ({row.ext})</span>
               </span>
             </div>
           ))}

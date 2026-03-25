@@ -13,7 +13,9 @@ import { applyCustomCss } from '../__root'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
 import { Button } from '@/components/ui/Button'
-import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield } from 'lucide-react'
+import { ColorSwatch } from '@/components/ui/HsvColorPicker'
+import { DateTimeInput } from '@/components/ui/DateInput'
+import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen } from 'lucide-react'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
 
 export const Route = createFileRoute('/settings/')({
@@ -82,13 +84,14 @@ function SettingsPage() {
           { to: '/settings/nav',          icon: PanelLeft,  label: 'Navigation',   desc: 'Reorder and show/hide sidebar navigation items.' },
           { to: '/settings/accessibility',icon: Eye,        label: 'Accessibility',desc: 'Colour vision modes, dyslexia font, reduced motion, and card captions.' },
           { to: '/settings/data',         icon: HardDrive,  label: 'Data',         desc: 'Export a full backup or import a previously saved backup file.' },
+          { to: '/settings/manual',       icon: BookOpen,   label: 'User Manual',  desc: 'How to use every feature in the app.' },
           { to: '/settings/credits',      icon: ScrollText, label: 'Credits',      desc: 'Art pack licences and third-party attributions.' },
           { to: '/settings/privacy',      icon: Shield,     label: 'Privacy Policy', desc: 'How your data is stored and why nothing leaves your device.' },
         ].map(({ to, icon: Icon, label, desc }) => (
           <button
             key={to}
             type="button"
-            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/credits' | '/settings/privacy' })}
+            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/manual' | '/settings/credits' | '/settings/privacy' })}
             style={{ padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '6px', border: '1px solid var(--color-border)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px', transition: 'border-color 0.15s', width: '100%', fontFamily: 'inherit', textAlign: 'left' }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
@@ -348,39 +351,9 @@ function ColorRow({ label, value, onChange }: {
   value: string
   onChange: (v: string) => void
 }) {
-  // Keep hex input in sync but only fire onChange on valid 7-char hex
-  const [hex, setHex] = useState(value)
-
-  // Sync if parent value changes (e.g. preset switch)
-  React.useEffect(() => { setHex(value) }, [value])
-
-  const handleHexChange = (raw: string) => {
-    const v = raw.startsWith('#') ? raw : `#${raw}`
-    setHex(v)
-    if (/^#[0-9a-fA-F]{6}$/.test(v)) onChange(v)
-  }
-
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-      {/* Native colour picker — acts as a visual selector */}
-      <input
-        type="color"
-        value={value}
-        onChange={e => { setHex(e.target.value); onChange(e.target.value) }}
-        style={{ width: '32px', height: '32px', padding: '2px', border: '1px solid var(--color-border)', borderRadius: '4px', background: 'var(--color-surface-2)', cursor: 'pointer', flexShrink: 0 }}
-      />
-      {/* Hex input */}
-      <input
-        type="text"
-        value={hex}
-        onChange={e => handleHexChange(e.target.value)}
-        maxLength={7}
-        style={{
-          width: '90px', padding: '6px 10px', background: 'var(--color-surface-2)',
-          border: '1px solid var(--color-border)', borderRadius: '4px',
-          color: 'var(--color-text)', fontSize: '13px', fontFamily: 'monospace', outline: 'none',
-        }}
-      />
+      <ColorSwatch value={value} onChange={onChange} />
       <span style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>{label}</span>
     </div>
   )
@@ -543,10 +516,9 @@ function DateTimeOverrideSection({ value, onChange }: {
       </p>
 
       <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
-        <input
-          type="datetime-local"
+        <DateTimeInput
           value={dt}
-          onChange={e => setDt(e.target.value)}
+          onChange={v => setDt(v)}
           style={inputStyle}
         />
         <Button size="sm" onClick={() => onChange(dt || null)}>

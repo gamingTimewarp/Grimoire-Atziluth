@@ -14,7 +14,10 @@
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-export type ArtGroup = 'tarot' | 'runes' | 'geomancy' | 'mahjong' | 'lenormand' | 'playing-cards'
+export type ArtGroup =
+  | 'tarot-rws' | 'tarot-tdm' | 'tarot-thoth' | 'tarot-etteilla'
+  | 'runes' | 'geomancy' | 'mahjong' | 'lenormand' | 'playing-cards'
+  | 'alchemy-metals'
 
 /** Stored as a plain string so future named packs need no migration. */
 export type ArtPackId = string
@@ -40,9 +43,9 @@ export interface ArtGroupConfig {
 
 export const ART_GROUPS: ArtGroupConfig[] = [
   {
-    id: 'tarot',
-    label: 'Tarot Cards',
-    description: 'All tarot decks (RWS, TdM, Thoth, Etteilla).',
+    id: 'tarot-rws',
+    label: 'Rider-Waite-Smith',
+    description: 'RWS 78-card deck (1909). Public domain.',
     packs: [
       {
         id: 'symbolic',
@@ -54,10 +57,76 @@ export const ART_GROUPS: ArtGroupConfig[] = [
       {
         id: 'classic',
         label: 'Classic',
-        description: 'RWS 1909 · Jean Dodal TdM 1701 · Grand Etteilla c.1838 · Thoth (SVG)',
+        description: 'Pamela Colman Smith — original 1909 scan (Public Domain)',
         available: true,
         isSymbolic: false,
         previewUrl: '/art/tarot/classic/tarot-major-rws-the-fool.jpg',
+      },
+    ],
+  },
+  {
+    id: 'tarot-tdm',
+    label: 'Tarot de Marseille',
+    description: 'Jean Dodal 1701 pattern. Public domain.',
+    packs: [
+      {
+        id: 'symbolic',
+        label: 'Symbolic',
+        description: 'Suit symbols, Roman numerals, and rank text',
+        available: true,
+        isSymbolic: true,
+      },
+      {
+        id: 'classic',
+        label: 'Classic',
+        description: 'Jean Dodal TdM c.1701 — digitised museum copy (Public Domain)',
+        available: true,
+        isSymbolic: false,
+        previewUrl: '/art/tarot/classic/tarot-major-tdm-le-mat.jpg',
+      },
+    ],
+  },
+  {
+    id: 'tarot-thoth',
+    label: 'Thoth Tarot',
+    description: 'Generated SVG artwork based on Crowley\'s symbolism.',
+    packs: [
+      {
+        id: 'symbolic',
+        label: 'Symbolic',
+        description: 'Suit symbols, Roman numerals, and rank text',
+        available: true,
+        isSymbolic: true,
+      },
+      {
+        id: 'classic',
+        label: 'Generated Art',
+        description: 'Generated SVGs — Golden Dawn colour scales, Thelemic symbolism (CC0)',
+        available: true,
+        isSymbolic: false,
+        previewUrl: '/art/tarot/classic/tarot-major-thoth-the-fool.svg',
+      },
+    ],
+  },
+  {
+    id: 'tarot-etteilla',
+    label: 'Etteilla',
+    description: 'Grand Etteilla c.1838 (Lismon edition). Etalab OL 2.0.',
+    packs: [
+      {
+        id: 'symbolic',
+        label: 'Symbolic',
+        description: 'Suit symbols, Roman numerals, and rank text',
+        available: true,
+        isSymbolic: true,
+      },
+      {
+        id: 'classic',
+        label: 'Classic',
+        description: 'Grand Etteilla c.1838 — BnF/Gallica scans (Etalab Open Licence 2.0)',
+        available: true,
+        isSymbolic: false,
+        previewUrl: '/art/tarot/classic/tarot-major-etteilla-etteilla.jpg',
       },
     ],
   },
@@ -171,6 +240,27 @@ export const ART_GROUPS: ArtGroupConfig[] = [
       },
     ],
   },
+  {
+    id: 'alchemy-metals',
+    label: 'Alchemical Metals',
+    description: 'The seven classical planetary metals of alchemy.',
+    packs: [
+      {
+        id: 'symbolic',
+        label: 'Symbolic',
+        description: 'Geometric SVG glyphs on a plain background',
+        available: true,
+        isSymbolic: true,
+      },
+      {
+        id: 'classic',
+        label: 'Stone-carved',
+        description: 'Stylised stone-carved SVG glyphs',
+        available: true,
+        isSymbolic: false,
+      },
+    ],
+  },
 ]
 
 export interface ArtSettings {
@@ -181,12 +271,16 @@ export interface ArtSettings {
 
 const DEFAULTS: ArtSettings = {
   packByGroup: {
-    tarot:           'symbolic',
-    runes:           'symbolic',
-    geomancy:        'symbolic',
-    mahjong:         'symbolic',
-    lenormand:       'symbolic',
-    'playing-cards': 'classic',
+    'tarot-rws':       'symbolic',
+    'tarot-tdm':       'symbolic',
+    'tarot-thoth':     'symbolic',
+    'tarot-etteilla':  'symbolic',
+    runes:             'symbolic',
+    geomancy:          'symbolic',
+    mahjong:           'symbolic',
+    lenormand:         'symbolic',
+    'playing-cards':   'classic',
+    'alchemy-metals':  'classic',
   },
 }
 
@@ -229,11 +323,17 @@ export function artGroupForEntityType(entityType: string, canonicalName?: string
   if (entityType === 'tarot.card') {
     if (canonicalName?.startsWith('lenormand.')) return 'lenormand'
     if (canonicalName?.startsWith('playing.card.')) return 'playing-cards'
-    return 'tarot'
+    // Detect deck from the third segment: tarot.{section}.{deck}.{name}
+    const deck = canonicalName?.split('.')?.[2]
+    if (deck === 'thoth')    return 'tarot-thoth'
+    if (deck === 'tdm')      return 'tarot-tdm'
+    if (deck === 'etteilla') return 'tarot-etteilla'
+    return 'tarot-rws'  // default for rws and unknown tarot cards
   }
-  if (entityType.startsWith('rune'))                    return 'runes'
+  if (entityType.startsWith('rune') || entityType === 'ogham.letter') return 'runes'
   if (entityType === 'geomancy.figure')                 return 'geomancy'
   if (entityType === 'divination.mahjong-tile')         return 'mahjong'
+  if (entityType === 'alchemy.metal')                   return 'alchemy-metals'
   return null
 }
 
@@ -286,6 +386,9 @@ const LENORMAND_TO_PLAYING_CARD: Record<string, string> = {
  * same group can coexist without filename collisions.
  * Lenormand uses the corresponding playing card image from the playing-cards pack.
  */
+// All four per-deck tarot groups share the same art directory.
+const TAROT_GROUPS = new Set<ArtGroup>(['tarot-rws', 'tarot-tdm', 'tarot-thoth', 'tarot-etteilla'])
+
 export function imagePackArtUrl(group: ArtGroup, packId: ArtPackId, canonicalName: string): string {
   if (group === 'lenormand') {
     const pcCn = LENORMAND_TO_PLAYING_CARD[canonicalName]
@@ -295,8 +398,10 @@ export function imagePackArtUrl(group: ArtGroup, packId: ArtPackId, canonicalNam
     return `/art/playing-cards/${packId}/${canonicalName.replace(/\./g, '-')}.svg`
   }
   const slug = canonicalName.replace(/\./g, '-')
-  const ext = (group === 'runes' || group === 'geomancy' || group === 'mahjong' || canonicalName.includes('.thoth.')) ? 'svg' : 'jpg'
-  return `/art/${group}/${packId}/${slug}.${ext}`
+  // Per-deck tarot groups all live under the same art/tarot/ directory
+  const dirGroup = TAROT_GROUPS.has(group) ? 'tarot' : group
+  const ext = (group === 'runes' || group === 'geomancy' || group === 'mahjong' || group === 'tarot-thoth') ? 'svg' : 'jpg'
+  return `/art/${dirGroup}/${packId}/${slug}.${ext}`
 }
 
 /** @deprecated Use imagePackArtUrl. Kept for any external callers during migration. */

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.season.spring",
+      "entityType": "calendar.season",
+      "primaryDisplayName": "Spring",
+      "description": "Spring is the season of renewal, growth, and new beginnings, occurring between winter and summer. In the northern hemisphere it spans roughly March–May; in the southern hemisphere, September–November. Spring is characterised by warming temperatures, lengthening days, and the reawakening of plant and animal life. In Chinese cosmology spring corresponds to the Wood phase (木), the direction East, and the colour green. In Western astrology spring begins at the vernal equinox (0° Aries). Spring is associated with youth, fertility, hope, and the element of Air in some Western traditions.",
+      "secondaryNames": [],
+      "tags": ["season", "calendar", "spring"],
+      "extendedData": { "hemisphere": "northern", "approximateMonths": "March–May" }
+    },
+    {
+      "canonicalName": "calendar.season.summer",
+      "entityType": "calendar.season",
+      "primaryDisplayName": "Summer",
+      "description": "Summer is the warmest season of the year, occurring between spring and autumn. In the northern hemisphere it spans roughly June–August; in the southern hemisphere, December–February. Summer is characterised by the longest days, peak solar energy, and the fullness of growth. In Chinese cosmology summer corresponds to the Fire phase (火), the direction South, and the colour red. In Western astrology summer begins at the summer solstice (0° Cancer). Summer is associated with maturity, abundance, passion, and the element of Fire.",
+      "secondaryNames": [],
+      "tags": ["season", "calendar", "summer"],
+      "extendedData": { "hemisphere": "northern", "approximateMonths": "June–August" }
+    },
+    {
+      "canonicalName": "calendar.season.late-summer",
+      "entityType": "calendar.season",
+      "primaryDisplayName": "Late Summer",
+      "description": "Late Summer (also called the fifth season or Earth season) is a transitional period recognised in Chinese cosmology corresponding to the Earth phase (土). It occupies the interstitial weeks around the change of each season — particularly the period between summer and autumn, roughly the last weeks of July through August in some reckonings, or alternatively 18 days at the end of each of the four seasons. Late Summer is associated with the centre, the colour yellow, the digestive system, and themes of harvest, nourishment, and consolidation. It has no direct counterpart in the Western four-season model.",
+      "secondaryNames": [{ "name": "Earth Season", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["season", "calendar", "late-summer", "wuxing"],
+      "extendedData": { "note": "The fifth season of Chinese cosmology, corresponding to the Earth (土) phase of the Wuxing." }
+    },
+    {
+      "canonicalName": "calendar.season.autumn",
+      "entityType": "calendar.season",
+      "primaryDisplayName": "Autumn",
+      "description": "Autumn (also called Fall) is the season of harvest and decline, occurring between summer and winter. In the northern hemisphere it spans roughly September–November; in the southern hemisphere, March–May. Autumn is characterised by shortening days, cooling temperatures, and the falling of leaves. In Chinese cosmology autumn corresponds to the Metal phase (金), the direction West, and the colour white. In Western astrology autumn begins at the autumnal equinox (0° Libra). Autumn is associated with maturity, letting go, grief, and the element of Earth in some Western traditions.",
+      "secondaryNames": [{ "name": "Fall", "languageTag": "en-US", "visible": true, "sortOrder": 0 }],
+      "tags": ["season", "calendar", "autumn"],
+      "extendedData": { "hemisphere": "northern", "approximateMonths": "September–November" }
+    },
+    {
+      "canonicalName": "calendar.season.winter",
+      "entityType": "calendar.season",
+      "primaryDisplayName": "Winter",
+      "description": "Winter is the coldest season of the year, occurring between autumn and spring. In the northern hemisphere it spans roughly December–February; in the southern hemisphere, June–August. Winter is characterised by the shortest days, lowest temperatures, and the dormancy of plant life. In Chinese cosmology winter corresponds to the Water phase (水), the direction North, and the colour black. In Western astrology winter begins at the winter solstice (0° Capricorn). Winter is associated with old age, death and rebirth, introspection, and the element of Water or Earth in various traditions.",
+      "secondaryNames": [],
+      "tags": ["season", "calendar", "winter"],
+      "extendedData": { "hemisphere": "northern", "approximateMonths": "December–February" }
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import { useSpreadById } from '@/lib/spread-hooks'
 import type { SpreadPosition } from '@grimoire/core'
 import { BookMarked, ChevronDown, ChevronRight, Plus, PenLine, Trash2, List, Circle, X, Link2, BarChart2, Share2 } from 'lucide-react'
 import { RichTextEditor, RichTextRenderer, isRichTextEmpty } from '@/components/ui/RichText'
+import { DateInput } from '@/components/ui/DateInput'
 import { SpreadGrid } from '@/components/ui/SpreadGrid'
 import type { CardSlot } from '@/components/ui/SpreadGrid'
 import { TreeOfLifeSpreadDisplay } from '@/components/ui/TreeOfLifeSpread'
@@ -214,10 +215,9 @@ function JournalPage() {
                 color: 'var(--color-text)', fontSize: '14px', outline: 'none',
               }}
             />
-            <input
-              type="date"
+            <DateInput
               value={formDate}
-              onChange={e => setFormDate(e.target.value)}
+              onChange={setFormDate}
               style={{
                 padding: '8px 10px', background: 'var(--color-surface-3)',
                 border: '1px solid var(--color-border)', borderRadius: '6px',
@@ -933,7 +933,7 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
                   <span style={{ fontSize: '11px', color: 'var(--color-text)' }}>
                     {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
                   </span>
-                  <span style={{ fontSize: '10px', color: 'var(--color-danger)' }}>{pos.retrograde ? '℞' : ''}</span>
+                  <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '10px', color: 'var(--color-danger)' }}>{pos.retrograde ? '℞' : ''}</span>
                 </React.Fragment>
               )
             })}

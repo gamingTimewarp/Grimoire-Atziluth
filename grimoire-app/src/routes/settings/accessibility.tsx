@@ -1,6 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useState } from 'react'
-import { Eye } from 'lucide-react'
+import { Eye, ArrowLeft } from 'lucide-react'
+import { Button } from '@/components/ui/Button'
 import {
   loadAccessibilitySettings,
   saveAccessibilitySettings,
@@ -13,6 +14,7 @@ export const Route = createFileRoute('/settings/accessibility')({
 })
 
 function AccessibilityPage() {
+  const navigate = useNavigate()
   const [settings, setSettings] = useState<AccessibilitySettings>(() => loadAccessibilitySettings())
 
   const update = (patch: Partial<AccessibilitySettings>) => {
@@ -64,9 +66,14 @@ function AccessibilityPage() {
 
   return (
     <div style={{ maxWidth: '600px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '24px' }}>
-        <Eye size={18} style={{ color: 'var(--color-accent)' }} />
-        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Accessibility</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings' })}>
+          <ArrowLeft size={13} /> Settings
+        </Button>
+        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <Eye size={18} style={{ color: 'var(--color-accent)' }} />
+          Accessibility
+        </h1>
       </div>
 
       {/* Colour vision */}

@@ -35,6 +35,7 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
   { label: 'Astrology', options: [
     { value: 'astrology.zodiac-sign',    label: 'Zodiac Signs' },
     { value: 'astrology.planet',         label: 'Planets' },
+    { value: 'astrology.node',           label: 'Lunar Nodes' },
     { value: 'astrology.house',          label: 'Houses' },
     { value: 'astrology.aspect',         label: 'Aspects' },
     { value: 'astrology.element',        label: 'Elements' },

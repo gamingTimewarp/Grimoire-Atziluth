@@ -14,6 +14,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 1,
+        "zodiacSign": "astrology.zodiac-sign.aries",
         "uprightKeywords": ["self", "questioner", "inquiry", "present concern", "the seeker"],
         "reversedKeywords": ["confusion", "unclear question", "distraction", "self-deception"],
         "correspondingRWSCard": null
@@ -32,6 +33,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 2,
+        "zodiacSign": "astrology.zodiac-sign.taurus",
         "uprightKeywords": ["illumination", "clarity", "joy", "success", "vitality"],
         "reversedKeywords": ["obscurity", "failure", "arrogance", "dimness"],
         "correspondingRWSCard": "tarot.major.rws.the-sun"
@@ -41,7 +43,7 @@
       "canonicalName": "tarot.major.etteilla.the-moon",
       "entityType": "tarot.card",
       "primaryDisplayName": "The Moon",
-      "description": "Card 3 in the Etteilla system. Etteilla placed the Moon second in his creation sequence after the Sun, emphasising its role as the reflector of divine light and ruler of the tidal, subconscious realm. His divinatory meaning leaned toward deception and hidden enemies more than the RWS version, reflecting a more literally predictive, warning-oriented approach to this card.",
+      "description": "Card 3 in the Etteilla system. Etteilla placed the Moon in his creation sequence after the Sun, emphasising its role as the reflector of divine light and ruler of the tidal, subconscious realm. His divinatory meaning leaned toward deception and hidden enemies more than the RWS version, reflecting a more literally predictive, warning-oriented approach to this card.",
       "secondaryNames": [
         { "name": "La Lune", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
@@ -49,94 +51,135 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 3,
+        "zodiacSign": "astrology.zodiac-sign.gemini",
         "uprightKeywords": ["deception", "hidden matters", "illusion", "fluctuation", "mystery"],
         "reversedKeywords": ["small errors", "instability", "minor deceptions", "inconstancy"],
         "correspondingRWSCard": "tarot.major.rws.the-moon"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-stars",
+      "canonicalName": "tarot.major.etteilla.the-heavens",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Stars",
-      "description": "Card 4 in the Etteilla system, corresponding to The Star. Etteilla titled this card 'The Stars' (plural), connecting it to the fixed stars and celestial influences in his Egyptian-origin theory of tarot. It retains the hopeful, renewing quality of the RWS Star but with a broader cosmological scope, representing the guiding lights that orient the soul in darkness.",
+      "primaryDisplayName": "The Heavens — Le Ciel",
+      "description": "Card 4 in the Etteilla system. A cosmological card unique to Etteilla's sequence, depicting the celestial firmament — the heavens as a realm of divine order and creation. Corresponding to the separation of the heavens in the Genesis narrative, it carries meanings of divine blessing, spiritual elevation, and the ordering of the cosmos. The image shows a figure pouring water beneath a star-filled sky.",
       "secondaryNames": [
-        { "name": "L'Étoile", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "Les Étoiles", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+        { "name": "Le Ciel", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 4,
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "uprightKeywords": ["heavens", "divine order", "spiritual elevation", "celestial blessing"],
+        "reversedKeywords": ["disorder", "fall from grace", "chaos", "spiritual neglect"],
+        "correspondingRWSCard": "tarot.major.rws.the-star"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.the-world",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The World — The Universe",
+      "description": "Card 5 in the Etteilla system. Etteilla placed the World early in his cosmogonic sequence — not as a culminating card but as the establishment of the created earth itself within his Genesis narrative. He interpreted it as travel, journey, and worldly affairs, grounding it in practical outcomes and movement through the material world.",
+      "secondaryNames": [
+        { "name": "Le Monde", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "L'Univers", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 5,
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "uprightKeywords": ["completion", "travel", "worldly success", "fulfilment", "journey"],
+        "reversedKeywords": ["stagnation", "unfulfilled plans", "delay", "incomplete journey"],
+        "correspondingRWSCard": "tarot.major.rws.the-world"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.the-stars",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Stars — Les Astres",
+      "description": "Card 6 in the Etteilla system. Etteilla titled this card 'The Stars' (Les Astres), depicting the sun, moon, and zodiac together as the celestial lights of creation. Connecting to the fixed stars and celestial influences in his Egyptian-origin theory of tarot, it retains the hopeful, renewing quality of the RWS Star but with a broader cosmological scope, representing the guiding lights that orient the soul in darkness.",
+      "secondaryNames": [
+        { "name": "Les Astres", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "L'Étoile", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 6,
+        "zodiacSign": "astrology.zodiac-sign.virgo",
         "uprightKeywords": ["hope", "guidance", "inspiration", "renewal", "celestial favour"],
         "reversedKeywords": ["disappointment", "loss of hope", "misguided", "fleeting luck"],
         "correspondingRWSCard": "tarot.major.rws.the-star"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-last-judgment",
+      "canonicalName": "tarot.major.etteilla.birds-and-fish",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Last Judgment — Trumpets",
-      "description": "Card 5 in the Etteilla system, corresponding to Judgement. Etteilla called it 'The Trumpets' or 'The Last Judgment', placing it in his cosmogonic sequence as the great awakening call following cosmic creation. It retains the RWS themes of rebirth and reckoning but Etteilla emphasised its literal divinatory meaning of significant news, callings, and decisive moments that cannot be reversed.",
+      "primaryDisplayName": "Birds and Fish — Les Oiseaux et les Poissons",
+      "description": "Card 7 in the Etteilla system. A cosmological card unique to Etteilla's sequence, depicting the fifth day of Genesis creation — the filling of sky and sea with birds and fish. The image shows an ocean teeming with sea creatures, birds in flight overhead, and a serpent amid the waters, with a mountain on the horizon. In Etteilla's divinatory vocabulary this card carries meanings of support, protection, and natural abundance.",
       "secondaryNames": [
-        { "name": "Le Jugement", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "Les Trompettes", "languageTag": "fr", "visible": false, "sortOrder": 1 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 5,
-        "uprightKeywords": ["judgement", "renewal", "decisive news", "awakening", "reckoning"],
-        "reversedKeywords": ["delay", "weakness", "failure to act", "missed calling"],
-        "correspondingRWSCard": "tarot.major.rws.judgement"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-wheel-of-fortune",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The Wheel of Fortune",
-      "description": "Card 6 in the Etteilla system. Etteilla retained the Wheel of Fortune's core meaning of cyclical destiny and fate, situating it as a pivot point in his cosmogonic narrative between the celestial trumpets and the earthly tower. He emphasised the literal turn of fortune in worldly affairs — luck, good timing, and the unpredictable rotation of circumstances.",
-      "secondaryNames": [
-        { "name": "La Roue de Fortune", "languageTag": "fr", "visible": true, "sortOrder": 0 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 6,
-        "uprightKeywords": ["fortune", "destiny", "lucky turn", "cycle", "opportunity"],
-        "reversedKeywords": ["bad luck", "misfortune", "downswing", "unfavourable timing"],
-        "correspondingRWSCard": "tarot.major.rws.wheel-of-fortune"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-tower",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The Lightning-Struck Tower",
-      "description": "Card 7 in the Etteilla system, corresponding to The Tower. Etteilla's version of this card preserved the dramatic imagery of sudden destruction and placed it earlier in the sequence than RWS, reflecting its role in his narrative as the disruption of earthly structures after cosmic forces have been set in motion. He read it as misery, poverty, and catastrophic ruin — less metaphorical than RWS.",
-      "secondaryNames": [
-        { "name": "La Maison Dieu", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "La Foudre", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+        { "name": "Les Oiseaux et les Poissons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 7,
-        "uprightKeywords": ["ruin", "catastrophe", "sudden loss", "misery", "upheaval"],
-        "reversedKeywords": ["imprisonment", "oppression", "lesser disaster", "constraint"],
-        "correspondingRWSCard": "tarot.major.rws.the-tower"
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "uprightKeywords": ["support", "protection", "natural abundance", "teeming life"],
+        "reversedKeywords": ["disorder", "lack of support", "overwhelm", "chaos"],
+        "correspondingRWSCard": null
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.questionnante",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "La Questionnante — The Female Questioner",
+      "description": "Card 8 in the Etteilla system. The Questionnante is the female counterpart to the male Questionnant (card 1), representing the female querent consulting the oracle. Visually identified with Eve in the Garden, she is attributed to Scorpio, grounding the inquiry in depth, transformation, and the instinctive feminine. When she appears in a reading, attention returns to the female seeker herself — her situation, her inner state, and the nature of her question.",
+      "secondaryNames": [
+        { "name": "La Consultante", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 8,
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "uprightKeywords": ["female querent", "self-inquiry", "inner life", "present concern", "the seeker"],
+        "reversedKeywords": ["confusion", "self-doubt", "unclear question", "distraction"],
+        "correspondingRWSCard": null
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.justice",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "Justice",
+      "description": "Card 9 in the Etteilla system, the first of four Cardinal Virtues in Etteilla's sequence. Etteilla's Justice card carried the same core meaning as in other systems — equity, legal proceedings, and impartial judgement — but grouped it with Temperance, Strength, and Prudence as moral pillars of the human order. He particularly emphasised it in the context of legal disputes, contracts, and official processes.",
+      "secondaryNames": [
+        { "name": "La Justice", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 9,
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "uprightKeywords": ["justice", "equity", "legal matters", "contract", "fair outcome"],
+        "reversedKeywords": ["injustice", "legal problems", "bias", "wrongful judgement"],
+        "correspondingRWSCard": "tarot.major.rws.justice"
       }
     },
     {
       "canonicalName": "tarot.major.etteilla.temperance",
       "entityType": "tarot.card",
       "primaryDisplayName": "Temperance",
-      "description": "Card 8 in the Etteilla system. Etteilla kept Temperance at a similar position to later traditions, reading it as the virtue of moderation applied to practical life: prudence in spending, restraint in passions, and careful management of affairs. He diverged from later occult interpretations by keeping the meaning firmly anchored in moral virtue and measured conduct rather than alchemical symbolism.",
+      "description": "Card 10 in the Etteilla system, the second of four Cardinal Virtues. Etteilla read Temperance as the virtue of moderation applied to practical life: prudence in spending, restraint in passions, and careful management of affairs. He diverged from later occult interpretations by keeping the meaning firmly anchored in moral virtue and measured conduct rather than alchemical symbolism.",
       "secondaryNames": [
         { "name": "Tempérance", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
-        "etteillaCN": 8,
+        "etteillaCN": 10,
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
         "uprightKeywords": ["moderation", "prudence", "economy", "restraint", "balance"],
         "reversedKeywords": ["excess", "clergy", "religion", "over-indulgence"],
         "correspondingRWSCard": "tarot.major.rws.temperance"
@@ -146,103 +189,72 @@
       "canonicalName": "tarot.major.etteilla.strength",
       "entityType": "tarot.card",
       "primaryDisplayName": "Strength",
-      "description": "Card 9 in the Etteilla system. Etteilla's Strength card carried more literal meaning than the RWS version — representing physical power, boldness, and courageous action in the world rather than the gentle inner mastery depicted by Waite. In his divinatory practice it often signified a strong person in the querent's life, or the need for decisive, forceful intervention.",
+      "description": "Card 11 in the Etteilla system, the third of four Cardinal Virtues. Etteilla's Strength card carried more literal meaning than the RWS version — representing physical power, boldness, and courageous action in the world rather than the gentle inner mastery depicted by Waite. In his divinatory practice it often signified a strong person in the querent's life, or the need for decisive, forceful intervention.",
       "secondaryNames": [
         { "name": "La Force", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
-        "etteillaCN": 9,
+        "etteillaCN": 11,
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
         "uprightKeywords": ["power", "boldness", "courage", "force", "determination"],
         "reversedKeywords": ["weakness", "abuse of power", "tyranny", "cowardice"],
         "correspondingRWSCard": "tarot.major.rws.strength"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-hermit",
+      "canonicalName": "tarot.major.etteilla.prudence",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Hermit",
-      "description": "Card 10 in the Etteilla system. Etteilla's Hermit represented the traitor, hypocrite, or dissembler more than the wise solitary seeker of the RWS tradition — a distinctly more suspicious, divinatory reading of solitude and concealment. This reflects Etteilla's emphasis on practical warning: the isolated figure is not merely contemplative but potentially hiding something, a deceiver or false friend.",
+      "primaryDisplayName": "Prudence",
+      "description": "Card 12 in the Etteilla system, the fourth and final Cardinal Virtue. Prudence completes the virtues quartet alongside Justice, Temperance, and Strength, representing foresight, discernment, and wise counsel. Classically depicted as a woman with a mirror — reflecting on the past to guide the future — and sometimes a serpent, symbol of wisdom. In Etteilla's divinatory practice she indicated careful deliberation before action and the value of experience over impulse.",
       "secondaryNames": [
-        { "name": "Le Capucin", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "L'Ermite", "languageTag": "fr", "visible": false, "sortOrder": 1 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 10,
-        "uprightKeywords": ["treachery", "concealment", "hypocrisy", "false friend", "disguise"],
-        "reversedKeywords": ["wisdom", "counsel", "prudent guidance", "retirement"],
-        "correspondingRWSCard": "tarot.major.rws.the-hermit"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-hanged-man",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The Hanged Man",
-      "description": "Card 11 in the Etteilla system. Etteilla read the Hanged Man as prudence and sacrifice — a deliberate suspension of action for a wise purpose rather than the passive surrender emphasised in RWS. In its reversed form it signified a crowd or gathering of people. The card's placement here gives it a pivotal role as the midpoint of the major sequence, the wise pause before transformation.",
-      "secondaryNames": [
-        { "name": "Le Pendu", "languageTag": "fr", "visible": true, "sortOrder": 0 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 11,
-        "uprightKeywords": ["prudence", "sacrifice", "wise delay", "voluntary pause", "circumspection"],
-        "reversedKeywords": ["crowd", "gathering", "popular opinion", "public matter"],
-        "correspondingRWSCard": "tarot.major.rws.the-hanged-man"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.justice",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "Justice",
-      "description": "Card 12 in the Etteilla system. Etteilla's Justice card carried the same core meaning as in other systems — equity, legal proceedings, and impartial judgement — but was placed earlier in his sequence than in RWS. He particularly emphasised it in the context of legal disputes, contracts, and official processes, making it one of the most literally practical cards in his divinatory vocabulary.",
-      "secondaryNames": [
-        { "name": "La Justice", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "La Prudence", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 12,
-        "uprightKeywords": ["justice", "equity", "legal matters", "contract", "fair outcome"],
-        "reversedKeywords": ["injustice", "legal problems", "bias", "wrongful judgement"],
-        "correspondingRWSCard": "tarot.major.rws.justice"
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "uprightKeywords": ["foresight", "wisdom", "discernment", "caution", "wise counsel"],
+        "reversedKeywords": ["rashness", "imprudence", "poor judgement", "haste"],
+        "correspondingRWSCard": null
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-high-priestess",
+      "canonicalName": "tarot.major.etteilla.the-lovers",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The High Priestess",
-      "description": "Card 13 in the Etteilla system, corresponding to La Papesse. Etteilla retained the female papal figure of the Marseille tradition and interpreted her as embodying gnosis, hidden wisdom, and occult knowledge — appropriate given his Egyptian origin theory. Unlike RWS which submerged her in lunar mystery, Etteilla's Papesse was more explicitly associated with the initiated teacher and keeper of secret doctrines.",
+      "primaryDisplayName": "The Lovers",
+      "description": "Card 13 in the Etteilla system. Etteilla read the Lovers as representing romantic attachment and the choice between love and duty more concretely than RWS. He associated it specifically with engagement, courtship, and the pull of desire in human affairs. In a reading it frequently pointed to an actual romantic situation in the querent's life rather than a broad philosophical choice.",
       "secondaryNames": [
-        { "name": "La Papesse", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "L'Amoureux", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 13,
-        "uprightKeywords": ["hidden knowledge", "occult wisdom", "initiation", "gnosis", "secrecy"],
-        "reversedKeywords": ["conceit", "moral laxity", "surface knowledge", "pretension"],
-        "correspondingRWSCard": "tarot.major.rws.the-high-priestess"
+        "zodiacSign": null,
+        "uprightKeywords": ["love", "romance", "engagement", "attraction", "desire"],
+        "reversedKeywords": ["inconstancy", "dissolute behaviour", "unreliable love", "fickleness"],
+        "correspondingRWSCard": "tarot.major.rws.the-lovers"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-hierophant",
+      "canonicalName": "tarot.major.etteilla.the-devil",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Hierophant",
-      "description": "Card 14 in the Etteilla system, corresponding to Le Pape. Etteilla retained the Pope figure and interpreted it through his esoteric lens as the external religious authority in contrast to the inner gnosis of La Papesse. In practice he read it as orthodox religion, marriage ceremonies, official blessing, and the sanction of established institutions — a card of formal, public spiritual authority.",
+      "primaryDisplayName": "The Devil",
+      "description": "Card 14 in the Etteilla system. Etteilla's Devil represented force majeure, overwhelming external power, and the black arts — a more externally threatening figure than the RWS Devil's focus on internal bondage and addiction. He read this card as violence, force, and fatality in worldly affairs, giving it a menacing, literal interpretation aligned with his practical predictive system.",
       "secondaryNames": [
-        { "name": "Le Pape", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "Le Diable", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 14,
-        "uprightKeywords": ["religion", "ceremony", "official blessing", "tradition", "mercy"],
-        "reversedKeywords": ["over-kindness", "imprudent generosity", "weakness through pity"],
-        "correspondingRWSCard": "tarot.major.rws.the-hierophant"
+        "zodiacSign": null,
+        "uprightKeywords": ["force", "violence", "black arts", "fatality", "overwhelming power"],
+        "reversedKeywords": ["fate", "astrology", "destiny", "unavoidable circumstance"],
+        "correspondingRWSCard": "tarot.major.rws.the-devil"
       }
     },
     {
@@ -257,129 +269,140 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 15,
+        "zodiacSign": null,
         "uprightKeywords": ["sickness", "illness", "charlatan", "misdirection", "trickery"],
         "reversedKeywords": ["indisposition", "minor illness", "slight ailment", "convalescence"],
         "correspondingRWSCard": "tarot.major.rws.the-magician"
       }
     },
     {
+      "canonicalName": "tarot.major.etteilla.the-last-judgment",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Last Judgment — Trumpets",
+      "description": "Card 16 in the Etteilla system, corresponding to Judgement. Etteilla called it 'The Trumpets' or 'The Last Judgment', placing it in the latter half of his sequence as the great awakening call. It retains the RWS themes of rebirth and reckoning but Etteilla emphasised its literal divinatory meaning of significant news, callings, and decisive moments that cannot be reversed.",
+      "secondaryNames": [
+        { "name": "Le Jugement", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "Les Trompettes", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 16,
+        "zodiacSign": null,
+        "uprightKeywords": ["judgement", "renewal", "decisive news", "awakening", "reckoning"],
+        "reversedKeywords": ["delay", "weakness", "failure to act", "missed calling"],
+        "correspondingRWSCard": "tarot.major.rws.judgement"
+      }
+    },
+    {
       "canonicalName": "tarot.major.etteilla.death",
       "entityType": "tarot.card",
       "primaryDisplayName": "Death",
-      "description": "Card 16 in the Etteilla system. Etteilla's Death card shared the transformative meaning of later traditions but was more directly predictive of physical mortality in some readings, reflecting his practical divinatory orientation. In his system Death could literally indicate serious illness or the death of someone close, though its broader meaning of endings and transformation was also present.",
+      "description": "Card 17 in the Etteilla system. Etteilla's Death card shared the transformative meaning of later traditions but was more directly predictive of physical mortality in some readings, reflecting his practical divinatory orientation. In his system Death could literally indicate serious illness or the death of someone close, though its broader meaning of endings and transformation was also present.",
       "secondaryNames": [
         { "name": "La Mort", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
-        "etteillaCN": 16,
+        "etteillaCN": 17,
+        "zodiacSign": null,
         "uprightKeywords": ["death", "mortality", "ending", "transformation", "great change"],
         "reversedKeywords": ["inertia", "corruption", "stagnation", "inevitable decline"],
         "correspondingRWSCard": "tarot.major.rws.death"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-devil",
+      "canonicalName": "tarot.major.etteilla.the-hermit",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Devil",
-      "description": "Card 17 in the Etteilla system. Etteilla's Devil represented force majeure, overwhelming external power, and the black arts — a more externally threatening figure than the RWS Devil's focus on internal bondage and addiction. He read this card as violence, force, and fatality in worldly affairs, giving it a menacing, literal interpretation aligned with his practical predictive system.",
+      "primaryDisplayName": "The Hermit",
+      "description": "Card 18 in the Etteilla system. Etteilla's Hermit represented the traitor, hypocrite, or dissembler more than the wise solitary seeker of the RWS tradition — a distinctly more suspicious, divinatory reading of solitude and concealment. This reflects Etteilla's emphasis on practical warning: the isolated figure is not merely contemplative but potentially hiding something, a deceiver or false friend.",
       "secondaryNames": [
-        { "name": "Le Diable", "languageTag": "fr", "visible": true, "sortOrder": 0 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 17,
-        "uprightKeywords": ["force", "violence", "black arts", "fatality", "overwhelming power"],
-        "reversedKeywords": ["fate", "astrology", "destiny", "unavoidable circumstance"],
-        "correspondingRWSCard": "tarot.major.rws.the-devil"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-lovers",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The Lovers",
-      "description": "Card 18 in the Etteilla system. Etteilla read the Lovers as representing romantic attachment and the choice between love and duty more concretely than RWS. He associated it specifically with engagement, courtship, and the pull of desire in human affairs. In a reading it frequently pointed to an actual romantic situation in the querent's life rather than a broad philosophical choice.",
-      "secondaryNames": [
-        { "name": "L'Amoureux", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "Le Capucin", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "L'Ermite", "languageTag": "fr", "visible": false, "sortOrder": 1 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 18,
-        "uprightKeywords": ["love", "romance", "engagement", "attraction", "desire"],
-        "reversedKeywords": ["inconstancy", "dissolute behaviour", "unreliable love", "fickleness"],
-        "correspondingRWSCard": "tarot.major.rws.the-lovers"
+        "zodiacSign": null,
+        "uprightKeywords": ["treachery", "concealment", "hypocrisy", "false friend", "disguise"],
+        "reversedKeywords": ["wisdom", "counsel", "prudent guidance", "retirement"],
+        "correspondingRWSCard": "tarot.major.rws.the-hermit"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.the-tower",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Lightning-Struck Tower",
+      "description": "Card 19 in the Etteilla system, corresponding to The Tower. Etteilla's version preserved the dramatic imagery of sudden destruction, reading it as misery, poverty, and catastrophic ruin — less metaphorical than RWS. He emphasised the literal material devastation of the lightning strike as a warning of sudden reversals in fortune and worldly security.",
+      "secondaryNames": [
+        { "name": "La Maison Dieu", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "La Foudre", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 19,
+        "zodiacSign": null,
+        "uprightKeywords": ["ruin", "catastrophe", "sudden loss", "misery", "upheaval"],
+        "reversedKeywords": ["imprisonment", "oppression", "lesser disaster", "constraint"],
+        "correspondingRWSCard": "tarot.major.rws.the-tower"
+      }
+    },
+    {
+      "canonicalName": "tarot.major.etteilla.the-wheel-of-fortune",
+      "entityType": "tarot.card",
+      "primaryDisplayName": "The Wheel of Fortune",
+      "description": "Card 20 in the Etteilla system. Etteilla retained the Wheel of Fortune's core meaning of cyclical destiny and fate, emphasising the literal turn of fortune in worldly affairs — luck, good timing, and the unpredictable rotation of circumstances that lifts or casts down the querent.",
+      "secondaryNames": [
+        { "name": "La Roue de Fortune", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["tarot", "major-arcana", "etteilla"],
+      "extendedData": {
+        "deckSystem": "etteilla",
+        "etteillaCN": 20,
+        "zodiacSign": null,
+        "uprightKeywords": ["fortune", "destiny", "lucky turn", "cycle", "opportunity"],
+        "reversedKeywords": ["bad luck", "misfortune", "downswing", "unfavourable timing"],
+        "correspondingRWSCard": "tarot.major.rws.wheel-of-fortune"
       }
     },
     {
       "canonicalName": "tarot.major.etteilla.the-chariot",
       "entityType": "tarot.card",
       "primaryDisplayName": "The Chariot",
-      "description": "Card 19 in the Etteilla system. Etteilla's Chariot was read as help arriving from outside, relief from adversity, and assistance that comes unexpectedly to carry the querent forward — a meaning subtly different from the RWS interpretation of wilful self-mastery and triumph through personal control. It often indicated a vehicle, a journey, or a person coming to one's aid.",
+      "description": "Card 21 in the Etteilla system, closing the numbered major arcana sequence before the Fool. Etteilla's Chariot was read as help arriving from outside, relief from adversity, and assistance that comes unexpectedly to carry the querent forward — a meaning subtly different from the RWS interpretation of wilful self-mastery and triumph through personal control. It often indicated a vehicle, a journey, or a person coming to one's aid.",
       "secondaryNames": [
         { "name": "Le Chariot", "languageTag": "fr", "visible": true, "sortOrder": 0 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
-        "etteillaCN": 19,
+        "etteillaCN": 21,
+        "zodiacSign": null,
         "uprightKeywords": ["help", "assistance", "relief", "journey", "unexpected aid"],
         "reversedKeywords": ["defeat", "disagreement", "quarrel", "worrying news"],
         "correspondingRWSCard": "tarot.major.rws.the-chariot"
       }
     },
     {
-      "canonicalName": "tarot.major.etteilla.the-emperor",
+      "canonicalName": "tarot.major.etteilla.the-fool",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Emperor",
-      "description": "Card 20 in the Etteilla system. Etteilla's Emperor occupied a later position in the sequence than in RWS, but retained the meaning of authority, stability, and masculine power in practical affairs. He represented a powerful father-figure, patron, or sovereign — a concrete person of high status rather than an abstract archetype, consistent with Etteilla's more personal, situational reading style.",
+      "primaryDisplayName": "The Fool — Le Mat",
+      "description": "Card 0 / 78 in the Etteilla system, corresponding to the traditional Fool (Le Mat). Etteilla retained the Fool at the boundary of his numbered sequence — labelled both 0 and 78 — reflecting its liminal status outside the cosmogonic order. He read it as folly, madness, and delirium in the upright position: the unchecked mind unmoored from reason, or the querent on the verge of a reckless act.",
       "secondaryNames": [
-        { "name": "L'Empereur", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "Le Mat", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "La Folie", "languageTag": "fr", "visible": false, "sortOrder": 1 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
         "deckSystem": "etteilla",
-        "etteillaCN": 20,
-        "uprightKeywords": ["authority", "patron", "stability", "power", "masculine influence"],
-        "reversedKeywords": ["benevolence", "generosity", "pity", "sympathy"],
-        "correspondingRWSCard": "tarot.major.rws.the-emperor"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-empress",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The Empress",
-      "description": "Card 21 in the Etteilla system. Etteilla placed the Empress near the end of his major arcana sequence, representing the feminine counterpart to the Emperor: a powerful woman, mother figure, or influential female patron. His interpretation was resolutely practical, identifying her with action, motion, and decisive feminine authority in real-world affairs.",
-      "secondaryNames": [
-        { "name": "L'Impératrice", "languageTag": "fr", "visible": true, "sortOrder": 0 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 21,
-        "uprightKeywords": ["feminine authority", "action", "maternal influence", "progress", "movement"],
-        "reversedKeywords": ["vacillation", "indecision", "doubt", "hesitation"],
-        "correspondingRWSCard": "tarot.major.rws.the-empress"
-      }
-    },
-    {
-      "canonicalName": "tarot.major.etteilla.the-world",
-      "entityType": "tarot.card",
-      "primaryDisplayName": "The World — The Universe",
-      "description": "Card 22 in the Etteilla system. The World closes Etteilla's major arcana sequence as completion, fullness, and the integration of all that has come before — the cosmic narrative returning to wholeness. Etteilla interpreted it as travel, journey, and worldly success, keeping its positive, culminating meaning while grounding it in practical outcomes rather than mystical integration.",
-      "secondaryNames": [
-        { "name": "Le Monde", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "L'Univers", "languageTag": "fr", "visible": false, "sortOrder": 1 }
-      ],
-      "tags": ["tarot", "major-arcana", "etteilla"],
-      "extendedData": {
-        "deckSystem": "etteilla",
-        "etteillaCN": 22,
-        "uprightKeywords": ["completion", "travel", "worldly success", "fulfilment", "journey"],
-        "reversedKeywords": ["stagnation", "unfulfilled plans", "delay", "incomplete journey"],
-        "correspondingRWSCard": "tarot.major.rws.the-world"
+        "etteillaCN": 0,
+        "zodiacSign": null,
+        "uprightKeywords": ["folly", "madness", "delirium", "recklessness", "the questioner unmoored"],
+        "reversedKeywords": ["negligence", "absence", "distraction", "thoughtlessness"],
+        "correspondingRWSCard": "tarot.major.rws.the-fool"
       }
     }
   ]

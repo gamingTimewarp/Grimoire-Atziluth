@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "qabalah.divine-name.tetragrammaton", "target": "letter.hebrew.yod", "label": "composed-of", "bidirectional": false, "traditionScope": [], "extendedData": { "position": 1, "note": "Yod — first letter; attributed to Fire and Atziluth" } },
+    { "source": "qabalah.divine-name.tetragrammaton", "target": "letter.hebrew.heh", "label": "composed-of", "bidirectional": false, "traditionScope": [], "extendedData": { "position": 2, "note": "Heh — second letter; attributed to Water and Briah; also final Heh (position 4) attributed to Earth and Assiah" } },
+    { "source": "qabalah.divine-name.tetragrammaton", "target": "letter.hebrew.vau", "label": "composed-of", "bidirectional": false, "traditionScope": [], "extendedData": { "position": 3, "note": "Vau — third letter; attributed to Air and Yetzirah" } },
+
+    { "source": "astrology.element.fire",  "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.yod",  "position": 1 } },
+    { "source": "astrology.element.water", "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.heh",  "position": 2 } },
+    { "source": "astrology.element.air",   "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.vau",  "position": 3 } },
+    { "source": "astrology.element.earth", "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.heh",  "position": 4, "note": "Final Heh" } },
+
+    { "source": "qabalah.world.atziluth", "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.yod", "position": 1 } },
+    { "source": "qabalah.world.briah",    "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.heh", "position": 2 } },
+    { "source": "qabalah.world.yetzirah", "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.vau", "position": 3 } },
+    { "source": "qabalah.world.assiah",   "target": "qabalah.divine-name.tetragrammaton", "label": "attributed-tetragrammaton", "bidirectional": false, "traditionScope": [], "extendedData": { "letter": "letter.hebrew.heh", "position": 4, "note": "Final Heh" } }
+  ]
+}

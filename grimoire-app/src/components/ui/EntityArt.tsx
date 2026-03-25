@@ -7,7 +7,7 @@
  * image file is absent (assets are a separate download pass).
  */
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import type { BaseEntity } from '@grimoire/core'
 import { loadArtSettings, artGroupForEntityType, imagePackArtUrl, isSymbolicPack } from '@/lib/art-store'
 import type { ArtGroup, ArtPackId } from '@/lib/art-store'
@@ -30,6 +30,8 @@ export function EntityArt({
     if (entity.entityType === 'iching.hexagram')       return <HexagramSymbolic entity={entity} width={width} height={height} />
     if (entity.entityType === 'astrology.zodiac-sign') return <ZodiacSignSymbolic entity={entity} width={width} height={height} />
     if (entity.entityType === 'astrology.planet')      return <PlanetSymbolic entity={entity} width={width} height={height} />
+    if (entity.entityType === 'astrology.node')        return <PlanetSymbolic entity={entity} width={width} height={height} />
+    if (entity.entityType === 'astrology.element')     return <ElementSymbolic entity={entity} width={width} height={height} />
     if (entity.entityType === 'letter.hebrew')         return <HebrewLetterSymbolic entity={entity} width={width} height={height} />
     return <GenericSymbolic label={entity.primaryDisplayName} width={width} height={height} />
   }
@@ -81,13 +83,28 @@ function ZodiacSignSymbolic({ entity, width, height }: { entity: BaseEntity; wid
 
 // ─── Planet Symbolic ──────────────────────────────────────────────────────────
 
+const PLANET_TO_METAL: Record<string, string> = {
+  'astrology.planet.sol':     'alchemy.metal.gold',
+  'astrology.planet.luna':    'alchemy.metal.silver',
+  'astrology.planet.mercury': 'alchemy.metal.mercury',
+  'astrology.planet.venus':   'alchemy.metal.copper',
+  'astrology.planet.mars':    'alchemy.metal.iron',
+  'astrology.planet.jupiter': 'alchemy.metal.tin',
+  'astrology.planet.saturn':  'alchemy.metal.lead',
+}
+
 function PlanetSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
-  const ed     = entity.extendedData as Record<string, unknown>
-  const symbol = (ed.symbol as string | undefined) ?? '✦'
+  const metalCN = PLANET_TO_METAL[entity.canonicalName]
+  const ed      = entity.extendedData as Record<string, unknown>
+  const symbol  = (ed.symbol as string | undefined) ?? '✦'
 
   return (
     <div style={cardBase(width, height)}>
-      <div style={{ fontSize: Math.round(height * 0.35), lineHeight: 1, color: 'var(--color-accent)' }}>{symbol}</div>
+      {metalCN
+        ? <MetalSymbolSvg canonicalName={metalCN} color="var(--color-accent)"
+            size={Math.min(Math.round(height * 0.52), height - 38)} />
+        : <div style={{ fontSize: Math.round(height * 0.35), lineHeight: 1, color: 'var(--color-accent)' }}>{symbol}</div>
+      }
       <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
     </div>
   )
@@ -113,6 +130,48 @@ function HebrewLetterSymbolic({ entity, width, height }: { entity: BaseEntity; w
   )
 }
 
+// ─── Inline SVG loader ─────────────────────────────────────────────────────────
+// SVGs loaded via <img> are sandboxed and cannot access specialised Unicode fonts
+// (e.g. Runic block U+16A0–U+16FF). Fetching and injecting inline lets the SVG
+// text elements use the page's full font context.
+
+function InlineSvg({ src, width, height, onError }: {
+  src: string; width: number; height: number; onError: () => void
+}) {
+  const [markup, setMarkup] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch(src)
+      .then(r => { if (!r.ok) throw new Error(); return r.text() })
+      .then(text => {
+        // Strip hardcoded width/height so the SVG fills its container.
+        // If the SVG has no viewBox, synthesise one from the original w/h so
+        // the internal coordinate system is preserved (otherwise content clips
+        // to the top-left corner).
+        const wMatch = text.match(/\s+width="([^"]+)"/)
+        const hMatch = text.match(/\s+height="([^"]+)"/)
+        const hasViewBox = /viewBox=/i.test(text)
+        const scaled = text.replace(/<svg([^>]*)>/i, (_, attrs) => {
+          let a = attrs.replace(/\s+(width|height)="[^"]*"/g, '')
+          if (!hasViewBox && wMatch && hMatch) {
+            a += ` viewBox="0 0 ${wMatch[1]} ${hMatch[1]}"`
+          }
+          return `<svg${a} style="width:100%;height:100%;display:block;">`
+        })
+        setMarkup(scaled)
+      })
+      .catch(onError)
+  }, [src])
+
+  if (!markup) return null
+  return (
+    <div
+      style={{ width, height, borderRadius: '6px', overflow: 'hidden', flexShrink: 0 }}
+      dangerouslySetInnerHTML={{ __html: markup }}
+    />
+  )
+}
+
 // ─── Classic (image) with Symbolic fallback ────────────────────────────────────
 
 function ClassicWithFallback({
@@ -130,13 +189,30 @@ function ClassicWithFallback({
 }) {
   const [failed, setFailed] = useState(false)
 
+  // Runes: render stone-tablet aesthetic using page fonts instead of SVG text
+  // (SVG <text> can't reliably access specialised Unicode fonts like BabelStone Runic)
+  if (group === 'runes') {
+    return <RuneClassic entity={entity} width={width} height={height} />
+  }
+
+  // Alchemy metals: path-based SVG symbols — no Unicode font dependency
+  if (group === 'alchemy-metals') {
+    return <AlchemyMetalClassic entity={entity} width={width} height={height} />
+  }
+
   if (failed) {
     return <SymbolicArt entity={entity} group={group} width={width} height={height} />
   }
 
+  const url = imagePackArtUrl(group, packId, entity.canonicalName)
+
+  if (url.endsWith('.svg')) {
+    return <InlineSvg src={url} width={width} height={height} onError={() => setFailed(true)} />
+  }
+
   return (
     <img
-      src={imagePackArtUrl(group, packId, entity.canonicalName)}
+      src={url}
       alt={entity.primaryDisplayName}
       width={width}
       height={height}
@@ -160,12 +236,16 @@ function SymbolicArt({
   height: number
 }) {
   switch (group) {
-    case 'tarot':          return <TarotSymbolic entity={entity} width={width} height={height} />
-    case 'runes':          return <RuneSymbolic entity={entity} width={width} height={height} />
-    case 'geomancy':       return <GeomancySymbolic entity={entity} width={width} height={height} />
-    case 'mahjong':        return <MahjongSymbolic entity={entity} width={width} height={height} />
-    case 'lenormand':      return <LenormandSymbolic entity={entity} width={width} height={height} />
-    case 'playing-cards':  return <PlayingCardSymbolic entity={entity} width={width} height={height} />
+    case 'tarot-rws':
+    case 'tarot-tdm':
+    case 'tarot-thoth':
+    case 'tarot-etteilla':   return <TarotSymbolic entity={entity} width={width} height={height} />
+    case 'runes':            return <RuneSymbolic entity={entity} width={width} height={height} />
+    case 'geomancy':         return <GeomancySymbolic entity={entity} width={width} height={height} />
+    case 'mahjong':          return <MahjongSymbolic entity={entity} width={width} height={height} />
+    case 'lenormand':        return <LenormandSymbolic entity={entity} width={width} height={height} />
+    case 'playing-cards':    return <PlayingCardSymbolic entity={entity} width={width} height={height} />
+    case 'alchemy-metals':   return <AlchemyMetalSymbolic entity={entity} width={width} height={height} />
   }
 }
 
@@ -251,24 +331,127 @@ function TarotSymbolic({ entity, width, height }: { entity: BaseEntity; width: n
   )
 }
 
+// ─── Rune stroke glyphs ────────────────────────────────────────────────────────
+// Each rune is defined as [x1,y1,x2,y2] line segments in a 24×36 viewBox.
+// Font-independent: no Unicode coverage required.
+
+type RuneSeg = [number, number, number, number]
+
+const RUNE_STROKES: Record<string, RuneSeg[]> = {
+  'rune.elder-futhark.fehu':     [[12,2,12,34],[12,11,20,4],[12,20,20,13]],
+  'rune.elder-futhark.uruz':     [[6,2,6,34],[6,2,18,14],[18,14,18,34]],
+  'rune.elder-futhark.thurisaz': [[12,2,12,34],[12,12,20,18],[12,24,20,18]],
+  'rune.elder-futhark.ansuz':    [[12,2,12,34],[12,10,20,16],[12,19,20,25]],
+  'rune.elder-futhark.raidho':   [[9,2,9,34],[9,2,17,10],[17,10,9,19],[9,19,17,34]],
+  'rune.elder-futhark.kenaz':    [[8,8,16,18],[8,28,16,18]],
+  'rune.elder-futhark.gebo':     [[5,4,19,32],[19,4,5,32]],
+  'rune.elder-futhark.wunjo':    [[9,2,9,34],[9,2,17,10],[17,10,9,18]],
+  'rune.elder-futhark.hagalaz':  [[7,2,7,34],[17,2,17,34],[7,10,17,26]],
+  'rune.elder-futhark.nauthiz':  [[12,2,12,34],[4,8,20,28]],
+  'rune.elder-futhark.isa':      [[12,2,12,34]],
+  'rune.elder-futhark.jera':     [[12,2,20,10],[20,10,12,18],[12,18,4,26],[4,26,12,34]],
+  'rune.elder-futhark.eihwaz':   [[12,2,12,34],[12,6,20,2],[12,30,4,34]],
+  'rune.elder-futhark.perthro':  [[7,8,7,28],[7,8,16,16],[7,28,16,16]],
+  'rune.elder-futhark.algiz':    [[12,14,12,34],[12,14,5,4],[12,14,19,4]],
+  'rune.elder-futhark.sowilo':   [[16,2,4,10],[4,10,16,26],[16,26,4,34]],
+  'rune.elder-futhark.tiwaz':    [[12,2,12,34],[12,10,4,18],[12,10,20,18]],
+  'rune.elder-futhark.berkano':  [[8,2,8,34],[8,4,16,11],[16,11,8,18],[8,18,16,25],[16,25,8,32]],
+  'rune.elder-futhark.ehwaz':    [[7,2,7,34],[17,2,17,34],[7,2,17,18],[17,2,7,18]],
+  'rune.elder-futhark.mannaz':   [[7,2,7,34],[17,2,17,34],[7,2,12,14],[17,2,12,14]],
+  'rune.elder-futhark.laguz':    [[12,2,12,28],[12,28,18,34]],
+  'rune.elder-futhark.ingwaz':   [[12,2,20,14],[20,14,12,26],[12,26,4,14],[4,14,12,2]],
+  'rune.elder-futhark.dagaz':    [[4,2,20,18],[4,34,20,18],[20,2,4,18],[20,34,4,18]],
+  'rune.elder-futhark.othala':   [[12,4,18,14],[18,14,12,24],[12,24,6,14],[6,14,12,4],[6,14,4,34],[18,14,20,34]],
+
+  // ── Ogham ── stem + strokes in 24×36 viewBox ──────────────────────────────
+  // Aicme Beithe: 1–5 right horizontal strokes
+  'ogham.letter.beith':    [[12,2,12,34],[12,18,20,18]],
+  'ogham.letter.luis':     [[12,2,12,34],[12,13,20,13],[12,23,20,23]],
+  'ogham.letter.fearn':    [[12,2,12,34],[12,11,20,11],[12,18,20,18],[12,25,20,25]],
+  'ogham.letter.sail':     [[12,2,12,34],[12,9,20,9],[12,15,20,15],[12,21,20,21],[12,27,20,27]],
+  'ogham.letter.nion':     [[12,2,12,34],[12,8,20,8],[12,13,20,13],[12,18,20,18],[12,23,20,23],[12,28,20,28]],
+  // Aicme hÚatha: 1–5 left horizontal strokes
+  'ogham.letter.huath':    [[12,2,12,34],[12,18,4,18]],
+  'ogham.letter.dair':     [[12,2,12,34],[12,13,4,13],[12,23,4,23]],
+  'ogham.letter.tinne':    [[12,2,12,34],[12,11,4,11],[12,18,4,18],[12,25,4,25]],
+  'ogham.letter.coll':     [[12,2,12,34],[12,9,4,9],[12,15,4,15],[12,21,4,21],[12,27,4,27]],
+  'ogham.letter.quert':    [[12,2,12,34],[12,8,4,8],[12,13,4,13],[12,18,4,18],[12,23,4,23],[12,28,4,28]],
+  // Aicme Muine: 1–5 diagonal strokes crossing the stem (lower-left → upper-right)
+  'ogham.letter.muin':     [[12,2,12,34],[4,22,20,14]],
+  'ogham.letter.gort':     [[12,2,12,34],[4,17,20,9],[4,27,20,19]],
+  'ogham.letter.ngeadal':  [[12,2,12,34],[4,15,20,7],[4,22,20,14],[4,29,20,21]],
+  'ogham.letter.straif':   [[12,2,12,34],[4,13,20,5],[4,19,20,11],[4,25,20,17],[4,31,20,23]],
+  'ogham.letter.ruis':     [[12,2,12,34],[4,12,20,4],[4,17,20,9],[4,22,20,14],[4,27,20,19],[4,32,20,24]],
+  // Aicme Ailme: 1–5 horizontal strokes going all the way through
+  'ogham.letter.ailm':     [[12,2,12,34],[4,18,20,18]],
+  'ogham.letter.onn':      [[12,2,12,34],[4,13,20,13],[4,23,20,23]],
+  'ogham.letter.ur':       [[12,2,12,34],[4,11,20,11],[4,18,20,18],[4,25,20,25]],
+  'ogham.letter.edad':     [[12,2,12,34],[4,9,20,9],[4,15,20,15],[4,21,20,21],[4,27,20,27]],
+  'ogham.letter.idad':     [[12,2,12,34],[4,8,20,8],[4,13,20,13],[4,18,20,18],[4,23,20,23],[4,28,20,28]],
+  // Forfeda (supplementary letters)
+  'ogham.letter.eabhadh':  [[12,2,12,34],[8,12,16,18],[16,12,8,18],[8,20,16,26],[16,20,8,26]],
+  'ogham.letter.or':       [[12,2,12,34],[12,12,18,18],[18,18,12,24],[12,24,6,18],[6,18,12,12]],
+  'ogham.letter.uilleann': [[12,2,12,34],[4,16,12,20],[12,20,20,16],[4,22,12,26],[12,26,20,22]],
+  'ogham.letter.ifin':     [[12,2,12,34],[12,12,20,8],[12,18,20,14],[12,24,20,20]],
+  'ogham.letter.emancholl':[[12,2,12,34],[12,14,20,10],[12,22,20,26],[12,14,4,10],[12,22,4,26]],
+}
+
+function RuneStrokeSvg({ canonicalName, color, size }: {
+  canonicalName: string; color: string; size: number
+}) {
+  const segs = RUNE_STROKES[canonicalName]
+  if (!segs) return null
+  const svgW = Math.round(size * 24 / 36)
+  return (
+    <svg viewBox="0 0 24 36" width={svgW} height={size} style={{ display: 'block', overflow: 'visible' }}>
+      {segs.map(([x1, y1, x2, y2], i) => (
+        <line key={i} x1={x1} y1={y1} x2={x2} y2={y2}
+          stroke={color} strokeWidth={2} strokeLinecap="round" />
+      ))}
+    </svg>
+  )
+}
+
+// ─── Rune Classic ─────────────────────────────────────────────────────────────
+
+function RuneClassic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+  const label = entity.primaryDisplayName.toUpperCase()
+  const baseFontSize = Math.max(9, Math.round(height * 0.065))
+  const letterSpacing = Math.max(0.5, Math.round(height * 0.01))
+  // Scale font down so the label fits on one line within the card's inner width
+  const innerWidth = width - 12  // 6px padding each side from cardBase
+  const estimatedCharWidth = baseFontSize * 0.62 + letterSpacing
+  const scaledFontSize = estimatedCharWidth * label.length > innerWidth
+    ? Math.max(7, Math.floor(innerWidth / label.length / 0.62))
+    : baseFontSize
+  return (
+    <div style={{
+      ...cardBase(width, height),
+      background: '#3a332c',
+      border: '2px solid #504840',
+      boxShadow: '0 0 0 4px #28231e',
+    }}>
+      <RuneStrokeSvg canonicalName={entity.canonicalName} color="#c8b880" size={Math.min(Math.round(height * 0.52), height - 38)} />
+      <div style={{
+        ...labelStyle(height),
+        fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
+        color: '#8a7a58',
+        letterSpacing: `${letterSpacing}px`,
+        fontSize: scaledFontSize,
+        whiteSpace: 'nowrap',
+      }}>
+        {label}
+      </div>
+    </div>
+  )
+}
+
 // ─── Rune Symbolic ────────────────────────────────────────────────────────────
 
 function RuneSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
-  const ed = entity.extendedData as Record<string, unknown>
-  const glyph = (ed.runeGlyph as string | undefined)
-    ?? entity.secondaryNames.find(n => n.languageTag === 'runic')?.name
-    ?? '?'
-
   return (
     <div style={cardBase(width, height)}>
-      <div style={{
-        fontSize: Math.round(height * 0.35),
-        color: 'var(--color-text)',
-        lineHeight: 1,
-        fontFamily: '"BabelStone Runic", serif',
-      }}>
-        {glyph}
-      </div>
+      <RuneStrokeSvg canonicalName={entity.canonicalName} color="var(--color-text)" size={Math.min(Math.round(height * 0.52), height - 38)} />
       <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
     </div>
   )
@@ -452,6 +635,172 @@ function PlayingCardSymbolic({ entity, width, height }: { entity: BaseEntity; wi
   )
 }
 
+// ─── Elemental symbol paths ────────────────────────────────────────────────────
+// All symbols in a 24×36 viewBox. Classical triangle glyphs: Fire △, Water ▽,
+// Air △̄ (triangle + crossbar), Earth ▽̄ (inverted triangle + crossbar).
+
+type ElementRenderer = (color: string, sw: number) => React.ReactNode
+
+const ELEMENT_SYMBOL: Record<string, ElementRenderer> = {
+  'astrology.element.fire': (c, sw) => (
+    <polygon points="12,4 23,32 1,32" fill="none" stroke={c} strokeWidth={sw} strokeLinejoin="round"/>
+  ),
+  'astrology.element.water': (c, sw) => (
+    <polygon points="12,32 23,4 1,4" fill="none" stroke={c} strokeWidth={sw} strokeLinejoin="round"/>
+  ),
+  'astrology.element.air': (c, sw) => (<>
+    <polygon points="12,4 23,32 1,32" fill="none" stroke={c} strokeWidth={sw} strokeLinejoin="round"/>
+    <line x1="6.5" y1="18" x2="17.5" y2="18" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+  'astrology.element.earth': (c, sw) => (<>
+    <polygon points="12,32 23,4 1,4" fill="none" stroke={c} strokeWidth={sw} strokeLinejoin="round"/>
+    <line x1="6.5" y1="18" x2="17.5" y2="18" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+}
+
+const ELEMENT_COLOR: Record<string, string> = {
+  'astrology.element.fire':  '#d06030',
+  'astrology.element.water': '#4070c0',
+  'astrology.element.air':   '#c0a030',
+  'astrology.element.earth': '#608050',
+}
+
+function ElementSymbolSvg({ canonicalName, color, size }: {
+  canonicalName: string; color: string; size: number
+}) {
+  const render = ELEMENT_SYMBOL[canonicalName]
+  if (!render) return null
+  // Constant ~5px visual stroke regardless of zoom: sw = 5 * viewBoxHeight / displayHeight
+  const sw = Math.max(1.2, 180 / size)
+  return (
+    <svg viewBox="0 0 24 36" width={Math.round(size * 24 / 36)} height={size}
+      style={{ display: 'block', overflow: 'visible' }}>
+      {render(color, sw)}
+    </svg>
+  )
+}
+
+function ElementSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+  const color = ELEMENT_COLOR[entity.canonicalName] ?? 'var(--color-text)'
+  return (
+    <div style={cardBase(width, height)}>
+      <ElementSymbolSvg canonicalName={entity.canonicalName} color={color}
+        size={Math.min(Math.round(height * 0.52), height - 38)} />
+      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+    </div>
+  )
+}
+
+// ─── Alchemy Metal symbol paths ────────────────────────────────────────────────
+// All symbols defined in a 24×36 viewBox. Pure SVG geometry — no font required.
+// Gold ☉, Silver ☽, Mercury ☿, Copper ♀, Iron ♂, Tin ♃, Lead ♄
+
+type MetalRenderer = (color: string, sw: number) => React.ReactNode
+
+const METAL_SYMBOL: Record<string, MetalRenderer> = {
+  'alchemy.metal.gold': (c, sw) => (<>
+    <circle cx="12" cy="18" r="8.5" fill="none" stroke={c} strokeWidth={sw}/>
+    <circle cx="12" cy="18" r="2.3" fill={c}/>
+  </>),
+
+  // Crescent: outer right-semicircle (r=10, center (7,18)) minus inner arc (r=12, center (0.37,18))
+  'alchemy.metal.silver': (c, _sw) => (
+    <path d="M 7,8 A 10,10 0 0,1 7,28 A 12,12 0 0,0 7,8 Z" fill={c}/>
+  ),
+
+  // Dome arch (upward semicircle) + circle + cross
+  'alchemy.metal.mercury': (c, sw) => (<>
+    <path d="M 6,14 A 6,6 0 0,0 18,14" fill="none" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <circle cx="12" cy="21" r="5.5" fill="none" stroke={c} strokeWidth={sw}/>
+    <line x1="12" y1="26.5" x2="12" y2="33" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="6.5" y1="30" x2="17.5" y2="30" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+
+  // Circle + cross below
+  'alchemy.metal.copper': (c, sw) => (<>
+    <circle cx="12" cy="14" r="8.5" fill="none" stroke={c} strokeWidth={sw}/>
+    <line x1="12" y1="22.5" x2="12" y2="33" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="5.5" y1="28.5" x2="18.5" y2="28.5" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+
+  // Circle (lower-left) + arrow upper-right
+  'alchemy.metal.iron': (c, sw) => (<>
+    <circle cx="9" cy="21" r="7.5" fill="none" stroke={c} strokeWidth={sw}/>
+    <line x1="14.3" y1="15.7" x2="22" y2="8" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="22" y1="8" x2="17" y2="8" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="22" y1="8" x2="22" y2="13" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+
+  // Vertical staff + curved left arm + crossbar
+  'alchemy.metal.tin': (c, sw) => (<>
+    <line x1="14" y1="4" x2="14" y2="33" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <path d="M 14,8 Q 4,8 5,23" fill="none" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="4" y1="23" x2="21" y2="23" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+
+  // Vertical staff + scythe-curve upper-left + crossbar
+  'alchemy.metal.lead': (c, sw) => (<>
+    <line x1="12" y1="4" x2="12" y2="33" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <path d="M 12,9 C 4,7 3,14 5,21" fill="none" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+    <line x1="4" y1="21" x2="21" y2="21" stroke={c} strokeWidth={sw} strokeLinecap="round"/>
+  </>),
+}
+
+function MetalSymbolSvg({ canonicalName, color, size }: {
+  canonicalName: string; color: string; size: number
+}) {
+  const render = METAL_SYMBOL[canonicalName]
+  if (!render) return null
+  // Constant ~5px visual stroke regardless of zoom: sw = 5 * viewBoxHeight / displayHeight
+  const sw = Math.max(1.2, 180 / size)
+  return (
+    <svg viewBox="0 0 24 36" width={Math.round(size * 24 / 36)} height={size}
+      style={{ display: 'block', overflow: 'visible' }}>
+      {render(color, sw)}
+    </svg>
+  )
+}
+
+// ─── Alchemy Metal Classic ─────────────────────────────────────────────────────
+
+function AlchemyMetalClassic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+  const label = entity.primaryDisplayName.toUpperCase()
+  const baseFontSize = Math.max(9, Math.round(height * 0.065))
+  return (
+    <div style={{
+      ...cardBase(width, height),
+      background: '#3a332c',
+      border: '2px solid #504840',
+      boxShadow: '0 0 0 4px #28231e',
+    }}>
+      <MetalSymbolSvg canonicalName={entity.canonicalName} color="#c8b880"
+        size={Math.min(Math.round(height * 0.52), height - 38)} />
+      <div style={{
+        ...labelStyle(height),
+        fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
+        color: '#8a7a58',
+        letterSpacing: '2px',
+        fontSize: baseFontSize,
+        whiteSpace: 'nowrap',
+      }}>
+        {label}
+      </div>
+    </div>
+  )
+}
+
+// ─── Alchemy Metal Symbolic ────────────────────────────────────────────────────
+
+function AlchemyMetalSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+  return (
+    <div style={cardBase(width, height)}>
+      <MetalSymbolSvg canonicalName={entity.canonicalName} color="var(--color-text)"
+        size={Math.min(Math.round(height * 0.52), height - 38)} />
+      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+    </div>
+  )
+}
+
 // ─── Shared styles ─────────────────────────────────────────────────────────────
 
 function cardBase(width: number, height: number): React.CSSProperties {
@@ -478,6 +827,9 @@ function labelStyle(height: number): React.CSSProperties {
     color: 'var(--color-text-muted)',
     textAlign: 'center',
     lineHeight: 1.3,
-    wordBreak: 'break-word',
+    width: '100%',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   }
 }

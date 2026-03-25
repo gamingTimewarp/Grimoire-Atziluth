@@ -50,8 +50,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: true,
     traditionIds: ['tradition.golden-dawn'],
     variants: [
-      { id: 'rws-full',  label: 'Full 78',          tags: ['rider-waite-smith'] },
-      { id: 'rws-major', label: 'Major Arcana Only', tags: ['major-arcana', 'rider-waite-smith'] },
+      { id: 'rws-full',  label: 'Full 78',          tags: ['rider-waite-smith'], entityType: 'tarot.card' },
+      { id: 'rws-major', label: 'Major Arcana Only', tags: ['major-arcana', 'rider-waite-smith'], entityType: 'tarot.card' },
     ],
   },
   {
@@ -61,8 +61,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: false,
     traditionIds: ['tradition.thoth-crowley', 'tradition.golden-dawn'],
     variants: [
-      { id: 'thoth-full',  label: 'Full 78',          tags: ['thoth'] },
-      { id: 'thoth-major', label: 'Major Arcana Only', tags: ['major-arcana', 'thoth'] },
+      { id: 'thoth-full',  label: 'Full 78',          tags: ['thoth'], entityType: 'tarot.card' },
+      { id: 'thoth-major', label: 'Major Arcana Only', tags: ['major-arcana', 'thoth'], entityType: 'tarot.card' },
     ],
   },
   {
@@ -72,8 +72,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: false,
     traditionIds: ['tradition.tarot-de-marseille'],
     variants: [
-      { id: 'tdm-full',  label: 'Full 78',          tags: ['tarot-de-marseille'] },
-      { id: 'tdm-major', label: 'Major Arcana Only', tags: ['major-arcana', 'tarot-de-marseille'] },
+      { id: 'tdm-full',  label: 'Full 78',          tags: ['tarot-de-marseille'], entityType: 'tarot.card' },
+      { id: 'tdm-major', label: 'Major Arcana Only', tags: ['major-arcana', 'tarot-de-marseille'], entityType: 'tarot.card' },
     ],
   },
   {
@@ -83,8 +83,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: true,
     traditionIds: ['tradition.etteilla'],
     variants: [
-      { id: 'etteilla-full',  label: 'Full 78',          tags: ['etteilla'] },
-      { id: 'etteilla-major', label: 'Major Arcana Only', tags: ['major-arcana', 'etteilla'] },
+      { id: 'etteilla-full',  label: 'Full 78',          tags: ['etteilla'], entityType: 'tarot.card' },
+      { id: 'etteilla-major', label: 'Major Arcana Only', tags: ['major-arcana', 'etteilla'], entityType: 'tarot.card' },
     ],
   },
   // ── Playing Cards ──────────────────────────────────────────────────────────
@@ -104,6 +104,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     displayName: 'Elder Futhark Runes',
     description: '24 Elder Futhark runes for runic divination.',
     tags: ['elder-futhark'],
+    entityType: 'rune',
     reversalEnabled: false,
   },
   {
@@ -121,8 +122,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: false,
     traditionIds: ['tradition.ogham-bln'],
     variants: [
-      { id: 'ogham-core', label: '20 Core Letters',        tags: ['ogham-core'] },
-      { id: 'ogham-full', label: 'Full 25 (with Forfeda)', tags: ['ogham'] },
+      { id: 'ogham-core', label: '20 Core Letters',        tags: ['ogham-core'], entityType: 'ogham.letter' },
+      { id: 'ogham-full', label: 'Full 25 (with Forfeda)', tags: ['ogham'],      entityType: 'ogham.letter' },
     ],
   },
   {

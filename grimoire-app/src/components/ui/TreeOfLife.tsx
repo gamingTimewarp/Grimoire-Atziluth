@@ -96,13 +96,13 @@ const PILLAR_DEFS = [
 
 const HEBREW_GLYPHS: Record<string, string> = {
   'letter.hebrew.aleph':  'א', 'letter.hebrew.beth':   'ב', 'letter.hebrew.gimel':  'ג',
-  'letter.hebrew.daleth': 'ד', 'letter.hebrew.heh':    'ה', 'letter.hebrew.vav':    'ו',
+  'letter.hebrew.daleth': 'ד', 'letter.hebrew.heh':    'ה', 'letter.hebrew.vau':    'ו',
   'letter.hebrew.zayin':  'ז', 'letter.hebrew.cheth':  'ח', 'letter.hebrew.teth':   'ט',
   'letter.hebrew.yod':    'י', 'letter.hebrew.kaph':   'כ', 'letter.hebrew.lamed':  'ל',
   'letter.hebrew.mem':    'מ', 'letter.hebrew.nun':    'נ', 'letter.hebrew.samekh': 'ס',
   'letter.hebrew.ayin':   'ע', 'letter.hebrew.peh':    'פ', 'letter.hebrew.tzaddi': 'צ',
   'letter.hebrew.qoph':   'ק', 'letter.hebrew.resh':   'ר', 'letter.hebrew.shin':   'ש',
-  'letter.hebrew.tav':    'ת',
+  'letter.hebrew.tau':    'ת',
 }
 
 /** "tarot.major.rws.the-high-priestess" → "High Priestess" */

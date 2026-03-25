@@ -65,6 +65,7 @@
         "entities/magic/kamea.json",
         "entities/magic/olympic-spirits.json",
         "entities/magic/planetary-spirits.json",
+        "entities/qabalah/divine-names.json",
         "entities/qabalah/partzufim.json",
         "entities/norse/worlds.json",
         "entities/ayurveda/doshas.json",
@@ -93,6 +94,7 @@
         "entities/tarot/tdm-minor-arcana.json",
         "entities/tarot/lenormand.json",
         "entities/tarot/playing-cards.json",
+        "entities/calendar/seasons.json",
         "entities/calendar/sabbats.json",
         "entities/greek/deities.json",
         "entities/egyptian/deities.json",
@@ -120,6 +122,7 @@
         "entities/rosicrucian/symbolism.json",
         "entities/tarot/etteilla-major-arcana.json",
         "entities/tarot/etteilla-minor-arcana.json",
+        "entities/tarot/tarot-card-overviews.json",
         "entities/jyotish/navaratna.json",
         "entities/ayurveda/mahabhutas.json",
         "entities/divination/mahjong-tiles.json",
@@ -166,6 +169,8 @@
         "links/structural/deity-planet-links.json",
         "links/structural/gnostic-parallel-links.json",
         "links/structural/arabic-hebrew-letter-links.json",
+        "links/structural/letter-rune-phoneme-links.json",
+        "links/structural/letter-cross-script-links.json",
         "links/structural/dasha-planet-links.json",
         "links/structural/trigram-direction-links.json",
         "links/structural/mountain-direction-links.json",
@@ -183,8 +188,14 @@
         "links/structural/hermetic-principle-planet-links.json",
         "links/structural/ogham-element-links.json",
         "links/structural/ogham-deity-links.json",
+        "links/structural/ogham-letter-phoneme-links.json",
         "links/structural/palmistry-planet-links.json",
-        "links/structural/trigram-tarot-links.json"
+        "links/structural/trigram-tarot-links.json",
+        "links/structural/season-links.json",
+        "links/structural/element-wuxing-trigram-links.json",
+        "links/structural/tetragrammaton-links.json",
+        "links/structural/sephirotic-divine-name-links.json",
+        "links/structural/sabbat-zodiac-links.json"
       ]
     }
   ]

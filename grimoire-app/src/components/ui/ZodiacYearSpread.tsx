@@ -15,7 +15,7 @@ import React, { useEffect, useState } from 'react'
 import { EntityArt } from './EntityArt'
 import type { CardSlot } from './SpreadGrid'
 import type { CardOrientation } from '@grimoire/core'
-import { WheelChart } from './WheelChart'
+import { WheelChart, WheelChartTooltip } from './WheelChart'
 import {
   getSignsForMode,
   getNatalChart,
@@ -97,8 +97,9 @@ export function ZodiacYearSpreadDisplay({
   const { astrologyMode, houseSystem } = loadTraditionSettings()
   const signs = getSignsForMode(astrologyMode)
 
-  const [showWheel, setShowWheel] = useState(true)
-  const [skyChart, setSkyChart]   = useState<NatalChartData | null>(null)
+  const [showWheel, setShowWheel]     = useState(true)
+  const [skyChart, setSkyChart]       = useState<NatalChartData | null>(null)
+  const [wheelHovered, setWheelHovered] = useState<string | null>(null)
   // ascendant ecliptic longitude — used to rotate card positions to match wheel
   const [chartAsc, setChartAsc]   = useState(0)
 
@@ -140,19 +141,22 @@ export function ZodiacYearSpreadDisplay({
   const wheelOffset = Math.round(CENTER * scale - WHEEL_D / 2 * scale)
 
   return (
+    <>
     <div style={{ position: 'relative', width: totalW, height: totalH, flexShrink: 0 }}>
       {/* ── Wheel underlay ────────────────────────────────────────────── */}
       {showWheel && skyChart && (
         <div style={{
           position: 'absolute', top: wheelOffset, left: wheelOffset,
-          pointerEvents: 'none', opacity: 0.5,
+          opacity: 0.5,
           zIndex: 0,
         }}>
           <WheelChart
             chart={skyChart}
             size={wheelSize}
             mode={astrologyMode}
-            onNavigate={() => {}}
+            onNavigate={onLabelClick}
+            showTooltip={false}
+            onHoverChange={setWheelHovered}
           />
         </div>
       )}
@@ -232,6 +236,17 @@ export function ZodiacYearSpreadDisplay({
         )
       })}
     </div>
+    {wheelHovered && skyChart && (
+      <div style={{ marginTop: '10px', display: 'flex', justifyContent: 'center' }}>
+        <WheelChartTooltip
+          hoveredKey={wheelHovered}
+          chart={skyChart}
+          mode={astrologyMode}
+          onNavigate={onLabelClick}
+        />
+      </div>
+    )}
+    </>
   )
 }
 

@@ -34,11 +34,91 @@
         "decks"
       ],
       "extendedData": {
-        "memberEntityType": "tarot.deck",
+        "members": [
+          "tarot.deck.rider-waite-smith",
+          "tarot.deck.thoth",
+          "tarot.deck.tarot-de-marseille",
+          "tarot.deck.etteilla",
+          "system.overview.tarot-major-arcana-overviews",
+          "system.overview.tarot-court-cards-overviews"
+        ],
         "relatedOverviews": [
           "system.overview.major-arcana",
           "system.overview.tarot",
           "system.overview.lenormand"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-major-arcana-overviews",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Major Arcana — Cross-Deck",
+      "description": "Cross-deck overview pages for each of the 22 Major Arcana. Each page groups the equivalent card from the Rider-Waite-Smith, Thoth, Tarot de Marseille, and Etteilla decks, noting where names and imagery diverge between traditions.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "major-arcana",
+        "tarot-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.major.overview.the-fool",
+          "tarot.major.overview.the-magician",
+          "tarot.major.overview.the-high-priestess",
+          "tarot.major.overview.the-empress",
+          "tarot.major.overview.the-emperor",
+          "tarot.major.overview.the-hierophant",
+          "tarot.major.overview.the-lovers",
+          "tarot.major.overview.the-chariot",
+          "tarot.major.overview.strength",
+          "tarot.major.overview.the-hermit",
+          "tarot.major.overview.wheel-of-fortune",
+          "tarot.major.overview.justice",
+          "tarot.major.overview.the-hanged-man",
+          "tarot.major.overview.death",
+          "tarot.major.overview.temperance",
+          "tarot.major.overview.the-devil",
+          "tarot.major.overview.the-tower",
+          "tarot.major.overview.the-star",
+          "tarot.major.overview.the-moon",
+          "tarot.major.overview.the-sun",
+          "tarot.major.overview.judgement",
+          "tarot.major.overview.the-world"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-court-cards-overviews",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Court Cards — Cross-Deck",
+      "description": "Cross-deck overview pages for the 16 court cards (4 suits × 4 ranks). Each page groups the equivalent rank across the Rider-Waite-Smith, Thoth, Tarot de Marseille, and Etteilla decks, noting Thoth's rank renaming (Princess/Prince/Queen/Knight) and TdM's French titles (Valet/Cavalier/Reine/Roi).",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "minor-arcana",
+        "court-card",
+        "tarot-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.overview.wands.page",
+          "tarot.minor.overview.wands.knight",
+          "tarot.minor.overview.wands.queen",
+          "tarot.minor.overview.wands.king",
+          "tarot.minor.overview.cups.page",
+          "tarot.minor.overview.cups.knight",
+          "tarot.minor.overview.cups.queen",
+          "tarot.minor.overview.cups.king",
+          "tarot.minor.overview.swords.page",
+          "tarot.minor.overview.swords.knight",
+          "tarot.minor.overview.swords.queen",
+          "tarot.minor.overview.swords.king",
+          "tarot.minor.overview.pentacles.page",
+          "tarot.minor.overview.pentacles.knight",
+          "tarot.minor.overview.pentacles.queen",
+          "tarot.minor.overview.pentacles.king"
         ]
       }
     },
@@ -260,7 +340,9 @@
           "system.overview.paths",
           "system.overview.four-worlds",
           "system.overview.hebrew-letters",
-          "system.overview.partzufim"
+          "system.overview.partzufim",
+          "system.overview.qabalah-divine-names",
+          "system.overview.tetragrammaton"
         ]
       }
     },
@@ -1779,6 +1861,91 @@
       }
     },
     {
+      "canonicalName": "system.overview.latin-letters",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Latin Alphabet",
+      "description": "The Latin (Roman) alphabet is the most widely used writing system in the world, serving as the basis for the scripts of most European languages and many others worldwide. Derived from the Etruscan alphabet, which was itself adapted from archaic Greek (West Greek variety), the classical Latin alphabet comprised 23 letters (A–Z minus J, U, W). The letters J, U, W were differentiated in the medieval and Renaissance periods. Additional letters such as Thorn (Þ) and Eng (Ŋ) were added in Old English and phonetic traditions respectively. In esoteric contexts, Latin letters carry the weight of the Western magical tradition — from medieval grimoires and alchemical texts to Hermetic and Rosicrucian literature.",
+      "secondaryNames": [
+        {
+          "name": "Roman Alphabet",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "latin",
+        "alphabet",
+        "language"
+      ],
+      "extendedData": {
+        "memberEntityType": "letter.latin",
+        "relatedOverviews": [
+          "system.overview.isopsephy",
+          "system.overview.hebrew-letters"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.enochian-letters",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Enochian Alphabet",
+      "description": "The Enochian alphabet (also called the Angelic Script or Celestial Speech) is the writing system of the Enochian magical language received by John Dee and Edward Kelley between 1582 and 1587 through a series of skrying sessions in which angelic intelligences communicated via a show-stone. The alphabet comprises 21 letters, each with an Enochian name, and was used to record the calls (Aethyrs), the names of the governors, and the watchtower tablets that form the core of the Enochian magical system. In the Golden Dawn and Thelemic traditions the Enochian alphabet is used for the inscription of magical weapons and talismans, and for the pronunciation of the Enochian calls in ritual.",
+      "secondaryNames": [
+        {
+          "name": "Angelic Script",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Celestial Speech",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "enochian",
+        "alphabet",
+        "language",
+        "angelic"
+      ],
+      "extendedData": {
+        "memberEntityType": "letter.enochian",
+        "relatedOverviews": [
+          "system.overview.enochian-aethyrs",
+          "system.overview.enochian-watchtowers"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.letters",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Letters & Alphabets",
+      "description": "Alphabets and sacred scripts from the world's major esoteric traditions. Each script carries its own tradition of letter mysticism — from Hebrew Kabbalah and Arabic Hurufiyya to Greek isopsephy and Enochian angelic language. The shared Phoenician ancestry of Hebrew, Greek, Latin, and Arabic creates a web of phonemic cognates linking these traditions at the level of their letters.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "letters",
+        "alphabet",
+        "language"
+      ],
+      "extendedData": {
+        "members": [
+          "system.overview.hebrew-letters",
+          "system.overview.isopsephy",
+          "system.overview.latin-letters",
+          "system.overview.arabic-letters",
+          "system.overview.enochian-letters",
+          "system.overview.runes",
+          "system.overview.ogham"
+        ]
+      }
+    },
+    {
       "canonicalName": "system.overview.lunar-mansions",
       "entityType": "system.overview",
       "primaryDisplayName": "Lunar Mansions",
@@ -2496,6 +2663,61 @@
         "relatedOverviews": [
           "system.overview.planets",
           "system.overview.sacred-geometry"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.qabalah-divine-names",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Divine Names of the Sephiroth",
+      "description": "Each of the ten sephiroth on the Tree of Life is presided over by one of the divine names of God — aspects of the divine as it manifests at each level of emanation. From Kether downward: Eheieh (I Am), Yah, YHVH Elohim, El, Elohim Gibor, YHVH Eloah ve-Da'ath, YHVH Tzabaoth, Elohim Tzabaoth, Shaddai El Chai, and Adonai ha-Aretz. These names are used in Qabalistic prayer, meditation, and ritual to invoke the specific divine quality of each sephira. The Tetragrammaton (YHVH) appears in variant forms at multiple sephiroth, underlining its role as the master-name that pervades the entire Tree. In the Golden Dawn system each name is vibrated in the divine language during initiations corresponding to the sephiroth to which they are attributed.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "qabalah",
+        "divine-names"
+      ],
+      "extendedData": {
+        "memberEntityType": "qabalah.divine-name",
+        "relatedOverviews": [
+          "system.overview.qabalah",
+          "system.overview.sephiroth",
+          "system.overview.tetragrammaton",
+          "system.overview.hebrew-letters"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tetragrammaton",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Tetragrammaton",
+      "description": "The Tetragrammaton (YHVH — Yod, Heh, Vau, Heh) is the four-letter divine name of God in the Hebrew Bible, considered by Qabalists the master-key to the structure of existence. Its four letters map onto the Four Worlds (Atziluth, Briah, Yetzirah, Assiah), the four classical elements, the four cardinal directions, the four suits of the Tarot, and the four letters of Adam's name. In the Golden Dawn system the Tetragrammaton is the primary formula of creation and of initiation, and its letters are assigned specific colours, elements, and sephirotic attributions.",
+      "secondaryNames": [
+        {
+          "name": "YHVH",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "יהוה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "overview",
+        "qabalah",
+        "tetragrammaton"
+      ],
+      "extendedData": {
+        "overviewPage": "qabalah.divine-name.tetragrammaton",
+        "relatedOverviews": [
+          "system.overview.qabalah",
+          "system.overview.qabalah-divine-names",
+          "system.overview.four-worlds",
+          "system.overview.hebrew-letters"
         ]
       }
     }

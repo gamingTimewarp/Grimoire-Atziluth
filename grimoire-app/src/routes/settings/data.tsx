@@ -1,6 +1,6 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
-import { Download, Upload, CheckCircle, AlertCircle, Clock, Archive } from 'lucide-react'
+import { Download, Upload, CheckCircle, AlertCircle, Clock, Archive, ArrowLeft } from 'lucide-react'
 import { exportBackup, pickAndImportBackup } from '@/lib/export-import'
 import type { ImportResult } from '@/lib/export-import'
 import { countOlderThan, archiveOlderThan } from '@/lib/reading-db'
@@ -31,6 +31,7 @@ type Status =
   | { kind: 'error'; message: string }
 
 function DataSettingsPage() {
+  const navigate = useNavigate()
   const [status, setStatus] = useState<Status>({ kind: 'idle' })
   const lastBackup = lastBackupLabel()
   const { engine } = useEngineStore()
@@ -68,6 +69,13 @@ function DataSettingsPage() {
 
   return (
     <div style={{ maxWidth: '480px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings' })}>
+          <ArrowLeft size={13} /> Settings
+        </Button>
+        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Data</h1>
+      </div>
+
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
         <h2 style={{ fontSize: '16px', fontWeight: 500, margin: 0 }}>Data Backup &amp; Restore</h2>
         {lastBackup ? (

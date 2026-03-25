@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -9,6 +9,21 @@ export const Route = createFileRoute('/settings/credits')({
 
 function CreditsPage() {
   const navigate = useNavigate()
+  const [highlightId, setHighlightId] = useState<string | null>(null)
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (!hash) return
+    setHighlightId(hash)
+    const el = document.getElementById(hash)
+    const scroller = document.getElementById('main-content')
+    if (el && scroller) {
+      const elTop = el.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop
+      scroller.scrollTo({ top: elTop - scroller.clientHeight / 2 + el.offsetHeight / 2, behavior: 'smooth' })
+    }
+    const timer = setTimeout(() => setHighlightId(null), 2500)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <div style={{ maxWidth: '680px' }}>
@@ -73,6 +88,8 @@ function CreditsPage() {
         />
 
         <SourceEntry
+          id="thoth-licence"
+          highlighted={highlightId === 'thoth-licence'}
           title="Thoth Tarot — Generated Art (all 78 cards)"
           licence="Original work (CC0 / public domain dedication)"
           notes={
@@ -205,16 +222,22 @@ interface SourceEntryProps {
   sourceUrl?: string
   notes?: React.ReactNode
   required?: boolean  // true = legally required attribution
+  id?: string
+  highlighted?: boolean
 }
 
-function SourceEntry({ title, licence, author, source, sourceUrl, notes, required }: SourceEntryProps) {
+function SourceEntry({ title, licence, author, source, sourceUrl, notes, required, id, highlighted }: SourceEntryProps) {
   return (
-    <div style={{
-      padding: '14px 16px',
-      background: 'var(--color-surface-2)',
-      borderRadius: '6px',
-      border: `1px solid ${required ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
-    }}>
+    <div
+      id={id}
+      style={{
+        padding: '14px 16px',
+        background: highlighted ? 'rgba(180,156,90,0.08)' : 'var(--color-surface-2)',
+        borderRadius: '6px',
+        border: `1px solid ${highlighted ? 'var(--color-accent)' : required ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+        transition: 'border-color 0.4s, background 0.4s',
+      }}
+    >
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '4px' }}>
         <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>{title}</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>

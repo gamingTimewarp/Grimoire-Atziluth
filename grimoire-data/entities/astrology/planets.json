@@ -7,38 +7,19 @@
       "primaryDisplayName": "Sun",
       "description": "The Sun (Sol), centre of the solar system and the supreme luminary of classical astrology. Rules Leo; exalted in Aries. In the Hermetic tradition the Sun corresponds to Tiphareth (the sixth sephira, Beauty), the heart of the Tree of Life, the Christ/Osiris figure, and the gold of alchemy. The Sun represents the conscious ego, the will, the Higher Self, creative power, and the principle of illumination. Day of the week: Sunday. Metal: Gold. The Sun is the visible symbol of the hidden divine spark (the Atman, the Yechidah), the life-force that animates all being.",
       "secondaryNames": [
-        {
-          "name": "Sol",
-          "languageTag": "la",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "☉",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Sol", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "☉", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical",
-        "luminary"
-      ],
+      "tags": ["planet", "astrology", "classical", "luminary"],
       "extendedData": {
         "symbol": "☉",
         "dayOfWeek": "Sunday",
-        "metalAlchemy": "gold",
+        "metalAlchemy": "alchemy.metal.gold",
         "qabalisticSephira": "qabalah.sephira.tiphareth",
-        "rulesSign": [
-          "astrology.zodiac-sign.leo"
-        ],
-        "exaltedIn": "aries",
-        "detrimentIn": [
-          "aquarius"
-        ],
-        "fallIn": "libra",
+        "rulesSign": ["astrology.zodiac-sign.leo"],
+        "exaltedIn": "astrology.zodiac-sign.aries",
+        "detrimentIn": ["astrology.zodiac-sign.aquarius"],
+        "fallIn": "astrology.zodiac-sign.libra",
         "orbDegrees": 15,
         "polarity": "western.polarity.masculine",
         "yinYang": "taoism.principle.yang",
@@ -51,38 +32,19 @@
       "primaryDisplayName": "Moon",
       "description": "The Moon (Luna), the second luminary, governess of tides, the subconscious, and the ebb and flow of the emotional life. Rules Cancer; exalted in Taurus. In the Qabalah the Moon corresponds to Yesod (the ninth sephira, Foundation), the sphere of the astral light, the etheric template, and the collective unconscious. The Moon is the silver mirror of the Sun's light, the passive and reflective principle, the vessel of the divine seed. In alchemy she is silver, the metal of reflection and purification. Day of the week: Monday. Her phases govern the cycles of nature, the menstrual cycle, and the planting of crops.",
       "secondaryNames": [
-        {
-          "name": "Luna",
-          "languageTag": "la",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "☽",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Luna", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "☽", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical",
-        "luminary"
-      ],
+      "tags": ["planet", "astrology", "classical", "luminary"],
       "extendedData": {
         "symbol": "☽",
         "dayOfWeek": "Monday",
-        "metalAlchemy": "silver",
+        "metalAlchemy": "alchemy.metal.silver",
         "qabalisticSephira": "qabalah.sephira.yesod",
-        "rulesSign": [
-          "astrology.zodiac-sign.cancer"
-        ],
-        "exaltedIn": "taurus",
-        "detrimentIn": [
-          "capricorn"
-        ],
-        "fallIn": "scorpio",
+        "rulesSign": ["astrology.zodiac-sign.cancer"],
+        "exaltedIn": "astrology.zodiac-sign.taurus",
+        "detrimentIn": ["astrology.zodiac-sign.capricorn"],
+        "fallIn": "astrology.zodiac-sign.scorpio",
         "orbDegrees": 12,
         "polarity": "western.polarity.feminine",
         "yinYang": "taoism.principle.yin",
@@ -95,39 +57,25 @@
       "primaryDisplayName": "Mercury",
       "description": "Mercury (Hermes), the messenger of the gods, governs all communication, language, thought, commerce, travel, and the skilled use of mind. Rules Gemini and Virgo; exalted in Virgo. In the Qabalah Mercury corresponds to Hod (the eighth sephira, Splendour), the sphere of the formulated mind, language, magic, and the rational intellect. Mercury is also identified with Thoth-Hermes-Mercurius, the divine scribe and alchemist — the winged mediator between the divine and human worlds. Day of the week: Wednesday. Metal: Quicksilver (Mercury). The swift-footed god whose caduceus intertwines the two serpents of polarity.",
       "secondaryNames": [
-        {
-          "name": "Hermes",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "☿",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Hermes", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "☿", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical"
-      ],
+      "tags": ["planet", "astrology", "classical"],
       "extendedData": {
         "symbol": "☿",
         "dayOfWeek": "Wednesday",
-        "metalAlchemy": "quicksilver",
+        "metalAlchemy": "alchemy.metal.mercury",
         "qabalisticSephira": "qabalah.sephira.hod",
         "rulesSign": [
           "astrology.zodiac-sign.gemini",
           "astrology.zodiac-sign.virgo"
         ],
-        "exaltedIn": "virgo",
+        "exaltedIn": "astrology.zodiac-sign.virgo",
         "detrimentIn": [
-          "sagittarius",
-          "pisces"
+          "astrology.zodiac-sign.sagittarius",
+          "astrology.zodiac-sign.pisces"
         ],
-        "fallIn": "pisces",
+        "fallIn": "astrology.zodiac-sign.pisces",
         "orbDegrees": 7,
         "polarity": "western.polarity.androgynous",
         "yinYang": "taoism.principle.yin",
@@ -140,39 +88,25 @@
       "primaryDisplayName": "Venus",
       "description": "Venus (Aphrodite), the planet of love, beauty, art, pleasure, and the magnetic attractive force. Rules Taurus and Libra; exalted in Pisces. In the Qabalah Venus corresponds to Netzach (the seventh sephira, Victory), the sphere of desire, emotion, the nature spirits, and the raw astral-emotional force that underlies art and love. Venus is both Aphrodite Ourania (celestial love, the spiritual aspiration) and Aphrodite Pandemos (earthly love, the physical attraction). Day of the week: Friday. Metal: Copper, the reddish metal associated with blood and attraction.",
       "secondaryNames": [
-        {
-          "name": "Aphrodite",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♀",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Aphrodite", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♀", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical"
-      ],
+      "tags": ["planet", "astrology", "classical"],
       "extendedData": {
         "symbol": "♀",
         "dayOfWeek": "Friday",
-        "metalAlchemy": "copper",
+        "metalAlchemy": "alchemy.metal.copper",
         "qabalisticSephira": "qabalah.sephira.netzach",
         "rulesSign": [
           "astrology.zodiac-sign.taurus",
           "astrology.zodiac-sign.libra"
         ],
-        "exaltedIn": "pisces",
+        "exaltedIn": "astrology.zodiac-sign.pisces",
         "detrimentIn": [
-          "aries",
-          "scorpio"
+          "astrology.zodiac-sign.aries",
+          "astrology.zodiac-sign.scorpio"
         ],
-        "fallIn": "virgo",
+        "fallIn": "astrology.zodiac-sign.virgo",
         "orbDegrees": 7,
         "polarity": "western.polarity.feminine",
         "yinYang": "taoism.principle.yin",
@@ -185,41 +119,23 @@
       "primaryDisplayName": "Mars",
       "description": "Mars (Ares), the red planet of war, action, energy, desire, and the assertive masculine will. Rules Aries; traditional ruler of Scorpio. Exalted in Capricorn. In the Qabalah Mars corresponds to Geburah (the fifth sephira, Severity), the sphere of divine judgement, martial courage, and the purging fire that destroys the unnecessary. Mars is the divine surgeon as well as the warrior: his action is not always destructive but often curative. Day of the week: Tuesday. Metal: Iron, the metal of the sword and the ploughshare.",
       "secondaryNames": [
-        {
-          "name": "Ares",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♂",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Ares", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♂", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical"
-      ],
+      "tags": ["planet", "astrology", "classical"],
       "extendedData": {
         "symbol": "♂",
         "dayOfWeek": "Tuesday",
-        "metalAlchemy": "iron",
+        "metalAlchemy": "alchemy.metal.iron",
         "qabalisticSephira": "qabalah.sephira.geburah",
-        "rulesSign": [
-          "astrology.zodiac-sign.aries"
-        ],
+        "rulesSign": ["astrology.zodiac-sign.aries"],
         "traditionalRulesSign": [
-          "aries",
-          "scorpio"
+          "astrology.zodiac-sign.aries",
+          "astrology.zodiac-sign.scorpio"
         ],
-        "exaltedIn": "capricorn",
-        "detrimentIn": [
-          "libra"
-        ],
-        "fallIn": "cancer",
+        "exaltedIn": "astrology.zodiac-sign.capricorn",
+        "detrimentIn": ["astrology.zodiac-sign.libra"],
+        "fallIn": "astrology.zodiac-sign.cancer",
         "orbDegrees": 7,
         "polarity": "western.polarity.masculine",
         "yinYang": "taoism.principle.yang",
@@ -232,41 +148,23 @@
       "primaryDisplayName": "Jupiter",
       "description": "Jupiter (Zeus), the great benefic, planet of expansion, abundance, law, philosophy, and cosmic benevolence. Rules Sagittarius; traditional ruler of Pisces. Exalted in Cancer. In the Qabalah Jupiter corresponds to Chesed (the fourth sephira, Mercy), the sphere of divine grace, the generous outpouring of the divine creative abundance, the ideal world of Platonic forms. Jupiter is the king of the gods, the principle of cosmic law and order, the philosopher-king. Day of the week: Thursday. Metal: Tin, the metal of the jovial spirit, malleable and abundant.",
       "secondaryNames": [
-        {
-          "name": "Zeus",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♃",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Zeus", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♃", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical"
-      ],
+      "tags": ["planet", "astrology", "classical"],
       "extendedData": {
         "symbol": "♃",
         "dayOfWeek": "Thursday",
-        "metalAlchemy": "tin",
+        "metalAlchemy": "alchemy.metal.tin",
         "qabalisticSephira": "qabalah.sephira.chesed",
-        "rulesSign": [
-          "astrology.zodiac-sign.sagittarius"
-        ],
+        "rulesSign": ["astrology.zodiac-sign.sagittarius"],
         "traditionalRulesSign": [
-          "sagittarius",
-          "pisces"
+          "astrology.zodiac-sign.sagittarius",
+          "astrology.zodiac-sign.pisces"
         ],
-        "exaltedIn": "cancer",
-        "detrimentIn": [
-          "gemini"
-        ],
-        "fallIn": "capricorn",
+        "exaltedIn": "astrology.zodiac-sign.cancer",
+        "detrimentIn": ["astrology.zodiac-sign.gemini"],
+        "fallIn": "astrology.zodiac-sign.capricorn",
         "orbDegrees": 9,
         "polarity": "western.polarity.masculine",
         "yinYang": "taoism.principle.yang",
@@ -279,41 +177,23 @@
       "primaryDisplayName": "Saturn",
       "description": "Saturn (Kronos/Chronos), the great malefic and the Lord of Time, Limitation, and Completion. Rules Capricorn; traditional ruler of Aquarius. Exalted in Libra. In the Qabalah Saturn corresponds to Binah (the third sephira, Understanding), the sphere of the Great Mother who gives form and limitation to all things, and also to the final path (Tau/The World) connecting Yesod to Malkuth. Saturn is the cosmic taskmaster, the teacher of hard lessons, the reaper who harvests what has been sown. Day of the week: Saturday. Metal: Lead, the dense, heavy metal of limitation and transformation (the prima materia of alchemy).",
       "secondaryNames": [
-        {
-          "name": "Kronos",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♄",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Kronos", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♄", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "classical"
-      ],
+      "tags": ["planet", "astrology", "classical"],
       "extendedData": {
         "symbol": "♄",
         "dayOfWeek": "Saturday",
-        "metalAlchemy": "lead",
+        "metalAlchemy": "alchemy.metal.lead",
         "qabalisticSephira": "qabalah.sephira.binah",
-        "rulesSign": [
-          "astrology.zodiac-sign.capricorn"
-        ],
+        "rulesSign": ["astrology.zodiac-sign.capricorn"],
         "traditionalRulesSign": [
-          "capricorn",
-          "aquarius"
+          "astrology.zodiac-sign.capricorn",
+          "astrology.zodiac-sign.aquarius"
         ],
-        "exaltedIn": "libra",
-        "detrimentIn": [
-          "cancer"
-        ],
-        "fallIn": "aries",
+        "exaltedIn": "astrology.zodiac-sign.libra",
+        "detrimentIn": ["astrology.zodiac-sign.cancer"],
+        "fallIn": "astrology.zodiac-sign.aries",
         "orbDegrees": 9,
         "polarity": "western.polarity.feminine",
         "yinYang": "taoism.principle.yin",
@@ -326,37 +206,19 @@
       "primaryDisplayName": "Uranus",
       "description": "Uranus (Ouranos), the first of the modern transpersonal planets, discovered 1781 by Herschel during the age of revolution. Rules Aquarius. In esoteric astrology Uranus corresponds to Chokmah (the second sephira, Wisdom) in some systems, or is placed above the Abyss as a higher octave of Mercury — sudden illumination, divine disruption, the lightning of gnosis. Uranus governs revolution, originality, electricity, freedom from convention, sudden change, and the awakening of the collective. It operates at the level of the group and civilisation rather than the individual.",
       "secondaryNames": [
-        {
-          "name": "Ouranos",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♅",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Ouranos", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♅", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "transpersonal"
-      ],
+      "tags": ["planet", "astrology", "transpersonal"],
       "extendedData": {
         "symbol": "♅",
         "dayOfWeek": null,
         "metalAlchemy": null,
         "qabalisticSephira": null,
-        "rulesSign": [
-          "astrology.zodiac-sign.aquarius"
-        ],
-        "exaltedIn": "scorpio",
-        "detrimentIn": [
-          "leo"
-        ],
-        "fallIn": "taurus",
+        "rulesSign": ["astrology.zodiac-sign.aquarius"],
+        "exaltedIn": "astrology.zodiac-sign.scorpio",
+        "detrimentIn": ["astrology.zodiac-sign.leo"],
+        "fallIn": "astrology.zodiac-sign.taurus",
         "orbDegrees": 5,
         "yearDiscovered": 1781,
         "polarity": "western.polarity.masculine",
@@ -370,37 +232,19 @@
       "primaryDisplayName": "Neptune",
       "description": "Neptune (Poseidon), the second modern transpersonal planet, discovered 1846. Rules Pisces. In esoteric astrology Neptune is the higher octave of Venus — not personal love but universal, boundless compassion, mystical union, and the dissolution of ego-boundaries. It governs the deep unconscious, spiritual yearning, mysticism, dreams, illusions, art, film, and the oceanic feeling of cosmic unity. Neptune operates on the level of collective spiritual currents. Its association with the sea and with dissolution makes it the planet of both transcendence and escapism.",
       "secondaryNames": [
-        {
-          "name": "Poseidon",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♆",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Poseidon", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♆", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "transpersonal"
-      ],
+      "tags": ["planet", "astrology", "transpersonal"],
       "extendedData": {
         "symbol": "♆",
         "dayOfWeek": null,
         "metalAlchemy": null,
         "qabalisticSephira": null,
-        "rulesSign": [
-          "astrology.zodiac-sign.pisces"
-        ],
-        "exaltedIn": "cancer",
-        "detrimentIn": [
-          "virgo"
-        ],
-        "fallIn": "capricorn",
+        "rulesSign": ["astrology.zodiac-sign.pisces"],
+        "exaltedIn": "astrology.zodiac-sign.cancer",
+        "detrimentIn": ["astrology.zodiac-sign.virgo"],
+        "fallIn": "astrology.zodiac-sign.capricorn",
         "orbDegrees": 5,
         "yearDiscovered": 1846,
         "polarity": "western.polarity.feminine",
@@ -414,37 +258,19 @@
       "primaryDisplayName": "Pluto",
       "description": "Pluto (Hades), the third modern transpersonal planet, discovered 1930. Rules Scorpio. Pluto is the higher octave of Mars — not personal will but the impersonal, collective force of death, transformation, and regeneration at the level of civilisations. Pluto governs the underworld, depth psychology (Freud and Jung were both affected by its discovery), power, control, sex as a transformative force, the collective shadow, and the principle of death-and-rebirth at the deepest level. Pluto's action is invisible, inevitable, and total: it does not chip away but demolishes and rebuilds from nothing.",
       "secondaryNames": [
-        {
-          "name": "Hades",
-          "languageTag": "el",
-          "visible": true,
-          "sortOrder": 0
-        },
-        {
-          "name": "♇",
-          "languageTag": "symbol",
-          "visible": true,
-          "sortOrder": 1
-        }
+        { "name": "Hades", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "♇", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
       ],
-      "tags": [
-        "planet",
-        "astrology",
-        "transpersonal"
-      ],
+      "tags": ["planet", "astrology", "transpersonal"],
       "extendedData": {
         "symbol": "♇",
         "dayOfWeek": null,
         "metalAlchemy": null,
         "qabalisticSephira": null,
-        "rulesSign": [
-          "astrology.zodiac-sign.scorpio"
-        ],
-        "exaltedIn": "aries",
-        "detrimentIn": [
-          "taurus"
-        ],
-        "fallIn": "libra",
+        "rulesSign": ["astrology.zodiac-sign.scorpio"],
+        "exaltedIn": "astrology.zodiac-sign.aries",
+        "detrimentIn": ["astrology.zodiac-sign.taurus"],
+        "fallIn": "astrology.zodiac-sign.libra",
         "orbDegrees": 3,
         "yearDiscovered": 1930,
         "polarity": "western.polarity.androgynous",

@@ -1,6 +1,6 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
-import { ChevronUp, ChevronDown, Eye, EyeOff, RotateCcw } from 'lucide-react'
+import { ChevronUp, ChevronDown, Eye, EyeOff, RotateCcw, ArrowLeft } from 'lucide-react'
 import { loadNavConfig, saveNavConfig, resetNavConfig, loadSidebarPinned, saveSidebarPinned } from '@/lib/nav-store'
 import type { NavItemConfig } from '@/lib/nav-store'
 import { PanelLeftClose } from 'lucide-react'
@@ -28,6 +28,7 @@ const ITEM_LABELS: Record<string, string> = {
 const ALWAYS_VISIBLE = new Set(['/', '/settings'])
 
 function NavSettingsPage() {
+  const navigate = useNavigate()
   const [config, setConfig] = useState<NavItemConfig[]>(() => loadNavConfig())
   const [pinned, setPinned] = useState(() => loadSidebarPinned())
 
@@ -69,11 +70,14 @@ function NavSettingsPage() {
 
   return (
     <div style={{ maxWidth: '480px' }}>
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '6px' }}>
-        <h2 style={{ fontSize: '16px', fontWeight: 500, margin: 0 }}>Navigation</h2>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings' })}>
+          <ArrowLeft size={13} /> Settings
+        </Button>
+        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Navigation</h1>
         <button
           onClick={handleReset}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--color-text-subtle)', padding: '4px 0' }}
+          style={{ marginLeft: 'auto', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--color-text-subtle)', padding: '4px 0' }}
           onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-text)' }}
           onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
         >

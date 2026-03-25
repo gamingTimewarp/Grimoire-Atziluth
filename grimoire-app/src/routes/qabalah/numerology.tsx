@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useMemo } from 'react'
 import { ArrowLeft, Hash } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { DateInput } from '@/components/ui/DateInput'
 
 export const Route = createFileRoute('/qabalah/numerology')({
   component: NumerologyPage,
@@ -296,10 +297,9 @@ function NumerologyPage() {
           <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
             Date of Birth
           </label>
-          <input
-            type="date"
+          <DateInput
             value={date}
-            onChange={e => setDate(e.target.value)}
+            onChange={setDate}
             style={{
               padding: '10px 14px', marginBottom: '24px',
               background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',

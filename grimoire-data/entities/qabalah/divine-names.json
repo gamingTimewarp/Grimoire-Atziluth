@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.divine-name.tetragrammaton",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Tetragrammaton",
+      "description": "The Tetragrammaton (Greek: τετραγράμματον, 'four-letter [word]') is the four-letter Hebrew name of God: יהוה (Yod-Heh-Vau-Heh). It is the most sacred Name in the Hebrew and Kabbalistic traditions, considered too holy to be pronounced aloud; when read in Torah it is substituted with Adonai (אֲדֹנָי, 'my Lord') or HaShem (הַשֵּׁם, 'the Name'). Its original pronunciation is uncertain — reconstructions include 'Yahweh' and 'Yahveh'; the form 'Jehovah' is a later hybrid arising from combining the consonants YHWH with the vowel points of Adonai.\n\nIn Hermetic Qabalah and the Golden Dawn system, the Tetragrammaton is the structural key of the manifest universe. Its four letters map onto the four Worlds (Atziluth, Briah, Yetzirah, Assiah), the four elements (Fire, Water, Air, Earth), the four suits of the Tarot, the four Kerubim, the four directions, and the four humours. Yod represents the primal spark (Fire, Atziluth); the first Heh the receptive matrix (Water, Briah); Vau the mediating breath (Air, Yetzirah); and the final Heh the crystallised result (Earth, Assiah). This fourfold division — known as the YHVH formula — underlies much of Hermetic magical theory and Thelemic cosmology.\n\nThe Tetragrammaton appears in gematria with the value 26 (Yod=10, Heh=5, Vau=6, Heh=5), a number of deep significance in Kabbalistic number mysticism. Its full spelling out (Milui) in various forms yields other divine names and numerical values used in advanced Kabbalistic practice.",
+      "secondaryNames": [
+        {
+          "name": "יהוה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "YHVH",
+          "languageTag": "en-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "YHWH",
+          "languageTag": "en-translit",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "HaShem",
+          "languageTag": "he-en",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "The Name",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 4
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "tetragrammaton",
+        "jewish"
+      ],
+      "extendedData": {
+        "gematria": 26,
+        "letters": [
+          "letter.hebrew.yod",
+          "letter.hebrew.heh",
+          "letter.hebrew.vau",
+          "letter.hebrew.heh"
+        ],
+        "note": "The four letters map to Fire/Atziluth (Yod), Water/Briah (first Heh), Air/Yetzirah (Vau), and Earth/Assiah (final Heh).",
+        "sephiraNumber": 0
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.eheieh",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Eheieh",
+      "description": "Eheieh (אֶהְיֶה, 'I Am' or 'I Will Be') is the divine name of Kether, the first Sephira, the Crown. It is the name God reveals to Moses at the burning bush (Exodus 3:14): 'Eheieh asher Eheieh' — 'I Am That I Am' or 'I Will Be What I Will Be.' The name is the first-person singular imperfect of the Hebrew verb hayah (to be), suggesting both pure present being and dynamic self-becoming.\n\nAs the name of Kether, Eheieh represents the most abstract and absolute aspect of divinity — pure existence before any attribute, quality, or relation. It is the divine self-affirmation: being that needs nothing outside itself to justify or define it. In the Golden Dawn system, Eheieh is vibrated in the rite of the Qabalistic Cross and in the Supreme Invoking Ritual of the Pentagram when working with the highest divine crown. In Thelema, Kether is the point of Nuit and Hadit at their union, prior to manifestation.",
+      "secondaryNames": [
+        {
+          "name": "אֶהְיֶה",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "I Am That I Am",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "kether"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.kether",
+        "hebrewSpelling": "אֶהְיֶה",
+        "sephiraNumber": 1
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.yah",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Yah",
+      "description": "Yah (יָהּ) is the divine name of Chokmah, the second Sephira, Wisdom. It is the abbreviated form of the Tetragrammaton, comprising only its first two letters: Yod (י) and Heh (ה). Yah appears in the Hebrew Bible in its own right — most recognisably in 'Hallelu-Yah' (Praise Yah) — and is considered one of the seven divine names in Judaism that cannot be erased.\n\nAs the name of Chokmah, Yah represents the primal flash of divine wisdom: the first differentiation within the unity of Kether. Chokmah is the pure, undiluted force of the divine masculine, the supernal father, the first point of consciousness — and Yah, as the compressed seed of the full Tetragrammaton, carries the divine creative impulse in its most concentrated form. In Kabbalistic cosmogony, Chokmah is where being first becomes aware of itself as a point distinct from the infinite.",
+      "secondaryNames": [
+        {
+          "name": "יָהּ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Jah",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "chokmah"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.chokmah",
+        "hebrewSpelling": "יָהּ",
+        "note": "Abbreviated form of the Tetragrammaton, comprising Yod and the first Heh.",
+        "sephiraNumber": 2
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.yhvh-elohim",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "YHVH Elohim",
+      "description": "YHVH Elohim (יהוה אֱלֹהִים) is the divine name of Binah, the third Sephira, Understanding — the Great Mother, the supernal feminine, the womb of form. It combines the Tetragrammaton (YHVH) with Elohim (אֱלֹהִים), the plural-of-majesty form of El meaning 'God/Gods.' This compound name is used extensively in the second creation account in Genesis (2–3), where God forms the garden, shapes Adam from dust, breathes life into him, and walks in the garden.\n\nAs the name of Binah, YHVH Elohim expresses the marriage of the transcendent (YHVH) with the creative-formative (Elohim). Binah receives the undifferentiated wisdom-seed of Chokmah and gives it form, structure, and limit — she is both the divine womb and the divine restrictor, the Supernal Mother whose understanding moulds potentiality into actuality. In the tradition, Binah is also Ama (the dark, sterile mother) and Aima (the bright, fertile mother), and her divine name reflects this dual nature of form-giving and constriction.",
+      "secondaryNames": [
+        {
+          "name": "יהוה אֱלֹהִים",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "binah"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.binah",
+        "hebrewSpelling": "יהוה אֱלֹהִים",
+        "sephiraNumber": 3
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.el",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "El",
+      "description": "El (אֵל) is the divine name of Chesed, the fourth Sephira, Mercy — the sphere of love, grace, abundance, and beneficence. El is the oldest and simplest Semitic word for deity, cognate with Ugaritic and Phoenician El (the supreme father-god of the Canaanite pantheon), Arabic Allah, and Aramaic Alah. It appears throughout the Hebrew Bible as a straightforward designation for God.\n\nAs the name of Chesed, El carries the open, simple, loving face of divinity — the God of pure grace who gives without condition or qualification. Chesed is the Sephira of divine overflow, of Jupiter's boundless generosity, of the mercy that flows before justice can restrain it. El — the bare, unmodified word — is perfectly suited to this sphere: no epithet of power or judgment, no complex compound, simply the divine as beneficent presence and loving source.",
+      "secondaryNames": [
+        {
+          "name": "אֵל",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "chesed"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.chesed",
+        "hebrewSpelling": "אֵל",
+        "note": "The simplest and oldest Semitic divine name, cognate with Arabic Allah.",
+        "sephiraNumber": 4
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.elohim-gibor",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Elohim Gibor",
+      "description": "Elohim Gibor (אֱלֹהִים גִּבּוֹר, 'Mighty God') is the divine name of Geburah, the fifth Sephira, Strength — the sphere of divine severity, martial power, judgment, and necessary restriction. Gibor (גִּבּוֹר) means mighty, valiant, a warrior or hero — the same root as Geburah itself. The name appears in Isaiah 9:6 as one of the names of the messianic king ('Wonderful Counsellor, Mighty God, Everlasting Father, Prince of Peace').\n\nAs the name of Geburah, Elohim Gibor expresses the God of irresistible force and righteous severity — the divine power that cuts, destroys, and judges in service of ultimate justice and cosmic balance. Geburah is the necessary counterpart to Chesed: where Chesed overflows without limit, Geburah imposes the limit. The divine warrior aspect present in Elohim Gibor is the same power that drives the Mars energy of Geburah — the force that burns away impurity and maintains the integrity of the divine order.",
+      "secondaryNames": [
+        {
+          "name": "אֱלֹהִים גִּבּוֹר",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Mighty God",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "geburah"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.geburah",
+        "hebrewSpelling": "אֱלֹהִים גִּבּוֹר",
+        "sephiraNumber": 5
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.yhvh-eloah-vadaath",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "YHVH Eloah VaDa'ath",
+      "description": "YHVH Eloah VaDa'ath (יהוה אֱלוֹהּ וְדַעַת, 'YHVH God and Knowledge') is the divine name of Tiphareth, the sixth Sephira, Beauty — the solar centre of the Tree, the sphere of harmony, redemption, the divine Son, and the sacrificed and risen god. Eloah (אֱלוֹהּ) is the singular form of Elohim, a more intimate form of the divine name. VaDa'ath (וְדַעַת) means 'and Knowledge' — specifically Da'ath, the hidden quasi-Sephira of occult knowledge that sits between Chokmah and Binah.\n\nThe inclusion of Da'ath in this name is theologically significant: Tiphareth as the Son is the manifest expression of the hidden knowledge dwelling in the abyss between the supernals and the lower Tree. In Christian mystical Kabbalah, Tiphareth's divine name resonates with the Word made flesh — the divine knowledge incarnate. The name also links Tiphareth to Da'ath, reflecting Tiphareth's role as the point where the higher and lower Trees of Life communicate.",
+      "secondaryNames": [
+        {
+          "name": "יהוה אֱלוֹהּ וְדַעַת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "tiphareth"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.tiphareth",
+        "hebrewSpelling": "יהוה אֱלוֹהּ וְדַעַת",
+        "sephiraNumber": 6
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.yhvh-tzabaoth",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "YHVH Tzabaoth",
+      "description": "YHVH Tzabaoth (יהוה צְבָאוֹת, 'YHVH of Hosts' or 'YHVH of Armies') is the divine name of Netzach, the seventh Sephira, Victory — the sphere of nature, desire, beauty, the instinctual forces, and the planet Venus. Tzabaoth (צְבָאוֹת) means hosts, armies, or assembled multitudes, and the name 'Lord of Hosts' is one of the most frequent divine epithets in the Hebrew prophets (Isaiah, Jeremiah, Psalms).\n\nAs the name of Netzach, YHVH Tzabaoth points to the divine as the commander of the natural forces — the teeming, seething multitudes of nature's instincts, desires, and elemental powers. Netzach is the sphere where the divine creative impulse pours itself into the natural world in all its abundance and desire; YHVH Tzabaoth is the divine name that holds sovereign command over these forces without being subsumed by them.",
+      "secondaryNames": [
+        {
+          "name": "יהוה צְבָאוֹת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lord of Hosts",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "netzach"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.netzach",
+        "hebrewSpelling": "יהוה צְבָאוֹת",
+        "sephiraNumber": 7
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.elohim-tzabaoth",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Elohim Tzabaoth",
+      "description": "Elohim Tzabaoth (אֱלֹהִים צְבָאוֹת, 'God of Hosts') is the divine name of Hod, the eighth Sephira, Splendour — the sphere of intellect, communication, magic, and the planet Mercury. It is the direct counterpart to YHVH Tzabaoth of Netzach: where Netzach holds the emotional and instinctual hosts, Hod governs the intellectual and communicative hosts — the angels of language, form, and mind.\n\nAs the name of Hod, Elohim Tzabaoth expresses the God whose hosts are the forms of thought, the structures of language, the patterns of magic. Hod is Netzach's pair on the Pillar of Severity: where Netzach is the desire and the raw force, Hod is the intelligence and the name. The magician's art belongs to Hod — the use of divine names, formulae, and structured ceremonial form to channel the forces governed ultimately by Elohim Tzabaoth.",
+      "secondaryNames": [
+        {
+          "name": "אֱלֹהִים צְבָאוֹת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "God of Hosts",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "hod"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.hod",
+        "hebrewSpelling": "אֱלֹהִים צְבָאוֹת",
+        "sephiraNumber": 8
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.shaddai-el-chai",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Shaddai El Chai",
+      "description": "Shaddai El Chai (שַׁדַּי אֵל חַי, 'Almighty Living God') is the divine name of Yesod, the ninth Sephira, Foundation — the sphere of the astral plane, the Moon, the etheric body, sexual force, and the vital life-current that transmits the higher Tree into Malkuth. The name combines two distinct divine names: Shaddai (שַׁדַּי), an ancient name of uncertain etymology (proposals include 'the Mountain One,' 'the Sustainer,' or 'the Overpowering'), and El Chai (אֵל חַי), meaning 'the Living God.'\n\nShaddai appears frequently in the Patriarchal narratives of Genesis as the name by which God was known to Abraham, Isaac, and Jacob before the full revelation of the Tetragrammaton to Moses. As a mezuzah inscription (the letter Shin on the case stands for Shaddai), it guards the threshold of the home — an apt resonance with Yesod as the threshold between the higher spheres and the material world. El Chai — the Living God — reflects Yesod's role as the sphere of vital life-force and the source of the life current flowing into Malkuth.",
+      "secondaryNames": [
+        {
+          "name": "שַׁדַּי אֵל חַי",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Almighty Living God",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "yesod"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.yesod",
+        "hebrewSpelling": "שַׁדַּי אֵל חַי",
+        "sephiraNumber": 9
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.adonai-ha-aretz",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Adonai ha-Aretz",
+      "description": "Adonai ha-Aretz (אֲדֹנָי הָאָרֶץ, 'Lord of the Earth') is the divine name of Malkuth, the tenth Sephira, the Kingdom — the physical world, the Shekinah, the manifest creation, and the ultimate receptacle of all the higher Sephiroth. Adonai (אֲדֹנָי, 'My Lord') is the name traditionally spoken aloud in Jewish practice wherever the Tetragrammaton appears in the Torah, as the Tetragrammaton itself is too holy to pronounce. Ha-Aretz (הָאָרֶץ) means 'the Earth' or 'the Land.'\n\nAs the name of Malkuth, Adonai ha-Aretz declares the divine sovereignty over the material world itself — the throne of God is the Earth, and the physical world is not separate from the divine but is its ultimate expression and footstool. The Shekinah (the divine presence, feminine) dwells in Malkuth; Adonai is also the name by which the Shekinah is addressed as the immanent divine. In magical practice, Adonai ha-Aretz is vibrated to earth and ground divine force into material manifestation.",
+      "secondaryNames": [
+        {
+          "name": "אֲדֹנָי הָאָרֶץ",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Lord of the Earth",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "divine-name",
+        "qabalah",
+        "kabbalah",
+        "hebrew",
+        "malkuth"
+      ],
+      "extendedData": {
+        "sephira": "qabalah.sephira.malkuth",
+        "hebrewSpelling": "אֲדֹנָי הָאָרֶץ",
+        "note": "Adonai is the name traditionally substituted for the Tetragrammaton when reading the Torah aloud.",
+        "sephiraNumber": 10
+      }
+    }
+  ]
+}

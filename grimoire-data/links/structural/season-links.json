@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "wuxing.phase.wood",  "target": "calendar.season.spring",      "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "wuxing.phase.fire",  "target": "calendar.season.summer",      "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "wuxing.phase.earth", "target": "calendar.season.late-summer", "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "wuxing.phase.metal", "target": "calendar.season.autumn",      "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "wuxing.phase.water", "target": "calendar.season.winter",      "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+    { "source": "divination.mahjong-tile.season-spring", "target": "calendar.season.spring", "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "divination.mahjong-tile.season-summer", "target": "calendar.season.summer", "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "divination.mahjong-tile.season-autumn", "target": "calendar.season.autumn", "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "divination.mahjong-tile.season-winter", "target": "calendar.season.winter", "label": "attributed-season", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+
+    { "source": "calendar.sabbat.ostara",     "target": "calendar.season.spring", "label": "begins-season",    "bidirectional": true, "traditionScope": [],                "extendedData": {} },
+    { "source": "calendar.sabbat.litha",      "target": "calendar.season.summer", "label": "begins-season",    "bidirectional": true, "traditionScope": [],                "extendedData": {} },
+    { "source": "calendar.sabbat.mabon",      "target": "calendar.season.autumn", "label": "begins-season",    "bidirectional": true, "traditionScope": [],                "extendedData": {} },
+    { "source": "calendar.sabbat.yule",       "target": "calendar.season.winter", "label": "begins-season",    "bidirectional": true, "traditionScope": [],                "extendedData": {} },
+
+    { "source": "calendar.sabbat.imbolc",     "target": "calendar.season.spring", "label": "begins-season",    "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.beltane",    "target": "calendar.season.summer", "label": "begins-season",    "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.lughnasadh", "target": "calendar.season.autumn", "label": "begins-season",    "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.samhain",    "target": "calendar.season.winter", "label": "begins-season",    "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+
+    { "source": "calendar.sabbat.yule",       "target": "calendar.season.winter", "label": "midpoint-of-season", "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.ostara",     "target": "calendar.season.spring", "label": "midpoint-of-season", "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.litha",      "target": "calendar.season.summer", "label": "midpoint-of-season", "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} },
+    { "source": "calendar.sabbat.mabon",      "target": "calendar.season.autumn", "label": "midpoint-of-season", "bidirectional": true, "traditionScope": ["celtic-druidic"], "extendedData": {} }
+  ]
+}

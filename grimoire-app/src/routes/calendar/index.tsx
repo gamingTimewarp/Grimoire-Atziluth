@@ -225,7 +225,8 @@ function TransitsPanel({
   navigate: ReturnType<typeof useNavigate>
 }) {
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
-  const positions = useMemo(() => getPlanetPositions(date), [dateStr])
+  const { showNodes } = loadTraditionSettings()
+  const positions = useMemo(() => getPlanetPositions(date, 'tropical', { showNodes }), [dateStr])
   const aspects   = useMemo(() => getAspects(positions, date), [positions])
   const [showTable, setShowTable] = useState(false)
 
@@ -296,7 +297,7 @@ function TransitsPanel({
                 >
                   {formatLongitude(pos)}
                 </span>
-                <span style={{ fontSize: '11px', color: 'var(--color-danger)', opacity: pos.retrograde ? 1 : 0 }}>℞</span>
+                <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', opacity: pos.retrograde ? 1 : 0 }}>℞</span>
               </React.Fragment>
             ))}
           </div>
