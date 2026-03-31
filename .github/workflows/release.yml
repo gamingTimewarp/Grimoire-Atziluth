@@ -167,16 +167,17 @@ jobs:
           VITE_APP_VERSION: ${{ github.ref_name }}
         run: npm run tauri android build -- --apk --aab
 
+      - name: List Android build outputs
+        run: find grimoire-app/src-tauri/gen/android/app/build/outputs -type f \( -name "*.apk" -o -name "*.aab" \) | sort
+
       - name: Rename artifacts
         run: |
           VERSION="${{ github.ref_name }}"
           VERSION="${VERSION#v}"
-          APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
-          AAB_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/bundle/universalRelease"
-          mv "${APK_DIR}/app-universal-release.apk" \
-             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
-          mv "${AAB_DIR}/app-universal-release.aab" \
-             "${AAB_DIR}/Grimoire.Atziluth_${VERSION}.aab"
+          APK=$(find grimoire-app/src-tauri/gen/android/app/build/outputs/apk -type f -name "*.apk" | head -1)
+          AAB=$(find grimoire-app/src-tauri/gen/android/app/build/outputs/bundle -type f -name "*.aab" | head -1)
+          [ -n "$APK" ] && mv "$APK" "$(dirname "$APK")/Grimoire.Atziluth_${VERSION}_Universal.apk"
+          [ -n "$AAB" ] && mv "$AAB" "$(dirname "$AAB")/Grimoire.Atziluth_${VERSION}.aab"
 
       - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
@@ -185,5 +186,5 @@ jobs:
           draft: true
           prerelease: ${{ contains(github.ref_name, '-') }}
           files: |
-            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk
-            grimoire-app/src-tauri/gen/android/app/build/outputs/bundle/universalRelease/Grimoire.Atziluth_*.aab
+            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/**/Grimoire.Atziluth_*.apk
+            grimoire-app/src-tauri/gen/android/app/build/outputs/bundle/**/Grimoire.Atziluth_*.aab
