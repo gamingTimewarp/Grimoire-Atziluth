@@ -221,18 +221,30 @@ const DEFAULTS: TraditionSettings = {
 
 const KEY = 'grimoire:traditions'
 
+// Increment when DEFAULTS change in a way that should override stored values.
+// v1 = golden-dawn only  →  v2 = all traditions on by default
+const SETTINGS_VERSION = 2
+
 export function loadTraditionSettings(): TraditionSettings {
   try {
     const raw = localStorage.getItem(KEY)
     if (!raw) return structuredClone(DEFAULTS)
-    return { ...DEFAULTS, ...JSON.parse(raw) }
+    const stored = JSON.parse(raw) as Partial<TraditionSettings> & { _version?: number }
+    // Migrate: if stored settings predate the all-traditions-on default, reset
+    // activeTraditions to the current defaults while preserving everything else.
+    if ((stored._version ?? 1) < SETTINGS_VERSION) {
+      const migrated = { ...DEFAULTS, ...stored, activeTraditions: ALL_TRADITION_CNS }
+      saveTraditionSettings(migrated)
+      return migrated
+    }
+    return { ...DEFAULTS, ...stored }
   } catch {
     return structuredClone(DEFAULTS)
   }
 }
 
 export function saveTraditionSettings(settings: TraditionSettings): void {
-  localStorage.setItem(KEY, JSON.stringify(settings))
+  localStorage.setItem(KEY, JSON.stringify({ ...settings, _version: SETTINGS_VERSION }))
   window.dispatchEvent(new CustomEvent('grimoire:traditions-changed'))
 }
 
