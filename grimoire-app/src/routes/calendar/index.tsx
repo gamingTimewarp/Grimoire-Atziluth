@@ -43,8 +43,13 @@ function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<
   const ruler  = getPlanetaryDayRuler(date)
   const wuxing = getWuxingPhase(date)
   const sun    = getSunSign(date)
-  const { activeTraditions } = loadTraditionSettings()
-  const showChineseZodiac = activeTraditions.includes('tradition.chinese-zodiac')
+  const [traditions, setTraditions] = useState(() => loadTraditionSettings())
+  useEffect(() => {
+    const handler = () => setTraditions(loadTraditionSettings())
+    window.addEventListener('grimoire:traditions-changed', handler)
+    return () => window.removeEventListener('grimoire:traditions-changed', handler)
+  }, [])
+  const showChineseZodiac = traditions.activeTraditions.includes('tradition.chinese-zodiac')
   const chineseAnimal = showChineseZodiac ? getChineseZodiacYear(date) : null
 
   const chip = (label: string, canonicalName: string, sub?: string) => (

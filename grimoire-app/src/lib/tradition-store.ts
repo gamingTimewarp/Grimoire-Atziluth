@@ -203,7 +203,7 @@ export const ALL_TRADITION_CNS: string[] = [
 // ─── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULTS: TraditionSettings = {
-  activeTraditions: ['tradition.golden-dawn'],
+  activeTraditions: ['tradition.golden-dawn', 'tradition.chinese-zodiac'],
   primaryBySystem: {
     qabalah:    'tradition.golden-dawn',
     tarot:      'tradition.golden-dawn',
