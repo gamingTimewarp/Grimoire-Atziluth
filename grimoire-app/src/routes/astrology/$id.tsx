@@ -33,6 +33,7 @@ function ChartDetailPage() {
   const astrologyMode: AstrologyMode = tradSettings.astrologyMode
   const houseSystem = tradSettings.houseSystem
   const showNodes = tradSettings.showNodes
+  const showModernPlanets = tradSettings.activeTraditions.includes('tradition.modern-astrology')
 
   useEffect(() => {
     getNatalChartById(id)
@@ -47,7 +48,7 @@ function ChartDetailPage() {
       : new Date(`${record.birthDate}T12:00:00`)
     const lat = record.birthLat ?? 0
     const lon = record.birthLon ?? 0
-    return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode, { showNodes })
+    return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode, { showNodes, showModernPlanets })
   }, [record])
 
   // Compute transit chart (current sky) when transit overlay is enabled
@@ -55,7 +56,7 @@ function ChartDetailPage() {
     if (!showTransits || !chart) return null
     const loc = getHomeLocation()
     try {
-      return getNatalChart(new Date(), loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes })
+      return getNatalChart(new Date(), loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes, showModernPlanets })
     } catch { return null }
   }, [showTransits, chart])
 
@@ -249,27 +250,30 @@ function PositionsTable({ chart, navigate, compact, hasBirthTime }: {
       </div>
 
       {/* Asteroids (Modern Astrology tradition) */}
-      {showAsteroids && chart.asteroids && chart.asteroids.length > 0 && (
+      {showAsteroids && (() => {
+        const asteroidPositions = chart.planets.filter(p => p.planet.canonicalName.startsWith('astrology.minor-body.'))
+        if (asteroidPositions.length === 0) return null
+        return (
         <div style={{ marginTop: '16px' }}>
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
             Asteroids
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr', gap: '4px 10px', alignItems: 'center' }}>
-            {chart.asteroids.map(ap => {
+            {asteroidPositions.map(ap => {
               const sign = signs[ap.signIndex]
               return (
-                <React.Fragment key={ap.asteroid.canonicalName}>
+                <React.Fragment key={ap.planet.canonicalName}>
                   <span
                     role="button" tabIndex={0}
                     style={{ fontSize: '13px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', cursor: 'pointer', minWidth: '20px', textAlign: 'center' }}
-                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.asteroid.canonicalName } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.asteroid.canonicalName } }) } }}
-                    title={ap.asteroid.name}
-                  >{ap.asteroid.symbol}</span>
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.planet.canonicalName } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.planet.canonicalName } }) } }}
+                    title={ap.planet.name}
+                  >{ap.planet.symbol}</span>
                   <span
                     role="button" tabIndex={0}
                     style={{ fontSize: '12px', color: 'var(--color-text-muted)', cursor: 'pointer' }}
-                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.asteroid.canonicalName } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.asteroid.canonicalName } }) } }}
-                  >{ap.asteroid.name}</span>
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.planet.canonicalName } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: ap.planet.canonicalName } }) } }}
+                  >{ap.planet.name}</span>
                   <span
                     role={sign ? 'button' : undefined} tabIndex={sign ? 0 : undefined}
                     style={{ fontSize: '12px', color: 'var(--color-text)', cursor: sign ? 'pointer' : undefined }}
@@ -286,7 +290,8 @@ function PositionsTable({ chart, navigate, compact, hasBirthTime }: {
             Positions computed via Keplerian two-body model (~1–3° accuracy).
           </div>
         </div>
-      )}
+        )
+      })()}
     </div>
   )
 }

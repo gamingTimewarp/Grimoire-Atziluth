@@ -31,6 +31,7 @@ function RootLayout() {
   const breakpoint     = useBreakpoint()
   const [drawerOpen,   setDrawerOpen]   = useState(false)
   const [sidebarPinned, setSidebarPinned] = useState(() => loadSidebarPinned())
+  const [navSide, setNavSide] = useState(() => loadAccessibilitySettings().navSide ?? 'left')
   const hamburgerRef   = useRef<HTMLButtonElement>(null)
   const drawerRef      = useRef<HTMLDivElement>(null)
 
@@ -60,6 +61,13 @@ function RootLayout() {
     const handler = () => setSidebarPinned(loadSidebarPinned())
     window.addEventListener('grimoire:sidebar-pinned-changed', handler)
     return () => window.removeEventListener('grimoire:sidebar-pinned-changed', handler)
+  }, [])
+
+  // Re-read nav side when accessibility settings change
+  useEffect(() => {
+    const handler = () => setNavSide(loadAccessibilitySettings().navSide ?? 'left')
+    window.addEventListener('grimoire:accessibility-changed', handler)
+    return () => window.removeEventListener('grimoire:accessibility-changed', handler)
   }, [])
 
   useEffect(() => {
@@ -131,6 +139,7 @@ function RootLayout() {
           paddingLeft: '16px',
           paddingRight: '16px',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          flexDirection: navSide === 'right' ? 'row' : 'row-reverse',
           background: 'var(--color-surface-1)',
           borderBottom: '1px solid var(--color-border)',
           flexShrink: 0,
@@ -180,9 +189,10 @@ function RootLayout() {
           aria-modal="true"
           aria-label="Navigation menu"
           style={{
-            position: 'fixed', top: 0, left: 0, bottom: 0, width: '200px',
+            position: 'fixed', top: 0, bottom: 0, width: '200px',
+            ...(navSide === 'right' ? { right: 0 } : { left: 0 }),
             zIndex: 999,
-            transform: drawerOpen ? 'translateX(0)' : 'translateX(-100%)',
+            transform: drawerOpen ? 'translateX(0)' : navSide === 'right' ? 'translateX(100%)' : 'translateX(-100%)',
             transition: 'transform 0.25s ease',
           }}
         >

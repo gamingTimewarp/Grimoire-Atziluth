@@ -96,24 +96,33 @@ export function getNakshatra(siderealLon: number): Nakshatra {
 
 export type PlanetDef = {
   readonly name: string
-  readonly body: Astronomy.Body | null  // null = computed body (lunar nodes)
+  readonly body: Astronomy.Body | null  // null = computed body (lunar nodes) or no ephemeris yet
   readonly symbol: string
   readonly canonicalName: string
+  readonly modernOnly?: boolean   // hidden when 'tradition.modern-astrology' is not active
+  readonly nodePoint?: boolean    // hidden when showNodes is false
 }
 
 export const PLANETS: readonly PlanetDef[] = [
-  { name: 'Sol',     body: Astronomy.Body.Sun,     symbol: '☉', canonicalName: 'astrology.planet.sol'     },
-  { name: 'Luna',    body: Astronomy.Body.Moon,    symbol: '☽', canonicalName: 'astrology.planet.luna'    },
-  { name: 'Mercury', body: Astronomy.Body.Mercury, symbol: '☿', canonicalName: 'astrology.planet.mercury' },
-  { name: 'Venus',   body: Astronomy.Body.Venus,   symbol: '♀', canonicalName: 'astrology.planet.venus'   },
-  { name: 'Mars',    body: Astronomy.Body.Mars,    symbol: '♂', canonicalName: 'astrology.planet.mars'    },
-  { name: 'Jupiter', body: Astronomy.Body.Jupiter, symbol: '♃', canonicalName: 'astrology.planet.jupiter' },
-  { name: 'Saturn',  body: Astronomy.Body.Saturn,  symbol: '♄', canonicalName: 'astrology.planet.saturn'  },
-  { name: 'Uranus',  body: Astronomy.Body.Uranus,  symbol: '♅', canonicalName: 'astrology.planet.uranus'  },
-  { name: 'Neptune', body: Astronomy.Body.Neptune, symbol: '♆', canonicalName: 'astrology.planet.neptune' },
-  { name: 'Pluto',   body: Astronomy.Body.Pluto,   symbol: '♇', canonicalName: 'astrology.planet.pluto'   },
-  { name: 'Rahu',    body: null,                   symbol: '☊', canonicalName: 'astrology.node.rahu'      },
-  { name: 'Ketu',    body: null,                   symbol: '☋', canonicalName: 'astrology.node.ketu'      },
+  { name: 'Sol',             body: Astronomy.Body.Sun,     symbol: '☉', canonicalName: 'astrology.planet.sol'              },
+  { name: 'Luna',            body: Astronomy.Body.Moon,    symbol: '☽', canonicalName: 'astrology.planet.luna'             },
+  { name: 'Mercury',         body: Astronomy.Body.Mercury, symbol: '☿', canonicalName: 'astrology.planet.mercury'          },
+  { name: 'Venus',           body: Astronomy.Body.Venus,   symbol: '♀', canonicalName: 'astrology.planet.venus'            },
+  { name: 'Mars',            body: Astronomy.Body.Mars,    symbol: '♂', canonicalName: 'astrology.planet.mars'             },
+  { name: 'Jupiter',         body: Astronomy.Body.Jupiter, symbol: '♃', canonicalName: 'astrology.planet.jupiter'          },
+  { name: 'Saturn',          body: Astronomy.Body.Saturn,  symbol: '♄', canonicalName: 'astrology.planet.saturn'           },
+  { name: 'Uranus',          body: Astronomy.Body.Uranus,  symbol: '♅', canonicalName: 'astrology.planet.uranus',  modernOnly: true },
+  { name: 'Neptune',         body: Astronomy.Body.Neptune, symbol: '♆', canonicalName: 'astrology.planet.neptune', modernOnly: true },
+  { name: 'Pluto',           body: Astronomy.Body.Pluto,   symbol: '♇', canonicalName: 'astrology.planet.pluto',   modernOnly: true },
+  { name: 'Rahu',            body: null,                   symbol: '☊', canonicalName: 'astrology.node.rahu',      nodePoint: true  },
+  { name: 'Ketu',            body: null,                   symbol: '☋', canonicalName: 'astrology.node.ketu',      nodePoint: true  },
+  { name: 'Black Moon Lilith', body: null,                 symbol: '⚸', canonicalName: 'astrology.point.black-moon-lilith', nodePoint: true },
+  { name: 'Chiron',          body: null,                   symbol: '⚷', canonicalName: 'astrology.minor-body.chiron', modernOnly: true },
+  { name: 'Ceres',           body: null,                   symbol: '⚳', canonicalName: 'astrology.minor-body.ceres',  modernOnly: true },
+  { name: 'Pallas',          body: null,                   symbol: '⚴', canonicalName: 'astrology.minor-body.pallas', modernOnly: true },
+  { name: 'Juno',            body: null,                   symbol: '⚵', canonicalName: 'astrology.minor-body.juno',   modernOnly: true },
+  { name: 'Vesta',           body: null,                   symbol: '⚶', canonicalName: 'astrology.minor-body.vesta',  modernOnly: true },
+  { name: 'Eris',            body: null,                   symbol: '⯰', canonicalName: 'astrology.minor-body.eris',   modernOnly: true },
 ]
 
 export type Planet = PlanetDef
@@ -181,7 +190,6 @@ export type NatalChartData = {
   houses: HouseData
   aspects: Aspect[]
   lots: LotPosition[]
-  asteroids?: AsteroidPosition[]
   sect?: 'day' | 'night'
 }
 
@@ -205,6 +213,8 @@ export type AsteroidDef = {
   name: string
   symbol: string
   canonicalName: string
+  /** Swiss Ephemeris body number — for future sweph_calc Tauri command integration. */
+  swephId: number
   a: number      // semi-major axis (AU)
   e: number      // eccentricity
   i: number      // inclination (degrees)
@@ -219,6 +229,12 @@ export type AsteroidPosition = {
   signIndex: number
   degree: number
   minutes: number
+  /**
+   * 'keplerian' = Keplerian two-body approximation (current implementation).
+   * 'ephemeris' = Swiss Ephemeris via Tauri command (future, requires SE license).
+   * UI should surface a disclaimer when 'keplerian'.
+   */
+  calculationMethod: 'ephemeris' | 'keplerian'
 }
 
 // ─── Mutual reception type ────────────────────────────────────────────────────
@@ -238,13 +254,19 @@ export const HERMETIC_LOTS: LotDef[] = [
   { name: 'Lot of Nemesis',   symbol: 'Nm', canonicalName: 'astrology.lot.nemesis'   },
 ]
 
-/** Mean orbital elements at J2000.0 (JPL Horizons). Order: Chiron, Ceres, Pallas, Juno, Vesta. */
+/**
+ * Mean orbital elements at J2000.0 (JPL Horizons).
+ * swephId values map to Swiss Ephemeris constants for the future SE integration:
+ *   Chiron=15, Ceres=17, Pallas=18, Juno=19, Vesta=20, Eris=SE_AST_OFFSET+136199=146199
+ * Eris M0 is an approximation (~±5°); update from JPL Horizons for higher precision.
+ */
 export const ASTEROID_BODIES: AsteroidDef[] = [
-  { name: 'Chiron', symbol: '⚷', canonicalName: 'astrology.asteroid.chiron', a: 13.631694, e: 0.381836, i:  6.925, Omega: 209.444, omega: 338.769, M0:  8.68 },
-  { name: 'Ceres',  symbol: '⚳', canonicalName: 'astrology.asteroid.ceres',  a:  2.767711, e: 0.075823, i: 10.587, Omega:  80.395, omega:  72.522, M0: 95.97 },
-  { name: 'Pallas', symbol: '⚴', canonicalName: 'astrology.asteroid.pallas', a:  2.772372, e: 0.230614, i: 34.833, Omega: 173.128, omega: 310.015, M0: 78.00 },
-  { name: 'Juno',   symbol: '⚵', canonicalName: 'astrology.asteroid.juno',   a:  2.669088, e: 0.256298, i: 12.991, Omega: 169.860, omega: 247.770, M0: 69.20 },
-  { name: 'Vesta',  symbol: '⚶', canonicalName: 'astrology.asteroid.vesta',  a:  2.361349, e: 0.089074, i:  7.141, Omega: 103.811, omega: 151.419, M0: 20.85 },
+  { name: 'Chiron', symbol: '⚷', canonicalName: 'astrology.minor-body.chiron', swephId:     15, a: 13.631694, e: 0.381836, i:  6.925, Omega: 209.444, omega: 338.769, M0:   8.68 },
+  { name: 'Ceres',  symbol: '⚳', canonicalName: 'astrology.minor-body.ceres',  swephId:     17, a:  2.767711, e: 0.075823, i: 10.587, Omega:  80.395, omega:  72.522, M0:  95.97 },
+  { name: 'Pallas', symbol: '⚴', canonicalName: 'astrology.minor-body.pallas', swephId:     18, a:  2.772372, e: 0.230614, i: 34.833, Omega: 173.128, omega: 310.015, M0:  78.00 },
+  { name: 'Juno',   symbol: '⚵', canonicalName: 'astrology.minor-body.juno',   swephId:     19, a:  2.669088, e: 0.256298, i: 12.991, Omega: 169.860, omega: 247.770, M0:  69.20 },
+  { name: 'Vesta',  symbol: '⚶', canonicalName: 'astrology.minor-body.vesta',  swephId:     20, a:  2.361349, e: 0.089074, i:  7.141, Omega: 103.811, omega: 151.419, M0:  20.85 },
+  { name: 'Eris',   symbol: '⯰', canonicalName: 'astrology.minor-body.eris',   swephId: 146199, a: 67.864000, e: 0.441699, i: 44.040, Omega:  35.953, omega: 151.430, M0: 197.00 },
 ]
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -337,30 +359,57 @@ function getMeanNodeLongitude(date: Date, isKetu = false): number {
   return isKetu ? normLon(omega + 180) : omega
 }
 
+/**
+ * Mean lunar apogee (Black Moon Lilith) tropical longitude.
+ * Formula from Meeus "Astronomical Algorithms" Ch.52, accurate to within ~1°
+ * of the true (osculating) apogee — the standard used by most astrology software.
+ */
+function getMeanLilithLon(date: Date): number {
+  const JD = date.getTime() / 86400000 + 2440587.5
+  const T  = (JD - 2451545.0) / 36525
+  return normLon(
+    83.3532465
+    + 4069.0137287 * T
+    - 0.0103200    * T * T
+    - (T * T * T)  / 80053
+    + (T * T * T * T) / 18999000
+  )
+}
+
 // ─── Planetary positions ──────────────────────────────────────────────────────
 
-const NODE_CNS = new Set(['astrology.node.rahu', 'astrology.node.ketu'])
+const NODE_CNS = new Set(['astrology.node.rahu', 'astrology.node.ketu', 'astrology.point.black-moon-lilith'])
+export const MODERN_PLANET_CNS = new Set(PLANETS.filter(p => p.modernOnly).map(p => p.canonicalName))
 
 export function getPlanetPositions(
   date: Date,
   mode: AstrologyMode = 'tropical',
-  options: { showNodes?: boolean } = {},
+  options: { showNodes?: boolean; showModernPlanets?: boolean } = {},
 ): PlanetPosition[] {
-  const { showNodes = true } = options
-  const planets = showNodes ? PLANETS : PLANETS.filter(p => !NODE_CNS.has(p.canonicalName))
+  const { showNodes = true, showModernPlanets = true } = options
+  const planets = PLANETS.filter(p => {
+    if (p.nodePoint && !showNodes) return false
+    if (p.modernOnly && !showModernPlanets) return false
+    return true
+  })
   const next = new Date(date.getTime() + 86400000)
-  const isKetu = (p: PlanetDef) => p.canonicalName === 'astrology.node.ketu'
+  const isKetu   = (p: PlanetDef) => p.canonicalName === 'astrology.node.ketu'
+  const isLilith = (p: PlanetDef) => p.canonicalName === 'astrology.point.black-moon-lilith'
+  const nodePointLon = (p: PlanetDef, d: Date) =>
+    isLilith(p) ? getMeanLilithLon(d) : getMeanNodeLongitude(d, isKetu(p))
+  const asteroidLon = (p: PlanetDef, d: Date) => {
+    const ast = ASTEROID_BODIES.find(a => a.canonicalName === p.canonicalName)
+    return ast ? asteroidTropicalLon(ast, d) : 0
+  }
+  const tropicalLon = (p: PlanetDef, d: Date) => {
+    if (p.body !== null) return eclipticLon(p.body, d)
+    if (p.nodePoint)     return nodePointLon(p, d)
+    return asteroidLon(p, d)
+  }
   return planets.map(planet => {
-    const tropLon  = planet.body !== null
-      ? eclipticLon(planet.body, date)
-      : getMeanNodeLongitude(date, isKetu(planet))
+    const tropLon = tropicalLon(planet, date)
     const { lon, signIndex, nakshatraIndex } = applyMode(tropLon, mode, date)
-    const lon2 = (() => {
-      const tl2 = planet.body !== null
-        ? eclipticLon(planet.body, next)
-        : getMeanNodeLongitude(next, isKetu(planet))
-      return applyMode(tl2, mode, next).lon
-    })()
+    const lon2 = applyMode(tropicalLon(planet, next), mode, next).lon
     const degTotal  = lon % 30
     const degree    = Math.floor(degTotal)
     const minutes   = Math.floor((degTotal - degree) * 60)
@@ -368,7 +417,7 @@ export function getPlanetPositions(
     // Sun and Moon never retrograde (geocentric). Nodes always do — suppress the flag
     // since it's permanently true and therefore non-informative to display.
     let retrograde = false
-    if (planet.body !== null && planet.body !== Astronomy.Body.Sun && planet.body !== Astronomy.Body.Moon) {
+    if (!planet.nodePoint && planet.body !== Astronomy.Body.Sun && planet.body !== Astronomy.Body.Moon) {
       let diff = lon2 - lon
       if (diff > 180) diff -= 360
       if (diff < -180) diff += 360
@@ -387,6 +436,8 @@ export function getAspects(positions: PlanetPosition[], date?: Date): Aspect[] {
 
   for (let i = 0; i < positions.length; i++) {
     for (let j = i + 1; j < positions.length; j++) {
+      // Rahu and Ketu are always exactly opposite by definition — suppress the trivial opposition
+      if (NODE_CNS.has(positions[i].planet.canonicalName) && NODE_CNS.has(positions[j].planet.canonicalName)) continue
       const diff = angularDiff(positions[i].longitude, positions[j].longitude)
       for (const def of ASPECT_DEFS) {
         const orb = Math.abs(diff - def.angle)
@@ -1008,8 +1059,16 @@ function solveKepler(M: number, e: number): number {
 
 /**
  * Compute geocentric tropical ecliptic longitude for an asteroid using
- * mean Keplerian orbital elements (JPL J2000.0 epoch).
- * Accuracy: ~1–3° for main-belt asteroids, ~3–5° for Chiron.
+ * mean Keplerian two-body orbital elements (JPL J2000.0 epoch).
+ *
+ * Accuracy (no perturbations modelled):
+ *   Main-belt (Ceres, Pallas, Juno, Vesta): ~1–3° within a few centuries of J2000
+ *   Chiron: ~3–5°; degrades significantly outside 650 CE – 4650 CE (chaotic orbit)
+ *   Eris: ~1–3° near present; M0 is an approximation — verify against JPL Horizons
+ *
+ * TODO (SE): Replace with invoke('sweph_calc', { ipl: ast.swephId, jd }) once a
+ *            Swiss Ephemeris Professional License is obtained. swephId is pre-set
+ *            on each AsteroidDef for this purpose.
  */
 function asteroidTropicalLon(ast: AsteroidDef, date: Date): number {
   const daysSinceJ2000 = (date.getTime() - J2000_MS) / 86_400_000
@@ -1059,7 +1118,7 @@ export function getAsteroidPositions(date: Date, mode: AstrologyMode = 'tropical
     const degTotal = lon % 30
     const degree   = Math.floor(degTotal)
     const minutes  = Math.floor((degTotal - degree) * 60)
-    return { asteroid: ast, longitude: lon, signIndex, degree, minutes }
+    return { asteroid: ast, longitude: lon, signIndex, degree, minutes, calculationMethod: 'keplerian' as const }
   })
 }
 
@@ -1096,16 +1155,15 @@ export function getNatalChart(
   lon: number,
   system: HouseSystem = 'whole-sign',
   mode: AstrologyMode = 'tropical',
-  options: { showNodes?: boolean } = {},
+  options: { showNodes?: boolean; showModernPlanets?: boolean } = {},
 ): NatalChartData {
   const planets   = getPlanetPositions(birthDate, mode, options)
   const houses    = getHouses(birthDate, lat, lon, system)
   const aspects   = getAspects(planets)
   const lots      = computeHermeticLots(planets, houses, mode, birthDate)
-  const asteroids = getAsteroidPositions(birthDate, mode)
   const sunPos    = planets.find(p => p.planet.name === 'Sol')!
   const sect      = isDayChart(sunPos.longitude, houses.ascendant) ? 'day' : 'night'
-  return { planets, houses, aspects, lots, asteroids, sect }
+  return { planets, houses, aspects, lots, sect }
 }
 
 // ─── Month cache ──────────────────────────────────────────────────────────────

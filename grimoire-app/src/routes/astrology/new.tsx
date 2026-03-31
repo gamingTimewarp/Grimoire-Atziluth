@@ -5,6 +5,8 @@ import type { NatalChartRecord } from '@/lib/natal-db'
 import { loadSettings } from '@/lib/settings-store'
 import { Button } from '@/components/ui/Button'
 import { DateInput } from '@/components/ui/DateInput'
+import { LocationInput } from '@/components/ui/LocationInput'
+import type { LocationValue } from '@/components/ui/LocationInput'
 
 export const Route = createFileRoute('/astrology/new')({
   validateSearch: (s: Record<string, unknown>) => ({
@@ -20,9 +22,7 @@ function NewChartPage() {
   const [name,     setName]    = useState('')
   const [date,     setDate]    = useState('')
   const [time,     setTime]    = useState('')
-  const [lat,      setLat]     = useState('')
-  const [lon,      setLon]     = useState('')
-  const [locLabel, setLocLabel] = useState('')
+  const [location, setLocation] = useState<LocationValue>({ label: '', lat: '', lon: '', timezone: '' })
   const [notes,    setNotes]   = useState('')
   const [isSelf,   setIsSelf]  = useState(false)
   const [saving,   setSaving]  = useState(false)
@@ -36,9 +36,12 @@ function NewChartPage() {
         setName(chart.name)
         setDate(chart.birthDate)
         setTime(chart.birthTime ?? '')
-        setLat(chart.birthLat?.toString() ?? '')
-        setLon(chart.birthLon?.toString() ?? '')
-        setLocLabel(chart.birthLocationLabel ?? '')
+        setLocation({
+          label:    chart.birthLocationLabel ?? '',
+          lat:      chart.birthLat?.toString() ?? '',
+          lon:      chart.birthLon?.toString() ?? '',
+          timezone: chart.birthTimezone ?? '',
+        })
         setNotes(chart.notes)
         setIsSelf(chart.isSelf)
       }).catch(console.error)
@@ -50,9 +53,12 @@ function NewChartPage() {
     if (!edit) {
       const settings = loadSettings()
       if (settings.homeLocation) {
-        setLat(settings.homeLocation.lat.toString())
-        setLon(settings.homeLocation.lon.toString())
-        setLocLabel(settings.homeLocation.label)
+        setLocation({
+          label:    settings.homeLocation.label,
+          lat:      settings.homeLocation.lat.toString(),
+          lon:      settings.homeLocation.lon.toString(),
+          timezone: settings.homeLocation.timezone,
+        })
       }
     }
   }, [])
@@ -66,9 +72,10 @@ function NewChartPage() {
         name: name.trim(),
         birthDate: date,
         birthTime: time || null,
-        birthLat: lat ? parseFloat(lat) : null,
-        birthLon: lon ? parseFloat(lon) : null,
-        birthLocationLabel: locLabel.trim() || null,
+        birthLat: location.lat ? parseFloat(location.lat) : null,
+        birthLon: location.lon ? parseFloat(location.lon) : null,
+        birthLocationLabel: location.label.trim() || null,
+        birthTimezone: location.timezone.trim() || null,
         notes: notes.trim(),
         isSelf,
       }
@@ -132,23 +139,9 @@ function NewChartPage() {
           </div>
         </div>
 
-        <div>
-          {label('Birth Location Label')}
-          <input value={locLabel} onChange={e => setLocLabel(e.target.value)} placeholder="e.g. London, UK" style={inputStyle} />
-        </div>
+        <LocationInput value={location} onChange={setLocation} inputStyle={inputStyle} />
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-          <div>
-            {label('Latitude')}
-            <input value={lat} onChange={e => setLat(e.target.value)} placeholder="e.g. 51.5074" style={inputStyle} />
-          </div>
-          <div>
-            {label('Longitude')}
-            <input value={lon} onChange={e => setLon(e.target.value)} placeholder="e.g. -0.1278" style={inputStyle} />
-          </div>
-        </div>
-
-        {(!lat || !lon) && (
+        {(!location.lat || !location.lon) && (
           <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', padding: '8px 12px', background: 'var(--color-surface-1)', borderRadius: '6px', border: '1px solid var(--color-border)' }}>
             Without coordinates, houses cannot be calculated. Planet positions will still be shown.
           </div>

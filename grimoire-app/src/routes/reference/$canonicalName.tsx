@@ -11,7 +11,7 @@ import { getEntriesForEntity, getReadingsForEntity } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import { getEntityAnnotation, saveEntityAnnotation } from '@/lib/custom-db'
 import { recordRecentEntity } from '@/lib/recent-entities'
-import { artGroupForEntityType, classicArtUrl } from '@/lib/art-store'
+import { artGroupForEntityType, classicArtUrl, isSymbolicPack, loadArtSettings } from '@/lib/art-store'
 import { EntityArt } from '@/components/ui/EntityArt'
 import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { useReadingStore } from '@/stores/reading'
@@ -20,6 +20,25 @@ import { TRADITION_DISPLAY_NAMES } from '@/lib/tradition-store'
 export const Route = createFileRoute('/reference/$canonicalName')({
   component: EntityDetailPage,
 })
+
+// ─── Planet context constants ─────────────────────────────────────────────────
+
+const DIGNITY_LABELS       = new Set(['traditional-ruler', 'modern-ruler', 'exaltation', 'detriment', 'fall'])
+const PLANET_SPIRIT_LABELS = new Set(['serves', 'embodies'])
+const PLANET_STAR_LABELS   = new Set(['planetary-nature-primary', 'planetary-nature-secondary'])
+const PLANET_ALL_OWN_LABELS = new Set([
+  ...DIGNITY_LABELS, ...PLANET_SPIRIT_LABELS, ...PLANET_STAR_LABELS, 'ruled-by',
+])
+const PLANET_NATURE_KEYS = ['dayOfWeek', 'metalAlchemy', 'orbDegrees', 'polarity', 'yinYang', 'qabalisticSephira'] as const
+
+// ─── Zodiac sign context constants ────────────────────────────────────────────
+
+const SIGN_ALL_OWN_LABELS = new Set([...DIGNITY_LABELS, 'belongs-to'])
+const SIGN_PROFILE_KEYS = ['element', 'modality', 'dateRange', 'bodyPart', 'polarity', 'hebrewLetterGD', 'hebrewLetterThoth'] as const
+const SIGN_DATA_HIDE_KEYS = new Set([
+  'traditionalRuler', 'modernRuler', 'exaltation', 'detriment', 'fall',
+  ...SIGN_PROFILE_KEYS,
+])
 
 function EntityDetailPage() {
   const { canonicalName } = Route.useParams()
@@ -109,17 +128,18 @@ function EntityDetailPage() {
       .finally(() => setLoading(false))
   }, [engine, canonicalName])
 
-  const hasTraditionalOrder = members.some(m => traditionalSortKey(m) < Infinity)
+  const useRwsOrder = loadTraditionSettings().primaryBySystem['tarot'] === 'tradition.golden-dawn'
+  const hasTraditionalOrder = members.some(m => traditionalSortKey(m, useRwsOrder) < Infinity)
   const sortedMembers = useMemo(() => {
     if (sortMode === 'traditional' && hasTraditionalOrder) {
       return [...members].sort((a, b) => {
-        const ka = traditionalSortKey(a), kb = traditionalSortKey(b)
+        const ka = traditionalSortKey(a, useRwsOrder), kb = traditionalSortKey(b, useRwsOrder)
         if (ka !== kb) return ka - kb
         return a.primaryDisplayName.localeCompare(b.primaryDisplayName)
       })
     }
     return [...members].sort((a, b) => a.primaryDisplayName.localeCompare(b.primaryDisplayName))
-  }, [members, sortMode, hasTraditionalOrder])
+  }, [members, sortMode, hasTraditionalOrder, useRwsOrder])
 
   // Must be called before any early returns (Rules of Hooks)
   const readingDeck = useReadingStore(s => s.step !== 'deck' && s.step !== 'complete' ? s.selectedDeck : null)
@@ -205,7 +225,31 @@ function EntityDetailPage() {
   // Correspondence links: entities that ARE the same thing in some way — shown in Correspondences
   const isAttribution = (l: Link) => l.label.startsWith('attributed-')
   const attributionLinks  = [...outgoing, ...incomingBidi].filter(isAttribution)
-  const correspondences   = [...outgoing, ...incomingBidi].filter(l => !isAttribution(l))
+  const allCorrespondences = [...outgoing, ...incomingBidi].filter(l => !isAttribution(l))
+
+  const isPlanet = entity.entityType === 'astrology.planet'
+  const isSign   = entity.entityType === 'astrology.zodiac-sign'
+  const isRune   = entity.entityType === 'rune' || entity.entityType.startsWith('rune.')
+
+  const dignityLinks = isPlanet ? allCorrespondences.filter(l => DIGNITY_LABELS.has(l.label)) : []
+  const spiritLinks  = isPlanet ? allCorrespondences.filter(l => PLANET_SPIRIT_LABELS.has(l.label)) : []
+  const decanLinks   = isPlanet ? allCorrespondences.filter(l => l.label === 'ruled-by') : []
+  const starLinks    = isPlanet ? allCorrespondences.filter(l => PLANET_STAR_LABELS.has(l.label)) : []
+
+  const signDignityLinks = isSign ? allCorrespondences.filter(l => DIGNITY_LABELS.has(l.label)) : []
+  const signDecanLinks   = isSign ? allCorrespondences.filter(l => l.label === 'belongs-to') : []
+
+  const correspondences = (isPlanet || isSign)
+    ? allCorrespondences.filter(l => isPlanet
+        ? !PLANET_ALL_OWN_LABELS.has(l.label)
+        : !SIGN_ALL_OWN_LABELS.has(l.label))
+    : isRune
+      ? allCorrespondences.filter(l => l.label !== 'aett-deity')
+      : allCorrespondences
+  const planetExtDataHide = isPlanet
+    ? new Set(['rulesSign', 'exaltedIn', 'detrimentIn', 'fallIn', 'traditionalRulesSign', ...PLANET_NATURE_KEYS])
+    : undefined
+  const signExtDataHide = isSign ? SIGN_DATA_HIDE_KEYS : undefined
 
   const navToEntity = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
 
@@ -318,10 +362,34 @@ function EntityDetailPage() {
       {/* Upright / Reversed meanings */}
       <MeaningsSection data={entity.extendedData} />
 
+      {/* Planet dignities + nature boxes */}
+      {isPlanet && (
+        <PlanetContextSection
+          dignityLinks={dignityLinks}
+          spiritLinks={spiritLinks}
+          decanLinks={decanLinks}
+          starLinks={starLinks}
+          extendedData={entity.extendedData as Record<string, unknown>}
+          linkedNames={linkedNames}
+          onNavigate={navToEntity}
+        />
+      )}
+
+      {/* Zodiac sign dignities + profile boxes */}
+      {isSign && (
+        <ZodiacSignContextSection
+          dignityLinks={signDignityLinks}
+          decanLinks={signDecanLinks}
+          extendedData={entity.extendedData as Record<string, unknown>}
+          linkedNames={linkedNames}
+          onNavigate={navToEntity}
+        />
+      )}
+
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
@@ -453,18 +521,23 @@ const RELATED_OVERVIEWS: Record<string, Array<{ canonicalName: string; label: st
   ],
   // Astrology
   'system.overview.astrology': [
-    { canonicalName: 'system.overview.planets',       label: 'Planets'        },
-    { canonicalName: 'system.overview.zodiac',        label: 'Zodiac Signs'   },
-    { canonicalName: 'system.overview.fixed-stars',   label: 'Fixed Stars'    },
-    { canonicalName: 'system.overview.lunar-mansions',label: 'Lunar Mansions' },
+    { canonicalName: 'system.overview.planets',          label: 'Planets'          },
+    { canonicalName: 'system.overview.celestial-points', label: 'Celestial Points' },
+    { canonicalName: 'system.overview.zodiac',           label: 'Zodiac Signs'     },
+    { canonicalName: 'system.overview.fixed-stars',      label: 'Fixed Stars'      },
+    { canonicalName: 'system.overview.lunar-mansions',   label: 'Lunar Mansions'   },
   ],
   'system.overview.zodiac': [
     { canonicalName: 'system.overview.decans', label: 'Decans' },
   ],
   'system.overview.planets': [
-    { canonicalName: 'system.overview.kamea',             label: 'Planetary Kamea'   },
-    { canonicalName: 'system.overview.planetary-spirits', label: 'Planetary Spirits' },
-    { canonicalName: 'system.overview.olympic-spirits',   label: 'Olympic Spirits'   },
+    { canonicalName: 'system.overview.celestial-points', label: 'Celestial Points'  },
+    { canonicalName: 'system.overview.kamea',             label: 'Planetary Kamea'  },
+    { canonicalName: 'system.overview.planetary-spirits', label: 'Planetary Spirits'},
+    { canonicalName: 'system.overview.olympic-spirits',   label: 'Olympic Spirits'  },
+  ],
+  'system.overview.celestial-points': [
+    { canonicalName: 'system.overview.planets', label: 'Planets' },
   ],
   'system.overview.nakshatras': [
     { canonicalName: 'system.overview.jyotish-dasha', label: 'Vimshottari Dasha' },
@@ -520,9 +593,13 @@ function EntityArtPanel({ entity }: { entity: BaseEntity }) {
   const [hidden, setHidden] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
-  // EntityArt-rendered entities: runes, metals, and symbolic-only entity types
-  const useEntityArt = (group === 'runes' || group === 'alchemy-metals')
-    || (!group && SYMBOLIC_ENTITY_TYPES.has(entity.entityType))
+  // Use EntityArt when: no group at all, runes/metals (whose classic pack is also EntityArt-based),
+  // or the currently selected pack for this group is symbolic.
+  const { packByGroup } = loadArtSettings()
+  const currentPack = group ? (packByGroup[group] ?? 'symbolic') : null
+  const useEntityArt = !group
+    ? SYMBOLIC_ENTITY_TYPES.has(entity.entityType)
+    : group === 'runes' || group === 'alchemy-metals' || isSymbolicPack(group, currentPack!)
 
   if (useEntityArt) {
     const rw = 80
@@ -707,17 +784,24 @@ function MemberArtTile({
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
 function Section({ title, children, action }: { title: string; children: React.ReactNode; action?: React.ReactNode }) {
+  const [isOpen, setIsOpen] = React.useState(true)
   return (
     <div style={{ marginBottom: '24px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+      <div
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: isOpen ? '10px' : '0', cursor: 'pointer', userSelect: 'none' }}
+        onClick={() => setIsOpen(o => !o)}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          {isOpen ? <ChevronDown size={11} /> : <ChevronRight size={11} />}
           {title}
         </div>
-        {action}
+        {action && <div onClick={e => e.stopPropagation()}>{action}</div>}
       </div>
-      <div style={{ padding: '16px', background: 'var(--color-surface-1)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
-        {children}
-      </div>
+      {isOpen && (
+        <div style={{ padding: '16px', background: 'var(--color-surface-1)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+          {children}
+        </div>
+      )}
     </div>
   )
 }
@@ -740,19 +824,27 @@ const SUIT_ORDER_BY_SLUG: Record<string, number> = {
   cups: 1, chalices: 1,
   swords: 2, epees: 2,
   pentacles: 3, coins: 3, deniers: 3, disks: 3,
+  // Playing card suits (matching file order: spades, hearts, diamonds, clubs)
+  spades: 20, hearts: 21, diamonds: 22, clubs: 23,
   // Mahjong suits (offset to stay above tarot within suit-block)
-  wan: 10, characters: 10,
-  bamboo: 11,
-  circles: 12,
-  winds: 13,
-  dragons: 14,
-  flowers: 15,
-  seasons: 16,
+  wan: 30, characters: 30,
+  bamboo: 31,
+  circles: 32,
+  winds: 33,
+  dragons: 34,
+  flowers: 35,
+  seasons: 36,
 }
 
 const WIND_ORDER: Record<string, number> = { east: 1, south: 2, west: 3, north: 4 }
 
-function traditionalSortKey(entity: BaseEntity): number {
+/** Playing card text rank → sort number. */
+const PLAYING_CARD_RANK: Record<string, number> = {
+  'Ace': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7,
+  '8': 8, '9': 9, '10': 10, 'Jack': 11, 'Queen': 12, 'King': 13,
+}
+
+function traditionalSortKey(entity: BaseEntity, rwsOrder = false): number {
   const d = entity.extendedData as Record<string, unknown>
   const cn = entity.canonicalName
   const suitVal = typeof d.suit === 'string' ? d.suit : null
@@ -768,6 +860,8 @@ function traditionalSortKey(entity: BaseEntity): number {
     else if (cn.includes('.minor.') && typeof d.cardNumber === 'number')
                                                  rank = d.cardNumber          // Thoth
     else if (typeof d.number === 'number')       rank = d.number             // Mahjong numbered tiles
+    else if (typeof d.rank === 'string' && PLAYING_CARD_RANK[d.rank] !== undefined)
+                                                 rank = PLAYING_CARD_RANK[d.rank]  // Playing cards
     else {
       const dir = typeof d.direction === 'string' ? d.direction.toLowerCase() : ''
       rank = WIND_ORDER[dir] ?? 99                                            // Mahjong winds
@@ -775,6 +869,20 @@ function traditionalSortKey(entity: BaseEntity): number {
 
     return 1000 + suitIdx * 100 + rank
   }
+
+  // Playing card Jokers: suit is null, rank is 'Joker' — sort after all suited cards
+  if (typeof d.rank === 'string' && d.rank === 'Joker') {
+    return 5000 + (typeof d.color === 'string' && d.color === 'Red' ? 0 : 1)
+  }
+
+  // Playing card suit entities — sort after jokers in the same suit order
+  if (cn.startsWith('playing.suit.')) {
+    const suitSlug = cn.split('.').pop()!.toLowerCase()
+    return 6000 + (SUIT_ORDER_BY_SLUG[suitSlug] ?? 99)
+  }
+
+  // RWS order override: overview entities carry cardNumberRws for the Waite-transposed numbering
+  if (rwsOrder && typeof d.cardNumberRws === 'number') return d.cardNumberRws
 
   // Major arcana, Goetia, letters, aethyrs, etc. — use natural numeric field
   for (const field of SORT_NUMBER_FIELDS) {
@@ -934,19 +1042,412 @@ function MeaningsSection({ data }: { data: Record<string, unknown> }) {
   )
 }
 
+// ─── Planet context section ───────────────────────────────────────────────────
+
+const DIGNITY_LABEL_DISPLAY: Record<string, string> = {
+  'traditional-ruler': 'Ruler',
+  'modern-ruler':      'Modern Ruler',
+  'exaltation':        'Exaltation',
+  'detriment':         'Detriment',
+  'fall':              'Fall',
+}
+
+const NATURE_ROW_LABELS: Record<string, string> = {
+  dayOfWeek:         'Day',
+  metalAlchemy:      'Metal',
+  polarity:          'Polarity',
+  yinYang:           'Yin / Yang',
+  qabalisticSephira: 'Sephira',
+  orbDegrees:        'Orb',
+}
+
+const SPIRIT_LABEL_DISPLAY: Record<string, string> = {
+  serves:   'Intelligence',
+  embodies: 'Spirit',
+}
+
+function PlanetContextSection({
+  dignityLinks,
+  spiritLinks,
+  decanLinks,
+  starLinks,
+  extendedData,
+  linkedNames,
+  onNavigate,
+}: {
+  dignityLinks: Link[]
+  spiritLinks:  Link[]
+  decanLinks:   Link[]
+  starLinks:    Link[]
+  extendedData: Record<string, unknown>
+  linkedNames:  Map<string, string>
+  onNavigate:   (cn: string) => void
+}) {
+  // Dignity links: planet is TARGET, sign is SOURCE
+  const dignityByLabel = new Map<string, string[]>()
+  for (const link of dignityLinks) {
+    const arr = dignityByLabel.get(link.label) ?? []
+    arr.push(link.sourceCanonicalName)
+    dignityByLabel.set(link.label, arr)
+  }
+  const dignityRows = (['traditional-ruler', 'modern-ruler', 'exaltation', 'detriment', 'fall'] as const)
+    .map(lbl => ({ label: DIGNITY_LABEL_DISPLAY[lbl], signs: dignityByLabel.get(lbl) ?? [] }))
+    .filter(r => r.signs.length > 0)
+
+  const natureRows = PLANET_NATURE_KEYS
+    .filter(k => extendedData[k] !== undefined && extendedData[k] !== null && extendedData[k] !== '')
+    .map(k => ({ label: NATURE_ROW_LABELS[k], key: k, value: extendedData[k] }))
+
+  // Spirit links: spirit is SOURCE, planet is TARGET
+  const spiritRows = spiritLinks.map(l => ({
+    label: SPIRIT_LABEL_DISPLAY[l.label] ?? formatSlug(l.label),
+    cn: l.sourceCanonicalName,
+  }))
+
+  // Decan links: decan is SOURCE, planet is TARGET
+  const decanCns = decanLinks.map(l => l.sourceCanonicalName)
+
+  // Fixed star nature links: star is SOURCE, planet is TARGET
+  const primaryStars   = starLinks.filter(l => l.label === 'planetary-nature-primary').map(l => l.sourceCanonicalName)
+  const secondaryStars = starLinks.filter(l => l.label === 'planetary-nature-secondary').map(l => l.sourceCanonicalName)
+
+  const hasAny = dignityRows.length > 0 || natureRows.length > 0 || spiritRows.length > 0 ||
+                 decanCns.length > 0 || primaryStars.length > 0 || secondaryStars.length > 0
+  if (!hasAny) return null
+
+  const cellStyle = { fontSize: '12px', color: 'var(--color-accent)', alignSelf: 'start' as const, paddingTop: '2px' }
+  const boxStyle  = { padding: '14px 16px', background: 'var(--color-surface-1)', borderRadius: '8px', border: '1px solid var(--color-border)' }
+  const labelStyle = { fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase' as const, letterSpacing: '0.1em', marginBottom: '10px' }
+  const gridStyle = { display: 'grid', gridTemplateColumns: 'minmax(80px, auto) 1fr', gap: '8px 12px' }
+
+  const InlineLink = ({ cn }: { cn: string }) => (
+    <button
+      onClick={() => onNavigate(cn)}
+      title={cn}
+      style={{
+        background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+        color: 'var(--color-text)', fontSize: '13px',
+        textDecoration: 'underline', textDecorationColor: 'var(--color-border)',
+        fontFamily: 'inherit',
+      }}
+    >
+      {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+    </button>
+  )
+
+  return (
+    <div style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+
+      {/* Row 1: Dignities + Nature side by side */}
+      {(dignityRows.length > 0 || natureRows.length > 0) && (
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          {dignityRows.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Dignities</div>
+              <div style={boxStyle}>
+                <div style={gridStyle}>
+                  {dignityRows.map(row => (
+                    <React.Fragment key={row.label}>
+                      <span style={cellStyle}>{row.label}</span>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                        {row.signs.map(cn => <InlineLink key={cn} cn={cn} />)}
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+          {natureRows.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Nature</div>
+              <div style={boxStyle}>
+                <div style={gridStyle}>
+                  {natureRows.map(row => (
+                    <React.Fragment key={row.key}>
+                      <span style={cellStyle}>{row.label}</span>
+                      <div style={{ fontSize: '13px', color: 'var(--color-text)' }}>
+                        <ExtendedValue value={row.value} linkedNames={linkedNames} onNavigate={onNavigate} />
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Row 2: Spirits + Decans side by side */}
+      {(spiritRows.length > 0 || decanCns.length > 0) && (
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          {spiritRows.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Spirits</div>
+              <div style={boxStyle}>
+                <div style={gridStyle}>
+                  {spiritRows.map(row => (
+                    <React.Fragment key={row.cn}>
+                      <span style={cellStyle}>{row.label}</span>
+                      <InlineLink cn={row.cn} />
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+          {decanCns.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Decans Ruled</div>
+              <div style={boxStyle}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  {decanCns.map(cn => (
+                    <button
+                      key={cn}
+                      onClick={() => onNavigate(cn)}
+                      title={cn}
+                      style={{
+                        padding: '3px 8px', background: 'var(--color-surface-2)',
+                        border: '1px solid var(--color-border)', borderRadius: '4px',
+                        cursor: 'pointer', color: 'var(--color-text)', fontSize: '12px',
+                        fontFamily: 'inherit', transition: 'border-color 0.15s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+                    >
+                      {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Row 3: Fixed star natures */}
+      {(primaryStars.length > 0 || secondaryStars.length > 0) && (
+        <div>
+          <div style={labelStyle}>Fixed Star Natures</div>
+          <div style={boxStyle}>
+            {primaryStars.length > 0 && (
+              <div style={{ marginBottom: secondaryStars.length > 0 ? '10px' : 0 }}>
+                <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>Primary nature</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  {primaryStars.map(cn => (
+                    <button
+                      key={cn}
+                      onClick={() => onNavigate(cn)}
+                      title={cn}
+                      style={{
+                        padding: '3px 8px', background: 'var(--color-surface-2)',
+                        border: '1px solid var(--color-border)', borderRadius: '4px',
+                        cursor: 'pointer', color: 'var(--color-text)', fontSize: '12px',
+                        fontFamily: 'inherit', transition: 'border-color 0.15s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+                    >
+                      {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+            {secondaryStars.length > 0 && (
+              <div>
+                <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>Secondary nature</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  {secondaryStars.map(cn => (
+                    <button
+                      key={cn}
+                      onClick={() => onNavigate(cn)}
+                      title={cn}
+                      style={{
+                        padding: '3px 8px', background: 'var(--color-surface-2)',
+                        border: '1px solid var(--color-border)', borderRadius: '4px',
+                        cursor: 'pointer', color: 'var(--color-text)', fontSize: '12px',
+                        fontFamily: 'inherit', transition: 'border-color 0.15s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+                    >
+                      {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ─── Zodiac sign context section ─────────────────────────────────────────────
+
+const SIGN_DIGNITY_LABEL_DISPLAY: Record<string, string> = {
+  'traditional-ruler': 'Ruler',
+  'modern-ruler':      'Modern Ruler',
+  'exaltation':        'Exaltation',
+  'detriment':         'Detriment',
+  'fall':              'Fall',
+}
+
+const SIGN_PROFILE_ROW_LABELS: Record<string, string> = {
+  element:          'Element',
+  modality:         'Modality',
+  dateRange:        'Date Range',
+  bodyPart:         'Body Part',
+  polarity:         'Polarity',
+  hebrewLetterGD:   'Hebrew Letter (GD)',
+  hebrewLetterThoth:'Hebrew Letter (Thoth)',
+}
+
+function ZodiacSignContextSection({
+  dignityLinks,
+  decanLinks,
+  extendedData,
+  linkedNames,
+  onNavigate,
+}: {
+  dignityLinks: Link[]
+  decanLinks:   Link[]
+  extendedData: Record<string, unknown>
+  linkedNames:  Map<string, string>
+  onNavigate:   (cn: string) => void
+}) {
+  // Dignity links: sign is SOURCE, planet is TARGET
+  const dignityByLabel = new Map<string, string[]>()
+  for (const link of dignityLinks) {
+    const arr = dignityByLabel.get(link.label) ?? []
+    arr.push(link.targetCanonicalName)
+    dignityByLabel.set(link.label, arr)
+  }
+  const dignityRows = (['traditional-ruler', 'modern-ruler', 'exaltation', 'detriment', 'fall'] as const)
+    .map(lbl => ({ label: SIGN_DIGNITY_LABEL_DISPLAY[lbl], planets: dignityByLabel.get(lbl) ?? [] }))
+    .filter(r => r.planets.length > 0)
+
+  const profileRows = SIGN_PROFILE_KEYS
+    .filter(k => extendedData[k] !== undefined && extendedData[k] !== null && extendedData[k] !== '')
+    .map(k => ({ label: SIGN_PROFILE_ROW_LABELS[k], key: k, value: extendedData[k] }))
+
+  // Decans: decan is SOURCE, sign is TARGET
+  const decanCns = decanLinks.map(l => l.sourceCanonicalName)
+
+  const hasAny = dignityRows.length > 0 || profileRows.length > 0 || decanCns.length > 0
+  if (!hasAny) return null
+
+  const cellStyle = { fontSize: '12px', color: 'var(--color-accent)', alignSelf: 'start' as const, paddingTop: '2px' }
+  const boxStyle  = { padding: '14px 16px', background: 'var(--color-surface-1)', borderRadius: '8px', border: '1px solid var(--color-border)' }
+  const labelStyle = { fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase' as const, letterSpacing: '0.1em', marginBottom: '10px' }
+  const gridStyle = { display: 'grid', gridTemplateColumns: 'minmax(120px, auto) 1fr', gap: '8px 12px' }
+
+  const InlineLink = ({ cn }: { cn: string }) => (
+    <button
+      onClick={() => onNavigate(cn)}
+      title={cn}
+      style={{
+        background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+        color: 'var(--color-text)', fontSize: '13px',
+        textDecoration: 'underline', textDecorationColor: 'var(--color-border)',
+        fontFamily: 'inherit',
+      }}
+    >
+      {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+    </button>
+  )
+
+  return (
+    <div style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+
+      {/* Row 1: Dignities + Profile side by side */}
+      {(dignityRows.length > 0 || profileRows.length > 0) && (
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          {dignityRows.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Dignities</div>
+              <div style={boxStyle}>
+                <div style={gridStyle}>
+                  {dignityRows.map(row => (
+                    <React.Fragment key={row.label}>
+                      <span style={cellStyle}>{row.label}</span>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                        {row.planets.map(cn => <InlineLink key={cn} cn={cn} />)}
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+          {profileRows.length > 0 && (
+            <div style={{ flex: '1 1 180px' }}>
+              <div style={labelStyle}>Profile</div>
+              <div style={boxStyle}>
+                <div style={gridStyle}>
+                  {profileRows.map(row => (
+                    <React.Fragment key={row.key}>
+                      <span style={cellStyle}>{row.label}</span>
+                      <div style={{ fontSize: '13px', color: 'var(--color-text)' }}>
+                        <ExtendedValue value={row.value} linkedNames={linkedNames} onNavigate={onNavigate} />
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Row 2: Decans */}
+      {decanCns.length > 0 && (
+        <div>
+          <div style={labelStyle}>Decans</div>
+          <div style={boxStyle}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              {decanCns.map(cn => (
+                <button
+                  key={cn}
+                  onClick={() => onNavigate(cn)}
+                  title={cn}
+                  style={{
+                    padding: '3px 8px', background: 'var(--color-surface-2)',
+                    border: '1px solid var(--color-border)', borderRadius: '4px',
+                    cursor: 'pointer', color: 'var(--color-text)', fontSize: '12px',
+                    fontFamily: 'inherit', transition: 'border-color 0.15s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+                >
+                  {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ─── Extended data table ──────────────────────────────────────────────────────
 
 function ExtendedDataTable({
   data,
   linkedNames,
   onNavigate,
+  additionalHiddenKeys,
 }: {
   data: Record<string, unknown>
   linkedNames: Map<string, string>
   onNavigate: (canonicalName: string) => void
+  additionalHiddenKeys?: Set<string>
 }) {
   const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'treeX', 'treeY'])
-  const entries = Object.entries(data).filter(([k, v]) => !HIDDEN_KEYS.has(k) && v !== null && v !== undefined && v !== '')
+  const entries = Object.entries(data).filter(([k, v]) => !HIDDEN_KEYS.has(k) && !additionalHiddenKeys?.has(k) && v !== null && v !== undefined && v !== '')
   if (!entries.length) return null
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(120px, auto) 1fr', gap: '8px 16px' }}>

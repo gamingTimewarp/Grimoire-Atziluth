@@ -62,3 +62,9 @@ desktop.ini
 
 # ── Test coverage ─────────────────────────────────────────────────────────────
 coverage/
+
+# ── Build artefacts (AppImage extracted dir) ──────────────────────────────────
+grimoire-app/squashfs-root/
+
+# ── Geodata source files (large raw datasets — processed output is tracked) ───
+scripts/geodata-source/

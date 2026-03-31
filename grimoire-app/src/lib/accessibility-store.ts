@@ -35,6 +35,9 @@ export type TextScale = 100 | 115 | 130
 /** How reversed cards are displayed in spread grids. */
 export type ReversedDisplay = 'rotated' | 'badge'
 
+/** Which side the mobile nav drawer (and hamburger button) appears on. */
+export type NavSide = 'left' | 'right'
+
 export interface AccessibilitySettings {
   colorblindMode: ColorblindMode
   dyslexiaFont: boolean
@@ -44,6 +47,8 @@ export interface AccessibilitySettings {
   cardCaptions: boolean
   /** Rotated = art rendered upside-down; badge = small ↓ Rev overlay only. */
   reversedDisplay: ReversedDisplay
+  /** Side the mobile hamburger button and slide-out drawer appear on. */
+  navSide: NavSide
 }
 
 const STORAGE_KEY = 'grimoire:accessibility'
@@ -55,6 +60,7 @@ const DEFAULTS: AccessibilitySettings = {
   textScale: 100,
   cardCaptions: false,
   reversedDisplay: 'rotated',
+  navSide: 'left',
 }
 
 export function loadAccessibilitySettings(): AccessibilitySettings {
@@ -75,6 +81,7 @@ export function loadAccessibilitySettings(): AccessibilitySettings {
 
 export function saveAccessibilitySettings(s: AccessibilitySettings): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(s))
+  window.dispatchEvent(new CustomEvent('grimoire:accessibility-changed'))
 }
 
 /** Inject hidden SVG containing CVD filter definitions (once). */

@@ -5,7 +5,7 @@
       "canonicalName": "tarot.major.overview.the-fool",
       "entityType": "system.overview",
       "primaryDisplayName": "The Fool",
-      "description": "The Fool as rendered across the four supported decks. In the Tarot de Marseille he is Le Mat — the unnumbered wanderer outside the sequence. Thoth retains the name and Crowley's imagery of the Green Man. Etteilla has no equivalent; he replaced the position with 'Etteilla — The Questioner', making the Fool unique to the three Hermetic decks.",
+      "description": "The Fool as rendered across the four supported decks. In the Tarot de Marseille he is Le Mat — the unnumbered wanderer outside the sequence. Thoth retains the name and Crowley's imagery of the Green Man. Etteilla retained the Fool at the liminal boundary of his numbered sequence, labelling it both 0 and 78, and read it as folly, madness, and the unchecked mind unmoored from reason. Card 1 in Etteilla's deck ('Etteilla — The Questioner') is a separate self-card unique to his system, not a replacement for the Fool.",
       "tags": [
         "tarot",
         "major-arcana",
@@ -17,7 +17,8 @@
         "members": [
           "tarot.major.rws.the-fool",
           "tarot.major.thoth.the-fool",
-          "tarot.major.tdm.le-mat"
+          "tarot.major.tdm.le-mat",
+          "tarot.major.etteilla.the-fool"
         ]
       }
     },
@@ -172,7 +173,7 @@
       "canonicalName": "tarot.major.overview.strength",
       "entityType": "system.overview",
       "primaryDisplayName": "Strength",
-      "description": "Strength (VIII in RWS; XI in TdM and Thoth) across four decks. Waite and Smith swapped the positions of Strength and Justice. Thoth renames the card Lust, refocusing it on Babalon riding the Beast — ecstatic, creative will rather than gentle restraint.",
+      "description": "Strength (XI in the traditional order; VIII in RWS and derivatives) across four decks. Waite and Smith swapped the positions of Strength and Justice from the historical sequence. Thoth renames the card Lust, refocusing it on Babalon riding the Beast — ecstatic, creative will rather than gentle restraint.",
       "tags": [
         "tarot",
         "major-arcana",
@@ -180,7 +181,8 @@
         "tarot-major-overview"
       ],
       "extendedData": {
-        "cardNumber": 8,
+        "cardNumber": 11,
+        "cardNumberRws": 8,
         "members": [
           "tarot.major.rws.strength",
           "tarot.major.thoth.lust",
@@ -235,7 +237,7 @@
       "canonicalName": "tarot.major.overview.justice",
       "entityType": "system.overview",
       "primaryDisplayName": "Justice",
-      "description": "Justice (XI in RWS; VIII in TdM and Thoth) across four decks. Waite and Smith swapped Justice and Strength. Thoth renames the card Adjustment, shifting emphasis from legal justice to the cosmic principle of equilibrium — the Maat of the Egyptian tradition.",
+      "description": "Justice (VIII in the traditional order; XI in RWS and derivatives) across four decks. Waite and Smith swapped Justice and Strength from the historical sequence. Thoth renames the card Adjustment, shifting emphasis from legal justice to the cosmic principle of equilibrium — the Maat of the Egyptian tradition.",
       "tags": [
         "tarot",
         "major-arcana",
@@ -243,7 +245,8 @@
         "tarot-major-overview"
       ],
       "extendedData": {
-        "cardNumber": 11,
+        "cardNumber": 8,
+        "cardNumberRws": 11,
         "members": [
           "tarot.major.rws.justice",
           "tarot.major.thoth.adjustment",
@@ -361,7 +364,7 @@
       "canonicalName": "tarot.major.overview.the-star",
       "entityType": "system.overview",
       "primaryDisplayName": "The Star",
-      "description": "The Star (XVII) across four decks. The naked figure pouring water beneath a great star. Etteilla calls his card The Stars (plural). Thoth's Star shows Nuit, the infinite sky, arched over the cosmos.",
+      "description": "The Star (XVII) across four decks. The naked figure pouring water beneath a great star. Etteilla unusually maps two cards to this archetype: The Heavens (Card 4) represents the celestial firmament and divine cosmic order, while The Stars (Card 6) carries the more familiar Star meanings of hope, guidance, and celestial light. Thoth's Star shows Nuit, the infinite sky, arched over the cosmos.",
       "tags": [
         "tarot",
         "major-arcana",
@@ -374,7 +377,8 @@
           "tarot.major.rws.the-star",
           "tarot.major.thoth.the-star",
           "tarot.major.tdm.l-etoile",
-          "tarot.major.etteilla.the-stars"
+          "tarot.major.etteilla.the-stars",
+          "tarot.major.etteilla.the-heavens"
         ]
       }
     },

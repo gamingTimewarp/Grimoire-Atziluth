@@ -271,12 +271,12 @@ export interface ArtSettings {
 
 const DEFAULTS: ArtSettings = {
   packByGroup: {
-    'tarot-rws':       'symbolic',
-    'tarot-tdm':       'symbolic',
-    'tarot-thoth':     'symbolic',
-    'tarot-etteilla':  'symbolic',
-    runes:             'symbolic',
-    geomancy:          'symbolic',
+    'tarot-rws':       'classic',
+    'tarot-tdm':       'classic',
+    'tarot-thoth':     'classic',
+    'tarot-etteilla':  'classic',
+    runes:             'classic',
+    geomancy:          'classic',
     mahjong:           'symbolic',
     lenormand:         'symbolic',
     'playing-cards':   'classic',

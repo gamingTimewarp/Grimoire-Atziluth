@@ -37,9 +37,11 @@
     { "source": "geomancy.figure.laetitia",      "target": "astrology.planet.jupiter",            "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
     { "source": "geomancy.figure.laetitia",      "target": "astrology.zodiac-sign.pisces",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
 
-    { "source": "geomancy.figure.cauda-draconis", "target": "astrology.zodiac-sign.sagittarius",   "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.cauda-draconis", "target": "astrology.zodiac-sign.sagittarius",   "label": "attributed-zodiac-sign",    "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.cauda-draconis", "target": "astrology.node.ketu",                 "label": "cross-tradition-equivalent", "bidirectional": true, "traditionScope": [] },
 
-    { "source": "geomancy.figure.caput-draconis", "target": "astrology.zodiac-sign.virgo",         "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.caput-draconis", "target": "astrology.zodiac-sign.virgo",         "label": "attributed-zodiac-sign",    "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
+    { "source": "geomancy.figure.caput-draconis", "target": "astrology.node.rahu",                 "label": "cross-tradition-equivalent", "bidirectional": true, "traditionScope": [] },
 
     { "source": "geomancy.figure.fortuna-minor", "target": "astrology.planet.sol",                "label": "attributed-planet",      "bidirectional": true, "traditionScope": ["tradition.geomancy"] },
     { "source": "geomancy.figure.fortuna-minor", "target": "astrology.zodiac-sign.leo",            "label": "attributed-zodiac-sign", "bidirectional": true, "traditionScope": ["tradition.geomancy"] },

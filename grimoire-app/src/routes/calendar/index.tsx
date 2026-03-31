@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import {
   getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign,
+  getChineseZodiacYear,
   buildCalendarGrid, toDateString, WEEKDAY_HEADERS,
 } from '@/lib/astro-calc'
 import {
@@ -42,6 +43,9 @@ function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<
   const ruler  = getPlanetaryDayRuler(date)
   const wuxing = getWuxingPhase(date)
   const sun    = getSunSign(date)
+  const { activeTraditions } = loadTraditionSettings()
+  const showChineseZodiac = activeTraditions.includes('tradition.chinese-zodiac')
+  const chineseAnimal = showChineseZodiac ? getChineseZodiacYear(date) : null
 
   const chip = (label: string, canonicalName: string, sub?: string) => (
     <span
@@ -73,9 +77,10 @@ function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
         {chip(`${ruler.symbol} ${ruler.name}`, ruler.canonicalName, 'Day Ruler')}
-        {chip(`${moon.emoji} ${moon.name}`, 'astrology.planet.luna', `${moon.illumination}%`)}
+        {chip(`${moon.emoji} ${moon.name}`, moon.canonicalName, `${moon.illumination}%`)}
         {chip(`${sun.symbol} ${sun.name}`, sun.canonicalName, 'Sun')}
         {chip(`${wuxing.nameZh} ${wuxing.name}`, wuxing.canonicalName, wuxing.season)}
+        {chineseAnimal && chip(`${chineseAnimal.emoji} ${chineseAnimal.chineseChar} ${chineseAnimal.name}`, chineseAnimal.canonicalName, 'Lunar Year')}
       </div>
     </div>
   )
@@ -225,8 +230,9 @@ function TransitsPanel({
   navigate: ReturnType<typeof useNavigate>
 }) {
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
-  const { showNodes } = loadTraditionSettings()
-  const positions = useMemo(() => getPlanetPositions(date, 'tropical', { showNodes }), [dateStr])
+  const { showNodes, activeTraditions } = loadTraditionSettings()
+  const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
+  const positions = useMemo(() => getPlanetPositions(date, 'tropical', { showNodes, showModernPlanets }), [dateStr])
   const aspects   = useMemo(() => getAspects(positions, date), [positions])
   const [showTable, setShowTable] = useState(false)
 
@@ -390,7 +396,7 @@ function DayDetail({
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', fontSize: '12px' }}>
           {navLink(`${ruler.symbol} ${ruler.name}`, ruler.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
-          {navLink(`${moon.emoji} ${moon.name} (${moon.illumination}%)`, 'astrology.planet.luna')}
+          {navLink(`${moon.emoji} ${moon.name} (${moon.illumination}%)`, moon.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
           {navLink(`${sun.symbol} ${sun.name}`, sun.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>

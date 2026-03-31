@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.minor-body.chiron",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Chiron",
+      "description": "Chiron is a centaur object (part asteroid, part comet) orbiting between Saturn and Uranus, discovered in 1977 by Charles Kowal. Mythologically, Chiron was the wise centaur who tutored Achilles and Asclepius — himself wounded by a poisoned arrow yet unable to die, he embodies the archetype of the Wounded Healer: one whose own wound becomes the source of wisdom and the capacity to heal others. Astrologically, Chiron's placement in the natal chart indicates the area of deepest wounding and, by integration, the most profound gift; it bridges the inner personal planets with the outer transpersonal ones, symbolising the transformative journey from wound to wisdom.",
+      "secondaryNames": [
+        { "name": "Chiron", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⚷", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⚷",
+        "discoveryYear": 1977,
+        "discoveredBy": "Charles Kowal",
+        "objectClass": "centaur",
+        "orbitsBetween": ["astrology.planet.saturn", "astrology.planet.uranus"],
+        "orbitalPeriodYears": 50.7,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.minor-body.ceres",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Ceres",
+      "description": "Ceres is a dwarf planet and the largest object in the main asteroid belt between Mars and Jupiter, discovered in 1801 by Giuseppe Piazzi. Named for the Roman goddess of grain, agriculture, and maternal love (cognate with the Greek Demeter), Ceres governs the cycles of nourishment, loss, and return — the mythic arc of Demeter's search for Persephone encodes the seasonal round of death and renewal. Astrologically, Ceres represents nurturing, the food–body relationship, grief and separation, and the ecological bond between humanity and the living Earth; its sign and house reveal how one gives and receives care, and where themes of loss and restoration are most keenly felt.",
+      "secondaryNames": [
+        { "name": "Demeter", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⚳", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⚳",
+        "discoveryYear": 1801,
+        "discoveredBy": "Giuseppe Piazzi",
+        "objectClass": "dwarf-planet",
+        "location": "main-asteroid-belt",
+        "orbitalPeriodYears": 4.6,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.minor-body.pallas",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Pallas",
+      "description": "Pallas Athena is the second asteroid ever discovered, found in 1802 by Heinrich Wilhelm Matthäus Olbers, and the third-largest body in the main asteroid belt. Named for Pallas Athena, the Greek goddess of wisdom, strategy, craft, and just warfare — she who sprang fully armed from the head of Zeus — Pallas represents the principle of creative intelligence applied to material form. Astrologically, Pallas governs pattern recognition, strategic thinking, the integration of intellect and craft, political acumen, and the androgynous mind that transcends gender categories; it indicates how one solves problems, where artistic skill manifests, and the capacity to perceive the whole within the part.",
+      "secondaryNames": [
+        { "name": "Pallas Athena", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⚴", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⚴",
+        "discoveryYear": 1802,
+        "discoveredBy": "Heinrich Wilhelm Matthäus Olbers",
+        "objectClass": "asteroid",
+        "location": "main-asteroid-belt",
+        "orbitalPeriodYears": 4.6,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.minor-body.juno",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Juno",
+      "description": "Juno is the third asteroid discovered, found in 1804 by Karl Ludwig Harding, and one of the larger bodies in the main asteroid belt. Named for Juno, the Roman Queen of Heaven (Hera in Greek), goddess of marriage, committed partnership, and the rights of women within the social contract — yet also a figure of fierce jealousy and the costs of unequal power in relationship. Astrologically, Juno governs the quality and dynamics of long-term partnerships: where one seeks a soulmate, the type of partner who will challenge or complete the self, issues of equality and betrayal within committed bonds, and the principle of sacred contractual union as distinct from mere romantic attraction.",
+      "secondaryNames": [
+        { "name": "Hera", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⚵", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⚵",
+        "discoveryYear": 1804,
+        "discoveredBy": "Karl Ludwig Harding",
+        "objectClass": "asteroid",
+        "location": "main-asteroid-belt",
+        "orbitalPeriodYears": 4.4,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.minor-body.vesta",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Vesta",
+      "description": "Vesta is the brightest and second-most-massive body in the main asteroid belt, discovered in 1807 by Heinrich Wilhelm Matthäus Olbers. Named for Vesta, the Roman goddess of the sacred hearth flame (Hestia in Greek) — the eternal fire tended by the Vestal Virgins in Rome, the inextinguishable centre of home and city alike. Astrologically, Vesta governs sacred focus, devotion, the capacity for spiritual discipline and sacrifice in service of a higher purpose, and the inward flame of dedication; its sign and house reveal where one can achieve extraordinary concentration and consecration, as well as where one may experience the shadow of overwork, self-denial, or the compartmentalisation of sexuality.",
+      "secondaryNames": [
+        { "name": "Hestia", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⚶", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⚶",
+        "discoveryYear": 1807,
+        "discoveredBy": "Heinrich Wilhelm Matthäus Olbers",
+        "objectClass": "asteroid",
+        "location": "main-asteroid-belt",
+        "orbitalPeriodYears": 3.6,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.minor-body.eris",
+      "entityType": "astrology.minor-body",
+      "primaryDisplayName": "Eris",
+      "description": "Eris is a dwarf planet in the scattered disc beyond Neptune, discovered in 2005 by a team led by Mike Brown; it is slightly smaller than Pluto but more massive, and its discovery directly precipitated the 2006 IAU decision to reclassify Pluto, stripping both of full planetary status. Named for Eris, the Greek goddess of discord and strife — she who hurled the golden Apple of Discord at the wedding of Peleus and Thetis, triggering the chain of events leading to the Trojan War. Astrologically, Eris represents the disruptive revelation of what has been suppressed or overlooked, the outsider who names uncomfortable truths, and the principle that discord, however painful, is often the catalyst for necessary systemic restructuring; it operates at the level of collective civilisational disruption.",
+      "secondaryNames": [
+        { "name": "Eris", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "⯰", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "celestial-points", "modern-astrology"],
+      "extendedData": {
+        "glyph": "⯰",
+        "discoveryYear": 2005,
+        "discoveredBy": "Mike Brown, Chad Trujillo, David Rabinowitz",
+        "objectClass": "dwarf-planet",
+        "location": "scattered-disc",
+        "orbitalPeriodYears": 557,
+        "physicalBody": true
+      }
+    },
+    {
+      "canonicalName": "astrology.point.black-moon-lilith",
+      "entityType": "astrology.point",
+      "primaryDisplayName": "Black Moon Lilith",
+      "description": "Black Moon Lilith is not a physical body but a mathematical point: the mean (or true) lunar apogee, the empty focus of the Moon's elliptical orbit around the Earth — the point in space farthest from the Earth on that orbit. Named for Lilith, the figure from Kabbalistic and Near Eastern tradition who refused submission and was cast out: the dark, primal feminine who will not be domesticated. Astrologically, Black Moon Lilith represents the raw, untamed instinctual nature, the shadow of the feminine principle, sexuality as power rather than sentiment, the quality of exile and refusal, and the place in the natal chart where one may experience shame, projection, or fierce autonomy; working consciously with Lilith involves integrating the exiled, instinctual self.",
+      "secondaryNames": [
+        { "name": "Lilith", "languageTag": "he", "visible": true, "sortOrder": 0 },
+        { "name": "BML", "languageTag": "abbr", "visible": true, "sortOrder": 1 },
+        { "name": "⚸", "languageTag": "symbol", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["astrology", "celestial-points"],
+      "extendedData": {
+        "glyph": "⚸",
+        "physicalBody": false,
+        "pointType": "lunar-apogee",
+        "meanOrTrue": "mean",
+        "relatedBody": "astrology.planet.luna"
+      }
+    }
+  ]
+}

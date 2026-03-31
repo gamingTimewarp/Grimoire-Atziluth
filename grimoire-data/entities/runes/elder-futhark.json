@@ -34,12 +34,12 @@
       "extendedData": {
         "runeGlyph": "ᚠ",
         "orderNumber": 1,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "F",
         "meaning": "cattle, wealth",
         "element": "astrology.element.fire",
-        "deity": "Freyja",
+        "deity": "norse.deity.freya",
         "keywords": [
           "wealth",
           "abundance",
@@ -71,12 +71,12 @@
       "extendedData": {
         "runeGlyph": "ᚢ",
         "orderNumber": 2,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "U",
         "meaning": "aurochs, primal strength",
         "element": "astrology.element.earth",
-        "deity": "Thor",
+        "deity": "norse.deity.thor",
         "keywords": [
           "strength",
           "vitality",
@@ -115,12 +115,12 @@
       "extendedData": {
         "runeGlyph": "ᚦ",
         "orderNumber": 3,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "TH",
         "meaning": "giant, thorn",
         "element": "astrology.element.fire",
-        "deity": "Thor",
+        "deity": "norse.deity.thor",
         "keywords": [
           "force",
           "destruction",
@@ -159,12 +159,12 @@
       "extendedData": {
         "runeGlyph": "ᚨ",
         "orderNumber": 4,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "A",
         "meaning": "god, divine breath",
         "element": "astrology.element.air",
-        "deity": "Odin",
+        "deity": "norse.deity.odin",
         "keywords": [
           "communication",
           "inspiration",
@@ -204,12 +204,12 @@
       "extendedData": {
         "runeGlyph": "ᚱ",
         "orderNumber": 5,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "R",
         "meaning": "riding, journey",
         "element": "astrology.element.air",
-        "deity": "Ing/Freyr",
+        "deity": "norse.deity.freyr",
         "keywords": [
           "journey",
           "travel",
@@ -249,12 +249,12 @@
       "extendedData": {
         "runeGlyph": "ᚲ",
         "orderNumber": 6,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "K",
         "meaning": "torch, knowledge",
         "element": "astrology.element.fire",
-        "deity": "Loki",
+        "deity": "norse.deity.loki",
         "keywords": [
           "knowledge",
           "craft",
@@ -294,12 +294,12 @@
       "extendedData": {
         "runeGlyph": "ᚷ",
         "orderNumber": 7,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "G",
         "meaning": "gift",
         "element": "astrology.element.air",
-        "deity": "Odin/Freyr",
+        "deity": ["norse.deity.odin", "norse.deity.freyr"],
         "keywords": [
           "gift",
           "exchange",
@@ -338,12 +338,12 @@
       "extendedData": {
         "runeGlyph": "ᚹ",
         "orderNumber": 8,
-        "aett": "freya",
+        "aett": "norse.deity.freya",
         "aettNumber": 1,
         "phoneme": "W/V",
         "meaning": "joy, perfection",
         "element": "astrology.element.earth",
-        "deity": "Odin/Woden",
+        "deity": "norse.deity.odin",
         "keywords": [
           "joy",
           "harmony",
@@ -382,12 +382,12 @@
       "extendedData": {
         "runeGlyph": "ᚺ",
         "orderNumber": 9,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "H",
         "meaning": "hail",
         "element": "ice/water",
-        "deity": "Heimdall",
+        "deity": "norse.deity.heimdall",
         "keywords": [
           "disruption",
           "hail",
@@ -426,7 +426,7 @@
       "extendedData": {
         "runeGlyph": "ᚾ",
         "orderNumber": 10,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "N",
         "meaning": "need, necessity",
@@ -471,7 +471,7 @@
       "extendedData": {
         "runeGlyph": "ᛁ",
         "orderNumber": 11,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "I",
         "meaning": "ice",
@@ -515,12 +515,12 @@
       "extendedData": {
         "runeGlyph": "ᛃ",
         "orderNumber": 12,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "J/Y",
         "meaning": "year, harvest",
         "element": "astrology.element.earth",
-        "deity": "Freyr",
+        "deity": "norse.deity.freyr",
         "keywords": [
           "harvest",
           "year",
@@ -560,12 +560,12 @@
       "extendedData": {
         "runeGlyph": "ᛇ",
         "orderNumber": 13,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "EI",
         "meaning": "yew tree",
         "element": "earth/death",
-        "deity": "Odin (Yggdrasil)",
+        "deity": "norse.deity.odin",
         "keywords": [
           "yew",
           "death",
@@ -599,7 +599,7 @@
       "extendedData": {
         "runeGlyph": "ᛈ",
         "orderNumber": 14,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "P",
         "meaning": "dice cup / mystery / womb",
@@ -650,12 +650,12 @@
       "extendedData": {
         "runeGlyph": "ᛉ",
         "orderNumber": 15,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "Z/R",
         "meaning": "elk, protection",
         "element": "astrology.element.air",
-        "deity": "Valkyries/Odin",
+        "deity": ["Valkyries", "norse.deity.odin"],
         "keywords": [
           "protection",
           "elk",
@@ -700,7 +700,7 @@
       "extendedData": {
         "runeGlyph": "ᛊ",
         "orderNumber": 16,
-        "aett": "heimdall",
+        "aett": "norse.deity.heimdall",
         "aettNumber": 2,
         "phoneme": "S",
         "meaning": "sun",
@@ -745,12 +745,12 @@
       "extendedData": {
         "runeGlyph": "ᛏ",
         "orderNumber": 17,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "T",
         "meaning": "Tyr, justice",
         "element": "astrology.element.air",
-        "deity": "Tyr",
+        "deity": "norse.deity.tyr",
         "keywords": [
           "justice",
           "honour",
@@ -789,12 +789,12 @@
       "extendedData": {
         "runeGlyph": "ᛒ",
         "orderNumber": 18,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "B",
         "meaning": "birch tree",
         "element": "astrology.element.earth",
-        "deity": "Frigg/Freyja",
+        "deity": ["norse.deity.frigg", "norse.deity.freya"],
         "keywords": [
           "birth",
           "renewal",
@@ -834,12 +834,12 @@
       "extendedData": {
         "runeGlyph": "ᛖ",
         "orderNumber": 19,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "E",
         "meaning": "horse",
         "element": "earth/air",
-        "deity": "Odin (Sleipnir)",
+        "deity": "norse.deity.odin",
         "keywords": [
           "horse",
           "partnership",
@@ -878,12 +878,12 @@
       "extendedData": {
         "runeGlyph": "ᛗ",
         "orderNumber": 20,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "M",
         "meaning": "man, humanity",
         "element": "astrology.element.air",
-        "deity": "Heimdall/Odin",
+        "deity": ["norse.deity.heimdall", "norse.deity.odin"],
         "keywords": [
           "humanity",
           "intelligence",
@@ -922,12 +922,12 @@
       "extendedData": {
         "runeGlyph": "ᛚ",
         "orderNumber": 21,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "L",
         "meaning": "water, lake",
         "element": "astrology.element.water",
-        "deity": "Njord",
+        "deity": "norse.deity.njord",
         "keywords": [
           "water",
           "intuition",
@@ -967,12 +967,12 @@
       "extendedData": {
         "runeGlyph": "ᛜ",
         "orderNumber": 22,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "NG",
         "meaning": "Ing/Freyr",
         "element": "astrology.element.earth",
-        "deity": "Ing/Freyr",
+        "deity": "norse.deity.freyr",
         "keywords": [
           "fertility",
           "the seed",
@@ -1012,12 +1012,12 @@
       "extendedData": {
         "runeGlyph": "ᛞ",
         "orderNumber": 23,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "D",
         "meaning": "day, dawn",
         "element": "fire/air",
-        "deity": "Heimdall/Odin",
+        "deity": ["norse.deity.heimdall", "norse.deity.odin"],
         "keywords": [
           "day",
           "dawn",
@@ -1057,12 +1057,12 @@
       "extendedData": {
         "runeGlyph": "ᛟ",
         "orderNumber": 24,
-        "aett": "tyr",
+        "aett": "norse.deity.tyr",
         "aettNumber": 3,
         "phoneme": "O",
         "meaning": "ancestral estate, heritage",
         "element": "astrology.element.earth",
-        "deity": "Odin/ancestors",
+        "deity": "norse.deity.odin",
         "keywords": [
           "ancestry",
           "heritage",

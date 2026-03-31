@@ -7,6 +7,8 @@ import { join, relative, extname, resolve } from 'path'
 
 // @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST
+// @ts-expect-error process is a nodejs global
+const appVersion: string = process.env.VITE_APP_VERSION ?? 'dev'
 
 /** Build-time: bundle all JSON from grimoire-data/ as a virtual module */
 function grimoireDataPlugin() {
@@ -54,6 +56,9 @@ function grimoireDataPlugin() {
 }
 
 export default defineConfig(async () => ({
+  define: {
+    __APP_VERSION__: JSON.stringify(appVersion),
+  },
   plugins: [
     TanStackRouterVite({
       routesDirectory: './src/routes',

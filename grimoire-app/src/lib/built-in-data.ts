@@ -39,6 +39,8 @@ export interface DeckFilter {
    * reference page's visible-link filter so attribution links surface automatically.
    */
   traditionIds?: string[]
+  /** Canonical name of the entity representing this deck in the reference database. */
+  infoCanonicalName?: string
 }
 
 export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
@@ -49,6 +51,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'Classic illustrated tarot deck by Pamela Colman Smith (1909).',
     reversalEnabled: true,
     traditionIds: ['tradition.golden-dawn'],
+    infoCanonicalName: 'tarot.deck.rider-waite-smith',
     variants: [
       { id: 'rws-full',  label: 'Full 78',          tags: ['rider-waite-smith'], entityType: 'tarot.card' },
       { id: 'rws-major', label: 'Major Arcana Only', tags: ['major-arcana', 'rider-waite-smith'], entityType: 'tarot.card' },
@@ -60,6 +63,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'Complete 78-card Thoth deck designed by Aleister Crowley.',
     reversalEnabled: false,
     traditionIds: ['tradition.thoth-crowley', 'tradition.golden-dawn'],
+    infoCanonicalName: 'tarot.deck.thoth',
     variants: [
       { id: 'thoth-full',  label: 'Full 78',          tags: ['thoth'], entityType: 'tarot.card' },
       { id: 'thoth-major', label: 'Major Arcana Only', tags: ['major-arcana', 'thoth'], entityType: 'tarot.card' },
@@ -71,6 +75,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'Classic woodblock-printed tarot in the Marseille tradition.',
     reversalEnabled: false,
     traditionIds: ['tradition.tarot-de-marseille'],
+    infoCanonicalName: 'tarot.deck.tarot-de-marseille',
     variants: [
       { id: 'tdm-full',  label: 'Full 78',          tags: ['tarot-de-marseille'], entityType: 'tarot.card' },
       { id: 'tdm-major', label: 'Major Arcana Only', tags: ['major-arcana', 'tarot-de-marseille'], entityType: 'tarot.card' },
@@ -82,6 +87,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'The first purpose-built occult tarot (1789) by Jean-Baptiste Alliette.',
     reversalEnabled: true,
     traditionIds: ['tradition.etteilla'],
+    infoCanonicalName: 'tarot.deck.etteilla',
     variants: [
       { id: 'etteilla-full',  label: 'Full 78',          tags: ['etteilla'], entityType: 'tarot.card' },
       { id: 'etteilla-major', label: 'Major Arcana Only', tags: ['major-arcana', 'etteilla'], entityType: 'tarot.card' },
@@ -93,6 +99,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     displayName: 'Playing Cards',
     description: 'Standard French-suited playing card deck for cartomancy.',
     reversalEnabled: false,
+    infoCanonicalName: 'system.overview.playing-cards',
     variants: [
       { id: 'playing-cards-52', label: '52 Cards (No Jokers)', tags: ['playing-card-suited'], entityType: 'tarot.card' },
       { id: 'playing-cards-54', label: '54 Cards (With Jokers)', tags: ['playing-card'], entityType: 'tarot.card' },
@@ -106,6 +113,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     tags: ['elder-futhark'],
     entityType: 'rune',
     reversalEnabled: false,
+    infoCanonicalName: 'system.overview.runes',
   },
   {
     id: 'lenormand',
@@ -114,6 +122,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     tags: ['lenormand'],
     entityType: 'tarot.card',
     reversalEnabled: false,
+    infoCanonicalName: 'system.overview.lenormand',
   },
   {
     id: 'ogham',
@@ -121,6 +130,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'Ogham alphabet characters used for divination.',
     reversalEnabled: false,
     traditionIds: ['tradition.ogham-bln'],
+    infoCanonicalName: 'system.overview.ogham',
     variants: [
       { id: 'ogham-core', label: '20 Core Letters',        tags: ['ogham-core'], entityType: 'ogham.letter' },
       { id: 'ogham-full', label: 'Full 25 (with Forfeda)', tags: ['ogham'],      entityType: 'ogham.letter' },
@@ -133,6 +143,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     entityType: 'geomancy.figure',
     reversalEnabled: false,
     traditionIds: ['tradition.geomancy'],
+    infoCanonicalName: 'system.overview.geomancy',
   },
   {
     id: 'mahjong',
@@ -140,6 +151,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: '42 Mahjong tile types for Chinese divinatory oracle readings.',
     entityType: 'divination.mahjong-tile',
     reversalEnabled: false,
+    infoCanonicalName: 'system.overview.mahjong',
   },
   {
     id: 'tea-symbols',
@@ -147,8 +159,26 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     description: 'Approximately 90 classic tasseomancy symbols for tea leaf and coffee ground readings.',
     entityType: 'divination.tea-symbol',
     reversalEnabled: false,
+    infoCanonicalName: 'system.overview.tasseomancy',
   },
 ]
+
+// ─── Spread entity map ────────────────────────────────────────────────────────
+
+/** Maps built-in spread IDs to their canonical names in the reference database. */
+export const SPREAD_ENTITY_CN: Record<string, string> = {
+  'free':          'divination.spread.free-reading',
+  'single':        'divination.spread.single-card',
+  'three-card':    'divination.spread.three-card',
+  'celtic-cross':  'divination.spread.celtic-cross',
+  'horseshoe':     'divination.spread.horseshoe',
+  'year-ahead':    'divination.spread.year-ahead',
+  'zodiac-year':   'divination.spread.zodiac-year',
+  'chakra':        'divination.spread.chakra',
+  'grand-tableau': 'divination.spread.grand-tableau',
+  'relationship':  'divination.spread.relationship',
+  'tree-of-life':  'divination.spread.tree-of-life',
+}
 
 // ─── Spreads ──────────────────────────────────────────────────────────────────
 

@@ -463,20 +463,20 @@ function RuneSymbolic({ entity, width, height }: { entity: BaseEntity; width: nu
 const GEOMANCY_PATTERNS: Record<string, [number, number, number, number]> = {
   'geomancy.figure.via':            [1, 1, 1, 1],
   'geomancy.figure.populus':        [0, 0, 0, 0],
-  'geomancy.figure.fortuna-major':  [0, 0, 1, 1],
-  'geomancy.figure.fortuna-minor':  [1, 1, 0, 0],
-  'geomancy.figure.puer':           [1, 0, 1, 1],
-  'geomancy.figure.puella':         [1, 1, 0, 1],
-  'geomancy.figure.rubeus':         [1, 0, 0, 1],
-  'geomancy.figure.albus':          [0, 1, 0, 0],
-  'geomancy.figure.amissio':        [0, 1, 1, 0],
-  'geomancy.figure.conjunctio':     [0, 1, 0, 1],
-  'geomancy.figure.laetitia':       [1, 0, 0, 0],
-  'geomancy.figure.tristitia':      [0, 0, 0, 1],
-  'geomancy.figure.acquisitio':     [0, 0, 1, 0],
-  'geomancy.figure.carcer':         [1, 0, 1, 0],
-  'geomancy.figure.caput-draconis': [0, 1, 1, 1],
-  'geomancy.figure.cauda-draconis': [1, 1, 1, 0],
+  'geomancy.figure.rubeus':         [0, 1, 0, 1],   // spatial reverse of Puer
+  'geomancy.figure.albus':          [0, 0, 1, 0],
+  'geomancy.figure.fortuna-minor':  [0, 0, 1, 1],
+  'geomancy.figure.puella':         [0, 1, 0, 0],
+  'geomancy.figure.amissio':        [0, 0, 0, 1],   // spatial reverse of Acquisitio
+  'geomancy.figure.conjunctio':     [0, 1, 1, 0],
+  'geomancy.figure.tristitia':      [0, 1, 1, 1],
+  'geomancy.figure.acquisitio':     [1, 0, 0, 0],
+  'geomancy.figure.carcer':         [1, 0, 0, 1],
+  'geomancy.figure.puer':           [1, 0, 1, 0],
+  'geomancy.figure.cauda-draconis': [1, 0, 1, 1],
+  'geomancy.figure.fortuna-major':  [1, 1, 0, 0],
+  'geomancy.figure.caput-draconis': [1, 1, 0, 1],
+  'geomancy.figure.laetitia':       [1, 1, 1, 0],
 }
 
 function GeomancySymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {

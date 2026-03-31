@@ -25,10 +25,17 @@ export async function initNatalDb(): Promise<void> {
       birth_lat             REAL,
       birth_lon             REAL,
       birth_location_label  TEXT,
+      birth_timezone        TEXT,
       notes                 TEXT NOT NULL DEFAULT '',
       is_self               INTEGER NOT NULL DEFAULT 0
     )
   `)
+  // Migration: add birth_timezone to existing databases
+  try {
+    await db.execute('ALTER TABLE natal_charts ADD COLUMN birth_timezone TEXT')
+  } catch {
+    // Column already exists — safe to ignore
+  }
 }
 
 export interface NatalChartRecord {
@@ -40,6 +47,7 @@ export interface NatalChartRecord {
   birthLat: number | null
   birthLon: number | null
   birthLocationLabel: string | null
+  birthTimezone: string | null
   notes: string
   isSelf: boolean
 }
@@ -53,6 +61,7 @@ type NatalRow = {
   birth_lat: number | null
   birth_lon: number | null
   birth_location_label: string | null
+  birth_timezone: string | null
   notes: string
   is_self: number
 }
@@ -67,6 +76,7 @@ function rowToRecord(r: NatalRow): NatalChartRecord {
     birthLat: r.birth_lat,
     birthLon: r.birth_lon,
     birthLocationLabel: r.birth_location_label,
+    birthTimezone: r.birth_timezone,
     notes: r.notes,
     isSelf: r.is_self === 1,
   }
@@ -78,11 +88,12 @@ export async function saveNatalChart(input: Omit<NatalChartRecord, 'id' | 'creat
   const now = nowIso()
   await db.execute(
     `INSERT INTO natal_charts
-       (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, notes, is_self)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, birth_timezone, notes, is_self)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [id, now, input.name, input.birthDate, input.birthTime ?? null,
      input.birthLat ?? null, input.birthLon ?? null,
-     input.birthLocationLabel ?? null, input.notes, input.isSelf ? 1 : 0]
+     input.birthLocationLabel ?? null, input.birthTimezone ?? null,
+     input.notes, input.isSelf ? 1 : 0]
   )
   return { id, createdAt: now, ...input }
 }
@@ -92,11 +103,12 @@ export async function updateNatalChart(id: string, input: Omit<NatalChartRecord,
   await db.execute(
     `UPDATE natal_charts SET
        name = ?, birth_date = ?, birth_time = ?, birth_lat = ?, birth_lon = ?,
-       birth_location_label = ?, notes = ?, is_self = ?
+       birth_location_label = ?, birth_timezone = ?, notes = ?, is_self = ?
      WHERE id = ?`,
     [input.name, input.birthDate, input.birthTime ?? null,
      input.birthLat ?? null, input.birthLon ?? null,
-     input.birthLocationLabel ?? null, input.notes, input.isSelf ? 1 : 0, id]
+     input.birthLocationLabel ?? null, input.birthTimezone ?? null,
+     input.notes, input.isSelf ? 1 : 0, id]
   )
 }
 
@@ -118,11 +130,12 @@ export async function importNatalChart(r: NatalChartRecord): Promise<void> {
   const db = await getDb()
   await db.execute(
     `INSERT OR IGNORE INTO natal_charts
-       (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, notes, is_self)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, birth_timezone, notes, is_self)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [r.id, r.createdAt, r.name, r.birthDate, r.birthTime ?? null,
      r.birthLat ?? null, r.birthLon ?? null,
-     r.birthLocationLabel ?? null, r.notes, r.isSelf ? 1 : 0]
+     r.birthLocationLabel ?? null, r.birthTimezone ?? null,
+     r.notes, r.isSelf ? 1 : 0]
   )
 }
 

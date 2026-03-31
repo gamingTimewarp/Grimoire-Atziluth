@@ -7,7 +7,7 @@ import {
   saveAccessibilitySettings,
   applyAccessibilitySettings,
 } from '@/lib/accessibility-store'
-import type { AccessibilitySettings, ColorblindMode, TextScale } from '@/lib/accessibility-store'
+import type { AccessibilitySettings, ColorblindMode, TextScale, NavSide } from '@/lib/accessibility-store'
 
 export const Route = createFileRoute('/settings/accessibility')({
   component: AccessibilityPage,
@@ -24,7 +24,7 @@ function AccessibilityPage() {
     applyAccessibilitySettings(next)
   }
 
-  const toggle = (key: keyof Omit<AccessibilitySettings, 'colorblindMode' | 'textScale' | 'reversedDisplay'>) => {
+  const toggle = (key: keyof Omit<AccessibilitySettings, 'colorblindMode' | 'textScale' | 'reversedDisplay' | 'navSide'>) => {
     update({ [key]: !settings[key] })
   }
 
@@ -74,6 +74,41 @@ function AccessibilityPage() {
           <Eye size={18} style={{ color: 'var(--color-accent)' }} />
           Accessibility
         </h1>
+      </div>
+
+      {/* Navigation */}
+      <SectionLabel>Navigation</SectionLabel>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '28px' }}>
+        {([
+          { value: 'left',  label: 'Left (default)', desc: 'Hamburger button and drawer appear on the left side of the screen.' },
+          { value: 'right', label: 'Right',           desc: 'Hamburger button and drawer appear on the right side of the screen.' },
+        ] as { value: NavSide; label: string; desc: string }[]).map(opt => (
+          <label
+            key={opt.value}
+            style={{
+              display: 'flex', alignItems: 'flex-start', gap: '12px',
+              padding: '12px 16px', background: 'var(--color-surface-2)',
+              border: `1px solid ${settings.navSide === opt.value ? 'var(--color-accent)' : 'var(--color-border)'}`,
+              borderRadius: '6px', cursor: 'pointer', userSelect: 'none',
+              transition: 'border-color 0.15s',
+            }}
+          >
+            <input
+              type="radio"
+              name="nav-side"
+              value={opt.value}
+              checked={settings.navSide === opt.value}
+              onChange={() => update({ navSide: opt.value })}
+              style={{ accentColor: 'var(--color-accent)', width: '15px', height: '15px', marginTop: '2px', flexShrink: 0 }}
+            />
+            <div>
+              <div style={{ fontSize: '14px', color: settings.navSide === opt.value ? 'var(--color-accent)' : 'var(--color-text)', marginBottom: '2px' }}>
+                {opt.label}
+              </div>
+              <div style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>{opt.desc}</div>
+            </div>
+          </label>
+        ))}
       </div>
 
       {/* Colour vision */}

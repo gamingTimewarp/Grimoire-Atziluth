@@ -1,33 +1,43 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useMemo } from 'react'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 export const Route = createFileRoute('/qabalah/gematria')({
   component: GematriaPage,
 })
 
-// Standard Hebrew letter values
+// ─── Letter data ──────────────────────────────────────────────────────────────
+
 const HEBREW_VALUES: Record<string, number> = {
   aleph: 1,   beth: 2,    gimel: 3,   daleth: 4,  he: 5,
   vav: 6,     zayin: 7,   cheth: 8,   teth: 9,    yod: 10,
   kaph: 20,   lamed: 30,  mem: 40,    nun: 50,    samekh: 60,
   ayin: 70,   pe: 80,     tzaddi: 90, qoph: 100,  resh: 200,
   shin: 300,  tav: 400,
+  // Mispar Gadol — final (sofit) form values
+  'kaph-final': 500, 'mem-final': 600, 'nun-final': 700,
+  'pe-final': 800,   'tzaddi-final': 900,
 }
 
-// Simple Hebrew Unicode → letter name mapping for input parsing
+// Unicode Hebrew → internal name.  Finals map to their '-final' names so the
+// parser can resolve them correctly based on the useFinalValues flag.
 const UNICODE_TO_NAME: Record<string, string> = {
   'א': 'aleph', 'ב': 'beth',   'ג': 'gimel',  'ד': 'daleth', 'ה': 'he',
   'ו': 'vav',   'ז': 'zayin',  'ח': 'cheth',  'ט': 'teth',   'י': 'yod',
   'כ': 'kaph',  'ל': 'lamed',  'מ': 'mem',    'נ': 'nun',    'ס': 'samekh',
   'ע': 'ayin',  'פ': 'pe',     'צ': 'tzaddi', 'ק': 'qoph',   'ר': 'resh',
   'ש': 'shin',  'ת': 'tav',
-  // Finals (same value as regular)
-  'ך': 'kaph',  'ם': 'mem',   'ן': 'nun',   'ף': 'pe',    'ץ': 'tzaddi',
+  'ך': 'kaph-final', 'ם': 'mem-final', 'ן': 'nun-final',
+  'ף': 'pe-final',   'ץ': 'tzaddi-final',
 }
 
-// Basic Latin transliteration → letter name
+// Base letter for each final form (for resolving back to standard value)
+const FINAL_BASE: Record<string, string> = {
+  'kaph-final': 'kaph', 'mem-final': 'mem', 'nun-final': 'nun',
+  'pe-final': 'pe', 'tzaddi-final': 'tzaddi',
+}
+
 const LATIN_TO_NAME: Record<string, string> = {
   'aleph': 'aleph', 'alef': 'aleph', 'beth': 'beth', 'bet': 'beth', 'vet': 'beth',
   'gimel': 'gimel', 'daleth': 'daleth', 'dalet': 'daleth', 'he': 'he', 'heh': 'he',
@@ -39,77 +49,117 @@ const LATIN_TO_NAME: Record<string, string> = {
   'tzaddi': 'tzaddi', 'tsadi': 'tzaddi', 'tzade': 'tzaddi', 'sadhe': 'tzaddi',
   'qoph': 'qoph', 'qof': 'qoph', 'kuf': 'qoph', 'resh': 'resh', 'shin': 'shin',
   'tav': 'tav', 'taw': 'tav', 'tau': 'tav',
+  // Final forms — Latin input (multiple spellings)
+  'kaph-final': 'kaph-final', 'kaf-sofit': 'kaph-final', 'final-kaph': 'kaph-final',
+  'mem-final':  'mem-final',  'mem-sofit':  'mem-final',  'final-mem':  'mem-final',
+  'nun-final':  'nun-final',  'nun-sofit':  'nun-final',  'final-nun':  'nun-final',
+  'pe-final':   'pe-final',   'peh-sofit':  'pe-final',   'final-pe':   'pe-final',
+  'tzaddi-final': 'tzaddi-final', 'tsadi-sofit': 'tzaddi-final', 'final-tzaddi': 'tzaddi-final',
 }
 
 interface LetterToken {
-  letter: string
+  display: string   // Hebrew char or Latin name as typed
+  name: string      // resolved internal name (e.g. 'kaph' or 'kaph-final')
   value: number
+  isFinal: boolean
 }
 
-function parseInput(raw: string): { tokens: LetterToken[]; total: number; error: string | null } {
+function parseInput(raw: string, useFinalValues: boolean): {
+  tokens: LetterToken[]
+  total: number
+  error: string | null
+} {
   const tokens: LetterToken[] = []
-  let i = 0
   const s = raw.trim()
   if (!s) return { tokens: [], total: 0, error: null }
 
-  // If input contains Hebrew Unicode chars, parse char by char
   const hasHebrew = /[\u05D0-\u05EA]/.test(s)
   if (hasHebrew) {
     for (const ch of s) {
       if (/\s/.test(ch)) continue
-      const name = UNICODE_TO_NAME[ch]
-      if (name) {
-        tokens.push({ letter: ch, value: HEBREW_VALUES[name] ?? 0 })
-      }
+      const raw_name = UNICODE_TO_NAME[ch]
+      if (!raw_name) continue
+      const isFinal = raw_name.endsWith('-final')
+      const name = (isFinal && !useFinalValues) ? FINAL_BASE[raw_name] : raw_name
+      tokens.push({ display: ch, name, value: HEBREW_VALUES[name] ?? 0, isFinal })
     }
-    const total = tokens.reduce((a, t) => a + t.value, 0)
-    return { tokens, total, error: tokens.length === 0 ? 'No recognized Hebrew characters.' : null }
+    return {
+      tokens,
+      total: tokens.reduce((a, t) => a + t.value, 0),
+      error: tokens.length === 0 ? 'No recognized Hebrew characters.' : null,
+    }
   }
 
-  // Latin transliteration: split on whitespace / hyphens / commas
-  const parts = s.toLowerCase().split(/[\s,\-]+/).filter(Boolean)
+  // Latin: split on whitespace and commas only — hyphens are part of "kaph-final" etc.
+  const parts = s.toLowerCase().split(/[\s,]+/).filter(Boolean)
   for (const part of parts) {
-    const name = LATIN_TO_NAME[part]
-    if (name) {
-      tokens.push({ letter: part, value: HEBREW_VALUES[name] ?? 0 })
-    } else {
-      return { tokens: [], total: 0, error: `Unrecognized letter: "${part}"` }
-    }
+    const raw_name = LATIN_TO_NAME[part]
+    if (!raw_name) return { tokens: [], total: 0, error: `Unrecognized letter: "${part}"` }
+    const isFinal = raw_name.endsWith('-final')
+    const name = (isFinal && !useFinalValues) ? FINAL_BASE[raw_name] : raw_name
+    tokens.push({ display: part, name, value: HEBREW_VALUES[name] ?? 0, isFinal })
   }
-  const total = tokens.reduce((a, t) => a + t.value, 0)
-  return { tokens, total, error: null }
+  return {
+    tokens,
+    total: tokens.reduce((a, t) => a + t.value, 0),
+    error: null,
+  }
 }
 
-const LETTER_TABLE = [
-  { name: 'Aleph',   heb: 'א', value: 1   },
-  { name: 'Beth',    heb: 'ב', value: 2   },
-  { name: 'Gimel',   heb: 'ג', value: 3   },
-  { name: 'Daleth',  heb: 'ד', value: 4   },
-  { name: 'He',      heb: 'ה', value: 5   },
-  { name: 'Vav',     heb: 'ו', value: 6   },
-  { name: 'Zayin',   heb: 'ז', value: 7   },
-  { name: 'Cheth',   heb: 'ח', value: 8   },
-  { name: 'Teth',    heb: 'ט', value: 9   },
-  { name: 'Yod',     heb: 'י', value: 10  },
-  { name: 'Kaph',    heb: 'כ', value: 20  },
-  { name: 'Lamed',   heb: 'ל', value: 30  },
-  { name: 'Mem',     heb: 'מ', value: 40  },
-  { name: 'Nun',     heb: 'נ', value: 50  },
-  { name: 'Samekh',  heb: 'ס', value: 60  },
-  { name: 'Ayin',    heb: 'ע', value: 70  },
-  { name: 'Pe',      heb: 'פ', value: 80  },
-  { name: 'Tzaddi',  heb: 'צ', value: 90  },
-  { name: 'Qoph',    heb: 'ק', value: 100 },
-  { name: 'Resh',    heb: 'ר', value: 200 },
-  { name: 'Shin',    heb: 'ש', value: 300 },
-  { name: 'Tav',     heb: 'ת', value: 400 },
+// ─── Letter table ─────────────────────────────────────────────────────────────
+
+interface LetterEntry {
+  name: string
+  latinKey: string      // key used for adding to input (and for LETTER_CANONICAL lookup)
+  heb: string
+  value: number
+  finalHeb?: string
+  finalLatinKey?: string
+  finalValue?: number   // mispar gadol value
+  canonicalName: string
+}
+
+const LETTER_TABLE: LetterEntry[] = [
+  { name: 'Aleph',  latinKey: 'aleph',  heb: 'א', value: 1,   canonicalName: 'letter.hebrew.aleph'  },
+  { name: 'Beth',   latinKey: 'beth',   heb: 'ב', value: 2,   canonicalName: 'letter.hebrew.beth'   },
+  { name: 'Gimel',  latinKey: 'gimel',  heb: 'ג', value: 3,   canonicalName: 'letter.hebrew.gimel'  },
+  { name: 'Daleth', latinKey: 'daleth', heb: 'ד', value: 4,   canonicalName: 'letter.hebrew.daleth' },
+  { name: 'He',     latinKey: 'he',     heb: 'ה', value: 5,   canonicalName: 'letter.hebrew.he'     },
+  { name: 'Vav',    latinKey: 'vav',    heb: 'ו', value: 6,   canonicalName: 'letter.hebrew.vav'    },
+  { name: 'Zayin',  latinKey: 'zayin',  heb: 'ז', value: 7,   canonicalName: 'letter.hebrew.zayin'  },
+  { name: 'Cheth',  latinKey: 'cheth',  heb: 'ח', value: 8,   canonicalName: 'letter.hebrew.cheth'  },
+  { name: 'Teth',   latinKey: 'teth',   heb: 'ט', value: 9,   canonicalName: 'letter.hebrew.teth'   },
+  { name: 'Yod',    latinKey: 'yod',    heb: 'י', value: 10,  canonicalName: 'letter.hebrew.yod'    },
+  { name: 'Kaph',   latinKey: 'kaph',   heb: 'כ', value: 20,  finalHeb: 'ך', finalLatinKey: 'kaph-final', finalValue: 500, canonicalName: 'letter.hebrew.kaph'   },
+  { name: 'Lamed',  latinKey: 'lamed',  heb: 'ל', value: 30,  canonicalName: 'letter.hebrew.lamed'  },
+  { name: 'Mem',    latinKey: 'mem',    heb: 'מ', value: 40,  finalHeb: 'ם', finalLatinKey: 'mem-final',  finalValue: 600, canonicalName: 'letter.hebrew.mem'    },
+  { name: 'Nun',    latinKey: 'nun',    heb: 'נ', value: 50,  finalHeb: 'ן', finalLatinKey: 'nun-final',  finalValue: 700, canonicalName: 'letter.hebrew.nun'    },
+  { name: 'Samekh', latinKey: 'samekh', heb: 'ס', value: 60,  canonicalName: 'letter.hebrew.samekh' },
+  { name: 'Ayin',   latinKey: 'ayin',   heb: 'ע', value: 70,  canonicalName: 'letter.hebrew.ayin'   },
+  { name: 'Pe',     latinKey: 'pe',     heb: 'פ', value: 80,  finalHeb: 'ף', finalLatinKey: 'pe-final',   finalValue: 800, canonicalName: 'letter.hebrew.pe'     },
+  { name: 'Tzaddi', latinKey: 'tzaddi', heb: 'צ', value: 90,  finalHeb: 'ץ', finalLatinKey: 'tzaddi-final', finalValue: 900, canonicalName: 'letter.hebrew.tzaddi' },
+  { name: 'Qoph',   latinKey: 'qoph',   heb: 'ק', value: 100, canonicalName: 'letter.hebrew.qoph'   },
+  { name: 'Resh',   latinKey: 'resh',   heb: 'ר', value: 200, canonicalName: 'letter.hebrew.resh'   },
+  { name: 'Shin',   latinKey: 'shin',   heb: 'ש', value: 300, canonicalName: 'letter.hebrew.shin'   },
+  { name: 'Tav',    latinKey: 'tav',    heb: 'ת', value: 400, canonicalName: 'letter.hebrew.tau'    },
 ]
+
+// ─── Component ────────────────────────────────────────────────────────────────
 
 function GematriaPage() {
   const navigate = useNavigate()
   const [input, setInput] = useState('')
+  const [useFinalValues, setUseFinalValues] = useState(false)
 
-  const parsed = useMemo(() => parseInput(input), [input])
+  const parsed = useMemo(() => parseInput(input, useFinalValues), [input, useFinalValues])
+
+  const addToInput = (key: string) =>
+    setInput(prev => prev ? prev + ' ' + key : key)
+
+  const goToLetter = (e: React.MouseEvent, canonicalName: string) => {
+    e.stopPropagation()
+    navigate({ to: '/reference/$canonicalName', params: { canonicalName } })
+  }
 
   return (
     <div style={{ maxWidth: '700px' }}>
@@ -122,9 +172,34 @@ function GematriaPage() {
 
       {/* Input */}
       <div style={{ marginBottom: '24px', padding: '16px 18px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
-          Input
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            Input
+          </div>
+          {/* Mispar Gadol toggle */}
+          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
+            <span style={{ fontSize: '11px', color: useFinalValues ? 'var(--color-text)' : 'var(--color-text-subtle)' }}>
+              Mispar Gadol (terminal forms)
+            </span>
+            <button
+              onClick={() => setUseFinalValues(v => !v)}
+              style={{
+                width: '32px', height: '18px', borderRadius: '9px', border: 'none',
+                cursor: 'pointer', padding: 0, flexShrink: 0, position: 'relative',
+                transition: 'background 0.15s',
+                background: useFinalValues ? 'var(--color-accent)' : 'var(--color-border)',
+              }}
+            >
+              <div style={{
+                width: '12px', height: '12px', borderRadius: '50%', background: '#fff',
+                position: 'absolute', top: '3px',
+                left: useFinalValues ? '17px' : '3px',
+                transition: 'left 0.15s',
+              }} />
+            </button>
+          </label>
         </div>
+
         <input
           value={input}
           onChange={e => setInput(e.target.value)}
@@ -147,8 +222,15 @@ function GematriaPage() {
             <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
               {parsed.tokens.map((t, i) => (
                 <span key={i} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                  <span style={{ fontSize: '18px', fontFamily: 'serif', color: 'var(--color-text)' }}>{t.letter}</span>
-                  <span style={{ fontSize: '11px', color: 'var(--color-text-muted)' }}>{t.value}</span>
+                  <span style={{ fontSize: '18px', fontFamily: 'serif', color: 'var(--color-text)' }}>{t.display}</span>
+                  <span style={{ fontSize: '11px', color: t.isFinal && useFinalValues ? 'var(--color-accent)' : 'var(--color-text-muted)' }}>
+                    {t.value}
+                  </span>
+                  {t.isFinal && (
+                    <span style={{ fontSize: '10px', color: 'var(--color-text-subtle)', lineHeight: 1 }}>
+                      sofit
+                    </span>
+                  )}
                 </span>
               ))}
             </div>
@@ -164,29 +246,93 @@ function GematriaPage() {
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
           Letter Values
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '4px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '4px' }}>
           {LETTER_TABLE.map(l => (
-            <div
+            <LetterTile
               key={l.name}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '8px',
-                padding: '6px 10px', background: 'var(--color-surface-2)',
-                borderRadius: '4px', border: '1px solid var(--color-border)',
-                cursor: 'pointer',
-              }}
-              onClick={() => setInput(prev => prev ? prev + ' ' + l.name.toLowerCase() : l.name.toLowerCase())}
-              title={`Add ${l.name} (${l.value})`}
-            >
-              <span style={{ fontSize: '18px', color: 'var(--color-text)', fontFamily: 'serif', minWidth: '20px', textAlign: 'center' }}>{l.heb}</span>
-              <span style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>{l.name}</span>
-              <span style={{ fontSize: '12px', color: 'var(--color-accent)', marginLeft: 'auto' }}>{l.value}</span>
-            </div>
+              heb={l.heb}
+              label={l.name}
+              value={l.value}
+              canonicalName={l.canonicalName}
+              onAdd={() => addToInput(l.latinKey)}
+              onNavigate={e => goToLetter(e, l.canonicalName)}
+            />
+          ))}
+          {/* Final form tiles — always shown; value reflects useFinalValues toggle */}
+          {LETTER_TABLE.filter(l => l.finalHeb).map(l => (
+            <LetterTile
+              key={l.name + '-final'}
+              heb={l.finalHeb!}
+              label={l.name + ' Sofit'}
+              value={useFinalValues ? l.finalValue! : l.value}
+              isFinal
+              canonicalName={l.canonicalName}
+              onAdd={() => addToInput(l.finalLatinKey!)}
+              onNavigate={e => goToLetter(e, l.canonicalName)}
+            />
           ))}
         </div>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '8px' }}>
-          Click a letter to add it to the input. Finals (ך ם ן ף ץ) use same values as regular forms.
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '8px', lineHeight: '1.5' }}>
+          Click a tile to add the letter to the input.{' '}
+          <span style={{ color: 'var(--color-text-subtle)' }}>
+            Mispar Gadol gives terminal forms their extended values (500–900).
+            In Latin mode, type e.g. <em>kaph-final</em> or <em>mem-sofit</em>.
+          </span>
         </div>
       </div>
+    </div>
+  )
+}
+
+// ─── Tile sub-component ───────────────────────────────────────────────────────
+
+function LetterTile({
+  heb, label, value, isFinal = false, canonicalName, onAdd, onNavigate,
+}: {
+  heb: string
+  label: string
+  value: number
+  isFinal?: boolean
+  canonicalName: string
+  onAdd: () => void
+  onNavigate: (e: React.MouseEvent) => void
+}) {
+  return (
+    <div
+      onClick={onAdd}
+      title={`Add ${label} (${value})`}
+      style={{
+        display: 'flex', alignItems: 'center', gap: '6px',
+        padding: '6px 8px',
+        background: isFinal ? 'var(--color-surface-1)' : 'var(--color-surface-2)',
+        borderRadius: '4px',
+        border: `1px solid ${isFinal ? 'var(--color-border)' : 'var(--color-border)'}`,
+        cursor: 'pointer',
+        opacity: isFinal ? 0.85 : 1,
+      }}
+    >
+      <span style={{ fontSize: '18px', color: 'var(--color-text)', fontFamily: 'serif', minWidth: '20px', textAlign: 'center' }}>
+        {heb}
+      </span>
+      <span style={{ fontSize: '11px', color: 'var(--color-text-muted)', flex: 1, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        {label}
+      </span>
+      <span style={{ fontSize: '11px', color: 'var(--color-accent)', flexShrink: 0 }}>
+        {value}
+      </span>
+      <button
+        onClick={onNavigate}
+        title={`View ${label} in Reference`}
+        style={{
+          background: 'none', border: 'none', cursor: 'pointer', padding: '1px',
+          color: 'var(--color-text-subtle)', flexShrink: 0, display: 'flex', alignItems: 'center',
+          lineHeight: 1,
+        }}
+        onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+        onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+      >
+        <ExternalLink size={11} />
+      </button>
     </div>
   )
 }

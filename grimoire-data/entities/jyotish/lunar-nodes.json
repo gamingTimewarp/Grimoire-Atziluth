@@ -13,7 +13,7 @@
         { "name": "Caput Draconis", "languageTag": "la", "visible": true, "sortOrder": 3 },
         { "name": "☊", "languageTag": "symbol", "visible": true, "sortOrder": 4 }
       ],
-      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha"],
+      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha", "celestial-points"],
       "extendedData": {
         "symbol": "☊",
         "nature": "malefic",
@@ -40,7 +40,7 @@
         { "name": "Cauda Draconis", "languageTag": "la", "visible": true, "sortOrder": 3 },
         { "name": "☋", "languageTag": "symbol", "visible": true, "sortOrder": 4 }
       ],
-      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha"],
+      "tags": ["jyotish", "astrology", "lunar-node", "shadow-planet", "chaya-graha", "celestial-points"],
       "extendedData": {
         "symbol": "☋",
         "nature": "malefic",

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { APP_VERSION } from '@/lib/app-version'
 import { ArrowLeft, ChevronDown, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
@@ -20,7 +21,7 @@ function ManualPage() {
       </div>
 
       <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginBottom: '28px' }}>
-        v1.1.0 — tap any section to expand it.
+        {APP_VERSION} — tap any section to expand it.
       </p>
 
       <Section title="1. Getting Around">
@@ -67,12 +68,23 @@ function ManualPage() {
         <P><Strong>Browse Grid.</Strong> Category tiles give an overview of every system — tarot, runes, sephiroth, paths, planets, zodiac, houses, aspects, lunar nodes, decans, deities, angels, demons, Hebrew letters, chakras, hexagrams, and more. Tap a category to jump to a filtered view.</P>
         <P><Strong>Entity Pages</Strong> show names, description, attributions by tradition, artwork, reversed meaning (for tarot), a personal annotation field, and a bookmark star. Click any linked entity in the attributions to navigate directly to it. Planets, lunar nodes, zodiac signs, and elements display a symbolic SVG art panel in the top-right corner; click to zoom, same as tarot and rune artwork.</P>
         <P><Strong>Etteilla Deck Attributions.</Strong> Etteilla Major Arcana cards 1–12 carry zodiac attributions (Aries through Pisces). Etteilla Coins pip and court cards carry classical planetary attributions (Mercury through Saturn), lunar nodes (☊/☋) for ranks 8 and 9, and Earth (⊕) for rank 10 and all courts. These are visible in the card's reference page under Attributions.</P>
+        <P><Strong>Guides.</Strong> The Guides section (scroll to the bottom of the Reference index) contains interactive cross-reference tables:</P>
+        <Table rows={[
+          ['Lenormand Combinations', 'Full 36×36 combination matrix for the Lenormand deck'],
+          ['I Ching Trigram Matrix', '8×8 grid of all 64 hexagrams indexed by upper and lower trigram; tap any cell to open that hexagram\'s reference page'],
+          ['Astrological Dignities', 'Classical essential dignities (Rulership, Exaltation, Detriment, Fall) for each planet across the 12 signs'],
+          ['Chinese Zodiac Compatibility', '12×12 grid of traditional compatibility between the animals; symmetric — a check in either direction means compatible'],
+          ['Sephirothic Attributions', 'Cross-system matrix for the 10 Sephiroth: planet, Tarot trump, archangel, angelic order, divine name, chakra, and Queen Scale colour'],
+          ['Planetary Attributions', 'Cross-system matrix for the 7 classical planets: Sephira, Tarot trump, metal, day of week, chakra, and intelligence/spirit'],
+          ['Geomancy Shield Chart', 'Interactive calculator — pick the 4 Mother figures to derive daughters, nieces, witnesses, judge, and reconciler automatically'],
+        ]} />
       </Section>
 
       <Section title="6. Astrology">
-        <P><Strong>Natal Charts.</Strong> Go to <Strong>Astrology</Strong> in the sidebar and tap <Strong>New Chart</Strong>. Enter name, birth date + time, and location. Mark one chart as "Self" to enable transit-to-natal comparisons.</P>
+        <P><Strong>Natal Charts.</Strong> Go to <Strong>Astrology</Strong> in the sidebar and tap <Strong>New Chart</Strong>. Enter name, birth date + time, and birth location. Use the city search field to find a city by name (type 3 or more characters) — selecting a result fills the coordinates and timezone automatically. Coordinates can always be edited manually. Mark one chart as "Self" to enable transit-to-natal comparisons.</P>
         <P><Strong>Chart Detail</Strong> shows sect badge, SVG wheel chart (toggle Tropical / Sidereal / IAU), planet positions table, asteroids table, aspects table, mutual receptions, and Arabic parts/Lots.</P>
         <P><Strong>Current Sky</Strong> updates every five minutes with planet positions and (if a Self chart is saved) transit aspects to natal — each transit shows applying (→) or separating (←) status.</P>
+        <P><Strong>Sky Animation.</Strong> Tap the play button on the Current Sky page to open the animated sky wheel. The wheel shows all visible planets orbiting in real time. Use the speed controls to slow down or accelerate time, and the play/pause button to stop. Hover or tap any planet glyph to see its current sign, degree, and retrograde status. The animation reflects your active zodiac mode (Tropical / Sidereal / IAU).</P>
         <P><Strong>Astrology Calendar</Strong> shows a month grid with Moon ingresses, planet ingresses, retrograde stations, and eclipse markers.</P>
         <P><Strong>Modes & House Systems</Strong> are configured in <Strong>Settings → Traditions</Strong>. Zodiac modes: Tropical, Sidereal, IAU 13-sign (includes Ophiuchus with accurate arc widths). House systems: Whole Sign, Equal, Placidus, Regiomontanus, Campanus, Koch.</P>
         <P><Strong>Lunar Nodes.</Strong> The Reference section includes a Lunar Nodes category (Rahu / North Node ☊ and Ketu / South Node ☋) with full Jyotish descriptions, Sanskrit names, Latin names (Caput/Cauda Draconis), and classical attributions. Navigate to them via Browse → Astrology → Lunar Nodes or by searching their names.</P>
@@ -82,6 +94,7 @@ function ManualPage() {
         <P><Strong>Tree of Life.</Strong> An interactive SVG scaled to fill the viewport. Switch between Tree of Life mode (Queen Scale colours, 22 Paths) and Nightside Tree (Qliphoth, Tunnels of Set). Toggle Daath visibility in <Strong>Settings → Traditions</Strong>. Tap any node to navigate to its reference page.</P>
         <P><Strong>Gematria Calculator.</Strong> Type Hebrew characters directly or use the letter table to build a word. The total updates in real time. Final forms (ך ם ן ף ץ) are handled automatically. Tap any value to look up entities linked to that number.</P>
         <P><Strong>Numerology Calculator.</Strong> Enter a full name to calculate Expression, Soul Urge / Heart's Desire, and Personality numbers. Enter a birth date to compute the Life Path number. Switch between Pythagorean and Chaldean systems. Master numbers (11, 22, 33) are highlighted.</P>
+        <P><Strong>Sephirothic Attributions Matrix.</Strong> Available in <Strong>Reference → Guides</Strong>. Displays all 10 Sephiroth as columns with rows for GD planet, Tarot trump, archangel, angelic order, divine name, corresponding chakra, and Queen Scale (Briah) colour. Click any cell to navigate to that entity's reference page.</P>
       </Section>
 
       <Section title="8. Study">
@@ -117,7 +130,7 @@ function ManualPage() {
         <P><Strong>Art Packs.</Strong> Choose Symbolic or Classic visual style for Tarot, Runes, Geomancy, Mahjong, Lenormand, and Playing Cards. Classic packs require image assets in the <code>/art/</code> directory; missing files fall back to symbolic automatically.</P>
         <P><Strong>Navigation.</Strong> Drag to reorder sidebar sections; toggle visibility; pin to icon-only mode on desktop.</P>
         <P><Strong>Accessibility.</Strong> Colour vision modes (Normal / Deuteranopia / Protanopia / Tritanopia / Achromat / High Contrast), dyslexia-friendly font (OpenDyslexic), reduced motion, card captions for screen readers.</P>
-        <P><Strong>Location.</Strong> Home city or coordinates for house calculations. Stored locally only.</P>
+        <P><Strong>Location.</Strong> Set your home city for house calculations and the calendar's planetary positions. Type 3 or more characters in the city search field to search from a database of 68,000+ cities — selecting a result fills the label, coordinates, and timezone automatically. All fields can be edited manually if you need a precise location. Data is stored locally only and is never transmitted.</P>
         <P><Strong>Date/Time Override.</Strong> Fix a date/time instead of the live clock — useful for studying historical charts. Leave blank to use the live clock.</P>
         <P><Strong>Daily Reading.</Strong> Configure which deck and spread are used for the automatic daily card.</P>
         <P><Strong>Custom CSS.</Strong> Inject arbitrary CSS. Styles are validated for balanced braces before being applied.</P>
@@ -142,7 +155,7 @@ function ManualPage() {
       </Section>
 
       <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--color-border)' }}>
-        Grimoire Atziluth v1.1.0
+        Grimoire Atziluth {APP_VERSION}
       </div>
     </div>
   )

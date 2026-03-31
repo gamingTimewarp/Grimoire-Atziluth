@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { APP_VERSION } from '@/lib/app-version'
 
 export const Route = createFileRoute('/settings/credits')({
   component: CreditsPage,
@@ -39,7 +40,7 @@ function CreditsPage() {
           Grimoire Atziluth uses artwork and data from the following open-licensed sources.
         </p>
         <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', whiteSpace: 'nowrap', marginLeft: '16px' }}>
-          v1.0.0
+          {APP_VERSION}
         </span>
       </div>
 
@@ -164,6 +165,16 @@ function CreditsPage() {
           source="astronomy-engine"
           sourceUrl="https://github.com/cosinekitty/astronomy"
           notes="Used for all planetary position, transit, and aspect calculations. No internet connection required."
+        />
+
+        <SourceEntry
+          title="GeoNames Geographical Database"
+          licence="Creative Commons Attribution 4.0"
+          author="GeoNames"
+          source="geonames.org"
+          sourceUrl="https://www.geonames.org"
+          notes="Population-filtered city dataset (cities5000) used for offline location search and timezone lookup in natal charts and home location settings. No network connection is made at runtime — data is bundled with the app."
+          required
         />
 
       </Section>

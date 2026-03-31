@@ -200,6 +200,17 @@
       }
     },
     {
+      "canonicalName": "system.overview.celestial-points",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Celestial Points",
+      "description": "Astrological points that are not physical bodies but carry significant interpretive weight in chart work. Includes the lunar nodes (Rahu and Ketu), which mark the intersections of the Moon's orbit with the ecliptic, and the Hermetic Lots (Arabic Parts), which are sensitive points derived from the angular relationships between planets and the Ascendant. Unlike planets, these points have no mass or light of their own, yet each carries a distinct symbolic and predictive function across multiple astrological traditions.",
+      "secondaryNames": [],
+      "tags": ["overview", "astrology", "celestial-points"],
+      "extendedData": {
+        "memberTag": "celestial-points"
+      }
+    },
+    {
       "canonicalName": "system.overview.zodiac",
       "entityType": "system.overview",
       "primaryDisplayName": "Zodiac Signs",
@@ -1092,7 +1103,6 @@
       "secondaryNames": [],
       "tags": [
         "overview",
-        "playing-card",
         "cartomancy"
       ],
       "extendedData": {
@@ -1124,7 +1134,6 @@
       ],
       "tags": [
         "overview",
-        "lenormand",
         "oracle"
       ],
       "extendedData": {

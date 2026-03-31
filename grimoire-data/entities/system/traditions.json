@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "system.tradition.tropical-astrology",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Tropical Astrology",
+      "description": "Tropical astrology is the dominant Western astrological tradition, in which the zodiac is fixed to the seasonal cycle of the Earth relative to the Sun rather than to the actual star background. The tropical zodiac begins with 0° Aries at the vernal equinox (the moment the Sun crosses the celestial equator northward), dividing the year into twelve equal 30° segments keyed to the seasons. This means that the Sun is always in tropical Aries at the spring equinox, regardless of which background constellation it actually occupies — a divergence from the sidereal sky that has grown to approximately 24° since the tropical and sidereal zodiacs last coincided around 285 CE (the 'coincidence point'). Most Western natal, mundane, and predictive astrology — including the Hellenistic, medieval, Renaissance, and modern psychological traditions — uses the tropical framework, arguing that the symbolism is anchored in the relationship between Sun and Earth rather than the stars.",
+      "secondaryNames": [
+        { "name": "Western Astrology", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["astrology", "tradition", "zodiac-system"],
+      "extendedData": {
+        "traditionCategory": "zodiac-system",
+        "zodiacAnchor": "vernal-equinox",
+        "signCount": 12,
+        "ayanamsaOffset": 0,
+        "isDefault": true
+      }
+    },
+    {
+      "canonicalName": "system.tradition.sidereal-astrology",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Sidereal Astrology",
+      "description": "Sidereal astrology aligns the zodiac to the actual backdrop of fixed stars rather than to the Earth's seasonal cycle, meaning that 0° Aries corresponds (approximately) to the star field where the Sun resided at the vernal equinox in ancient times. The most widely used correction factor is the Lahiri ayanamsa, the official ayanamsa of the Indian government's Calendar Reform Committee (1955), which places the sidereal–tropical difference at approximately 23°51' as of the early 21st century. Western sidereal astrology was revived in the 20th century by Cyril Fagan and Donald Bradley, who argued that the original Babylonian and Hellenistic zodiac was sidereal. The system is also foundational to Vedic (Jyotiṣa) astrology, though with distinct interpretive frameworks. Because the sidereal zodiac does not shift with the precession of the equinoxes, natal placements sit roughly 23–24° earlier in the zodiac compared to the tropical chart.",
+      "secondaryNames": [
+        { "name": "Fagan–Bradley Sidereal", "languageTag": "en", "visible": false, "sortOrder": 0 },
+        { "name": "Lahiri Sidereal", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "zodiac-system"],
+      "extendedData": {
+        "traditionCategory": "zodiac-system",
+        "zodiacAnchor": "fixed-stars",
+        "signCount": 12,
+        "ayanamsa": "lahiri",
+        "ayanamsaOffsetApprox": 23.85,
+        "isDefault": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.iau-astrology",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "IAU Astrology (13 Signs)",
+      "description": "IAU astrology uses the official constellation boundaries established by the International Astronomical Union (Eugène Delporte, 1930) as the zodiacal framework, mapping the Sun's actual ecliptic path through those boundaries rather than dividing the year into equal 30° arcs. This approach yields thirteen zodiacal constellations (the twelve traditional signs plus Ophiuchus, the Serpent-Bearer, through which the Sun passes from approximately 30 November to 17 December), each of unequal arc width reflecting the actual shapes of the constellations. The system is not a traditional astrological practice but a modern interpretive framework aligning astrological symbolism with observational astronomy; it was brought to public attention notably by NASA communications in 2016. Within this app, IAU mode applies constellation-boundary-based sign calculation and adds Ophiuchus as a fully interpreted zodiacal sign.",
+      "secondaryNames": [
+        { "name": "13-Sign Astrology", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Ophiuchus Astrology", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "zodiac-system"],
+      "extendedData": {
+        "traditionCategory": "zodiac-system",
+        "zodiacAnchor": "iau-constellation-boundaries",
+        "signCount": 13,
+        "includesOphiuchus": true,
+        "equalArcWidths": false,
+        "iauBoundariesYear": 1930,
+        "ayanamsaOffset": 0,
+        "isDefault": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.vedic-jyotish",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Vedic Astrology (Jyotiṣa)",
+      "description": "Jyotiṣa (Sanskrit: 'science of light') is the classical Indian astrological tradition, one of the six Vedāṅgas (auxiliary disciplines of the Vedas), with roots traceable to the Vedic period and systematised in texts such as the Bṛhat Parāśara Horāśāstra (c. 600–800 CE). Like Western sidereal astrology it uses a star-aligned zodiac corrected by the Lahiri ayanamsa, but Jyotiṣa is a distinct tradition with its own interpretive vocabulary: it employs the 27 (or 28) nakṣatras (lunar mansions), a system of planetary periods called dashas (most commonly the Vimśottarī daśā), divisional charts (vargas), and yogas (planetary combinations with specific effects). The tradition uses the seven classical planets (grahas) plus the lunar nodes (Rahu and Ketu) as its primary significators, generally excluding the modern outer planets. Jyotiṣa remains a living scholarly and practical tradition across South and Southeast Asia and has a substantial global following.",
+      "secondaryNames": [
+        { "name": "Jyotiṣa", "languageTag": "sa", "visible": true, "sortOrder": 0 },
+        { "name": "Jyotish", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Hindu Astrology", "languageTag": "en", "visible": false, "sortOrder": 2 },
+        { "name": "Indian Astrology", "languageTag": "en", "visible": false, "sortOrder": 3 }
+      ],
+      "tags": ["astrology", "tradition", "zodiac-system", "jyotish"],
+      "extendedData": {
+        "traditionCategory": "zodiac-system",
+        "zodiacAnchor": "fixed-stars",
+        "signCount": 12,
+        "ayanamsa": "lahiri",
+        "ayanamsaOffsetApprox": 23.85,
+        "usesNakshatras": true,
+        "nakshatraCount": 27,
+        "primaryDashaSystem": "vimshottari",
+        "isDefault": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.placidus",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Placidus",
+      "description": "Placidus is the most widely used house system in modern Western astrology, developed by the 17th-century Italian monk and mathematician Placidus de Titis (1603–1668) and popularised through the influence of his work and later through Raphael's Ephemeris, which adopted it as standard in the 19th century. The system is based on the semi-arc method: each house cusp is placed at the point that takes exactly one-sixth (for cadent cusps) or one-third (for succedent cusps) of its diurnal or nocturnal semi-arc to travel from the horizon to the meridian. In practice this means house cusps are unequal in size and calculated from the oblique ascension of each degree. Placidus works well for latitudes between approximately 60°N and 60°S but fails at polar latitudes (above about 66°) where some degrees never cross the horizon, making house cusp calculation mathematically undefined; despite this limitation it remains the default in most commercial astrology software and the most familiar system for contemporary practitioners.",
+      "secondaryNames": [
+        { "name": "Placidus de Titis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Semi-Arc System", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "semi-arc",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": false,
+        "polarLatitudeLimit": 66,
+        "originCentury": 17,
+        "originCountry": "Italy",
+        "isDefaultHouseSystem": true
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.koch",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Koch",
+      "description": "The Koch house system, also called the Birthplace system or GOH (Geburtsorthäuser, 'birthplace houses'), was developed by Walter Koch (1895–1970) and Osmar Schütz in the mid-20th century and published in 1962. Koch cusps are calculated by projecting the Midheaven degree backwards in time through the diurnal motion at the specific birthplace latitude, dividing the time between the MC's rising and the Ascendant into equal time-arcs, then determining which ecliptic degree occupied the horizon at each sub-interval. The result is a time-based, birthplace-sensitive system that emphasises the relationship between the natal chart and the specific location of birth. Koch houses are popular among German-speaking astrologers and have a following in psychological and humanistic astrology circles; they share the same polar latitude limitation as Placidus, becoming undefined above roughly 66° latitude.",
+      "secondaryNames": [
+        { "name": "Birthplace Houses", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "GOH", "languageTag": "abbr", "visible": false, "sortOrder": 1 },
+        { "name": "Walter Koch", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "birthplace-time-arc",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": false,
+        "polarLatitudeLimit": 66,
+        "originCentury": 20,
+        "originCountry": "Germany",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.regiomontanus",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Regiomontanus",
+      "description": "The Regiomontanus house system was devised by the German mathematician and astronomer Johannes Müller von Königsberg (1436–1476), known by his Latinised name Regiomontanus, and published posthumously; it was the dominant European house system from the Renaissance through the 17th century and was used by astrologers including John Dee and William Lilly. The system divides the celestial equator into twelve equal 30° arcs and then projects great circles through the north and south celestial poles and each equatorial division point to the ecliptic, where the intersections define the house cusps. Because it is based on the equator rather than the ecliptic, it yields asymmetric houses that respond to both latitude and declination. Regiomontanus remains popular among horary and traditional astrologers who favour its historical pedigree, though it shares the polar latitude limitation common to most time- and space-division systems.",
+      "secondaryNames": [
+        { "name": "Johannes Müller von Königsberg", "languageTag": "de", "visible": true, "sortOrder": 0 },
+        { "name": "Regio", "languageTag": "abbr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "celestial-equator-division",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": false,
+        "polarLatitudeLimit": 66,
+        "originCentury": 15,
+        "originCountry": "Germany",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.campanus",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Campanus",
+      "description": "The Campanus house system is attributed to Giovanni Campano da Novara (c. 1233–1296), the Italian mathematician, astronomer, and papal physician who described it in his astronomical writings. The system divides the prime vertical — the great circle passing through the zenith, nadir, East point, and West point — into twelve equal 30° arcs, then projects great circles through the north and south points of the horizon (the poles of the prime vertical) through each division to the ecliptic to produce the house cusps. Because it is centred on the zenith and local horizon geometry, Campanus houses are deeply sensitive to the local place of birth and give particular emphasis to the Ascendant, Descendant, MC, and IC. The system was popular in medieval European astrology and has been advocated in the modern era by astrologers including Dane Rudhyar; it shares the polar-latitude limitation of most space-division methods.",
+      "secondaryNames": [
+        { "name": "Giovanni Campano da Novara", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "prime-vertical-division",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": false,
+        "polarLatitudeLimit": 66,
+        "originCentury": 13,
+        "originCountry": "Italy",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.porphyry",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Porphyry",
+      "description": "Porphyry is the oldest documented house division method, described by the Neoplatonist philosopher Porphyry of Tyre (c. 234–305 CE) in his 'Introduction to the Tetrabiblos', making it at least seventeen centuries old. The method is conceptually simple: the four angular house cusps are established by the Ascendant, Midheaven, Descendant, and IC, then each quadrant of the ecliptic is trisected into equal arcs to yield the twelve cusps. Because the arcs within each quadrant are equal (though the four quadrants are not necessarily equal to each other), Porphyry produces variable house sizes that still reflect the underlying quadrant structure of the chart. The system is mathematically well-defined at all latitudes, including polar regions, making it a practical choice for high-latitude birth charts. It is favoured by many traditional Hellenistic and medieval astrologers and provides a useful middle ground between the simplicity of equal-house and the complexity of semi-arc systems.",
+      "secondaryNames": [
+        { "name": "Porphyry of Tyre", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "Quadrant Trisection", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "quadrant-trisection",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": true,
+        "originCentury": 3,
+        "originCountry": "Roman Empire",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.morinus",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Morinus",
+      "description": "The Morinus house system was developed by the French astrologer Jean-Baptiste Morin de Villefranche (1583–1656), a physician, mathematician, and one of the most rigorous systematic astrologers of the early modern period, whose monumental 'Astrologia Gallica' (1661) laid out a comprehensive theoretical framework for the discipline. Morinus divides the celestial equator into twelve equal 30° arcs beginning from the point where the equator intersects the eastern horizon, then projects these divisions directly onto the ecliptic along great circles through the poles of the ecliptic (not the celestial poles). The result is a system entirely independent of geographical latitude: unlike virtually every other house system, Morinus yields identical house cusps for any two births occurring at the same sidereal time regardless of location, making it the only major house system that works without modification at any latitude including the poles. This property makes it uniquely suitable for polar-latitude charts, though it sacrifices the local-horizon emphasis valued by most other traditions.",
+      "secondaryNames": [
+        { "name": "Jean-Baptiste Morin de Villefranche", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "Morin", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "equatorial-ecliptic-projection",
+        "equalArcWidths": false,
+        "worksAtPolarLatitudes": true,
+        "latitudeIndependent": true,
+        "originCentury": 17,
+        "originCountry": "France",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.whole-sign",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Whole Sign Houses",
+      "description": "Whole Sign Houses is the oldest known house system, in continuous use from the Hellenistic astrological tradition of the 1st century BCE onward and recently experiencing a major scholarly and practical revival led by astrologers such as Robert Hand and Robert Schmidt through Project Hindsight. The method is elegantly simple: whatever sign the Ascendant falls in becomes the First House in its entirety (all 30° of that sign), the next sign becomes the Second House in full, and so on around the wheel — meaning house cusps always coincide with 0° of each sign. The Midheaven floats freely within whichever house it occupies rather than being fixed to the 10th house cusp. Whole Sign Houses work equally well at all latitudes, including polar regions, and require no special computation beyond identifying the rising sign. Proponents argue that the system was the original Hellenistic method and that many ancient techniques, including sect, were designed with whole-sign house structure in mind.",
+      "secondaryNames": [
+        { "name": "WSH", "languageTag": "abbr", "visible": false, "sortOrder": 0 },
+        { "name": "Whole Signs", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "whole-sign",
+        "equalArcWidths": true,
+        "worksAtPolarLatitudes": true,
+        "mcFloats": true,
+        "originPeriod": "Hellenistic (c. 1st century BCE)",
+        "originRegion": "Hellenistic world",
+        "isDefaultHouseSystem": false
+      }
+    },
+    {
+      "canonicalName": "system.tradition.house-system.equal-house",
+      "entityType": "system.tradition",
+      "primaryDisplayName": "Equal House",
+      "description": "The Equal House system is among the oldest house division methods, attested in ancient Hellenistic and medieval Arabic sources, and assigns each house exactly 30° of arc beginning from the precise degree and minute of the Ascendant. Unlike Whole Sign Houses (where the house begins at 0° of the Ascendant's sign), Equal House preserves the exact Ascendant degree as the cusp of the First House, with each subsequent cusp falling at the same degree in successive signs. As with Whole Sign, the Midheaven floats and does not define a house cusp, appearing wherever it falls in the wheel — often in the 9th or 10th house. The system is straightforward to calculate at any latitude including polar regions, and its consistent 30° arcs mean that no house is distorted in size. It is often recommended for students and is a popular choice in modern British and Australian astrological traditions, as well as among practitioners who value geometric clarity over horizon-based spatial division.",
+      "secondaryNames": [
+        { "name": "Equal Houses", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "EH", "languageTag": "abbr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["astrology", "tradition", "house-system"],
+      "extendedData": {
+        "traditionCategory": "house-system",
+        "cuspCalculationMethod": "equal-arc-from-ascendant",
+        "equalArcWidths": true,
+        "worksAtPolarLatitudes": true,
+        "mcFloats": true,
+        "originPeriod": "ancient (attested Hellenistic and medieval Arabic)",
+        "isDefaultHouseSystem": false
+      }
+    }
+  ]
+}

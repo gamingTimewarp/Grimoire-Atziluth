@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "divination.spread.free-reading",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Free Reading",
+      "description": "An unstructured reading with no fixed positions. Cards are drawn freely as the reading develops, allowing intuitive or stream-of-consciousness practice. Well suited to open meditation, journaling, or situations where a rigid layout would be constraining. The reader determines meaning and position on the fly.",
+      "secondaryNames": [],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 0 }
+    },
+    {
+      "canonicalName": "divination.spread.single-card",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Single Card",
+      "description": "The simplest and most direct divination form: one card drawn to answer a focused question, receive a daily message, or distil a complex situation into its essential theme. Widely used as a daily practice across tarot, rune, oracle, and Lenormand traditions. The daily single-card draw is one of the oldest recorded forms of cartomantic practice.",
+      "secondaryNames": [
+        { "name": "Daily Draw", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "One Card Draw", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 1 }
+    },
+    {
+      "canonicalName": "divination.spread.three-card",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Three Card",
+      "description": "The most popular multi-position tarot spread. The three positions accept many interpretive frames: Past / Present / Future, Situation / Action / Outcome, Mind / Body / Spirit, Problem / Cause / Solution, or Thesis / Antithesis / Synthesis. Its simplicity and flexibility make it the workhorse of practical divination, equally suited to beginners and advanced readers.",
+      "secondaryNames": [
+        { "name": "Three-Card Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "PPF Spread", "languageTag": "en-abbr", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 3 }
+    },
+    {
+      "canonicalName": "divination.spread.celtic-cross",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Celtic Cross",
+      "description": "The most widely used 10-position tarot spread, documented by Arthur Edward Waite in The Pictorial Key to the Tarot (1910) and likely originating within the Hermetic Order of the Golden Dawn or its immediate milieu. Despite its name there is no documented pre-Victorian Celtic origin. The layout addresses the central issue, the crossing influence, psychological foundation, recent past, possible future, near future, the querent's attitude, external influences, hopes and fears, and final outcome. Its scope and depth make it the standard spread for complex, open-ended questions.",
+      "secondaryNames": [
+        { "name": "Celtic Cross Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 10 }
+    },
+    {
+      "canonicalName": "divination.spread.horseshoe",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Horseshoe (7 Card)",
+      "description": "A 7-card arc spread providing a balanced overview of a situation from distant past to outcome, with attention to external forces and the querent's inner hopes and fears. One of the older structured tarot spreads, predating or developing alongside the Celtic Cross. Simpler in scope but comprehensive enough for most general questions; well-suited to first readings or when the Celtic Cross feels like too much.",
+      "secondaryNames": [
+        { "name": "Horseshoe Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Seven-Card Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 7 }
+    },
+    {
+      "canonicalName": "divination.spread.year-ahead",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Year Ahead (12 Months)",
+      "description": "A 12-card annual forecast spread drawing one card for each of the twelve months ahead, beginning with the current month. Typically laid out in a circular arc to represent the wheel of the year. Common in New Year readings, solar return readings, and birthday readings. In this app, the position names are automatically set to the actual calendar month and year starting from the current month.",
+      "secondaryNames": [
+        { "name": "Annual Spread", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "12-Month Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 12 }
+    },
+    {
+      "canonicalName": "divination.spread.zodiac-year",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Zodiac Year",
+      "description": "A 12- or 13-card spread mapping the question across the zodiacal year, with one card per sign from Aries to Pisces. Each position represents the symbolic themes of that sign as they apply to the question or to the period when the sun transits it. When IAU 13-sign mode is active, a 13th position is added for Ophiuchus between Scorpio and Sagittarius. Combines astrological structure with tarot intuition.",
+      "secondaryNames": [
+        { "name": "Zodiac Spread", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Astrological Year Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination", "astrology"],
+      "extendedData": { "positionCount": 12 }
+    },
+    {
+      "canonicalName": "divination.spread.chakra",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Chakra Spread (7 Card)",
+      "description": "A 7-card vertical spread mapping the question through the seven classical chakras from Sahasrara (Crown) down to Muladhara (Root). Each card addresses the quality of energy at that centre as it relates to the question or situation. Bridging the yogic chakra framework with tarot or oracle cards is a modern synthesis practice drawing on both Hindu Tantric and Western New Age traditions; the pairing became widespread in the late 20th century.",
+      "secondaryNames": [
+        { "name": "Seven Chakra Spread", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Chakra Reading", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination", "chakra"],
+      "extendedData": { "positionCount": 7 }
+    },
+    {
+      "canonicalName": "divination.spread.grand-tableau",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Grand Tableau (36 Card)",
+      "description": "The most comprehensive Lenormand spread, laying all 36 cards face up in a 9×4 grid. Each of the 36 positions is a house whose theme corresponds to the Lenormand card that belongs there by number, so every fallen card occupies the house of another, creating a web of meanings read horizontally, vertically, and diagonally. The Grand Tableau requires a complete 36-card Lenormand deck and is the signature spread of the Lenormand tradition, capable of addressing an entire life situation in a single layout. Mastery of it is considered the mark of an advanced Lenormand reader.",
+      "secondaryNames": [
+        { "name": "Full Board", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Full Table", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination", "lenormand"],
+      "extendedData": { "positionCount": 36 }
+    },
+    {
+      "canonicalName": "divination.spread.relationship",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Relationship (6 Card)",
+      "description": "A 6-card spread examining the dynamic between two people. Six positions reveal how each person shows up in the relationship, the bond connecting them, what each needs from the connection, and the potential the relationship holds if both needs are met. Applicable to any close relationship — romantic, familial, collegial, or otherwise. The spread avoids assigning blame, framing both parties symmetrically.",
+      "secondaryNames": [
+        { "name": "Relationship Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Two-Person Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["spread", "divination"],
+      "extendedData": { "positionCount": 6 }
+    },
+    {
+      "canonicalName": "divination.spread.tree-of-life",
+      "entityType": "divination.spread",
+      "primaryDisplayName": "Tree of Life (10 Card)",
+      "description": "A 10-card Qabalistic spread placing one card on each of the ten Sephiroth of the Tree of Life, mapping the question or situation across the complete ontological structure from the divine crown (Kether) through to physical manifestation (Malkuth). Developed within Golden Dawn-influenced tarot practice in the late 19th or early 20th century. Best suited to decks with explicit Qabalistic attributions such as the Rider-Waite-Smith or Thoth, though it can be used with any deck. The reading addresses spiritual, psychological, ethical, and material dimensions simultaneously.",
+      "secondaryNames": [
+        { "name": "Tree of Life Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Kabbalistic Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 1 },
+        { "name": "Sephirothic Spread", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["spread", "divination", "qabalah"],
+      "extendedData": { "positionCount": 10 }
+    }
+  ]
+}

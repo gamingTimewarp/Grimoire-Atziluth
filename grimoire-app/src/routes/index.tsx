@@ -180,7 +180,7 @@ function DailyContextRow({ date }: { date: Date }) {
     <div style={{ marginBottom: '28px' }}>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
         {chip(`${ruler.symbol} ${ruler.name}`, 'Day ruler', ruler.canonicalName)}
-        {chip(`${moon.emoji} ${moon.name}`, `${moon.illumination}% illuminated`)}
+        {chip(`${moon.emoji} ${moon.name}`, `${moon.illumination}% illuminated`, moon.canonicalName)}
         {chip(`${sun.symbol} ${sun.name}`, 'Sun sign', sun.canonicalName)}
         {chip(`${wuxing.nameZh} ${wuxing.name}`, wuxing.season + ' season', wuxing.canonicalName)}
         {voc.isVoid && chip('☽ v/c', `${voc.degreesRemaining.toFixed(1)}° to ingress`)}

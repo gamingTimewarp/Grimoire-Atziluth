@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.moon-phase.new-moon",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "New Moon",
+      "description": "The New Moon marks the beginning of the lunar cycle, when the Moon is conjunct the Sun and her face is dark. In Western magic it is the supreme time for initiation — planting intentions, beginning spells, and working with the void before manifestation. The darkness represents pregnant potential rather than absence: the seed is in the ground but has not yet broken soil. In folk and agricultural tradition, the new moon is for sowing crops that bear fruit above ground. In the Hermetic scheme the new moon corresponds to the nigredo, the first stage of the Work, and to Binah's descent into the unmanifest. Goddesses associated with this phase include Hecate (in her crone/dark aspect), Persephone in the underworld, and Kali. Magically suited to: new beginnings, consecrations, shadow work, banishing old selves, binding oaths.",
+      "secondaryNames": [
+        { "name": "Dark Moon", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌑", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle"],
+      "extendedData": {
+        "symbol": "🌑",
+        "phaseAngle": 0,
+        "illumination": 0,
+        "cyclePhase": "dark",
+        "magicalMode": "initiation",
+        "duration": "3 days (±1 day of exact conjunction)",
+        "agriculturalLore": "Sow above-ground crops; plant seedlings",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.waxing-crescent",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Waxing Crescent",
+      "description": "The Waxing Crescent appears as the first sliver of light after the New Moon, visible in the west after sunset. It is the phase of quickening — intention has been set and the first movement toward manifestation begins. The light is growing; magic for attraction, growth, and drawing things toward oneself is potent. In folk tradition this is when seeds should be pushed into soil in earnest. In the Western magical tradition the crescent is sacred to Artemis/Diana as the young huntress, and to Isis bearing the horned crown. The crescent moon symbol (☽) in its waxing orientation is a fundamental sigil of the Goddess. This phase rewards persistence and early action; its energy is eager, hopeful, and forward-moving.",
+      "secondaryNames": [
+        { "name": "🌒", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waxing"],
+      "extendedData": {
+        "symbol": "🌒",
+        "phaseAngle": 45,
+        "illumination": 25,
+        "cyclePhase": "waxing",
+        "magicalMode": "attraction",
+        "duration": "7 days (day 3–10 of cycle)",
+        "agriculturalLore": "Continue sowing; good for leafy crops",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.first-quarter",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "First Quarter",
+      "description": "The First Quarter Moon (the half-lit waxing moon, rising at noon and setting at midnight) represents a crisis of action — the midpoint of the waxing half-cycle where initial intentions meet the friction of the world. In modern astrological magic this is a phase of decision-making, commitment, and overcoming the first obstacles. The tension of the square aspect between Moon and Sun creates a dynamic, effortful energy. Spells begun at the New Moon are tested here; this is the time to reaffirm commitment and take decisive steps. In Wicca the First Quarter is sometimes aligned with the Warrior aspect of the God. Agricultural tradition recommends cutting hair for growth and beginning construction projects.",
+      "secondaryNames": [
+        { "name": "Half Moon (waxing)", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌓", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waxing", "quarter"],
+      "extendedData": {
+        "symbol": "🌓",
+        "phaseAngle": 90,
+        "illumination": 50,
+        "cyclePhase": "waxing",
+        "magicalMode": "action",
+        "duration": "3 days (around day 7–8 of cycle)",
+        "agriculturalLore": "Good for planting root vegetables; cut for growth",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.waxing-gibbous",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Waxing Gibbous",
+      "description": "The Waxing Gibbous Moon is the great swell before the Full — more than half lit and growing rapidly toward culmination. Its energy is one of refinement, adjustment, and sustained effort. Intentions planted at the New Moon are now visible and require tending. In the magical tradition this is the phase of fine-tuning workings already in motion: refining spells, strengthening wards, adding detail to larger workings. The tension of anticipation is high; the peak is close but not yet reached. Folk herbalists traditionally harvest above-ground medicinal plants now, as moisture and volatile oils are drawing upward through the plant. Magically suited to: strengthening, building momentum, healing, increasing abundance.",
+      "secondaryNames": [
+        { "name": "🌔", "languageTag": "symbol", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waxing"],
+      "extendedData": {
+        "symbol": "🌔",
+        "phaseAngle": 135,
+        "illumination": 75,
+        "cyclePhase": "waxing",
+        "magicalMode": "refinement",
+        "duration": "7 days (day 10–14 of cycle)",
+        "agriculturalLore": "Harvest herbs; moisture drawn upward into plants",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.full-moon",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Full Moon",
+      "description": "The Full Moon is the culmination and peak of the lunar cycle — the Moon opposite the Sun, fully illuminated, rising at sunset and setting at sunrise. In every Western magical tradition it is the supreme working night: the veil between worlds is thin, psychic perception is at its height, and workings of all kinds are charged with maximum power. In Wicca the Full Moon is the Esbat, the monthly celebration of the Goddess in her Mother aspect, and the Great Rite is enacted. In ceremonial magic it is the time for evocation, consecration of talismans, charging of magical implements, and the most demanding workings. Folk tradition identifies the Full Moon with danger, madness (lunacy), transformation (werewolves, etc.), and also with abundant harvest — the Harvest Moon of the autumn equinox. The Full Moon corresponds to albedo in the alchemical work, the whitening stage of illumination after the nigredo. Magically suited to: culmination, manifestation, divination, psychic work, charging objects, healing at peak, love magic, the Great Rite.",
+      "secondaryNames": [
+        { "name": "Esbat", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌕", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "peak", "esbat"],
+      "extendedData": {
+        "symbol": "🌕",
+        "phaseAngle": 180,
+        "illumination": 100,
+        "cyclePhase": "peak",
+        "magicalMode": "culmination",
+        "duration": "3 days (day 14–15 of cycle, ±1)",
+        "agriculturalLore": "Harvest fruit; maximum moisture and potency in plants",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.waning-gibbous",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Waning Gibbous",
+      "description": "The Waning Gibbous Moon (also called the Disseminating Moon) follows immediately after the Full, when the light begins to diminish. Its tone shifts from accumulation to distribution — the harvest has been reaped and now is shared. In magical practice this phase is associated with gratitude, the giving back of blessings received, and the beginning of letting-go. Banishing work begins to gain traction here; bindings and releasing spells are appropriate. In the agricultural tradition roots and tubers are dug, and wood is cut for building (less sap, less shrinkage). The Waning Gibbous is also the teaching moon — its energy supports the transmission and communication of wisdom gained at the Full. Magically suited to: gratitude, sharing, beginning of banishing, root harvesting, making decisions to release.",
+      "secondaryNames": [
+        { "name": "Disseminating Moon", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌖", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waning"],
+      "extendedData": {
+        "symbol": "🌖",
+        "phaseAngle": 225,
+        "illumination": 75,
+        "cyclePhase": "waning",
+        "magicalMode": "distribution",
+        "duration": "7 days (day 15–22 of cycle)",
+        "agriculturalLore": "Dig root vegetables; cut timber; harvest root herbs",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.last-quarter",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Last Quarter",
+      "description": "The Last Quarter Moon (the half-lit waning moon, rising at midnight and setting at noon) is the mirror crisis of the First Quarter — a moment of reckoning, release, and the conscious breaking of patterns. Where the First Quarter demands action, the Last Quarter demands surrender: what has served its purpose must now be consciously laid down. In Wicca this phase is associated with the crone aspect of the Goddess and the dying God descending to the underworld. In astrological magic it is the prime time for banishing, cord-cutting, breaking habits, ending relationships, and clearing the decks before the new cycle. The square aspect between Moon and Sun now carries the tension of release rather than building. Agricultural tradition uses this phase for weeding, pruning, and pest control.",
+      "secondaryNames": [
+        { "name": "Half Moon (waning)", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌗", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waning", "quarter"],
+      "extendedData": {
+        "symbol": "🌗",
+        "phaseAngle": 270,
+        "illumination": 50,
+        "cyclePhase": "waning",
+        "magicalMode": "release",
+        "duration": "3 days (around day 22 of cycle)",
+        "agriculturalLore": "Weed, prune, and apply pest control",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.moon-phase.waning-crescent",
+      "entityType": "astrology.moon-phase",
+      "primaryDisplayName": "Waning Crescent",
+      "description": "The Waning Crescent (also called the Balsamic Moon) is the final sliver of light before the darkness of the New Moon returns. It is the phase of rest, surrender, gestation, and the deep inner life. In magical tradition this is the time for reflection, dream work, visioning for the next cycle, and the most intense banishing of deeply entrenched patterns. The Balsamic Moon is considered by many astrologers to be the most psychic phase of the cycle — the veil is thin again as it was at the Full, but the energy is inward rather than outward. Rituals of closure, mourning, letting go, and preparing the inner ground are appropriate. In folk tradition this is the rest period of the moon's body — no new undertakings, but deep inner preparation. The waning crescent corresponds to the putrefactio in alchemical sequence, the dissolution that precedes new formation. Magically suited to: banishing, binding, cord-cutting, deep rest, dream work, preparation for new cycle.",
+      "secondaryNames": [
+        { "name": "Balsamic Moon", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "🌘", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["moon", "lunar-phase", "astrology", "magic", "cycle", "waning"],
+      "extendedData": {
+        "symbol": "🌘",
+        "phaseAngle": 315,
+        "illumination": 25,
+        "cyclePhase": "waning",
+        "magicalMode": "surrender",
+        "duration": "7 days (day 24–29 of cycle)",
+        "agriculturalLore": "Rest period; clear and prepare beds for next planting",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    }
+  ]
+}

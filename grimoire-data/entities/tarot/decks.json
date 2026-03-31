@@ -50,7 +50,7 @@
       "entityType": "tarot.deck",
       "primaryDisplayName": "Standard Playing Cards",
       "description": "The standard 52-card French-suited playing card deck with two jokers (54 total). The ancestral form from which tarot decks derive, or a parallel development from the same Mamluk card tradition.",
-      "tags": ["playing-card", "deck"],
+      "tags": ["deck"],
       "extendedData": { "cardCount": 54, "overviewPage": "system.overview.playing-cards" }
     },
     {

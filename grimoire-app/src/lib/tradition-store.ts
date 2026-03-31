@@ -60,11 +60,16 @@ export const TRADITION_DISPLAY_NAMES: Record<string, string> = {
 
 // ─── System groupings (hardcoded — traditions appear in ≥1 system) ─────────────
 
+export type TraditionTab = 'western' | 'eastern' | 'astrology' | 'custom'
+
 export interface TraditionSystem {
   id: string
   label: string
   description: string
   traditionCNs: string[]
+  tab: TraditionTab
+  /** Whether traditions in this system are mutually exclusive (show Primary radio). Default true. */
+  showPrimary?: boolean
 }
 
 export const TRADITION_SYSTEMS: TraditionSystem[] = [
@@ -72,6 +77,7 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
     id: 'qabalah',
     label: 'Qabalah',
     description: 'Affects romanisation of Hebrew names and Qabalistic correspondences.',
+    tab: 'western',
     traditionCNs: [
       'tradition.golden-dawn',
       'tradition.jewish-kabbalah',
@@ -82,6 +88,7 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
     id: 'tarot',
     label: 'Tarot',
     description: 'Determines which attribution system is used for Major Arcana correspondences.',
+    tab: 'western',
     traditionCNs: [
       'tradition.golden-dawn',
       'tradition.thoth-crowley',
@@ -94,6 +101,7 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
     id: 'numerology',
     label: 'Numerology',
     description: 'Letter-to-number attribution system for gematria and numerological readings.',
+    tab: 'western',
     traditionCNs: [
       'tradition.pythagorean-numerology',
       'tradition.chaldean-numerology',
@@ -103,6 +111,7 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
     id: 'celtic-druidic',
     label: 'Celtic / Druidic',
     description: 'Celtic and Druidic tradition encompassing Ogham lore, tree wisdom, Celtic deities, and druidic cosmology.',
+    tab: 'western',
     traditionCNs: [
       'tradition.celtic-druidic',
       'tradition.ogham-bln',
@@ -112,79 +121,73 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
     id: 'enochian',
     label: 'Enochian',
     description: 'Angelic magical system of Dee and Kelley, covering Aethyrs, Governors, and Watchtower Tablets.',
+    tab: 'western',
     traditionCNs: [
       'tradition.enochian',
     ],
   },
   {
     id: 'hermetic',
-    label: 'Hermeticism',
-    description: 'Philosophical tradition of the Corpus Hermeticum and the seven Hermetic principles.',
+    label: 'Hermetic',
+    description: 'The Hermetic philosophical tradition (Corpus Hermeticum, seven principles) and its alchemical branch (planetary metals, Great Work stages).',
+    tab: 'western',
+    showPrimary: false,
     traditionCNs: [
       'tradition.hermetic',
-    ],
-  },
-  {
-    id: 'chakra',
-    label: 'Chakra / Hinduism',
-    description: 'Tantric chakra system attributions and Sephirothic cross-references.',
-    traditionCNs: [
-      'tradition.hinduism-chakra',
-    ],
-  },
-  {
-    id: 'alchemy',
-    label: 'Alchemy',
-    description: 'Hermetic alchemical attributions: planetary metals, Great Work stages.',
-    traditionCNs: [
       'tradition.alchemy',
-    ],
-  },
-  {
-    id: 'chinese-zodiac',
-    label: 'Chinese Zodiac / Ganzhi',
-    description: 'Heavenly Stems, Earthly Branches, and zodiac animal attributions.',
-    traditionCNs: [
-      'tradition.chinese-zodiac',
-    ],
-  },
-  {
-    id: 'vedic',
-    label: 'Vedic Jyotish',
-    description: 'Vedic/Jyotish sidereal astrology with nakshatra attributions.',
-    traditionCNs: [
-      'tradition.vedic-jyotish',
     ],
   },
   {
     id: 'geomancy',
     label: 'Geomancy',
     description: 'Planetary, zodiacal, and elemental attributions for the 16 geomantic figures.',
+    tab: 'western',
     traditionCNs: [
       'tradition.geomancy',
-    ],
-  },
-  {
-    id: 'modern-astrology',
-    label: 'Modern Astrology',
-    description: 'Shows modern outer planet rulerships (Uranus→Aquarius, Neptune→Pisces, Pluto→Scorpio) alongside classical dignities.',
-    traditionCNs: [
-      'tradition.modern-astrology',
     ],
   },
   {
     id: 'gnostic',
     label: 'Gnostic Cosmology',
     description: 'Select the primary Gnostic tradition for Aeon cross-references: Valentinian (30 Aeons in syzygy pairs) or Sethian (Barbelo, Four Luminaries, Seth lineage).',
+    tab: 'western',
     traditionCNs: [
       'tradition.gnostic-valentinian',
       'tradition.gnostic-sethian',
     ],
   },
   {
+    id: 'vedic',
+    label: 'Vedic Jyotish',
+    description: 'Vedic/Jyotish sidereal astrology with nakshatra attributions.',
+    tab: 'eastern',
+    traditionCNs: [
+      'tradition.vedic-jyotish',
+    ],
+  },
+  {
+    id: 'chakra',
+    label: 'Chakra / Hinduism',
+    description: 'Tantric chakra system attributions and Sephirothic cross-references.',
+    tab: 'eastern',
+    traditionCNs: [
+      'tradition.hinduism-chakra',
+    ],
+  },
+  {
+    id: 'chinese-zodiac',
+    label: 'Chinese Zodiac / Ganzhi',
+    description: 'Heavenly Stems, Earthly Branches, and zodiac animal attributions.',
+    tab: 'eastern',
+    traditionCNs: [
+      'tradition.chinese-zodiac',
+    ],
+  },
+  {
     id: 'feng-shui',
     label: 'Feng Shui / Ba Gua',
     description: 'Select the Ba Gua directional arrangement: Later Heaven (Wen Wang, used in most Feng Shui practice) or Earlier Heaven (Fu Xi, used in Ba Zhai and talismanic traditions).',
+    tab: 'eastern',
     traditionCNs: [
       'tradition.feng-shui-later-heaven',
       'tradition.feng-shui-earlier-heaven',

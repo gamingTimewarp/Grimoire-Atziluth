@@ -6,7 +6,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Fortune",
       "description": "The Lot of Fortune (Tyche) is the most prominent of the seven Hermetic Lots. It signifies worldly circumstances, the body, material prosperity, and the overall condition of the native's life. By day: ASC + Moon − Sun. By night: ASC + Sun − Moon.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "⊕",
         "greekName": "Tyche",
@@ -21,7 +21,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Spirit",
       "description": "The Lot of Spirit (Daimon) is the counterpart to the Lot of Fortune. Where Fortune concerns the body and material life, Spirit concerns the soul, will, intellect, and vocation. By day: ASC + Sun − Moon. By night: ASC + Moon − Sun.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "⊗",
         "greekName": "Daimon",
@@ -36,7 +36,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Eros",
       "description": "The Lot of Eros governs desire, love, friendship, and that which the native most deeply wants. It is computed relative to the Lot of Spirit and Venus. By day: ASC + Venus − Spirit. By night: ASC + Spirit − Venus.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "Er",
         "greekName": "Eros",
@@ -51,7 +51,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Necessity",
       "description": "The Lot of Necessity (Ananke) signifies compulsion, constraint, enmity, bondage, and the inescapable forces that shape one's life. It is computed relative to Fortune and Mercury. By day: ASC + Mercury − Fortune. By night: ASC + Fortune − Mercury.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "Nc",
         "greekName": "Ananke",
@@ -66,7 +66,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Courage",
       "description": "The Lot of Courage (also called Valor or Bravery) governs boldness, daring, conflict, and the capacity to act under adversity. It is computed relative to Fortune and Mars. By day: ASC + Mars − Fortune. By night: ASC + Fortune − Mars.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "Cg",
         "greekName": "Tolme",
@@ -81,7 +81,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Victory",
       "description": "The Lot of Victory (Nike) signifies success, beneficence, honour, and the assistance of the gods. It is computed relative to Spirit and Jupiter. By day: ASC + Jupiter − Spirit. By night: ASC + Spirit − Jupiter.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "Vc",
         "greekName": "Nike",
@@ -96,7 +96,7 @@
       "entityType": "astrology.lot",
       "primaryDisplayName": "Lot of Nemesis",
       "description": "The Lot of Nemesis signifies retribution, hidden enemies, downfall, karma, and the limiting forces in one's life. It is computed relative to Fortune and Saturn. By day: ASC + Saturn − Fortune. By night: ASC + Fortune − Saturn.",
-      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot"],
+      "tags": ["astrology", "hellenistic", "lot", "hermetic-lot", "celestial-points"],
       "extendedData": {
         "symbol": "Nm",
         "greekName": "Nemesis",

@@ -2,6 +2,80 @@
   "version": 1,
   "entities": [
     {
+      "canonicalName": "qabalah.partzuf.adam-kadmon",
+      "entityType": "qabalah.partzuf",
+      "primaryDisplayName": "Adam Kadmon",
+      "description": "Adam Kadmon (אָדָם קַדְמוֹן — 'Primordial Human' or 'Original Man') is the first and most encompassing configuration in Lurianic Kabbalah — not one of the five Partzufim but the primordial world-body within which they all arise, the first emergence of structured divinity following the Tzimtzum (the contraction of Ein Sof to create the conceptual space of creation). After the Tzimtzum, a single ray of infinite light (the Kav) re-entered the vacated space and gave rise to the luminous form of Adam Kadmon — the cosmic template of the divine human, the blueprint from whose metaphysical anatomy the entire structure of creation is derived. Adam Kadmon is therefore the archetype of archetypes: the Ten Sephiroth are mapped onto his body (Kether as crown, Chokmah and Binah as right and left hemispheres of the brain, the six Sephiroth of the moral triad as torso and limbs, Malkuth as the feet), and the four streams of light that issued from his 'eyes', 'ears', 'nose', and 'mouth' respectively gave rise to the four sub-systems that Luria called Olam ha-Nekudim, Olam ha-Tohu, and so forth — the successive cosmogonic stages that culminated in the Shevirat ha-Kelim, the catastrophic 'Breaking of the Vessels', and the subsequent Tikkun ('Repair') that is the ongoing telos of creation and human spiritual work. In many Lurianic texts, Adam Kadmon corresponds to the world above the Four Worlds — sometimes called the Fifth World or Olam Adam Kadmon — a level of divinity so close to Ein Sof that the distinction between the 'vessel' and the light is not yet meaningful. The Golden Dawn and subsequent Western Hermetic traditions adopted Adam Kadmon as the supreme divine human image, the Heavenly Man who is simultaneously the cosmic body of God and the ultimate archetype of the individual soul. Aleister Crowley identified the aspiration toward Adam Kadmon with the highest grade of his system. The concept exerts a gravitational pull across Gnostic, Hermetic, and Neoplatonic traditions: the Anthropos of the Valentinian Gnostics, the Philo of Alexandria's Heavenly Man, and the Platonic archetype of humanity are all variants of the same foundational idea — that the cosmos is structured in the image of a primordial Being, and that the human form is therefore a sacred map of the divine.",
+      "secondaryNames": [
+        {
+          "name": "אָדָם קַדְמוֹן",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Adam Qadmon",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Primordial Human",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Original Man",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "name": "Heavenly Man",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "name": "Cosmic Adam",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "name": "Homo Maximus",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 6
+        }
+      ],
+      "tags": [
+        "qabalah",
+        "kabbalah",
+        "lurianic",
+        "partzuf",
+        "cosmogony",
+        "anthropos"
+      ],
+      "extendedData": {
+        "sephirothCorrespondence": [
+          "qabalah.sephira.kether",
+          "qabalah.sephira.chokmah",
+          "qabalah.sephira.binah",
+          "qabalah.sephira.chesed",
+          "qabalah.sephira.geburah",
+          "qabalah.sephira.tiphareth",
+          "qabalah.sephira.netzach",
+          "qabalah.sephira.hod",
+          "qabalah.sephira.yesod",
+          "qabalah.sephira.malkuth"
+        ],
+        "world": "above-four-worlds",
+        "note": "Adam Kadmon is the primordial world-body above the Four Worlds (Olam Adam Kadmon), within which the five Partzufim — Atik Yomin, Arich Anpin, Abba, Imma, Ze'ir Anpin, and Nukvah — arise as aspects of its structure."
+      }
+    },
+    {
       "canonicalName": "qabalah.partzuf.atik-yomin",
       "entityType": "qabalah.partzuf",
       "primaryDisplayName": "Atik Yomin",

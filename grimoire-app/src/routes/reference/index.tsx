@@ -5,7 +5,7 @@ import type { BaseEntity } from '@grimoire/core'
 import { loadTraditionSettings, resolveDisplayName } from '@/lib/tradition-store'
 import { Search, X, Shuffle, SlidersHorizontal } from 'lucide-react'
 import { formatEntityType, formatTag } from '@/lib/format'
-import { getRecentEntities, removeRecentEntity } from '@/lib/recent-entities'
+import { getRecentEntities, removeRecentEntity, clearRecentEntities } from '@/lib/recent-entities'
 import type { RecentEntity } from '@/lib/recent-entities'
 
 export const Route = createFileRoute('/reference/')(({
@@ -667,10 +667,28 @@ function RecentlyViewedSection({ onNavigate }: { onNavigate: (cn: string) => voi
     setRecents(getRecentEntities(8))
   }
 
+  const handleClearAll = () => {
+    clearRecentEntities()
+    setRecents([])
+  }
+
   return (
     <div style={{ marginBottom: '20px' }}>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
-        Recently Viewed
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          Recently Viewed
+        </div>
+        <button
+          onClick={handleClearAll}
+          style={{
+            background: 'none', border: 'none', padding: '2px 4px', cursor: 'pointer',
+            fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'inherit',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-text)' }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+        >
+          Clear all
+        </button>
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
         {recents.map(r => (
@@ -753,21 +771,32 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
           Guides
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '8px' }}>
-          <button
-            onClick={() => navigate({ to: '/reference/lenormand-combinations' })}
-            style={{
-              padding: '12px 14px', background: 'var(--color-surface-2)',
-              border: '1px solid var(--color-border)', borderRadius: '6px',
-              cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
-              textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
-              transition: 'border-color 0.15s',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
-          >
-            Lenormand Combinations
-          </button>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '8px' }}>
+          {[
+            { to: '/reference/lenormand-combinations',      label: 'Lenormand Combinations' },
+            { to: '/reference/iching-trigram-matrix',       label: 'I Ching Trigram Matrix' },
+            { to: '/reference/astrological-dignities',      label: 'Astrological Dignities' },
+            { to: '/reference/chinese-zodiac-compatibility',label: 'Chinese Zodiac Compatibility' },
+            { to: '/reference/sephirothic-matrix',          label: 'Sephirothic Attributions' },
+            { to: '/reference/planetary-matrix',            label: 'Planetary Attributions' },
+            { to: '/reference/geomancy-shield-chart',       label: 'Geomancy Shield Chart' },
+          ].map(({ to, label }) => (
+            <button
+              key={to}
+              onClick={() => navigate({ to: to as never })}
+              style={{
+                padding: '12px 14px', background: 'var(--color-surface-2)',
+                border: '1px solid var(--color-border)', borderRadius: '6px',
+                cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
+                textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
+                transition: 'border-color 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </div>
     </div>

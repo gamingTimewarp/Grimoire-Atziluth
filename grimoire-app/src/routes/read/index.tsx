@@ -1,14 +1,14 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useReadingStore } from '@/stores/reading'
 import { useEngineStore } from '@/stores/engine'
-import { BUILT_IN_DECK_FILTERS, BUILT_IN_SPREADS } from '@/lib/built-in-data'
+import { BUILT_IN_DECK_FILTERS, BUILT_IN_SPREADS, SPREAD_ENTITY_CN } from '@/lib/built-in-data'
 import type { DeckFilter, SpreadDefinition } from '@/lib/built-in-data'
 import { Card, CardArtPlaceholder } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import React, { useEffect, useState } from 'react'
 import type { BaseEntity } from '@grimoire/core'
 import { getAllCustomSpreads, spreadRecordToDefinition, getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
-import { Settings2 } from 'lucide-react'
+import { Settings2, Info } from 'lucide-react'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { ZODIAC_SIGNS_IAU } from '@/lib/astro-engine'
 import { loadSettings } from '@/lib/settings-store'
@@ -143,6 +143,29 @@ function ReadPage() {
   )
 }
 
+// ─── Info button ──────────────────────────────────────────────────────────────
+
+function InfoButton({ canonicalName }: { canonicalName: string }) {
+  const navigate = useNavigate()
+  return (
+    <button
+      type="button"
+      onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName } })}
+      title="View reference page"
+      style={{
+        position: 'absolute', top: '8px', right: '8px', zIndex: 1,
+        background: 'none', border: 'none', cursor: 'pointer',
+        padding: '3px', lineHeight: 1, borderRadius: '3px',
+        color: 'var(--color-text-subtle)',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+      onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+    >
+      <Info size={13} />
+    </button>
+  )
+}
+
 function StepIndicator({ current }: { current: number }) {
   const steps = ['Choose Deck', 'Choose Spread', 'Draw Cards', 'Notes']
   return (
@@ -236,45 +259,47 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
           const isPending = pendingDeck?.id === deck.id
           const isSelected = selectedParentId === deck.id
           return (
-            <Card
-              key={deck.id}
-              onClick={() => handleDeckClick(deck)}
-              selected={isSelected || isPending}
-            >
-              <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>
-                {deck.displayName}
-              </div>
-              <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>
-                {deck.description}
-              </div>
-              {isTarotDeck(deck) && (
-                <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
-                  Reversals: {deck.reversalEnabled ? 'enabled' : 'disabled'}
+            <div key={deck.id} style={{ position: 'relative' }}>
+              <Card
+                onClick={() => handleDeckClick(deck)}
+                selected={isSelected || isPending}
+              >
+                <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px', paddingRight: deck.infoCanonicalName ? '18px' : 0 }}>
+                  {deck.displayName}
                 </div>
-              )}
-              {isPending && deck.variants && (
-                <div style={{ marginTop: '10px' }} onClick={e => e.stopPropagation()}>
-                <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>Choose a variant to continue:</div>
-                <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-                  {deck.variants.map(v => (
-                    <button
-                      key={v.id}
-                      onClick={() => handleVariantClick(deck, v.id)}
-                      style={{
-                        padding: '4px 10px', borderRadius: '4px', fontSize: '11px', cursor: 'pointer',
-                        background: selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-surface-3)',
-                        color: selected?.id === v.id ? '#0d0d12' : 'var(--color-text)',
-                        border: `1px solid ${selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
-                        fontFamily: 'inherit',
-                      }}
-                    >
-                      {v.label}
-                    </button>
-                  ))}
+                <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>
+                  {deck.description}
                 </div>
-                </div>
-              )}
-            </Card>
+                {isTarotDeck(deck) && (
+                  <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+                    Reversals: {deck.reversalEnabled ? 'enabled' : 'disabled'}
+                  </div>
+                )}
+                {isPending && deck.variants && (
+                  <div style={{ marginTop: '10px' }} onClick={e => e.stopPropagation()}>
+                  <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>Choose a variant to continue:</div>
+                  <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                    {deck.variants.map(v => (
+                      <button
+                        key={v.id}
+                        onClick={() => handleVariantClick(deck, v.id)}
+                        style={{
+                          padding: '4px 10px', borderRadius: '4px', fontSize: '11px', cursor: 'pointer',
+                          background: selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-surface-3)',
+                          color: selected?.id === v.id ? '#0d0d12' : 'var(--color-text)',
+                          border: `1px solid ${selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                          fontFamily: 'inherit',
+                        }}
+                      >
+                        {v.label}
+                      </button>
+                    ))}
+                  </div>
+                  </div>
+                )}
+              </Card>
+              {deck.infoCanonicalName && <InfoButton canonicalName={deck.infoCanonicalName} />}
+            </div>
           )
         })}
         {customDecks.map(deck => (
@@ -297,6 +322,27 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
   )
 }
 
+function SpreadCard({ spread, onSelect, isSelected }: { spread: SpreadDefinition; onSelect: (s: SpreadDefinition) => void; isSelected: boolean }) {
+  const entityCn = SPREAD_ENTITY_CN[spread.id]
+  return (
+    <div style={{ position: 'relative' }}>
+      <Card onClick={() => onSelect(spread)} selected={isSelected}>
+        <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px', paddingRight: entityCn ? '18px' : 0 }}>
+          {spread.displayName}
+        </div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>
+          {spread.description}
+        </div>
+        <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+          {spread.positions.length === 0 ? 'Free form' : `${spread.positions.length} position${spread.positions.length !== 1 ? 's' : ''}`}
+          {!spread.isBuiltIn && <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>}
+        </div>
+      </Card>
+      {entityCn && <InfoButton canonicalName={entityCn} />}
+    </div>
+  )
+}
+
 function SpreadSelection({ deck, onSelect, selected, onManage }: {
   deck: DeckFilter
   onSelect: (s: SpreadDefinition) => void
@@ -308,24 +354,6 @@ function SpreadSelection({ deck, onSelect, selected, onManage }: {
   useEffect(() => {
     getAllCustomSpreads().then(records => setCustomSpreads(records.map(spreadRecordToDefinition)))
   }, [])
-
-  const SpreadCard = ({ spread }: { spread: SpreadDefinition }) => (
-    <Card
-      onClick={() => onSelect(spread)}
-      selected={selected?.id === spread.id}
-    >
-      <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>
-        {spread.displayName}
-      </div>
-      <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>
-        {spread.description}
-      </div>
-      <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
-        {spread.positions.length === 0 ? 'Free form' : `${spread.positions.length} position${spread.positions.length !== 1 ? 's' : ''}`}
-        {!spread.isBuiltIn && <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>}
-      </div>
-    </Card>
-  )
 
   return (
     <div>
@@ -347,8 +375,12 @@ function SpreadSelection({ deck, onSelect, selected, onManage }: {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '12px' }}>
         {BUILT_IN_SPREADS
           .filter(s => !s.requiredDeckId || s.requiredDeckId === deck.id)
-          .map(spread => <SpreadCard key={spread.id} spread={spread} />)}
-        {customSpreads.map(spread => <SpreadCard key={spread.id} spread={spread} />)}
+          .map(spread => (
+            <SpreadCard key={spread.id} spread={spread} onSelect={onSelect} isSelected={selected?.id === spread.id} />
+          ))}
+        {customSpreads.map(spread => (
+          <SpreadCard key={spread.id} spread={spread} onSelect={onSelect} isSelected={selected?.id === spread.id} />
+        ))}
       </div>
     </div>
   )

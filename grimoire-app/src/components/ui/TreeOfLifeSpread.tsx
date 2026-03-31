@@ -50,13 +50,13 @@ type NodeDef = { id: string; name: string; cx: number; cy: number }
 
 const TOL_NODES: NodeDef[] = [
   { id: 'qabalah.sephira.kether',    name: 'Kether',    cx: 150, cy: 56  },
-  { id: 'qabalah.sephira.chokmah',   name: 'Chokmah',   cx: 44,  cy: 140 },
-  { id: 'qabalah.sephira.binah',     name: 'Binah',     cx: 256, cy: 140 },
-  { id: 'qabalah.sephira.chesed',    name: 'Chesed',    cx: 44,  cy: 270 },
-  { id: 'qabalah.sephira.geburah',   name: 'Geburah',   cx: 256, cy: 270 },
+  { id: 'qabalah.sephira.chokmah',   name: 'Chokmah',   cx: 256, cy: 140 },
+  { id: 'qabalah.sephira.binah',     name: 'Binah',     cx: 44,  cy: 140 },
+  { id: 'qabalah.sephira.chesed',    name: 'Chesed',    cx: 256, cy: 270 },
+  { id: 'qabalah.sephira.geburah',   name: 'Geburah',   cx: 44,  cy: 270 },
   { id: 'qabalah.sephira.tiphareth', name: 'Tiphareth', cx: 150, cy: 354 },
-  { id: 'qabalah.sephira.netzach',   name: 'Netzach',   cx: 44,  cy: 444 },
-  { id: 'qabalah.sephira.hod',       name: 'Hod',       cx: 256, cy: 444 },
+  { id: 'qabalah.sephira.netzach',   name: 'Netzach',   cx: 256, cy: 444 },
+  { id: 'qabalah.sephira.hod',       name: 'Hod',       cx: 44,  cy: 444 },
   { id: 'qabalah.sephira.yesod',     name: 'Yesod',     cx: 150, cy: 526 },
   { id: 'qabalah.sephira.malkuth',   name: 'Malkuth',   cx: 150, cy: 656 },
 ]

@@ -30,7 +30,13 @@ import { Route as SettingsDataRouteImport } from './routes/settings/data'
 import { Route as SettingsCreditsRouteImport } from './routes/settings/credits'
 import { Route as SettingsArtRouteImport } from './routes/settings/art'
 import { Route as SettingsAccessibilityRouteImport } from './routes/settings/accessibility'
+import { Route as ReferenceSephirothicMatrixRouteImport } from './routes/reference/sephirothic-matrix'
+import { Route as ReferencePlanetaryMatrixRouteImport } from './routes/reference/planetary-matrix'
 import { Route as ReferenceLenormandCombinationsRouteImport } from './routes/reference/lenormand-combinations'
+import { Route as ReferenceIchingTrigramMatrixRouteImport } from './routes/reference/iching-trigram-matrix'
+import { Route as ReferenceGeomancyShieldChartRouteImport } from './routes/reference/geomancy-shield-chart'
+import { Route as ReferenceChineseZodiacCompatibilityRouteImport } from './routes/reference/chinese-zodiac-compatibility'
+import { Route as ReferenceAstrologicalDignitiesRouteImport } from './routes/reference/astrological-dignities'
 import { Route as ReferenceCanonicalNameRouteImport } from './routes/reference/$canonicalName'
 import { Route as ReadSpreadsRouteImport } from './routes/read/spreads'
 import { Route as ReadDrawRouteImport } from './routes/read/draw'
@@ -42,6 +48,7 @@ import { Route as CustomTraditionsRouteImport } from './routes/custom/traditions
 import { Route as CustomNewRouteImport } from './routes/custom/new'
 import { Route as CustomCnRouteImport } from './routes/custom/$cn'
 import { Route as AstrologyNewRouteImport } from './routes/astrology/new'
+import { Route as AstrologyAnimateRouteImport } from './routes/astrology/animate'
 import { Route as AstrologyIdRouteImport } from './routes/astrology/$id'
 
 const IndexRoute = IndexRouteImport.update({
@@ -149,10 +156,46 @@ const SettingsAccessibilityRoute = SettingsAccessibilityRouteImport.update({
   path: '/settings/accessibility',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReferenceSephirothicMatrixRoute =
+  ReferenceSephirothicMatrixRouteImport.update({
+    id: '/reference/sephirothic-matrix',
+    path: '/reference/sephirothic-matrix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ReferencePlanetaryMatrixRoute =
+  ReferencePlanetaryMatrixRouteImport.update({
+    id: '/reference/planetary-matrix',
+    path: '/reference/planetary-matrix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ReferenceLenormandCombinationsRoute =
   ReferenceLenormandCombinationsRouteImport.update({
     id: '/reference/lenormand-combinations',
     path: '/reference/lenormand-combinations',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ReferenceIchingTrigramMatrixRoute =
+  ReferenceIchingTrigramMatrixRouteImport.update({
+    id: '/reference/iching-trigram-matrix',
+    path: '/reference/iching-trigram-matrix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ReferenceGeomancyShieldChartRoute =
+  ReferenceGeomancyShieldChartRouteImport.update({
+    id: '/reference/geomancy-shield-chart',
+    path: '/reference/geomancy-shield-chart',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ReferenceChineseZodiacCompatibilityRoute =
+  ReferenceChineseZodiacCompatibilityRouteImport.update({
+    id: '/reference/chinese-zodiac-compatibility',
+    path: '/reference/chinese-zodiac-compatibility',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ReferenceAstrologicalDignitiesRoute =
+  ReferenceAstrologicalDignitiesRouteImport.update({
+    id: '/reference/astrological-dignities',
+    path: '/reference/astrological-dignities',
     getParentRoute: () => rootRouteImport,
   } as any)
 const ReferenceCanonicalNameRoute = ReferenceCanonicalNameRouteImport.update({
@@ -210,6 +253,11 @@ const AstrologyNewRoute = AstrologyNewRouteImport.update({
   path: '/astrology/new',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AstrologyAnimateRoute = AstrologyAnimateRouteImport.update({
+  id: '/astrology/animate',
+  path: '/astrology/animate',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AstrologyIdRoute = AstrologyIdRouteImport.update({
   id: '/astrology/$id',
   path: '/astrology/$id',
@@ -219,6 +267,7 @@ const AstrologyIdRoute = AstrologyIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
+  '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
@@ -230,7 +279,13 @@ export interface FileRoutesByFullPath {
   '/read/draw': typeof ReadDrawRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
+  '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
+  '/reference/chinese-zodiac-compatibility': typeof ReferenceChineseZodiacCompatibilityRoute
+  '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
+  '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
+  '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -255,6 +310,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
+  '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
@@ -266,7 +322,13 @@ export interface FileRoutesByTo {
   '/read/draw': typeof ReadDrawRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
+  '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
+  '/reference/chinese-zodiac-compatibility': typeof ReferenceChineseZodiacCompatibilityRoute
+  '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
+  '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
+  '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -292,6 +354,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
+  '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
@@ -303,7 +366,13 @@ export interface FileRoutesById {
   '/read/draw': typeof ReadDrawRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
+  '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
+  '/reference/chinese-zodiac-compatibility': typeof ReferenceChineseZodiacCompatibilityRoute
+  '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
+  '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
+  '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -330,6 +399,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/astrology/$id'
+    | '/astrology/animate'
     | '/astrology/new'
     | '/custom/$cn'
     | '/custom/new'
@@ -341,7 +411,13 @@ export interface FileRouteTypes {
     | '/read/draw'
     | '/read/spreads'
     | '/reference/$canonicalName'
+    | '/reference/astrological-dignities'
+    | '/reference/chinese-zodiac-compatibility'
+    | '/reference/geomancy-shield-chart'
+    | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planetary-matrix'
+    | '/reference/sephirothic-matrix'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -366,6 +442,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/astrology/$id'
+    | '/astrology/animate'
     | '/astrology/new'
     | '/custom/$cn'
     | '/custom/new'
@@ -377,7 +454,13 @@ export interface FileRouteTypes {
     | '/read/draw'
     | '/read/spreads'
     | '/reference/$canonicalName'
+    | '/reference/astrological-dignities'
+    | '/reference/chinese-zodiac-compatibility'
+    | '/reference/geomancy-shield-chart'
+    | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planetary-matrix'
+    | '/reference/sephirothic-matrix'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -402,6 +485,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/astrology/$id'
+    | '/astrology/animate'
     | '/astrology/new'
     | '/custom/$cn'
     | '/custom/new'
@@ -413,7 +497,13 @@ export interface FileRouteTypes {
     | '/read/draw'
     | '/read/spreads'
     | '/reference/$canonicalName'
+    | '/reference/astrological-dignities'
+    | '/reference/chinese-zodiac-compatibility'
+    | '/reference/geomancy-shield-chart'
+    | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planetary-matrix'
+    | '/reference/sephirothic-matrix'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -439,6 +529,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AstrologyIdRoute: typeof AstrologyIdRoute
+  AstrologyAnimateRoute: typeof AstrologyAnimateRoute
   AstrologyNewRoute: typeof AstrologyNewRoute
   CustomCnRoute: typeof CustomCnRoute
   CustomNewRoute: typeof CustomNewRoute
@@ -450,7 +541,13 @@ export interface RootRouteChildren {
   ReadDrawRoute: typeof ReadDrawRoute
   ReadSpreadsRoute: typeof ReadSpreadsRoute
   ReferenceCanonicalNameRoute: typeof ReferenceCanonicalNameRoute
+  ReferenceAstrologicalDignitiesRoute: typeof ReferenceAstrologicalDignitiesRoute
+  ReferenceChineseZodiacCompatibilityRoute: typeof ReferenceChineseZodiacCompatibilityRoute
+  ReferenceGeomancyShieldChartRoute: typeof ReferenceGeomancyShieldChartRoute
+  ReferenceIchingTrigramMatrixRoute: typeof ReferenceIchingTrigramMatrixRoute
   ReferenceLenormandCombinationsRoute: typeof ReferenceLenormandCombinationsRoute
+  ReferencePlanetaryMatrixRoute: typeof ReferencePlanetaryMatrixRoute
+  ReferenceSephirothicMatrixRoute: typeof ReferenceSephirothicMatrixRoute
   SettingsAccessibilityRoute: typeof SettingsAccessibilityRoute
   SettingsArtRoute: typeof SettingsArtRoute
   SettingsCreditsRoute: typeof SettingsCreditsRoute
@@ -622,11 +719,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsAccessibilityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/reference/sephirothic-matrix': {
+      id: '/reference/sephirothic-matrix'
+      path: '/reference/sephirothic-matrix'
+      fullPath: '/reference/sephirothic-matrix'
+      preLoaderRoute: typeof ReferenceSephirothicMatrixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/planetary-matrix': {
+      id: '/reference/planetary-matrix'
+      path: '/reference/planetary-matrix'
+      fullPath: '/reference/planetary-matrix'
+      preLoaderRoute: typeof ReferencePlanetaryMatrixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/reference/lenormand-combinations': {
       id: '/reference/lenormand-combinations'
       path: '/reference/lenormand-combinations'
       fullPath: '/reference/lenormand-combinations'
       preLoaderRoute: typeof ReferenceLenormandCombinationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/iching-trigram-matrix': {
+      id: '/reference/iching-trigram-matrix'
+      path: '/reference/iching-trigram-matrix'
+      fullPath: '/reference/iching-trigram-matrix'
+      preLoaderRoute: typeof ReferenceIchingTrigramMatrixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/geomancy-shield-chart': {
+      id: '/reference/geomancy-shield-chart'
+      path: '/reference/geomancy-shield-chart'
+      fullPath: '/reference/geomancy-shield-chart'
+      preLoaderRoute: typeof ReferenceGeomancyShieldChartRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/chinese-zodiac-compatibility': {
+      id: '/reference/chinese-zodiac-compatibility'
+      path: '/reference/chinese-zodiac-compatibility'
+      fullPath: '/reference/chinese-zodiac-compatibility'
+      preLoaderRoute: typeof ReferenceChineseZodiacCompatibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/astrological-dignities': {
+      id: '/reference/astrological-dignities'
+      path: '/reference/astrological-dignities'
+      fullPath: '/reference/astrological-dignities'
+      preLoaderRoute: typeof ReferenceAstrologicalDignitiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/reference/$canonicalName': {
@@ -706,6 +845,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AstrologyNewRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/astrology/animate': {
+      id: '/astrology/animate'
+      path: '/astrology/animate'
+      fullPath: '/astrology/animate'
+      preLoaderRoute: typeof AstrologyAnimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/astrology/$id': {
       id: '/astrology/$id'
       path: '/astrology/$id'
@@ -719,6 +865,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AstrologyIdRoute: AstrologyIdRoute,
+  AstrologyAnimateRoute: AstrologyAnimateRoute,
   AstrologyNewRoute: AstrologyNewRoute,
   CustomCnRoute: CustomCnRoute,
   CustomNewRoute: CustomNewRoute,
@@ -730,7 +877,14 @@ const rootRouteChildren: RootRouteChildren = {
   ReadDrawRoute: ReadDrawRoute,
   ReadSpreadsRoute: ReadSpreadsRoute,
   ReferenceCanonicalNameRoute: ReferenceCanonicalNameRoute,
+  ReferenceAstrologicalDignitiesRoute: ReferenceAstrologicalDignitiesRoute,
+  ReferenceChineseZodiacCompatibilityRoute:
+    ReferenceChineseZodiacCompatibilityRoute,
+  ReferenceGeomancyShieldChartRoute: ReferenceGeomancyShieldChartRoute,
+  ReferenceIchingTrigramMatrixRoute: ReferenceIchingTrigramMatrixRoute,
   ReferenceLenormandCombinationsRoute: ReferenceLenormandCombinationsRoute,
+  ReferencePlanetaryMatrixRoute: ReferencePlanetaryMatrixRoute,
+  ReferenceSephirothicMatrixRoute: ReferenceSephirothicMatrixRoute,
   SettingsAccessibilityRoute: SettingsAccessibilityRoute,
   SettingsArtRoute: SettingsArtRoute,
   SettingsCreditsRoute: SettingsCreditsRoute,

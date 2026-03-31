@@ -8,7 +8,7 @@ import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { Button } from '@/components/ui/Button'
-import { Plus, User, Trash2, RefreshCw, List, Circle } from 'lucide-react'
+import { Plus, User, Trash2, RefreshCw, List, Circle, Play } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/')({
   component: AstrologyPage,
@@ -95,11 +95,12 @@ function CurrentSkyPanel() {
     listNatalCharts().then(records => {
       const self = records.find(r => r.isSelf)
       if (!self) return
-      const { astrologyMode, houseSystem, showNodes } = loadTraditionSettings()
+      const { astrologyMode, houseSystem, showNodes, activeTraditions } = loadTraditionSettings()
+      const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
       const birthDate = self.birthTime
         ? new Date(`${self.birthDate}T${self.birthTime}:00`)
         : new Date(`${self.birthDate}T12:00:00`)
-      const c = getNatalChart(birthDate, self.birthLat ?? 0, self.birthLon ?? 0, houseSystem, astrologyMode, { showNodes })
+      const c = getNatalChart(birthDate, self.birthLat ?? 0, self.birthLon ?? 0, houseSystem, astrologyMode, { showNodes, showModernPlanets })
       setSelfChart(c)
     }).catch(() => {})
   }, [])
@@ -108,12 +109,13 @@ function CurrentSkyPanel() {
     setSpinning(true)
     const date = getEffectiveDate()
     const loc  = getHomeLocation()
-    const { astrologyMode, houseSystem, showNodes } = loadTraditionSettings()
+    const { astrologyMode, houseSystem, showNodes, activeTraditions } = loadTraditionSettings()
+    const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
     setNoLoc(!loc)
     setMode(astrologyMode)
     setTimeout(() => {
       try {
-        const c = getNatalChart(date, loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes })
+        const c = getNatalChart(date, loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes, showModernPlanets })
         setChart(c)
         setAsOf(date)
         if (selfChart) {
@@ -164,6 +166,12 @@ function CurrentSkyPanel() {
               ↕ Transits to natal ({transitAspects.length})
             </button>
           )}
+          <button
+            onClick={() => navigate({ to: '/astrology/animate' })}
+            style={{ display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: '1px solid var(--color-border)', borderRadius: '4px', cursor: 'pointer', fontSize: '11px', color: 'var(--color-text-muted)', padding: '2px 8px' }}
+          >
+            <Play size={9} /> Animate
+          </button>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           {noLoc && <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>Set home location for accurate houses</span>}

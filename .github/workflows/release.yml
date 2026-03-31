@@ -72,6 +72,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Prevent tauri-action from waiting for a dev server on Windows
           TAURI_CLI_NO_DEV_SERVER_WAIT: 1
+          # Inject version from the git tag so the app displays it at runtime
+          VITE_APP_VERSION: ${{ github.ref_name }}
         with:
           tagName: ${{ github.ref_name }}
           releaseName: Grimoire Atziluth ${{ github.ref_name }}
@@ -146,6 +148,8 @@ jobs:
 
       - name: Build Android APK
         working-directory: grimoire-app
+        env:
+          VITE_APP_VERSION: ${{ github.ref_name }}
         run: npm run tauri android build -- --apk
 
       - name: Rename APK

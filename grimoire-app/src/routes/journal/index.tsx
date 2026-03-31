@@ -27,7 +27,7 @@ import { loadAccessibilitySettings } from '@/lib/accessibility-store'
 import { loadSettings, saveSettings } from '@/lib/settings-store'
 import { AlignJustify, AlignLeft } from 'lucide-react'
 import type { NatalChartData } from '@/lib/astro-engine'
-import { getSignsForMode, getNatalChart, getTransitAspects } from '@/lib/astro-engine'
+import { getSignsForMode, getNatalChart, getTransitAspects, MODERN_PLANET_CNS } from '@/lib/astro-engine'
 import { listNatalCharts } from '@/lib/natal-db'
 
 export const Route = createFileRoute('/journal/')({
@@ -877,8 +877,15 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
   const [open, setOpen] = useState(true)
   const [view, setView] = useState<'table' | 'wheel'>('wheel')
   const [selfChart, setSelfChart] = useState<NatalChartData | null>(null)
-  const { astrologyMode, houseSystem } = loadTraditionSettings()
+  const { astrologyMode, houseSystem, showNodes, activeTraditions } = loadTraditionSettings()
+  const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
   const signs = getSignsForMode(astrologyMode)
+  const visiblePlanets = snapshot.planets.filter(pos => {
+    const cn = pos.planet.canonicalName
+    if (MODERN_PLANET_CNS.has(cn) && !showModernPlanets) return false
+    if ((cn === 'astrology.node.rahu' || cn === 'astrology.node.ketu' || cn === 'astrology.point.black-moon-lilith') && !showNodes) return false
+    return true
+  })
 
   // Load self natal chart once when section is opened
   useEffect(() => {
@@ -890,7 +897,7 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
       const [year, month, day] = datePart.split('-').map(Number)
       const [hour, minute] = timePart.split(':').map(Number)
       const birthDate = new Date(year, month - 1, day, hour, minute)
-      setSelfChart(getNatalChart(birthDate, self.birthLat, self.birthLon, houseSystem, astrologyMode))
+      setSelfChart(getNatalChart(birthDate, self.birthLat, self.birthLon, houseSystem, astrologyMode, { showNodes, showModernPlanets }))
     }).catch(() => {})
   }, [open])
 
@@ -924,7 +931,7 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
       {open && view === 'table' && (
         <>
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '3px 8px', alignItems: 'center' }}>
-            {snapshot.planets.map(pos => {
+            {visiblePlanets.map(pos => {
               const sign = signs[pos.signIndex]
               return (
                 <React.Fragment key={pos.planet.name}>

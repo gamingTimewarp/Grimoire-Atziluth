@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X } from 'lucide-react'
 import { GlobalSearch } from './GlobalSearch'
 import { loadNavConfig } from '@/lib/nav-store'
+import { APP_VERSION } from '@/lib/app-version'
 
 const ALL_NAV_ITEMS = [
   { to: '/',           icon: Home,         label: 'Home'      },
@@ -197,7 +198,7 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
 
       {/* Version */}
       <div style={{ padding: '12px 20px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
-        v1.0.0-rc
+        {APP_VERSION}
       </div>
     </nav>
   )

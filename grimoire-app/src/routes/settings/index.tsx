@@ -16,6 +16,8 @@ import { Button } from '@/components/ui/Button'
 import { ColorSwatch } from '@/components/ui/HsvColorPicker'
 import { DateTimeInput } from '@/components/ui/DateInput'
 import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen } from 'lucide-react'
+import { LocationInput } from '@/components/ui/LocationInput'
+import type { LocationValue } from '@/components/ui/LocationInput'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
 
 export const Route = createFileRoute('/settings/')({
@@ -365,22 +367,18 @@ function LocationSection({ location, onChange }: {
   location: Location | null
   onChange: (loc: Location | null) => void
 }) {
-  const [label, setLabel] = useState(location?.label ?? '')
-  const [lat,   setLat]   = useState(location?.lat?.toString() ?? '')
-  const [lon,   setLon]   = useState(location?.lon?.toString() ?? '')
-  const [tz,    setTz]    = useState(location?.timezone ?? Intl.DateTimeFormat().resolvedOptions().timeZone)
+  const [locValue, setLocValue] = useState<LocationValue>({
+    label:    location?.label    ?? '',
+    lat:      location?.lat?.toString() ?? '',
+    lon:      location?.lon?.toString() ?? '',
+    timezone: location?.timezone ?? Intl.DateTimeFormat().resolvedOptions().timeZone,
+  })
 
   const handleSave = () => {
-    const latN = parseFloat(lat)
-    const lonN = parseFloat(lon)
+    const latN = parseFloat(locValue.lat)
+    const lonN = parseFloat(locValue.lon)
     if (isNaN(latN) || isNaN(lonN)) return
-    onChange({ label: label.trim() || `${latN}, ${lonN}`, lat: latN, lon: lonN, timezone: tz })
-  }
-
-  const inputStyle: React.CSSProperties = {
-    width: '100%', padding: '8px 12px', background: 'var(--color-surface-2)',
-    border: '1px solid var(--color-border)', borderRadius: '6px',
-    color: 'var(--color-text)', fontSize: '14px', outline: 'none', boxSizing: 'border-box',
+    onChange({ label: locValue.label.trim() || `${latN}, ${lonN}`, lat: latN, lon: lonN, timezone: locValue.timezone })
   }
 
   return (
@@ -390,34 +388,15 @@ function LocationSection({ location, onChange }: {
         <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Home Location</span>
       </div>
       <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '14px' }}>
-        Used for house calculations and planetary positions on the calendar. Geocoding will be added in a later phase — enter coordinates directly for now.
+        Used for house calculations and planetary positions on the calendar.
       </p>
 
-      <div style={{ display: 'grid', gap: '10px' }}>
-        <div>
-          <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Place Name (label)</label>
-          <input value={label} onChange={e => setLabel(e.target.value)} placeholder="e.g. London, UK" style={inputStyle} />
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-          <div>
-            <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Latitude</label>
-            <input value={lat} onChange={e => setLat(e.target.value)} placeholder="e.g. 51.5074" style={inputStyle} />
-          </div>
-          <div>
-            <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Longitude</label>
-            <input value={lon} onChange={e => setLon(e.target.value)} placeholder="e.g. -0.1278" style={inputStyle} />
-          </div>
-        </div>
-        <div>
-          <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Timezone (IANA)</label>
-          <input value={tz} onChange={e => setTz(e.target.value)} placeholder="e.g. Europe/London" style={inputStyle} />
-        </div>
-      </div>
+      <LocationInput value={locValue} onChange={setLocValue} />
 
       <div style={{ display: 'flex', gap: '8px', marginTop: '12px', alignItems: 'center' }}>
         <Button onClick={handleSave} size="sm">Save Location</Button>
         {location && (
-          <Button variant="ghost" size="sm" onClick={() => onChange(null)}>Clear</Button>
+          <Button variant="ghost" size="sm" onClick={() => { onChange(null); setLocValue({ label: '', lat: '', lon: '', timezone: Intl.DateTimeFormat().resolvedOptions().timeZone }) }}>Clear</Button>
         )}
         {location && (
           <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>

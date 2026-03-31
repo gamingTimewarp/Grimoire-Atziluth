@@ -50,7 +50,7 @@
       "canonicalName": "geomancy.figure.amissio",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Amissio",
-      "description": "Amissio, meaning Loss, is attributed to Venus operating in her lower, earthly aspect and assigned to Taurus, though some Renaissance authorities place it under Scorpio's influence for its transformative, dissolving quality. Its dot pattern — double, single, double, single — is the inversion of Acquisitio, a visual representation of what was held slipping away through the fingers. In divination Amissio most often signals loss of money, possessions, or relationships, and cautions against financial ventures or any attempt to retain what is already departing; yet because Venus governs it, the figure also carries a note of grace in letting go, and can indicate willing sacrifice or liberality. The Arabic masters saw in Amissio the image of an overturned vessel from which the contents have spilled, emphasising the irreversibility of certain losses. For questions of recovery of lost objects, Amissio in the House of the Thing Sought is a near-certain negative — yet in matters of love it sometimes indicates desire so intense it consumes its object.",
+      "description": "Amissio, meaning Loss, is attributed to Venus operating in her lower, earthly aspect and assigned to Taurus, though some Renaissance authorities place it under Scorpio's influence for its transformative, dissolving quality. Its dot pattern — double, double, double, single — is the spatial reverse of Acquisitio, a visual representation of what was held slipping away through the fingers. In divination Amissio most often signals loss of money, possessions, or relationships, and cautions against financial ventures or any attempt to retain what is already departing; yet because Venus governs it, the figure also carries a note of grace in letting go, and can indicate willing sacrifice or liberality. The Arabic masters saw in Amissio the image of an overturned vessel from which the contents have spilled, emphasising the irreversibility of certain losses. For questions of recovery of lost objects, Amissio in the House of the Thing Sought is a near-certain negative — yet in matters of love it sometimes indicates desire so intense it consumes its object.",
       "secondaryNames": [
         {
           "name": "Amissio",
@@ -79,10 +79,10 @@
         "quality": "mobile",
         "innerElement": "astrology.element.earth",
         "outerElement": "astrology.element.earth",
-        "binaryPattern": "double, single, double, single (fire, air, water, earth rows)",
+        "binaryPattern": "double, double, double, single (fire, air, water, earth rows)",
         "dotPattern": [
           2,
-          1,
+          2,
           2,
           1
         ],
@@ -185,7 +185,7 @@
       "canonicalName": "geomancy.figure.fortuna-major",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Fortuna Major",
-      "description": "Fortuna Major, the Greater Fortune, is the most powerfully benefic figure in the entire geomantic system, attributed to the Sun in Leo and signifying great success achieved through inner virtue and personal strength rather than through luck alone. Its dot pattern — single, double, double, single — creates a shape that the medieval authorities likened to a mountain or a firmly planted standard, suggesting success that is earned, rooted, and lasting. In any reading Fortuna Major presages triumph, honour, advancement, protection, and the successful resolution of whatever is asked; it is the ultimate positive answer in a yes-or-no reading and greatly strengthens any figure it accompanies. The figure was associated in Hermetic tradition with the solar principle of the Higher Self illuminating the path ahead, and Gerard of Cremona described it as 'entering into the house with great power'. It is most helpful in matters of career, authority, ambition, and situations requiring courage and leadership.",
+      "description": "Fortuna Major, the Greater Fortune, is the most powerfully benefic figure in the entire geomantic system, attributed to the Sun in Leo and signifying great success achieved through inner virtue and personal strength rather than through luck alone. Its dot pattern — single, single, double, double — creates a shape that the medieval authorities likened to a mountain or a firmly planted standard, suggesting success that is earned, rooted, and lasting. In any reading Fortuna Major presages triumph, honour, advancement, protection, and the successful resolution of whatever is asked; it is the ultimate positive answer in a yes-or-no reading and greatly strengthens any figure it accompanies. The figure was associated in Hermetic tradition with the solar principle of the Higher Self illuminating the path ahead, and Gerard of Cremona described it as 'entering into the house with great power'. It is most helpful in matters of career, authority, ambition, and situations requiring courage and leadership.",
       "secondaryNames": [
         {
           "name": "Fortuna Major",
@@ -214,12 +214,12 @@
         "quality": "stable",
         "innerElement": "astrology.element.fire",
         "outerElement": "astrology.element.fire",
-        "binaryPattern": "single, double, double, single (fire, air, water, earth rows)",
+        "binaryPattern": "single, single, double, double (fire, air, water, earth rows)",
         "dotPattern": [
           1,
+          1,
           2,
-          2,
-          1
+          2
         ],
         "favorable": true,
         "company": "inner",
@@ -320,7 +320,7 @@
       "canonicalName": "geomancy.figure.rubeus",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Rubeus",
-      "description": "Rubeus, the Red One, is one of the most ominous figures in the geomantic corpus, attributed to Mars in Scorpio and combining martial fire with the dark, transformative waters of Scorpio into a volatile and dangerous compound. Its dot pattern — double, double, double, single — places all activity in the upper rows with a single point only in the earth row, creating an inverted Albus and suggesting that the clarity and wisdom of that figure have been corrupted into passion, vice, and destruction. In a reading Rubeus warns of violence, deception, addiction, lust, and dangerous passions running out of control; it is one of the traditional 'evil' figures and was said to negate the benefit of any favourable figure it accompanied. Yet within the Hermetic tradition Rubeus also carries the seed of Scorpionic transformation — the capacity for deep regeneration through the destruction of what is false — and can indicate situations where something must be utterly broken down before it can be rebuilt. Agrippa advised that when Rubeus appears in the first house, the entire reading should be abandoned.",
+      "description": "Rubeus, the Red One, is one of the most ominous figures in the geomantic corpus, attributed to Mars in Scorpio and combining martial fire with the dark, transformative waters of Scorpio into a volatile and dangerous compound. Its dot pattern — double, single, double, single — is the spatial reverse of Puer, alternating passive and active rows from top to bottom and suggesting that the direct martial energy of that figure has been inverted into hidden, corrosive force. In a reading Rubeus warns of violence, deception, addiction, lust, and dangerous passions running out of control; it is one of the traditional 'evil' figures and was said to negate the benefit of any favourable figure it accompanied. Yet within the Hermetic tradition Rubeus also carries the seed of Scorpionic transformation — the capacity for deep regeneration through the destruction of what is false — and can indicate situations where something must be utterly broken down before it can be rebuilt. Agrippa advised that when Rubeus appears in the first house, the entire reading should be abandoned.",
       "secondaryNames": [
         {
           "name": "Rubeus",
@@ -349,10 +349,10 @@
         "quality": "mobile",
         "innerElement": "astrology.element.water",
         "outerElement": "astrology.element.fire",
-        "binaryPattern": "double, double, double, single (fire, air, water, earth rows)",
+        "binaryPattern": "double, single, double, single (fire, air, water, earth rows)",
         "dotPattern": [
           2,
-          2,
+          1,
           2,
           1
         ],
@@ -365,7 +365,7 @@
       "canonicalName": "geomancy.figure.acquisitio",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Acquisitio",
-      "description": "Acquisitio, Gain or Acquisition, is attributed to Jupiter in Sagittarius and represents the principle of successful accumulation — wealth coming in, projects reaching fruition, and endeavours meeting with prosperity and expansion. Its dot pattern — single, double, double, single — appears to mirror Fortuna Minor, but the Golden Dawn and traditional authorities assign it the pattern that captures everything within its grasp, contrasting with Amissio which lets everything fall away. In a reading Acquisitio is one of the most unambiguously fortunate figures, especially for questions of money, business, treasure, and material gain; it promises that what is sought will be found and what is given will be returned with increase. The Jupiterian quality brings not only abundance but also generosity, wisdom, and legal favour — Acquisitio is a good omen for court cases, inheritances, and any expansion of one's domain. Its only caveat is that Jupiterian excess can lead to overreach if the querent is not grounded.",
+      "description": "Acquisitio, Gain or Acquisition, is attributed to Jupiter in Sagittarius and represents the principle of successful accumulation — wealth coming in, projects reaching fruition, and endeavours meeting with prosperity and expansion. Its dot pattern — single, double, double, double — places a single active point in the fire row above three passive double rows, representing the focused gathering of fortune into the querent's hands, contrasting with Amissio which lets everything fall away. In a reading Acquisitio is one of the most unambiguously fortunate figures, especially for questions of money, business, treasure, and material gain; it promises that what is sought will be found and what is given will be returned with increase. The Jupiterian quality brings not only abundance but also generosity, wisdom, and legal favour — Acquisitio is a good omen for court cases, inheritances, and any expansion of one's domain. Its only caveat is that Jupiterian excess can lead to overreach if the querent is not grounded.",
       "secondaryNames": [
         {
           "name": "Acquisitio",
@@ -394,12 +394,12 @@
         "quality": "stable",
         "innerElement": "astrology.element.fire",
         "outerElement": "astrology.element.fire",
-        "binaryPattern": "single, double, double, single — reversed Amissio structure (fire, air, water, earth rows)",
+        "binaryPattern": "single, double, double, double (fire, air, water, earth rows)",
         "dotPattern": [
           1,
           2,
           2,
-          1
+          2
         ],
         "favorable": true,
         "company": "inner",
@@ -410,7 +410,7 @@
       "canonicalName": "geomancy.figure.carcer",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Carcer",
-      "description": "Carcer, the Prison, is attributed to Saturn in Capricorn and stands as the great figure of restriction, limitation, and binding in the geomantic system. Its dot pattern — single, double, double, single — mirrors Fortuna Major and Acquisitio outwardly, but its Saturnine rulership inverts their benefic quality into delay, obstruction, and confinement. In a reading Carcer indicates situations from which there is no easy exit: long illnesses, legal entanglements, imprisonments literal or metaphorical, rigid circumstances, and the weight of karma or consequence pressing down upon the querent. Yet Carcer is not without its positive dimension — Saturn's restrictions also protect and preserve, and the figure can indicate necessary boundaries, contracts that bind both parties, or the completion of a karmic obligation. It is particularly significant in questions of travel (indicating the impossibility of departure), imprisonment, and matters requiring commitment, where its binding nature can be either a sentence or a covenant.",
+      "description": "Carcer, the Prison, is attributed to Saturn in Capricorn and stands as the great figure of restriction, limitation, and binding in the geomantic system. Its dot pattern — single, double, double, single — is the structural inverse of Conjunctio: where Conjunctio opens channels and joins, Carcer closes them and binds, its Saturnine rulership transforming the mercurial meeting-place into a locked room. In a reading Carcer indicates situations from which there is no easy exit: long illnesses, legal entanglements, imprisonments literal or metaphorical, rigid circumstances, and the weight of karma or consequence pressing down upon the querent. Yet Carcer is not without its positive dimension — Saturn's restrictions also protect and preserve, and the figure can indicate necessary boundaries, contracts that bind both parties, or the completion of a karmic obligation. It is particularly significant in questions of travel (indicating the impossibility of departure), imprisonment, and matters requiring commitment, where its binding nature can be either a sentence or a covenant.",
       "secondaryNames": [
         {
           "name": "Carcer",
@@ -558,6 +558,24 @@
           "languageTag": "ar",
           "visible": true,
           "sortOrder": 1
+        },
+        {
+          "name": "South Node",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Descending Node",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 3
+        },
+        {
+          "name": "☋",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 4
         }
       ],
       "tags": [
@@ -603,6 +621,24 @@
           "languageTag": "ar",
           "visible": true,
           "sortOrder": 1
+        },
+        {
+          "name": "North Node",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "name": "Ascending Node",
+          "languageTag": "en-alt",
+          "visible": false,
+          "sortOrder": 3
+        },
+        {
+          "name": "☊",
+          "languageTag": "symbol",
+          "visible": true,
+          "sortOrder": 4
         }
       ],
       "tags": [
@@ -635,7 +671,7 @@
       "canonicalName": "geomancy.figure.fortuna-minor",
       "entityType": "geomancy.figure",
       "primaryDisplayName": "Fortuna Minor",
-      "description": "Fortuna Minor, the Lesser Fortune, is attributed to the Sun in Leo alongside Fortuna Major, but where the Greater Fortune represents success from inner strength, the Lesser Fortune represents success dependent upon external aid, speed of action, and favourable circumstances. Its dot pattern — double, single, single, double — is the inverse of Fortuna Major's, suggesting a fortune that is reflected from without rather than generated from within — light borrowed from another source rather than self-generated. In a reading Fortuna Minor indicates assistance from others, lucky timing, rapid movement through circumstances, and success that comes quickly but may not endure; it favours the swift and the opportunistic, promising a good outcome if action is taken immediately. Medieval geomancers associated it with the waning solar light — still powerful and benefic, but carrying the implicit caveat that what rises quickly may fall just as fast. It is an excellent omen for questions of speed, travel, competitions where timing matters, and situations where outside intervention is hoped for.",
+      "description": "Fortuna Minor, the Lesser Fortune, is attributed to the Sun in Leo alongside Fortuna Major, but where the Greater Fortune represents success from inner strength, the Lesser Fortune represents success dependent upon external aid, speed of action, and favourable circumstances. Its dot pattern — double, double, single, single — is the inverse of Fortuna Major's, suggesting a fortune that is reflected from without rather than generated from within — light borrowed from another source rather than self-generated. In a reading Fortuna Minor indicates assistance from others, lucky timing, rapid movement through circumstances, and success that comes quickly but may not endure; it favours the swift and the opportunistic, promising a good outcome if action is taken immediately. Medieval geomancers associated it with the waning solar light — still powerful and benefic, but carrying the implicit caveat that what rises quickly may fall just as fast. It is an excellent omen for questions of speed, travel, competitions where timing matters, and situations where outside intervention is hoped for.",
       "secondaryNames": [
         {
           "name": "Fortuna Minor",
@@ -664,12 +700,12 @@
         "quality": "mobile",
         "innerElement": "astrology.element.fire",
         "outerElement": "astrology.element.fire",
-        "binaryPattern": "double, single, single, double (fire, air, water, earth rows)",
+        "binaryPattern": "double, double, single, single (fire, air, water, earth rows)",
         "dotPattern": [
           2,
+          2,
           1,
-          1,
-          2
+          1
         ],
         "favorable": true,
         "company": "outer",

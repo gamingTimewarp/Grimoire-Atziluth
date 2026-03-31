@@ -94,7 +94,8 @@ export function ZodiacYearSpreadDisplay({
   onLabelClick,
   scale = 1,
 }: ZodiacYearSpreadProps) {
-  const { astrologyMode, houseSystem } = loadTraditionSettings()
+  const { astrologyMode, houseSystem, showNodes, activeTraditions } = loadTraditionSettings()
+  const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
   const signs = getSignsForMode(astrologyMode)
 
   const [showWheel, setShowWheel]     = useState(true)
@@ -111,13 +112,13 @@ export function ZodiacYearSpreadDisplay({
         const self = records.find(r => r.isSelf)
         const lat  = self?.birthLat  ?? 51.5
         const lon  = self?.birthLon  ?? -0.1
-        const chart = getNatalChart(new Date(), lat, lon, houseSystem, astrologyMode)
+        const chart = getNatalChart(new Date(), lat, lon, houseSystem, astrologyMode, { showNodes, showModernPlanets })
         setSkyChart(chart)
         setChartAsc(chart.houses.ascendant)
       })
       .catch(() => {
         // Fallback: planet positions only, equatorial houses
-        const planets = getPlanetPositions(new Date(), astrologyMode)
+        const planets = getPlanetPositions(new Date(), astrologyMode, { showNodes, showModernPlanets })
         const chart = { planets, houses: { cusps: [], ascendant: 0, midheaven: 0, system: 'whole-sign' as const }, aspects: getAspects(planets), lots: [] }
         setSkyChart(chart)
         setChartAsc(0)

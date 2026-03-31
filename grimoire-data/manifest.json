@@ -35,6 +35,7 @@
       "files": [
         "entities/astrology/elements.json",
         "entities/astrology/planets.json",
+        "entities/astrology/moon-phases.json",
         "entities/astrology/arabic-lots.json",
         "entities/astrology/zodiac-signs.json",
         "entities/astrology/houses.json",
@@ -128,7 +129,10 @@
         "entities/divination/mahjong-tiles.json",
         "entities/divination/tea-symbols.json",
         "entities/divination/palmistry.json",
-        "entities/system/overviews.json"
+        "entities/divination/spreads.json",
+        "entities/system/overviews.json",
+        "entities/system/traditions.json",
+        "entities/astrology/minor-bodies.json"
       ]
     },
     {
