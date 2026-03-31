@@ -18,6 +18,11 @@
 
 * {
   box-sizing: border-box;
+  /* Force text (monochrome) emoji presentation — prevents FreeType COLRv1
+     rendering path, which crashes on AppImage builds against newer system
+     emoji fonts (e.g. Noto Color Emoji on Fedora 43). Emoji characters are
+     preserved in the source; they just render without colour gradients. */
+  font-variant-emoji: text;
 }
 
 html,

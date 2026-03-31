@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState } from 'react'
-import { BookOpen, Star, BookMarked, PenLine, ChevronRight } from 'lucide-react'
+import { BookOpen, Star, BookMarked, PenLine, ChevronRight, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '@/lib/astro-calc'
 import { getVoidOfCourseMoon } from '@/lib/astro-engine'
@@ -78,6 +78,9 @@ function HomePage() {
 
   return (
     <div style={{ maxWidth: '720px' }}>
+      {/* First-run welcome banner */}
+      <WelcomeBanner />
+
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '28px' }}>
         <div>
@@ -133,6 +136,54 @@ function HomePage() {
           </div>
         </HomeSection>
       )}
+    </div>
+  )
+}
+
+// ─── First-run welcome banner ──────────────────────────────────────────────────
+
+const ONBOARDED_KEY = 'grimoire:onboarded'
+
+function WelcomeBanner() {
+  const navigate = useNavigate()
+  const [visible, setVisible] = useState(() => !localStorage.getItem(ONBOARDED_KEY))
+
+  if (!visible) return null
+
+  const dismiss = () => {
+    localStorage.setItem(ONBOARDED_KEY, '1')
+    setVisible(false)
+  }
+
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'flex-start', gap: '12px',
+      padding: '14px 16px', marginBottom: '24px',
+      background: 'var(--color-surface-2)',
+      border: '1px solid var(--color-accent-muted)',
+      borderRadius: '8px', fontSize: '13px',
+    }}>
+      <div style={{ flex: 1, color: 'var(--color-text-muted)', lineHeight: 1.5 }}>
+        <span style={{ color: 'var(--color-text)', fontWeight: 500 }}>Welcome to Grimoire Atziluth.</span>
+        {' '}All tradition systems are active by default — every attribution, link, and symbol is visible from day one.
+        {' '}Visit{' '}
+        <button
+          type="button"
+          onClick={() => { dismiss(); navigate({ to: '/settings' }) }}
+          style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'var(--color-accent)', fontSize: 'inherit' }}
+        >
+          Settings → Traditions
+        </button>
+        {' '}to focus on specific systems.
+      </div>
+      <button
+        type="button"
+        onClick={dismiss}
+        aria-label="Dismiss"
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: 'var(--color-text-subtle)', flexShrink: 0 }}
+      >
+        <X size={14} />
+      </button>
     </div>
   )
 }

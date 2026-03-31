@@ -150,17 +150,32 @@ jobs:
         working-directory: grimoire-app
         env:
           VITE_APP_VERSION: ${{ github.ref_name }}
-        run: npm run tauri android build -- --apk
+          ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
+        run: |
+          # Use debug build (auto-signed, installable) when no release keystore is
+          # configured. An unsigned release APK is rejected by Android as "invalid".
+          if [ -n "$ANDROID_KEYSTORE" ]; then
+            npm run tauri android build -- --apk
+          else
+            npm run tauri android build -- --apk --debug
+          fi
 
       - name: Rename APK
         run: |
           VERSION="${{ github.ref_name }}"
           VERSION="${VERSION#v}"
-          APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
-          mv "${APK_DIR}/app-universal-release.apk" \
-             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk" 2>/dev/null || \
-          mv "${APK_DIR}/app-universal-release-unsigned.apk" \
-             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
+          ANDROID_KEYSTORE="${{ secrets.ANDROID_KEYSTORE }}"
+          if [ -n "$ANDROID_KEYSTORE" ]; then
+            APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
+            mv "${APK_DIR}/app-universal-release.apk" \
+               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk" 2>/dev/null || \
+            mv "${APK_DIR}/app-universal-release-unsigned.apk" \
+               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
+          else
+            APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/debug"
+            mv "${APK_DIR}/app-universal-debug.apk" \
+               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
+          fi
 
       - name: Upload APK to release
         uses: softprops/action-gh-release@v2
@@ -168,4 +183,6 @@ jobs:
           name: Grimoire Atziluth ${{ github.ref_name }}
           draft: true
           prerelease: ${{ contains(github.ref_name, '-') }}
-          files: grimoire-app/src-tauri/gen/android/app/build/outputs/apk/**/*.apk
+          files: |
+            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk
+            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/debug/Grimoire.Atziluth_*.apk
