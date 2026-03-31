@@ -8,7 +8,15 @@ fn main() {
     #[cfg(target_os = "linux")]
     {
         // SAFETY: called from main() before any threads are spawned.
-        unsafe { std::env::set_var("WEBKIT_DISABLE_DMABUF_RENDERER", "1") };
+        //
+        // Force X11/XWayland backend — WebKit's native Wayland path triggers a
+        // null-deref in its GPU process on Nvidia drivers (Fedora 43, mesa 25.x).
+        // GDK_BACKEND=x11 routes rendering through XWayland, which is stable.
+        // WEBKIT_DISABLE_DMABUF_RENDERER is kept as a belt-and-suspenders guard.
+        unsafe {
+            std::env::set_var("GDK_BACKEND", "x11");
+            std::env::set_var("WEBKIT_DISABLE_DMABUF_RENDERER", "1");
+        }
     }
     grimoire_app_lib::run()
 }
