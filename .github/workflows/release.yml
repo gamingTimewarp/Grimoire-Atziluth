@@ -127,8 +127,7 @@ jobs:
         working-directory: grimoire-app
         run: npm run tauri android init
 
-      - name: Set up release signing
-        if: env.ANDROID_KEYSTORE != ''
+      - name: Set up Android signing
         env:
           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
@@ -136,46 +135,45 @@ jobs:
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         working-directory: grimoire-app/src-tauri/gen/android
         run: |
-          echo "$ANDROID_KEYSTORE" | base64 --decode > keystore.jks
-          # storeFile path is relative to the Gradle :app module dir (gen/android/app/),
-          # so ../keystore.jks resolves to gen/android/keystore.jks
-          cat > key.properties <<EOF
+          if [ -n "$ANDROID_KEYSTORE" ]; then
+            # Use the provided release keystore
+            echo "$ANDROID_KEYSTORE" | base64 --decode > keystore.jks
+            cat > key.properties <<EOF
           storePassword=$ANDROID_KEYSTORE_PASSWORD
           keyPassword=$ANDROID_KEY_PASSWORD
           keyAlias=$ANDROID_KEY_ALIAS
           storeFile=../keystore.jks
           EOF
+          else
+            # No release keystore supplied — generate a one-time CI keystore so
+            # Gradle can sign the release APK. An unsigned APK is rejected by
+            # Android as "invalid"; a debug build APK path differs from release.
+            keytool -genkey -v -keystore keystore.jks \
+              -storepass android -alias grimoire -keypass android \
+              -keyalg RSA -keysize 2048 -validity 365 \
+              -dname "CN=Grimoire Atziluth CI,O=Grimoire,C=US" \
+              -noprompt
+            cat > key.properties <<EOF
+          storePassword=android
+          keyPassword=android
+          keyAlias=grimoire
+          storeFile=../keystore.jks
+          EOF
+          fi
 
       - name: Build Android APK
         working-directory: grimoire-app
         env:
           VITE_APP_VERSION: ${{ github.ref_name }}
-          ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
-        run: |
-          # Use debug build (auto-signed, installable) when no release keystore is
-          # configured. An unsigned release APK is rejected by Android as "invalid".
-          if [ -n "$ANDROID_KEYSTORE" ]; then
-            npm run tauri android build -- --apk
-          else
-            npm run tauri android build -- --apk --debug
-          fi
+        run: npm run tauri android build -- --apk
 
       - name: Rename APK
         run: |
           VERSION="${{ github.ref_name }}"
           VERSION="${VERSION#v}"
-          ANDROID_KEYSTORE="${{ secrets.ANDROID_KEYSTORE }}"
-          if [ -n "$ANDROID_KEYSTORE" ]; then
-            APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
-            mv "${APK_DIR}/app-universal-release.apk" \
-               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk" 2>/dev/null || \
-            mv "${APK_DIR}/app-universal-release-unsigned.apk" \
-               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
-          else
-            APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/debug"
-            mv "${APK_DIR}/app-universal-debug.apk" \
-               "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
-          fi
+          APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
+          mv "${APK_DIR}/app-universal-release.apk" \
+             "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
 
       - name: Upload APK to release
         uses: softprops/action-gh-release@v2
@@ -183,6 +181,4 @@ jobs:
           name: Grimoire Atziluth ${{ github.ref_name }}
           draft: true
           prerelease: ${{ contains(github.ref_name, '-') }}
-          files: |
-            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk
-            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/debug/Grimoire.Atziluth_*.apk
+          files: grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk

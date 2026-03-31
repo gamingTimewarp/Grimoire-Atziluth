@@ -195,9 +195,10 @@ export const TRADITION_SYSTEMS: TraditionSystem[] = [
   },
 ]
 
-/** All unique tradition CNs across all systems */
+/** All unique tradition CNs across all systems, plus standalone toggles */
 export const ALL_TRADITION_CNS: string[] = [
   ...new Set(TRADITION_SYSTEMS.flatMap(s => s.traditionCNs)),
+  'tradition.modern-astrology',
 ]
 
 // ─── Defaults ─────────────────────────────────────────────────────────────────

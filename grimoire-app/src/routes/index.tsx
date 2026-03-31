@@ -169,7 +169,7 @@ function WelcomeBanner() {
         {' '}Visit{' '}
         <button
           type="button"
-          onClick={() => { dismiss(); navigate({ to: '/settings' }) }}
+          onClick={() => { dismiss(); navigate({ to: '/settings/traditions' }) }}
           style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'var(--color-accent)', fontSize: 'inherit' }}
         >
           Settings → Traditions
