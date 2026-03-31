@@ -161,24 +161,29 @@ jobs:
           EOF
           fi
 
-      - name: Build Android APK
+      - name: Build Android APK + AAB
         working-directory: grimoire-app
         env:
           VITE_APP_VERSION: ${{ github.ref_name }}
-        run: npm run tauri android build -- --apk
+        run: npm run tauri android build -- --apk --aab
 
-      - name: Rename APK
+      - name: Rename artifacts
         run: |
           VERSION="${{ github.ref_name }}"
           VERSION="${VERSION#v}"
           APK_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release"
+          AAB_DIR="grimoire-app/src-tauri/gen/android/app/build/outputs/bundle/universalRelease"
           mv "${APK_DIR}/app-universal-release.apk" \
              "${APK_DIR}/Grimoire.Atziluth_${VERSION}_Universal.apk"
+          mv "${AAB_DIR}/app-universal-release.aab" \
+             "${AAB_DIR}/Grimoire.Atziluth_${VERSION}.aab"
 
-      - name: Upload APK to release
+      - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
         with:
           name: Grimoire Atziluth ${{ github.ref_name }}
           draft: true
           prerelease: ${{ contains(github.ref_name, '-') }}
-          files: grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk
+          files: |
+            grimoire-app/src-tauri/gen/android/app/build/outputs/apk/universal/release/Grimoire.Atziluth_*.apk
+            grimoire-app/src-tauri/gen/android/app/build/outputs/bundle/universalRelease/Grimoire.Atziluth_*.aab
