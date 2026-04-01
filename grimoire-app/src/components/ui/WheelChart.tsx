@@ -159,7 +159,7 @@ export function WheelChart({
   const glyphSize = (hov: boolean) => isRings ? (hov ? 19 : 16) : (hov ? 17 : 14)
 
   return (
-    <div style={{ position: 'relative', width: size, maxWidth: '100%', flexShrink: 0 }}>
+    <div style={{ position: 'relative', width: '100%', maxWidth: size }}>
       <svg viewBox="0 0 500 500" width="100%" style={{ display: 'block', aspectRatio: '1 / 1' }}>
 
         {/* ── Background ── */}

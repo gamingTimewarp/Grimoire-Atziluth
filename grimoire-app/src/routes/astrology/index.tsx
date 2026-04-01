@@ -197,7 +197,7 @@ function CurrentSkyPanel() {
       {/* Wheel view */}
       {chart && view === 'wheel' && (
         <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-          <div style={{ flexShrink: 0 }}>
+          <div style={{ width: '100%', maxWidth: 440 }}>
             <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
           </div>
           <div style={{ flex: 1, minWidth: '220px' }}>

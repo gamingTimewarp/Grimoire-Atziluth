@@ -124,7 +124,7 @@ function ChartDetailPage() {
       <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
         {/* Wheel */}
         {view === 'wheel' && (
-          <div style={{ flexShrink: 0 }}>
+          <div style={{ width: '100%', maxWidth: 460 }}>
             <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
           </div>
         )}
