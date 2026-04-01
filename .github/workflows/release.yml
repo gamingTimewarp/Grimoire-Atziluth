@@ -128,7 +128,9 @@ jobs:
         run: npm run tauri android init
 
       - name: Apply custom Android build config
-        run: cp grimoire-app/android/build.gradle.kts grimoire-app/src-tauri/gen/android/app/build.gradle.kts
+        run: |
+          cp grimoire-app/android/build.gradle.kts grimoire-app/src-tauri/gen/android/app/build.gradle.kts
+          cp grimoire-app/android/MainActivity.kt grimoire-app/src-tauri/gen/android/app/src/main/java/com/grimoire/atziluth/MainActivity.kt
 
       - name: Set up Android signing
         env:
