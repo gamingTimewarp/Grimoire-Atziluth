@@ -127,6 +127,9 @@ jobs:
         working-directory: grimoire-app
         run: npm run tauri android init
 
+      - name: Apply custom Android build config
+        run: cp grimoire-app/android/build.gradle.kts grimoire-app/src-tauri/gen/android/app/build.gradle.kts
+
       - name: Set up Android signing
         env:
           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
