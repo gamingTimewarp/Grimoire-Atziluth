@@ -131,6 +131,7 @@ jobs:
         run: |
           cp grimoire-app/android/build.gradle.kts grimoire-app/src-tauri/gen/android/app/build.gradle.kts
           cp grimoire-app/android/MainActivity.kt grimoire-app/src-tauri/gen/android/app/src/main/java/com/grimoire/atziluth/MainActivity.kt
+          cp -r grimoire-app/src-tauri/icons/android/. grimoire-app/src-tauri/gen/android/app/src/main/res/
 
       - name: Set up Android signing
         env:
