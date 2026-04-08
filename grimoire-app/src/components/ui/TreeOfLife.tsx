@@ -385,7 +385,7 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
       viewBox={`0 0 ${VW} ${VH}`}
       width={size}
       height={displayHeight}
-      style={{ display: 'block', flexShrink: 0 }}
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
     >
       {/* Background */}
       <rect width={VW} height={VH} fill="var(--color-surface-1)" rx={6} />

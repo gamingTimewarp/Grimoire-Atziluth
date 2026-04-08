@@ -347,6 +347,7 @@
       "extendedData": {
         "relatedOverviews": [
           "system.overview.sephiroth",
+          "system.overview.triangles",
           "system.overview.qliphoth",
           "system.overview.paths",
           "system.overview.four-worlds",
@@ -391,6 +392,29 @@
       "extendedData": {
         "memberEntityType": "qabalah.sephira",
         "plannedFeature": "Interactive Tree of Life diagram — coming in a future phase."
+      }
+    },
+    {
+      "canonicalName": "system.overview.triangles",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Triads of the Tree of Life",
+      "description": "The ten sephiroth are traditionally grouped into three triads and a solitary final sephira. The Supernal Triad (Kether, Chokmah, Binah) lies above the Abyss and represents pre-manifest divinity. The Ethical Triad (Chesed, Geburah, Tiphareth) forms the moral and spiritual centre of the Tree. The Astral Triad (Netzach, Hod, Yesod) governs the psychic and magical forces just above the material world. Malkuth stands alone at the base as the physical world — it is not part of a triad.",
+      "secondaryNames": [
+        { "name": "Triads", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Triangles of the Tree", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["overview", "qabalah", "triangle", "triad", "tree-of-life"],
+      "extendedData": {
+        "members": [
+          "qabalah.triangle.supernal",
+          "qabalah.triangle.ethical",
+          "qabalah.triangle.astral",
+          "qabalah.triangle.material"
+        ],
+        "relatedOverviews": [
+          "system.overview.qabalah",
+          "system.overview.sephiroth"
+        ]
       }
     },
     {

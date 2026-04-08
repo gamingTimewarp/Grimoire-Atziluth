@@ -117,7 +117,7 @@ function ReadPage() {
 
   return (
     <div style={{ maxWidth: '800px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '32px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '32px' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>New Reading</h1>
         {step !== 'deck' && (
           <Button variant="ghost" size="sm" onClick={() => { if (window.confirm('Start over? Your current selection will be cleared.')) reset() }}>Reset</Button>
@@ -243,7 +243,7 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
 
   return (
     <div>
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '16px' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
         <h2 style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text-muted)', margin: 0 }}>
           Step 1 — Choose a Deck
         </h2>
@@ -360,7 +360,7 @@ function SpreadSelection({ deck, onSelect, selected, onManage }: {
       <div style={{ fontSize: '13px', color: 'var(--color-accent)', marginBottom: '4px' }}>
         {deck.displayName}
       </div>
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '16px' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
         <h2 style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text-muted)', margin: 0 }}>
           Step 2 — Choose a Spread
         </h2>

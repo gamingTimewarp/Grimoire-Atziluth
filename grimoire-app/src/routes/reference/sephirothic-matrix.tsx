@@ -264,13 +264,13 @@ function SephirothicMatrix() {
       </p>
 
       <div style={{ overflowX: 'auto' }}>
-        <table style={{ borderCollapse: 'collapse', fontSize: '12px', width: '100%' }}>
+        <table style={{ borderCollapse: 'collapse', fontSize: '11px', width: '100%', tableLayout: 'auto' }}>
           <thead>
             <tr>
               <th style={{
-                padding: '8px 12px', textAlign: 'left', fontWeight: 400,
+                padding: '6px 10px', textAlign: 'left', fontWeight: 400,
                 color: 'var(--color-text-subtle)', borderBottom: '2px solid var(--color-border)',
-                whiteSpace: 'nowrap', minWidth: '120px',
+                whiteSpace: 'nowrap',
               }}>
                 Attribution
               </th>
@@ -278,9 +278,8 @@ function SephirothicMatrix() {
                 <th
                   key={s.canonicalName}
                   style={{
-                    padding: '6px 8px', textAlign: 'center',
+                    padding: '4px 4px', textAlign: 'center',
                     fontWeight: 400, borderBottom: '2px solid var(--color-border)',
-                    minWidth: '90px',
                   }}
                 >
                   <button
@@ -291,7 +290,7 @@ function SephirothicMatrix() {
                       padding: '2px', fontFamily: 'inherit',
                     }}
                   >
-                    <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)' }}>
+                    <span style={{ fontSize: '12px', fontWeight: 500, color: 'var(--color-text)' }}>
                       {s.primaryDisplayName}
                     </span>
                     <span style={{ fontSize: '10px', color: 'var(--color-text-subtle)' }}>
@@ -309,9 +308,9 @@ function SephirothicMatrix() {
                 style={{ background: rowIdx % 2 === 0 ? 'var(--color-surface-2)' : 'transparent' }}
               >
                 <td style={{
-                  padding: '8px 12px',
+                  padding: '6px 10px',
                   borderBottom: '1px solid var(--color-border)',
-                  color: 'var(--color-text-muted)', fontSize: '11px',
+                  color: 'var(--color-text-muted)', fontSize: '10px',
                   textTransform: 'uppercase', letterSpacing: '0.05em',
                   whiteSpace: 'nowrap',
                 }}>
@@ -324,7 +323,7 @@ function SephirothicMatrix() {
                     <td
                       key={s.canonicalName}
                       style={{
-                        padding: '6px 8px', textAlign: 'center',
+                        padding: '4px 4px', textAlign: 'center',
                         borderBottom: '1px solid var(--color-border)',
                         verticalAlign: 'middle',
                       }}
@@ -332,7 +331,7 @@ function SephirothicMatrix() {
                       {val == null ? (
                         <span style={{ color: 'var(--color-border)' }}>—</span>
                       ) : typeof val === 'string' ? (
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '12px', color: 'var(--color-text-muted)' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', color: 'var(--color-text-muted)' }}>
                           {css && <ColourSwatch css={css} />}
                           {val}
                         </span>
@@ -341,10 +340,10 @@ function SephirothicMatrix() {
                           onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: (val as BaseEntity).canonicalName } })}
                           style={{
                             background: 'none', border: 'none', cursor: 'pointer',
-                            color: 'var(--color-text)', fontSize: '12px',
-                            fontFamily: 'inherit', padding: '2px 4px',
+                            color: 'var(--color-text)', fontSize: '11px',
+                            fontFamily: 'inherit', padding: '2px 3px',
                             borderRadius: '3px', transition: 'background 0.1s',
-                            display: 'inline-flex', alignItems: 'center', gap: '5px',
+                            display: 'inline-flex', alignItems: 'center', gap: '4px',
                           }}
                           onMouseEnter={e => { e.currentTarget.style.background = 'rgba(180,156,90,0.12)' }}
                           onMouseLeave={e => { e.currentTarget.style.background = 'none' }}

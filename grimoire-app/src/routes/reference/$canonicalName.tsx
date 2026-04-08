@@ -111,6 +111,8 @@ function EntityDetailPage() {
           memberList = Array.isArray(e.extendedData.members) ? e.extendedData.members as string[] : null
         } else if (e.entityType.includes('deck')) {
           memberTag = canonicalName.split('.').pop() ?? null
+        } else if (e.entityType === 'qabalah.triangle' || e.entityType === 'qabalah.pillar') {
+          memberList = Array.isArray(e.extendedData.sephiroth) ? e.extendedData.sephiroth as string[] : null
         }
 
         if (memberList) {
@@ -516,8 +518,13 @@ const RELATED_OVERVIEWS: Record<string, Array<{ canonicalName: string; label: st
   // Qabalah
   'system.overview.qabalah': [
     { canonicalName: 'system.overview.four-worlds',    label: 'Four Worlds'    },
+    { canonicalName: 'system.overview.triangles',      label: 'Triads'         },
     { canonicalName: 'system.overview.hebrew-letters', label: 'Hebrew Letters' },
     { canonicalName: 'system.overview.partzufim',      label: 'Partzufim'      },
+  ],
+  'system.overview.triangles': [
+    { canonicalName: 'system.overview.qabalah',    label: 'Qabalah'     },
+    { canonicalName: 'system.overview.sephiroth',  label: 'Sephiroth'   },
   ],
   // Astrology
   'system.overview.astrology': [
@@ -675,6 +682,7 @@ function EntityArtPanel({ entity }: { entity: BaseEntity }) {
 function membersSectionTitle(entity: BaseEntity, count: number): string {
   if (entity.entityType === 'system.overview') return `Contents (${count})`
   if (entity.entityType.includes('deck')) return `Cards in this Deck (${count})`
+  if (entity.entityType === 'qabalah.triangle' || entity.entityType === 'qabalah.pillar') return `Sephiroth (${count})`
   return `Members (${count})`
 }
 

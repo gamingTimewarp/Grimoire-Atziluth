@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "qabalah.triangle.supernal",
+      "entityType": "qabalah.triangle",
+      "primaryDisplayName": "Supernal Triad",
+      "description": "The three highest sephiroth — Kether (1), Chokmah (2), and Binah (3) — form the Supernal Triad, sometimes called the Supernal Triangle or the Divine Consciousness. They are separated from the lower seven sephiroth by the Abyss, the great gulf that cannot be crossed by ordinary consciousness. The Supernals represent the primordial, pre-manifest aspects of divinity: pure being (Kether), the first dynamic impulse or seed-force (Chokmah), and the first receptive form or womb of creation (Binah). Together they constitute the realm of Atziluth in some mappings — the world of pure spirit — and correspond to the highest aspects of the divine will before it descends into manifestation. The three Supernals are sometimes personified as the Father (Chokmah), the Mother (Binah), and the Crown (Kether) above both. Da'ath, the hidden pseudo-sephira, dwells at the threshold of the Abyss and is associated with the Supernal Triad without being counted among its three members.",
+      "secondaryNames": [
+        { "name": "Supernal Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Divine Triad", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["qabalah", "triangle", "triad", "tree-of-life", "supernal"],
+      "extendedData": {
+        "position": "above the Abyss",
+        "world": "qabalah.world.atziluth",
+        "sephiroth": [
+          "qabalah.sephira.kether",
+          "qabalah.sephira.chokmah",
+          "qabalah.sephira.binah"
+        ],
+        "keywords": ["divinity", "pre-manifest", "abyss", "crown", "father", "mother", "pure being"]
+      }
+    },
+    {
+      "canonicalName": "qabalah.triangle.ethical",
+      "entityType": "qabalah.triangle",
+      "primaryDisplayName": "Ethical Triad",
+      "description": "The three middle sephiroth — Chesed (4), Geburah (5), and Tiphareth (6) — form the Ethical Triad, also called the Moral Triangle or the Triangle of Consciousness. They occupy the central body of the Tree below the Abyss and above the Astral Triad, and are concerned with the moral and spiritual dimensions of manifested existence. Chesed, the great mercy and loving-kindness, pours out divine grace without limit; Geburah, the severity and strength, imposes the necessary restriction that gives mercy its form and prevents excess; Tiphareth, the beauty and harmony at the heart of the Tree, reconciles the two and reflects the solar Christ-consciousness — the sacrificed and risen son of God in the western mystical tradition. The Ethical Triad corresponds to the world of Briah (the creative world) in some mappings, and to the moral will of the adept on the path of initiation.",
+      "secondaryNames": [
+        { "name": "Moral Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Triangle of Consciousness", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Ethical Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "triangle", "triad", "tree-of-life", "ethical"],
+      "extendedData": {
+        "position": "below the Abyss — middle",
+        "world": "qabalah.world.briah",
+        "sephiroth": [
+          "qabalah.sephira.chesed",
+          "qabalah.sephira.geburah",
+          "qabalah.sephira.tiphareth"
+        ],
+        "keywords": ["mercy", "severity", "beauty", "morality", "harmony", "sacrifice", "reconciliation"]
+      }
+    },
+    {
+      "canonicalName": "qabalah.triangle.astral",
+      "entityType": "qabalah.triangle",
+      "primaryDisplayName": "Astral Triad",
+      "description": "The three lower sephiroth above Malkuth — Netzach (7), Hod (8), and Yesod (9) — form the Astral Triad, also called the Lower Triangle or the Magical Triangle. They constitute the realm of psychic, emotional, and magical forces just above the physical world. Netzach governs the emotional nature, the instinctual drives, and artistic inspiration; Hod governs the intellect applied to magic, communication, and the sphere of Mercury; Yesod is the foundation — the astral plane itself, the great storehouse of images, the lunar sphere that mediates between the spiritual and material worlds. Together the Astral Triad is the domain of practical magic and the lower levels of the unconscious mind. It corresponds broadly to the world of Yetzirah (the formative world) and to the personality as opposed to the higher individuality centred in Tiphareth.",
+      "secondaryNames": [
+        { "name": "Lower Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Magical Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Astral Triangle", "languageTag": "en-alt", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["qabalah", "triangle", "triad", "tree-of-life", "astral"],
+      "extendedData": {
+        "position": "below the Abyss — lower",
+        "world": "qabalah.world.yetzirah",
+        "sephiroth": [
+          "qabalah.sephira.netzach",
+          "qabalah.sephira.hod",
+          "qabalah.sephira.yesod"
+        ],
+        "keywords": ["emotion", "intellect", "astral plane", "magic", "moon", "foundation", "personality"]
+      }
+    },
+    {
+      "canonicalName": "qabalah.triangle.material",
+      "entityType": "qabalah.triangle",
+      "primaryDisplayName": "Malkuth",
+      "description": "Malkuth (10), the Kingdom, stands apart from the three triads that structure the upper Tree of Life. It is not itself part of a triangle: while the Supernal, Ethical, and Astral Triads each form a triangle of three sephiroth, Malkuth is a solitary point at the base of the Tree — the terminus of the Lightning Flash, the point at which the divine energy becomes fully materialised in the physical world. Some writers group Malkuth with the Astral Triad as a fourth world-level or speak of it as the 'lower triad' together with Netzach, Hod, and Yesod, but strictly speaking Malkuth forms no triangle. It corresponds to the world of Assiah (the world of making or action), the physical cosmos, the body of the divine Adam. In the human microcosm it relates to the physical body; in the initiatory tradition it represents the starting point of the path — the candidate awaiting the first step of ascent.",
+      "secondaryNames": [
+        { "name": "The Kingdom", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["qabalah", "triangle", "tree-of-life", "material", "malkuth"],
+      "extendedData": {
+        "position": "below the Astral Triad — base of the Tree",
+        "world": "qabalah.world.assiah",
+        "sephiroth": [
+          "qabalah.sephira.malkuth"
+        ],
+        "note": "Malkuth is not part of a triad. The 'material' designation marks its position at the base of the Tree, not membership in a fourth triangle.",
+        "keywords": ["kingdom", "earth", "physical", "materialisation", "base", "assiah"]
+      }
+    }
+  ]
+}

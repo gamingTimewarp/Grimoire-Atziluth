@@ -22,7 +22,7 @@ function PrivacyPage() {
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Privacy Policy</h1>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '28px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '28px' }}>
         <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', margin: 0 }}>
           Effective: {EFFECTIVE_DATE}
         </p>

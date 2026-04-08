@@ -76,7 +76,7 @@ function DataSettingsPage() {
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Data</h1>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '6px' }}>
         <h2 style={{ fontSize: '16px', fontWeight: 500, margin: 0 }}>Data Backup &amp; Restore</h2>
         {lastBackup ? (
           <span style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px', color: 'var(--color-text-subtle)' }}>

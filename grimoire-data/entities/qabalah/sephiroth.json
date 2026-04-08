@@ -53,7 +53,7 @@
         "planet": "astrology.planet.pluto",
         "planetModern": "astrology.planet.neptune",
         "pillar": "qabalah.pillar.equilibrium",
-        "triangle": "supernal",
+        "triangle": "qabalah.triangle.supernal",
         "note": "Da'ath is the hidden pseudo-sephira at the Abyss, not counted among the ten canonical sephiroth.",
         "keywords": [
           "knowledge",
@@ -116,7 +116,7 @@
         "planetModern": "astrology.planet.pluto",
         "world": "qabalah.world.atziluth",
         "pillar": "qabalah.pillar.equilibrium",
-        "triangle": "supernal",
+        "triangle": "qabalah.triangle.supernal",
         "gdColour": "Brilliance",
         "keywords": [
           "unity",
@@ -184,7 +184,7 @@
         "planetModern": "astrology.planet.uranus",
         "world": "qabalah.world.atziluth",
         "pillar": "qabalah.pillar.mercy",
-        "triangle": "supernal",
+        "triangle": "qabalah.triangle.supernal",
         "gdColour": "Soft blue",
         "keywords": [
           "wisdom",
@@ -233,7 +233,7 @@
         "planet": "astrology.planet.saturn",
         "world": "qabalah.world.briah",
         "pillar": "qabalah.pillar.severity",
-        "triangle": "supernal",
+        "triangle": "qabalah.triangle.supernal",
         "gdColour": "Crimson",
         "keywords": [
           "understanding",
@@ -308,7 +308,7 @@
         "planet": "astrology.planet.jupiter",
         "world": "qabalah.world.briah",
         "pillar": "qabalah.pillar.mercy",
-        "triangle": "ethical",
+        "triangle": "qabalah.triangle.ethical",
         "gdColour": "Deep violet",
         "keywords": [
           "mercy",
@@ -383,7 +383,7 @@
         "planet": "astrology.planet.mars",
         "world": "qabalah.world.briah",
         "pillar": "qabalah.pillar.severity",
-        "triangle": "ethical",
+        "triangle": "qabalah.triangle.ethical",
         "gdColour": "Orange",
         "keywords": [
           "severity",
@@ -452,7 +452,7 @@
         "planet": "astrology.planet.sol",
         "world": "qabalah.world.briah",
         "pillar": "qabalah.pillar.equilibrium",
-        "triangle": "ethical",
+        "triangle": "qabalah.triangle.ethical",
         "gdColour": "Clear yellow",
         "keywords": [
           "beauty",
@@ -510,7 +510,7 @@
         "planet": "astrology.planet.venus",
         "world": "qabalah.world.yetzirah",
         "pillar": "qabalah.pillar.mercy",
-        "triangle": "astral",
+        "triangle": "qabalah.triangle.astral",
         "gdColour": "Amber",
         "keywords": [
           "victory",
@@ -568,7 +568,7 @@
         "planet": "astrology.planet.mercury",
         "world": "qabalah.world.yetzirah",
         "pillar": "qabalah.pillar.severity",
-        "triangle": "astral",
+        "triangle": "qabalah.triangle.astral",
         "gdColour": "Violet purple",
         "keywords": [
           "splendour",
@@ -620,7 +620,7 @@
         "planet": "astrology.planet.luna",
         "world": "qabalah.world.yetzirah",
         "pillar": "qabalah.pillar.equilibrium",
-        "triangle": "astral",
+        "triangle": "qabalah.triangle.astral",
         "gdColour": "Violet",
         "keywords": [
           "foundation",
@@ -689,7 +689,7 @@
         "planet": "astrology.planet.earth",
         "world": "qabalah.world.assiah",
         "pillar": "qabalah.pillar.equilibrium",
-        "triangle": "material",
+        "triangle": "qabalah.triangle.material",
         "gdColour": "Yellow (citrine, olive, russet, black quartered)",
         "keywords": [
           "kingdom",
