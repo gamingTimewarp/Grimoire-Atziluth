@@ -157,7 +157,7 @@ export function ZodiacYearSpreadDisplay({
   const wheelOffset = Math.round(CENTER * effectiveScale - WHEEL_D / 2 * effectiveScale)
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} style={{ width: '100%', overflow: 'hidden' }}>
     <div style={{ position: 'relative', width: totalW, height: totalH }}>
       {/* ── Wheel underlay ────────────────────────────────────────────── */}
       {showWheel && skyChart && (

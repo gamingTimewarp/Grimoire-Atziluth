@@ -88,7 +88,7 @@ export function YearAheadSpreadDisplay({
   const labelSize = Math.max(7, Math.round(9 * effectiveScale))
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} style={{ width: '100%', overflow: 'hidden' }}>
     <div style={{ position: 'relative', width: totalW, height: totalH }}>
       {Array.from({ length: 12 }, (_, i) => {
         const posId      = `month-${i}`
