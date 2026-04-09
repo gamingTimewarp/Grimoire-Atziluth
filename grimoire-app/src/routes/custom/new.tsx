@@ -174,7 +174,7 @@ function NewCustomEntityPage() {
           <select
             value={entityTypeKey}
             onChange={e => setEntityTypeKey(e.target.value)}
-            style={{ ...inputStyle, width: '220px' }}
+            style={inputStyle}
           >
             {COMMON_TYPES.map(t => (
               <option key={t.value} value={t.value}>{t.label}</option>

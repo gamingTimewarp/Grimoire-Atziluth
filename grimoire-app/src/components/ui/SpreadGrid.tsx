@@ -5,7 +5,7 @@
  * draw screen and journal can reuse it without coupling to store types.
  */
 
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import type { SpreadPosition, BaseEntity } from '@grimoire/core'
 import type { CardOrientation } from '@grimoire/core'
 import type { ReversedDisplay } from '@/lib/accessibility-store'
@@ -47,11 +47,21 @@ export function SpreadGrid({
   positions, cards, currentPositionId, scale = 1, onCardClick,
   showCaptions, reversedDisplay = 'rotated',
 }: SpreadGridProps) {
-  if (!positions.length) return null
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [containerWidth, setContainerWidth] = useState<number>(() => window.innerWidth - 32)
 
-  const W = Math.round(BASE_W * scale)
-  const H = Math.round(BASE_H * scale)
-  const GAP = Math.round(BASE_GAP * scale)
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const ro = new ResizeObserver(entries => {
+      const w = entries[0]?.contentRect.width
+      if (w) setContainerWidth(w)
+    })
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+
+  if (!positions.length) return null
 
   const xs = positions.map(p => p.x)
   const ys = positions.map(p => p.y)
@@ -59,6 +69,16 @@ export function SpreadGrid({
   const minY = Math.min(...ys), maxY = Math.max(...ys)
   const cols = maxX - minX + 1
   const rows = maxY - minY + 1
+
+  // Cap scale so the grid never exceeds the measured container width
+  const naturalWidth = cols * BASE_W + (cols - 1) * BASE_GAP
+  const effectiveScale = naturalWidth > containerWidth
+    ? Math.min(scale, containerWidth / naturalWidth)
+    : scale
+
+  const W = Math.round(BASE_W * effectiveScale)
+  const H = Math.round(BASE_H * effectiveScale)
+  const GAP = Math.round(BASE_GAP * effectiveScale)
 
   const slotByPosition = new Map(cards.map(c => [c.positionId, c]))
 
@@ -70,7 +90,7 @@ export function SpreadGrid({
   }
 
   return (
-    <div style={{ overflowX: 'auto', overflowY: 'visible' }}>
+    <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'visible' }}>
     <div style={{
       display: 'grid',
       gridTemplateColumns: `repeat(${cols}, ${W}px)`,

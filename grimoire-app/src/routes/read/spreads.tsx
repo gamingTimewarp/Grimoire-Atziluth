@@ -54,6 +54,8 @@ function PositionRow({
   onMove: (dir: -1 | 1) => void
 }) {
   const fieldStyle: React.CSSProperties = {
+    width: '100%',
+    boxSizing: 'border-box',
     background: 'var(--color-surface-3)',
     border: '1px solid var(--color-border)',
     borderRadius: '4px',

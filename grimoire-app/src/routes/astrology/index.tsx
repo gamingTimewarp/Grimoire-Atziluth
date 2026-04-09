@@ -136,7 +136,7 @@ function CurrentSkyPanel() {
   }, [compute])
 
   const refreshLabel = asOf
-    ? asOf.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' })
+    ? asOf.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', hour12: false })
     : '…'
 
   const goToRef = (cn: string) =>
@@ -145,8 +145,8 @@ function CurrentSkyPanel() {
   return (
     <div style={{ marginBottom: '32px', padding: '16px 18px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
       {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
             Current Sky
           </div>
@@ -173,20 +173,22 @@ function CurrentSkyPanel() {
             <Play size={9} /> Animate
           </button>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
           {noLoc && <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>Set home location for accurate houses</span>}
-          <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>as of {refreshLabel}</span>
-          <button
-            onClick={compute}
-            disabled={spinning}
-            title="Refresh"
-            aria-label="Refresh current sky"
-            style={{ background: 'none', border: 'none', cursor: spinning ? 'default' : 'pointer', color: 'var(--color-text-subtle)', padding: '2px', display: 'flex', opacity: spinning ? 0.4 : 0.7 }}
-            onMouseEnter={e => { if (!spinning) e.currentTarget.style.opacity = '1' }}
-            onMouseLeave={e => { e.currentTarget.style.opacity = spinning ? '0.4' : '0.7' }}
-          >
-            <RefreshCw size={13} style={{ animation: spinning ? 'spin 1s linear infinite' : 'none' }} />
-          </button>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+            <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>as of {refreshLabel}</span>
+            <button
+              onClick={compute}
+              disabled={spinning}
+              title="Refresh"
+              aria-label="Refresh current sky"
+              style={{ background: 'none', border: 'none', cursor: spinning ? 'default' : 'pointer', color: 'var(--color-text-subtle)', padding: '2px', display: 'flex', opacity: spinning ? 0.4 : 0.7 }}
+              onMouseEnter={e => { if (!spinning) e.currentTarget.style.opacity = '1' }}
+              onMouseLeave={e => { e.currentTarget.style.opacity = spinning ? '0.4' : '0.7' }}
+            >
+              <RefreshCw size={13} style={{ animation: spinning ? 'spin 1s linear infinite' : 'none' }} />
+            </button>
+          </span>
         </div>
       </div>
 

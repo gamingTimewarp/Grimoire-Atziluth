@@ -126,6 +126,7 @@ function RelTypeRow({ rt, index, total, onChange, onDelete, onMove }: {
   onChange: (r: CustomRelType) => void; onDelete: () => void; onMove: (d: -1 | 1) => void
 }) {
   const f: React.CSSProperties = {
+    width: '100%', boxSizing: 'border-box',
     background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
     borderRadius: '4px', color: 'var(--color-text)', fontSize: '12px',
     padding: '5px 8px', outline: 'none', fontFamily: 'inherit',
@@ -145,7 +146,7 @@ function RelTypeRow({ rt, index, total, onChange, onDelete, onMove }: {
         </div>
       )}
       <div style={{ display: 'flex', gap: '8px', alignItems: 'center', paddingLeft: '26px', flexWrap: 'wrap' }}>
-        <input value={rt.targetEntityType} onChange={e => onChange({ ...rt, targetEntityType: e.target.value })} placeholder="Target entity type (optional)" style={{ ...f, flex: '1 1 160px' }} />
+        <input value={rt.targetEntityType} onChange={e => onChange({ ...rt, targetEntityType: e.target.value })} placeholder="Target entity type (optional)" style={{ ...f, flex: '1 1 120px', minWidth: 0 }} />
         <label style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', color: 'var(--color-text-muted)', cursor: 'pointer', userSelect: 'none' }}>
           <input type="checkbox" checked={rt.allowMultiple} onChange={e => onChange({ ...rt, allowMultiple: e.target.checked })} style={{ accentColor: 'var(--color-accent)' }} />
           Allow multiple

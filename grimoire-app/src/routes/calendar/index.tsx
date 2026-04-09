@@ -106,7 +106,7 @@ function CalendarGrid({
 
   return (
     <div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', marginBottom: '4px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gap: '4px', marginBottom: '4px' }}>
         {WEEKDAY_HEADERS.map(h => (
           <div key={h.label} style={{ textAlign: 'center', padding: '6px 0' }}>
             <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', letterSpacing: '0.05em' }}>{h.label}</div>
@@ -116,7 +116,7 @@ function CalendarGrid({
       </div>
 
       {weeks.map((week, wi) => (
-        <div key={wi} style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', marginBottom: '4px' }}>
+        <div key={wi} style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gap: '4px', marginBottom: '4px' }}>
           {week.map(date => {
             const ds = toDateString(date)
             const isCurrentMonth = ds.startsWith(currentMonthStr)
@@ -136,13 +136,14 @@ function CalendarGrid({
                 key={ds}
                 onClick={() => onDayClick(ds)}
                 style={{
-                  minHeight: '80px', padding: '6px 8px',
+                  minHeight: '80px', padding: '6px 8px', overflow: 'hidden',
                   background: isSelected ? 'var(--color-surface-3)' : isToday ? 'var(--color-surface-2)' : 'var(--color-surface-1)',
                   border: `1px solid ${isSelected || isToday ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
                   borderRadius: '6px', cursor: 'pointer',
                   opacity: isCurrentMonth ? 1 : 0.35,
                   transition: 'border-color 0.1s, background 0.1s',
                   display: 'flex', flexDirection: 'column', gap: '3px',
+                  minWidth: 0,
                 }}
                 onMouseEnter={e => { if (!isSelected) e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
                 onMouseLeave={e => {
@@ -170,7 +171,7 @@ function CalendarGrid({
                   <div
                     onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: sabbat.canonicalName } }) }}
                     title={`${sabbat.name} — Sun at ${sabbat.sunLongitude}° — view in Reference`}
-                    style={{ fontSize: '9px', color: 'var(--color-accent)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer' }}
+                    style={{ fontSize: '9px', color: 'var(--color-accent)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                   >
                     {sabbat.emoji} {sabbat.name}
                   </div>
@@ -537,14 +538,14 @@ function CalendarPage() {
 
       <CosmicInfoStrip date={todayDate} navigate={navigate} />
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
-        <button onClick={prevMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '16px' }}>
+        <button onClick={prevMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
           <ChevronLeft size={18} />
         </button>
-        <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', minWidth: '160px', textAlign: 'center' }}>
+        <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
           {MONTH_NAMES[month - 1]} {year}
         </span>
-        <button onClick={nextMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex' }}>
+        <button onClick={nextMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
           <ChevronRight size={18} />
         </button>
       </div>
