@@ -13,6 +13,7 @@
     "sql:allow-select",
     "sql:allow-close",
     "opener:allow-open-path",
+    "opener:allow-open-url",
     "dialog:allow-open",
     "dialog:allow-save",
     "fs:allow-read-text-file",

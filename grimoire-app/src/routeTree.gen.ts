@@ -39,6 +39,7 @@ import { Route as ReferenceChineseZodiacCompatibilityRouteImport } from './route
 import { Route as ReferenceAstrologicalDignitiesRouteImport } from './routes/reference/astrological-dignities'
 import { Route as ReferenceCanonicalNameRouteImport } from './routes/reference/$canonicalName'
 import { Route as ReadSpreadsRouteImport } from './routes/read/spreads'
+import { Route as ReadRecordRouteImport } from './routes/read/record'
 import { Route as ReadDrawRouteImport } from './routes/read/draw'
 import { Route as ReadDecksRouteImport } from './routes/read/decks'
 import { Route as QabalahNumerologyRouteImport } from './routes/qabalah/numerology'
@@ -208,6 +209,11 @@ const ReadSpreadsRoute = ReadSpreadsRouteImport.update({
   path: '/read/spreads',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReadRecordRoute = ReadRecordRouteImport.update({
+  id: '/read/record',
+  path: '/read/record',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReadDrawRoute = ReadDrawRouteImport.update({
   id: '/read/draw',
   path: '/read/draw',
@@ -277,6 +283,7 @@ export interface FileRoutesByFullPath {
   '/qabalah/numerology': typeof QabalahNumerologyRoute
   '/read/decks': typeof ReadDecksRoute
   '/read/draw': typeof ReadDrawRoute
+  '/read/record': typeof ReadRecordRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
   '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
@@ -320,6 +327,7 @@ export interface FileRoutesByTo {
   '/qabalah/numerology': typeof QabalahNumerologyRoute
   '/read/decks': typeof ReadDecksRoute
   '/read/draw': typeof ReadDrawRoute
+  '/read/record': typeof ReadRecordRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
   '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
@@ -364,6 +372,7 @@ export interface FileRoutesById {
   '/qabalah/numerology': typeof QabalahNumerologyRoute
   '/read/decks': typeof ReadDecksRoute
   '/read/draw': typeof ReadDrawRoute
+  '/read/record': typeof ReadRecordRoute
   '/read/spreads': typeof ReadSpreadsRoute
   '/reference/$canonicalName': typeof ReferenceCanonicalNameRoute
   '/reference/astrological-dignities': typeof ReferenceAstrologicalDignitiesRoute
@@ -409,6 +418,7 @@ export interface FileRouteTypes {
     | '/qabalah/numerology'
     | '/read/decks'
     | '/read/draw'
+    | '/read/record'
     | '/read/spreads'
     | '/reference/$canonicalName'
     | '/reference/astrological-dignities'
@@ -452,6 +462,7 @@ export interface FileRouteTypes {
     | '/qabalah/numerology'
     | '/read/decks'
     | '/read/draw'
+    | '/read/record'
     | '/read/spreads'
     | '/reference/$canonicalName'
     | '/reference/astrological-dignities'
@@ -495,6 +506,7 @@ export interface FileRouteTypes {
     | '/qabalah/numerology'
     | '/read/decks'
     | '/read/draw'
+    | '/read/record'
     | '/read/spreads'
     | '/reference/$canonicalName'
     | '/reference/astrological-dignities'
@@ -539,6 +551,7 @@ export interface RootRouteChildren {
   QabalahNumerologyRoute: typeof QabalahNumerologyRoute
   ReadDecksRoute: typeof ReadDecksRoute
   ReadDrawRoute: typeof ReadDrawRoute
+  ReadRecordRoute: typeof ReadRecordRoute
   ReadSpreadsRoute: typeof ReadSpreadsRoute
   ReferenceCanonicalNameRoute: typeof ReferenceCanonicalNameRoute
   ReferenceAstrologicalDignitiesRoute: typeof ReferenceAstrologicalDignitiesRoute
@@ -782,6 +795,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReadSpreadsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/read/record': {
+      id: '/read/record'
+      path: '/read/record'
+      fullPath: '/read/record'
+      preLoaderRoute: typeof ReadRecordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/read/draw': {
       id: '/read/draw'
       path: '/read/draw'
@@ -875,6 +895,7 @@ const rootRouteChildren: RootRouteChildren = {
   QabalahNumerologyRoute: QabalahNumerologyRoute,
   ReadDecksRoute: ReadDecksRoute,
   ReadDrawRoute: ReadDrawRoute,
+  ReadRecordRoute: ReadRecordRoute,
   ReadSpreadsRoute: ReadSpreadsRoute,
   ReferenceCanonicalNameRoute: ReferenceCanonicalNameRoute,
   ReferenceAstrologicalDignitiesRoute: ReferenceAstrologicalDignitiesRoute,

@@ -170,6 +170,9 @@ function JournalPage() {
           >
             {compact ? <AlignLeft size={14} /> : <AlignJustify size={14} />}
           </button>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/record' })}>
+            <PenLine size={14} /> Record Physical
+          </Button>
           <Button variant="ghost" size="sm" onClick={() => { setShowForm(s => !s) }}>
             <PenLine size={14} /> New Entry
           </Button>

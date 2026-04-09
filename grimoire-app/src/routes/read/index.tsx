@@ -119,9 +119,12 @@ function ReadPage() {
     <div style={{ maxWidth: '800px' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '32px' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>New Reading</h1>
-        {step !== 'deck' && (
-          <Button variant="ghost" size="sm" onClick={() => { if (window.confirm('Start over? Your current selection will be cleared.')) reset() }}>Reset</Button>
-        )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          {step !== 'deck' && (
+            <Button variant="ghost" size="sm" onClick={() => { if (window.confirm('Start over? Your current selection will be cleared.')) reset() }}>Reset</Button>
+          )}
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/record' })}>Record Physical</Button>
+        </div>
       </div>
 
       {/* Step indicator */}
