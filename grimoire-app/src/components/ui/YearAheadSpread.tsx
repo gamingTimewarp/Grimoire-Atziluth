@@ -11,7 +11,7 @@
  * proceeding clockwise. Each month is colour-coded by season.
  */
 
-import React from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import { EntityArt } from './EntityArt'
 import type { CardSlot } from './SpreadGrid'
 import type { CardOrientation } from '@grimoire/core'
@@ -66,14 +66,30 @@ export function YearAheadSpreadDisplay({
 
   const cardMap = new Map(cards.map(c => [c.positionId, c]))
 
-  const cw     = Math.round(CARD_W  * scale)
-  const ch     = Math.round(CARD_H  * scale)
-  const totalW = Math.round(CONTAINER * scale)
-  const totalH = Math.round(CONTAINER * scale)
-  const labelSize = Math.max(7, Math.round(9 * scale))
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [containerWidth, setContainerWidth] = useState(9999)
+  useLayoutEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const measure = () => {
+      const w = el.getBoundingClientRect().width
+      if (w > 0) setContainerWidth(w)
+    }
+    measure()
+    window.addEventListener('resize', measure)
+    return () => window.removeEventListener('resize', measure)
+  }, [])
+  const effectiveScale = containerWidth < CONTAINER ? Math.min(scale, containerWidth / CONTAINER) : scale
+
+  const cw     = Math.round(CARD_W  * effectiveScale)
+  const ch     = Math.round(CARD_H  * effectiveScale)
+  const totalW = Math.round(CONTAINER * effectiveScale)
+  const totalH = Math.round(CONTAINER * effectiveScale)
+  const labelSize = Math.max(7, Math.round(9 * effectiveScale))
 
   return (
-    <div style={{ position: 'relative', width: totalW, height: totalH, flexShrink: 0 }}>
+    <div ref={containerRef}>
+    <div style={{ position: 'relative', width: totalW, height: totalH }}>
       {Array.from({ length: 12 }, (_, i) => {
         const posId      = `month-${i}`
         const monthIndex = (startMonthIndex + i) % 12
@@ -86,8 +102,8 @@ export function YearAheadSpreadDisplay({
         const angleRad   = angleDeg * (Math.PI / 180)
         const cx         = CENTER + RADIUS * Math.cos(angleRad)
         const cy         = CENTER + RADIUS * Math.sin(angleRad)
-        const left       = Math.round((cx - CARD_W / 2) * scale)
-        const top        = Math.round((cy - CARD_H / 2) * scale)
+        const left       = Math.round((cx - CARD_W / 2) * effectiveScale)
+        const top        = Math.round((cy - CARD_H / 2) * effectiveScale)
 
         return (
           <div
@@ -112,6 +128,7 @@ export function YearAheadSpreadDisplay({
           </div>
         )
       })}
+    </div>
     </div>
   )
 }

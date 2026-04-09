@@ -11,7 +11,7 @@
  * falling back to 51.5°N, -0.1°E if none is found.
  */
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { EntityArt } from './EntityArt'
 import type { CardSlot } from './SpreadGrid'
 import type { CardOrientation } from '@grimoire/core'
@@ -132,18 +132,33 @@ export function ZodiacYearSpreadDisplay({
   // orientation stays stable whether the wheel overlay is shown or hidden.
   const asc = skyChart ? chartAsc : 0
 
-  const cw        = Math.round(CARD_W    * scale)
-  const ch        = Math.round(CARD_H    * scale)
-  const totalW    = Math.round(CONTAINER * scale)
-  const totalH    = Math.round(CONTAINER * scale)
-  const wheelSize = Math.round(WHEEL_D   * scale)
-  const labelSize = Math.max(7, Math.round(9 * scale))
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [containerWidth, setContainerWidth] = useState(9999)
+  useLayoutEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const measure = () => {
+      const w = el.getBoundingClientRect().width
+      if (w > 0) setContainerWidth(w)
+    }
+    measure()
+    window.addEventListener('resize', measure)
+    return () => window.removeEventListener('resize', measure)
+  }, [])
+  const effectiveScale = containerWidth < CONTAINER ? Math.min(scale, containerWidth / CONTAINER) : scale
 
-  const wheelOffset = Math.round(CENTER * scale - WHEEL_D / 2 * scale)
+  const cw        = Math.round(CARD_W    * effectiveScale)
+  const ch        = Math.round(CARD_H    * effectiveScale)
+  const totalW    = Math.round(CONTAINER * effectiveScale)
+  const totalH    = Math.round(CONTAINER * effectiveScale)
+  const wheelSize = Math.round(WHEEL_D   * effectiveScale)
+  const labelSize = Math.max(7, Math.round(9 * effectiveScale))
+
+  const wheelOffset = Math.round(CENTER * effectiveScale - WHEEL_D / 2 * effectiveScale)
 
   return (
-    <>
-    <div style={{ position: 'relative', width: totalW, height: totalH, flexShrink: 0 }}>
+    <div ref={containerRef}>
+    <div style={{ position: 'relative', width: totalW, height: totalH }}>
       {/* ── Wheel underlay ────────────────────────────────────────────── */}
       {showWheel && skyChart && (
         <div style={{
@@ -168,13 +183,13 @@ export function ZodiacYearSpreadDisplay({
         title={showWheel ? 'Hide current sky wheel' : 'Show current sky wheel'}
         style={{
           position: 'absolute',
-          top: Math.round(4 * scale), right: Math.round(4 * scale),
+          top: Math.round(4 * effectiveScale), right: Math.round(4 * effectiveScale),
           zIndex: 10,
           background: showWheel ? 'var(--color-accent-muted)' : 'var(--color-surface-2)',
           border: `1px solid ${showWheel ? 'var(--color-accent)' : 'var(--color-border)'}`,
           borderRadius: '4px',
           padding: '3px 8px',
-          fontSize: `${Math.max(9, Math.round(10 * scale))}px`,
+          fontSize: `${Math.max(9, Math.round(10 * effectiveScale))}px`,
           color: showWheel ? 'var(--color-accent)' : 'var(--color-text-muted)',
           cursor: 'pointer',
           fontFamily: 'inherit',
@@ -196,8 +211,8 @@ export function ZodiacYearSpreadDisplay({
         const angleRad  = angleDeg * (Math.PI / 180)
         const cx        = CENTER + RADIUS * Math.cos(angleRad)
         const cy        = CENTER + RADIUS * Math.sin(angleRad)
-        const left      = Math.round((cx - CARD_W / 2) * scale)
-        const top       = Math.round((cy - CARD_H / 2) * scale)
+        const left      = Math.round((cx - CARD_W / 2) * effectiveScale)
+        const top       = Math.round((cy - CARD_H / 2) * effectiveScale)
 
         return (
           <div
@@ -247,7 +262,7 @@ export function ZodiacYearSpreadDisplay({
         />
       </div>
     )}
-    </>
+    </div>
   )
 }
 

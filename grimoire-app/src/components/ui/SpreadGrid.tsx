@@ -5,7 +5,7 @@
  * draw screen and journal can reuse it without coupling to store types.
  */
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import type { SpreadPosition, BaseEntity } from '@grimoire/core'
 import type { CardOrientation } from '@grimoire/core'
 import type { ReversedDisplay } from '@/lib/accessibility-store'
@@ -48,17 +48,18 @@ export function SpreadGrid({
   showCaptions, reversedDisplay = 'rotated',
 }: SpreadGridProps) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [containerWidth, setContainerWidth] = useState<number>(() => window.innerWidth - 32)
+  const [containerWidth, setContainerWidth] = useState<number>(9999)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = containerRef.current
     if (!el) return
-    const ro = new ResizeObserver(entries => {
-      const w = entries[0]?.contentRect.width
-      if (w) setContainerWidth(w)
-    })
-    ro.observe(el)
-    return () => ro.disconnect()
+    const measure = () => {
+      const w = el.getBoundingClientRect().width
+      if (w > 0) setContainerWidth(w)
+    }
+    measure()
+    window.addEventListener('resize', measure)
+    return () => window.removeEventListener('resize', measure)
   }, [])
 
   if (!positions.length) return null
@@ -90,7 +91,7 @@ export function SpreadGrid({
   }
 
   return (
-    <div ref={containerRef} style={{ overflowX: 'auto', overflowY: 'visible' }}>
+    <div ref={containerRef} style={{ width: '100%', overflowX: 'auto', overflowY: 'visible' }}>
     <div style={{
       display: 'grid',
       gridTemplateColumns: `repeat(${cols}, ${W}px)`,
