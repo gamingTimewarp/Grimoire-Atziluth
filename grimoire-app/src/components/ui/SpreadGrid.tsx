@@ -48,7 +48,9 @@ export function SpreadGrid({
   showCaptions, reversedDisplay = 'rotated',
 }: SpreadGridProps) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [containerWidth, setContainerWidth] = useState<number>(9999)
+  const [containerWidth, setContainerWidth] = useState<number>(() =>
+    typeof document !== 'undefined' ? document.documentElement.clientWidth : 9999
+  )
 
   useLayoutEffect(() => {
     const el = containerRef.current
@@ -153,7 +155,15 @@ export function SpreadGrid({
               const showBadge    = isReversed && reversedDisplay === 'badge'
 
               const artEl = slot.entity
-                ? <EntityArt entity={slot.entity} width={cW} height={cH} />
+                ? isCrossing
+                  ? (
+                    <div style={{ width: cW, height: cH, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <div style={{ width: W, height: H, transform: 'rotate(90deg)', transformOrigin: 'center center', flexShrink: 0 }}>
+                        <EntityArt entity={slot.entity} width={W} height={H} />
+                      </div>
+                    </div>
+                  )
+                  : <EntityArt entity={slot.entity} width={cW} height={cH} />
                 : <div style={{
                     width: cW, height: cH,
                     background: 'var(--color-surface-3)',

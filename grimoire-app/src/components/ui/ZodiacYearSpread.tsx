@@ -133,7 +133,9 @@ export function ZodiacYearSpreadDisplay({
   const asc = skyChart ? chartAsc : 0
 
   const containerRef = useRef<HTMLDivElement>(null)
-  const [containerWidth, setContainerWidth] = useState(9999)
+  const [containerWidth, setContainerWidth] = useState(() =>
+    typeof document !== 'undefined' ? document.documentElement.clientWidth : 9999
+  )
   useLayoutEffect(() => {
     const el = containerRef.current
     if (!el) return

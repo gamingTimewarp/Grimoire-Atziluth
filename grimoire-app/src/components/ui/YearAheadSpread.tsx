@@ -67,7 +67,9 @@ export function YearAheadSpreadDisplay({
   const cardMap = new Map(cards.map(c => [c.positionId, c]))
 
   const containerRef = useRef<HTMLDivElement>(null)
-  const [containerWidth, setContainerWidth] = useState(9999)
+  const [containerWidth, setContainerWidth] = useState(() =>
+    typeof document !== 'undefined' ? document.documentElement.clientWidth : 9999
+  )
   useLayoutEffect(() => {
     const el = containerRef.current
     if (!el) return
