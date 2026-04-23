@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "magic.hexagram.saturn",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Saturn",
+      "description": "The Hexagram of Saturn is constructed by drawing the upward-pointing triangle first, beginning at Saturn's vertex (the topmost point), then completing the downward-pointing triangle. Saturn governs the topmost point of the hexagram because it is attributed to Binah, the third Sephira, whose position at the head of the Pillar of Severity and the top of the qabalistic left column corresponds to the crown of the star. In practical magic, the Saturn hexagram is used in the Ritual of the Hexagram to invoke or banish Saturnine forces — time, limitation, structure, contraction, karma, and the long cycles of fate. It is drawn in black or indigo, and combined with the godname ARARITA vibrated on each of its six strokes.",
+      "secondaryNames": [],
+      "tags": ["hexagram", "magic", "ritual", "saturn", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.saturn",
+        "planetVertex": 0,
+        "planetTriangle": "upward",
+        "constructionSteps": [[0,2],[2,4],[4,0],[3,5],[5,1],[1,3]],
+        "planetColor": "#7766aa",
+        "kameaCN": "magic.kamea.saturn",
+        "sephira": "Binah",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.jupiter",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Jupiter",
+      "description": "The Hexagram of Jupiter is constructed beginning at Jupiter's vertex (upper right), which belongs to the downward-pointing triangle. The downward triangle is traced first from Jupiter's point, then the upward triangle completes the hexagram. Jupiter occupies the upper-right vertex because it corresponds to Chesed, the fourth Sephira, the sphere of mercy, expansion, and cosmic law on the Pillar of Mercy. In planetary ritual, the Jupiter hexagram invokes forces of benevolence, prosperity, abundance, healing, and right governance. It is drawn in blue or violet, and used in the Ritual of the Hexagram with the godname ARARITA to draw down the expansive energies of Jupiter.",
+      "secondaryNames": [],
+      "tags": ["hexagram", "magic", "ritual", "jupiter", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.jupiter",
+        "planetVertex": 1,
+        "planetTriangle": "downward",
+        "constructionSteps": [[1,5],[5,3],[3,1],[0,2],[2,4],[4,0]],
+        "planetColor": "#4466bb",
+        "kameaCN": "magic.kamea.jupiter",
+        "sephira": "Chesed",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.mars",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Mars",
+      "description": "The Hexagram of Mars is drawn starting at Mars's vertex (lower right), which belongs to the upward-pointing triangle. The upward triangle is completed first from Mars's point, then the downward triangle. Mars occupies the lower-right position because it is attributed to Geburah, the fifth Sephira of severity and martial power on the Pillar of Strength. In the Ritual of the Hexagram, the Mars hexagram invokes or banishes forces of courage, conflict, energy, destruction of obstacles, and the purifying flame of divine judgement. Drawn in red, it is employed in works requiring the breaking of bonds, the resolution of conflict, and the assertion of will against opposition.",
+      "secondaryNames": [],
+      "tags": ["hexagram", "magic", "ritual", "mars", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.mars",
+        "planetVertex": 2,
+        "planetTriangle": "upward",
+        "constructionSteps": [[2,4],[4,0],[0,2],[3,5],[5,1],[1,3]],
+        "planetColor": "#bb2222",
+        "kameaCN": "magic.kamea.mars",
+        "sephira": "Geburah",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.sol",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Sol",
+      "description": "The Hexagram of Sol is the central and most important of the seven planetary hexagrams, constructed beginning at Sol's vertex (the bottommost point) of the downward-pointing triangle. The Sun occupies the lowest vertex because, while it corresponds to Tiphareth at the centre of the Tree of Life, the Sol hexagram is traced from the base of the descending triangle — symbolising the solar force as the mediating principle between the Supernals above and the lower Sephiroth below. In the Ritual of the Hexagram, the Sol hexagram invokes solar energies: vitality, illumination, beauty, harmony, healing, success, and the radiance of the divine self. Drawn in gold, it is used for consecration of solar talismans and the daily Adoration of the Sun.",
+      "secondaryNames": [
+        { "name": "Hexagram of the Sun", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hexagram", "magic", "ritual", "sol", "sun", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.sol",
+        "planetVertex": 3,
+        "planetTriangle": "downward",
+        "constructionSteps": [[3,1],[1,5],[5,3],[0,2],[2,4],[4,0]],
+        "planetColor": "#cc8800",
+        "kameaCN": "magic.kamea.sol",
+        "sephira": "Tiphareth",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.venus",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Venus",
+      "description": "The Hexagram of Venus is constructed by starting at Venus's vertex (lower left) of the upward-pointing triangle, tracing that triangle first and then completing the downward triangle. Venus occupies the lower-left position corresponding to Netzach, the seventh Sephira of desire, beauty, the natural world, and the emotions as they flow into creative manifestation. In the Ritual of the Hexagram, the Venus hexagram invokes forces of love, art, attraction, harmony between beings, and the awakening of the higher emotions. Drawn in green or emerald, it is used in workings of love, beauty, reconciliation, and the cultivation of virtue and aesthetic refinement.",
+      "secondaryNames": [],
+      "tags": ["hexagram", "magic", "ritual", "venus", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.venus",
+        "planetVertex": 4,
+        "planetTriangle": "upward",
+        "constructionSteps": [[4,0],[0,2],[2,4],[3,5],[5,1],[1,3]],
+        "planetColor": "#338844",
+        "kameaCN": "magic.kamea.venus",
+        "sephira": "Netzach",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.mercury",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Mercury",
+      "description": "The Hexagram of Mercury is drawn beginning at Mercury's vertex (upper left), which belongs to the downward-pointing triangle. The downward triangle is traced first, then the upward triangle completes the form. Mercury occupies the upper-left vertex corresponding to Hod, the eighth Sephira of intellect, language, magic, and the analytical mind on the Pillar of Severity. In the Ritual of the Hexagram, the Mercury hexagram invokes forces of communication, learning, commerce, healing through knowledge, and the operations of the magical will expressed through correct thought and speech. Drawn in orange, it is used to empower works of writing, study, divination, and the invocation of Hermetic intelligences.",
+      "secondaryNames": [],
+      "tags": ["hexagram", "magic", "ritual", "mercury", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.mercury",
+        "planetVertex": 5,
+        "planetTriangle": "downward",
+        "constructionSteps": [[5,3],[3,1],[1,5],[0,2],[2,4],[4,0]],
+        "planetColor": "#cc6622",
+        "kameaCN": "magic.kamea.mercury",
+        "sephira": "Hod",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    },
+    {
+      "canonicalName": "magic.hexagram.luna",
+      "entityType": "magic.hexagram",
+      "primaryDisplayName": "Hexagram of Luna",
+      "description": "The Hexagram of Luna is drawn beginning at the Saturn vertex (top) in the upward-pointing triangle, following the same construction as the Saturn hexagram but employed for lunar workings. Luna does not have its own fixed vertex in the hexagram because it corresponds to Yesod, the ninth Sephira, which lies at the centre of the Tree of Life rather than at a peripheral column. Instead, the Lunar hexagram uses the same star construction but with lunar intent, drawn in silver or pale purple. It is used in the Ritual of the Hexagram to invoke or banish lunar forces — the reflective mind, dreams, fertility, the tides of the sea and the body, psychic perception, and the power of memory and imagination.",
+      "secondaryNames": [
+        { "name": "Hexagram of the Moon", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hexagram", "magic", "ritual", "luna", "moon", "golden-dawn", "planetary"],
+      "extendedData": {
+        "planet": "astrology.planet.luna",
+        "planetVertex": null,
+        "planetTriangle": "both",
+        "constructionSteps": [[0,2],[2,4],[4,0],[3,5],[5,1],[1,3]],
+        "planetColor": "#8899bb",
+        "kameaCN": "magic.kamea.luna",
+        "sephira": "Yesod",
+        "godname": "ARARITA",
+        "hexagramNote": "Vertex assignments (clockwise from top): Saturn, Jupiter, Mars, Sol, Venus, Mercury"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "magic.hexagram.saturn",  "target": "astrology.planet.saturn",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.saturn",  "target": "magic.kamea.saturn",        "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.jupiter", "target": "astrology.planet.jupiter", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.jupiter", "target": "magic.kamea.jupiter",       "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.mars",    "target": "astrology.planet.mars",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.mars",    "target": "magic.kamea.mars",          "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.sol",     "target": "astrology.planet.sol",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.sol",     "target": "magic.kamea.sol",           "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.venus",   "target": "astrology.planet.venus",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.venus",   "target": "magic.kamea.venus",         "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.mercury", "target": "astrology.planet.mercury", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.mercury", "target": "magic.kamea.mercury",       "label": "related-to",     "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.luna",    "target": "astrology.planet.luna",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.hexagram.luna",    "target": "magic.kamea.luna",          "label": "related-to",     "bidirectional": true, "traditionScope": [] }
+  ]
+}

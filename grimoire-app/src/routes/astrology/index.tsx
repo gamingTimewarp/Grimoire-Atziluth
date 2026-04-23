@@ -7,6 +7,7 @@ import type { NatalChartData, Aspect, AstrologyMode, TransitAspect } from '@/lib
 import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { Button } from '@/components/ui/Button'
 import { Plus, User, Trash2, RefreshCw, List, Circle, Play } from 'lucide-react'
 
@@ -199,9 +200,9 @@ function CurrentSkyPanel() {
       {/* Wheel view */}
       {chart && view === 'wheel' && (
         <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-          <div style={{ width: '100%', maxWidth: 440 }}>
+          <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
             <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
-          </div>
+          </ZoomableSVGContainer>
           <div style={{ flex: 1, minWidth: '220px' }}>
             <AspectsList aspects={chart.aspects} onNav={goToRef} />
           </div>

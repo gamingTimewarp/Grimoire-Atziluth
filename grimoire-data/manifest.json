@@ -67,6 +67,9 @@
         "entities/magic/kamea.json",
         "entities/magic/olympic-spirits.json",
         "entities/magic/planetary-spirits.json",
+        "entities/magic/pentagrams.json",
+        "entities/magic/hexagrams.json",
+        "entities/magic/circles.json",
         "entities/qabalah/divine-names.json",
         "entities/qabalah/partzufim.json",
         "entities/norse/worlds.json",
@@ -200,7 +203,9 @@
         "links/structural/element-wuxing-trigram-links.json",
         "links/structural/tetragrammaton-links.json",
         "links/structural/sephirotic-divine-name-links.json",
-        "links/structural/sabbat-zodiac-links.json"
+        "links/structural/sabbat-zodiac-links.json",
+        "links/structural/pentagram-element-links.json",
+        "links/structural/hexagram-planet-links.json"
       ]
     }
   ]

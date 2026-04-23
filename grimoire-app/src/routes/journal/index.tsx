@@ -19,6 +19,7 @@ import { EntityArt } from '@/components/ui/EntityArt'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import { WheelChart } from '@/components/ui/WheelChart'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { exportReadingAsMarkdown, exportReadingAsImage } from '@/lib/reading-export'
 import { Button } from '@/components/ui/Button'
 import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '@/lib/astro-calc'
@@ -967,7 +968,9 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
       )}
 
       {open && view === 'wheel' && (
-        <WheelChart chart={baseChart} transitChart={transitChart} size={340} mode={astrologyMode} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
+        <ZoomableSVGContainer style={{ maxWidth: 340, borderRadius: '8px' }}>
+          <WheelChart chart={baseChart} transitChart={transitChart} size={340} mode={astrologyMode} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
+        </ZoomableSVGContainer>
       )}
     </div>
   )

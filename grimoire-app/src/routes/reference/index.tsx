@@ -648,6 +648,9 @@ const BROWSE_ITEMS = [
   { canonicalName: 'system.overview.sethian-aeons',        label: 'Sethian Aeons'      },
   { canonicalName: 'system.overview.rosicrucian',          label: 'Rosicrucian'        },
   { canonicalName: 'system.overview.divine-names',         label: '99 Names of Allah'  },
+  { canonicalName: 'system.overview.magic-circles',        label: 'Magic Circles'       },
+  { canonicalName: 'system.overview.magic-pentagrams',     label: 'Elemental Pentagrams'},
+  { canonicalName: 'system.overview.magic-hexagrams',      label: 'Planetary Hexagrams' },
 ]
 
 // ─── Recently viewed ──────────────────────────────────────────────────────────
@@ -775,11 +778,12 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
           {[
             { to: '/reference/lenormand-combinations',      label: 'Lenormand Combinations' },
             { to: '/reference/iching-trigram-matrix',       label: 'I Ching Trigram Matrix' },
+            { to: '/reference/wuxing-phases',               label: 'I Ching Elements' },
             { to: '/reference/astrological-dignities',      label: 'Astrological Dignities' },
             { to: '/reference/chinese-zodiac-compatibility',label: 'Chinese Zodiac Compatibility' },
             { to: '/reference/sephirothic-matrix',          label: 'Sephirothic Attributions' },
             { to: '/reference/planetary-matrix',            label: 'Planetary Attributions' },
-            { to: '/reference/geomancy-shield-chart',       label: 'Geomancy Shield Chart' },
+            { to: '/reference/geomancy-shield-chart',       label: 'Geomancy Shield Chart'      },
           ].map(({ to, label }) => (
             <button
               key={to}

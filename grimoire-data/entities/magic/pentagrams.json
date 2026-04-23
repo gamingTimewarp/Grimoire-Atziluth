@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "magic.pentagram.earth-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Earth",
+      "description": "The Invoking Pentagram of Earth is traced beginning at the Spirit point (apex) and drawing the first line downward to the Earth point (lower right), then continuing skip-one clockwise until the star is complete. Used in the Golden Dawn's Lesser Invoking Ritual of the Pentagram and in elemental workings to attract, concentrate, and fix the energies of the Earth element — stability, manifestation, fertility, and material substance. Attributed to the Northern quarter and to the colour green-black in the GD King Scale. The Earth element in this system corresponds to the final Heh of the Tetragrammaton and to the suit of Pentacles/Disks.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "earth", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "earth",
+        "variant": "invoking",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 2,
+        "startVertex": 0,
+        "constructionSteps": [[0,2],[2,4],[4,1],[1,3],[3,0]],
+        "elementColor": "#608050",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "North",
+        "tarotSuit": "Pentacles / Disks",
+        "tetragrammaton": "Final Heh (ה)",
+        "elementEntityCN": "astrology.element.earth"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.earth-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Earth",
+      "description": "The Banishing Pentagram of Earth begins at the Earth point (lower right) and draws the first line upward to the Spirit point (apex), then continues skip-one counter-clockwise. This is the pentagram used in the Lesser Banishing Ritual of the Pentagram (LBRP), one of the foundational practices of modern ceremonial magic. It is drawn in all four quarters to cleanse the space of unwanted influences, dissolve accumulated psychic residue, and establish a purified circle before any magical work. Consistent daily practice of the LBRP is traditionally considered the single most important magical exercise for the beginning student.",
+      "secondaryNames": [
+        { "name": "LBRP Earth Pentagram", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["pentagram", "magic", "ritual", "earth", "golden-dawn", "banishing", "lbrp"],
+      "extendedData": {
+        "element": "earth",
+        "variant": "banishing",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 2,
+        "startVertex": 2,
+        "constructionSteps": [[2,0],[0,3],[3,1],[1,4],[4,2]],
+        "elementColor": "#608050",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "North",
+        "tarotSuit": "Pentacles / Disks",
+        "tetragrammaton": "Final Heh (ה)",
+        "elementEntityCN": "astrology.element.earth"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.fire-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Fire",
+      "description": "The Invoking Pentagram of Fire is traced starting from the Air point (upper left), with the first line drawn toward the Fire point (upper right). It is used in elemental workings to call forth, strengthen, and direct the energies of Fire — will, courage, transformation, purification, and the divine creative spark. In the Greater Ritual of the Pentagram, this form is employed when consecrating a space or instrument to Fire, or when invoking fire elementals (Salamanders). Attributed to the Southern quarter, the colour red in the GD King Scale, and the first Yod of the Tetragrammaton.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "fire", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "fire",
+        "variant": "invoking",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 1,
+        "startVertex": 4,
+        "constructionSteps": [[4,1],[1,3],[3,0],[0,2],[2,4]],
+        "elementColor": "#d06030",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "South",
+        "tarotSuit": "Wands / Rods",
+        "tetragrammaton": "Yod (י)",
+        "elementEntityCN": "astrology.element.fire"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.fire-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Fire",
+      "description": "The Banishing Pentagram of Fire starts at the Fire point (upper right) and draws the first line toward the Air point (upper left), proceeding skip-one counter-clockwise. Used in the Greater Ritual of the Pentagram to dismiss, dispel, or close a Fire elemental working. It is also employed to banish excessive or unbalanced Fire energies — uncontrolled passion, destructive will, or fever — and to bring calm to a space charged with volatile forces. The Southern quarter is the traditional direction for Fire banishing.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "fire", "golden-dawn", "banishing"],
+      "extendedData": {
+        "element": "fire",
+        "variant": "banishing",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 1,
+        "startVertex": 1,
+        "constructionSteps": [[1,4],[4,2],[2,0],[0,3],[3,1]],
+        "elementColor": "#d06030",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "South",
+        "tarotSuit": "Wands / Rods",
+        "tetragrammaton": "Yod (י)",
+        "elementEntityCN": "astrology.element.fire"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.water-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Water",
+      "description": "The Invoking Pentagram of Water begins at the Fire point (upper right) and draws the first line toward the Water point (lower left), tracing the star skip-one clockwise. Used to invoke and concentrate the energies of the Water element — emotion, intuition, healing, love, psychic receptivity, and the subconscious mind. In the Greater Ritual of the Pentagram, this form is used for Western quarter workings and when summoning Undines (water elementals). Attributed to the colour blue in the GD King Scale and to the first Heh of the Tetragrammaton.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "water", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "water",
+        "variant": "invoking",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 3,
+        "startVertex": 1,
+        "constructionSteps": [[1,3],[3,0],[0,2],[2,4],[4,1]],
+        "elementColor": "#4070c0",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "West",
+        "tarotSuit": "Cups",
+        "tetragrammaton": "First Heh (ה)",
+        "elementEntityCN": "astrology.element.water"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.water-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Water",
+      "description": "The Banishing Pentagram of Water starts at the Water point (lower left) and draws the first line toward the Fire point (upper right), proceeding skip-one counter-clockwise. Employed in the Greater Ritual of the Pentagram to close a Water elemental working or to banish excessive or unbalanced Water energies — overwhelming emotion, psychic intrusion, stagnation, or the influence of unwanted spirits. Associated with the Western quarter and the dissolution of whatever has been built up in watery, receptive workings.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "water", "golden-dawn", "banishing"],
+      "extendedData": {
+        "element": "water",
+        "variant": "banishing",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 3,
+        "startVertex": 3,
+        "constructionSteps": [[3,1],[1,4],[4,2],[2,0],[0,3]],
+        "elementColor": "#4070c0",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "West",
+        "tarotSuit": "Cups",
+        "tetragrammaton": "First Heh (ה)",
+        "elementEntityCN": "astrology.element.water"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.air-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Air",
+      "description": "The Invoking Pentagram of Air begins at the Earth point (lower right) and draws the first line toward the Air point (upper left), tracing the star skip-one clockwise. Used to invoke the energies of Air — intellect, communication, breath, thought, swift movement, and the power of the written and spoken word. In Greater Ritual work, Air pentagrams are drawn in the Eastern quarter to summon Sylphs (air elementals) or to empower workings of learning, divination, and communication. Attributed to the colour yellow in the GD King Scale and to the Vav of the Tetragrammaton.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "air", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "air",
+        "variant": "invoking",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 4,
+        "startVertex": 2,
+        "constructionSteps": [[2,4],[4,1],[1,3],[3,0],[0,2]],
+        "elementColor": "#c0a030",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "East",
+        "tarotSuit": "Swords",
+        "tetragrammaton": "Vav (ו)",
+        "elementEntityCN": "astrology.element.air"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.air-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Air",
+      "description": "The Banishing Pentagram of Air starts at the Air point (upper left) and draws the first line toward the Earth point (lower right), proceeding skip-one counter-clockwise. Used in Greater Ritual work to close an Air elemental working, dismiss Sylphs, or banish unbalanced Air energies — scattered thought, dishonesty, intellectual arrogance, or excessive dryness. Associated with the Eastern quarter and employed when calming a space that has become mentally chaotic or when concluding an evocation that invoked airy forces.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "air", "golden-dawn", "banishing"],
+      "extendedData": {
+        "element": "air",
+        "variant": "banishing",
+        "spiritVariant": null,
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 4,
+        "startVertex": 4,
+        "constructionSteps": [[4,2],[2,0],[0,3],[3,1],[1,4]],
+        "elementColor": "#c0a030",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "quarter": "East",
+        "tarotSuit": "Swords",
+        "tetragrammaton": "Vav (ו)",
+        "elementEntityCN": "astrology.element.air"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.spirit-active-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Spirit (Active)",
+      "description": "The Invoking Pentagram of Spirit (Active) is drawn by beginning at the Water point (lower left) and tracing the first line upward to the Spirit apex, then continuing skip-one clockwise. The Active Spirit pentagram corresponds to the ascending, projective, or Fire aspect of Spirit — the force by which the divine descends into and animates matter. In the Hexagram rituals and Supreme Ritual of the Pentagram, Spirit Active is invoked first when working with the full fourfold elemental circle, representing the unity that underlies and governs all four elements. Its Kabbalistic name is AGLA and its divine association is the White Triangle of the Supernal Sephiroth.",
+      "secondaryNames": [
+        { "name": "Spirit Ascending Invoking", "languageTag": "en", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["pentagram", "magic", "ritual", "spirit", "akasha", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "spirit",
+        "variant": "invoking",
+        "spiritVariant": "active",
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 0,
+        "startVertex": 3,
+        "constructionSteps": [[3,0],[0,2],[2,4],[4,1],[1,3]],
+        "elementColor": "#8833cc",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "divineName": "AGLA",
+        "association": "White Triangle / Supernals"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.spirit-active-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Spirit (Active)",
+      "description": "The Banishing Pentagram of Spirit (Active) begins at the Spirit apex and draws the first line downward to the Earth point (lower right), then continues skip-one clockwise. It is the reciprocal of the Spirit Active Invoking and is used to withdraw or close the divine presence after a Spirit-invoking working, returning the space to its ordinary elemental balance. The Active form of Spirit banishing dissolves the projective, fiery aspect of Spirit energy and re-establishes the boundary between manifest and unmanifest worlds. Its associated godname is IHVH (the Tetragrammaton in full), and it follows the same trace as the Earth Invoking pentagram, though employed with different intent.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "spirit", "akasha", "golden-dawn", "banishing"],
+      "extendedData": {
+        "element": "spirit",
+        "variant": "banishing",
+        "spiritVariant": "active",
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 0,
+        "startVertex": 0,
+        "constructionSteps": [[0,2],[2,4],[4,1],[1,3],[3,0]],
+        "elementColor": "#8833cc",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "divineName": "IHVH",
+        "association": "White Triangle / Supernals"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.spirit-passive-invoking",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Invoking Pentagram of Spirit (Passive)",
+      "description": "The Invoking Pentagram of Spirit (Passive) begins at the Earth point (lower right) and draws the first line upward to the Spirit apex, then continues skip-one counter-clockwise. The Passive Spirit pentagram corresponds to the receptive, reflective, or Water aspect of Spirit — the vessel or mirror in which the divine light is received and reflected. It is associated with the reconciling force that holds the balance between active and passive, involution and evolution. In the Supreme Ritual of the Pentagram, Spirit Passive follows Spirit Active to complete the dual invocation of the quintessence. Its Kabbalistic name is AGLA reversed and its divine association is the Black Triangle of the Supernal Sephiroth.",
+      "secondaryNames": [
+        { "name": "Spirit Descending Invoking", "languageTag": "en", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["pentagram", "magic", "ritual", "spirit", "akasha", "golden-dawn", "invoking"],
+      "extendedData": {
+        "element": "spirit",
+        "variant": "invoking",
+        "spiritVariant": "passive",
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 0,
+        "startVertex": 2,
+        "constructionSteps": [[2,0],[0,3],[3,1],[1,4],[4,2]],
+        "elementColor": "#8833cc",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "divineName": "AGLA",
+        "association": "Black Triangle / Supernals"
+      }
+    },
+    {
+      "canonicalName": "magic.pentagram.spirit-passive-banishing",
+      "entityType": "magic.pentagram",
+      "primaryDisplayName": "Banishing Pentagram of Spirit (Passive)",
+      "description": "The Banishing Pentagram of Spirit (Passive) starts at the Spirit apex and draws the first line downward to the Water point (lower left), then continues skip-one counter-clockwise. It is the reciprocal of the Spirit Passive Invoking and is used to close and withdraw the receptive aspect of the divine presence, dissolving the Water-Spirit connection that was established in the invoking phase. Together, the four Spirit pentagrams (Active and Passive, Invoking and Banishing) form a complete working with the quintessence, encompassing both the outgoing and returning flow of the spiritual force. Its godname is IHVH (Tetragrammaton) addressed to the passive or reflective aspect.",
+      "secondaryNames": [],
+      "tags": ["pentagram", "magic", "ritual", "spirit", "akasha", "golden-dawn", "banishing"],
+      "extendedData": {
+        "element": "spirit",
+        "variant": "banishing",
+        "spiritVariant": "passive",
+        "vertexElements": ["spirit", "fire", "earth", "water", "air"],
+        "elementVertex": 0,
+        "startVertex": 0,
+        "constructionSteps": [[0,3],[3,1],[1,4],[4,2],[2,0]],
+        "elementColor": "#8833cc",
+        "tradition": "Hermetic Order of the Golden Dawn",
+        "divineName": "IHVH",
+        "association": "Black Triangle / Supernals"
+      }
+    }
+  ]
+}

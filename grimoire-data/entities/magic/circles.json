@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "magic.circle.solomonic",
+      "entityType": "magic.circle",
+      "primaryDisplayName": "Solomonic Circle of Art",
+      "description": "The Solomonic Circle of Art, as described in the Key of Solomon (Clavicula Salomonis) and the Lesser Key of Solomon (Lemegeton), is the foundational ritual space of Western ceremonial magic. The Magician stands within the circle, protected by the divine names and pentagonal seals inscribed between its two concentric rings. Outside the circle to the east is the Triangle of the Art, into which spirits are conjured — they must not leave it, and the Magician must not leave the circle. The space between the two rings is filled with divine names from the Old Testament tradition: TETRAGRAMMATON, ADONAI, AGLA, ON, and ELOHIM, interspersed with pentacles. The four Cardinal points are marked by the names of the ruling Archangels: Michael (South), Gabriel (North), Raphael (East), Uriel (West), though variant arrangements exist across manuscript traditions. The circle is typically nine feet in diameter when drawn on the floor for physical practice. Its origins lie in ancient Mesopotamian apotropaic ritual and the Greek Magical Papyri, and it reached its classic form in the medieval Solomonic grimoire tradition.",
+      "secondaryNames": [
+        { "name": "Circle of Art", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Magic Circle", "languageTag": "en", "visible": true, "sortOrder": 1 },
+        { "name": "Circulo Solomonis", "languageTag": "la", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["magic-circle", "magic", "solomonic", "goetia", "ritual", "ceremonial"],
+      "extendedData": {
+        "circleType": "solomonic",
+        "diameter": "9 feet (traditional)",
+        "outerRingInscriptions": [
+          "qabalah.divine-name.tetragrammaton",
+          "qabalah.divine-name.adonai-ha-aretz",
+          "qabalah.divine-name.eheieh",
+          "qabalah.divine-name.agla"
+        ],
+        "innerRingInscriptions": [
+          "qabalah.divine-name.on",
+          "qabalah.divine-name.el",
+          "qabalah.divine-name.elohim",
+          "qabalah.divine-name.tzabaoth"
+        ],
+        "cardinalArchangels": {
+          "East":  "angel.archangel.raphael",
+          "South": "angel.archangel.michael",
+          "West":  "angel.archangel.uriel",
+          "North": "angel.archangel.gabriel"
+        },
+        "trianglePosition": "East",
+        "triangleNames": ["ANAPHAXETON", "PRIMEUMATON", "TETRAGRAMMATON"],
+        "sources": ["Key of Solomon", "Lesser Key of Solomon (Lemegeton)", "The Book of the Sacred Magic of Abramelin the Mage"],
+        "tradition": "Solomonic / Western ceremonial magic"
+      }
+    },
+    {
+      "canonicalName": "magic.circle.sigillum-dei-aemeth",
+      "entityType": "magic.circle",
+      "primaryDisplayName": "Sigillum Dei Aemeth",
+      "description": "The Sigillum Dei Aemeth (Seal of the Truth of God) is a complex magical talisman and ritual instrument described by John Dee (1527–1608/9) and his scryer Edward Kelley in the Enochian magical system, primarily recorded in Dee's diaries published as A True and Faithful Relation of What Passed for Many Years Between Dr. John Dee and Some Spirits (1659). It is a wax disc approximately nine inches in diameter bearing a heptagram (seven-pointed star) inscribed within a circle, with the heptagon formed at the star's intersections. Within the heptagon is a smaller heptagram, and at the centre the name AEMETH (אמת, Hebrew for 'truth'). The outer ring carries the names of the seven angels of the Heptarchy — Baligon, Befafes, Bmamgal, Bynepor, Blisdon, Bnaspol, Bnapsen — and at each of the star's seven points are the names of the Heptarchic kings: Bobogel, Bnaspol, Bnapsen, Bnaspol, Blisdon, Bynepor, Bmamgal. The tablet was placed beneath the scrying table (the Holy Table of Practice) on four smaller wax seals called the Sigillum Dei Aemeth, one at each leg. Modern Enochian practitioners use it as the central focus of the Enochian temple and as a consecrated charging plate for talismans and skrying instruments.",
+      "secondaryNames": [
+        { "name": "Seal of God", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Seal of the Truth of God", "languageTag": "en", "visible": false, "sortOrder": 1 },
+        { "name": "Sigil of Aemeth", "languageTag": "en", "visible": true, "sortOrder": 2 }
+      ],
+      "tags": ["magic-circle", "magic", "enochian", "john-dee", "ritual", "heptagram", "seal"],
+      "extendedData": {
+        "circleType": "heptagram",
+        "creator": "John Dee",
+        "date": "1582",
+        "material": "Beeswax (traditional)",
+        "diameter": "9 inches (traditional)",
+        "heptarchicKings": ["Bobogel", "Bnaspol", "Bnapsen", "Blisdon", "Bynepor", "Bmamgal", "Baligon"],
+        "heptarchicPrinces": ["Bornogo", "Befafes", "Blumaza", "Brorges", "Butmono", "Bralges", "Bynepor"],
+        "angelNames": ["Ix", "Pal", "Med", "Na", "Graph", "Vaa", "Ceph"],
+        "centerWord": "AEMETH",
+        "hebrewMeaning": "Truth (אמת)",
+        "outerLetters": "GALETHOG — letters from the divine names surrounding the heptagram",
+        "sources": ["John Dee's diaries (1582–1583)", "A True and Faithful Relation (1659)", "The Enochian Evocation of Dr. John Dee (Laycock, 1983)"],
+        "tradition": "Enochian magic / Dee-Kelley system"
+      }
+    }
+  ]
+}

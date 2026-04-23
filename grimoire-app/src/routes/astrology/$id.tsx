@@ -7,6 +7,7 @@ import type { NatalChartData, AstrologyMode, TransitAspect, MutualReception } fr
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getHomeLocation } from '@/lib/settings-store'
 import { WheelChart } from '@/components/ui/WheelChart'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { Button } from '@/components/ui/Button'
 import { Edit, List, Circle, Radio } from 'lucide-react'
 
@@ -124,9 +125,9 @@ function ChartDetailPage() {
       <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
         {/* Wheel */}
         {view === 'wheel' && (
-          <div style={{ width: '100%', maxWidth: 460 }}>
+          <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
             <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
-          </div>
+          </ZoomableSVGContainer>
         )}
 
         {/* Positions + aspects table (always visible in table view, sidebar in wheel view) */}

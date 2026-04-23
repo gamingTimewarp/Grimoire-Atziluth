@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { TreeOfLife } from '@/components/ui/TreeOfLife'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { Button } from '@/components/ui/Button'
 import { Calculator, Hash } from 'lucide-react'
 import { useState, useEffect } from 'react'
@@ -92,14 +93,16 @@ function QabalahPage() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <TreeOfLife
-          mode={mode}
-          onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
-          size={treeSize}
-          showDaath={loadTraditionSettings().showDaath}
-        />
-      </div>
+      <ZoomableSVGContainer style={{ borderRadius: '8px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <TreeOfLife
+            mode={mode}
+            onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+            size={treeSize}
+            showDaath={loadTraditionSettings().showDaath}
+          />
+        </div>
+      </ZoomableSVGContainer>
     </div>
   )
 }

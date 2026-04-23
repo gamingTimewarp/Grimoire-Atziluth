@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "magic.pentagram.earth-invoking",         "target": "astrology.element.earth", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.earth-banishing",        "target": "astrology.element.earth", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.fire-invoking",          "target": "astrology.element.fire",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.fire-banishing",         "target": "astrology.element.fire",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.water-invoking",         "target": "astrology.element.water", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.water-banishing",        "target": "astrology.element.water", "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.air-invoking",           "target": "astrology.element.air",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] },
+    { "source": "magic.pentagram.air-banishing",          "target": "astrology.element.air",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [] }
+  ]
+}

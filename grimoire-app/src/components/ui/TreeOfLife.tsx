@@ -92,6 +92,35 @@ const PILLAR_DEFS = [
   { canonicalName: 'qabalah.pillar.mercy',       label: 'Mercy',       cx: 0.82, sephiraX: 0.82 },
 ]
 
+// ─── Planetary symbols for sephiroth ─────────────────────────────────────────
+
+/** Classical 7-planet assignments — Binah through Malkuth, always the same */
+const PLANET_SYMBOLS_BASE: Record<string, string> = {
+  'qabalah.sephira.binah':     '♄',  // Saturn
+  'qabalah.sephira.chesed':    '♃',  // Jupiter
+  'qabalah.sephira.geburah':   '♂',  // Mars
+  'qabalah.sephira.tiphareth': '☉',  // Sun
+  'qabalah.sephira.netzach':   '♀',  // Venus
+  'qabalah.sephira.hod':       '☿',  // Mercury
+  'qabalah.sephira.yesod':     '☽',  // Moon
+  'qabalah.sephira.malkuth':   '♁',  // Earth
+}
+
+/** Traditional: Kether = Primum Mobile, Chokmah = Fixed Stars/Zodiac, Da'ath = none */
+const PLANET_SYMBOLS_TRADITIONAL: Record<string, string> = {
+  ...PLANET_SYMBOLS_BASE,
+  'qabalah.sephira.kether':  '✦',  // Primum Mobile
+  'qabalah.sephira.chokmah': '✦',  // Fixed Stars / Zodiac
+}
+
+/** Modern astrology: outer planets fill the top three spheres */
+const PLANET_SYMBOLS_MODERN: Record<string, string> = {
+  ...PLANET_SYMBOLS_BASE,
+  'qabalah.sephira.kether':  '♆',  // Neptune
+  'qabalah.sephira.chokmah': '♅',  // Uranus
+  'qabalah.sephira.daath':   '♇',  // Pluto
+}
+
 // ─── Hebrew letter glyphs (immutable Unicode) ─────────────────────────────────
 
 const HEBREW_GLYPHS: Record<string, string> = {
@@ -105,11 +134,84 @@ const HEBREW_GLYPHS: Record<string, string> = {
   'letter.hebrew.tau':    'ת',
 }
 
+/** Per-path label position tweaks keyed by path number.
+ *  dx shifts the label left/right; supplying anchor overrides the auto side. */
+const PATH_LABEL_OVERRIDES: Record<number, { dx: number; anchor?: 'start' | 'end' }> = {
+  21: { dx: -20 },  // Chesed→Netzach: right-pillar vertical, label clips right SVG edge — nudge in
+  31: { dx: -40 },  // Hod→Malkuth: label overlaps Yesod — nudge left
+}
+
 /** "tarot.major.rws.the-high-priestess" → "High Priestess" */
 function cardAbbrev(cn: string): string {
   const slug = cn.split('.').pop() ?? ''
   const name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
   return name.startsWith('The ') ? name.slice(4) : name
+}
+
+/** Returns a halo stroke colour that contrasts with the given text fill.
+ *  Dark text (e.g. Binah #1a0828) gets a white halo; light/coloured text
+ *  uses the surface colour so it blends on dark themes. */
+function haloFor(fill: string): string {
+  if (!fill.startsWith('#') || fill.length < 7) return 'var(--color-surface-1)'
+  const r = parseInt(fill.slice(1, 3), 16) / 255
+  const g = parseInt(fill.slice(3, 5), 16) / 255
+  const b = parseInt(fill.slice(5, 7), 16) / 255
+  const lum = 0.299 * r + 0.587 * g + 0.114 * b
+  return lum < 0.25 ? '#ffffff' : 'var(--color-surface-1)'
+}
+
+// ─── HSV colour helpers ───────────────────────────────────────────────────────
+
+function hexToHsv(hex: string): [number, number, number] {
+  const r = parseInt(hex.slice(1, 3), 16) / 255
+  const g = parseInt(hex.slice(3, 5), 16) / 255
+  const b = parseInt(hex.slice(5, 7), 16) / 255
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min
+  let h = 0
+  if (d !== 0) {
+    if      (max === r) h = (((g - b) / d) % 6 + 6) % 6
+    else if (max === g) h = (b - r) / d + 2
+    else                h = (r - g) / d + 4
+    h *= 60
+  }
+  return [h, max === 0 ? 0 : d / max, max]
+}
+
+function hsvToHex(h: number, s: number, v: number): string {
+  const c = v * s, x = c * (1 - Math.abs((h / 60) % 2 - 1)), m = v - c
+  let r = 0, g = 0, b = 0
+  if      (h < 60)  { r = c; g = x }
+  else if (h < 120) { r = x; g = c }
+  else if (h < 180) { g = c; b = x }
+  else if (h < 240) { g = x; b = c }
+  else if (h < 300) { r = x; b = c }
+  else              { r = c; b = x }
+  const hex2 = (n: number) => Math.round((n + m) * 255).toString(16).padStart(2, '0')
+  return `#${hex2(r)}${hex2(g)}${hex2(b)}`
+}
+
+/** HSV midpoint of two hex colours. Achromatic colours yield to the other's hue. */
+function avgHsvHex(hex1: string, hex2: string): string {
+  const [h1, s1, v1] = hexToHsv(hex1)
+  const [h2, s2, v2] = hexToHsv(hex2)
+  const s = (s1 + s2) / 2
+  // Clamp V so paths are always readable against the SVG background
+  const v = Math.max((v1 + v2) / 2, 0.50)
+  // Circular hue mean — skip if both achromatic
+  let h = 0
+  if (s1 < 0.05 && s2 < 0.05) {
+    h = 0
+  } else if (s1 < 0.05) {
+    h = h2
+  } else if (s2 < 0.05) {
+    h = h1
+  } else {
+    let diff = h2 - h1
+    if (diff > 180) diff -= 360
+    if (diff < -180) diff += 360
+    h = (h1 + diff / 2 + 360) % 360
+  }
+  return hsvToHex(h, s, v)
 }
 
 // ─── Props ───────────────────────────────────────────────────────────────────
@@ -129,9 +231,16 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
   const [primaryBySystem, setPrimaryBySystem] = useState(
     () => loadTraditionSettings().primaryBySystem
   )
+  const [activeTraditions, setActiveTraditions] = useState(
+    () => loadTraditionSettings().activeTraditions
+  )
 
   useEffect(() => {
-    const handler = () => setPrimaryBySystem(loadTraditionSettings().primaryBySystem)
+    const handler = () => {
+      const s = loadTraditionSettings()
+      setPrimaryBySystem(s.primaryBySystem)
+      setActiveTraditions(s.activeTraditions)
+    }
     window.addEventListener('grimoire:traditions-changed', handler)
     return () => window.removeEventListener('grimoire:traditions-changed', handler)
   }, [])
@@ -198,6 +307,37 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
 
   const displayHeight = Math.round(size * VH / VW)
 
+  // These must be above the early return to satisfy the Rules of Hooks
+  const isSephiroth = mode === 'sephiroth'
+
+  const planetSymbols = activeTraditions.includes('tradition.modern-astrology')
+    ? PLANET_SYMBOLS_MODERN
+    : PLANET_SYMBOLS_TRADITIONAL
+
+  const nodeData = useMemo(() => {
+    const daathNode = showDaath && daath ? [daath] : []
+    const nodes = isSephiroth ? [...numberedSephiroth, ...daathNode] : qliphoth
+    const colorMap = isSephiroth ? SEPHIRA_COLORS : QLIPHOTH_COLORS
+    return nodes.map(node => {
+      const x = nodeX(node)
+      const y = nodeY(node)
+      const colors = colorMap[node.canonicalName] ?? { fill: '#444', text: '#fff', stroke: '#666' }
+      const isDaath = node.canonicalName === 'qabalah.sephira.daath'
+      const num = node.extendedData.number as number | null
+      const hebrew = node.extendedData.hebrewName as string ?? ''
+      const chakra = isSephiroth ? chakraMap.get(node.canonicalName) : undefined
+      const planet = isSephiroth ? (planetSymbols[node.canonicalName] ?? '') : ''
+      const hasNum = num != null
+      const hitBottom = chakra ? R + 26 : R + 16
+      const nameColor = isSephiroth
+        ? (colors.fill === '#FFFFFF' ? 'var(--color-text-muted)' : colors.fill)
+        : 'var(--color-text-muted)'
+      const nameHalo = haloFor(nameColor)
+      return { node, x, y, colors, isDaath, num, hebrew, chakra, planet, hasNum, hitBottom, nameColor, nameHalo }
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isSephiroth, numberedSephiroth, qliphoth, daath, showDaath, chakraMap, planetSymbols])
+
   if (loading) {
     return (
       <div style={{ width: size, height: displayHeight, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-subtle)', fontSize: '13px' }}>
@@ -229,9 +369,7 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
 
   // ── Render helpers ────────────────────────────────────────────────────────
 
-  const isSephiroth = mode === 'sephiroth'
-
-  const renderEdges = () => {
+  const buildEdgeData = () => {
     const edges = isSephiroth ? paths : tunnels
     return edges.map(edge => {
       const fromCn = isSephiroth
@@ -254,131 +392,107 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
       const card    = isSephiroth ? cardAbbrev(cardCn) : ''
       const pathNum = edge.extendedData.pathNumber as number
 
-      const lineColor = isSephiroth ? 'var(--color-text-muted)' : '#8b0000'
+      const fromFill  = SEPHIRA_COLORS[fromCn]?.fill ?? '#888888'
+      const toFill    = SEPHIRA_COLORS[toCn]?.fill   ?? '#888888'
+      const lineColor = isSephiroth ? avgHsvHex(fromFill, toFill) : '#8b0000'
+      const textColor = isSephiroth ? lineColor : '#cc3333'
 
+      return { edge, x1, y1, x2, y2, label, letter, card, pathNum, lineColor, textColor }
+    }).filter(Boolean) as Array<{
+      edge: BaseEntity; x1: number; y1: number; x2: number; y2: number
+      label: ReturnType<typeof pathLabelPos>
+      letter: string; card: string; pathNum: number
+      lineColor: string; textColor: string
+    }>
+  }
+
+  /** Layer 1: path/tunnel lines + hit targets (no text). */
+  const renderEdgeLines = () => {
+    const edgeData = buildEdgeData()
+    return edgeData.map(({ edge, x1, y1, x2, y2, lineColor }) => (
+      <g key={`line-${edge.canonicalName}`} onClick={() => onNavigate(edge.canonicalName)} style={{ cursor: 'pointer' }}>
+        <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={lineColor} strokeWidth={1.2} opacity={0.6} />
+        <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="transparent" strokeWidth={12} />
+      </g>
+    ))
+  }
+
+  /** Layer 2: node circles + inner content (number, Hebrew, planet). */
+  const renderNodeBodies = () => nodeData.map(({ node, x, y, colors, isDaath, num, hebrew, planet, hasNum, hitBottom }) => (
+    <g
+      key={`body-${node.canonicalName}`}
+      onClick={() => onNavigate(node.canonicalName)}
+      style={{ cursor: 'pointer' }}
+      opacity={isDaath ? 0.55 : 1}
+    >
+      <rect x={x - 36} y={y - R} width={72} height={R + hitBottom} fill="transparent" />
+      <circle cx={x} cy={y} r={R} fill={colors.fill} stroke={colors.stroke} strokeWidth={1.5}
+        strokeDasharray={isDaath ? '4,3' : undefined} />
+      {hasNum && (
+        <text x={x} y={y - 8} textAnchor="middle" dominantBaseline="middle"
+          fontSize={7} fill={colors.text} opacity={0.7}
+          style={{ userSelect: 'none', pointerEvents: 'none' }}>{num}</text>
+      )}
+      <text x={x} y={y + (hasNum ? 1 : 0)} textAnchor="middle" dominantBaseline="middle"
+        fontSize={hasNum ? 10 : 11} fill={colors.text} fontFamily="serif"
+        style={{ userSelect: 'none', pointerEvents: 'none' }}>{hebrew}</text>
+      {planet && (
+        <text x={x} y={y + (hasNum ? 12 : 11)} textAnchor="middle" dominantBaseline="middle"
+          fontSize={8} fill={colors.text} opacity={0.75}
+          style={{ userSelect: 'none', pointerEvents: 'none' }}>{planet}</text>
+      )}
+    </g>
+  ))
+
+  /** Layer 3: path/tunnel labels (Hebrew letter + path number + card). */
+  const renderEdgeLabels = () => {
+    const edgeData = buildEdgeData()
+    return edgeData.map(({ edge, label, letter, card, pathNum, textColor }) => {
+      const ov = PATH_LABEL_OVERRIDES[pathNum]
+      const lx = label.x + (ov?.dx ?? 0)
+      const anchor = (ov?.anchor ?? label.anchor) as 'start' | 'middle' | 'end'
       return (
-        <g
-          key={edge.canonicalName}
-          onClick={() => onNavigate(edge.canonicalName)}
-          style={{ cursor: 'pointer' }}
-        >
-          <line
-            x1={x1} y1={y1} x2={x2} y2={y2}
-            stroke={lineColor}
-            strokeWidth={1.2}
-            opacity={0.45}
-          />
-          {/* Wider invisible hit area */}
-          <line
-            x1={x1} y1={y1} x2={x2} y2={y2}
-            stroke="transparent"
-            strokeWidth={12}
-          />
-          {/* Label: letter + path number + card name */}
-          <text
-            x={label.x} y={label.y - 6}
-            textAnchor={label.anchor as 'start' | 'middle' | 'end'}
-            fontSize={13}
-            fill={isSephiroth ? 'var(--color-text)' : '#cc3333'}
-            fontFamily="serif"
-            style={{ userSelect: 'none', pointerEvents: 'none' }}
-          >{letter}</text>
-          <text
-            x={label.x} y={label.y + 7}
-            textAnchor={label.anchor as 'start' | 'middle' | 'end'}
-            fontSize={7}
-            fill="var(--color-text-subtle)"
-            style={{ userSelect: 'none', pointerEvents: 'none' }}
-          >{isSephiroth ? `${pathNum} ${card}` : edge.primaryDisplayName}</text>
+        <g key={`label-${edge.canonicalName}`} onClick={() => onNavigate(edge.canonicalName)} style={{ cursor: 'pointer' }}>
+          <text x={lx} y={label.y - 6} textAnchor={anchor}
+            fontSize={13} fill={textColor} fontFamily="serif"
+            stroke="var(--color-surface-1)" strokeWidth={3}
+            style={{ paintOrder: 'stroke fill', userSelect: 'none', pointerEvents: 'none' } as React.CSSProperties}>{letter}</text>
+          <text x={lx} y={label.y + 7} textAnchor={anchor}
+            fontSize={7} fill={textColor} opacity={0.8}
+            stroke="var(--color-surface-1)" strokeWidth={3}
+            style={{ paintOrder: 'stroke fill', userSelect: 'none', pointerEvents: 'none' } as React.CSSProperties}>
+            {isSephiroth ? `${pathNum} ${card}` : edge.primaryDisplayName}
+          </text>
         </g>
       )
     })
   }
 
-  const renderNodes = () => {
-    const daathNode = showDaath && daath ? [daath] : []
-    const nodes = isSephiroth ? [...numberedSephiroth, ...daathNode] : qliphoth
-    const colorMap = isSephiroth ? SEPHIRA_COLORS : QLIPHOTH_COLORS
-
-    return nodes.map(node => {
-      const x = nodeX(node)
-      const y = nodeY(node)
-      const colors = colorMap[node.canonicalName] ?? { fill: '#444', text: '#fff', stroke: '#666' }
-      const isDaath = node.canonicalName === 'qabalah.sephira.daath'
-      const num = node.extendedData.number as number | null
-      const hebrew = node.extendedData.hebrewName as string ?? ''
-      const chakra = isSephiroth ? chakraMap.get(node.canonicalName) : undefined
-
-      // Hit area height: circle diameter + English label + optional chakra label
-      const hitBottom = chakra ? R + 26 : R + 16
-
-      return (
-        <g
-          key={node.canonicalName}
-          onClick={() => onNavigate(node.canonicalName)}
-          style={{ cursor: 'pointer' }}
-          opacity={isDaath ? 0.55 : 1}
-        >
-          {/* Invisible hit rect covering circle + labels */}
-          <rect
-            x={x - 36} y={y - R}
-            width={72} height={R + hitBottom}
-            fill="transparent"
-          />
-          <circle
-            cx={x} cy={y} r={R}
-            fill={colors.fill}
-            stroke={colors.stroke}
-            strokeWidth={1.5}
-            strokeDasharray={isDaath ? '4,3' : undefined}
-          />
-          {/* Number */}
-          {num != null && (
-            <text
-              x={x} y={y - 7}
-              textAnchor="middle" dominantBaseline="middle"
-              fontSize={7} fill={colors.text} opacity={0.7}
-              style={{ userSelect: 'none', pointerEvents: 'none' }}
-            >{num}</text>
-          )}
-          {/* Hebrew name (abbreviated glyph from primaryDisplayName) */}
-          <text
-            x={x} y={y + (num != null ? 5 : 0)}
-            textAnchor="middle" dominantBaseline="middle"
-            fontSize={num != null ? 10 : 11} fill={colors.text}
-            fontFamily="serif"
-            style={{ userSelect: 'none', pointerEvents: 'none' }}
-          >{hebrew}</text>
-          {/* English name below circle */}
-          <text
-            x={x} y={y + R + 9}
-            textAnchor="middle" dominantBaseline="middle"
-            fontSize={8} fill="var(--color-text-muted)"
-            style={{ userSelect: 'none', pointerEvents: 'none' }}
-          >{resolveDisplayName(node, primaryBySystem)}</text>
-          {/* Chakra name (when hinduism-chakra tradition active) — clickable, navigates to chakra */}
-          {chakra && (
-            <g
-              onClick={e => { e.stopPropagation(); onNavigate(chakra.cn) }}
-              style={{ cursor: 'pointer' }}
-            >
-              <rect
-                x={x - 30} y={y + R + 12}
-                width={60} height={12}
-                fill="transparent"
-              />
-              <text
-                x={x} y={y + R + 19}
-                textAnchor="middle" dominantBaseline="middle"
-                fontSize={7} fill="var(--color-accent)" opacity={0.8}
-                style={{ userSelect: 'none', pointerEvents: 'none' }}
-              >{chakra.name}</text>
-            </g>
-          )}
+  /** Layer 4: node English name labels + chakra labels. */
+  const renderNodeLabels = () => nodeData.map(({ node, x, y, isDaath, chakra, nameColor, nameHalo }) => (
+    <g
+      key={`name-${node.canonicalName}`}
+      onClick={() => onNavigate(node.canonicalName)}
+      style={{ cursor: 'pointer' }}
+      opacity={isDaath ? 0.55 : 1}
+    >
+      <text x={x} y={y + R + 9} textAnchor="middle" dominantBaseline="middle"
+        fontSize={8} fill={nameColor}
+        stroke={nameHalo} strokeWidth={1}
+        style={{ paintOrder: 'stroke fill', userSelect: 'none', pointerEvents: 'none' } as React.CSSProperties}>
+        {resolveDisplayName(node, primaryBySystem)}
+      </text>
+      {chakra && (
+        <g onClick={e => { e.stopPropagation(); onNavigate(chakra.cn) }} style={{ cursor: 'pointer' }}>
+          <rect x={x - 30} y={y + R + 12} width={60} height={12} fill="transparent" />
+          <text x={x} y={y + R + 19} textAnchor="middle" dominantBaseline="middle"
+            fontSize={7} fill="var(--color-accent)" opacity={0.8}
+            stroke="var(--color-surface-1)" strokeWidth={3}
+            style={{ paintOrder: 'stroke fill', userSelect: 'none', pointerEvents: 'none' } as React.CSSProperties}>{chakra.name}</text>
         </g>
-      )
-    })
-  }
+      )}
+    </g>
+  ))
 
   return (
     <svg
@@ -460,11 +574,17 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
         </g>
       ))}
 
-      {/* ── Path / tunnel lines ── */}
-      {renderEdges()}
+      {/* ── Layer 1: path/tunnel lines ── */}
+      <g>{renderEdgeLines()}</g>
 
-      {/* ── Nodes ── */}
-      {renderNodes()}
+      {/* ── Layer 2: node circles + inner content ── */}
+      <g>{renderNodeBodies()}</g>
+
+      {/* ── Layer 3: path/tunnel labels ── */}
+      <g>{renderEdgeLabels()}</g>
+
+      {/* ── Layer 4: sephirah name labels + chakra labels ── */}
+      <g>{renderNodeLabels()}</g>
     </svg>
   )
 }

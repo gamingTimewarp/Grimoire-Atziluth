@@ -362,6 +362,124 @@
         "note": "Adonai is the name traditionally substituted for the Tetragrammaton when reading the Torah aloud.",
         "sephiraNumber": 10
       }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.agla",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "AGLA",
+      "description": "AGLA is a notariqon — a Hebrew acronym — standing for אַתָּה גִּבּוֹר לְעוֹלָם אֲדֹנָי (Atah Gibor Le-olam Adonai), meaning 'Thou art mighty forever, O Lord.' The phrase is the opening of the second blessing of the Amidah (the central Jewish prayer), the Gevurot or 'Powers' blessing, which praises God's power over life and death, resurrection, rain, and healing.\n\nIn ceremonial magic, AGLA became one of the four supreme divine names of the Solomonic tradition, inscribed on the Circle of Art along with TETRAGRAMMATON, EHEIEH, and ADONAI. In the Golden Dawn's Lesser Banishing Ritual of the Pentagram (LBRP), AGLA is vibrated at the West, associated with the element of Water and the descending power of Spirit. In the Golden Dawn's fourfold elemental model, the West is the place of the setting sun and the unconscious depths; AGLA here represents divine power over the watery, receptive, lunar realm.\n\nGematria: the letters Aleph (1) + Gimel (3) + Lamed (30) + Aleph (1) = 35, though the acronym is generally used for its qualitative rather than numerical power. The name appears extensively in Solomonic conjurations, exorcism formulae, and protective amulets throughout the medieval and Renaissance grimoire tradition.",
+      "secondaryNames": [
+        {
+          "name": "Atah Gibor Le-olam Adonai",
+          "languageTag": "he-translit",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "אַתָּה גִּבּוֹר לְעוֹלָם אֲדֹנָי",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Thou art mighty forever, O Lord",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": ["divine-name", "qabalah", "kabbalah", "hebrew", "notariqon", "solomonic", "lbrp", "ceremonial"],
+      "extendedData": {
+        "gematria": 35,
+        "hebrewSpelling": "אגלא",
+        "fullForm": "אַתָּה גִּבּוֹר לְעוֹלָם אֲדֹנָי",
+        "type": "notariqon",
+        "lbrpDirection": "West",
+        "lbrpElement": "Water",
+        "note": "Used in the LBRP at the West, and widely throughout the Solomonic grimoire tradition."
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.on",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "ON",
+      "description": "ON is a divine name that appears in the Solomonic Circle of Art alongside TETRAGRAMMATON, ADONAI, AGLA, EL, ELOHIM, and TZABAOTH, inscribed between the two rings as part of the protective barrier of divine names.\n\nThe name has several probable etymological roots. In the Hebrew scriptures, On (אוֹן) is the name of the Egyptian city of Heliopolis (Genesis 41:45, 41:50, 46:20), the great centre of solar worship where Joseph was given a wife by Pharaoh. As a divine name, ON may invoke the luminous, solar, and generative aspect of divinity associated with Heliopolis — the city of the sun god Ra/Atum. In Coptic and later Greek Hermetic texts, the name was associated with divine light and the solar logos.\n\nIn the Qabalistic magical tradition, ON appears as one of the names of divine power used in conjuration and protective rites, often paired with EL and ELOHIM. In some manuscript traditions it is considered a contracted form of a longer divine name. Its brevity and vowel purity made it suited for vibration in ceremonial practice. Some commentators connect it to the Hebrew אוֹן (on), meaning 'strength,' 'vigour,' or 'generative power.'",
+      "secondaryNames": [
+        {
+          "name": "אוֹן",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Heliopolis",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": ["divine-name", "qabalah", "kabbalah", "hebrew", "solomonic", "ceremonial", "solar"],
+      "extendedData": {
+        "hebrewSpelling": "אוֹן",
+        "note": "One of the eight divine names inscribed on the Solomonic Circle of Art."
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.elohim",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Elohim",
+      "description": "Elohim (אֱלֹהִים) is the Hebrew word for God used throughout the Hebrew scriptures, notably throughout the first creation account (Genesis 1:1–2:3). Grammatically it is a plural form — the suffix -im is the masculine plural in Hebrew — yet it takes singular verb agreement when referring to the one God of Israel, a construction understood as either a 'plural of majesty' (pluralis maiestatis), a relic of earlier Canaanite polytheism, or an expression of divine fullness and multiplicity within unity.\n\nIn Hermetic Qabalah, Elohim is associated most directly with Binah, the third Sephira (Understanding), where it appears as the divine name of the Great Mother and the formative intelligence that shapes creation. It is also identified with Geburah (as Elohim Gibor, 'Mighty God'), with Hod (as Elohim Tzabaoth, 'God of Hosts'), and with Netzach (partially, via the Tzabaoth formula). When used without qualifiers, Elohim designates the divine creative power in its most elemental sense — the God who forms, names, separates, and pronounces creation good.\n\nIn Solomonic ceremonial magic, ELOHIM stands among the ring of divine names inscribed on the Circle of Art as one of the primary protective and conjuring names. The name is vibrated and written to establish divine authority over spirits, and its invocation calls upon the full spectrum of Elohim's creative and formative power. The name has gematric value 86 (Aleph=1, Lamed=30, Heh=5, Yod=10, Mem=40), equal to that of HaTeva (הטבע, 'Nature'), leading Spinoza and later Kabbalists to the identification of God with Nature.",
+      "secondaryNames": [
+        {
+          "name": "אֱלֹהִים",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "God",
+          "languageTag": "en",
+          "visible": false,
+          "sortOrder": 1
+        }
+      ],
+      "tags": ["divine-name", "qabalah", "kabbalah", "hebrew", "solomonic", "ceremonial", "binah"],
+      "extendedData": {
+        "gematria": 86,
+        "hebrewSpelling": "אֱלֹהִים",
+        "note": "Gematria 86 equals HaTeva (Nature), basis for the Spinozan identification of God with Nature."
+      }
+    },
+    {
+      "canonicalName": "qabalah.divine-name.tzabaoth",
+      "entityType": "qabalah.divine-name",
+      "primaryDisplayName": "Tzabaoth",
+      "description": "Tzabaoth (צְבָאוֹת, 'Hosts' or 'Armies') is a divine epithet appearing hundreds of times in the Hebrew scriptures, almost always in compound forms: YHVH Tzabaoth (יהוה צְבָאוֹת, 'Lord of Hosts') and Elohim Tzabaoth (אֱלֹהִים צְבָאוֹת, 'God of Hosts'). As a standalone divine name, it invokes the totality of divine dominion over the angelic and celestial hosts — the vast armies of heaven understood as stars, angels, and cosmic forces.\n\nIn Hermetic Qabalah, Tzabaoth appears as the divine name for two Sephiroth in its compound forms: YHVH Tzabaoth governs Netzach (Victory, seventh Sephira), the sphere of Venus, emotion, and desire; Elohim Tzabaoth governs Hod (Splendour, eighth Sephira), the sphere of Mercury, intellect, and magical practice. The dual appearance of Tzabaoth across two adjacent Sephiroth reflects the balancing of will and intellect, or feeling and form, in magical working.\n\nUsed alone in the Solomonic Circle of Art, TZABAOTH calls upon the combined power of these divine offices — the authority over all celestial intelligences and angelic hierarchies. The name is particularly potent in spirit conjuration, where the Magician speaks as an authorised representative of the Lord of Hosts, compelling obedience from spirits by divine right over all created beings.",
+      "secondaryNames": [
+        {
+          "name": "צְבָאוֹת",
+          "languageTag": "he",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Sabaoth",
+          "languageTag": "en-translit",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Hosts",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": ["divine-name", "qabalah", "kabbalah", "hebrew", "solomonic", "ceremonial", "netzach", "hod"],
+      "extendedData": {
+        "hebrewSpelling": "צְבָאוֹת",
+        "note": "Appears as YHVH Tzabaoth (Netzach) and Elohim Tzabaoth (Hod) in the Tree of Life."
+      }
     }
   ]
 }

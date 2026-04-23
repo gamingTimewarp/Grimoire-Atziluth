@@ -22,7 +22,22 @@
         "intelligenceNumber": 45,
         "spiritNumber": 45,
         "sealDescription": "The seal of Saturn (and of Agiel and Zazel) is derived by tracing a continuous path through the numbers of the kamea in sequential order; the resulting angular sigil is inscribed on Saturnine talismans.",
-        "talismanicUse": "Engraved on lead or drawn in black for workings of binding, limitation, discipline, time magic, agriculture, real estate, and the invocation of Saturnine forces for structure and long-term endurance."
+        "talismanicUse": "Engraved on lead or drawn in black for workings of binding, limitation, discipline, time magic, agriculture, real estate, and the invocation of Saturnine forces for structure and long-term endurance.",
+        "grid": [
+          [4, 9, 2],
+          [3, 5, 7],
+          [8, 1, 6]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Agiel",
+            "cells": [1, 3, 1, 1, 3]
+          },
+          "spirit": {
+            "name": "Zazel",
+            "cells": [7, 1, 7, 3]
+          }
+        }
       }
     },
     {
@@ -46,7 +61,23 @@
         "intelligenceNumber": 136,
         "spiritNumber": 136,
         "sealDescription": "The seal of Jupiter is traced by connecting the numbers 1–16 in sequence through the kamea grid; the resulting sigil is used in Jovial talismanic work and appears in the 'Greater Key of Solomon' and related grimoires.",
-        "talismanicUse": "Inscribed on tin or azure cloth for workings of abundance, wealth, legal favour, healing, protection, promotion, and invocation of the benefic Jovial current associated with Chesed."
+        "talismanicUse": "Inscribed on tin or azure cloth for workings of abundance, wealth, legal favour, healing, protection, promotion, and invocation of the benefic Jovial current associated with Chesed.",
+        "grid": [
+          [ 4, 14, 15,  1],
+          [ 9,  7,  6, 12],
+          [ 5, 11, 10,  8],
+          [16,  2,  3, 13]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Iophiel",
+            "cells": [10, 6, 8, 10, 1, 3]
+          },
+          "spirit": {
+            "name": "Hismael",
+            "cells": [5, 6, 4, 1, 3]
+          }
+        }
       }
     },
     {
@@ -70,7 +101,24 @@
         "intelligenceNumber": 325,
         "spiritNumber": 325,
         "sealDescription": "The seal of Mars is derived by tracing the path 1–25 through the kamea; its angular, aggressive sigil is used in martial talismans for courage and victory and appears in Renaissance grimoires associated with Martian workings.",
-        "talismanicUse": "Inscribed on iron or red materials for talismans of courage, victory in conflict, physical strength, protection from enemies, success in surgery or competitive endeavours, and invocation of the Geburah current."
+        "talismanicUse": "Inscribed on iron or red materials for talismans of courage, victory in conflict, physical strength, protection from enemies, success in surgery or competitive endeavours, and invocation of the Geburah current.",
+        "grid": [
+          [11, 24,  7, 20,  3],
+          [ 4, 12, 25,  8, 16],
+          [17,  5, 13, 21,  9],
+          [10, 18,  1, 14, 22],
+          [23,  6, 19,  2, 15]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Graphiel",
+            "cells": [3, 2, 1, 8, 10, 1, 3]
+          },
+          "spirit": {
+            "name": "Bartzabel",
+            "cells": [2, 2, 9, 2, 3]
+          }
+        }
       }
     },
     {
@@ -95,7 +143,25 @@
         "intelligenceNumber": 111,
         "spiritNumber": 666,
         "sealDescription": "The seal of the Sun (and of Nakhiel and Sorath) is traced by following the numbers 1–36 through the kamea grid, producing a distinctive solar sigil widely reproduced in Renaissance and modern grimoires.",
-        "talismanicUse": "Inscribed on gold or drawn in yellow for talismans of leadership, royal authority, fame, healing, illumination, prosperity, and invocation of the solar Tiphareth current; the most prestigious of the planetary kameas."
+        "talismanicUse": "Inscribed on gold or drawn in yellow for talismans of leadership, royal authority, fame, healing, illumination, prosperity, and invocation of the solar Tiphareth current; the most prestigious of the planetary kameas.",
+        "grid": [
+          [ 6, 32,  3, 34, 35,  1],
+          [ 7, 11, 27, 28,  8, 30],
+          [19, 14, 16, 15, 23, 24],
+          [18, 20, 22, 21, 17, 13],
+          [25, 29, 10,  9, 26, 12],
+          [36,  5, 33,  4,  2, 31]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Nakhiel",
+            "cells": [5, 20, 10, 1, 30]
+          },
+          "spirit": {
+            "name": "Sorath",
+            "cells": [6, 6, 2, 4]
+          }
+        }
       }
     },
     {
@@ -119,7 +185,26 @@
         "intelligenceNumber": 49,
         "spiritNumber": 175,
         "sealDescription": "The seal of Venus is derived by tracing the numbers 1–49 through the kamea; the resulting curving, harmonious sigil is used in Venereal talismanic work for love and attraction and appears in the 'Picatrix' and Agrippa's works.",
-        "talismanicUse": "Inscribed on copper or green and rose materials for talismans of love, romantic attraction, friendship, beauty, artistic inspiration, sexual harmony, and invocation of the Netzach current."
+        "talismanicUse": "Inscribed on copper or green and rose materials for talismans of love, romantic attraction, friendship, beauty, artistic inspiration, sexual harmony, and invocation of the Netzach current.",
+        "grid": [
+          [22, 47, 16, 41, 10, 35,  4],
+          [ 5, 23, 48, 17, 42, 11, 29],
+          [30,  6, 24, 49, 18, 36, 12],
+          [13, 31,  7, 25, 43, 19, 37],
+          [38, 14, 32,  1, 26, 44, 20],
+          [21, 39,  8, 33,  2, 27, 45],
+          [46, 15, 40,  9, 34,  3, 28]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Hagiel",
+            "cells": [5, 3, 10, 1, 30]
+          },
+          "spirit": {
+            "name": "Kedemel",
+            "cells": [1, 4, 40, 1, 30]
+          }
+        }
       }
     },
     {
@@ -143,7 +228,27 @@
         "intelligenceNumber": 260,
         "spiritNumber": 2080,
         "sealDescription": "The seal of Mercury is traced by following 1–64 through the kamea grid; its complex, intricate sigil reflects Mercury's quicksilver versatility and is used in talismans for intellectual and mercantile endeavours. The palindromic name of the Spirit Taphthartharath encodes the mirror-symmetry of Mercury's dual nature.",
-        "talismanicUse": "Inscribed on quicksilver alloys or yellow cloth for talismans of eloquence, learning, commerce, travel, memory, writing, magical scripts, and invocation of the Hod current — the sphere of the divine scribe."
+        "talismanicUse": "Inscribed on quicksilver alloys or yellow cloth for talismans of eloquence, learning, commerce, travel, memory, writing, magical scripts, and invocation of the Hod current — the sphere of the divine scribe.",
+        "grid": [
+          [ 8, 58, 59,  5,  4, 62, 63,  1],
+          [49, 15, 14, 52, 53, 11, 10, 56],
+          [41, 23, 22, 44, 45, 19, 18, 48],
+          [32, 34, 35, 29, 28, 38, 39, 25],
+          [40, 26, 27, 37, 36, 30, 31, 33],
+          [17, 47, 46, 20, 21, 43, 42, 24],
+          [ 9, 55, 54, 12, 13, 51, 50, 16],
+          [64,  2,  3, 61, 60,  6,  7, 57]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Tiriel",
+            "cells": [9, 2, 10, 10, 1, 30]
+          },
+          "spirit": {
+            "name": "Taphthartharath",
+            "cells": [4, 8, 4, 2, 4, 2, 4]
+          }
+        }
       }
     },
     {
@@ -168,7 +273,28 @@
         "intelligenceNumber": 3321,
         "spiritNumber": 3321,
         "sealDescription": "The seal of the Moon is traced by following numbers 1–81 through the 9×9 kamea grid; the resulting large and complex sigil is used in lunar talismanic work for dream magic and psychic workings. The elaborate full names of the Intelligence and Spirit reflect the Moon's complex, multi-layered astral nature.",
-        "talismanicUse": "Inscribed on silver or white cloth for talismans of psychic sensitivity, dream incubation, astral travel, fertility, the management of cycles and tides, safe sea-voyage, and invocation of the Yesod current — the astral foundation of the Tree of Life."
+        "talismanicUse": "Inscribed on silver or white cloth for talismans of psychic sensitivity, dream incubation, astral travel, fertility, the management of cycles and tides, safe sea-voyage, and invocation of the Yesod current — the astral foundation of the Tree of Life.",
+        "grid": [
+          [37, 78, 29, 70, 21, 62, 13, 54,  5],
+          [ 6, 38, 79, 30, 71, 22, 63, 14, 46],
+          [47,  7, 39, 80, 31, 72, 23, 55, 15],
+          [16, 48,  8, 40, 81, 32, 64, 24, 56],
+          [57, 17, 49,  9, 41, 73, 33, 65, 25],
+          [26, 58, 18, 50,  1, 42, 74, 34, 66],
+          [67, 27, 59, 10, 51,  2, 43, 75, 35],
+          [36, 68, 19, 60, 11, 52,  3, 44, 76],
+          [77, 28, 69, 20, 61, 12, 53,  4, 45]
+        ],
+        "sigils": {
+          "intelligence": {
+            "name": "Malka be-Tarshisim",
+            "cells": [40, 30, 20, 1, 2, 4, 2, 3, 10, 3, 10, 40, 6, 70, 4, 2, 6, 8, 6, 4, 6, 3, 8, 30, 10, 40]
+          },
+          "spirit": {
+            "name": "Schad Barschemoth",
+            "cells": [3, 4, 2, 2, 3, 40, 6, 4, 5, 3, 2, 4, 50]
+          }
+        }
       }
     }
   ]

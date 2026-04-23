@@ -2753,6 +2753,79 @@
           "system.overview.hebrew-letters"
         ]
       }
+    },
+    {
+      "canonicalName": "system.overview.magic-circles",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Magic Circles",
+      "description": "Magic circles and ritual diagrams are the geometric foundations of Western ceremonial magic. From the Solomonic circles of the medieval grimoire tradition to the elemental pentagrams of the Golden Dawn and the angelic seals of John Dee's Enochian system, these forms define sacred space, invoke and contain spiritual forces, and provide the practitioner with a structured symbolic language for ritual. This section covers the principal magic circles, ritual stars, and ceremonial seals used in the Western esoteric tradition.",
+      "secondaryNames": [],
+      "tags": ["overview", "magic", "ritual", "circles"],
+      "extendedData": {
+        "members": [
+          "system.overview.magic-pentagrams",
+          "system.overview.magic-hexagrams",
+          "system.overview.magic-ritual-circles"
+        ],
+        "relatedOverviews": [
+          "system.overview.kamea",
+          "system.overview.olympic-spirits",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.magic-pentagrams",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Elemental Pentagrams",
+      "description": "The elemental pentagrams of the Hermetic Order of the Golden Dawn are the foundational ritual gestures of modern Western ceremonial magic. Each of the four elements (Earth, Fire, Water, Air) and the quintessence (Spirit) has a specific invoking and banishing pentagram, defined by which vertex the star is traced from and in which direction. The system was codified in the GD's Knowledge Lecture and Neophyte Ritual and underpins the Lesser Banishing Ritual of the Pentagram (LBRP), the Greater Ritual of the Pentagram, and the Supreme Ritual of the Pentagram.",
+      "secondaryNames": [
+        { "name": "GD Pentagrams", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["overview", "magic", "ritual", "pentagram", "golden-dawn", "elements"],
+      "extendedData": {
+        "memberEntityType": "magic.pentagram",
+        "relatedOverviews": [
+          "system.overview.magic-circles",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.magic-hexagrams",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Planetary Hexagrams",
+      "description": "The seven planetary hexagrams of the Golden Dawn system are the elemental counterpart to the pentagrams, but operate on the macrocosmic planetary level rather than the microcosmic elemental level. Each of the seven classical planets (Saturn, Jupiter, Mars, Sol, Venus, Mercury, Luna) is assigned a vertex of the hexagram corresponding to its Sephira on the Tree of Life, and its invoking hexagram is constructed by starting at that vertex. The Ritual of the Hexagram employs these forms to invoke and banish planetary forces, using the godname ARARITA vibrated at each of the six strokes.",
+      "secondaryNames": [
+        { "name": "GD Hexagrams", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["overview", "magic", "ritual", "hexagram", "golden-dawn", "planetary"],
+      "extendedData": {
+        "memberEntityType": "magic.hexagram",
+        "relatedOverviews": [
+          "system.overview.magic-circles",
+          "system.overview.kamea",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.magic-ritual-circles",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ritual Circles & Seals",
+      "description": "Ritual circles and ceremonial seals define and consecrate the magical workspace, providing both protection and a structured interface for communication with spiritual beings. This section covers the classical Solomonic Circle of Art from the medieval grimoire tradition and the Sigillum Dei Aemeth of John Dee's Enochian system — two of the most influential and enduring ritual instruments in Western magical practice.",
+      "secondaryNames": [],
+      "tags": ["overview", "magic", "ritual", "circles", "seals", "solomonic", "enochian"],
+      "extendedData": {
+        "members": [
+          "magic.circle.solomonic",
+          "magic.circle.sigillum-dei-aemeth"
+        ],
+        "relatedOverviews": [
+          "system.overview.magic-circles",
+          "system.overview.goetia"
+        ]
+      }
     }
   ]
 }

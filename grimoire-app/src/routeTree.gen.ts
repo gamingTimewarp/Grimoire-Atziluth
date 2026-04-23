@@ -30,6 +30,7 @@ import { Route as SettingsDataRouteImport } from './routes/settings/data'
 import { Route as SettingsCreditsRouteImport } from './routes/settings/credits'
 import { Route as SettingsArtRouteImport } from './routes/settings/art'
 import { Route as SettingsAccessibilityRouteImport } from './routes/settings/accessibility'
+import { Route as ReferenceWuxingPhasesRouteImport } from './routes/reference/wuxing-phases'
 import { Route as ReferenceSephirothicMatrixRouteImport } from './routes/reference/sephirothic-matrix'
 import { Route as ReferencePlanetaryMatrixRouteImport } from './routes/reference/planetary-matrix'
 import { Route as ReferenceLenormandCombinationsRouteImport } from './routes/reference/lenormand-combinations'
@@ -155,6 +156,11 @@ const SettingsArtRoute = SettingsArtRouteImport.update({
 const SettingsAccessibilityRoute = SettingsAccessibilityRouteImport.update({
   id: '/settings/accessibility',
   path: '/settings/accessibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReferenceWuxingPhasesRoute = ReferenceWuxingPhasesRouteImport.update({
+  id: '/reference/wuxing-phases',
+  path: '/reference/wuxing-phases',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReferenceSephirothicMatrixRoute =
@@ -293,6 +299,7 @@ export interface FileRoutesByFullPath {
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
+  '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -337,6 +344,7 @@ export interface FileRoutesByTo {
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
+  '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -382,6 +390,7 @@ export interface FileRoutesById {
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
+  '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
   '/settings/credits': typeof SettingsCreditsRoute
@@ -428,6 +437,7 @@ export interface FileRouteTypes {
     | '/reference/lenormand-combinations'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
+    | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -472,6 +482,7 @@ export interface FileRouteTypes {
     | '/reference/lenormand-combinations'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
+    | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -516,6 +527,7 @@ export interface FileRouteTypes {
     | '/reference/lenormand-combinations'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
+    | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
     | '/settings/credits'
@@ -561,6 +573,7 @@ export interface RootRouteChildren {
   ReferenceLenormandCombinationsRoute: typeof ReferenceLenormandCombinationsRoute
   ReferencePlanetaryMatrixRoute: typeof ReferencePlanetaryMatrixRoute
   ReferenceSephirothicMatrixRoute: typeof ReferenceSephirothicMatrixRoute
+  ReferenceWuxingPhasesRoute: typeof ReferenceWuxingPhasesRoute
   SettingsAccessibilityRoute: typeof SettingsAccessibilityRoute
   SettingsArtRoute: typeof SettingsArtRoute
   SettingsCreditsRoute: typeof SettingsCreditsRoute
@@ -730,6 +743,13 @@ declare module '@tanstack/react-router' {
       path: '/settings/accessibility'
       fullPath: '/settings/accessibility'
       preLoaderRoute: typeof SettingsAccessibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reference/wuxing-phases': {
+      id: '/reference/wuxing-phases'
+      path: '/reference/wuxing-phases'
+      fullPath: '/reference/wuxing-phases'
+      preLoaderRoute: typeof ReferenceWuxingPhasesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/reference/sephirothic-matrix': {
@@ -906,6 +926,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReferenceLenormandCombinationsRoute: ReferenceLenormandCombinationsRoute,
   ReferencePlanetaryMatrixRoute: ReferencePlanetaryMatrixRoute,
   ReferenceSephirothicMatrixRoute: ReferenceSephirothicMatrixRoute,
+  ReferenceWuxingPhasesRoute: ReferenceWuxingPhasesRoute,
   SettingsAccessibilityRoute: SettingsAccessibilityRoute,
   SettingsArtRoute: SettingsArtRoute,
   SettingsCreditsRoute: SettingsCreditsRoute,

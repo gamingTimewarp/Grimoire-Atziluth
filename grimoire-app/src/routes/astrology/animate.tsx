@@ -8,6 +8,7 @@ import { ArrowLeft, Play, Pause, RotateCcw, SkipBack, SkipForward, ChevronDown, 
 import { Button } from '@/components/ui/Button'
 import { DateInput } from '@/components/ui/DateInput'
 import { WheelChart, WheelChartTooltip } from '@/components/ui/WheelChart'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import {
   getPlanetPositions, getAspects, getNatalChart,
 } from '@/lib/astro-engine'
@@ -525,17 +526,19 @@ function AnimatePage() {
       </div>
 
       {/* Wheel */}
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <WheelChart
-          chart={visibleChart}
-          size={560}
-          mode={astrologyMode}
-          onNavigate={goToRef}
-          showTooltip={false}
-          onHoverChange={handleHoverChange}
-          defaultLayout="rings"
-        />
-      </div>
+      <ZoomableSVGContainer style={{ borderRadius: '8px', marginBottom: '0' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <WheelChart
+            chart={visibleChart}
+            size={560}
+            mode={astrologyMode}
+            onNavigate={goToRef}
+            showTooltip={false}
+            onHoverChange={handleHoverChange}
+            defaultLayout="rings"
+          />
+        </div>
+      </ZoomableSVGContainer>
 
       {/* Tooltip panel — always rendered, visibility-toggled to prevent page height change on hover */}
       <div style={{ marginTop: '12px', minHeight: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
