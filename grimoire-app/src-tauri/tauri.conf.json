@@ -36,7 +36,7 @@
   },
   "plugins": {
     "sql": {
-      "preloadConnections": ["sqlite:grimoire.db"]
+      "preload": ["sqlite:grimoire.db"]
     }
   }
 }
