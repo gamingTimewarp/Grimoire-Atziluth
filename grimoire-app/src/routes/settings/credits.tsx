@@ -44,6 +44,15 @@ function CreditsPage() {
         </span>
       </div>
 
+      {/* Thanks */}
+      <Section label="Thanks">
+        <PersonEntry
+          name="Kazmer"
+          role="Windows Tester"
+          note="Helped with Windows testing — the author avoids that foul OS like the plague, but Kaz is a much stronger and braver soul."
+        />
+      </Section>
+
       {/* Art Pack Sources */}
       <Section label="Art Packs">
 
@@ -221,6 +230,23 @@ function Section({ label, children }: { label: string; children: React.ReactNode
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
         {children}
       </div>
+    </div>
+  )
+}
+
+function PersonEntry({ name, role, note }: { name: string; role: string; note: string }) {
+  return (
+    <div style={{
+      padding: '14px 16px',
+      background: 'var(--color-surface-2)',
+      borderRadius: '6px',
+      border: '1px solid var(--color-border)',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '8px', marginBottom: '4px' }}>
+        <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>{name}</span>
+        <span style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>{role}</span>
+      </div>
+      <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>{note}</div>
     </div>
   )
 }
