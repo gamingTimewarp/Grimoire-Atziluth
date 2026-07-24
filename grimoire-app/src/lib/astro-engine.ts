@@ -655,7 +655,17 @@ export function getSabbatsForYear(year: number, hemisphere: 'northern' | 'southe
 
   for (const def of SABBAT_DEFS) {
     try {
-      const result = Astronomy.SearchSunLongitude(def.sunLon, searchFrom, 400)
+      // The window must comfortably cover the real gap between consecutive Sabbats
+      // (~45 days, up to ~64 for the first Imbolc search from Dec 1) but stay well
+      // under a full solar year: SearchSunLongitude's underlying root-finder brackets
+      // [searchFrom, searchFrom+limitDays], and since the Sun's longitude offset is
+      // periodic (~365.25 days), a window anywhere near that length can contain BOTH
+      // the near crossing and next year's occurrence — with no guarantee it converges
+      // to the nearer one. A 400-day window here reliably returned next year's
+      // crossing instead of the one ~2-4 weeks away, silently dropping every Sabbat
+      // past Litha for the current year. 100 days is nowhere near the danger zone
+      // while still far exceeding the largest real gap.
+      const result = Astronomy.SearchSunLongitude(def.sunLon, searchFrom, 100)
       if (!result) continue
       const time = result.date
       // Only include sabbats that fall in the target year

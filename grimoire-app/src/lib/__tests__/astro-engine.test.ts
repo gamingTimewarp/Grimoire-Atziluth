@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { getPlanetPositions, getHouses, getSunSignForMode } from '../astro-engine'
+import { getPlanetPositions, getHouses, getSunSignForMode, getSabbatsForYear } from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
 
 // ─── Ground truth ───────────────────────────────────────────────────────────────
@@ -129,5 +129,42 @@ describe('getSunSignForMode', () => {
     // valid sign from the 13-sign IAU set without throwing.
     const result = getSunSignForMode(date, 'iau')
     expect(result.name).toBeTruthy()
+  })
+})
+
+// ─── Sabbats ────────────────────────────────────────────────────────────────────
+//
+// Regression coverage for a bug where every Sabbat past the summer solstice
+// (Lughnasadh, Mabon, Samhain, Yule) silently vanished for the current year.
+// Astronomy.SearchSunLongitude(targetLon, searchFrom, limitDays) brackets its
+// root-find over [searchFrom, searchFrom+limitDays]; since the Sun's longitude
+// offset is periodic (~365.25 days), a limitDays anywhere near a full year can
+// bracket BOTH the near crossing and next year's occurrence of the same
+// longitude, and the search isn't guaranteed to converge to the nearer one. The
+// old code passed limitDays=400 (comfortably past the periodic danger zone) and
+// would silently jump a full year ahead for every Sabbat after Litha.
+
+describe('getSabbatsForYear', () => {
+  const YEARS = [2020, 2024, 2025, 2026, 2027, 2028, 2030, 2036]
+
+  for (const year of YEARS) {
+    it(`finds all 8 Sabbats for ${year}, each dated within that year`, () => {
+      const sabbats = getSabbatsForYear(year, 'northern')
+      expect(sabbats).toHaveLength(8)
+      for (const s of sabbats) {
+        expect(s.time.getFullYear()).toBe(year)
+      }
+      // Chronological, no duplicates/out-of-order entries
+      for (let i = 1; i < sabbats.length; i++) {
+        expect(sabbats[i].time.getTime()).toBeGreaterThan(sabbats[i - 1].time.getTime())
+      }
+    })
+  }
+
+  it('specifically includes Yule (Winter Solstice) for 2026', () => {
+    const sabbats = getSabbatsForYear(2026, 'northern')
+    const yule = sabbats.find(s => s.canonicalName === 'calendar.sabbat.yule')
+    expect(yule).toBeDefined()
+    expect(yule!.time.getMonth()).toBe(11) // December
   })
 })
