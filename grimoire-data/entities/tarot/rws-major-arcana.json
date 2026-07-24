@@ -33,6 +33,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "The Fool",
         "suit": null,
@@ -525,6 +526,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.3",
         "rank": "The Hanged Man",
         "suit": null,
@@ -837,6 +839,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Judgement",
         "suit": null,
@@ -879,6 +882,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.3",
         "rank": "The World",
         "suit": null,

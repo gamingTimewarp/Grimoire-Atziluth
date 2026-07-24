@@ -92,6 +92,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 5,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.5",
         "zodiacSign": "astrology.zodiac-sign.leo",
         "uprightKeywords": ["completion", "travel", "worldly success", "fulfilment", "journey"],
@@ -303,6 +304,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 16,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.7",
         "zodiacSign": null,
         "uprightKeywords": ["judgement", "renewal", "decisive news", "awakening", "reckoning"],
@@ -420,6 +422,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 0,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "zodiacSign": null,
         "uprightKeywords": ["folly", "madness", "delirium", "recklessness", "the questioner unmoored"],

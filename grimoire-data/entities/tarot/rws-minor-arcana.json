@@ -15,6 +15,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 1,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.wands",
@@ -39,6 +40,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 2,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.wands",
@@ -63,6 +65,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 3,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.wands",
@@ -87,6 +90,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 4,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.wands",
@@ -111,6 +115,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 5,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.wands",
@@ -135,6 +140,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 6,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.wands",
@@ -159,6 +165,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 7,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.wands",
@@ -183,6 +190,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 8,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.wands",
@@ -207,6 +215,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 9,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.wands",
@@ -231,6 +240,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 10,
+        "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.wands",
@@ -255,6 +265,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 11,
+        "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.wands",
@@ -279,6 +290,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 12,
+        "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.wands",
@@ -303,6 +315,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 13,
+        "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.wands",
@@ -327,6 +340,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 14,
+        "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.wands",
@@ -351,6 +365,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 15,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.cups",
@@ -375,6 +390,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 16,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.cups",
@@ -399,6 +415,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 17,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.cups",
@@ -423,6 +440,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 18,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.cups",
@@ -447,6 +465,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 19,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.cups",
@@ -471,6 +490,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 20,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.cups",
@@ -495,6 +515,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 21,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.cups",
@@ -519,6 +540,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 22,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.cups",
@@ -543,6 +565,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 23,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.cups",
@@ -567,6 +590,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 24,
+        "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.cups",
@@ -591,6 +615,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 25,
+        "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.cups",
@@ -615,6 +640,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 26,
+        "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.cups",
@@ -639,6 +665,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 27,
+        "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.cups",
@@ -663,6 +690,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 28,
+        "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.cups",
@@ -687,6 +715,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 29,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.swords",
@@ -711,6 +740,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 30,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.swords",
@@ -735,6 +765,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 31,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.swords",
@@ -759,6 +790,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 32,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.swords",
@@ -783,6 +815,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 33,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.swords",
@@ -807,6 +840,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 34,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.swords",
@@ -831,6 +865,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 35,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.swords",
@@ -855,6 +890,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 36,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.swords",
@@ -879,6 +915,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 37,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.swords",
@@ -903,6 +940,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 38,
+        "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.swords",
@@ -927,6 +965,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 39,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.swords",
@@ -951,6 +990,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 40,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.swords",
@@ -975,6 +1015,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 41,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.swords",
@@ -999,6 +1040,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 42,
+        "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.swords",
@@ -1023,6 +1065,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 43,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.pentacles",
@@ -1047,6 +1090,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 44,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.pentacles",
@@ -1071,6 +1115,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 45,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.pentacles",
@@ -1095,6 +1140,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 46,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.pentacles",
@@ -1119,6 +1165,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 47,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.pentacles",
@@ -1143,6 +1190,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 48,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.pentacles",
@@ -1167,6 +1215,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 49,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.pentacles",
@@ -1191,6 +1240,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 50,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.pentacles",
@@ -1215,6 +1265,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 51,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.pentacles",
@@ -1239,6 +1290,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 52,
+        "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.pentacles",
@@ -1263,6 +1315,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 53,
+        "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.pentacles",
@@ -1287,6 +1340,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 54,
+        "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.pentacles",
@@ -1311,6 +1365,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 55,
+        "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.pentacles",
@@ -1335,6 +1390,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 56,
+        "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.pentacles",
