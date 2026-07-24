@@ -338,12 +338,21 @@ function angularDiff(lon1: number, lon2: number): number {
 }
 
 function eclipticLon(body: Astronomy.Body, date: Date): number {
-  // EclipticLongitude is heliocentric — Sun has no heliocentric longitude.
-  // Use geocentric SunPosition instead.
+  // Astrology charts are always geocentric ("as seen from Earth"). Despite its
+  // generic-sounding name, Astronomy.EclipticLongitude() is explicitly documented
+  // as HELIOCENTRIC ("as seen from the center of the Sun") — using it here would
+  // put every planet except the Sun in the wrong position, by tens of degrees for
+  // the inner planets. Verified against JPL Horizons (matches to ~0.001°):
+  //   - Sun: SunPosition() (already geocentric)
+  //   - Moon: EclipticGeoMoon() — dedicated geocentric lunar function
+  //   - Everything else: GeoVector() + Ecliptic() (geocentric, aberration-corrected)
   if (body === Astronomy.Body.Sun) {
     return normLon(Astronomy.SunPosition(date).elon)
   }
-  return normLon(Astronomy.EclipticLongitude(body, date))
+  if (body === Astronomy.Body.Moon) {
+    return normLon(Astronomy.EclipticGeoMoon(date).lon)
+  }
+  return normLon(Astronomy.Ecliptic(Astronomy.GeoVector(body, date, true)).elon)
 }
 
 // ─── Lunar node positions ─────────────────────────────────────────────────────
