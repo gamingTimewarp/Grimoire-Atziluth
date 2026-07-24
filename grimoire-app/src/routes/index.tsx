@@ -2,7 +2,8 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState } from 'react'
 import { BookOpen, Star, BookMarked, PenLine, ChevronRight, X, Accessibility } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '@/lib/astro-calc'
+import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase } from '@/lib/astro-calc'
+import { getSunSignForMode } from '@/lib/astro-engine'
 import { getVoidOfCourseMoon } from '@/lib/astro-engine'
 import { getTodaysDailyReading, listTodaysActivity } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
@@ -241,9 +242,10 @@ function AccessibilityBanner() {
 
 function DailyContextRow({ date }: { date: Date }) {
   const navigate = useNavigate()
+  const { astrologyMode } = loadTraditionSettings()
   const moon   = getMoonPhase(date)
   const ruler  = getPlanetaryDayRuler(date)
-  const sun    = getSunSign(date)
+  const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
   const voc    = getVoidOfCourseMoon(date)
 

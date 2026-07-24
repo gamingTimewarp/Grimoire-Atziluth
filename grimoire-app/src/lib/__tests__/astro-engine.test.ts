@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { getPlanetPositions, getHouses } from '../astro-engine'
+import { getPlanetPositions, getHouses, getSunSignForMode } from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
 
 // ─── Ground truth ───────────────────────────────────────────────────────────────
@@ -100,4 +100,34 @@ describe('getHouses — cusp ordering sanity', () => {
       })
     }
   }
+})
+
+// ─── Sun sign mode-awareness ──────────────────────────────────────────────────
+//
+// Regression coverage for a bug where the Sun sign shown around the app (home
+// page, journal, calendar) came from a fixed calendar date-range table that
+// ignored the user's astrologyMode entirely — worse, that table was hardcoded
+// to an approximation of IAU 13-sign boundaries (it unconditionally included
+// Ophiuchus), so even users in plain tropical mode could see the wrong sign.
+// Sidereal/Vedic shift the boundary by the ayanamsa (~24° at present) relative
+// to tropical, so for a date near a sign boundary the two modes should disagree.
+
+describe('getSunSignForMode', () => {
+  // 2000-01-01T00:00:00Z: geocentric Sun longitude ~279.86° tropical (Capricorn),
+  // ~255.9° sidereal/vedic (Sagittarius) after subtracting the ~24° Lahiri ayanamsa.
+  const date = new Date('2000-01-01T00:00:00Z')
+
+  it('tropical differs from sidereal/vedic by the ayanamsa shift', () => {
+    expect(getSunSignForMode(date, 'tropical').name).toBe('Capricorn')
+    expect(getSunSignForMode(date, 'sidereal').name).toBe('Sagittarius')
+    expect(getSunSignForMode(date, 'vedic').name).toBe('Sagittarius')
+  })
+
+  it('IAU mode can diverge from both tropical and sidereal', () => {
+    // Not asserting a specific sign here (IAU boundaries are irregular and this
+    // is a cross-check, not a boundary test) — just that it resolves to *some*
+    // valid sign from the 13-sign IAU set without throwing.
+    const result = getSunSignForMode(date, 'iau')
+    expect(result.name).toBeTruthy()
+  })
 })

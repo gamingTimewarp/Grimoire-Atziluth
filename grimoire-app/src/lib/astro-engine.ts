@@ -437,6 +437,20 @@ export function getPlanetPositions(
   })
 }
 
+/**
+ * Sun sign for a given date, respecting the active astrology mode. Sidereal/Vedic
+ * shift the boundary by the ayanamsa (~24° at present) relative to tropical, and
+ * IAU uses entirely different (unequal, constellation-based) boundaries including
+ * Ophiuchus — so this cannot be a fixed calendar date-range table; it must go
+ * through the same geocentric Sun position + applyMode pipeline as every other
+ * mode-aware calculation in this file.
+ */
+export function getSunSignForMode(date: Date, mode: AstrologyMode = 'tropical'): { name: string; symbol: string; canonicalName: string } {
+  const tropicalLon = normLon(Astronomy.SunPosition(date).elon)
+  const { signIndex } = applyMode(tropicalLon, mode, date)
+  return getSignsForMode(mode)[signIndex]
+}
+
 // ─── Aspects ─────────────────────────────────────────────────────────────────
 
 export function getAspects(positions: PlanetPosition[], date?: Date): Aspect[] {

@@ -22,14 +22,14 @@ import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { exportReadingAsMarkdown, exportReadingAsImage } from '@/lib/reading-export'
 import { Button } from '@/components/ui/Button'
-import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '@/lib/astro-calc'
+import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase } from '@/lib/astro-calc'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { loadAccessibilitySettings } from '@/lib/accessibility-store'
 import { loadSettings, saveSettings } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
 import { AlignJustify, AlignLeft } from 'lucide-react'
 import type { NatalChartData } from '@/lib/astro-engine'
-import { getSignsForMode, getNatalChart, getTransitAspects, MODERN_PLANET_CNS } from '@/lib/astro-engine'
+import { getSignsForMode, getSunSignForMode, getNatalChart, getTransitAspects, MODERN_PLANET_CNS } from '@/lib/astro-engine'
 import { listNatalCharts } from '@/lib/natal-db'
 
 export const Route = createFileRoute('/journal/')({
@@ -346,9 +346,10 @@ function JournalPage() {
 function DailyContextBar({ dateStr }: { dateStr: string }) {
   const navigate = useNavigate()
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
+  const { astrologyMode } = loadTraditionSettings()
   const moon   = getMoonPhase(date)
   const ruler  = getPlanetaryDayRuler(date)
-  const sun    = getSunSign(date)
+  const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
 
   const item = (text: string, cn?: string) => (

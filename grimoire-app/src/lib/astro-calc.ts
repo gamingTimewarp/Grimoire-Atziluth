@@ -112,50 +112,6 @@ export function getWuxingPhase(date: Date): WuxingPhaseInfo {
   return MONTH_WUXING[date.getMonth() + 1]
 }
 
-// ─── Sun Sign (IAU 13-sign, approximate) ──────────────────────────────────────
-
-export type SunSignInfo = {
-  name: string
-  canonicalName: string
-  symbol: string
-}
-
-type SignBounds = SunSignInfo & { sm: number; sd: number; em: number; ed: number }
-
-/** Approximate IAU boundaries (corrected to nearest day). */
-const SUN_SIGNS: SignBounds[] = [
-  { name: 'Sagittarius', canonicalName: 'astrology.zodiac-sign.sagittarius', symbol: '♐', sm: 12, sd: 18, em: 1,  ed: 20 },
-  { name: 'Capricorn',   canonicalName: 'astrology.zodiac-sign.capricorn',   symbol: '♑', sm: 1,  sd: 20, em: 2,  ed: 16 },
-  { name: 'Aquarius',    canonicalName: 'astrology.zodiac-sign.aquarius',    symbol: '♒', sm: 2,  sd: 16, em: 3,  ed: 11 },
-  { name: 'Pisces',      canonicalName: 'astrology.zodiac-sign.pisces',      symbol: '♓', sm: 3,  sd: 11, em: 4,  ed: 18 },
-  { name: 'Aries',       canonicalName: 'astrology.zodiac-sign.aries',       symbol: '♈', sm: 4,  sd: 18, em: 5,  ed: 13 },
-  { name: 'Taurus',      canonicalName: 'astrology.zodiac-sign.taurus',      symbol: '♉', sm: 5,  sd: 13, em: 6,  ed: 21 },
-  { name: 'Gemini',      canonicalName: 'astrology.zodiac-sign.gemini',      symbol: '♊', sm: 6,  sd: 21, em: 7,  ed: 20 },
-  { name: 'Cancer',      canonicalName: 'astrology.zodiac-sign.cancer',      symbol: '♋', sm: 7,  sd: 20, em: 8,  ed: 10 },
-  { name: 'Leo',         canonicalName: 'astrology.zodiac-sign.leo',         symbol: '♌', sm: 8,  sd: 10, em: 9,  ed: 16 },
-  { name: 'Virgo',       canonicalName: 'astrology.zodiac-sign.virgo',       symbol: '♍', sm: 9,  sd: 16, em: 10, ed: 30 },
-  { name: 'Libra',       canonicalName: 'astrology.zodiac-sign.libra',       symbol: '♎', sm: 10, sd: 30, em: 11, ed: 23 },
-  { name: 'Scorpio',     canonicalName: 'astrology.zodiac-sign.scorpio',     symbol: '♏', sm: 11, sd: 23, em: 11, ed: 29 },
-  { name: 'Ophiuchus',   canonicalName: 'astrology.zodiac-sign.ophiuchus',   symbol: '⛎', sm: 11, sd: 29, em: 12, ed: 18 },
-]
-
-function inRange(m: number, d: number, sm: number, sd: number, em: number, ed: number): boolean {
-  const val = m * 100 + d
-  const start = sm * 100 + sd
-  const end = em * 100 + ed
-  if (start <= end) return val >= start && val < end
-  // Wraps year (e.g. Sagittarius: Dec 18 – Jan 20)
-  return val >= start || val < end
-}
-
-export function getSunSign(date: Date): SunSignInfo {
-  const m = date.getMonth() + 1
-  const d = date.getDate()
-  const found = SUN_SIGNS.find(s => inRange(m, d, s.sm, s.sd, s.em, s.ed))
-  const { name, canonicalName, symbol } = found ?? SUN_SIGNS[0]
-  return { name, canonicalName, symbol }
-}
-
 // ─── Chinese Zodiac Year ──────────────────────────────────────────────────────
 
 export type ChineseZodiacAnimalInfo = {

@@ -1,13 +1,13 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import {
-  getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign,
+  getMoonPhase, getPlanetaryDayRuler, getWuxingPhase,
   getChineseZodiacYear,
   buildCalendarGrid, toDateString, WEEKDAY_HEADERS,
 } from '@/lib/astro-calc'
 import {
   computeMonthAstroData, getPlanetPositions, getAspects, formatLongitude, formatTime,
-  ZODIAC_SIGNS, getSabbatsForYear,
+  getSignsForMode, getSunSignForMode, getSabbatsForYear,
 } from '@/lib/astro-engine'
 import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
@@ -39,10 +39,11 @@ const MONTH_NAMES = [
 // ─── Today cosmic info strip ──────────────────────────────────────────────────
 
 function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<typeof useNavigate> }) {
+  const { astrologyMode } = loadTraditionSettings()
   const moon   = getMoonPhase(date)
   const ruler  = getPlanetaryDayRuler(date)
   const wuxing = getWuxingPhase(date)
-  const sun    = getSunSign(date)
+  const sun    = getSunSignForMode(date, astrologyMode)
   const chineseAnimal = getChineseZodiacYear(date)
 
   const chip = (label: string, canonicalName: string, sub?: string) => (
@@ -239,9 +240,10 @@ function TransitsPanel({
   navigate: ReturnType<typeof useNavigate>
 }) {
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
-  const { showNodes, activeTraditions } = loadTraditionSettings()
+  const { showNodes, activeTraditions, astrologyMode } = loadTraditionSettings()
   const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
-  const positions = useMemo(() => getPlanetPositions(date, 'tropical', { showNodes, showModernPlanets }), [dateStr])
+  const signs = getSignsForMode(astrologyMode)
+  const positions = useMemo(() => getPlanetPositions(date, astrologyMode, { showNodes, showModernPlanets }), [dateStr, astrologyMode])
   const aspects   = useMemo(() => getAspects(positions, date), [positions])
   const [showTable, setShowTable] = useState(false)
 
@@ -306,11 +308,11 @@ function TransitsPanel({
                   {pos.planet.symbol}
                 </span>
                 <span
-                  onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ZODIAC_SIGNS[pos.signIndex].canonicalName } })}
+                  onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: signs[pos.signIndex]?.canonicalName ?? '' } })}
                   style={{ fontSize: '12px', color: 'var(--color-text-muted)', cursor: 'pointer' }}
                   title="View sign in Reference"
                 >
-                  {formatLongitude(pos)}
+                  {formatLongitude(pos, astrologyMode)}
                 </span>
                 <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', opacity: pos.retrograde ? 1 : 0 }}>℞</span>
               </React.Fragment>
@@ -370,9 +372,10 @@ function DayDetail({
 }) {
   const spreadById = useSpreadById()
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
+  const { astrologyMode } = loadTraditionSettings()
   const moon   = getMoonPhase(date)
   const ruler  = getPlanetaryDayRuler(date)
-  const sun    = getSunSign(date)
+  const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
   const label  = date.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
   const readings = entries?.readings ?? []
