@@ -40,6 +40,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 2,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
@@ -65,6 +67,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 3,
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
@@ -90,6 +94,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 4,
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
@@ -115,6 +121,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 5,
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
@@ -140,6 +148,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 6,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
@@ -165,6 +175,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 7,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
@@ -190,6 +202,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 8,
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
@@ -215,6 +229,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 9,
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
@@ -240,6 +256,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 10,
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
@@ -411,6 +429,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 16,
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
@@ -436,6 +456,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 17,
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
@@ -461,6 +483,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 18,
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
@@ -486,6 +510,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 19,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
@@ -511,6 +537,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 20,
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
@@ -536,6 +564,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 21,
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
@@ -561,6 +591,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 22,
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
@@ -586,6 +618,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 23,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
@@ -611,6 +645,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 24,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
@@ -782,6 +818,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 30,
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
@@ -807,6 +845,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 31,
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
@@ -832,6 +872,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 32,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
@@ -857,6 +899,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 33,
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
@@ -882,6 +926,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 34,
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
@@ -907,6 +953,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 35,
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
@@ -932,6 +980,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 36,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
@@ -957,6 +1007,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 37,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
@@ -982,6 +1034,8 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 38,
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
@@ -1167,6 +1221,8 @@
       ],
       "extendedData": {
         "cardNumber": 44,
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.2",
         "rank": "2",
@@ -1199,6 +1255,8 @@
       ],
       "extendedData": {
         "cardNumber": 45,
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.3",
         "rank": "3",
@@ -1231,6 +1289,8 @@
       ],
       "extendedData": {
         "cardNumber": 46,
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.4",
         "rank": "4",
@@ -1263,6 +1323,8 @@
       ],
       "extendedData": {
         "cardNumber": 47,
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.5",
         "rank": "5",
@@ -1295,6 +1357,8 @@
       ],
       "extendedData": {
         "cardNumber": 48,
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.6",
         "rank": "6",
@@ -1327,6 +1391,8 @@
       ],
       "extendedData": {
         "cardNumber": 49,
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.7",
         "rank": "7",
@@ -1359,6 +1425,8 @@
       ],
       "extendedData": {
         "cardNumber": 50,
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.8",
         "rank": "8",
@@ -1391,6 +1459,8 @@
       ],
       "extendedData": {
         "cardNumber": 51,
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.9",
         "rank": "9",
@@ -1423,6 +1493,8 @@
       ],
       "extendedData": {
         "cardNumber": 52,
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.1",
         "rank": "10",
