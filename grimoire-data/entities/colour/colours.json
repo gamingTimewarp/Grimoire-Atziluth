@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "colour.colour.red",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Red",
+      "description": "Red sits at the long-wavelength end of the visible spectrum (roughly 620–750 nm), the first hue the eye perceives as heat, blood, and fire before it perceives anything else about it. Across nearly every tradition that has ever assigned meaning to colour, red is the sign of vital force made visible — the colour of blood spilled and blood pulsing, of the hearth-fire and the funeral pyre, of Mars the war-god and of the beating heart. In the West it has carried the widest possible emotional range: the danger of a warning light, the passion of romantic love, the violence of war, and the authority of a cardinal's robe or a king's seal, often within the same culture and the same century. In East and South Asian traditions red more consistently reads as auspicious rather than ambivalent — the colour of luck, celebration, and protective power rather than of threat. Physiologically red is the most arousing hue to the human nervous system, reliably raising heart rate and drawing the eye faster than any other colour, which is precisely why it was chosen independently, in dozens of unrelated cultures, for stop signs, warning labels, and the marks of rank.",
+      "secondaryNames": [
+        { "name": "Ruber", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Crimson", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Scarlet", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["colour", "colour-red", "warm-colour"],
+      "extendedData": {
+        "hex": "#DC2626",
+        "spectralRangeNm": "620–750",
+        "westernMeaning": "Passion, romantic love, danger, and violence sit side by side with martial courage and ecclesiastical authority (cardinal red). Used for warning signs and stop lights; the colour of Valentine's Day and of the Christian martyr's palm.",
+        "easternMeaning": "Overwhelmingly auspicious: the dominant colour of Chinese New Year, wedding attire, and gift envelopes (hongbao), signifying luck, joy, and the driving away of evil. In Hindu India, red (sindoor, bridal saris) marks marital status, fertility, and the goddess Durga's fierce protective power. In Japan, red torii gates mark the threshold into sacred space."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.orange",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Orange",
+      "description": "Orange occupies the spectral band between red and yellow (roughly 590–620 nm) and takes its English name comparatively late — from the fruit, imported via Old French and Arabic, rather than from any older colour word, which is part of why it reads as a modern, almost secular hue in the West even as it carries some of the oldest sacred associations in the East. It is the colour of the harvest and the autumn fire, of citrus groves and forge-sparks, sharing red's heat while taking on yellow's light. In Western use it settles mostly into the register of energy, warmth, and affordability — Halloween, safety equipment, budget branding — without the heavier symbolic weight red or purple carry. In South and Southeast Asian religious life, by contrast, orange (and its close cousin saffron) is one of the most sacred and instantly legible colours there is, marking renunciation, sacrifice, and spiritual fire rather than commercial cheer.",
+      "secondaryNames": [
+        { "name": "Aurantiacus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Saffron", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-orange", "warm-colour"],
+      "extendedData": {
+        "hex": "#F97316",
+        "spectralRangeNm": "590–620",
+        "westernMeaning": "Energy, warmth, and enthusiasm; the colour of autumn, harvest festivals, and Halloween. Used commercially to signal affordability, friendliness, and appetite (fast-food branding). Historically linked to the Dutch royal House of Orange.",
+        "easternMeaning": "Saffron/orange is the colour of renunciation in South Asian religion — the robes of Hindu sannyasins and Theravada Buddhist monks, signifying the burning away of worldly attachment. Sacred to Hanuman and Agni (fire) in Hinduism; one of the two colours (with green and white) on the Indian flag, representing courage and sacrifice."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.yellow",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Yellow",
+      "description": "Yellow occupies a narrow but extremely luminous band of the spectrum (roughly 570–590 nm) at the point of peak sensitivity for human daylight vision, which is why it reads as the brightest of all hues and why yellow-black combinations are used worldwide for maximum-visibility warning signage — a rare case where a colour's cultural use tracks its raw optical properties almost exactly. It is the colour of the sun, of gold, of ripened grain, and by extension of the abundance, clarity, and intellect solar imagery has carried since antiquity. Western symbolism is genuinely divided: yellow is happiness and sunshine on one hand, cowardice, caution, jealousy, and quarantine (the historical plague flag) on the other. East Asian symbolism resolves this ambivalence in the opposite direction from white (see White) — where the West treats yellow as mixed and the East as unambiguously exalted, imperial China did the reverse, reserving pure yellow by law for the Emperor alone, the colour of the earth at the centre of the five-phase cosmology and of the mythic Yellow Emperor himself.",
+      "secondaryNames": [
+        { "name": "Flavus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Luteus", "languageTag": "la-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-yellow", "warm-colour"],
+      "extendedData": {
+        "hex": "#FACC15",
+        "spectralRangeNm": "570–590",
+        "westernMeaning": "Happiness, sunshine, and intellect, but also cowardice ('yellow-bellied'), caution (hazard signage, the historical quarantine flag), and jealousy. Gold-yellow signals wealth and divinity (halos, royal purple's counterpart).",
+        "easternMeaning": "In imperial China, yellow was the colour of the Emperor and the Earth phase at the centre of Wu Xing cosmology — commoners were forbidden to wear it. Sacred to the Yellow River and the legendary Yellow Emperor (Huangdi). In Buddhism, yellow/gold robes and statuary signify enlightenment and the Buddha's radiance."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.green",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Green",
+      "description": "Green sits at the centre of the visible spectrum (roughly 495–570 nm), the wavelength band human vision is most sensitive to overall, and it is also the colour chlorophyll reflects rather than absorbs — meaning the green of the living world is, in a very literal sense, the colour plants discard. That accident of photosynthesis made green the near-universal sign of growth, fertility, and living nature across cultures that otherwise share almost nothing else in their colour symbolism. In the West it splits into a fertility/luck register (spring, Ireland, money) and a more ambivalent register (envy, inexperience, nausea, toxicity — many poisons and venomous creatures are marked green). Green is also the sacred colour of Islam, associated with Paradise, the Prophet Muhammad, and the banners of numerous Islamic states, an attribution largely independent of its Western associations. In Chinese Wu Xing cosmology green (or blue-green, qīng 青, a single historical colour term spanning both) is the colour of Wood, the East, and spring — placing it structurally parallel to its Western 'growth and renewal' meaning despite arising from an entirely separate correspondence system.",
+      "secondaryNames": [
+        { "name": "Viridis", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Emerald", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-green", "cool-colour"],
+      "extendedData": {
+        "hex": "#16A34A",
+        "spectralRangeNm": "495–570",
+        "westernMeaning": "Nature, growth, fertility, and luck (Ireland, four-leaf clovers) alongside envy ('green with envy'), inexperience ('greenhorn'), and toxicity (poison-bottle labelling). The colour of money in the United States and of 'go' at traffic signals.",
+        "easternMeaning": "The sacred colour of Islam, linked to Paradise and the Prophet Muhammad, widely used on flags and in mosque decoration. In Chinese Wu Xing cosmology, green/blue-green (qīng) is the colour of the Wood phase, the East, and spring — governing growth, the liver, and new beginnings."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.blue",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Blue",
+      "description": "Blue occupies the short-wavelength region of visible light (roughly 450–495 nm) and is, famously, one of the last basic colour terms to emerge in most of the world's languages — many ancient texts, Homer's 'wine-dark sea' among them, lack a dedicated word for it, and some living languages still use a single term spanning both blue and green. Where it does appear as a distinct concept, blue consistently reads as the colour of distance, depth, and the numinous: the sky and the sea, both vast and largely untouchable, and by extension the divine and the infinite. Marian iconography in Western Christian art uses ultramarine (once more costly than gold) for the Virgin's robe precisely to signal heavenly rank. Modern Western use has domesticated blue considerably — it is the most broadly 'liked' colour across surveyed cultures, the default choice for corporate branding and uniforms, trusted and calm, while retaining a secondary note of melancholy ('feeling blue'). In Hindu iconography, Krishna and Vishnu are conventionally depicted with blue-black skin, a colour explicitly chosen to suggest the infinite, unbounded, sky-and-ocean scale of the divine rather than any literal skin tone.",
+      "secondaryNames": [
+        { "name": "Caeruleus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Azure", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-blue", "cool-colour"],
+      "extendedData": {
+        "hex": "#2563EB",
+        "spectralRangeNm": "450–495",
+        "westernMeaning": "Calm, trust, and stability — the most widely preferred colour in cross-cultural surveys and the default choice for corporate and institutional branding. Ultramarine marks divinity in Marian iconography. A secondary note of melancholy survives in 'feeling blue' and the blues musical tradition.",
+        "easternMeaning": "Krishna and Vishnu are depicted with blue-black skin in Hindu iconography, signifying the infinite and unbounded nature of the divine, likened to the sky and ocean. Historically, many East Asian languages (Chinese qīng 青, Japanese ao 青) used a single term spanning blue and green, treating them as one conceptual colour."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.indigo",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Indigo",
+      "description": "Indigo names both a narrow spectral band between blue and violet (roughly 420–450 nm) and, historically, a specific dye extracted from Indigofera plants — and the two senses are not unrelated, since it was Isaac Newton who inserted indigo as a seventh named band of the rainbow, by most accounts to make the spectrum match the seven notes of a musical scale rather than because most observers spontaneously distinguish it from blue or violet. As a dye, indigo was one of the most valuable commodities in world trade for centuries: India was the dominant source (the word itself derives from 'Indian'), and colonial indigo plantations were a site of severe forced-labour exploitation, most famously provoking the Indigo Revolt of 1859 in Bengal. In Japan a related indigo-dyeing tradition, aizome, produced the deep blue of traditional workwear and remains a living craft. In modern yogic and New Age systems indigo is conventionally assigned to the Ajna or 'third eye' chakra, associated with intuition and inner vision — a comparatively recent (20th-century) attribution rather than an ancient one.",
+      "secondaryNames": [
+        { "name": "Indicum", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["colour", "colour-indigo", "cool-colour"],
+      "extendedData": {
+        "hex": "#4338CA",
+        "spectralRangeNm": "420–450",
+        "westernMeaning": "Added to the rainbow's seven named bands by Isaac Newton, partly to match the seven notes of a musical scale. In 20th-century New Age and yogic-derived systems, indigo is assigned to the Ajna ('third eye') chakra, governing intuition and inner vision.",
+        "easternMeaning": "India was the historical source of the indigo dye trade (the word 'indigo' derives from 'Indian'); colonial indigo plantations provoked Bengal's Indigo Revolt of 1859. In Japan, aizome indigo-dyeing produced the deep blue of traditional workwear and remains a living textile craft."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.violet",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Violet",
+      "description": "Violet is the shortest-wavelength band of visible light (roughly 380–450 nm), sitting at the edge of what the human eye can perceive before ultraviolet begins, and its close cousin purple has been a marker of rank and rarity for as long as recorded history has cared to say so. Tyrian purple, extracted a few drops at a time from the mucus of Mediterranean sea snails, cost more than its weight in gold in antiquity and was restricted by sumptuary law to emperors and the highest nobility across Rome, Byzantium, and beyond — the origin of 'royal purple' as an idiom. The Western liturgical church retains violet as the colour of penitence and preparation (Advent, Lent), a register distinct from purple's secular association with luxury. In Japan, the related colour murasaki was similarly reserved for the imperial court and highest aristocratic ranks under the historical cap-and-rank system, a strikingly parallel development to Tyrian purple that arose independently. Modern spiritual and psychological systems place violet at the 'highest' end of colour hierarchies — the crown chakra, transcendence, mysticism — continuing the association with what is rare, elevated, and set apart.",
+      "secondaryNames": [
+        { "name": "Violaceus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Purple", "languageTag": "en-alt", "visible": true, "sortOrder": 1 },
+        { "name": "Tyrian Purple", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["colour", "colour-violet", "cool-colour"],
+      "extendedData": {
+        "hex": "#7C3AED",
+        "spectralRangeNm": "380–450",
+        "westernMeaning": "Tyrian purple, extracted from sea snails, was restricted by law to Roman and Byzantine emperors — the origin of 'royal purple.' The Christian liturgical colour of penitence and preparation (Advent, Lent). In modern esoteric systems, associated with the crown chakra and transcendence.",
+        "easternMeaning": "In Japan's historical cap-and-rank system, murasaki (violet-purple) was reserved for the imperial court and highest aristocratic ranks, a development that paralleled Tyrian purple's restriction in the Mediterranean world without direct contact between the two traditions."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.black",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Black",
+      "description": "Black is the visual absence of reflected light rather than a spectral hue, and precisely because it carries no wavelength of its own it has been free to absorb an unusually wide and contradictory range of symbolic meaning — the deepest negation and the highest formality can both be 'black' in the same culture without contradiction. In the modern West black is simultaneously the colour of mourning, of elegant formality (the tuxedo, the little black dress), of institutional authority (judges' robes, clerical dress), and of subcultural rebellion (goth, punk, anarchist black flags). In Chinese Wu Xing cosmology black is the colour of the Water phase, the North, and winter, governing stillness, depth, and the kidneys; it was also, notably, the imperial colour of the Qin dynasty, associated with Water's conquest of the preceding Zhou dynasty's fire in the Five Phases' cycle of political legitimacy. In much of South Asia black paradoxically carries protective rather than purely negative meaning — a small black mark (kajal/kohl) applied to an infant's face or eye to ward off the evil eye — sitting alongside inauspicious associations that make pure black a colour many South Asian brides and grooms avoid.",
+      "secondaryNames": [
+        { "name": "Niger", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["colour", "colour-black", "achromatic-colour"],
+      "extendedData": {
+        "hex": "#18181B",
+        "spectralRangeNm": null,
+        "westernMeaning": "Mourning and death, but equally elegance and formality (the tuxedo, judicial and clerical robes) and subcultural rebellion (goth, punk, anarchism). Black is the visual absence of reflected light rather than a spectral hue.",
+        "easternMeaning": "The colour of the Water phase, the North, and winter in Chinese Wu Xing cosmology; the imperial colour of the Qin dynasty. In South Asia, a small black mark is traditionally applied to ward off the evil eye, even as pure black is often avoided in wedding attire as inauspicious."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.white",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "White",
+      "description": "White is the visual sum of the full spectrum of light rather than a single wavelength, and its cross-cultural symbolism produces one of the sharpest and most frequently cited East–West inversions in all of colour anthropology: in the modern West white is overwhelmingly the colour of purity, peace, and celebration (the bridal gown, the white flag, the dove), while across much of East and South Asia — China, Japan, Korea, and Hindu India alike — white is traditionally the colour of mourning and death, worn at funerals and by widows rather than at weddings. Both associations are internally coherent rather than arbitrary: Western bridal white codifies around purity and new beginnings, while East Asian funeral white codifies around the pallor of the corpse and the blankness of grief. The inversion is not absolute — Western funerals also use white lilies, and East Asian brides have increasingly adopted white gowns under Western influence — but the underlying default associations remain genuinely opposite, making white perhaps the single clearest illustration of how colour meaning is constructed rather than universal.",
+      "secondaryNames": [
+        { "name": "Albus", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["colour", "colour-white", "achromatic-colour"],
+      "extendedData": {
+        "hex": "#F8FAFC",
+        "spectralRangeNm": null,
+        "westernMeaning": "Purity, peace, and new beginnings — the bridal gown, the white flag of surrender, the dove, medical and clinical cleanliness. White is the visual sum of the full spectrum rather than a single wavelength.",
+        "easternMeaning": "The traditional colour of mourning across China, Japan, Korea, and Hindu India — worn at funerals and, historically, by widows — the near-exact inverse of its Western bridal association, making white the clearest textbook case of culturally constructed rather than universal colour meaning."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.grey",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Grey",
+      "description": "Grey is an achromatic mixture of black and white rather than a spectral hue, and its cultural profile follows directly from that in-betweenness — it is the colour of the unresolved, the neutral, the not-quite-decided. Western usage leans heavily on this ambiguity: a 'grey area' is a matter without a clear answer, grey business suits signal deliberate unobtrusiveness rather than display, and grey hair marks the accumulation of age and, by extension, wisdom or its opposite, decline. Victorian half-mourning dress used grey (and lavender) as a transitional stage between black mourning and a return to ordinary colour, formalising grey's role as a colour of passage rather than a destination. Japanese aesthetics historically elevated grey far beyond mere neutrality: the Edo period produced an extraordinarily refined vocabulary of named greys — nezumi-iro ('mouse colours'), of which dozens of distinct shades were catalogued and fashionable — after sumptuary laws restricted showier colours to the aristocracy, pushing merchant-class taste toward subtle, muted tones that became prized in their own right rather than merely permitted.",
+      "secondaryNames": [
+        { "name": "Griseus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Gray", "languageTag": "en-us", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-grey", "achromatic-colour"],
+      "extendedData": {
+        "hex": "#71717A",
+        "spectralRangeNm": null,
+        "westernMeaning": "Neutrality and ambiguity ('grey area'), deliberate unobtrusiveness (the business suit), and the accumulation of age. Victorian half-mourning used grey as a transitional stage between black mourning and ordinary dress.",
+        "easternMeaning": "Edo-period Japan developed an elaborate vocabulary of named greys (nezumi-iro, 'mouse colours') after sumptuary laws restricted brighter colours to the aristocracy, elevating muted tones into a prized aesthetic in their own right among the merchant class."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.brown",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Brown",
+      "description": "Brown is a composite, low-saturation orange or red rather than a spectral hue in its own right — it exists as a perceptual category rather than a single wavelength, produced when a warm hue is seen at reduced brightness against a lighter surround. Its symbolism draws overwhelmingly on the earth itself: soil, wood, bark, and the harvested and the humble. Franciscan and other mendicant monastic orders adopted plain undyed brown wool specifically to signal poverty and humility, in deliberate contrast to the dyed, costly colours available to wealth and rank. In modern Western use brown carries a broadly unglamorous, dependable register — coffee, autumn, packaging, and comfort — rarely charged with the strong positive or negative valence of red, black, or white. In Tibetan Buddhism, monastic robes commonly run from deep maroon-brown to burgundy, a colour tradition distinct from the saffron-orange of Theravada robes and originally linked to the dyes and materials available in the Himalayan region. In Ayurvedic thought, brown and earth tones are associated with the grounding, stabilising qualities of the Kapha dosha and the Earth mahabhuta.",
+      "secondaryNames": [
+        { "name": "Fuscus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Umber", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["colour", "colour-brown", "earth-colour"],
+      "extendedData": {
+        "hex": "#78350F",
+        "spectralRangeNm": null,
+        "westernMeaning": "Earthiness, humility, and dependability — Franciscan monastic robes used undyed brown wool to signal poverty deliberately. A largely unglamorous, comfortable register in modern use: coffee, autumn, packaging.",
+        "easternMeaning": "Tibetan Buddhist monastic robes commonly run maroon-to-brown, distinct from Theravada saffron-orange. In Ayurveda, brown and earth tones are linked to the grounding, stabilising qualities of the Kapha dosha and the Earth mahabhuta."
+      }
+    },
+    {
+      "canonicalName": "colour.colour.pink",
+      "entityType": "colour.colour",
+      "primaryDisplayName": "Pink",
+      "description": "Pink is a desaturated red — like brown, a composite category rather than a spectral hue — and its modern gendered association in the West is a genuinely recent invention rather than an old tradition: as late as the early 20th century, American etiquette guides commonly recommended pink for boys (a 'stronger,' more decided colour, read as a diminutive of red) and blue for girls (associated with the Virgin Mary's traditional robe), with the now-familiar reverse convention only becoming fixed by mid-century marketing. Beyond gender coding, pink carries a consistent register of tenderness, romance, and compassion across Western use — Valentine's Day, the colour of the heart chakra in some (though not all) chakra systems, and, since the 1990s, the international symbol of breast cancer awareness. In Japan, while not identical to pink, the pale rose tones of sakura (cherry blossom) carry a related but distinct symbolic weight: not romance so much as mono no aware, the poignant awareness of beauty's transience, since the blossoms fall within days of opening.",
+      "secondaryNames": [
+        { "name": "Roseus", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["colour", "colour-pink", "warm-colour"],
+      "extendedData": {
+        "hex": "#EC4899",
+        "spectralRangeNm": null,
+        "westernMeaning": "Tenderness, romance, and compassion — Valentine's Day, and since the 1990s the international symbol of breast cancer awareness. Its association with girls specifically is a mid-20th-century marketing convention; earlier Western etiquette often reversed pink and blue by gender.",
+        "easternMeaning": "Japan's sakura (cherry blossom), a related pale rose tone, carries the distinct symbolic weight of mono no aware — the poignant awareness of beauty's transience — since the blossoms fall within days of opening, rather than pink's Western romantic connotation."
+      }
+    }
+  ]
+}

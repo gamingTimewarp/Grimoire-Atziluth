@@ -83,6 +83,10 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
     { value: 'alchemy.operation', label: 'Alchemical Operations' },
     { value: 'geometry.shape',    label: 'Sacred Geometry' },
   ]},
+  { label: 'Colour & Gemstone', options: [
+    { value: 'colour.colour',       label: 'Colours' },
+    { value: 'gemstone.gemstone',   label: 'Gemstones' },
+  ]},
   { label: 'Other', options: [
     { value: 'numerology.digit',    label: 'Numerology' },
     { value: 'chinese-zodiac.animal', label: 'Chinese Zodiac' },
@@ -652,6 +656,8 @@ const BROWSE_ITEMS = [
   { canonicalName: 'system.overview.magic-circles',        label: 'Magic Circles'       },
   { canonicalName: 'system.overview.magic-pentagrams',     label: 'Elemental Pentagrams'},
   { canonicalName: 'system.overview.magic-hexagrams',      label: 'Planetary Hexagrams' },
+  { canonicalName: 'system.overview.colours',               label: 'Colours'            },
+  { canonicalName: 'system.overview.gemstones',              label: 'Gemstones'          },
 ]
 
 // ─── Recently viewed ──────────────────────────────────────────────────────────

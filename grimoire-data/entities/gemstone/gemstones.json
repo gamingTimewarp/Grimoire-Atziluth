@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "gemstone.gemstone.ruby",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Ruby",
+      "description": "Ruby is the red variety of the mineral corundum (aluminium oxide), its colour produced by trace chromium impurities within the crystal lattice — the same mineral that, in other trace-element combinations, produces sapphire. Among the hardest natural gemstones after diamond, ruby has been prized since antiquity across Sanskrit, Burmese, and Mediterranean sources alike, historically ranked in South Asian gem hierarchies as the 'king of gems' for its rarity and the intensity of the 'pigeon's blood' red most highly valued in fine specimens. Its colour and heat have made it a near-universal symbol of vitality, passion, and courage, and it is the primary gemstone attributed to the planet Mars and the Sun across multiple traditions.",
+      "secondaryNames": [
+        { "name": "Corundum (red)", "languageTag": "en-mineral", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-red", "corundum"],
+      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "red, from trace chromium" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.garnet",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Garnet",
+      "description": "Garnet is not a single mineral but a group of closely related silicate minerals sharing the same crystal structure, occurring in a wide range of colours though most classically and famously in deep wine-red. The name derives from the Latin granatum ('pomegranate'), a reference to the resemblance between garnet crystals and the fruit's seeds. Garnet has been used in jewellery and as an abrasive since the Bronze Age, and in medieval European tradition was carried by travellers as a protective stone believed to light the way through darkness and guard against wounds — a association plausibly connected to its deep, glowing red hue.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-red", "silicate"],
+      "extendedData": { "mineralClass": "nesosilicate group", "hardnessMohs": "6.5–7.5", "colourNote": "classically deep wine-red" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.carnelian",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Carnelian",
+      "description": "Carnelian is a reddish-orange variety of chalcedony, a cryptocrystalline form of quartz, its colour derived from iron oxide impurities and traditionally deepened by controlled heat treatment, a technique already practised in antiquity. It was extensively used in ancient Egypt for amulets and seal rings — carved carnelian scarabs and the 'girdle of Isis' amulet (tyet) both drew on the stone's association with blood, vitality, and protection in the afterlife — and in Mesopotamia, South Asia, and the Roman world alike as a signet-ring stone, prized because wax seals do not adhere to it.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-orange", "chalcedony"],
+      "extendedData": { "mineralClass": "chalcedony (quartz)", "hardnessMohs": "6.5–7", "colourNote": "reddish-orange, from iron oxide" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.amber",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Amber",
+      "description": "Amber is not a mineral but fossilised tree resin, hardened over millions of years, ranging in colour from pale honey-yellow through deep orange to brown-red. Baltic amber, formed some 34–56 million years ago, has been traded across Europe since the Neolithic and moved along the historical 'Amber Road' trade routes connecting the Baltic to the Mediterranean. Amber occasionally preserves ancient insects and plant matter trapped in the resin before it hardened, making it uniquely valuable to palaeontology as well as ornament. Long associated with the Sun and solar warmth on account of its glowing colour, it was also burned as incense in antiquity for its resinous, pine-like fragrance.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-orange", "organic-gem"],
+      "extendedData": { "mineralClass": "fossilised resin (organic)", "hardnessMohs": "2–2.5", "colourNote": "honey-yellow to orange-brown" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.citrine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Citrine",
+      "description": "Citrine is the yellow-to-golden variety of quartz, its colour caused by trace iron impurities, and takes its name from the French citron ('lemon'). Natural citrine is comparatively rare; most commercial citrine is produced by heat-treating purple amethyst or smoky quartz, which turns yellow-orange under controlled heating — the two stones share the same underlying quartz structure and are found in the same geological environments. Citrine has been used in jewellery since antiquity but became especially fashionable in the Art Deco period. It is popularly associated with abundance, warmth, and personal will, sometimes called the 'merchant's stone' for its supposed association with prosperity.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-yellow", "quartz"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "yellow-gold, from trace iron" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.topaz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Topaz",
+      "description": "Topaz is an aluminium silicate mineral that occurs in a wide colour range, but the historically prized 'Imperial topaz' is a rich golden-orange to pink-orange variety first mined in the Ural Mountains and named for its association with the Russian imperial family, who reserved the finest specimens for the Tsar's household. Topaz is notable for its perfect basal cleavage, meaning it can split cleanly along one plane if struck — a property gem-cutters must work carefully around. In Western tradition it has long been associated with the Sun, clarity of purpose, and (via the Hebrew Bible's breastplate of the High Priest, where a stone often identified as topaz appears) with wisdom and divine favour.",
+      "secondaryNames": [
+        { "name": "Imperial Topaz", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-yellow", "silicate"],
+      "extendedData": { "mineralClass": "aluminium silicate", "hardnessMohs": "8", "colourNote": "golden-orange (Imperial topaz)" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.emerald",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Emerald",
+      "description": "Emerald is the green variety of the mineral beryl, its colour caused by trace chromium and/or vanadium, and is among the most highly valued coloured gemstones — fine emeralds routinely command higher prices per carat than diamonds of comparable size. Emeralds were mined in Egypt as early as 1500 BCE (Cleopatra was famously associated with the mines near the Red Sea) and later, following the Spanish conquest, the Colombian emerald deposits became the dominant global source. Nearly all natural emeralds contain visible internal inclusions, poetically termed the jardin ('garden') by gem-cutters, treated as a signature of authenticity rather than a flaw. Long associated with Venus, fertility, and rebirth.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-green", "beryl"],
+      "extendedData": { "mineralClass": "beryl", "hardnessMohs": "7.5–8", "colourNote": "green, from chromium/vanadium" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.jade",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Jade",
+      "description": "Jade is a market and cultural name covering two distinct minerals, nephrite and jadeite, historically indistinguishable to the naked eye but mineralogically unrelated; jadeite, found notably in Myanmar, produces the most prized intense 'imperial green,' while nephrite has been worked in China since the Neolithic and in Mesoamerica by the Olmec and Maya independently. In Chinese culture jade (yù) occupies a symbolic position with few Western parallels, treated for millennia as more precious than gold and associated with moral virtue, purity, and immortality — Confucius himself is recorded comparing jade's qualities to those of the ideal person. It was carved into ritual discs (bi) and burial suits for royalty believed to preserve the body after death.",
+      "secondaryNames": [
+        { "name": "Yù", "languageTag": "zh", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-green", "silicate"],
+      "extendedData": { "mineralClass": "nephrite or jadeite", "hardnessMohs": "6–7", "colourNote": "green (imperial green finest in jadeite)" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.sapphire",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Sapphire",
+      "description": "Sapphire is corundum (aluminium oxide) in any colour other than red — red corundum is classed as ruby instead — but the name defaults to the classic deep blue variety, caused by trace iron and titanium. Sapphire shares corundum's extreme hardness with ruby, making it, after diamond, among the most scratch-resistant natural gemstones, which is why synthetic sapphire is used industrially in scratch-resistant watch faces and optical windows. Historically associated with the heavens, truth, and royalty — British and other European crown jewels feature large sapphires, and the tradition of blue sapphire engagement rings in the UK traces to Prince Albert's proposal to Queen Victoria.",
+      "secondaryNames": [
+        { "name": "Corundum (blue)", "languageTag": "en-mineral", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-blue", "corundum"],
+      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "blue, from trace iron and titanium" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.lapis-lazuli",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Lapis Lazuli",
+      "description": "Lapis lazuli is a metamorphic rock rather than a single mineral, composed mainly of the blue mineral lazurite together with calcite (visible as white veining) and often flecked with golden pyrite. For most of ancient history the primary — often the only known — source was the Sar-i Sang mines in what is now Afghanistan, from which lapis was traded across the ancient Near East and Egypt for over 6,000 years, used in Tutankhamun's burial mask and ground into ultramarine, the most expensive pigment available to Renaissance painters, reserved for the Virgin Mary's robes. Its deep blue, star-flecked with pyrite, was widely read as an image of the night sky.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-blue", "metamorphic-rock"],
+      "extendedData": { "mineralClass": "metamorphic rock (lazurite + calcite + pyrite)", "hardnessMohs": "5–5.5", "colourNote": "deep blue, flecked gold with pyrite" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.iolite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Iolite",
+      "description": "Iolite is the gem name for violet-blue cordierite, notable for pronounced pleochroism — the same crystal shows distinctly different colours (violet-blue, pale yellow-grey, or clear) depending on the angle from which it is viewed. This property has led to a much-debated theory that the Vikings used slices of cordierite as a polarising 'sunstone' navigational aid, detecting the sun's position through cloud cover by the way its colour shifted, though the evidence for this remains disputed among historians. Modern iolite is comparatively affordable relative to sapphire, which it can resemble, and is sometimes marketed as the 'water sapphire' for that reason.",
+      "secondaryNames": [
+        { "name": "Water Sapphire", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-indigo", "silicate"],
+      "extendedData": { "mineralClass": "cordierite", "hardnessMohs": "7–7.5", "colourNote": "violet-blue, strongly pleochroic" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.sodalite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Sodalite",
+      "description": "Sodalite is a deep blue mineral, often mottled with white calcite veining, chemically related to lapis lazuli's lazurite component but structurally and geologically distinct — sodalite is a single mineral species rather than a mixed rock, and generally lacks lapis's characteristic golden pyrite flecks, showing white veining instead. First formally described in Greenland in the early 19th century, major deposits were later found in Ontario, Canada and Bahia, Brazil. Its rich, even blue made it a popular and more affordable alternative to lapis lazuli in Art Deco decorative work.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-indigo", "silicate"],
+      "extendedData": { "mineralClass": "tectosilicate (sodalite group)", "hardnessMohs": "5.5–6", "colourNote": "deep blue, white calcite veining" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.amethyst",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Amethyst",
+      "description": "Amethyst is the purple variety of quartz, coloured by trace iron combined with natural irradiation within the crystal, and takes its name from the Greek amethystos ('not intoxicated') — ancient Greeks and Romans believed wine drunk from an amethyst cup, or an amethyst worn on the body, prevented drunkenness. Until large Brazilian deposits were discovered in the 19th century, amethyst was ranked among the cardinal gemstones alongside ruby, sapphire, and emerald; the new supply subsequently made it far more affordable. It is the traditional colour of the Christian liturgical vestments of a bishop's ring and, in Catholic tradition, a stone of piety and clerical rank.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-violet", "quartz"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "purple, from trace iron plus irradiation" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.sugilite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Sugilite",
+      "description": "Sugilite is a comparatively rare purple-to-violet mineral, first described in 1944 from Japan and named for the petrologist Ken-ichi Sugi, but not found in gem-quality quantities until a major deposit was discovered at the Wessels Mine in South Africa in the 1970s — nearly all fine sugilite used in jewellery today comes from that single source. Its intense violet-magenta colour, sometimes with black manganese-oxide veining, made it a popular 20th-century addition to crystal-healing practice, where it is commonly marketed under the trade name 'Royal Azel' or 'Royal Lavulite.'",
+      "secondaryNames": [
+        { "name": "Royal Azel", "languageTag": "en-trade", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-violet", "silicate"],
+      "extendedData": { "mineralClass": "cyclosilicate", "hardnessMohs": "5.5–6.5", "colourNote": "violet-magenta, sometimes veined black" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.onyx",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Onyx",
+      "description": "Onyx is a banded variety of chalcedony, and while the term technically covers any parallel-banded chalcedony, in modern jewellery 'onyx' overwhelmingly refers to solid black material, most of which is agate that has been dyed black through a heat and sugar-acid treatment process known since Roman times. Natural black onyx exists but is comparatively rare. Used since antiquity for carved cameos and intaglio seals, black onyx became especially fashionable in Victorian mourning jewellery, worn as a formal marker of grief.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-black", "chalcedony"],
+      "extendedData": { "mineralClass": "chalcedony (quartz), often dyed", "hardnessMohs": "6.5–7", "colourNote": "solid black (commercially, often dyed agate)" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.obsidian",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Obsidian",
+      "description": "Obsidian is naturally occurring volcanic glass, formed when lava cools too rapidly for crystals to form, and is technically a mineraloid rather than a true mineral. Its razor-sharp fracture made it one of the most important materials in prehistoric toolmaking worldwide, and it remains sharp enough that modern surgical scalpel blades are occasionally made from obsidian for specialised incisions requiring an edge finer than surgical steel. The Aztec used polished obsidian for ceremonial mirrors and sacrificial blades; the English mathematician and astrologer John Dee's famous 'shewstone' scrying mirror, used in his angelic conversations, was Aztec obsidian.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-black", "volcanic-glass"],
+      "extendedData": { "mineralClass": "volcanic glass (mineraloid)", "hardnessMohs": "5–5.5", "colourNote": "black, occasionally banded or sheen" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.clear-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Clear Quartz",
+      "description": "Clear (rock) quartz is colourless crystalline silicon dioxide, one of the most abundant minerals in the Earth's continental crust, and the structural parent of nearly every other quartz gem variety (amethyst, citrine, smoky quartz, rose quartz) once trace impurities or irradiation are introduced. Its optical clarity and piezoelectric properties — generating a small electric charge under mechanical stress — make it industrially important in oscillators and timekeeping (the 'quartz' watch). Ancient Greek writers believed clear quartz was water frozen so deeply and permanently by the gods that it could never melt again, from which the word 'crystal' (Greek krystallos, 'ice') derives.",
+      "secondaryNames": [
+        { "name": "Rock Crystal", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-white", "quartz"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "colourless/clear" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.moonstone",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Moonstone",
+      "description": "Moonstone is a feldspar mineral prized for adularescence, a floating, billowing sheen of light that seems to move beneath the stone's surface as it is tilted, caused by microscopic internal layering that scatters light — an optical effect named after the Adula mountains in Switzerland, an early source. The finest moonstone, with a strong blue sheen over a colourless body, is mined primarily in Sri Lanka and India. Moonstone has been associated with lunar and feminine symbolism across many cultures on the strength of its name and its shifting, silvery light, and in Hindu tradition is considered a sacred stone linked to the Moon and believed to bring good fortune.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-white", "feldspar"],
+      "extendedData": { "mineralClass": "feldspar (orthoclase/albite)", "hardnessMohs": "6–6.5", "colourNote": "colourless to white, with blue adularescent sheen" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.hematite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Hematite",
+      "description": "Hematite is an iron oxide mineral, typically appearing as a metallic steel-grey to black stone when polished, though its powdered form is a deep red — the name derives from the Greek haima ('blood'), a reference to that red streak rather than to the metallic finished stone, and finely ground hematite (red ochre) was among the earliest pigments used in prehistoric cave art and burial ritual. As one of the primary ores of iron, hematite has enormous industrial significance distinct from its use in jewellery, where its heavy, cool, mirror-polished grey surface is prized as an accent stone.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-grey", "iron-oxide"],
+      "extendedData": { "mineralClass": "iron oxide", "hardnessMohs": "5.5–6.5", "colourNote": "metallic steel-grey (red when powdered)" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.smoky-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Smoky Quartz",
+      "description": "Smoky quartz is a brown-to-grey-black variety of quartz, its colour produced by natural irradiation acting on trace aluminium impurities within the crystal — the same underlying mechanism that produces purple in amethyst, and the two can occur in the same crystal, banded together. Large deposits in Scotland's Cairngorm mountains gave the stone its traditional Scottish name 'cairngorm,' and polished cairngorm became a fixture of Scottish Highland dress, set into sgian-dubh knife handles and kilt pins. Its range spans a genuinely ambiguous brown-grey territory, making it a natural fit for either colour association depending on the specific specimen.",
+      "secondaryNames": [
+        { "name": "Cairngorm", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-brown", "gemstone-grey", "quartz"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "brown to grey-black, from natural irradiation" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.tigers-eye",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Tiger's Eye",
+      "description": "Tiger's eye is a golden-brown variety of quartz displaying chatoyancy — a shifting, silky band of light across the stone's surface as it moves, resembling an animal's eye — produced when quartz pseudomorphically replaces fibrous crocidolite asbestos, preserving the parallel fibre structure that scatters light in a single moving band. The primary commercial source is South Africa's Northern Cape province. Its warm, banded, eye-like appearance has made it a popular protective and 'watchful' talisman in many modern folk-magical traditions, continuing a very old and cross-cultural association between eye-like patterns and apotropaic (evil-averting) power.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-brown", "quartz"],
+      "extendedData": { "mineralClass": "quartz (pseudomorph after crocidolite)", "hardnessMohs": "7", "colourNote": "golden-brown, chatoyant" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.rose-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Rose Quartz",
+      "description": "Rose quartz is the pale pink variety of quartz, its colour caused by trace titanium, iron, or manganese impurities, or in some deposits by microscopic fibrous mineral inclusions that also produce a rare six-rayed 'star' effect when cut as a cabochon (star rose quartz). Rose quartz beads have been found in Mesopotamian archaeological sites dating back roughly 7,000 years, among the earliest gem materials worked by any civilisation. It is consistently and cross-culturally associated with love, gentleness, and the heart, an association that appears to draw straightforwardly on the pink-red colour family's broader symbolic territory rather than any distinct tradition of its own.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-pink", "quartz"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "pale pink, from trace titanium/iron/manganese" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.rhodonite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Rhodonite",
+      "description": "Rhodonite is a pink-to-rose manganese silicate, frequently marked with black veining of manganese oxide, and takes its name from the Greek rhodon ('rose'). It is the national stone of Russia, where large deposits in the Ural Mountains were historically carved into decorative vases, columns, and inlay work for the imperial court — a monumental rhodonite sarcophagus was made for Napoleon's son. Compared to rose quartz's pale, uniform pink, rhodonite's deeper rose tone and dramatic black veining give it a more visually assertive character within the same general colour family.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-pink", "silicate"],
+      "extendedData": { "mineralClass": "inosilicate (manganese silicate)", "hardnessMohs": "5.5–6.5", "colourNote": "rose-pink, veined with black manganese oxide" }
+    }
+  ]
+}

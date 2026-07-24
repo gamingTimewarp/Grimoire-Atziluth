@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "colour.colour.red",   "target": "astrology.element.fire",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Common Western elemental colour association." } },
+    { "source": "colour.colour.blue",  "target": "astrology.element.water", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Common Western elemental colour association." } },
+    { "source": "colour.colour.yellow","target": "astrology.element.air",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Common Western elemental colour association." } },
+    { "source": "colour.colour.green","target": "astrology.element.earth", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Common Western elemental colour association. Compare the Hindu tattva symbol colours (see Tattwas), which differ: Fire=Red, Air=Blue, Water=Silver/White, Earth=Yellow." } }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "colour.colour.green",  "target": "wuxing.phase.wood",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.red",    "target": "wuxing.phase.fire",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.yellow", "target": "wuxing.phase.earth", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "wuxing.phase.metal", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.black",  "target": "wuxing.phase.water", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "colour.colour.red",    "target": "gemstone.gemstone.ruby",         "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.red",    "target": "gemstone.gemstone.garnet",       "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.orange", "target": "gemstone.gemstone.carnelian",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.orange", "target": "gemstone.gemstone.amber",        "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.yellow", "target": "gemstone.gemstone.citrine",      "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.yellow", "target": "gemstone.gemstone.topaz",        "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.green",  "target": "gemstone.gemstone.emerald",      "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.green",  "target": "gemstone.gemstone.jade",         "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.blue",   "target": "gemstone.gemstone.sapphire",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.blue",   "target": "gemstone.gemstone.lapis-lazuli", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.indigo", "target": "gemstone.gemstone.iolite",       "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.indigo", "target": "gemstone.gemstone.sodalite",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.violet", "target": "gemstone.gemstone.amethyst",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.violet", "target": "gemstone.gemstone.sugilite",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.black",  "target": "gemstone.gemstone.onyx",         "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.black",  "target": "gemstone.gemstone.obsidian",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "gemstone.gemstone.clear-quartz", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "gemstone.gemstone.moonstone",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.grey",   "target": "gemstone.gemstone.hematite",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.grey",   "target": "gemstone.gemstone.smoky-quartz", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.brown",  "target": "gemstone.gemstone.smoky-quartz", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.brown",  "target": "gemstone.gemstone.tigers-eye",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.pink",   "target": "gemstone.gemstone.rose-quartz",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.pink",   "target": "gemstone.gemstone.rhodonite",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} }
+  ]
+}
