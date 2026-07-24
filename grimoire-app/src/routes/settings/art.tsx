@@ -13,7 +13,7 @@ import type { GrimoireEngine } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft, HelpCircle, FolderOpen, X, Search, Plus, Trash2, Package } from 'lucide-react'
 import { openPath } from '@tauri-apps/plugin-opener'
-import { resourceDir, join } from '@tauri-apps/api/path'
+import { resourceDir, join, appConfigDir } from '@tauri-apps/api/path'
 
 export const Route = createFileRoute('/settings/art')({
   component: ArtPacksPage,
@@ -44,6 +44,17 @@ function ArtPacksPage() {
       // fall back to just showing the guide.
     }
     setGuideOpen(true)
+  }
+
+  const [fileLocationError, setFileLocationError] = useState<string | null>(null)
+  const openFileLocation = async () => {
+    setFileLocationError(null)
+    try {
+      const dir = await appConfigDir()
+      await openPath(dir)
+    } catch (err) {
+      setFileLocationError(err instanceof Error ? err.message : `Failed to open the folder: ${String(err)}`)
+    }
   }
 
   const setArtPack = (groupId: ArtGroup, pack: ArtPackId) => {
@@ -93,7 +104,7 @@ function ArtPacksPage() {
       </div>
 
       {/* Import / Add packs button */}
-      <div style={{ marginBottom: '28px', display: 'flex', gap: '8px', alignItems: 'center' }}>
+      <div style={{ marginBottom: '8px', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
         <Button variant="ghost" size="sm" onClick={openArtDirectory}>
           <FolderOpen size={13} />
           Import Art Pack…
@@ -109,7 +120,16 @@ function ArtPacksPage() {
         >
           <HelpCircle size={15} />
         </button>
+        <Button variant="ghost" size="sm" onClick={openFileLocation}>
+          <FolderOpen size={13} />
+          Open File Location
+        </Button>
       </div>
+      {fileLocationError ? (
+        <div style={{ marginBottom: '20px', fontSize: '12px', color: 'var(--color-danger)' }}>{fileLocationError}</div>
+      ) : (
+        <div style={{ marginBottom: '20px' }} />
+      )}
 
       {/* Import guide panel */}
       {guideOpen && (
@@ -183,7 +203,7 @@ function GroupSection({
         setName('')
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to import folder.')
+      setError(err instanceof Error ? err.message : `Failed to import: ${String(err)}`)
     } finally {
       setBusy(false)
     }
@@ -268,12 +288,14 @@ function GroupSection({
             />
           </div>
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '10px' }}>
-            Choose a folder of images named after each card's canonical name (dots replaced by hyphens),
+            Zip your folder of images and pick the .zip file. Each image inside should be named after
+            the card's canonical name with dots replaced by hyphens,
             e.g. <code style={codeStyle}>tarot-major-rws-the-fool.jpg</code>. Unmatched files are skipped.
+            (A .zip is required on every platform — mobile file pickers can't select whole folders.)
           </div>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <Button size="sm" onClick={handleImport} disabled={busy || !name.trim()}>
-              <FolderOpen size={13} /> {busy ? 'Importing…' : 'Choose Folder & Import'}
+              <FolderOpen size={13} /> {busy ? 'Importing…' : 'Choose .zip & Import'}
             </Button>
             <Button size="sm" variant="ghost" onClick={() => { setAdding(false); setName(''); setError(null) }}>
               Cancel

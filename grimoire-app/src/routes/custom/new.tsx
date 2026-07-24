@@ -101,7 +101,7 @@ function NewCustomEntityPage() {
         setImageFileName(fileName)
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to add image.')
+      setError(err instanceof Error ? err.message : `Failed to add image: ${String(err)}`)
     } finally {
       setImageBusy(false)
     }

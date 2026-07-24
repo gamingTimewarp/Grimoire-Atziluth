@@ -8,7 +8,7 @@
 
 import { useEffect, useState } from 'react'
 import { appConfigDir, join } from '@tauri-apps/api/path'
-import { mkdir, copyFile, exists, remove } from '@tauri-apps/plugin-fs'
+import { mkdir, copyFile, exists, remove, writeFile } from '@tauri-apps/plugin-fs'
 import { open } from '@tauri-apps/plugin-dialog'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import type { BaseEntity } from '@grimoire/core'
@@ -127,11 +127,11 @@ export async function resolvePackFileUrl(packId: string, fileName: string): Prom
   return url
 }
 
-/** Copies a source file (e.g. from a directory picker scan) into a pack's folder under the given filename. */
-export async function copyFileIntoPack(packId: string, sourcePath: string, fileName: string): Promise<void> {
+/** Writes in-memory bytes (e.g. a decompressed zip entry) into a pack's folder under the given filename. */
+export async function writeFileIntoPack(packId: string, fileName: string, data: Uint8Array): Promise<void> {
   const dir = await getPackDir(packId)
   const dest = await join(dir, fileName)
-  await copyFile(sourcePath, dest)
+  await writeFile(dest, data)
 }
 
 /** Removes an entire pack's folder and all its files. */

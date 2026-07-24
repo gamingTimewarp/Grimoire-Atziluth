@@ -3,25 +3,37 @@
  * Bulk import of user-supplied custom art packs for the built-in art groups
  * (Tarot decks, Runes, Geomancy, Mahjong, Lenormand, Playing Cards, Alchemy Metals).
  *
- * A pack is a named folder of images the user picks via a directory dialog.
+ * A pack is a named .zip archive of images the user picks via a single-file
+ * dialog. This (not a directory dialog, and not multi-file selection) is
+ * deliberate: Tauri's dialog plugin does not implement folder picking on
+ * mobile at all — it rejects with FolderPickerNotImplemented — and selecting
+ * dozens of files individually is unworkable on a phone. A single zip works
+ * identically on every platform and is extracted client-side (fflate), so no
+ * native unzip dependency is needed.
+ *
  * Files are matched against each group's member entities using the same
  * "canonical name with dots replaced by hyphens" convention as the bundled
- * /art/ packs (e.g. tarot.major.rws.the-fool -> tarot-major-rws-the-fool.<ext>),
- * so a folder shaped like the built-in convention just works.
+ * /art/ packs (e.g. tarot.major.rws.the-fool -> tarot-major-rws-the-fool.<ext>).
  */
 
 import type { GrimoireEngine } from '@grimoire/core'
 import type { BaseEntity } from '@grimoire/core'
 import { open } from '@tauri-apps/plugin-dialog'
-import { readDir } from '@tauri-apps/plugin-fs'
-import { join } from '@tauri-apps/api/path'
+import { readFile } from '@tauri-apps/plugin-fs'
+import { unzipSync } from 'fflate'
 import type { ArtGroup } from './art-store'
 import { artGroupForEntityType } from './art-store'
 import {
   saveCustomArtPack, deleteCustomArtPack, saveArtPackFile, getArtPackFile,
 } from './custom-db'
 import type { CustomArtPackRecord } from './custom-db'
-import { copyFileIntoPack, removePackDir, resolvePackFileUrl } from './custom-art'
+import { writeFileIntoPack, removePackDir, resolvePackFileUrl } from './custom-art'
+
+/** Extracts the filename from a zip entry path, tolerating both '/' and '\' separators. */
+function basenameOf(path: string): string {
+  const normalized = path.replace(/\\/g, '/')
+  return normalized.slice(normalized.lastIndexOf('/') + 1)
+}
 
 /** Which entityTypes to scan when looking for a group's member entities. */
 const GROUP_ENTITY_TYPES: Record<ArtGroup, string[]> = {
@@ -58,25 +70,32 @@ export interface ImportResult {
 }
 
 /**
- * Opens a directory picker, scans it for images matching the group's member
- * entities, copies matches into the pack's folder, and records the mapping.
- * Returns null if the user cancelled the directory dialog.
+ * Opens a single-file picker for a .zip archive, extracts it in memory, matches
+ * entries against the group's member entities, writes matches into the pack's
+ * folder, and records the mapping. Returns null if the user cancelled the
+ * dialog, or throws if the file isn't a valid zip.
  */
 export async function importCustomArtPack(
   engine: GrimoireEngine,
   group: ArtGroup,
   name: string,
 ): Promise<ImportResult | null> {
-  const sourceDir = await open({ directory: true, multiple: false })
-  if (!sourceDir || Array.isArray(sourceDir)) return null
+  const zipPath = await open({
+    multiple: false,
+    filters: [{ name: 'Zip Archive', extensions: ['zip'] }],
+  })
+  if (!zipPath || Array.isArray(zipPath)) return null
 
-  const entries = await readDir(sourceDir)
-  const filesBySlug = new Map<string, string>()  // slug (no ext) -> full filename
-  for (const entry of entries) {
-    if (!entry.isFile) continue
-    const dot = entry.name.lastIndexOf('.')
+  const zipBytes = await readFile(zipPath)
+  const entries = unzipSync(zipBytes)
+
+  const filesBySlug = new Map<string, { fileName: string; data: Uint8Array }>()  // slug (no ext) -> file
+  for (const [entryPath, data] of Object.entries(entries)) {
+    if (entryPath.endsWith('/') || data.length === 0) continue  // directory entries
+    const fileName = basenameOf(entryPath)
+    const dot = fileName.lastIndexOf('.')
     if (dot <= 0) continue
-    filesBySlug.set(entry.name.slice(0, dot).toLowerCase(), entry.name)
+    filesBySlug.set(fileName.slice(0, dot).toLowerCase(), { fileName, data })
   }
 
   const members = await listGroupMembers(engine, group)
@@ -94,11 +113,10 @@ export async function importCustomArtPack(
   const unmatched: string[] = []
   for (const entity of members) {
     const slug = entity.canonicalName.replace(/\./g, '-').toLowerCase()
-    const fileName = filesBySlug.get(slug)
-    if (!fileName) { unmatched.push(entity.canonicalName); continue }
-    const sourcePath = await join(sourceDir, fileName)
-    await copyFileIntoPack(pack.id, sourcePath, fileName)
-    await saveArtPackFile(pack.id, entity.canonicalName, fileName)
+    const file = filesBySlug.get(slug)
+    if (!file) { unmatched.push(entity.canonicalName); continue }
+    await writeFileIntoPack(pack.id, file.fileName, file.data)
+    await saveArtPackFile(pack.id, entity.canonicalName, file.fileName)
     matched++
   }
 
