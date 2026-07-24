@@ -625,6 +625,8 @@ const BROWSE_ITEMS = [
   { canonicalName: 'system.overview.elements',             label: 'Elements'           },
   { canonicalName: 'system.overview.nakshatras',           label: 'Nakshatras'         },
   { canonicalName: 'system.overview.navaratna',            label: 'Navaratna (Gems)'   },
+  { canonicalName: 'system.overview.jyotish-dasha',        label: 'Vimshottari Dasha'  },
+  { canonicalName: 'system.overview.doshas',                label: 'Doshas'            },
   { canonicalName: 'system.overview.qabalah',              label: 'Qabalah'            },
   { canonicalName: 'system.overview.numerology',           label: 'Numerology'         },
   { canonicalName: 'system.overview.letters',              label: 'Letters'            },
