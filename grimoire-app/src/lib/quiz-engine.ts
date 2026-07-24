@@ -155,6 +155,60 @@ export interface EntityTypeStats {
   breakdown: { new: number; learning: number; review: number; mature: number }
 }
 
+// ─── Tarot deck options ─────────────────────────────────────────────────────────
+
+/**
+ * 'tarot.card' spans several distinct decks (RWS, Thoth, Tarot de Marseille, etc.),
+ * each tagged in grimoire-data. Study sessions let the user pick which decks
+ * contribute cards, independently of the display-name default in Settings → Traditions.
+ */
+export interface TarotDeckOption {
+  id: string
+  label: string
+  tag: string
+}
+
+export const TAROT_DECK_OPTIONS: TarotDeckOption[] = [
+  { id: 'rws',           label: 'Rider-Waite-Smith',  tag: 'rider-waite-smith' },
+  { id: 'thoth',         label: 'Thoth',              tag: 'thoth' },
+  { id: 'tdm',           label: 'Tarot de Marseille', tag: 'tarot-de-marseille' },
+  { id: 'etteilla',      label: 'Etteilla',           tag: 'etteilla' },
+  { id: 'playing-cards', label: 'Playing Cards',      tag: 'playing-card' },
+  { id: 'lenormand',     label: 'Lenormand',          tag: 'lenormand' },
+]
+
+/**
+ * Fetch entities for a given entityType, respecting the selected tarot decks
+ * when entityType is 'tarot.card' (a union across each selected deck's tag,
+ * since listEntities' `tags` filter is AND-within-a-call).
+ * All other entity types are unaffected and behave as before.
+ */
+async function fetchQuizEntities(
+  adapter: StorageAdapter,
+  entityType: string,
+  settings: QuizSettings,
+  limit: number,
+): Promise<BaseEntity[]> {
+  const isBuiltInFilter = settings.includeUserCards ? {} : { isBuiltIn: true as const }
+
+  if (entityType === 'tarot.card') {
+    const deckIds = settings.tarotDecks.length > 0
+      ? new Set(settings.tarotDecks)
+      : new Set(TAROT_DECK_OPTIONS.map(d => d.id))
+    const tags = TAROT_DECK_OPTIONS.filter(d => deckIds.has(d.id)).map(d => d.tag)
+
+    const seen = new Map<string, BaseEntity>()
+    for (const tag of tags) {
+      const result = await adapter.listEntities({ entityType, tags: [tag], ...isBuiltInFilter }, { offset: 0, limit })
+      for (const e of result.items) seen.set(e.canonicalName, e)
+    }
+    return [...seen.values()]
+  }
+
+  const result = await adapter.listEntities({ entityType, ...isBuiltInFilter }, { offset: 0, limit })
+  return result.items
+}
+
 export const ENTITY_TYPE_LABELS: Record<string, string> = {
   'tarot.card':            'Tarot Cards',
   'qabalah.sephira':       'Sephiroth',
@@ -183,16 +237,12 @@ export async function getProgressStats(
     const defs        = allDefs.filter(d => enabledKeys.includes(d.key))
     if (defs.length === 0) continue
 
-    const filter = settings.includeUserCards
-      ? { entityType }
-      : { entityType, isBuiltIn: true as const }
-
-    const result = await adapter.listEntities(filter, { offset: 0, limit: 1000 })
+    const items = await fetchQuizEntities(adapter, entityType, settings, 1000)
 
     let total = 0, due = 0
     const breakdown = { new: 0, learning: 0, review: 0, mature: 0 }
 
-    for (const entity of result.items) {
+    for (const entity of items) {
       for (const def of defs) {
         total++
         const key   = `${entity.canonicalName}::${def.key}`
@@ -388,13 +438,9 @@ export async function buildSession(
     const defs        = allDefs.filter(d => enabledKeys.includes(d.key))
     if (defs.length === 0) continue
 
-    const filter = settings.includeUserCards
-      ? { entityType }
-      : { entityType, isBuiltIn: true as const }
+    const items = await fetchQuizEntities(adapter, entityType, settings, 500)
 
-    const result = await adapter.listEntities(filter, { offset: 0, limit: 500 })
-
-    for (const entity of result.items) {
+    for (const entity of items) {
       for (const def of defs) {
         const key = `${entity.canonicalName}::${def.key}`
         const existing = allStates.get(key)
@@ -434,13 +480,9 @@ export async function countDueCards(
     const defs        = allDefs.filter(d => enabledKeys.includes(d.key))
     if (defs.length === 0) continue
 
-    const filter = settings.includeUserCards
-      ? { entityType }
-      : { entityType, isBuiltIn: true as const }
+    const items = await fetchQuizEntities(adapter, entityType, settings, 1000)
 
-    const result = await adapter.listEntities(filter, { offset: 0, limit: 1000 })
-
-    for (const entity of result.items) {
+    for (const entity of items) {
       for (const def of defs) {
         total++
         const key   = `${entity.canonicalName}::${def.key}`

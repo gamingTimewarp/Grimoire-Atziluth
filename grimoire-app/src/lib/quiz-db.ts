@@ -44,6 +44,13 @@ export interface QuizSettings {
   /** entityType → enabled question-type keys */
   enabledQuestionTypes: Record<string, string[]>
   includeUserCards: boolean
+  /**
+   * Which tarot deck IDs (see TAROT_DECK_OPTIONS in quiz-engine.ts) contribute
+   * 'tarot.card' entities to study sessions — independent of the display-name
+   * default set in Settings → Traditions. Empty/missing means "all decks",
+   * which preserves behavior for settings saved before this field existed.
+   */
+  tarotDecks: string[]
 }
 
 export const DEFAULT_SETTINGS: QuizSettings = {
@@ -77,6 +84,7 @@ export const DEFAULT_SETTINGS: QuizSettings = {
     'iching.hexagram':       ['image:name', 'field:number', 'field:chineseName', 'field:upperTrigram', 'field:lowerTrigram'],
   },
   includeUserCards: false,
+  tarotDecks: ['rws', 'thoth', 'tdm', 'etteilla', 'playing-cards', 'lenormand'],
 }
 
 // ─── DB bootstrap ──────────────────────────────────────────────────────────────
@@ -213,7 +221,11 @@ export async function getSettings(): Promise<QuizSettings> {
     `SELECT value FROM quiz_meta WHERE key = 'settings'`,
   )
   if (rows[0]) {
-    try { return JSON.parse(rows[0].value) as QuizSettings } catch { /* fall through */ }
+    try {
+      const parsed = JSON.parse(rows[0].value) as Partial<QuizSettings>
+      // Settings saved before `tarotDecks` existed won't have it — default to all decks.
+      return { ...structuredClone(DEFAULT_SETTINGS), ...parsed, tarotDecks: parsed.tarotDecks ?? structuredClone(DEFAULT_SETTINGS.tarotDecks) }
+    } catch { /* fall through */ }
   }
   return structuredClone(DEFAULT_SETTINGS)
 }

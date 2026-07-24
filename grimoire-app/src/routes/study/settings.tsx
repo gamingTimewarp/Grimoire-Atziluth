@@ -5,7 +5,7 @@ import {
   DEFAULT_SETTINGS,
 } from '@/lib/quiz-db'
 import type { QuizSettings, QuestionMode } from '@/lib/quiz-db'
-import { QUESTION_TYPE_DEFS, ENTITY_TYPE_LABELS } from '@/lib/quiz-engine'
+import { QUESTION_TYPE_DEFS, ENTITY_TYPE_LABELS, TAROT_DECK_OPTIONS } from '@/lib/quiz-engine'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft, Download, Upload } from 'lucide-react'
 
@@ -56,6 +56,17 @@ function StudySettingsPage() {
     const has = current.includes(key)
     const next = has ? current.filter(k => k !== key) : [...current, key]
     save({ ...settings, enabledQuestionTypes: { ...settings.enabledQuestionTypes, [entityType]: next } })
+  }
+
+  const toggleTarotDeck = (deckId: string) => {
+    if (!settings) return
+    // Empty/missing means "all decks" — expand to the full list before removing one,
+    // so the first toggle narrows the set instead of leaving it empty.
+    const current = settings.tarotDecks.length > 0 ? settings.tarotDecks : TAROT_DECK_OPTIONS.map(d => d.id)
+    const has = current.includes(deckId)
+    if (has && current.length === 1) return  // keep at least one deck
+    const next = has ? current.filter(id => id !== deckId) : [...current, deckId]
+    save({ ...settings, tarotDecks: next })
   }
 
   const handleExport = async () => {
@@ -179,6 +190,33 @@ function StudySettingsPage() {
                       </button>
                     )
                   })}
+                </div>
+              )}
+              {enabled && et === 'tarot.card' && (
+                <div style={{ paddingLeft: '16px', marginTop: '8px' }}>
+                  <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>
+                    Decks — independent of the default deck set in Settings → Traditions
+                  </div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                    {TAROT_DECK_OPTIONS.map(deck => {
+                      const active = settings.tarotDecks.length === 0 || settings.tarotDecks.includes(deck.id)
+                      return (
+                        <button
+                          key={deck.id}
+                          onClick={() => toggleTarotDeck(deck.id)}
+                          style={{
+                            padding: '4px 10px', fontSize: '11px', fontFamily: 'inherit',
+                            border: '1px solid', borderRadius: '4px', cursor: 'pointer',
+                            borderColor: active ? 'var(--color-accent-muted)' : 'var(--color-border)',
+                            background: active ? 'rgba(180,156,90,0.1)' : 'transparent',
+                            color: active ? 'var(--color-accent)' : 'var(--color-text-subtle)',
+                          }}
+                        >
+                          {deck.label}
+                        </button>
+                      )
+                    })}
+                  </div>
                 </div>
               )}
             </div>
