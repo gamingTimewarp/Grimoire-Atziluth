@@ -24,7 +24,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'andromeda': {
     viewBox: '0 0 330 220',
     stars: [
-      { id: 'alpheratz', x: 50, y: 190, mag: 4 },
+      { id: 'alpheratz', x: 50, y: 190, mag: 4, canonicalName: 'astrology.fixed-star.alpheratz', label: 'Alpheratz' },
       { id: 'mirach', x: 150, y: 140, mag: 2, canonicalName: 'astrology.fixed-star.mirach', label: 'Mirach' },
       { id: 'almach', x: 260, y: 70, mag: 2, canonicalName: 'astrology.fixed-star.almach', label: 'Almach' },
     ],
@@ -58,7 +58,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       { id: 'mintaka', x: 140, y: 160, mag: 2, canonicalName: 'astrology.fixed-star.mintaka', label: 'Mintaka' },
       { id: 'alnilam', x: 170, y: 170, mag: 1, canonicalName: 'astrology.fixed-star.alnilam', label: 'Alnilam' },
       { id: 'alnitak', x: 200, y: 180, mag: 2, canonicalName: 'astrology.fixed-star.alnitak', label: 'Alnitak' },
-      { id: 'saiph', x: 100, y: 300, mag: 3 },
+      { id: 'saiph', x: 100, y: 300, mag: 3, canonicalName: 'astrology.fixed-star.saiph', label: 'Saiph' },
       { id: 'rigel', x: 240, y: 290, mag: 1, canonicalName: 'astrology.fixed-star.rigel', label: 'Rigel' },
     ],
     lines: [
@@ -74,10 +74,10 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     viewBox: '0 0 300 260',
     stars: [
       { id: 'capella', x: 150, y: 50, mag: 1, canonicalName: 'astrology.fixed-star.capella', label: 'Capella' },
-      { id: 'p2', x: 230, y: 110, mag: 3 },
+      { id: 'p2', x: 230, y: 110, mag: 3, canonicalName: 'astrology.fixed-star.menkalinan', label: 'Menkalinan' },
       { id: 'p3', x: 210, y: 210, mag: 3 },
       { id: 'p4', x: 90, y: 210, mag: 3 },
-      { id: 'p5', x: 70, y: 110, mag: 3 },
+      { id: 'p5', x: 70, y: 110, mag: 3, canonicalName: 'astrology.fixed-star.hassaleh', label: 'Hassaleh' },
     ],
     lines: [
       ['capella', 'p2'],
@@ -91,10 +91,10 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     viewBox: '0 0 260 280',
     stars: [
       { id: 'arcturus', x: 150, y: 260, mag: 1, canonicalName: 'astrology.fixed-star.arcturus', label: 'Arcturus' },
-      { id: 'left', x: 90, y: 150, mag: 3 },
-      { id: 'top', x: 140, y: 60, mag: 3 },
-      { id: 'right', x: 210, y: 110, mag: 3 },
-      { id: 'lowerright', x: 190, y: 190, mag: 3 },
+      { id: 'left', x: 90, y: 150, mag: 3, canonicalName: 'astrology.fixed-star.izar', label: 'Izar' },
+      { id: 'top', x: 140, y: 60, mag: 3, canonicalName: 'astrology.fixed-star.seginus', label: 'Seginus' },
+      { id: 'right', x: 210, y: 110, mag: 3, canonicalName: 'astrology.fixed-star.nekkar', label: 'Nekkar' },
+      { id: 'lowerright', x: 190, y: 190, mag: 3, canonicalName: 'astrology.fixed-star.muphrid', label: 'Muphrid' },
     ],
     lines: [
       ['arcturus', 'left'],
@@ -110,7 +110,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       { id: 'north_asellus', x: 120, y: 80, mag: 3, canonicalName: 'astrology.fixed-star.north-asellus', label: 'North Asellus' },
       { id: 'south_asellus', x: 180, y: 80, mag: 3, canonicalName: 'astrology.fixed-star.south-asellus', label: 'South Asellus' },
       { id: 'praesepe', x: 150, y: 130, mag: 3, canonicalName: 'astrology.fixed-star.praesepe', label: 'Praesepe' },
-      { id: 'tail', x: 150, y: 230, mag: 4 },
+      { id: 'tail', x: 150, y: 230, mag: 4, canonicalName: 'astrology.fixed-star.acubens', label: 'Acubens' },
     ],
     lines: [
       ['north_asellus', 'praesepe'],
@@ -121,12 +121,12 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'canis-major': {
     viewBox: '0 0 300 260',
     stars: [
-      { id: 'head', x: 90, y: 50, mag: 3 },
+      { id: 'head', x: 90, y: 50, mag: 3, canonicalName: 'astrology.fixed-star.mirzam', label: 'Mirzam' },
       { id: 'sirius', x: 150, y: 80, mag: 1, canonicalName: 'astrology.fixed-star.sirius', label: 'Sirius' },
-      { id: 'chest', x: 150, y: 150, mag: 3 },
+      { id: 'chest', x: 150, y: 150, mag: 3, canonicalName: 'astrology.fixed-star.wezen', label: 'Wezen' },
       { id: 'front_leg', x: 110, y: 220, mag: 4 },
-      { id: 'back_leg', x: 210, y: 220, mag: 4 },
-      { id: 'tail', x: 250, y: 140, mag: 3 },
+      { id: 'back_leg', x: 210, y: 220, mag: 4, canonicalName: 'astrology.fixed-star.adhara', label: 'Adhara' },
+      { id: 'tail', x: 250, y: 140, mag: 3, canonicalName: 'astrology.fixed-star.aludra', label: 'Aludra' },
     ],
     lines: [
       ['head', 'sirius'],
@@ -140,7 +140,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     viewBox: '0 0 260 220',
     stars: [
       { id: 'procyon', x: 180, y: 150, mag: 1, canonicalName: 'astrology.fixed-star.procyon', label: 'Procyon' },
-      { id: 'gomeisa', x: 90, y: 90, mag: 3 },
+      { id: 'gomeisa', x: 90, y: 90, mag: 3, canonicalName: 'astrology.fixed-star.gomeisa', label: 'Gomeisa' },
     ],
     lines: [
       ['procyon', 'gomeisa'],
@@ -149,9 +149,9 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'capricornus': {
     viewBox: '0 0 350 220',
     stars: [
-      { id: 'algedi', x: 60, y: 80, mag: 3 },
-      { id: 'dabih', x: 100, y: 140, mag: 3 },
-      { id: 'nashira', x: 200, y: 190, mag: 4 },
+      { id: 'algedi', x: 60, y: 80, mag: 3, canonicalName: 'astrology.fixed-star.algedi', label: 'Algedi' },
+      { id: 'dabih', x: 100, y: 140, mag: 3, canonicalName: 'astrology.fixed-star.dabih', label: 'Dabih' },
+      { id: 'nashira', x: 200, y: 190, mag: 4, canonicalName: 'astrology.fixed-star.nashira', label: 'Nashira' },
       { id: 'deneb_algedi', x: 260, y: 160, mag: 2, canonicalName: 'astrology.fixed-star.deneb-algedi', label: 'Deneb Algedi' },
     ],
     lines: [
@@ -164,8 +164,8 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     viewBox: '0 0 300 240',
     stars: [
       { id: 'canopus', x: 150, y: 200, mag: 1, canonicalName: 'astrology.fixed-star.canopus', label: 'Canopus' },
-      { id: 'miaplacidus', x: 80, y: 100, mag: 3 },
-      { id: 'avior', x: 230, y: 120, mag: 3 },
+      { id: 'miaplacidus', x: 80, y: 100, mag: 3, canonicalName: 'astrology.fixed-star.miaplacidus', label: 'Miaplacidus' },
+      { id: 'avior', x: 230, y: 120, mag: 3, canonicalName: 'astrology.fixed-star.avior', label: 'Avior' },
     ],
     lines: [
       ['canopus', 'miaplacidus'],
@@ -173,11 +173,11 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     ],
   },
   'centaurus': {
-    viewBox: '0 0 300 260',
+    viewBox: '0 0 330 260',
     stars: [
-      { id: 'alpha_cen', x: 220, y: 100, mag: 1 },
+      { id: 'alpha_cen', x: 220, y: 100, mag: 1, canonicalName: 'astrology.fixed-star.rigil-kentaurus', label: 'Rigil Kentaurus' },
       { id: 'agena', x: 150, y: 110, mag: 1, canonicalName: 'astrology.fixed-star.agena', label: 'Agena' },
-      { id: 'menkent', x: 80, y: 180, mag: 3 },
+      { id: 'menkent', x: 80, y: 180, mag: 3, canonicalName: 'astrology.fixed-star.menkent', label: 'Menkent' },
       { id: 'body1', x: 160, y: 200, mag: 4 },
       { id: 'body2', x: 230, y: 220, mag: 4 },
     ],
@@ -191,10 +191,10 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'corvus': {
     viewBox: '0 0 300 240',
     stars: [
-      { id: 'gienah', x: 90, y: 70, mag: 3 },
+      { id: 'gienah', x: 90, y: 70, mag: 3, canonicalName: 'astrology.fixed-star.gienah', label: 'Gienah' },
       { id: 'algorab', x: 210, y: 70, mag: 2, canonicalName: 'astrology.fixed-star.algorab', label: 'Algorab' },
-      { id: 'kraz', x: 200, y: 180, mag: 3 },
-      { id: 'minkar', x: 100, y: 170, mag: 3 },
+      { id: 'kraz', x: 200, y: 180, mag: 3, canonicalName: 'astrology.fixed-star.kraz', label: 'Kraz' },
+      { id: 'minkar', x: 100, y: 170, mag: 3, canonicalName: 'astrology.fixed-star.minkar', label: 'Minkar' },
     ],
     lines: [
       ['gienah', 'algorab'],
@@ -204,13 +204,13 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     ],
   },
   'cygnus': {
-    viewBox: '0 0 300 280',
+    viewBox: '0 0 320 280',
     stars: [
       { id: 'deneb', x: 150, y: 50, mag: 1, canonicalName: 'astrology.fixed-star.deneb', label: 'Deneb' },
-      { id: 'sadr', x: 150, y: 130, mag: 3 },
-      { id: 'albireo', x: 150, y: 240, mag: 3 },
+      { id: 'sadr', x: 150, y: 130, mag: 3, canonicalName: 'astrology.fixed-star.sadr', label: 'Sadr' },
+      { id: 'albireo', x: 150, y: 240, mag: 3, canonicalName: 'astrology.fixed-star.albireo', label: 'Albireo' },
       { id: 'wing_left', x: 70, y: 130, mag: 3 },
-      { id: 'wing_right', x: 230, y: 130, mag: 3 },
+      { id: 'wing_right', x: 230, y: 130, mag: 3, canonicalName: 'astrology.fixed-star.gienah-cygni', label: 'Gienah Cygni' },
     ],
     lines: [
       ['deneb', 'sadr'],
@@ -222,12 +222,12 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'draco': {
     viewBox: '0 0 300 300',
     stars: [
-      { id: 'eltanin', x: 200, y: 60, mag: 3 },
+      { id: 'eltanin', x: 200, y: 60, mag: 3, canonicalName: 'astrology.fixed-star.eltanin', label: 'Eltanin' },
       { id: 'rastaban', x: 150, y: 50, mag: 2, canonicalName: 'astrology.fixed-star.rastaban', label: 'Rastaban' },
-      { id: 'grumium', x: 140, y: 90, mag: 4 },
+      { id: 'grumium', x: 140, y: 90, mag: 4, canonicalName: 'astrology.fixed-star.grumium', label: 'Grumium' },
       { id: 'head4', x: 190, y: 100, mag: 4 },
       { id: 'tail1', x: 100, y: 140, mag: 4 },
-      { id: 'tail2', x: 60, y: 200, mag: 4 },
+      { id: 'tail2', x: 60, y: 200, mag: 4, canonicalName: 'astrology.fixed-star.thuban', label: 'Thuban' },
       { id: 'tail3', x: 90, y: 260, mag: 4 },
       { id: 'tail4', x: 160, y: 280, mag: 4 },
     ],
@@ -245,11 +245,11 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'eridanus': {
     viewBox: '0 0 260 320',
     stars: [
-      { id: 'cursa', x: 150, y: 20, mag: 3 },
-      { id: 'p2', x: 100, y: 70, mag: 4 },
+      { id: 'cursa', x: 150, y: 20, mag: 3, canonicalName: 'astrology.fixed-star.cursa', label: 'Cursa' },
+      { id: 'p2', x: 100, y: 70, mag: 4, canonicalName: 'astrology.fixed-star.zaurak', label: 'Zaurak' },
       { id: 'p3', x: 140, y: 130, mag: 4 },
       { id: 'p4', x: 90, y: 190, mag: 4 },
-      { id: 'p5', x: 130, y: 250, mag: 4 },
+      { id: 'p5', x: 130, y: 250, mag: 4, canonicalName: 'astrology.fixed-star.acamar', label: 'Acamar' },
       { id: 'achernar', x: 150, y: 310, mag: 1, canonicalName: 'astrology.fixed-star.achernar', label: 'Achernar' },
     ],
     lines: [
@@ -266,23 +266,26 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       { id: 'castor', x: 110, y: 50, mag: 1, canonicalName: 'astrology.fixed-star.castor', label: 'Castor' },
       { id: 'pollux', x: 210, y: 60, mag: 1, canonicalName: 'astrology.fixed-star.pollux', label: 'Pollux' },
       { id: 'castor_foot', x: 90, y: 220, mag: 4 },
-      { id: 'pollux_foot', x: 230, y: 220, mag: 4 },
+      { id: 'pollux_foot', x: 230, y: 220, mag: 4, canonicalName: 'astrology.fixed-star.alhena', label: 'Alhena' },
+      { id: 'wasat', x: 165, y: 140, mag: 4, canonicalName: 'astrology.fixed-star.wasat', label: 'Wasat' },
     ],
     lines: [
       ['castor', 'pollux'],
       ['castor', 'castor_foot'],
       ['pollux', 'pollux_foot'],
+      ['castor_foot', 'wasat'],
+      ['wasat', 'pollux_foot'],
     ],
   },
   'hercules': {
     viewBox: '0 0 300 280',
     stars: [
       { id: 'k1', x: 150, y: 80, mag: 3 },
-      { id: 'k2', x: 200, y: 110, mag: 3 },
+      { id: 'k2', x: 200, y: 110, mag: 3, canonicalName: 'astrology.fixed-star.kornephoros', label: 'Kornephoros' },
       { id: 'k3', x: 190, y: 170, mag: 3 },
       { id: 'k4', x: 130, y: 160, mag: 3 },
       { id: 'ras_algethi', x: 100, y: 240, mag: 2, canonicalName: 'astrology.fixed-star.ras-algethi', label: 'Ras Algethi' },
-      { id: 'limb_end', x: 230, y: 230, mag: 4 },
+      { id: 'limb_end', x: 230, y: 230, mag: 4, canonicalName: 'astrology.fixed-star.sarin', label: 'Sarin' },
     ],
     lines: [
       ['k1', 'k2'],
@@ -320,7 +323,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     stars: [
       { id: 's4', x: 190, y: 80, mag: 3 },
       { id: 's3', x: 150, y: 60, mag: 3 },
-      { id: 's2', x: 110, y: 100, mag: 3 },
+      { id: 's2', x: 110, y: 100, mag: 3, canonicalName: 'astrology.fixed-star.algieba', label: 'Algieba' },
       { id: 's1', x: 90, y: 160, mag: 3 },
       { id: 'regulus', x: 100, y: 220, mag: 1, canonicalName: 'astrology.fixed-star.regulus', label: 'Regulus' },
       { id: 'zosma', x: 230, y: 150, mag: 2, canonicalName: 'astrology.fixed-star.zosma', label: 'Zosma' },
@@ -343,7 +346,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     stars: [
       { id: 'zubenelgenubi', x: 90, y: 180, mag: 2, canonicalName: 'astrology.fixed-star.zubenelgenubi', label: 'Zubenelgenubi' },
       { id: 'zubeneschamali', x: 230, y: 150, mag: 2, canonicalName: 'astrology.fixed-star.zubeneschamali', label: 'Zubeneschamali' },
-      { id: 'brachium', x: 160, y: 80, mag: 4 },
+      { id: 'brachium', x: 160, y: 80, mag: 4, canonicalName: 'astrology.fixed-star.brachium', label: 'Brachium' },
     ],
     lines: [
       ['zubenelgenubi', 'brachium'],
@@ -357,8 +360,8 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       { id: 'vega', x: 120, y: 40, mag: 1, canonicalName: 'astrology.fixed-star.vega', label: 'Vega' },
       { id: 'q1', x: 90, y: 110, mag: 3 },
       { id: 'q2', x: 160, y: 100, mag: 3 },
-      { id: 'q3', x: 175, y: 170, mag: 3 },
-      { id: 'q4', x: 105, y: 180, mag: 3 },
+      { id: 'q3', x: 175, y: 170, mag: 3, canonicalName: 'astrology.fixed-star.sulafat', label: 'Sulafat' },
+      { id: 'q4', x: 105, y: 180, mag: 3, canonicalName: 'astrology.fixed-star.sheliak', label: 'Sheliak' },
     ],
     lines: [
       ['vega', 'q1'],
@@ -371,8 +374,8 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'ophiuchus': {
     viewBox: '0 0 300 300',
     stars: [
-      { id: 'rasalhague', x: 150, y: 40, mag: 2 },
-      { id: 'shoulder_l', x: 90, y: 100, mag: 3 },
+      { id: 'rasalhague', x: 150, y: 40, mag: 2, canonicalName: 'astrology.fixed-star.rasalhague', label: 'Rasalhague' },
+      { id: 'shoulder_l', x: 90, y: 100, mag: 3, canonicalName: 'astrology.fixed-star.cebalrai', label: 'Cebalrai' },
       { id: 'shoulder_r', x: 210, y: 100, mag: 3 },
       { id: 'hip_l', x: 100, y: 220, mag: 3 },
       { id: 'hip_r', x: 200, y: 220, mag: 3 },
@@ -392,15 +395,17 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     viewBox: '0 0 300 260',
     stars: [
       { id: 'scheat', x: 90, y: 60, mag: 2, canonicalName: 'astrology.fixed-star.scheat', label: 'Scheat' },
-      { id: 'alpheratz', x: 230, y: 60, mag: 3 },
-      { id: 'algenib', x: 230, y: 200, mag: 3 },
+      { id: 'alpheratz', x: 230, y: 60, mag: 3, canonicalName: 'astrology.fixed-star.alpheratz', label: 'Alpheratz' },
+      { id: 'algenib', x: 230, y: 200, mag: 3, canonicalName: 'astrology.fixed-star.algenib', label: 'Algenib' },
       { id: 'markab', x: 90, y: 200, mag: 2, canonicalName: 'astrology.fixed-star.markab', label: 'Markab' },
+      { id: 'enif', x: 20, y: 230, mag: 2, canonicalName: 'astrology.fixed-star.enif', label: 'Enif' },
     ],
     lines: [
       ['scheat', 'alpheratz'],
       ['alpheratz', 'algenib'],
       ['algenib', 'markab'],
       ['markab', 'scheat'],
+      ['markab', 'enif'],
     ],
   },
   'piscis-austrinus': {
@@ -427,15 +432,15 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'scorpius': {
     viewBox: '0 0 320 320',
     stars: [
-      { id: 'h1', x: 150, y: 40, mag: 4 },
+      { id: 'h1', x: 150, y: 40, mag: 4, canonicalName: 'astrology.fixed-star.dschubba', label: 'Dschubba' },
       { id: 'h2', x: 120, y: 60, mag: 4 },
-      { id: 'h3', x: 180, y: 60, mag: 4 },
+      { id: 'h3', x: 180, y: 60, mag: 4, canonicalName: 'astrology.fixed-star.graffias', label: 'Graffias' },
       { id: 'antares', x: 150, y: 110, mag: 1, canonicalName: 'astrology.fixed-star.antares', label: 'Antares' },
       { id: 'body1', x: 160, y: 170, mag: 3 },
       { id: 'body2', x: 140, y: 220, mag: 3 },
       { id: 'curve1', x: 180, y: 260, mag: 3 },
-      { id: 'curve2', x: 230, y: 280, mag: 3 },
-      { id: 'stinger', x: 260, y: 240, mag: 3 },
+      { id: 'curve2', x: 230, y: 280, mag: 3, canonicalName: 'astrology.fixed-star.lesath', label: 'Lesath' },
+      { id: 'stinger', x: 260, y: 240, mag: 3, canonicalName: 'astrology.fixed-star.shaula', label: 'Shaula' },
     ],
     lines: [
       ['h2', 'h1'],
@@ -449,13 +454,14 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
     ],
   },
   'serpens': {
-    viewBox: '0 0 260 280',
+    viewBox: '0 0 260 320',
     stars: [
       { id: 'head1', x: 120, y: 50, mag: 4 },
       { id: 'head2', x: 160, y: 50, mag: 4 },
       { id: 'unukalhai', x: 140, y: 110, mag: 2, canonicalName: 'astrology.fixed-star.unukalhai', label: 'Unukalhai' },
       { id: 'body1', x: 180, y: 180, mag: 4 },
       { id: 'body2', x: 160, y: 250, mag: 4 },
+      { id: 'alya', x: 130, y: 300, mag: 4, canonicalName: 'astrology.fixed-star.alya', label: 'Alya' },
     ],
     lines: [
       ['head1', 'head2'],
@@ -463,6 +469,7 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       ['head2', 'unukalhai'],
       ['unukalhai', 'body1'],
       ['body1', 'body2'],
+      ['body2', 'alya'],
     ],
   },
   'ursa-minor': {
@@ -472,8 +479,8 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
       { id: 'h1', x: 110, y: 70, mag: 3 },
       { id: 'h2', x: 160, y: 100, mag: 3 },
       { id: 'bowl1', x: 220, y: 90, mag: 3 },
-      { id: 'bowl2', x: 260, y: 140, mag: 3 },
-      { id: 'bowl3', x: 230, y: 190, mag: 3 },
+      { id: 'bowl2', x: 260, y: 140, mag: 3, canonicalName: 'astrology.fixed-star.kochab', label: 'Kochab' },
+      { id: 'bowl3', x: 230, y: 190, mag: 3, canonicalName: 'astrology.fixed-star.pherkad', label: 'Pherkad' },
       { id: 'bowl4', x: 180, y: 160, mag: 3 },
     ],
     lines: [
@@ -489,9 +496,9 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'virgo': {
     viewBox: '0 0 300 300',
     stars: [
-      { id: 'head', x: 150, y: 40, mag: 4 },
+      { id: 'head', x: 150, y: 40, mag: 4, canonicalName: 'astrology.fixed-star.porrima', label: 'Porrima' },
       { id: 'vindemiatrix', x: 220, y: 80, mag: 3, canonicalName: 'astrology.fixed-star.vindemiatrix', label: 'Vindemiatrix' },
-      { id: 'wing_left', x: 80, y: 90, mag: 4 },
+      { id: 'wing_left', x: 80, y: 90, mag: 4, canonicalName: 'astrology.fixed-star.zavijava', label: 'Zavijava' },
       { id: 'waist', x: 150, y: 150, mag: 4 },
       { id: 'spica', x: 170, y: 260, mag: 1, canonicalName: 'astrology.fixed-star.spica', label: 'Spica' },
     ],
@@ -505,9 +512,9 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'aquila': {
     viewBox: '0 0 260 240',
     stars: [
-      { id: 'tarazed', x: 150, y: 50, mag: 3 },
+      { id: 'tarazed', x: 150, y: 50, mag: 3, canonicalName: 'astrology.fixed-star.tarazed', label: 'Tarazed' },
       { id: 'altair', x: 150, y: 120, mag: 1, canonicalName: 'astrology.fixed-star.altair', label: 'Altair' },
-      { id: 'alshain', x: 150, y: 190, mag: 3 },
+      { id: 'alshain', x: 150, y: 190, mag: 3, canonicalName: 'astrology.fixed-star.alshain', label: 'Alshain' },
       { id: 'wing_l', x: 90, y: 120, mag: 4 },
       { id: 'wing_r', x: 210, y: 120, mag: 4 },
     ],
@@ -521,10 +528,10 @@ export const CONSTELLATION_DIAGRAMS: Record<string, ConstellationDiagramData> = 
   'aquarius': {
     viewBox: '0 0 300 280',
     stars: [
-      { id: 'sadalmelik', x: 110, y: 50, mag: 3 },
+      { id: 'sadalmelik', x: 110, y: 50, mag: 3, canonicalName: 'astrology.fixed-star.sadalmelik', label: 'Sadalmelik' },
       { id: 'sadalsuud', x: 190, y: 50, mag: 2, canonicalName: 'astrology.fixed-star.sadalsuud', label: 'Sadalsuud' },
       { id: 'jar', x: 150, y: 120, mag: 4 },
-      { id: 'stream1', x: 170, y: 190, mag: 4 },
+      { id: 'stream1', x: 170, y: 190, mag: 4, canonicalName: 'astrology.fixed-star.skat', label: 'Skat' },
       { id: 'stream2', x: 190, y: 260, mag: 4 },
     ],
     lines: [

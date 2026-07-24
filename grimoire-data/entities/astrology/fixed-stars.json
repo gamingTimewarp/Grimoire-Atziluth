@@ -1163,6 +1163,1282 @@
         "behenianStone": null,
         "behenianHerb": null
       }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alpheratz",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alpheratz",
+      "description": "Alpheratz marks the head of the Chained Maiden and, by an old dual claim going back to antiquity, also serves as the northeast corner of the neighbouring Great Square of Pegasus. Classical astrologers held it to be of a gentle, sociable nature blending Venus and Mercury, bestowing honours, eloquence, and a talent for the arts. It sits at the boundary where Andromeda's chain begins, fittingly a star of connection and correspondence.",
+      "secondaryNames": [
+        { "name": "Alpha Andromedae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "andromeda"],
+      "extendedData": {
+        "tropicalLongitude": 29.6,
+        "constellation": "astrology.constellation.andromeda",
+        "magnitude": 2.06,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Associated with talismans for eloquence, artistic favour, and harmonious social standing; its blended Venus-Mercury quality suits workings that call for charm paired with quick wit.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.saiph",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Saiph",
+      "description": "Saiph marks Orion's left foot, the mirror to Rigel on the opposite corner of the great hourglass, though far fainter and colder in character. Its name derives from the Arabic for 'sword of the giant.' Where Rigel is expansive and fortunate, Saiph carries a more austere, Saturnine severity tempered by Mercury's analytical edge.",
+      "secondaryNames": [
+        { "name": "Kappa Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion"],
+      "extendedData": {
+        "tropicalLongitude": 29.9,
+        "constellation": "astrology.constellation.orion",
+        "magnitude": 2.06,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used in workings requiring discipline, precise timing, and the cutting-away of excess — the sober counterpart to Rigel's expansiveness.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.menkalinan",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Menkalinan",
+      "description": "Menkalinan, 'the shoulder of the rein-holder,' rides alongside Capella as the second-brightest star of the Charioteer, marking the reins gathered in Auriga's hand. Its ruddy, martial character was traditionally read as bestowing a bold, restless energy — the drive of one who must always be in motion and in control. It shares Capella's association with safe passage and swift travel, though with a sharper, more assertive edge.",
+      "secondaryNames": [
+        { "name": "Beta Aurigae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "auriga"],
+      "extendedData": {
+        "tropicalLongitude": 25.5,
+        "constellation": "astrology.constellation.auriga",
+        "magnitude": 1.9,
+        "planetaryNature": "Nature of Mars",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "Invoked for safe and rapid travel, especially journeys requiring firm control and quick decisions.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.hassaleh",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Hassaleh",
+      "description": "Hassaleh, an orange giant marking one of the lower points of Auriga's pentagon, sits near the constellation's shared boundary with Taurus. Its subdued, cooler light was traditionally read in the Saturnine mode, lending endurance and a capacity for solitary, sustained effort rather than the Charioteer's usual swiftness.",
+      "secondaryNames": [
+        { "name": "Iota Aurigae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "auriga"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.auriga",
+        "magnitude": 2.69,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used for workings of patience and long endurance rather than speed — the steadying counterweight to the rest of Auriga's energetic character.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.izar",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Izar",
+      "description": "Izar, whose name means 'the loincloth,' is famed among observers as one of the finest double stars in the sky — a golden-orange giant paired with a close blue-white companion. Its blended Venus-Saturn character was read as bringing refined taste bound by discipline, and a capacity for enduring, well-crafted partnerships rather than fleeting attraction.",
+      "secondaryNames": [
+        { "name": "Epsilon Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes"],
+      "extendedData": {
+        "tropicalLongitude": 9.0,
+        "constellation": "astrology.constellation.bootes",
+        "magnitude": 2.35,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Favoured for talismans of lasting artistic partnership and disciplined creative work.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.seginus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Seginus",
+      "description": "Seginus sits at the top of Boötes' kite-shaped outline, marking one shoulder of the Herdsman. Of a cool, analytical Mercury-Saturn character in the classical scheme, it was associated with a methodical mind and a certain melancholic tendency toward isolation, but also with the patient study that isolation makes possible.",
+      "secondaryNames": [
+        { "name": "Gamma Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.bootes",
+        "magnitude": 3.03,
+        "planetaryNature": "Nature of Mercury and Saturn",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used in workings that call for solitary study and disciplined, unhurried learning.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.nekkar",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Nekkar",
+      "description": "Nekkar, from the Arabic for 'the herdsman,' marks the crown of Boötes' head at the top of the kite figure. Sharing the cool, deliberate Mercury-Saturn temperament common to much of this constellation, it was linked to careful oversight and watchfulness — fitting for a star crowning the celestial figure said to guard the wain of Ursa Major.",
+      "secondaryNames": [
+        { "name": "Beta Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.bootes",
+        "magnitude": 3.49,
+        "planetaryNature": "Nature of Mercury and Saturn",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Associated with vigilance and careful oversight of long-term projects.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.muphrid",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Muphrid",
+      "description": "Muphrid, 'the solitary one of the lancer,' sits close beside Arcturus yet is traditionally described as isolated from the rest of the kite figure — hence its name. Its gentler Venus-Mercury nature offers a softer counterpoint to Arcturus's fiery brilliance nearby, associated with quiet, self-sufficient contentment.",
+      "secondaryNames": [
+        { "name": "Eta Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.bootes",
+        "magnitude": 2.68,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for workings of independence and contentment found outside the crowd.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.acubens",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Acubens",
+      "description": "Acubens, 'the claw,' marks one of the Crab's pincers south of the Beehive Cluster. Faint but historically noted, classical authors gave it a Saturn-Mercury character associated with poison, deceit, and the need for wary self-defence — fitting for a star at the tip of a claw, an organ of both grasping and protection.",
+      "secondaryNames": [
+        { "name": "Alpha Cancri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "cancer"],
+      "extendedData": {
+        "tropicalLongitude": 13.5,
+        "constellation": "astrology.constellation.cancer",
+        "magnitude": 4.26,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Traditionally avoided in workings of trust, but sometimes invoked for protective wards.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mirzam",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mirzam",
+      "description": "Mirzam, 'the announcer,' rises just ahead of Sirius each night as if heralding the Dog Star's arrival — its very name commemorates this role. Classical astrologers gave it a Saturn-Jupiter nature, associated with a warning or announcing quality, fitting a star whose entire traditional meaning is bound up with signalling what is about to come.",
+      "secondaryNames": [
+        { "name": "Beta Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 1.98,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used in divination for omens and forewarning, and in workings meant to herald or announce.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.wezen",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Wezen",
+      "description": "Wezen, 'the weight,' is a luminous yellow-white supergiant marking the Dog's haunches, among the most intrinsically brilliant stars visible to the naked eye despite its great distance. Its gentler Venusian character in the classical scheme softens the otherwise fierce reputation of Canis Major, associated with a heavy, grounded steadiness.",
+      "secondaryNames": [
+        { "name": "Delta Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 19.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 1.83,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Associated with steadiness and grounding, tempering more volatile influences nearby.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.adhara",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Adhara",
+      "description": "Adhara, 'the virgins,' is the second-brightest star of Canis Major and one of the most luminous stars known, its light dimmed to our eyes only by immense distance. It marks the Dog's hind paw, and its bright Venusian character was traditionally read as bringing beauty and a far-reaching, almost otherworldly influence, again softening the fierce Sirian reputation of the constellation as a whole.",
+      "secondaryNames": [
+        { "name": "Epsilon Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 1.5,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Invoked for far-reaching influence and beauty that outlasts proximity.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.aludra",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Aludra",
+      "description": "Aludra, 'the virgin,' marks the tip of the Dog's tail, a hot blue supergiant near the end of its stellar life. Its mixed Venus-Saturn quality was read as beauty shadowed by an awareness of impermanence — a fitting character for the tail-star of a constellation whose head-star, Sirius, so dominates its fame.",
+      "secondaryNames": [
+        { "name": "Eta Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 2.45,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used in workings that hold beauty and mortality together, such as memorial or transitional rites.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.gomeisa",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Gomeisa",
+      "description": "Gomeisa, 'the bleary-eyed one' in old Arabic star-lore, is the fainter of Canis Minor's two principal stars, keeping close company with Procyon. Its Mercury-Mars nature was associated with a quick, sometimes sharp-tongued wit, the restless smaller companion to Procyon's warmer prominence.",
+      "secondaryNames": [
+        { "name": "Beta Canis Minoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-minor"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.canis-minor",
+        "magnitude": 2.89,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used for quickness of wit and speech, particularly in contexts requiring a fast, pointed reply.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.algedi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Algedi",
+      "description": "Algedi, 'the goat,' marks the head of the Sea-Goat and is famous as a naked-eye optical double — two unrelated stars, Prima and Secunda Giedi, that merely happen to line up from Earth's vantage. Its mixed Venus-Mars character was traditionally read as bringing both charm and a capacity for sudden, decisive action.",
+      "secondaryNames": [
+        { "name": "Alpha Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.capricornus",
+        "magnitude": 3.57,
+        "planetaryNature": "Nature of Venus and Mars",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used in workings recognising that appearances can deceive — a star whose own nature is a lesson in seeing clearly.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.dabih",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Dabih",
+      "description": "Dabih, from the Arabic for 'the slaughterer' (referring to the ritual sacrifice of a goat), marks the Sea-Goat's other horn. Its Saturn-Venus nature blends restraint with pleasure, a combination classical astrologers linked to hard-won, disciplined enjoyment rather than easy indulgence.",
+      "secondaryNames": [
+        { "name": "Beta Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 9.0,
+        "constellation": "astrology.constellation.capricornus",
+        "magnitude": 3.05,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Associated with disciplined pleasure and reward earned through patience.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.nashira",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Nashira",
+      "description": "Nashira, 'the bearer of good tidings,' sits near the Sea-Goat's tail where the goat's form gives way to the fish. Its Saturn-Jupiter nature was read as bringing fortunate outcomes that arrive only after struggle — victory snatched from adversity, fitting for a star marking the point where Capricornus's earthbound goat transforms into a creature of the sea.",
+      "secondaryNames": [
+        { "name": "Gamma Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.capricornus",
+        "magnitude": 3.69,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Invoked for turning hardship into eventual good fortune.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.miaplacidus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Miaplacidus",
+      "description": "Miaplacidus, 'the placid waters,' is the second-brightest star of Carina, a name that recalls the constellation's origin as the keel of Jason's ship Argo. Its Saturn-Venus nature was read as calm, steady beauty — the placid seas its name describes, ideal conditions for a long voyage.",
+      "secondaryNames": [
+        { "name": "Beta Carinae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "carina"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.carina",
+        "magnitude": 1.69,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used in workings for calm passage and steady, untroubled progress.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.avior",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Avior",
+      "description": "Avior is a comparatively modern name, coined for the aviation almanacs of the twentieth century for use as a navigational star — fittingly, for a star in the ship's keel. Its Saturn-Jupiter character combines endurance with fortune, the qualities needed for a long journey to reach safe harbour.",
+      "secondaryNames": [
+        { "name": "Epsilon Carinae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "carina"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.carina",
+        "magnitude": 1.86,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Invoked by modern practitioners for safe navigation and long journeys, echoing its aviation-era name.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.rigil-kentaurus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Rigil Kentaurus",
+      "description": "Rigil Kentaurus, 'the Centaur's foot,' is in truth the nearest star system to our own Sun, though it appears modest from Earth only because deep-southern skies hide it from much of the northern hemisphere. Classical astrologers gave it a fortunate Jupiter-Venus nature, associated with good friendships, honour, and a generally benefic influence — a reputation perhaps fitting for the star system closest to home.",
+      "secondaryNames": [
+        { "name": "Alpha Centauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": -0.27,
+        "planetaryNature": "Nature of Jupiter and Venus",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Widely regarded as one of the most beneficial fixed stars, invoked for friendship, honour, and good fortune generally.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.menkent",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Menkent",
+      "description": "Menkent, 'the shoulder of the Centaur,' marks the wise Centaur's upper body — the same figure many traditions identify with Chiron, healer and teacher of heroes. Its Venus-Mercury nature was read as combining grace with wisdom, fitting the constellation's reputation for civilising knowledge brought to humankind.",
+      "secondaryNames": [
+        { "name": "Theta Centauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 6.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": 2.06,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Associated with teaching, healing knowledge, and the graceful transmission of wisdom.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.gienah",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Gienah",
+      "description": "Gienah, 'the wing,' is the brightest star of Corvus and marks the raven's wing as it strains toward the water-cup it was sent to fetch. Its Mars-Saturn nature carries the same ill repute traditionally given the constellation as a whole — a bird punished for dawdling and lying, associated with deceit, spite, and delay.",
+      "secondaryNames": [
+        { "name": "Gamma Corvi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "corvus"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.corvus",
+        "magnitude": 2.59,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Traditionally avoided for oaths and promises, given the myth of the lying, tardy raven it belongs to.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kraz",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kraz",
+      "description": "Kraz marks the raven's leg in the small, boat-shaped quadrilateral of Corvus, sharing the same malefic Mars-Saturn character long attributed to this compact constellation. It was read as compounding the difficulties of Algorab and Gienah rather than offering relief from them.",
+      "secondaryNames": [
+        { "name": "Beta Corvi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "corvus"],
+      "extendedData": {
+        "tropicalLongitude": 13.0,
+        "constellation": "astrology.constellation.corvus",
+        "magnitude": 2.65,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Approached with the same caution as the rest of Corvus in traditional practice.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.minkar",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Minkar",
+      "description": "Minkar, 'the beak,' completes Corvus's small quadrilateral at the raven's head. Fainter than its companions but sharing their character, it was linked in classical sources to sharp speech and cutting remarks — the beak being the instrument of the bird's proverbial lies.",
+      "secondaryNames": [
+        { "name": "Epsilon Corvi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "corvus"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.corvus",
+        "magnitude": 3.02,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Linked to sharp or cutting speech; used cautiously, if at all, in workings involving communication.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sadr",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sadr",
+      "description": "Sadr, 'the breast,' sits at the centre of the Northern Cross where the Swan's wings meet its body, embedded in a rich stretch of the Milky Way. Its gentle Venus-Mercury nature was associated with artistic sensibility and reflective, communicative warmth, radiating outward like the wings it centres.",
+      "secondaryNames": [
+        { "name": "Gamma Cygni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 13.0,
+        "constellation": "astrology.constellation.cygnus",
+        "magnitude": 2.23,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for creative and communicative workings centred on connection between people.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.albireo",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Albireo",
+      "description": "Albireo marks the Swan's beak and is treasured by observers as one of the most beautiful double stars in the sky, its two components shining gold and sapphire-blue side by side. Its Venusian nature was read as pure aesthetic harmony — beauty found in contrast and pairing, much like the double star itself.",
+      "secondaryNames": [
+        { "name": "Beta Cygni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.cygnus",
+        "magnitude": 3.18,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Strongly associated with romantic and aesthetic harmony, and the beauty found in complementary pairs.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.gienah-cygni",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Gienah Cygni",
+      "description": "Gienah Cygni, 'the wing' (distinct from the like-named star in Corvus), marks the tip of the Swan's eastern wing. Sharing Sadr's gentler Venus-Mercury nature rather than Corvus's harsher reputation, its name is a reminder that the same word can crown very different stars in very different constellations.",
+      "secondaryNames": [
+        { "name": "Epsilon Cygni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.cygnus",
+        "magnitude": 2.46,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used interchangeably with Sadr's associations, tempered toward the outward-reaching, wing-tip quality of flight and departure.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.eltanin",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Eltanin",
+      "description": "Eltanin, 'the great serpent,' is the brightest star of Draco and marks one of the two eyes of the Dragon's head, alongside its close neighbour Rastaban. Its Saturn-Mars nature preserves the watchful, coiled-and-ready character long given to serpent stars — vigilance edged with latent aggression.",
+      "secondaryNames": [
+        { "name": "Gamma Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 26.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 2.23,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used for protective vigilance and readiness to defend when necessary.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.thuban",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Thuban",
+      "description": "Thuban is faint today but was once the most important star in the northern sky: around 2700 BCE, precession placed it almost exactly at the north celestial pole, and the ancient Egyptians aligned the Great Pyramid's descending passage upon it. Its Saturn-Mars nature was read as carrying the weight of long-faded authority — a star that remembers being central even as it has drifted from that role.",
+      "secondaryNames": [
+        { "name": "Alpha Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 3.65,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Invoked in workings concerned with legacy, faded authority, and the passage of great ages.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.grumium",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Grumium",
+      "description": "Grumium, 'the jaw,' completes the small quadrilateral marking the Dragon's head, close by Eltanin and Rastaban. Its Saturn-Mercury nature was linked to a cold, calculating watchfulness — the jaw poised but not yet striking.",
+      "secondaryNames": [
+        { "name": "Xi Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 3.75,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for patient, calculating watchfulness rather than immediate action.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.cursa",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Cursa",
+      "description": "Cursa, 'the footstool,' marks the source of the celestial River near Orion's foot, where Eridanus begins its long winding course toward the southern sky. Its Jupiter-Saturn nature was read as a disciplined, gradually unfolding fortune — fitting for a star marking the beginning of so long a journey.",
+      "secondaryNames": [
+        { "name": "Beta Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 16.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 2.79,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for the beginning of long undertakings whose rewards unfold gradually rather than at once.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zaurak",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zaurak",
+      "description": "Zaurak, 'the boat,' marks a bend partway along the River's long course. Its Saturnine character was traditionally read as bringing hardship met with endurance, a difficult passage along an otherwise fortunate journey.",
+      "secondaryNames": [
+        { "name": "Gamma Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 4.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 2.95,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Associated with enduring a difficult stretch of an otherwise worthwhile undertaking.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.acamar",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Acamar",
+      "description": "Acamar shares its name and etymology with Achernar — both derive from the Arabic 'akhir an-nahr,' 'the end of the river' — as it once marked the visible terminus of Eridanus before Achernar's far-southern position was catalogued. Its Jupiter-Saturn nature echoes Achernar's own, an earlier and gentler version of the river's fortunate conclusion.",
+      "secondaryNames": [
+        { "name": "Theta Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 22.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 2.91,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for reaching a worthy conclusion after a long course, a milder precursor to Achernar's own associations.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alhena",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alhena",
+      "description": "Alhena, 'the brand' or 'mark on the foot,' sits at the foot of one of the Twins, some distance from Castor and Pollux's paired heads. Its Venus-Mercury nature was read as bringing artistic distinction — a mark that sets its bearer apart, much as the star's name suggests.",
+      "secondaryNames": [
+        { "name": "Gamma Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 8.5,
+        "constellation": "astrology.constellation.gemini",
+        "magnitude": 1.93,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used in workings for standing out through refined artistic or intellectual distinction.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.wasat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Wasat",
+      "description": "Wasat, 'the middle,' marks the waist of the Twins' figure, roughly centred within the constellation's outline. Its Saturn-Mercury nature was linked to a careful, centred temperament — measured thought rather than either Twin's more impulsive extremes.",
+      "secondaryNames": [
+        { "name": "Delta Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 16.5,
+        "constellation": "astrology.constellation.gemini",
+        "magnitude": 3.53,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for finding balance and a centred, measured approach between two extremes.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kornephoros",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kornephoros",
+      "description": "Kornephoros, 'the club-bearer,' is the true brightest star of Hercules, marking the hero's shoulder as he raises his club. Its Mercury-Saturn nature was read as disciplined strength directed by careful judgement, rather than force alone.",
+      "secondaryNames": [
+        { "name": "Beta Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 26.0,
+        "constellation": "astrology.constellation.hercules",
+        "magnitude": 2.78,
+        "planetaryNature": "Nature of Mercury and Saturn",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for workings that combine strength with disciplined restraint and judgement.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sarin",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sarin",
+      "description": "Sarin sits along Hercules's outstretched limb, one of the fainter stars completing the sprawling figure of the kneeling hero. Its Venus-Mercury nature offers a gentler counterpoint to the labour and strength otherwise associated with this constellation.",
+      "secondaryNames": [
+        { "name": "Delta Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 6.0,
+        "constellation": "astrology.constellation.hercules",
+        "magnitude": 3.14,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for grace within effort — the gentler quality that accompanies great labour.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.algieba",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Algieba",
+      "description": "Algieba, 'the lion's mane,' is a splendid golden double star marking the curve of the Lion's neck at the top of the sickle asterism. Its Saturn-Mercury nature in the classical scheme was read as bringing sudden reversals of fortune alongside considerable mental power, an intensity befitting a star at the mane of so regal a beast.",
+      "secondaryNames": [
+        { "name": "Gamma Leonis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "leo"],
+      "extendedData": {
+        "tropicalLongitude": 2.0,
+        "constellation": "astrology.constellation.leo",
+        "magnitude": 2.08,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used cautiously in workings involving sudden change in status, given its reputation for reversal of fortune.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.brachium",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Brachium",
+      "description": "Brachium, 'the arm,' marks the arm of the scale-holder in Libra's older identity as the claws and beam of the Scorpion before the Romans carved it into a separate figure of justice. Its Mars-Jupiter nature was read as bringing forceful but ultimately fair-minded action — the strength needed to hold the balance steady.",
+      "secondaryNames": [
+        { "name": "Sigma Librae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "libra"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.libra",
+        "magnitude": 3.29,
+        "planetaryNature": "Nature of Mars and Jupiter",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used in workings for the strength required to enforce fairness and hold a balance under pressure.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sheliak",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sheliak",
+      "description": "Sheliak, 'the tortoise' or 'lyre' in old Arabic star-names (recalling the instrument's mythic construction from a tortoise shell), is a famous eclipsing variable whose brightness visibly shifts over less than two weeks. Its Venus-Saturn nature was read as artistic gift shadowed by discipline or restraint — beauty that must be worked for.",
+      "secondaryNames": [
+        { "name": "Beta Lyrae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "lyra"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.lyra",
+        "magnitude": 3.52,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for creative discipline — the labour behind apparently effortless artistic gift.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sulafat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sulafat",
+      "description": "Sulafat, 'the tortoise,' completes the small parallelogram of Lyra alongside Sheliak, both names preserving the lyre's legendary origin from a tortoise shell strung by Hermes and given to Orpheus. Its pure Venusian nature was read as harmonious artistic favour, uncomplicated by the variability that marks its neighbour.",
+      "secondaryNames": [
+        { "name": "Gamma Lyrae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "lyra"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.lyra",
+        "magnitude": 3.24,
+        "planetaryNature": "Nature of Venus",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used for straightforward artistic favour and harmonious creative expression.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.rasalhague",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Rasalhague",
+      "description": "Rasalhague, 'head of the serpent-charmer,' is the true brightest star of Ophiuchus, marking the head of Asclepius as he grasps the serpent that taught him the secret of resurrection. Its Saturn-Venus nature was traditionally linked to healing knowledge gained through discipline, and — more darkly — to the perils of misusing such knowledge, echoing the myth in which Asclepius's healing grew powerful enough to trouble the gods themselves.",
+      "secondaryNames": [
+        { "name": "Alpha Ophiuchi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ophiuchus"],
+      "extendedData": {
+        "tropicalLongitude": 22.0,
+        "constellation": "astrology.constellation.ophiuchus",
+        "magnitude": 2.08,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Strongly associated with the study of healing and medicine, particularly knowledge gained through long discipline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.cebalrai",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Cebalrai",
+      "description": "Cebalrai, 'the shepherd's dog,' marks the serpent-charmer's shoulder. Sharing Rasalhague's Saturn-Venus temperament in gentler measure, it was read as watchful, protective discipline — a guardian's steadiness rather than the healer's active power.",
+      "secondaryNames": [
+        { "name": "Beta Ophiuchi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ophiuchus"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.ophiuchus",
+        "magnitude": 2.76,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for protective vigilance in the service of another, echoing the watchdog quality of its name.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.algenib",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Algenib",
+      "description": "Algenib, 'the side' or 'flank,' completes the fourth corner of the Great Square of Pegasus alongside Markab and Scheat (the true fourth corner, Alpheratz, technically belonging to neighbouring Andromeda). Its Mars-Mercury nature was read as quick, assertive intelligence, in keeping with the winged horse's speed.",
+      "secondaryNames": [
+        { "name": "Gamma Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.pegasus",
+        "magnitude": 2.83,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for quick, decisive thinking and swift, well-aimed action.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.enif",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Enif",
+      "description": "Enif, 'the nose,' marks the muzzle of the Winged Horse and is often cited as the constellation's single brightest star, though only marginally ahead of Scheat. Its Mercury-Jupiter nature was traditionally linked to a fortunate, far-reaching temperament and good sense — the discernment that guides the horse's flight.",
+      "secondaryNames": [
+        { "name": "Epsilon Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.pegasus",
+        "magnitude": 2.39,
+        "planetaryNature": "Nature of Mercury and Jupiter",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used for guidance and good judgement in the midst of swift, far-reaching undertakings.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.shaula",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Shaula",
+      "description": "Shaula, 'the raised tail,' marks the Scorpion's stinger, one of the most instantly recognisable points of the whole constellation as it curls up and back toward Antares. Its Jupiter-Mercury nature was read, somewhat surprisingly for a stinger-star, as bringing a sharp, penetrating mind and a capacity for decisive, well-timed strikes of insight.",
+      "secondaryNames": [
+        { "name": "Lambda Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 1.62,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for decisive, well-timed action and sharp insight delivered at exactly the right moment.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.dschubba",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Dschubba",
+      "description": "Dschubba, 'the forehead,' marks the head of the Scorpion at the western end of its claws, a variable star known to flare unpredictably brighter over months or years. Its Mars-Saturn nature carries the same challenging, combative reputation long given to Antares and the constellation as a whole — sudden, unpredictable intensity.",
+      "secondaryNames": [
+        { "name": "Delta Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 2.29,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Approached with caution in traditional practice, given its association with sudden and unpredictable intensity.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.graffias",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Graffias",
+      "description": "Graffias, also called Acrab, marks the Scorpion's claw alongside Dschubba, a fine multiple-star system to the telescope. Sharing the same combative Mars-Saturn temperament as its neighbour, it was linked to conflict, particularly disputes arising from pride or contested status.",
+      "secondaryNames": [
+        { "name": "Beta Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 6.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 2.56,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used with caution, particularly regarding disputes over status or pride.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.lesath",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Lesath",
+      "description": "Lesath, 'the sting,' sits immediately beside Shaula at the tip of the Scorpion's tail — the two together are sometimes called the 'Cat's Eyes' for their close, bright pairing. Its Mercury-Mars nature echoes Shaula's own sharp, decisive character, a fitting twin for the very point of the stinger.",
+      "secondaryNames": [
+        { "name": "Upsilon Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 2.69,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used alongside Shaula for sharp, decisive, well-aimed action.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alya",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alya",
+      "description": "Alya, 'the tail,' marks the tip of Serpens Cauda, the serpent's tail-half on the far side of Ophiuchus from Unukalhai's neck. Its gentler Saturn-Venus nature was read as a quiet, disciplined completion — the far end of a journey the serpent's head began.",
+      "secondaryNames": [
+        { "name": "Theta Serpentis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "serpens"],
+      "extendedData": {
+        "tropicalLongitude": 10.0,
+        "constellation": "astrology.constellation.serpens",
+        "magnitude": 4.62,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for quiet completion of a long undertaking begun elsewhere.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kochab",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kochab",
+      "description": "Kochab, the second-brightest star of the Little Dipper, shares with Pherkad the old title 'the Guardians of the Pole,' having together stood nearest the celestial pole for centuries before Polaris assumed that role. Its Saturn-Mercury nature was read as steadfast, watchful guardianship, a fitting inheritance from its long service near the axis of the sky.",
+      "secondaryNames": [
+        { "name": "Beta Ursae Minoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ursa-minor"],
+      "extendedData": {
+        "tropicalLongitude": 22.0,
+        "constellation": "astrology.constellation.ursa-minor",
+        "magnitude": 2.07,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked for steadfast guardianship and long, patient watchfulness.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.pherkad",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Pherkad",
+      "description": "Pherkad, Kochab's fellow 'Guardian of the Pole,' completes the outer edge of the Little Dipper's bowl. Its gentler Saturn-Venus nature softens Kochab's austerity, pairing watchfulness with a quieter, more affectionate loyalty.",
+      "secondaryNames": [
+        { "name": "Gamma Ursae Minoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ursa-minor"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.ursa-minor",
+        "magnitude": 3.05,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used alongside Kochab for loyal companionship in a long watch or vigil.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.porrima",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Porrima",
+      "description": "Porrima, named for a Roman goddess of prophecy, is a celebrated binary star marking one of Virgo's outstretched wings. Its Mercury-Venus nature was read as bringing prophetic insight delivered with grace and tact — fitting for a star named after a goddess of foresight.",
+      "secondaryNames": [
+        { "name": "Gamma Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.virgo",
+        "magnitude": 2.74,
+        "planetaryNature": "Nature of Mercury and Venus",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used in workings of divination and prophetic insight delivered with tact.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zavijava",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zavijava",
+      "description": "Zavijava, 'the angle' or 'corner,' marks the tip of Virgo's other wing, its name referring to its position at a corner of the constellation's outline. Sharing Porrima's Mercury-Venus temperament, it lends a gentler, more understated grace to the same wing that Vindemiatrix marks more prominently nearby.",
+      "secondaryNames": [
+        { "name": "Beta Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.virgo",
+        "magnitude": 3.6,
+        "planetaryNature": "Nature of Mercury and Venus",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for understated grace and quiet, corner-of-the-room influence.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.tarazed",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Tarazed",
+      "description": "Tarazed, 'the balance,' stands just above Altair in the sky, the two together with Alshain below forming the short, recognisable line across the Eagle's body. Its Saturn-Venus nature was read as steady, weighing judgement — balance held with grace rather than force.",
+      "secondaryNames": [
+        { "name": "Gamma Aquilae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquila"],
+      "extendedData": {
+        "tropicalLongitude": 17.0,
+        "constellation": "astrology.constellation.aquila",
+        "magnitude": 2.72,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for weighing decisions carefully and finding graceful balance under pressure.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alshain",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alshain",
+      "description": "Alshain, from the Persian for 'the falcon,' completes the short line of three stars across Aquila alongside Altair and Tarazed. Its Saturn-Mercury nature was read as sharp, disciplined focus — the falcon's fixed attention on its target.",
+      "secondaryNames": [
+        { "name": "Beta Aquilae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquila"],
+      "extendedData": {
+        "tropicalLongitude": 21.0,
+        "constellation": "astrology.constellation.aquila",
+        "magnitude": 3.71,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for sharp, disciplined focus and fixed attention on a single goal.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sadalmelik",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sadalmelik",
+      "description": "Sadalmelik, 'the luck of the king,' is the true brightest star of Aquarius, marking the Water-Bearer's shoulder. Its Saturn-Mercury nature was traditionally read as bringing good fortune arrived at through careful, disciplined thought — royal luck earned by wisdom rather than chance.",
+      "secondaryNames": [
+        { "name": "Alpha Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 2.94,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked for fortune gained through wise counsel and careful, disciplined planning.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.skat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Skat",
+      "description": "Skat, 'the wish' or 'the leg,' marks the Water-Bearer's leg where the poured stream begins its long fall toward Fomalhaut in Piscis Austrinus below. Sharing Sadalmelik's Saturn-Mercury character in a gentler register, it was linked to wishes granted through patient, sustained effort.",
+      "secondaryNames": [
+        { "name": "Delta Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 21.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 3.27,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for the patient, sustained effort behind a wish eventually granted.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
     }
   ]
 }
