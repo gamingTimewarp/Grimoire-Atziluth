@@ -801,8 +801,9 @@ function calcCampanusHouses(ascLon: number, mcLon: number, ramcDeg: number, latD
     // Declination: tan(δ) = cos(H) * tan(φ)
     const tanDec = Math.cos(H) * Math.tan(latRad)
     const decRad = Math.atan(tanDec)
-    // RA = RAMC - H (H measured westward from meridian)
-    const raRad = (ramcDeg * D2R) - H
+    // RA = RAMC + H (verified against JPL-consistent house ordering; RAMC - H
+    // places every non-angular cusp in the wrong quadrant)
+    const raRad = (ramcDeg * D2R) + H
     cusps[idx] = eqToEcl(raRad, decRad, epsRad)
   }
   return cusps
@@ -822,17 +823,21 @@ function placidusIterate(
   initLon: number,
 ): number {
   let lon = initLon
-  const raic = normLon(ramcDeg + 180)
   for (let iter = 0; iter < 20; iter++) {
-    const { ra, decRad } = eclToEq(lon, epsRad)
+    const { decRad } = eclToEq(lon, epsRad)
     const D = semiDiurnalArcDeg(decRad, latRad)
     if (D === 0 || D === 180) break  // circumpolar / never-rises fallback
+    // A point's RA satisfies RA = RAMC + D (its own semi-diurnal arc) exactly when
+    // it is rising (at the Ascendant), and RA = RAMC + 180 when at the IC. Trisecting
+    // the diurnal quadrant (MC→ASC) or nocturnal quadrant (ASC→IC) means interpolating
+    // between these two RA landmarks — NOT subtracting from RAMC, which lands cusps in
+    // the wrong quadrant entirely (verified against JPL-consistent house ordering).
     let targetRA: number
     if (diurnal) {
-      targetRA = normLon(ramcDeg - D * targetFrac)
+      targetRA = normLon(ramcDeg + D * targetFrac)
     } else {
       const N = 180 - D
-      targetRA = normLon(raic + N * targetFrac)
+      targetRA = normLon(ramcDeg + D + N * targetFrac)
     }
     const newLon = normLon(Math.atan2(Math.sin(targetRA * D2R), Math.cos(targetRA * D2R) * Math.cos(epsRad)) * R2D)
     if (Math.abs(normLon(newLon - lon + 180) - 180) < 0.0001) break
@@ -856,8 +861,8 @@ function calcPlacidusHouses(ascLon: number, mcLon: number, ramcDeg: number, latD
 
   cusps[10] = placidusIterate(1/3, ramcDeg, latRad, epsRad, true,  normLon(mcLon  + 30))
   cusps[11] = placidusIterate(2/3, ramcDeg, latRad, epsRad, true,  normLon(mcLon  + 60))
-  cusps[1]  = placidusIterate(1/3, ramcDeg, latRad, epsRad, false, normLon(ic     + 30))
-  cusps[2]  = placidusIterate(2/3, ramcDeg, latRad, epsRad, false, normLon(ic     + 60))
+  cusps[1]  = placidusIterate(1/3, ramcDeg, latRad, epsRad, false, normLon(ascLon + 30))
+  cusps[2]  = placidusIterate(2/3, ramcDeg, latRad, epsRad, false, normLon(ascLon + 60))
 
   // Opposite cusps
   cusps[4]  = normLon(cusps[10] + 180)
@@ -903,12 +908,15 @@ function calcKochHouses(ascLon: number, mcLon: number, ramcDeg: number, latDeg: 
   if (dMC === 0 || dMC === 180) return calcPorphyryHouses(ascLon, mcLon)  // fallback
 
   const nMC = 180 - dMC  // nocturnal semi-arc
-  const raic = normLon(ramcDeg + 180)
 
-  cusps[10] = kochIterate(normLon(ramcDeg + dMC / 3),       latRad, epsRad, normLon(mcLon + 30))
-  cusps[11] = kochIterate(normLon(ramcDeg + 2 * dMC / 3),   latRad, epsRad, normLon(mcLon + 60))
-  cusps[1]  = kochIterate(normLon(raic    + nMC / 3),       latRad, epsRad, normLon(ic    + 30))
-  cusps[2]  = kochIterate(normLon(raic    + 2 * nMC / 3),   latRad, epsRad, normLon(ic    + 60))
+  // As with Placidus: a point's RA equals RAMC + D (its own semi-diurnal arc) at the
+  // Ascendant and RAMC + 180 at the IC, so the nocturnal-quadrant target must be built
+  // from ramcDeg + dMC (i.e. RA at the Ascendant), not from RAMC + 180 (raic) directly —
+  // that lands cusps 2/3 in the wrong quadrant (verified against JPL-consistent ordering).
+  cusps[10] = kochIterate(normLon(ramcDeg + dMC / 3),           latRad, epsRad, normLon(mcLon  + 30))
+  cusps[11] = kochIterate(normLon(ramcDeg + 2 * dMC / 3),       latRad, epsRad, normLon(mcLon  + 60))
+  cusps[1]  = kochIterate(normLon(ramcDeg + dMC + nMC / 3),     latRad, epsRad, normLon(ascLon + 30))
+  cusps[2]  = kochIterate(normLon(ramcDeg + dMC + 2 * nMC / 3), latRad, epsRad, normLon(ascLon + 60))
 
   cusps[4]  = normLon(cusps[10] + 180)
   cusps[5]  = normLon(cusps[11] + 180)

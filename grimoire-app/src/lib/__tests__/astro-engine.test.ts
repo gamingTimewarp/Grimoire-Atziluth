@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { getPlanetPositions } from '../astro-engine'
+import { getPlanetPositions, getHouses } from '../astro-engine'
+import type { HouseSystem } from '../astro-engine'
 
 // ─── Ground truth ───────────────────────────────────────────────────────────────
 //
@@ -47,5 +48,56 @@ describe('getPlanetPositions — JPL Horizons cross-check', () => {
       expect(actual).toBeDefined()
       expect(angularDiff(actual!, expected)).toBeLessThan(TOLERANCE_DEG)
     })
+  }
+})
+
+// ─── House cusp ordering ────────────────────────────────────────────────────────
+//
+// Regression coverage for a bug where Placidus, Koch, and Campanus each had an
+// independent sign error (RAMC - H instead of RAMC + H, or equivalent) that placed
+// cusps 2/3/5/6/8/9/11/12 in the wrong quadrant entirely — visually, house 6 and 12
+// would "swallow" the rest of their half of the chart, since the wrongly-placed
+// neighbouring cusp left a ~150-330° gap instead of the normal ~15-50°. Whole-sign,
+// Equal, Porphyry, Morinus, and Regiomontanus were unaffected (no diurnal/nocturnal
+// quadrant branching to get backwards). This test doesn't check exact cusp values
+// against an external source (house systems are an astrological convention, not an
+// ephemeris quantity) — it checks the structural property that broke: every house
+// must be a "normal" width and the 12 cusps must proceed monotonically around the
+// circle without any single house consuming half the wheel.
+
+const HOUSE_SYSTEMS: HouseSystem[] = [
+  'whole-sign', 'equal', 'placidus', 'koch', 'regiomontanus', 'campanus', 'porphyry', 'morinus',
+]
+
+// [date, lat, lon] — spans northern/southern hemispheres and a range of latitudes.
+const HOUSE_TEST_CASES: [string, number, number][] = [
+  ['1990-06-15T14:30:00Z', 40.7128, -74.0060],   // New York
+  ['1975-12-01T03:15:00Z', 51.5074, -0.1278],    // London
+  ['2005-08-20T20:45:00Z', -33.8688, 151.2093],  // Sydney (southern hemisphere)
+]
+
+function houseWidth(cusps: number[], i: number): number {
+  const next = cusps[(i + 1) % 12]
+  let width = next - cusps[i]
+  if (width < 0) width += 360
+  return width
+}
+
+describe('getHouses — cusp ordering sanity', () => {
+  for (const system of HOUSE_SYSTEMS) {
+    for (const [dateStr, lat, lon] of HOUSE_TEST_CASES) {
+      it(`${system} houses are sanely ordered for ${dateStr} @ (${lat}, ${lon})`, () => {
+        const { cusps } = getHouses(new Date(dateStr), lat, lon, system)
+        expect(cusps).toHaveLength(12)
+        for (let i = 0; i < 12; i++) {
+          const width = houseWidth(cusps, i)
+          // No house should be a sliver or swallow half the chart. Equal-width
+          // systems are exactly 30°; quadrant systems vary but stay well within this
+          // band except at extreme latitudes (already exercised by the 3 cases above).
+          expect(width).toBeGreaterThan(1)
+          expect(width).toBeLessThan(100)
+        }
+      })
+    }
   }
 })
