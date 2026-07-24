@@ -13,7 +13,7 @@
       "tags": ["fixed-star", "astrology", "aries"],
       "extendedData": {
         "tropicalLongitude": 7.67,
-        "constellation": "Aries",
+        "constellation": "astrology.constellation.aries",
         "magnitude": 2.01,
         "planetaryNature": "Nature of Jupiter and Mars",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -36,7 +36,7 @@
       "tags": ["fixed-star", "astrology", "aries"],
       "extendedData": {
         "tropicalLongitude": 3.97,
-        "constellation": "Aries",
+        "constellation": "astrology.constellation.aries",
         "magnitude": 2.64,
         "planetaryNature": "Nature of Mars and Saturn",
         "primaryPlanet": "astrology.planet.mars",
@@ -59,7 +59,7 @@
       "tags": ["fixed-star", "astrology", "aries"],
       "extendedData": {
         "tropicalLongitude": 3.2,
-        "constellation": "Aries",
+        "constellation": "astrology.constellation.aries",
         "magnitude": 3.88,
         "planetaryNature": "Nature of Mars and Saturn",
         "primaryPlanet": "astrology.planet.mars",
@@ -82,7 +82,7 @@
       "tags": ["fixed-star", "astrology", "andromeda"],
       "extendedData": {
         "tropicalLongitude": 0.4,
-        "constellation": "Andromeda",
+        "constellation": "astrology.constellation.andromeda",
         "magnitude": 2.06,
         "planetaryNature": "Nature of Venus",
         "primaryPlanet": "astrology.planet.venus",
@@ -105,7 +105,7 @@
       "tags": ["fixed-star", "astrology", "andromeda"],
       "extendedData": {
         "tropicalLongitude": 14.23,
-        "constellation": "Andromeda",
+        "constellation": "astrology.constellation.andromeda",
         "magnitude": 2.26,
         "planetaryNature": "Nature of Venus",
         "primaryPlanet": "astrology.planet.venus",
@@ -129,7 +129,7 @@
       "tags": ["fixed-star", "astrology", "taurus", "behenian", "pleiades"],
       "extendedData": {
         "tropicalLongitude": 29.95,
-        "constellation": "Taurus",
+        "constellation": "astrology.constellation.taurus",
         "magnitude": 2.87,
         "planetaryNature": "Nature of Moon and Mars",
         "primaryPlanet": "astrology.planet.luna",
@@ -154,7 +154,7 @@
       "tags": ["fixed-star", "astrology", "taurus", "behenian", "royal-star"],
       "extendedData": {
         "tropicalLongitude": 9.78,
-        "constellation": "Taurus",
+        "constellation": "astrology.constellation.taurus",
         "magnitude": 0.87,
         "planetaryNature": "Nature of Mars",
         "primaryPlanet": "astrology.planet.mars",
@@ -177,7 +177,7 @@
       "tags": ["fixed-star", "astrology", "orion", "behenian"],
       "extendedData": {
         "tropicalLongitude": 16.83,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 0.18,
         "planetaryNature": "Nature of Jupiter and Saturn",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -200,7 +200,7 @@
       "tags": ["fixed-star", "astrology", "auriga", "behenian"],
       "extendedData": {
         "tropicalLongitude": 21.85,
-        "constellation": "Auriga",
+        "constellation": "astrology.constellation.auriga",
         "magnitude": 0.08,
         "planetaryNature": "Nature of Mercury and Mars",
         "primaryPlanet": "astrology.planet.mercury",
@@ -224,7 +224,7 @@
       "tags": ["fixed-star", "astrology", "orion"],
       "extendedData": {
         "tropicalLongitude": 20.95,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 1.64,
         "planetaryNature": "Nature of Mars and Mercury",
         "primaryPlanet": "astrology.planet.mars",
@@ -248,7 +248,7 @@
       "tags": ["fixed-star", "astrology", "taurus"],
       "extendedData": {
         "tropicalLongitude": 22.58,
-        "constellation": "Taurus",
+        "constellation": "astrology.constellation.taurus",
         "magnitude": 1.68,
         "planetaryNature": "Nature of Mars and Jupiter",
         "primaryPlanet": "astrology.planet.mars",
@@ -271,7 +271,7 @@
       "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
       "extendedData": {
         "tropicalLongitude": 22.4,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 2.23,
         "planetaryNature": "Nature of Saturn and Mercury",
         "primaryPlanet": "astrology.planet.saturn",
@@ -294,7 +294,7 @@
       "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
       "extendedData": {
         "tropicalLongitude": 23.47,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 1.69,
         "planetaryNature": "Nature of Saturn and Jupiter",
         "primaryPlanet": "astrology.planet.saturn",
@@ -317,7 +317,7 @@
       "tags": ["fixed-star", "astrology", "orion", "orions-belt"],
       "extendedData": {
         "tropicalLongitude": 24.57,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 1.74,
         "planetaryNature": "Nature of Saturn and Jupiter",
         "primaryPlanet": "astrology.planet.saturn",
@@ -341,7 +341,7 @@
       "tags": ["fixed-star", "astrology", "orion", "behenian"],
       "extendedData": {
         "tropicalLongitude": 28.75,
-        "constellation": "Orion",
+        "constellation": "astrology.constellation.orion",
         "magnitude": 0.45,
         "planetaryNature": "Nature of Mars and Mercury",
         "primaryPlanet": "astrology.planet.mars",
@@ -366,7 +366,7 @@
       "tags": ["fixed-star", "astrology", "ursa-minor"],
       "extendedData": {
         "tropicalLongitude": 28.57,
-        "constellation": "Ursa Minor",
+        "constellation": "astrology.constellation.ursa-minor",
         "magnitude": 1.98,
         "planetaryNature": "Nature of Saturn and Venus",
         "primaryPlanet": "astrology.planet.saturn",
@@ -391,7 +391,7 @@
       "tags": ["fixed-star", "astrology", "canis-major", "behenian"],
       "extendedData": {
         "tropicalLongitude": 14.08,
-        "constellation": "Canis Major",
+        "constellation": "astrology.constellation.canis-major",
         "magnitude": -1.46,
         "planetaryNature": "Nature of Jupiter and Mars",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -414,7 +414,7 @@
       "tags": ["fixed-star", "astrology", "carina"],
       "extendedData": {
         "tropicalLongitude": 14.97,
-        "constellation": "Carina",
+        "constellation": "astrology.constellation.carina",
         "magnitude": -0.74,
         "planetaryNature": "Nature of Saturn and Jupiter",
         "primaryPlanet": "astrology.planet.saturn",
@@ -437,7 +437,7 @@
       "tags": ["fixed-star", "astrology", "canis-minor", "behenian"],
       "extendedData": {
         "tropicalLongitude": 25.78,
-        "constellation": "Canis Minor",
+        "constellation": "astrology.constellation.canis-minor",
         "magnitude": 0.34,
         "planetaryNature": "Nature of Mercury and Mars",
         "primaryPlanet": "astrology.planet.mercury",
@@ -460,7 +460,7 @@
       "tags": ["fixed-star", "astrology", "gemini"],
       "extendedData": {
         "tropicalLongitude": 20.23,
-        "constellation": "Gemini",
+        "constellation": "astrology.constellation.gemini",
         "magnitude": 1.57,
         "planetaryNature": "Nature of Mercury and Mars",
         "primaryPlanet": "astrology.planet.mercury",
@@ -483,7 +483,7 @@
       "tags": ["fixed-star", "astrology", "gemini"],
       "extendedData": {
         "tropicalLongitude": 23.22,
-        "constellation": "Gemini",
+        "constellation": "astrology.constellation.gemini",
         "magnitude": 1.16,
         "planetaryNature": "Nature of Mars and Moon",
         "primaryPlanet": "astrology.planet.mars",
@@ -508,7 +508,7 @@
       "tags": ["fixed-star", "astrology", "cancer", "behenian"],
       "extendedData": {
         "tropicalLongitude": 7.33,
-        "constellation": "Cancer",
+        "constellation": "astrology.constellation.cancer",
         "magnitude": 3.7,
         "planetaryNature": "Nature of Mars and Moon",
         "primaryPlanet": "astrology.planet.mars",
@@ -531,7 +531,7 @@
       "tags": ["fixed-star", "astrology", "cancer"],
       "extendedData": {
         "tropicalLongitude": 7.53,
-        "constellation": "Cancer",
+        "constellation": "astrology.constellation.cancer",
         "magnitude": 4.67,
         "planetaryNature": "Nature of Mars and Moon",
         "primaryPlanet": "astrology.planet.mars",
@@ -554,7 +554,7 @@
       "tags": ["fixed-star", "astrology", "cancer"],
       "extendedData": {
         "tropicalLongitude": 8.72,
-        "constellation": "Cancer",
+        "constellation": "astrology.constellation.cancer",
         "magnitude": 3.94,
         "planetaryNature": "Nature of Mars and Moon",
         "primaryPlanet": "astrology.planet.mars",
@@ -578,7 +578,7 @@
       "tags": ["fixed-star", "astrology", "hydra"],
       "extendedData": {
         "tropicalLongitude": 27.28,
-        "constellation": "Hydra",
+        "constellation": "astrology.constellation.hydra",
         "magnitude": 1.99,
         "planetaryNature": "Nature of Saturn and Venus",
         "primaryPlanet": "astrology.planet.saturn",
@@ -604,7 +604,7 @@
       "tags": ["fixed-star", "astrology", "leo", "behenian", "royal-star"],
       "extendedData": {
         "tropicalLongitude": 29.83,
-        "constellation": "Leo",
+        "constellation": "astrology.constellation.leo",
         "magnitude": 1.36,
         "planetaryNature": "Nature of Jupiter and Mars",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -627,7 +627,7 @@
       "tags": ["fixed-star", "astrology", "leo"],
       "extendedData": {
         "tropicalLongitude": 11.32,
-        "constellation": "Leo",
+        "constellation": "astrology.constellation.leo",
         "magnitude": 2.56,
         "planetaryNature": "Nature of Saturn and Venus",
         "primaryPlanet": "astrology.planet.saturn",
@@ -651,7 +651,7 @@
       "tags": ["fixed-star", "astrology", "leo"],
       "extendedData": {
         "tropicalLongitude": 21.62,
-        "constellation": "Leo",
+        "constellation": "astrology.constellation.leo",
         "magnitude": 2.14,
         "planetaryNature": "Nature of Saturn and Venus",
         "primaryPlanet": "astrology.planet.saturn",
@@ -675,7 +675,7 @@
       "tags": ["fixed-star", "astrology", "virgo"],
       "extendedData": {
         "tropicalLongitude": 9.93,
-        "constellation": "Virgo",
+        "constellation": "astrology.constellation.virgo",
         "magnitude": 2.85,
         "planetaryNature": "Nature of Saturn and Mercury",
         "primaryPlanet": "astrology.planet.saturn",
@@ -699,7 +699,7 @@
       "tags": ["fixed-star", "astrology", "virgo", "behenian"],
       "extendedData": {
         "tropicalLongitude": 23.83,
-        "constellation": "Virgo",
+        "constellation": "astrology.constellation.virgo",
         "magnitude": 1.04,
         "planetaryNature": "Nature of Venus and Mars",
         "primaryPlanet": "astrology.planet.venus",
@@ -723,7 +723,7 @@
       "tags": ["fixed-star", "astrology", "bootes", "behenian"],
       "extendedData": {
         "tropicalLongitude": 24.23,
-        "constellation": "Boötes",
+        "constellation": "astrology.constellation.bootes",
         "magnitude": -0.05,
         "planetaryNature": "Nature of Jupiter and Mars",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -746,7 +746,7 @@
       "tags": ["fixed-star", "astrology", "corvus"],
       "extendedData": {
         "tropicalLongitude": 13.45,
-        "constellation": "Corvus",
+        "constellation": "astrology.constellation.corvus",
         "magnitude": 2.94,
         "planetaryNature": "Nature of Mars and Saturn",
         "primaryPlanet": "astrology.planet.mars",
@@ -770,7 +770,7 @@
       "tags": ["fixed-star", "astrology", "libra"],
       "extendedData": {
         "tropicalLongitude": 15.08,
-        "constellation": "Libra",
+        "constellation": "astrology.constellation.libra",
         "magnitude": 2.75,
         "planetaryNature": "Nature of Saturn and Mars",
         "primaryPlanet": "astrology.planet.saturn",
@@ -794,7 +794,7 @@
       "tags": ["fixed-star", "astrology", "libra"],
       "extendedData": {
         "tropicalLongitude": 19.37,
-        "constellation": "Libra",
+        "constellation": "astrology.constellation.libra",
         "magnitude": 2.61,
         "planetaryNature": "Nature of Jupiter and Mercury",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -818,7 +818,7 @@
       "tags": ["fixed-star", "astrology", "serpens"],
       "extendedData": {
         "tropicalLongitude": 22.08,
-        "constellation": "Serpens",
+        "constellation": "astrology.constellation.serpens",
         "magnitude": 2.63,
         "planetaryNature": "Nature of Saturn and Mars",
         "primaryPlanet": "astrology.planet.saturn",
@@ -842,7 +842,7 @@
       "tags": ["fixed-star", "astrology", "centaurus"],
       "extendedData": {
         "tropicalLongitude": 23.8,
-        "constellation": "Centaurus",
+        "constellation": "astrology.constellation.centaurus",
         "magnitude": 0.61,
         "planetaryNature": "Nature of Venus and Jupiter",
         "primaryPlanet": "astrology.planet.venus",
@@ -867,7 +867,7 @@
       "tags": ["fixed-star", "astrology", "scorpius", "behenian", "royal-star"],
       "extendedData": {
         "tropicalLongitude": 9.77,
-        "constellation": "Scorpius",
+        "constellation": "astrology.constellation.scorpius",
         "magnitude": 1.06,
         "planetaryNature": "Nature of Mars and Jupiter",
         "primaryPlanet": "astrology.planet.mars",
@@ -891,7 +891,7 @@
       "tags": ["fixed-star", "astrology", "draco"],
       "extendedData": {
         "tropicalLongitude": 11.97,
-        "constellation": "Draco",
+        "constellation": "astrology.constellation.draco",
         "magnitude": 2.79,
         "planetaryNature": "Nature of Saturn and Mars",
         "primaryPlanet": "astrology.planet.saturn",
@@ -915,7 +915,7 @@
       "tags": ["fixed-star", "astrology", "hercules"],
       "extendedData": {
         "tropicalLongitude": 16.12,
-        "constellation": "Hercules",
+        "constellation": "astrology.constellation.hercules",
         "magnitude": 3.48,
         "planetaryNature": "Nature of Mars and Venus",
         "primaryPlanet": "astrology.planet.mars",
@@ -938,7 +938,7 @@
       "tags": ["fixed-star", "astrology", "ophiuchus"],
       "extendedData": {
         "tropicalLongitude": 17.97,
-        "constellation": "Ophiuchus",
+        "constellation": "astrology.constellation.ophiuchus",
         "magnitude": 2.43,
         "planetaryNature": "Nature of Saturn and Jupiter",
         "primaryPlanet": "astrology.planet.saturn",
@@ -962,7 +962,7 @@
       "tags": ["fixed-star", "astrology", "lyra", "behenian"],
       "extendedData": {
         "tropicalLongitude": 15.32,
-        "constellation": "Lyra",
+        "constellation": "astrology.constellation.lyra",
         "magnitude": 0.03,
         "planetaryNature": "Nature of Venus and Mercury",
         "primaryPlanet": "astrology.planet.venus",
@@ -986,7 +986,7 @@
       "tags": ["fixed-star", "astrology", "aquila"],
       "extendedData": {
         "tropicalLongitude": 1.78,
-        "constellation": "Aquila",
+        "constellation": "astrology.constellation.aquila",
         "magnitude": 0.77,
         "planetaryNature": "Nature of Mars and Jupiter",
         "primaryPlanet": "astrology.planet.mars",
@@ -1010,7 +1010,7 @@
       "tags": ["fixed-star", "astrology", "capricornus"],
       "extendedData": {
         "tropicalLongitude": 23.55,
-        "constellation": "Capricornus",
+        "constellation": "astrology.constellation.capricornus",
         "magnitude": 2.85,
         "planetaryNature": "Nature of Saturn and Jupiter",
         "primaryPlanet": "astrology.planet.saturn",
@@ -1034,7 +1034,7 @@
       "tags": ["fixed-star", "astrology", "aquarius"],
       "extendedData": {
         "tropicalLongitude": 23.4,
-        "constellation": "Aquarius",
+        "constellation": "astrology.constellation.aquarius",
         "magnitude": 2.87,
         "planetaryNature": "Nature of Saturn and Mercury",
         "primaryPlanet": "astrology.planet.saturn",
@@ -1059,7 +1059,7 @@
       "tags": ["fixed-star", "astrology", "piscis-austrinus", "behenian", "royal-star"],
       "extendedData": {
         "tropicalLongitude": 3.87,
-        "constellation": "Piscis Austrinus",
+        "constellation": "astrology.constellation.piscis-austrinus",
         "magnitude": 1.16,
         "planetaryNature": "Nature of Venus and Mercury",
         "primaryPlanet": "astrology.planet.venus",
@@ -1083,7 +1083,7 @@
       "tags": ["fixed-star", "astrology", "cygnus"],
       "extendedData": {
         "tropicalLongitude": 5.37,
-        "constellation": "Cygnus",
+        "constellation": "astrology.constellation.cygnus",
         "magnitude": 1.25,
         "planetaryNature": "Nature of Venus and Mercury",
         "primaryPlanet": "astrology.planet.venus",
@@ -1107,7 +1107,7 @@
       "tags": ["fixed-star", "astrology", "eridanus"],
       "extendedData": {
         "tropicalLongitude": 15.32,
-        "constellation": "Eridanus",
+        "constellation": "astrology.constellation.eridanus",
         "magnitude": 0.46,
         "planetaryNature": "Nature of Jupiter",
         "primaryPlanet": "astrology.planet.jupiter",
@@ -1130,7 +1130,7 @@
       "tags": ["fixed-star", "astrology", "pegasus"],
       "extendedData": {
         "tropicalLongitude": 23.48,
-        "constellation": "Pegasus",
+        "constellation": "astrology.constellation.pegasus",
         "magnitude": 2.48,
         "planetaryNature": "Nature of Mars and Mercury",
         "primaryPlanet": "astrology.planet.mars",
@@ -1153,7 +1153,7 @@
       "tags": ["fixed-star", "astrology", "pegasus"],
       "extendedData": {
         "tropicalLongitude": 29.37,
-        "constellation": "Pegasus",
+        "constellation": "astrology.constellation.pegasus",
         "magnitude": 2.44,
         "planetaryNature": "Nature of Mars and Mercury",
         "primaryPlanet": "astrology.planet.mars",
