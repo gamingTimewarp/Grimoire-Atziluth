@@ -75,16 +75,12 @@ export function getPlanetaryDayRuler(date: Date): PlanetaryRuler {
   return DAY_RULERS[date.getDay()]
 }
 
-/** Column headers: day name + planetary symbol, for Sun-first grid */
-export const WEEKDAY_HEADERS = [
-  { label: 'Sun', symbol: '☉' },
-  { label: 'Mon', symbol: '☽' },
-  { label: 'Tue', symbol: '♂' },
-  { label: 'Wed', symbol: '☿' },
-  { label: 'Thu', symbol: '♃' },
-  { label: 'Fri', symbol: '♀' },
-  { label: 'Sat', symbol: '♄' },
-]
+/** Column headers: day name + planetary symbol + ruling planet's canonical name, for Sun-first grid */
+export const WEEKDAY_HEADERS = DAY_RULERS.map((ruler, i) => ({
+  label: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][i],
+  symbol: ruler.symbol,
+  canonicalName: ruler.canonicalName,
+}))
 
 // ─── Wu Xing Phase by Season ──────────────────────────────────────────────────
 

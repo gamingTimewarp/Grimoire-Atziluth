@@ -108,10 +108,20 @@ function CalendarGrid({
     <div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gap: '4px', marginBottom: '4px' }}>
         {WEEKDAY_HEADERS.map(h => (
-          <div key={h.label} style={{ textAlign: 'center', padding: '6px 0' }}>
+          <button
+            key={h.label}
+            onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: h.canonicalName } })}
+            title={`View ${h.label}'s ruling planet in Reference`}
+            style={{
+              textAlign: 'center', padding: '6px 0', background: 'none', border: 'none',
+              cursor: 'pointer', fontFamily: 'inherit', borderRadius: '4px', transition: 'background 0.15s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-2)' }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+          >
             <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', letterSpacing: '0.05em' }}>{h.label}</div>
             <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', opacity: 0.6 }}>{h.symbol}</div>
-          </div>
+          </button>
         ))}
       </div>
 
