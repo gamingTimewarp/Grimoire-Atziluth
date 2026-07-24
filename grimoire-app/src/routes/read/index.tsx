@@ -94,23 +94,32 @@ function ReadPage() {
       }
     }
 
-    setSpread(spread)
     if (!engine || !selectedDeck) return
 
     // Load card entities for this deck
-    let items
-    if (selectedDeck.cardCanonicalNames) {
-      const resolved = await Promise.all(
-        selectedDeck.cardCanonicalNames.map(cn => engine.adapter.getEntityByCanonicalName(cn))
-      )
-      items = resolved.filter((e): e is BaseEntity => e !== null)
-    } else {
-      const result = await engine.adapter.listEntities(
-        { tags: selectedDeck.tags, entityType: selectedDeck.entityType },
-        { offset: 0, limit: 500 }
-      )
-      items = result.items
+    let items: BaseEntity[]
+    try {
+      if (selectedDeck.cardCanonicalNames) {
+        const resolved = await Promise.all(
+          selectedDeck.cardCanonicalNames.map(cn => engine.adapter.getEntityByCanonicalName(cn))
+        )
+        items = resolved.filter((e): e is BaseEntity => e !== null)
+      } else {
+        const result = await engine.adapter.listEntities(
+          { tags: selectedDeck.tags, entityType: selectedDeck.entityType },
+          { offset: 0, limit: 500 }
+        )
+        items = result.items
+      }
+    } catch (err) {
+      console.error('Failed to load deck cards:', err)
+      window.alert('Could not load the deck. Please try again.')
+      return
     }
+
+    // Only commit the step transition once the deck has actually loaded,
+    // so the draw screen never opens with a stale/empty shuffled deck.
+    setSpread(spread)
     startDraw(items)
     navigate({ to: '/read/draw' })
   }
