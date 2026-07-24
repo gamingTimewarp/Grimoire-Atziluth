@@ -625,6 +625,7 @@ const BROWSE_ITEMS = [
   { canonicalName: 'system.overview.elements',             label: 'Elements'           },
   { canonicalName: 'system.overview.nakshatras',           label: 'Nakshatras'         },
   { canonicalName: 'system.overview.qabalah',              label: 'Qabalah'            },
+  { canonicalName: 'system.overview.numerology',           label: 'Numerology'         },
   { canonicalName: 'system.overview.letters',              label: 'Letters'            },
   { canonicalName: 'system.overview.chakras',              label: 'Chakras'            },
   { canonicalName: 'system.overview.chinese-zodiac',       label: 'Chinese Zodiac'     },
