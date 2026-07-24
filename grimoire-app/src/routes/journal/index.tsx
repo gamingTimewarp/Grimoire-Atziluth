@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate, Link } from '@tanstack/react-router'
 import React, { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { listReadings, listJournalEntries, saveJournalEntry, deleteJournalEntry, deleteReading, getEntityLinksForEntry, addEntityLinkToEntry, removeEntityLinkFromEntry, getEntityLinksForReading, addEntityLinkToReading, removeEntityLinkFromReading } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
@@ -993,8 +994,28 @@ function EntityLinksEditor({
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<BaseEntity[]>([])
   const [showResults, setShowResults] = useState(false)
+  const [dropdownRect, setDropdownRect] = useState<{ top: number; left: number; width: number } | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const resultsRef = useRef<HTMLDivElement>(null)
+
+  // Recompute the dropdown's screen position whenever it opens, and keep it
+  // attached to the input while scrolling/resizing — it's portaled to
+  // document.body (position: fixed) so it can't be clipped by an ancestor's
+  // overflow:hidden (e.g. the journal entry card) or buried by z-index.
+  useEffect(() => {
+    if (!showResults) return
+    const updateRect = () => {
+      const r = inputRef.current?.getBoundingClientRect()
+      if (r) setDropdownRect({ top: r.bottom + 4, left: r.left, width: r.width })
+    }
+    updateRect()
+    window.addEventListener('scroll', updateRect, true)
+    window.addEventListener('resize', updateRect)
+    return () => {
+      window.removeEventListener('scroll', updateRect, true)
+      window.removeEventListener('resize', updateRect)
+    }
+  }, [showResults])
 
   useEffect(() => {
     if (!searchQuery.trim() || !engine) {
@@ -1062,12 +1083,12 @@ function EntityLinksEditor({
             boxSizing: 'border-box',
           }}
         />
-        {showResults && (
+        {showResults && dropdownRect && createPortal(
           <div ref={resultsRef} style={{
-            position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0,
+            position: 'fixed', top: dropdownRect.top, left: dropdownRect.left, width: dropdownRect.width,
             background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
             borderRadius: '6px', boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-            zIndex: 200, overflow: 'hidden',
+            zIndex: 9999, overflow: 'hidden',
           }}>
             {searchResults.map(entity => (
               <button
@@ -1093,7 +1114,8 @@ function EntityLinksEditor({
                 </div>
               </button>
             ))}
-          </div>
+          </div>,
+          document.body
         )}
       </div>
     </div>
