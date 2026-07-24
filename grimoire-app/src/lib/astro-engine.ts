@@ -437,6 +437,55 @@ export function getPlanetPositions(
   })
 }
 
+// ─── Retrograde tracker (calendar strip) ──────────────────────────────────────
+
+/** The 8 planets shown in the calendar's retrograde tracker strip, Mercury through Pluto. */
+export const RETROGRADE_STRIP_PLANETS: readonly PlanetDef[] = PLANETS.slice(2, 10)
+
+function isRetrogradeOn(body: Astronomy.Body, date: Date): boolean {
+  const next = new Date(date.getTime() + 86400000)
+  let diff = eclipticLon(body, next) - eclipticLon(body, date)
+  if (diff > 180) diff -= 360
+  if (diff < -180) diff += 360
+  return diff < 0
+}
+
+export type RetrogradeStripEntry = { planet: PlanetDef; retrograde: boolean }
+
+/** Retrograde status of each of the 8 tracked planets on a given day. */
+export function getRetrogradeStrip(date: Date): RetrogradeStripEntry[] {
+  return RETROGRADE_STRIP_PLANETS.map(planet => ({
+    planet,
+    retrograde: isRetrogradeOn(planet.body!, date),
+  }))
+}
+
+/**
+ * For a planet known to be retrograde on `date`, finds the full retrograde period
+ * (station-to-station) containing that day by scanning outward one day at a time,
+ * and returns this day's 1-based position within it (e.g. "Day 3 of 8"). Returns
+ * null if the planet isn't retrograde on `date`.
+ *
+ * Deliberately lazy/on-demand rather than precomputed — outer planets can have
+ * retrograde periods of 100+ days, so this is only called from the calendar's
+ * hover tooltip, not while rendering the grid.
+ */
+export function getRetrogradeStationInfo(body: Astronomy.Body, date: Date): { dayNumber: number; totalDays: number } | null {
+  if (!isRetrogradeOn(body, date)) return null
+  let start = new Date(date)
+  while (isRetrogradeOn(body, new Date(start.getTime() - 86400000))) {
+    start = new Date(start.getTime() - 86400000)
+  }
+  let end = new Date(date)
+  while (isRetrogradeOn(body, end)) {
+    end = new Date(end.getTime() + 86400000)
+  }
+  const lastRetrogradeDay = new Date(end.getTime() - 86400000)
+  const totalDays = Math.round((lastRetrogradeDay.getTime() - start.getTime()) / 86400000) + 1
+  const dayNumber = Math.round((date.getTime() - start.getTime()) / 86400000) + 1
+  return { dayNumber, totalDays }
+}
+
 /**
  * Sun sign for a given date, respecting the active astrology mode. Sidereal/Vedic
  * shift the boundary by the ayanamsa (~24° at present) relative to tropical, and

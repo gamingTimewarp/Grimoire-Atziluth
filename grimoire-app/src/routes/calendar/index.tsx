@@ -8,9 +8,11 @@ import {
 import {
   computeMonthAstroData, getPlanetPositions, getAspects, formatLongitude, formatTime,
   getSignsForMode, getSunSignForMode, getSabbatsForYear,
+  getRetrogradeStrip, getRetrogradeStationInfo,
 } from '@/lib/astro-engine'
-import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat } from '@/lib/astro-engine'
+import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat, RetrogradeStripEntry } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
+import { loadSettings, patchSettings } from '@/lib/settings-store'
 import { listReadingsByMonth, listJournalEntriesByMonth } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
@@ -85,12 +87,92 @@ function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<
   )
 }
 
+// ─── Retrograde tracker strip ─────────────────────────────────────────────────
+
+const RETROGRADE_COLORS: Record<string, string> = {
+  'astrology.planet.mercury': '#d98a3d',
+  'astrology.planet.venus':   '#5fae6f',
+  'astrology.planet.mars':    '#c0504d',
+  'astrology.planet.jupiter': '#4f7cc4',
+  'astrology.planet.saturn':  '#8b6f47',
+  'astrology.planet.uranus':  '#46b8b0',
+  'astrology.planet.neptune': '#7b6fc4',
+  'astrology.planet.pluto':   '#7a3b52',
+}
+
+function RetrogradeToggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
+  return (
+    <button
+      onClick={onToggle}
+      style={{
+        display: 'flex', alignItems: 'center', gap: '8px',
+        background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+        fontFamily: 'inherit',
+      }}
+    >
+      <span style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>Retrograde tracker</span>
+      <span
+        style={{
+          width: '36px', height: '20px', borderRadius: '10px', padding: 0,
+          background: on ? 'var(--color-accent)' : 'var(--color-border)', position: 'relative', flexShrink: 0,
+          transition: 'background 0.15s', display: 'inline-block',
+        }}
+      >
+        <span style={{
+          width: '14px', height: '14px', borderRadius: '50%', background: '#fff',
+          position: 'absolute', top: '3px', left: on ? '19px' : '3px',
+          transition: 'left 0.15s', display: 'block',
+        }} />
+      </span>
+    </button>
+  )
+}
+
+function RetrogradeSegment({ entry, date, color }: { entry: RetrogradeStripEntry; date: Date; color: string }) {
+  const [title, setTitle] = useState<string | undefined>(
+    entry.retrograde ? `${entry.planet.name} is in retrograde` : undefined
+  )
+  return (
+    <div
+      title={title}
+      onMouseEnter={() => {
+        if (!entry.retrograde || !entry.planet.body) return
+        const info = getRetrogradeStationInfo(entry.planet.body, date)
+        if (info) setTitle(`${entry.planet.name} is in retrograde, Day ${info.dayNumber} of ${info.totalDays}`)
+      }}
+      style={{ flex: 1, background: entry.retrograde ? color : 'transparent' }}
+    />
+  )
+}
+
+function RetrogradeStrip({ date }: { date: Date }) {
+  const entries = getRetrogradeStrip(date)
+  return (
+    <div
+      style={{
+        width: '7px', flexShrink: 0, alignSelf: 'stretch',
+        display: 'flex', flexDirection: 'column',
+        border: '1px solid var(--color-border)', borderRadius: '3px', overflow: 'hidden',
+      }}
+    >
+      {entries.map(entry => (
+        <RetrogradeSegment
+          key={entry.planet.canonicalName}
+          entry={entry}
+          date={date}
+          color={RETROGRADE_COLORS[entry.planet.canonicalName] ?? 'var(--color-text-subtle)'}
+        />
+      ))}
+    </div>
+  )
+}
+
 // ─── Calendar grid ────────────────────────────────────────────────────────────
 
 type DayEntries = { readings: Reading[]; entries: JournalEntry[] }
 
 function CalendarGrid({
-  year, month, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate,
+  year, month, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde,
 }: {
   year: number
   month: number
@@ -101,6 +183,7 @@ function CalendarGrid({
   sabbatsByDate: Map<string, Sabbat>
   onDayClick: (dateStr: string) => void
   navigate: ReturnType<typeof useNavigate>
+  showRetrograde: boolean
 }) {
   const weeks = useMemo(() => buildCalendarGrid(year, month), [year, month])
   const currentMonthStr = `${year}-${String(month).padStart(2, '0')}`
@@ -153,7 +236,7 @@ function CalendarGrid({
                   borderRadius: '6px', cursor: 'pointer',
                   opacity: isCurrentMonth ? 1 : 0.35,
                   transition: 'border-color 0.1s, background 0.1s',
-                  display: 'flex', flexDirection: 'column', gap: '3px',
+                  display: 'flex', flexDirection: 'row', gap: '5px',
                   minWidth: 0,
                 }}
                 onMouseEnter={e => { if (!isSelected) e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
@@ -161,58 +244,62 @@ function CalendarGrid({
                   if (!isSelected && !isToday) e.currentTarget.style.borderColor = 'var(--color-border)'
                 }}
               >
-                {/* Row 1: day number + moon */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                  <span style={{
-                    fontSize: '14px', fontWeight: isToday ? 600 : 400,
-                    color: isToday ? 'var(--color-accent)' : isCurrentMonth ? 'var(--color-text)' : 'var(--color-text-subtle)',
-                  }}>
-                    {date.getDate()}
-                  </span>
-                  <span
-                    style={{ fontSize: moon.isMajor ? '13px' : '11px', opacity: moon.isMajor ? 0.9 : 0.4, lineHeight: 1 }}
-                    title={preciseMoon ? `${preciseMoon.type} at ${formatTime(preciseMoon.time)}` : `${moon.name} (${moon.illumination}%)`}
-                  >
-                    {preciseMoon?.emoji ?? moon.emoji}
-                  </span>
+                {showRetrograde && <RetrogradeStrip date={date} />}
+
+                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '3px' }}>
+                  {/* Row 1: day number + moon */}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <span style={{
+                      fontSize: '14px', fontWeight: isToday ? 600 : 400,
+                      color: isToday ? 'var(--color-accent)' : isCurrentMonth ? 'var(--color-text)' : 'var(--color-text-subtle)',
+                    }}>
+                      {date.getDate()}
+                    </span>
+                    <span
+                      style={{ fontSize: moon.isMajor ? '13px' : '11px', opacity: moon.isMajor ? 0.9 : 0.4, lineHeight: 1 }}
+                      title={preciseMoon ? `${preciseMoon.type} at ${formatTime(preciseMoon.time)}` : `${moon.name} (${moon.illumination}%)`}
+                    >
+                      {preciseMoon?.emoji ?? moon.emoji}
+                    </span>
+                  </div>
+
+                  {/* Sabbat label */}
+                  {sabbat && (
+                    <div
+                      onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: sabbat.canonicalName } }) }}
+                      title={`${sabbat.name} — Sun at ${sabbat.sunLongitude}° — view in Reference`}
+                      style={{ fontSize: '9px', color: 'var(--color-accent)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+                    >
+                      {sabbat.emoji} {sabbat.name}
+                    </div>
+                  )}
+
+                  {/* Row 2: ingress chips */}
+                  {astroDay && astroDay.ingresses.length > 0 && (
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2px' }}>
+                      {astroDay.ingresses.map((ing, i) => (
+                        <span
+                          key={i}
+                          title={`${ing.planet.name} enters ${ing.sign.name} at ${formatTime(ing.time)}`}
+                          style={{
+                            fontSize: '10px', lineHeight: 1.2,
+                            color: 'var(--color-accent)', opacity: 0.85,
+                          }}
+                        >
+                          {ing.planet.symbol}{ing.sign.symbol}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Row 3: entry dots */}
+                  {(hasReadings || hasJournal) && (
+                    <div style={{ display: 'flex', gap: '4px', marginTop: 'auto' }}>
+                      {hasReadings && <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-accent)', flexShrink: 0 }} title={`${dayEntries!.readings.length} reading(s)`} />}
+                      {hasJournal  && <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-text-subtle)', flexShrink: 0 }} title={`${dayEntries!.entries.length} journal entry/entries`} />}
+                    </div>
+                  )}
                 </div>
-
-                {/* Sabbat label */}
-                {sabbat && (
-                  <div
-                    onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: sabbat.canonicalName } }) }}
-                    title={`${sabbat.name} — Sun at ${sabbat.sunLongitude}° — view in Reference`}
-                    style={{ fontSize: '9px', color: 'var(--color-accent)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
-                  >
-                    {sabbat.emoji} {sabbat.name}
-                  </div>
-                )}
-
-                {/* Row 2: ingress chips */}
-                {astroDay && astroDay.ingresses.length > 0 && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2px' }}>
-                    {astroDay.ingresses.map((ing, i) => (
-                      <span
-                        key={i}
-                        title={`${ing.planet.name} enters ${ing.sign.name} at ${formatTime(ing.time)}`}
-                        style={{
-                          fontSize: '10px', lineHeight: 1.2,
-                          color: 'var(--color-accent)', opacity: 0.85,
-                        }}
-                      >
-                        {ing.planet.symbol}{ing.sign.symbol}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {/* Row 3: entry dots */}
-                {(hasReadings || hasJournal) && (
-                  <div style={{ display: 'flex', gap: '4px', marginTop: 'auto' }}>
-                    {hasReadings && <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-accent)', flexShrink: 0 }} title={`${dayEntries!.readings.length} reading(s)`} />}
-                    {hasJournal  && <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-text-subtle)', flexShrink: 0 }} title={`${dayEntries!.entries.length} journal entry/entries`} />}
-                  </div>
-                )}
               </div>
             )
           })}
@@ -490,6 +577,7 @@ function CalendarPage() {
   const [monthReadings, setMonthReadings] = useState<Reading[]>([])
   const [monthEntries,  setMonthEntries]  = useState<JournalEntry[]>([])
   const [monthAstro,    setMonthAstro]    = useState<MonthAstroData | null>(null)
+  const [showRetrograde, setShowRetrograde] = useState(() => loadSettings().showRetrogradeTracker)
 
   // Sabbats keyed by date string YYYY-MM-DD (computed per year)
   const sabbatsByDate = useMemo(() => {
@@ -537,6 +625,13 @@ function CalendarPage() {
   const nextMonth = () => { if (month === 12) { setYear(y => y + 1); setMonth(1) } else setMonth(m => m + 1) }
   const goToToday = () => { const n = new Date(); setYear(n.getFullYear()); setMonth(n.getMonth() + 1); setSelectedDate(today) }
   const isViewingCurrentMonth = year === new Date().getFullYear() && month === new Date().getMonth() + 1
+  const toggleRetrograde = () => {
+    setShowRetrograde(v => {
+      const next = !v
+      patchSettings({ showRetrogradeTracker: next })
+      return next
+    })
+  }
 
   const selectedAstroDay = selectedDate
     ? (monthAstro?.byDate.get(selectedDate) ?? EMPTY_ASTRO_DAY)
@@ -544,9 +639,12 @@ function CalendarPage() {
 
   return (
     <div style={{ maxWidth: '860px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', gap: '12px', flexWrap: 'wrap' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Calendar</h1>
-        {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <RetrogradeToggle on={showRetrograde} onToggle={toggleRetrograde} />
+          {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
+        </div>
       </div>
 
       <CosmicInfoStrip date={todayDate} navigate={navigate} />
@@ -571,6 +669,7 @@ function CalendarPage() {
         sabbatsByDate={sabbatsByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
+        showRetrograde={showRetrograde}
       />
 
       {selectedDate && (

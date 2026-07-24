@@ -1,6 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import { getPlanetPositions, getHouses, getSunSignForMode, getSabbatsForYear } from '../astro-engine'
+import {
+  getPlanetPositions, getHouses, getSunSignForMode, getSabbatsForYear,
+  getRetrogradeStrip, getRetrogradeStationInfo, RETROGRADE_STRIP_PLANETS,
+} from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
+import * as Astronomy from 'astronomy-engine'
 
 // ─── Ground truth ───────────────────────────────────────────────────────────────
 //
@@ -166,5 +170,62 @@ describe('getSabbatsForYear', () => {
     const yule = sabbats.find(s => s.canonicalName === 'calendar.sabbat.yule')
     expect(yule).toBeDefined()
     expect(yule!.time.getMonth()).toBe(11) // December
+  })
+})
+
+// ─── Retrograde tracker ─────────────────────────────────────────────────────────
+//
+// Mercury's 2024 retrograde windows (Apr 2–25, Aug 5–28, Nov 26–Dec 15) are
+// well-documented public ephemeris facts, cross-checked directly against this
+// engine during development. Used here as a regression anchor for both the
+// per-day retrograde flag and the station-to-station day-count logic.
+
+describe('getRetrogradeStrip', () => {
+  it('returns exactly the 8 tracked planets, Mercury through Pluto, in order', () => {
+    const entries = getRetrogradeStrip(new Date('2024-08-15T12:00:00Z'))
+    expect(entries).toHaveLength(8)
+    expect(entries.map(e => e.planet.name)).toEqual([
+      'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto',
+    ])
+    expect(RETROGRADE_STRIP_PLANETS).toHaveLength(8)
+  })
+
+  it('flags Mercury retrograde in the middle of its known Aug 2024 window, direct in early Sept', () => {
+    const entries = getRetrogradeStrip(new Date('2024-08-15T12:00:00Z'))
+    expect(entries.find(e => e.planet.name === 'Mercury')?.retrograde).toBe(true)
+
+    const laterEntries = getRetrogradeStrip(new Date('2024-09-05T12:00:00Z'))
+    expect(laterEntries.find(e => e.planet.name === 'Mercury')?.retrograde).toBe(false)
+  })
+})
+
+describe('getRetrogradeStationInfo', () => {
+  it('returns null when the planet is not retrograde on that day', () => {
+    const info = getRetrogradeStationInfo(Astronomy.Body.Mercury, new Date('2024-09-05T12:00:00Z'))
+    expect(info).toBeNull()
+  })
+
+  it('finds the correct station boundaries and day count for Mercury\'s Aug 2024 retrograde', () => {
+    const info = getRetrogradeStationInfo(Astronomy.Body.Mercury, new Date('2024-08-15T12:00:00Z'))
+    expect(info).not.toBeNull()
+    // Known window (noon-UTC anchored): 2024-08-05 through 2024-08-27 inclusive
+    // = 23 days; Aug 15 is day 11. (Station instants don't fall on day boundaries,
+    // so the exact last day depends on the reference hour used — verified directly
+    // against this engine rather than an external source's own anchor convention.)
+    expect(info!.totalDays).toBe(23)
+    expect(info!.dayNumber).toBe(11)
+  })
+
+  it('agrees with getRetrogradeStrip on every day through a full Mercury retrograde window', () => {
+    const start = new Date('2024-08-01T12:00:00Z')
+    let sawRetrograde = false
+    for (let i = 0; i < 40; i++) {
+      const d = new Date(start.getTime() + i * 86400000)
+      const strip = getRetrogradeStrip(d).find(e => e.planet.name === 'Mercury')!
+      const info = getRetrogradeStationInfo(Astronomy.Body.Mercury, d)
+      expect(info !== null).toBe(strip.retrograde)
+      if (strip.retrograde) sawRetrograde = true
+    }
+    expect(sawRetrograde).toBe(true)
   })
 })

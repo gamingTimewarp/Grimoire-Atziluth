@@ -23,6 +23,8 @@ export type Settings = {
   defaultReadingSpreadId: string | null
   /** Default to compact (dense) layout in the journal */
   defaultCompactJournal: boolean
+  /** Show the per-planet retrograde tracker strip on the calendar grid */
+  showRetrogradeTracker: boolean
 }
 
 const KEY = 'grimoire:settings'
@@ -34,6 +36,7 @@ const DEFAULTS: Settings = {
   dailySpreadId: null,
   defaultReadingSpreadId: null,
   defaultCompactJournal: false,
+  showRetrogradeTracker: false,
 }
 
 export function loadSettings(): Settings {
