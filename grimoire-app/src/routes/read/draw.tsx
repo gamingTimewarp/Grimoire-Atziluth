@@ -205,7 +205,7 @@ function CardKeywordPanel({ drawnCard, onNavigate, onClose }: {
 
 function DrawPage() {
   const {
-    step, selectedDeck, selectedSpread, shuffledCards,
+    step, selectedDeck, selectedSpread, shuffledCards, reversalsEnabled,
     drawnCards, currentPositionIndex, drawCard, flipLastCard, drawClarifier,
     question, setQuestion, notes, setNotes, subject, setSubject,
     saveAndFinish, savedReading, reset,
@@ -580,7 +580,7 @@ function DrawPage() {
       )}
 
       {/* Flip — standalone so it's visible after every draw, not gated by canDrawMore */}
-      {!isFree && lastDrawn && selectedDeck.reversalEnabled && (
+      {!isFree && lastDrawn && reversalsEnabled && (
         <div style={{ marginBottom: '20px' }}>
           <Button variant="ghost" size="sm" onClick={flipLastCard}>
             <RotateCcw size={13} />
@@ -597,7 +597,7 @@ function DrawPage() {
               {drawnCards.length === 0 ? 'Draw Card' : <><Plus size={14} /> Draw Another</>}
             </Button>
           )}
-          {lastDrawn && selectedDeck.reversalEnabled && (
+          {lastDrawn && reversalsEnabled && (
             <Button variant="ghost" size="sm" onClick={flipLastCard}>
               <RotateCcw size={13} />
               Flip {lastDrawn.orientation === 'reversed' ? '(→ Upright)' : '(→ Reversed)'}

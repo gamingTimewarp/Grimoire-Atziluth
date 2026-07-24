@@ -19,7 +19,10 @@ export const Route = createFileRoute('/read/')({
 })
 
 function ReadPage() {
-  const { step, selectedDeck, selectedSpread, setDeck, setSpread, startDraw, reset } = useReadingStore()
+  const {
+    step, selectedDeck, selectedSpread, reversalsEnabled,
+    setDeck, setReversalsEnabled, setSpread, startDraw, reset,
+  } = useReadingStore()
   const { engine } = useEngineStore()
   const navigate = useNavigate()
   const spreadById = useSpreadById()
@@ -149,6 +152,8 @@ function ReadPage() {
           onSelect={handleSpreadSelect}
           selected={selectedSpread}
           onManage={() => navigate({ to: '/read/spreads' })}
+          reversalsEnabled={reversalsEnabled}
+          onReversalsEnabledChange={setReversalsEnabled}
         />
       )}
     </div>
@@ -174,6 +179,26 @@ function InfoButton({ canonicalName }: { canonicalName: string }) {
       onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
     >
       <Info size={13} />
+    </button>
+  )
+}
+
+function ReversalsToggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
+  return (
+    <button
+      onClick={onToggle}
+      aria-label={on ? 'Disable reversed cards for this reading' : 'Allow reversed cards for this reading'}
+      style={{
+        width: '36px', height: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer', padding: 0,
+        background: on ? 'var(--color-accent)' : 'var(--color-border)', position: 'relative', flexShrink: 0,
+        transition: 'background 0.15s',
+      }}
+    >
+      <div style={{
+        width: '14px', height: '14px', borderRadius: '50%', background: '#fff',
+        position: 'absolute', top: '3px', left: on ? '19px' : '3px',
+        transition: 'left 0.15s',
+      }} />
     </button>
   )
 }
@@ -355,11 +380,13 @@ function SpreadCard({ spread, onSelect, isSelected }: { spread: SpreadDefinition
   )
 }
 
-function SpreadSelection({ deck, onSelect, selected, onManage }: {
+function SpreadSelection({ deck, onSelect, selected, onManage, reversalsEnabled, onReversalsEnabledChange }: {
   deck: DeckFilter
   onSelect: (s: SpreadDefinition) => void
   selected: SpreadDefinition | null
   onManage: () => void
+  reversalsEnabled: boolean
+  onReversalsEnabledChange: (enabled: boolean) => void
 }) {
   const [customSpreads, setCustomSpreads] = useState<SpreadDefinition[]>([])
 
@@ -383,6 +410,20 @@ function SpreadSelection({ deck, onSelect, selected, onManage }: {
           <Settings2 size={12} /> Manage custom spreads
         </button>
       </div>
+
+      {deck.reversalEnabled && (
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px',
+          padding: '10px 14px', marginBottom: '16px',
+          background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '6px',
+        }}>
+          <div>
+            <div style={{ fontSize: '13px', color: 'var(--color-text)' }}>Allow reversed cards</div>
+            <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>For this reading only — doesn't change the deck's default.</div>
+          </div>
+          <ReversalsToggle on={reversalsEnabled} onToggle={() => onReversalsEnabledChange(!reversalsEnabled)} />
+        </div>
+      )}
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '12px' }}>
         {BUILT_IN_SPREADS

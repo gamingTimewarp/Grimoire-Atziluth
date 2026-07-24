@@ -30,6 +30,12 @@ interface ReadingStore {
   // Selections
   selectedDeck: DeckFilter | null
   selectedSpread: SpreadDefinition | null
+  /**
+   * Whether reversed cards can be drawn in this reading. Initialised from the
+   * deck's own reversalEnabled default whenever a deck is selected, but the user
+   * can override it (in either direction) for this specific reading before drawing.
+   */
+  reversalsEnabled: boolean
 
   /** Shuffled deck of card entities. */
   shuffledCards: BaseEntity[]
@@ -53,6 +59,8 @@ interface ReadingStore {
 
   // Actions
   setDeck: (deck: DeckFilter) => void
+  /** Overrides reversalsEnabled for this reading only, independent of the deck default. */
+  setReversalsEnabled: (enabled: boolean) => void
   setSpread: (spread: SpreadDefinition) => void
   startDraw: (shuffledCards: BaseEntity[]) => void
   /** Draw the next card; orientation is chosen automatically based on deck reversal setting. */
@@ -73,6 +81,7 @@ const initialState = {
   step: 'deck' as ReadingStep,
   selectedDeck: null,
   selectedSpread: null,
+  reversalsEnabled: true,
   shuffledCards: [],
   drawIndex: 0,
   drawnCards: [],
@@ -97,7 +106,11 @@ export const useReadingStore = create<ReadingStore>((set, get) => ({
   ...initialState,
 
   setDeck(deck) {
-    set({ selectedDeck: deck, step: 'spread' })
+    set({ selectedDeck: deck, reversalsEnabled: deck.reversalEnabled, step: 'spread' })
+  },
+
+  setReversalsEnabled(enabled) {
+    set({ reversalsEnabled: enabled })
   },
 
   setSpread(spread) {
@@ -109,7 +122,7 @@ export const useReadingStore = create<ReadingStore>((set, get) => ({
   },
 
   drawCard() {
-    const { shuffledCards, drawIndex, drawnCards, currentPositionIndex, selectedSpread, selectedDeck } = get()
+    const { shuffledCards, drawIndex, drawnCards, currentPositionIndex, selectedSpread, reversalsEnabled } = get()
     if (drawIndex >= shuffledCards.length) return
 
     const card = shuffledCards[drawIndex]
@@ -117,9 +130,10 @@ export const useReadingStore = create<ReadingStore>((set, get) => ({
     const positions: SpreadPosition[] = isFree ? [] : [...selectedSpread!.positions].sort((a, b) => a.drawOrder - b.drawOrder)
     const position = positions[currentPositionIndex] ?? null
 
-    // Auto-determine orientation: reversed 50% of the time if deck allows reversals
+    // Auto-determine orientation: reversed 50% of the time if reversals are enabled
+    // for this reading (defaults to the deck's setting, but can be overridden per-reading)
     const orientation: CardOrientation =
-      selectedDeck?.reversalEnabled && Math.random() < 0.5 ? 'reversed' : 'upright'
+      reversalsEnabled && Math.random() < 0.5 ? 'reversed' : 'upright'
 
     const drawn: DrawnCard = {
       card,
@@ -150,11 +164,11 @@ export const useReadingStore = create<ReadingStore>((set, get) => ({
   },
 
   drawClarifier() {
-    const { shuffledCards, drawIndex, drawnCards, selectedDeck } = get()
+    const { shuffledCards, drawIndex, drawnCards, reversalsEnabled } = get()
     if (drawIndex >= shuffledCards.length) return
     const card = shuffledCards[drawIndex]
     const orientation: CardOrientation =
-      selectedDeck?.reversalEnabled && Math.random() < 0.5 ? 'reversed' : 'upright'
+      reversalsEnabled && Math.random() < 0.5 ? 'reversed' : 'upright'
     set({
       drawnCards: [...drawnCards, { card, positionId: null, drawOrder: drawnCards.length + 1, orientation }],
       drawIndex: drawIndex + 1,
