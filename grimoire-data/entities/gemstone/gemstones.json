@@ -223,6 +223,69 @@
       "secondaryNames": [],
       "tags": ["gemstone", "gemstone-pink", "silicate"],
       "extendedData": { "mineralClass": "inosilicate (manganese silicate)", "hardnessMohs": "5.5–6.5", "colourNote": "rose-pink, veined with black manganese oxide" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.aquamarine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Aquamarine",
+      "description": "Aquamarine is the blue-to-blue-green variety of beryl, coloured by trace iron rather than the chromium and vanadium that produce emerald's green — the two are structurally the same mineral with different trace impurities. Its name comes directly from the Latin aqua marina, 'sea water,' and Roman and later maritime folklore held that aquamarine calmed the sea and protected sailors from seasickness and shipwreck, a belief that persisted into medieval European sailors' amulets. Major deposits in Brazil have produced exceptionally large, clear crystals; the 'Dom Pedro,' the largest cut aquamarine in the world at over 10,000 carats, was carved from a Brazilian crystal and is now in the Smithsonian.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-blue", "beryl", "birthstone"],
+      "extendedData": { "mineralClass": "beryl", "hardnessMohs": "7.5–8", "colourNote": "blue to blue-green, from trace iron", "birthMonth": "March", "birthMonthNumber": 3 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.diamond",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Diamond",
+      "description": "Diamond is pure crystallised carbon, formed under the extreme pressure and temperature found roughly 140–190 km deep in the Earth's mantle and carried to the surface by rare volcanic eruptions through kimberlite pipes. It is the hardest known natural material — the defining reference point (10) at the top of the Mohs scale — and its exceptional hardness combined with a high refractive index and strong dispersion of light produce the brilliance and 'fire' prized in cut stones. Diamond's status as the default engagement-ring stone is a comparatively recent, and famously manufactured, tradition: the phrase 'A Diamond is Forever,' coined by De Beers' advertising agency in 1947, is widely credited with single-handedly establishing that convention in the modern West within a few decades. The 20th-century trade in 'conflict' or 'blood' diamonds funding armed conflict in parts of Africa led to the Kimberley Process certification scheme (2003), an ongoing and imperfect attempt to track a stone's origin.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-white", "native-element", "birthstone"],
+      "extendedData": { "mineralClass": "native carbon", "hardnessMohs": "10", "colourNote": "colourless (finest), also found in every colour ('fancy' diamonds)", "birthMonth": "April", "birthMonthNumber": 4 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.pearl",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Pearl",
+      "description": "Pearl is the only gemstone produced by a living organism rather than a geological process: a mollusc such as an oyster or mussel secretes layer upon layer of nacre around an irritant (naturally a parasite or debris, commercially an inserted bead or tissue graft), building up the lustrous material over months or years. Natural pearls are exceptionally rare; the modern pearl trade is built almost entirely on culturing, a technique pioneered commercially by Kokichi Mikimoto in Japan around 1893. Pliny the Elder records the story — probably apocryphal, but told for two thousand years regardless — of Cleopatra dissolving a priceless pearl earring in vinegar and drinking it to win a wager with Mark Antony over who could host the more extravagant banquet.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-white", "organic-gem", "birthstone"],
+      "extendedData": { "mineralClass": "nacre (organic, calcium carbonate + conchiolin)", "hardnessMohs": "2.5–4.5", "colourNote": "white to cream, also pink, silver, and black", "birthMonth": "June", "birthMonthNumber": 6 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.peridot",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Peridot",
+      "description": "Peridot is the gem-quality variety of olivine, an iron-magnesium silicate notable for forming deep in the Earth's upper mantle rather than the crust, and for being one of the very few gemstones confirmed to arrive from beyond Earth entirely — small peridot crystals have been found in pallasite meteorites, stony-iron fragments believed to originate from the core-mantle boundary of long-destroyed planetesimals. Ancient Egyptians mined peridot on Zabargad, a small volcanic island in the Red Sea, and some of the famous 'emeralds' in Cleopatra's jewellery collection described by ancient sources are now thought by many gemologists to have actually been peridot from that source.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-green", "silicate", "birthstone"],
+      "extendedData": { "mineralClass": "olivine (magnesium iron silicate)", "hardnessMohs": "6.5–7", "colourNote": "yellow-green to olive green, from iron content", "birthMonth": "August", "birthMonthNumber": 8 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.opal",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Opal",
+      "description": "Opal is hydrated amorphous silica — a mineraloid rather than a true crystalline mineral — and precious opal's signature 'play-of-colour,' a shifting flash of spectral hues across the stone, is a purely optical effect produced by the diffraction of light through a microscopic, closely packed lattice of silica spheres within the stone. Australia has produced roughly 95% of the world's precious opal historically, with the black opal of Lightning Ridge and the boulder opal of Queensland among the most prized varieties. The Romans regarded opal as the luckiest and most powerful of all gems, a reputation later inverted by 19th-century European superstition — partly traceable to a plot device in Walter Scott's 1829 novel Anne of Geierstein — holding that opal was unlucky for anyone not born in October.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-white", "mineraloid", "birthstone"],
+      "extendedData": { "mineralClass": "hydrated silica (mineraloid)", "hardnessMohs": "5.5–6.5", "colourNote": "white or black body colour with spectral play-of-colour", "birthMonth": "October", "birthMonthNumber": 10 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.turquoise",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Turquoise",
+      "description": "Turquoise is an opaque hydrated copper-aluminium phosphate, ranging from robin's-egg blue to blue-green, frequently veined or mottled with the brown or black matrix of its host rock. It is among the oldest gemstones ever mined by humans: Egyptian expeditions worked turquoise deposits in the Sinai Peninsula as early as the fourth millennium BCE, and turquoise inlay appears throughout Tutankhamun's funerary mask and jewellery. It held comparable status across entirely separate cultural spheres — set into Persian royal regalia and mosque tilework, carved by Aztec and Mixtec artisans into ceremonial mosaics, and, following the introduction of silversmithing techniques in the mid-19th century, worked into the turquoise-and-silver jewellery now closely associated with Navajo, Zuni, and other Southwestern United States artisan traditions.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-blue", "gemstone-green", "phosphate", "birthstone"],
+      "extendedData": { "mineralClass": "hydrated copper aluminium phosphate", "hardnessMohs": "5–6", "colourNote": "sky blue to blue-green, often veined with matrix", "birthMonth": "December", "birthMonthNumber": 12 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.malachite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Malachite",
+      "description": "Malachite is a copper carbonate hydroxide mineral, forming in the oxidised upper zones of copper ore deposits, prized for its saturated green colour and distinctive banded, eye-like patterning. Ground malachite was used as a green pigment since antiquity and, notably, as one of the principal ingredients of ancient Egyptian eye cosmetics, applied for both ornamental and (plausibly, given copper's mild antimicrobial properties) protective purposes. Vast malachite deposits discovered in Russia's Ural Mountains in the 18th and 19th centuries were carved and veneered on an architectural scale for the Tsarist court, most famously in the Malachite Room of St. Petersburg's Winter Palace and the malachite columns of St. Isaac's Cathedral.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-green", "carbonate"],
+      "extendedData": { "mineralClass": "copper carbonate hydroxide", "hardnessMohs": "3.5–4", "colourNote": "banded green, various shades" }
     }
   ]
 }

@@ -2865,11 +2865,12 @@
       "canonicalName": "system.overview.gemstones",
       "entityType": "system.overview",
       "primaryDisplayName": "Gemstones",
-      "description": "An overview of common gemstones and their mineralogy, history, and colour associations. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish); birthstone-month attributions and other tradition-specific gemstone correspondences are planned as a future addition.",
+      "description": "An overview of common gemstones and their mineralogy, history, and colour associations, including the modern (US Jewelers, 1912/2002) monthly birthstone list. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish). Traditional/alternate birthstone lists and other tradition-specific gemstone correspondences (e.g. zodiacal gemstones) are planned as a future addition.",
       "secondaryNames": [],
       "tags": ["overview", "gemstone"],
       "extendedData": {
         "memberEntityType": "gemstone.gemstone",
+        "note": "Gemstones tagged 'birthstone' carry a birthMonth/birthMonthNumber in extendedData (modern list only, one stone per month).",
         "relatedOverviews": [
           "system.overview.colours",
           "system.overview.navaratna"

@@ -24,6 +24,14 @@
     { "source": "colour.colour.brown",  "target": "gemstone.gemstone.smoky-quartz", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
     { "source": "colour.colour.brown",  "target": "gemstone.gemstone.tigers-eye",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
     { "source": "colour.colour.pink",   "target": "gemstone.gemstone.rose-quartz",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
-    { "source": "colour.colour.pink",   "target": "gemstone.gemstone.rhodonite",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} }
+    { "source": "colour.colour.pink",   "target": "gemstone.gemstone.rhodonite",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.blue",   "target": "gemstone.gemstone.aquamarine",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "gemstone.gemstone.diamond",      "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "gemstone.gemstone.pearl",        "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.green",  "target": "gemstone.gemstone.peridot",      "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.white",  "target": "gemstone.gemstone.opal",         "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Opal's white body colour is most iconic, but precious opal displays the full spectrum via play-of-colour." } },
+    { "source": "colour.colour.blue",   "target": "gemstone.gemstone.turquoise",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} },
+    { "source": "colour.colour.green",  "target": "gemstone.gemstone.turquoise",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Turquoise ranges from sky blue to blue-green; both colour associations are common." } },
+    { "source": "colour.colour.green",  "target": "gemstone.gemstone.malachite",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": {} }
   ]
 }
