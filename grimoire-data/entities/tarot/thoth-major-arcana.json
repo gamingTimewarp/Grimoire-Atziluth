@@ -28,6 +28,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "numerologyDigit": null,
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.aleph",
@@ -78,6 +79,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.beth",
@@ -128,6 +130,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.gimel",
@@ -166,6 +169,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.daleth",
@@ -204,6 +208,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.tzaddi",
@@ -249,6 +254,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.vau",
@@ -287,6 +293,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.zayin",
@@ -325,6 +332,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.cheth",
@@ -375,6 +383,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.lamed",
@@ -414,6 +423,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.yod",
@@ -464,6 +474,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.kaph",
@@ -514,6 +525,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.teth",
@@ -553,6 +565,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.mem",
@@ -591,6 +604,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "numerologyDigit": "numerology.digit.4",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.nun",
@@ -641,6 +655,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "numerologyDigit": "numerology.digit.5",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.samekh",
@@ -679,6 +694,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "numerologyDigit": "numerology.digit.6",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.ayin",
@@ -723,6 +739,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "numerologyDigit": "numerology.digit.7",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.peh",
@@ -761,6 +778,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "numerologyDigit": "numerology.digit.8",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.heh",
@@ -800,6 +818,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "numerologyDigit": "numerology.digit.9",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.qoph",
@@ -838,6 +857,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.resh",
@@ -894,6 +914,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.shin",
@@ -944,6 +965,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",
         "hebrewLetter": "letter.hebrew.tau",

@@ -27,6 +27,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "numerologyDigit": null,
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -56,6 +57,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -85,6 +87,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -114,6 +117,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -143,6 +147,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -172,6 +177,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -201,6 +207,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -230,6 +237,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -259,6 +267,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -288,6 +297,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -317,6 +327,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -346,6 +357,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -375,6 +387,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -404,6 +417,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "numerologyDigit": "numerology.digit.4",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -433,6 +447,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "numerologyDigit": "numerology.digit.5",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -462,6 +477,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "numerologyDigit": "numerology.digit.6",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -491,6 +507,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "numerologyDigit": "numerology.digit.7",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -520,6 +537,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "numerologyDigit": "numerology.digit.8",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -549,6 +567,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "numerologyDigit": "numerology.digit.9",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -578,6 +597,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -607,6 +627,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     },
@@ -636,6 +657,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
     }

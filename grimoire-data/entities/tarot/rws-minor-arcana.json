@@ -15,6 +15,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -38,6 +39,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -61,6 +63,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -84,6 +87,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -107,6 +111,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -130,6 +135,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -153,6 +159,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -176,6 +183,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -199,6 +207,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -222,6 +231,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -245,6 +255,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 11,
+        "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -268,6 +279,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 12,
+        "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -291,6 +303,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 13,
+        "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -314,6 +327,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 14,
+        "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.wands",
         "arcana": "minor",
@@ -337,6 +351,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 15,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -360,6 +375,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 16,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -383,6 +399,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 17,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -406,6 +423,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 18,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -429,6 +447,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 19,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -452,6 +471,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 20,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -475,6 +495,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 21,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -498,6 +519,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 22,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -521,6 +543,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 23,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -544,6 +567,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 24,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -567,6 +591,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 25,
+        "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -590,6 +615,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 26,
+        "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -613,6 +639,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 27,
+        "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -636,6 +663,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 28,
+        "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.cups",
         "arcana": "minor",
@@ -659,6 +687,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 29,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -682,6 +711,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 30,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -705,6 +735,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 31,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -728,6 +759,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 32,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -751,6 +783,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 33,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -774,6 +807,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 34,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -797,6 +831,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 35,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -820,6 +855,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 36,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -843,6 +879,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 37,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -866,6 +903,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 38,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -889,6 +927,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 39,
+        "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -912,6 +951,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 40,
+        "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -935,6 +975,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 41,
+        "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -958,6 +999,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 42,
+        "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.swords",
         "arcana": "minor",
@@ -981,6 +1023,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 43,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1004,6 +1047,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 44,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "2",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1027,6 +1071,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 45,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "3",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1050,6 +1095,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 46,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "4",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1073,6 +1119,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 47,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "5",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1096,6 +1143,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 48,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "6",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1119,6 +1167,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 49,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "7",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1142,6 +1191,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 50,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "8",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1165,6 +1215,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 51,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "9",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1188,6 +1239,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 52,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "10",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1211,6 +1263,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 53,
+        "numerologyDigit": null,
         "rank": "Page",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1234,6 +1287,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 54,
+        "numerologyDigit": null,
         "rank": "Knight",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1257,6 +1311,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 55,
+        "numerologyDigit": null,
         "rank": "Queen",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",
@@ -1280,6 +1335,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 56,
+        "numerologyDigit": null,
         "rank": "King",
         "suit": "tarot.suit.rws.pentacles",
         "arcana": "minor",

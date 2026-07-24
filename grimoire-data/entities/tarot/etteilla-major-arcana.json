@@ -14,6 +14,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 1,
+        "numerologyDigit": "numerology.digit.1",
         "zodiacSign": "astrology.zodiac-sign.aries",
         "uprightKeywords": ["self", "questioner", "inquiry", "present concern", "the seeker"],
         "reversedKeywords": ["confusion", "unclear question", "distraction", "self-deception"],
@@ -33,6 +34,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 2,
+        "numerologyDigit": "numerology.digit.2",
         "zodiacSign": "astrology.zodiac-sign.taurus",
         "uprightKeywords": ["illumination", "clarity", "joy", "success", "vitality"],
         "reversedKeywords": ["obscurity", "failure", "arrogance", "dimness"],
@@ -51,6 +53,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 3,
+        "numerologyDigit": "numerology.digit.3",
         "zodiacSign": "astrology.zodiac-sign.gemini",
         "uprightKeywords": ["deception", "hidden matters", "illusion", "fluctuation", "mystery"],
         "reversedKeywords": ["small errors", "instability", "minor deceptions", "inconstancy"],
@@ -69,6 +72,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 4,
+        "numerologyDigit": "numerology.digit.4",
         "zodiacSign": "astrology.zodiac-sign.cancer",
         "uprightKeywords": ["heavens", "divine order", "spiritual elevation", "celestial blessing"],
         "reversedKeywords": ["disorder", "fall from grace", "chaos", "spiritual neglect"],
@@ -88,6 +92,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 5,
+        "numerologyDigit": "numerology.digit.5",
         "zodiacSign": "astrology.zodiac-sign.leo",
         "uprightKeywords": ["completion", "travel", "worldly success", "fulfilment", "journey"],
         "reversedKeywords": ["stagnation", "unfulfilled plans", "delay", "incomplete journey"],
@@ -107,6 +112,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 6,
+        "numerologyDigit": "numerology.digit.6",
         "zodiacSign": "astrology.zodiac-sign.virgo",
         "uprightKeywords": ["hope", "guidance", "inspiration", "renewal", "celestial favour"],
         "reversedKeywords": ["disappointment", "loss of hope", "misguided", "fleeting luck"],
@@ -125,6 +131,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 7,
+        "numerologyDigit": "numerology.digit.7",
         "zodiacSign": "astrology.zodiac-sign.libra",
         "uprightKeywords": ["support", "protection", "natural abundance", "teeming life"],
         "reversedKeywords": ["disorder", "lack of support", "overwhelm", "chaos"],
@@ -143,6 +150,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 8,
+        "numerologyDigit": "numerology.digit.8",
         "zodiacSign": "astrology.zodiac-sign.scorpio",
         "uprightKeywords": ["female querent", "self-inquiry", "inner life", "present concern", "the seeker"],
         "reversedKeywords": ["confusion", "self-doubt", "unclear question", "distraction"],
@@ -161,6 +169,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 9,
+        "numerologyDigit": "numerology.digit.9",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "uprightKeywords": ["justice", "equity", "legal matters", "contract", "fair outcome"],
         "reversedKeywords": ["injustice", "legal problems", "bias", "wrongful judgement"],
@@ -179,6 +188,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 10,
+        "numerologyDigit": "numerology.digit.1",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
         "uprightKeywords": ["moderation", "prudence", "economy", "restraint", "balance"],
         "reversedKeywords": ["excess", "clergy", "religion", "over-indulgence"],
@@ -197,6 +207,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 11,
+        "numerologyDigit": "numerology.digit.2",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
         "uprightKeywords": ["power", "boldness", "courage", "force", "determination"],
         "reversedKeywords": ["weakness", "abuse of power", "tyranny", "cowardice"],
@@ -215,6 +226,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 12,
+        "numerologyDigit": "numerology.digit.3",
         "zodiacSign": "astrology.zodiac-sign.pisces",
         "uprightKeywords": ["foresight", "wisdom", "discernment", "caution", "wise counsel"],
         "reversedKeywords": ["rashness", "imprudence", "poor judgement", "haste"],
@@ -233,6 +245,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 13,
+        "numerologyDigit": "numerology.digit.4",
         "zodiacSign": null,
         "uprightKeywords": ["love", "romance", "engagement", "attraction", "desire"],
         "reversedKeywords": ["inconstancy", "dissolute behaviour", "unreliable love", "fickleness"],
@@ -251,6 +264,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 14,
+        "numerologyDigit": "numerology.digit.5",
         "zodiacSign": null,
         "uprightKeywords": ["force", "violence", "black arts", "fatality", "overwhelming power"],
         "reversedKeywords": ["fate", "astrology", "destiny", "unavoidable circumstance"],
@@ -269,6 +283,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 15,
+        "numerologyDigit": "numerology.digit.6",
         "zodiacSign": null,
         "uprightKeywords": ["sickness", "illness", "charlatan", "misdirection", "trickery"],
         "reversedKeywords": ["indisposition", "minor illness", "slight ailment", "convalescence"],
@@ -288,6 +303,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 16,
+        "numerologyDigit": "numerology.digit.7",
         "zodiacSign": null,
         "uprightKeywords": ["judgement", "renewal", "decisive news", "awakening", "reckoning"],
         "reversedKeywords": ["delay", "weakness", "failure to act", "missed calling"],
@@ -306,6 +322,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 17,
+        "numerologyDigit": "numerology.digit.8",
         "zodiacSign": null,
         "uprightKeywords": ["death", "mortality", "ending", "transformation", "great change"],
         "reversedKeywords": ["inertia", "corruption", "stagnation", "inevitable decline"],
@@ -325,6 +342,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 18,
+        "numerologyDigit": "numerology.digit.9",
         "zodiacSign": null,
         "uprightKeywords": ["treachery", "concealment", "hypocrisy", "false friend", "disguise"],
         "reversedKeywords": ["wisdom", "counsel", "prudent guidance", "retirement"],
@@ -344,6 +362,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 19,
+        "numerologyDigit": "numerology.digit.1",
         "zodiacSign": null,
         "uprightKeywords": ["ruin", "catastrophe", "sudden loss", "misery", "upheaval"],
         "reversedKeywords": ["imprisonment", "oppression", "lesser disaster", "constraint"],
@@ -362,6 +381,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 20,
+        "numerologyDigit": "numerology.digit.2",
         "zodiacSign": null,
         "uprightKeywords": ["fortune", "destiny", "lucky turn", "cycle", "opportunity"],
         "reversedKeywords": ["bad luck", "misfortune", "downswing", "unfavourable timing"],
@@ -380,6 +400,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 21,
+        "numerologyDigit": "numerology.digit.3",
         "zodiacSign": null,
         "uprightKeywords": ["help", "assistance", "relief", "journey", "unexpected aid"],
         "reversedKeywords": ["defeat", "disagreement", "quarrel", "worrying news"],
@@ -399,6 +420,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 0,
+        "numerologyDigit": null,
         "zodiacSign": null,
         "uprightKeywords": ["folly", "madness", "delirium", "recklessness", "the questioner unmoored"],
         "reversedKeywords": ["negligence", "absence", "distraction", "thoughtlessness"],

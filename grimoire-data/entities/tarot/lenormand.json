@@ -11,6 +11,10 @@
       "extendedData": {
         "cardNumber": 1,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "timing": "soon",
         "uprightMeaning": "News, messages, a young man, swift arrival, visit, communication incoming"
       }
     },
@@ -24,6 +28,10 @@
       "extendedData": {
         "cardNumber": 2,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "timing": "a short time",
         "uprightMeaning": "Small luck, brief opportunity, good fortune, chance, optimism, carefree"
       }
     },
@@ -37,6 +45,10 @@
       "extendedData": {
         "cardNumber": 3,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "timing": "a long time",
         "uprightMeaning": "Travel, journey, foreign lands, commerce, adventure, long-distance movement"
       }
     },
@@ -50,6 +62,10 @@
       "extendedData": {
         "cardNumber": 4,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "timing": "permanent",
         "uprightMeaning": "Home, family, security, property, stability, domestic life, household"
       }
     },
@@ -63,6 +79,10 @@
       "extendedData": {
         "cardNumber": 5,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "timing": "9-12 months",
         "uprightMeaning": "Health, vitality, slow growth, deep roots, spirituality, life force, long duration"
       }
     },
@@ -76,6 +96,10 @@
       "extendedData": {
         "cardNumber": 6,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.neptune",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "timing": "fall/autumn",
         "uprightMeaning": "Confusion, uncertainty, hidden matters, lack of clarity, doubt, temporary obstacles"
       }
     },
@@ -89,6 +113,10 @@
       "extendedData": {
         "cardNumber": 7,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "timing": "planned",
         "uprightMeaning": "Deceit, rival, indirect path, complexity, a cunning woman, temptation, wisdom"
       }
     },
@@ -102,6 +130,10 @@
       "extendedData": {
         "cardNumber": 8,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.pluto",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "timing": "forever",
         "uprightMeaning": "Endings, completion, illness, grief, transformation, something over, serious change"
       }
     },
@@ -115,6 +147,10 @@
       "extendedData": {
         "cardNumber": 9,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "timing": "springtime",
         "uprightMeaning": "Gift, invitation, pleasure, beauty, appreciation, happiness, social grace"
       }
     },
@@ -128,6 +164,10 @@
       "extendedData": {
         "cardNumber": 10,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.pluto",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "timing": "quickly, suddenly",
         "uprightMeaning": "Sudden end, harvest, decisive cut, accident, danger, abrupt change, severance"
       }
     },
@@ -143,6 +183,10 @@
       "extendedData": {
         "cardNumber": 11,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.point.black-moon-lilith",
+        "zodiacSign": null,
+        "timing": "short",
         "uprightMeaning": "Conflict, argument, repetition, aggression, discipline, sport, discussion"
       }
     },
@@ -158,6 +202,10 @@
       "extendedData": {
         "cardNumber": 12,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.uranus",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "timing": "temporary",
         "uprightMeaning": "Communication, gossip, chatter, negotiation, two of anything, anxiety, small worries"
       }
     },
@@ -171,6 +219,10 @@
       "extendedData": {
         "cardNumber": 13,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "timing": "temporarily, soon",
         "uprightMeaning": "New beginning, innocence, small matter, child, naivety, something fresh and new"
       }
     },
@@ -184,6 +236,10 @@
       "extendedData": {
         "cardNumber": 14,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.pluto",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "timing": "difficult timing",
         "uprightMeaning": "Cunning, self-interest, deception, caution, work, a cunning person, shrewd action"
       }
     },
@@ -197,6 +253,10 @@
       "extendedData": {
         "cardNumber": 15,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "timing": "a long time",
         "uprightMeaning": "Strength, power, authority, finances, a powerful figure, boss, maternal energy"
       }
     },
@@ -210,6 +270,10 @@
       "extendedData": {
         "cardNumber": 16,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.neptune",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "timing": "night, winter",
         "uprightMeaning": "Hope, wish, clarity, guidance, success, spiritual matters, inspiration"
       }
     },
@@ -223,6 +287,10 @@
       "extendedData": {
         "cardNumber": 17,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "timing": "long lasting",
         "uprightMeaning": "Change, transformation, positive change, pregnancy, return, migration, new arrival"
       }
     },
@@ -236,6 +304,10 @@
       "extendedData": {
         "cardNumber": 18,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.uranus",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "timing": "long lasting",
         "uprightMeaning": "Loyalty, friendship, trusted companion, support, faithful advisor, good friend"
       }
     },
@@ -249,6 +321,10 @@
       "extendedData": {
         "cardNumber": 19,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "timing": "delays",
         "uprightMeaning": "Authority, government, institution, solitude, legal matters, structure, isolation"
       }
     },
@@ -262,6 +338,10 @@
       "extendedData": {
         "cardNumber": 20,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.uranus",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "timing": "many different timings",
         "uprightMeaning": "Society, social gathering, public life, network, meeting, community, social media"
       }
     },
@@ -275,6 +355,10 @@
       "extendedData": {
         "cardNumber": 21,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "timing": "standstill",
         "uprightMeaning": "Obstacle, challenge, blockage, delay, enemy, difficulty, slow progress"
       }
     },
@@ -290,6 +374,10 @@
       "extendedData": {
         "cardNumber": 22,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "timing": "6-7 weeks",
         "uprightMeaning": "Decision, choice, alternative paths, freedom, crossroads, options available"
       }
     },
@@ -303,6 +391,10 @@
       "extendedData": {
         "cardNumber": 23,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.minor-body.chiron",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "timing": "running out of time",
         "uprightMeaning": "Loss, theft, deterioration, worry, stress, depletion, something eaten away"
       }
     },
@@ -316,6 +408,10 @@
       "extendedData": {
         "cardNumber": 24,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "timing": "spring time",
         "uprightMeaning": "Love, romance, kindness, affection, emotional happiness, generosity, passion"
       }
     },
@@ -329,6 +425,10 @@
       "extendedData": {
         "cardNumber": 25,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "timing": "repetitive",
         "uprightMeaning": "Commitment, contract, marriage, agreement, cycle, partnership, binding promise"
       }
     },
@@ -342,6 +442,10 @@
       "extendedData": {
         "cardNumber": 26,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.neptune",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "timing": "future",
         "uprightMeaning": "Secrets, knowledge, education, research, hidden information, learning, mystery"
       }
     },
@@ -355,6 +459,10 @@
       "extendedData": {
         "cardNumber": 27,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "timing": "fast",
         "uprightMeaning": "Written communication, document, message, paperwork, letter, email, contract"
       }
     },
@@ -370,6 +478,10 @@
       "extendedData": {
         "cardNumber": 28,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "timing": "immediately",
         "uprightMeaning": "A man, the male querent, masculine energy, a significant male figure"
       }
     },
@@ -385,6 +497,10 @@
       "extendedData": {
         "cardNumber": 29,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "timing": "immediately",
         "uprightMeaning": "A woman, the female querent, feminine energy, a significant female figure"
       }
     },
@@ -398,6 +514,10 @@
       "extendedData": {
         "cardNumber": 30,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.minor-body.chiron",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "timing": "winter",
         "uprightMeaning": "Purity, virtue, peace, maturity, wisdom, harmony, chastity or sensuality"
       }
     },
@@ -411,6 +531,10 @@
       "extendedData": {
         "cardNumber": 31,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "timing": "sunrise/day",
         "uprightMeaning": "Success, happiness, vitality, achievement, great fortune, clarity, warmth"
       }
     },
@@ -424,6 +548,10 @@
       "extendedData": {
         "cardNumber": 32,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "neutral",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "timing": "evening/sunset",
         "uprightMeaning": "Recognition, fame, intuition, psychic sensitivity, romance, honors, subconscious"
       }
     },
@@ -437,6 +565,10 @@
       "extendedData": {
         "cardNumber": 33,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "timing": "long lasting",
         "uprightMeaning": "Solution, answer, unlock, certainty, destiny, access, important revelation"
       }
     },
@@ -450,6 +582,10 @@
       "extendedData": {
         "cardNumber": 34,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "timing": "repetitive",
         "uprightMeaning": "Financial abundance, business, flow of money, depth, independence, prosperity"
       }
     },
@@ -463,6 +599,10 @@
       "extendedData": {
         "cardNumber": 35,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "positive",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "timing": "a long time",
         "uprightMeaning": "Stability, security, endurance, persistence, work, groundedness, long-term success"
       }
     },
@@ -476,6 +616,10 @@
       "extendedData": {
         "cardNumber": 36,
         "sourceDeck": "lenormand.deck.standard",
+        "polarity": "negative",
+        "rulingPlanet": "astrology.point.black-moon-lilith",
+        "zodiacSign": null,
+        "timing": "2-3 weeks",
         "uprightMeaning": "Burden, suffering, fate, karma, spiritual test, moral weight, destiny to be accepted"
       }
     }

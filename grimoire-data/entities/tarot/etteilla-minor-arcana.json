@@ -15,6 +15,7 @@
         "suit": "Wands",
         "rank": "Ace",
         "rankNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["birth", "new enterprise", "origin"],
         "reversedKeywords": ["decline", "ruin", "cancellation"],
         "correspondingRWSCard": "tarot.minor.rws.wands.ace"
@@ -34,6 +35,7 @@
         "suit": "Wands",
         "rank": "2",
         "rankNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "uprightKeywords": ["grief", "tribulation", "sorrow"],
         "reversedKeywords": ["surprise", "astonishment", "unexpected event"],
         "correspondingRWSCard": "tarot.minor.rws.wands.2"
@@ -53,6 +55,7 @@
         "suit": "Wands",
         "rank": "3",
         "rankNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "uprightKeywords": ["enterprise", "venture", "commerce"],
         "reversedKeywords": ["cessation", "end of effort", "business failure"],
         "correspondingRWSCard": "tarot.minor.rws.wands.3"
@@ -72,6 +75,7 @@
         "suit": "Wands",
         "rank": "4",
         "rankNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "uprightKeywords": ["society", "agreement", "community"],
         "reversedKeywords": ["prosperity", "abundance", "wealth"],
         "correspondingRWSCard": "tarot.minor.rws.wands.4"
@@ -91,6 +95,7 @@
         "suit": "Wands",
         "rank": "5",
         "rankNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "uprightKeywords": ["gold", "wealth", "riches"],
         "reversedKeywords": ["legal disputes", "litigation", "conflict over money"],
         "correspondingRWSCard": "tarot.minor.rws.wands.5"
@@ -110,6 +115,7 @@
         "suit": "Wands",
         "rank": "6",
         "rankNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "uprightKeywords": ["country matters", "domestic", "rural concern"],
         "reversedKeywords": ["good news", "announcement", "message"],
         "correspondingRWSCard": "tarot.minor.rws.wands.6"
@@ -129,6 +135,7 @@
         "suit": "Wands",
         "rank": "7",
         "rankNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "uprightKeywords": ["conversation", "negotiation", "deliberation"],
         "reversedKeywords": ["indecision", "uncertainty", "hesitation in discussion"],
         "correspondingRWSCard": "tarot.minor.rws.wands.7"
@@ -148,6 +155,7 @@
         "suit": "Wands",
         "rank": "8",
         "rankNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "uprightKeywords": ["young person", "countryside", "rural figure"],
         "reversedKeywords": ["displeasure", "quarrel", "domestic discord"],
         "correspondingRWSCard": "tarot.minor.rws.wands.8"
@@ -167,6 +175,7 @@
         "suit": "Wands",
         "rank": "9",
         "rankNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "uprightKeywords": ["delay", "suspension", "obstacle"],
         "reversedKeywords": ["adversity", "calamity", "difficulty"],
         "correspondingRWSCard": "tarot.minor.rws.wands.9"
@@ -186,6 +195,7 @@
         "suit": "Wands",
         "rank": "10",
         "rankNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["treachery", "betrayal", "duplicity"],
         "reversedKeywords": ["obstacles", "difficulties", "impediments"],
         "correspondingRWSCard": "tarot.minor.rws.wands.10"
@@ -205,6 +215,7 @@
         "suit": "Wands",
         "rank": "Page",
         "rankNumber": 11,
+        "numerologyDigit": null,
         "uprightKeywords": ["young person", "messenger", "country"],
         "reversedKeywords": ["indecision", "hesitation", "uncertainty"],
         "correspondingRWSCard": "tarot.minor.rws.wands.page"
@@ -224,6 +235,7 @@
         "suit": "Wands",
         "rank": "Knight",
         "rankNumber": 12,
+        "numerologyDigit": null,
         "uprightKeywords": ["departure", "change of residence", "journey"],
         "reversedKeywords": ["rupture", "breakup", "discord"],
         "correspondingRWSCard": "tarot.minor.rws.wands.knight"
@@ -243,6 +255,7 @@
         "suit": "Wands",
         "rank": "Queen",
         "rankNumber": 13,
+        "numerologyDigit": null,
         "uprightKeywords": ["dark woman", "virtue", "honesty"],
         "reversedKeywords": ["jealousy", "inconstancy", "contradiction"],
         "correspondingRWSCard": "tarot.minor.rws.wands.queen"
@@ -262,6 +275,7 @@
         "suit": "Wands",
         "rank": "King",
         "rankNumber": 14,
+        "numerologyDigit": null,
         "uprightKeywords": ["honest man", "country", "dark complexion"],
         "reversedKeywords": ["severity", "strictness", "austerity"],
         "correspondingRWSCard": "tarot.minor.rws.wands.king"
@@ -281,6 +295,7 @@
         "suit": "Cups",
         "rank": "Ace",
         "rankNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["feast", "abundance", "love"],
         "reversedKeywords": ["change", "transformation", "mutation"],
         "correspondingRWSCard": "tarot.minor.rws.cups.ace"
@@ -300,6 +315,7 @@
         "suit": "Cups",
         "rank": "2",
         "rankNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "uprightKeywords": ["love", "passion", "union"],
         "reversedKeywords": ["desire", "lust", "crossed love"],
         "correspondingRWSCard": "tarot.minor.rws.cups.2"
@@ -319,6 +335,7 @@
         "suit": "Cups",
         "rank": "3",
         "rankNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "uprightKeywords": ["success", "victory", "good fortune"],
         "reversedKeywords": ["excess", "over-indulgence", "sensual pleasure"],
         "correspondingRWSCard": "tarot.minor.rws.cups.3"
@@ -338,6 +355,7 @@
         "suit": "Cups",
         "rank": "4",
         "rankNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "uprightKeywords": ["boredom", "disgust", "dissatisfaction"],
         "reversedKeywords": ["novelty", "new acquaintance", "fresh prospect"],
         "correspondingRWSCard": "tarot.minor.rws.cups.4"
@@ -357,6 +375,7 @@
         "suit": "Cups",
         "rank": "5",
         "rankNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "uprightKeywords": ["inheritance", "legacy", "bequest"],
         "reversedKeywords": ["loss", "ruin", "regret"],
         "correspondingRWSCard": "tarot.minor.rws.cups.5"
@@ -376,6 +395,7 @@
         "suit": "Cups",
         "rank": "6",
         "rankNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "uprightKeywords": ["the past", "memory", "old acquaintance"],
         "reversedKeywords": ["the future", "renewal", "what is to come"],
         "correspondingRWSCard": "tarot.minor.rws.cups.6"
@@ -395,6 +415,7 @@
         "suit": "Cups",
         "rank": "7",
         "rankNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "uprightKeywords": ["thought", "intelligence", "project"],
         "reversedKeywords": ["desire", "wish", "fantasy"],
         "correspondingRWSCard": "tarot.minor.rws.cups.7"
@@ -414,6 +435,7 @@
         "suit": "Cups",
         "rank": "8",
         "rankNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "uprightKeywords": ["fair person", "blonde", "light-complexioned"],
         "reversedKeywords": ["joy", "satisfaction", "contentment"],
         "correspondingRWSCard": "tarot.minor.rws.cups.8"
@@ -433,6 +455,7 @@
         "suit": "Cups",
         "rank": "9",
         "rankNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "uprightKeywords": ["victory", "success", "wish granted"],
         "reversedKeywords": ["imperfection", "modest success", "good enough"],
         "correspondingRWSCard": "tarot.minor.rws.cups.9"
@@ -452,6 +475,7 @@
         "suit": "Cups",
         "rank": "10",
         "rankNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["town", "city", "community"],
         "reversedKeywords": ["vexation", "displeasure", "discord"],
         "correspondingRWSCard": "tarot.minor.rws.cups.10"
@@ -471,6 +495,7 @@
         "suit": "Cups",
         "rank": "Page",
         "rankNumber": 11,
+        "numerologyDigit": null,
         "uprightKeywords": ["fair youth", "student", "studious"],
         "reversedKeywords": ["seduction", "flattery", "deception"],
         "correspondingRWSCard": "tarot.minor.rws.cups.page"
@@ -490,6 +515,7 @@
         "suit": "Cups",
         "rank": "Knight",
         "rankNumber": 12,
+        "numerologyDigit": null,
         "uprightKeywords": ["arrival", "approach", "invitation"],
         "reversedKeywords": ["duplicity", "cunning", "fraud"],
         "correspondingRWSCard": "tarot.minor.rws.cups.knight"
@@ -509,6 +535,7 @@
         "suit": "Cups",
         "rank": "Queen",
         "rankNumber": 13,
+        "numerologyDigit": null,
         "uprightKeywords": ["fair woman", "honesty", "devotion"],
         "reversedKeywords": ["dishonesty", "faithlessness", "bad faith"],
         "correspondingRWSCard": "tarot.minor.rws.cups.queen"
@@ -528,6 +555,7 @@
         "suit": "Cups",
         "rank": "King",
         "rankNumber": 14,
+        "numerologyDigit": null,
         "uprightKeywords": ["fair man", "honesty", "liberality"],
         "reversedKeywords": ["dishonesty", "double-dealing", "vice"],
         "correspondingRWSCard": "tarot.minor.rws.cups.king"
@@ -547,6 +575,7 @@
         "suit": "Swords",
         "rank": "Ace",
         "rankNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["excess", "pregnancy", "extreme force"],
         "reversedKeywords": ["birth", "beginning", "conception"],
         "correspondingRWSCard": "tarot.minor.rws.swords.ace"
@@ -566,6 +595,7 @@
         "suit": "Swords",
         "rank": "2",
         "rankNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "uprightKeywords": ["friendship", "affection", "alliance"],
         "reversedKeywords": ["falsehood", "duplicity", "false friendship"],
         "correspondingRWSCard": "tarot.minor.rws.swords.2"
@@ -585,6 +615,7 @@
         "suit": "Swords",
         "rank": "3",
         "rankNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "uprightKeywords": ["separation", "distance", "departure"],
         "reversedKeywords": ["error", "distraction", "confusion"],
         "correspondingRWSCard": "tarot.minor.rws.swords.3"
@@ -604,6 +635,7 @@
         "suit": "Swords",
         "rank": "4",
         "rankNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "uprightKeywords": ["solitude", "retreat", "rest"],
         "reversedKeywords": ["prudence", "economy", "recovery"],
         "correspondingRWSCard": "tarot.minor.rws.swords.4"
@@ -623,6 +655,7 @@
         "suit": "Swords",
         "rank": "5",
         "rankNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "uprightKeywords": ["grief", "mourning", "loss"],
         "reversedKeywords": ["burial", "ceremony", "funerary rite"],
         "correspondingRWSCard": "tarot.minor.rws.swords.5"
@@ -642,6 +675,7 @@
         "suit": "Swords",
         "rank": "6",
         "rankNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "uprightKeywords": ["road", "route", "travel"],
         "reversedKeywords": ["declaration", "announcement", "disclosure"],
         "correspondingRWSCard": "tarot.minor.rws.swords.6"
@@ -661,6 +695,7 @@
         "suit": "Swords",
         "rank": "7",
         "rankNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "uprightKeywords": ["hope", "wish", "expectation"],
         "reversedKeywords": ["counsel", "advice", "wise guidance"],
         "correspondingRWSCard": "tarot.minor.rws.swords.7"
@@ -680,6 +715,7 @@
         "suit": "Swords",
         "rank": "8",
         "rankNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "uprightKeywords": ["criticism", "blame", "censure"],
         "reversedKeywords": ["caution", "discretion", "careful action"],
         "correspondingRWSCard": "tarot.minor.rws.swords.8"
@@ -699,6 +735,7 @@
         "suit": "Swords",
         "rank": "9",
         "rankNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "uprightKeywords": ["cleric", "church", "piety"],
         "reversedKeywords": ["reasonable fear", "justified suspicion", "valid doubt"],
         "correspondingRWSCard": "tarot.minor.rws.swords.9"
@@ -718,6 +755,7 @@
         "suit": "Swords",
         "rank": "10",
         "rankNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["tears", "weeping", "grief"],
         "reversedKeywords": ["advantage", "profit", "benefit despite pain"],
         "correspondingRWSCard": "tarot.minor.rws.swords.10"
@@ -737,6 +775,7 @@
         "suit": "Swords",
         "rank": "Page",
         "rankNumber": 11,
+        "numerologyDigit": null,
         "uprightKeywords": ["spy", "secret watcher", "cunning"],
         "reversedKeywords": ["unforeseen event", "surprise", "unexpected action"],
         "correspondingRWSCard": "tarot.minor.rws.swords.page"
@@ -756,6 +795,7 @@
         "suit": "Swords",
         "rank": "Knight",
         "rankNumber": 12,
+        "numerologyDigit": null,
         "uprightKeywords": ["soldier", "adversary", "forceful person"],
         "reversedKeywords": ["extravagance", "incapacity", "folly"],
         "correspondingRWSCard": "tarot.minor.rws.swords.knight"
@@ -775,6 +815,7 @@
         "suit": "Swords",
         "rank": "Queen",
         "rankNumber": 13,
+        "numerologyDigit": null,
         "uprightKeywords": ["widow", "loss", "grief"],
         "reversedKeywords": ["malice", "bigotry", "narrow-mindedness"],
         "correspondingRWSCard": "tarot.minor.rws.swords.queen"
@@ -794,6 +835,7 @@
         "suit": "Swords",
         "rank": "King",
         "rankNumber": 14,
+        "numerologyDigit": null,
         "uprightKeywords": ["judge", "lawyer", "authority"],
         "reversedKeywords": ["cruelty", "perversity", "wickedness"],
         "correspondingRWSCard": "tarot.minor.rws.swords.king"
@@ -813,6 +855,7 @@
         "suit": "Pentacles",
         "rank": "Ace",
         "rankNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["contentment", "satisfaction", "material wellbeing"],
         "reversedKeywords": ["wealth badly used", "miserliness", "greed"],
         "planetaryAttribution": null,
@@ -833,6 +876,7 @@
         "suit": "Pentacles",
         "rank": "2",
         "rankNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "uprightKeywords": ["embarrassment", "difficulty", "financial juggling"],
         "reversedKeywords": ["letters", "written message", "correspondence"],
         "planetaryAttribution": "astrology.planet.mercury",
@@ -853,6 +897,7 @@
         "suit": "Pentacles",
         "rank": "3",
         "rankNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "uprightKeywords": ["skilled work", "craftsmanship", "quality"],
         "reversedKeywords": ["mediocrity", "puerility", "poor quality"],
         "planetaryAttribution": "astrology.planet.venus",
@@ -873,6 +918,7 @@
         "suit": "Pentacles",
         "rank": "4",
         "rankNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "uprightKeywords": ["gift", "legacy", "material benefit"],
         "reversedKeywords": ["obstacles", "delay", "postponed gain"],
         "planetaryAttribution": "astrology.planet.luna",
@@ -893,6 +939,7 @@
         "suit": "Pentacles",
         "rank": "5",
         "rankNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "uprightKeywords": ["lover", "mistress", "romantic affair"],
         "reversedKeywords": ["disorder", "chaos", "ruin"],
         "planetaryAttribution": "astrology.planet.mars",
@@ -913,6 +960,7 @@
         "suit": "Pentacles",
         "rank": "6",
         "rankNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "uprightKeywords": ["present moment", "now", "current affairs"],
         "reversedKeywords": ["desire", "ambition", "aspiration"],
         "planetaryAttribution": "astrology.planet.jupiter",
@@ -933,6 +981,7 @@
         "suit": "Pentacles",
         "rank": "7",
         "rankNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "uprightKeywords": ["money", "financial gain", "income"],
         "reversedKeywords": ["worry about money", "financial anxiety", "concern"],
         "planetaryAttribution": "astrology.planet.saturn",
@@ -953,6 +1002,7 @@
         "suit": "Pentacles",
         "rank": "8",
         "rankNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "uprightKeywords": ["dark young woman", "skill", "craftswoman"],
         "reversedKeywords": ["usury", "excessive interest", "exploitation"],
         "planetaryAttribution": "astrology.node.rahu",
@@ -973,6 +1023,7 @@
         "suit": "Pentacles",
         "rank": "9",
         "rankNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "uprightKeywords": ["accomplishment", "results", "effect"],
         "reversedKeywords": ["deception", "bad faith", "false promise"],
         "planetaryAttribution": "astrology.node.ketu",
@@ -993,6 +1044,7 @@
         "suit": "Pentacles",
         "rank": "10",
         "rankNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "uprightKeywords": ["house", "home", "family dwelling"],
         "reversedKeywords": ["chance", "fate", "fortune"],
         "planetaryAttribution": "astrology.element.earth",
@@ -1013,6 +1065,7 @@
         "suit": "Pentacles",
         "rank": "Page",
         "rankNumber": 11,
+        "numerologyDigit": null,
         "uprightKeywords": ["studious youth", "dark young person", "diligence"],
         "reversedKeywords": ["luxury", "prodigality", "wastefulness"],
         "planetaryAttribution": "astrology.element.earth",
@@ -1033,6 +1086,7 @@
         "suit": "Pentacles",
         "rank": "Knight",
         "rankNumber": 12,
+        "numerologyDigit": null,
         "uprightKeywords": ["useful person", "practical helper", "steady worker"],
         "reversedKeywords": ["idleness", "stagnation", "inertia"],
         "planetaryAttribution": "astrology.element.earth",
@@ -1053,6 +1107,7 @@
         "suit": "Pentacles",
         "rank": "Queen",
         "rankNumber": 13,
+        "numerologyDigit": null,
         "uprightKeywords": ["wealthy woman", "generosity", "dark woman"],
         "reversedKeywords": ["doubt", "suspicion", "uncertainty"],
         "planetaryAttribution": "astrology.element.earth",
@@ -1073,6 +1128,7 @@
         "suit": "Pentacles",
         "rank": "King",
         "rankNumber": 14,
+        "numerologyDigit": null,
         "uprightKeywords": ["wealthy man", "merchant", "successful businessman"],
         "reversedKeywords": ["vice", "weakness", "corruption"],
         "planetaryAttribution": "astrology.element.earth",

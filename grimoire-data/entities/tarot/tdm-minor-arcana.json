@@ -22,6 +22,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -49,6 +50,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -76,6 +78,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -103,6 +106,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -130,6 +134,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -157,6 +162,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -184,6 +190,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -211,6 +218,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -238,6 +246,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -265,6 +274,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -292,6 +302,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -319,6 +330,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -346,6 +358,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -373,6 +386,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.batons",
         "arcana": "minor",
@@ -400,6 +414,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -427,6 +442,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -454,6 +470,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -481,6 +498,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -508,6 +526,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -535,6 +554,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -562,6 +582,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -589,6 +610,7 @@
       ],
       "extendedData": {
         "cardNumber": 22,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -616,6 +638,7 @@
       ],
       "extendedData": {
         "cardNumber": 23,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -643,6 +666,7 @@
       ],
       "extendedData": {
         "cardNumber": 24,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -670,6 +694,7 @@
       ],
       "extendedData": {
         "cardNumber": 25,
+        "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -697,6 +722,7 @@
       ],
       "extendedData": {
         "cardNumber": 26,
+        "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -724,6 +750,7 @@
       ],
       "extendedData": {
         "cardNumber": 27,
+        "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -751,6 +778,7 @@
       ],
       "extendedData": {
         "cardNumber": 28,
+        "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.coupes",
         "arcana": "minor",
@@ -778,6 +806,7 @@
       ],
       "extendedData": {
         "cardNumber": 29,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -805,6 +834,7 @@
       ],
       "extendedData": {
         "cardNumber": 30,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -832,6 +862,7 @@
       ],
       "extendedData": {
         "cardNumber": 31,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -859,6 +890,7 @@
       ],
       "extendedData": {
         "cardNumber": 32,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -886,6 +918,7 @@
       ],
       "extendedData": {
         "cardNumber": 33,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -913,6 +946,7 @@
       ],
       "extendedData": {
         "cardNumber": 34,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -940,6 +974,7 @@
       ],
       "extendedData": {
         "cardNumber": 35,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -967,6 +1002,7 @@
       ],
       "extendedData": {
         "cardNumber": 36,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -994,6 +1030,7 @@
       ],
       "extendedData": {
         "cardNumber": 37,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1021,6 +1058,7 @@
       ],
       "extendedData": {
         "cardNumber": 38,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1048,6 +1086,7 @@
       ],
       "extendedData": {
         "cardNumber": 39,
+        "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1075,6 +1114,7 @@
       ],
       "extendedData": {
         "cardNumber": 40,
+        "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1102,6 +1142,7 @@
       ],
       "extendedData": {
         "cardNumber": 41,
+        "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1129,6 +1170,7 @@
       ],
       "extendedData": {
         "cardNumber": 42,
+        "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.epees",
         "arcana": "minor",
@@ -1156,6 +1198,7 @@
       ],
       "extendedData": {
         "cardNumber": 43,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1183,6 +1226,7 @@
       ],
       "extendedData": {
         "cardNumber": 44,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1210,6 +1254,7 @@
       ],
       "extendedData": {
         "cardNumber": 45,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1237,6 +1282,7 @@
       ],
       "extendedData": {
         "cardNumber": 46,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1264,6 +1310,7 @@
       ],
       "extendedData": {
         "cardNumber": 47,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1291,6 +1338,7 @@
       ],
       "extendedData": {
         "cardNumber": 48,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1318,6 +1366,7 @@
       ],
       "extendedData": {
         "cardNumber": 49,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1345,6 +1394,7 @@
       ],
       "extendedData": {
         "cardNumber": 50,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1372,6 +1422,7 @@
       ],
       "extendedData": {
         "cardNumber": 51,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1399,6 +1450,7 @@
       ],
       "extendedData": {
         "cardNumber": 52,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1426,6 +1478,7 @@
       ],
       "extendedData": {
         "cardNumber": 53,
+        "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1453,6 +1506,7 @@
       ],
       "extendedData": {
         "cardNumber": 54,
+        "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1480,6 +1534,7 @@
       ],
       "extendedData": {
         "cardNumber": 55,
+        "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",
@@ -1507,6 +1562,7 @@
       ],
       "extendedData": {
         "cardNumber": 56,
+        "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.deniers",
         "arcana": "minor",

@@ -33,6 +33,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "numerologyDigit": null,
         "rank": "The Fool",
         "suit": null,
         "arcana": "major",
@@ -80,6 +81,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "The Magician",
         "suit": null,
         "arcana": "major",
@@ -127,6 +129,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "The High Priestess",
         "suit": null,
         "arcana": "major",
@@ -162,6 +165,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "The Empress",
         "suit": null,
         "arcana": "major",
@@ -197,6 +201,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "The Emperor",
         "suit": null,
         "arcana": "major",
@@ -244,6 +249,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "The Hierophant",
         "suit": null,
         "arcana": "major",
@@ -279,6 +285,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "The Lovers",
         "suit": null,
         "arcana": "major",
@@ -314,6 +321,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "The Chariot",
         "suit": null,
         "arcana": "major",
@@ -361,6 +369,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "Strength",
         "suit": null,
         "arcana": "major",
@@ -396,6 +405,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "The Hermit",
         "suit": null,
         "arcana": "major",
@@ -437,6 +447,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "Wheel of Fortune",
         "suit": null,
         "arcana": "major",
@@ -478,6 +489,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Justice",
         "suit": null,
         "arcana": "major",
@@ -513,6 +525,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "The Hanged Man",
         "suit": null,
         "arcana": "major",
@@ -548,6 +561,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "numerologyDigit": "numerology.digit.4",
         "rank": "Death",
         "suit": null,
         "arcana": "major",
@@ -589,6 +603,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "numerologyDigit": "numerology.digit.5",
         "rank": "Temperance",
         "suit": null,
         "arcana": "major",
@@ -624,6 +639,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "numerologyDigit": "numerology.digit.6",
         "rank": "The Devil",
         "suit": null,
         "arcana": "major",
@@ -665,6 +681,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "numerologyDigit": "numerology.digit.7",
         "rank": "The Tower",
         "suit": null,
         "arcana": "major",
@@ -700,6 +717,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "numerologyDigit": "numerology.digit.8",
         "rank": "The Star",
         "suit": null,
         "arcana": "major",
@@ -735,6 +753,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "numerologyDigit": "numerology.digit.9",
         "rank": "The Moon",
         "suit": null,
         "arcana": "major",
@@ -770,6 +789,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "numerologyDigit": "numerology.digit.1",
         "rank": "The Sun",
         "suit": null,
         "arcana": "major",
@@ -817,6 +837,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "numerologyDigit": "numerology.digit.2",
         "rank": "Judgement",
         "suit": null,
         "arcana": "major",
@@ -858,6 +879,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "numerologyDigit": "numerology.digit.3",
         "rank": "The World",
         "suit": null,
         "arcana": "major",
