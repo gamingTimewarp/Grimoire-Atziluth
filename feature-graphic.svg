@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+
+  <defs>
+    <style>
+      text { font-family: 'Inter', 'Noto Sans', system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="500" fill="#0d0d12"/>
+
+  <!-- Section dividers -->
+  <line x1="396" y1="20" x2="396" y2="480" stroke="#2e2e3f" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.5"/>
+  <line x1="714" y1="20" x2="714" y2="480" stroke="#2e2e3f" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.5"/>
+
+  <!-- Wheel Chart -->
+  <svg x="67" y="10" width="320" height="480" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+    <circle cx="250" cy="250" r="238" fill="#13131a" stroke="#2e2e3f" stroke-width="1"/>
+    <path d="M 12.00 250.00 A 238 238 0 0 0 43.89 369.00 L 80.26 348.00 A 196 196 0 0 1 54.00 250.00 Z" fill="#c44a4a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="40.39" y="306.16" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#c44a4a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♈</text>
+    <path d="M 43.89 369.00 A 238 238 0 0 0 131.00 456.11 L 152.00 419.74 A 196 196 0 0 1 80.26 348.00 Z" fill="#6aa86a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="96.56" y="403.44" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6aa86a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♉</text>
+    <path d="M 131.00 456.11 A 238 238 0 0 0 250.00 488.00 L 250.00 446.00 A 196 196 0 0 1 152.00 419.74 Z" fill="#6ab0a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="193.84" y="459.61" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6ab0a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♊</text>
+    <path d="M 250.00 488.00 A 238 238 0 0 0 369.00 456.11 L 348.00 419.74 A 196 196 0 0 1 250.00 446.00 Z" fill="#6a86a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="306.16" y="459.61" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6a86a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♋</text>
+    <path d="M 369.00 456.11 A 238 238 0 0 0 456.11 369.00 L 419.74 348.00 A 196 196 0 0 1 348.00 419.74 Z" fill="#c44a4a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="403.44" y="403.44" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#c44a4a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♌</text>
+    <path d="M 456.11 369.00 A 238 238 0 0 0 488.00 250.00 L 446.00 250.00 A 196 196 0 0 1 419.74 348.00 Z" fill="#6aa86a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="459.61" y="306.16" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6aa86a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♍</text>
+    <path d="M 488.00 250.00 A 238 238 0 0 0 456.11 131.00 L 419.74 152.00 A 196 196 0 0 1 446.00 250.00 Z" fill="#6ab0a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="459.61" y="193.84" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6ab0a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♎</text>
+    <path d="M 456.11 131.00 A 238 238 0 0 0 369.00 43.89 L 348.00 80.26 A 196 196 0 0 1 419.74 152.00 Z" fill="#6a86a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="403.44" y="96.56" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6a86a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♏</text>
+    <path d="M 369.00 43.89 A 238 238 0 0 0 250.00 12.00 L 250.00 54.00 A 196 196 0 0 1 348.00 80.26 Z" fill="#c44a4a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="306.16" y="40.39" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#c44a4a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♐</text>
+    <path d="M 250.00 12.00 A 238 238 0 0 0 131.00 43.89 L 152.00 80.26 A 196 196 0 0 1 250.00 54.00 Z" fill="#6aa86a28" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="193.84" y="40.39" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6aa86a" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♑</text>
+    <path d="M 131.00 43.89 A 238 238 0 0 0 43.89 131.00 L 80.26 152.00 A 196 196 0 0 1 152.00 80.26 Z" fill="#6ab0a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="96.56" y="96.56" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6ab0a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♒</text>
+    <path d="M 43.89 131.00 A 238 238 0 0 0 12.00 250.00 L 54.00 250.00 A 196 196 0 0 1 80.26 152.00 Z" fill="#6a86a828" stroke="#2e2e3f" stroke-width="0.5"/>
+    <text x="40.39" y="193.84" text-anchor="middle" dominant-baseline="middle" font-size="22" fill="#6a86a8" opacity="0.95" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♓</text>
+    <circle cx="250" cy="250" r="196" fill="#1c1c27" stroke="#2e2e3f" stroke-width="0.5"/>
+    <line x1="234.97" y1="143.05" x2="265.03" y2="356.95" stroke="#c47a4a" stroke-width="0.8" opacity="0.5"/>
+    <line x1="234.97" y1="143.05" x2="192.77" y2="341.59" stroke="#6aa86a" stroke-width="0.8" opacity="0.4"/>
+    <line x1="265.03" y1="356.95" x2="350.14" y2="290.46" stroke="#c44a4a" stroke-width="0.8" opacity="0.3"/>
+    <line x1="209.54" y1="149.86" x2="350.14" y2="209.54" stroke="#7a7a8f" stroke-width="0.8" opacity="0.28"/>
+    <line x1="295.64" y1="152.12" x2="146.72" y2="218.42" stroke="#6ab0a8" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="250" cy="250" r="108" fill="none" stroke="#2e2e3f" stroke-width="0.3" stroke-dasharray="2,4"/>
+    <text x="229.40" y="103.44" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#E8C040" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">☉</text>
+    <text x="270.60" y="396.56" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#C8C8C8" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">☽</text>
+    <text x="194.56" y="112.78" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#6ab0a8" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">☿</text>
+    <text x="312.55" y="115.87" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#6aa86a" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♀</text>
+    <text x="387.22" y="305.44" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#c44a4a" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♂</text>
+    <text x="171.57" y="375.51" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#E06000" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♃</text>
+    <text x="387.22" y="194.56" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#909090" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♄</text>
+    <text x="108.47" y="206.73" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#6a86a8" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♅</text>
+    <text x="143.54" y="147.19" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="#4a6aa8" font-family="'Noto Sans Symbols 2','Noto Sans Symbols','Segoe UI Symbol',serif">♆</text>
+    <text x="20.00" y="244.00" font-size="9" fill="#c4922a" opacity="0.8">ASC</text>
+    <text x="458.00" y="244.00" font-size="9" fill="#4a4a60" opacity="0.6">DSC</text>
+    <text x="240.00" y="26.00" font-size="9" fill="#4a4a60" opacity="0.6">MC</text>
+    <text x="242.00" y="481.00" font-size="9" fill="#4a4a60" opacity="0.6">IC</text>
+  </svg>
+
+  <!-- Tree of Life -->
+  <svg x="405" y="5" width="300" height="490" viewBox="0 0 500 760" preserveAspectRatio="xMidYMid meet">
+    <line x1="250.00" y1="38.00" x2="410.00" y2="106.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="38.00" x2="90.00" y2="106.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="38.00" x2="250.00" y2="380.00" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="106.40" x2="90.00" y2="106.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="106.40" x2="410.00" y2="273.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="106.40" x2="250.00" y2="380.00" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="106.40" x2="90.00" y2="273.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="106.40" x2="250.00" y2="380.00" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="273.60" x2="90.00" y2="273.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="273.60" x2="250.00" y2="380.00" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="273.60" x2="410.00" y2="501.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="273.60" x2="250.00" y2="380.00" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="273.60" x2="90.00" y2="501.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="380.00" x2="410.00" y2="501.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="380.00" x2="90.00" y2="501.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="380.00" x2="250.00" y2="600.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="501.60" x2="90.00" y2="501.60" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="501.60" x2="250.00" y2="600.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="410.00" y1="501.60" x2="250.00" y2="714.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="501.60" x2="250.00" y2="600.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="90.00" y1="501.60" x2="250.00" y2="714.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <line x1="250.00" y1="600.40" x2="250.00" y2="714.40" stroke="#7a7a8f" stroke-width="3.0" opacity="0.8"/>
+    <circle cx="250.00" cy="212.80" r="30" fill="#9B8AB8" stroke="#7a6899" stroke-width="2" stroke-dasharray="5,4" opacity="0.55"/>
+    <circle cx="250.00" cy="38.00" r="30" fill="#FFFFFF" stroke="#cccccc" stroke-width="2"/>
+    <text x="250.00" y="38.00" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#333333" font-weight="600">1</text>
+    <circle cx="410.00" cy="106.40" r="30" fill="#808080" stroke="#606060" stroke-width="2"/>
+    <text x="410.00" y="106.40" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">2</text>
+    <circle cx="90.00" cy="106.40" r="30" fill="#1a0828" stroke="#3a1848" stroke-width="2"/>
+    <text x="90.00" y="106.40" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#e0c8f0" font-weight="600">3</text>
+    <circle cx="410.00" cy="273.60" r="30" fill="#4169E1" stroke="#2a49c1" stroke-width="2"/>
+    <text x="410.00" y="273.60" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">4</text>
+    <circle cx="90.00" cy="273.60" r="30" fill="#C41E1E" stroke="#a01010" stroke-width="2"/>
+    <text x="90.00" y="273.60" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">5</text>
+    <circle cx="250.00" cy="380.00" r="30" fill="#E8C040" stroke="#c8a020" stroke-width="2"/>
+    <text x="250.00" y="380.00" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#333333" font-weight="600">6</text>
+    <circle cx="410.00" cy="501.60" r="30" fill="#228B22" stroke="#166b16" stroke-width="2"/>
+    <text x="410.00" y="501.60" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">7</text>
+    <circle cx="90.00" cy="501.60" r="30" fill="#E06000" stroke="#c05000" stroke-width="2"/>
+    <text x="90.00" y="501.60" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">8</text>
+    <circle cx="250.00" cy="600.40" r="30" fill="#7B2FBE" stroke="#5b1f9e" stroke-width="2"/>
+    <text x="250.00" y="600.40" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#ffffff" font-weight="600">9</text>
+    <circle cx="250.00" cy="714.40" r="30" fill="#C8A850" stroke="#a88830" stroke-width="2"/>
+    <text x="250.00" y="714.40" text-anchor="middle" dominant-baseline="middle" font-size="15" fill="#333333" font-weight="600">10</text>
+  </svg>
+
+  <!-- Celtic Cross -->
+  <svg x="723" y="69" width="234" height="362" viewBox="0 0 234 362">
+    <rect x="60.00" y="92.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="87.00" y="128.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">1</text>
+    <text x="87.00" y="144.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Present</text>
+    <rect x="44.00" y="108.00" width="86" height="54" rx="4" fill="#252533" stroke="#c4922a" stroke-width="1.2"/>
+    <text x="87.00" y="135.00" text-anchor="middle" dominant-baseline="middle" font-size="9" fill="#c4922a">2</text>
+    <rect x="60.00" y="184.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="87.00" y="220.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">3</text>
+    <text x="87.00" y="236.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Foundation</text>
+    <rect x="0.00" y="92.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="27.00" y="128.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">4</text>
+    <text x="27.00" y="144.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Past</text>
+    <rect x="60.00" y="0.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="87.00" y="36.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">5</text>
+    <text x="87.00" y="52.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Crown</text>
+    <rect x="120.00" y="92.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="147.00" y="128.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">6</text>
+    <text x="147.00" y="144.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Future</text>
+    <rect x="180.00" y="276.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="207.00" y="312.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">7</text>
+    <text x="207.00" y="328.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Self</text>
+    <rect x="180.00" y="184.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="207.00" y="220.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">8</text>
+    <text x="207.00" y="236.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">House</text>
+    <rect x="180.00" y="92.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="207.00" y="128.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">9</text>
+    <text x="207.00" y="144.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Hopes</text>
+    <rect x="180.00" y="0.00" width="54" height="86" rx="4" fill="#1c1c27" stroke="#2e2e3f" stroke-width="1"/>
+    <text x="207.00" y="36.00" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#7a5a1a" opacity="0.85">10</text>
+    <text x="207.00" y="52.00" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#7a7a8f">Outcome</text>
+  </svg>
+
+  <!-- App name — space between words aligned directly below Tiphareth -->
+  <text x="552" y="492" text-anchor="end" font-family="'Inter', system-ui, sans-serif"
+        font-size="12" font-weight="300" fill="#e8e4d6" letter-spacing="0.18em" opacity="0.35">GRIMOIRE</text>
+  <text x="558" y="492" text-anchor="start" font-family="'Inter', system-ui, sans-serif"
+        font-size="12" font-weight="300" fill="#e8e4d6" letter-spacing="0.18em" opacity="0.35">ATZILUTH</text>
+
+</svg>

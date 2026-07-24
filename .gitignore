@@ -45,7 +45,7 @@ Thumbs.db
 desktop.ini
 
 # ── Claude Code local settings ────────────────────────────────────────────────
-.claude/settings.local.json
+.claude/
 
 # ── Editor / IDE ──────────────────────────────────────────────────────────────
 .vscode/settings.json
@@ -68,3 +68,4 @@ grimoire-app/squashfs-root/
 
 # ── Geodata source files (large raw datasets — processed output is tracked) ───
 scripts/geodata-source/
+.gstack/
