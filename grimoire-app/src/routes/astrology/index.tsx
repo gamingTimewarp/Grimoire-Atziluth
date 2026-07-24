@@ -5,6 +5,7 @@ import type { NatalChartRecord } from '@/lib/natal-db'
 import { getNatalChart, getSignsForMode, getTransitAspects } from '@/lib/astro-engine'
 import type { NatalChartData, Aspect, AstrologyMode, TransitAspect } from '@/lib/astro-engine'
 import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
+import { zonedTimeToUtc } from '@/lib/timezone'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
@@ -98,9 +99,7 @@ function CurrentSkyPanel() {
       if (!self) return
       const { astrologyMode, houseSystem, showNodes, activeTraditions } = loadTraditionSettings()
       const showModernPlanets = activeTraditions.includes('tradition.modern-astrology')
-      const birthDate = self.birthTime
-        ? new Date(`${self.birthDate}T${self.birthTime}:00`)
-        : new Date(`${self.birthDate}T12:00:00`)
+      const birthDate = zonedTimeToUtc(self.birthDate, self.birthTime ?? '12:00', self.birthTimezone)
       const c = getNatalChart(birthDate, self.birthLat ?? 0, self.birthLon ?? 0, houseSystem, astrologyMode, { showNodes, showModernPlanets })
       setSelfChart(c)
     }).catch(() => {})

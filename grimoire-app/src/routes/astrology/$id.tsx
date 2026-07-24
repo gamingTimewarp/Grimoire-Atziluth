@@ -6,6 +6,7 @@ import { getNatalChart, getPlanetPositions, getTransitAspects, formatLongitude, 
 import type { NatalChartData, AstrologyMode, TransitAspect, MutualReception } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getHomeLocation } from '@/lib/settings-store'
+import { zonedTimeToUtc } from '@/lib/timezone'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { Button } from '@/components/ui/Button'
@@ -44,9 +45,7 @@ function ChartDetailPage() {
 
   const chart = useMemo((): NatalChartData | null => {
     if (!record) return null
-    const birthDate = record.birthTime
-      ? new Date(`${record.birthDate}T${record.birthTime}:00`)
-      : new Date(`${record.birthDate}T12:00:00`)
+    const birthDate = zonedTimeToUtc(record.birthDate, record.birthTime ?? '12:00', record.birthTimezone)
     const lat = record.birthLat ?? 0
     const lon = record.birthLon ?? 0
     return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode, { showNodes, showModernPlanets })

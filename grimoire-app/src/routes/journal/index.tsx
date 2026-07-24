@@ -26,6 +26,7 @@ import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { loadAccessibilitySettings } from '@/lib/accessibility-store'
 import { loadSettings, saveSettings } from '@/lib/settings-store'
+import { zonedTimeToUtc } from '@/lib/timezone'
 import { AlignJustify, AlignLeft } from 'lucide-react'
 import type { NatalChartData } from '@/lib/astro-engine'
 import { getSignsForMode, getNatalChart, getTransitAspects, MODERN_PLANET_CNS } from '@/lib/astro-engine'
@@ -897,10 +898,7 @@ function AstroSnapshotSection({ snapshot }: { snapshot: NatalChartData }) {
     listNatalCharts().then(records => {
       const self = records.find(r => r.isSelf)
       if (!self || !self.birthLat || !self.birthLon) return
-      const [datePart, timePart] = [self.birthDate, self.birthTime ?? '12:00']
-      const [year, month, day] = datePart.split('-').map(Number)
-      const [hour, minute] = timePart.split(':').map(Number)
-      const birthDate = new Date(year, month - 1, day, hour, minute)
+      const birthDate = zonedTimeToUtc(self.birthDate, self.birthTime ?? '12:00', self.birthTimezone)
       setSelfChart(getNatalChart(birthDate, self.birthLat, self.birthLon, houseSystem, astrologyMode, { showNodes, showModernPlanets }))
     }).catch(() => {})
   }, [open])
