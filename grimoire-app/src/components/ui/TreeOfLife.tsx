@@ -250,11 +250,16 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
   const [paths,     setPaths]     = useState<BaseEntity[]>([])
   const [tunnels,   setTunnels]   = useState<BaseEntity[]>([])
   const [loading,   setLoading]   = useState(true)
+  const [loadError, setLoadError] = useState(false)
+  const [retryToken, setRetryToken] = useState(0)
   // sephira canonical name → { name, cn } for the corresponding chakra
   const [chakraMap, setChakraMap] = useState<Map<string, { name: string; cn: string }>>(new Map())
 
   useEffect(() => {
     if (!engine) return
+    let cancelled = false
+    setLoading(true)
+    setLoadError(false)
     const lim = { offset: 0, limit: 50 }
     Promise.all([
       engine.adapter.listEntities({ entityType: 'qabalah.sephira' },       lim),
@@ -262,6 +267,7 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
       engine.adapter.listEntities({ entityType: 'qabalah.path' },          lim),
       engine.adapter.listEntities({ entityType: 'qabalah.tunnel-of-set' }, lim),
     ]).then(([s, q, p, t]) => {
+      if (cancelled) return
       setSephiroth(s.items)
       setQliphoth(q.items)
       setPaths(p.items.sort((a, b) =>
@@ -269,8 +275,14 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
       setTunnels(t.items.sort((a, b) =>
         (a.extendedData.pathNumber as number) - (b.extendedData.pathNumber as number)))
       setLoading(false)
-    }).catch(console.error)
-  }, [engine])
+    }).catch(err => {
+      console.error(err)
+      if (cancelled) return
+      setLoadError(true)
+      setLoading(false)
+    })
+    return () => { cancelled = true }
+  }, [engine, retryToken])
 
   // Load chakra→sephira map when the hinduism-chakra tradition is active
   useEffect(() => {
@@ -342,6 +354,20 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
     return (
       <div style={{ width: size, height: displayHeight, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-subtle)', fontSize: '13px' }}>
         Loading tree…
+      </div>
+    )
+  }
+
+  if (loadError) {
+    return (
+      <div style={{ width: size, height: displayHeight, display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-subtle)', fontSize: '13px' }}>
+        <span>Couldn't load the Tree of Life data.</span>
+        <button
+          onClick={() => setRetryToken(t => t + 1)}
+          style={{ background: 'none', border: '1px solid var(--color-border)', borderRadius: '6px', padding: '6px 14px', cursor: 'pointer', color: 'var(--color-accent)', fontFamily: 'inherit', fontSize: '12px' }}
+        >
+          Retry
+        </button>
       </div>
     )
   }
