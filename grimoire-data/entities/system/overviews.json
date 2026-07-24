@@ -2836,7 +2836,7 @@
       "tags": ["overview", "numerology"],
       "extendedData": {
         "memberEntityType": "numerology.digit",
-        "note": "Use the Numerology calculator (Qabalah → Numerology) to compute Life Path and other numbers under either system.",
+        "note": "Use the Numerology calculator (Qabalah → Numerology) to compute name-derived numbers (Expression, Soul Urge, Personality, Balance, Hidden Passion, Karmic Lessons), birth-date numbers (Life Path, Birthday, Attitude, Personal Year/Month/Day, Challenge Numbers, Pinnacle Numbers), and the combined Maturity Number — under either system, with Karmic Debt Numbers (13, 14, 16, 19) flagged automatically.",
         "relatedOverviews": [
           "system.overview.kamea",
           "system.overview.isopsephy",
