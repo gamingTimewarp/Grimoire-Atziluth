@@ -7,11 +7,15 @@
 
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+import Table from '@tiptap/extension-table'
+import TableRow from '@tiptap/extension-table-row'
+import TableHeader from '@tiptap/extension-table-header'
+import TableCell from '@tiptap/extension-table-cell'
 import { Markdown } from 'tiptap-markdown'
 import React, { useEffect, useRef } from 'react'
 import {
   Bold, Italic, Strikethrough, Code, Heading2, Heading3,
-  List, ListOrdered, Quote, Minus, Undo, Redo,
+  List, ListOrdered, Quote, Minus, Undo, Redo, Table as TableIcon,
 } from 'lucide-react'
 
 // ─── Shared CSS injected once ──────────────────────────────────────────────────
@@ -35,7 +39,24 @@ const EDITOR_CSS = `
 .ga-editor .ProseMirror em { color: var(--color-text-muted); }
 .ga-editor .ProseMirror s { opacity: 0.5; }
 .ga-editor .ProseMirror ul, .ga-editor .ProseMirror ol { padding-left: 1.4em; margin: 0.3em 0 0.5em; }
+.ga-editor .ProseMirror ul { list-style: disc; }
+.ga-editor .ProseMirror ol { list-style: decimal; }
 .ga-editor .ProseMirror li { margin: 0.1em 0; }
+.ga-editor .ProseMirror table {
+  border-collapse: collapse; margin: 0.5em 0; overflow: hidden;
+  table-layout: fixed; width: 100%;
+}
+.ga-editor .ProseMirror th, .ga-editor .ProseMirror td {
+  border: 1px solid var(--color-border); padding: 5px 8px;
+  text-align: left; vertical-align: top; position: relative;
+}
+.ga-editor .ProseMirror th {
+  background: var(--color-surface-3); color: var(--color-text);
+  font-weight: 600;
+}
+.ga-editor .ProseMirror .selectedCell {
+  background: rgba(180,156,90,0.14);
+}
 .ga-editor .ProseMirror blockquote {
   border-left: 3px solid var(--color-accent-muted);
   margin: 0.5em 0; padding: 0.2em 0.8em;
@@ -72,7 +93,16 @@ const EDITOR_CSS = `
 .ga-renderer em { color: var(--color-text-muted); }
 .ga-renderer s { opacity: 0.5; }
 .ga-renderer ul, .ga-renderer ol { padding-left: 1.4em; margin: 0.3em 0 0.5em; }
+.ga-renderer ul { list-style: disc; }
+.ga-renderer ol { list-style: decimal; }
 .ga-renderer li { margin: 0.1em 0; }
+.ga-renderer table {
+  border-collapse: collapse; margin: 0.4em 0; font-size: 0.95em;
+}
+.ga-renderer th, .ga-renderer td {
+  border: 1px solid var(--color-border); padding: 4px 8px; text-align: left;
+}
+.ga-renderer th { background: var(--color-surface-3); color: var(--color-text); font-weight: 600; }
 .ga-renderer blockquote {
   border-left: 3px solid var(--color-accent-muted);
   margin: 0.5em 0; padding: 0.2em 0.8em;
@@ -158,6 +188,11 @@ function Toolbar({ editor }: { editor: TiptapEditor }) {
       <ToolbarBtn onClick={() => e.chain().focus().toggleCodeBlock().run()} active={e.isActive('codeBlock')} title="Code block"><Code size={14} /></ToolbarBtn>
       <ToolbarBtn onClick={() => e.chain().focus().setHorizontalRule().run()} title="Horizontal rule"><Minus size={13} /></ToolbarBtn>
       <Sep />
+      {e.isActive('table')
+        ? <ToolbarBtn onClick={() => e.chain().focus().deleteTable().run()} active title="Remove table"><TableIcon size={13} /></ToolbarBtn>
+        : <ToolbarBtn onClick={() => e.chain().focus().insertTable({ rows: 3, cols: 3, withHeaderRow: true }).run()} title="Insert table"><TableIcon size={13} /></ToolbarBtn>
+      }
+      <Sep />
       <ToolbarBtn onClick={() => e.chain().focus().undo().run()} disabled={!e.can().undo()} title="Undo"><Undo size={13} /></ToolbarBtn>
       <ToolbarBtn onClick={() => e.chain().focus().redo().run()} disabled={!e.can().redo()} title="Redo"><Redo size={13} /></ToolbarBtn>
     </div>
@@ -184,6 +219,10 @@ export function RichTextEditor({
   const editor = useEditor({
     extensions: [
       StarterKit,
+      Table.configure({ resizable: false }),
+      TableRow,
+      TableHeader,
+      TableCell,
       Markdown.configure({ html: false, transformPastedText: true }),
     ],
     content: value,  // tiptap-markdown parses this as Markdown on init
@@ -256,7 +295,20 @@ function markdownToHtml(md: string): string {
       .replace(/~~(.+?)~~/g,         '<s>$1</s>')
       .replace(/`([^`]+)`/g,         '<code>$1</code>')
 
-  for (const line of lines) {
+  // GFM tables: a "| a | b |" row immediately followed by a "| --- | --- |"
+  // delimiter row starts a table; subsequent "|"-rows are body rows.
+  const isTableRow = (line: string) => /^\s*\|.*\|\s*$/.test(line)
+  const isDelimiterRow = (line: string) => /^\s*\|?(\s*:?-+:?\s*\|)+\s*:?-+:?\s*\|?\s*$/.test(line)
+  const splitTableRow = (line: string): string[] => {
+    let s = line.trim()
+    if (s.startsWith('|')) s = s.slice(1)
+    if (s.endsWith('|')) s = s.slice(0, -1)
+    return s.split('|').map(c => c.trim())
+  }
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+
     if (line.startsWith('```')) {
       if (inCodeBlock) {
         out.push(`<pre><code>${esc(codeLines.join('\n'))}</code></pre>`)
@@ -267,6 +319,24 @@ function markdownToHtml(md: string): string {
       continue
     }
     if (inCodeBlock) { codeLines.push(line); continue }
+
+    if (isTableRow(line) && i + 1 < lines.length && isDelimiterRow(lines[i + 1])) {
+      flushList()
+      const headers = splitTableRow(line)
+      out.push('<table><thead><tr>')
+      for (const h of headers) out.push(`<th>${inline(h)}</th>`)
+      out.push('</tr></thead><tbody>')
+      i += 2 // skip header row + delimiter row
+      while (i < lines.length && isTableRow(lines[i])) {
+        out.push('<tr>')
+        for (const cell of splitTableRow(lines[i])) out.push(`<td>${inline(cell)}</td>`)
+        out.push('</tr>')
+        i++
+      }
+      out.push('</tbody></table>')
+      i-- // compensate for the loop's own i++
+      continue
+    }
 
     if (line.startsWith('#### ')) { flushList(); out.push(`<h4>${inline(line.slice(5))}</h4>`); continue }
     if (line.startsWith('### '))  { flushList(); out.push(`<h3>${inline(line.slice(4))}</h3>`); continue }
