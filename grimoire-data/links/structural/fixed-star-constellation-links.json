@@ -749,6 +749,399 @@
       "label": "constellation-of",
       "bidirectional": true,
       "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.botein",
+      "target": "astrology.constellation.aries",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.prima-hyadum",
+      "target": "astrology.constellation.taurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.secunda-hyadum",
+      "target": "astrology.constellation.taurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.ain",
+      "target": "astrology.constellation.taurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.meissa",
+      "target": "astrology.constellation.orion",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alkalurops",
+      "target": "astrology.constellation.bootes",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.muliphein",
+      "target": "astrology.constellation.canis-major",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.furud",
+      "target": "astrology.constellation.canis-major",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alshat",
+      "target": "astrology.constellation.capricornus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.baten-algiedi",
+      "target": "astrology.constellation.capricornus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.aspidiske",
+      "target": "astrology.constellation.carina",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.muhlifain",
+      "target": "astrology.constellation.centaurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.epsilon-centauri",
+      "target": "astrology.constellation.centaurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zeta-centauri",
+      "target": "astrology.constellation.centaurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.eta-centauri",
+      "target": "astrology.constellation.centaurus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.fawaris",
+      "target": "astrology.constellation.cygnus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zeta-cygni",
+      "target": "astrology.constellation.cygnus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.edasich",
+      "target": "astrology.constellation.draco",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.aldhibah",
+      "target": "astrology.constellation.draco",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.altais",
+      "target": "astrology.constellation.draco",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.athebyne",
+      "target": "astrology.constellation.draco",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.beid",
+      "target": "astrology.constellation.eridanus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.keid",
+      "target": "astrology.constellation.eridanus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.rana",
+      "target": "astrology.constellation.eridanus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.azha",
+      "target": "astrology.constellation.eridanus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mebsuta",
+      "target": "astrology.constellation.gemini",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.propus",
+      "target": "astrology.constellation.gemini",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.kajam",
+      "target": "astrology.constellation.hercules",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.marsic",
+      "target": "astrology.constellation.hercules",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.maasym",
+      "target": "astrology.constellation.hercules",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.ukdah",
+      "target": "astrology.constellation.hydra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zeta-hydrae",
+      "target": "astrology.constellation.hydra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.xi-hydrae",
+      "target": "astrology.constellation.hydra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.beta-hydrae",
+      "target": "astrology.constellation.hydra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.adhafera",
+      "target": "astrology.constellation.leo",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zubenelhakrabi",
+      "target": "astrology.constellation.libra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.zeta-lyrae",
+      "target": "astrology.constellation.lyra",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.yed-prior",
+      "target": "astrology.constellation.ophiuchus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.yed-posterior",
+      "target": "astrology.constellation.ophiuchus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.biham",
+      "target": "astrology.constellation.pegasus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.homam",
+      "target": "astrology.constellation.pegasus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.epsilon-piscis-austrini",
+      "target": "astrology.constellation.piscis-austrinus",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sargas",
+      "target": "astrology.constellation.scorpius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.alniyat",
+      "target": "astrology.constellation.scorpius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.jabbah",
+      "target": "astrology.constellation.scorpius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.mu-serpentis",
+      "target": "astrology.constellation.serpens",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.beta-serpentis",
+      "target": "astrology.constellation.serpens",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.heze",
+      "target": "astrology.constellation.virgo",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.auva",
+      "target": "astrology.constellation.virgo",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.syrma",
+      "target": "astrology.constellation.virgo",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.deneb-el-okab",
+      "target": "astrology.constellation.aquila",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sadachbia",
+      "target": "astrology.constellation.aquarius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.albali",
+      "target": "astrology.constellation.aquarius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.ancha",
+      "target": "astrology.constellation.aquarius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.sadaltager",
+      "target": "astrology.constellation.aquarius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "astrology.fixed-star.seat",
+      "target": "astrology.constellation.aquarius",
+      "label": "constellation-of",
+      "bidirectional": true,
+      "traditionScope": []
     }
+
   ]
 }

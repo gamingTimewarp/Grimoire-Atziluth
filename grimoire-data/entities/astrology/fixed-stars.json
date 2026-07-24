@@ -2439,6 +2439,1217 @@
         "behenianStone": null,
         "behenianHerb": null
       }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.botein",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Botein",
+      "description": "Botein, 'the little belly,' marks a modest point on the Ram's underside, well south of the three bright stars that carry most of Aries's traditional meaning. Its Martial classification follows the usual reasoning by colour and class rather than any distinct body of lore attached to the star itself.",
+      "secondaryNames": [
+        { "name": "Delta Arietis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aries"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.aries",
+        "magnitude": 4.35,
+        "planetaryNature": "Nature of Mars, by its ruddy hue in the Ptolemaic colour-scheme",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "Used mainly to complete the Ram's outline in charting rather than for any distinct working of its own.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.prima-hyadum",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Prima Hyadum",
+      "description": "Prima Hyadum, 'first of the Hyades,' marks the tip of the V forming the Bull's face, one of the five sister-stars said to have wept at their brother Hyas's death and been placed in the sky by grieving gods. Along with Secunda Hyadum it frames Aldebaran's fiery eye.",
+      "secondaryNames": [
+        { "name": "Gamma Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus"],
+      "extendedData": {
+        "tropicalLongitude": 5.0,
+        "constellation": "astrology.constellation.taurus",
+        "magnitude": 3.65,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Associated, like the Hyades cluster generally, with tears, mourning, and the passage of grief into memory.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.secunda-hyadum",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Secunda Hyadum",
+      "description": "Secunda Hyadum, the second of the named Hyades sisters, sits close by Prima Hyadum on the Bull's brow. It shares the same rain-bringing reputation long attached to the Hyades cluster as a whole — their heliacal rising was read by Greek and Roman farmers as a sign of the wet season approaching.",
+      "secondaryNames": [
+        { "name": "Delta Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus"],
+      "extendedData": {
+        "tropicalLongitude": 7.0,
+        "constellation": "astrology.constellation.taurus",
+        "magnitude": 3.76,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Traditionally watched as a seasonal marker for the coming of rain.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.ain",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Ain",
+      "description": "Ain, 'the eye,' marks the Bull's other eye opposite fiery Aldebaran, a much gentler golden star at the southern tip of the Hyades V. Where Aldebaran burns with Martial intensity, Ain's Mercury-Venus temperament was read as watchful, perceptive calm.",
+      "secondaryNames": [
+        { "name": "Epsilon Tauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "taurus"],
+      "extendedData": {
+        "tropicalLongitude": 9.0,
+        "constellation": "astrology.constellation.taurus",
+        "magnitude": 3.53,
+        "planetaryNature": "Nature of Mercury and Venus",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for calm, watchful perception, a quieter counterpart to Aldebaran's intensity.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.meissa",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Meissa",
+      "description": "Meissa, 'the shining one,' marks the head of the Hunter above the line of his shoulders — a small triangle of stars completing Orion's figure at its crown. Sharing something of the fiery character of the great hunter it crowns, it was read as quick, alert intensity.",
+      "secondaryNames": [
+        { "name": "Lambda Orionis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "orion"],
+      "extendedData": {
+        "tropicalLongitude": 26.5,
+        "constellation": "astrology.constellation.orion",
+        "magnitude": 3.39,
+        "planetaryNature": "Nature of Mars and Mercury",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for alertness and quickness of perception, crowning the more physical energies of Orion's shoulders and feet.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alkalurops",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alkalurops",
+      "description": "Alkalurops, 'the shepherd's staff,' extends from the main kite figure of Boötes toward the club or staff the Herdsman is sometimes depicted carrying. Sharing the constellation's general cool, watchful temperament, it was linked to the tool of the herdsman's trade rather than the herdsman himself.",
+      "secondaryNames": [
+        { "name": "Mu Boötis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "bootes"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.bootes",
+        "magnitude": 4.31,
+        "planetaryNature": "Nature of Mercury and Saturn",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for the tools and instruments of a long, careful vocation.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.muliphein",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Muliphein",
+      "description": "Muliphein marks the Dog's neck, a modest star compared to its brilliant packmates. Its name is thought to derive from an Arabic phrase referring to an oath or testimony, though the connection is not fully certain.",
+      "secondaryNames": [
+        { "name": "Gamma Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 4.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 4.12,
+        "planetaryNature": "Nature of Venus, by its clear white hue",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the Dog's outline rather than for lore of its own.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.furud",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Furud",
+      "description": "Furud, 'the solitary ones,' sits apart from the main body of Canis Major, isolated much as Alphard is isolated in Hydra. Its Saturnine character was read, fittingly, as solitude and self-reliance.",
+      "secondaryNames": [
+        { "name": "Zeta Canis Majoris", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "canis-major"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.canis-major",
+        "magnitude": 3.02,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used for solitary, self-reliant undertakings.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alshat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alshat",
+      "description": "Alshat, 'the sheep,' is a faint star along the Sea-Goat's back, one of several modest points needed to complete Capricornus's outline beyond its four brighter corners.",
+      "secondaryNames": [
+        { "name": "Nu Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 18.0,
+        "constellation": "astrology.constellation.capricornus",
+        "magnitude": 4.76,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used mainly for charting; little individual lore attaches to it beyond the constellation's general character.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.baten-algiedi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Baten Algiedi",
+      "description": "Baten Algiedi, 'the goat's belly,' sits near the Sea-Goat's midsection where the goat's foreparts give way to the fish tail. It shares the same disciplined Saturn-Mercury temperament common through much of this constellation.",
+      "secondaryNames": [
+        { "name": "Omega Capricorni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "capricornus"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.capricornus",
+        "magnitude": 4.12,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly for charting the transition point between the Goat and Fish halves of the constellation's body.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.aspidiske",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Aspidiske",
+      "description": "Aspidiske, 'the little shield,' recalls Carina's origin as part of the great ship Argo — the name once referred to the shield mounted on the stern. Sharing Miaplacidus and Avior's steady, fortunate character, it extends the keel's outline further along the hull.",
+      "secondaryNames": [
+        { "name": "Iota Carinae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "carina"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.carina",
+        "magnitude": 2.21,
+        "planetaryNature": "Nature of Saturn and Jupiter",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used for protection during a long voyage, echoing its name and the shield it once denoted.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.muhlifain",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Muhlifain",
+      "description": "Muhlifain, whose name is thought to relate to an oath-taker, marks the Centaur's body between Agena and Menkent. It is one of the brightest of Centaurus's many stars, filling out the sprawling figure's torso.",
+      "secondaryNames": [
+        { "name": "Gamma Centauri", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": 2.17,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for the weight and gravity of a sworn oath or solemn commitment.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.epsilon-centauri",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Epsilon Centauri",
+      "description": "Epsilon Centauri, without a widely used proper name, marks part of the Centaur's hindquarters, a hot blue giant among the many bright stars crowded into this large southern figure.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": 2.3,
+        "planetaryNature": "Nature of Mars, by its hot blue-white class",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Centaurus's sprawling outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zeta-centauri",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zeta Centauri",
+      "description": "Zeta Centauri marks another point along the Centaur's hind body, one of several similarly bright, similarly unnamed blue giants that give Centaurus its dense, prominent shape in the southern sky.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 14.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": 2.55,
+        "planetaryNature": "Nature of Mars, by its hot blue-white class",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Centaurus's sprawling outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.eta-centauri",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Eta Centauri",
+      "description": "Eta Centauri completes the dense cluster of bright, similarly-toned stars marking the Centaur's hind legs, rounding out a figure whose sheer number of bright points is unusual even among large constellations.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "centaurus"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.centaurus",
+        "magnitude": 2.31,
+        "planetaryNature": "Nature of Mars, by its hot blue-white class",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Centaurus's sprawling outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.fawaris",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Fawaris",
+      "description": "Fawaris, 'the riders,' marks one wing of the Swan alongside Sadr, extending the Northern Cross figure outward. Its name is thought to recall a group of horsemen from older Arabic star-lore rather than anything specific to the swan-myth.",
+      "secondaryNames": [
+        { "name": "Delta Cygni", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.cygnus",
+        "magnitude": 2.87,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used to complete the Cross's western arm; little individual lore attaches beyond the constellation's general character.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zeta-cygni",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zeta Cygni",
+      "description": "Zeta Cygni, without a widely used proper name, extends the Swan's tail region beyond Deneb, one of the fainter points needed to round out Cygnus's full cross-and-wingspan outline.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "cygnus"],
+      "extendedData": {
+        "tropicalLongitude": 1.0,
+        "constellation": "astrology.constellation.cygnus",
+        "magnitude": 3.2,
+        "planetaryNature": "Nature of Venus, by its warm yellow-white hue",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the Swan's outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.edasich",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Edasich",
+      "description": "Edasich, 'the hyena,' marks a point along Draco's long, winding body between the head and the coils that pass near the two Bears. It was notable to modern astronomers as the first star beyond the solar system where a planet was suspected from radial-velocity measurements.",
+      "secondaryNames": [
+        { "name": "Iota Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 3.29,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used for patient, hidden discovery — fitting for a star later linked to one of the first exoplanet detections.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.aldhibah",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Aldhibah",
+      "description": "Aldhibah, 'the hyenas,' continues Draco's winding path further along the coil, sharing the constellation's watchful, coiled character.",
+      "secondaryNames": [
+        { "name": "Zeta Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 3.17,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used to extend the coiled, watchful quality of the Dragon's body along its long path.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.altais",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Altais",
+      "description": "Altais, 'the goats,' marks a further bend in Draco's long body as it winds toward Ursa Minor. Its gentler Saturn-Venus temperament softens the more aggressive character read into the Dragon's head-stars.",
+      "secondaryNames": [
+        { "name": "Delta Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 4.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 3.07,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for endurance softened by grace, continuing the long, patient coil of the Dragon.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.athebyne",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Athebyne",
+      "description": "Athebyne marks a further point on Draco's coil, one of the constellation's brighter mid-body stars linking the head region to the stars that curl between the Great and Little Bears.",
+      "secondaryNames": [
+        { "name": "Eta Draconis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "draco"],
+      "extendedData": {
+        "tropicalLongitude": 9.0,
+        "constellation": "astrology.constellation.draco",
+        "magnitude": 2.74,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used to extend the coiled, watchful quality of the Dragon's body along its long path.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.beid",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Beid",
+      "description": "Beid, 'the egg,' marks an early bend in the River not far from its source near Orion's foot, one of a pair of neighbouring stars — Beid and Keid — historically associated with the eggs of an ostrich in older Arabic star-lore.",
+      "secondaryNames": [
+        { "name": "Omicron-1 Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 4.04,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for the beginning stages of a long undertaking, fitting the egg-imagery of its name.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.keid",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Keid",
+      "description": "Keid, Beid's neighbouring 'egg' star, is notable to modern astronomy as one of the nearest Sun-like stars with a known planetary system, orbited by a white dwarf and a red dwarf companion as well.",
+      "secondaryNames": [
+        { "name": "Omicron-2 Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 4.43,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used, like Beid, for the early stages of long undertakings and the eggs from which they hatch.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.rana",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Rana",
+      "description": "Rana, 'the frog,' marks a further bend along the River's winding southward course, continuing Eridanus's long path toward Achernar.",
+      "secondaryNames": [
+        { "name": "Delta Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 10.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 3.54,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the River's long winding outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.azha",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Azha",
+      "description": "Azha, 'the ostrich nest,' continues the same older Arabic imagery as Beid and Keid, marking another bend of the River as it winds south.",
+      "secondaryNames": [
+        { "name": "Eta Eridani", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "eridanus"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.eridanus",
+        "magnitude": 3.89,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the River's long winding outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mebsuta",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mebsuta",
+      "description": "Mebsuta, 'the outstretched paw' (or, in some readings, 'the lion's forearm' from an older figure once mapped onto this region), marks one of the Twins' arms or shoulders, extending Castor's figure downward.",
+      "secondaryNames": [
+        { "name": "Epsilon Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 2.0,
+        "constellation": "astrology.constellation.gemini",
+        "magnitude": 3.06,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for a reaching, outstretched gesture — extending toward something just beyond grasp.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.propus",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Propus",
+      "description": "Propus, 'the forward foot,' marks the leading foot of the Twins figure, a red variable star whose brightness shifts noticeably over roughly eight months.",
+      "secondaryNames": [
+        { "name": "Eta Geminorum", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "gemini"],
+      "extendedData": {
+        "tropicalLongitude": 27.5,
+        "constellation": "astrology.constellation.gemini",
+        "magnitude": 3.15,
+        "planetaryNature": "Nature of Venus and Mercury",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for forward motion and the first step of a shared undertaking.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kajam",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kajam",
+      "description": "Kajam, of disputed but likely Arabic origin referring to a stalk or spike, marks one of the fainter points along Hercules's outstretched limbs, needed to complete the kneeling hero's full, sprawling figure.",
+      "secondaryNames": [
+        { "name": "Omega Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 16.0,
+        "constellation": "astrology.constellation.hercules",
+        "magnitude": 4.57,
+        "planetaryNature": "Nature of Mercury and Saturn",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used mainly to complete the Kneeler's outline; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.marsic",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Marsic",
+      "description": "Marsic, 'the elbow,' marks a joint along Hercules's raised arm, one of the fainter stars filling out the hero's sprawling, kneeling figure between the keystone and his weapon-bearing hand.",
+      "secondaryNames": [
+        { "name": "Kappa Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.hercules",
+        "magnitude": 5.0,
+        "planetaryNature": "Nature of Venus and Saturn",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used mainly to complete the hero's outline; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.maasym",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Maasym",
+      "description": "Maasym, 'the wrist,' continues the arm begun at Marsic's elbow, another modest star needed to complete Hercules's full figure.",
+      "secondaryNames": [
+        { "name": "Lambda Herculis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hercules"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.hercules",
+        "magnitude": 4.41,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the hero's outline; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.ukdah",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Ukdah",
+      "description": "Ukdah, 'the knot,' marks a bend well along Hydra's immense winding body, past Alphard's isolated brilliance and toward the serpent's tail beneath Libra and Centaurus.",
+      "secondaryNames": [
+        { "name": "Nu Hydrae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "hydra"],
+      "extendedData": {
+        "tropicalLongitude": 4.0,
+        "constellation": "astrology.constellation.hydra",
+        "magnitude": 3.11,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for the knots and turning-points along a very long undertaking.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zeta-hydrae",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zeta Hydrae",
+      "description": "Zeta Hydrae, without a widely used proper name, marks an early bend of the Water Serpent's body not far past its head, one of the many points needed to trace out the longest of all constellations.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "hydra"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.hydra",
+        "magnitude": 3.11,
+        "planetaryNature": "Nature of Jupiter, by its warm golden-orange hue",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Hydra's exceptionally long winding outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.xi-hydrae",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Xi Hydrae",
+      "description": "Xi Hydrae continues the Serpent's body further along its great length, one of a chain of similarly modest stars that give Hydra its distinctively drawn-out shape.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "hydra"],
+      "extendedData": {
+        "tropicalLongitude": 16.0,
+        "constellation": "astrology.constellation.hydra",
+        "magnitude": 3.54,
+        "planetaryNature": "Nature of Jupiter, by its warm golden-orange hue",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Hydra's exceptionally long winding outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.beta-hydrae",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Beta Hydrae",
+      "description": "Beta Hydrae marks a point well along the Serpent's tail, one of the final stars needed to trace Hydra's body all the way to its tip beneath Centaurus and Libra.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "hydra"],
+      "extendedData": {
+        "tropicalLongitude": 6.0,
+        "constellation": "astrology.constellation.hydra",
+        "magnitude": 4.28,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete Hydra's exceptionally long winding outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.adhafera",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Adhafera",
+      "description": "Adhafera, 'the curl,' marks a point in the Lion's mane within the sickle asterism, between Algieba and the sickle's topmost star. Its name refers to the curling tuft of the mane it traces.",
+      "secondaryNames": [
+        { "name": "Zeta Leonis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "leo"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.leo",
+        "magnitude": 3.44,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used for refinement and careful attention to detail, fitting the delicate curl its name describes.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zubenelhakrabi",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zubenelhakrabi",
+      "description": "Zubenelhakrabi, 'the scorpion's claw,' preserves most directly of all Libra's stars the constellation's older identity as the claws of the neighbouring Scorpion, before Roman astronomers carved the Scales out as their own figure.",
+      "secondaryNames": [
+        { "name": "Gamma Librae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "libra"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.libra",
+        "magnitude": 3.91,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used as a reminder of what lies beneath an apparently balanced surface — the claw within the scale.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.zeta-lyrae",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Zeta Lyrae",
+      "description": "Zeta Lyrae, without a widely used proper name, marks the fourth corner of the small parallelogram beneath Vega, completing Lyra's compact and easily traced shape.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "lyra"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.lyra",
+        "magnitude": 4.34,
+        "planetaryNature": "Nature of Venus, by its clear white hue",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the Lyre's small, well-defined outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.yed-prior",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Yed Prior",
+      "description": "Yed Prior, 'the preceding hand,' marks one of the serpent-charmer's hands as he grips Serpens, paired with Yed Posterior just beside it. Together the two 'hand' stars are among the most easily recognised pairs in Ophiuchus.",
+      "secondaryNames": [
+        { "name": "Delta Ophiuchi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ophiuchus"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.ophiuchus",
+        "magnitude": 2.74,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for the grip and grasp needed to master something dangerous but valuable, echoing the hand that holds the serpent.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.yed-posterior",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Yed Posterior",
+      "description": "Yed Posterior, 'the following hand,' completes the close pair with Yed Prior marking Ophiuchus's grip on the serpent. The two stars sit close enough together to be distinguished with the naked eye as a wide, easy double.",
+      "secondaryNames": [
+        { "name": "Epsilon Ophiuchi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "ophiuchus"],
+      "extendedData": {
+        "tropicalLongitude": 27.0,
+        "constellation": "astrology.constellation.ophiuchus",
+        "magnitude": 3.24,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used alongside Yed Prior for the grip and grasp needed to master something dangerous but valuable.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.biham",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Biham",
+      "description": "Biham, from an Arabic term for young horses, marks a point along Pegasus's neck, extending the constellation's outline beyond the Great Square toward Enif at the muzzle.",
+      "secondaryNames": [
+        { "name": "Theta Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 5.0,
+        "constellation": "astrology.constellation.pegasus",
+        "magnitude": 3.53,
+        "planetaryNature": "Nature of Mercury and Mars",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used for youthful energy and the eagerness of a horse not yet fully broken.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.homam",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Homam",
+      "description": "Homam, 'the man of great spirit,' continues the line from Biham toward Enif, filling out the winged horse's neck and head region beyond the four corners of the Great Square.",
+      "secondaryNames": [
+        { "name": "Zeta Pegasi", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "pegasus"],
+      "extendedData": {
+        "tropicalLongitude": 16.0,
+        "constellation": "astrology.constellation.pegasus",
+        "magnitude": 3.4,
+        "planetaryNature": "Nature of Mercury and Jupiter",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used for spirited resolve carried through a long undertaking.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.epsilon-piscis-austrini",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Epsilon Piscis Austrini",
+      "description": "Epsilon Piscis Austrini, without a widely used proper name, marks a point along the small loop of stars forming the Southern Fish's body, filling out the circlet around bright Fomalhaut.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "piscis-austrinus"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.piscis-austrinus",
+        "magnitude": 4.17,
+        "planetaryNature": "Nature of Venus, by its clear white hue",
+        "primaryPlanet": "astrology.planet.venus",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the Southern Fish's outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sargas",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sargas",
+      "description": "Sargas marks a bright point along the Scorpion's curling tail, one of the ancient names for this region reaching back to Babylonian star-lists that treated Scorpius as sacred to the underworld. Its Jupiter-Saturn nature was read as slow, weighty fortune, earned through the tail's long curling patience.",
+      "secondaryNames": [
+        { "name": "Theta Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 22.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 1.86,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used for fortune that accumulates slowly and is earned through patient endurance.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alniyat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alniyat",
+      "description": "Alniyat, 'the arteries,' marks a point close by Antares, one of two stars historically sharing this name (the other being Tau Scorpii on Antares's other side) — the pair flanking the Scorpion's fiery heart like the great vessels of a body.",
+      "secondaryNames": [
+        { "name": "Sigma Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 16.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 2.89,
+        "planetaryNature": "Nature of Mars and Jupiter",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.jupiter",
+        "magicalUses": "Used for the vital, life-carrying energy that flows close beside a powerful centre.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.jabbah",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Jabbah",
+      "description": "Jabbah, 'the forehead,' marks a point in the Scorpion's head and claws region near Dschubba and Graffias, a multiple-star system that appears single to the naked eye.",
+      "secondaryNames": [
+        { "name": "Nu Scorpii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "scorpius"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.scorpius",
+        "magnitude": 4.0,
+        "planetaryNature": "Nature of Mars and Saturn",
+        "primaryPlanet": "astrology.planet.mars",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Used to complete the Scorpion's head region alongside Dschubba and Graffias.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.mu-serpentis",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Mu Serpentis",
+      "description": "Mu Serpentis, without a widely used proper name, marks a point in Serpens Caput between Unukalhai's neck and the tail-half of the constellation across Ophiuchus.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "serpens"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.serpens",
+        "magnitude": 3.53,
+        "planetaryNature": "Nature of Saturn",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": null,
+        "magicalUses": "Used chiefly to complete the Serpent's outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.beta-serpentis",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Beta Serpentis",
+      "description": "Beta Serpentis marks a point in the head region of Serpens Caput, close by the small triangle of stars that frame Unukalhai's neck.",
+      "secondaryNames": [],
+      "tags": ["fixed-star", "astrology", "serpens"],
+      "extendedData": {
+        "tropicalLongitude": 24.0,
+        "constellation": "astrology.constellation.serpens",
+        "magnitude": 3.67,
+        "planetaryNature": "Nature of Saturn and Venus",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used chiefly to complete the Serpent's outline.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.heze",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Heze",
+      "description": "Heze marks a point on Virgo's outstretched wing near Porrima, of uncertain but likely Arabic origin, extending the Maiden's sprawling figure across a wide stretch of sky.",
+      "secondaryNames": [
+        { "name": "Zeta Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 3.0,
+        "constellation": "astrology.constellation.virgo",
+        "magnitude": 3.37,
+        "planetaryNature": "Nature of Mercury and Venus",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used to extend the Maiden's outstretched, harvest-bearing gesture.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.auva",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Auva",
+      "description": "Auva marks a point closer to Virgo's body between the wings and the wheat-sheaf hand holding Spica, filling in the wide central span of the constellation's figure.",
+      "secondaryNames": [
+        { "name": "Delta Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 8.0,
+        "constellation": "astrology.constellation.virgo",
+        "magnitude": 3.38,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used mainly to complete the Maiden's central span; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.syrma",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Syrma",
+      "description": "Syrma, 'the train' (of a garment), marks the trailing hem of the Maiden's robe, one of the southernmost points completing Virgo's very large figure.",
+      "secondaryNames": [
+        { "name": "Iota Virginis", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "virgo"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.virgo",
+        "magnitude": 4.08,
+        "planetaryNature": "Nature of Mercury and Venus",
+        "primaryPlanet": "astrology.planet.mercury",
+        "secondaryPlanet": "astrology.planet.venus",
+        "magicalUses": "Used for what trails behind and completes a larger, more prominent whole.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.deneb-el-okab",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Deneb el Okab",
+      "description": "Deneb el Okab, 'the eagle's tail,' marks the Eagle's tail feathers opposite Altair at the bird's head, completing Aquila's outline as a bird in full flight.",
+      "secondaryNames": [
+        { "name": "Zeta Aquilae", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquila"],
+      "extendedData": {
+        "tropicalLongitude": 13.0,
+        "constellation": "astrology.constellation.aquila",
+        "magnitude": 2.99,
+        "planetaryNature": "Nature of Saturn and Mars",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mars",
+        "magicalUses": "Used for the trailing, steadying feathers that give flight its balance.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sadachbia",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sadachbia",
+      "description": "Sadachbia, 'luck of the hidden things' or 'luck of the tents,' marks the near corner of the small Water Jar asterism within Aquarius, the cluster of four modest stars representing the jar itself rather than the Water-Bearer's body.",
+      "secondaryNames": [
+        { "name": "Gamma Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 6.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 3.84,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Traditionally read as bringing good fortune to what is hidden or stored away, fitting a star marking the vessel itself.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.albali",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Albali",
+      "description": "Albali, 'the swallower,' marks a point on the Water-Bearer's arm as he pours the stream downward toward Piscis Austrinus. Its name recalls the star's old association with drought and the swallowing-up of water rather than its release.",
+      "secondaryNames": [
+        { "name": "Epsilon Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 11.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 3.77,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used with some caution in workings involving the withholding rather than the giving of resources.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.ancha",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Ancha",
+      "description": "Ancha, 'the hip,' marks the Water-Bearer's hip on the figure's far side from the jar and stream, filling out Aquarius's full standing form.",
+      "secondaryNames": [
+        { "name": "Theta Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 4.17,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the Water-Bearer's outline; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.sadaltager",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Sadaltager",
+      "description": "Sadaltager, 'luck of the merchant,' marks another corner of the small Water Jar asterism alongside Sadachbia, a close binary star that together with its neighbours traces the jar's compact outline.",
+      "secondaryNames": [
+        { "name": "Zeta Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 15.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 3.65,
+        "planetaryNature": "Nature of Jupiter and Saturn",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.saturn",
+        "magicalUses": "Traditionally read as favourable for trade and commerce, in keeping with its name.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.seat",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Seat",
+      "description": "Seat, of disputed origin, completes the small Water Jar cluster within Aquarius, the faintest of the four stars marking the vessel from which the constellation's stream pours.",
+      "secondaryNames": [
+        { "name": "Pi Aquarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "aquarius"],
+      "extendedData": {
+        "tropicalLongitude": 20.0,
+        "constellation": "astrology.constellation.aquarius",
+        "magnitude": 4.66,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the Water Jar asterism; little distinct lore attaches to it.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
     }
+
   ]
 }
