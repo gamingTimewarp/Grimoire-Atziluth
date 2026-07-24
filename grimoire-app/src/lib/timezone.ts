@@ -23,12 +23,20 @@ export function zonedTimeToUtc(dateStr: string, timeStr: string, ianaZone: strin
     return new Date(year, month - 1, day, hour, minute)
   }
 
+  // The desired wall-clock time, treated as a plain (non-UTC-meaningful) instant
+  // value purely so it can be diffed against candidate guesses below.
+  const desiredMs = Date.UTC(year, month - 1, day, hour, minute)
+
   // Initial guess: treat the wall-clock components as if they were already UTC.
-  let guessMs = Date.UTC(year, month - 1, day, hour, minute)
+  let guessMs = desiredMs
 
   // Ask what wall-clock time that UTC instant corresponds to in the target zone,
-  // then correct the guess by the difference. Two iterations reliably converge
-  // except inside a DST transition's ambiguous/skipped hour, an accepted edge case.
+  // then correct the guess by the difference *from the desired wall-clock time*
+  // (not from the shifting guess — comparing against a moving target never
+  // converges for a zone with a constant offset across the correction, which is
+  // the overwhelming majority of real dates: it just re-applies the same delta
+  // forever instead of reaching zero). Three iterations reliably converge except
+  // inside a DST transition's ambiguous/skipped hour, an accepted edge case.
   const formatter = new Intl.DateTimeFormat('en-US', {
     timeZone: ianaZone,
     year: 'numeric', month: '2-digit', day: '2-digit',
@@ -36,7 +44,7 @@ export function zonedTimeToUtc(dateStr: string, timeStr: string, ianaZone: strin
     hourCycle: 'h23',
   })
 
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 3; i++) {
     const parts = Object.fromEntries(
       formatter.formatToParts(new Date(guessMs)).map(p => [p.type, p.value]),
     ) as Record<string, string>
@@ -44,7 +52,7 @@ export function zonedTimeToUtc(dateStr: string, timeStr: string, ianaZone: strin
       Number(parts.year), Number(parts.month) - 1, Number(parts.day),
       Number(parts.hour), Number(parts.minute), Number(parts.second),
     )
-    const delta = guessMs - seenAsUtcMs
+    const delta = desiredMs - seenAsUtcMs
     if (delta === 0) break
     guessMs += delta
   }
