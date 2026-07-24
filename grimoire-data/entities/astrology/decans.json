@@ -36,7 +36,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 2,
         "thothTitle": "Dominion",
-        "thothCard": "tarot.thoth.2-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.2"
       }
     },
     {
@@ -74,7 +74,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 3,
         "thothTitle": "Virtue",
-        "thothCard": "tarot.thoth.3-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.3"
       }
     },
     {
@@ -112,7 +112,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 4,
         "thothTitle": "Completion",
-        "thothCard": "tarot.thoth.4-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.4"
       }
     },
     {
@@ -150,7 +150,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 5,
         "thothTitle": "Worry",
-        "thothCard": "tarot.thoth.5-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.5"
       }
     },
     {
@@ -188,7 +188,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 6,
         "thothTitle": "Success",
-        "thothCard": "tarot.thoth.6-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.6"
       }
     },
     {
@@ -226,7 +226,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 7,
         "thothTitle": "Failure",
-        "thothCard": "tarot.thoth.7-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.7"
       }
     },
     {
@@ -264,7 +264,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 8,
         "thothTitle": "Interference",
-        "thothCard": "tarot.thoth.8-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.8"
       }
     },
     {
@@ -302,7 +302,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 9,
         "thothTitle": "Cruelty",
-        "thothCard": "tarot.thoth.9-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.9"
       }
     },
     {
@@ -340,7 +340,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 10,
         "thothTitle": "Ruin",
-        "thothCard": "tarot.thoth.10-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.10"
       }
     },
     {
@@ -378,7 +378,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 2,
         "thothTitle": "Love",
-        "thothCard": "tarot.thoth.2-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.2"
       }
     },
     {
@@ -416,7 +416,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 3,
         "thothTitle": "Abundance",
-        "thothCard": "tarot.thoth.3-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.3"
       }
     },
     {
@@ -454,7 +454,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 4,
         "thothTitle": "Luxury",
-        "thothCard": "tarot.thoth.4-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.4"
       }
     },
     {
@@ -492,7 +492,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 5,
         "thothTitle": "Strife",
-        "thothCard": "tarot.thoth.5-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.5"
       }
     },
     {
@@ -530,7 +530,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 6,
         "thothTitle": "Victory",
-        "thothCard": "tarot.thoth.6-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.6"
       }
     },
     {
@@ -568,7 +568,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 7,
         "thothTitle": "Valour",
-        "thothCard": "tarot.thoth.7-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.7"
       }
     },
     {
@@ -606,7 +606,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 8,
         "thothTitle": "Prudence",
-        "thothCard": "tarot.thoth.8-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.8"
       }
     },
     {
@@ -644,7 +644,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 9,
         "thothTitle": "Gain",
-        "thothCard": "tarot.thoth.9-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.9"
       }
     },
     {
@@ -682,7 +682,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 10,
         "thothTitle": "Wealth",
-        "thothCard": "tarot.thoth.10-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.10"
       }
     },
     {
@@ -720,7 +720,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 2,
         "thothTitle": "Peace",
-        "thothCard": "tarot.thoth.2-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.2"
       }
     },
     {
@@ -758,7 +758,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 3,
         "thothTitle": "Sorrow",
-        "thothCard": "tarot.thoth.3-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.3"
       }
     },
     {
@@ -796,7 +796,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 4,
         "thothTitle": "Truce",
-        "thothCard": "tarot.thoth.4-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.4"
       }
     },
     {
@@ -834,7 +834,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 5,
         "thothTitle": "Disappointment",
-        "thothCard": "tarot.thoth.5-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.5"
       }
     },
     {
@@ -872,7 +872,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 6,
         "thothTitle": "Pleasure",
-        "thothCard": "tarot.thoth.6-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.6"
       }
     },
     {
@@ -910,7 +910,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 7,
         "thothTitle": "Debauch",
-        "thothCard": "tarot.thoth.7-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.7"
       }
     },
     {
@@ -948,7 +948,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 8,
         "thothTitle": "Swiftness",
-        "thothCard": "tarot.thoth.8-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.8"
       }
     },
     {
@@ -986,7 +986,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 9,
         "thothTitle": "Strength",
-        "thothCard": "tarot.thoth.9-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.9"
       }
     },
     {
@@ -1024,7 +1024,7 @@
         "thothSuit": "tarot.suit.thoth.wands",
         "thothNumber": 10,
         "thothTitle": "Oppression",
-        "thothCard": "tarot.thoth.10-of-wands"
+        "thothCard": "tarot.minor.thoth.wands.10"
       }
     },
     {
@@ -1062,7 +1062,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 2,
         "thothTitle": "Change",
-        "thothCard": "tarot.thoth.2-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.2"
       }
     },
     {
@@ -1100,7 +1100,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 3,
         "thothTitle": "Works",
-        "thothCard": "tarot.thoth.3-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.3"
       }
     },
     {
@@ -1138,7 +1138,7 @@
         "thothSuit": "tarot.suit.thoth.disks",
         "thothNumber": 4,
         "thothTitle": "Power",
-        "thothCard": "tarot.thoth.4-of-disks"
+        "thothCard": "tarot.minor.thoth.disks.4"
       }
     },
     {
@@ -1176,7 +1176,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 5,
         "thothTitle": "Defeat",
-        "thothCard": "tarot.thoth.5-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.5"
       }
     },
     {
@@ -1214,7 +1214,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 6,
         "thothTitle": "Science",
-        "thothCard": "tarot.thoth.6-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.6"
       }
     },
     {
@@ -1252,7 +1252,7 @@
         "thothSuit": "tarot.suit.thoth.swords",
         "thothNumber": 7,
         "thothTitle": "Futility",
-        "thothCard": "tarot.thoth.7-of-swords"
+        "thothCard": "tarot.minor.thoth.swords.7"
       }
     },
     {
@@ -1290,7 +1290,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 8,
         "thothTitle": "Indolence",
-        "thothCard": "tarot.thoth.8-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.8"
       }
     },
     {
@@ -1328,7 +1328,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 9,
         "thothTitle": "Happiness",
-        "thothCard": "tarot.thoth.9-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.9"
       }
     },
     {
@@ -1366,7 +1366,7 @@
         "thothSuit": "tarot.suit.thoth.cups",
         "thothNumber": 10,
         "thothTitle": "Satiety",
-        "thothCard": "tarot.thoth.10-of-cups"
+        "thothCard": "tarot.minor.thoth.cups.10"
       }
     }
   ]
