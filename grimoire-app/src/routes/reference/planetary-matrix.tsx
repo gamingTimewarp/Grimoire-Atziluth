@@ -40,11 +40,12 @@ function PlanetaryMatrix() {
       const planetMap = new Map((planetResult.items as BaseEntity[]).map(p => [p.canonicalName, p]))
       const ordered = PLANET_ORDER.map(cn => planetMap.get(cn)).filter(Boolean) as BaseEntity[]
 
-      const [sephiraLinks, tarotLinks, allAttrLinks, spiritLinks] = await Promise.all([
+      const [sephiraLinks, tarotLinks, allAttrLinks, spiritLinks, dayRulerLinks] = await Promise.all([
         engine.adapter.queryLinks({ labels: ['gd-planet-sephira'], limit: 20, offset: 0 }),
         engine.adapter.queryLinks({ labels: ['gd-tarot-planet'], limit: 20, offset: 0 }),
         engine.adapter.queryLinks({ labels: ['attributed-planet'], limit: 50, offset: 0 }),
         engine.adapter.queryLinks({ labels: ['serves'], limit: 20, offset: 0 }),
+        engine.adapter.queryLinks({ labels: ['day-ruled-by'], limit: 20, offset: 0 }),
       ])
 
       // planet → sephira
@@ -98,6 +99,18 @@ function PlanetaryMatrix() {
         }
       }
 
+      // planet → day-ruler entity (e.g. astrology.planet.mars → planetary-hour.day-ruler.tuesday-mars)
+      const planetDayRuler = new Map<string, string>()
+      for (const link of dayRulerLinks.items) {
+        const src = link.sourceCanonicalName
+        const tgt = link.targetCanonicalName
+        const dayRuler = src.startsWith('planetary-hour.day-ruler.') ? src : tgt
+        const planet = src.startsWith('astrology.planet.') ? src : tgt
+        if (dayRuler.startsWith('planetary-hour.day-ruler.') && planet.startsWith('astrology.planet.')) {
+          planetDayRuler.set(planet, dayRuler)
+        }
+      }
+
       // Collect all CNs to resolve
       const allCNs = new Set<string>([
         ...planetSephira.values(),
@@ -105,6 +118,7 @@ function PlanetaryMatrix() {
         ...planetMetal.values(),
         ...planetChakra.values(),
         ...planetSpirit.values(),
+        ...planetDayRuler.values(),
       ])
       const entityMap = new Map<string, BaseEntity>()
       await Promise.all(
@@ -126,20 +140,12 @@ function PlanetaryMatrix() {
         ),
       })
 
-      const dayRow: RowData = {
-        label: 'Day of Week',
-        key: 'day',
-        entries: new Map(
-          PLANET_ORDER.map(cn => [cn, (planetMap.get(cn)?.extendedData?.dayOfWeek as string | undefined) ?? null])
-        ),
-      }
-
       setPlanets(ordered)
       setRows([
         makeRow('Sephira (GD)', 'sephira', planetSephira),
         makeRow('Tarot Trump', 'tarot', planetTarot),
         makeRow('Metal', 'metal', planetMetal),
-        dayRow,
+        makeRow('Day of Week', 'day', planetDayRuler),
         makeRow('Chakra', 'chakra', planetChakra),
         makeRow('Intelligence', 'spirit', planetSpirit),
       ])
@@ -248,7 +254,7 @@ function PlanetaryMatrix() {
                           onMouseEnter={e => { e.currentTarget.style.background = 'rgba(180,156,90,0.12)' }}
                           onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
                         >
-                          {(val as BaseEntity).primaryDisplayName}
+                          {((val as BaseEntity).extendedData?.dayOfWeek as string | undefined) ?? (val as BaseEntity).primaryDisplayName}
                         </button>
                       )}
                     </td>
