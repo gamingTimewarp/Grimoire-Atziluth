@@ -624,6 +624,7 @@ const BROWSE_ITEMS = [
   { canonicalName: 'system.overview.astrology',            label: 'Astrology'          },
   { canonicalName: 'system.overview.elements',             label: 'Elements'           },
   { canonicalName: 'system.overview.nakshatras',           label: 'Nakshatras'         },
+  { canonicalName: 'system.overview.navaratna',            label: 'Navaratna (Gems)'   },
   { canonicalName: 'system.overview.qabalah',              label: 'Qabalah'            },
   { canonicalName: 'system.overview.numerology',           label: 'Numerology'         },
   { canonicalName: 'system.overview.letters',              label: 'Letters'            },
