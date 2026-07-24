@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "links": [
+    { "source": "colour.colour.yellow", "target": "astrology.planet.sol",     "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: the Sun's white-hot photosphere appears pale yellow-white through Earth's atmosphere." } },
+    { "source": "colour.colour.grey",   "target": "astrology.planet.luna",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: ash-grey basaltic and anorthositic regolith." } },
+    { "source": "colour.colour.grey",   "target": "astrology.planet.mercury", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: dark grey, heavily cratered surface, similar in tone to the Moon." } },
+    { "source": "colour.colour.yellow", "target": "astrology.planet.venus",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: pale yellow-white sulphuric-acid cloud cover." } },
+    { "source": "colour.colour.red",    "target": "astrology.planet.mars",    "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: iron-oxide ('rust') dust across the surface — the 'Red Planet'." } },
+    { "source": "colour.colour.orange", "target": "astrology.planet.jupiter", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: banded orange-tan clouds of ammonia and sulphur compounds." } },
+    { "source": "colour.colour.yellow", "target": "astrology.planet.saturn",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: pale gold-yellow banded cloud tops." } },
+    { "source": "colour.colour.blue",   "target": "astrology.planet.uranus",  "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: pale cyan-blue, from atmospheric methane absorbing red light." } },
+    { "source": "colour.colour.blue",   "target": "astrology.planet.neptune", "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: deeper azure blue, also from atmospheric methane." } },
+    { "source": "colour.colour.brown",  "target": "astrology.planet.pluto",   "label": "corresponds-to", "bidirectional": true, "traditionScope": [], "extendedData": { "note": "Physical/observed colour: mottled tan and reddish-brown surface, per NASA New Horizons imagery (2015)." } }
+  ]
+}

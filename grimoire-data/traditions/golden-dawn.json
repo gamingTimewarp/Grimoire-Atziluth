@@ -10,7 +10,8 @@
       { "linkLabel": "attributed-sign", "displayName": "Zodiac Sign", "targetEntityType": "astrology.sign", "allowMultiple": false, "sortOrder": 2 },
       { "linkLabel": "attributed-letter", "displayName": "Hebrew Letter", "targetEntityType": "letter.hebrew", "allowMultiple": false, "sortOrder": 3 },
       { "linkLabel": "attributed-path", "displayName": "Tree of Life Path", "targetEntityType": "qabalah.path", "allowMultiple": false, "sortOrder": 4 },
-      { "linkLabel": "attributed-sephira", "displayName": "Associated Sephira", "targetEntityType": "qabalah.sephira", "allowMultiple": true, "sortOrder": 5 }
+      { "linkLabel": "attributed-sephira", "displayName": "Associated Sephira", "targetEntityType": "qabalah.sephira", "allowMultiple": true, "sortOrder": 5 },
+      { "linkLabel": "attributed-color", "displayName": "Colour Scale", "targetEntityType": "colour.colour", "allowMultiple": true, "sortOrder": 6 }
     ]
   }
 }

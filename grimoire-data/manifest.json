@@ -137,7 +137,9 @@
         "entities/divination/spreads.json",
         "entities/system/overviews.json",
         "entities/system/traditions.json",
-        "entities/astrology/minor-bodies.json"
+        "entities/astrology/minor-bodies.json",
+        "entities/colour/colours.json",
+        "entities/gemstone/gemstones.json"
       ]
     },
     {
@@ -207,7 +209,12 @@
         "links/structural/sephirotic-divine-name-links.json",
         "links/structural/sabbat-zodiac-links.json",
         "links/structural/pentagram-element-links.json",
-        "links/structural/hexagram-planet-links.json"
+        "links/structural/hexagram-planet-links.json",
+        "links/structural/colour-gemstone-links.json",
+        "links/structural/colour-planet-physical-links.json",
+        "links/structural/colour-element-links.json",
+        "links/structural/colour-phase-links.json",
+        "links/structural/colour-golden-dawn-links.json"
       ]
     }
   ]

@@ -2843,6 +2843,39 @@
           "system.overview.qabalah"
         ]
       }
+    },
+    {
+      "canonicalName": "system.overview.colours",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Colours",
+      "description": "An overview of twelve common colours and their correspondences across traditions: Western and Eastern symbolic meanings, associated gemstones, the physical colour of the classical planets, the classical elements and Chinese Wu Xing phases, and — for Golden Dawn practitioners — the King Scale (Atziluth) colours of the ten Sephiroth and the twelve zodiacal paths, and the Queen Scale (Briah) colours of the seven classical planets. Colour correspondence is one of the oldest and most cross-cultural forms of symbolic attribution, appearing independently in Chinese Wu Xing cosmology, Hindu chakra systems, Golden Dawn Qabalah, and countless folk and liturgical traditions.",
+      "secondaryNames": [],
+      "tags": ["overview", "colour"],
+      "extendedData": {
+        "memberEntityType": "colour.colour",
+        "note": "Toggle the Golden Dawn tradition to see King Scale (Sephiroth, Paths) and Queen Scale (Planets) colour attributions on each colour's page.",
+        "relatedOverviews": [
+          "system.overview.gemstones",
+          "system.overview.qabalah",
+          "system.overview.elements"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.gemstones",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Gemstones",
+      "description": "An overview of common gemstones and their mineralogy, history, and colour associations, including the modern (US Jewelers, 1912/2002) monthly birthstone list. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish). Traditional/alternate birthstone lists and other tradition-specific gemstone correspondences (e.g. zodiacal gemstones) are planned as a future addition.",
+      "secondaryNames": [],
+      "tags": ["overview", "gemstone"],
+      "extendedData": {
+        "memberEntityType": "gemstone.gemstone",
+        "note": "Gemstones tagged 'birthstone' carry a birthMonth/birthMonthNumber in extendedData (modern list only, one stone per month).",
+        "relatedOverviews": [
+          "system.overview.colours",
+          "system.overview.navaratna"
+        ]
+      }
     }
   ]
 }
