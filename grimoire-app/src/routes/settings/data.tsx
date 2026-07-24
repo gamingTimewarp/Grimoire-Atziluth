@@ -1,12 +1,14 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
-import { Download, Upload, CheckCircle, AlertCircle, Clock, Archive, ArrowLeft } from 'lucide-react'
+import { Download, Upload, CheckCircle, AlertCircle, Clock, Archive, ArrowLeft, FolderOpen } from 'lucide-react'
 import { exportBackup, pickAndImportBackup } from '@/lib/export-import'
 import type { ImportResult } from '@/lib/export-import'
 import { countOlderThan, archiveOlderThan } from '@/lib/reading-db'
 import { Button } from '@/components/ui/Button'
 import { useEngineStore } from '@/stores/engine'
 import { seedCustomIntoEngine } from '@/lib/custom-db'
+import { appConfigDir } from '@tauri-apps/api/path'
+import { openPath } from '@tauri-apps/plugin-opener'
 
 export const Route = createFileRoute('/settings/data')({
   component: DataSettingsPage,
@@ -67,6 +69,17 @@ function DataSettingsPage() {
 
   const isExportDone = status.kind === 'done' && status.savedPath !== undefined
 
+  const [fileLocationError, setFileLocationError] = useState<string | null>(null)
+  const handleOpenFileLocation = async () => {
+    setFileLocationError(null)
+    try {
+      const dir = await appConfigDir()
+      await openPath(dir)
+    } catch (err) {
+      setFileLocationError(err instanceof Error ? err.message : 'Failed to open the folder.')
+    }
+  }
+
   return (
     <div style={{ maxWidth: '480px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -93,6 +106,25 @@ function DataSettingsPage() {
         entries, natal charts, and preferences — as a single JSON file. Use Import to merge
         a backup into the current app.
       </p>
+
+      {/* Open file location */}
+      <section style={{ marginBottom: '20px', padding: '18px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+          <FolderOpen size={15} style={{ color: 'var(--color-accent)' }} />
+          <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>App Data Folder</span>
+        </div>
+        <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', margin: '0 0 14px' }}>
+          Opens the folder containing <code style={{ fontFamily: 'monospace', fontSize: '11px' }}>grimoire.db</code> and
+          the <code style={{ fontFamily: 'monospace', fontSize: '11px' }}>custom-art</code> subfolder where custom
+          entity images are stored — useful for manually replacing art or editing the database directly.
+        </p>
+        <Button variant="ghost" onClick={handleOpenFileLocation}>
+          <FolderOpen size={14} /> Open File Location
+        </Button>
+        {fileLocationError && (
+          <div style={{ marginTop: '10px', fontSize: '12px', color: 'var(--color-danger)', fontFamily: 'monospace' }}>{fileLocationError}</div>
+        )}
+      </section>
 
       {/* Export */}
       <section style={{ marginBottom: '20px', padding: '18px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
