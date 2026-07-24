@@ -75,8 +75,8 @@ function IChingTrigramMatrix() {
         I Ching Trigram Matrix
       </h1>
       <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginBottom: '24px', marginTop: 0 }}>
-        Rows are upper trigrams (heaven/sky); columns are lower trigrams (earth/ground). Each cell
-        is the hexagram formed by their combination. Click any cell to open its reference page.
+        Rows are upper trigrams (heaven/sky); columns are lower trigrams (earth/ground). Click a
+        trigram header to open its reference page, or a cell for the hexagram formed by their combination.
       </p>
 
       <div style={{ overflowX: 'auto' }}>
@@ -84,25 +84,30 @@ function IChingTrigramMatrix() {
           <thead>
             <tr>
               <th style={{ width: cellSize, minWidth: cellSize, padding: '6px 8px' }}>
-                <div style={{ fontSize: '10px', color: 'var(--color-text-subtle)', textAlign: 'right', lineHeight: 1.3 }}>
+                <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', textAlign: 'right', lineHeight: 1.3 }}>
                   upper ↓<br />lower →
                 </div>
               </th>
               {trigrams.map(t => (
-                <th
-                  key={t.canonicalName}
-                  style={{
-                    width: cellSize, minWidth: cellSize,
-                    padding: '6px 4px', textAlign: 'center',
-                    fontWeight: 400, color: 'var(--color-text-muted)',
-                  }}
-                >
-                  <div style={{ fontSize: '22px', lineHeight: 1 }}>
-                    {t.extendedData?.glyph as string ?? ''}
-                  </div>
-                  <div style={{ fontSize: '10px', marginTop: '3px', color: 'var(--color-text-subtle)' }}>
-                    {t.primaryDisplayName}
-                  </div>
+                <th key={t.canonicalName} style={{ width: cellSize, minWidth: cellSize, padding: 0 }}>
+                  <button
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: t.canonicalName } })}
+                    title={`View ${t.primaryDisplayName} in Reference`}
+                    style={{
+                      width: '100%', padding: '6px 4px', textAlign: 'center',
+                      background: 'none', border: 'none', cursor: 'pointer',
+                      fontFamily: 'inherit', borderRadius: '4px', transition: 'background 0.12s',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-3)' }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+                  >
+                    <div style={{ fontSize: '22px', lineHeight: 1, color: 'var(--color-accent)' }}>
+                      {t.extendedData?.glyph as string ?? ''}
+                    </div>
+                    <div style={{ fontSize: '10px', marginTop: '3px', color: 'var(--color-accent)', fontWeight: 500 }}>
+                      {t.primaryDisplayName}
+                    </div>
+                  </button>
                 </th>
               ))}
             </tr>
@@ -110,17 +115,25 @@ function IChingTrigramMatrix() {
           <tbody>
             {trigrams.map(upper => (
               <tr key={upper.canonicalName}>
-                <th style={{
-                  padding: '6px 8px', textAlign: 'center',
-                  fontWeight: 400, color: 'var(--color-text-muted)',
-                  borderRight: '1px solid var(--color-border)',
-                }}>
-                  <div style={{ fontSize: '22px', lineHeight: 1 }}>
-                    {upper.extendedData?.glyph as string ?? ''}
-                  </div>
-                  <div style={{ fontSize: '10px', marginTop: '3px', color: 'var(--color-text-subtle)' }}>
-                    {upper.primaryDisplayName}
-                  </div>
+                <th style={{ padding: 0, borderRight: '1px solid var(--color-border)' }}>
+                  <button
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: upper.canonicalName } })}
+                    title={`View ${upper.primaryDisplayName} in Reference`}
+                    style={{
+                      width: '100%', padding: '6px 8px', textAlign: 'center',
+                      background: 'none', border: 'none', cursor: 'pointer',
+                      fontFamily: 'inherit', borderRadius: '4px', transition: 'background 0.12s',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-3)' }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+                  >
+                    <div style={{ fontSize: '22px', lineHeight: 1, color: 'var(--color-accent)' }}>
+                      {upper.extendedData?.glyph as string ?? ''}
+                    </div>
+                    <div style={{ fontSize: '10px', marginTop: '3px', color: 'var(--color-accent)', fontWeight: 500 }}>
+                      {upper.primaryDisplayName}
+                    </div>
+                  </button>
                 </th>
                 {trigrams.map(lower => {
                   const hex = hexLookup.get(`${upper.canonicalName}__${lower.canonicalName}`)
@@ -138,32 +151,32 @@ function IChingTrigramMatrix() {
                         border: '1px solid var(--color-border)',
                         cursor: hex ? 'pointer' : 'default',
                         background: upper.canonicalName === lower.canonicalName
-                          ? 'rgba(180,156,90,0.06)'
+                          ? 'rgba(180,156,90,0.10)'
                           : 'var(--color-surface-2)',
                         transition: 'background 0.12s',
                         padding: '4px',
                       }}
-                      onMouseEnter={e => { if (hex) e.currentTarget.style.background = 'rgba(180,156,90,0.14)' }}
+                      onMouseEnter={e => { if (hex) e.currentTarget.style.background = 'rgba(180,156,90,0.20)' }}
                       onMouseLeave={e => {
                         e.currentTarget.style.background = upper.canonicalName === lower.canonicalName
-                          ? 'rgba(180,156,90,0.06)'
+                          ? 'rgba(180,156,90,0.10)'
                           : 'var(--color-surface-2)'
                       }}
                     >
                       {hex ? (
                         <>
-                          <div style={{ fontSize: '20px', lineHeight: 1 }}>
+                          <div style={{ fontSize: '20px', lineHeight: 1, color: 'var(--color-text)' }}>
                             {hex.extendedData?.glyph as string ?? ''}
                           </div>
-                          <div style={{ fontSize: '10px', color: 'var(--color-text-subtle)', marginTop: '2px' }}>
+                          <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', marginTop: '2px' }}>
                             {num}
                           </div>
-                          <div style={{ fontSize: '9px', color: 'var(--color-text-muted)', lineHeight: 1.2, marginTop: '1px' }}>
+                          <div style={{ fontSize: '9px', color: 'var(--color-text)', lineHeight: 1.2, marginTop: '1px' }}>
                             {hex.primaryDisplayName}
                           </div>
                         </>
                       ) : (
-                        <span style={{ color: 'var(--color-border)' }}>—</span>
+                        <span style={{ color: 'var(--color-text-muted)' }}>—</span>
                       )}
                     </td>
                   )
@@ -174,8 +187,8 @@ function IChingTrigramMatrix() {
         </table>
       </div>
 
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '16px' }}>
-        Trigrams in King Wen sequence. Click a hexagram to open its reference page.
+      <div style={{ fontSize: '11px', color: 'var(--color-text-muted)', marginTop: '16px' }}>
+        Trigrams in King Wen sequence, shown in gold and clickable in the headers. Click a cell for its hexagram.
       </div>
     </div>
   )
