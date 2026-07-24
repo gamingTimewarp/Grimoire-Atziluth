@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.constellation.andromeda",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Andromeda",
+      "description": "Andromeda, 'the Chained Maiden', is a large northern constellation named for the princess of Greek myth who was chained to a rock as a sacrifice to the sea monster Cetus and rescued by Perseus. Its brightest star, Alpheratz, is shared with the corner of the Great Square of Pegasus. Andromeda is not a zodiacal constellation, but its two brightest cataloguable stars in this collection — Mirach and Almach — are both prized in fixed-star lore for their gentle, Venusian character.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "andromeda"],
+      "extendedData": {
+        "abbreviation": "And",
+        "meaning": "The Chained Maiden",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.aquarius",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Aquarius",
+      "description": "Aquarius, 'the Water-Bearer', is a zodiacal constellation straddling the celestial equator, depicting a figure pouring water from a jar. Ancient Babylonian and Egyptian traditions associated this region of sky with floods and the life-giving inundation of rivers. Its brightest star, Sadalsuud ('luck of lucks'), lends its name to one of the most fortunate fixed stars in classical astrology.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "aquarius"],
+      "extendedData": {
+        "abbreviation": "Aqr",
+        "meaning": "The Water-Bearer",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.sadalsuud"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.aquila",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Aquila",
+      "description": "Aquila, 'the Eagle', straddles the celestial equator and represents the bird that carried Zeus's thunderbolts (and, in some tellings, the beautiful youth Ganymede up to Olympus). Its brightest star, Altair, is one of the closest bright stars to the Sun and forms one vertex of the Summer Triangle asterism along with Vega and Deneb.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "aquila"],
+      "extendedData": {
+        "abbreviation": "Aql",
+        "meaning": "The Eagle",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.altair"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.aries",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Aries",
+      "description": "Aries, 'the Ram', is a zodiacal constellation depicting the golden-fleeced ram of Greek myth that rescued Phrixus and Cassiopeia's family, whose fleece later became the object of Jason's quest. In antiquity the vernal equinox point fell within this constellation, giving it enduring astrological importance as a marker of beginnings — a role the tropical zodiac sign of the same name still symbolises even though precession has since carried the equinox point into Pisces. Its brightest star, Hamal, sits at the Ram's head.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "aries"],
+      "extendedData": {
+        "abbreviation": "Ari",
+        "meaning": "The Ram",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.hamal"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.auriga",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Auriga",
+      "description": "Auriga, 'the Charioteer', depicts a figure holding the reins of a chariot while cradling a goat and her kids on one arm — the mythic Amalthea, whose horn became the cornucopia of abundance. Its brilliant brightest star, Capella ('the Little She-Goat'), is one of the brightest stars in the entire night sky and marks the charioteer's shoulder.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "auriga"],
+      "extendedData": {
+        "abbreviation": "Aur",
+        "meaning": "The Charioteer",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.capella"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.bootes",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Boötes",
+      "description": "Boötes, 'the Herdsman' or 'Ploughman', is a large northern constellation often depicted driving the neighbouring Great Bear (Ursa Major) around the pole, or as the inventor of the plough. Its brightest star, Arcturus, is the brightest star in the northern celestial hemisphere and one of the most luminous stars visible from Earth, easily found by following the arc of the Big Dipper's handle.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "bootes"],
+      "extendedData": {
+        "abbreviation": "Boo",
+        "meaning": "The Herdsman",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.arcturus"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.cancer",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Cancer",
+      "description": "Cancer, 'the Crab', is the dimmest of the zodiacal constellations, said to represent the crab that Hera sent to distract Heracles during his battle with the Hydra. Though faint in individual stars, it holds the Beehive Cluster (Praesepe, 'the Manger'), a naked-eye open star cluster flanked by the two donkey stars, the Aselli, all of which feature among the fixed stars catalogued here.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "cancer"],
+      "extendedData": {
+        "abbreviation": "Cnc",
+        "meaning": "The Crab",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.canis-major",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Canis Major",
+      "description": "Canis Major, 'the Greater Dog', represents one of the hunting dogs of Orion, following at his heel. It is home to Sirius, the brightest star in the entire night sky, whose heliacal rising was tracked by the ancient Egyptians as a herald of the Nile's annual flood and the start of their calendar year.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "canis-major"],
+      "extendedData": {
+        "abbreviation": "CMa",
+        "meaning": "The Greater Dog",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.sirius"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.canis-minor",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Canis Minor",
+      "description": "Canis Minor, 'the Lesser Dog', is a small constellation representing Orion's second hunting dog. Its brightest star, Procyon, rises just ahead of Sirius each night — its name literally means 'before the dog' in Greek — and together with Sirius and Betelgeuse forms the Winter Triangle asterism.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "canis-minor"],
+      "extendedData": {
+        "abbreviation": "CMi",
+        "meaning": "The Lesser Dog",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.procyon"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.capricornus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Capricornus",
+      "description": "Capricornus, 'the Sea-Goat', is a zodiacal constellation depicting a hybrid creature with the foreparts of a goat and the tail of a fish, associated in Babylonian tradition with the god Ea/Enki. Its brightest star, Deneb Algedi ('tail of the goat'), marks the creature's fish-tail, while Algedi at the head is a famous naked-eye double star.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "capricornus"],
+      "extendedData": {
+        "abbreviation": "Cap",
+        "meaning": "The Sea-Goat",
+        "hemisphere": "southern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.deneb-algedi"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.carina",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Carina",
+      "description": "Carina, 'the Keel', is a deep-southern constellation formed from the dismemberment of the old, unwieldy constellation Argo Navis (the ship of Jason and the Argonauts) into three smaller parts — Carina, Puppis, and Vela. Its brightest star, Canopus, is the second-brightest star in the night sky after Sirius and was a vital navigation star for ancient Egyptian, Arab, and Polynesian sailors.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "carina"],
+      "extendedData": {
+        "abbreviation": "Car",
+        "meaning": "The Keel",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.canopus"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.centaurus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Centaurus",
+      "description": "Centaurus, 'the Centaur', is one of the largest and richest southern constellations, usually identified with the wise centaur Chiron. Its true brightest star is Alpha Centauri (Rigil Kentaurus), the closest star system to the Sun, though its second-brightest, Agena (Hadar), is the star catalogued here.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "centaurus"],
+      "extendedData": {
+        "abbreviation": "Cen",
+        "meaning": "The Centaur",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.corvus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Corvus",
+      "description": "Corvus, 'the Crow' (or Raven), is a small, compact constellation associated in Greek myth with the crow Apollo sent to fetch water, who dawdled and was punished by being placed in the sky forever thirsty, unable to reach the neighbouring water-cup constellation Crater. Its brightest star is Gienah, while Algorab, the star catalogued here, is its third-brightest component.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "corvus"],
+      "extendedData": {
+        "abbreviation": "Crv",
+        "meaning": "The Crow",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.cygnus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Cygnus",
+      "description": "Cygnus, 'the Swan', is a prominent northern constellation whose principal stars form the asterism known as the Northern Cross. Its brightest star, Deneb, marks the swan's tail and, despite its modest apparent brightness ranking, is one of the most luminous supergiant stars known — appearing bright only because it is comparatively distant. Deneb completes the Summer Triangle with Vega and Altair.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "cygnus"],
+      "extendedData": {
+        "abbreviation": "Cyg",
+        "meaning": "The Swan",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.deneb"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.draco",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Draco",
+      "description": "Draco, 'the Dragon', is a long, winding circumpolar constellation coiling between the Great and Little Bears, identified with Ladon, the serpent that guarded the golden apples of the Hesperides. Its brightest star is Eltanin, while Rastaban — 'the head of the dragon', catalogued here — marks one of the twin eyes of the dragon's head asterism alongside Eltanin.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "draco"],
+      "extendedData": {
+        "abbreviation": "Dra",
+        "meaning": "The Dragon",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.eridanus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Eridanus",
+      "description": "Eridanus, 'the River', is one of the longest constellations in the sky, winding from near Orion's foot far into the deep southern sky. Its brightest star, Achernar — meaning 'the river's end' in Arabic — marks the river's southern terminus and is the ninth-brightest star in the night sky.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "eridanus"],
+      "extendedData": {
+        "abbreviation": "Eri",
+        "meaning": "The River",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.achernar"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.gemini",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Gemini",
+      "description": "Gemini, 'the Twins', is a zodiacal constellation representing Castor and Pollux, the Dioscuri of Greek myth — one mortal, one divine, who shared immortality between them out of brotherly devotion. In a famous quirk of stellar nomenclature, Pollux (Beta Geminorum) is actually the brighter of the pair despite Castor bearing the 'Alpha' designation traditionally reserved for a constellation's brightest star.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "gemini"],
+      "extendedData": {
+        "abbreviation": "Gem",
+        "meaning": "The Twins",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.pollux"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.hercules",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Hercules",
+      "description": "Hercules, 'the Kneeling Hero', is a large northern constellation depicting the mythical strongman upside-down, one foot planted on the head of the dragon Draco. It is home to the Great Globular Cluster (M13), one of the finest such clusters visible from the northern hemisphere. Its brightest star is Kornephoros, while Ras Algethi — 'the kneeler's head', catalogued here — is a red giant marking the hero's head.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "hercules"],
+      "extendedData": {
+        "abbreviation": "Her",
+        "meaning": "The Kneeling Hero",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.hydra",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Hydra",
+      "description": "Hydra, 'the Water Serpent', is the largest of all 88 modern constellations by area, stretching across nearly a quarter of the sky's circumference. It represents the many-headed monster slain by Heracles as his second labour. Its sole notably bright star, Alphard ('the Solitary One'), sits isolated in an otherwise sparse stretch of sky, true to its name.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "hydra"],
+      "extendedData": {
+        "abbreviation": "Hya",
+        "meaning": "The Water Serpent",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.alphard"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.leo",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Leo",
+      "description": "Leo, 'the Lion', is a zodiacal constellation depicting the Nemean Lion slain by Heracles in his first labour, its impenetrable hide later worn as his signature cloak. Its brightest star, Regulus — 'Little King', at the Lion's heart — is one of the four ancient Persian Royal Stars, the Watcher of the North, marking one of the four cardinal points of the sky.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "leo"],
+      "extendedData": {
+        "abbreviation": "Leo",
+        "meaning": "The Lion",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.regulus"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.libra",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Libra",
+      "description": "Libra, 'the Scales', is the only zodiacal constellation depicting an inanimate object rather than a person or animal — the balance held by Astraea/Dike, goddess of justice, in neighbouring Virgo. Its two brightest stars, Zubeneschamali ('the northern claw') and Zubenelgenubi ('the southern claw'), preserve the memory of the constellation's earlier identity as the claws of the adjacent Scorpion before the Romans carved it out as a separate figure.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "libra"],
+      "extendedData": {
+        "abbreviation": "Lib",
+        "meaning": "The Scales",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.zubeneschamali"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.lyra",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Lyra",
+      "description": "Lyra, 'the Lyre', represents the instrument of Orpheus, whose music was said to charm even stones, and which was placed in the heavens after his death. Its brightest star, Vega, is the fifth-brightest star in the entire night sky and, roughly 12,000 years ago, served as Earth's north pole star — a role it will resume in roughly another 12,000 years as precession completes its slow cycle.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "lyra"],
+      "extendedData": {
+        "abbreviation": "Lyr",
+        "meaning": "The Lyre",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.vega"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.ophiuchus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Ophiuchus",
+      "description": "Ophiuchus, 'the Serpent-Bearer', depicts Asclepius, the legendary physician who learned the secret of resurrection from serpents and was placed among the stars grasping the constellation Serpens. Uniquely among the constellations, the ecliptic (the Sun's apparent yearly path) passes directly through Ophiuchus for roughly 18 days each November-December — the basis for the 'thirteenth sign' debate reflected in the IAU 13-sign zodiac used by this app's IAU mode. Its brightest star is Rasalhague ('head of the serpent charmer'), while Sabik, catalogued here, is its second-brightest.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "ophiuchus"],
+      "extendedData": {
+        "abbreviation": "Oph",
+        "meaning": "The Serpent-Bearer",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.orion",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Orion",
+      "description": "Orion, 'the Hunter', straddling the celestial equator, is one of the most recognisable constellations in the sky and visible from nearly everywhere on Earth. Its three-star Belt (Mintaka, Alnilam, Alnitak) points toward Sirius, while Betelgeuse and Bellatrix mark the shoulders and Rigel — the constellation's brightest star — the hunter's foot. Rich in nebulae and young stars, Orion has been a near-universal cultural touchstone, from the Egyptian association with Osiris to countless hunter myths worldwide.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "orion"],
+      "extendedData": {
+        "abbreviation": "Ori",
+        "meaning": "The Hunter",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.rigel"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.pegasus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Pegasus",
+      "description": "Pegasus, 'the Winged Horse', represents the mythical steed born from the blood of the slain Gorgon Medusa. Three of its stars — Scheat, Markab, and Algenib — form three corners of the well-known asterism the Great Square of Pegasus; the fourth corner, Alpheratz, technically belongs to neighbouring Andromeda, a legacy of the two constellations once being depicted as a single figure.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "pegasus"],
+      "extendedData": {
+        "abbreviation": "Peg",
+        "meaning": "The Winged Horse",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.piscis-austrinus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Piscis Austrinus",
+      "description": "Piscis Austrinus, 'the Southern Fish', is depicted drinking the stream of water poured out by neighbouring Aquarius. Its brightest star, Fomalhaut — 'mouth of the fish' — is the eighteenth-brightest star in the sky and one of the four ancient Persian Royal Stars, the Watcher of the South, joining Aldebaran (East), Regulus (North), and Antares (West) at the four cardinal points of the heavens.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "piscis-austrinus"],
+      "extendedData": {
+        "abbreviation": "PsA",
+        "meaning": "The Southern Fish",
+        "hemisphere": "southern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.fomalhaut"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.scorpius",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Scorpius",
+      "description": "Scorpius, 'the Scorpion', is a zodiacal constellation whose curving tail of stars vividly traces the creature's shape — the scorpion sent by Gaia (in most tellings) to slay the boastful hunter Orion, the two placed on opposite sides of the sky so they would never rise together. Its brightest star, Antares — 'rival of Mars' for its fiery red hue — is one of the four Persian Royal Stars, the Watcher of the West.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "scorpius"],
+      "extendedData": {
+        "abbreviation": "Sco",
+        "meaning": "The Scorpion",
+        "hemisphere": "southern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.antares"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.serpens",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Serpens",
+      "description": "Serpens, 'the Serpent', is unique among all 88 modern constellations in being split into two physically disconnected regions — Serpens Caput (the head) and Serpens Cauda (the tail) — divided by the body of Ophiuchus, whom it is depicted wrapping around. Its brightest star, Unukalhai — literally 'the serpent's neck' — lies in the head portion.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "serpens"],
+      "extendedData": {
+        "abbreviation": "Ser",
+        "meaning": "The Serpent",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.unukalhai"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.taurus",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Taurus",
+      "description": "Taurus, 'the Bull', is a zodiacal constellation depicting the form Zeus took to abduct Europa, only the bull's head and shoulders shown as if rising from the sea. It contains two of the most famous open star clusters in the sky — the Pleiades (Alcyone and her sisters) and the nearer, V-shaped Hyades — and its brightest star, Aldebaran, marks the Bull's fiery red eye and is another of the four Persian Royal Stars, the Watcher of the East.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "taurus"],
+      "extendedData": {
+        "abbreviation": "Tau",
+        "meaning": "The Bull",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.aldebaran"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.ursa-minor",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Ursa Minor",
+      "description": "Ursa Minor, 'the Lesser Bear', is a circumpolar northern constellation whose seven principal stars form the well-known Little Dipper asterism. Its brightest star, Polaris, sits within about a degree of the north celestial pole, making it appear virtually motionless through the night — the fixed axial point that has guided navigators for millennia and earned it enduring symbolic status as the still centre around which the heavens turn.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "ursa-minor"],
+      "extendedData": {
+        "abbreviation": "UMi",
+        "meaning": "The Lesser Bear",
+        "hemisphere": "northern",
+        "isZodiacConstellation": false,
+        "brightestStarCn": "astrology.fixed-star.polaris"
+      }
+    },
+    {
+      "canonicalName": "astrology.constellation.virgo",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Virgo",
+      "description": "Virgo, 'the Maiden', is the largest of the zodiacal constellations and the second-largest constellation overall, commonly identified with Demeter, goddess of the harvest, or her daughter Persephone. Its brightest star, Spica — 'ear of wheat', held in the Maiden's hand — is among the most consistently fortunate fixed stars across every classical astrological tradition, its brightness and benefic reputation both fitting for the harvest it represents.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "virgo"],
+      "extendedData": {
+        "abbreviation": "Vir",
+        "meaning": "The Maiden",
+        "hemisphere": "equatorial",
+        "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.spica"
+      }
+    }
+  ]
+}
