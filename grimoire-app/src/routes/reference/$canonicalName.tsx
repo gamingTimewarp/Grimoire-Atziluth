@@ -18,6 +18,8 @@ import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
+import { ConstellationDiagram } from '@/components/ui/ConstellationDiagram'
+import { CONSTELLATION_DIAGRAMS } from '@/lib/constellation-diagrams'
 import { useReadingStore } from '@/stores/reading'
 import { TRADITION_DISPLAY_NAMES } from '@/lib/tradition-store'
 
@@ -240,6 +242,7 @@ function EntityDetailPage() {
   const isPentagram  = entity.entityType === 'magic.pentagram'
   const isHexagram   = entity.entityType === 'magic.hexagram'
   const isMagicCircle = entity.entityType === 'magic.circle'
+  const isConstellation = entity.entityType === 'astrology.constellation'
 
   const dignityLinks = isPlanet ? allCorrespondences.filter(l => DIGNITY_LABELS.has(l.label)) : []
   const spiritLinks  = isPlanet ? allCorrespondences.filter(l => PLANET_SPIRIT_LABELS.has(l.label)) : []
@@ -271,6 +274,9 @@ function EntityDetailPage() {
     : undefined
   const circleExtDataHide = isMagicCircle
     ? new Set(['triangleNames', 'ringInscriptions', 'heptarchicKings', 'angelNames'])
+    : undefined
+  const constellationExtDataHide = isConstellation
+    ? new Set(['brightestStarCn'])
     : undefined
 
   const navToEntity = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
@@ -420,10 +426,13 @@ function EntityDetailPage() {
       {/* Magic circle diagram */}
       {isMagicCircle && <MagicCircleSection entity={entity} onNavigate={navToEntity} />}
 
+      {/* Constellation star chart */}
+      {isConstellation && <ConstellationSection entity={entity} onNavigate={navToEntity} />}
+
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
@@ -2022,6 +2031,23 @@ function MagicCircleSection({ entity, onNavigate }: { entity: BaseEntity; onNavi
       </p>
       {cn === 'magic.circle.solomonic' && <SolomonicCircleDiagram onNavigate={onNavigate} />}
       {cn === 'magic.circle.sigillum-dei-aemeth' && <SigillumDiagram />}
+    </Section>
+  )
+}
+
+// ─── Constellation star chart section ────────────────────────────────────────
+
+function ConstellationSection({ entity, onNavigate }: { entity: BaseEntity; onNavigate: (cn: string) => void }) {
+  const slug = entity.canonicalName.split('.').pop() ?? ''
+  const diagram = CONSTELLATION_DIAGRAMS[slug]
+  if (!diagram) return null
+  return (
+    <Section title="Star Chart">
+      <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', margin: '0 0 16px', lineHeight: '1.5' }}>
+        A schematic outline of the constellation, not a to-scale sky chart. Named, clickable stars
+        have their own reference page; the remaining points fill out the traditional shape.
+      </p>
+      <ConstellationDiagram data={diagram} onNavigate={onNavigate} />
     </Section>
   )
 }
