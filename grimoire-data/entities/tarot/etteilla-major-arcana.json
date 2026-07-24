@@ -34,6 +34,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 2,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "zodiacSign": "astrology.zodiac-sign.taurus",
         "uprightKeywords": ["illumination", "clarity", "joy", "success", "vitality"],
@@ -53,6 +54,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 3,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.3",
         "zodiacSign": "astrology.zodiac-sign.gemini",
         "uprightKeywords": ["deception", "hidden matters", "illusion", "fluctuation", "mystery"],
@@ -72,6 +74,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 4,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.4",
         "zodiacSign": "astrology.zodiac-sign.cancer",
         "uprightKeywords": ["heavens", "divine order", "spiritual elevation", "celestial blessing"],
@@ -92,6 +95,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 5,
+        "polarity": "positive",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.5",
         "zodiacSign": "astrology.zodiac-sign.leo",
@@ -113,6 +117,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 6,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "zodiacSign": "astrology.zodiac-sign.virgo",
         "uprightKeywords": ["hope", "guidance", "inspiration", "renewal", "celestial favour"],
@@ -170,6 +175,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 9,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "uprightKeywords": ["justice", "equity", "legal matters", "contract", "fair outcome"],
@@ -189,6 +195,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 10,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
         "uprightKeywords": ["moderation", "prudence", "economy", "restraint", "balance"],
@@ -208,6 +215,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 11,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
         "uprightKeywords": ["power", "boldness", "courage", "force", "determination"],
@@ -246,6 +254,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 13,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.4",
         "zodiacSign": null,
         "uprightKeywords": ["love", "romance", "engagement", "attraction", "desire"],
@@ -265,6 +274,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 14,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.5",
         "zodiacSign": null,
         "uprightKeywords": ["force", "violence", "black arts", "fatality", "overwhelming power"],
@@ -284,6 +294,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 15,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "zodiacSign": null,
         "uprightKeywords": ["sickness", "illness", "charlatan", "misdirection", "trickery"],
@@ -304,6 +315,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 16,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.7",
         "zodiacSign": null,
@@ -324,6 +336,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 17,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.8",
         "zodiacSign": null,
         "uprightKeywords": ["death", "mortality", "ending", "transformation", "great change"],
@@ -344,6 +357,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 18,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
         "zodiacSign": null,
         "uprightKeywords": ["treachery", "concealment", "hypocrisy", "false friend", "disguise"],
@@ -364,6 +378,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 19,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.1",
         "zodiacSign": null,
         "uprightKeywords": ["ruin", "catastrophe", "sudden loss", "misery", "upheaval"],
@@ -383,6 +398,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 20,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
         "zodiacSign": null,
         "uprightKeywords": ["fortune", "destiny", "lucky turn", "cycle", "opportunity"],
@@ -402,6 +418,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 21,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "zodiacSign": null,
         "uprightKeywords": ["help", "assistance", "relief", "journey", "unexpected aid"],
@@ -422,6 +439,7 @@
       "extendedData": {
         "deckSystem": "etteilla",
         "etteillaCN": 0,
+        "polarity": "positive",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "zodiacSign": null,

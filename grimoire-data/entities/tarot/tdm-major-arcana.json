@@ -27,6 +27,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "polarity": "positive",
         "numerologyDigit": null,
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -57,6 +58,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -87,6 +89,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -117,6 +120,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -147,6 +151,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.4",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -177,6 +182,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.5",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -207,6 +213,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -237,6 +244,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.7",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -267,6 +275,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.8",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -297,6 +306,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -327,6 +337,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -357,6 +368,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -387,6 +399,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -417,6 +430,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.4",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -447,6 +461,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.5",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -477,6 +492,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.6",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -507,6 +523,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.7",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -537,6 +554,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.8",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -567,6 +585,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.9",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -597,6 +616,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -627,6 +647,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }
@@ -657,6 +678,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "sourceDeck": "tarot.deck.tarot-de-marseille"
       }

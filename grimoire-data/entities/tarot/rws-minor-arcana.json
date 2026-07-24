@@ -15,6 +15,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 1,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
@@ -40,6 +41,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 2,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
@@ -67,6 +69,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 3,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
@@ -94,6 +97,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 4,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.aries",
         "element": "astrology.element.fire",
@@ -121,6 +125,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 5,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
@@ -148,6 +153,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 6,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
@@ -175,6 +181,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 7,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.leo",
         "element": "astrology.element.fire",
@@ -202,6 +209,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 8,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
@@ -229,6 +237,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 9,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
@@ -256,6 +265,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 10,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
         "element": "astrology.element.fire",
@@ -283,6 +293,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 11,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Page",
@@ -308,6 +319,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 12,
+        "polarity": "neutral",
         "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Knight",
@@ -333,6 +345,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 13,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "Queen",
@@ -358,6 +371,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 14,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": null,
         "rank": "King",
@@ -383,6 +397,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 15,
+        "polarity": "positive",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
@@ -408,6 +423,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 16,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
@@ -435,6 +451,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 17,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
@@ -462,6 +479,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 18,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.cancer",
         "element": "astrology.element.water",
@@ -489,6 +507,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 19,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
@@ -516,6 +535,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 20,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
@@ -543,6 +563,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 21,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.scorpio",
         "element": "astrology.element.water",
@@ -570,6 +591,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 22,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
@@ -597,6 +619,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 23,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
@@ -624,6 +647,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 24,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.pisces",
         "element": "astrology.element.water",
@@ -651,6 +675,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 25,
+        "polarity": "positive",
         "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Page",
@@ -676,6 +701,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 26,
+        "polarity": "positive",
         "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Knight",
@@ -701,6 +727,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 27,
+        "polarity": "positive",
         "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "Queen",
@@ -726,6 +753,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 28,
+        "polarity": "positive",
         "element": "astrology.element.water",
         "numerologyDigit": null,
         "rank": "King",
@@ -751,6 +779,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 29,
+        "polarity": "positive",
         "element": "astrology.element.air",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
@@ -776,6 +805,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 30,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
@@ -803,6 +833,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 31,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
@@ -830,6 +861,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 32,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.libra",
         "element": "astrology.element.air",
@@ -857,6 +889,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 33,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
@@ -884,6 +917,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 34,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
@@ -911,6 +945,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 35,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
         "element": "astrology.element.air",
@@ -938,6 +973,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 36,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
@@ -965,6 +1001,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 37,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
@@ -992,6 +1029,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 38,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.gemini",
         "element": "astrology.element.air",
@@ -1019,6 +1057,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 39,
+        "polarity": "neutral",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Page",
@@ -1044,6 +1083,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 40,
+        "polarity": "neutral",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Knight",
@@ -1069,6 +1109,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 41,
+        "polarity": "neutral",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "Queen",
@@ -1094,6 +1135,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 42,
+        "polarity": "neutral",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "King",
@@ -1119,6 +1161,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 43,
+        "polarity": "positive",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Ace",
@@ -1144,6 +1187,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 44,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
@@ -1171,6 +1215,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 45,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
@@ -1198,6 +1243,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 46,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
         "element": "astrology.element.earth",
@@ -1225,6 +1271,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 47,
+        "polarity": "negative",
         "rulingPlanet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
@@ -1252,6 +1299,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 48,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
@@ -1279,6 +1327,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 49,
+        "polarity": "neutral",
         "rulingPlanet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.taurus",
         "element": "astrology.element.earth",
@@ -1306,6 +1355,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 50,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
@@ -1333,6 +1383,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 51,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
@@ -1360,6 +1411,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 52,
+        "polarity": "positive",
         "rulingPlanet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.virgo",
         "element": "astrology.element.earth",
@@ -1387,6 +1439,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 53,
+        "polarity": "positive",
         "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Page",
@@ -1412,6 +1465,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 54,
+        "polarity": "neutral",
         "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Knight",
@@ -1437,6 +1491,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 55,
+        "polarity": "positive",
         "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "Queen",
@@ -1462,6 +1517,7 @@
       "secondaryNames": [],
       "extendedData": {
         "cardNumber": 56,
+        "polarity": "positive",
         "element": "astrology.element.earth",
         "numerologyDigit": null,
         "rank": "King",

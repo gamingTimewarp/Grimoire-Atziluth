@@ -28,6 +28,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "polarity": "positive",
         "numerologyDigit": null,
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -79,6 +80,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -130,6 +132,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -169,6 +172,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -208,6 +212,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.4",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -254,6 +259,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.5",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -293,6 +299,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -332,6 +339,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.7",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -383,6 +391,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.8",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -423,6 +432,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -474,6 +484,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -525,6 +536,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -565,6 +577,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -604,6 +617,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.4",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -655,6 +669,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.5",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -694,6 +709,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.6",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -739,6 +755,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.7",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -778,6 +795,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.8",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -818,6 +836,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.9",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -857,6 +876,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -914,6 +934,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "suit": "major",
         "deck": "tarot.deck.thoth",
@@ -965,6 +986,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "suit": "major",
         "deck": "tarot.deck.thoth",

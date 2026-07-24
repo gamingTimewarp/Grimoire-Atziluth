@@ -33,6 +33,7 @@
       ],
       "extendedData": {
         "cardNumber": 0,
+        "polarity": "positive",
         "element": "astrology.element.air",
         "numerologyDigit": null,
         "rank": "The Fool",
@@ -82,6 +83,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "polarity": "positive",
         "astrological": "astrology.planet.mercury",
         "numerologyDigit": "numerology.digit.1",
         "rank": "The Magician",
@@ -131,6 +133,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "polarity": "neutral",
         "astrological": "astrology.planet.luna",
         "numerologyDigit": "numerology.digit.2",
         "rank": "The High Priestess",
@@ -168,6 +171,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "polarity": "positive",
         "astrological": "astrology.planet.venus",
         "numerologyDigit": "numerology.digit.3",
         "rank": "The Empress",
@@ -205,6 +209,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "polarity": "neutral",
         "astrological": "astrology.zodiac-sign.aries",
         "numerologyDigit": "numerology.digit.4",
         "rank": "The Emperor",
@@ -254,6 +259,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "polarity": "neutral",
         "astrological": "astrology.zodiac-sign.taurus",
         "numerologyDigit": "numerology.digit.5",
         "rank": "The Hierophant",
@@ -291,6 +297,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "polarity": "positive",
         "astrological": "astrology.zodiac-sign.gemini",
         "numerologyDigit": "numerology.digit.6",
         "rank": "The Lovers",
@@ -328,6 +335,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "polarity": "positive",
         "astrological": "astrology.zodiac-sign.cancer",
         "numerologyDigit": "numerology.digit.7",
         "rank": "The Chariot",
@@ -377,6 +385,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "polarity": "positive",
         "astrological": "astrology.zodiac-sign.leo",
         "numerologyDigit": "numerology.digit.8",
         "rank": "Strength",
@@ -414,6 +423,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "polarity": "neutral",
         "astrological": "astrology.zodiac-sign.virgo",
         "numerologyDigit": "numerology.digit.9",
         "rank": "The Hermit",
@@ -457,6 +467,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "polarity": "neutral",
         "astrological": "astrology.planet.jupiter",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Wheel of Fortune",
@@ -500,6 +511,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "polarity": "neutral",
         "astrological": "astrology.zodiac-sign.libra",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Justice",
@@ -537,6 +549,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "polarity": "neutral",
         "element": "astrology.element.water",
         "numerologyDigit": "numerology.digit.3",
         "rank": "The Hanged Man",
@@ -574,6 +587,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "polarity": "negative",
         "astrological": "astrology.zodiac-sign.scorpio",
         "numerologyDigit": "numerology.digit.4",
         "rank": "Death",
@@ -617,6 +631,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "polarity": "positive",
         "astrological": "astrology.zodiac-sign.sagittarius",
         "numerologyDigit": "numerology.digit.5",
         "rank": "Temperance",
@@ -654,6 +669,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "polarity": "negative",
         "astrological": "astrology.zodiac-sign.capricorn",
         "numerologyDigit": "numerology.digit.6",
         "rank": "The Devil",
@@ -697,6 +713,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "polarity": "negative",
         "astrological": "astrology.planet.mars",
         "numerologyDigit": "numerology.digit.7",
         "rank": "The Tower",
@@ -734,6 +751,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "polarity": "positive",
         "astrological": "astrology.zodiac-sign.aquarius",
         "numerologyDigit": "numerology.digit.8",
         "rank": "The Star",
@@ -771,6 +789,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "polarity": "negative",
         "astrological": "astrology.zodiac-sign.pisces",
         "numerologyDigit": "numerology.digit.9",
         "rank": "The Moon",
@@ -808,6 +827,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "polarity": "positive",
         "astrological": "astrology.planet.sol",
         "numerologyDigit": "numerology.digit.1",
         "rank": "The Sun",
@@ -857,6 +877,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "polarity": "positive",
         "element": "astrology.element.fire",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Judgement",
@@ -900,6 +921,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "polarity": "positive",
         "astrological": "astrology.planet.saturn",
         "element": "astrology.element.earth",
         "numerologyDigit": "numerology.digit.3",

@@ -22,6 +22,7 @@
       ],
       "extendedData": {
         "cardNumber": 1,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.batons",
@@ -50,6 +51,7 @@
       ],
       "extendedData": {
         "cardNumber": 2,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.batons",
@@ -78,6 +80,7 @@
       ],
       "extendedData": {
         "cardNumber": 3,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.batons",
@@ -106,6 +109,7 @@
       ],
       "extendedData": {
         "cardNumber": 4,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.batons",
@@ -134,6 +138,7 @@
       ],
       "extendedData": {
         "cardNumber": 5,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.batons",
@@ -162,6 +167,7 @@
       ],
       "extendedData": {
         "cardNumber": 6,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.batons",
@@ -190,6 +196,7 @@
       ],
       "extendedData": {
         "cardNumber": 7,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.batons",
@@ -218,6 +225,7 @@
       ],
       "extendedData": {
         "cardNumber": 8,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.batons",
@@ -246,6 +254,7 @@
       ],
       "extendedData": {
         "cardNumber": 9,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.batons",
@@ -274,6 +283,7 @@
       ],
       "extendedData": {
         "cardNumber": 10,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.batons",
@@ -302,6 +312,7 @@
       ],
       "extendedData": {
         "cardNumber": 11,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.batons",
@@ -330,6 +341,7 @@
       ],
       "extendedData": {
         "cardNumber": 12,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.batons",
@@ -358,6 +370,7 @@
       ],
       "extendedData": {
         "cardNumber": 13,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.batons",
@@ -386,6 +399,7 @@
       ],
       "extendedData": {
         "cardNumber": 14,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.batons",
@@ -414,6 +428,7 @@
       ],
       "extendedData": {
         "cardNumber": 15,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.coupes",
@@ -442,6 +457,7 @@
       ],
       "extendedData": {
         "cardNumber": 16,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.coupes",
@@ -470,6 +486,7 @@
       ],
       "extendedData": {
         "cardNumber": 17,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.coupes",
@@ -498,6 +515,7 @@
       ],
       "extendedData": {
         "cardNumber": 18,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.coupes",
@@ -526,6 +544,7 @@
       ],
       "extendedData": {
         "cardNumber": 19,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.coupes",
@@ -554,6 +573,7 @@
       ],
       "extendedData": {
         "cardNumber": 20,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.coupes",
@@ -582,6 +602,7 @@
       ],
       "extendedData": {
         "cardNumber": 21,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.coupes",
@@ -610,6 +631,7 @@
       ],
       "extendedData": {
         "cardNumber": 22,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.coupes",
@@ -638,6 +660,7 @@
       ],
       "extendedData": {
         "cardNumber": 23,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.coupes",
@@ -666,6 +689,7 @@
       ],
       "extendedData": {
         "cardNumber": 24,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.coupes",
@@ -694,6 +718,7 @@
       ],
       "extendedData": {
         "cardNumber": 25,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.coupes",
@@ -722,6 +747,7 @@
       ],
       "extendedData": {
         "cardNumber": 26,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.coupes",
@@ -750,6 +776,7 @@
       ],
       "extendedData": {
         "cardNumber": 27,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.coupes",
@@ -778,6 +805,7 @@
       ],
       "extendedData": {
         "cardNumber": 28,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.coupes",
@@ -806,6 +834,7 @@
       ],
       "extendedData": {
         "cardNumber": 29,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.epees",
@@ -834,6 +863,7 @@
       ],
       "extendedData": {
         "cardNumber": 30,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.epees",
@@ -862,6 +892,7 @@
       ],
       "extendedData": {
         "cardNumber": 31,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.epees",
@@ -890,6 +921,7 @@
       ],
       "extendedData": {
         "cardNumber": 32,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.epees",
@@ -918,6 +950,7 @@
       ],
       "extendedData": {
         "cardNumber": 33,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.epees",
@@ -946,6 +979,7 @@
       ],
       "extendedData": {
         "cardNumber": 34,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.epees",
@@ -974,6 +1008,7 @@
       ],
       "extendedData": {
         "cardNumber": 35,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.epees",
@@ -1002,6 +1037,7 @@
       ],
       "extendedData": {
         "cardNumber": 36,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.epees",
@@ -1030,6 +1066,7 @@
       ],
       "extendedData": {
         "cardNumber": 37,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.epees",
@@ -1058,6 +1095,7 @@
       ],
       "extendedData": {
         "cardNumber": 38,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.epees",
@@ -1086,6 +1124,7 @@
       ],
       "extendedData": {
         "cardNumber": 39,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.epees",
@@ -1114,6 +1153,7 @@
       ],
       "extendedData": {
         "cardNumber": 40,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.epees",
@@ -1142,6 +1182,7 @@
       ],
       "extendedData": {
         "cardNumber": 41,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.epees",
@@ -1170,6 +1211,7 @@
       ],
       "extendedData": {
         "cardNumber": 42,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.epees",
@@ -1198,6 +1240,7 @@
       ],
       "extendedData": {
         "cardNumber": 43,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "As",
         "suit": "tarot.suit.tdm.deniers",
@@ -1226,6 +1269,7 @@
       ],
       "extendedData": {
         "cardNumber": 44,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
         "rank": "Deux",
         "suit": "tarot.suit.tdm.deniers",
@@ -1254,6 +1298,7 @@
       ],
       "extendedData": {
         "cardNumber": 45,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
         "rank": "Trois",
         "suit": "tarot.suit.tdm.deniers",
@@ -1282,6 +1327,7 @@
       ],
       "extendedData": {
         "cardNumber": 46,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.4",
         "rank": "Quatre",
         "suit": "tarot.suit.tdm.deniers",
@@ -1310,6 +1356,7 @@
       ],
       "extendedData": {
         "cardNumber": 47,
+        "polarity": "negative",
         "numerologyDigit": "numerology.digit.5",
         "rank": "Cinq",
         "suit": "tarot.suit.tdm.deniers",
@@ -1338,6 +1385,7 @@
       ],
       "extendedData": {
         "cardNumber": 48,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
         "rank": "Six",
         "suit": "tarot.suit.tdm.deniers",
@@ -1366,6 +1414,7 @@
       ],
       "extendedData": {
         "cardNumber": 49,
+        "polarity": "neutral",
         "numerologyDigit": "numerology.digit.7",
         "rank": "Sept",
         "suit": "tarot.suit.tdm.deniers",
@@ -1394,6 +1443,7 @@
       ],
       "extendedData": {
         "cardNumber": 50,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.8",
         "rank": "Huit",
         "suit": "tarot.suit.tdm.deniers",
@@ -1422,6 +1472,7 @@
       ],
       "extendedData": {
         "cardNumber": 51,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.9",
         "rank": "Neuf",
         "suit": "tarot.suit.tdm.deniers",
@@ -1450,6 +1501,7 @@
       ],
       "extendedData": {
         "cardNumber": 52,
+        "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
         "rank": "Dix",
         "suit": "tarot.suit.tdm.deniers",
@@ -1478,6 +1530,7 @@
       ],
       "extendedData": {
         "cardNumber": 53,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Valet",
         "suit": "tarot.suit.tdm.deniers",
@@ -1506,6 +1559,7 @@
       ],
       "extendedData": {
         "cardNumber": 54,
+        "polarity": "neutral",
         "numerologyDigit": null,
         "rank": "Cavalier",
         "suit": "tarot.suit.tdm.deniers",
@@ -1534,6 +1588,7 @@
       ],
       "extendedData": {
         "cardNumber": 55,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Reine",
         "suit": "tarot.suit.tdm.deniers",
@@ -1562,6 +1617,7 @@
       ],
       "extendedData": {
         "cardNumber": 56,
+        "polarity": "positive",
         "numerologyDigit": null,
         "rank": "Roi",
         "suit": "tarot.suit.tdm.deniers",
