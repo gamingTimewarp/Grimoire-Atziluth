@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState } from 'react'
-import { BookOpen, Star, BookMarked, PenLine, ChevronRight, X } from 'lucide-react'
+import { BookOpen, Star, BookMarked, PenLine, ChevronRight, X, Accessibility } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase, getSunSign } from '@/lib/astro-calc'
 import { getVoidOfCourseMoon } from '@/lib/astro-engine'
@@ -80,6 +80,7 @@ function HomePage() {
     <div style={{ maxWidth: '720px' }}>
       {/* First-run welcome banner */}
       <WelcomeBanner />
+      <AccessibilityBanner />
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '28px' }}>
@@ -175,6 +176,54 @@ function WelcomeBanner() {
           Settings → Traditions
         </button>
         {' '}to focus on specific systems.
+      </div>
+      <button
+        type="button"
+        onClick={dismiss}
+        aria-label="Dismiss"
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: 'var(--color-text-subtle)', flexShrink: 0 }}
+      >
+        <X size={14} />
+      </button>
+    </div>
+  )
+}
+
+// ─── First-run accessibility banner ─────────────────────────────────────────────
+
+const ACCESSIBILITY_PROMPTED_KEY = 'grimoire:accessibility-prompted'
+
+function AccessibilityBanner() {
+  const navigate = useNavigate()
+  const [visible, setVisible] = useState(() => !localStorage.getItem(ACCESSIBILITY_PROMPTED_KEY))
+
+  if (!visible) return null
+
+  const dismiss = () => {
+    localStorage.setItem(ACCESSIBILITY_PROMPTED_KEY, '1')
+    setVisible(false)
+  }
+
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'flex-start', gap: '12px',
+      padding: '14px 16px', marginBottom: '24px',
+      background: 'var(--color-surface-2)',
+      border: '1px solid var(--color-accent-muted)',
+      borderRadius: '8px', fontSize: '13px',
+    }}>
+      <Accessibility size={16} style={{ color: 'var(--color-accent)', flexShrink: 0, marginTop: '1px' }} />
+      <div style={{ flex: 1, color: 'var(--color-text-muted)', lineHeight: 1.5 }}>
+        <span style={{ color: 'var(--color-text)', fontWeight: 500 }}>Accessibility options are available.</span>
+        {' '}Colour-vision filters, dyslexia-friendly font, reduced motion, larger text, and other display preferences can be set up any time in{' '}
+        <button
+          type="button"
+          onClick={() => { dismiss(); navigate({ to: '/settings/accessibility' }) }}
+          style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'var(--color-accent)', fontSize: 'inherit' }}
+        >
+          Settings → Accessibility
+        </button>
+        .
       </div>
       <button
         type="button"
