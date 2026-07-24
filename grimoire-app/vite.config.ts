@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import { readFileSync, readdirSync, statSync } from 'fs'
-import { join, relative, extname, resolve } from 'path'
+import { join, relative, extname, resolve, sep } from 'path'
 
 // @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST
@@ -24,7 +24,10 @@ function grimoireDataPlugin() {
         if (statSync(full).isDirectory()) {
           walk(full)
         } else if (extname(name) === '.json') {
-          result[relative(dir, full)] = JSON.parse(readFileSync(full, 'utf-8'))
+          // Always use forward slashes for the virtual module's keys, regardless of host OS —
+          // manifest.json's file lists are authored with '/' and must match exactly on Windows,
+          // where path.relative() otherwise returns '\'-separated paths.
+          result[relative(dir, full).split(sep).join('/')] = JSON.parse(readFileSync(full, 'utf-8'))
         }
       }
     }
