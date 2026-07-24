@@ -32,6 +32,7 @@ import { AlignJustify, AlignLeft } from 'lucide-react'
 import type { NatalChartData } from '@/lib/astro-engine'
 import { getSignsForMode, getSunSignForMode, getNatalChart, getTransitAspects, MODERN_PLANET_CNS } from '@/lib/astro-engine'
 import { listNatalCharts } from '@/lib/natal-db'
+import { useBreakpoint } from '@/hooks/useBreakpoint'
 
 export const Route = createFileRoute('/journal/')({
   component: JournalPage,
@@ -542,6 +543,7 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
 
 function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { reading: Reading; onDelete: (label: string) => void; compact?: boolean; reversedDisplay?: import('@/lib/accessibility-store').ReversedDisplay }) {
   const navigate = useNavigate()
+  const isMobile = useBreakpoint() === 'mobile'
   const { engine } = useEngineStore()
   const spreadById = useSpreadById()
   const [expanded,       setExpanded]      = useState(false)
@@ -645,19 +647,27 @@ function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { r
       <div
         style={{
           padding: compact ? '10px 16px' : '16px 20px',
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          display: 'flex', flexDirection: isMobile ? 'column' : 'row',
+          justifyContent: 'space-between', alignItems: isMobile ? 'stretch' : 'center',
+          gap: isMobile ? '4px' : 0,
         }}
       >
         <div onClick={() => setExpanded(e => !e)} style={{ cursor: 'pointer', flex: 1, minWidth: 0 }}>
-          <div>
-            <span style={{ fontSize: '15px', fontWeight: 500, color: 'var(--color-text)' }}>
+          <div style={isMobile ? { display: 'flex', flexDirection: 'column', gap: '2px' } : undefined}>
+            <span style={{
+              fontSize: '15px', fontWeight: 500, color: 'var(--color-text)',
+              ...(isMobile ? { whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' } : {}),
+            }}>
               {spread?.displayName ?? 'Free Reading'}
             </span>
-            <span style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginLeft: '8px' }}>
+            <span style={{
+              fontSize: '13px', color: 'var(--color-text-muted)', marginLeft: isMobile ? 0 : '8px',
+              ...(isMobile ? { whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' } : {}),
+            }}>
               {deckName}
             </span>
             {reading.subject && reading.subject !== 'self' && (
-              <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginLeft: '8px' }}>
+              <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginLeft: isMobile ? 0 : '8px' }}>
                 · {reading.subject}
               </span>
             )}
@@ -668,7 +678,7 @@ function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { r
             </div>
           )}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', justifyContent: isMobile ? 'space-between' : undefined }}>
           <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>{date}</span>
           {expanded && (
             <>
