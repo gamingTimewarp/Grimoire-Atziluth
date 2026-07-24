@@ -2,8 +2,9 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import { saveCustomEntity } from '@/lib/custom-db'
+import { CUSTOM_IMAGE_KEY, pickAndStoreCustomImage, removeCustomImage, useCustomImageUrl } from '@/lib/custom-art'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, Plus, X } from 'lucide-react'
+import { ArrowLeft, Plus, X, Image as ImageIcon } from 'lucide-react'
 
 export const Route = createFileRoute('/custom/new')({
   component: NewCustomEntityPage,
@@ -55,6 +56,8 @@ function NewCustomEntityPage() {
   const [tagInput,      setTagInput]      = useState('')
   const [tags,          setTags]          = useState<string[]>([])
   const [extraData,     setExtraData]     = useState<{ key: string; value: string }[]>([])
+  const [imageFileName, setImageFileName] = useState<string | null>(null)
+  const [imageBusy,     setImageBusy]     = useState(false)
   const [error,         setError]         = useState<string | null>(null)
   const [saving,        setSaving]        = useState(false)
 
@@ -88,6 +91,32 @@ function NewCustomEntityPage() {
 
   const removeExtraRow = (i: number) => setExtraData(prev => prev.filter((_, idx) => idx !== i))
 
+  const handlePickImage = async () => {
+    setImageBusy(true)
+    try {
+      const fileName = await pickAndStoreCustomImage()
+      if (fileName) {
+        // A prior pick in this session was never saved — it has no references, clean it up.
+        if (imageFileName) await removeCustomImage(imageFileName)
+        setImageFileName(fileName)
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to add image.')
+    } finally {
+      setImageBusy(false)
+    }
+  }
+
+  const handleRemoveImage = async () => {
+    if (imageFileName) await removeCustomImage(imageFileName)
+    setImageFileName(null)
+  }
+
+  const handleCancel = async () => {
+    if (imageFileName) await removeCustomImage(imageFileName)
+    navigate({ to: '/custom' })
+  }
+
   const handleSave = async () => {
     if (!engine) return
     const cn = canonicalName.trim()
@@ -117,6 +146,7 @@ function NewCustomEntityPage() {
       const k = row.key.trim()
       if (k) extendedData[k] = row.value
     }
+    if (imageFileName) extendedData[CUSTOM_IMAGE_KEY] = imageFileName
 
     const record = {
       id, canonicalName: cn, entityType: et, displayName: dn,
@@ -191,6 +221,23 @@ function NewCustomEntityPage() {
             />
           </FormRow>
         )}
+        <FormRow label="Image">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <ImageThumb fileName={imageFileName} />
+            <Button size="sm" variant="ghost" onClick={handlePickImage} disabled={imageBusy}>
+              {imageBusy ? 'Adding…' : imageFileName ? 'Replace…' : 'Choose Image…'}
+            </Button>
+            {imageFileName && (
+              <button
+                onClick={handleRemoveImage}
+                title="Remove image"
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+              >
+                <X size={14} />
+              </button>
+            )}
+          </div>
+        </FormRow>
       </FormSection>
 
       <FormSection label="Content">
@@ -293,13 +340,28 @@ function NewCustomEntityPage() {
         <Button onClick={handleSave} disabled={saving}>
           {saving ? 'Saving…' : 'Create Entity'}
         </Button>
-        <Button variant="ghost" onClick={() => navigate({ to: '/custom' })}>Cancel</Button>
+        <Button variant="ghost" onClick={handleCancel}>Cancel</Button>
       </div>
     </div>
   )
 }
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
+
+function ImageThumb({ fileName }: { fileName: string | null }) {
+  const url = useCustomImageUrl(fileName)
+  return (
+    <div style={{
+      width: 56, height: 78, borderRadius: '6px', flexShrink: 0, overflow: 'hidden',
+      border: '1px solid var(--color-border)', background: 'var(--color-surface-1)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+    }}>
+      {url
+        ? <img src={url} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        : <ImageIcon size={18} style={{ color: 'var(--color-text-subtle)' }} />}
+    </div>
+  )
+}
 
 function FormSection({ label, children }: { label: string; children: React.ReactNode }) {
   return (

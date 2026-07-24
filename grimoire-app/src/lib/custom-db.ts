@@ -124,6 +124,23 @@ export async function initCustomDb(): Promise<void> {
       updated_at     TEXT NOT NULL
     )
   `)
+  await db.execute(`
+    CREATE TABLE IF NOT EXISTS custom_art_packs (
+      id          TEXT PRIMARY KEY,
+      art_group   TEXT NOT NULL,
+      name        TEXT NOT NULL,
+      created_at  TEXT NOT NULL,
+      updated_at  TEXT NOT NULL
+    )
+  `)
+  await db.execute(`
+    CREATE TABLE IF NOT EXISTS custom_art_pack_files (
+      pack_id        TEXT NOT NULL REFERENCES custom_art_packs(id) ON DELETE CASCADE,
+      canonical_name TEXT NOT NULL,
+      file_name      TEXT NOT NULL,
+      PRIMARY KEY (pack_id, canonical_name)
+    )
+  `)
 }
 
 // ─── Entity annotations ───────────────────────────────────────────────────────
@@ -634,4 +651,77 @@ export async function seedCustomIntoEngine(adapter: StorageAdapter): Promise<voi
       // Ignore duplicates
     }
   }
+}
+
+// ─── Custom art packs ──────────────────────────────────────────────────────────
+
+export interface CustomArtPackRecord {
+  id: string
+  artGroup: string
+  name: string
+  createdAt: string
+  updatedAt: string
+}
+
+type ArtPackRow = {
+  id: string
+  art_group: string
+  name: string
+  created_at: string
+  updated_at: string
+}
+
+function rowToArtPack(r: ArtPackRow): CustomArtPackRecord {
+  return { id: r.id, artGroup: r.art_group, name: r.name, createdAt: r.created_at, updatedAt: r.updated_at }
+}
+
+export async function getAllCustomArtPacks(): Promise<CustomArtPackRecord[]> {
+  const db = await getDb()
+  const rows = await db.select<ArtPackRow[]>('SELECT * FROM custom_art_packs ORDER BY name ASC')
+  return rows.map(rowToArtPack)
+}
+
+export async function getCustomArtPacksForGroup(artGroup: string): Promise<CustomArtPackRecord[]> {
+  const db = await getDb()
+  const rows = await db.select<ArtPackRow[]>('SELECT * FROM custom_art_packs WHERE art_group = ? ORDER BY name ASC', [artGroup])
+  return rows.map(rowToArtPack)
+}
+
+export async function saveCustomArtPack(pack: CustomArtPackRecord): Promise<void> {
+  const db = await getDb()
+  await db.execute(
+    `INSERT OR REPLACE INTO custom_art_packs (id, art_group, name, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?)`,
+    [pack.id, pack.artGroup, pack.name, pack.createdAt, pack.updatedAt],
+  )
+}
+
+export async function deleteCustomArtPack(id: string): Promise<void> {
+  const db = await getDb()
+  await db.execute('DELETE FROM custom_art_pack_files WHERE pack_id = ?', [id])
+  await db.execute('DELETE FROM custom_art_packs WHERE id = ?', [id])
+}
+
+export async function getArtPackFiles(packId: string): Promise<{ canonicalName: string; fileName: string }[]> {
+  const db = await getDb()
+  const rows = await db.select<{ canonical_name: string; file_name: string }[]>(
+    'SELECT canonical_name, file_name FROM custom_art_pack_files WHERE pack_id = ?', [packId],
+  )
+  return rows.map(r => ({ canonicalName: r.canonical_name, fileName: r.file_name }))
+}
+
+export async function getArtPackFile(packId: string, canonicalName: string): Promise<string | null> {
+  const db = await getDb()
+  const rows = await db.select<{ file_name: string }[]>(
+    'SELECT file_name FROM custom_art_pack_files WHERE pack_id = ? AND canonical_name = ?', [packId, canonicalName],
+  )
+  return rows[0]?.file_name ?? null
+}
+
+export async function saveArtPackFile(packId: string, canonicalName: string, fileName: string): Promise<void> {
+  const db = await getDb()
+  await db.execute(
+    `INSERT OR REPLACE INTO custom_art_pack_files (pack_id, canonical_name, file_name) VALUES (?, ?, ?)`,
+    [packId, canonicalName, fileName],
+  )
 }

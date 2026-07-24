@@ -9,8 +9,10 @@
 
 import React, { useState, useEffect } from 'react'
 import type { BaseEntity } from '@grimoire/core'
-import { loadArtSettings, artGroupForEntityType, imagePackArtUrl, isSymbolicPack } from '@/lib/art-store'
+import { loadArtSettings, artGroupForEntityType, imagePackArtUrl, isSymbolicPack, ART_GROUPS } from '@/lib/art-store'
 import type { ArtGroup, ArtPackId } from '@/lib/art-store'
+import { getCustomImageFileName, useCustomImageUrl } from '@/lib/custom-art'
+import { resolvePackImageUrl } from '@/lib/art-pack-import'
 
 // ─── Main component ────────────────────────────────────────────────────────────
 
@@ -23,6 +25,11 @@ export function EntityArt({
   width?: number
   height?: number
 }) {
+  const customImageFile = getCustomImageFileName(entity)
+  if (customImageFile) {
+    return <CustomImageArt fileName={customImageFile} label={entity.primaryDisplayName} width={width} height={height} />
+  }
+
   const group = artGroupForEntityType(entity.entityType, entity.canonicalName)
 
   if (!group) {
@@ -39,11 +46,80 @@ export function EntityArt({
   const { packByGroup } = loadArtSettings()
   const pack = packByGroup[group] ?? 'symbolic'
 
+  // A pack id not present in the group's built-in pack list is a custom (user-imported) pack.
+  const isBuiltInPack = ART_GROUPS.find(g => g.id === group)?.packs.some(p => p.id === pack) ?? false
+  if (!isBuiltInPack) {
+    return <CustomPackArt entity={entity} group={group} packId={pack} width={width} height={height} />
+  }
+
   if (!isSymbolicPack(group, pack)) {
     return <ClassicWithFallback entity={entity} group={group} packId={pack} width={width} height={height} />
   }
 
   return <SymbolicArt entity={entity} group={group} width={width} height={height} />
+}
+
+// ─── Custom art pack image (with Symbolic fallback) ────────────────────────────
+
+function CustomPackArt({ entity, group, packId, width, height }: {
+  entity: BaseEntity; group: ArtGroup; packId: ArtPackId; width: number; height: number
+}) {
+  const [url, setUrl] = useState<string | null>(null)
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    setChecked(false)
+    resolvePackImageUrl(packId, entity.canonicalName).then(u => {
+      if (cancelled) return
+      setUrl(u)
+      setChecked(true)
+    }).catch(() => { if (!cancelled) setChecked(true) })
+    return () => { cancelled = true }
+  }, [packId, entity.canonicalName])
+
+  if (!checked || !url) {
+    return <SymbolicArt entity={entity} group={group} width={width} height={height} />
+  }
+
+  if (url.endsWith('.svg')) {
+    return <InlineSvg src={url} width={width} height={height} onError={() => setUrl(null)} />
+  }
+
+  return (
+    <img
+      src={url}
+      alt={entity.primaryDisplayName}
+      width={width}
+      height={height}
+      onError={() => setUrl(null)}
+      style={{ objectFit: 'contain', borderRadius: '6px', display: 'block' }}
+    />
+  )
+}
+
+// ─── Custom entity image ────────────────────────────────────────────────────────
+
+function CustomImageArt({ fileName, label, width, height }: {
+  fileName: string; label: string; width: number; height: number
+}) {
+  const url = useCustomImageUrl(fileName)
+  const [failed, setFailed] = useState(false)
+
+  if (failed || !url) {
+    return <GenericSymbolic label={label} width={width} height={height} />
+  }
+
+  return (
+    <img
+      src={url}
+      alt={label}
+      width={width}
+      height={height}
+      onError={() => setFailed(true)}
+      style={{ objectFit: 'contain', borderRadius: '6px', display: 'block' }}
+    />
+  )
 }
 
 // ─── Classic (image) with Symbolic fallback ────────────────────────────────────

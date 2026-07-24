@@ -19,13 +19,19 @@
     "fs:allow-read-text-file",
     "fs:allow-write-text-file",
     "fs:allow-write-file",
+    "fs:allow-mkdir",
+    "fs:allow-copy-file",
+    "fs:allow-exists",
+    "fs:allow-remove",
+    "fs:allow-read-dir",
     {
       "identifier": "fs:scope",
       "allow": [
         { "path": "$HOME/**" },
         { "path": "$DESKTOP/**" },
         { "path": "$DOWNLOAD/**" },
-        { "path": "$DOCUMENT/**" }
+        { "path": "$DOCUMENT/**" },
+        { "path": "$APPCONFIG/**" }
       ]
     }
   ]

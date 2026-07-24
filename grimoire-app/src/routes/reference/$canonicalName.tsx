@@ -11,7 +11,8 @@ import { getEntriesForEntity, getReadingsForEntity } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import { getEntityAnnotation, saveEntityAnnotation } from '@/lib/custom-db'
 import { recordRecentEntity } from '@/lib/recent-entities'
-import { artGroupForEntityType, classicArtUrl, isSymbolicPack, loadArtSettings } from '@/lib/art-store'
+import { artGroupForEntityType, classicArtUrl, isSymbolicPack, loadArtSettings, ART_GROUPS } from '@/lib/art-store'
+import { getCustomImageFileName } from '@/lib/custom-art'
 import { EntityArt } from '@/components/ui/EntityArt'
 import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
@@ -635,9 +636,13 @@ function EntityArtPanel({ entity }: { entity: BaseEntity }) {
   // or the currently selected pack for this group is symbolic.
   const { packByGroup } = loadArtSettings()
   const currentPack = group ? (packByGroup[group] ?? 'symbolic') : null
-  const useEntityArt = !group
+  const isBuiltInPack = group ? (ART_GROUPS.find(g => g.id === group)?.packs.some(p => p.id === currentPack) ?? false) : true
+  // Custom entities with a user-uploaded image always take priority over group-based art,
+  // even in the rare case where their entityType happens to coincide with a built-in group.
+  // Likewise, a custom (user-imported) art pack is rendered via EntityArt, not classicArtUrl.
+  const useEntityArt = !!getCustomImageFileName(entity) || (!group
     ? SYMBOLIC_ENTITY_TYPES.has(entity.entityType)
-    : group === 'runes' || group === 'alchemy-metals' || isSymbolicPack(group, currentPack!)
+    : !isBuiltInPack || group === 'runes' || group === 'alchemy-metals' || isSymbolicPack(group, currentPack!))
 
   if (useEntityArt) {
     const rw = 80

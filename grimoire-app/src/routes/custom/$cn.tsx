@@ -7,8 +7,9 @@ import {
   getCustomLinksForEntity, saveCustomLink, deleteCustomLink,
 } from '@/lib/custom-db'
 import type { CustomLinkRecord } from '@/lib/custom-db'
+import { CUSTOM_IMAGE_KEY, getCustomImageFileName, pickAndStoreCustomImage, removeCustomImage, useCustomImageUrl } from '@/lib/custom-art'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, Plus, X, Trash2 } from 'lucide-react'
+import { ArrowLeft, Plus, X, Trash2, Image as ImageIcon } from 'lucide-react'
 import { formatEntityType } from '@/lib/format'
 
 export const Route = createFileRoute('/custom/$cn')({
@@ -35,6 +36,9 @@ function EditCustomEntityPage() {
   const [tags,        setTags]       = useState<string[]>([])
   const [extraData,   setExtraData]  = useState<{ key: string; value: string }[]>([])
   const [links,       setLinks]      = useState<CustomLinkRecord[]>([])
+  const [imageFileName,         setImageFileName]         = useState<string | null>(null)
+  const [originalImageFileName, setOriginalImageFileName] = useState<string | null>(null)
+  const [imageBusy,   setImageBusy]  = useState(false)
   const [saved,       setSaved]      = useState(false)
   const [saving,      setSaving]     = useState(false)
   const [error,       setError]      = useState<string | null>(null)
@@ -56,11 +60,16 @@ function EditCustomEntityPage() {
     setUserNotes(e.userNotes ?? '')
     setTags([...e.tags])
     setExtraData(
-      Object.entries(e.extendedData).map(([key, value]) => ({
-        key,
-        value: typeof value === 'string' ? value : JSON.stringify(value),
-      })),
+      Object.entries(e.extendedData)
+        .filter(([key]) => key !== CUSTOM_IMAGE_KEY)
+        .map(([key, value]) => ({
+          key,
+          value: typeof value === 'string' ? value : JSON.stringify(value),
+        })),
     )
+    const existingImage = getCustomImageFileName(e) ?? null
+    setImageFileName(existingImage)
+    setOriginalImageFileName(existingImage)
     const savedLinks = await getCustomLinksForEntity(cn)
     setLinks(savedLinks)
     setLoading(false)
@@ -78,6 +87,32 @@ function EditCustomEntityPage() {
     setExtraData(prev => prev.map((r, idx) => idx === i ? { ...r, [field]: val } : r))
   const removeExtraRow = (i: number) => setExtraData(prev => prev.filter((_, idx) => idx !== i))
 
+  const handlePickImage = async () => {
+    setImageBusy(true)
+    try {
+      const fileName = await pickAndStoreCustomImage()
+      if (fileName) {
+        // An uncommitted pending pick from earlier in this session has no references — clean it up.
+        if (imageFileName && imageFileName !== originalImageFileName) await removeCustomImage(imageFileName)
+        setImageFileName(fileName)
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to add image.')
+    } finally {
+      setImageBusy(false)
+    }
+  }
+
+  const handleRemoveImage = async () => {
+    if (imageFileName && imageFileName !== originalImageFileName) await removeCustomImage(imageFileName)
+    setImageFileName(null)
+  }
+
+  const handleCancel = async () => {
+    if (imageFileName && imageFileName !== originalImageFileName) await removeCustomImage(imageFileName)
+    navigate({ to: '/custom' })
+  }
+
   const handleSave = async () => {
     if (!engine || !entity) return
     setSaving(true); setError(null)
@@ -87,6 +122,7 @@ function EditCustomEntityPage() {
       const k = row.key.trim()
       if (k) extendedData[k] = row.value
     }
+    if (imageFileName) extendedData[CUSTOM_IMAGE_KEY] = imageFileName
 
     const now = new Date().toISOString()
     try {
@@ -105,6 +141,11 @@ function EditCustomEntityPage() {
         userNotes:   userNotes   || undefined,
         tags, extendedData,
       })
+      // Now that the new reference is durably saved, clean up the file it replaced.
+      if (imageFileName !== originalImageFileName) {
+        if (originalImageFileName) await removeCustomImage(originalImageFileName)
+        setOriginalImageFileName(imageFileName)
+      }
       setSaved(true)
       setTimeout(() => setSaved(false), 1500)
     } catch (err) {
@@ -116,6 +157,7 @@ function EditCustomEntityPage() {
 
   const handleDelete = async () => {
     if (!engine || !entity) return
+    if (originalImageFileName) await removeCustomImage(originalImageFileName)
     await deleteCustomEntityByCN(cn)
     await engine.adapter.deleteEntity(entity.id)
     navigate({ to: '/custom' })
@@ -197,6 +239,23 @@ function EditCustomEntityPage() {
             onChange={e => setDisplayName(e.target.value)}
             style={inputStyle}
           />
+        </FormRow>
+        <FormRow label="Image">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <ImageThumb fileName={imageFileName} />
+            <Button size="sm" variant="ghost" onClick={handlePickImage} disabled={imageBusy}>
+              {imageBusy ? 'Adding…' : imageFileName ? 'Replace…' : 'Choose Image…'}
+            </Button>
+            {imageFileName && (
+              <button
+                onClick={handleRemoveImage}
+                title="Remove image"
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+              >
+                <X size={14} />
+              </button>
+            )}
+          </div>
         </FormRow>
       </FormSection>
 
@@ -372,7 +431,7 @@ function EditCustomEntityPage() {
           <Button onClick={handleSave} disabled={saving}>
             {saving ? 'Saving…' : 'Save Changes'}
           </Button>
-          <Button variant="ghost" onClick={() => navigate({ to: '/custom' })}>Cancel</Button>
+          <Button variant="ghost" onClick={handleCancel}>Cancel</Button>
         </div>
 
         {!confirmDel ? (
@@ -416,6 +475,21 @@ function FormRow({ label, children }: { label: string; children: React.ReactNode
     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
       <span style={{ fontSize: '13px', color: 'var(--color-text-muted)', flexShrink: 0, minWidth: '120px' }}>{label}</span>
       <div style={{ flex: 1 }}>{children}</div>
+    </div>
+  )
+}
+
+function ImageThumb({ fileName }: { fileName: string | null }) {
+  const url = useCustomImageUrl(fileName)
+  return (
+    <div style={{
+      width: 56, height: 78, borderRadius: '6px', flexShrink: 0, overflow: 'hidden',
+      border: '1px solid var(--color-border)', background: 'var(--color-surface-1)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+    }}>
+      {url
+        ? <img src={url} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        : <ImageIcon size={18} style={{ color: 'var(--color-text-subtle)' }} />}
     </div>
   )
 }

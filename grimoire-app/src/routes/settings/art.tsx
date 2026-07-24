@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import {
   loadArtSettings, saveArtSettings, ART_GROUPS,
 } from '@/lib/art-store'
 import type { ArtSettings, ArtPackId, ArtGroup, ArtGroupConfig } from '@/lib/art-store'
+import { getAllCustomArtPacks, getArtPackFiles } from '@/lib/custom-db'
+import type { CustomArtPackRecord } from '@/lib/custom-db'
+import { importCustomArtPack, deleteCustomArtPackFully } from '@/lib/art-pack-import'
+import type { ImportResult } from '@/lib/art-pack-import'
+import { useEngineStore } from '@/stores/engine'
+import type { GrimoireEngine } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, HelpCircle, FolderOpen, X, Search } from 'lucide-react'
+import { ArrowLeft, HelpCircle, FolderOpen, X, Search, Plus, Trash2, Package } from 'lucide-react'
 import { openPath } from '@tauri-apps/plugin-opener'
 import { resourceDir, join } from '@tauri-apps/api/path'
 
@@ -15,10 +21,18 @@ export const Route = createFileRoute('/settings/art')({
 
 function ArtPacksPage() {
   const navigate    = useNavigate()
+  const { engine }  = useEngineStore()
   const [artSettings, setArtSettings] = useState<ArtSettings>(() => loadArtSettings())
   const [saved, setSaved]             = useState(false)
   const [guideOpen, setGuideOpen]     = useState(false)
   const [query, setQuery]             = useState('')
+  const [customPacks, setCustomPacks] = useState<CustomArtPackRecord[]>([])
+
+  const reloadCustomPacks = useCallback(() => {
+    getAllCustomArtPacks().then(setCustomPacks).catch(console.error)
+  }, [])
+
+  useEffect(() => { reloadCustomPacks() }, [reloadCustomPacks])
 
   const openArtDirectory = async () => {
     try {
@@ -120,6 +134,9 @@ function ArtPacksPage() {
                 group={group}
                 current={artSettings.packByGroup[group.id] ?? 'symbolic'}
                 onSelect={pack => setArtPack(group.id, pack)}
+                customPacks={customPacks.filter(p => p.artGroup === group.id)}
+                engine={engine}
+                onPacksChanged={reloadCustomPacks}
               />
             ))}
           </div>
@@ -135,11 +152,50 @@ function GroupSection({
   group,
   current,
   onSelect,
+  customPacks,
+  engine,
+  onPacksChanged,
 }: {
   group: ArtGroupConfig
   current: ArtPackId
   onSelect: (id: ArtPackId) => void
+  customPacks: CustomArtPackRecord[]
+  engine: GrimoireEngine | null
+  onPacksChanged: () => void
 }) {
+  const [adding,  setAdding]  = useState(false)
+  const [name,    setName]    = useState('')
+  const [busy,    setBusy]    = useState(false)
+  const [result,  setResult]  = useState<ImportResult | null>(null)
+  const [error,   setError]   = useState<string | null>(null)
+
+  const handleImport = async () => {
+    if (!engine || !name.trim()) return
+    setBusy(true)
+    setError(null)
+    try {
+      const res = await importCustomArtPack(engine, group.id, name.trim())
+      if (res) {
+        setResult(res)
+        onSelect(res.pack.id)
+        onPacksChanged()
+        setAdding(false)
+        setName('')
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to import folder.')
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  const handleDelete = async (packId: string) => {
+    if (!window.confirm('Delete this custom pack and its imported images?')) return
+    await deleteCustomArtPackFully(packId)
+    if (current === packId) onSelect('symbolic')
+    onPacksChanged()
+  }
+
   return (
     <div>
       <div style={{
@@ -152,7 +208,7 @@ function GroupSection({
       </div>
       <div style={{
         display: 'grid',
-        gridTemplateColumns: `repeat(${group.packs.length}, 1fr)`,
+        gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))',
         gap: '10px',
       }}>
         {group.packs.map(pack => (
@@ -168,7 +224,78 @@ function GroupSection({
             onClick={() => pack.available && onSelect(pack.id)}
           />
         ))}
+        {customPacks.map(pack => (
+          <CustomPackCard
+            key={pack.id}
+            pack={pack}
+            selected={current === pack.id}
+            onClick={() => onSelect(pack.id)}
+            onDelete={() => handleDelete(pack.id)}
+          />
+        ))}
+        {!adding && (
+          <button
+            onClick={() => { setAdding(true); setResult(null); setError(null) }}
+            style={{
+              display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+              gap: '4px', minHeight: '112px', padding: 0,
+              background: 'var(--color-surface-2)', border: '1px dashed var(--color-border)',
+              borderRadius: '8px', cursor: 'pointer', color: 'var(--color-text-subtle)',
+              fontFamily: 'inherit', fontSize: '11px',
+            }}
+          >
+            <Plus size={16} />
+            Add Pack
+          </button>
+        )}
       </div>
+
+      {adding && (
+        <div style={{
+          marginTop: '10px', padding: '12px 14px', background: 'var(--color-surface-2)',
+          border: '1px solid var(--color-accent-muted)', borderRadius: '8px',
+        }}>
+          <div style={{ display: 'flex', gap: '8px', marginBottom: '8px' }}>
+            <input
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="Pack name (e.g. My RWS Scans)"
+              style={{
+                flex: 1, padding: '6px 10px', background: 'var(--color-surface-1)',
+                border: '1px solid var(--color-border)', borderRadius: '5px',
+                color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit', outline: 'none',
+              }}
+            />
+          </div>
+          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '10px' }}>
+            Choose a folder of images named after each card's canonical name (dots replaced by hyphens),
+            e.g. <code style={codeStyle}>tarot-major-rws-the-fool.jpg</code>. Unmatched files are skipped.
+          </div>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <Button size="sm" onClick={handleImport} disabled={busy || !name.trim()}>
+              <FolderOpen size={13} /> {busy ? 'Importing…' : 'Choose Folder & Import'}
+            </Button>
+            <Button size="sm" variant="ghost" onClick={() => { setAdding(false); setName(''); setError(null) }}>
+              Cancel
+            </Button>
+          </div>
+          {error && (
+            <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--color-danger)' }}>{error}</div>
+          )}
+        </div>
+      )}
+
+      {result && (
+        <div style={{
+          marginTop: '10px', padding: '10px 14px', fontSize: '12px', color: 'var(--color-text-muted)',
+          background: 'rgba(80,160,80,0.08)', border: '1px solid rgba(80,160,80,0.3)', borderRadius: '6px',
+        }}>
+          "{result.pack.name}" imported — matched {result.matched} of {result.total} cards.
+          {result.unmatched.length > 0 && (
+            <span> {result.unmatched.length} unmatched (missing files, still rendered as Symbolic).</span>
+          )}
+        </div>
+      )}
     </div>
   )
 }
@@ -265,6 +392,75 @@ function ArtPackCard({
         </div>
       </div>
     </button>
+  )
+}
+
+// ─── Custom (user-imported) pack card ──────────────────────────────────────────
+
+function CustomPackCard({ pack, selected, onClick, onDelete }: {
+  pack: CustomArtPackRecord
+  selected: boolean
+  onClick: () => void
+  onDelete: () => void
+}) {
+  const [fileCount, setFileCount] = useState<number | null>(null)
+
+  useEffect(() => {
+    getArtPackFiles(pack.id).then(files => setFileCount(files.length)).catch(() => setFileCount(null))
+  }, [pack.id])
+
+  return (
+    <div
+      style={{
+        display: 'flex', flexDirection: 'column', padding: 0,
+        background: selected ? 'rgba(180,156,90,0.08)' : 'var(--color-surface-2)',
+        border: `1px solid ${selected ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+        borderRadius: '8px', overflow: 'hidden',
+      }}
+    >
+      <button
+        onClick={onClick}
+        style={{
+          display: 'flex', flexDirection: 'column', padding: 0, background: 'none', border: 'none',
+          cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left', width: '100%',
+        }}
+      >
+        <div style={{
+          height: '72px',
+          background: selected ? 'rgba(180,156,90,0.05)' : 'var(--color-surface-3)',
+          borderBottom: `1px solid ${selected ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <Package size={22} style={{ color: 'var(--color-text-subtle)' }} />
+        </div>
+        <div style={{ padding: '10px 12px' }}>
+          <div style={{
+            fontSize: '12px', fontWeight: 500, marginBottom: '3px',
+            color: selected ? 'var(--color-accent)' : 'var(--color-text)',
+            display: 'flex', alignItems: 'center', gap: '5px',
+          }}>
+            {selected && (
+              <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'var(--color-accent)', flexShrink: 0 }} />
+            )}
+            {pack.name}
+          </div>
+          <div style={{ fontSize: '10px', color: 'var(--color-text-subtle)' }}>
+            {fileCount === null ? 'Custom pack' : `${fileCount} image${fileCount !== 1 ? 's' : ''}`}
+          </div>
+        </div>
+      </button>
+      <button
+        onClick={onDelete}
+        title="Delete pack"
+        style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px',
+          padding: '6px', background: 'none', border: 'none', borderTop: '1px solid var(--color-border)',
+          cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '10px', fontFamily: 'inherit',
+        }}
+      >
+        <Trash2 size={11} /> Delete
+      </button>
+    </div>
   )
 }
 
