@@ -25,6 +25,9 @@ export type Settings = {
   defaultCompactJournal: boolean
   /** Show the per-planet retrograde tracker strip on the calendar grid */
   showRetrogradeTracker: boolean
+  /** Which non-Gregorian calendar tabs are enabled on the Calendar page.
+   *  The Gregorian tab is always shown regardless of this list. */
+  enabledCalendarSystems: string[]
 }
 
 const KEY = 'grimoire:settings'
@@ -37,6 +40,7 @@ const DEFAULTS: Settings = {
   defaultReadingSpreadId: null,
   defaultCompactJournal: false,
   showRetrogradeTracker: false,
+  enabledCalendarSystems: ['hebrew', 'islamic'],
 }
 
 export function loadSettings(): Settings {

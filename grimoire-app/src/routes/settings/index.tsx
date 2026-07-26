@@ -15,7 +15,7 @@ import { useSpreadById } from '@/lib/spread-hooks'
 import { Button } from '@/components/ui/Button'
 import { ColorSwatch } from '@/components/ui/HsvColorPicker'
 import { DateTimeInput } from '@/components/ui/DateInput'
-import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen } from 'lucide-react'
+import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen, CalendarDays } from 'lucide-react'
 import { LocationInput } from '@/components/ui/LocationInput'
 import type { LocationValue } from '@/components/ui/LocationInput'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
@@ -82,6 +82,7 @@ function SettingsPage() {
       <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
         {[
           { to: '/settings/traditions',   icon: Layers,     label: 'Traditions',   desc: 'Toggle active traditions, set primary romanisation, and choose astrology mode.' },
+          { to: '/settings/calendar',     icon: CalendarDays, label: 'Calendar Tabs', desc: 'Choose which lunar/lunisolar calendars appear as tabs on the Calendar page.' },
           { to: '/settings/art',          icon: ImageIcon,  label: 'Art Packs',    desc: 'Choose visual styles for tarot, runes, geomancy, mahjong, and more.' },
           { to: '/settings/nav',          icon: PanelLeft,  label: 'Navigation',   desc: 'Reorder and show/hide sidebar navigation items.' },
           { to: '/settings/accessibility',icon: Eye,        label: 'Accessibility',desc: 'Colour vision modes, dyslexia font, reduced motion, and card captions.' },
@@ -93,7 +94,7 @@ function SettingsPage() {
           <button
             key={to}
             type="button"
-            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/manual' | '/settings/credits' | '/settings/privacy' })}
+            onClick={() => navigate({ to: to as '/settings/traditions' | '/settings/calendar' | '/settings/art' | '/settings/nav' | '/settings/accessibility' | '/settings/data' | '/settings/manual' | '/settings/credits' | '/settings/privacy' })}
             style={{ padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '6px', border: '1px solid var(--color-border)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px', transition: 'border-color 0.15s', width: '100%', fontFamily: 'inherit', textAlign: 'left' }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}

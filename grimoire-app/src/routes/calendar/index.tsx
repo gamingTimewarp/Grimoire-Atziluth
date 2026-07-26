@@ -1,12 +1,12 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import React, { useEffect, useState, useMemo } from 'react'
+import React, { useEffect, useState, useMemo, useCallback } from 'react'
 import {
   getMoonPhase, getPlanetaryDayRuler, getWuxingPhase,
   getChineseZodiacYear,
-  buildCalendarGrid, toDateString, WEEKDAY_HEADERS,
+  buildCalendarGrid, buildCalendarGridFromDates, toDateString, WEEKDAY_HEADERS,
 } from '@/lib/astro-calc'
 import {
-  computeMonthAstroData, getPlanetPositions, getAspects, formatLongitude, formatTime,
+  computeMonthAstroData, computeAstroDataForRange, getPlanetPositions, getAspects, formatLongitude, formatTime,
   getSignsForMode, getSunSignForMode, getSabbatsForYear,
   getRetrogradeStrip, getRetrogradeStationInfo,
 } from '@/lib/astro-engine'
@@ -18,7 +18,9 @@ import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
-import { ChevronLeft, ChevronRight, BookOpen, PenLine } from 'lucide-react'
+import { CALENDAR_TABS, getCalendarTab } from '@/lib/calendar-systems'
+import type { CalendarTabDefinition } from '@/lib/calendar-systems'
+import { ChevronLeft, ChevronRight, BookOpen, PenLine, Settings2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 export const Route = createFileRoute('/calendar/')({
@@ -171,11 +173,16 @@ function RetrogradeStrip({ date }: { date: Date }) {
 
 type DayEntries = { readings: Reading[]; entries: JournalEntry[] }
 
+/** Given a real date, returns what to show as its day-of-month number and
+ *  whether it belongs to the period currently being viewed (vs. leading/
+ *  trailing padding from an adjacent period). Lets CalendarGrid render either
+ *  the Gregorian month or a native calendar-system month (Hebrew, Islamic…). */
+type DateLabeler = (date: Date) => { label: string | number; inPeriod: boolean }
+
 function CalendarGrid({
-  year, month, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde,
+  weeks, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde, labelForDate,
 }: {
-  year: number
-  month: number
+  weeks: Date[][]
   today: string
   selectedDate: string | null
   entriesByDate: Map<string, DayEntries>
@@ -184,10 +191,8 @@ function CalendarGrid({
   onDayClick: (dateStr: string) => void
   navigate: ReturnType<typeof useNavigate>
   showRetrograde: boolean
+  labelForDate: DateLabeler
 }) {
-  const weeks = useMemo(() => buildCalendarGrid(year, month), [year, month])
-  const currentMonthStr = `${year}-${String(month).padStart(2, '0')}`
-
   return (
     <div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gap: '4px', marginBottom: '4px' }}>
@@ -213,7 +218,7 @@ function CalendarGrid({
         <div key={wi} style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gap: '4px', marginBottom: '4px' }}>
           {week.map(date => {
             const ds = toDateString(date)
-            const isCurrentMonth = ds.startsWith(currentMonthStr)
+            const { label: dayLabel, inPeriod: isCurrentMonth } = labelForDate(date)
             const isToday    = ds === today
             const isSelected = ds === selectedDate
             const moon = getMoonPhase(new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12))
@@ -253,7 +258,7 @@ function CalendarGrid({
                       fontSize: '14px', fontWeight: isToday ? 600 : 400,
                       color: isToday ? 'var(--color-accent)' : isCurrentMonth ? 'var(--color-text)' : 'var(--color-text-subtle)',
                     }}>
-                      {date.getDate()}
+                      {dayLabel}
                     </span>
                     <span
                       style={{ fontSize: moon.isMajor ? '13px' : '11px', opacity: moon.isMajor ? 0.9 : 0.4, lineHeight: 1 }}
@@ -449,13 +454,15 @@ function TransitsPanel({
 // ─── Day detail panel ─────────────────────────────────────────────────────────
 
 function DayDetail({
-  dateStr, entries, astroDay, sabbat, navigate,
+  dateStr, entries, astroDay, sabbat, navigate, nativeLabel,
 }: {
   dateStr: string
   entries: DayEntries | undefined
   astroDay: MonthAstroData['byDate'] extends Map<string, infer V> ? V : never
   sabbat: Sabbat | undefined
   navigate: ReturnType<typeof useNavigate>
+  /** e.g. "5 Iyar 5786" — shown alongside the Gregorian date on a native-calendar tab. */
+  nativeLabel?: string
 }) {
   const spreadById = useSpreadById()
   const date = new Date(dateStr.slice(0, 10) + 'T12:00:00')
@@ -482,6 +489,9 @@ function DayDetail({
       <div style={{ marginBottom: '16px', paddingBottom: '14px', borderBottom: '1px solid var(--color-border)' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
           <div style={{ fontSize: '16px', fontWeight: 500, color: 'var(--color-text)' }}>{label}</div>
+          {nativeLabel && (
+            <span style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>{nativeLabel}</span>
+          )}
           {sabbat && (
             <span
               onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: sabbat.canonicalName } })}
@@ -562,15 +572,55 @@ function DayDetail({
   )
 }
 
-// ─── Main page ────────────────────────────────────────────────────────────────
+// ─── Tab bar ──────────────────────────────────────────────────────────────────
+
+function TabBar({
+  activeTab, enabledTabs, onSelectTab, onOpenManage,
+}: {
+  activeTab: string
+  enabledTabs: CalendarTabDefinition[]
+  onSelectTab: (id: string) => void
+  onOpenManage: () => void
+}) {
+  const tabButtonStyle = (isActive: boolean): React.CSSProperties => ({
+    padding: '6px 12px', fontSize: '13px', borderRadius: '6px', cursor: 'pointer',
+    border: `1px solid ${isActive ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+    background: isActive ? 'var(--color-surface-3)' : 'var(--color-surface-1)',
+    color: isActive ? 'var(--color-text)' : 'var(--color-text-muted)',
+    fontFamily: 'inherit', whiteSpace: 'nowrap',
+  })
+
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '16px', flexWrap: 'wrap' }}>
+      <button style={tabButtonStyle(activeTab === 'gregorian')} onClick={() => onSelectTab('gregorian')}>
+        Gregorian
+      </button>
+      {enabledTabs.map(tab => (
+        <button key={tab.id} style={tabButtonStyle(activeTab === tab.id)} onClick={() => onSelectTab(tab.id)}>
+          {tab.emoji} {tab.tabLabel}
+        </button>
+      ))}
+      <button
+        onClick={onOpenManage}
+        title="Manage calendar tabs"
+        style={{
+          display: 'flex', alignItems: 'center', gap: '4px', marginLeft: '4px',
+          padding: '6px 8px', fontSize: '12px', borderRadius: '6px', cursor: 'pointer',
+          border: '1px solid transparent', background: 'none', color: 'var(--color-text-subtle)',
+          fontFamily: 'inherit',
+        }}
+      >
+        <Settings2 size={14} />
+      </button>
+    </div>
+  )
+}
+
+// ─── Gregorian calendar view ──────────────────────────────────────────────────
 
 const EMPTY_ASTRO_DAY: { moonEvents: MoonEvent[]; ingresses: Ingress[] } = { moonEvents: [], ingresses: [] }
 
-function CalendarPage() {
-  const navigate = useNavigate()
-  const today     = useMemo(() => toDateString(new Date()), [])
-  const todayDate = useMemo(() => new Date(), [])
-
+function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeof useNavigate>; today: string }) {
   const [year, setYear]   = useState(() => new Date().getFullYear())
   const [month, setMonth] = useState(() => new Date().getMonth() + 1)
   const [selectedDate, setSelectedDate] = useState<string | null>(today)
@@ -621,6 +671,13 @@ function CalendarPage() {
     return map
   }, [monthReadings, monthEntries])
 
+  const weeks = useMemo(() => buildCalendarGrid(year, month), [year, month])
+  const currentMonthStr = `${year}-${String(month).padStart(2, '0')}`
+  const labelForDate = useCallback<DateLabeler>(
+    date => ({ label: date.getDate(), inPeriod: toDateString(date).startsWith(currentMonthStr) }),
+    [currentMonthStr],
+  )
+
   const prevMonth = () => { if (month === 1) { setYear(y => y - 1); setMonth(12) } else setMonth(m => m - 1) }
   const nextMonth = () => { if (month === 12) { setYear(y => y + 1); setMonth(1) } else setMonth(m => m + 1) }
   const goToToday = () => { const n = new Date(); setYear(n.getFullYear()); setMonth(n.getMonth() + 1); setSelectedDate(today) }
@@ -638,31 +695,28 @@ function CalendarPage() {
     : EMPTY_ASTRO_DAY
 
   return (
-    <div style={{ maxWidth: '860px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', gap: '12px', flexWrap: 'wrap' }}>
-        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Calendar</h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <RetrogradeToggle on={showRetrograde} onToggle={toggleRetrograde} />
-          {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
-        </div>
-      </div>
-
-      <CosmicInfoStrip date={todayDate} navigate={navigate} />
-
+    <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '16px' }}>
         <button onClick={prevMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
           <ChevronLeft size={18} />
         </button>
-        <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
-          {MONTH_NAMES[month - 1]} {year}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
+            {MONTH_NAMES[month - 1]} {year}
+          </span>
+          {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
+        </div>
         <button onClick={nextMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
           <ChevronRight size={18} />
         </button>
       </div>
 
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+        <RetrogradeToggle on={showRetrograde} onToggle={toggleRetrograde} />
+      </div>
+
       <CalendarGrid
-        year={year} month={month} today={today}
+        weeks={weeks} today={today}
         selectedDate={selectedDate}
         entriesByDate={entriesByDate}
         astroByDate={monthAstro?.byDate ?? null}
@@ -670,6 +724,7 @@ function CalendarPage() {
         onDayClick={setSelectedDate}
         navigate={navigate}
         showRetrograde={showRetrograde}
+        labelForDate={labelForDate}
       />
 
       {selectedDate && (
@@ -681,6 +736,248 @@ function CalendarPage() {
           navigate={navigate}
         />
       )}
+    </div>
+  )
+}
+
+// ─── Native calendar-system view (Hebrew, Islamic, …) ─────────────────────────
+
+function addDays(date: Date, n: number): Date {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() + n)
+}
+
+/** Every distinct (year, month) Gregorian pair a real-date range spans, used
+ *  to fetch readings/journal entries (whose queries are Gregorian-month-based)
+ *  for a native calendar month that may straddle two Gregorian months. */
+function monthsSpanned(start: Date, end: Date): Array<{ year: number; month: number }> {
+  const out: Array<{ year: number; month: number }> = []
+  let cursor = new Date(start.getFullYear(), start.getMonth(), 1)
+  const last = new Date(end.getFullYear(), end.getMonth(), 1)
+  while (cursor.getTime() <= last.getTime()) {
+    out.push({ year: cursor.getFullYear(), month: cursor.getMonth() + 1 })
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1)
+  }
+  return out
+}
+
+function TraditionCalendarView({
+  tab, navigate, today, todayDate,
+}: {
+  tab: CalendarTabDefinition
+  navigate: ReturnType<typeof useNavigate>
+  today: string
+  todayDate: Date
+}) {
+  const { system } = tab
+  const todayNative = useMemo(() => system.fromGregorian(todayDate), [system, todayDate])
+  const [nativeYear, setNativeYear] = useState(todayNative.year)
+  const [nativeMonth, setNativeMonth] = useState(todayNative.month)
+  const [selectedDate, setSelectedDate] = useState<string | null>(today)
+  const [monthReadings, setMonthReadings] = useState<Reading[]>([])
+  const [monthEntries,  setMonthEntries]  = useState<JournalEntry[]>([])
+  const [monthAstro,    setMonthAstro]    = useState<MonthAstroData | null>(null)
+
+  const daysInMonth  = system.daysInMonth(nativeYear, nativeMonth)
+  const firstOfMonth = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: 1 }), [system, nativeYear, nativeMonth])
+  const lastOfMonth  = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: daysInMonth }), [system, nativeYear, nativeMonth, daysInMonth])
+  const monthLabel   = system.monthName(nativeYear, nativeMonth)
+
+  const sabbatsByDate = useMemo(() => {
+    const map = new Map<string, Sabbat>()
+    try {
+      for (const y of new Set([firstOfMonth.getFullYear(), lastOfMonth.getFullYear()])) {
+        for (const s of getSabbatsForYear(y)) map.set(toDateString(s.time), s)
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [firstOfMonth, lastOfMonth])
+
+  useEffect(() => {
+    const spans = monthsSpanned(firstOfMonth, lastOfMonth)
+    Promise.all([
+      Promise.all(spans.map(s => listReadingsByMonth(s.year, s.month))).then(rs => rs.flat()),
+      Promise.all(spans.map(s => listJournalEntriesByMonth(s.year, s.month))).then(es => es.flat()),
+    ]).then(([readings, entries]) => {
+      setMonthReadings(readings)
+      setMonthEntries(entries)
+    }).catch(console.error)
+
+    const { astrologyMode } = loadTraditionSettings()
+    const rangeEnd = addDays(lastOfMonth, 1)
+    const id = setTimeout(() => setMonthAstro(computeAstroDataForRange(firstOfMonth, rangeEnd, astrologyMode)), 0)
+    return () => clearTimeout(id)
+  }, [firstOfMonth, lastOfMonth])
+
+  const entriesByDate = useMemo(() => {
+    const map = new Map<string, DayEntries>()
+    for (const r of monthReadings) {
+      const ds = r.readingDate.slice(0, 10)
+      const ex = map.get(ds) ?? { readings: [], entries: [] }
+      ex.readings.push(r); map.set(ds, ex)
+    }
+    for (const e of monthEntries) {
+      const ds = e.entryDate.slice(0, 10)
+      const ex = map.get(ds) ?? { readings: [], entries: [] }
+      ex.entries.push(e); map.set(ds, ex)
+    }
+    return map
+  }, [monthReadings, monthEntries])
+
+  const weeks = useMemo(() => {
+    const startPad = firstOfMonth.getDay()
+    const days: Date[] = []
+    for (let i = startPad - 1; i >= 0; i--) days.push(addDays(firstOfMonth, -i - 1))
+    let cursor = firstOfMonth
+    for (let i = 0; i < daysInMonth; i++) {
+      days.push(cursor)
+      cursor = addDays(cursor, 1)
+    }
+    return buildCalendarGridFromDates(days)
+  }, [firstOfMonth, daysInMonth])
+
+  const labelForDate = useCallback<DateLabeler>(
+    date => {
+      const cd = system.fromGregorian(date)
+      return { label: cd.day, inPeriod: cd.year === nativeYear && cd.month === nativeMonth }
+    },
+    [system, nativeYear, nativeMonth],
+  )
+
+  const prevMonth = () => {
+    const prev = system.addMonths({ year: nativeYear, month: nativeMonth }, -1)
+    setNativeYear(prev.year); setNativeMonth(prev.month)
+  }
+  const nextMonth = () => {
+    const next = system.addMonths({ year: nativeYear, month: nativeMonth }, 1)
+    setNativeYear(next.year); setNativeMonth(next.month)
+  }
+  const goToToday = () => { setNativeYear(todayNative.year); setNativeMonth(todayNative.month); setSelectedDate(today) }
+  const isViewingCurrentMonth = nativeYear === todayNative.year && nativeMonth === todayNative.month
+
+  const selectedAstroDay = selectedDate
+    ? (monthAstro?.byDate.get(selectedDate) ?? EMPTY_ASTRO_DAY)
+    : EMPTY_ASTRO_DAY
+  const selectedNativeLabel = selectedDate
+    ? (() => {
+        const cd = system.fromGregorian(new Date(selectedDate.slice(0, 10) + 'T12:00:00'))
+        return `${cd.day} ${cd.monthName} ${cd.year}${cd.era ? ' ' + cd.era : ''}`
+      })()
+    : undefined
+
+  return (
+    <div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '16px' }}>
+        <button onClick={prevMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
+          <ChevronLeft size={18} />
+        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
+            {monthLabel} {nativeYear}
+          </span>
+          {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
+        </div>
+        <button onClick={nextMonth} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: '4px', display: 'flex', flexShrink: 0 }}>
+          <ChevronRight size={18} />
+        </button>
+      </div>
+
+      <CalendarGrid
+        weeks={weeks} today={today}
+        selectedDate={selectedDate}
+        entriesByDate={entriesByDate}
+        astroByDate={monthAstro?.byDate ?? null}
+        sabbatsByDate={sabbatsByDate}
+        onDayClick={setSelectedDate}
+        navigate={navigate}
+        showRetrograde={false}
+        labelForDate={labelForDate}
+      />
+
+      {selectedDate && (
+        <DayDetail
+          dateStr={selectedDate}
+          entries={entriesByDate.get(selectedDate)}
+          astroDay={selectedAstroDay}
+          sabbat={sabbatsByDate.get(selectedDate)}
+          navigate={navigate}
+          nativeLabel={selectedNativeLabel}
+        />
+      )}
+    </div>
+  )
+}
+
+// ─── Main page ────────────────────────────────────────────────────────────────
+
+function CalendarPage() {
+  const navigate = useNavigate()
+  const today     = useMemo(() => toDateString(new Date()), [])
+  const todayDate = useMemo(() => new Date(), [])
+
+  const [enabledSystems, setEnabledSystems] = useState(() => loadSettings().enabledCalendarSystems)
+  const [activeTab, setActiveTab] = useState<string>('gregorian')
+
+  const enabledTabs = useMemo(
+    () => CALENDAR_TABS.filter(t => enabledSystems.includes(t.id)),
+    [enabledSystems],
+  )
+
+  // If the active tab gets disabled (e.g. via the manage panel), fall back to Gregorian.
+  useEffect(() => {
+    if (activeTab !== 'gregorian' && !enabledSystems.includes(activeTab)) {
+      setActiveTab('gregorian')
+    }
+  }, [activeTab, enabledSystems])
+
+  const toggleCalendarSystem = (id: string) => {
+    setEnabledSystems(current => {
+      const next = current.includes(id) ? current.filter(x => x !== id) : [...current, id]
+      patchSettings({ enabledCalendarSystems: next })
+      return next
+    })
+  }
+
+  const [showManage, setShowManage] = useState(false)
+  const activeTabDef = activeTab === 'gregorian' ? null : getCalendarTab(activeTab)
+
+  return (
+    <div style={{ maxWidth: '860px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', gap: '12px', flexWrap: 'wrap' }}>
+        <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Calendar</h1>
+      </div>
+
+      <CosmicInfoStrip date={todayDate} navigate={navigate} />
+
+      <TabBar
+        activeTab={activeTab}
+        enabledTabs={enabledTabs}
+        onSelectTab={setActiveTab}
+        onOpenManage={() => setShowManage(s => !s)}
+      />
+
+      {showManage && (
+        <div style={{
+          display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px',
+          padding: '14px 16px', background: 'var(--color-surface-1)', border: '1px solid var(--color-border)', borderRadius: '8px',
+        }}>
+          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            Calendar tabs
+          </div>
+          {CALENDAR_TABS.map(tab => (
+            <label key={tab.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '13px', color: 'var(--color-text)' }}>
+              <input
+                type="checkbox"
+                checked={enabledSystems.includes(tab.id)}
+                onChange={() => toggleCalendarSystem(tab.id)}
+              />
+              {tab.emoji} {tab.tabLabel}
+            </label>
+          ))}
+        </div>
+      )}
+
+      {activeTab === 'gregorian' && <GregorianCalendarView navigate={navigate} today={today} />}
+      {activeTabDef && <TraditionCalendarView key={activeTabDef.id} tab={activeTabDef} navigate={navigate} today={today} todayDate={todayDate} />}
     </div>
   )
 }

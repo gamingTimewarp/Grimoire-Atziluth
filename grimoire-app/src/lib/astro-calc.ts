@@ -169,7 +169,25 @@ export function getChineseZodiacYear(date: Date): ChineseZodiacAnimalInfo {
 
 // ─── Calendar Grid ────────────────────────────────────────────────────────────
 
-/** Builds a week-array for the given month. Sun-first columns. Pads with adjacent-month dates. */
+/** Pads an arbitrary flat list of dates to a multiple of 7 (Sun-first weeks)
+ *  by appending trailing days, then chunks it into week rows. Used for both
+ *  the Gregorian grid and native-calendar-system grids (e.g. Hebrew, Islamic)
+ *  whose "month" doesn't align with Gregorian month boundaries. */
+export function buildCalendarGridFromDates(dates: Date[]): Date[][] {
+  const days = [...dates]
+  while (days.length % 7 !== 0) {
+    const last = days[days.length - 1]
+    days.push(new Date(last.getFullYear(), last.getMonth(), last.getDate() + 1))
+  }
+
+  const weeks: Date[][] = []
+  for (let i = 0; i < days.length; i += 7) {
+    weeks.push(days.slice(i, i + 7))
+  }
+  return weeks
+}
+
+/** Builds a week-array for the given Gregorian month. Sun-first columns. Pads with adjacent-month dates. */
 export function buildCalendarGrid(year: number, month: number): Date[][] {
   const firstDay = new Date(year, month - 1, 1)
   const daysInMonth = new Date(year, month, 0).getDate()
@@ -182,16 +200,7 @@ export function buildCalendarGrid(year: number, month: number): Date[][] {
   for (let d = 1; d <= daysInMonth; d++) {
     days.push(new Date(year, month - 1, d))
   }
-  while (days.length % 7 !== 0) {
-    const last = days[days.length - 1]
-    days.push(new Date(last.getFullYear(), last.getMonth(), last.getDate() + 1))
-  }
-
-  const weeks: Date[][] = []
-  for (let i = 0; i < days.length; i += 7) {
-    weeks.push(days.slice(i, i + 7))
-  }
-  return weeks
+  return buildCalendarGridFromDates(days)
 }
 
 /** Format a Date as YYYY-MM-DD (local time) */

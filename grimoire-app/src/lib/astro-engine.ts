@@ -591,13 +591,20 @@ const MOON_PHASE_TARGETS: Array<{ targetLon: number; type: MoonEvent['type']; em
 ]
 
 export function getMoonEventsForMonth(year: number, month: number): MoonEvent[] {
-  const events: MoonEvent[] = []
   const start = new Date(year, month - 1, 1)
   const end   = new Date(year, month, 1)
+  return getMoonEventsForRange(start, end)
+}
+
+/** Same as {@link getMoonEventsForMonth} but for an arbitrary `[start, end)`
+ *  range — used by non-Gregorian calendar tabs whose "month" doesn't align
+ *  with Gregorian month boundaries. */
+export function getMoonEventsForRange(start: Date, end: Date): MoonEvent[] {
+  const events: MoonEvent[] = []
 
   for (const phase of MOON_PHASE_TARGETS) {
-    // Start search a few days before month start to catch events at the beginning
-    let searchFrom = new Date(year, month - 1, -3)
+    // Start search a few days before range start to catch events at the beginning
+    let searchFrom = new Date(start.getFullYear(), start.getMonth(), start.getDate() - 4)
     for (let attempt = 0; attempt < 3; attempt++) {
       const result = Astronomy.SearchMoonPhase(phase.targetLon, searchFrom, 35)
       if (!result) break
@@ -634,9 +641,16 @@ function binarySearchIngress(
 }
 
 export function getIngressesForMonth(year: number, month: number, mode: AstrologyMode = 'tropical'): Ingress[] {
-  const ingresses: Ingress[] = []
   const monthStart = new Date(year, month - 1, 1)
   const monthEnd   = new Date(year, month, 1)
+  return getIngressesForRange(monthStart, monthEnd, mode)
+}
+
+/** Same as {@link getIngressesForMonth} but for an arbitrary `[start, end)`
+ *  range — used by non-Gregorian calendar tabs whose "month" doesn't align
+ *  with Gregorian month boundaries. */
+export function getIngressesForRange(start: Date, end: Date, mode: AstrologyMode = 'tropical'): Ingress[] {
+  const ingresses: Ingress[] = []
 
   const signFn = mode === 'iau' ? iauSignIndex : signIndexOf
   const signs  = getSignsForMode(mode)
@@ -645,17 +659,17 @@ export function getIngressesForMonth(year: number, month: number, mode: Astrolog
   const STEP_MS = 6 * 3600 * 1000
 
   for (const planet of INGRESS_PLANETS) {
-    // Start 1 step before month to catch ingresses right at the boundary
-    let t = new Date(monthStart.getTime() - STEP_MS)
+    // Start 1 step before range to catch ingresses right at the boundary
+    let t = new Date(start.getTime() - STEP_MS)
     let prevSign = signFn(eclipticLon(planet.body!, t))
 
-    while (t < monthEnd) {
+    while (t < end) {
       const tNext = new Date(t.getTime() + STEP_MS)
       const currSign = signFn(eclipticLon(planet.body!, tNext))
 
       if (currSign !== prevSign) {
         const exactTime = binarySearchIngress(planet.body!, t, tNext, currSign, signFn)
-        if (exactTime >= monthStart && exactTime < monthEnd) {
+        if (exactTime >= start && exactTime < end) {
           ingresses.push({ planet, sign: signs[currSign] as ZodiacSign, time: exactTime })
         }
       }
@@ -1274,8 +1288,17 @@ function toLocalDateStr(date: Date): string {
 }
 
 export function computeMonthAstroData(year: number, month: number, mode: AstrologyMode = 'tropical'): MonthAstroData {
-  const moonEvents = getMoonEventsForMonth(year, month)
-  const ingresses  = getIngressesForMonth(year, month, mode)
+  const start = new Date(year, month - 1, 1)
+  const end   = new Date(year, month, 1)
+  return computeAstroDataForRange(start, end, mode)
+}
+
+/** Same as {@link computeMonthAstroData} but for an arbitrary `[start, end)`
+ *  range — used by non-Gregorian calendar tabs whose "month" doesn't align
+ *  with Gregorian month boundaries. */
+export function computeAstroDataForRange(start: Date, end: Date, mode: AstrologyMode = 'tropical'): MonthAstroData {
+  const moonEvents = getMoonEventsForRange(start, end)
+  const ingresses  = getIngressesForRange(start, end, mode)
 
   const byDate = new Map<string, { moonEvents: MoonEvent[]; ingresses: Ingress[] }>()
 

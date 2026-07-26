@@ -28,6 +28,7 @@ import { Route as SettingsNavRouteImport } from './routes/settings/nav'
 import { Route as SettingsManualRouteImport } from './routes/settings/manual'
 import { Route as SettingsDataRouteImport } from './routes/settings/data'
 import { Route as SettingsCreditsRouteImport } from './routes/settings/credits'
+import { Route as SettingsCalendarRouteImport } from './routes/settings/calendar'
 import { Route as SettingsArtRouteImport } from './routes/settings/art'
 import { Route as SettingsAccessibilityRouteImport } from './routes/settings/accessibility'
 import { Route as ReferenceWuxingPhasesRouteImport } from './routes/reference/wuxing-phases'
@@ -146,6 +147,11 @@ const SettingsDataRoute = SettingsDataRouteImport.update({
 const SettingsCreditsRoute = SettingsCreditsRouteImport.update({
   id: '/settings/credits',
   path: '/settings/credits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsCalendarRoute = SettingsCalendarRouteImport.update({
+  id: '/settings/calendar',
+  path: '/settings/calendar',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsArtRoute = SettingsArtRouteImport.update({
@@ -302,6 +308,7 @@ export interface FileRoutesByFullPath {
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
+  '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
   '/settings/manual': typeof SettingsManualRoute
@@ -347,6 +354,7 @@ export interface FileRoutesByTo {
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
+  '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
   '/settings/manual': typeof SettingsManualRoute
@@ -393,6 +401,7 @@ export interface FileRoutesById {
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
   '/settings/accessibility': typeof SettingsAccessibilityRoute
   '/settings/art': typeof SettingsArtRoute
+  '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
   '/settings/manual': typeof SettingsManualRoute
@@ -440,6 +449,7 @@ export interface FileRouteTypes {
     | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
+    | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
     | '/settings/manual'
@@ -485,6 +495,7 @@ export interface FileRouteTypes {
     | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
+    | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
     | '/settings/manual'
@@ -530,6 +541,7 @@ export interface FileRouteTypes {
     | '/reference/wuxing-phases'
     | '/settings/accessibility'
     | '/settings/art'
+    | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
     | '/settings/manual'
@@ -576,6 +588,7 @@ export interface RootRouteChildren {
   ReferenceWuxingPhasesRoute: typeof ReferenceWuxingPhasesRoute
   SettingsAccessibilityRoute: typeof SettingsAccessibilityRoute
   SettingsArtRoute: typeof SettingsArtRoute
+  SettingsCalendarRoute: typeof SettingsCalendarRoute
   SettingsCreditsRoute: typeof SettingsCreditsRoute
   SettingsDataRoute: typeof SettingsDataRoute
   SettingsManualRoute: typeof SettingsManualRoute
@@ -729,6 +742,13 @@ declare module '@tanstack/react-router' {
       path: '/settings/credits'
       fullPath: '/settings/credits'
       preLoaderRoute: typeof SettingsCreditsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings/calendar': {
+      id: '/settings/calendar'
+      path: '/settings/calendar'
+      fullPath: '/settings/calendar'
+      preLoaderRoute: typeof SettingsCalendarRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings/art': {
@@ -929,6 +949,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReferenceWuxingPhasesRoute: ReferenceWuxingPhasesRoute,
   SettingsAccessibilityRoute: SettingsAccessibilityRoute,
   SettingsArtRoute: SettingsArtRoute,
+  SettingsCalendarRoute: SettingsCalendarRoute,
   SettingsCreditsRoute: SettingsCreditsRoute,
   SettingsDataRoute: SettingsDataRoute,
   SettingsManualRoute: SettingsManualRoute,

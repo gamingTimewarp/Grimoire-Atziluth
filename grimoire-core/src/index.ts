@@ -35,3 +35,13 @@ export type * from './seeder/seed-schema.js'
 
 // Divination model
 export type * from './types/divination.types.js'
+
+// Calendar systems
+export type { CalendarDate, CalendarSystem } from './calendars/index.js'
+export {
+  CALENDAR_SYSTEMS,
+  HebrewCalendarSystem,
+  IslamicCalendarSystem,
+  gregorianToDayCount,
+  dayCountToGregorian,
+} from './calendars/index.js'
