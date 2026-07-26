@@ -772,15 +772,18 @@ function TraditionCalendarView({
   const todayNative = useMemo(() => system.fromGregorian(todayDate), [system, todayDate])
   const [nativeYear, setNativeYear] = useState(todayNative.year)
   const [nativeMonth, setNativeMonth] = useState(todayNative.month)
+  // Some systems (Chinese) reuse a leap month's predecessor's number — this
+  // disambiguates which of the two (regular vs. leap) is being viewed.
+  const [nativeIsLeap, setNativeIsLeap] = useState(!!todayNative.isLeapMonth)
   const [selectedDate, setSelectedDate] = useState<string | null>(today)
   const [monthReadings, setMonthReadings] = useState<Reading[]>([])
   const [monthEntries,  setMonthEntries]  = useState<JournalEntry[]>([])
   const [monthAstro,    setMonthAstro]    = useState<MonthAstroData | null>(null)
 
-  const daysInMonth  = system.daysInMonth(nativeYear, nativeMonth)
-  const firstOfMonth = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: 1 }), [system, nativeYear, nativeMonth])
-  const lastOfMonth  = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: daysInMonth }), [system, nativeYear, nativeMonth, daysInMonth])
-  const monthLabel   = system.monthName(nativeYear, nativeMonth)
+  const daysInMonth  = system.daysInMonth(nativeYear, nativeMonth, nativeIsLeap)
+  const firstOfMonth = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: 1, isLeapMonth: nativeIsLeap }), [system, nativeYear, nativeMonth, nativeIsLeap])
+  const lastOfMonth  = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: daysInMonth, isLeapMonth: nativeIsLeap }), [system, nativeYear, nativeMonth, nativeIsLeap, daysInMonth])
+  const monthLabel   = system.monthName(nativeYear, nativeMonth, nativeIsLeap)
 
   const sabbatsByDate = useMemo(() => {
     const map = new Map<string, Sabbat>()
@@ -838,21 +841,24 @@ function TraditionCalendarView({
   const labelForDate = useCallback<DateLabeler>(
     date => {
       const cd = system.fromGregorian(date)
-      return { label: cd.day, inPeriod: cd.year === nativeYear && cd.month === nativeMonth }
+      return { label: cd.day, inPeriod: cd.year === nativeYear && cd.month === nativeMonth && !!cd.isLeapMonth === nativeIsLeap }
     },
-    [system, nativeYear, nativeMonth],
+    [system, nativeYear, nativeMonth, nativeIsLeap],
   )
 
   const prevMonth = () => {
-    const prev = system.addMonths({ year: nativeYear, month: nativeMonth }, -1)
-    setNativeYear(prev.year); setNativeMonth(prev.month)
+    const prev = system.addMonths({ year: nativeYear, month: nativeMonth, isLeapMonth: nativeIsLeap }, -1)
+    setNativeYear(prev.year); setNativeMonth(prev.month); setNativeIsLeap(!!prev.isLeapMonth)
   }
   const nextMonth = () => {
-    const next = system.addMonths({ year: nativeYear, month: nativeMonth }, 1)
-    setNativeYear(next.year); setNativeMonth(next.month)
+    const next = system.addMonths({ year: nativeYear, month: nativeMonth, isLeapMonth: nativeIsLeap }, 1)
+    setNativeYear(next.year); setNativeMonth(next.month); setNativeIsLeap(!!next.isLeapMonth)
   }
-  const goToToday = () => { setNativeYear(todayNative.year); setNativeMonth(todayNative.month); setSelectedDate(today) }
-  const isViewingCurrentMonth = nativeYear === todayNative.year && nativeMonth === todayNative.month
+  const goToToday = () => {
+    setNativeYear(todayNative.year); setNativeMonth(todayNative.month); setNativeIsLeap(!!todayNative.isLeapMonth)
+    setSelectedDate(today)
+  }
+  const isViewingCurrentMonth = nativeYear === todayNative.year && nativeMonth === todayNative.month && nativeIsLeap === !!todayNative.isLeapMonth
 
   const selectedAstroDay = selectedDate
     ? (monthAstro?.byDate.get(selectedDate) ?? EMPTY_ASTRO_DAY)

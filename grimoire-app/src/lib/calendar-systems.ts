@@ -28,6 +28,12 @@ export const CALENDAR_TABS: CalendarTabDefinition[] = [
     tabLabel: 'Islamic',
     emoji: '☪️',
   },
+  {
+    id: 'chinese',
+    system: CALENDAR_SYSTEMS.chinese as CalendarSystem,
+    tabLabel: 'Chinese',
+    emoji: '🏮',
+  },
 ]
 
 export function getCalendarTab(id: string): CalendarTabDefinition | undefined {

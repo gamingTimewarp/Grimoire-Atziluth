@@ -110,7 +110,7 @@ export const IslamicCalendarSystem: CalendarSystem = {
     return dayCountToGregorian(fixedFromIslamic(date))
   },
 
-  daysInMonth(year: number, month: number): number {
+  daysInMonth(year: number, month: number, _isLeapMonth?: boolean): number {
     return daysInIslamicMonth(year, month)
   },
 
@@ -118,7 +118,7 @@ export const IslamicCalendarSystem: CalendarSystem = {
     return 12
   },
 
-  monthName(year: number, month: number): string {
+  monthName(year: number, month: number, _isLeapMonth?: boolean): string {
     return islamicMonthName(year, month)
   },
 

@@ -21,6 +21,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "astronomy-engine": "^2.1.19",
     "better-sqlite3": "^11.0.0",
     "uuid": "^11.0.0"
   },

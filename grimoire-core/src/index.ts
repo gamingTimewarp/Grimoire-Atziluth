@@ -37,11 +37,12 @@ export type * from './seeder/seed-schema.js'
 export type * from './types/divination.types.js'
 
 // Calendar systems
-export type { CalendarDate, CalendarSystem } from './calendars/index.js'
+export type { CalendarDate, CalendarSystem, MonthKey } from './calendars/index.js'
 export {
   CALENDAR_SYSTEMS,
   HebrewCalendarSystem,
   IslamicCalendarSystem,
+  ChineseCalendarSystem,
   gregorianToDayCount,
   dayCountToGregorian,
 } from './calendars/index.js'

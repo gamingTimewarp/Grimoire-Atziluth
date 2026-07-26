@@ -153,7 +153,7 @@ export const HebrewCalendarSystem: CalendarSystem = {
     return dayCountToGregorian(fixedFromHebrew(date))
   },
 
-  daysInMonth(year: number, month: number): number {
+  daysInMonth(year: number, month: number, _isLeapMonth?: boolean): number {
     return daysInHebrewMonth(year, month)
   },
 
@@ -161,7 +161,7 @@ export const HebrewCalendarSystem: CalendarSystem = {
     return monthsInHebrewYear(year)
   },
 
-  monthName(year: number, month: number): string {
+  monthName(year: number, month: number, _isLeapMonth?: boolean): string {
     return hebrewMonthName(year, month)
   },
 
