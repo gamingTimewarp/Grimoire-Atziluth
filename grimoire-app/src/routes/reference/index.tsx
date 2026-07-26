@@ -43,6 +43,7 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
     { value: 'astrology.fixed-star',     label: 'Fixed Stars' },
     { value: 'astrology.nakshatra',      label: 'Nakshatras' },
     { value: 'astrology.lunar-mansion',  label: 'Lunar Mansions' },
+    { value: 'astrology.full-moon-name', label: 'Full Moon Names' },
   ]},
   { label: 'Qabalah', options: [
     { value: 'qabalah.sephira',        label: 'Sephiroth' },

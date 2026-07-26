@@ -2,6 +2,9 @@ import { describe, it, expect } from 'vitest'
 import {
   getPlanetPositions, getHouses, getSunSignForMode, getSabbatsForYear,
   getRetrogradeStrip, getRetrogradeStationInfo, RETROGRADE_STRIP_PLANETS,
+  getMoonQuarterTimeline, getMoonAppearance, getNextLunarEclipse, getNextSolarEclipse,
+  getMoonRiseSet, getLunarApsisTimeline, isSupermoon, getMoonConstellation,
+  houseOfLongitude, getMoonHouse, getMoonAspects, getMoonIlluminationPercent,
 } from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
 import * as Astronomy from 'astronomy-engine'
@@ -227,5 +230,182 @@ describe('getRetrogradeStationInfo', () => {
       if (strip.retrograde) sawRetrograde = true
     }
     expect(sawRetrograde).toBe(true)
+  })
+})
+
+describe('getMoonQuarterTimeline', () => {
+  const SYNODIC_DAYS = 29.530588853
+
+  it('satisfies prevNew <= date < nextNew and prevFull <= date < nextFull at every point across a lunation', () => {
+    // Sample 12 points spread across a full synodic month from an arbitrary anchor —
+    // this is what would have caught a too-short lookback window (the anchor must be
+    // far enough back that the window always contains a previous new AND full moon).
+    const anchor = new Date('2026-01-01T12:00:00Z')
+    for (let i = 0; i < 12; i++) {
+      const d = new Date(anchor.getTime() + i * (SYNODIC_DAYS / 12) * 86400000)
+      const tl = getMoonQuarterTimeline(d)
+      expect(tl.prevNew.time.getTime()).toBeLessThanOrEqual(d.getTime())
+      expect(tl.nextNew.time.getTime()).toBeGreaterThan(d.getTime())
+      expect(tl.prevFull.time.getTime()).toBeLessThanOrEqual(d.getTime())
+      expect(tl.nextFull.time.getTime()).toBeGreaterThan(d.getTime())
+      expect(tl.next.time.getTime()).toBeGreaterThan(d.getTime())
+      // `next` must be the earliest of all four upcoming events.
+      expect(tl.next.time.getTime()).toBeLessThanOrEqual(tl.nextNew.time.getTime())
+      expect(tl.next.time.getTime()).toBeLessThanOrEqual(tl.nextFull.time.getTime())
+    }
+  })
+
+  it('reports exactly the four known quarter types across next/prevNew/prevFull/nextNew/nextFull', () => {
+    const tl = getMoonQuarterTimeline(new Date('2026-06-15T00:00:00Z'))
+    expect(tl.prevNew.type).toBe('new')
+    expect(tl.nextNew.type).toBe('new')
+    expect(tl.prevFull.type).toBe('full')
+    expect(tl.nextFull.type).toBe('full')
+    expect(['new', 'first-quarter', 'full', 'last-quarter']).toContain(tl.next.type)
+  })
+})
+
+describe('getMoonAppearance', () => {
+  it('returns values within physically sane ranges', () => {
+    const a = getMoonAppearance(new Date('2026-03-15T00:00:00Z'), 51.5, -0.1)
+    expect(a.illuminatedFraction).toBeGreaterThanOrEqual(0)
+    expect(a.illuminatedFraction).toBeLessThanOrEqual(1)
+    // The Moon's apparent size varies roughly ±6% around the mean across a normal
+    // orbit (perigee/apogee); allow a little extra margin for topocentric parallax.
+    expect(a.relativeSize).toBeGreaterThan(0.85)
+    expect(a.relativeSize).toBeLessThan(1.15)
+    expect(a.distanceKm).toBeGreaterThan(356000) // below the Moon's closest-ever perigee
+    expect(a.distanceKm).toBeLessThan(407000)    // above the Moon's farthest-ever apogee
+    expect(a.magnitude).toBeLessThan(0) // the Moon is always far brighter than magnitude 0
+    expect(a.altitudeDeg).toBeGreaterThanOrEqual(-90)
+    expect(a.altitudeDeg).toBeLessThanOrEqual(90)
+  })
+
+  it('flags waxing vs waning consistently with the phase angle', () => {
+    // Just after a new moon the Moon is waxing; just after a full moon it is waning.
+    const tl = getMoonQuarterTimeline(new Date('2026-03-15T00:00:00Z'))
+    const justAfterNew  = new Date(tl.prevNew.time.getTime() + 2 * 86400000)
+    const justAfterFull = new Date(tl.prevFull.time.getTime() + 2 * 86400000)
+    expect(getMoonAppearance(justAfterNew, 0, 0).waxing).toBe(true)
+    expect(getMoonAppearance(justAfterFull, 0, 0).waxing).toBe(false)
+  })
+})
+
+describe('getNextLunarEclipse / getNextSolarEclipse', () => {
+  it('finds a future eclipse of a known kind', () => {
+    const date = new Date('2026-01-01T00:00:00Z')
+    const lunar = getNextLunarEclipse(date)
+    const solar = getNextSolarEclipse(date)
+    expect(lunar).not.toBeNull()
+    expect(solar).not.toBeNull()
+    expect(['penumbral', 'partial', 'annular', 'total']).toContain(lunar!.kind)
+    expect(['penumbral', 'partial', 'annular', 'total']).toContain(solar!.kind)
+    expect(lunar!.peak.getTime()).toBeGreaterThan(date.getTime())
+    expect(solar!.peak.getTime()).toBeGreaterThan(date.getTime())
+  })
+})
+
+describe('getMoonRiseSet', () => {
+  it('returns a rise and set strictly after the given date, at a mid-latitude location', () => {
+    const date = new Date('2026-03-15T00:00:00Z')
+    const rs = getMoonRiseSet(date, 51.5, -0.1)
+    expect(rs.nextRise).not.toBeNull()
+    expect(rs.nextSet).not.toBeNull()
+    expect(rs.nextRise!.getTime()).toBeGreaterThan(date.getTime())
+    expect(rs.nextSet!.getTime()).toBeGreaterThan(date.getTime())
+    // Both should occur within a couple of days — never further out than the 2-day search window.
+    expect(rs.nextRise!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
+    expect(rs.nextSet!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
+  })
+})
+
+describe('getLunarApsisTimeline', () => {
+  it('finds a future perigee and apogee with physically sane distances', () => {
+    const date = new Date('2026-03-15T00:00:00Z')
+    const tl = getLunarApsisTimeline(date)
+    expect(tl.nextPerigee.time.getTime()).toBeGreaterThan(date.getTime())
+    expect(tl.nextApogee.time.getTime()).toBeGreaterThan(date.getTime())
+    expect(tl.nextPerigee.distanceKm).toBeGreaterThan(356000)
+    expect(tl.nextPerigee.distanceKm).toBeLessThan(370000)
+    expect(tl.nextApogee.distanceKm).toBeGreaterThan(404000)
+    expect(tl.nextApogee.distanceKm).toBeLessThan(407000)
+    // Perigee is always closer than apogee.
+    expect(tl.nextPerigee.distanceKm).toBeLessThan(tl.nextApogee.distanceKm)
+  })
+})
+
+describe('isSupermoon', () => {
+  it('agrees with the raw 360,000km distance threshold', () => {
+    const anchor = new Date('2026-01-01T00:00:00Z')
+    for (let i = 0; i < 12; i++) {
+      const d = new Date(anchor.getTime() + i * 30 * 86400000)
+      expect(isSupermoon(d)).toBe(Astronomy.Libration(d).dist_km <= 360000)
+    }
+  })
+
+  it('is always false at apogee, since apogee distance is always well above the threshold', () => {
+    const tl = getLunarApsisTimeline(new Date('2026-03-15T00:00:00Z'))
+    expect(isSupermoon(tl.nextApogee.time)).toBe(false)
+  })
+})
+
+describe('getMoonConstellation', () => {
+  it('reports a constellation whose entered/exits window contains the query date', () => {
+    // Sample across a full sidereal month to catch anchor/window bugs at boundaries.
+    const SIDEREAL_DAYS = 27.321661
+    const anchor = new Date('2026-03-01T00:00:00Z')
+    for (let i = 0; i < 12; i++) {
+      const d = new Date(anchor.getTime() + i * (SIDEREAL_DAYS / 12) * 86400000)
+      const c = getMoonConstellation(d)
+      expect(c.enteredAt.getTime()).toBeLessThanOrEqual(d.getTime())
+      expect(c.exitsAt.getTime()).toBeGreaterThan(d.getTime())
+      expect(c.name.length).toBeGreaterThan(0)
+      expect(c.symbol.length).toBe(3)
+    }
+  })
+})
+
+describe('houseOfLongitude', () => {
+  const evenCusps = Array.from({ length: 12 }, (_, i) => i * 30)
+
+  it('places a longitude in the correct house for evenly spaced cusps', () => {
+    expect(houseOfLongitude(5, evenCusps)).toBe(1)
+    expect(houseOfLongitude(35, evenCusps)).toBe(2)
+    expect(houseOfLongitude(359, evenCusps)).toBe(12)
+  })
+
+  it('handles cusp sets that wrap past 360°', () => {
+    const wrapCusps = [350, 20, 50, 80, 110, 140, 170, 200, 230, 260, 290, 320]
+    expect(houseOfLongitude(355, wrapCusps)).toBe(1)
+    expect(houseOfLongitude(10, wrapCusps)).toBe(1)
+  })
+})
+
+describe('getMoonHouse', () => {
+  it('returns a house number in 1–12', () => {
+    const house = getMoonHouse(new Date('2026-03-15T00:00:00Z'), 51.5, -0.1, 'placidus')
+    expect(house).toBeGreaterThanOrEqual(1)
+    expect(house).toBeLessThanOrEqual(12)
+  })
+})
+
+describe('getMoonAspects', () => {
+  it('returns only aspects involving the Moon', () => {
+    const aspects = getMoonAspects(new Date('2026-03-15T00:00:00Z'), 'tropical')
+    for (const a of aspects) {
+      expect(
+        a.planet1.canonicalName === 'astrology.planet.luna' || a.planet2.canonicalName === 'astrology.planet.luna'
+      ).toBe(true)
+    }
+  })
+})
+
+describe('getMoonIlluminationPercent', () => {
+  it('returns a whole-number percentage in 0–100, matching Astronomy.Illumination', () => {
+    const date = new Date('2026-03-15T00:00:00Z')
+    const pct = getMoonIlluminationPercent(date)
+    expect(pct).toBeGreaterThanOrEqual(0)
+    expect(pct).toBeLessThanOrEqual(100)
+    expect(pct).toBe(Math.round(Astronomy.Illumination(Astronomy.Body.Moon, date).phase_fraction * 100))
   })
 })

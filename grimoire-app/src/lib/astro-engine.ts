@@ -613,6 +613,375 @@ export function getMoonEventsForMonth(year: number, month: number): MoonEvent[] 
   return events.sort((a, b) => a.time.getTime() - b.time.getTime())
 }
 
+// ─── Moon detail (Moon page) ───────────────────────────────────────────────────
+
+/** Mean synodic month, days. */
+const SYNODIC_DAYS = 29.530588853
+/** SearchMoonQuarter can return a hit up to one quarter-cycle after its anchor;
+ *  anchoring this far back guarantees the resulting window still spans a full
+ *  synodic month before `date`, so both a previous new and previous full moon
+ *  are guaranteed to exist within it. */
+const QUARTER_TIMELINE_LOOKBACK_DAYS = Math.ceil(SYNODIC_DAYS + SYNODIC_DAYS / 4) + 8
+/** Mean apparent geocentric angular diameter of the Moon, arc-minutes (2·asin(1737.4 / 385000.6)). */
+const MEAN_MOON_DIAM_ARCMIN = 31.07
+const MOON_RADIUS_KM = 1737.4
+const KM_PER_AU = 1.495978707e8
+
+/** Quarter phases bracketing a moment, in the same MoonEvent shape the calendar
+ * grid uses so emoji/labels stay identical across the app. */
+export type MoonQuarterTimeline = {
+  /** The next quarter-phase change of any of the four types. */
+  next: MoonEvent
+  prevNew: MoonEvent
+  prevFull: MoonEvent
+  nextNew: MoonEvent
+  nextFull: MoonEvent
+}
+
+export type MoonAppearance = {
+  /** Illuminated fraction of the disc, 0–1. */
+  illuminatedFraction: number
+  /** Apparent visual magnitude; more negative = brighter (~-12.7 at full). */
+  magnitude: number
+  /** Sun–Moon–Earth phase angle, degrees. 0 = full, 180 = new. */
+  phaseAngle: number
+  /** True while illumination is increasing. */
+  waxing: boolean
+  /** Earth-centre → Moon-centre distance, km (geocentric). */
+  distanceKm: number
+  /** Observer → Moon-centre distance, km (topocentric, from the given location). */
+  observerDistanceKm: number
+  /** Apparent angular diameter as seen from the given location, arc-minutes. */
+  angularDiameterArcmin: number
+  /** angularDiameterArcmin ÷ long-term mean. 1.0 = average apparent size. */
+  relativeSize: number
+  /** Altitude above the observer's horizon, degrees (negative = below horizon). */
+  altitudeDeg: number
+}
+
+export type EclipseKindName = 'penumbral' | 'partial' | 'annular' | 'total'
+
+export type EclipseForecast = {
+  kind: EclipseKindName
+  peak: Date
+  /** Peak fraction of the disc obscured, 0–1. Undefined for partial solar eclipses. */
+  obscuration?: number
+  /** Total/annular solar eclipses only: where the shadow axis meets the Earth. */
+  peakLatitude?: number
+  peakLongitude?: number
+}
+
+export type MoonRiseSet = {
+  /** Next moonrise after `date`, or null if none occurs within the search window (polar regions). */
+  nextRise: Date | null
+  /** Next moonset after `date`, or null if none occurs within the search window (polar regions). */
+  nextSet: Date | null
+}
+
+export type LunarApsisEvent = {
+  kind: 'perigee' | 'apogee'
+  time: Date
+  distanceKm: number
+}
+
+export type LunarApsisTimeline = {
+  nextPerigee: LunarApsisEvent
+  nextApogee: LunarApsisEvent
+}
+
+export type MoonConstellation = {
+  /** Full IAU constellation name, e.g. "Virgo". Not limited to the 12 zodiac
+   *  constellations — the Moon's ~5° orbital inclination can carry it into
+   *  neighbors like Ophiuchus, Sextans, or Corvus. */
+  name: string
+  /** 3-letter IAU abbreviation, e.g. "Vir". */
+  symbol: string
+  /** When the Moon last crossed into this constellation. */
+  enteredAt: Date
+  /** When the Moon will next cross out of this constellation. */
+  exitsAt: Date
+}
+
+export type MoonSnapshot = {
+  date: Date
+  appearance: MoonAppearance
+  timeline: MoonQuarterTimeline
+  nextLunarEclipse: EclipseForecast | null
+  nextSolarEclipse: EclipseForecast | null
+  riseSet: MoonRiseSet
+  apsis: LunarApsisTimeline
+  constellation: MoonConstellation
+  /** 1–12, tropical (house cusps are always tropical regardless of display mode). */
+  house: number
+  /** The Moon's current aspects to every other body, reusing the same aspect
+   *  math as natal/transit charts. */
+  aspects: Aspect[]
+}
+
+/**
+ * Quarter phases bracketing `date`: the next change of any type, plus the
+ * previous and next new and full moons.
+ *
+ * MoonQuarter.quarter is 0=new, 1=first quarter, 2=full, 3=third quarter —
+ * exactly the index order of MOON_PHASE_TARGETS above, so type/emoji come
+ * straight from the table the calendar grid already uses.
+ */
+export function getMoonQuarterTimeline(date: Date): MoonQuarterTimeline {
+  const events: MoonEvent[] = []
+  let mq = Astronomy.SearchMoonQuarter(new Date(date.getTime() - QUARTER_TIMELINE_LOOKBACK_DAYS * 86400000))
+
+  // ~45d back + ~30d forward ÷ ~7.38d per quarter ≈ 11 iterations; 20 is safe slack.
+  for (let i = 0; i < 20; i++) {
+    const def = MOON_PHASE_TARGETS[mq.quarter]
+    events.push({ type: def.type, time: mq.time.date, emoji: def.emoji })
+    const haveNextNew  = events.some(e => e.type === 'new'  && e.time > date)
+    const haveNextFull = events.some(e => e.type === 'full' && e.time > date)
+    if (haveNextNew && haveNextFull) break
+    mq = Astronomy.NextMoonQuarter(mq)
+  }
+
+  const before = events.filter(e => e.time <= date).reverse()
+  const after  = events.filter(e => e.time >  date)
+
+  return {
+    next:     after[0],
+    prevNew:  before.find(e => e.type === 'new')!,
+    prevFull: before.find(e => e.type === 'full')!,
+    nextNew:  after.find(e => e.type === 'new')!,
+    nextFull: after.find(e => e.type === 'full')!,
+  }
+}
+
+/**
+ * Current appearance of the Moon as seen from a given location: illumination,
+ * brightness, distance, and apparent size. Illumination/brightness/geocentric
+ * distance are inherently geocentric (Illumination/Libration); apparent size
+ * and altitude are computed topocentrically from lat/lon, since observer
+ * distance differs from geocentric distance by up to one Earth radius (±1.7%),
+ * which measurably changes how large the Moon appears.
+ */
+export function getMoonAppearance(date: Date, lat: number, lon: number): MoonAppearance {
+  const illum    = Astronomy.Illumination(Astronomy.Body.Moon, date)
+  const lib      = Astronomy.Libration(date)
+  const observer = new Astronomy.Observer(lat, lon, 0)
+
+  const eq  = Astronomy.Equator(Astronomy.Body.Moon, date, observer, true, true)
+  const hor = Astronomy.Horizon(date, observer, eq.ra, eq.dec, 'normal')
+
+  const observerDistanceKm = eq.dist * KM_PER_AU
+  const angularDiameterArcmin = 2 * Math.asin(MOON_RADIUS_KM / observerDistanceKm) * R2D * 60
+
+  return {
+    illuminatedFraction: illum.phase_fraction,
+    magnitude: illum.mag,
+    phaseAngle: illum.phase_angle,
+    // MoonPhase() is the Moon−Sun ecliptic longitude difference: 0=new, 180=full.
+    waxing: Astronomy.MoonPhase(date) < 180,
+    distanceKm: lib.dist_km,
+    observerDistanceKm,
+    angularDiameterArcmin,
+    relativeSize: angularDiameterArcmin / MEAN_MOON_DIAM_ARCMIN,
+    altitudeDeg: hor.altitude,
+  }
+}
+
+/**
+ * Precise illuminated-fraction percentage (0–100), via astronomy-engine —
+ * needs no observer (illumination is geocentric). More accurate than
+ * astro-calc's synodic-cycle approximation (which can differ by ~1–2 points),
+ * for display contexts that already show that approximation's phase name/emoji
+ * but want an accurate percentage alongside it.
+ */
+export function getMoonIlluminationPercent(date: Date): number {
+  return Math.round(Astronomy.Illumination(Astronomy.Body.Moon, date).phase_fraction * 100)
+}
+
+/**
+ * Next lunar eclipse after `date`. Lunar eclipses are visible from the entire
+ * night hemisphere, so — unlike solar eclipses — no observer location is needed.
+ * astronomy-engine's eclipse searches throw rather than return null on failure;
+ * swallow and return null so callers don't need their own try/catch.
+ */
+export function getNextLunarEclipse(date: Date): EclipseForecast | null {
+  try {
+    const e = Astronomy.SearchLunarEclipse(date)
+    return { kind: e.kind as EclipseKindName, peak: e.peak.date, obscuration: e.obscuration }
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Next solar eclipse anywhere on Earth after `date` (global, not location-
+ * specific — matches the location-independent lunar eclipse search above).
+ * Reporting only eclipses visible from the user's exact location would need
+ * altitude/obscuration filtering to avoid surfacing barely-perceptible partial
+ * eclipses, which is out of scope here.
+ */
+export function getNextSolarEclipse(date: Date): EclipseForecast | null {
+  try {
+    const e = Astronomy.SearchGlobalSolarEclipse(date)
+    return {
+      kind: e.kind as EclipseKindName,
+      peak: e.peak.date,
+      obscuration: e.obscuration,
+      peakLatitude: e.latitude,
+      peakLongitude: e.longitude,
+    }
+  } catch {
+    return null
+  }
+}
+
+/** Next moonrise and moonset after `date`, as seen from a given location. */
+export function getMoonRiseSet(date: Date, lat: number, lon: number): MoonRiseSet {
+  const observer = new Astronomy.Observer(lat, lon, 0)
+  // limitDays=2 covers the (rare, near-polar) case where a rise or set doesn't
+  // occur within the first calendar day; null propagates if truly none is found.
+  const nextRise = Astronomy.SearchRiseSet(Astronomy.Body.Moon, observer, +1, date, 2)
+  const nextSet  = Astronomy.SearchRiseSet(Astronomy.Body.Moon, observer, -1, date, 2)
+  return { nextRise: nextRise?.date ?? null, nextSet: nextSet?.date ?? null }
+}
+
+/**
+ * Next perigee and next apogee after `date`. Perigee/apogee strictly alternate,
+ * so two calls to NextLunarApsis are always enough to find one of each kind.
+ */
+export function getLunarApsisTimeline(date: Date): LunarApsisTimeline {
+  let apsis = Astronomy.SearchLunarApsis(date)
+  const events: LunarApsisEvent[] = []
+  for (let i = 0; i < 2; i++) {
+    events.push({
+      kind: apsis.kind === Astronomy.ApsisKind.Pericenter ? 'perigee' : 'apogee',
+      time: apsis.time.date,
+      distanceKm: apsis.dist_km,
+    })
+    apsis = Astronomy.NextLunarApsis(apsis)
+  }
+  return {
+    nextPerigee: events.find(e => e.kind === 'perigee')!,
+    nextApogee:  events.find(e => e.kind === 'apogee')!,
+  }
+}
+
+/**
+ * Popular ("perigee syzygy") threshold, not a rigid scientific definition —
+ * writers vary on the exact cutoff, but ~360,000 km geocentric distance at the
+ * moment of full (or new) moon is a commonly cited round-number threshold for
+ * the "supermoon" label.
+ */
+const SUPERMOON_THRESHOLD_KM = 360000
+
+/** Whether the Moon is within the popular "supermoon" distance threshold at `date`. */
+export function isSupermoon(date: Date): boolean {
+  return Astronomy.Libration(date).dist_km <= SUPERMOON_THRESHOLD_KM
+}
+
+/** The Moon's IAU constellation (by J2000 equatorial position) at a given moment. */
+function moonConstellationAt(date: Date): { name: string; symbol: string } {
+  const vec = Astronomy.GeoVector(Astronomy.Body.Moon, date, true)
+  const eq  = Astronomy.EquatorFromVector(vec)
+  const info = Astronomy.Constellation(eq.ra, eq.dec)
+  return { name: info.name, symbol: info.symbol }
+}
+
+/**
+ * Binary-search the exact boundary moment between two times known to straddle
+ * a constellation change — one where the Moon is still in `currentSymbol`, one
+ * where it's already left. Direction-agnostic: works whether `insideT` is
+ * chronologically before or after `outsideT`.
+ */
+function binarySearchConstellationBoundary(currentSymbol: string, insideT: Date, outsideT: Date): Date {
+  const earlyIsInside = insideT.getTime() < outsideT.getTime()
+  let lo = earlyIsInside ? insideT : outsideT
+  let hi = earlyIsInside ? outsideT : insideT
+  while (hi.getTime() - lo.getTime() > 60000) {
+    const mid = new Date((lo.getTime() + hi.getTime()) / 2)
+    const midIsInside = moonConstellationAt(mid).symbol === currentSymbol
+    if (midIsInside === earlyIsInside) lo = mid
+    else hi = mid
+  }
+  return new Date((lo.getTime() + hi.getTime()) / 2)
+}
+
+/** Steps outward from `date` in the given direction until the constellation
+ *  changes, then binary-searches the exact crossing moment. */
+function findConstellationBoundary(date: Date, currentSymbol: string, direction: 1 | -1): Date {
+  const STEP_MS = 3 * 3600 * 1000 // 3 hours — the Moon spends at least ~1 day in even the narrowest constellations it crosses
+  const MAX_STEPS = 60            // up to 7.5 days either direction; safe margin
+  let inside = date
+  for (let i = 1; i <= MAX_STEPS; i++) {
+    const t = new Date(date.getTime() + direction * i * STEP_MS)
+    if (moonConstellationAt(t).symbol !== currentSymbol) {
+      return binarySearchConstellationBoundary(currentSymbol, inside, t)
+    }
+    inside = t
+  }
+  return date // exceeded search window — shouldn't happen in practice
+}
+
+/** The Moon's current IAU constellation, plus when it entered and will next leave it. */
+export function getMoonConstellation(date: Date): MoonConstellation {
+  const current = moonConstellationAt(date)
+  return {
+    name: current.name,
+    symbol: current.symbol,
+    enteredAt: findConstellationBoundary(date, current.symbol, -1),
+    exitsAt:   findConstellationBoundary(date, current.symbol, 1),
+  }
+}
+
+/** Which house (1–12) a given ecliptic longitude falls in, given a set of 12 cusps. */
+export function houseOfLongitude(lon: number, cusps: number[]): number {
+  for (let i = 0; i < 12; i++) {
+    const start = cusps[i]
+    const end   = cusps[(i + 1) % 12]
+    const span   = (((end - start) % 360) + 360) % 360 || 360
+    const offset = (((lon - start) % 360) + 360) % 360
+    if (offset < span) return i + 1
+  }
+  return 12
+}
+
+/**
+ * The Moon's current house (1–12). Uses the Moon's tropical ecliptic longitude
+ * against tropical house cusps — getHouses() is always tropical regardless of
+ * display mode, so comparing a mode-shifted (e.g. sidereal) longitude against
+ * it would silently mismatch reference frames.
+ */
+export function getMoonHouse(date: Date, lat: number, lon: number, system: HouseSystem = 'placidus'): number {
+  const houses  = getHouses(date, lat, lon, system)
+  const moonLon = eclipticLon(Astronomy.Body.Moon, date)
+  return houseOfLongitude(moonLon, houses.cusps)
+}
+
+/** The Moon's current aspects to every other body, reusing the same aspect math as natal/transit charts. */
+export function getMoonAspects(date: Date, mode: AstrologyMode = 'tropical'): Aspect[] {
+  const positions = getPlanetPositions(date, mode)
+  return getAspects(positions, date).filter(a =>
+    a.planet1.canonicalName === 'astrology.planet.luna' || a.planet2.canonicalName === 'astrology.planet.luna')
+}
+
+/** Everything the Moon detail page needs, computed in one call. */
+export function getMoonSnapshot(
+  date: Date, lat: number, lon: number,
+  mode: AstrologyMode = 'tropical',
+  houseSystem: HouseSystem = 'placidus',
+): MoonSnapshot {
+  return {
+    date,
+    appearance: getMoonAppearance(date, lat, lon),
+    timeline: getMoonQuarterTimeline(date),
+    nextLunarEclipse: getNextLunarEclipse(date),
+    nextSolarEclipse: getNextSolarEclipse(date),
+    riseSet: getMoonRiseSet(date, lat, lon),
+    apsis: getLunarApsisTimeline(date),
+    constellation: getMoonConstellation(date),
+    house: getMoonHouse(date, lat, lon, houseSystem),
+    aspects: getMoonAspects(date, mode),
+  }
+}
+
 // ─── Ingresses for a month ────────────────────────────────────────────────────
 
 /** Binary search for the exact moment a planet crosses a sign boundary. */
@@ -1301,4 +1670,24 @@ export function formatLongitude(pos: PlanetPosition, mode: AstrologyMode = 'trop
 
 export function formatTime(date: Date): string {
   return date.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' })
+}
+
+/**
+ * Coarse human duration for an unsigned millisecond span: "3d 4h", "5h 12m", "18m".
+ * Two units maximum — a reader does not need seconds-level precision here.
+ */
+export function formatDuration(ms: number): string {
+  const abs = Math.abs(ms)
+  const d = Math.floor(abs / 86400000)
+  const h = Math.floor((abs % 86400000) / 3600000)
+  const m = Math.floor((abs % 3600000) / 60000)
+  if (d > 0) return h > 0 ? `${d}d ${h}h` : `${d}d`
+  if (h > 0) return m > 0 ? `${h}h ${m}m` : `${h}h`
+  return `${m}m`
+}
+
+/** "in 3d 4h" / "3d 4h ago", relative to `now`. */
+export function formatRelative(target: Date, now: Date): string {
+  const delta = target.getTime() - now.getTime()
+  return delta >= 0 ? `in ${formatDuration(delta)}` : `${formatDuration(delta)} ago`
 }

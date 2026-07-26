@@ -1,8 +1,9 @@
-import { Link } from '@tanstack/react-router'
+import { Link, useRouterState } from '@tanstack/react-router'
 import { useState, useEffect } from 'react'
 import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X } from 'lucide-react'
 import { GlobalSearch } from './GlobalSearch'
 import { loadNavConfig } from '@/lib/nav-store'
+import { getLastViewedEntity } from '@/lib/recent-entities'
 import { APP_VERSION } from '@/lib/app-version'
 
 const ALL_NAV_ITEMS = [
@@ -31,6 +32,7 @@ interface SidebarProps {
 
 export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
   const [navConfig, setNavConfig] = useState(() => loadNavConfig())
+  const pathname = useRouterState({ select: s => s.location.pathname })
 
   useEffect(() => {
     const handler = () => setNavConfig(loadNavConfig())
@@ -42,6 +44,14 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
     .filter(cfg => cfg.visible)
     .map(cfg => NAV_MAP.get(cfg.id))
     .filter((item): item is (typeof ALL_NAV_ITEMS)[number] => item !== undefined)
+
+  // Reference has no natural "resume" URL of its own — a tab tap always goes to a
+  // fixed `to`. Resolve it dynamically: jump back to the last entity you were
+  // reading when arriving from elsewhere in the app, but land on the list itself
+  // (the normal behavior) when you're already somewhere inside /reference — that
+  // matches the in-page "← Reference" button and avoids ever trapping the list
+  // behind an unreachable redirect.
+  const lastEntity = pathname.startsWith('/reference') ? null : getLastViewedEntity()
 
   // ── Icon-only tablet sidebar ─────────────────────────────────────────────────
   if (mode === 'icon') {
@@ -84,7 +94,9 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
           {visibleItems.map(({ to, icon: Icon, label }) => (
             <Link
               key={to}
-              to={to as NavTo}
+              {...(to === '/reference' && lastEntity
+                ? { to: '/reference/$canonicalName' as const, params: { canonicalName: lastEntity.canonicalName } }
+                : { to: to as NavTo })}
               title={label}
               style={{ textDecoration: 'none' }}
             >
@@ -167,7 +179,9 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
         {visibleItems.map(({ to, icon: Icon, label }) => (
           <Link
             key={to}
-            to={to as NavTo}
+            {...(to === '/reference' && lastEntity
+              ? { to: '/reference/$canonicalName' as const, params: { canonicalName: lastEntity.canonicalName } }
+              : { to: to as NavTo })}
             style={{ textDecoration: 'none' }}
             onClick={mode === 'drawer' ? onClose : undefined}
           >

@@ -49,6 +49,7 @@ import { Route as JournalStatsRouteImport } from './routes/journal/stats'
 import { Route as CustomTraditionsRouteImport } from './routes/custom/traditions'
 import { Route as CustomNewRouteImport } from './routes/custom/new'
 import { Route as CustomCnRouteImport } from './routes/custom/$cn'
+import { Route as CalendarMoonRouteImport } from './routes/calendar/moon'
 import { Route as AstrologyNewRouteImport } from './routes/astrology/new'
 import { Route as AstrologyAnimateRouteImport } from './routes/astrology/animate'
 import { Route as AstrologyIdRouteImport } from './routes/astrology/$id'
@@ -260,6 +261,11 @@ const CustomCnRoute = CustomCnRouteImport.update({
   path: '/custom/$cn',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CalendarMoonRoute = CalendarMoonRouteImport.update({
+  id: '/calendar/moon',
+  path: '/calendar/moon',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AstrologyNewRoute = AstrologyNewRouteImport.update({
   id: '/astrology/new',
   path: '/astrology/new',
@@ -281,6 +287,7 @@ export interface FileRoutesByFullPath {
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
+  '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
   '/custom/traditions': typeof CustomTraditionsRoute
@@ -326,6 +333,7 @@ export interface FileRoutesByTo {
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
+  '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
   '/custom/traditions': typeof CustomTraditionsRoute
@@ -372,6 +380,7 @@ export interface FileRoutesById {
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
   '/astrology/new': typeof AstrologyNewRoute
+  '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
   '/custom/traditions': typeof CustomTraditionsRoute
@@ -419,6 +428,7 @@ export interface FileRouteTypes {
     | '/astrology/$id'
     | '/astrology/animate'
     | '/astrology/new'
+    | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
     | '/custom/traditions'
@@ -464,6 +474,7 @@ export interface FileRouteTypes {
     | '/astrology/$id'
     | '/astrology/animate'
     | '/astrology/new'
+    | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
     | '/custom/traditions'
@@ -509,6 +520,7 @@ export interface FileRouteTypes {
     | '/astrology/$id'
     | '/astrology/animate'
     | '/astrology/new'
+    | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
     | '/custom/traditions'
@@ -555,6 +567,7 @@ export interface RootRouteChildren {
   AstrologyIdRoute: typeof AstrologyIdRoute
   AstrologyAnimateRoute: typeof AstrologyAnimateRoute
   AstrologyNewRoute: typeof AstrologyNewRoute
+  CalendarMoonRoute: typeof CalendarMoonRoute
   CustomCnRoute: typeof CustomCnRoute
   CustomNewRoute: typeof CustomNewRoute
   CustomTraditionsRoute: typeof CustomTraditionsRoute
@@ -878,6 +891,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CustomCnRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/calendar/moon': {
+      id: '/calendar/moon'
+      path: '/calendar/moon'
+      fullPath: '/calendar/moon'
+      preLoaderRoute: typeof CalendarMoonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/astrology/new': {
       id: '/astrology/new'
       path: '/astrology/new'
@@ -907,6 +927,7 @@ const rootRouteChildren: RootRouteChildren = {
   AstrologyIdRoute: AstrologyIdRoute,
   AstrologyAnimateRoute: AstrologyAnimateRoute,
   AstrologyNewRoute: AstrologyNewRoute,
+  CalendarMoonRoute: CalendarMoonRoute,
   CustomCnRoute: CustomCnRoute,
   CustomNewRoute: CustomNewRoute,
   CustomTraditionsRoute: CustomTraditionsRoute,

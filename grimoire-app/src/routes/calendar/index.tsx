@@ -8,7 +8,7 @@ import {
 import {
   computeMonthAstroData, getPlanetPositions, getAspects, formatLongitude, formatTime,
   getSignsForMode, getSunSignForMode, getSabbatsForYear,
-  getRetrogradeStrip, getRetrogradeStationInfo,
+  getRetrogradeStrip, getRetrogradeStationInfo, getMoonIlluminationPercent,
 } from '@/lib/astro-engine'
 import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat, RetrogradeStripEntry } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
@@ -18,7 +18,7 @@ import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
-import { ChevronLeft, ChevronRight, BookOpen, PenLine } from 'lucide-react'
+import { ChevronLeft, ChevronRight, BookOpen, PenLine, Moon } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 export const Route = createFileRoute('/calendar/')({
@@ -78,7 +78,7 @@ function CosmicInfoStrip({ date, navigate }: { date: Date; navigate: ReturnType<
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
         {chip(`${ruler.symbol} ${ruler.name}`, ruler.canonicalName, 'Day Ruler')}
-        {chip(`${moon.emoji} ${moon.name}`, moon.canonicalName, `${moon.illumination}%`)}
+        {chip(`${moon.emoji} ${moon.name}`, moon.canonicalName, `${getMoonIlluminationPercent(date)}%`)}
         {chip(`${sun.symbol} ${sun.name}`, sun.canonicalName, 'Sun')}
         {chip(`${wuxing.nameZh} ${wuxing.name}`, wuxing.canonicalName, wuxing.season)}
         {chineseAnimal && chip(`${chineseAnimal.emoji} ${chineseAnimal.chineseChar} ${chineseAnimal.name}`, chineseAnimal.canonicalName, 'Lunar Year')}
@@ -128,24 +128,36 @@ function RetrogradeToggle({ on, onToggle }: { on: boolean; onToggle: () => void 
   )
 }
 
-function RetrogradeSegment({ entry, date, color }: { entry: RetrogradeStripEntry; date: Date; color: string }) {
+function RetrogradeSegment({
+  entry, date, color, onTap,
+}: { entry: RetrogradeStripEntry; date: Date; color: string; onTap: (text: string) => void }) {
   const [title, setTitle] = useState<string | undefined>(
     entry.retrograde ? `${entry.planet.name} is in retrograde` : undefined
   )
+  const describe = (): string | undefined => {
+    if (!entry.retrograde || !entry.planet.body) return title
+    const info = getRetrogradeStationInfo(entry.planet.body, date)
+    if (!info) return title
+    const full = `${entry.planet.name} is in retrograde, Day ${info.dayNumber} of ${info.totalDays}`
+    setTitle(full)
+    return full
+  }
   return (
     <div
       title={title}
-      onMouseEnter={() => {
-        if (!entry.retrograde || !entry.planet.body) return
-        const info = getRetrogradeStationInfo(entry.planet.body, date)
-        if (info) setTitle(`${entry.planet.name} is in retrograde, Day ${info.dayNumber} of ${info.totalDays}`)
+      onMouseEnter={describe}
+      onClick={e => {
+        if (!entry.retrograde) return
+        e.stopPropagation()
+        const full = describe()
+        if (full) onTap(full)
       }}
       style={{ flex: 1, background: entry.retrograde ? color : 'transparent' }}
     />
   )
 }
 
-function RetrogradeStrip({ date }: { date: Date }) {
+function RetrogradeStrip({ date, onTap }: { date: Date; onTap: (text: string) => void }) {
   const entries = getRetrogradeStrip(date)
   return (
     <div
@@ -161,8 +173,28 @@ function RetrogradeStrip({ date }: { date: Date }) {
           entry={entry}
           date={date}
           color={RETROGRADE_COLORS[entry.planet.canonicalName] ?? 'var(--color-text-subtle)'}
+          onTap={onTap}
         />
       ))}
+    </div>
+  )
+}
+
+/** Fixed-position bubble for tap-triggered retrograde info — escapes the day cell's `overflow: hidden`
+ * so it stays legible on mobile, where there's no hover to reveal the `title` attribute. */
+function RetrogradeTapTooltip({ text }: { text: string | null }) {
+  if (!text) return null
+  return (
+    <div
+      style={{
+        position: 'fixed', left: '50%', bottom: '16px', transform: 'translateX(-50%)',
+        maxWidth: '90vw', zIndex: 100, pointerEvents: 'none',
+        background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+        borderRadius: '6px', padding: '8px 14px', fontSize: '13px', color: 'var(--color-text)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.3)', textAlign: 'center',
+      }}
+    >
+      {text}
     </div>
   )
 }
@@ -172,7 +204,7 @@ function RetrogradeStrip({ date }: { date: Date }) {
 type DayEntries = { readings: Reading[]; entries: JournalEntry[] }
 
 function CalendarGrid({
-  year, month, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde,
+  year, month, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde, onRetrogradeTap,
 }: {
   year: number
   month: number
@@ -184,6 +216,7 @@ function CalendarGrid({
   onDayClick: (dateStr: string) => void
   navigate: ReturnType<typeof useNavigate>
   showRetrograde: boolean
+  onRetrogradeTap: (text: string) => void
 }) {
   const weeks = useMemo(() => buildCalendarGrid(year, month), [year, month])
   const currentMonthStr = `${year}-${String(month).padStart(2, '0')}`
@@ -244,7 +277,7 @@ function CalendarGrid({
                   if (!isSelected && !isToday) e.currentTarget.style.borderColor = 'var(--color-border)'
                 }}
               >
-                {showRetrograde && <RetrogradeStrip date={date} />}
+                {showRetrograde && <RetrogradeStrip date={date} onTap={onRetrogradeTap} />}
 
                 <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '3px' }}>
                   {/* Row 1: day number + moon */}
@@ -257,7 +290,7 @@ function CalendarGrid({
                     </span>
                     <span
                       style={{ fontSize: moon.isMajor ? '13px' : '11px', opacity: moon.isMajor ? 0.9 : 0.4, lineHeight: 1 }}
-                      title={preciseMoon ? `${preciseMoon.type} at ${formatTime(preciseMoon.time)}` : `${moon.name} (${moon.illumination}%)`}
+                      title={preciseMoon ? `${preciseMoon.type} at ${formatTime(preciseMoon.time)}` : `${moon.name} (${getMoonIlluminationPercent(date)}%)`}
                     >
                       {preciseMoon?.emoji ?? moon.emoji}
                     </span>
@@ -464,6 +497,7 @@ function DayDetail({
   const ruler  = getPlanetaryDayRuler(date)
   const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
+  const chineseAnimal = getChineseZodiacYear(date)
   const label  = date.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
   const readings = entries?.readings ?? []
   const journalEntries = entries?.entries ?? []
@@ -495,11 +529,13 @@ function DayDetail({
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', fontSize: '12px' }}>
           {navLink(`${ruler.symbol} ${ruler.name}`, ruler.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
-          {navLink(`${moon.emoji} ${moon.name} (${moon.illumination}%)`, moon.canonicalName)}
+          {navLink(`${moon.emoji} ${moon.name} (${getMoonIlluminationPercent(date)}%)`, moon.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
           {navLink(`${sun.symbol} ${sun.name}`, sun.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
           {navLink(`${wuxing.nameZh} ${wuxing.name}`, wuxing.canonicalName)}
+          <span style={{ color: 'var(--color-border)' }}>·</span>
+          {navLink(`${chineseAnimal.emoji} ${chineseAnimal.chineseChar} ${chineseAnimal.name}`, chineseAnimal.canonicalName)}
         </div>
       </div>
 
@@ -578,6 +614,13 @@ function CalendarPage() {
   const [monthEntries,  setMonthEntries]  = useState<JournalEntry[]>([])
   const [monthAstro,    setMonthAstro]    = useState<MonthAstroData | null>(null)
   const [showRetrograde, setShowRetrograde] = useState(() => loadSettings().showRetrogradeTracker)
+  const [retrogradeTapText, setRetrogradeTapText] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!retrogradeTapText) return
+    const id = setTimeout(() => setRetrogradeTapText(null), 3000)
+    return () => clearTimeout(id)
+  }, [retrogradeTapText])
 
   // Sabbats keyed by date string YYYY-MM-DD (computed per year)
   const sabbatsByDate = useMemo(() => {
@@ -642,6 +685,9 @@ function CalendarPage() {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', gap: '12px', flexWrap: 'wrap' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Calendar</h1>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/calendar/moon' })}>
+            <Moon size={13} /> Moon
+          </Button>
           <RetrogradeToggle on={showRetrograde} onToggle={toggleRetrograde} />
           {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
         </div>
@@ -661,11 +707,14 @@ function CalendarPage() {
         </button>
       </div>
 
+      <RetrogradeTapTooltip text={retrogradeTapText} />
+
       <CalendarGrid
         year={year} month={month} today={today}
         selectedDate={selectedDate}
         entriesByDate={entriesByDate}
         astroByDate={monthAstro?.byDate ?? null}
+        onRetrogradeTap={setRetrogradeTapText}
         sabbatsByDate={sabbatsByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}

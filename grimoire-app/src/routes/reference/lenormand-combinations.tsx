@@ -1,5 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import React, { useState, useMemo } from 'react'
+import { ArrowLeft } from 'lucide-react'
+import { Button } from '@/components/ui/Button'
 import {
   LENORMAND_COMBINATIONS,
   LENORMAND_CARD_NAMES,
@@ -32,6 +34,9 @@ function LenormandCombinationsPage() {
 
   return (
     <div style={{ maxWidth: '760px' }}>
+      <Button variant="ghost" size="sm" onClick={() => window.history.back()} style={{ marginBottom: '12px' }}>
+        <ArrowLeft size={14} /> Back
+      </Button>
       <div style={{ fontSize: '13px', color: 'var(--color-accent)', marginBottom: '4px' }}>
         Reference
       </div>

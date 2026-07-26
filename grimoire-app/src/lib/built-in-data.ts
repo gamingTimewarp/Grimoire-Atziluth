@@ -332,6 +332,9 @@ export const BUILT_IN_SPREADS: SpreadDefinition[] = [
     description: 'Full 36-card Lenormand spread laid out in a 9×4 grid. Each position is a numbered house whose name corresponds to the Lenormand card that belongs there.',
     isBuiltIn: true,
     requiredDeckId: 'lenormand',
+    // The Tableau uses the entire 36-card deck by definition — every card already
+    // has a house, so there's nothing left to pull as a separate clarifier.
+    allowClarifiers: false,
     positions: [
       { id: 'house-1',  name: 'Rider',      meaning: 'News, swift movement, a visitor arriving',              drawOrder: 1,  orientationRule: 'upright-reversed', x: 0, y: 0, z: 0 },
       { id: 'house-2',  name: 'Clover',     meaning: 'Luck, small opportunity, brief happiness',              drawOrder: 2,  orientationRule: 'upright-reversed', x: 1, y: 0, z: 0 },

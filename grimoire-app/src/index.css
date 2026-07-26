@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+/*
+ * Bundled fallback fonts for glyphs that many Android system-font stacks lack
+ * (planetary/zodiac/aspect/alchemical symbols, Elder Futhark runes, Ogham letters
+ * — e.g. Eris's ⯰, U+2BF0, which was added to Unicode after most OEM font builds
+ * were frozen). Each is a fonttools subset of Google's Noto family (SIL OFL 1.1,
+ * see public/fonts/OFL.txt) containing only the codepoints this app displays, so
+ * they're a few KB each and only ever loaded when one of those codepoints appears
+ * on the page (unicode-range is scoped tightly for that reason).
+ */
+@font-face {
+  font-family: "Noto Symbols Fallback";
+  src: url("/fonts/NotoSansSymbols-subset.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+260A-260D, U+263D, U+263F-2640, U+2642-2653, U+26B3-26BB,
+    U+26CE, U+1F701-1F704, U+1F708, U+1F70D, U+1F70F, U+1F75B, U+1F76A;
+}
+@font-face {
+  font-family: "Noto Symbols Fallback";
+  src: url("/fonts/NotoSansSymbols2-subset.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+25A1, U+25B3, U+2609, U+2630-2637, U+263C, U+2BF0;
+}
+@font-face {
+  font-family: "Noto Runic Fallback";
+  src: url("/fonts/NotoSansRunic-subset.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+16A0, U+16A2, U+16A6, U+16A8, U+16B1-16B2, U+16B7,
+    U+16B9-16BA, U+16BE, U+16C1, U+16C3, U+16C7-16CA, U+16CF, U+16D2,
+    U+16D6-16D7, U+16DA, U+16DC, U+16DE-16DF;
+}
+@font-face {
+  font-family: "Noto Ogham Fallback";
+  src: url("/fonts/NotoSansOgham-subset.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+1681-1699;
+}
+
 @theme {
   --color-surface-0: #0d0d12;
   --color-surface-1: #13131a;
@@ -13,7 +50,7 @@
   --color-text-muted: #7a7a8f;
   --color-text-subtle: #4a4a60;
   --color-danger: #c44a4a;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", "Noto Symbols Fallback", "Noto Runic Fallback", "Noto Ogham Fallback", system-ui, sans-serif;
 }
 
 * {

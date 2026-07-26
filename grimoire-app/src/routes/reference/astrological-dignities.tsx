@@ -1,5 +1,7 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState } from 'react'
+import { ArrowLeft } from 'lucide-react'
+import { Button } from '@/components/ui/Button'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link } from '@grimoire/core'
 
@@ -104,6 +106,9 @@ function AstrologicalDignitiesTable() {
 
   return (
     <div style={{ maxWidth: '900px' }}>
+      <Button variant="ghost" size="sm" onClick={() => window.history.back()} style={{ marginBottom: '12px' }}>
+        <ArrowLeft size={14} /> Back
+      </Button>
       <div style={{ fontSize: '13px', color: 'var(--color-accent)', marginBottom: '4px' }}>
         Reference › Guides
       </div>

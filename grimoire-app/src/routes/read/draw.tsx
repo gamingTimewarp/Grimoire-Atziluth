@@ -14,7 +14,7 @@ import type { SpreadPosition } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
 import { RichTextEditor, RichTextRenderer } from '@/components/ui/RichText'
 import React, { useRef, useState } from 'react'
-import { RotateCcw, ChevronRight, Plus, Sparkles, Trash2, Share2, X } from 'lucide-react'
+import { RotateCcw, ChevronRight, Plus, Sparkles, Trash2, Share2, X, Flag } from 'lucide-react'
 import { loadAccessibilitySettings } from '@/lib/accessibility-store'
 import { getVoidOfCourseMoon } from '@/lib/astro-engine'
 import { exportReadingAsMarkdown, exportReadingAsImage } from '@/lib/reading-export'
@@ -215,6 +215,7 @@ function DrawPage() {
   const [saveError,        setSaveError]       = useState<string | null>(null)
   const [announcement,     setAnnouncement]    = useState('')
   const [confirmDiscard,   setConfirmDiscard]  = useState(false)
+  const [confirmEndEarly,  setConfirmEndEarly] = useState(false)
   const [exporting,        setExporting]       = useState(false)
   const [selectedCardName, setSelectedCardName] = useState<string | null>(null)
   const exportRef = useRef<HTMLDivElement>(null)
@@ -248,6 +249,9 @@ function DrawPage() {
   const currentPosition = isFree ? null : positions[currentPositionIndex] ?? null
   const allPositionsFilled = !isFree && spreadCards.length >= positions.length
   const canDrawMore = shuffledCards.length > drawnCards.length
+  // Spreads like the Grand Tableau consume the entire deck by definition — every
+  // card already has a place, so a separate clarifier pull doesn't apply.
+  const allowClarifiers = selectedSpread?.allowClarifiers !== false
   const lastDrawn = drawnCards[drawnCards.length - 1] ?? null
 
   const goToReference = (canonicalName: string) => {
@@ -548,19 +552,47 @@ function DrawPage() {
 
       {/* ── Action area — always above the spread so it's never below the fold ── */}
 
-      {/* Spread: drawing in progress */}
-      {!isFree && !allPositionsFilled && canDrawMore && (
+      {/* Spread: drawing in progress (or deck exhausted before all positions filled) */}
+      {!isFree && !allPositionsFilled && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
-          <Button onClick={drawCard}>Draw Card</Button>
-          {spreadCards.length > 0 && (
-            <Button variant="ghost" size="sm" onClick={drawClarifier}>
-              <Sparkles size={13} />
-              Clarifier
-            </Button>
+          {canDrawMore ? (
+            <>
+              <Button onClick={drawCard}>Draw Card</Button>
+              {allowClarifiers && spreadCards.length > 0 && (
+                <Button variant="ghost" size="sm" onClick={drawClarifier}>
+                  <Sparkles size={13} />
+                  Clarifier
+                </Button>
+              )}
+              <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+                {shuffledCards.length - drawnCards.length} remaining
+              </span>
+            </>
+          ) : (
+            <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+              No cards left in the deck.
+            </span>
           )}
-          <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
-            {shuffledCards.length - drawnCards.length} remaining
-          </span>
+          {drawnCards.length > 0 && (
+            confirmEndEarly ? (
+              <>
+                <span style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>
+                  End reading now? Unfilled positions will be left blank.
+                </span>
+                <Button variant="ghost" size="sm" onClick={() => useReadingStore.setState({ step: 'notes' })}>
+                  Yes, end reading
+                </Button>
+                <Button variant="ghost" size="sm" onClick={() => setConfirmEndEarly(false)}>
+                  Cancel
+                </Button>
+              </>
+            ) : (
+              <Button variant="ghost" size="sm" onClick={() => setConfirmEndEarly(true)}>
+                <Flag size={13} />
+                End Reading
+              </Button>
+            )
+          )}
         </div>
       )}
 
@@ -570,7 +602,7 @@ function DrawPage() {
           <Button onClick={() => useReadingStore.setState({ step: 'notes' })}>
             Continue to Notes <ChevronRight size={16} />
           </Button>
-          {canDrawMore && (
+          {allowClarifiers && canDrawMore && (
             <Button variant="ghost" size="sm" onClick={drawClarifier}>
               <Sparkles size={13} />
               Clarifier

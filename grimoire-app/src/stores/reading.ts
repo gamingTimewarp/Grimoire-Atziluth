@@ -4,6 +4,7 @@
  */
 
 import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
 import type { BaseEntity, CardOrientation, Reading, CreateReadingInput } from '@grimoire/core'
 import type { DeckFilter, SpreadDefinition } from '@/lib/built-in-data'
 import type { SpreadPosition } from '@grimoire/core'
@@ -102,7 +103,20 @@ function fisherYates<T>(arr: T[]): T[] {
   return a
 }
 
-export const useReadingStore = create<ReadingStore>((set, get) => ({
+type PersistedReadingState = Pick<ReadingStore,
+  | 'step' | 'selectedDeck' | 'selectedSpread' | 'reversalsEnabled'
+  | 'shuffledCards' | 'drawIndex' | 'drawnCards' | 'currentPositionIndex'
+  | 'question' | 'notes' | 'tags' | 'subject' | 'savedReading'
+>
+
+/**
+ * A reading in progress is meaningful state, not scratch UI — losing your drawn
+ * cards and notes because you switched tabs or the app got closed mid-reading is
+ * the exact bug this persists against. Rehydrates from localStorage on next launch
+ * so /read/index's existing "resume if mid-reading" redirect has something to
+ * resume into.
+ */
+export const useReadingStore = create<ReadingStore>()(persist((set, get) => ({
   ...initialState,
 
   setDeck(deck) {
@@ -220,5 +234,22 @@ export const useReadingStore = create<ReadingStore>((set, get) => ({
 
   reset() {
     set(initialState)
+  },
+}), {
+  name: 'grimoire:reading-session',
+  partialize: (state): PersistedReadingState => {
+    // A finished reading is already saved to the database (viewable via Journal) —
+    // don't resurrect its "just completed" screen on a future launch.
+    if (state.step === 'complete') return { ...initialState }
+    const {
+      step, selectedDeck, selectedSpread, reversalsEnabled,
+      shuffledCards, drawIndex, drawnCards, currentPositionIndex,
+      question, notes, tags, subject, savedReading,
+    } = state
+    return {
+      step, selectedDeck, selectedSpread, reversalsEnabled,
+      shuffledCards, drawIndex, drawnCards, currentPositionIndex,
+      question, notes, tags, subject, savedReading,
+    }
   },
 }))

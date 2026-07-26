@@ -36,6 +36,7 @@
         "entities/astrology/elements.json",
         "entities/astrology/planets.json",
         "entities/astrology/moon-phases.json",
+        "entities/astrology/full-moon-names.json",
         "entities/astrology/arabic-lots.json",
         "entities/astrology/zodiac-signs.json",
         "entities/astrology/houses.json",
