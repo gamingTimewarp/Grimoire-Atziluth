@@ -43,6 +43,11 @@ export function getRecentEntities(limit = 8): RecentEntity[] {
   return load().slice(0, limit)
 }
 
+/** The single most recently visited entity, if any — used to restore the Reference tab to where it left off. */
+export function getLastViewedEntity(): RecentEntity | null {
+  return load()[0] ?? null
+}
+
 /** Removes a single entry from the recency list. */
 export function removeRecentEntity(canonicalName: string): void {
   save(load().filter(e => e.canonicalName !== canonicalName))

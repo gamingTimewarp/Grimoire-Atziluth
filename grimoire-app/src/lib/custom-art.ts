@@ -8,7 +8,7 @@
 
 import { useEffect, useState } from 'react'
 import { appConfigDir, join } from '@tauri-apps/api/path'
-import { mkdir, copyFile, exists, remove, writeFile } from '@tauri-apps/plugin-fs'
+import { mkdir, readFile, exists, remove, writeFile } from '@tauri-apps/plugin-fs'
 import { open } from '@tauri-apps/plugin-dialog'
 import { convertFileSrc } from '@tauri-apps/api/core'
 import type { BaseEntity } from '@grimoire/core'
@@ -62,23 +62,51 @@ export function useCustomImageUrl(fileName: string | null | undefined): string |
   return url
 }
 
+const KNOWN_EXTENSIONS = ['png', 'jpg', 'jpeg', 'svg', 'webp', 'gif']
+const TRAILING_EXT_RE = /\.([a-z0-9]+)(?:[?#].*)?$/i
+
+/**
+ * Guesses an image's extension from its magic bytes. Needed because the path picked
+ * on Android is a `content://` URI with no filename component to derive one from.
+ */
+function sniffImageExtension(data: Uint8Array): string | null {
+  if (data.length >= 4 && data[0] === 0x89 && data[1] === 0x50 && data[2] === 0x4e && data[3] === 0x47) return 'png'
+  if (data.length >= 3 && data[0] === 0xff && data[1] === 0xd8 && data[2] === 0xff) return 'jpg'
+  if (data.length >= 4 && data[0] === 0x47 && data[1] === 0x49 && data[2] === 0x46 && data[3] === 0x38) return 'gif'
+  if (data.length >= 12
+    && data[0] === 0x52 && data[1] === 0x49 && data[2] === 0x46 && data[3] === 0x46
+    && data[8] === 0x57 && data[9] === 0x45 && data[10] === 0x42 && data[11] === 0x50) return 'webp'
+  const head = new TextDecoder().decode(data.slice(0, 256)).trimStart()
+  if (head.startsWith('<?xml') || head.startsWith('<svg')) return 'svg'
+  return null
+}
+
 /**
  * Opens a native file picker and copies the chosen image into the app's custom-art
  * directory under a freshly generated filename (decoupled from canonical name, so
  * renaming an entity never orphans its image). Returns null if the user cancelled.
+ *
+ * Reads the source via `readFile` rather than `copyFile`: on Android, the picker
+ * returns a `content://` URI, and Tauri's `copyFile` command has no handling for
+ * that scheme (only `readFile` does), so `copyFile` fails there with
+ * "URL is not a valid path".
  */
 export async function pickAndStoreCustomImage(): Promise<string | null> {
   const picked = await open({
     multiple: false,
-    filters: [{ name: 'Images', extensions: ['png', 'jpg', 'jpeg', 'svg', 'webp', 'gif'] }],
+    filters: [{ name: 'Images', extensions: KNOWN_EXTENSIONS }],
   })
   if (!picked || Array.isArray(picked)) return null
 
-  const ext = picked.split('.').pop()?.toLowerCase() || 'png'
+  const data = await readFile(picked)
+  const pathExt = TRAILING_EXT_RE.exec(picked)?.[1]?.toLowerCase()
+  const ext = (pathExt && KNOWN_EXTENSIONS.includes(pathExt) ? pathExt : null)
+    ?? sniffImageExtension(data)
+    ?? 'png'
   const fileName = `${crypto.randomUUID()}.${ext}`
   const dir = await getArtDir()
   const dest = await join(dir, fileName)
-  await copyFile(picked, dest)
+  await writeFile(dest, data)
   return fileName
 }
 

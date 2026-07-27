@@ -13,8 +13,9 @@
       ],
       "tags": ["colour", "colour-red", "warm-colour"],
       "extendedData": {
-        "hex": "#DC2626",
+        "hue": 0,
         "spectralRangeNm": "620–750",
+        "colourRange": "Every shade traditionally called red: pale rose and salmon at low saturation, pure vivid scarlet and crimson at full strength, deepening to oxblood and maroon in shadow.",
         "westernMeaning": "Passion, romantic love, danger, and violence sit side by side with martial courage and ecclesiastical authority (cardinal red). Used for warning signs and stop lights; the colour of Valentine's Day and of the Christian martyr's palm.",
         "easternMeaning": "Overwhelmingly auspicious: the dominant colour of Chinese New Year, wedding attire, and gift envelopes (hongbao), signifying luck, joy, and the driving away of evil. In Hindu India, red (sindoor, bridal saris) marks marital status, fertility, and the goddess Durga's fierce protective power. In Japan, red torii gates mark the threshold into sacred space."
       }
@@ -30,8 +31,9 @@
       ],
       "tags": ["colour", "colour-orange", "warm-colour"],
       "extendedData": {
-        "hex": "#F97316",
+        "hue": 25,
         "spectralRangeNm": "590–620",
+        "colourRange": "From soft peach and apricot through vivid tangerine and pumpkin, darkening toward burnt sienna and rust.",
         "westernMeaning": "Energy, warmth, and enthusiasm; the colour of autumn, harvest festivals, and Halloween. Used commercially to signal affordability, friendliness, and appetite (fast-food branding). Historically linked to the Dutch royal House of Orange.",
         "easternMeaning": "Saffron/orange is the colour of renunciation in South Asian religion — the robes of Hindu sannyasins and Theravada Buddhist monks, signifying the burning away of worldly attachment. Sacred to Hanuman and Agni (fire) in Hinduism; one of the two colours (with green and white) on the Indian flag, representing courage and sacrifice."
       }
@@ -47,8 +49,9 @@
       ],
       "tags": ["colour", "colour-yellow", "warm-colour"],
       "extendedData": {
-        "hex": "#FACC15",
+        "hue": 48,
         "spectralRangeNm": "570–590",
+        "colourRange": "From pale cream and butter through radiant gold and lemon, deepening to mustard and ochre in shadow.",
         "westernMeaning": "Happiness, sunshine, and intellect, but also cowardice ('yellow-bellied'), caution (hazard signage, the historical quarantine flag), and jealousy. Gold-yellow signals wealth and divinity (halos, royal purple's counterpart).",
         "easternMeaning": "In imperial China, yellow was the colour of the Emperor and the Earth phase at the centre of Wu Xing cosmology — commoners were forbidden to wear it. Sacred to the Yellow River and the legendary Yellow Emperor (Huangdi). In Buddhism, yellow/gold robes and statuary signify enlightenment and the Buddha's radiance."
       }
@@ -64,8 +67,9 @@
       ],
       "tags": ["colour", "colour-green", "cool-colour"],
       "extendedData": {
-        "hex": "#16A34A",
+        "hue": 140,
         "spectralRangeNm": "495–570",
+        "colourRange": "From mint and sage through vivid emerald and kelly green, deepening to forest and bottle green.",
         "westernMeaning": "Nature, growth, fertility, and luck (Ireland, four-leaf clovers) alongside envy ('green with envy'), inexperience ('greenhorn'), and toxicity (poison-bottle labelling). The colour of money in the United States and of 'go' at traffic signals.",
         "easternMeaning": "The sacred colour of Islam, linked to Paradise and the Prophet Muhammad, widely used on flags and in mosque decoration. In Chinese Wu Xing cosmology, green/blue-green (qīng) is the colour of the Wood phase, the East, and spring — governing growth, the liver, and new beginnings."
       }
@@ -81,8 +85,9 @@
       ],
       "tags": ["colour", "colour-blue", "cool-colour"],
       "extendedData": {
-        "hex": "#2563EB",
+        "hue": 220,
         "spectralRangeNm": "450–495",
+        "colourRange": "From powder blue and periwinkle through vivid azure and cobalt, deepening to navy and midnight blue.",
         "westernMeaning": "Calm, trust, and stability — the most widely preferred colour in cross-cultural surveys and the default choice for corporate and institutional branding. Ultramarine marks divinity in Marian iconography. A secondary note of melancholy survives in 'feeling blue' and the blues musical tradition.",
         "easternMeaning": "Krishna and Vishnu are depicted with blue-black skin in Hindu iconography, signifying the infinite and unbounded nature of the divine, likened to the sky and ocean. Historically, many East Asian languages (Chinese qīng 青, Japanese ao 青) used a single term spanning blue and green, treating them as one conceptual colour."
       }
@@ -97,8 +102,9 @@
       ],
       "tags": ["colour", "colour-indigo", "cool-colour"],
       "extendedData": {
-        "hex": "#4338CA",
+        "hue": 245,
         "spectralRangeNm": "420–450",
+        "colourRange": "From soft lavender-blue through deep true indigo, darkening toward the near-black indigo of dye vats at its most saturated.",
         "westernMeaning": "Added to the rainbow's seven named bands by Isaac Newton, partly to match the seven notes of a musical scale. In 20th-century New Age and yogic-derived systems, indigo is assigned to the Ajna ('third eye') chakra, governing intuition and inner vision.",
         "easternMeaning": "India was the historical source of the indigo dye trade (the word 'indigo' derives from 'Indian'); colonial indigo plantations provoked Bengal's Indigo Revolt of 1859. In Japan, aizome indigo-dyeing produced the deep blue of traditional workwear and remains a living textile craft."
       }
@@ -115,8 +121,9 @@
       ],
       "tags": ["colour", "colour-violet", "cool-colour"],
       "extendedData": {
-        "hex": "#7C3AED",
+        "hue": 265,
         "spectralRangeNm": "380–450",
+        "colourRange": "From pale lilac and lavender through vivid violet and amethyst, deepening to royal purple and aubergine.",
         "westernMeaning": "Tyrian purple, extracted from sea snails, was restricted by law to Roman and Byzantine emperors — the origin of 'royal purple.' The Christian liturgical colour of penitence and preparation (Advent, Lent). In modern esoteric systems, associated with the crown chakra and transcendence.",
         "easternMeaning": "In Japan's historical cap-and-rank system, murasaki (violet-purple) was reserved for the imperial court and highest aristocratic ranks, a development that paralleled Tyrian purple's restriction in the Mediterranean world without direct contact between the two traditions."
       }
@@ -131,8 +138,9 @@
       ],
       "tags": ["colour", "colour-black", "achromatic-colour"],
       "extendedData": {
-        "hex": "#18181B",
+        "hue": null,
         "spectralRangeNm": null,
+        "colourRange": "Achromatic — no hue or saturation. The deep end of the value scale alone: from charcoal and slate down to the deepest possible black.",
         "westernMeaning": "Mourning and death, but equally elegance and formality (the tuxedo, judicial and clerical robes) and subcultural rebellion (goth, punk, anarchism). Black is the visual absence of reflected light rather than a spectral hue.",
         "easternMeaning": "The colour of the Water phase, the North, and winter in Chinese Wu Xing cosmology; the imperial colour of the Qin dynasty. In South Asia, a small black mark is traditionally applied to ward off the evil eye, even as pure black is often avoided in wedding attire as inauspicious."
       }
@@ -147,8 +155,9 @@
       ],
       "tags": ["colour", "colour-white", "achromatic-colour"],
       "extendedData": {
-        "hex": "#F8FAFC",
+        "hue": null,
         "spectralRangeNm": null,
+        "colourRange": "Achromatic — no hue or saturation. The pale end of the value scale alone: from ivory and off-white up to the purest possible white.",
         "westernMeaning": "Purity, peace, and new beginnings — the bridal gown, the white flag of surrender, the dove, medical and clinical cleanliness. White is the visual sum of the full spectrum rather than a single wavelength.",
         "easternMeaning": "The traditional colour of mourning across China, Japan, Korea, and Hindu India — worn at funerals and, historically, by widows — the near-exact inverse of its Western bridal association, making white the clearest textbook case of culturally constructed rather than universal colour meaning."
       }
@@ -164,8 +173,9 @@
       ],
       "tags": ["colour", "colour-grey", "achromatic-colour"],
       "extendedData": {
-        "hex": "#71717A",
+        "hue": null,
         "spectralRangeNm": null,
+        "colourRange": "Achromatic — no hue or saturation. The full neutral range between black and white: every shade of ash, slate, and silver.",
         "westernMeaning": "Neutrality and ambiguity ('grey area'), deliberate unobtrusiveness (the business suit), and the accumulation of age. Victorian half-mourning used grey as a transitional stage between black mourning and ordinary dress.",
         "easternMeaning": "Edo-period Japan developed an elaborate vocabulary of named greys (nezumi-iro, 'mouse colours') after sumptuary laws restricted brighter colours to the aristocracy, elevating muted tones into a prized aesthetic in their own right among the merchant class."
       }
@@ -181,8 +191,9 @@
       ],
       "tags": ["colour", "colour-brown", "earth-colour"],
       "extendedData": {
-        "hex": "#78350F",
+        "hue": 25,
         "spectralRangeNm": null,
+        "colourRange": "Brown has no spectral hue of its own — it's the low-value corner of the orange family: tan and fawn at its palest, chestnut and chocolate at full depth, near-black at its darkest.",
         "westernMeaning": "Earthiness, humility, and dependability — Franciscan monastic robes used undyed brown wool to signal poverty deliberately. A largely unglamorous, comfortable register in modern use: coffee, autumn, packaging.",
         "easternMeaning": "Tibetan Buddhist monastic robes commonly run maroon-to-brown, distinct from Theravada saffron-orange. In Ayurveda, brown and earth tones are linked to the grounding, stabilising qualities of the Kapha dosha and the Earth mahabhuta."
       }
@@ -197,8 +208,9 @@
       ],
       "tags": ["colour", "colour-pink", "warm-colour"],
       "extendedData": {
-        "hex": "#EC4899",
+        "hue": 330,
         "spectralRangeNm": null,
+        "colourRange": "From the faintest blush and pale rose through vivid fuchsia and magenta, deepening to dusty mauve and wine.",
         "westernMeaning": "Tenderness, romance, and compassion — Valentine's Day, and since the 1990s the international symbol of breast cancer awareness. Its association with girls specifically is a mid-20th-century marketing convention; earlier Western etiquette often reversed pink and blue by gender.",
         "easternMeaning": "Japan's sakura (cherry blossom), a related pale rose tone, carries the distinct symbolic weight of mono no aware — the poignant awareness of beauty's transience — since the blossoms fall within days of opening, rather than pink's Western romantic connotation."
       }

@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "astrology.full-moon-name.wolf-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Wolf Moon",
+      "description": "The Wolf Moon is the first full moon of the calendar year, traditionally falling in January. The name is generally attributed to the Algonquian-speaking peoples of the northeastern United States and popularized in English through the colonial-era Farmer's Almanac tradition, which recorded it as the time when hungry wolf packs howled outside villages in the depths of midwinter. The Anglo-Saxon monk Bede, writing in the early eighth century, called this month Æfterra Gēola — 'after Yule' — marking it simply by its position following the midwinter feast rather than by any animal or omen. Modern neopagan almanacs (a twentieth-century popular tradition rather than a verified ancient one) commonly circulate 'Quiet Moon' as a further name for this period, reflecting the stillness of the season. Astrologically the January full moon falls opposite the Sun's position in Capricorn, landing in Cancer or Leo depending on the year. It marks deep winter: scarcity, endurance, and the long wait for the return of light.",
+      "secondaryNames": [
+        { "name": "Old Moon",        "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Moon After Yule", "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Æfterra Gēola",   "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "After Yule",      "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Quiet Moon",      "languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 1,
+        "orderNumber": 1,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Æfterra Gēola",
+        "celticMoonName": "Quiet Moon",
+        "zodiacRange": ["astrology.zodiac-sign.cancer", "astrology.zodiac-sign.leo"],
+        "seasonalTheme": "deep winter, scarcity, the pack",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.snow-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Snow Moon",
+      "description": "The Snow Moon falls in February, named by Algonquian and colonial almanac tradition for the heaviest snowfalls of the year, which typically arrive in this month across the northeastern United States. Because hunting became difficult in deep snow, some communities recorded it instead as the Hunger Moon, a name that survives as a common alternate in almanac lists alongside Storm Moon. Bede recorded the Anglo-Saxon name as Solmōnaþ, which he glossed as the 'month of cakes' — cakes that, he wrote, the English offered to their gods during this time, an authentic eighth-century attestation rather than a modern reconstruction. Modern neopagan almanacs, a much later popular tradition, often circulate 'Ice Moon' for this same period. The February full moon opposes the Sun in Aquarius, landing in Leo or Virgo. It is a moon of endurance rather than growth — the hardest stretch of winter, still weeks from the thaw.",
+      "secondaryNames": [
+        { "name": "Hunger Moon", "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Storm Moon",  "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Solmōnaþ",    "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "Cake Month",  "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Ice Moon",    "languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 2,
+        "orderNumber": 2,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Solmōnaþ",
+        "celticMoonName": "Ice Moon",
+        "zodiacRange": ["astrology.zodiac-sign.leo", "astrology.zodiac-sign.virgo"],
+        "seasonalTheme": "hard winter, hunger, endurance",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.worm-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Worm Moon",
+      "description": "The Worm Moon marks March, named — per colonial almanac tradition drawing on Algonquian sources — for the earthworm casts that reappear in thawing soil as the ground softens, a sign that spring is truly underway. Alternate almanac names include Crow Moon, for the return and cawing of crows after winter, Sap Moon, for the running of maple sap, and Lenten Moon, for its frequent overlap with the Christian season of Lent. Bede named this month Hrēþmonaþ after Hretha (also rendered Rheda), a goddess to whom the pre-Christian English offered sacrifices in March — one of only two months in his list, alongside April, that he explicitly ties to a named deity. Modern neopagan almanac lists often give 'Wind Moon' for this same period, evoking March's characteristic gales. The March full moon opposes the Sun in Pisces, falling in Virgo or Libra. It is the threshold moon: the last full moon of winter, or the first of spring, depending on the equinox's placement that year.",
+      "secondaryNames": [
+        { "name": "Crow Moon",         "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Sap Moon",          "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Lenten Moon",       "languageTag": "en-alt",     "visible": false, "sortOrder": 2 },
+        { "name": "Hrēþmonaþ",         "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Month of Hretha",   "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Wind Moon",         "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 3,
+        "orderNumber": 3,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Hrēþmonaþ",
+        "celticMoonName": "Wind Moon",
+        "zodiacRange": ["astrology.zodiac-sign.virgo", "astrology.zodiac-sign.libra"],
+        "seasonalTheme": "thaw, the turning of the soil, the threshold of spring",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.pink-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Pink Moon",
+      "description": "The Pink Moon takes its name not from the Moon's own colour but from moss phlox (Phlox subulata), one of the earliest and most widespread wildflowers to bloom across eastern North America in April — the almanac tradition named the moon for what was flowering on the ground beneath it. Other recorded almanac names include Sprouting Grass Moon and Egg Moon, both marking the same burst of spring growth and fertility, and Paschal Moon, the ecclesiastical name for the full moon that fixes the date of Easter. Bede recorded April as Ēosturmōnaþ, named — like March's Hretha — for a goddess, Eostre, to whom feasts were held in this month; it is the only surviving textual source for her name and the acknowledged root of the modern word 'Easter'. Modern neopagan almanacs list 'Growing Moon' for the same period. The April full moon opposes the Sun in Aries, falling in Libra or Scorpio, and marks the season's decisive turn toward growth.",
+      "secondaryNames": [
+        { "name": "Sprouting Grass Moon", "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Egg Moon",             "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Paschal Moon",         "languageTag": "en-alt",     "visible": true,  "sortOrder": 2 },
+        { "name": "Ēosturmōnaþ",          "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Month of Eostre",      "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Growing Moon",         "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 4,
+        "orderNumber": 4,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Ēosturmōnaþ",
+        "celticMoonName": "Growing Moon",
+        "zodiacRange": ["astrology.zodiac-sign.libra", "astrology.zodiac-sign.scorpio"],
+        "seasonalTheme": "wildflowers, fertility, the decisive turn to growth",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.flower-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Flower Moon",
+      "description": "The Flower Moon marks May, when the almanac tradition records flowers as abundant across the landscape as they will be all year. Corn Planting Moon is recorded as an alternate, marking the point in the agricultural calendar when maize went into the ground, and Milk Moon reflects the same season from a pastoral perspective. Bede's Anglo-Saxon name for May, Þrimilcemōnaþ, translates literally as 'month of three milkings' — pasture had grown lush enough that cows could be milked three times a day, a concrete and specific piece of agricultural memory. Modern neopagan almanac tradition gives 'Hare Moon' for the same period, associating the month with the animal long linked to spring fertility. The May full moon opposes the Sun in Taurus, falling in Scorpio or Sagittarius, and sits at the peak of spring abundance, just before the turn toward summer.",
+      "secondaryNames": [
+        { "name": "Corn Planting Moon",       "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Milk Moon",                "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Þrimilcemōnaþ",            "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "Month of Three Milkings",  "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Hare Moon",                "languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 5,
+        "orderNumber": 5,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Þrimilcemōnaþ",
+        "celticMoonName": "Hare Moon",
+        "zodiacRange": ["astrology.zodiac-sign.scorpio", "astrology.zodiac-sign.sagittarius"],
+        "seasonalTheme": "peak bloom, lush pasture, spring abundance",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.strawberry-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Strawberry Moon",
+      "description": "The Strawberry Moon marks June and the short wild-strawberry harvest season across the northeastern woodlands — one of the more literal and widely agreed-upon names in the almanac tradition, since it names a specific, brief, and easily observed event rather than a general seasonal condition. European almanac traditions arriving later gave this same moon the names Rose Moon and Mead Moon (or Honey Moon, for the traditional timing of early-summer weddings and the mead brewed to celebrate them — a folk etymology sometimes offered, though not certainly, for the word 'honeymoon'). Bede's name for June, Ærra Līþa — 'before Litha' — anchors the month by its position ahead of midsummer, Litha being the Anglo-Saxon name for the summer-solstice season itself. Modern neopagan almanacs commonly list 'Horse Moon' for the same period. The June full moon opposes the Sun in Gemini, falling in Sagittarius or Capricorn, close by the summer solstice.",
+      "secondaryNames": [
+        { "name": "Rose Moon",    "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Mead Moon",    "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Honey Moon",   "languageTag": "en-alt",     "visible": true,  "sortOrder": 2 },
+        { "name": "Ærra Līþa",    "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Before Litha", "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Horse Moon",   "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 6,
+        "orderNumber": 6,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Ærra Līþa",
+        "celticMoonName": "Horse Moon",
+        "zodiacRange": ["astrology.zodiac-sign.sagittarius", "astrology.zodiac-sign.capricorn"],
+        "seasonalTheme": "the wild-strawberry harvest, early summer, the solstice approach",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.buck-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Buck Moon",
+      "description": "The Buck Moon marks July, named for the stage male deer reach in this month: antlers, shed the previous winter, are now regrown and covered in velvet. Thunder Moon is recorded as a common alternate, for the frequency of summer thunderstorms, and Hay Moon marks the same period from the perspective of the hay harvest. Bede's name, Æftera Līþa — 'after Litha' — completes the pair begun by June's Ærra Līþa; he notes that in years requiring a leap month to keep the lunar and solar calendars aligned, an intercalary month called Thrilithi was inserted between the two, an unusually precise piece of calendrical detail for an eighth-century source. Modern neopagan almanacs list 'Claiming Moon' for the same period, tied to the buck's assertion of territory. The July full moon opposes the Sun in Cancer, falling in Capricorn or Aquarius, in the full heat of summer.",
+      "secondaryNames": [
+        { "name": "Thunder Moon", "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Hay Moon",     "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Æftera Līþa",  "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "After Litha",  "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Claiming Moon","languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 7,
+        "orderNumber": 7,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Æftera Līþa",
+        "celticMoonName": "Claiming Moon",
+        "zodiacRange": ["astrology.zodiac-sign.capricorn", "astrology.zodiac-sign.aquarius"],
+        "seasonalTheme": "high summer, antler velvet, thunderstorms",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.sturgeon-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Sturgeon Moon",
+      "description": "The Sturgeon Moon marks August, named by fishing communities around the Great Lakes and Lake Champlain for the peak season in which the large sturgeon native to those waters were most readily caught. Green Corn Moon and Grain Moon record the same period from an agricultural perspective, as the year's grain crops near ripeness, while Red Moon refers to the reddish cast the Moon can take on when it rises through the haze and dust of late-summer evenings. Bede's Anglo-Saxon name, Weodmōnaþ, means 'month of weeds' — 'weod' in Old English referring broadly to plants and vegetation rather than carrying the pejorative sense the word has today, so the name is better read as 'month of growing things' than as a complaint about unwanted growth. Modern neopagan almanacs list 'Dispute Moon' for the same period. The August full moon opposes the Sun in Leo, falling in Aquarius or Pisces, as the growing season begins visibly to turn toward harvest.",
+      "secondaryNames": [
+        { "name": "Green Corn Moon",   "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Grain Moon",        "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Red Moon",          "languageTag": "en-alt",     "visible": false, "sortOrder": 2 },
+        { "name": "Weodmōnaþ",         "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Month of Weeds",    "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Dispute Moon",      "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 8,
+        "orderNumber": 8,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Weodmōnaþ",
+        "celticMoonName": "Dispute Moon",
+        "zodiacRange": ["astrology.zodiac-sign.aquarius", "astrology.zodiac-sign.pisces"],
+        "seasonalTheme": "the sturgeon run, ripening grain, the turn toward harvest",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.harvest-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Harvest Moon",
+      "description": "The Harvest Moon is unique among the twelve: rather than being tied to a fixed calendar month, it is defined as whichever full moon falls nearest the autumn equinox (around 22 September) — most often in September, but in roughly one year out of three it falls in October instead, displacing that month's Hunter's Moon to November. Its name reflects a genuinely practical function: for several nights running around this full moon, moonrise follows sunset with an unusually short delay at northern latitudes, giving farmers extra light by which to bring in the harvest before frost. When the Harvest Moon falls in October, September's full moon is instead called by its alternate name, Corn Moon (also recorded as Barley Moon or Fruit Moon). Bede recorded September as Hāligmōnaþ, the 'holy month,' a general name for a time of sacred rites rather than one tied to a specific deity or agricultural event. Modern neopagan almanacs list 'Singing Moon' for the same period. Astrologically the September full moon opposes the Sun in Virgo, falling in Pisces or Aries.",
+      "secondaryNames": [
+        { "name": "Corn Moon",     "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Barley Moon",   "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Fruit Moon",    "languageTag": "en-alt",     "visible": false, "sortOrder": 2 },
+        { "name": "Hāligmōnaþ",    "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Holy Month",    "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Singing Moon",  "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 9,
+        "orderNumber": 9,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Hāligmōnaþ",
+        "celticMoonName": "Singing Moon",
+        "zodiacRange": ["astrology.zodiac-sign.pisces", "astrology.zodiac-sign.aries"],
+        "anchor": "nearest-autumn-equinox",
+        "definitionNote": "Unlike the other eleven names, the Harvest Moon is defined by the autumn equinox rather than by calendar month: it is the full moon falling nearest 22 September. Roughly one year in three it therefore falls in October, which displaces the Hunter's Moon into November — and the September full moon that year takes its alternate name, Corn Moon, instead.",
+        "seasonalTheme": "ingathering, threshing, the long working night",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.hunters-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Hunter's Moon",
+      "description": "The Hunter's Moon follows the Harvest Moon and typically falls in October, named for the season when fields lie cut and stubbled, game is fattened for winter, and hunting parties could see their quarry clearly by moonlight across the open, harvested ground. Blood Moon and Sanguine Moon are recorded as alternates, referring to the reddish autumn light and to the slaughtering season, while Dying Grass Moon marks the same period as vegetation fades. Bede's name for October, Winterfylleþ — 'winter full moon' — reflects his statement that the Anglo-Saxons reckoned winter as beginning at the full moon that fell within this month, making it a genuine calendrical marker rather than a purely descriptive name. Modern neopagan almanacs commonly list 'Shedding Moon' for the same period, evoking the fall of leaves. Like the Harvest Moon, the Hunter's Moon shares the characteristic of rising only slightly later each night around the full moon; astrologically it opposes the Sun in Libra, falling in Aries or Taurus.",
+      "secondaryNames": [
+        { "name": "Blood Moon",         "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Sanguine Moon",      "languageTag": "en-alt",     "visible": false, "sortOrder": 1 },
+        { "name": "Dying Grass Moon",   "languageTag": "en-alt",     "visible": true,  "sortOrder": 2 },
+        { "name": "Winterfylleþ",       "languageTag": "ang",        "visible": true,  "sortOrder": 3 },
+        { "name": "Winter Full Moon",   "languageTag": "en-meaning", "visible": false, "sortOrder": 4 },
+        { "name": "Shedding Moon",      "languageTag": "en-celtic",  "visible": true,  "sortOrder": 5 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 10,
+        "orderNumber": 10,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Winterfylleþ",
+        "celticMoonName": "Shedding Moon",
+        "zodiacRange": ["astrology.zodiac-sign.aries", "astrology.zodiac-sign.taurus"],
+        "seasonalTheme": "the hunt across stubbled fields, the reckoned start of winter",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.beaver-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Beaver Moon",
+      "description": "The Beaver Moon marks November, named — according to the almanac tradition — for the season when beavers finish their winter lodges and become most active before the ponds freeze over, making it also the traditional time to set beaver traps for winter fur before the animals retreated for the season. Frost Moon and Mourning Moon are recorded as alternates, the latter reflecting the year's decline into darkness and cold. Bede's name for November, Blōtmōnaþ — 'month of sacrifice' — records that cattle judged unlikely to survive the winter were slaughtered in this month and dedicated to the gods, a practical culling dressed in religious observance. Modern neopagan almanacs list 'Ivy Moon' for the same period, drawing on the ivy's place in twentieth-century tree-calendar reconstructions of the turning year. The November full moon opposes the Sun in Scorpio, falling in Taurus or Gemini, deep in the year's decline toward winter.",
+      "secondaryNames": [
+        { "name": "Frost Moon",         "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Mourning Moon",      "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Blōtmōnaþ",          "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "Month of Sacrifice", "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Ivy Moon",           "languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 11,
+        "orderNumber": 11,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Blōtmōnaþ",
+        "celticMoonName": "Ivy Moon",
+        "zodiacRange": ["astrology.zodiac-sign.taurus", "astrology.zodiac-sign.gemini"],
+        "seasonalTheme": "the last trapping season, the autumn cull, the decline toward winter",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    },
+    {
+      "canonicalName": "astrology.full-moon-name.cold-moon",
+      "entityType": "astrology.full-moon-name",
+      "primaryDisplayName": "Cold Moon",
+      "description": "The Cold Moon closes the year in December, named simply and directly by the almanac tradition for the season's deepening chill as the winter solstice approaches. Long Night Moon and Moon Before Yule are recorded as alternates, both marking the same proximity to the solstice and the shortest days of the year. Bede's name, Ærra Gēola — 'before Yule' — mirrors January's Æfterra Gēola on the far side of the midwinter feast, framing the whole solstice season by what comes before and after it rather than naming either month independently. Modern neopagan almanacs list 'Oak Moon' for the same period, the oak being traditionally associated in twentieth-century Wheel-of-the-Year reconstructions with the solstice king of the waxing year. The December full moon opposes the Sun in Sagittarius, falling in Gemini or Cancer, closing the cycle at the year's longest nights before the Wolf Moon begins it again.",
+      "secondaryNames": [
+        { "name": "Long Night Moon",   "languageTag": "en-alt",     "visible": true,  "sortOrder": 0 },
+        { "name": "Moon Before Yule",  "languageTag": "en-alt",     "visible": true,  "sortOrder": 1 },
+        { "name": "Ærra Gēola",        "languageTag": "ang",        "visible": true,  "sortOrder": 2 },
+        { "name": "Before Yule",       "languageTag": "en-meaning", "visible": false, "sortOrder": 3 },
+        { "name": "Oak Moon",          "languageTag": "en-celtic",  "visible": true,  "sortOrder": 4 }
+      ],
+      "tags": ["moon", "full-moon", "lunar-calendar", "folklore", "seasonal"],
+      "extendedData": {
+        "month": 12,
+        "orderNumber": 12,
+        "hemisphere": "northern",
+        "primaryTradition": "algonquian-colonial-almanac",
+        "anglosaxonMonth": "Ærra Gēola",
+        "celticMoonName": "Oak Moon",
+        "zodiacRange": ["astrology.zodiac-sign.gemini", "astrology.zodiac-sign.cancer"],
+        "seasonalTheme": "the longest nights, the solstice threshold, the year's close",
+        "lunaCanonical": "astrology.planet.luna"
+      }
+    }
+  ]
+}

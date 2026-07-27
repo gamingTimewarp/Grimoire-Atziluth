@@ -11,10 +11,9 @@ import { getEntriesForEntity, getReadingsForEntity } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import { getEntityAnnotation, saveEntityAnnotation } from '@/lib/custom-db'
 import { recordRecentEntity } from '@/lib/recent-entities'
-import { artGroupForEntityType, classicArtUrl, isSymbolicPack, loadArtSettings, ART_GROUPS } from '@/lib/art-store'
+import { artGroupForEntityType } from '@/lib/art-store'
 import { getCustomImageFileName } from '@/lib/custom-art'
 import { EntityArt } from '@/components/ui/EntityArt'
-import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
@@ -633,63 +632,27 @@ const CARD_ART_GROUPS = new Set(['tarot-rws', 'tarot-tdm', 'tarot-thoth', 'tarot
 // Entity types that have symbolic renderers in EntityArt but no art group
 const SYMBOLIC_ENTITY_TYPES = new Set([
   'astrology.planet', 'astrology.node', 'astrology.element', 'astrology.zodiac-sign',
-  'iching.hexagram', 'letter.hebrew',
+  'iching.hexagram', 'letter.hebrew', 'colour.colour',
 ])
 
+/**
+ * EntityArt already reads the current art-pack settings internally and picks the
+ * right renderer (symbolic, classic image with fallback, or a custom pack/image) —
+ * so this panel's only job is deciding *whether* to show a floating art preview at
+ * all, not *how*. Previously this duplicated that pack-selection logic with its own
+ * classicArtUrl() call hardcoded to the 'classic' pack id, which ignored whatever
+ * pack the user actually had selected (e.g. always showing Lenormand's "Playing
+ * Card" pack even when "Symbolic" was selected).
+ */
 function EntityArtPanel({ entity }: { entity: BaseEntity }) {
   const group = artGroupForEntityType(entity.entityType, entity.canonicalName)
-  const [hidden, setHidden] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
-  // Use EntityArt when: no group at all, runes/metals (whose classic pack is also EntityArt-based),
-  // or the currently selected pack for this group is symbolic.
-  const { packByGroup } = loadArtSettings()
-  const currentPack = group ? (packByGroup[group] ?? 'symbolic') : null
-  const isBuiltInPack = group ? (ART_GROUPS.find(g => g.id === group)?.packs.some(p => p.id === currentPack) ?? false) : true
-  // Custom entities with a user-uploaded image always take priority over group-based art,
-  // even in the rare case where their entityType happens to coincide with a built-in group.
-  // Likewise, a custom (user-imported) art pack is rendered via EntityArt, not classicArtUrl.
-  const useEntityArt = !!getCustomImageFileName(entity) || (!group
-    ? SYMBOLIC_ENTITY_TYPES.has(entity.entityType)
-    : !isBuiltInPack || group === 'runes' || group === 'alchemy-metals' || isSymbolicPack(group, currentPack!))
+  const hasArt = !!getCustomImageFileName(entity) || !!group || SYMBOLIC_ENTITY_TYPES.has(entity.entityType)
+  if (!hasArt) return null
 
-  if (useEntityArt) {
-    const rw = 80
-    const rh = Math.round(rw * 1.4)
-    return (
-      <>
-        <div
-          onClick={() => setLightboxOpen(true)}
-          title="Click to zoom"
-          style={{ float: 'right', marginLeft: '20px', marginBottom: '12px', cursor: 'zoom-in' }}
-        >
-          <EntityArt entity={entity} width={rw} height={rh} />
-        </div>
-        {lightboxOpen && (
-          <div
-            onClick={() => setLightboxOpen(false)}
-            style={{
-              position: 'fixed', inset: 0, zIndex: 9999,
-              background: 'rgba(0,0,0,0.85)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              cursor: 'zoom-out',
-            }}
-          >
-            <EntityArt entity={entity} width={200} height={280} />
-          </div>
-        )}
-      </>
-    )
-  }
-
-  if (!group || hidden) return null
-
-  // Cards (tarot / lenormand) use portrait aspect ratio; others (runes, geomancy, mahjong) square-ish
-  const isCard = CARD_ART_GROUPS.has(group)
-  const w = isCard ? 108 : 80
-  const h = isCard ? Math.round(w * 1.4) : 80
-
-  const url = classicArtUrl(group, entity.canonicalName)
+  const w = 80
+  const h = Math.round(w * 1.4)
 
   return (
     <>
@@ -698,25 +661,20 @@ function EntityArtPanel({ entity }: { entity: BaseEntity }) {
         title="Click to zoom"
         style={{ float: 'right', marginLeft: '20px', marginBottom: '12px', cursor: 'zoom-in' }}
       >
-        <img
-          src={url}
-          alt={entity.primaryDisplayName}
-          width={w}
-          height={h}
-          onError={() => setHidden(true)}
-          style={{
-            display: 'block',
-            width: w,
-            height: h,
-            objectFit: 'contain',
-            borderRadius: isCard ? '6px' : '4px',
-            border: '1px solid var(--color-border)',
-            background: 'var(--color-surface-2)',
-          }}
-        />
+        <EntityArt entity={entity} width={w} height={h} />
       </div>
       {lightboxOpen && (
-        <ImageLightbox src={url} alt={entity.primaryDisplayName} onClose={() => setLightboxOpen(false)} />
+        <div
+          onClick={() => setLightboxOpen(false)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 9999,
+            background: 'rgba(0,0,0,0.85)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'zoom-out',
+          }}
+        >
+          <EntityArt entity={entity} width={200} height={280} />
+        </div>
       )}
     </>
   )
@@ -784,10 +742,6 @@ function MemberArtTile({
 }: {
   member: BaseEntity; tileW: number; tileH: number; isCard: boolean; onNavigate: (cn: string) => void
 }) {
-  const group = artGroupForEntityType(member.entityType, member.canonicalName)
-  const [imgFailed, setImgFailed] = useState(false)
-  const url = (group && group !== 'runes') ? classicArtUrl(group, member.canonicalName) : null
-
   return (
     <button
       onClick={() => onNavigate(member.canonicalName)}
@@ -802,26 +756,7 @@ function MemberArtTile({
       onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
       onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
     >
-      {group === 'runes' ? (
-        <EntityArt entity={member} width={tileW} height={tileH} />
-      ) : url && !imgFailed ? (
-        <img
-          src={url}
-          alt={member.primaryDisplayName}
-          width={tileW}
-          height={tileH}
-          onError={() => setImgFailed(true)}
-          style={{ display: 'block', width: tileW, height: tileH, objectFit: 'contain' }}
-        />
-      ) : (
-        <div style={{
-          width: tileW, height: tileH,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: '10px', color: 'var(--color-text-subtle)', padding: '4px', textAlign: 'center',
-        }}>
-          {member.primaryDisplayName}
-        </div>
-      )}
+      <EntityArt entity={member} width={tileW} height={tileH} />
       <div style={{
         fontSize: '9px', color: 'var(--color-text-muted)', padding: '3px 4px',
         textAlign: 'center', lineHeight: '1.2', width: '100%',
@@ -2065,7 +2000,7 @@ function ExtendedDataTable({
   onNavigate: (canonicalName: string) => void
   additionalHiddenKeys?: Set<string>
 }) {
-  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'treeX', 'treeY'])
+  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'treeX', 'treeY', 'hue'])
   const DURATION_KEYS = new Set(['durationYears', 'durationYearsInt', 'durationMonths', 'durationDays'])
 
   const hasDuration = 'durationYearsInt' in data && 'durationMonths' in data && 'durationDays' in data
@@ -2094,6 +2029,15 @@ function ExtendedDataTable({
     entries.unshift(['duration', durationStr])
   }
 
+  // Major arcana trumps split into elements (3), planets (7), or zodiac signs (12) under the
+  // classical Golden Dawn Hebrew-letter attribution — never more than one of the three. Minors
+  // always have an element via their suit (shown through the Suit field instead), so this only
+  // applies to majors: show "None" explicitly rather than silently omitting the row, so a major
+  // with no elemental attribution reads as "checked, doesn't apply" rather than "data missing".
+  if (data.arcana === 'major' && !entries.some(([k]) => k === 'element')) {
+    entries.push(['element', 'None'])
+  }
+
   if (!entries.length) return null
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(120px, auto) 1fr', gap: '8px 16px' }}>
@@ -2103,7 +2047,9 @@ function ExtendedDataTable({
             {key.replace(/CN$/, '').replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()).trim()}
           </span>
           <div style={{ fontSize: '13px', color: 'var(--color-text)', wordBreak: 'break-word' }}>
-            <ExtendedValue value={value} linkedNames={linkedNames} onNavigate={onNavigate} />
+            {key === 'element' && value === 'None'
+              ? <span style={{ color: 'var(--color-text-subtle)' }}>None</span>
+              : <ExtendedValue value={value} linkedNames={linkedNames} onNavigate={onNavigate} />}
           </div>
         </React.Fragment>
       ))}

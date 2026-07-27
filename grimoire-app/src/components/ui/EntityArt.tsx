@@ -40,6 +40,7 @@ export function EntityArt({
     if (entity.entityType === 'astrology.node')        return <PlanetSymbolic entity={entity} width={width} height={height} />
     if (entity.entityType === 'astrology.element')     return <ElementSymbolic entity={entity} width={width} height={height} />
     if (entity.entityType === 'letter.hebrew')         return <HebrewLetterSymbolic entity={entity} width={width} height={height} />
+    if (entity.entityType === 'colour.colour')         return <ColourSwatchSymbolic entity={entity} width={width} height={height} />
     return <GenericSymbolic label={entity.primaryDisplayName} width={width} height={height} />
   }
 
@@ -202,6 +203,52 @@ function HebrewLetterSymbolic({ entity, width, height }: { entity: BaseEntity; w
         {letterForm}
       </div>
       <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+    </div>
+  )
+}
+
+// ─── Colour Swatch Symbolic ───────────────────────────────────────────────────
+// Renders the full saturation×value gamut at the colour's representative hue —
+// the same SV-square gradient as HsvColorPicker's picker widget, but static and
+// filling the entity image slot. That single-hue square is, in effect, every
+// shade traditionally called by that colour's name (pale to deep, muted to
+// vivid). Achromatic entries (black/white/grey) have no hue and fall back to a
+// plain light→dark gradient instead of a tinted square.
+
+function ColourSwatchSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+  const ed  = entity.extendedData as Record<string, unknown>
+  const hue = typeof ed.hue === 'number' ? ed.hue : null
+
+  const labelH  = Math.max(18, Math.round(height * 0.11))
+  const squareH = height - labelH
+
+  return (
+    <div style={{
+      width, height,
+      display: 'flex',
+      flexDirection: 'column',
+      border: '1px solid var(--color-border)',
+      borderRadius: '6px',
+      overflow: 'hidden',
+      flexShrink: 0,
+      background: 'var(--color-surface-3)',
+    }}>
+      <div style={{
+        position: 'relative',
+        width: '100%',
+        height: squareH,
+        background: hue !== null ? `hsl(${hue}, 100%, 50%)` : 'linear-gradient(to bottom, #fff, #000)',
+      }}>
+        {hue !== null && (
+          <>
+            {/* saturation: white → transparent (left → right) */}
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, #fff, transparent)' }} />
+            {/* value: transparent → black (top → bottom) */}
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, #000)' }} />
+          </>
+        )}
+      </div>
+      <div style={{ ...labelStyle(height), padding: '4px 6px 0' }}>{entity.primaryDisplayName}</div>
     </div>
   )
 }

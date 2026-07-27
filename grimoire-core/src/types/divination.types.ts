@@ -42,6 +42,13 @@ export interface SpreadDefinition {
   isBuiltIn: boolean
   /** If set, this spread is only offered when this deck ID is selected. */
   requiredDeckId?: string
+  /**
+   * False disables drawing clarifier cards for this spread (default true).
+   * Used for spreads like the Grand Tableau that consume the entire deck by
+   * definition — every card already has a place, so an extra "clarifier" pull
+   * outside the layout doesn't make sense for the format.
+   */
+  allowClarifiers?: boolean
   positions: SpreadPosition[]
 }
 
