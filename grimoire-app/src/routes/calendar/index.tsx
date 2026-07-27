@@ -471,7 +471,12 @@ function DayDetail({
   const ruler  = getPlanetaryDayRuler(date)
   const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
-  const label  = date.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+  const gregorianLabel = date.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+  // On a native-calendar tab, that calendar's own date is the point of the
+  // view — it should read as the headline, with the Gregorian date as the
+  // secondary cross-reference, not the other way around.
+  const label = nativeLabel ?? gregorianLabel
+  const secondaryLabel = nativeLabel ? gregorianLabel : undefined
   const readings = entries?.readings ?? []
   const journalEntries = entries?.entries ?? []
 
@@ -489,8 +494,8 @@ function DayDetail({
       <div style={{ marginBottom: '16px', paddingBottom: '14px', borderBottom: '1px solid var(--color-border)' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
           <div style={{ fontSize: '16px', fontWeight: 500, color: 'var(--color-text)' }}>{label}</div>
-          {nativeLabel && (
-            <span style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>{nativeLabel}</span>
+          {secondaryLabel && (
+            <span style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>{secondaryLabel}</span>
           )}
           {sabbat && (
             <span
@@ -783,6 +788,7 @@ function TraditionCalendarView({
   const [monthReadings, setMonthReadings] = useState<Reading[]>([])
   const [monthEntries,  setMonthEntries]  = useState<JournalEntry[]>([])
   const [monthAstro,    setMonthAstro]    = useState<MonthAstroData | null>(null)
+  const [showRetrograde, setShowRetrograde] = useState(() => loadSettings().showRetrogradeTracker)
 
   const daysInMonth  = system.daysInMonth(nativeYear, nativeMonth, nativeIsLeap)
   const firstOfMonth = useMemo(() => system.toGregorian({ year: nativeYear, month: nativeMonth, day: 1, isLeapMonth: nativeIsLeap }), [system, nativeYear, nativeMonth, nativeIsLeap])
@@ -863,6 +869,13 @@ function TraditionCalendarView({
     setSelectedDate(today)
   }
   const isViewingCurrentMonth = nativeYear === todayNative.year && nativeMonth === todayNative.month && nativeIsLeap === !!todayNative.isLeapMonth
+  const toggleRetrograde = () => {
+    setShowRetrograde(v => {
+      const next = !v
+      patchSettings({ showRetrogradeTracker: next })
+      return next
+    })
+  }
 
   const selectedAstroDay = selectedDate
     ? (monthAstro?.byDate.get(selectedDate) ?? EMPTY_ASTRO_DAY)
@@ -895,6 +908,10 @@ function TraditionCalendarView({
         </button>
       </div>
 
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+        <RetrogradeToggle on={showRetrograde} onToggle={toggleRetrograde} />
+      </div>
+
       <CalendarGrid
         weeks={weeks} today={today}
         selectedDate={selectedDate}
@@ -903,7 +920,7 @@ function TraditionCalendarView({
         sabbatsByDate={sabbatsByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
-        showRetrograde={false}
+        showRetrograde={showRetrograde}
         labelForDate={labelForDate}
       />
 
