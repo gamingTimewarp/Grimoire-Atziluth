@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.month.islamic.muharram",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Muharram",
+      "description": "Muharram is the first month of the Islamic (Hijri) calendar and one of the four sacred months (al-ashhur al-hurum) in which fighting is traditionally forbidden. Its name means 'forbidden' or 'sacred', referring to this prohibition. The 1st of Muharram marks the Islamic New Year, and the 10th (Ashura) is a major day of observance — commemorating the martyrdom of Husayn ibn Ali at Karbala for Shia Muslims, and traditionally linked to the saving of Moses and the Israelites for Sunni Muslims, who often mark it with voluntary fasting.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "muharram", "sacred-month"],
+      "extendedData": { "monthNumber": 1, "isSacredMonth": true, "majorObservance": "Ashura (10 Muharram)" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.safar",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Safar",
+      "description": "Safar is the second month of the Islamic (Hijri) calendar. Its name is traditionally linked to a root meaning 'empty' or 'yellow', with several folk explanations — including that pre-Islamic Arab houses stood empty as their occupants went off to war or travel during this month. No major fixed observances fall in Safar, though it has historically carried folk associations with misfortune that Islamic scholars have generally cautioned against as superstition.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "safar"],
+      "extendedData": { "monthNumber": 2, "isSacredMonth": false }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.rabi-al-awwal",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Rabi' al-Awwal",
+      "description": "Rabi' al-Awwal ('the first spring') is the third month of the Islamic (Hijri) calendar. It is widely celebrated as the month of Mawlid al-Nabi, the birth of the Prophet Muhammad, traditionally observed on the 12th (Sunni) or 17th (Shia) by many — though some traditions, particularly Salafi ones, do not mark the occasion, considering it an unwarranted innovation (bid'ah).",
+      "secondaryNames": [{ "name": "Rabi I", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "islamic", "rabi-al-awwal"],
+      "extendedData": { "monthNumber": 3, "isSacredMonth": false, "majorObservance": "Mawlid al-Nabi (12th or 17th)" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.rabi-al-thani",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Rabi' al-Thani",
+      "description": "Rabi' al-Thani ('the second spring') is the fourth month of the Islamic (Hijri) calendar, sometimes called Rabi' al-Akhir ('the last spring'). It carries no major fixed observances in the wider Islamic calendar.",
+      "secondaryNames": [{ "name": "Rabi' al-Akhir", "languageTag": "ar-alt", "visible": true, "sortOrder": 0 }, { "name": "Rabi II", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "islamic", "rabi-al-thani"],
+      "extendedData": { "monthNumber": 4, "isSacredMonth": false }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.jumada-al-awwal",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Jumada al-Awwal",
+      "description": "Jumada al-Awwal ('the first month of parched land') is the fifth month of the Islamic (Hijri) calendar, named for a season of dryness in the pre-Islamic Arabian year the month names were originally fixed to. It carries no major fixed observances in the wider Islamic calendar.",
+      "secondaryNames": [{ "name": "Jumada I", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "islamic", "jumada-al-awwal"],
+      "extendedData": { "monthNumber": 5, "isSacredMonth": false }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.jumada-al-thani",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Jumada al-Thani",
+      "description": "Jumada al-Thani ('the second month of parched land') is the sixth month of the Islamic (Hijri) calendar, sometimes called Jumada al-Akhirah ('the last month of parched land'). It carries no major fixed observances in the wider Islamic calendar.",
+      "secondaryNames": [{ "name": "Jumada al-Akhirah", "languageTag": "ar-alt", "visible": true, "sortOrder": 0 }, { "name": "Jumada II", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "islamic", "jumada-al-thani"],
+      "extendedData": { "monthNumber": 6, "isSacredMonth": false }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.rajab",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Rajab",
+      "description": "Rajab is the seventh month of the Islamic (Hijri) calendar and one of the four sacred months in which fighting is traditionally forbidden. Its name derives from a root meaning 'to respect' or 'to venerate'. Rajab is traditionally associated with Isra and Mi'raj (27 Rajab), the Prophet Muhammad's night journey to Jerusalem and ascension through the heavens, and it opens a period of spiritual preparation leading toward Ramadan.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "rajab", "sacred-month"],
+      "extendedData": { "monthNumber": 7, "isSacredMonth": true, "majorObservance": "Isra and Mi'raj (27 Rajab)" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.shaban",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Sha'ban",
+      "description": "Sha'ban is the eighth month of the Islamic (Hijri) calendar, its name traditionally linked to a root meaning 'to disperse', for tribes scattering in search of water in the pre-Islamic Arabian year the month names were fixed to. It contains the night of mid-Sha'ban (Laylat al-Bara'ah), observed by many with prayer and reflection, and serves as a period of spiritual preparation immediately preceding Ramadan.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "shaban"],
+      "extendedData": { "monthNumber": 8, "isSacredMonth": false, "majorObservance": "Laylat al-Bara'ah (mid-Sha'ban)" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.ramadan",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Ramadan",
+      "description": "Ramadan is the ninth month of the Islamic (Hijri) calendar and the holiest month in Islam, during which observant Muslims fast from dawn to sunset — one of the Five Pillars of Islam. It commemorates the month in which the Quran was first revealed to the Prophet Muhammad, and includes Laylat al-Qadr (the Night of Power, traditionally sought among the last ten odd-numbered nights), widely held to be the night of that first revelation. Ramadan ends with the festival of Eid al-Fitr, marking the breaking of the fast.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "ramadan"],
+      "extendedData": { "monthNumber": 9, "isSacredMonth": false, "majorObservance": "The month-long fast; Laylat al-Qadr" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.shawwal",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Shawwal",
+      "description": "Shawwal is the tenth month of the Islamic (Hijri) calendar, its name traditionally linked to a root meaning 'to raise' or 'lift'. Its 1st day is Eid al-Fitr, the 'festival of breaking the fast', marking the end of Ramadan with communal prayer, feasting, and gift-giving — one of the two major festivals of the Islamic calendar. Fasting six additional days in Shawwal is also a recommended (though not obligatory) practice.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "shawwal"],
+      "extendedData": { "monthNumber": 10, "isSacredMonth": false, "majorObservance": "Eid al-Fitr (1 Shawwal)" }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.dhu-al-qadah",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Dhu al-Qa'dah",
+      "description": "Dhu al-Qa'dah ('possessor of truce/sitting') is the eleventh month of the Islamic (Hijri) calendar and one of the four sacred months in which fighting is traditionally forbidden — its name reflects the pre-Islamic Arabian custom of pausing conflict and travel during it. Along with the following month, it marks the traditional period in which pilgrims began journeying toward Mecca ahead of Hajj.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "dhu-al-qadah", "sacred-month"],
+      "extendedData": { "monthNumber": 11, "isSacredMonth": true }
+    },
+    {
+      "canonicalName": "calendar.month.islamic.dhu-al-hijjah",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Dhu al-Hijjah",
+      "description": "Dhu al-Hijjah ('possessor of the pilgrimage') is the twelfth and final month of the Islamic (Hijri) calendar and one of the four sacred months. It contains Hajj (8-12 Dhu al-Hijjah), the pilgrimage to Mecca — one of the Five Pillars of Islam, obligatory once in a lifetime for those able — and Eid al-Adha (10 Dhu al-Hijjah), the 'festival of sacrifice' commemorating Ibrahim's willingness to sacrifice his son in obedience to God, marked worldwide (not only by pilgrims) with ritual sacrifice and the distribution of meat to those in need. In the tabular civil calendar used here, this is the one month whose length (29 or 30 days) varies with the 30-year leap-year cycle.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "islamic", "dhu-al-hijjah", "sacred-month"],
+      "extendedData": { "monthNumber": 12, "isSacredMonth": true, "majorObservance": "Hajj (8-12 Dhu al-Hijjah); Eid al-Adha (10 Dhu al-Hijjah)" }
+    }
+  ]
+}

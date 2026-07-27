@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.month.hindu.chaitra",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Chaitra",
+      "description": "Chaitra is the first month of the Hindu lunisolar (Amanta) calendar, named for the Chitra nakshatra, and marks the start of the Vikram Samvat year — its first day (Chaitra Shukla Pratipada) is celebrated as the Hindu New Year under regional names including Gudi Padwa (Maharashtra) and Ugadi (Andhra Pradesh, Telangana, Karnataka). Chaitra Navratri, the spring nine-night worship of the goddess, and Ram Navami (the birth of Rama) also fall within it. It usually spans March–April.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "chaitra"],
+      "extendedData": { "monthNumber": 1, "majorFestival": "Chaitra Shukla Pratipada / Hindu New Year (day 1); Chaitra Navratri; Ram Navami" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.vaishakha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Vaishakha",
+      "description": "Vaishakha is the second month of the Hindu lunisolar (Amanta) calendar, named for the Vishakha nakshatra, usually spanning April–May. It contains Akshaya Tritiya, an auspicious day for new beginnings and purchases (especially gold), and in many Buddhist traditions the full moon of Vaishakha (Vesak) marks the birth, enlightenment, and death of the Buddha.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "vaishakha"],
+      "extendedData": { "monthNumber": 2, "majorFestival": "Akshaya Tritiya; Buddha Purnima / Vesak (full moon)" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.jyeshtha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Jyeshtha",
+      "description": "Jyeshtha is the third month of the Hindu lunisolar (Amanta) calendar, named for the Jyeshtha nakshatra, usually spanning May–June and marking the height of the pre-monsoon heat. It contains Vat Purnima, on which married women observe a fast and tie sacred thread around a banyan tree for their husbands' wellbeing and longevity.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "jyeshtha"],
+      "extendedData": { "monthNumber": 3, "majorFestival": "Vat Purnima" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.ashadha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Ashadha",
+      "description": "Ashadha is the fourth month of the Hindu lunisolar (Amanta) calendar, named for the Purva/Uttara Ashadha nakshatras, usually spanning June–July and marking the arrival of the monsoon. It contains Guru Purnima, honouring teachers and spiritual guides, and opens Chaturmasa, the four-month period of austerity and Vishnu's traditional cosmic sleep beginning at Devshayani Ekadashi.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "ashadha"],
+      "extendedData": { "monthNumber": 4, "majorFestival": "Guru Purnima; Devshayani Ekadashi (start of Chaturmasa)" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.shravana",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Shravana",
+      "description": "Shravana is the fifth month of the Hindu lunisolar (Amanta) calendar, named for the Shravana nakshatra, usually spanning July–August. It is widely regarded as especially sacred to Shiva, observed with fasting (particularly on Mondays) and pilgrimage, and contains Raksha Bandhan, celebrating the bond between siblings with the tying of a protective thread.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "shravana"],
+      "extendedData": { "monthNumber": 5, "majorFestival": "Raksha Bandhan (full moon)" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.bhadrapada",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Bhadrapada",
+      "description": "Bhadrapada is the sixth month of the Hindu lunisolar (Amanta) calendar, named for the Purva/Uttara Bhadrapada nakshatras, usually spanning August–September. It contains Ganesh Chaturthi, the widely celebrated multi-day festival honouring Ganesha with the installation and eventual immersion of clay images, and Krishna Janmashtami, marking the birth of Krishna.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "bhadrapada"],
+      "extendedData": { "monthNumber": 6, "majorFestival": "Ganesh Chaturthi; Krishna Janmashtami" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.ashwin",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Ashwin",
+      "description": "Ashwin is the seventh month of the Hindu lunisolar (Amanta) calendar, named for the Ashwini nakshatra, usually spanning September–October. It contains Sharad Navratri and its culmination Dussehra (Vijayadashami), celebrating the triumph of good over evil across several regional narratives (Durga's victory over Mahishasura; Rama's over Ravana), and closes with Sharad Purnima.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "ashwin"],
+      "extendedData": { "monthNumber": 7, "majorFestival": "Sharad Navratri; Dussehra / Vijayadashami" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.kartika",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Kartika",
+      "description": "Kartika is the eighth month of the Hindu lunisolar (Amanta) calendar, named for the Krittika nakshatra, usually spanning October–November. It contains Diwali, the festival of lights and one of the most widely celebrated Hindu festivals, marking the return of Rama to Ayodhya and the worship of Lakshmi, alongside Govardhan Puja and Bhai Dooj in the days immediately following.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "kartika"],
+      "extendedData": { "monthNumber": 8, "majorFestival": "Diwali" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.margashirsha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Margashirsha",
+      "description": "Margashirsha is the ninth month of the Hindu lunisolar (Amanta) calendar, named for the Mrigashira nakshatra, usually spanning November–December. In the Bhagavad Gita, Krishna identifies himself with this month among all months ('of months I am Margashirsha'), giving it particular devotional significance.",
+      "secondaryNames": [{ "name": "Agrahayana", "languageTag": "sa-alt", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "hindu", "margashirsha"],
+      "extendedData": { "monthNumber": 9 }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.pausha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Pausha",
+      "description": "Pausha is the tenth month of the Hindu lunisolar (Amanta) calendar, named for the Pushya nakshatra, usually spanning December–January and falling in the depths of winter. It is traditionally considered inauspicious for weddings and other major ceremonies in many regional customs, and closes Chaturmasa's cold-season stretch.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "pausha"],
+      "extendedData": { "monthNumber": 10 }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.magha",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Magha",
+      "description": "Magha is the eleventh month of the Hindu lunisolar (Amanta) calendar, named for the Magha nakshatra, usually spanning January–February. It contains Vasant Panchami, honouring Saraswati, goddess of knowledge and the arts, and traditionally marking the first stirrings of spring, along with Maghi Purnima and the Magh Mela pilgrimage bathing festival.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "magha"],
+      "extendedData": { "monthNumber": 11, "majorFestival": "Vasant Panchami" }
+    },
+    {
+      "canonicalName": "calendar.month.hindu.phalguna",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Phalguna",
+      "description": "Phalguna is the twelfth and final month of the Hindu lunisolar (Amanta) calendar, named for the Purva/Uttara Phalguni nakshatras, usually spanning February–March. It contains Holi, the exuberant festival of colour celebrating spring's arrival and the triumph of good over evil (the burning of Holika), lit on the preceding full-moon night as Holika Dahan.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hindu", "phalguna"],
+      "extendedData": { "monthNumber": 12, "majorFestival": "Holi" }
+    }
+  ]
+}

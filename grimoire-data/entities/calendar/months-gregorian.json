@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.month.gregorian.january",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "January",
+      "description": "January is the first month of the Gregorian calendar, named for Janus, the two-faced Roman god of doorways, transitions, and beginnings — fitting for the month that looks back at the closing year and forward to the new one. It was added (along with February) to the earlier Roman calendar by King Numa Pompilius, and later fixed as the year's opening month under the Julian reform of 46 BCE. The Sun transits Capricorn and then Aquarius during January. In the northern hemisphere it falls in deep winter; in the southern hemisphere, midsummer.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "january"],
+      "extendedData": { "monthNumber": 1, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.capricorn", "astrology.zodiac-sign.aquarius"], "etymology": "Janus, Roman god of doorways and transitions" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.february",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "February",
+      "description": "February is the second month of the Gregorian calendar, and the only one whose length varies with the leap-year cycle (28 days, or 29 in a leap year). Its name derives from Februa, a Roman festival of ritual purification held in the month, itself rooted in the Latin 'februum' ('purification'). Historically the last month of the old Roman calendar year, it retained its short length and its position as the site of leap-day correction. The Sun transits Aquarius and then Pisces during February.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "february"],
+      "extendedData": { "monthNumber": 2, "daysInMonth": 28, "zodiacSigns": ["astrology.zodiac-sign.aquarius", "astrology.zodiac-sign.pisces"], "etymology": "Februa, a Roman festival of purification" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.march",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "March",
+      "description": "March is the third month of the Gregorian calendar, named for Mars, the Roman god of war — it was the opening month of the earliest Roman calendar, when campaigning season resumed after winter. The Sun crosses the vernal equinox (0° Aries) in March, marking the astrological new year and the start of spring in the northern hemisphere (autumn in the southern). Many cultures — including the ancient Roman civil calendar before 153 BCE, and the historic English/British calendar before 1752 — began their year in March.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "march"],
+      "extendedData": { "monthNumber": 3, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.pisces", "astrology.zodiac-sign.aries"], "etymology": "Mars, Roman god of war" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.april",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "April",
+      "description": "April is the fourth month of the Gregorian calendar. Its name is of uncertain origin, most often linked to the Latin 'aperire' ('to open'), for the opening of buds and blossoms in spring — though a derivation from Aphrodite, via Etruscan 'Apru', has also been proposed. April was the second month of the earliest Roman calendar. The Sun transits Aries and then Taurus during April, and it is a peak spring month in the northern hemisphere.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "april"],
+      "extendedData": { "monthNumber": 4, "daysInMonth": 30, "zodiacSigns": ["astrology.zodiac-sign.aries", "astrology.zodiac-sign.taurus"], "etymology": "Latin aperire, 'to open' (of spring buds)" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.may",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "May",
+      "description": "May is the fifth month of the Gregorian calendar, likely named for Maia, a Roman earth and fertility goddess associated with growth and the flourishing of spring. Beltane, the cross-quarter Sabbat, falls near the start of May in the northern hemisphere. The Sun transits Taurus and then Gemini during May, and the month is strongly associated across many cultures with fertility rites, flowers, and the peak of spring's growth before summer's heat.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "may"],
+      "extendedData": { "monthNumber": 5, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.taurus", "astrology.zodiac-sign.gemini"], "etymology": "Maia, Roman goddess of growth and fertility" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.june",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "June",
+      "description": "June is the sixth month of the Gregorian calendar, named for Juno, queen of the Roman gods and goddess of marriage and childbirth — which contributed to June's enduring association with weddings. The Sun crosses the summer solstice (0° Cancer) during June, marking midsummer and the longest day in the northern hemisphere (midwinter and the shortest day in the southern). The cross-quarter Sabbat of Litha (or Yule, in the southern hemisphere) falls near the solstice.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "june"],
+      "extendedData": { "monthNumber": 6, "daysInMonth": 30, "zodiacSigns": ["astrology.zodiac-sign.gemini", "astrology.zodiac-sign.cancer"], "etymology": "Juno, Roman goddess of marriage and childbirth" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.july",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "July",
+      "description": "July is the seventh month of the Gregorian calendar, renamed from the Roman 'Quintilis' (fifth month) in honour of Julius Caesar, who was born in it and who introduced the Julian calendar reform of 46 BCE. The Sun transits Cancer and then Leo during July, and it is high summer in the northern hemisphere, midwinter in the southern.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "july"],
+      "extendedData": { "monthNumber": 7, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.cancer", "astrology.zodiac-sign.leo"], "etymology": "Julius Caesar" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.august",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "August",
+      "description": "August is the eighth month of the Gregorian calendar, renamed from the Roman 'Sextilis' (sixth month) in honour of Augustus, Rome's first emperor, whose reign saw several of his own triumphs occur in it. The Sun transits Leo and then Virgo during August. Lughnasadh (or Imbolc, in the southern hemisphere), the harvest cross-quarter Sabbat, falls near the start of August.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "august"],
+      "extendedData": { "monthNumber": 8, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.leo", "astrology.zodiac-sign.virgo"], "etymology": "Augustus, first Roman emperor" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.september",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "September",
+      "description": "September is the ninth month of the Gregorian calendar, but its name (from Latin 'septem', seven) reflects its position as the seventh month in the original Roman calendar, before January and February were added to the year's start. The Sun crosses the autumnal equinox (0° Libra) during September, marking Mabon (or Ostara, in the southern hemisphere) and the start of autumn in the northern hemisphere (spring in the southern).",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "september"],
+      "extendedData": { "monthNumber": 9, "daysInMonth": 30, "zodiacSigns": ["astrology.zodiac-sign.virgo", "astrology.zodiac-sign.libra"], "etymology": "Latin septem, 'seven' — the seventh month of the original Roman calendar" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.october",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "October",
+      "description": "October is the tenth month of the Gregorian calendar, but its name (from Latin 'octo', eight) reflects its position as the eighth month in the original Roman calendar. The Sun transits Libra and then Scorpio during October, and Samhain (or Beltane, in the southern hemisphere) — the cross-quarter Sabbat associated with the thinning veil between the living and the dead — falls near its end.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "october"],
+      "extendedData": { "monthNumber": 10, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.libra", "astrology.zodiac-sign.scorpio"], "etymology": "Latin octo, 'eight' — the eighth month of the original Roman calendar" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.november",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "November",
+      "description": "November is the eleventh month of the Gregorian calendar, but its name (from Latin 'novem', nine) reflects its position as the ninth month in the original Roman calendar. The Sun transits Scorpio and then Sagittarius during November, and it is a month of deepening cold and shortening days in the northern hemisphere, of late spring in the southern.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "november"],
+      "extendedData": { "monthNumber": 11, "daysInMonth": 30, "zodiacSigns": ["astrology.zodiac-sign.scorpio", "astrology.zodiac-sign.sagittarius"], "etymology": "Latin novem, 'nine' — the ninth month of the original Roman calendar" }
+    },
+    {
+      "canonicalName": "calendar.month.gregorian.december",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "December",
+      "description": "December is the twelfth and final month of the Gregorian calendar, but its name (from Latin 'decem', ten) reflects its position as the tenth and last month of the original ten-month Roman calendar. The Sun crosses the winter solstice (0° Capricorn) during December, marking Yule (or Litha, in the southern hemisphere) — the longest night in the northern hemisphere and the shortest in the southern, and the turning point after which the days begin to lengthen again.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "gregorian", "december"],
+      "extendedData": { "monthNumber": 12, "daysInMonth": 31, "zodiacSigns": ["astrology.zodiac-sign.sagittarius", "astrology.zodiac-sign.capricorn"], "etymology": "Latin decem, 'ten' — the tenth and final month of the original Roman calendar" }
+    }
+  ]
+}

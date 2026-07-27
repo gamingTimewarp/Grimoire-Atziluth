@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.month.hebrew.nisan",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Nisan",
+      "description": "Nisan is the first month of the Hebrew religious calendar (though the seventh of the civil year, which begins at Tishrei) — Exodus 12:2 designates it 'the first month of the year for you'. Nisan usually falls in March–April and always contains the full moon of Passover (Pesach), which begins on the 15th, commemorating the Exodus from Egypt. Nisan is always 30 days long and never varies with the Metonic leap-year cycle.",
+      "secondaryNames": [{ "name": "Aviv", "languageTag": "he-biblical", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "hebrew", "nisan"],
+      "extendedData": { "monthNumber": 1, "daysInMonth": 30, "majorFestival": "Passover (15 Nisan)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.iyar",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Iyar",
+      "description": "Iyar is the second month of the Hebrew religious calendar, usually falling in April–May. It contains Lag BaOmer (18 Iyar), a minor festival marking a pause in the semi-mourning period of the Counting of the Omer between Passover and Shavuot, traditionally associated with the death of the sage Rabbi Shimon bar Yochai. Iyar is always 29 days long.",
+      "secondaryNames": [{ "name": "Ziv", "languageTag": "he-biblical", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "hebrew", "iyar"],
+      "extendedData": { "monthNumber": 2, "daysInMonth": 29, "majorFestival": "Lag BaOmer (18 Iyar)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.sivan",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Sivan",
+      "description": "Sivan is the third month of the Hebrew religious calendar, usually falling in May–June. It contains Shavuot (6 Sivan), the Feast of Weeks marking the giving of the Torah at Mount Sinai and, in the Counting of the Omer, the culmination of the seven weeks since Passover. Sivan is always 30 days long.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "sivan"],
+      "extendedData": { "monthNumber": 3, "daysInMonth": 30, "majorFestival": "Shavuot (6 Sivan)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.tammuz",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Tammuz",
+      "description": "Tammuz is the fourth month of the Hebrew religious calendar, usually falling in June–July, named after the Mesopotamian god of the same name absorbed into the Babylonian calendar during the Babylonian exile. The Fast of the 17th of Tammuz marks the breaching of Jerusalem's walls before the destruction of the Temple, and opens the three-week mourning period leading to Tisha B'Av. Tammuz is always 29 days long.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "tammuz"],
+      "extendedData": { "monthNumber": 4, "daysInMonth": 29, "majorFestival": "Fast of the 17th of Tammuz" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.av",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Av",
+      "description": "Av is the fifth month of the Hebrew religious calendar, usually falling in July–August. It contains Tisha B'Av (9 Av), the year's most solemn fast day, commemorating the destruction of both the First and Second Temples in Jerusalem along with a litany of other historical calamities traditionally dated to the same day. Av is always 30 days long.",
+      "secondaryNames": [{ "name": "Menachem Av", "languageTag": "he-alt", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "hebrew", "av"],
+      "extendedData": { "monthNumber": 5, "daysInMonth": 30, "majorFestival": "Tisha B'Av (9 Av)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.elul",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Elul",
+      "description": "Elul is the sixth month of the Hebrew religious calendar, usually falling in August–September. It is a month of penitential reflection and preparation (selichot) leading into the High Holy Days of Rosh Hashanah and Yom Kippur, traditionally understood as the 40 days Moses spent on Mount Sinai receiving the second tablets. Elul is always 29 days long.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "elul"],
+      "extendedData": { "monthNumber": 6, "daysInMonth": 29, "majorFestival": "Selichot (penitential preparation)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.tishrei",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Tishrei",
+      "description": "Tishrei is the seventh month of the Hebrew religious calendar but the first of the civil year — Rosh Hashanah (1–2 Tishrei), the Jewish New Year, opens it. Tishrei is the most festival-dense month of the year: it also contains Yom Kippur (10 Tishrei, the Day of Atonement), Sukkot (15–21 Tishrei, the Feast of Booths), and Shemini Atzeret/Simchat Torah (22–23 Tishrei). Tishrei is always 30 days long, and its new moon anchors the entire Hebrew calendar's leap-year and postponement calculations.",
+      "secondaryNames": [{ "name": "Ethanim", "languageTag": "he-biblical", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "hebrew", "tishrei"],
+      "extendedData": { "monthNumber": 7, "daysInMonth": 30, "majorFestival": "Rosh Hashanah (1-2 Tishrei), Yom Kippur (10 Tishrei), Sukkot (15-21 Tishrei)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.cheshvan",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Cheshvan",
+      "description": "Cheshvan is the eighth month of the Hebrew religious calendar, usually falling in October–November. It is sometimes called Mar-Cheshvan ('bitter Cheshvan') for being the only month with no festivals at all, following the festival-dense month of Tishrei. Cheshvan's length varies (29 or 30 days) depending on the year's classification as deficient, regular, or complete — it is one of the two variable months that keep the calendar in sync.",
+      "secondaryNames": [{ "name": "Marcheshvan", "languageTag": "he-alt", "visible": true, "sortOrder": 0 }, { "name": "Bul", "languageTag": "he-biblical", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "hebrew", "cheshvan"],
+      "extendedData": { "monthNumber": 8, "daysInMonth": "29 or 30 (variable)", "majorFestival": "none — the only month without a festival" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.kislev",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Kislev",
+      "description": "Kislev is the ninth month of the Hebrew religious calendar, usually falling in November–December. It contains Hanukkah (starting 25 Kislev), the eight-day Festival of Lights commemorating the rededication of the Second Temple after the Maccabean revolt. Like Cheshvan, Kislev's length varies (29 or 30 days) with the year's classification, and the two months' lengths are set together to keep the whole calendar's day-count correct.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "kislev"],
+      "extendedData": { "monthNumber": 9, "daysInMonth": "29 or 30 (variable)", "majorFestival": "Hanukkah (starts 25 Kislev)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.tevet",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Tevet",
+      "description": "Tevet is the tenth month of the Hebrew religious calendar, usually falling in December–January. Hanukkah's final days spill into its opening, and the Fast of the 10th of Tevet commemorates the start of the Babylonian siege of Jerusalem that ultimately led to the First Temple's destruction. Tevet is always 29 days long.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "tevet"],
+      "extendedData": { "monthNumber": 10, "daysInMonth": 29, "majorFestival": "Fast of the 10th of Tevet" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.shevat",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Shevat",
+      "description": "Shevat is the eleventh month of the Hebrew religious calendar, usually falling in January–February. It contains Tu BiShvat (15 Shevat), the 'New Year for Trees', originally a date for tithing fruit and now celebrated as an ecological and agricultural festival marked with the planting of trees and the eating of fruit associated with the Land of Israel. Shevat is always 30 days long.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "shevat"],
+      "extendedData": { "monthNumber": 11, "daysInMonth": 30, "majorFestival": "Tu BiShvat (15 Shevat)" }
+    },
+    {
+      "canonicalName": "calendar.month.hebrew.adar",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "Adar",
+      "description": "Adar is the twelfth month of the Hebrew religious calendar, usually falling in February–March, and contains Purim (14 Adar), the festival of Esther's deliverance of the Jewish people from Haman's plot, marked by raucous celebration, costume, and the reading of the Megillah. In a leap year (occurring seven times in the 19-year Metonic cycle), an intercalary month — Adar I — is inserted before it, and the month bearing the festivals is then called Adar II; in a common year there is only one Adar. Adar (or Adar II, in a leap year) is always 29 days long; Adar I, when it occurs, has 30.",
+      "secondaryNames": [],
+      "tags": ["calendar", "month", "hebrew", "adar"],
+      "extendedData": { "monthNumber": 12, "daysInMonth": 29, "majorFestival": "Purim (14 Adar)", "leapMonthNote": "In a leap year, Adar I (30 days) precedes this month; Purim is then observed in Adar II." }
+    }
+  ]
+}

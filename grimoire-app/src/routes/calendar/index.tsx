@@ -18,7 +18,7 @@ import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
-import { CALENDAR_TABS, getCalendarTab } from '@/lib/calendar-systems'
+import { CALENDAR_TABS, getCalendarTab, GREGORIAN_MONTH_CANONICAL_NAMES } from '@/lib/calendar-systems'
 import type { CalendarTabDefinition } from '@/lib/calendar-systems'
 import { ChevronLeft, ChevronRight, BookOpen, PenLine, Settings2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -701,7 +701,11 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
           <ChevronLeft size={18} />
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
+          <span
+            onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: GREGORIAN_MONTH_CANONICAL_NAMES[month - 1] as string } })}
+            title={`View ${MONTH_NAMES[month - 1]} in Reference`}
+            style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center', cursor: 'pointer' }}
+          >
             {MONTH_NAMES[month - 1]} {year}
           </span>
           {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}
@@ -877,7 +881,11 @@ function TraditionCalendarView({
           <ChevronLeft size={18} />
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center' }}>
+          <span
+            onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: tab.monthCanonicalNames[nativeMonth - 1] as string } })}
+            title={`View ${monthLabel} in Reference`}
+            style={{ fontSize: '16px', fontWeight: 400, color: 'var(--color-text)', textAlign: 'center', cursor: 'pointer' }}
+          >
             {monthLabel} {nativeYear}
           </span>
           {!isViewingCurrentMonth && <Button variant="ghost" size="sm" onClick={goToToday}>Today</Button>}

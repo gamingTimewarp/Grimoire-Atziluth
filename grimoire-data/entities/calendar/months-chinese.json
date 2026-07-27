@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.month.chinese.month-1",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "正月 (Zhēngyuè)",
+      "description": "正月 (Zhēngyuè), the 'principal month', is the first month of the Chinese lunisolar calendar. Its first day is Chinese New Year (Spring Festival), the most important holiday of the year, marked by family reunion, red envelopes, fireworks, and the start of the corresponding zodiac animal's year. The month closes with the Lantern Festival on its 15th day, the first full moon of the new year.",
+      "secondaryNames": [{ "name": "First Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "zhengyue"],
+      "extendedData": { "monthNumber": 1, "majorFestival": "Chinese New Year (day 1); Lantern Festival (day 15)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-2",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "二月 (Èryuè)",
+      "description": "二月 (Èryuè), the second month of the Chinese lunisolar calendar, generally falls in the early spring. It carries the Erdi Er (Longtaitou, 'Dragon Raises its Head') festival on its 2nd day, traditionally marking the awakening of hibernating dragons believed to control rainfall, and observed with haircuts and prayers for a good agricultural year ahead.",
+      "secondaryNames": [{ "name": "Second Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "eryue"],
+      "extendedData": { "monthNumber": 2, "majorFestival": "Longtaitou (day 2)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-3",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "三月 (Sānyuè)",
+      "description": "三月 (Sānyuè), the third month of the Chinese lunisolar calendar, contains the Qingming solar term and its associated tomb-sweeping festival, when families visit and tend ancestral graves, make offerings, and honour their forebears.",
+      "secondaryNames": [{ "name": "Third Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "sanyue"],
+      "extendedData": { "monthNumber": 3, "majorFestival": "Qingming (Tomb-Sweeping Day)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-4",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "四月 (Sìyuè)",
+      "description": "四月 (Sìyuè), the fourth month of the Chinese lunisolar calendar, falls in late spring. In Buddhist tradition it commonly contains the observance of the Buddha's birthday on its 8th day, marked in many East Asian countries with bathing-Buddha rituals.",
+      "secondaryNames": [{ "name": "Fourth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "siyue"],
+      "extendedData": { "monthNumber": 4, "majorFestival": "Buddha's Birthday (day 8, in many traditions)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-5",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "五月 (Wǔyuè)",
+      "description": "五月 (Wǔyuè), the fifth month of the Chinese lunisolar calendar, contains the Duanwu (Dragon Boat) Festival on its 5th day — commemorating the poet-statesman Qu Yuan, observed with dragon boat races and the eating of zongzi (glutinous rice dumplings wrapped in leaves).",
+      "secondaryNames": [{ "name": "Fifth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "wuyue"],
+      "extendedData": { "monthNumber": 5, "majorFestival": "Duanwu / Dragon Boat Festival (day 5)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-6",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "六月 (Liùyuè)",
+      "description": "六月 (Liùyuè), the sixth month of the Chinese lunisolar calendar, falls in midsummer. It carries no single major nationwide festival, though various regional and folk observances occur within it, including the 'basking of clothes and books' custom on its 6th day in some traditions.",
+      "secondaryNames": [{ "name": "Sixth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "liuyue"],
+      "extendedData": { "monthNumber": 6 }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-7",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "七月 (Qīyuè)",
+      "description": "七月 (Qīyuè), the seventh month of the Chinese lunisolar calendar, contains both the Qixi Festival (7th day) — a romantic festival of the weaver girl and cowherd star-crossed lovers, sometimes called 'Chinese Valentine's Day' — and the Ghost Festival (15th day), when the veil between the living and the spirit world is traditionally believed to thin, and offerings are made to wandering ancestral spirits.",
+      "secondaryNames": [{ "name": "Seventh Month", "languageTag": "en", "visible": true, "sortOrder": 0 }, { "name": "Ghost Month", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "chinese", "qiyue"],
+      "extendedData": { "monthNumber": 7, "majorFestival": "Qixi Festival (day 7); Ghost Festival (day 15)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-8",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "八月 (Bāyuè)",
+      "description": "八月 (Bāyuè), the eighth month of the Chinese lunisolar calendar, contains the Mid-Autumn Festival on its 15th day — the second-most important Chinese holiday, when families gather to admire the year's brightest full moon and share mooncakes, honouring themes of reunion and harvest abundance.",
+      "secondaryNames": [{ "name": "Eighth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "bayue"],
+      "extendedData": { "monthNumber": 8, "majorFestival": "Mid-Autumn Festival (day 15)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-9",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "九月 (Jiǔyuè)",
+      "description": "九月 (Jiǔyuè), the ninth month of the Chinese lunisolar calendar, contains the Double Ninth Festival (Chongyang, 9th day) — traditionally observed with mountain climbing, chrysanthemum viewing, and, in modern China, as a day honouring the elderly.",
+      "secondaryNames": [{ "name": "Ninth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "jiuyue"],
+      "extendedData": { "monthNumber": 9, "majorFestival": "Double Ninth Festival / Chongyang (day 9)" }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-10",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "十月 (Shíyuè)",
+      "description": "十月 (Shíyuè), the tenth month of the Chinese lunisolar calendar, contains the Water Lantern Festival (Xiayuan, 15th day) in Taoist tradition, honouring the water officials among the Three Officials, and traditionally a time to remember ancestors as the cold season deepens.",
+      "secondaryNames": [{ "name": "Tenth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }],
+      "tags": ["calendar", "month", "chinese", "shiyue"],
+      "extendedData": { "monthNumber": 10 }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-11",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "十一月 (Shíyīyuè)",
+      "description": "十一月 (Shíyīyuè), the eleventh month of the Chinese lunisolar calendar, is anchored by definition to the winter solstice (Dongzhi) — the lunar month containing this solar term is always numbered eleven, the astronomical anchor from which every other month's number, and the placement of any leap month, is derived. Dongzhi itself is widely observed with the eating of tangyuan (glutinous rice balls) or dumplings, and family reunion.",
+      "secondaryNames": [{ "name": "Eleventh Month", "languageTag": "en", "visible": true, "sortOrder": 0 }, { "name": "Winter Solstice Month", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "chinese", "shiyiyue"],
+      "extendedData": { "monthNumber": 11, "majorFestival": "Dongzhi (Winter Solstice)", "note": "Anchor month: always contains the winter solstice by definition." }
+    },
+    {
+      "canonicalName": "calendar.month.chinese.month-12",
+      "entityType": "calendar.month",
+      "primaryDisplayName": "十二月 (Shí'èryuè)",
+      "description": "十二月 (Shí'èryuè), the twelfth and final month of the Chinese lunisolar calendar, is popularly called Layue after the Laba Festival on its 8th day, traditionally marked with Laba porridge, and leads into the Little Year (Xiaonian, kitchen god's departure) and the New Year's Eve reunion dinner that closes out the year.",
+      "secondaryNames": [{ "name": "Twelfth Month", "languageTag": "en", "visible": true, "sortOrder": 0 }, { "name": "Layue", "languageTag": "zh-alt", "visible": true, "sortOrder": 1 }],
+      "tags": ["calendar", "month", "chinese", "layue"],
+      "extendedData": { "monthNumber": 12, "majorFestival": "Laba Festival (day 8); New Year's Eve (final day)" }
+    }
+  ]
+}
