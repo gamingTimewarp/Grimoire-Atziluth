@@ -1,6 +1,6 @@
 [package]
 name = "grimoire-app"
-version = "1.4.1"
+version = "1.5.0"
 description = "Grimoire Atziluth — Esoteric Reference & Divination App"
 authors = ["you"]
 edition = "2021"
