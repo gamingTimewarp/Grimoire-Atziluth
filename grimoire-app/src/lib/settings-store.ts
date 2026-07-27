@@ -40,7 +40,7 @@ const DEFAULTS: Settings = {
   defaultReadingSpreadId: null,
   defaultCompactJournal: false,
   showRetrogradeTracker: false,
-  enabledCalendarSystems: ['hebrew', 'islamic', 'chinese'],
+  enabledCalendarSystems: ['hebrew', 'islamic', 'chinese', 'hindu'],
 }
 
 export function loadSettings(): Settings {

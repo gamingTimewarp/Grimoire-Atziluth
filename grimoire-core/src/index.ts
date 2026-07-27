@@ -43,6 +43,7 @@ export {
   HebrewCalendarSystem,
   IslamicCalendarSystem,
   ChineseCalendarSystem,
+  HinduCalendarSystem,
   gregorianToDayCount,
   dayCountToGregorian,
 } from './calendars/index.js'
