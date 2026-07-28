@@ -304,6 +304,33 @@
         "orderNumber": 0,
         "note": "Not one of the classical or modern astrological planets observed from Earth — included solely for its Qabalistic correspondence role as Malkuth's planetary attribution."
       }
+    },
+    {
+      "canonicalName": "astrology.planet.primum-mobile",
+      "entityType": "astrology.planet",
+      "primaryDisplayName": "Primum Mobile",
+      "description": "The Primum Mobile ('First Mover') completes the Golden Dawn's planetary-sephirothic correspondences as the attribution of Kether (the first sephira, the Crown) — a ninth planetary sphere beyond Saturn and the fixed stars, standing for the outermost heaven of medieval cosmology rather than an observed body. In the Ptolemaic model it is the sphere that imparts diurnal motion to every sphere beneath it, moved directly by the unmoved mover; in the Golden Dawn's Tree of Life it plays the same role for Kether that Earth plays for Malkuth — a correspondence-only role completing the eight-sphere planetary attribution scheme. Like Earth, it has no ecliptic longitude, forms no aspects, rules no zodiac sign, and never appears in a natal chart. Distinct from Chokmah's attribution to the sphere of the Zodiac (the fixed stars) one step below it — the Primum Mobile is the outermost, all-encompassing sphere, prior even to the zodiac's differentiation into signs.",
+      "secondaryNames": [
+        { "name": "First Mover", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Primum Mobile", "languageTag": "la", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["planet", "astrology", "qabalah", "non-classical"],
+      "extendedData": {
+        "symbol": null,
+        "dayOfWeek": null,
+        "metalAlchemy": null,
+        "qabalisticSephira": "qabalah.sephira.kether",
+        "relatedElement": null,
+        "rulesSign": [],
+        "exaltedIn": null,
+        "detrimentIn": [],
+        "fallIn": null,
+        "orbDegrees": null,
+        "polarity": "western.polarity.androgynous",
+        "yinYang": null,
+        "orderNumber": 11,
+        "note": "Not one of the classical or modern astrological planets observed from Earth — included solely for its Qabalistic correspondence role as Kether's planetary attribution."
+      }
     }
   ]
 }

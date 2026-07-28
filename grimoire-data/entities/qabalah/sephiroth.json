@@ -112,7 +112,7 @@
         "meaning": "Crown",
         "divineName": "Eheieh",
         "divineNameHebrew": "אהיה",
-        "planet": "primum-mobile",
+        "planet": "astrology.planet.primum-mobile",
         "planetModern": "astrology.planet.pluto",
         "world": "qabalah.world.atziluth",
         "pillar": "qabalah.pillar.equilibrium",
