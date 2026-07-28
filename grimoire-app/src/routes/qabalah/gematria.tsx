@@ -1,7 +1,8 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { ArrowLeft, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { loadGematriaState, saveGematriaState, type GematriaDisplayMode } from '@/lib/gematria-store'
 
 export const Route = createFileRoute('/qabalah/gematria')({
   component: GematriaPage,
@@ -144,17 +145,65 @@ const LETTER_TABLE: LetterEntry[] = [
   { name: 'Tav',    latinKey: 'tav',    heb: 'ת', value: 400, canonicalName: 'letter.hebrew.tau'    },
 ]
 
+// ─── Character/Name display conversion ─────────────────────────────────────────
+
+/** Resolves a letter tile's latinKey/finalLatinKey to its Hebrew char or Latin key,
+ * for use both when inserting a tile click and when converting the whole input. */
+function findLetterEntry(key: string): { entry: LetterEntry; isFinal: boolean } | null {
+  const isFinal = key.endsWith('-final')
+  const baseKey = isFinal ? FINAL_BASE[key] : key
+  const entry = LETTER_TABLE.find(l => l.latinKey === baseKey)
+  return entry ? { entry, isFinal } : null
+}
+
+function keyToDisplay(key: string, mode: GematriaDisplayMode): string {
+  const found = findLetterEntry(key)
+  if (!found) return key
+  const { entry, isFinal } = found
+  if (mode === 'character') return (isFinal ? entry.finalHeb : entry.heb) ?? entry.heb
+  return (isFinal ? entry.finalLatinKey : entry.latinKey) ?? entry.latinKey
+}
+
+/** Resolves a token's *originally typed* form (not its value-collapsed `name`, which
+ * loses the sofit distinction when Mispar Gadol is off) back to its canonical latinKey,
+ * so mode conversion round-trips correctly regardless of the Mispar Gadol toggle. */
+function tokenToKey(display: string): string | null {
+  const hebName = UNICODE_TO_NAME[display]
+  if (hebName) return hebName
+  return LATIN_TO_NAME[display.toLowerCase()] ?? null
+}
+
+function tokenToDisplay(token: LetterToken, mode: GematriaDisplayMode): string {
+  const key = tokenToKey(token.display)
+  if (!key) return token.display
+  return keyToDisplay(key, mode)
+}
+
 // ─── Component ────────────────────────────────────────────────────────────────
 
 function GematriaPage() {
   const navigate = useNavigate()
-  const [input, setInput] = useState('')
-  const [useFinalValues, setUseFinalValues] = useState(false)
+  const initial = useMemo(loadGematriaState, [])
+  const [input, setInput] = useState(initial.input)
+  const [useFinalValues, setUseFinalValues] = useState(initial.useFinalValues)
+  const [displayMode, setDisplayMode] = useState<GematriaDisplayMode>(initial.displayMode)
+
+  useEffect(() => {
+    saveGematriaState({ input, useFinalValues, displayMode })
+  }, [input, useFinalValues, displayMode])
 
   const parsed = useMemo(() => parseInput(input, useFinalValues), [input, useFinalValues])
 
   const addToInput = (key: string) =>
-    setInput(prev => prev ? prev + ' ' + key : key)
+    setInput(prev => { const v = keyToDisplay(key, displayMode); return prev ? prev + ' ' + v : v })
+
+  const changeDisplayMode = (mode: GematriaDisplayMode) => {
+    if (mode === displayMode) return
+    if (parsed.tokens.length > 0) {
+      setInput(parsed.tokens.map(t => tokenToDisplay(t, mode)).join(' '))
+    }
+    setDisplayMode(mode)
+  }
 
   const goToLetter = (e: React.MouseEvent, canonicalName: string) => {
     e.stopPropagation()
@@ -172,32 +221,59 @@ function GematriaPage() {
 
       {/* Input */}
       <div style={{ marginBottom: '24px', padding: '16px 18px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', flexWrap: 'wrap', gap: '10px' }}>
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
             Input
           </div>
-          {/* Mispar Gadol toggle */}
-          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
-            <span style={{ fontSize: '11px', color: useFinalValues ? 'var(--color-text)' : 'var(--color-text-subtle)' }}>
-              Mispar Gadol (terminal forms)
-            </span>
-            <button
-              onClick={() => setUseFinalValues(v => !v)}
-              style={{
-                width: '32px', height: '18px', borderRadius: '9px', border: 'none',
-                cursor: 'pointer', padding: 0, flexShrink: 0, position: 'relative',
-                transition: 'background 0.15s',
-                background: useFinalValues ? 'var(--color-accent)' : 'var(--color-border)',
-              }}
-            >
-              <div style={{
-                width: '12px', height: '12px', borderRadius: '50%', background: '#fff',
-                position: 'absolute', top: '3px',
-                left: useFinalValues ? '17px' : '3px',
-                transition: 'left 0.15s',
-              }} />
-            </button>
-          </label>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+            {input && (
+              <Button variant="ghost" size="sm" onClick={() => setInput('')}>
+                Clear
+              </Button>
+            )}
+
+            {/* Character/Name display mode */}
+            <div style={{ display: 'flex', gap: '2px' }}>
+              {(['character', 'name'] as GematriaDisplayMode[]).map(m => (
+                <button
+                  key={m}
+                  onClick={() => changeDisplayMode(m)}
+                  style={{
+                    padding: '4px 10px', borderRadius: '4px', fontSize: '11px', cursor: 'pointer', fontFamily: 'inherit',
+                    background: displayMode === m ? 'var(--color-surface-3)' : 'transparent',
+                    color: displayMode === m ? 'var(--color-accent)' : 'var(--color-text-muted)',
+                    border: `1px solid ${displayMode === m ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
+                    fontWeight: displayMode === m ? 500 : 400,
+                  }}
+                >
+                  {m === 'character' ? 'Character' : 'Name'}
+                </button>
+              ))}
+            </div>
+
+            {/* Mispar Gadol toggle */}
+            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
+              <span style={{ fontSize: '11px', color: useFinalValues ? 'var(--color-text)' : 'var(--color-text-subtle)' }}>
+                Mispar Gadol (terminal forms)
+              </span>
+              <button
+                onClick={() => setUseFinalValues(v => !v)}
+                style={{
+                  width: '32px', height: '18px', borderRadius: '9px', border: 'none',
+                  cursor: 'pointer', padding: 0, flexShrink: 0, position: 'relative',
+                  transition: 'background 0.15s',
+                  background: useFinalValues ? 'var(--color-accent)' : 'var(--color-border)',
+                }}
+              >
+                <div style={{
+                  width: '12px', height: '12px', borderRadius: '50%', background: '#fff',
+                  position: 'absolute', top: '3px',
+                  left: useFinalValues ? '17px' : '3px',
+                  transition: 'left 0.15s',
+                }} />
+              </button>
+            </label>
+          </div>
         </div>
 
         <input

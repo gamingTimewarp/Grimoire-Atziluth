@@ -1,8 +1,9 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { ArrowLeft, Hash } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { DateInput } from '@/components/ui/DateInput'
+import { loadNumerologyState, saveNumerologyState, type NumerologyTab, type NumerologySystem } from '@/lib/numerology-store'
 
 export const Route = createFileRoute('/qabalah/numerology')({
   component: NumerologyPage,
@@ -398,15 +399,20 @@ function NumberListCard({ label, note, values, onNavigate }: {
 
 // ─── Page ──────────────────────────────────────────────────────────────────────
 
-type Tab = 'name' | 'date' | 'combined'
-type System = 'pythagorean' | 'chaldean'
+type Tab = NumerologyTab
+type System = NumerologySystem
 
 function NumerologyPage() {
   const navigate = useNavigate()
-  const [tab, setTab]       = useState<Tab>('name')
-  const [system, setSystem] = useState<System>('pythagorean')
-  const [name, setName]     = useState('')
-  const [date, setDate]     = useState('')
+  const initial = useMemo(loadNumerologyState, [])
+  const [tab, setTab]       = useState<Tab>(initial.tab)
+  const [system, setSystem] = useState<System>(initial.system)
+  const [name, setName]     = useState(initial.name)
+  const [date, setDate]     = useState(initial.date)
+
+  useEffect(() => {
+    saveNumerologyState({ tab, system, name, date })
+  }, [tab, system, name, date])
 
   const table = system === 'pythagorean' ? PYTHAGOREAN : CHALDEAN
 
@@ -451,12 +457,17 @@ function NumerologyPage() {
         <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/qabalah' })}>
           <ArrowLeft size={14} /> Qabalah
         </Button>
-        <div>
+        <div style={{ flex: 1 }}>
           <h1 style={{ fontSize: '20px', fontWeight: 300, margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Hash size={18} style={{ color: 'var(--color-accent)' }} />
             Numerology
           </h1>
         </div>
+        {(name || date) && (
+          <Button variant="ghost" size="sm" onClick={() => { setName(''); setDate('') }}>
+            Clear All
+          </Button>
+        )}
       </div>
 
       {/* System selector */}
@@ -485,9 +496,16 @@ function NumerologyPage() {
       {/* Name + date inputs, always visible since Combined needs both */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '20px' }}>
         <div>
-          <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
-            Full Name
-          </label>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+            <label style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              Full Name
+            </label>
+            {name && (
+              <Button variant="ghost" size="sm" onClick={() => setName('')}>
+                Clear
+              </Button>
+            )}
+          </div>
           <input
             value={name}
             onChange={e => setName(e.target.value)}
@@ -501,9 +519,16 @@ function NumerologyPage() {
           />
         </div>
         <div>
-          <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
-            Date of Birth
-          </label>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+            <label style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              Date of Birth
+            </label>
+            {date && (
+              <Button variant="ghost" size="sm" onClick={() => setDate('')}>
+                Clear
+              </Button>
+            )}
+          </div>
           <DateInput
             value={date}
             onChange={setDate}
