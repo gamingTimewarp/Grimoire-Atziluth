@@ -21,6 +21,10 @@ import { ConstellationDiagram } from '@/components/ui/ConstellationDiagram'
 import { CONSTELLATION_DIAGRAMS } from '@/lib/constellation-diagrams'
 import { useReadingStore } from '@/stores/reading'
 import { TRADITION_DISPLAY_NAMES } from '@/lib/tradition-store'
+import {
+  looksLikeCanonicalName, flattenToStrings, formatFieldLabel,
+  formatLinkLabel as formatSlug, getAttributeEntries,
+} from '@/lib/entity-attributes'
 
 export const Route = createFileRoute('/reference/$canonicalName')({
   component: EntityDetailPage,
@@ -156,45 +160,6 @@ function EntityDetailPage() {
   }
 
   if (notFound || !entity) {
-    const virtual = VIRTUAL_OVERVIEWS[canonicalName]
-    const subItems = RELATED_OVERVIEWS[canonicalName]
-    if (virtual) {
-      return (
-        <div style={{ maxWidth: '760px' }}>
-          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined } })} style={{ marginBottom: '20px' }}>
-            <ArrowLeft size={14} /> Reference
-          </Button>
-          <div style={{ marginBottom: '28px' }}>
-            <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', marginBottom: '4px' }}>system.overview</div>
-            <h1 style={{ fontSize: '26px', fontWeight: 300, margin: '0 0 6px', color: 'var(--color-text)' }}>{virtual.title}</h1>
-            <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', marginBottom: '14px' }}>{canonicalName}</div>
-            <p style={{ fontSize: '14px', color: 'var(--color-text-muted)', lineHeight: '1.6', margin: 0 }}>{virtual.description}</p>
-          </div>
-          {subItems && (
-            <Section title="Contents">
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                {subItems.map(item => (
-                  <button
-                    key={item.canonicalName}
-                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: item.canonicalName } })}
-                    style={{
-                      padding: '8px 14px', background: 'var(--color-surface-2)',
-                      border: '1px solid var(--color-border)', borderRadius: '6px',
-                      cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
-                      fontFamily: 'inherit', fontWeight: 500, transition: 'border-color 0.15s',
-                    }}
-                    onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-                    onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
-                  >
-                    {item.label}
-                  </button>
-                ))}
-              </div>
-            </Section>
-          )}
-        </div>
-      )
-    }
     return (
       <div style={{ maxWidth: '760px' }}>
         <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined } })} style={{ marginBottom: '24px' }}>
@@ -481,14 +446,16 @@ function EntityDetailPage() {
         </Section>
       )}
 
-      {/* Related overviews — sub-navigation for certain parent overview pages */}
-      {RELATED_OVERVIEWS[canonicalName] && (
+      {/* Related overviews — reads the entity's own extendedData.relatedOverviews
+          directly (resolved via the same linkedNames map used everywhere else),
+          rather than a separately hand-maintained list that can drift from it. */}
+      {Array.isArray(entity.extendedData.relatedOverviews) && entity.extendedData.relatedOverviews.length > 0 && (
         <Section title="See Also">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {RELATED_OVERVIEWS[canonicalName].map(item => (
+            {(entity.extendedData.relatedOverviews as string[]).map(cn => (
               <button
-                key={item.canonicalName}
-                onClick={() => navToEntity(item.canonicalName)}
+                key={cn}
+                onClick={() => navToEntity(cn)}
                 style={{
                   padding: '8px 14px', background: 'var(--color-surface-2)',
                   border: '1px solid var(--color-border)', borderRadius: '6px',
@@ -498,7 +465,7 @@ function EntityDetailPage() {
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
               >
-                {item.label}
+                {linkedNames.get(cn) ?? formatSlug(cn.split('.').pop() ?? cn)}
               </button>
             ))}
           </div>
@@ -533,92 +500,6 @@ function EntityDetailPage() {
   )
 }
 
-// ─── Related overviews (sub-navigation shown on parent overview pages) ────────
-
-// Virtual overview pages — rendered from app config when no seeded entity exists
-const VIRTUAL_OVERVIEWS: Record<string, { title: string; description: string }> = {
-  'system.overview.astrology': {
-    title: 'Astrology',
-    description: 'Planets, zodiac signs, fixed stars, and other celestial reference data.',
-  },
-  'system.overview.letters': {
-    title: 'Letters & Sacred Alphabets',
-    description: 'Alphabet systems, letter-number correspondences, and gematria traditions across cultures.',
-  },
-}
-
-const RELATED_OVERVIEWS: Record<string, Array<{ canonicalName: string; label: string }>> = {
-  // Tarot
-  'system.overview.tarot-decks': [
-    { canonicalName: 'system.overview.tarot-suit-cups',      label: 'Cups'      },
-    { canonicalName: 'system.overview.tarot-suit-wands',     label: 'Wands'     },
-    { canonicalName: 'system.overview.tarot-suit-swords',    label: 'Swords'    },
-    { canonicalName: 'system.overview.tarot-suit-pentacles', label: 'Pentacles' },
-  ],
-  // Qabalah
-  'system.overview.qabalah': [
-    { canonicalName: 'system.overview.four-worlds',    label: 'Four Worlds'    },
-    { canonicalName: 'system.overview.triangles',      label: 'Triads'         },
-    { canonicalName: 'system.overview.hebrew-letters', label: 'Hebrew Letters' },
-    { canonicalName: 'system.overview.partzufim',      label: 'Partzufim'      },
-  ],
-  'system.overview.triangles': [
-    { canonicalName: 'system.overview.qabalah',    label: 'Qabalah'     },
-    { canonicalName: 'system.overview.sephiroth',  label: 'Sephiroth'   },
-  ],
-  // Astrology
-  'system.overview.astrology': [
-    { canonicalName: 'system.overview.planets',          label: 'Planets'          },
-    { canonicalName: 'system.overview.celestial-points', label: 'Celestial Points' },
-    { canonicalName: 'system.overview.zodiac',           label: 'Zodiac Signs'     },
-    { canonicalName: 'system.overview.fixed-stars',      label: 'Fixed Stars'      },
-    { canonicalName: 'system.overview.lunar-mansions',   label: 'Lunar Mansions'   },
-  ],
-  'system.overview.zodiac': [
-    { canonicalName: 'system.overview.decans', label: 'Decans' },
-  ],
-  'system.overview.planets': [
-    { canonicalName: 'system.overview.celestial-points', label: 'Celestial Points'  },
-    { canonicalName: 'system.overview.kamea',             label: 'Planetary Kamea'  },
-    { canonicalName: 'system.overview.planetary-spirits', label: 'Planetary Spirits'},
-    { canonicalName: 'system.overview.olympic-spirits',   label: 'Olympic Spirits'  },
-  ],
-  'system.overview.celestial-points': [
-    { canonicalName: 'system.overview.planets', label: 'Planets' },
-  ],
-  'system.overview.nakshatras': [
-    { canonicalName: 'system.overview.jyotish-dasha', label: 'Vimshottari Dasha' },
-    { canonicalName: 'system.overview.navaratna',     label: 'Navaratna (9 Gems)' },
-  ],
-  // I Ching / Chinese cosmology
-  'system.overview.iching': [
-    { canonicalName: 'system.overview.iching-trigrams', label: 'Trigrams'     },
-    { canonicalName: 'system.overview.yin-yang',        label: 'Yin & Yang'   },
-    { canonicalName: 'system.overview.wuxing',          label: 'Five Phases'  },
-  ],
-  // Feng Shui
-  'system.overview.feng-shui-directions': [
-    { canonicalName: 'system.overview.feng-shui-flying-stars', label: 'Flying Stars' },
-    { canonicalName: 'system.overview.feng-shui-mountains',    label: '24 Mountains' },
-  ],
-  // Enochian
-  'system.overview.enochian-aethyrs': [
-    { canonicalName: 'system.overview.enochian-watchtowers', label: 'Watchtowers'  },
-    { canonicalName: 'system.overview.enochian-governors',   label: '91 Governors' },
-  ],
-  // Hindu / subtle body
-  'system.overview.chakras': [
-    { canonicalName: 'system.overview.pranas',     label: 'Five Pranas'        },
-    { canonicalName: 'system.overview.koshas',     label: 'Five Koshas'        },
-    { canonicalName: 'system.overview.doshas',     label: 'Doshas'             },
-    { canonicalName: 'system.overview.mahabhutas', label: 'Five Great Elements'},
-  ],
-  // Letters (virtual)
-  'system.overview.letters': [
-    { canonicalName: 'tradition.pythagorean-numerology', label: 'Pythagorean Numerology' },
-    { canonicalName: 'tradition.chaldean-numerology',    label: 'Chaldean Numerology'    },
-  ],
-}
 
 // ─── Entity art panel ─────────────────────────────────────────────────────────
 
@@ -938,21 +819,6 @@ function BookmarkButton({ canonicalName }: { canonicalName: string }) {
       <Star size={16} fill={bookmarked ? 'currentColor' : 'none'} />
     </button>
   )
-}
-
-// ─── Canonical name helpers ───────────────────────────────────────────────────
-
-/** Returns true if a string looks like a canonical name (≥3 dot-separated lowercase segments). */
-function looksLikeCanonicalName(s: string): boolean {
-  return /^[a-z][a-z0-9-]*(\.[a-z0-9][a-z0-9-]*){2,}$/.test(s)
-}
-
-/** Recursively extract all string leaves from a value (handles arrays and nested objects). */
-function flattenToStrings(v: unknown): string[] {
-  if (typeof v === 'string') return [v]
-  if (Array.isArray(v)) return v.flatMap(flattenToStrings)
-  if (typeof v === 'object' && v !== null) return Object.values(v as Record<string, unknown>).flatMap(flattenToStrings)
-  return []
 }
 
 // ─── Upright / Reversed meanings ─────────────────────────────────────────────
@@ -2000,25 +1866,16 @@ function ExtendedDataTable({
   onNavigate: (canonicalName: string) => void
   additionalHiddenKeys?: Set<string>
 }) {
-  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'treeX', 'treeY', 'hue'])
+  // Hidden here because Reference shows these in a bespoke section elsewhere on the
+  // page, not because they're bad content — they remain fair game elsewhere (e.g.
+  // as quiz fields, via the same getAttributeEntries() used for that).
+  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'relatedOverviews'])
   const DURATION_KEYS = new Set(['durationYears', 'durationYearsInt', 'durationMonths', 'durationDays'])
 
   const hasDuration = 'durationYearsInt' in data && 'durationMonths' in data && 'durationDays' in data
 
-  const entries: [string, unknown][] = Object.entries(data)
-    .filter(([k, v]) =>
-      !HIDDEN_KEYS.has(k) &&
-      !additionalHiddenKeys?.has(k) &&
-      !DURATION_KEYS.has(k) &&
-      // Hide *CN key only if a non-CN sibling exists (the sibling will use the CN value)
-      !(k.endsWith('CN') && k.slice(0, -2) in data) &&
-      v !== null && v !== undefined && v !== ''
-    )
-    .map(([k, v]): [string, unknown] => {
-      // If a *CN sibling exists, use its canonical-name value so it renders as a link
-      const cnVal = data[k + 'CN']
-      return [k, typeof cnVal === 'string' && cnVal ? cnVal : v]
-    })
+  const entries: [string, unknown][] = getAttributeEntries(data)
+    .filter(([k]) => !HIDDEN_KEYS.has(k) && !additionalHiddenKeys?.has(k) && !DURATION_KEYS.has(k))
 
   if (hasDuration) {
     const y = data.durationYearsInt as number
@@ -2044,7 +1901,7 @@ function ExtendedDataTable({
       {entries.map(([key, value]) => (
         <React.Fragment key={key}>
           <span style={{ fontSize: '12px', color: 'var(--color-accent)', alignSelf: 'start', paddingTop: '2px' }}>
-            {key.replace(/CN$/, '').replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()).trim()}
+            {formatFieldLabel(key)}
           </span>
           <div style={{ fontSize: '13px', color: 'var(--color-text)', wordBreak: 'break-word' }}>
             {key === 'element' && value === 'None'
@@ -2122,7 +1979,7 @@ function ExtendedValue({
         {entries.map(([k, v]) => (
           <div key={k}>
             <span style={{ color: 'var(--color-text-subtle)', fontSize: '11px' }}>
-              {k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase())}:{' '}
+              {formatFieldLabel(k)}:{' '}
             </span>
             <ExtendedValue value={v} linkedNames={linkedNames} onNavigate={onNavigate} />
           </div>
@@ -2136,14 +1993,6 @@ function ExtendedValue({
 }
 
 // ─── Formatting helpers ───────────────────────────────────────────────────────
-
-/** "corresponds-to" → "Corresponds To" */
-function formatSlug(slug: string): string {
-  return slug
-    .split('-')
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ')
-}
 
 /**
  * "tradition.golden-dawn" → "Golden Dawn"

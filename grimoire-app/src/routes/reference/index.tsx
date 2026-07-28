@@ -7,6 +7,8 @@ import { Search, X, Shuffle, SlidersHorizontal } from 'lucide-react'
 import { formatEntityType, formatTag } from '@/lib/format'
 import { getRecentEntities, removeRecentEntity, clearRecentEntities } from '@/lib/recent-entities'
 import type { RecentEntity } from '@/lib/recent-entities'
+import { computeReferenceTopLevelOverviews } from '@/lib/entity-attributes'
+import type { GroupOverview } from '@/lib/entity-attributes'
 
 export const Route = createFileRoute('/reference/')(({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -614,55 +616,10 @@ function Chip({ label, onRemove, accent }: { label: string; onRemove: () => void
 }
 
 // ─── Browse grid ──────────────────────────────────────────────────────────────
-
-const BROWSE_ITEMS = [
-  { canonicalName: 'system.overview.tarot-decks',          label: 'Tarot Decks'        },
-  { canonicalName: 'system.overview.lenormand',            label: 'Lenormand'          },
-  { canonicalName: 'system.overview.playing-cards',        label: 'Playing Cards'      },
-  { canonicalName: 'system.overview.geomancy',             label: 'Geomancy'           },
-  { canonicalName: 'system.overview.iching',               label: 'I Ching'            },
-  { canonicalName: 'system.overview.runes',                label: 'Elder Futhark'      },
-  { canonicalName: 'system.overview.ogham',                label: 'Ogham'              },
-  { canonicalName: 'system.overview.mahjong',              label: 'Mahjong Divination' },
-  { canonicalName: 'system.overview.tasseomancy',          label: 'Tea Leaf Reading'   },
-  { canonicalName: 'system.overview.palmistry',            label: 'Palmistry'          },
-  { canonicalName: 'system.overview.astrology',            label: 'Astrology'          },
-  { canonicalName: 'system.overview.elements',             label: 'Elements'           },
-  { canonicalName: 'system.overview.nakshatras',           label: 'Nakshatras'         },
-  { canonicalName: 'system.overview.navaratna',            label: 'Navaratna (Gems)'   },
-  { canonicalName: 'system.overview.jyotish-dasha',        label: 'Vimshottari Dasha'  },
-  { canonicalName: 'system.overview.doshas',                label: 'Doshas'            },
-  { canonicalName: 'system.overview.qabalah',              label: 'Qabalah'            },
-  { canonicalName: 'system.overview.numerology',           label: 'Numerology'         },
-  { canonicalName: 'system.overview.letters',              label: 'Letters'            },
-  { canonicalName: 'system.overview.chakras',              label: 'Chakras'            },
-  { canonicalName: 'system.overview.chinese-zodiac',       label: 'Chinese Zodiac'     },
-  { canonicalName: 'system.overview.alchemy',              label: 'Alchemy'            },
-  { canonicalName: 'system.overview.sacred-geometry',      label: 'Sacred Geometry'    },
-  { canonicalName: 'system.overview.tattwas',              label: 'Tattwas'            },
-  { canonicalName: 'system.overview.western-polarity',     label: 'Western Polarity'   },
-  { canonicalName: 'system.overview.feng-shui-directions', label: 'Feng Shui'          },
-  { canonicalName: 'system.overview.herbs',                label: 'Magical Herbs'      },
-  { canonicalName: 'system.overview.sabbats',              label: 'Wheel of the Year'  },
-  { canonicalName: 'system.overview.greek-deities',        label: 'Greek Deities'      },
-  { canonicalName: 'system.overview.egyptian-deities',     label: 'Egyptian Deities'   },
-  { canonicalName: 'system.overview.norse-deities',        label: 'Norse Deities'      },
-  { canonicalName: 'system.overview.norse-worlds',         label: 'Nine Worlds'        },
-  { canonicalName: 'system.overview.ba-xian',              label: 'Eight Immortals'    },
-  { canonicalName: 'system.overview.angel-orders',         label: 'Angelic Orders'     },
-  { canonicalName: 'system.overview.shem-angels',          label: '72 Shem Angels'     },
-  { canonicalName: 'system.overview.goetia',               label: 'Goetia'             },
-  { canonicalName: 'system.overview.enochian-aethyrs',     label: 'Enochian Aethyrs'   },
-  { canonicalName: 'system.overview.valentinian-aeons',    label: 'Valentinian Aeons'  },
-  { canonicalName: 'system.overview.sethian-aeons',        label: 'Sethian Aeons'      },
-  { canonicalName: 'system.overview.rosicrucian',          label: 'Rosicrucian'        },
-  { canonicalName: 'system.overview.divine-names',         label: '99 Names of Allah'  },
-  { canonicalName: 'system.overview.magic-circles',        label: 'Magic Circles'       },
-  { canonicalName: 'system.overview.magic-pentagrams',     label: 'Elemental Pentagrams'},
-  { canonicalName: 'system.overview.magic-hexagrams',      label: 'Planetary Hexagrams' },
-  { canonicalName: 'system.overview.colours',               label: 'Colours'            },
-  { canonicalName: 'system.overview.gemstones',              label: 'Gemstones'          },
-]
+// The browse list is loaded dynamically via computeReferenceTopLevelOverviews
+// (entity-attributes.ts) rather than hardcoded, so it always reflects the current
+// set of top-level tradition overviews — sub-topic overviews (e.g. Norse Deities,
+// Tarot Decks) are reachable by drilling into their parent tradition instead.
 
 // ─── Recently viewed ──────────────────────────────────────────────────────────
 
@@ -737,6 +694,14 @@ function RecentlyViewedSection({ onNavigate }: { onNavigate: (cn: string) => voi
 
 function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) => void; customEnabled: boolean }) {
   const navigate = useNavigate()
+  const { engine } = useEngineStore()
+  const [browseItems, setBrowseItems] = useState<GroupOverview[]>([])
+
+  useEffect(() => {
+    if (!engine) return
+    computeReferenceTopLevelOverviews(engine.adapter).then(setBrowseItems).catch(console.error)
+  }, [engine])
+
   return (
     <div>
       <RecentlyViewedSection onNavigate={onNavigate} />
@@ -762,7 +727,7 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
         Browse
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '8px' }}>
-        {BROWSE_ITEMS.map(item => (
+        {browseItems.map(item => (
           <button
             key={item.canonicalName}
             onClick={() => onNavigate(item.canonicalName)}
