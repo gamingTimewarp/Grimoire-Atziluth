@@ -277,6 +277,33 @@
         "yinYang": null,
         "orderNumber": 10
       }
+    },
+    {
+      "canonicalName": "astrology.planet.earth",
+      "entityType": "astrology.planet",
+      "primaryDisplayName": "Earth",
+      "description": "Earth completes the Golden Dawn's planetary-sephirothic correspondences as the attribution of Malkuth (the tenth sephira, Kingdom) — an eighth planetary sphere alongside the seven classical planets from Saturn through the Moon, standing for the material world itself rather than a moving light in the sky. This is a correspondence-only role: geocentric astrology, by definition, measures the positions of bodies as seen from Earth, so Earth itself has no ecliptic longitude, forms no aspects, rules no zodiac sign, and never appears in a natal chart — it is the vantage point of the practice, not one of its observed 'wanderers'. Distinct from the classical element Earth (cold and dry, ruling Taurus, Virgo, and Capricorn, corresponding to the tarot suit of Pentacles): that is one of the four elements of matter, while this entry is specifically the 'eighth sphere' completing Malkuth's planetary attribution in the World of Assiah, the plane of pure manifestation where spirit finally becomes substance.",
+      "secondaryNames": [
+        { "name": "Terra", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "⊕", "languageTag": "symbol", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["planet", "astrology", "qabalah", "non-classical"],
+      "extendedData": {
+        "symbol": "⊕",
+        "dayOfWeek": null,
+        "metalAlchemy": null,
+        "qabalisticSephira": "qabalah.sephira.malkuth",
+        "relatedElement": "astrology.element.earth",
+        "rulesSign": [],
+        "exaltedIn": null,
+        "detrimentIn": [],
+        "fallIn": null,
+        "orbDegrees": null,
+        "polarity": "western.polarity.feminine",
+        "yinYang": null,
+        "orderNumber": 0,
+        "note": "Not one of the classical or modern astrological planets observed from Earth — included solely for its Qabalistic correspondence role as Malkuth's planetary attribution."
+      }
     }
   ]
 }
