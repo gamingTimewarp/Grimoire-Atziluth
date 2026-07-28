@@ -112,6 +112,28 @@ function QuestionModePreview({ mode }: { mode: QuestionMode }) {
       </>
     )
   }
+  if (mode === 'image-choice') {
+    return (
+      <>
+        <div style={{ fontSize: '12px', color: 'var(--color-text)', marginBottom: '8px' }}>
+          &ldquo;Which image is The Star?&rdquo;
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '5px' }}>
+          {[true, false, false, false].map((correct, i) => (
+            <div
+              key={i}
+              style={{
+                ...optionRowStyle(correct), display: 'flex', alignItems: 'center', justifyContent: 'center',
+                height: '38px', padding: 0,
+              }}
+            >
+              <ImageIcon size={14} style={{ color: correct ? '#4a8a4a' : 'var(--color-text-subtle)' }} />
+            </div>
+          ))}
+        </div>
+      </>
+    )
+  }
   // image-recognition
   return (
     <>
@@ -375,6 +397,7 @@ export function StudySettingsFields({
           ['multiple-choice',   'Multiple Choice — pick from options'],
           ['fill-in-blank',     'Fill in the Blank — type the answer'],
           ['image-recognition', 'Image Recognition — identify from visual'],
+          ['image-choice',      'Image Choice — given the name, pick the matching image'],
         ] as [QuestionMode, string][]).map(([mode, desc]) => (
           <div key={mode} style={{ marginBottom: '10px' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1px' }}>

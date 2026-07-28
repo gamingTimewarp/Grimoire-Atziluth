@@ -50,6 +50,7 @@ function PresetEditor({
       settings,
       isDefault:   initial?.isDefault ?? false,
       isBlank:     initial?.isBlank ?? false,
+      isBuiltIn:   initial?.isBuiltIn ?? false,
       createdAt:   initial?.createdAt ?? now,
       updatedAt:   now,
     })
@@ -179,7 +180,12 @@ function PresetsPage() {
   const [importError, setImportError] = useState<string | null>(null)
   const [imported, setImported] = useState(false)
 
-  const reload = () => getAllStudyPresets().then(setPresets).finally(() => setLoading(false))
+  // Built-in presets (BUILT_IN_PRESETS) are curated and non-editable — keep them
+  // out of this list entirely so there's no edit/delete affordance for them at
+  // all. They're still selectable to start a session from /study/new.
+  const reload = () => getAllStudyPresets()
+    .then(list => setPresets(list.filter(p => !p.isBuiltIn)))
+    .finally(() => setLoading(false))
   useEffect(() => { reload() }, [])
 
   const handleSave = async (p: StudyPreset) => {

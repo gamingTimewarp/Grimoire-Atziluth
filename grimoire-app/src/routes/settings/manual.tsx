@@ -106,6 +106,7 @@ function ManualPage() {
           ['Multiple choice', 'Choose the correct answer from 4–8 options'],
           ['Fill in blank', 'Type the answer; fuzzy matching accepts near-correct spelling'],
           ['Image recognition', 'See the artwork and identify the entity'],
+          ['Image choice', 'See the entity’s name and pick its artwork from several images'],
         ]} />
         <P>After answering, rate recall 0 (Blackout) to 5 (Perfect). Cards rated 0–1 return to the learning queue immediately.</P>
         <P><Strong>Study Settings.</Strong> Configure session size (1–500, default 20), which entity types to include, question modes per type, multiple-choice count, and whether to include custom entities.</P>

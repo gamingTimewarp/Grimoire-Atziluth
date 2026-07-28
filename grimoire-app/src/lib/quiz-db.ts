@@ -36,7 +36,7 @@ export interface SessionHistoryEntry {
   presetId?: string | null
 }
 
-export type QuestionMode = 'flashcard' | 'multiple-choice' | 'fill-in-blank' | 'image-recognition'
+export type QuestionMode = 'flashcard' | 'multiple-choice' | 'fill-in-blank' | 'image-recognition' | 'image-choice'
 
 export interface QuizSettings {
   sessionSize: number
@@ -58,7 +58,7 @@ export interface QuizSettings {
 export const DEFAULT_SETTINGS: QuizSettings = {
   sessionSize: 20,
   multipleChoiceCount: 4,
-  enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition'],
+  enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition', 'image-choice'],
   enabledEntityTypes: [
     'tarot.card',
     'lenormand.card',
@@ -102,7 +102,7 @@ export const DEFAULT_SETTINGS: QuizSettings = {
 export const BLANK_SETTINGS: QuizSettings = {
   sessionSize: 20,
   multipleChoiceCount: 4,
-  enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition'],
+  enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition', 'image-choice'],
   enabledEntityTypes: [],
   enabledQuestionTypes: {},
   includeUserCards: false,
@@ -131,6 +131,12 @@ function preset(
   displayName: string,
   description: string,
   enabledQuestionTypes: Record<string, string[]>,
+  /** Default session length, sized proportionally to how many answerable
+   * (entity, question-type) cards the preset's own fields/links actually
+   * produce (measured via buildSession against real seed data) — a preset
+   * covering a small corpus shouldn't default to the same 20 cards/session
+   * as one covering a much larger one. */
+  sessionSize: number,
   opts: { tarotDecks?: string[] } = {},
 ): BuiltInPresetDef {
   return {
@@ -138,9 +144,9 @@ function preset(
     displayName,
     description,
     settings: {
-      sessionSize: 20,
+      sessionSize,
       multipleChoiceCount: 4,
-      enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition'],
+      enabledModes: ['flashcard', 'multiple-choice', 'fill-in-blank', 'image-recognition', 'image-choice'],
       enabledEntityTypes: Object.keys(enabledQuestionTypes),
       enabledQuestionTypes,
       includeUserCards: false,
@@ -161,6 +167,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'astrology.planet':      ['image:name', 'field:symbol', 'field:dayOfWeek', 'field:metalAlchemy', 'field:exaltedIn'],
       'astrology.zodiac-sign': ['image:name', 'field:symbol', 'field:element', 'field:modality', 'field:traditionalRuler'],
     },
+    30,
     { tarotDecks: ALL_TAROT_DECKS },
   ),
   preset(
@@ -169,6 +176,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
     {
       'tarot.card': ['image:name', 'field:cardNumber', 'field:uprightMeaning', 'link:gd-tarot-letter', 'link:gd-tarot-planet', 'link:gd-tarot-sign'],
     },
+    25,
     { tarotDecks: ALL_TAROT_DECKS },
   ),
   preset(
@@ -185,6 +193,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'qabalah.tunnel-of-set':  ['field:pathNumber', 'field:correspondingPath', 'field:fromQliphoth', 'field:toQliphoth'],
       'qabalah.divine-name':    ['field:hebrewSpelling', 'field:sephira', 'link:composed-of'],
     },
+    15,
   ),
   preset(
     'ceremonial-magic', 'Ceremonial Magic',
@@ -204,6 +213,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'magic.pentagram':               ['field:element', 'field:variant', 'field:elementColor', 'field:tarotSuit'],
       'planetary-hour.day-ruler':      ['field:dayOfWeek', 'field:planet', 'field:latinDayName'],
     },
+    25,
   ),
   preset(
     'world-mythology', 'World Mythology',
@@ -215,6 +225,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'norse.world':    ['field:yggdrasilPosition', 'field:element'],
       'celtic.deity':   ['field:pantheon', 'field:festival'],
     },
+    10,
   ),
   preset(
     'divination-systems', 'Divination Systems',
@@ -228,6 +239,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'lenormand.card':   ['image:name', 'field:cardNumber', 'field:uprightMeaning', 'field:rulingPlanet'],
       'playing.card':     ['image:name', 'field:suit', 'field:rank'],
     },
+    25,
   ),
   preset(
     'vedic-yogic-systems', 'Vedic & Yogic Systems',
@@ -244,6 +256,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'yoga.kosha':           ['field:type', 'field:stateOfConsciousness', 'field:correspondingBody'],
       'yoga.prana':           ['field:direction', 'field:location', 'field:function'],
     },
+    20,
   ),
   preset(
     'chinese-systems', 'Chinese Systems',
@@ -261,6 +274,7 @@ export const BUILT_IN_PRESETS: BuiltInPresetDef[] = [
       'fengshui.mountain':      ['field:direction', 'field:mountainType', 'field:element'],
       'compass.direction':      ['field:abbreviation', 'field:type'],
     },
+    20,
   ),
 ]
 
@@ -351,6 +365,9 @@ export async function initQuizDb(): Promise<void> {
   // pre-existing presets (including Default) are simply "not blank".
   for (const col of [
     'ALTER TABLE study_presets ADD COLUMN is_blank INTEGER NOT NULL DEFAULT 0',
+    // Marks the curated BUILT_IN_PRESETS — hidden from Manage Presets and
+    // protected from edit/delete, same nullable-safe default-0 pattern.
+    'ALTER TABLE study_presets ADD COLUMN is_built_in INTEGER NOT NULL DEFAULT 0',
   ]) {
     try { await db.execute(col) } catch { /* column already exists */ }
   }
@@ -483,6 +500,10 @@ export interface StudyPreset {
    * directly (see the isBlank guard in /study/new) or updated in place
    * (use "Save as New Preset"), only saved-as or edited via Manage Presets. */
   isBlank: boolean
+  /** A curated BUILT_IN_PRESETS entry — still selectable to start a session
+   * (see /study/new), but hidden from Manage Presets and immune to edit/delete
+   * so users can't accidentally alter or lose the curated starting points. */
+  isBuiltIn: boolean
   createdAt: string
   updatedAt: string
 }
@@ -494,6 +515,7 @@ type PresetRow = {
   settings: string
   is_default: number
   is_blank: number
+  is_built_in: number
   created_at: string
   updated_at: string
 }
@@ -506,6 +528,7 @@ function rowToPreset(r: PresetRow): StudyPreset {
     settings:    JSON.parse(r.settings) as QuizSettings,
     isDefault:   !!r.is_default,
     isBlank:     !!r.is_blank,
+    isBuiltIn:   !!r.is_built_in,
     createdAt:   r.created_at,
     updatedAt:   r.updated_at,
   }
@@ -528,6 +551,7 @@ async function ensureDefaultPreset(): Promise<void> {
     settings: structuredClone(DEFAULT_SETTINGS),
     isDefault: true,
     isBlank: false,
+    isBuiltIn: false,
     createdAt: now,
     updatedAt: now,
   })
@@ -547,6 +571,7 @@ async function ensureBlankPreset(): Promise<void> {
     settings: structuredClone(BLANK_SETTINGS),
     isDefault: false,
     isBlank: true,
+    isBuiltIn: false,
     createdAt: now,
     updatedAt: now,
   })
@@ -554,12 +579,16 @@ async function ensureBlankPreset(): Promise<void> {
 
 const BUILT_IN_PRESETS_SEEDED_KEY = 'built_in_presets_seeded'
 
+/** Every BUILT_IN_PRESETS id, for the delete guard below. */
+const BUILT_IN_PRESET_IDS = new Set(BUILT_IN_PRESETS.map(p => p.id))
+
 /**
  * Seeds the curated themed presets (BUILT_IN_PRESETS) exactly once, ever —
  * tracked via a quiz_meta flag rather than per-preset-ID existence like
- * Default/Blank, since these are ordinary (deletable, editable) presets. If
- * we checked "does this ID already exist" instead, deleting one a user
- * doesn't want would just resurrect it on the next app start.
+ * Default/Blank, since even though these are now protected from user
+ * edit/delete (isBuiltIn, see StudyPreset), a future content update to
+ * BUILT_IN_PRESETS still shouldn't silently resurrect/overwrite whatever
+ * the user has come to rely on — seeding only ever happens once.
  */
 async function ensureBuiltInPresets(): Promise<void> {
   const db = await getDb()
@@ -576,6 +605,7 @@ async function ensureBuiltInPresets(): Promise<void> {
       settings: structuredClone(p.settings),
       isDefault: false,
       isBlank: false,
+      isBuiltIn: true,
       createdAt: now,
       updatedAt: now,
     })
@@ -603,16 +633,19 @@ export async function saveStudyPreset(p: StudyPreset): Promise<void> {
   const db = await getDb()
   await db.execute(
     `INSERT OR REPLACE INTO study_presets
-       (id, display_name, description, settings, is_default, is_blank, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, display_name, description, settings, is_default, is_blank, is_built_in, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [p.id, p.displayName, p.description, JSON.stringify(p.settings),
-     p.isDefault ? 1 : 0, p.isBlank ? 1 : 0, p.createdAt, p.updatedAt],
+     p.isDefault ? 1 : 0, p.isBlank ? 1 : 0, p.isBuiltIn ? 1 : 0, p.createdAt, p.updatedAt],
   )
 }
 
-/** No-ops for the Default and Blank presets — they can't be deleted, only edited. */
+/** No-ops for Default, Blank, and any built-in preset — Default/Blank can still
+ * be edited, just not deleted; built-in presets are hidden from Manage Presets
+ * entirely (see /study/presets), so this is a defense-in-depth backstop rather
+ * than the primary protection. */
 export async function deleteStudyPreset(id: string): Promise<void> {
-  if (id === DEFAULT_PRESET_ID || id === BLANK_PRESET_ID) return
+  if (id === DEFAULT_PRESET_ID || id === BLANK_PRESET_ID || BUILT_IN_PRESET_IDS.has(id)) return
   const db = await getDb()
   await db.execute('DELETE FROM study_presets WHERE id = ?', [id])
 }

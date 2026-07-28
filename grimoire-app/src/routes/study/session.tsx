@@ -6,7 +6,7 @@ import {
   upsertCardState, saveLastResult, appendSessionHistory, sm2,
 } from '@/lib/quiz-db'
 import type { QuestionMode } from '@/lib/quiz-db'
-import { generateQuestion, classifyMatch } from '@/lib/quiz-engine'
+import { generateQuestion, classifyMatch, accuracyColor, resolveQuestionLabel } from '@/lib/quiz-engine'
 import type { SessionCard, Question } from '@/lib/quiz-engine'
 import { Button } from '@/components/ui/Button'
 import { EntityArt } from '@/components/ui/EntityArt'
@@ -307,7 +307,7 @@ function SessionPage() {
               <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '4px' }}>correct</div>
             </div>
             <div>
-              <div style={{ fontSize: '40px', fontWeight: 300, color: pct >= 70 ? 'var(--color-accent)' : pct >= 50 ? '#c47a4a' : 'var(--color-danger)', lineHeight: 1 }}>
+              <div style={{ fontSize: '40px', fontWeight: 300, color: accuracyColor(pct, 70), lineHeight: 1 }}>
                 {pct}%
               </div>
               <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '4px' }}>accuracy</div>
@@ -356,11 +356,16 @@ function SessionPage() {
   // Symbolic art packs render a generic per-rank/per-figure glyph that doesn't
   // distinguish between decks sharing the same group schema (e.g. Deux de
   // Deniers and Two of Pentacles render identically) — substitute the group's
-  // classic pack so image-recognition stays answerable. Any other selected
-  // pack (including custom ones) is left untouched.
+  // classic pack so image-recognition and image-choice stay answerable. Any
+  // other selected pack (including custom ones) is left untouched. image-choice
+  // has no single "the" entity like image-recognition does, but every option
+  // shares one art group by construction (pickImageDistractors scopes to it),
+  // so the first option's group applies to all of them.
   const imagePackOverride = (() => {
-    if (question.mode !== 'image-recognition') return undefined
-    const group = artGroupForEntityType(question.entity.entityType, question.entity.canonicalName)
+    if (question.mode !== 'image-recognition' && question.mode !== 'image-choice') return undefined
+    const refEntity = question.mode === 'image-recognition' ? question.entity : question.options[0]
+    if (!refEntity) return undefined
+    const group = artGroupForEntityType(refEntity.entityType, refEntity.canonicalName)
     if (!group) return undefined
     const { packByGroup } = loadArtSettings()
     return packByGroup[group] === 'symbolic' ? (firstNonSymbolicPack(group) ?? undefined) : undefined
@@ -418,7 +423,7 @@ function SessionPage() {
       <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', fontSize: '11px', color: 'var(--color-text-subtle)', flexWrap: 'wrap' }}>
         <span style={{ textTransform: 'uppercase', letterSpacing: '0.08em' }}>{formatEntityType(card.entity.entityType)}</span>
         <span>·</span>
-        <span>{card.def.label}</span>
+        <span>{resolveQuestionLabel(card.entity, card.def)}</span>
         <span>·</span>
         <span style={{ fontFamily: 'monospace' }}>{question.mode}</span>
         {card.isNew && <><span>·</span><span style={{ color: 'var(--color-accent)' }}>new</span></>}
@@ -489,6 +494,42 @@ function SessionPage() {
             {phase.kind === 'revealed' && phase.autoCorrect === false && (
               <div style={{ fontSize: '12px', color: 'var(--color-danger)', marginTop: '4px' }}>
                 Correct answer: {question.answer}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* IMAGE CHOICE — name given as the prompt, pick the matching image among several */}
+        {question.mode === 'image-choice' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(90px, 1fr))', gap: '10px' }}>
+              {question.options.map(opt => {
+                const isRevealed = phase.kind === 'revealed'
+                const isCorrect  = opt.canonicalName === question.answer
+                let bg = 'var(--color-surface-1)'
+                let border = 'var(--color-border)'
+                if (isRevealed && isCorrect) { bg = 'rgba(100,160,100,0.15)'; border = '#4a8a4a' }
+                return (
+                  <button
+                    key={opt.canonicalName}
+                    disabled={isRevealed}
+                    onClick={() => dispatch({ type: 'SELECT_OPTION', correct: isCorrect })}
+                    style={{
+                      display: 'flex', justifyContent: 'center', padding: '6px',
+                      background: bg, border: `1px solid ${border}`, borderRadius: '6px',
+                      cursor: phase.kind === 'question' ? 'pointer' : 'default',
+                      opacity: (isRevealed && !isCorrect) ? 0.5 : 1,
+                    }}
+                  >
+                    <EntityArt entity={opt} width={80} height={128} hideLabel packIdOverride={imagePackOverride} />
+                  </button>
+                )
+              })}
+            </div>
+            {phase.kind === 'question' && <DontKnowButton onClick={() => dispatch({ type: 'DONT_KNOW' })} />}
+            {phase.kind === 'revealed' && phase.autoCorrect === false && (
+              <div style={{ fontSize: '12px', color: 'var(--color-danger)' }}>
+                Correct answer: {card.entity.primaryDisplayName}
               </div>
             )}
           </div>

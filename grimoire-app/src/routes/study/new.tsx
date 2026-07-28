@@ -87,7 +87,7 @@ function NewSessionPage() {
   }
 
   const handleUpdatePreset = async () => {
-    if (!activePreset || !sessionConfig || activePreset.isDefault || activePreset.isBlank) return
+    if (!activePreset || !sessionConfig || activePreset.isDefault || activePreset.isBlank || activePreset.isBuiltIn) return
     const updated: StudyPreset = { ...activePreset, settings: sessionConfig, updatedAt: new Date().toISOString() }
     await saveStudyPreset(updated)
     setPresets(prev => prev.map(p => p.id === updated.id ? updated : p))
@@ -104,6 +104,7 @@ function NewSessionPage() {
       settings: sessionConfig,
       isDefault: false,
       isBlank: false,
+      isBuiltIn: false,
       createdAt: now,
       updatedAt: now,
     }
@@ -147,6 +148,7 @@ function NewSessionPage() {
                 {p.displayName}
                 {p.isDefault && <span style={{ marginLeft: '8px', fontSize: '11px', color: 'var(--color-accent)' }}>Default</span>}
                 {p.isBlank && <span style={{ marginLeft: '8px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>Blank</span>}
+                {p.isBuiltIn && <span style={{ marginLeft: '8px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>Built-in</span>}
               </div>
               <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>{p.description}</div>
               <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
@@ -174,7 +176,7 @@ function NewSessionPage() {
                 <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>
                   Changes here apply to this session only, unless saved below.
                 </span>
-                {activePreset && !activePreset.isDefault && !activePreset.isBlank && (
+                {activePreset && !activePreset.isDefault && !activePreset.isBlank && !activePreset.isBuiltIn && (
                   <Button variant="ghost" size="sm" onClick={handleUpdatePreset}>
                     Update "{activePreset.displayName}"
                   </Button>

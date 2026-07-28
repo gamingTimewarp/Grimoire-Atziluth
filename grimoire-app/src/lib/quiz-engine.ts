@@ -19,6 +19,29 @@ import type { GroupOverview } from './entity-attributes'
 import { formatEntityType, formatTag } from './format'
 export { fuzzyMatch, exactMatch, classifyMatch }
 
+// ─── Accuracy display colours ──────────────────────────────────────────────────
+
+/** Fixed literal colours for every accuracy display in Study (sparkline days,
+ * last-session stat, session-complete screen) — deliberately NOT theme variables.
+ * Unlike --color-accent, which users can recolour to anything (including purple
+ * via custom themes/palettes), accuracy needs to read as green/gold/orange/red
+ * regardless of the active theme. */
+export const ACCURACY_COLOR = {
+  perfect: '#d9b23c',
+  good:    '#5a9a6a',
+  fair:    '#c47a4a',
+  poor:    '#c44a4a',
+} as const
+
+/** `good`/`fair` cutoff varies by call site (a single session is graded more
+ * leniently than a cumulative day), so callers pass their own `goodThreshold`. */
+export function accuracyColor(pct: number, goodThreshold: number): string {
+  if (pct >= 100) return ACCURACY_COLOR.perfect
+  if (pct >= goodThreshold) return ACCURACY_COLOR.good
+  if (pct >= 50) return ACCURACY_COLOR.fair
+  return ACCURACY_COLOR.poor
+}
+
 // ─── Question type definitions ─────────────────────────────────────────────────
 
 export interface QuestionTypeDef {
@@ -264,6 +287,12 @@ export type Question =
    * that needs more than a single canonical string to check against. */
   | { mode: 'fill-in-blank';      prompt: string; answer: string; acceptableAnswers: string[] }
   | { mode: 'image-recognition';  prompt: string; answer: string; entity: BaseEntity; options: string[] }
+  /** The inverse of image-recognition's name-recognition case: the entity is
+   * named in the prompt text, and `options` are the candidate entities whose
+   * art is rendered as the clickable choices — `answer` is the correct one's
+   * canonicalName (not a display name, since two entities in the same options
+   * set could otherwise coincidentally share one). */
+  | { mode: 'image-choice';       prompt: string; answer: string; options: BaseEntity[] }
 
 // ─── Progress stats ────────────────────────────────────────────────────────────
 
@@ -511,6 +540,28 @@ async function pickNameDistractors(
   return pickRandom(candidates, count)
 }
 
+/**
+ * Image-choice distractors: other entities (not just their names) from the
+ * same art group, restricted to ones that actually have a visual
+ * representation to render — a text-only distractor would have nothing to
+ * show as a clickable image option. Otherwise identical scoping rules to
+ * pickNameDistractors above (same art group when one exists, so a Rider-
+ * Waite-Smith card is never confusable with a visually distinct Thoth card).
+ */
+async function pickImageDistractors(
+  entity: BaseEntity,
+  adapter: StorageAdapter,
+  count: number,
+): Promise<BaseEntity[]> {
+  const group  = artGroupForEntityType(entity.entityType, entity.canonicalName)
+  const result = await adapter.listEntities({ entityType: entity.entityType }, { offset: 0, limit: 1000 })
+  const candidates = result.items
+    .filter(e => e.canonicalName !== entity.canonicalName)
+    .filter(e => !group || artGroupForEntityType(e.entityType, e.canonicalName) === group)
+    .filter(e => hasVisualRepresentation(e))
+  return pickRandom(candidates, count)
+}
+
 async function pickDistractors(
   correctAnswer: string,
   entity: BaseEntity,
@@ -546,6 +597,24 @@ function pickRandom<T>(arr: T[], count: number): T[] {
   return [...arr].sort(() => Math.random() - 0.5).slice(0, count)
 }
 
+/**
+ * Most defs' labels are correct regardless of which entity they're being asked
+ * about, since discoverQuestionDefs derives one label per (entityType, key) —
+ * but tarot.card's `cardNumber` numbers Major and Minor Arcana independently
+ * (The Magician and the Ace of Wands are both "Card Number 1"), so the generic
+ * "Card Number" label is ambiguous. Disambiguate per-entity at prompt-build time
+ * rather than trying to split cardNumber into two defs, which would need two
+ * entityTypes to key off of and the Tarot refactor deliberately kept Major/Minor
+ * unified under tarot.card.
+ */
+export function resolveQuestionLabel(entity: BaseEntity, def: QuestionTypeDef): string {
+  if (def.key === 'field:cardNumber' && entity.entityType === 'tarot.card') {
+    if (entity.canonicalName.startsWith('tarot.major.')) return 'Major Arcana Number'
+    if (entity.canonicalName.startsWith('tarot.minor.')) return 'Minor Arcana Number'
+  }
+  return def.label
+}
+
 // ─── Question generation ───────────────────────────────────────────────────────
 
 export async function generateQuestion(
@@ -558,22 +627,56 @@ export async function generateQuestion(
   // An image:name def has nothing to ask if the entity has no visual
   // representation to recognize (e.g. Lenormand cards, excluded by policy in
   // hasVisualRepresentation despite sharing tarot.card's entityType) — treat
-  // it as unanswerable. Without this, the two redirects below infinite-loop:
-  // image-type defs always redirect toward image-recognition mode, and
-  // image-recognition always redirects entities with no art *away* from it,
-  // bouncing forever for exactly this combination.
+  // it as unanswerable. Without this, the redirects below infinite-loop:
+  // image-type defs always redirect toward a visual mode, and both visual
+  // modes redirect entities with no art *away* from themselves, bouncing
+  // forever for exactly this combination.
   if (def.type === 'image' && !hasVisualRepresentation(entity)) return null
 
-  // ── image:name defs prefer image-recognition when it's available ─────────────
-  // Only redirect when image-recognition is actually enabled — otherwise this
+  // ── image:name defs prefer a visual mode when one's available ────────────────
+  // Only redirect when the picked mode isn't already visual — otherwise this
   // falls through to the "Standard modes" section below, which already knows
   // how to ask a def.type === 'image' question by name alone (see resolveAnswer
   // and the multiple-choice distractor branch). Redirecting unconditionally
-  // used to infinite-loop when image-recognition was disabled in settings: the
-  // computed fallback mode ('multiple-choice') still isn't 'image-recognition',
-  // so this same check would fire again on the very next call, forever.
-  if (def.type === 'image' && mode !== 'image-recognition' && settings.enabledModes.includes('image-recognition')) {
-    return generateQuestion(entity, def, 'image-recognition', adapter, settings)
+  // used to infinite-loop when neither visual mode was enabled: the computed
+  // fallback mode ('multiple-choice') still isn't one of them, so this same
+  // check would fire again on the very next call, forever. image-recognition
+  // is preferred when both are enabled — preserves existing behavior for
+  // configs saved before image-choice existed — but a mode that was actually
+  // picked as image-choice is left alone rather than overridden.
+  if (def.type === 'image' && mode !== 'image-recognition' && mode !== 'image-choice') {
+    if (settings.enabledModes.includes('image-recognition')) {
+      return generateQuestion(entity, def, 'image-recognition', adapter, settings)
+    }
+    if (settings.enabledModes.includes('image-choice')) {
+      return generateQuestion(entity, def, 'image-choice', adapter, settings)
+    }
+  }
+
+  // ── Image choice mode ────────────────────────────────────────────────────────
+  // The inverse of image-recognition's name-recognition case: the entity is
+  // named in text, and several candidate images (same art group, when one
+  // applies) are shown for the user to pick the matching one. Only meaningful
+  // for image:name defs — there's no sensible "pick the image whose attribute
+  // equals X" version of this the way image-recognition has for attributes.
+  if (mode === 'image-choice') {
+    if (def.type !== 'image') {
+      return generateQuestion(entity, def, 'multiple-choice', adapter, settings)
+    }
+    const distractors = await pickImageDistractors(entity, adapter, settings.multipleChoiceCount - 1)
+    // Unlike the def-type redirect above, a shortage of *image* distractors
+    // specifically isn't grounds to retry in another mode — mirrors
+    // image-recognition's own "distractors.length < 1 → null" a few lines
+    // down, just for a different distractor pool (needs other entities with
+    // real art, not just distinct names, a narrower requirement).
+    if (distractors.length < 1) return null
+    const options = [entity, ...distractors].sort(() => Math.random() - 0.5)
+    return {
+      mode: 'image-choice',
+      prompt: `Which image is ${entity.primaryDisplayName}?`,
+      answer: entity.canonicalName,
+      options,
+    }
   }
 
   // ── Image recognition mode ──────────────────────────────────────────────────
@@ -599,7 +702,7 @@ export async function generateQuestion(
       const attrAnswer = await resolveAnswer(entity, def, adapter)
       if (!attrAnswer) return null
       answer = attrAnswer.display
-      prompt = `What is the ${def.label.toLowerCase()} of this?`
+      prompt = `What is the ${resolveQuestionLabel(entity, def).toLowerCase()} of this?`
       distractors = await pickDistractors(answer, entity, def, adapter, settings.multipleChoiceCount - 1)
     }
 
@@ -617,7 +720,7 @@ export async function generateQuestion(
   const entityName = entity.primaryDisplayName
   const prompt = def.type === 'image'
     ? `What is the name of this entity?`
-    : `What is the ${def.label.toLowerCase()} of ${entityName}?`
+    : `What is the ${resolveQuestionLabel(entity, def).toLowerCase()} of ${entityName}?`
 
   if (mode === 'flashcard')     return { mode: 'flashcard',     prompt, answer }
   if (mode === 'fill-in-blank') return { mode: 'fill-in-blank', prompt, answer, acceptableAnswers: resolved.acceptable }

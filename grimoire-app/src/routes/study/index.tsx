@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
+import type { ReactNode } from 'react'
 import type { GrimoireEngine } from '@grimoire/core'
 import { useEngineStore } from '@/stores/engine'
 import { useStudyStore } from '@/stores/study'
@@ -12,11 +13,12 @@ import type { LastResult, QuizSettings, SessionHistoryEntry, CardState } from '@
 import {
   countDueCards, getProgressStats, getEntityProgressList,
   discoverGroupOverviews, groupByNamespace, TAROT_DECK_OPTIONS,
+  ACCURACY_COLOR, accuracyColor,
 } from '@/lib/quiz-engine'
 import type { EntityTypeStats, EntityProgressRow, GroupOverview, NamespaceGroup, TarotDeckOption } from '@/lib/quiz-engine'
 import { Button } from '@/components/ui/Button'
 import { EntityLink } from '@/components/ui/EntityLink'
-import { Settings2, PlayCircle } from 'lucide-react'
+import { Settings2, PlayCircle, Info } from 'lucide-react'
 
 export const Route = createFileRoute('/study/')({
   component: StudyPage,
@@ -83,6 +85,49 @@ function ProgressBar({ stats }: { stats: EntityTypeStats[] }) {
   )
 }
 
+// ─── Info tooltip ───────────────────────────────────────────────────────────────
+
+/** Click-or-hover info popover, matching the pattern used by StudySettingsFields'
+ * question-mode preview icon. The backdrop is a sibling (not a descendant) of the
+ * hover-tracked wrapper so it doesn't keep the pointer "inside" the trigger. */
+function InfoIcon({ children }: { children: ReactNode }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <div
+        style={{ position: 'relative', display: 'inline-flex', zIndex: open ? 201 : undefined }}
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+      >
+        <button
+          onClick={e => { e.stopPropagation(); setOpen(o => !o) }}
+          aria-label="More information"
+          style={{
+            display: 'flex', alignItems: 'center', background: 'none', border: 'none',
+            padding: '2px', margin: 0, cursor: 'pointer', color: 'var(--color-text-subtle)',
+          }}
+        >
+          <Info size={12} />
+        </button>
+        {open && (
+          <div style={{
+            position: 'absolute', top: '20px', left: '-6px', width: '220px',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', padding: '10px 12px', boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
+            fontSize: '11px', color: 'var(--color-text-muted)', lineHeight: 1.5,
+            textTransform: 'none', letterSpacing: 'normal',
+          }}>
+            {children}
+          </div>
+        )}
+      </div>
+      {open && (
+        <div onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 200 }} />
+      )}
+    </>
+  )
+}
+
 // ─── Session sparkline (last 14 days) ─────────────────────────────────────────
 
 function SessionSparkline({ history }: { history: SessionHistoryEntry[] }) {
@@ -116,8 +161,40 @@ function SessionSparkline({ history }: { history: SessionHistoryEntry[] }) {
 
   return (
     <div>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
-        Last 14 Days
+      <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '10px' }}>
+        <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          Last 14 Days
+        </span>
+        <InfoIcon>
+          <div style={{ marginBottom: '8px' }}>
+            Each bar is one day's Study accuracy — the percentage of reviewed cards answered correctly that day. Bar height scales with accuracy; hover a bar for the exact figure.
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: ACCURACY_COLOR.perfect, flexShrink: 0 }} />
+              <span>Perfect (100%)</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: ACCURACY_COLOR.good, flexShrink: 0 }} />
+              <span>80–99% accuracy</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: ACCURACY_COLOR.fair, flexShrink: 0 }} />
+              <span>50–79% accuracy</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: ACCURACY_COLOR.poor, flexShrink: 0 }} />
+              <span>Below 50% accuracy</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: 'var(--color-border)', opacity: 0.3, flexShrink: 0 }} />
+              <span>No session that day</span>
+            </div>
+          </div>
+          <div style={{ marginTop: '8px', fontSize: '10px', color: 'var(--color-text-subtle)' }}>
+            These colours are fixed and don't change with your theme.
+          </div>
+        </InfoIcon>
       </div>
       <div style={{ display: 'flex', gap: '3px', alignItems: 'flex-end', height: '40px' }}>
         {slots.map(slot => (
@@ -127,11 +204,7 @@ function SessionSparkline({ history }: { history: SessionHistoryEntry[] }) {
             style={{
               flex: 1,
               height: slot.pct !== null ? `${Math.max(4, slot.pct * 0.4)}px` : '2px',
-              background: slot.pct !== null
-                ? slot.pct >= 80 ? 'var(--color-accent)'
-                  : slot.pct >= 50 ? '#c47a4a'
-                  : 'var(--color-danger, #c44)'
-                : 'var(--color-border)',
+              background: slot.pct !== null ? accuracyColor(slot.pct, 80) : 'var(--color-border)',
               borderRadius: '2px 2px 0 0',
               opacity: slot.pct !== null ? 1 : 0.3,
             }}
@@ -460,7 +533,7 @@ function StudyPage() {
               <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '4px' }}>correct</div>
             </div>
             <div>
-              <div style={{ fontSize: '28px', fontWeight: 300, lineHeight: 1, color: pct >= 70 ? 'var(--color-accent)' : pct >= 50 ? '#c47a4a' : 'var(--color-danger, #c44)' }}>
+              <div style={{ fontSize: '28px', fontWeight: 300, lineHeight: 1, color: accuracyColor(pct, 70) }}>
                 {pct}%
               </div>
               <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '4px' }}>accuracy</div>
