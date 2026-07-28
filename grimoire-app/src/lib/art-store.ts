@@ -316,13 +316,27 @@ export function isSymbolicPack(groupId: ArtGroup, packId: ArtPackId): boolean {
 }
 
 /**
+ * The first available built-in non-symbolic pack for a group, or null if none
+ * exists. Symbolic packs render a generic per-rank/per-figure glyph that
+ * doesn't distinguish between decks/traditions sharing the same group schema
+ * (e.g. Deux de Deniers and Two of Pentacles render identically) — Study uses
+ * this as a substitute specifically when the user's selected pack is Symbolic,
+ * so image-recognition questions stay answerable.
+ */
+export function firstNonSymbolicPack(groupId: ArtGroup): ArtPackId | null {
+  const group = ART_GROUPS.find(g => g.id === groupId)
+  return group?.packs.find(p => !p.isSymbolic && p.available)?.id ?? null
+}
+
+/**
  * Maps an entity type + optional canonical name to its art group, or null.
- * canonicalName is used to disambiguate tarot.card (which includes lenormand cards).
+ * canonicalName is still needed to disambiguate tarot.card, which spans the
+ * four "true" tarot decks (RWS/Thoth/TdM/Etteilla) that deliberately share one
+ * entityType — Lenormand and Playing Cards have their own entityTypes and
+ * don't need canonicalName to be identified.
  */
 export function artGroupForEntityType(entityType: string, canonicalName?: string): ArtGroup | null {
   if (entityType === 'tarot.card') {
-    if (canonicalName?.startsWith('lenormand.')) return 'lenormand'
-    if (canonicalName?.startsWith('playing.card.')) return 'playing-cards'
     // Detect deck from the third segment: tarot.{section}.{deck}.{name}
     const deck = canonicalName?.split('.')?.[2]
     if (deck === 'thoth')    return 'tarot-thoth'
@@ -330,6 +344,8 @@ export function artGroupForEntityType(entityType: string, canonicalName?: string
     if (deck === 'etteilla') return 'tarot-etteilla'
     return 'tarot-rws'  // default for rws and unknown tarot cards
   }
+  if (entityType === 'lenormand.card')    return 'lenormand'
+  if (entityType === 'playing.card')      return 'playing-cards'
   if (entityType.startsWith('rune') || entityType === 'ogham.letter') return 'runes'
   if (entityType === 'geomancy.figure')                 return 'geomancy'
   if (entityType === 'divination.mahjong-tile')         return 'mahjong'

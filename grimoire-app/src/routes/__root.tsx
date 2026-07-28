@@ -1,4 +1,4 @@
-import { createRootRoute, Outlet } from '@tanstack/react-router'
+import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import { Menu } from 'lucide-react'
@@ -146,10 +146,10 @@ function RootLayout() {
           zIndex: 10,
           boxSizing: 'content-box',
         }}>
-          <div>
+          <Link to="/" title="Home" style={{ textDecoration: 'none' }}>
             <span style={{ fontSize: '10px', letterSpacing: '0.15em', color: 'var(--color-accent)', textTransform: 'uppercase', fontWeight: 600 }}>Grimoire </span>
             <span style={{ fontSize: '14px', color: 'var(--color-text)', fontWeight: 300, letterSpacing: '0.05em' }}>Atziluth</span>
-          </div>
+          </Link>
           <button
             ref={hamburgerRef}
             onClick={() => setDrawerOpen(true)}

@@ -160,7 +160,7 @@ describe('Seeder integration — grimoire-data/', () => {
     const fehu = await engine.adapter.getEntityByCanonicalName('rune.elder-futhark.fehu')
     expect(fehu).not.toBeNull()
     expect(fehu!.extendedData.runeGlyph).toBe('ᚠ')
-    expect(fehu!.extendedData.aett).toBe('freya')
+    expect(fehu!.extendedData.aett).toBe('norse.deity.freya')
     expect(fehu!.extendedData.orderNumber).toBe(1)
   })
 
@@ -183,14 +183,14 @@ describe('Seeder integration — grimoire-data/', () => {
   it('Path 13 connects Kether to Tiphareth', async () => {
     const upper = await engine.adapter.queryLinks({
       sourceCanonicalName: 'qabalah.path.13',
-      labels: ['path-upper-terminus'],
+      labels: ['attributed-upper-terminus'],
     })
     expect(upper.items.length).toBe(1)
     expect(upper.items[0].targetCanonicalName).toBe('qabalah.sephira.kether')
 
     const lower = await engine.adapter.queryLinks({
       sourceCanonicalName: 'qabalah.path.13',
-      labels: ['path-lower-terminus'],
+      labels: ['attributed-lower-terminus'],
     })
     expect(lower.items.length).toBe(1)
     expect(lower.items[0].targetCanonicalName).toBe('qabalah.sephira.tiphareth')
@@ -199,7 +199,7 @@ describe('Seeder integration — grimoire-data/', () => {
   it('Kether is linked to Thaumiel as its Qliphothic shell', async () => {
     const links = await engine.adapter.queryLinks({
       sourceCanonicalName: 'qabalah.sephira.kether',
-      labels: ['qliphothic-shell'],
+      labels: ['attributed-qliphothic-shell'],
     })
     expect(links.items.length).toBe(1)
     expect(links.items[0].targetCanonicalName).toBe('qabalah.qliphoth.thaumiel')
@@ -208,7 +208,7 @@ describe('Seeder integration — grimoire-data/', () => {
   it('Aleph is linked to Path 11', async () => {
     const links = await engine.adapter.queryLinks({
       sourceCanonicalName: 'letter.hebrew.aleph',
-      labels: ['letter-of-path'],
+      labels: ['path'],
     })
     expect(links.items.length).toBe(1)
     expect(links.items[0].targetCanonicalName).toBe('qabalah.path.11')

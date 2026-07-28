@@ -20,10 +20,22 @@ export function EntityArt({
   entity,
   width = 120,
   height = 200,
+  hideLabel = false,
+  packIdOverride,
 }: {
   entity: BaseEntity
   width?: number
   height?: number
+  /** Suppresses the entity's name from being rendered/baked into the artwork —
+   * for blind visual-recognition quiz questions, where showing the name would
+   * give the answer away. Only affects the programmatic Symbolic/Classic
+   * renderers; real image-pack photos never included a name to begin with. */
+  hideLabel?: boolean
+  /** Forces a specific pack id for this render, bypassing the user's globally
+   * selected pack for the entity's art group — e.g. Study substitutes a
+   * non-symbolic pack when Symbolic is selected, since generic per-rank
+   * glyphs don't distinguish between decks sharing the same group schema. */
+  packIdOverride?: ArtPackId
 }) {
   const customImageFile = getCustomImageFileName(entity)
   if (customImageFile) {
@@ -34,36 +46,36 @@ export function EntityArt({
 
   if (!group) {
     // Try entity types with distinct symbolic renderers but no art pack
-    if (entity.entityType === 'iching.hexagram')       return <HexagramSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'astrology.zodiac-sign') return <ZodiacSignSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'astrology.planet')      return <PlanetSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'astrology.node')        return <PlanetSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'astrology.element')     return <ElementSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'letter.hebrew')         return <HebrewLetterSymbolic entity={entity} width={width} height={height} />
-    if (entity.entityType === 'colour.colour')         return <ColourSwatchSymbolic entity={entity} width={width} height={height} />
-    return <GenericSymbolic label={entity.primaryDisplayName} width={width} height={height} />
+    if (entity.entityType === 'iching.hexagram')       return <HexagramSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'astrology.zodiac-sign') return <ZodiacSignSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'astrology.planet')      return <PlanetSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'astrology.node')        return <PlanetSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'astrology.element')     return <ElementSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'letter.hebrew')         return <HebrewLetterSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    if (entity.entityType === 'colour.colour')         return <ColourSwatchSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    return <GenericSymbolic label={entity.primaryDisplayName} width={width} height={height} hideLabel={hideLabel} />
   }
 
   const { packByGroup } = loadArtSettings()
-  const pack = packByGroup[group] ?? 'symbolic'
+  const pack = packIdOverride ?? packByGroup[group] ?? 'symbolic'
 
   // A pack id not present in the group's built-in pack list is a custom (user-imported) pack.
   const isBuiltInPack = ART_GROUPS.find(g => g.id === group)?.packs.some(p => p.id === pack) ?? false
   if (!isBuiltInPack) {
-    return <CustomPackArt entity={entity} group={group} packId={pack} width={width} height={height} />
+    return <CustomPackArt entity={entity} group={group} packId={pack} width={width} height={height} hideLabel={hideLabel} />
   }
 
   if (!isSymbolicPack(group, pack)) {
-    return <ClassicWithFallback entity={entity} group={group} packId={pack} width={width} height={height} />
+    return <ClassicWithFallback entity={entity} group={group} packId={pack} width={width} height={height} hideLabel={hideLabel} />
   }
 
-  return <SymbolicArt entity={entity} group={group} width={width} height={height} />
+  return <SymbolicArt entity={entity} group={group} width={width} height={height} hideLabel={hideLabel} />
 }
 
 // ─── Custom art pack image (with Symbolic fallback) ────────────────────────────
 
-function CustomPackArt({ entity, group, packId, width, height }: {
-  entity: BaseEntity; group: ArtGroup; packId: ArtPackId; width: number; height: number
+function CustomPackArt({ entity, group, packId, width, height, hideLabel }: {
+  entity: BaseEntity; group: ArtGroup; packId: ArtPackId; width: number; height: number; hideLabel?: boolean
 }) {
   const [url, setUrl] = useState<string | null>(null)
   const [checked, setChecked] = useState(false)
@@ -80,7 +92,7 @@ function CustomPackArt({ entity, group, packId, width, height }: {
   }, [packId, entity.canonicalName])
 
   if (!checked || !url) {
-    return <SymbolicArt entity={entity} group={group} width={width} height={height} />
+    return <SymbolicArt entity={entity} group={group} width={width} height={height} hideLabel={hideLabel} />
   }
 
   if (url.endsWith('.svg')) {
@@ -128,7 +140,7 @@ function CustomImageArt({ fileName, label, width, height }: {
 // ─── Hexagram Symbolic ────────────────────────────────────────────────────────
 // Uses Unicode CJK hexagram symbols U+4DC0–U+4DFF (King Wen sequence).
 
-function HexagramSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function HexagramSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed  = entity.extendedData as Record<string, unknown>
   const num = ed.number as number | undefined
 
@@ -139,21 +151,21 @@ function HexagramSymbolic({ entity, width, height }: { entity: BaseEntity; width
   return (
     <div style={cardBase(width, height)}>
       <div style={{ fontSize: Math.round(height * 0.38), lineHeight: 1 }}>{glyph}</div>
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
 
 // ─── Zodiac Sign Symbolic ─────────────────────────────────────────────────────
 
-function ZodiacSignSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function ZodiacSignSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed     = entity.extendedData as Record<string, unknown>
   const symbol = (ed.symbol as string | undefined) ?? '☿'
 
   return (
     <div style={cardBase(width, height)}>
       <div style={{ fontSize: Math.round(height * 0.35), lineHeight: 1, color: 'var(--color-accent)' }}>{symbol}</div>
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -170,7 +182,7 @@ const PLANET_TO_METAL: Record<string, string> = {
   'astrology.planet.saturn':  'alchemy.metal.lead',
 }
 
-function PlanetSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function PlanetSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const metalCN = PLANET_TO_METAL[entity.canonicalName]
   const ed      = entity.extendedData as Record<string, unknown>
   const symbol  = (ed.symbol as string | undefined) ?? '✦'
@@ -182,14 +194,14 @@ function PlanetSymbolic({ entity, width, height }: { entity: BaseEntity; width: 
             size={Math.min(Math.round(height * 0.52), height - 38)} />
         : <div style={{ fontSize: Math.round(height * 0.35), lineHeight: 1, color: 'var(--color-accent)' }}>{symbol}</div>
       }
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
 
 // ─── Hebrew Letter Symbolic ───────────────────────────────────────────────────
 
-function HebrewLetterSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function HebrewLetterSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed         = entity.extendedData as Record<string, unknown>
   const letterForm = (ed.letterForm as string | undefined) ?? '?'
 
@@ -202,7 +214,7 @@ function HebrewLetterSymbolic({ entity, width, height }: { entity: BaseEntity; w
       }}>
         {letterForm}
       </div>
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -215,7 +227,7 @@ function HebrewLetterSymbolic({ entity, width, height }: { entity: BaseEntity; w
 // vivid). Achromatic entries (black/white/grey) have no hue and fall back to a
 // plain light→dark gradient instead of a tinted square.
 
-function ColourSwatchSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function ColourSwatchSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed  = entity.extendedData as Record<string, unknown>
   const hue = typeof ed.hue === 'number' ? ed.hue : null
 
@@ -248,7 +260,7 @@ function ColourSwatchSymbolic({ entity, width, height }: { entity: BaseEntity; w
           </>
         )}
       </div>
-      <div style={{ ...labelStyle(height), padding: '4px 6px 0' }}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={{ ...labelStyle(height), padding: '4px 6px 0' }}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -303,28 +315,30 @@ function ClassicWithFallback({
   packId,
   width,
   height,
+  hideLabel,
 }: {
   entity: BaseEntity
   group: ArtGroup
   packId: ArtPackId
   width: number
   height: number
+  hideLabel?: boolean
 }) {
   const [failed, setFailed] = useState(false)
 
   // Runes: render stone-tablet aesthetic using page fonts instead of SVG text
   // (SVG <text> can't reliably access specialised Unicode fonts like BabelStone Runic)
   if (group === 'runes') {
-    return <RuneClassic entity={entity} width={width} height={height} />
+    return <RuneClassic entity={entity} width={width} height={height} hideLabel={hideLabel} />
   }
 
   // Alchemy metals: path-based SVG symbols — no Unicode font dependency
   if (group === 'alchemy-metals') {
-    return <AlchemyMetalClassic entity={entity} width={width} height={height} />
+    return <AlchemyMetalClassic entity={entity} width={width} height={height} hideLabel={hideLabel} />
   }
 
   if (failed) {
-    return <SymbolicArt entity={entity} group={group} width={width} height={height} />
+    return <SymbolicArt entity={entity} group={group} width={width} height={height} hideLabel={hideLabel} />
   }
 
   const url = imagePackArtUrl(group, packId, entity.canonicalName)
@@ -352,33 +366,35 @@ function SymbolicArt({
   group,
   width,
   height,
+  hideLabel,
 }: {
   entity: BaseEntity
   group: ArtGroup
   width: number
   height: number
+  hideLabel?: boolean
 }) {
   switch (group) {
     case 'tarot-rws':
     case 'tarot-tdm':
     case 'tarot-thoth':
-    case 'tarot-etteilla':   return <TarotSymbolic entity={entity} width={width} height={height} />
-    case 'runes':            return <RuneSymbolic entity={entity} width={width} height={height} />
-    case 'geomancy':         return <GeomancySymbolic entity={entity} width={width} height={height} />
-    case 'mahjong':          return <MahjongSymbolic entity={entity} width={width} height={height} />
-    case 'lenormand':        return <LenormandSymbolic entity={entity} width={width} height={height} />
+    case 'tarot-etteilla':   return <TarotSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    case 'runes':            return <RuneSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    case 'geomancy':         return <GeomancySymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    case 'mahjong':          return <MahjongSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
+    case 'lenormand':        return <LenormandSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
     case 'playing-cards':    return <PlayingCardSymbolic entity={entity} width={width} height={height} />
-    case 'alchemy-metals':   return <AlchemyMetalSymbolic entity={entity} width={width} height={height} />
+    case 'alchemy-metals':   return <AlchemyMetalSymbolic entity={entity} width={width} height={height} hideLabel={hideLabel} />
   }
 }
 
 // ─── Generic fallback ─────────────────────────────────────────────────────────
 
-function GenericSymbolic({ label, width, height }: { label: string; width: number; height: number }) {
+function GenericSymbolic({ label, width, height, hideLabel }: { label: string; width: number; height: number; hideLabel?: boolean }) {
   return (
     <div style={cardBase(width, height)}>
       <div style={{ fontSize: Math.round(height * 0.15), opacity: 0.3 }}>✦</div>
-      <div style={labelStyle(height)}>{label}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{label}</div>}
     </div>
   )
 }
@@ -408,7 +424,7 @@ const ROMAN: string[] = [
   'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI',
 ]
 
-function TarotSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function TarotSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed = entity.extendedData as Record<string, unknown>
   const arcana  = ed.arcana  as string | undefined
   const suit    = ed.suit    as string | null | undefined
@@ -430,9 +446,11 @@ function TarotSymbolic({ entity, width, height }: { entity: BaseEntity; width: n
           {roman}
         </div>
         <div style={{ fontSize: Math.round(height * 0.18), opacity: 0.25 }}>✦</div>
-        <div style={{ fontSize: Math.round(height * 0.075), color: 'var(--color-text-muted)', textAlign: 'center', lineHeight: 1.3, wordBreak: 'break-word' }}>
-          {entity.primaryDisplayName}
-        </div>
+        {!hideLabel && (
+          <div style={{ fontSize: Math.round(height * 0.075), color: 'var(--color-text-muted)', textAlign: 'center', lineHeight: 1.3, wordBreak: 'break-word' }}>
+            {entity.primaryDisplayName}
+          </div>
+        )}
       </div>
     )
   }
@@ -537,7 +555,7 @@ function RuneStrokeSvg({ canonicalName, color, size }: {
 
 // ─── Rune Classic ─────────────────────────────────────────────────────────────
 
-function RuneClassic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function RuneClassic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const label = entity.primaryDisplayName.toUpperCase()
   const baseFontSize = Math.max(9, Math.round(height * 0.065))
   const letterSpacing = Math.max(0.5, Math.round(height * 0.01))
@@ -555,27 +573,29 @@ function RuneClassic({ entity, width, height }: { entity: BaseEntity; width: num
       boxShadow: '0 0 0 4px #28231e',
     }}>
       <RuneStrokeSvg canonicalName={entity.canonicalName} color="#c8b880" size={Math.min(Math.round(height * 0.52), height - 38)} />
-      <div style={{
-        ...labelStyle(height),
-        fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
-        color: '#8a7a58',
-        letterSpacing: `${letterSpacing}px`,
-        fontSize: scaledFontSize,
-        whiteSpace: 'nowrap',
-      }}>
-        {label}
-      </div>
+      {!hideLabel && (
+        <div style={{
+          ...labelStyle(height),
+          fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
+          color: '#8a7a58',
+          letterSpacing: `${letterSpacing}px`,
+          fontSize: scaledFontSize,
+          whiteSpace: 'nowrap',
+        }}>
+          {label}
+        </div>
+      )}
     </div>
   )
 }
 
 // ─── Rune Symbolic ────────────────────────────────────────────────────────────
 
-function RuneSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function RuneSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   return (
     <div style={cardBase(width, height)}>
       <RuneStrokeSvg canonicalName={entity.canonicalName} color="var(--color-text)" size={Math.min(Math.round(height * 0.52), height - 38)} />
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -602,7 +622,7 @@ const GEOMANCY_PATTERNS: Record<string, [number, number, number, number]> = {
   'geomancy.figure.laetitia':       [1, 1, 1, 0],
 }
 
-function GeomancySymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function GeomancySymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const pattern = GEOMANCY_PATTERNS[entity.canonicalName] ?? [0, 0, 0, 0]
   const dotR    = Math.max(3, Math.round(width * 0.07))
   const gap     = dotR * 2.8
@@ -630,7 +650,7 @@ function GeomancySymbolic({ entity, width, height }: { entity: BaseEntity; width
           )
         })}
       </svg>
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -667,20 +687,20 @@ function mahjongUnicode(canonicalName: string): string {
   return cp ? String.fromCodePoint(cp) : '🀫'
 }
 
-function MahjongSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function MahjongSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const glyph = mahjongUnicode(entity.canonicalName)
 
   return (
     <div style={cardBase(width, height)}>
       <div style={{ fontSize: Math.round(height * 0.38), lineHeight: 1 }}>{glyph}</div>
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
 
 // ─── Lenormand Symbolic ───────────────────────────────────────────────────────
 
-function LenormandSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function LenormandSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const ed  = entity.extendedData as Record<string, unknown>
   const num = ed.cardNumber as number | undefined
 
@@ -698,15 +718,17 @@ function LenormandSymbolic({ entity, width, height }: { entity: BaseEntity; widt
         {num !== undefined ? num : ''}
       </div>
       <div style={{ fontSize: Math.round(height * 0.14), opacity: 0.2 }}>✦</div>
-      <div style={{
-        fontSize: Math.round(height * 0.08),
-        color: 'var(--color-text-muted)',
-        textAlign: 'center',
-        lineHeight: 1.3,
-        wordBreak: 'break-word',
-      }}>
-        {entity.primaryDisplayName}
-      </div>
+      {!hideLabel && (
+        <div style={{
+          fontSize: Math.round(height * 0.08),
+          color: 'var(--color-text-muted)',
+          textAlign: 'center',
+          lineHeight: 1.3,
+          wordBreak: 'break-word',
+        }}>
+          {entity.primaryDisplayName}
+        </div>
+      )}
     </div>
   )
 }
@@ -803,13 +825,13 @@ function ElementSymbolSvg({ canonicalName, color, size }: {
   )
 }
 
-function ElementSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function ElementSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const color = ELEMENT_COLOR[entity.canonicalName] ?? 'var(--color-text)'
   return (
     <div style={cardBase(width, height)}>
       <ElementSymbolSvg canonicalName={entity.canonicalName} color={color}
         size={Math.min(Math.round(height * 0.52), height - 38)} />
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }
@@ -886,7 +908,7 @@ function MetalSymbolSvg({ canonicalName, color, size }: {
 
 // ─── Alchemy Metal Classic ─────────────────────────────────────────────────────
 
-function AlchemyMetalClassic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function AlchemyMetalClassic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   const label = entity.primaryDisplayName.toUpperCase()
   const baseFontSize = Math.max(9, Math.round(height * 0.065))
   return (
@@ -898,28 +920,30 @@ function AlchemyMetalClassic({ entity, width, height }: { entity: BaseEntity; wi
     }}>
       <MetalSymbolSvg canonicalName={entity.canonicalName} color="#c8b880"
         size={Math.min(Math.round(height * 0.52), height - 38)} />
-      <div style={{
-        ...labelStyle(height),
-        fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
-        color: '#8a7a58',
-        letterSpacing: '2px',
-        fontSize: baseFontSize,
-        whiteSpace: 'nowrap',
-      }}>
-        {label}
-      </div>
+      {!hideLabel && (
+        <div style={{
+          ...labelStyle(height),
+          fontFamily: '"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif',
+          color: '#8a7a58',
+          letterSpacing: '2px',
+          fontSize: baseFontSize,
+          whiteSpace: 'nowrap',
+        }}>
+          {label}
+        </div>
+      )}
     </div>
   )
 }
 
 // ─── Alchemy Metal Symbolic ────────────────────────────────────────────────────
 
-function AlchemyMetalSymbolic({ entity, width, height }: { entity: BaseEntity; width: number; height: number }) {
+function AlchemyMetalSymbolic({ entity, width, height, hideLabel }: { entity: BaseEntity; width: number; height: number; hideLabel?: boolean }) {
   return (
     <div style={cardBase(width, height)}>
       <MetalSymbolSvg canonicalName={entity.canonicalName} color="var(--color-text)"
         size={Math.min(Math.round(height * 0.52), height - 38)} />
-      <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>
+      {!hideLabel && <div style={labelStyle(height)}>{entity.primaryDisplayName}</div>}
     </div>
   )
 }

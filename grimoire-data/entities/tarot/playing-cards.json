@@ -3,7 +3,7 @@
   "entities": [
     {
       "canonicalName": "playing.suit.hearts",
-      "entityType": "tarot.suit",
+      "entityType": "playing.suit",
       "primaryDisplayName": "Hearts",
       "description": "The suit of Hearts in a standard playing card deck. Corresponds to the tarot suit of Cups and the element of Water. Associated with love, emotion, relationships, intuition, and domestic life. In cartomancy Hearts are the most positive suit, relating to feelings, home, and happiness.",
       "secondaryNames": [
@@ -33,7 +33,7 @@
     },
     {
       "canonicalName": "playing.suit.diamonds",
-      "entityType": "tarot.suit",
+      "entityType": "playing.suit",
       "primaryDisplayName": "Diamonds",
       "description": "The suit of Diamonds in a standard playing card deck. Corresponds to the tarot suit of Pentacles (Coins) and the element of Earth. Associated with money, material matters, business, practical affairs, and earthly concerns. In cartomancy Diamonds represent financial matters and material opportunities.",
       "secondaryNames": [
@@ -63,7 +63,7 @@
     },
     {
       "canonicalName": "playing.suit.clubs",
-      "entityType": "tarot.suit",
+      "entityType": "playing.suit",
       "primaryDisplayName": "Clubs",
       "description": "The suit of Clubs in a standard playing card deck. Corresponds to the tarot suit of Wands and the element of Fire. Associated with energy, ambition, career, creativity, and enterprise. The club symbol derives from the trefoil clover (trèfle in French). In cartomancy Clubs represent work, passion, and dynamic activity.",
       "secondaryNames": [
@@ -93,7 +93,7 @@
     },
     {
       "canonicalName": "playing.suit.spades",
-      "entityType": "tarot.suit",
+      "entityType": "playing.suit",
       "primaryDisplayName": "Spades",
       "description": "The suit of Spades in a standard playing card deck. Corresponds to the tarot suit of Swords and the element of Air. The name derives from the Spanish espada (sword). Associated with challenges, conflict, intellect, truth, and difficult transformations. In cartomancy Spades represent obstacles, change, and difficult but clarifying truths.",
       "secondaryNames": [
@@ -123,7 +123,7 @@
     },
     {
       "canonicalName": "playing.card.spades.ace",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ace of Spades",
       "description": "The highest-ranking card in Spades. Traditionally known as the Death Card in playing card divination. Associated with transformation, endings, and authority.",
       "tags": [
@@ -147,7 +147,7 @@
     },
     {
       "canonicalName": "playing.card.spades.2",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Two of Spades",
       "description": "The Two of Spades in a standard playing card deck.",
       "tags": [
@@ -171,7 +171,7 @@
     },
     {
       "canonicalName": "playing.card.spades.3",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Three of Spades",
       "description": "The Three of Spades in a standard playing card deck.",
       "tags": [
@@ -195,7 +195,7 @@
     },
     {
       "canonicalName": "playing.card.spades.4",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Four of Spades",
       "description": "The Four of Spades in a standard playing card deck.",
       "tags": [
@@ -219,7 +219,7 @@
     },
     {
       "canonicalName": "playing.card.spades.5",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Five of Spades",
       "description": "The Five of Spades in a standard playing card deck.",
       "tags": [
@@ -243,7 +243,7 @@
     },
     {
       "canonicalName": "playing.card.spades.6",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Six of Spades",
       "description": "The Six of Spades in a standard playing card deck.",
       "tags": [
@@ -267,7 +267,7 @@
     },
     {
       "canonicalName": "playing.card.spades.7",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Seven of Spades",
       "description": "The Seven of Spades in a standard playing card deck.",
       "tags": [
@@ -291,7 +291,7 @@
     },
     {
       "canonicalName": "playing.card.spades.8",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Eight of Spades",
       "description": "The Eight of Spades in a standard playing card deck.",
       "tags": [
@@ -315,7 +315,7 @@
     },
     {
       "canonicalName": "playing.card.spades.9",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Nine of Spades",
       "description": "The Nine of Spades in a standard playing card deck.",
       "tags": [
@@ -339,7 +339,7 @@
     },
     {
       "canonicalName": "playing.card.spades.10",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ten of Spades",
       "description": "The Ten of Spades in a standard playing card deck.",
       "tags": [
@@ -363,7 +363,7 @@
     },
     {
       "canonicalName": "playing.card.spades.jack",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Jack of Spades",
       "description": "The Jack of Spades. Traditionally represents Holger Danske (Ogier the Dane) in French card tradition. A young man of the sword suit.",
       "tags": [
@@ -387,7 +387,7 @@
     },
     {
       "canonicalName": "playing.card.spades.queen",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Queen of Spades",
       "description": "The Queen of Spades. Traditionally represents Pallas Athena in French card tradition. The cold, powerful queen of the sword suit.",
       "tags": [
@@ -411,7 +411,7 @@
     },
     {
       "canonicalName": "playing.card.spades.king",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "King of Spades",
       "description": "The King of Spades. Traditionally represents King David in French card tradition. The commanding authority of the sword suit.",
       "tags": [
@@ -435,7 +435,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.ace",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ace of Hearts",
       "description": "The Ace of Hearts. Represents the home, love, and happiness in cartomancy. The highest of the heart suit.",
       "tags": [
@@ -459,7 +459,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.2",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Two of Hearts",
       "description": "The Two of Hearts in a standard playing card deck.",
       "tags": [
@@ -483,7 +483,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.3",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Three of Hearts",
       "description": "The Three of Hearts in a standard playing card deck.",
       "tags": [
@@ -507,7 +507,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.4",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Four of Hearts",
       "description": "The Four of Hearts in a standard playing card deck.",
       "tags": [
@@ -531,7 +531,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.5",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Five of Hearts",
       "description": "The Five of Hearts in a standard playing card deck.",
       "tags": [
@@ -555,7 +555,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.6",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Six of Hearts",
       "description": "The Six of Hearts in a standard playing card deck.",
       "tags": [
@@ -579,7 +579,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.7",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Seven of Hearts",
       "description": "The Seven of Hearts in a standard playing card deck.",
       "tags": [
@@ -603,7 +603,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.8",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Eight of Hearts",
       "description": "The Eight of Hearts in a standard playing card deck.",
       "tags": [
@@ -627,7 +627,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.9",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Nine of Hearts",
       "description": "The Nine of Hearts. Known as the 'Wish Card' in cartomancy — a positive card of fulfilled desires.",
       "tags": [
@@ -651,7 +651,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.10",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ten of Hearts",
       "description": "The Ten of Hearts in a standard playing card deck.",
       "tags": [
@@ -675,7 +675,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.jack",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Jack of Hearts",
       "description": "The Jack of Hearts. Traditionally represents La Hire in French card tradition. A young man of the heart suit.",
       "tags": [
@@ -699,7 +699,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.queen",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Queen of Hearts",
       "description": "The Queen of Hearts. Traditionally represents Judith in French card tradition. The warm, loving queen of the heart suit.",
       "tags": [
@@ -723,7 +723,7 @@
     },
     {
       "canonicalName": "playing.card.hearts.king",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "King of Hearts",
       "description": "The King of Hearts. Traditionally represents Charlemagne in French card tradition. Known as the 'Suicide King' for the sword behind his head.",
       "tags": [
@@ -747,7 +747,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.ace",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ace of Diamonds",
       "description": "The Ace of Diamonds. Represents new financial beginnings, gifts of money, and material opportunities in cartomancy.",
       "tags": [
@@ -771,7 +771,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.2",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Two of Diamonds",
       "description": "The Two of Diamonds in a standard playing card deck.",
       "tags": [
@@ -795,7 +795,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.3",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Three of Diamonds",
       "description": "The Three of Diamonds in a standard playing card deck.",
       "tags": [
@@ -819,7 +819,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.4",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Four of Diamonds",
       "description": "The Four of Diamonds in a standard playing card deck.",
       "tags": [
@@ -843,7 +843,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.5",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Five of Diamonds",
       "description": "The Five of Diamonds in a standard playing card deck.",
       "tags": [
@@ -867,7 +867,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.6",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Six of Diamonds",
       "description": "The Six of Diamonds in a standard playing card deck.",
       "tags": [
@@ -891,7 +891,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.7",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Seven of Diamonds",
       "description": "The Seven of Diamonds in a standard playing card deck.",
       "tags": [
@@ -915,7 +915,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.8",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Eight of Diamonds",
       "description": "The Eight of Diamonds in a standard playing card deck.",
       "tags": [
@@ -939,7 +939,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.9",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Nine of Diamonds",
       "description": "The Nine of Diamonds in a standard playing card deck.",
       "tags": [
@@ -963,7 +963,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.10",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ten of Diamonds",
       "description": "The Ten of Diamonds in a standard playing card deck.",
       "tags": [
@@ -987,7 +987,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.jack",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Jack of Diamonds",
       "description": "The Jack of Diamonds. Traditionally represents Hector of Troy in French card tradition.",
       "tags": [
@@ -1011,7 +1011,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.queen",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Queen of Diamonds",
       "description": "The Queen of Diamonds. Traditionally represents Rachel in French card tradition.",
       "tags": [
@@ -1035,7 +1035,7 @@
     },
     {
       "canonicalName": "playing.card.diamonds.king",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "King of Diamonds",
       "description": "The King of Diamonds. Traditionally represents Julius Caesar in French card tradition.",
       "tags": [
@@ -1059,7 +1059,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.ace",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ace of Clubs",
       "description": "The Ace of Clubs. Represents new creative ventures, lucky starts, and the seed of passion in cartomancy.",
       "tags": [
@@ -1083,7 +1083,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.2",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Two of Clubs",
       "description": "The Two of Clubs in a standard playing card deck.",
       "tags": [
@@ -1107,7 +1107,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.3",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Three of Clubs",
       "description": "The Three of Clubs in a standard playing card deck.",
       "tags": [
@@ -1131,7 +1131,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.4",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Four of Clubs",
       "description": "The Four of Clubs in a standard playing card deck.",
       "tags": [
@@ -1155,7 +1155,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.5",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Five of Clubs",
       "description": "The Five of Clubs in a standard playing card deck.",
       "tags": [
@@ -1179,7 +1179,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.6",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Six of Clubs",
       "description": "The Six of Clubs in a standard playing card deck.",
       "tags": [
@@ -1203,7 +1203,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.7",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Seven of Clubs",
       "description": "The Seven of Clubs in a standard playing card deck.",
       "tags": [
@@ -1227,7 +1227,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.8",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Eight of Clubs",
       "description": "The Eight of Clubs in a standard playing card deck.",
       "tags": [
@@ -1251,7 +1251,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.9",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Nine of Clubs",
       "description": "The Nine of Clubs in a standard playing card deck.",
       "tags": [
@@ -1275,7 +1275,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.10",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Ten of Clubs",
       "description": "The Ten of Clubs in a standard playing card deck.",
       "tags": [
@@ -1299,7 +1299,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.jack",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Jack of Clubs",
       "description": "The Jack of Clubs. Traditionally represents Lancelot in French card tradition.",
       "tags": [
@@ -1323,7 +1323,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.queen",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Queen of Clubs",
       "description": "The Queen of Clubs. Traditionally represents Argine (an anagram of Regina) in French card tradition.",
       "tags": [
@@ -1347,7 +1347,7 @@
     },
     {
       "canonicalName": "playing.card.clubs.king",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "King of Clubs",
       "description": "The King of Clubs. Traditionally represents Alexander the Great in French card tradition.",
       "tags": [
@@ -1371,7 +1371,7 @@
     },
     {
       "canonicalName": "playing.card.joker.red",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Red Joker",
       "description": "The Red Joker of the standard playing card deck. The Joker is an extra card added to the deck in the mid-19th century, originally for the game of Euchre. In cartomancy, the Joker often represents the querent or unexpected events.",
       "tags": [
@@ -1394,7 +1394,7 @@
     },
     {
       "canonicalName": "playing.card.joker.black",
-      "entityType": "tarot.card",
+      "entityType": "playing.card",
       "primaryDisplayName": "Black Joker",
       "description": "The Black Joker of the standard playing card deck. Along with the Red Joker, the Jokers are the two extra cards in the standard deck, used in various games and in cartomancy as wild cards or significators.",
       "tags": [

@@ -35,7 +35,7 @@
         "tattwaEquivalent": "tattwa.akasha",
         "sensory": "sound (shabda)",
         "senseOrgan": "ears",
-        "chakra": "Vishuddha (Throat)",
+        "chakraCorrespondence": "chakra.classical.vishuddha",
         "doshaInfluence": "Vata"
       }
     },
@@ -73,7 +73,7 @@
         "tattwaEquivalent": "tattwa.vayu",
         "sensory": "touch (sparsha)",
         "senseOrgan": "skin",
-        "chakra": "Anahata (Heart)",
+        "chakraCorrespondence": "chakra.classical.anahata",
         "doshaInfluence": "Vata"
       }
     },
@@ -111,7 +111,7 @@
         "tattwaEquivalent": "tattwa.tejas",
         "sensory": "sight/form (rupa)",
         "senseOrgan": "eyes",
-        "chakra": "Manipura (Solar Plexus)",
+        "chakraCorrespondence": "chakra.classical.manipura",
         "doshaInfluence": "Pitta"
       }
     },
@@ -149,7 +149,7 @@
         "tattwaEquivalent": "tattwa.apas",
         "sensory": "taste (rasa)",
         "senseOrgan": "tongue",
-        "chakra": "Svadhisthana (Sacral)",
+        "chakraCorrespondence": "chakra.classical.svadhisthana",
         "doshaInfluence": "Kapha/Pitta"
       }
     },
@@ -187,7 +187,7 @@
         "tattwaEquivalent": "tattwa.prithivi",
         "sensory": "smell (gandha)",
         "senseOrgan": "nose",
-        "chakra": "Muladhara (Root)",
+        "chakraCorrespondence": "chakra.classical.muladhara",
         "doshaInfluence": "Kapha"
       }
     }

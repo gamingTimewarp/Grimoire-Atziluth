@@ -26,7 +26,8 @@ const STATIC_PAGES: { label: string; sublabel: string; keywords: string; to: str
   { label: 'Custom Traditions',     sublabel: 'Create & manage custom traditions',      keywords: 'custom traditions relationships display names attributions create',  to: '/custom/traditions'     },
   { label: 'Settings',              sublabel: 'Theme, font & preferences',              keywords: 'settings theme font appearance preference',                         to: '/settings'              },
   { label: 'Tradition Settings',    sublabel: 'Enable/disable traditions',              keywords: 'traditions golden dawn thoth settings enable',                      to: '/settings/traditions'   },
-  { label: 'Study Settings',        sublabel: 'Study deck configuration',               keywords: 'study settings deck configuration',                                 to: '/study/settings'        },
+  { label: 'Study Presets',         sublabel: 'Manage saved study session presets',     keywords: 'study settings presets deck configuration',                         to: '/study/presets'         },
+  { label: 'New Study Session',     sublabel: 'Pick a preset and start studying',       keywords: 'study new session start quiz',                                      to: '/study/new'             },
   { label: 'Nav Settings',          sublabel: 'Sidebar navigation order & visibility',  keywords: 'nav navigation sidebar order hide show',                            to: '/settings/nav'          },
   { label: 'Data',                  sublabel: 'Backup & restore',                       keywords: 'data backup restore export import json',                            to: '/settings/data'         },
 ]

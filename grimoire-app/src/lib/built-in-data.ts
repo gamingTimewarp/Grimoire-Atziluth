@@ -101,8 +101,8 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     reversalEnabled: false,
     infoCanonicalName: 'system.overview.playing-cards',
     variants: [
-      { id: 'playing-cards-52', label: '52 Cards (No Jokers)', tags: ['playing-card-suited'], entityType: 'tarot.card' },
-      { id: 'playing-cards-54', label: '54 Cards (With Jokers)', tags: ['playing-card'], entityType: 'tarot.card' },
+      { id: 'playing-cards-52', label: '52 Cards (No Jokers)', tags: ['playing-card-suited'], entityType: 'playing.card' },
+      { id: 'playing-cards-54', label: '54 Cards (With Jokers)', tags: ['playing-card'], entityType: 'playing.card' },
     ],
   },
   // ── Other divination systems ───────────────────────────────────────────────
@@ -120,7 +120,7 @@ export const BUILT_IN_DECK_FILTERS: DeckFilter[] = [
     displayName: 'Lenormand (36 cards)',
     description: '36-card Lenormand deck.',
     tags: ['lenormand'],
-    entityType: 'tarot.card',
+    entityType: 'lenormand.card',
     reversalEnabled: false,
     infoCanonicalName: 'system.overview.lenormand',
   },

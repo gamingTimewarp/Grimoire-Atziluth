@@ -20,8 +20,9 @@ import { Route as CustomIndexRouteImport } from './routes/custom/index'
 import { Route as CalendarIndexRouteImport } from './routes/calendar/index'
 import { Route as BookmarksIndexRouteImport } from './routes/bookmarks/index'
 import { Route as AstrologyIndexRouteImport } from './routes/astrology/index'
-import { Route as StudySettingsRouteImport } from './routes/study/settings'
 import { Route as StudySessionRouteImport } from './routes/study/session'
+import { Route as StudyPresetsRouteImport } from './routes/study/presets'
+import { Route as StudyNewRouteImport } from './routes/study/new'
 import { Route as SettingsTraditionsRouteImport } from './routes/settings/traditions'
 import { Route as SettingsPrivacyRouteImport } from './routes/settings/privacy'
 import { Route as SettingsNavRouteImport } from './routes/settings/nav'
@@ -110,14 +111,19 @@ const AstrologyIndexRoute = AstrologyIndexRouteImport.update({
   path: '/astrology/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StudySettingsRoute = StudySettingsRouteImport.update({
-  id: '/study/settings',
-  path: '/study/settings',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const StudySessionRoute = StudySessionRouteImport.update({
   id: '/study/session',
   path: '/study/session',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudyPresetsRoute = StudyPresetsRouteImport.update({
+  id: '/study/presets',
+  path: '/study/presets',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudyNewRoute = StudyNewRouteImport.update({
+  id: '/study/new',
+  path: '/study/new',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsTraditionsRoute = SettingsTraditionsRouteImport.update({
@@ -322,8 +328,9 @@ export interface FileRoutesByFullPath {
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
+  '/study/new': typeof StudyNewRoute
+  '/study/presets': typeof StudyPresetsRoute
   '/study/session': typeof StudySessionRoute
-  '/study/settings': typeof StudySettingsRoute
   '/astrology/': typeof AstrologyIndexRoute
   '/bookmarks/': typeof BookmarksIndexRoute
   '/calendar/': typeof CalendarIndexRoute
@@ -369,8 +376,9 @@ export interface FileRoutesByTo {
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
+  '/study/new': typeof StudyNewRoute
+  '/study/presets': typeof StudyPresetsRoute
   '/study/session': typeof StudySessionRoute
-  '/study/settings': typeof StudySettingsRoute
   '/astrology': typeof AstrologyIndexRoute
   '/bookmarks': typeof BookmarksIndexRoute
   '/calendar': typeof CalendarIndexRoute
@@ -417,8 +425,9 @@ export interface FileRoutesById {
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
   '/settings/traditions': typeof SettingsTraditionsRoute
+  '/study/new': typeof StudyNewRoute
+  '/study/presets': typeof StudyPresetsRoute
   '/study/session': typeof StudySessionRoute
-  '/study/settings': typeof StudySettingsRoute
   '/astrology/': typeof AstrologyIndexRoute
   '/bookmarks/': typeof BookmarksIndexRoute
   '/calendar/': typeof CalendarIndexRoute
@@ -466,8 +475,9 @@ export interface FileRouteTypes {
     | '/settings/nav'
     | '/settings/privacy'
     | '/settings/traditions'
+    | '/study/new'
+    | '/study/presets'
     | '/study/session'
-    | '/study/settings'
     | '/astrology/'
     | '/bookmarks/'
     | '/calendar/'
@@ -513,8 +523,9 @@ export interface FileRouteTypes {
     | '/settings/nav'
     | '/settings/privacy'
     | '/settings/traditions'
+    | '/study/new'
+    | '/study/presets'
     | '/study/session'
-    | '/study/settings'
     | '/astrology'
     | '/bookmarks'
     | '/calendar'
@@ -560,8 +571,9 @@ export interface FileRouteTypes {
     | '/settings/nav'
     | '/settings/privacy'
     | '/settings/traditions'
+    | '/study/new'
+    | '/study/presets'
     | '/study/session'
-    | '/study/settings'
     | '/astrology/'
     | '/bookmarks/'
     | '/calendar/'
@@ -608,8 +620,9 @@ export interface RootRouteChildren {
   SettingsNavRoute: typeof SettingsNavRoute
   SettingsPrivacyRoute: typeof SettingsPrivacyRoute
   SettingsTraditionsRoute: typeof SettingsTraditionsRoute
+  StudyNewRoute: typeof StudyNewRoute
+  StudyPresetsRoute: typeof StudyPresetsRoute
   StudySessionRoute: typeof StudySessionRoute
-  StudySettingsRoute: typeof StudySettingsRoute
   AstrologyIndexRoute: typeof AstrologyIndexRoute
   BookmarksIndexRoute: typeof BookmarksIndexRoute
   CalendarIndexRoute: typeof CalendarIndexRoute
@@ -701,18 +714,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AstrologyIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/study/settings': {
-      id: '/study/settings'
-      path: '/study/settings'
-      fullPath: '/study/settings'
-      preLoaderRoute: typeof StudySettingsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/study/session': {
       id: '/study/session'
       path: '/study/session'
       fullPath: '/study/session'
       preLoaderRoute: typeof StudySessionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/study/presets': {
+      id: '/study/presets'
+      path: '/study/presets'
+      fullPath: '/study/presets'
+      preLoaderRoute: typeof StudyPresetsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/study/new': {
+      id: '/study/new'
+      path: '/study/new'
+      fullPath: '/study/new'
+      preLoaderRoute: typeof StudyNewRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings/traditions': {
@@ -977,8 +997,9 @@ const rootRouteChildren: RootRouteChildren = {
   SettingsNavRoute: SettingsNavRoute,
   SettingsPrivacyRoute: SettingsPrivacyRoute,
   SettingsTraditionsRoute: SettingsTraditionsRoute,
+  StudyNewRoute: StudyNewRoute,
+  StudyPresetsRoute: StudyPresetsRoute,
   StudySessionRoute: StudySessionRoute,
-  StudySettingsRoute: StudySettingsRoute,
   AstrologyIndexRoute: AstrologyIndexRoute,
   BookmarksIndexRoute: BookmarksIndexRoute,
   CalendarIndexRoute: CalendarIndexRoute,

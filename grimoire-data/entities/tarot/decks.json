@@ -39,7 +39,7 @@
     },
     {
       "canonicalName": "lenormand.deck.standard",
-      "entityType": "tarot.deck",
+      "entityType": "lenormand.deck",
       "primaryDisplayName": "Lenormand",
       "description": "The 36-card Lenormand deck, named after the French cartomancer Marie Anne Lenormand (1772–1843), though the modern deck format was not designed by her. A distinct fortune-telling system using playing card imagery with symbolic overlays.",
       "tags": ["deck"],
@@ -47,7 +47,7 @@
     },
     {
       "canonicalName": "playing.deck.standard",
-      "entityType": "tarot.deck",
+      "entityType": "playing.deck",
       "primaryDisplayName": "Standard Playing Cards",
       "description": "The standard 52-card French-suited playing card deck with two jokers (54 total). The ancestral form from which tarot decks derive, or a parallel development from the same Mamluk card tradition.",
       "tags": ["deck"],

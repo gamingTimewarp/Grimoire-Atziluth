@@ -1,6 +1,6 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { useState, useEffect } from 'react'
-import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X } from 'lucide-react'
+import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X, HelpCircle } from 'lucide-react'
 import { GlobalSearch } from './GlobalSearch'
 import { loadNavConfig } from '@/lib/nav-store'
 import { getLastViewedEntity } from '@/lib/recent-entities'
@@ -71,18 +71,23 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
           overflowX: 'hidden',
         }}
       >
-        {/* Monogram */}
-        <div style={{
-          height: '60px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          borderBottom: '1px solid var(--color-border)',
-          width: '100%',
-          flexShrink: 0,
-        }}>
+        {/* Monogram — doubles as a Home shortcut */}
+        <Link
+          to="/"
+          title="Home"
+          style={{
+            height: '60px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderBottom: '1px solid var(--color-border)',
+            width: '100%',
+            flexShrink: 0,
+            textDecoration: 'none',
+          }}
+        >
           <span style={{ fontSize: '18px', color: 'var(--color-accent)', lineHeight: 1 }}>⬡</span>
-        </div>
+        </Link>
 
         {/* Spotlight search */}
         <div style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '8px 0' }}>
@@ -120,6 +125,29 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
             </Link>
           ))}
         </div>
+
+        {/* User Manual quick link */}
+        <div style={{ width: '100%', padding: '4px', flexShrink: 0 }}>
+          <Link to="/settings/manual" title="User Manual" style={{ textDecoration: 'none' }}>
+            {({ isActive }) => (
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: '44px',
+                  borderRadius: '6px',
+                  color: isActive ? 'var(--color-accent)' : 'var(--color-text-muted)',
+                  background: isActive ? 'var(--color-surface-3)' : 'transparent',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s',
+                }}
+              >
+                <HelpCircle size={18} />
+              </div>
+            )}
+          </Link>
+        </div>
       </nav>
     )
   }
@@ -139,16 +167,16 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
         flexShrink: 0,
       }}
     >
-      {/* App name + optional close button */}
+      {/* App name (doubles as a Home shortcut) + optional close button */}
       <div style={{ padding: '0 20px 24px', borderBottom: '1px solid var(--color-border)', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
-        <div>
+        <Link to="/" title="Home" style={{ textDecoration: 'none' }} onClick={mode === 'drawer' ? onClose : undefined}>
           <div style={{ fontSize: '11px', letterSpacing: '0.15em', color: 'var(--color-accent)', textTransform: 'uppercase', fontWeight: 600 }}>
             Grimoire
           </div>
           <div style={{ fontSize: '18px', color: 'var(--color-text)', fontWeight: 300, letterSpacing: '0.05em' }}>
             Atziluth
           </div>
-        </div>
+        </Link>
         {mode === 'drawer' && onClose && (
           <button
             onClick={onClose}
@@ -208,6 +236,35 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
             )}
           </Link>
         ))}
+      </div>
+
+      {/* User Manual quick link */}
+      <div style={{ padding: '0 8px' }}>
+        <Link
+          to="/settings/manual"
+          style={{ textDecoration: 'none' }}
+          onClick={mode === 'drawer' ? onClose : undefined}
+        >
+          {({ isActive }) => (
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '10px 12px',
+                minHeight: '44px',
+                borderRadius: '6px',
+                color: isActive ? 'var(--color-accent)' : 'var(--color-text-muted)',
+                fontSize: '14px',
+                cursor: 'pointer',
+                transition: 'all 0.15s',
+              }}
+            >
+              <HelpCircle size={16} />
+              <span>User Manual</span>
+            </div>
+          )}
+        </Link>
       </div>
 
       {/* Version */}

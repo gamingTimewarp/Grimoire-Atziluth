@@ -3,7 +3,7 @@
   "entities": [
     {
       "canonicalName": "lenormand.card.the-rider",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Rider",
       "description": "Card 1 of the Lenormand. A horseman arriving swiftly. Traditionally linked to news coming quickly, a young man, or a message on its way. Associated with the Nine of Hearts and the ace of hearts in some traditions.",
       "tags": ["lenormand"],
@@ -20,7 +20,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-clover",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Clover",
       "description": "Card 2 of the Lenormand. A four-leaf clover. Represents small but genuine luck, brief good fortune, and fleeting opportunities that must be seized quickly.",
       "tags": ["lenormand"],
@@ -37,7 +37,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-ship",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Ship",
       "description": "Card 3 of the Lenormand. A sailing ship on the sea. Represents travel, especially by water or long distance, commerce, foreign matters, and the journey toward a distant goal.",
       "tags": ["lenormand"],
@@ -54,7 +54,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-house",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The House",
       "description": "Card 4 of the Lenormand. A traditional house or home. Represents family matters, domestic life, security, property, and the stable foundation of one's personal life.",
       "tags": ["lenormand"],
@@ -71,7 +71,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-tree",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Tree",
       "description": "Card 5 of the Lenormand. A great tree, often an oak. Represents health, vitality, deep roots, slow growth, spirituality, and the life force. Matters of long duration.",
       "tags": ["lenormand"],
@@ -88,7 +88,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-clouds",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Clouds",
       "description": "Card 6 of the Lenormand. Dark and light clouds. Represents confusion, uncertainty, hidden truths, and unclear situations. The dark side of the clouds indicates problems; the light side, clearing.",
       "tags": ["lenormand"],
@@ -105,7 +105,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-snake",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Snake",
       "description": "Card 7 of the Lenormand. A coiled serpent. Represents a rival, an untrustworthy woman, deceit, temptation, complexity, and indirect paths. Can also represent wisdom and transformation.",
       "tags": ["lenormand"],
@@ -122,7 +122,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-coffin",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Coffin",
       "description": "Card 8 of the Lenormand. A funeral coffin. Represents endings, completion, serious illness, grief, but also transformation and putting something to rest. Not necessarily literal death.",
       "tags": ["lenormand"],
@@ -139,7 +139,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-bouquet",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Bouquet",
       "description": "Card 9 of the Lenormand. A bunch of flowers. Represents gifts, invitations, social pleasures, beauty, appreciation, and good feelings. A generally positive card of grace and social harmony.",
       "tags": ["lenormand"],
@@ -156,7 +156,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-scythe",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Scythe",
       "description": "Card 10 of the Lenormand. A harvesting scythe. Represents sudden cuts, accidents, harvest, decisive action, and the abrupt end of something. Can indicate danger from sharp implements.",
       "tags": ["lenormand"],
@@ -173,7 +173,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-whip",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Whip",
       "description": "Card 11 of the Lenormand. A whip or bundle of rods (also called The Rods or The Broom). Represents conflict, repetitive actions, aggression, arguments, sports, and discipline.",
       "tags": ["lenormand"],
@@ -192,7 +192,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-birds",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Birds",
       "description": "Card 12 of the Lenormand. Two birds, often owls or other birds. Represents communication, chatter, negotiations, anxiety, and the exchange of information — sometimes excessive talk.",
       "tags": ["lenormand"],
@@ -211,7 +211,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-child",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Child",
       "description": "Card 13 of the Lenormand. A young child. Represents new beginnings, innocence, small matters, naivety, and actual children. Something new, small, or in its beginning stages.",
       "tags": ["lenormand"],
@@ -228,7 +228,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-fox",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Fox",
       "description": "Card 14 of the Lenormand. A fox. Represents cunning, self-interest, caution, deception, and the need to be wary of those who may not have your best interests at heart. Also work and career.",
       "tags": ["lenormand"],
@@ -245,7 +245,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-bear",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Bear",
       "description": "Card 15 of the Lenormand. A powerful bear. Represents strength, power, authority, financial matters (particularly investments and savings), and a powerful older person, often maternal.",
       "tags": ["lenormand"],
@@ -262,7 +262,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-stars",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Stars",
       "description": "Card 16 of the Lenormand. Stars in the night sky. Represents hope, clarity, higher guidance, wishes, and spiritual matters. A very positive card indicating success and divine favor.",
       "tags": ["lenormand"],
@@ -279,7 +279,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-stork",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Stork",
       "description": "Card 17 of the Lenormand. A stork. Represents change, transformation, movement, and new arrivals — classically a pregnancy or birth, but more broadly any positive transformation.",
       "tags": ["lenormand"],
@@ -296,7 +296,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-dog",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Dog",
       "description": "Card 18 of the Lenormand. A dog. Represents loyalty, friendship, trusted companions, and support. A faithful friend or advisor. Generally very positive.",
       "tags": ["lenormand"],
@@ -313,7 +313,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-tower",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Tower",
       "description": "Card 19 of the Lenormand. A tall tower or government building. Represents authority, government, legal matters, isolation, large institutions, and solitude. Unlike the tarot Tower, this is not inherently negative.",
       "tags": ["lenormand"],
@@ -330,7 +330,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-garden",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Garden",
       "description": "Card 20 of the Lenormand. A public garden or park. Represents society, public life, gatherings, social events, networks, and the public sphere. Meetings and social occasions.",
       "tags": ["lenormand"],
@@ -347,7 +347,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-mountain",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Mountain",
       "description": "Card 21 of the Lenormand. A great mountain. Represents obstacles, challenges, delays, and blockages. Something stands in the way. Effort and time are required to overcome.",
       "tags": ["lenormand"],
@@ -364,7 +364,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-crossroads",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Crossroads",
       "description": "Card 22 of the Lenormand. A fork in the road. Represents choices, decisions, alternatives, freedom to choose, and crossroads moments. Multiple paths are available.",
       "tags": ["lenormand"],
@@ -383,7 +383,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-mice",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Mice",
       "description": "Card 23 of the Lenormand. Mice gnawing. Represents loss, theft, deterioration, worry, stress, and things being eaten away gradually. Something is being depleted or stolen.",
       "tags": ["lenormand"],
@@ -400,7 +400,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-heart",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Heart",
       "description": "Card 24 of the Lenormand. A red heart. Represents love, romance, kindness, emotional matters, and matters of the heart. A classic card of love and affection.",
       "tags": ["lenormand"],
@@ -417,7 +417,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-ring",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Ring",
       "description": "Card 25 of the Lenormand. A ring. Represents commitment, contracts, marriage, agreements, partnerships, and cycles that repeat. A binding promise or legal obligation.",
       "tags": ["lenormand"],
@@ -434,7 +434,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-book",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Book",
       "description": "Card 26 of the Lenormand. A closed or open book. Represents secrets, knowledge, education, research, and hidden information. What is known and unknown.",
       "tags": ["lenormand"],
@@ -451,7 +451,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-letter",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Letter",
       "description": "Card 27 of the Lenormand. A written letter or document. Represents written communications, documents, messages, paperwork, and correspondence. News in written form.",
       "tags": ["lenormand"],
@@ -468,7 +468,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-man",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Man",
       "description": "Card 28 of the Lenormand. A male figure. Represents the male querent or a significant man in the reading. Used as a significator for male-identified persons.",
       "tags": ["lenormand"],
@@ -487,7 +487,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-woman",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Woman",
       "description": "Card 29 of the Lenormand. A female figure. Represents the female querent or a significant woman in the reading. Used as a significator for female-identified persons.",
       "tags": ["lenormand"],
@@ -506,7 +506,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-lily",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Lily",
       "description": "Card 30 of the Lenormand. A white lily. Represents purity, virtue, calm, wisdom of age, sexuality in some traditions, and a peaceful, serene quality. Often associated with older, mature persons.",
       "tags": ["lenormand"],
@@ -523,7 +523,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-sun",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Sun",
       "description": "Card 31 of the Lenormand. A radiant sun. Represents success, vitality, happiness, positive outcomes, and great good fortune. One of the most positive cards in the deck.",
       "tags": ["lenormand"],
@@ -540,7 +540,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-moon",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Moon",
       "description": "Card 32 of the Lenormand. A crescent moon with a face. Represents recognition, fame, intuition, psychic ability, the subconscious, romance, and emotional depth. Can indicate honors received.",
       "tags": ["lenormand"],
@@ -557,7 +557,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-key",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Key",
       "description": "Card 33 of the Lenormand. A key. Represents solutions, answers, unlocking, certainty, destiny, and access. This card often indicates that a matter will be resolved positively.",
       "tags": ["lenormand"],
@@ -574,7 +574,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-fish",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Fish",
       "description": "Card 34 of the Lenormand. Fish, often shown with a barrel or water. Represents financial abundance, business, flow of money, depth, and independence. Primarily a card of material plenty.",
       "tags": ["lenormand"],
@@ -591,7 +591,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-anchor",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Anchor",
       "description": "Card 35 of the Lenormand. A ship's anchor. Represents stability, security, long-term persistence, endurance, work, and the steady holding of one's position. Groundedness and security.",
       "tags": ["lenormand"],
@@ -608,7 +608,7 @@
     },
     {
       "canonicalName": "lenormand.card.the-cross",
-      "entityType": "tarot.card",
+      "entityType": "lenormand.card",
       "primaryDisplayName": "The Cross",
       "description": "Card 36 of the Lenormand. A Christian cross. Represents burden, suffering, fate, spiritual matters, moral weight, and karmic lessons. Something that must be borne with acceptance.",
       "tags": ["lenormand"],

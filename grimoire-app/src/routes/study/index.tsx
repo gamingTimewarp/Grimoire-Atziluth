@@ -1,17 +1,22 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import type { GrimoireEngine } from '@grimoire/core'
 import { useEngineStore } from '@/stores/engine'
+import { useStudyStore } from '@/stores/study'
 import {
-  getSettings, getLastResult, getAllCardStates,
+  getLastResult, getAllCardStates,
   getStreak, getSessionHistory,
+  getStudyPreset, DEFAULT_PRESET_ID,
 } from '@/lib/quiz-db'
-import type { LastResult, QuizSettings, SessionHistoryEntry } from '@/lib/quiz-db'
+import type { LastResult, QuizSettings, SessionHistoryEntry, CardState } from '@/lib/quiz-db'
 import {
-  countDueCards, getProgressStats,
+  countDueCards, getProgressStats, getEntityProgressList,
+  discoverGroupOverviews, groupByNamespace, TAROT_DECK_OPTIONS,
 } from '@/lib/quiz-engine'
-import type { EntityTypeStats } from '@/lib/quiz-engine'
+import type { EntityTypeStats, EntityProgressRow, GroupOverview, NamespaceGroup, TarotDeckOption } from '@/lib/quiz-engine'
 import { Button } from '@/components/ui/Button'
-import { Settings, PlayCircle } from 'lucide-react'
+import { EntityLink } from '@/components/ui/EntityLink'
+import { Settings2, PlayCircle } from 'lucide-react'
 
 export const Route = createFileRoute('/study/')({
   component: StudyPage,
@@ -143,14 +148,84 @@ function SessionSparkline({ history }: { history: SessionHistoryEntry[] }) {
 
 // ─── Entity type rows ─────────────────────────────────────────────────────────
 
-function EntityTypeRow({ stat }: { stat: EntityTypeStats }) {
+function EntityProgressRowView({ row }: { row: EntityProgressRow }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px' }}>
+      <EntityLink canonicalName={row.entity.canonicalName} style={{ fontSize: '11px', color: 'var(--color-text-muted)' }}>
+        {row.entity.primaryDisplayName}
+      </EntityLink>
+      <span style={{ fontSize: '11px', color: row.due > 0 ? 'var(--color-accent)' : 'var(--color-text-subtle)', flexShrink: 0 }}>
+        {row.due > 0 ? `${row.due}/${row.total} due` : row.nextDue ? `next ${row.nextDue}` : `${row.total}/${row.total} mature`}
+      </span>
+    </div>
+  )
+}
+
+/** tarot.card spans several decks under one entityType (RWS/Thoth/TdM/Etteilla/
+ * Lenormand/Playing Cards) — without this, expanding "Cards" dumps 400+ entities
+ * from every deck into one flat alphabetical list. Splits by the same deck tags
+ * TAROT_DECK_OPTIONS/fetchQuizEntities already use, so each deck becomes its own
+ * collapsible, independently-sorted group, mirroring the preset builder's own
+ * per-deck breakdown for this exact entity type. */
+function DeckSubgroup({ deck, rows }: { deck: TarotDeckOption; rows: EntityProgressRow[] }) {
+  const [expanded, setExpanded] = useState(false)
+  const due = rows.reduce((sum, r) => sum + r.due, 0)
+  return (
+    <div>
+      <div
+        onClick={() => setExpanded(v => !v)}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '3px 0', cursor: 'pointer' }}
+      >
+        <span style={{ fontSize: '11px', color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <span style={{ display: 'inline-block', fontSize: '9px', transform: expanded ? 'rotate(90deg)' : 'none', transition: 'transform 0.15s' }}>›</span>
+          {deck.label} <span style={{ color: 'var(--color-text-subtle)' }}>({rows.length})</span>
+        </span>
+        <span style={{ fontSize: '10px', color: due > 0 ? 'var(--color-accent)' : 'var(--color-text-subtle)' }}>
+          {due > 0 ? `${due} due` : 'caught up'}
+        </span>
+      </div>
+      {expanded && (
+        <div style={{ marginTop: '4px', paddingLeft: '15px', display: 'flex', flexDirection: 'column', gap: '5px', maxHeight: '220px', overflowY: 'auto' }}>
+          {rows.map(r => <EntityProgressRowView key={r.entity.canonicalName} row={r} />)}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function EntityTypeRow({ stat, engine, settings, allStates }: {
+  stat: EntityTypeStats
+  engine: GrimoireEngine
+  settings: QuizSettings
+  allStates: Map<string, CardState>
+}) {
   const { breakdown, total, due } = stat
   const cats = (['new', 'learning', 'review', 'mature'] as const)
+  const [expanded, setExpanded] = useState(false)
+  const [rows, setRows] = useState<EntityProgressRow[] | null>(null)
+
+  useEffect(() => {
+    if (!expanded || rows !== null) return
+    getEntityProgressList(engine.adapter, stat.entityType, settings, allStates).then(setRows)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [expanded])
+
+  const deckGroups = stat.entityType === 'tarot.card' && rows
+    ? TAROT_DECK_OPTIONS
+        .map(deck => ({ deck, rows: rows.filter(r => r.entity.tags.includes(deck.tag)) }))
+        .filter(g => g.rows.length > 0)
+    : null
 
   return (
     <div style={{ marginBottom: '10px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
-        <span style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>{stat.label}</span>
+      <div
+        onClick={() => setExpanded(v => !v)}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px', cursor: 'pointer' }}
+      >
+        <span style={{ fontSize: '12px', color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <span style={{ display: 'inline-block', fontSize: '10px', transform: expanded ? 'rotate(90deg)' : 'none', transition: 'transform 0.15s' }}>›</span>
+          {stat.label}
+        </span>
         <span style={{ fontSize: '11px', color: due > 0 ? 'var(--color-accent)' : 'var(--color-text-subtle)' }}>
           {due > 0 ? `${due} due` : 'all caught up'} · {total} total
         </span>
@@ -163,6 +238,72 @@ function EntityTypeRow({ stat }: { stat: EntityTypeStats }) {
           ) : null
         })}
       </div>
+      {expanded && (
+        <div style={{ marginTop: '8px', paddingLeft: '15px' }}>
+          {rows === null ? (
+            <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>Loading…</div>
+          ) : rows.length === 0 ? (
+            <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>No enabled question types for this entity type.</div>
+          ) : deckGroups ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              {deckGroups.map(({ deck, rows: deckRows }) => (
+                <DeckSubgroup key={deck.id} deck={deck} rows={deckRows} />
+              ))}
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', maxHeight: '220px', overflowY: 'auto' }}>
+              {rows.map(r => <EntityProgressRowView key={r.entity.canonicalName} row={r} />)}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/** Groups entity types by tradition namespace (same groupByNamespace used by
+ * the preset builder's "Entity Types & Fields" section) so the dashboard
+ * mirrors that structure — e.g. Qabalah's Sephiroth/Qliphoth/Paths collapse
+ * under one "Qabalah" header instead of sitting as three flat top-level rows. */
+function ProgressGroupRow({ group, engine, settings, allStates, expanded, onToggle }: {
+  group: NamespaceGroup<EntityTypeStats>
+  engine: GrimoireEngine
+  settings: QuizSettings
+  allStates: Map<string, CardState>
+  expanded: boolean
+  onToggle: () => void
+}) {
+  const due = group.items.reduce((sum, s) => sum + s.due, 0)
+  const total = group.items.reduce((sum, s) => sum + s.total, 0)
+  return (
+    <div style={{ marginBottom: '14px' }}>
+      <div
+        onClick={onToggle}
+        style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          padding: '6px 0', cursor: 'pointer',
+          borderBottom: '1px solid var(--color-border)', marginBottom: expanded ? '10px' : '0',
+        }}
+      >
+        <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <span style={{ fontSize: '10px', display: 'inline-block', transform: expanded ? 'rotate(90deg)' : 'none', transition: 'transform 0.15s' }}>›</span>
+          {group.overviewCanonicalName ? (
+            <EntityLink canonicalName={group.overviewCanonicalName} style={{ fontWeight: 500 }} title={`View ${group.label} in Reference`}>
+              {group.label}
+            </EntityLink>
+          ) : group.label}
+        </span>
+        <span style={{ fontSize: '11px', color: due > 0 ? 'var(--color-accent)' : 'var(--color-text-subtle)' }}>
+          {due > 0 ? `${due} due` : 'all caught up'} · {total} total
+        </span>
+      </div>
+      {expanded && (
+        <div style={{ paddingLeft: '4px' }}>
+          {group.items.map(s => (
+            <EntityTypeRow key={s.entityType} stat={s} engine={engine} settings={settings} allStates={allStates} />
+          ))}
+        </div>
+      )}
     </div>
   )
 }
@@ -172,6 +313,7 @@ function EntityTypeRow({ stat }: { stat: EntityTypeStats }) {
 function StudyPage() {
   const navigate   = useNavigate()
   const { engine } = useEngineStore()
+  const { step: sessionStep } = useStudyStore()
 
   const [lastResult,   setLastResult]   = useState<LastResult | null>(null)
   const [settings,     setSettings]     = useState<QuizSettings | null>(null)
@@ -179,20 +321,30 @@ function StudyPage() {
   const [streak,       setStreak]       = useState<number>(0)
   const [history,      setHistory]      = useState<SessionHistoryEntry[]>([])
   const [statsPerType, setStatsPerType] = useState<EntityTypeStats[]>([])
+  const [cardStates,   setCardStates]   = useState<Map<string, CardState> | null>(null)
+  const [groupOverviews, setGroupOverviews] = useState<Map<string, GroupOverview>>(new Map())
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set())
   const [loading,      setLoading]      = useState(true)
 
   useEffect(() => {
     if (!engine) return
     ;(async () => {
-      const [lr, cfg, states, str, hist] = await Promise.all([
+      const [lr, defaultPreset, states, str, hist, overviews] = await Promise.all([
         getLastResult(),
-        getSettings(),
+        getStudyPreset(DEFAULT_PRESET_ID),
         getAllCardStates(),
         getStreak(),
         getSessionHistory(90),
+        discoverGroupOverviews(engine.adapter),
       ])
+      setGroupOverviews(overviews)
+      // The dashboard's aggregate progress reflects the Default preset's scope;
+      // other presets' own history is available from the presets page.
+      const cfg = defaultPreset?.settings
+      if (!cfg) { setLoading(false); return }
       setLastResult(lr)
       setSettings(cfg)
+      setCardStates(states)
       setStreak(str)
       setHistory(hist)
       const [counts, perType] = await Promise.all([
@@ -204,6 +356,15 @@ function StudyPage() {
       setLoading(false)
     })()
   }, [engine])
+
+  const groups = useMemo(() => groupByNamespace(statsPerType, groupOverviews), [statsPerType, groupOverviews])
+  const toggleGroup = (key: string) => {
+    setExpandedGroups(prev => {
+      const next = new Set(prev)
+      next.has(key) ? next.delete(key) : next.add(key)
+      return next
+    })
+  }
 
   const pct = lastResult && lastResult.cardsReviewed > 0
     ? Math.round((lastResult.cardsCorrect / lastResult.cardsReviewed) * 100)
@@ -221,8 +382,8 @@ function StudyPage() {
             </div>
           )}
         </div>
-        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/study/settings' })}>
-          <Settings size={13} /> Settings
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/study/presets' })}>
+          <Settings2 size={13} /> Manage Presets
         </Button>
       </div>
 
@@ -238,11 +399,11 @@ function StudyPage() {
             </div>
           </div>
           <Button
-            onClick={() => navigate({ to: '/study/session' })}
-            disabled={dueCount.due === 0}
+            onClick={() => navigate({ to: sessionStep === 'session' ? '/study/session' : '/study/new' })}
+            disabled={sessionStep !== 'session' && dueCount.due === 0}
           >
             <PlayCircle size={15} />
-            {dueCount.due > 0 ? 'Start Session' : 'Nothing Due'}
+            {sessionStep === 'session' ? 'Resume Session' : dueCount.due > 0 ? 'Start Session' : 'Nothing Due'}
           </Button>
         </div>
       )}
@@ -263,8 +424,16 @@ function StudyPage() {
             <ProgressBar stats={statsPerType} />
           </div>
           <div>
-            {statsPerType.map(s => (
-              <EntityTypeRow key={s.entityType} stat={s} />
+            {engine && settings && cardStates && groups.map(g => (
+              <ProgressGroupRow
+                key={g.key}
+                group={g}
+                engine={engine}
+                settings={settings}
+                allStates={cardStates}
+                expanded={expandedGroups.has(g.key)}
+                onToggle={() => toggleGroup(g.key)}
+              />
             ))}
           </div>
         </div>

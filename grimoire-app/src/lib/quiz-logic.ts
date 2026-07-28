@@ -61,6 +61,42 @@ export function sm2(state: CardState, rating: 0|1|2|3|4|5): CardState {
 
 // ─── Fuzzy match ───────────────────────────────────────────────────────────────
 
+const normalizeForMatch = (s: string): string => s.toLowerCase().trim().replace(/[^a-z0-9]/g, '')
+
+/**
+ * Classifies how (if at all) a fill-in-blank input matches an expected answer:
+ * - 'exact': identical after normalising case/punctuation/whitespace.
+ * - 'substring': one contains the other, for answers longer than 6 chars —
+ *   e.g. typing just "New beginnings" against a Lenormand meaning stored as
+ *   "New beginnings, spontaneity, a free spirit". This is a deliberate,
+ *   designed leniency for keyword-list answers (the user typed one real,
+ *   complete, correctly-spelled keyword), not a near-miss typo.
+ * - 'near': matched only via the up-to-2-character-edit tolerance for short
+ *   answers — genuinely likely to be a misspelling of the intended answer.
+ * - 'none': no match by any rule.
+ */
+export type MatchKind = 'exact' | 'substring' | 'near' | 'none'
+
+export function classifyMatch(input: string, answer: string): MatchKind {
+  const ni = normalizeForMatch(input)
+  const na = normalizeForMatch(answer)
+  if (!ni) return 'none'
+  if (ni === na) return 'exact'
+  if (na.length > 6 && (na.includes(ni) || ni.includes(na))) return 'substring'
+  if (na.length > 20 || ni.length > 20) return 'none'
+  let diff = 0
+  for (let i = 0; i < Math.max(ni.length, na.length); i++) {
+    if (ni[i] !== na[i]) diff++
+    if (diff > 2) return 'none'
+  }
+  return 'near'
+}
+
+/** True if input is the expected answer exactly, ignoring case/punctuation/whitespace only. */
+export function exactMatch(input: string, answer: string): boolean {
+  return classifyMatch(input, answer) === 'exact'
+}
+
 /**
  * Fuzzy-matches a fill-in-blank input against the expected answer.
  * - Normalises to lowercase, strips non-alphanumeric characters
@@ -68,20 +104,7 @@ export function sm2(state: CardState, rating: 0|1|2|3|4|5): CardState {
  * - Allows up to 2 character edits for short answers (≤ 20 chars)
  */
 export function fuzzyMatch(input: string, answer: string): boolean {
-  const norm = (s: string) => s.toLowerCase().trim().replace(/[^a-z0-9]/g, '')
-  const ni = norm(input)
-  const na = norm(answer)
-  if (!ni) return false
-  if (ni === na) return true
-  if (na.length > 6 && (na.includes(ni) || ni.includes(na))) return true
-  // Levenshtein for short answers
-  if (na.length > 20 || ni.length > 20) return false
-  let diff = 0
-  for (let i = 0; i < Math.max(ni.length, na.length); i++) {
-    if (ni[i] !== na[i]) diff++
-    if (diff > 2) return false
-  }
-  return true
+  return classifyMatch(input, answer) !== 'none'
 }
 
 // ─── Streak computation ────────────────────────────────────────────────────────
