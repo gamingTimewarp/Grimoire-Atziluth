@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { sm2, fuzzyMatch, classifyCardState, computeStreak } from '../quiz-logic'
+import { sm2, fuzzyMatch, classifyMatch, classifyCardState, computeStreak } from '../quiz-logic'
 import type { CardState } from '../quiz-db'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -148,6 +148,12 @@ describe('fuzzyMatch', () => {
 
   it('rejects clearly wrong answer', () => {
     expect(fuzzyMatch('Malkuth', 'Kether')).toBe(false)
+  })
+
+  it('does not treat a nearby number as a near-miss of a numeric answer', () => {
+    expect(classifyMatch('17', '16')).toBe('none')
+    expect(classifyMatch('1', '11')).toBe('none')
+    expect(classifyMatch('16', '16')).toBe('exact')
   })
 })
 

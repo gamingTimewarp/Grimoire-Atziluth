@@ -74,6 +74,10 @@ const normalizeForMatch = (s: string): string => s.toLowerCase().trim().replace(
  * - 'near': matched only via the up-to-2-character-edit tolerance for short
  *   answers — genuinely likely to be a misspelling of the intended answer.
  * - 'none': no match by any rule.
+ *
+ * Purely numeric answers (card numbers, path numbers, etc.) never get 'near':
+ * a one-digit edit distance away is a different, legitimately wrong number
+ * (17 is not a typo for 16), not a plausible misspelling.
  */
 export type MatchKind = 'exact' | 'substring' | 'near' | 'none'
 
@@ -83,6 +87,7 @@ export function classifyMatch(input: string, answer: string): MatchKind {
   if (!ni) return 'none'
   if (ni === na) return 'exact'
   if (na.length > 6 && (na.includes(ni) || ni.includes(na))) return 'substring'
+  if (/^[0-9]+$/.test(na)) return 'none'
   if (na.length > 20 || ni.length > 20) return 'none'
   let diff = 0
   for (let i = 0; i < Math.max(ni.length, na.length); i++) {
