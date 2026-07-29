@@ -106,9 +106,14 @@ function ResultsList({
 interface GlobalSearchProps {
   /** When true renders as a search-icon button that opens a full-screen spotlight overlay. */
   spotlight?: boolean
+  /** Called after any result is selected (page/entity/journal) — used by the
+   * mobile drawer to collapse itself so the user gets visual feedback and can
+   * actually see the page they navigated to, instead of it loading unseen
+   * behind the still-open sidebar. */
+  onNavigate?: () => void
 }
 
-export function GlobalSearch({ spotlight = false }: GlobalSearchProps) {
+export function GlobalSearch({ spotlight = false, onNavigate }: GlobalSearchProps) {
   const [query, setQuery]           = useState('')
   const [open, setOpen]             = useState(false)
   const [results, setResults]       = useState<ResultItem[]>([])
@@ -197,17 +202,38 @@ export function GlobalSearch({ spotlight = false }: GlobalSearchProps) {
       inputRef.current?.blur()
       return
     }
+    if (e.key === 'Enter') {
+      // A highlighted suggestion (arrowed to, or hovered) wins as usual.
+      if (open && results.length > 0 && activeIndex >= 0) {
+        e.preventDefault()
+        handleSelect(results[activeIndex])
+        return
+      }
+      // Otherwise Enter carries the typed query through to Reference's own
+      // search — e.g. typing "Mars" and hitting Enter without arrowing to a
+      // suggestion should search for it properly, not do nothing.
+      const q = query.trim()
+      if (q) {
+        e.preventDefault()
+        setOpen(false)
+        setQuery('')
+        inputRef.current?.blur()
+        onNavigate?.()
+        navigate({ to: '/reference', search: { tag: undefined, q, custom: undefined } })
+      }
+      return
+    }
     if (!open || !results.length) return
     if (e.key === 'ArrowDown') { e.preventDefault(); setActiveIndex(i => Math.min(i + 1, results.length - 1)) }
     else if (e.key === 'ArrowUp') { e.preventDefault(); setActiveIndex(i => Math.max(i - 1, -1)) }
-    else if (e.key === 'Enter' && activeIndex >= 0) { e.preventDefault(); handleSelect(results[activeIndex]) }
-  }, [open, results, activeIndex]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [open, results, activeIndex, query, navigate, onNavigate]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSelect = (item: ResultItem) => {
     item.onSelect()
     setOpen(false)
     setQuery('')
     inputRef.current?.blur()
+    onNavigate?.()
   }
 
   const groups: { label: string; icon: React.ReactNode; items: ResultItem[] }[] = [

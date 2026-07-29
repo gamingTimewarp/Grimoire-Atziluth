@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate, Link } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { listReadings, listJournalEntries, saveJournalEntry, deleteJournalEntry, deleteReading, getEntityLinksForEntry, addEntityLinkToEntry, removeEntityLinkFromEntry, getEntityLinksForReading, addEntityLinkToReading, removeEntityLinkFromReading } from '@/lib/reading-db'
@@ -159,12 +159,9 @@ function JournalPage() {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '20px' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Journal</h1>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
-          <Link
-            to="/journal/stats"
-            style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--color-text-muted)', textDecoration: 'none', padding: '4px 8px' }}
-          >
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/journal/stats' })}>
             <BarChart2 size={13} /> Statistics
-          </Link>
+          </Button>
           <button
             type="button"
             onClick={toggleCompact}

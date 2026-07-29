@@ -45,23 +45,44 @@ function paginate<T>(items: T[], page?: Page): PagedResult<T> {
   }
 }
 
+/** Escapes regex metacharacters so a raw query string is safe to interpolate
+ * into a RegExp constructor. */
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
 function scoreSearch(query: string, entity: BaseEntity): { score: number; matchedOn: EntitySearchResult['matchedOn'] } {
   const q = query.toLowerCase()
   const matchedOn: EntitySearchResult['matchedOn'] = []
   let score = 0
 
+  const displayExact = entity.primaryDisplayName.toLowerCase() === q
+
+  // \b treats non-word characters (spaces, punctuation, the dots/hyphens in a
+  // canonicalName) as boundaries, so this distinguishes "mars" appearing as
+  // its own word from "mars" merely appearing inside a longer word like
+  // "Marseille" — a plain .includes(q) can't tell those apart, which is why
+  // "Tarot de Marseille" used to score the same as genuine Mars references.
+  const wordBoundaryRe = new RegExp(`\\b${escapeRegExp(q)}\\b`, 'i')
+  let wholeWordMatch = false
+
   if (entity.canonicalName.toLowerCase().includes(q)) {
     matchedOn.push('canonicalName')
     score += entity.canonicalName.toLowerCase() === q ? 10 : 5
+    if (wordBoundaryRe.test(entity.canonicalName)) wholeWordMatch = true
   }
   if (entity.primaryDisplayName.toLowerCase().includes(q)) {
     matchedOn.push('primaryDisplayName')
-    score += entity.primaryDisplayName.toLowerCase() === q ? 10 : 7
+    score += displayExact ? 10 : 7
+    if (wordBoundaryRe.test(entity.primaryDisplayName)) wholeWordMatch = true
   }
+  let secondaryExact = false
   for (const sn of entity.secondaryNames) {
     if (sn.name?.toLowerCase().includes(q)) {
       matchedOn.push('secondaryName')
       score += 4
+      if (sn.name.toLowerCase() === q) secondaryExact = true
+      if (wordBoundaryRe.test(sn.name)) wholeWordMatch = true
       break
     }
   }
@@ -69,13 +90,29 @@ function scoreSearch(query: string, entity: BaseEntity): { score: number; matche
     if (tag.toLowerCase().includes(q)) {
       matchedOn.push('tag')
       score += 3
+      if (wordBoundaryRe.test(tag)) wholeWordMatch = true
       break
     }
   }
   if (entity.description?.toLowerCase().includes(q)) {
     matchedOn.push('description')
     score += 2
+    if (wordBoundaryRe.test(entity.description)) wholeWordMatch = true
   }
+
+  // An exact name match dominates regardless of how many other fields happen
+  // to mention the query as a substring — without this, searching "Mars" put
+  // the actual Mars planet entity ~20 rows down, outranked by anything that
+  // merely references Mars across canonicalName/description/tags at once
+  // (e.g. "Kamea of Mars", "Mars Mahadasha", a dozen Jyotish antardasha
+  // combinations) even though none of those *are* what was searched for. The
+  // bonus is large enough that no plausible stack of substring-only matches
+  // (max ~21: 5 + 7 + 4 + 3 + 2) can outscore it.
+  if (displayExact || secondaryExact) score += 50
+  // A genuine whole-word reference (even a non-exact one, like "Kamea of
+  // Mars") should still clearly outrank an entity that only contains the
+  // query as part of a longer, unrelated word.
+  else if (wholeWordMatch) score += 8
 
   return { score, matchedOn }
 }

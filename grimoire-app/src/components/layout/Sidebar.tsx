@@ -199,7 +199,7 @@ export function Sidebar({ mode = 'full', onClose }: SidebarProps) {
 
       {/* Global search */}
       <div style={{ paddingTop: '12px' }}>
-        <GlobalSearch />
+        <GlobalSearch onNavigate={mode === 'drawer' ? onClose : undefined} />
       </div>
 
       {/* Nav links */}
