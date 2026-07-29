@@ -1115,6 +1115,23 @@ export function getSabbatsForYear(year: number, hemisphere: 'northern' | 'southe
   return sabbats.sort((a, b) => a.time.getTime() - b.time.getTime())
 }
 
+/**
+ * Returns the true astronomical Easter date for the given year: the first
+ * Sunday following the first full moon after the actual spring equinox
+ * (tropical Sun longitude 0°) — not the fixed ecclesiastical Computus
+ * tables. If the full moon itself falls on a Sunday, Easter is the
+ * following Sunday (7 days later), matching standard convention.
+ */
+export function getEasterForYear(year: number): Date {
+  const equinox = Astronomy.SearchSunLongitude(0, new Date(year, 1, 15), 60)
+  if (!equinox) throw new Error(`Could not find spring equinox for ${year}`)
+  const fullMoon = Astronomy.SearchMoonPhase(180, equinox.date, 40)
+  if (!fullMoon) throw new Error(`Could not find full moon after equinox for ${year}`)
+  const fm = fullMoon.date
+  const daysToSunday = fm.getDay() === 0 ? 7 : 7 - fm.getDay()
+  return new Date(fm.getFullYear(), fm.getMonth(), fm.getDate() + daysToSunday)
+}
+
 // ─── House calculations ───────────────────────────────────────────────────────
 
 /** Mean obliquity of ecliptic for current era (accurate to ~0.01° 2000–2050) */

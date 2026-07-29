@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.holiday.navratri",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Navratri",
+      "description": "1 Ashwin, nine nights. This entity covers Sharad Navratri, the autumn observance leading into Dussehra/Vijayadashami — the larger and more widely observed of the two annual Navratri periods (the other, Chaitra Navratri, falls in spring and shares the same nine-form structure). Each of the nine nights is dedicated to one form of the Navadurga, the nine aspects of Durga, in a fixed traditional sequence drawn from the Devi Bhagavata Purana.",
+      "secondaryNames": [
+        { "name": "Sharad Navratri", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hindu", "autumn", "navadurga", "correspondences-over-days"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hindu", "month": 7, "day": 1 },
+        "durationDays": 9,
+        "dayCorrespondences": [
+          { "day": 1, "label": "Night 1 — Shailputri", "description": "\"Daughter of the Mountain\" — Durga as Parvati, the form invoked on the opening night." },
+          { "day": 2, "label": "Night 2 — Brahmacharini", "description": "The ascetic form, embodying penance and unwavering devotion." },
+          { "day": 3, "label": "Night 3 — Chandraghanta", "description": "\"Bearer of the crescent-bell,\" a fierce, war-ready form worn for courage." },
+          { "day": 4, "label": "Night 4 — Kushmanda", "description": "Said to have created the universe with a smile; associated with the sun's inner radiance." },
+          { "day": 5, "label": "Night 5 — Skandamata", "description": "Mother of Skanda (Kartikeya), invoked for maternal protection." },
+          { "day": 6, "label": "Night 6 — Katyayani", "description": "The warrior form born to sage Katyayana, later identified with Durga's slaying of Mahishasura." },
+          { "day": 7, "label": "Night 7 — Kalaratri", "description": "\"Night of death,\" the fiercest and darkest form, invoked against fear itself." },
+          { "day": 8, "label": "Night 8 — Mahagauri", "description": "The radiant, purified form, associated with compassion and calm." },
+          { "day": 9, "label": "Night 9 — Siddhidatri", "description": "\"Giver of siddhis,\" bestowing spiritual accomplishment; the culminating form before Vijayadashami." }
+        ]
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.maha-shivaratri",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Maha Shivaratri",
+      "description": "The 14th tithi of Phalguna's dark fortnight — approximated here as the second-to-last civil day of the native Hindu month, immediately preceding the new moon that closes it. \"The Great Night of Shiva\" is kept with an all-night vigil (jagarana), fasting, and continuous worship at Shiva lingams, commemorating the night Shiva is said to have performed the cosmic dance of creation, preservation, and destruction (Tandava), and, in some traditions, the night of his marriage to Parvati.",
+      "secondaryNames": [
+        { "name": "Great Night of Shiva", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hindu", "winter", "shiva", "vigil"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hindu", "month": 12, "day": "second-to-last" },
+        "durationDays": 1
+      }
+    }
+  ]
+}

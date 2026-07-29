@@ -11,6 +11,8 @@ import {
   getRetrogradeStrip, getRetrogradeStationInfo, getMoonIlluminationPercent,
 } from '@/lib/astro-engine'
 import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat, RetrogradeStripEntry } from '@/lib/astro-engine'
+import { getHolidaysForYear } from '@/lib/holiday-engine'
+import type { HolidayInstance } from '@/lib/holiday-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { loadSettings, patchSettings } from '@/lib/settings-store'
 import { listReadingsByMonth, listJournalEntriesByMonth } from '@/lib/reading-db'
@@ -212,7 +214,7 @@ type DayEntries = { readings: Reading[]; entries: JournalEntry[] }
 type DateLabeler = (date: Date) => { label: string | number; inPeriod: boolean }
 
 function CalendarGrid({
-  weeks, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, onDayClick, navigate, showRetrograde, labelForDate, onRetrogradeTap,
+  weeks, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, holidaysByDate, onDayClick, navigate, showRetrograde, labelForDate, onRetrogradeTap,
 }: {
   weeks: Date[][]
   today: string
@@ -220,6 +222,7 @@ function CalendarGrid({
   entriesByDate: Map<string, DayEntries>
   astroByDate: MonthAstroData['byDate'] | null
   sabbatsByDate: Map<string, Sabbat>
+  holidaysByDate: Map<string, HolidayInstance[]>
   onDayClick: (dateStr: string) => void
   navigate: ReturnType<typeof useNavigate>
   showRetrograde: boolean
@@ -262,6 +265,7 @@ function CalendarGrid({
             // Use precise moon event from astro-engine if available, else approximate
             const preciseMoon = astroDay?.moonEvents[0]
             const sabbat = sabbatsByDate.get(ds)
+            const holidays = holidaysByDate.get(ds) ?? []
 
             return (
               <div
@@ -311,6 +315,18 @@ function CalendarGrid({
                       {sabbat.emoji} {sabbat.name}
                     </div>
                   )}
+
+                  {/* Holiday labels — a day can have more than one */}
+                  {holidays.map(h => (
+                    <div
+                      key={h.canonicalName}
+                      onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: h.canonicalName } }) }}
+                      title={`${h.name}${h.durationDays > 1 ? ` — day ${h.dayIndex} of ${h.durationDays}` : ''} — view in Reference`}
+                      style={{ fontSize: '9px', color: 'var(--color-text-muted)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+                    >
+                      {h.emoji} {h.name}{h.durationDays > 1 ? ` (${h.dayIndex}/${h.durationDays})` : ''}
+                    </div>
+                  ))}
 
                   {/* Row 2: ingress chips */}
                   {astroDay && astroDay.ingresses.length > 0 && (
@@ -487,12 +503,13 @@ function TransitsPanel({
 // ─── Day detail panel ─────────────────────────────────────────────────────────
 
 function DayDetail({
-  dateStr, entries, astroDay, sabbat, navigate, nativeLabel,
+  dateStr, entries, astroDay, sabbat, holidays, navigate, nativeLabel,
 }: {
   dateStr: string
   entries: DayEntries | undefined
   astroDay: MonthAstroData['byDate'] extends Map<string, infer V> ? V : never
   sabbat: Sabbat | undefined
+  holidays: HolidayInstance[]
   navigate: ReturnType<typeof useNavigate>
   /** e.g. "5 Iyar 5786" — shown alongside the Gregorian date on a native-calendar tab. */
   nativeLabel?: string
@@ -540,6 +557,16 @@ function DayDetail({
               {sabbat.emoji} {sabbat.name}
             </span>
           )}
+          {holidays.map(h => (
+            <span
+              key={h.canonicalName}
+              onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: h.canonicalName } })}
+              title="View in Reference"
+              style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 400, cursor: 'pointer' }}
+            >
+              {h.emoji} {h.name}{h.durationDays > 1 ? ` — day ${h.dayIndex} of ${h.durationDays}` : ''}
+            </span>
+          ))}
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', fontSize: '12px' }}>
           {navLink(`${ruler.symbol} ${ruler.name}`, ruler.canonicalName)}
@@ -689,6 +716,17 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
     return map
   }, [year])
 
+  const holidaysByDate = useMemo(() => {
+    const map = new Map<string, HolidayInstance[]>()
+    try {
+      for (const h of getHolidaysForYear(year)) {
+        const ds = toDateString(h.time)
+        map.set(ds, [...(map.get(ds) ?? []), h])
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [year])
+
   useEffect(() => {
     Promise.all([
       listReadingsByMonth(year, month),
@@ -775,6 +813,7 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
         astroByDate={monthAstro?.byDate ?? null}
         onRetrogradeTap={setRetrogradeTapText}
         sabbatsByDate={sabbatsByDate}
+        holidaysByDate={holidaysByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
         showRetrograde={showRetrograde}
@@ -787,6 +826,7 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
           entries={entriesByDate.get(selectedDate)}
           astroDay={selectedAstroDay}
           sabbat={sabbatsByDate.get(selectedDate)}
+          holidays={holidaysByDate.get(selectedDate) ?? []}
           navigate={navigate}
         />
       )}
@@ -852,6 +892,19 @@ function TraditionCalendarView({
     try {
       for (const y of new Set([firstOfMonth.getFullYear(), lastOfMonth.getFullYear()])) {
         for (const s of getSabbatsForYear(y)) map.set(toDateString(s.time), s)
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [firstOfMonth, lastOfMonth])
+
+  const holidaysByDate = useMemo(() => {
+    const map = new Map<string, HolidayInstance[]>()
+    try {
+      for (const y of new Set([firstOfMonth.getFullYear(), lastOfMonth.getFullYear()])) {
+        for (const h of getHolidaysForYear(y)) {
+          const ds = toDateString(h.time)
+          map.set(ds, [...(map.get(ds) ?? []), h])
+        }
       }
     } catch { /* silently skip */ }
     return map
@@ -972,6 +1025,7 @@ function TraditionCalendarView({
         astroByDate={monthAstro?.byDate ?? null}
         onRetrogradeTap={setRetrogradeTapText}
         sabbatsByDate={sabbatsByDate}
+        holidaysByDate={holidaysByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
         showRetrograde={showRetrograde}
@@ -984,6 +1038,7 @@ function TraditionCalendarView({
           entries={entriesByDate.get(selectedDate)}
           astroDay={selectedAstroDay}
           sabbat={sabbatsByDate.get(selectedDate)}
+          holidays={holidaysByDate.get(selectedDate) ?? []}
           navigate={navigate}
           nativeLabel={selectedNativeLabel}
         />

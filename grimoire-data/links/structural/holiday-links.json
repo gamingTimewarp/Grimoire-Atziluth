@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "calendar.holiday.easter",
+      "target": "calendar.holiday.pesach",
+      "label": "historically-linked-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Shared equinox-and-full-moon computation; Quartodeciman precedent of observing Easter on 14 Nisan itself." }
+    },
+    {
+      "source": "calendar.holiday.pentecost",
+      "target": "calendar.holiday.shavuot",
+      "label": "historically-linked-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Acts 2 explicitly places the Pentecost narrative on the day Shavuot was being observed." }
+    },
+    {
+      "source": "calendar.holiday.yom-kippur",
+      "target": "calendar.holiday.purim",
+      "label": "historically-linked-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "The tradition's own reading of Yom HaKippurim as \"a day like Purim\"." }
+    },
+    {
+      "source": "calendar.holiday.tu-bishvat",
+      "target": "qabalah.world.atziluth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "The Arizal's Tu BiShvat seder is structured directly around the Four Worlds." }
+    },
+    {
+      "source": "calendar.holiday.dongzhi",
+      "target": "iching.hexagram.24",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Hexagram 24 (Fu, Return)'s own text names the winter solstice directly." }
+    },
+    {
+      "source": "omen.animal.snake",
+      "target": "lenormand.card.the-snake",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.scorpion",
+      "target": "astrology.zodiac-sign.scorpio",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    }
+  ]
+}

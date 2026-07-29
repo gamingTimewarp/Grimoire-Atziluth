@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.holiday.pesach",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Pesach",
+      "description": "15 Nisan. Commemorates the Exodus from Egypt. Reckoned by the first full moon after the spring equinox — the same equinox-and-full-moon logic this app uses to compute Easter's astronomical date (see calendar.holiday.easter), and the basis of the Quartodeciman practice of observing Easter on 14 Nisan itself. Opens the 49-day Counting of the Omer, which culminates at Shavuot; the Omer count itself is a day-by-day devotional practice rather than a single date, so it is not modelled as its own holiday entity here. Observed 7 days in Israel; many diaspora communities keep an additional 8th day by long-standing custom.",
+      "secondaryNames": [
+        { "name": "Passover", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hebrew", "spring", "exodus", "correspondences-over-days"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 1, "day": 15 },
+        "durationDays": 7
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.shavuot",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Shavuot",
+      "description": "6 Sivan, the culmination of the 49-day Counting of the Omer begun at Pesach. Marks the giving of the Torah at Sinai. The Book of Acts places the Pentecost narrative explicitly on this day (Acts 2) — an attested textual connection, not a later symbolic overlay; see calendar.holiday.pentecost. Observed 1 day in Israel, 2 days by many diaspora communities.",
+      "secondaryNames": [
+        { "name": "Feast of Weeks", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hebrew", "summer", "torah", "harvest"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 3, "day": 6 },
+        "durationDays": 1
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.rosh-hashanah",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Rosh Hashanah",
+      "description": "1 Tishrei, the Hebrew New Year. Its central liturgical theme, Malchuyot (Divine Kingship), is read Kabbalistically as the crowning of Keter: the sefirotic process that begins with Keter and completes in Malchut is symbolically re-enacted as Malchut (the created world) crowning its source. The shofar's three traditional sounds each carry a distinct mystical reading — Tekiah (the long blast) as the sound of coronation itself, Shevarim (broken, wailing blasts) as the heart's yearning cry, and Teruah (rapid short blasts) as an alarm rousing the soul from spiritual slumber.",
+      "secondaryNames": [],
+      "tags": ["hebrew", "autumn", "new-year", "kingship"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 7, "day": 1 },
+        "durationDays": 2
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.yom-kippur",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Yom Kippur",
+      "description": "10 Tishrei, the Day of Atonement. In Arizal-derived Kabbalistic teaching, teshuvah (\"return\") on this day is described as an elevation from Malchut — the physical, illusory world — into Binah, the Supernal Mother and source of purification, who has the power to birth the soul anew in holiness. The holiday's own formal Torah name, Yom HaKippurim, is read by the tradition itself as \"a day like Purim\" (Yom-Ha-Kippurim / Yom-K'Purim) — an explicit, tradition-internal wordplay pairing the two holidays; see calendar.holiday.purim.",
+      "secondaryNames": [
+        { "name": "Day of Atonement", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Yom HaKippurim", "languageTag": "he-translit", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["hebrew", "autumn", "atonement", "teshuvah"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 7, "day": 10 },
+        "durationDays": 1
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.sukkot",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Sukkot",
+      "description": "15 Tishrei, seven nights dwelling in the sukkah (booth). Its per-night structure is one of the best-attested correspondences-over-days patterns in Jewish mysticism: the custom of the Ushpizin, seven mystical guests welcomed into the sukkah, is first recorded in the Zohar itself and was later given its now-customary ritual form by Rabbi Isaac Luria (the Arizal) in 16th-century Safed. All seven guests are traditionally present every night, but each night one takes the lead, in an order following the seven lower sefirot from Chesed down to Malchut.",
+      "secondaryNames": [
+        { "name": "Feast of Booths", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Feast of Tabernacles", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["hebrew", "autumn", "ushpizin", "correspondences-over-days"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 7, "day": 15 },
+        "durationDays": 7,
+        "dayCorrespondences": [
+          { "day": 1, "label": "Night 1 — Abraham, Chesed", "description": "Lovingkindness — the first of the seven Ushpizin guests, leading with unconditional love and hospitality.", "linkedCanonicalName": "qabalah.sephira.chesed" },
+          { "day": 2, "label": "Night 2 — Isaac, Geburah", "description": "Strength/severity — discipline and the capacity to withstand trial.", "linkedCanonicalName": "qabalah.sephira.geburah" },
+          { "day": 3, "label": "Night 3 — Jacob, Tiphareth", "description": "Beauty/harmony — the balance of the pillars, embodied in Jacob's twelve tribes.", "linkedCanonicalName": "qabalah.sephira.tiphareth" },
+          { "day": 4, "label": "Night 4 — Moses, Netzach", "description": "Eternity/endurance — Lurianic tradition places Moses before Joseph, following the order of the supernal sefirot.", "linkedCanonicalName": "qabalah.sephira.netzach" },
+          { "day": 5, "label": "Night 5 — Aaron, Hod", "description": "Majesty/splendour — the priestly office and its ceremonial glory.", "linkedCanonicalName": "qabalah.sephira.hod" },
+          { "day": 6, "label": "Night 6 — Joseph, Yesod", "description": "Foundation — Joseph as the tzaddik, the righteous foundation upholding the household of Israel in exile.", "linkedCanonicalName": "qabalah.sephira.yesod" },
+          { "day": 7, "label": "Night 7 — David, Malkuth", "description": "Kingdom — David's earthly kingship as the vessel receiving all six qualities above it.", "linkedCanonicalName": "qabalah.sephira.malkuth" }
+        ]
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.hanukkah",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Hanukkah",
+      "description": "25 Kislev, eight nights. The per-night sefirot correspondence given here is a Kabbalistic (Arizal/Chassidic) teaching, attested consistently in the contemporary Chassidic Kabbalah of Rabbi Yitzchak Ginsburgh (GalEinai) — presented as one well-documented tradition rather than the single universal meaning of the holiday's nights, since other Hanukkah-candle schemes (thematic, non-Kabbalistic) also circulate. Each night pairs a \"light\" sefirah with a \"vessel\" sefirah; nights 1–7 mirror nights 8–2 in reverse, so that night 1 (Light of Malchut in Vessel of Binah) and night 8 (Light of Binah in Vessel of Malchut) are exact inversions of each other.",
+      "secondaryNames": [
+        { "name": "Feast of Dedication", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hebrew", "winter", "sefirot", "correspondences-over-days"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 9, "day": 25 },
+        "durationDays": 8,
+        "dayCorrespondences": [
+          { "day": 1, "label": "Night 1 — Light of Malchut in Vessel of Binah", "linkedCanonicalName": "qabalah.sephira.binah" },
+          { "day": 2, "label": "Night 2 — Light of Yesod in Vessel of Chesed", "linkedCanonicalName": "qabalah.sephira.chesed" },
+          { "day": 3, "label": "Night 3 — Light of Hod in Vessel of Geburah", "linkedCanonicalName": "qabalah.sephira.geburah" },
+          { "day": 4, "label": "Night 4 — Light of Netzach in Vessel of Tiphareth", "linkedCanonicalName": "qabalah.sephira.tiphareth" },
+          { "day": 5, "label": "Night 5 — Light of Tiphareth in Vessel of Netzach", "linkedCanonicalName": "qabalah.sephira.netzach" },
+          { "day": 6, "label": "Night 6 — Light of Geburah in Vessel of Hod", "linkedCanonicalName": "qabalah.sephira.hod" },
+          { "day": 7, "label": "Night 7 — Light of Chesed in Vessel of Yesod", "linkedCanonicalName": "qabalah.sephira.yesod" },
+          { "day": 8, "label": "Night 8 — Light of Binah in Vessel of Malchut", "linkedCanonicalName": "qabalah.sephira.malkuth" }
+        ]
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.purim",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Purim",
+      "description": "14 Adar (14 Adar II in leap years, when a second Adar is added to keep the lunisolar calendar aligned with the seasons). Unlike Hanukkah's overt supernatural deliverance, Purim is traditionally read as a \"hidden miracle\" — the Scroll of Esther never names God directly, and the tradition understands the entire story as divine providence working invisibly through ordinary events. See calendar.holiday.yom-kippur for the tradition's own explicit pairing of these two holidays.",
+      "secondaryNames": [],
+      "tags": ["hebrew", "winter", "hidden-miracle"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": "adar-ii", "day": 14 },
+        "durationDays": 1
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.tu-bishvat",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Tu BiShvat",
+      "description": "15 Shevat, the \"New Year for Trees.\" In the 16th century, Rabbi Isaac Luria (the Arizal) and his circle in Safed instituted a Tu BiShvat seder built directly around the Four Worlds — Atzilut (Emanation), Beriah (Creation), Yetzirah (Formation), and Assiah (Action) — the same framework this app is named for. Fruits eaten at the seder are sorted by their physical form into three of the four worlds: fruit that is hard or inedible outside but soft within (Assiah), fruit soft outside with an inedible pit within (Yetzirah), and fruit fully edible throughout (Beriah). Atzilut, the highest and purely spiritual world, has no fruit category of its own — it is considered too rarefied for physical representation.",
+      "secondaryNames": [
+        { "name": "New Year for Trees", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hebrew", "winter", "trees", "four-worlds", "atziluth"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "hebrew", "month": 11, "day": 15 },
+        "durationDays": 1
+      }
+    }
+  ]
+}

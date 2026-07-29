@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.holiday.dongzhi",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Dongzhi",
+      "description": "The winter solstice — the same real astronomical moment as the Yule sabbat (tropical Sun longitude 270°), reckoned here by direct solar-longitude search rather than by resolving a native lunisolar day, since the Chinese calendar's own month 11 is itself defined as \"the month containing the winter solstice.\" In Taoist internal-alchemy (neidan) practice, Dongzhi marks the point of maximum yin from which yang begins its return — precisely the reading given to I Ching Hexagram 24 (Fu, \"Return\"), whose own text names the winter solstice directly (\"the ancient kings closed the passes at the winter solstice\"). This is a textually explicit correspondence, not an inferred one.",
+      "secondaryNames": [
+        { "name": "Winter Solstice Festival", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["chinese", "winter", "solstice", "taoism", "neidan"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 270 },
+        "durationDays": 1
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.duanwu",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Duanwu",
+      "description": "5th day of the 5th lunar month. Folk tradition holds that the Five Poisons (Wu Du) — typically the snake, scorpion, centipede, toad, and spider, though the exact set of five varies by region and era — reach their full seasonal potency at noon on this day, as summer heat brings out venomous and disease-bearing creatures. The response is apotropaic rather than avoidant: images of all five poisons, worn as amulets or embroidered onto children's clothing, are believed to accumulate enough poison of their own to counteract the pernicious influences they represent — fighting poison with poison. Other period customs include drinking realgar wine, hanging mugwort and calamus at doorways, and displaying charms of Zhong Kui, the demon-queller.",
+      "secondaryNames": [
+        { "name": "Dragon Boat Festival", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["chinese", "summer", "five-poisons", "apotropaic", "talisman"],
+      "extendedData": {
+        "dateRule": { "kind": "native-calendar", "calendarId": "chinese", "month": 5, "day": 5 },
+        "durationDays": 1
+      }
+    }
+  ]
+}

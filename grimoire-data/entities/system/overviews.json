@@ -3238,6 +3238,33 @@
           "system.overview.tasseomancy"
         ]
       }
+    },
+    {
+      "canonicalName": "system.overview.holidays",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Holidays & Festivals",
+      "description": "Holidays and festivals from the Gregorian, Hebrew, Chinese, and Hindu calendars, selected for their esoteric-practice significance rather than as a general modern holiday list. Where a documented historical or textual connection exists between holidays across traditions — Easter's computation sharing Passover's equinox-and-full-moon logic, Pentecost's explicit placement on Shavuot in Acts 2 — that connection is shown directly. Several multi-day holidays carry an attested per-day correspondence table (Hanukkah's nightly sefirot, Sukkot's Ushpizin, Navratri's Navadurga sequence, the Twelve Nights' month-by-month omens), shown on each holiday's own page.",
+      "secondaryNames": [],
+      "tags": ["overview", "calendar", "holiday"],
+      "extendedData": {
+        "entityTypeGroup": "calendar",
+        "memberEntityType": "calendar.holiday",
+        "relatedOverviews": [
+          "system.overview.sabbats"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.omen-animals",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Omen Animals",
+      "description": "Creatures with attested divinatory or omen significance, drawn together from otherwise unrelated traditions. The initial set is anchored by the Chinese Five Poisons (Wu Du) apotropaic tradition tied to the Duanwu festival (see calendar.holiday.duanwu), but each entity's own description covers its symbolism across every tradition this Grimoire otherwise touches — Abrahamic, alchemical, Western-astrological, and folk traditions among them — rather than being scoped to Chinese folklore alone.",
+      "secondaryNames": [],
+      "tags": ["overview", "omen", "animal"],
+      "extendedData": {
+        "entityTypeGroup": "omens",
+        "memberEntityType": "omen.animal"
+      }
     }
   ]
 }

@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.holiday.twelve-nights",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Twelve Nights",
+      "description": "Twelve nights beginning Christmas night (25 December) and running through the eve of Epiphany (5 January), sharing their date range with the Christian Twelve Days of Christmas but carrying a distinct Germanic folk-magic layer: the Rauhnächte (\"rough nights\"), a liminal span between the old solar year and the new. Each of the twelve nights is traditionally read as an omen for one month of the coming year — dreams, weather, and small events on night N are said to foretell the character of month N. Customary practices include recording dreams night by night, ritual smoke-cleansing of house and stable, and quiet reflection on the turning of the year. The Germanic and Christian layers coexist rather than one deriving from the other; this entity presents both.",
+      "secondaryNames": [
+        { "name": "Christmas", "languageTag": "en-christian", "visible": true, "sortOrder": 0 },
+        { "name": "Rauhnächte", "languageTag": "de", "visible": true, "sortOrder": 1 },
+        { "name": "Twelve Days of Christmas", "languageTag": "en-alt", "visible": true, "sortOrder": 2 },
+        { "name": "Yule Nights", "languageTag": "en-alt", "visible": true, "sortOrder": 3 }
+      ],
+      "tags": ["gregorian", "winter", "folk-magic", "dream-divination", "germanic", "yule", "correspondences-over-days"],
+      "extendedData": {
+        "dateRule": { "kind": "fixed-gregorian", "month": 12, "day": 25 },
+        "durationDays": 12,
+        "dayCorrespondences": [
+          { "day": 1, "label": "Night 1 — January", "linkedCanonicalName": "calendar.month.gregorian.january" },
+          { "day": 2, "label": "Night 2 — February", "linkedCanonicalName": "calendar.month.gregorian.february" },
+          { "day": 3, "label": "Night 3 — March", "linkedCanonicalName": "calendar.month.gregorian.march" },
+          { "day": 4, "label": "Night 4 — April", "linkedCanonicalName": "calendar.month.gregorian.april" },
+          { "day": 5, "label": "Night 5 — May", "linkedCanonicalName": "calendar.month.gregorian.may" },
+          { "day": 6, "label": "Night 6 — June", "linkedCanonicalName": "calendar.month.gregorian.june" },
+          { "day": 7, "label": "Night 7 — July", "linkedCanonicalName": "calendar.month.gregorian.july" },
+          { "day": 8, "label": "Night 8 — August", "linkedCanonicalName": "calendar.month.gregorian.august" },
+          { "day": 9, "label": "Night 9 — September", "linkedCanonicalName": "calendar.month.gregorian.september" },
+          { "day": 10, "label": "Night 10 — October", "linkedCanonicalName": "calendar.month.gregorian.october" },
+          { "day": 11, "label": "Night 11 — November", "linkedCanonicalName": "calendar.month.gregorian.november" },
+          { "day": 12, "label": "Night 12 — December", "linkedCanonicalName": "calendar.month.gregorian.december" }
+        ]
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.easter",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Easter",
+      "description": "The date given here is the true astronomical reckoning — the first Sunday following the first full moon after the actual spring equinox — rather than the fixed ecclesiastical Computus tables, in keeping with this app's general practice of favouring real astronomical events over historical approximations (see the Sabbats). This is not a coincidence of method: Easter's dating rule is directly derived from Passover's own equinox-and-full-moon logic (14 Nisan, the first full moon after the spring equinox), a link openly attested by the early Quartodeciman practice of observing Easter on 14 Nisan itself regardless of weekday, and by the tradition's own self-identification of Christ as \"our Passover\" (1 Corinthians 5:7). The connection to Passover is therefore presented here as a documented historical fact, not a symbolic comparison.",
+      "secondaryNames": [
+        { "name": "Pascha", "languageTag": "grc", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gregorian", "spring", "christian", "astronomical", "resurrection"],
+      "extendedData": {
+        "dateRule": { "kind": "astronomical-easter" },
+        "durationDays": 1
+      }
+    },
+    {
+      "canonicalName": "calendar.holiday.pentecost",
+      "entityType": "calendar.holiday",
+      "primaryDisplayName": "Pentecost",
+      "description": "Fifty days after Easter (Easter Sunday counted as day 1). The Book of Acts explicitly places the descent of the Spirit on the very day the Feast of Weeks (Shavuot) was being observed in Jerusalem — an explicit textual placement, not a later inference, so the Shavuot connection is presented here as directly attested rather than merely thematically similar.",
+      "secondaryNames": [
+        { "name": "Whitsunday", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gregorian", "christian", "spirit", "harvest"],
+      "extendedData": {
+        "dateRule": { "kind": "offset-from-holiday", "baseCanonicalName": "calendar.holiday.easter", "offsetDays": 49 },
+        "durationDays": 1
+      }
+    }
+  ]
+}

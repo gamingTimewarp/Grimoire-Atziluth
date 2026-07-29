@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "omen.animal.snake",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Snake",
+      "description": "One of the Chinese Five Poisons (Wu Du) — feared and warded against in the Duanwu apotropaic tradition (see calendar.holiday.duanwu) — yet one of the most symbolically loaded creatures across unrelated traditions. In Abrahamic scripture the serpent carries both a negative valence (the tempter of Eden) and a positive one (the bronze Nehushtan, raised by Moses as an instrument of healing). Its skin-shedding is read across many cultures, independently, as a natural symbol of renewal and rebirth — the same observation underlying the alchemical Ouroboros, the serpent devouring its own tail as an emblem of cyclical eternity. In cartomancy, the Lenormand Snake card carries a persistently negative meaning: deceit, a rival, or a complicating entanglement.",
+      "secondaryNames": [],
+      "tags": ["chinese-five-poisons", "abrahamic", "alchemical", "lenormand", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-five-poisons", "abrahamic", "alchemical", "lenormand"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.scorpion",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Scorpion",
+      "description": "One of the Chinese Five Poisons, feared for its sting and included among the creatures whose image is worn apotropaically at Duanwu (see calendar.holiday.duanwu). In ancient Egypt the scorpion was placed under the protection of Serqet, the goddess invoked against venom and, by extension, over embalming and the safe passage of the dead. In Western astrology, the scorpion is the emblem of Scorpio, associated with intensity, hidden depths, and transformation through crisis — the sign's traditional link is presented here as a direct existing correspondence in this app, not a new claim.",
+      "secondaryNames": [],
+      "tags": ["chinese-five-poisons", "egyptian", "western-astrology"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-five-poisons", "egyptian", "western-astrology"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.centipede",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Centipede",
+      "description": "One of the Chinese Five Poisons by inclusion (see calendar.holiday.duanwu), yet unlike the others its individual folk reputation leans protective rather than purely feared: traditional Chinese medicine prized the red-headed centipede for its medicinal properties, and the creature was regarded as an emblem of protection despite — or through — its venomous bite, on the same fight-poison-with-poison logic underlying the Duanwu talismans generally.",
+      "secondaryNames": [],
+      "tags": ["chinese-five-poisons", "chinese-folk-medicine"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-five-poisons", "chinese-folk-medicine"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.toad",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Toad",
+      "description": "One of the Chinese Five Poisons in most variants of the set (a three-legged toad replaces the spider in some regional lists — see calendar.holiday.duanwu). Individually, the three-legged toad (Chan Chu) is instead one of the most auspicious figures in Chinese folk religion: tied to the legend of the immortal Liu Hai, it is said to spit gold coins and is traditionally kept facing inward near shop and home entrances to draw wealth. European folklore takes a more ambivalent view, with toads and frogs long associated with witches' familiars and folk-magical ingredients — an example of the same creature carrying opposite valences in unrelated traditions.",
+      "secondaryNames": [
+        { "name": "Chan Chu", "languageTag": "zh-translit", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["chinese-five-poisons", "chinese-folk", "wealth", "european-folk"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-five-poisons", "chinese-folk", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.spider",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Spider",
+      "description": "Included among the Chinese Five Poisons in some regional variants (see calendar.holiday.duanwu), but individually the most positively regarded of the five: another word for spider in Chinese, xizi, shares its pronunciation with the word for \"happy,\" so a spider seen descending on its thread is read as happiness being sent down from above. Western folk tradition holds a similar view — a \"money spider\" found on one's person or clothing is said to foretell good luck or coming wealth. Some traditions (e.g. Native American Grandmother Spider figures, and — descriptively, not as a claimed historical link — the web-weaving imagery of the Greek Moirai) extend the spider's web into a broader fate-weaving symbol; this is noted here as a recurring motif across traditions, not asserted as a shared origin.",
+      "secondaryNames": [],
+      "tags": ["chinese-five-poisons", "chinese-folk", "western-folk"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-five-poisons", "chinese-folk", "western-folk"]
+      }
+    }
+  ]
+}
