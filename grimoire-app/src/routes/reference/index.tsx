@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import { loadTraditionSettings, resolveDisplayName } from '@/lib/tradition-store'
@@ -9,6 +9,8 @@ import { getRecentEntities, removeRecentEntity, clearRecentEntities } from '@/li
 import type { RecentEntity } from '@/lib/recent-entities'
 import { computeReferenceTopLevelOverviews, getRandomEntity } from '@/lib/entity-attributes'
 import type { GroupOverview } from '@/lib/entity-attributes'
+import { ENTITY_TYPE_GROUPS } from '@/lib/entity-type-groups'
+import { Chip, TagInput } from '@/components/ui/TagInput'
 
 export const Route = createFileRoute('/reference/')(({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -24,93 +26,6 @@ export const Route = createFileRoute('/reference/')(({
   }),
   component: ReferencePage,
 }))
-
-// ─── Entity type groups for the type filter select ────────────────────────────
-
-const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: string }[] }[] = [
-  { label: 'Tarot', options: [
-    { value: 'tarot.card',  label: 'Cards' },
-    { value: 'tarot.deck',  label: 'Decks' },
-    { value: 'tarot.suit',  label: 'Suits' },
-  ]},
-  { label: 'Divination', options: [
-    { value: 'rune',                    label: 'Runes' },
-    { value: 'ogham.letter',            label: 'Ogham' },
-    { value: 'iching.hexagram',         label: 'I Ching Hexagrams' },
-    { value: 'iching.trigram',          label: 'I Ching Trigrams' },
-    { value: 'geomancy.figure',         label: 'Geomantic Figures' },
-    { value: 'divination.mahjong-tile', label: 'Mahjong Tiles' },
-    { value: 'divination.tea-symbol',   label: 'Tea Leaf Symbols' },
-  ]},
-  { label: 'Astrology', options: [
-    { value: 'astrology.zodiac-sign',    label: 'Zodiac Signs' },
-    { value: 'astrology.planet',         label: 'Planets' },
-    { value: 'astrology.node',           label: 'Lunar Nodes' },
-    { value: 'astrology.house',          label: 'Houses' },
-    { value: 'astrology.aspect',         label: 'Aspects' },
-    { value: 'astrology.element',        label: 'Elements' },
-    { value: 'astrology.decan',          label: 'Decans' },
-    { value: 'astrology.fixed-star',     label: 'Fixed Stars' },
-    { value: 'astrology.nakshatra',      label: 'Nakshatras' },
-    { value: 'astrology.lunar-mansion',  label: 'Lunar Mansions' },
-    { value: 'astrology.full-moon-name', label: 'Full Moon Names' },
-  ]},
-  { label: 'Qabalah', options: [
-    { value: 'qabalah.sephira',        label: 'Sephiroth' },
-    { value: 'qabalah.path',           label: 'Paths' },
-    { value: 'qabalah.qliphoth',       label: 'Qliphoth' },
-    { value: 'qabalah.world',          label: 'Worlds' },
-    { value: 'qabalah.pillar',         label: 'Pillars' },
-    { value: 'qabalah.partzuf',        label: 'Partzufim' },
-    { value: 'qabalah.tunnel-of-set',  label: 'Tunnels of Set' },
-  ]},
-  { label: 'Angels & Demons', options: [
-    { value: 'angel.shem',     label: 'Shem Angels (72)' },
-    { value: 'angel.order',    label: 'Angelic Orders' },
-    { value: 'angel.archangel',label: 'Archangels' },
-    { value: 'goetia.demon',   label: 'Goetia Demons' },
-    { value: 'spirit.olympic', label: 'Olympic Spirits' },
-    { value: 'enochian.aethyr',label: 'Enochian Aethyrs' },
-  ]},
-  { label: 'Deities', options: [
-    { value: 'deity.greek',     label: 'Greek Deities' },
-    { value: 'deity.egyptian',  label: 'Egyptian Deities' },
-    { value: 'norse.deity',     label: 'Norse Deities' },
-    { value: 'taoism.immortal', label: 'Taoist Immortals' },
-  ]},
-  { label: 'Letters', options: [
-    { value: 'letter.hebrew',   label: 'Hebrew' },
-    { value: 'letter.greek',    label: 'Greek' },
-    { value: 'letter.arabic',   label: 'Arabic' },
-    { value: 'letter.enochian', label: 'Enochian' },
-    { value: 'letter.latin',    label: 'Latin' },
-  ]},
-  { label: 'Nature & Magic', options: [
-    { value: 'herb',              label: 'Herbs' },
-    { value: 'chakra',            label: 'Chakras' },
-    { value: 'tattwa',            label: 'Tattwas' },
-    { value: 'calendar.sabbat',   label: 'Sabbats / Wheel of the Year' },
-    { value: 'calendar.holiday',  label: 'Holidays & Festivals' },
-    { value: 'alchemy.metal',     label: 'Alchemical Metals' },
-    { value: 'alchemy.operation', label: 'Alchemical Operations' },
-    { value: 'geometry.shape',    label: 'Sacred Geometry' },
-  ]},
-  { label: 'Colour & Gemstone', options: [
-    { value: 'colour.colour',       label: 'Colours' },
-    { value: 'gemstone.gemstone',   label: 'Gemstones' },
-  ]},
-  { label: 'Other', options: [
-    { value: 'numerology.digit',    label: 'Numerology' },
-    { value: 'chinese-zodiac.animal', label: 'Chinese Zodiac' },
-    { value: 'omen.animal',         label: 'Omen Animals' },
-    { value: 'wuxing.phase',        label: 'Wu Xing / Five Phases' },
-    { value: 'gnostic.aeon',        label: 'Gnostic Aeons' },
-    { value: 'western.polarity',    label: 'Western Polarity' },
-    { value: 'palmistry.line',      label: 'Palmistry Lines' },
-    { value: 'palmistry.mount',     label: 'Palmistry Mounts' },
-    { value: 'rosicrucian.symbol',  label: 'Rosicrucian Symbols' },
-  ]},
-]
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -540,118 +455,6 @@ function FilterPanel({
         />
       </div>
     </div>
-  )
-}
-
-// ─── Tag input with autocomplete ──────────────────────────────────────────────
-
-function TagInput({
-  chips, urlChip, suggestions, onAdd, onRemove, onUrlRemove,
-}: {
-  chips: string[]
-  urlChip: string | undefined
-  suggestions: string[]
-  onAdd: (t: string) => void
-  onRemove: (t: string) => void
-  onUrlRemove: () => void
-}) {
-  const [input, setInput] = useState('')
-  const [open, setOpen]   = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  const filtered = input.length > 0
-    ? suggestions.filter(s => s.toLowerCase().includes(input.toLowerCase()) && !chips.includes(s) && s !== urlChip).slice(0, 8)
-    : []
-
-  const commit = (tag: string) => {
-    const t = tag.trim()
-    if (!t) return
-    onAdd(t)
-    setInput('')
-    setOpen(false)
-  }
-
-  // Close dropdown on outside click
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
-    }
-    document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
-  }, [])
-
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', alignItems: 'center' }}>
-      {/* URL-sourced chip */}
-      {urlChip && <Chip label={urlChip} onRemove={onUrlRemove} accent />}
-      {/* Panel chips */}
-      {chips.map(t => <Chip key={t} label={t} onRemove={() => onRemove(t)} />)}
-      {/* Input */}
-      <div ref={ref} style={{ position: 'relative' }}>
-        <input
-          value={input}
-          onChange={e => { setInput(e.target.value); setOpen(true) }}
-          onFocus={() => { if (input) setOpen(true) }}
-          onKeyDown={e => {
-            if (e.key === 'Enter') { e.preventDefault(); if (filtered[0]) commit(filtered[0]); else if (input.trim()) commit(input) }
-            if (e.key === 'Escape') { setOpen(false); setInput('') }
-          }}
-          placeholder={chips.length || urlChip ? 'Add tag…' : 'Filter by tag…'}
-          style={{
-            padding: '4px 8px', fontSize: '12px',
-            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
-            borderRadius: '4px', color: 'var(--color-text)', outline: 'none',
-            width: '120px',
-          }}
-        />
-        {open && filtered.length > 0 && (
-          <div style={{
-            position: 'absolute', top: 'calc(100% + 3px)', left: 0, zIndex: 20,
-            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
-            borderRadius: '5px', boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
-            minWidth: '160px', overflow: 'hidden',
-          }}>
-            {filtered.map(s => (
-              <div
-                key={s}
-                onMouseDown={e => { e.preventDefault(); commit(s) }}
-                style={{
-                  padding: '6px 10px', fontSize: '12px', cursor: 'pointer',
-                  color: 'var(--color-text)',
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-2)' }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'transparent' }}
-              >
-                {s}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-
-// ─── Chip ─────────────────────────────────────────────────────────────────────
-
-function Chip({ label, onRemove, accent }: { label: string; onRemove: () => void; accent?: boolean }) {
-  return (
-    <span style={{
-      display: 'inline-flex', alignItems: 'center', gap: '5px',
-      padding: '3px 8px',
-      background: accent ? 'rgba(180,156,90,0.1)' : 'var(--color-surface-3)',
-      border: `1px solid ${accent ? 'var(--color-accent-muted)' : 'var(--color-border)'}`,
-      borderRadius: '4px', fontSize: '11px',
-      color: accent ? 'var(--color-accent)' : 'var(--color-text-muted)',
-    }}>
-      {label}
-      <button
-        onClick={onRemove}
-        style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', display: 'flex', color: 'inherit', lineHeight: 1, opacity: 0.7 }}
-      >
-        <X size={10} />
-      </button>
-    </span>
   )
 }
 

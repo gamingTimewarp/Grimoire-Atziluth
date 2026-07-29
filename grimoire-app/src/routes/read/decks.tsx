@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useEffect, useMemo } from 'react'
 import { ArrowLeft, Plus, Trash2, Save, Pencil, Search, X, Check } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { TagInput } from '@/components/ui/TagInput'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import {
@@ -10,6 +11,9 @@ import {
   deleteCustomDeck,
   type CustomDeckRecord,
 } from '@/lib/custom-db'
+import { ENTITY_TYPE_GROUPS, KNOWN_ENTITY_TYPES } from '@/lib/entity-type-groups'
+import { formatEntityType } from '@/lib/format'
+import { loadTraditionSettings } from '@/lib/tradition-store'
 
 export const Route = createFileRoute('/read/decks')({
   component: DecksPage,
@@ -29,30 +33,50 @@ function CardPicker({
   onToggle: (cn: string) => void
 }) {
   const { engine } = useEngineStore()
+  const { customEnabled } = loadTraditionSettings()
   const [allEntities, setAllEntities]   = useState<BaseEntity[]>([])
   const [entityTypes, setEntityTypes]   = useState<string[]>([])
-  const [typeFilter, setTypeFilter]     = useState('')
+  const [allTags,     setAllTags]       = useState<string[]>([])
+  const [typeFilter,  setTypeFilter]    = useState('')
+  const [sourceFilter,setSourceFilter]  = useState<'all' | 'built-in' | 'custom'>('all')
+  const [tagFilters,  setTagFilters]    = useState<string[]>([])
   const [search, setSearch]             = useState('')
   const [showSelected, setShowSelected] = useState(false)
 
   useEffect(() => {
     if (!engine) return
-    engine.adapter.listEntities({}, { offset: 0, limit: 2000 }).then(r => {
-      setAllEntities(r.items)
-      const types = [...new Set(r.items.map(e => e.entityType))].sort()
-      setEntityTypes(types)
-    })
+    // Fetch the true total first — a single capped listEntities() call would
+    // silently truncate to whatever page happens to come back first, and
+    // since built-in entities are seeded before custom ones, a fixed cap
+    // smaller than the built-in count (as it once was here) meant custom
+    // entities could never appear in this list at all.
+    engine.adapter.listEntities({}, { offset: 0, limit: 1 })
+      .then(({ total }) => engine.adapter.listEntities({}, { offset: 0, limit: total }))
+      .then(r => {
+        setAllEntities(r.items)
+        const types = [...new Set(r.items.map(e => e.entityType))].sort()
+        setEntityTypes(types)
+      })
+    engine.adapter.listAllTags().then(setAllTags).catch(() => {})
   }, [engine])
+
+  const customTypeOptions = useMemo(
+    () => entityTypes.filter(t => !KNOWN_ENTITY_TYPES.has(t)).map(t => ({ value: t, label: formatEntityType(t) })),
+    [entityTypes],
+  )
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     return allEntities.filter(e => {
       if (showSelected && !selected.has(e.canonicalName)) return false
       if (typeFilter && e.entityType !== typeFilter) return false
+      if (sourceFilter === 'built-in' && !e.isBuiltIn) return false
+      if (sourceFilter === 'custom' && e.isBuiltIn) return false
+      if (tagFilters.length > 0 && !tagFilters.every(t => e.tags.includes(t))) return false
       if (q && !e.primaryDisplayName.toLowerCase().includes(q) && !e.canonicalName.includes(q)) return false
       return true
     }).slice(0, 100)
-  }, [allEntities, typeFilter, search, showSelected, selected])
+  }, [allEntities, typeFilter, sourceFilter, tagFilters, search, showSelected, selected])
 
   const inputStyle: React.CSSProperties = {
     background: 'var(--color-surface-3)',
@@ -90,8 +114,43 @@ function CardPicker({
           style={{ ...inputStyle, flex: '0 0 auto', cursor: 'pointer' }}
         >
           <option value="">All types</option>
-          {entityTypes.map(t => <option key={t} value={t}>{t}</option>)}
+          {ENTITY_TYPE_GROUPS.map(group => {
+            const opts = group.options.filter(opt => entityTypes.includes(opt.value))
+            if (opts.length === 0) return null
+            return (
+              <optgroup key={group.label} label={group.label}>
+                {opts.map(opt => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
+              </optgroup>
+            )
+          })}
+          {customTypeOptions.length > 0 && (
+            <optgroup label="Custom Types">
+              {customTypeOptions.map(opt => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
+            </optgroup>
+          )}
         </select>
+        {customEnabled && (
+          <div style={{ display: 'flex', flex: '0 0 auto' }}>
+            {(['all', 'built-in', 'custom'] as const).map((opt, i) => (
+              <button
+                key={opt}
+                onClick={() => setSourceFilter(opt)}
+                style={{
+                  padding: '6px 10px', fontSize: '12px', cursor: 'pointer',
+                  background: sourceFilter === opt ? 'var(--color-accent-muted)' : 'var(--color-surface-3)',
+                  border: '1px solid',
+                  borderColor: sourceFilter === opt ? 'var(--color-accent-muted)' : 'var(--color-border)',
+                  borderRadius: i === 0 ? '4px 0 0 4px' : i === 2 ? '0 4px 4px 0' : '0',
+                  borderLeft: i > 0 ? 'none' : undefined,
+                  color: sourceFilter === opt ? 'var(--color-accent)' : 'var(--color-text-subtle)',
+                  fontFamily: 'inherit',
+                }}
+              >
+                {opt === 'all' ? 'All' : opt === 'built-in' ? 'Built-in' : 'Custom'}
+              </button>
+            ))}
+          </div>
+        )}
         <button
           onClick={() => setShowSelected(s => !s)}
           style={{
@@ -107,6 +166,18 @@ function CardPicker({
           {selected.size} selected
         </button>
       </div>
+
+      {/* Tag filter */}
+      {allTags.length > 0 && (
+        <div style={{ marginBottom: '8px' }}>
+          <TagInput
+            chips={tagFilters}
+            suggestions={allTags}
+            onAdd={t => setTagFilters(prev => prev.includes(t) ? prev : [...prev, t])}
+            onRemove={t => setTagFilters(prev => prev.filter(x => x !== t))}
+          />
+        </div>
+      )}
 
       {/* Entity list */}
       <div style={{ maxHeight: '260px', overflowY: 'auto', border: '1px solid var(--color-border)', borderRadius: '6px' }}>
@@ -141,7 +212,12 @@ function CardPicker({
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <span style={{ fontSize: '13px', color: 'var(--color-text)' }}>{e.primaryDisplayName}</span>
-                <span style={{ fontSize: '10px', color: 'var(--color-text-subtle)', marginLeft: '8px' }}>{e.entityType}</span>
+                <span style={{ fontSize: '10px', color: 'var(--color-text-subtle)', marginLeft: '8px' }}>{formatEntityType(e.entityType)}</span>
+                {!e.isBuiltIn && (
+                  <span style={{ fontSize: '9px', color: 'var(--color-accent)', border: '1px solid var(--color-accent-muted)', borderRadius: '3px', padding: '1px 5px', marginLeft: '6px' }}>
+                    Custom
+                  </span>
+                )}
               </div>
             </div>
           )
