@@ -36,11 +36,12 @@ function ManualPage() {
       </Section>
 
       <Section title="2. Home Dashboard">
-        <P>The home page gives you a live snapshot of the current moment and your activity today.</P>
-        <P><Strong>Daily Context Bar</Strong> — planetary day ruler, Moon phase, Sun sign, Wu Xing phase, and void-of-course Moon indicator. Tap any item to navigate to its reference page.</P>
+        <P>The home page is built from customisable widgets — reorder them or turn individual ones on/off in <Strong>Settings → Home Widgets</Strong>. Changes apply immediately.</P>
+        <P><Strong>Day Info</Strong> — planetary day ruler, Moon phase, Sun sign, Wu Xing phase, and void-of-course Moon indicator. Tap any item to navigate to its reference page.</P>
         <P><Strong>Daily Reading</Strong> — one reading performed automatically each day using your configured deck and spread (Settings → Daily Reading).</P>
-        <P><Strong>Today's Activity</Strong> — readings saved and journal entries written today, listed for quick review.</P>
-        <P><Strong>Bookmarks</Strong> — your most recently bookmarked entities as a quick-access row.</P>
+        <P><Strong>Today's Activity</Strong> — readings saved and journal entries written today, listed for quick review. Hidden automatically when there's nothing to show.</P>
+        <P><Strong>Bookmarks</Strong> — your most recently bookmarked entities as a quick-access row. Hidden automatically when you have no bookmarks.</P>
+        <P><Strong>Moon</Strong> and <Strong>Retrograde</Strong> (currently retrograde planets) are on by default too. Seven more widgets are available but off by default — enable them from <Strong>Settings → Home Widgets</Strong>: <Strong>Statistics</Strong> (reading count this month, links to Journal Statistics), <Strong>Study</Strong> (cards due today and your streak), <Strong>Upcoming</Strong> (next Sabbats and Holidays), <Strong>Natal Transits</Strong> (current transits to your saved Self chart — only appears once you've saved one), <Strong>On This Day</Strong> (readings and journal entries from this date in past years), <Strong>Recently Viewed</Strong>, and <Strong>Discover</Strong> (a random entity from the full reference database, reroll any time).</P>
       </Section>
 
       <Section title="3. Readings & Divination">
@@ -119,6 +120,7 @@ function ManualPage() {
       <Section title="10. Custom Content">
         <P>The <Strong>Custom</Strong> section (sidebar) lets you extend the app with your own material.</P>
         <P><Strong>Custom Entities.</Strong> Set a canonical name (slug), entity type, display name, description, secondary names, tags, and extended key/value data. Custom entities appear in search, can be bookmarked, linked in journal entries, and included in study sessions.</P>
+        <P><Strong>Batch Import.</Strong> From the Entities section, <Strong>Download template</Strong> saves an example <code>.json</code> file showing the exact format; <Strong>Import JSON</Strong> reads a file of the same shape and creates every entity it describes in one pass. Each entry needs a <code>canonicalName</code>, <code>entityType</code>, and <code>displayName</code>; <code>description</code>, <code>userNotes</code>, <code>tags</code>, and <code>extendedData</code> (any JSON value per key) are optional. An entry can also include a <code>links</code> array — each needs a <code>target</code> canonical name and a <code>label</code>; the target can be any existing entity, built-in or custom, or another entity defined later in the same file. Importing a canonical name that already belongs to one of your custom entities updates it in place rather than duplicating it; a canonical name belonging to a built-in entity is rejected, to protect built-in data. A results summary lists exactly what was created, updated, or skipped (and why) after every import.</P>
         <P><Strong>Custom Spreads.</Strong> Define named positions, draw order, position meanings, and an optional x/y grid for the spread visualisation.</P>
         <P><Strong>Custom Decks.</Strong> Build a deck from any combination of built-in or custom entities. Configure reversals and an optional source tradition.</P>
         <P><Strong>Custom Traditions.</Strong> Specify which link labels a tradition owns and how its attributions are displayed. Custom traditions appear in the Settings → Traditions toggles.</P>
@@ -130,6 +132,7 @@ function ManualPage() {
         <P><Strong>Traditions.</Strong> Toggle active traditions on/off; set primary per-system where multiple traditions overlap; configure zodiac mode and house system; show/hide Daath.</P>
         <P><Strong>Art Packs.</Strong> Choose Symbolic or Classic visual style for Tarot, Runes, Geomancy, Mahjong, Lenormand, and Playing Cards. Classic packs require image assets in the <code>/art/</code> directory; missing files fall back to symbolic automatically.</P>
         <P><Strong>Navigation.</Strong> Drag to reorder sidebar sections; toggle visibility; pin to icon-only mode on desktop.</P>
+        <P><Strong>Home Widgets.</Strong> Reorder Home page widgets with the up/down buttons, and show/hide each one — see Section 2 (Home Dashboard) for what every widget does.</P>
         <P><Strong>Accessibility.</Strong> Colour vision modes (Normal / Deuteranopia / Protanopia / Tritanopia / Achromat / High Contrast), dyslexia-friendly font (OpenDyslexic), reduced motion, card captions for screen readers.</P>
         <P><Strong>Location.</Strong> Set your home city for house calculations and the calendar's planetary positions. Type 3 or more characters in the city search field to search from a database of 68,000+ cities — selecting a result fills the label, coordinates, and timezone automatically. All fields can be edited manually if you need a precise location. Data is stored locally only and is never transmitted.</P>
         <P><Strong>Date/Time Override.</Strong> Fix a date/time instead of the live clock — useful for studying historical charts. Leave blank to use the live clock.</P>

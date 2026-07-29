@@ -147,7 +147,7 @@ function EditCustomEntityPage() {
         setOriginalImageFileName(imageFileName)
       }
       setSaved(true)
-      setTimeout(() => setSaved(false), 1500)
+      setTimeout(() => setSaved(false), 2500)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Save failed.')
     } finally {
@@ -222,7 +222,6 @@ function EditCustomEntityPage() {
           <ArrowLeft size={13} /> Custom
         </Button>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Edit Entity</h1>
-        {saved && <span style={{ fontSize: '12px', color: 'var(--color-accent)', marginLeft: 'auto' }}>Saved</span>}
       </div>
 
       {/* Identity (read-only fields) */}
@@ -453,6 +452,27 @@ function EditCustomEntityPage() {
           </div>
         )}
       </div>
+
+      {/* Save confirmation toast */}
+      {saved && (
+        <div
+          role="status"
+          aria-live="polite"
+          style={{
+            position: 'fixed', bottom: '24px', left: '50%', transform: 'translateX(-50%)',
+            zIndex: 1000,
+          }}
+        >
+          <div style={{
+            padding: '10px 18px',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '8px', boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            fontSize: '13px', color: 'var(--color-text)',
+          }}>
+            Entity saved successfully!
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -7,12 +7,20 @@ import { Search, X, Shuffle, SlidersHorizontal } from 'lucide-react'
 import { formatEntityType, formatTag } from '@/lib/format'
 import { getRecentEntities, removeRecentEntity, clearRecentEntities } from '@/lib/recent-entities'
 import type { RecentEntity } from '@/lib/recent-entities'
-import { computeReferenceTopLevelOverviews } from '@/lib/entity-attributes'
+import { computeReferenceTopLevelOverviews, getRandomEntity } from '@/lib/entity-attributes'
 import type { GroupOverview } from '@/lib/entity-attributes'
 
 export const Route = createFileRoute('/reference/')(({
   validateSearch: (search: Record<string, unknown>) => ({
     tag: typeof search.tag === 'string' ? search.tag : undefined,
+    // Incoming text query from GlobalSearch's "press Enter with nothing
+    // highlighted" handoff — consumed once on arrival, then cleared (see the
+    // qParam effect below), unlike `tag` which persists as an active filter.
+    q: typeof search.q === 'string' ? search.q : undefined,
+    // One-shot entry point from the Browse grid's "Browse All Custom Entities"
+    // tile — consumed once (like `q`) to switch sourceFilter into 'custom',
+    // which itself persists in component state afterward, not the URL.
+    custom: typeof search.custom === 'string' ? search.custom : undefined,
   }),
   component: ReferencePage,
 }))
@@ -82,6 +90,7 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
     { value: 'chakra',            label: 'Chakras' },
     { value: 'tattwa',            label: 'Tattwas' },
     { value: 'calendar.sabbat',   label: 'Sabbats / Wheel of the Year' },
+    { value: 'calendar.holiday',  label: 'Holidays & Festivals' },
     { value: 'alchemy.metal',     label: 'Alchemical Metals' },
     { value: 'alchemy.operation', label: 'Alchemical Operations' },
     { value: 'geometry.shape',    label: 'Sacred Geometry' },
@@ -93,6 +102,7 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
   { label: 'Other', options: [
     { value: 'numerology.digit',    label: 'Numerology' },
     { value: 'chinese-zodiac.animal', label: 'Chinese Zodiac' },
+    { value: 'omen.animal',         label: 'Omen Animals' },
     { value: 'wuxing.phase',        label: 'Wu Xing / Five Phases' },
     { value: 'gnostic.aeon',        label: 'Gnostic Aeons' },
     { value: 'western.polarity',    label: 'Western Polarity' },
@@ -107,7 +117,7 @@ const ENTITY_TYPE_GROUPS: { label: string; options: { value: string; label: stri
 function ReferencePage() {
   const { engine }  = useEngineStore()
   const navigate    = useNavigate()
-  const { tag: tagFilter } = Route.useSearch()
+  const { tag: tagFilter, q: qParam, custom: customParam } = Route.useSearch()
   const { customEnabled, primaryBySystem } = loadTraditionSettings()
 
   // Search state
@@ -141,6 +151,24 @@ function ReferencePage() {
       .catch(console.error)
   }, [engine, tagFilter])
 
+  // Auto-load when arriving via the Browse grid's "Browse All Custom Entities"
+  // tile — switches into the same isBuiltIn:false view the filter panel's
+  // "Custom" segmented control already produces, then clears the one-shot URL
+  // param (sourceFilter itself is what persists the mode afterward).
+  useEffect(() => {
+    if (!engine || !customParam) return
+    setSourceFilter('custom')
+    engine.adapter.listEntities({ isBuiltIn: false }, { offset: 0, limit: 500 })
+      .then(r => {
+        setResults(r.items)
+        setSearched(true)
+        setQuery('')
+      })
+      .catch(console.error)
+    navigate({ to: '/reference', search: { tag: tagFilter, q: undefined, custom: undefined } })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [engine, customParam])
+
   // Load tag list when filter panel opens
   useEffect(() => {
     if (!engine || !filterOpen || allTags.length > 0) return
@@ -149,8 +177,12 @@ function ReferencePage() {
 
   // ── Search ────────────────────────────────────────────────────────────────
 
-  const handleSearch = async () => {
+  // Accepts an optional override so callers that just set `query` via setState
+  // (e.g. the qParam effect below) don't run into the stale-closure problem of
+  // reading `query` before that state update has actually committed.
+  const handleSearch = async (queryOverride?: string) => {
     if (!engine) return
+    const effectiveQuery = queryOverride ?? query
 
     // Merge URL tag param with panel tags (deduplicated)
     const activeTags = tagFilter && !tagFilters.includes(tagFilter)
@@ -171,10 +203,10 @@ function ReferencePage() {
 
     let items: BaseEntity[]
 
-    if (query.trim()) {
+    if (effectiveQuery.trim()) {
       // Text search, then post-filter by tags and source
       const r = await engine.adapter.searchEntities(
-        query.trim(),
+        effectiveQuery.trim(),
         effectiveType ? { entityType: effectiveType } : undefined,
         { offset: 0, limit: 500 },
       )
@@ -205,26 +237,34 @@ function ReferencePage() {
     // Absorb URL tag into state (keep showing as chip in panel)
     if (tagFilter) {
       if (!tagFilters.includes(tagFilter)) setTagFilters(prev => [...prev, tagFilter])
-      navigate({ to: '/reference', search: { tag: undefined } })
+      navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: undefined } })
     }
   }
+
+  // Auto-search when arriving via URL query (e.g. pressing Enter in the sidebar
+  // search with nothing highlighted) — consumed once, then cleared from the URL
+  // so it doesn't linger and re-fire on an unrelated back/forward navigation.
+  useEffect(() => {
+    if (!engine || !qParam) return
+    setQuery(qParam)
+    handleSearch(qParam)
+    navigate({ to: '/reference', search: { tag: tagFilter, q: undefined, custom: undefined } })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [engine, qParam])
 
   const handleRandom = async () => {
     if (!engine || randomising) return
     setRandomising(true)
     try {
-      const { total } = await engine.adapter.listEntities({}, { offset: 0, limit: 1 })
-      if (total === 0) return
-      const offset = Math.floor(Math.random() * total)
-      const { items } = await engine.adapter.listEntities({}, { offset, limit: 1 })
-      if (items[0]) navigate({ to: '/reference/$canonicalName', params: { canonicalName: items[0].canonicalName } })
+      const entity = await getRandomEntity(engine.adapter)
+      if (entity) navigate({ to: '/reference/$canonicalName', params: { canonicalName: entity.canonicalName } })
     } finally {
       setRandomising(false)
     }
   }
 
   const clearTagFilter = () => {
-    navigate({ to: '/reference', search: { tag: undefined } })
+    navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: undefined } })
     if (tagFilters.length === 0 && !typeFilter && sourceFilter === 'all') {
       setResults([])
       setSearched(false)
@@ -235,7 +275,7 @@ function ReferencePage() {
     setTypeFilter('')
     setTagFilters([])
     setSourceFilter('all')
-    navigate({ to: '/reference', search: { tag: undefined } })
+    navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: undefined } })
     setResults([])
     setSearched(false)
     setQuery('')
@@ -272,7 +312,7 @@ function ReferencePage() {
           />
         </div>
         <button
-          onClick={handleSearch}
+          onClick={() => handleSearch()}
           style={{
             padding: '10px 20px', background: 'var(--color-accent)', color: '#0d0d12',
             border: 'none', borderRadius: '6px', fontWeight: 500, cursor: 'pointer', fontSize: '14px',
@@ -710,17 +750,34 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
             Custom
           </div>
-          <button
-            onClick={() => navigate({ to: '/custom' })}
-            style={{
-              padding: '12px 14px', background: 'var(--color-surface-2)',
-              border: '1px solid var(--color-accent-muted)', borderRadius: '6px',
-              cursor: 'pointer', color: 'var(--color-accent)', fontSize: '13px',
-              textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
-            }}
-          >
-            My Entities
-          </button>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <button
+              onClick={() => navigate({ to: '/custom' })}
+              style={{
+                padding: '12px 14px', background: 'var(--color-surface-2)',
+                border: '1px solid var(--color-accent-muted)', borderRadius: '6px',
+                cursor: 'pointer', color: 'var(--color-accent)', fontSize: '13px',
+                textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
+              }}
+            >
+              My Entities
+            </button>
+            <button
+              onClick={() => navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: 'true' } })}
+              title="Browse every custom entity you've created, right here in Reference"
+              style={{
+                padding: '12px 14px', background: 'var(--color-surface-2)',
+                border: '1px solid var(--color-border)', borderRadius: '6px',
+                cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
+                textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
+                transition: 'border-color 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+            >
+              Browse All Custom Entities
+            </button>
+          </div>
         </div>
       )}
       <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>

@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo, useRef } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -18,6 +18,7 @@ import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { ConstellationDiagram } from '@/components/ui/ConstellationDiagram'
+import { EntityLink } from '@/components/ui/EntityLink'
 import { CONSTELLATION_DIAGRAMS } from '@/lib/constellation-diagrams'
 import { useReadingStore } from '@/stores/reading'
 import { TRADITION_DISPLAY_NAMES } from '@/lib/tradition-store'
@@ -162,7 +163,7 @@ function EntityDetailPage() {
   if (notFound || !entity) {
     return (
       <div style={{ maxWidth: '760px' }}>
-        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined } })} style={{ marginBottom: '24px' }}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: undefined } })} style={{ marginBottom: '24px' }}>
           <ArrowLeft size={14} /> Reference
         </Button>
         <div style={{ color: 'var(--color-text-muted)', fontSize: '14px' }}>
@@ -207,6 +208,9 @@ function EntityDetailPage() {
   const isHexagram   = entity.entityType === 'magic.hexagram'
   const isMagicCircle = entity.entityType === 'magic.circle'
   const isConstellation = entity.entityType === 'astrology.constellation'
+  const isHoliday = entity.entityType === 'calendar.holiday'
+  const isMoonEntity = entity.canonicalName === 'astrology.planet.luna'
+  const isWuxing = entity.entityType === 'wuxing.phase'
 
   const dignityLinks = isPlanet ? allCorrespondences.filter(l => DIGNITY_LABELS.has(l.label)) : []
   const spiritLinks  = isPlanet ? allCorrespondences.filter(l => PLANET_SPIRIT_LABELS.has(l.label)) : []
@@ -242,6 +246,15 @@ function EntityDetailPage() {
   const constellationExtDataHide = isConstellation
     ? new Set(['brightestStarCn'])
     : undefined
+  const holidayExtDataHide = isHoliday
+    ? new Set(['dateRule', 'dayCorrespondences'])
+    : undefined
+  // "season" duplicates the attributed-season link (Attributes panel already shows it,
+  // clickable, as "Season" — the raw extendedData string would show a second, plain-text
+  // "Season" row with the same label).
+  const wuxingExtDataHide = isWuxing
+    ? new Set(['season'])
+    : undefined
 
   const navToEntity = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
 
@@ -252,7 +265,7 @@ function EntityDetailPage() {
         <Button variant="ghost" size="sm" onClick={() => window.history.back()}>
           <ArrowLeft size={14} /> Back
         </Button>
-        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined } })}>
+        <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference', search: { tag: undefined, q: undefined, custom: undefined } })}>
           Reference
         </Button>
       </div>
@@ -279,7 +292,7 @@ function EntityDetailPage() {
             {entity.tags.map(tag => (
               <button
                 key={tag}
-                onClick={() => navigate({ to: '/reference', search: { tag } })}
+                onClick={() => navigate({ to: '/reference', search: { tag, q: undefined, custom: undefined } })}
                 title={`Browse all entities tagged "${tag}"`}
                 style={{
                   padding: '2px 8px', background: 'var(--color-surface-2)',
@@ -304,6 +317,26 @@ function EntityDetailPage() {
         )}
       </div>
 
+      {/* Live Moon calendar page — Luna only */}
+      {isMoonEntity && (
+        <button
+          onClick={() => navigate({ to: '/calendar/moon' })}
+          style={{
+            display: 'flex', alignItems: 'center', gap: '10px', width: '100%',
+            padding: '10px 14px', marginBottom: '24px', background: 'var(--color-surface-2)',
+            border: '1px solid var(--color-border)', borderRadius: '8px', cursor: 'pointer',
+            color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit', textAlign: 'left',
+            transition: 'border-color 0.15s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+        >
+          <MoonIcon size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
+          <span style={{ flex: 1 }}>View live phase, position &amp; timeline on the Moon page</span>
+          <ChevronRight size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
+        </button>
+      )}
+
       {/* Secondary names */}
       {entity.secondaryNames.length > 0 && (
         <Section title="Names">
@@ -326,6 +359,26 @@ function EntityDetailPage() {
           <p style={{ fontSize: '14px', color: 'var(--color-text-muted)', lineHeight: '1.6', whiteSpace: 'pre-wrap', margin: 0 }}>
             {entity.description}
           </p>
+        </Section>
+      )}
+
+      {/* Day by day — per-night/day correspondence table for multi-day holidays */}
+      {isHoliday && Array.isArray(entity.extendedData.dayCorrespondences) && (
+        <Section title="Day by Day">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {(entity.extendedData.dayCorrespondences as Array<{ day: number; label: string; description?: string; linkedCanonicalName?: string }>).map(dc => (
+              <div key={dc.day}>
+                <div style={{ fontSize: '13px', color: 'var(--color-text)', fontWeight: 500, marginBottom: dc.description ? '2px' : 0 }}>
+                  {dc.linkedCanonicalName ? (
+                    <EntityLink canonicalName={dc.linkedCanonicalName}>{dc.label}</EntityLink>
+                  ) : dc.label}
+                </div>
+                {dc.description && (
+                  <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.5' }}>{dc.description}</div>
+                )}
+              </div>
+            ))}
+          </div>
         </Section>
       )}
 
@@ -396,7 +449,7 @@ function EntityDetailPage() {
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? wuxingExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />

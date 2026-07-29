@@ -61,6 +61,28 @@ function EclipseRow({ label, forecast, now }: { label: string; forecast: Eclipse
   )
 }
 
+/** Matches the astrology.constellation.* slugging convention (grimoire-data/entities/astrology/constellations.json)
+ *  — diacritics are stripped (e.g. "Boötes" → "bootes") since canonical name segments are ASCII-only. */
+function constellationCanonicalName(name: string): string {
+  const COMBINING_MARKS = /[\u0300-\u036f]/g
+  const stripped = name.normalize('NFD').replace(COMBINING_MARKS, '')
+  return 'astrology.constellation.' + stripped.toLowerCase().replace(/\s+/g, '-')
+}
+
+function NavLink({ onClick, children }: { onClick: () => void; children: React.ReactNode }) {
+  return (
+    <span
+      role="button" tabIndex={0}
+      onClick={onClick}
+      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick() } }}
+      title="View in Reference"
+      style={{ cursor: 'pointer', textDecoration: 'underline', textDecorationColor: 'var(--color-border)' }}
+    >
+      {children}
+    </span>
+  )
+}
+
 const ASPECT_COLORS: Record<string, string> = {
   conjunction: 'var(--color-text)',
   sextile:     '#6ab0a8',
@@ -330,9 +352,24 @@ function MoonPage() {
           <>
             <Row
               label="Constellation"
-              value={`${snapshot.constellation.name} (${snapshot.constellation.symbol}) · entered ${formatRelative(snapshot.constellation.enteredAt, now)} · leaves ${formatRelative(snapshot.constellation.exitsAt, now)}`}
+              value={
+                <>
+                  <NavLink onClick={() => goToRef(constellationCanonicalName(snapshot.constellation.name))}>
+                    {snapshot.constellation.name} ({snapshot.constellation.symbol})
+                  </NavLink>
+                  {` · entered ${formatRelative(snapshot.constellation.enteredAt, now)} · leaves ${formatRelative(snapshot.constellation.exitsAt, now)}`}
+                </>
+              }
             />
-            <Row label="House" value={`${snapshot.house}${noLoc ? ' (default location)' : ''}`} />
+            <Row
+              label="House"
+              value={
+                <>
+                  <NavLink onClick={() => goToRef(`astrology.house.${snapshot.house}`)}>House {snapshot.house}</NavLink>
+                  {noLoc ? ' (default location)' : ''}
+                </>
+              }
+            />
           </>
         ) : (
           <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Computing…</div>
