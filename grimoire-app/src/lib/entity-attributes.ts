@@ -212,6 +212,18 @@ export async function computeReferenceTopLevelOverviews(adapter: StorageAdapter)
  * overview entity claims that key (matches the entityTypeGroup fallback used
  * elsewhere for consistency).
  */
+/**
+ * Picks a uniformly random entity across the whole dataset. Used by both the
+ * Reference page's shuffle button and the Home page's Discover widget.
+ */
+export async function getRandomEntity(adapter: StorageAdapter): Promise<BaseEntity | null> {
+  const { total } = await adapter.listEntities({}, { offset: 0, limit: 1 })
+  if (total === 0) return null
+  const offset = Math.floor(Math.random() * total)
+  const { items } = await adapter.listEntities({}, { offset, limit: 1 })
+  return items[0] ?? null
+}
+
 export function traditionLabelForEntity(entity: BaseEntity, groupOverviews: Map<string, GroupOverview>): string {
   const prefix = entity.canonicalName.split('.')[0]
   return groupOverviews.get(prefix)?.label ?? formatTag(prefix)

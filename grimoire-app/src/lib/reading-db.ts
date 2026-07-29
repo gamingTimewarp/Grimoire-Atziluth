@@ -273,6 +273,53 @@ export async function listJournalEntriesByMonth(year: number, month: number): Pr
   }))
 }
 
+/**
+ * Every reading made on this calendar month+day, across all years (e.g. "on this
+ * day" lookback) — a string-slice match against the 'MM-DD' portion of
+ * reading_date, matching this file's existing LIKE-prefix convention rather than
+ * introducing SQLite date functions used nowhere else here.
+ */
+export async function listReadingsOnThisDay(month: number, day: number): Promise<Reading[]> {
+  const mmdd = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+  const db = await getDb()
+  const rows = await db.select<ReadingRow[]>(
+    `SELECT * FROM readings WHERE substr(reading_date, 6, 5) = ? ORDER BY reading_date DESC`,
+    [mmdd]
+  )
+  if (!rows.length) return []
+  const ids = rows.map(r => r.id)
+  const placeholders = ids.map(() => '?').join(',')
+  const cards = await db.select<ReadingCardRow[]>(
+    `SELECT * FROM reading_cards WHERE reading_id IN (${placeholders}) ORDER BY draw_order`,
+    ids
+  )
+  const cardsByReading = new Map<string, ReadingCardRow[]>()
+  for (const c of cards) {
+    const list = cardsByReading.get(c.reading_id) ?? []
+    list.push(c)
+    cardsByReading.set(c.reading_id, list)
+  }
+  return rows.map(r => rowToReading(r, cardsByReading.get(r.id) ?? []))
+}
+
+/** Journal-entry counterpart to listReadingsOnThisDay — see its comment. */
+export async function listJournalEntriesOnThisDay(month: number, day: number): Promise<JournalEntry[]> {
+  const mmdd = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+  const db = await getDb()
+  const rows = await db.select<{ id: string; created_at: string; entry_date: string; title: string | null; notes: string; tags: string }[]>(
+    `SELECT * FROM journal_entries WHERE substr(entry_date, 6, 5) = ? ORDER BY entry_date DESC`,
+    [mmdd]
+  )
+  return rows.map(r => ({
+    id: r.id,
+    createdAt: r.created_at,
+    entryDate: r.entry_date,
+    title: r.title,
+    notes: r.notes,
+    tags: JSON.parse(r.tags) as string[],
+  }))
+}
+
 export async function getTodaysDailyReading(): Promise<Reading | null> {
   const db = await getDb()
   const today = new Date().toISOString().slice(0, 10)

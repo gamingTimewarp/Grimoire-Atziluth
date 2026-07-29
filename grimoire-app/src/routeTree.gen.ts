@@ -27,6 +27,7 @@ import { Route as SettingsTraditionsRouteImport } from './routes/settings/tradit
 import { Route as SettingsPrivacyRouteImport } from './routes/settings/privacy'
 import { Route as SettingsNavRouteImport } from './routes/settings/nav'
 import { Route as SettingsManualRouteImport } from './routes/settings/manual'
+import { Route as SettingsHomeWidgetsRouteImport } from './routes/settings/home-widgets'
 import { Route as SettingsDataRouteImport } from './routes/settings/data'
 import { Route as SettingsCreditsRouteImport } from './routes/settings/credits'
 import { Route as SettingsCalendarRouteImport } from './routes/settings/calendar'
@@ -144,6 +145,11 @@ const SettingsNavRoute = SettingsNavRouteImport.update({
 const SettingsManualRoute = SettingsManualRouteImport.update({
   id: '/settings/manual',
   path: '/settings/manual',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsHomeWidgetsRoute = SettingsHomeWidgetsRouteImport.update({
+  id: '/settings/home-widgets',
+  path: '/settings/home-widgets',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsDataRoute = SettingsDataRouteImport.update({
@@ -324,6 +330,7 @@ export interface FileRoutesByFullPath {
   '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/home-widgets': typeof SettingsHomeWidgetsRoute
   '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
@@ -372,6 +379,7 @@ export interface FileRoutesByTo {
   '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/home-widgets': typeof SettingsHomeWidgetsRoute
   '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
@@ -421,6 +429,7 @@ export interface FileRoutesById {
   '/settings/calendar': typeof SettingsCalendarRoute
   '/settings/credits': typeof SettingsCreditsRoute
   '/settings/data': typeof SettingsDataRoute
+  '/settings/home-widgets': typeof SettingsHomeWidgetsRoute
   '/settings/manual': typeof SettingsManualRoute
   '/settings/nav': typeof SettingsNavRoute
   '/settings/privacy': typeof SettingsPrivacyRoute
@@ -471,6 +480,7 @@ export interface FileRouteTypes {
     | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/home-widgets'
     | '/settings/manual'
     | '/settings/nav'
     | '/settings/privacy'
@@ -519,6 +529,7 @@ export interface FileRouteTypes {
     | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/home-widgets'
     | '/settings/manual'
     | '/settings/nav'
     | '/settings/privacy'
@@ -567,6 +578,7 @@ export interface FileRouteTypes {
     | '/settings/calendar'
     | '/settings/credits'
     | '/settings/data'
+    | '/settings/home-widgets'
     | '/settings/manual'
     | '/settings/nav'
     | '/settings/privacy'
@@ -616,6 +628,7 @@ export interface RootRouteChildren {
   SettingsCalendarRoute: typeof SettingsCalendarRoute
   SettingsCreditsRoute: typeof SettingsCreditsRoute
   SettingsDataRoute: typeof SettingsDataRoute
+  SettingsHomeWidgetsRoute: typeof SettingsHomeWidgetsRoute
   SettingsManualRoute: typeof SettingsManualRoute
   SettingsNavRoute: typeof SettingsNavRoute
   SettingsPrivacyRoute: typeof SettingsPrivacyRoute
@@ -761,6 +774,13 @@ declare module '@tanstack/react-router' {
       path: '/settings/manual'
       fullPath: '/settings/manual'
       preLoaderRoute: typeof SettingsManualRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings/home-widgets': {
+      id: '/settings/home-widgets'
+      path: '/settings/home-widgets'
+      fullPath: '/settings/home-widgets'
+      preLoaderRoute: typeof SettingsHomeWidgetsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings/data': {
@@ -993,6 +1013,7 @@ const rootRouteChildren: RootRouteChildren = {
   SettingsCalendarRoute: SettingsCalendarRoute,
   SettingsCreditsRoute: SettingsCreditsRoute,
   SettingsDataRoute: SettingsDataRoute,
+  SettingsHomeWidgetsRoute: SettingsHomeWidgetsRoute,
   SettingsManualRoute: SettingsManualRoute,
   SettingsNavRoute: SettingsNavRoute,
   SettingsPrivacyRoute: SettingsPrivacyRoute,
