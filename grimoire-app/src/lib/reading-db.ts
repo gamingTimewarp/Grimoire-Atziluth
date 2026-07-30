@@ -6,6 +6,8 @@
 import Database from '@tauri-apps/plugin-sql'
 import type { Reading, CreateReadingInput } from '@grimoire/core'
 import { newId, nowIso } from '@grimoire/core'
+import { getHomeLocation } from '@/lib/settings-store'
+import { todayInZone } from '@/lib/timezone'
 
 const DB_URL = 'sqlite:grimoire.db'
 
@@ -322,7 +324,11 @@ export async function listJournalEntriesOnThisDay(month: number, day: number): P
 
 export async function getTodaysDailyReading(): Promise<Reading | null> {
   const db = await getDb()
-  const today = new Date().toISOString().slice(0, 10)
+  // "Today" per the user's configured home-location zone, not UTC or the
+  // device's own zone — matches how createDailyReadingIfAbsent() stores
+  // readingDate, so the existence check and the stored value always agree
+  // regardless of what zone was active when the reading was first created.
+  const today = todayInZone(getHomeLocation()?.timezone)
   const rows = await db.select<ReadingRow[]>(
     `SELECT * FROM readings WHERE is_daily = 1 AND reading_date LIKE ? ORDER BY created_at DESC LIMIT 1`,
     [`${today}%`]
@@ -340,7 +346,9 @@ export async function listTodaysActivity(): Promise<{
   entries: JournalEntry[]
 }> {
   const db = await getDb()
-  const today = new Date().toISOString().slice(0, 10)
+  // "Today" per the user's configured home-location zone, not UTC — see
+  // getTodaysDailyReading() above for why.
+  const today = todayInZone(getHomeLocation()?.timezone)
   const readingRows = await db.select<ReadingRow[]>(
     `SELECT * FROM readings WHERE reading_date LIKE ? ORDER BY created_at DESC`,
     [`${today}%`]

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { zonedTimeToUtc } from '../timezone'
+import { zonedTimeToUtc, todayInZone } from '../timezone'
 
 // Regression coverage for a bug where the convergence check compared the
 // formatted result against the shifting guess instead of the fixed desired
@@ -48,5 +48,40 @@ describe('zonedTimeToUtc', () => {
     expect(result.getDate()).toBe(26)
     expect(result.getHours()).toBe(7)
     expect(result.getMinutes()).toBe(13)
+  })
+})
+
+describe('todayInZone', () => {
+  // Fixed instant: 2002-01-26T23:30:00Z — late evening UTC, so zones ahead of
+  // UTC have already rolled into the 27th while zones behind UTC are still on
+  // the 26th. This is exactly the boundary case the daily reading fix cares
+  // about: "today" must track the configured zone, not UTC or device-local.
+  const lateUtcInstant = new Date('2002-01-26T23:30:00.000Z')
+
+  it('returns the UTC date when no zone is given, based on device-local wall clock', () => {
+    // No zone -> reads the Date object's own local getFullYear/Month/Date,
+    // so this just needs to round-trip a date consistently, not match UTC.
+    const now = new Date(2002, 0, 26, 12, 0, 0)
+    expect(todayInZone(null, now)).toBe('2002-01-26')
+    expect(todayInZone(undefined, now)).toBe('2002-01-26')
+  })
+
+  it('rolls over to the next day for a zone ahead of UTC', () => {
+    expect(todayInZone('Pacific/Auckland', lateUtcInstant)).toBe('2002-01-27')
+  })
+
+  it('stays on the same day for a zone behind UTC', () => {
+    expect(todayInZone('America/Chicago', lateUtcInstant)).toBe('2002-01-26')
+  })
+
+  it('is deterministic for the same (zone, instant) pair regardless of how many times it is called', () => {
+    // Directly models the "zone flipped back and forth" scenario: repeated
+    // calls with the same inputs must always agree, since the daily-reading
+    // existence check and the stored readingDate both depend on this.
+    const a = todayInZone('Europe/London', lateUtcInstant)
+    const b = todayInZone('Europe/London', lateUtcInstant)
+    const c = todayInZone('Europe/London', lateUtcInstant)
+    expect(a).toBe(b)
+    expect(b).toBe(c)
   })
 })

@@ -4,12 +4,12 @@
  */
 
 import type { GrimoireEngine } from '@grimoire/core'
-import { nowIso } from '@grimoire/core'
 import { getTodaysDailyReading, saveReading } from '@/lib/reading-db'
 import { loadSettings } from '@/lib/settings-store'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getNatalChart } from '@/lib/astro-engine'
 import { getHomeLocation } from '@/lib/settings-store'
+import { todayInZone } from '@/lib/timezone'
 import { BUILT_IN_DECK_FILTERS, BUILT_IN_SPREADS } from '@/lib/built-in-data'
 import type { DeckFilter } from '@/lib/built-in-data'
 import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
@@ -24,6 +24,14 @@ function fisherYates<T>(arr: T[]): T[] {
 }
 
 export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promise<void> {
+  const loc = getHomeLocation()
+  // "Today" per the user's configured home-location zone (falling back to the
+  // device's own zone if none is set) rather than UTC — so a reading made
+  // near midnight lands on the calendar day the user actually experienced,
+  // and re-deriving this same way on every check means flipping the zone
+  // setting back and forth can never make "today" reappear as a fresh day.
+  const today = todayInZone(loc?.timezone)
+
   // Check if today's daily reading already exists
   const existing = await getTodaysDailyReading()
   if (existing) return
@@ -98,7 +106,6 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
   // Capture astro snapshot
   let astroSnapshot = null
   try {
-    const loc = getHomeLocation()
     astroSnapshot = getNatalChart(new Date(), loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode)
   } catch (e) {
     console.error('Daily reading astro snapshot failed:', e)
@@ -106,7 +113,11 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
 
   await saveReading(
     {
-      readingDate: nowIso(),
+      // Midday UTC on the zone-local calendar day computed above, rather than
+      // the real creation instant (nowIso()) — keeps the date prefix that
+      // getTodaysDailyReading()'s LIKE match relies on aligned with "today"
+      // in the user's zone even when that's a different UTC calendar day.
+      readingDate: `${today}T12:00:00.000Z`,
       deckId: dailyDeckId,
       spreadId: spread?.id ?? null,
       isFreeReading,

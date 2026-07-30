@@ -59,3 +59,17 @@ export function zonedTimeToUtc(dateStr: string, timeStr: string, ianaZone: strin
 
   return new Date(guessMs)
 }
+
+/**
+ * Returns the current local calendar date (YYYY-MM-DD) as observed in
+ * `ianaZone`, or in the device's own zone if none is given. Used anywhere
+ * "today" needs to mean the user's configured zone rather than UTC or
+ * whatever zone the device happens to be set to.
+ */
+export function todayInZone(ianaZone: string | null | undefined, now: Date = new Date()): string {
+  if (!ianaZone) {
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
+  }
+  // en-CA formats as YYYY-MM-DD directly — no manual part-assembly needed.
+  return new Intl.DateTimeFormat('en-CA', { timeZone: ianaZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now)
+}
