@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useEffect } from 'react'
-import { ArrowLeft, Plus, Trash2, ChevronUp, ChevronDown, Save, Pencil } from 'lucide-react'
+import { ArrowLeft, Plus, Trash2, ChevronUp, ChevronDown, Save, Pencil, Download, Upload, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import {
   getAllCustomSpreads,
@@ -9,6 +9,10 @@ import {
   type CustomSpreadRecord,
 } from '@/lib/custom-db'
 import type { SpreadPosition } from '@grimoire/core'
+import {
+  pickAndImportCustomSpreads, exportSpreadImportTemplate,
+  exportCustomSpreads, exportCustomSpread, type ImportSpreadSummary,
+} from '@/lib/spread-import'
 
 export const Route = createFileRoute('/read/spreads')({
   component: SpreadsPage,
@@ -407,6 +411,45 @@ function SpreadsPage() {
     setSpreads(prev => prev.filter(s => s.id !== id))
   }
 
+  const [importBusy,    setImportBusy]    = useState(false)
+  const [importError,   setImportError]   = useState<string | null>(null)
+  const [importSummary, setImportSummary] = useState<ImportSpreadSummary | null>(null)
+
+  const handleDownloadTemplate = async () => {
+    setImportError(null)
+    try {
+      await exportSpreadImportTemplate()
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to save template.')
+    }
+  }
+
+  const handleImportJson = async () => {
+    setImportError(null)
+    setImportSummary(null)
+    setImportBusy(true)
+    try {
+      const summary = await pickAndImportCustomSpreads()
+      if (summary) {
+        setImportSummary(summary)
+        getAllCustomSpreads().then(setSpreads)
+      }
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to import file.')
+    } finally {
+      setImportBusy(false)
+    }
+  }
+
+  const handleExportAll = async () => {
+    setImportError(null)
+    try {
+      await exportCustomSpreads(spreads, 'custom-spreads')
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to export spreads.')
+    }
+  }
+
   return (
     <div style={{ maxWidth: '700px' }}>
       {/* Header */}
@@ -431,6 +474,35 @@ function SpreadsPage() {
             onCancel={() => setEditing(null)}
           />
         </div>
+      )}
+
+      {editing === null && (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '16px' }}>
+          {spreads.length > 0 && (
+            <Button variant="ghost" size="sm" onClick={handleExportAll}>
+              <Download size={12} /> Export all
+            </Button>
+          )}
+          <Button variant="ghost" size="sm" onClick={handleDownloadTemplate}>
+            <Download size={12} /> Download template
+          </Button>
+          <Button variant="ghost" size="sm" onClick={handleImportJson} disabled={importBusy}>
+            <Upload size={12} /> {importBusy ? 'Importing…' : 'Import JSON'}
+          </Button>
+        </div>
+      )}
+
+      {editing === null && importError && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px', padding: '10px 14px', background: 'rgba(200,60,60,0.1)', border: '1px solid rgba(200,60,60,0.3)', borderRadius: '6px', fontSize: '13px', color: 'var(--color-danger, #e06060)' }}>
+          <div style={{ flex: 1 }}>{importError}</div>
+          <button onClick={() => setImportError(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', display: 'flex', padding: 0 }}>
+            <X size={14} />
+          </button>
+        </div>
+      )}
+
+      {editing === null && importSummary && (
+        <SpreadImportSummaryPanel summary={importSummary} onDismiss={() => setImportSummary(null)} />
       )}
 
       {/* List */}
@@ -460,6 +532,9 @@ function SpreadsPage() {
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
+                <Button variant="ghost" size="sm" onClick={() => exportCustomSpread(s).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export spread.'))} title="Export as JSON">
+                  <Download size={12} />
+                </Button>
                 <Button variant="ghost" size="sm" onClick={() => setEditing(s)}>
                   <Pencil size={12} />
                 </Button>
@@ -474,6 +549,37 @@ function SpreadsPage() {
               <Plus size={13} /> New Spread
             </Button>
           )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ─── Import results ─────────────────────────────────────────────────────────
+
+function SpreadImportSummaryPanel({ summary, onDismiss }: { summary: ImportSpreadSummary; onDismiss: () => void }) {
+  const created = summary.spreads.filter(s => s.status === 'created').length
+  const updated = summary.spreads.filter(s => s.status === 'updated').length
+  const skipped = summary.spreads.filter(s => s.status === 'skipped')
+
+  return (
+    <div style={{ marginBottom: '16px', padding: '14px 16px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '8px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+        <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)' }}>Import complete</div>
+        <button onClick={onDismiss} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', padding: 0 }}>
+          <X size={14} />
+        </button>
+      </div>
+      <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: skipped.length > 0 ? '10px' : 0 }}>
+        {created} spread{created === 1 ? '' : 's'} created, {updated} updated, {skipped.length} skipped
+      </div>
+      {skipped.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          {skipped.map((s, i) => (
+            <div key={i} style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+              <code style={{ color: 'var(--color-text-muted)' }}>{s.displayName}</code> — {s.message}
+            </div>
+          ))}
         </div>
       )}
     </div>

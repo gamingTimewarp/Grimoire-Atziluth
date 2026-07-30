@@ -1,6 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useEffect, useMemo } from 'react'
-import { ArrowLeft, Plus, Trash2, Save, Pencil, Search, X, ChevronUp, ChevronDown } from 'lucide-react'
+import { ArrowLeft, Plus, Trash2, Save, Pencil, Search, X, ChevronUp, ChevronDown, Download, Upload } from 'lucide-react'
+import {
+  pickAndImportCustomTraditions, exportTraditionImportTemplate,
+  exportCustomTraditions, exportCustomTradition, type ImportTraditionSummary,
+} from '@/lib/tradition-import'
 import { Button } from '@/components/ui/Button'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
@@ -538,6 +542,46 @@ function TraditionsPage() {
   const openEditor = (record: CustomTraditionRecord | null) => { setEditingRecord(record); setView('editor') }
   const openDetail = (record: CustomTraditionRecord) => { setDetailRecord(record); setView('detail') }
 
+  const [importBusy,    setImportBusy]    = useState(false)
+  const [importError,   setImportError]   = useState<string | null>(null)
+  const [importSummary, setImportSummary] = useState<ImportTraditionSummary | null>(null)
+
+  const handleDownloadTemplate = async () => {
+    setImportError(null)
+    try {
+      await exportTraditionImportTemplate()
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to save template.')
+    }
+  }
+
+  const handleImportJson = async () => {
+    if (!engine) return
+    setImportError(null)
+    setImportSummary(null)
+    setImportBusy(true)
+    try {
+      const summary = await pickAndImportCustomTraditions(engine)
+      if (summary) {
+        setImportSummary(summary)
+        getAllCustomTraditions().then(setTraditions)
+      }
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to import file.')
+    } finally {
+      setImportBusy(false)
+    }
+  }
+
+  const handleExportAll = async () => {
+    setImportError(null)
+    try {
+      await exportCustomTraditions(traditions, 'custom-traditions')
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to export traditions.')
+    }
+  }
+
   return (
     <div style={{ maxWidth: '700px' }}>
       {view !== 'detail' && (
@@ -568,6 +612,35 @@ function TraditionsPage() {
       )}
 
       {view === 'list' && (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '16px' }}>
+          {traditions.length > 0 && (
+            <Button variant="ghost" size="sm" onClick={handleExportAll}>
+              <Download size={12} /> Export all
+            </Button>
+          )}
+          <Button variant="ghost" size="sm" onClick={handleDownloadTemplate}>
+            <Download size={12} /> Download template
+          </Button>
+          <Button variant="ghost" size="sm" onClick={handleImportJson} disabled={importBusy}>
+            <Upload size={12} /> {importBusy ? 'Importing…' : 'Import JSON'}
+          </Button>
+        </div>
+      )}
+
+      {view === 'list' && importError && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px', padding: '10px 14px', background: 'rgba(200,60,60,0.1)', border: '1px solid rgba(200,60,60,0.3)', borderRadius: '6px', fontSize: '13px', color: 'var(--color-danger, #e06060)' }}>
+          <div style={{ flex: 1 }}>{importError}</div>
+          <button onClick={() => setImportError(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', display: 'flex', padding: 0 }}>
+            <X size={14} />
+          </button>
+        </div>
+      )}
+
+      {view === 'list' && importSummary && (
+        <TraditionImportSummaryPanel summary={importSummary} onDismiss={() => setImportSummary(null)} />
+      )}
+
+      {view === 'list' && (
         loading ? (
           <p style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Loading…</p>
         ) : traditions.length === 0 ? (
@@ -589,6 +662,9 @@ function TraditionsPage() {
                 </div>
                 <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
                   <Button variant="ghost" size="sm" onClick={() => openDetail(t)}>Open</Button>
+                  <Button variant="ghost" size="sm" onClick={() => exportCustomTradition(t).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export tradition.'))} title="Export as JSON">
+                    <Download size={12} />
+                  </Button>
                   <Button variant="ghost" size="sm" onClick={() => openEditor(t)}><Pencil size={12} /></Button>
                   <Button variant="ghost" size="sm" onClick={() => handleDelete(t.canonicalName)}><Trash2 size={12} style={{ color: 'var(--color-danger)' }} /></Button>
                 </div>
@@ -599,6 +675,37 @@ function TraditionsPage() {
             </Button>
           </div>
         )
+      )}
+    </div>
+  )
+}
+
+// ─── Import results ─────────────────────────────────────────────────────────
+
+function TraditionImportSummaryPanel({ summary, onDismiss }: { summary: ImportTraditionSummary; onDismiss: () => void }) {
+  const created = summary.traditions.filter(t => t.status === 'created').length
+  const updated = summary.traditions.filter(t => t.status === 'updated').length
+  const skipped = summary.traditions.filter(t => t.status === 'skipped')
+
+  return (
+    <div style={{ marginBottom: '16px', padding: '14px 16px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '8px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+        <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)' }}>Import complete</div>
+        <button onClick={onDismiss} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', padding: 0 }}>
+          <X size={14} />
+        </button>
+      </div>
+      <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: skipped.length > 0 ? '10px' : 0 }}>
+        {created} tradition{created === 1 ? '' : 's'} created, {updated} updated, {skipped.length} skipped
+      </div>
+      {skipped.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          {skipped.map((s, i) => (
+            <div key={i} style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+              <code style={{ color: 'var(--color-text-muted)' }}>{s.canonicalName}</code> — {s.message}
+            </div>
+          ))}
+        </div>
       )}
     </div>
   )
