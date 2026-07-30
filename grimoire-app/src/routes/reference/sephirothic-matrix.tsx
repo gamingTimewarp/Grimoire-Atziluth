@@ -49,6 +49,21 @@ const QUEEN_SCALE_LABEL: Record<string, string> = {
   'qabalah.sephira.malkuth':   'Citrine · Olive · Russet · Black',
 }
 
+// Queen Scale hue -> the nearest colour.colour.* entity, so the label becomes a real
+// clickable link. Malkuth's quartered Citrine/Olive/Russet/Black has no single matching
+// entity (only Black exists in the base 12-colour palette) and stays plain text.
+const QUEEN_SCALE_COLOUR_CN: Partial<Record<string, string>> = {
+  'qabalah.sephira.kether':    'colour.colour.white',
+  'qabalah.sephira.chokmah':   'colour.colour.grey',
+  'qabalah.sephira.binah':     'colour.colour.black',
+  'qabalah.sephira.chesed':    'colour.colour.blue',
+  'qabalah.sephira.geburah':   'colour.colour.red',    // secondary name "Scarlet"
+  'qabalah.sephira.tiphareth': 'colour.colour.yellow',
+  'qabalah.sephira.netzach':   'colour.colour.green',  // secondary name "Emerald"
+  'qabalah.sephira.hod':       'colour.colour.orange',
+  'qabalah.sephira.yesod':     'colour.colour.violet',
+}
+
 // Malkuth Queen Scale quartered colours: Citrine, Olive, Russet, Black
 const MALKUTH_COLOURS = ['#c8b020', '#4a5218', '#7a3018', '#1a1a1a']
 
@@ -191,6 +206,7 @@ function SephirothicMatrix() {
         ...sephOrder.values(),
         ...sephDivName.values(),
         ...sephChakra.values(),
+        ...Object.values(QUEEN_SCALE_COLOUR_CN).filter((cn): cn is string => !!cn),
       ])
 
       const entityMap = new Map<string, BaseEntity>()
@@ -211,12 +227,23 @@ function SephirothicMatrix() {
         ),
       })
 
-      // Queen Scale colour row — hardcoded from the GD Four Scales chart
+      // Queen Scale colour row — swatch hues are hardcoded from the GD Four Scales chart;
+      // the label links through to the matching colour.colour.* entity where one exists
+      // (Malkuth's quartered Citrine/Olive/Russet/Black has no single match and stays text).
       const queenScaleRow: RowData = {
         label: 'Queen Scale',
         key: 'queen-scale',
         cssColours: new Map(SEPHIRA_ORDER.map(seph => [seph, QUEEN_SCALE_CSS[seph] ?? ''])),
-        entries: new Map(SEPHIRA_ORDER.map(seph => [seph, QUEEN_SCALE_LABEL[seph] ?? null])),
+        entries: new Map(SEPHIRA_ORDER.map(seph => {
+          // Link to the colour entity but keep showing the traditional GD term (e.g.
+          // "Scarlet", "Emerald") rather than the entity's generic display name
+          // ("Red", "Green") — the entity is only a secondary name away from GD usage.
+          const colourCn = QUEEN_SCALE_COLOUR_CN[seph]
+          const colourEntity = colourCn ? entityMap.get(colourCn) : undefined
+          const gdLabel = QUEEN_SCALE_LABEL[seph]
+          const displayEntity = colourEntity ? { ...colourEntity, primaryDisplayName: gdLabel ?? colourEntity.primaryDisplayName } : null
+          return [seph, displayEntity ?? gdLabel ?? null]
+        })),
       }
 
       const hebrewRow: RowData = {

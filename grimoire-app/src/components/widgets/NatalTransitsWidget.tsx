@@ -75,15 +75,28 @@ export function NatalTransitsWidget() {
         <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>No major transit aspects at the moment.</div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-          {aspects.slice(0, 5).map((a, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px' }}>
-              <span style={{ color: ASPECT_COLORS[a.type] ?? 'var(--color-text-muted)' }}>{a.symbol}</span>
-              <span style={{ color: 'var(--color-text)' }}>
-                {a.transitPlanet.name} {a.type} {a.natalPlanet.name}
-              </span>
-              <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginLeft: 'auto' }}>{a.orb.toFixed(1)}°</span>
-            </div>
-          ))}
+          {aspects.slice(0, 5).map((a, i) => {
+            const goTo = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
+            return (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px' }}>
+                <span
+                  onClick={() => goTo('astrology.aspect.' + a.type)}
+                  title={a.type}
+                  style={{ color: ASPECT_COLORS[a.type] ?? 'var(--color-text-muted)', cursor: 'pointer' }}
+                >
+                  {a.symbol}
+                </span>
+                <span style={{ color: 'var(--color-text)' }}>
+                  <span onClick={() => goTo(a.transitPlanet.canonicalName)} style={{ cursor: 'pointer' }}>{a.transitPlanet.name}</span>
+                  {' '}
+                  <span onClick={() => goTo('astrology.aspect.' + a.type)} style={{ cursor: 'pointer', color: ASPECT_COLORS[a.type] ?? 'var(--color-text-muted)' }}>{a.type}</span>
+                  {' '}
+                  <span onClick={() => goTo(a.natalPlanet.canonicalName)} style={{ cursor: 'pointer' }}>{a.natalPlanet.name}</span>
+                </span>
+                <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginLeft: 'auto' }}>{a.orb.toFixed(1)}°</span>
+              </div>
+            )
+          })}
         </div>
       )}
     </WidgetCard>
