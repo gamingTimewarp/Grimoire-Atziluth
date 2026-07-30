@@ -219,17 +219,59 @@ export function saveThemeSettings(settings: ThemeSettings): void {
   localStorage.setItem(KEY, JSON.stringify(settings))
 }
 
+// ─── Contrast helpers ──────────────────────────────────────────────────────────
+
+function hexToRgb(hex: string): [number, number, number] {
+  const h = hex.replace('#', '')
+  return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)]
+}
+
+/** WCAG relative luminance (0 = black, 1 = white). */
+function relativeLuminance(hex: string): number {
+  const [r, g, b] = hexToRgb(hex).map(c => {
+    const s = c / 255
+    return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4)
+  })
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+}
+
+/** WCAG contrast ratio between two colours (1 = no contrast, 21 = max). */
+function contrastRatio(hexA: string, hexB: string): number {
+  const [lA, lB] = [relativeLuminance(hexA), relativeLuminance(hexB)].sort((a, b) => b - a)
+  return (lA + 0.05) / (lB + 0.05)
+}
+
+const NEAR_BLACK = '#0d0d12'
+const NEAR_WHITE = '#f5f5f5'
+
+/**
+ * Picks near-black or near-white text, whichever contrasts better against the
+ * given background — used for buttons/badges filled solid with a theme colour
+ * (accent) whose lightness isn't guaranteed to stay on one side of the
+ * light/dark divide. Light-mode palettes deliberately use deep, rich accents
+ * rather than pale ones (a bright accent would wash out against a light
+ * surface), so a colour that reads fine with dark text in dark mode can flip
+ * to needing light text once the light-mode variant of the same preset is
+ * active — hardcoding one or the other silently breaks the other case.
+ */
+export function contrastTextColor(bgHex: string): string {
+  return contrastRatio(bgHex, NEAR_BLACK) >= contrastRatio(bgHex, NEAR_WHITE) ? NEAR_BLACK : NEAR_WHITE
+}
+
 // ─── CSS application ──────────────────────────────────────────────────────────
 
 /**
  * Applies a colour map by setting CSS custom properties on documentElement.
- * This overrides the @theme defaults in index.css at runtime.
+ * This overrides the @theme defaults in index.css at runtime. Also derives
+ * --color-accent-contrast so buttons filled with the accent colour can pick
+ * readable text without each one re-deriving it (see contrastTextColor).
  */
 export function applyTheme(colors: ThemeColors): void {
   const el = document.documentElement
   for (const [key, value] of Object.entries(colors) as [ThemeColorKey, string][]) {
     el.style.setProperty(`--color-${key}`, value)
   }
+  el.style.setProperty('--color-accent-contrast', contrastTextColor(colors.accent))
 }
 
 /** Loads the saved theme and immediately applies it (respecting lightMode). */

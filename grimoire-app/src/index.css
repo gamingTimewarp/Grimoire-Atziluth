@@ -46,6 +46,10 @@
   --color-accent: #c4922a;
   --color-accent-hover: #d9a33a;
   --color-accent-muted: #7a5a1a;
+  /* Readable text colour for solid accent-filled buttons/badges — kept in
+     sync at runtime by applyTheme() in theme-store.ts (see contrastTextColor);
+     this is only the default preset's own value, used before JS runs. */
+  --color-accent-contrast: #0d0d12;
   --color-text: #e8e4d6;
   --color-text-muted: #7a7a8f;
   --color-text-subtle: #4a4a60;

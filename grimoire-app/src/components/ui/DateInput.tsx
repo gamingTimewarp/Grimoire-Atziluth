@@ -217,7 +217,7 @@ export function DateInput({
                   fontFamily: 'inherit',
                   background: isSel(cell.day, cell.offset) ? 'var(--color-accent)' : 'transparent',
                   color: isSel(cell.day, cell.offset)
-                    ? 'var(--color-bg)'
+                    ? 'var(--color-accent-contrast)'
                     : cell.offset !== 0
                     ? 'var(--color-text-subtle)'
                     : isTdy(cell.day, cell.offset)

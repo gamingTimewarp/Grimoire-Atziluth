@@ -1557,7 +1557,7 @@ function KameaSection({ entity }: { entity: BaseEntity }) {
                 border: `1px solid ${active ? 'var(--color-accent)' : 'var(--color-border)'}`,
                 borderRadius: '5px',
                 fontSize: '12px',
-                color: active ? 'var(--color-bg)' : 'var(--color-text)',
+                color: active ? 'var(--color-accent-contrast)' : 'var(--color-text)',
                 cursor: 'pointer',
                 fontFamily: 'inherit',
                 transition: 'all 0.15s',
@@ -1672,7 +1672,7 @@ function animCtrlBtn(primary = false): React.CSSProperties {
     background: primary ? 'var(--color-accent)' : 'var(--color-surface-2)',
     border: `1px solid ${primary ? 'var(--color-accent)' : 'var(--color-border)'}`,
     borderRadius: '5px', cursor: 'pointer',
-    color: primary ? 'var(--color-bg)' : 'var(--color-text-muted)',
+    color: primary ? 'var(--color-accent-contrast)' : 'var(--color-text-muted)',
     padding: 0,
   }
 }

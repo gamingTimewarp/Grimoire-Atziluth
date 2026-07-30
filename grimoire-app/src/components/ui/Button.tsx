@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const variantStyles: Record<NonNullable<ButtonProps['variant']>, object> = {
   primary: {
     background: 'var(--color-accent)',
-    color: '#0d0d12',
+    color: 'var(--color-accent-contrast)',
     border: 'none',
   },
   ghost: {

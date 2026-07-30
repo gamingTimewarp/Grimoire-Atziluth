@@ -323,7 +323,7 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
                         style={{
                           padding: '4px 10px', borderRadius: '4px', fontSize: '11px', cursor: 'pointer',
                           background: selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-surface-3)',
-                          color: selected?.id === v.id ? '#0d0d12' : 'var(--color-text)',
+                          color: selected?.id === v.id ? 'var(--color-accent-contrast)' : 'var(--color-text)',
                           border: `1px solid ${selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
                           fontFamily: 'inherit',
                         }}

@@ -246,7 +246,7 @@ function ReferencePage() {
         <button
           onClick={() => handleSearch()}
           style={{
-            padding: '10px 20px', background: 'var(--color-accent)', color: '#0d0d12',
+            padding: '10px 20px', background: 'var(--color-accent)', color: 'var(--color-accent-contrast)',
             border: 'none', borderRadius: '6px', fontWeight: 500, cursor: 'pointer', fontSize: '14px',
           }}
         >
@@ -268,7 +268,7 @@ function ReferencePage() {
           {activeFilterCount > 0 && (
             <span style={{
               fontSize: '10px', fontWeight: 600, lineHeight: 1,
-              background: 'var(--color-accent)', color: '#0d0d12',
+              background: 'var(--color-accent)', color: 'var(--color-accent-contrast)',
               borderRadius: '8px', padding: '2px 5px', minWidth: '14px', textAlign: 'center',
             }}>
               {activeFilterCount}

@@ -212,7 +212,7 @@ function CardPicker({
                 background: inDeck ? 'var(--color-accent)' : 'transparent',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
               }}>
-                {inDeck && <Check size={11} style={{ color: '#0d0d12' }} />}
+                {inDeck && <Check size={11} style={{ color: 'var(--color-accent-contrast)' }} />}
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <span style={{ fontSize: '13px', color: 'var(--color-text)' }}>{e.primaryDisplayName}</span>

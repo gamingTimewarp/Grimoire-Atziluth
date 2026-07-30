@@ -659,7 +659,7 @@ function StatsPage() {
             <span style={{
               display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
               minWidth: '16px', height: '16px', padding: '0 4px', borderRadius: '8px',
-              background: 'var(--color-accent)', color: '#0d0d12', fontSize: '10px', fontWeight: 600,
+              background: 'var(--color-accent)', color: 'var(--color-accent-contrast)', fontSize: '10px', fontWeight: 600,
             }}>
               {activeFilterCount}
             </span>
