@@ -120,14 +120,14 @@ function CustomEntitiesPage() {
           <h2 style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text-muted)', margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
             <BookOpen size={14} /> Decks
           </h2>
-          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/decks' })}>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/decks', search: { edit: undefined } })}>
             <Plus size={12} /> Manage decks
           </Button>
         </div>
         {loading ? null : decks.length === 0 ? (
           <div style={{ padding: '14px 16px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '13px', color: 'var(--color-text-subtle)' }}>
             No custom decks yet.{' '}
-            <button onClick={() => navigate({ to: '/read/decks' })} style={{ background: 'none', border: 'none', color: 'var(--color-accent)', cursor: 'pointer', fontSize: 'inherit', fontFamily: 'inherit', padding: 0 }}>
+            <button onClick={() => navigate({ to: '/read/decks', search: { edit: undefined } })} style={{ background: 'none', border: 'none', color: 'var(--color-accent)', cursor: 'pointer', fontSize: 'inherit', fontFamily: 'inherit', padding: 0 }}>
               Create one →
             </button>
           </div>
@@ -136,7 +136,7 @@ function CustomEntitiesPage() {
             {decks.map(d => (
               <div
                 key={d.id}
-                onClick={() => navigate({ to: '/read/decks' })}
+                onClick={() => navigate({ to: '/read/decks', search: { edit: d.canonicalName } })}
                 style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 14px', background: 'var(--color-surface-2)', borderRadius: '6px', border: '1px solid var(--color-border)', cursor: 'pointer', transition: 'border-color 0.15s' }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--color-accent-muted)')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
@@ -259,6 +259,9 @@ function CustomEntitiesPage() {
               onViewReference={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: e.canonicalName } })}
             />
           ))}
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/new' })} style={{ alignSelf: 'flex-start' }}>
+            <Plus size={12} /> New entity
+          </Button>
         </div>
       )}
     </div>

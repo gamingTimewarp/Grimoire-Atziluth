@@ -95,6 +95,9 @@ export async function initCustomDb(): Promise<void> {
       updated_at           TEXT NOT NULL
     )
   `)
+  // Migration: decks predating entity representation have no canonical name yet —
+  // getAllCustomDecks() backfills and persists one for any row still missing it.
+  try { await db.execute('ALTER TABLE custom_decks ADD COLUMN canonical_name TEXT') } catch { /* column already exists */ }
   await db.execute(`
     CREATE TABLE IF NOT EXISTS custom_spreads (
       id            TEXT PRIMARY KEY,
@@ -441,6 +444,8 @@ export async function getCustomLinksForTradition(traditionCn: string): Promise<C
 
 export interface CustomDeckRecord {
   id: string
+  /** Immutable once created — the entity representing this deck in the reference database. */
+  canonicalName: string
   displayName: string
   description: string
   reversalEnabled: boolean
@@ -451,6 +456,7 @@ export interface CustomDeckRecord {
 
 type DeckRow = {
   id: string
+  canonical_name: string | null
   display_name: string
   description: string
   reversal_enabled: number
@@ -459,9 +465,24 @@ type DeckRow = {
   updated_at: string
 }
 
+/** Slugify + a short random suffix, guaranteeing uniqueness by construction without a
+ *  collision-check round-trip (unlike single-entity creation, deck creation has no
+ *  user-facing canonical-name field to show a collision error against). */
+export function generateDeckCanonicalName(displayName: string): string {
+  const slug = displayName
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+  const suffix = Math.random().toString(36).slice(2, 8)
+  return `custom.deck.${slug || 'deck'}-${suffix}`
+}
+
 function rowToDeck(r: DeckRow): CustomDeckRecord {
   return {
     id:                 r.id,
+    canonicalName:      r.canonical_name ?? '',
     displayName:        r.display_name,
     description:        r.description,
     reversalEnabled:    r.reversal_enabled === 1,
@@ -478,6 +499,7 @@ export function deckRecordToFilter(r: CustomDeckRecord): DeckFilter {
     description:        r.description,
     reversalEnabled:    r.reversalEnabled,
     cardCanonicalNames: r.cardCanonicalNames,
+    infoCanonicalName:  r.canonicalName || undefined,
   }
 }
 
@@ -486,16 +508,25 @@ export async function getAllCustomDecks(): Promise<CustomDeckRecord[]> {
   const rows = await db.select<DeckRow[]>(
     'SELECT * FROM custom_decks ORDER BY display_name ASC',
   )
-  return rows.map(rowToDeck)
+  const decks = rows.map(rowToDeck)
+  // Backfill: decks created before entity representation existed have no canonical
+  // name yet — generate and persist one now so they self-heal without user action.
+  for (const d of decks) {
+    if (!d.canonicalName) {
+      d.canonicalName = generateDeckCanonicalName(d.displayName)
+      await saveCustomDeck(d)
+    }
+  }
+  return decks
 }
 
 export async function saveCustomDeck(d: CustomDeckRecord): Promise<void> {
   const db = await getDb()
   await db.execute(
     `INSERT OR REPLACE INTO custom_decks
-       (id, display_name, description, reversal_enabled, card_canonical_names, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    [d.id, d.displayName, d.description, d.reversalEnabled ? 1 : 0,
+       (id, canonical_name, display_name, description, reversal_enabled, card_canonical_names, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    [d.id, d.canonicalName, d.displayName, d.description, d.reversalEnabled ? 1 : 0,
      JSON.stringify(d.cardCanonicalNames), d.createdAt, d.updatedAt],
   )
 }
@@ -591,6 +622,28 @@ export async function seedCustomIntoEngine(adapter: StorageAdapter): Promise<voi
         tags:                e.tags,
         extendedData:        e.extendedData,
         isBuiltIn:           false,
+      })
+    } catch {
+      // Ignore if already seeded (idempotent)
+    }
+  }
+
+  // Seed custom decks as entities (so they get a Reference/overview page, same as built-in decks)
+  const deckRecords = await getAllCustomDecks()
+  for (const d of deckRecords) {
+    try {
+      await adapter.createEntity({
+        canonicalName:      d.canonicalName,
+        entityType:         'custom.deck',
+        primaryDisplayName: d.displayName,
+        description:        d.description || undefined,
+        tags:               ['deck'],
+        extendedData: {
+          members:          d.cardCanonicalNames,
+          cardCount:        d.cardCanonicalNames.length,
+          reversalEnabled:  d.reversalEnabled,
+        },
+        isBuiltIn: false,
       })
     } catch {
       // Ignore if already seeded (idempotent)

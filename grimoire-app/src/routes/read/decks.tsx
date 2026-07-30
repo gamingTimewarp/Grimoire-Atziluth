@@ -9,6 +9,7 @@ import {
   getAllCustomDecks,
   saveCustomDeck,
   deleteCustomDeck,
+  generateDeckCanonicalName,
   type CustomDeckRecord,
 } from '@/lib/custom-db'
 import { ENTITY_TYPE_GROUPS, KNOWN_ENTITY_TYPES } from '@/lib/entity-type-groups'
@@ -16,6 +17,9 @@ import { formatEntityType } from '@/lib/format'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 
 export const Route = createFileRoute('/read/decks')({
+  validateSearch: (s: Record<string, unknown>) => ({
+    edit: typeof s.edit === 'string' ? s.edit : undefined,
+  }),
   component: DecksPage,
 })
 
@@ -262,6 +266,7 @@ function DeckEditor({
     const now = new Date().toISOString()
     onSave({
       id:                 initial?.id ?? newId(),
+      canonicalName:      initial?.canonicalName || generateDeckCanonicalName(name.trim()),
       displayName:        name.trim(),
       description:        description.trim(),
       reversalEnabled:    reversals,
@@ -330,16 +335,43 @@ function DeckEditor({
 
 function DecksPage() {
   const navigate = useNavigate()
+  const { edit } = Route.useSearch()
+  const { engine } = useEngineStore()
   const [decks, setDecks]     = useState<CustomDeckRecord[]>([])
   const [editing, setEditing] = useState<CustomDeckRecord | null | 'new'>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    getAllCustomDecks().then(setDecks).finally(() => setLoading(false))
+    getAllCustomDecks().then(loaded => {
+      setDecks(loaded)
+      if (edit) {
+        const match = loaded.find(d => d.canonicalName === edit)
+        if (match) setEditing(match)
+      }
+    }).finally(() => setLoading(false))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleSave = async (r: CustomDeckRecord) => {
     await saveCustomDeck(r)
+    if (engine) {
+      const existing = await engine.adapter.getEntityByCanonicalName(r.canonicalName)
+      const entityInput = {
+        primaryDisplayName: r.displayName,
+        description: r.description || undefined,
+        tags: ['deck'],
+        extendedData: { members: r.cardCanonicalNames, cardCount: r.cardCanonicalNames.length, reversalEnabled: r.reversalEnabled },
+      }
+      try {
+        if (existing) {
+          await engine.adapter.updateEntity(existing.id, entityInput)
+        } else {
+          await engine.adapter.createEntity({ canonicalName: r.canonicalName, entityType: 'custom.deck', isBuiltIn: false, ...entityInput })
+        }
+      } catch (err) {
+        console.error('Failed to sync deck entity', err)
+      }
+    }
     setDecks(prev => {
       const idx = prev.findIndex(x => x.id === r.id)
       return idx >= 0 ? prev.map(x => x.id === r.id ? r : x) : [...prev, r]
@@ -347,10 +379,14 @@ function DecksPage() {
     setEditing(null)
   }
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = async (deck: CustomDeckRecord) => {
     if (!window.confirm('Delete this deck?')) return
-    await deleteCustomDeck(id)
-    setDecks(prev => prev.filter(d => d.id !== id))
+    await deleteCustomDeck(deck.id)
+    if (engine) {
+      const existing = await engine.adapter.getEntityByCanonicalName(deck.canonicalName)
+      if (existing) await engine.adapter.deleteEntity(existing.id).catch(() => {})
+    }
+    setDecks(prev => prev.filter(d => d.id !== deck.id))
   }
 
   return (
@@ -400,10 +436,15 @@ function DecksPage() {
               </div>
               <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
                 <Button variant="ghost" size="sm" onClick={() => setEditing(d)}><Pencil size={12} /></Button>
-                <Button variant="ghost" size="sm" onClick={() => handleDelete(d.id)}><Trash2 size={12} style={{ color: 'var(--color-danger)' }} /></Button>
+                <Button variant="ghost" size="sm" onClick={() => handleDelete(d)}><Trash2 size={12} style={{ color: 'var(--color-danger)' }} /></Button>
               </div>
             </div>
           ))}
+          {editing === null && (
+            <Button variant="primary" size="sm" onClick={() => setEditing('new')} style={{ alignSelf: 'flex-start' }}>
+              <Plus size={13} /> New Deck
+            </Button>
+          )}
         </div>
       )}
     </div>

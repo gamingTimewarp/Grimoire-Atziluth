@@ -143,7 +143,7 @@ function ReadPage() {
       <StepIndicator current={step === 'deck' ? 0 : 1} />
 
       {step === 'deck' && (
-        <DeckSelection onSelect={handleDeckSelect} selected={selectedDeck} onManage={() => navigate({ to: '/read/decks' })} />
+        <DeckSelection onSelect={handleDeckSelect} selected={selectedDeck} onManage={() => navigate({ to: '/read/decks', search: { edit: undefined } })} />
       )}
 
       {step === 'spread' && selectedDeck && (
@@ -340,19 +340,21 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
           )
         })}
         {customDecks.map(deck => (
-          <Card
-            key={deck.id}
-            onClick={() => onSelect(deck)}
-            selected={selected?.id === deck.id}
-          >
-            <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>{deck.displayName}</div>
-            <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>{deck.description}</div>
-            <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
-              {deck.cardCanonicalNames!.length} cards
-              {deck.reversalEnabled ? ' · Reversals on' : ''}
-              <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>
-            </div>
-          </Card>
+          <div key={deck.id} style={{ position: 'relative' }}>
+            <Card
+              onClick={() => onSelect(deck)}
+              selected={selected?.id === deck.id}
+            >
+              <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px', paddingRight: deck.infoCanonicalName ? '18px' : 0 }}>{deck.displayName}</div>
+              <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>{deck.description}</div>
+              <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+                {deck.cardCanonicalNames!.length} cards
+                {deck.reversalEnabled ? ' · Reversals on' : ''}
+                <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>
+              </div>
+            </Card>
+            {deck.infoCanonicalName && <InfoButton canonicalName={deck.infoCanonicalName} />}
+          </div>
         ))}
       </div>
     </div>

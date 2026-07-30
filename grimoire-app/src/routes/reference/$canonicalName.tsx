@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo, useRef } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -118,6 +118,12 @@ function EntityDetailPage() {
         if (e.entityType === 'system.overview') {
           memberEntityType = typeof e.extendedData.memberEntityType === 'string' ? e.extendedData.memberEntityType : null
           memberTag = typeof e.extendedData.memberTag === 'string' ? e.extendedData.memberTag : null
+          memberList = Array.isArray(e.extendedData.members) ? e.extendedData.members as string[] : null
+        } else if (e.entityType === 'custom.deck') {
+          // Custom decks are an arbitrary, user-picked card list — unlike built-in decks,
+          // there's no shared tag to derive membership from, so this reads the explicit
+          // list directly (same mechanism as system.overview above). Must be checked before
+          // the generic includes('deck') branch below, since 'custom.deck' also matches it.
           memberList = Array.isArray(e.extendedData.members) ? e.extendedData.members as string[] : null
         } else if (e.entityType.includes('deck')) {
           memberTag = canonicalName.split('.').pop() ?? null
@@ -281,6 +287,7 @@ function EntityDetailPage() {
             {resolveDisplayName(entity, primaryBySystem)}
           </h1>
           <BookmarkButton canonicalName={entity.canonicalName} />
+          {!entity.isBuiltIn && <EditCustomButton entity={entity} />}
         </div>
         <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'monospace' }}>
           {entity.canonicalName}
@@ -870,6 +877,32 @@ function BookmarkButton({ canonicalName }: { canonicalName: string }) {
       onMouseLeave={e => { e.currentTarget.style.opacity = bookmarked ? '1' : '0.5'; e.currentTarget.style.color = bookmarked ? 'var(--color-accent)' : 'var(--color-text-subtle)' }}
     >
       <Star size={16} fill={bookmarked ? 'currentColor' : 'none'} />
+    </button>
+  )
+}
+
+// ─── Edit custom entity/deck button ───────────────────────────────────────────
+
+function EditCustomButton({ entity }: { entity: BaseEntity }) {
+  const navigate = useNavigate()
+  const isDeck = entity.entityType === 'custom.deck'
+
+  return (
+    <button
+      onClick={() => isDeck
+        ? navigate({ to: '/read/decks', search: { edit: entity.canonicalName } })
+        : navigate({ to: '/custom/$cn', params: { cn: entity.canonicalName } })
+      }
+      title={isDeck ? 'Edit this deck' : 'Edit this entity'}
+      style={{
+        background: 'none', border: 'none', cursor: 'pointer', padding: '4px',
+        color: 'var(--color-text-subtle)', display: 'flex', alignItems: 'center',
+        opacity: 0.6, transition: 'opacity 0.15s, color 0.15s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = 'var(--color-accent)' }}
+      onMouseLeave={e => { e.currentTarget.style.opacity = '0.6'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+    >
+      <Pencil size={15} />
     </button>
   )
 }
