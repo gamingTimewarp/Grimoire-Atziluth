@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo, useRef } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil, Download } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -10,6 +10,7 @@ import { formatEntityType, formatTag } from '@/lib/format'
 import { getEntriesForEntity, getReadingsForEntity } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import { getEntityAnnotation, saveEntityAnnotation } from '@/lib/custom-db'
+import { exportSingleEntity, exportEntitySet } from '@/lib/entity-export'
 import { recordRecentEntity } from '@/lib/recent-entities'
 import { artGroupForEntityType } from '@/lib/art-store'
 import { getCustomImageFileName } from '@/lib/custom-art'
@@ -288,6 +289,7 @@ function EntityDetailPage() {
           </h1>
           <BookmarkButton canonicalName={entity.canonicalName} />
           {!entity.isBuiltIn && <EditCustomButton entity={entity} />}
+          <ExportButton entity={entity} members={members} />
         </div>
         <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'monospace' }}>
           {entity.canonicalName}
@@ -903,6 +905,46 @@ function EditCustomButton({ entity }: { entity: BaseEntity }) {
       onMouseLeave={e => { e.currentTarget.style.opacity = '0.6'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
     >
       <Pencil size={15} />
+    </button>
+  )
+}
+
+// ─── Export as JSON button ────────────────────────────────────────────────────
+
+function ExportButton({ entity, members }: { entity: BaseEntity; members: BaseEntity[] }) {
+  const [busy, setBusy] = useState(false)
+  const isSet = members.length > 0
+
+  const handleExport = async () => {
+    setBusy(true)
+    try {
+      if (isSet) {
+        await exportEntitySet(members, entity.primaryDisplayName)
+      } else {
+        await exportSingleEntity(entity)
+      }
+    } catch (err) {
+      console.error('Export failed:', err)
+      window.alert('Could not export. Please try again.')
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <button
+      onClick={handleExport}
+      disabled={busy}
+      title={isSet ? `Export all ${members.length} entities as JSON` : 'Export as JSON'}
+      style={{
+        background: 'none', border: 'none', cursor: busy ? 'default' : 'pointer', padding: '4px',
+        color: 'var(--color-text-subtle)', display: 'flex', alignItems: 'center',
+        opacity: busy ? 0.4 : 0.6, transition: 'opacity 0.15s, color 0.15s',
+      }}
+      onMouseEnter={e => { if (!busy) { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = 'var(--color-accent)' } }}
+      onMouseLeave={e => { if (!busy) { e.currentTarget.style.opacity = '0.6'; e.currentTarget.style.color = 'var(--color-text-subtle)' } }}
+    >
+      <Download size={15} />
     </button>
   )
 }

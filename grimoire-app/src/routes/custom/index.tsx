@@ -7,6 +7,7 @@ import { Plus, Pencil, LayoutList, BookOpen, GitBranch, Layers, Download, Upload
 import { formatEntityType } from '@/lib/format'
 import { getAllCustomSpreads, getAllCustomDecks, getAllCustomTraditions, type CustomSpreadRecord, type CustomDeckRecord, type CustomTraditionRecord } from '@/lib/custom-db'
 import { pickAndImportCustomEntities, exportImportTemplate, type ImportSummary } from '@/lib/custom-import'
+import { exportSingleEntity, exportEntitySet, exportDeckRecord, exportDeckRecords } from '@/lib/entity-export'
 
 export const Route = createFileRoute('/custom/')({
   component: CustomEntitiesPage,
@@ -47,6 +48,24 @@ function CustomEntitiesPage() {
       await exportImportTemplate()
     } catch (err) {
       setImportError(err instanceof Error ? err.message : 'Failed to save template.')
+    }
+  }
+
+  const handleExportAllEntities = async () => {
+    setImportError(null)
+    try {
+      await exportEntitySet(entities, 'custom-entities')
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to export entities.')
+    }
+  }
+
+  const handleExportAllDecks = async () => {
+    setImportError(null)
+    try {
+      await exportDeckRecords(decks, 'custom-decks')
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to export decks.')
     }
   }
 
@@ -120,9 +139,16 @@ function CustomEntitiesPage() {
           <h2 style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text-muted)', margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
             <BookOpen size={14} /> Decks
           </h2>
-          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/decks', search: { edit: undefined } })}>
-            <Plus size={12} /> Manage decks
-          </Button>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {decks.length > 0 && (
+              <Button variant="ghost" size="sm" onClick={handleExportAllDecks}>
+                <Download size={12} /> Export all
+              </Button>
+            )}
+            <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/decks', search: { edit: undefined } })}>
+              <Plus size={12} /> Manage decks
+            </Button>
+          </div>
         </div>
         {loading ? null : decks.length === 0 ? (
           <div style={{ padding: '14px 16px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '13px', color: 'var(--color-text-subtle)' }}>
@@ -147,6 +173,15 @@ function CustomEntitiesPage() {
                     {d.cardCanonicalNames.length} cards{d.reversalEnabled ? ' · Reversals' : ''}
                   </span>
                 </div>
+                <button
+                  onClick={e => { e.stopPropagation(); exportDeckRecord(d).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export deck.')) }}
+                  title="Export as JSON"
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px', display: 'flex', color: 'var(--color-text-subtle)', flexShrink: 0 }}
+                  onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                  onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+                >
+                  <Download size={14} />
+                </button>
                 <Pencil size={12} style={{ color: 'var(--color-text-subtle)' }} />
               </div>
             ))}
@@ -199,6 +234,11 @@ function CustomEntitiesPage() {
           <Layers size={14} /> Entities
         </h2>
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          {entities.length > 0 && (
+            <Button variant="ghost" size="sm" onClick={handleExportAllEntities}>
+              <Download size={12} /> Export all
+            </Button>
+          )}
           <Button variant="ghost" size="sm" onClick={handleDownloadTemplate}>
             <Download size={12} /> Download template
           </Button>
@@ -257,6 +297,7 @@ function CustomEntitiesPage() {
               entity={e}
               onClick={() => navigate({ to: '/custom/$cn', params: { cn: e.canonicalName } })}
               onViewReference={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: e.canonicalName } })}
+              onExport={() => exportSingleEntity(e).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export entity.'))}
             />
           ))}
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/new' })} style={{ alignSelf: 'flex-start' }}>
@@ -268,7 +309,7 @@ function CustomEntitiesPage() {
   )
 }
 
-function EntityRow({ entity, onClick, onViewReference }: { entity: BaseEntity; onClick: () => void; onViewReference: () => void }) {
+function EntityRow({ entity, onClick, onViewReference, onExport }: { entity: BaseEntity; onClick: () => void; onViewReference: () => void; onExport: () => void }) {
   return (
     <div
       onClick={onClick}
@@ -310,6 +351,18 @@ function EntityRow({ entity, onClick, onViewReference }: { entity: BaseEntity; o
         onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
       >
         <BookOpen size={14} />
+      </button>
+      <button
+        onClick={e => { e.stopPropagation(); onExport() }}
+        title="Export as JSON"
+        style={{
+          background: 'none', border: 'none', cursor: 'pointer', padding: '4px',
+          display: 'flex', color: 'var(--color-text-subtle)', flexShrink: 0,
+        }}
+        onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+        onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+      >
+        <Download size={14} />
       </button>
       <Pencil size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
     </div>
