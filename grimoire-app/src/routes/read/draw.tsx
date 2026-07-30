@@ -13,8 +13,9 @@ import { LENORMAND_COMBINATIONS } from '@/lib/lenormand-combinations'
 import type { SpreadPosition } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
 import { RichTextEditor, RichTextRenderer } from '@/components/ui/RichText'
+import { LenormandCombinationsModal } from '@/components/ui/LenormandCombinationsModal'
 import React, { useRef, useState } from 'react'
-import { RotateCcw, ChevronRight, Plus, Sparkles, Trash2, Share2, X, Flag } from 'lucide-react'
+import { RotateCcw, ChevronRight, Plus, Sparkles, Trash2, Share2, X, Flag, BookOpen } from 'lucide-react'
 import { loadAccessibilitySettings } from '@/lib/accessibility-store'
 import { getVoidOfCourseMoon } from '@/lib/astro-engine'
 import { exportReadingAsMarkdown, exportReadingAsImage } from '@/lib/reading-export'
@@ -218,6 +219,7 @@ function DrawPage() {
   const [confirmEndEarly,  setConfirmEndEarly] = useState(false)
   const [exporting,        setExporting]       = useState(false)
   const [selectedCardName, setSelectedCardName] = useState<string | null>(null)
+  const [showLenormandGuide, setShowLenormandGuide] = useState(false)
   const exportRef = useRef<HTMLDivElement>(null)
 
   // Reset keyword panel when switching steps
@@ -253,6 +255,8 @@ function DrawPage() {
   // card already has a place, so a separate clarifier pull doesn't apply.
   const allowClarifiers = selectedSpread?.allowClarifiers !== false
   const lastDrawn = drawnCards[drawnCards.length - 1] ?? null
+  const isLenormand = selectedDeck.entityType === 'lenormand.card'
+  const lastDrawnCardNum = (lastDrawn?.card.extendedData?.cardNumber as number | undefined) ?? null
 
   const goToReference = (canonicalName: string) => {
     if (!canonicalName) return
@@ -503,12 +507,34 @@ function DrawPage() {
   // ── Draw screen ──────────────────────────────────────────────────────────
   return (
     <div style={{ maxWidth: '760px' }}>
-      <div style={{ fontSize: '13px', color: 'var(--color-accent)', marginBottom: '4px' }}>
-        {selectedDeck.displayName} — {selectedSpread?.displayName ?? 'Free Reading'}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', marginBottom: '4px' }}>
+        <div style={{ fontSize: '13px', color: 'var(--color-accent)' }}>
+          {selectedDeck.displayName} — {selectedSpread?.displayName ?? 'Free Reading'}
+        </div>
+        {isLenormand && (
+          <button
+            onClick={() => setShowLenormandGuide(true)}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '6px',
+              background: 'none', border: '1px solid var(--color-border)', borderRadius: '6px',
+              color: 'var(--color-text-subtle)', fontSize: '12px', cursor: 'pointer',
+              padding: '6px 10px', fontFamily: 'inherit', flexShrink: 0,
+            }}
+          >
+            <BookOpen size={13} /> Combination Guide
+          </button>
+        )}
       </div>
       <h1 style={{ fontSize: '22px', fontWeight: 300, marginBottom: drawnCards.length === 0 ? '16px' : '4px' }}>
         {currentPosition ? `Draw: ${currentPosition.name}` : allPositionsFilled ? 'All Cards Drawn' : 'Draw Cards'}
       </h1>
+
+      {showLenormandGuide && (
+        <LenormandCombinationsModal
+          onClose={() => setShowLenormandGuide(false)}
+          initialCardFilter={lastDrawnCardNum}
+        />
+      )}
 
       {/* Question field — editable before first card, shown as subtitle after */}
       {drawnCards.length === 0 ? (

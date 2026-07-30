@@ -58,6 +58,11 @@ export const LENORMAND_CARD_NAMES: string[] = [
   'Cross',     // 36
 ]
 
+/** Card number (1–36) → canonical name, e.g. 7 → "lenormand.card.the-snake". */
+export function lenormandCardCanonicalName(cardNum: number): string {
+  return `lenormand.card.the-${LENORMAND_CARD_NAMES[cardNum]?.toLowerCase()}`
+}
+
 /**
  * Look up the combination meaning for two card numbers.
  * The combination file always stores a < b, so we normalise before lookup.
