@@ -106,7 +106,7 @@ function CustomPackArt({ entity, group, packId, width, height, hideLabel }: {
       width={width}
       height={height}
       onError={() => setUrl(null)}
-      style={{ objectFit: 'contain', borderRadius: '6px', display: 'block' }}
+      style={{ width, height, objectFit: 'contain', borderRadius: '6px', display: 'block' }}
     />
   )
 }
@@ -130,7 +130,7 @@ function CustomImageArt({ fileName, label, width, height }: {
       width={width}
       height={height}
       onError={() => setFailed(true)}
-      style={{ objectFit: 'contain', borderRadius: '6px', display: 'block' }}
+      style={{ width, height, objectFit: 'contain', borderRadius: '6px', display: 'block' }}
     />
   )
 }
@@ -354,7 +354,7 @@ function ClassicWithFallback({
       width={width}
       height={height}
       onError={() => setFailed(true)}
-      style={{ objectFit: 'contain', borderRadius: '6px', display: 'block' }}
+      style={{ width, height, objectFit: 'contain', borderRadius: '6px', display: 'block' }}
     />
   )
 }
