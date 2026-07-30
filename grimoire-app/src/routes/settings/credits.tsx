@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { Toast } from '@/components/ui/Toast'
 import { APP_VERSION } from '@/lib/app-version'
+import { unlockSecretTheme } from '@/lib/secret-themes'
+
+const HINT_AT_CLICK = 7
+const UNLOCK_AT_CLICK = 22
 
 export const Route = createFileRoute('/settings/credits')({
   component: CreditsPage,
@@ -11,6 +16,25 @@ export const Route = createFileRoute('/settings/credits')({
 function CreditsPage() {
   const navigate = useNavigate()
   const [highlightId, setHighlightId] = useState<string | null>(null)
+  const [versionClicks, setVersionClicks] = useState(0)
+  const [hintToast, setHintToast] = useState(false)
+  const [unlockToast, setUnlockToast] = useState(false)
+
+  // Not tied to anything visible on the version string itself — resets if
+  // you navigate away or reload, same as most "find it in one sitting" clicks.
+  const handleVersionClick = () => {
+    const next = versionClicks + 1
+    setVersionClicks(next)
+    if (next === HINT_AT_CLICK) {
+      setHintToast(true)
+      setTimeout(() => setHintToast(false), 2000)
+    }
+    if (next === UNLOCK_AT_CLICK) {
+      unlockSecretTheme('ain')
+      setUnlockToast(true)
+      setTimeout(() => setUnlockToast(false), 3000)
+    }
+  }
 
   useEffect(() => {
     const hash = window.location.hash.slice(1)
@@ -39,9 +63,15 @@ function CreditsPage() {
         <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', margin: 0 }}>
           Grimoire Atziluth uses artwork and data from the following open-licensed sources.
         </p>
-        <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', whiteSpace: 'nowrap', marginLeft: '16px' }}>
+        <button
+          onClick={handleVersionClick}
+          style={{
+            fontSize: '11px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', whiteSpace: 'nowrap', marginLeft: '16px',
+            background: 'none', border: 'none', padding: 0, cursor: 'default',
+          }}
+        >
           {APP_VERSION}
-        </span>
+        </button>
       </div>
 
       {/* Thanks */}
@@ -212,6 +242,9 @@ function CreditsPage() {
         is required (e.g. Etalab Open Licence), it is provided here. No modifications have been made
         to any licensed images.
       </div>
+
+      {hintToast && <Toast message="Looking for something?" />}
+      {unlockToast && <Toast message="Ain unlocked — the veil before the Void." />}
     </div>
   )
 }

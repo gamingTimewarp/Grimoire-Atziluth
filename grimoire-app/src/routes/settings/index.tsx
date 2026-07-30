@@ -2,13 +2,14 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useState, useEffect } from 'react'
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import { LogicalSize } from '@tauri-apps/api/dpi'
-import { loadSettings, saveSettings } from '@/lib/settings-store'
+import { loadSettings, saveSettings, getHomeLocation } from '@/lib/settings-store'
 import type { Settings, Location } from '@/lib/settings-store'
 import {
   loadThemeSettings, saveThemeSettings, applyTheme, getEffectiveColors,
   THEME_PRESETS, COLOR_TOKEN_META,
 } from '@/lib/theme-store'
-import type { ThemeSettings, ThemeColors, ThemeColorKey } from '@/lib/theme-store'
+import type { ThemeSettings, ThemeColors, ThemeColorKey, ThemePreset } from '@/lib/theme-store'
+import { getVisibleSecretThemes, unlockSecretTheme } from '@/lib/secret-themes'
 import { applyCustomCss } from '../__root'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
@@ -182,16 +183,23 @@ function ThemeSection() {
   const [theme, setTheme] = useState<ThemeSettings>(() => loadThemeSettings())
   const [customOpen, setCustomOpen] = useState(false)
   const [saved, setSaved] = useState(false)
+  // Computed once per mount, not re-derived on every render — a seasonal
+  // reveal doesn't need to react to the clock ticking while this page is open.
+  const [secretThemes] = useState<ThemePreset[]>(() => getVisibleSecretThemes(getHomeLocation()?.timezone))
+  const allPresets = [...THEME_PRESETS, ...secretThemes]
 
-  const isNamedPreset = THEME_PRESETS.some(p => p.id === theme.presetId)
+  const isNamedPreset = allPresets.some(p => p.id === theme.presetId)
   const isHighContrast = loadAccessibilitySettings().colorblindMode === 'high-contrast'
 
   // After any theme change, re-assert accessibility settings so HC always wins.
   const reapplyAccessibility = () => applyAccessibilitySettings(loadAccessibilitySettings())
 
   const selectPreset = (presetId: string) => {
-    const preset = THEME_PRESETS.find(p => p.id === presetId)
+    const preset = allPresets.find(p => p.id === presetId)
     if (!preset) return
+    // Selecting a secret preset while it's visible is what makes it stick —
+    // silently, no confirmation, matching how it silently appeared.
+    if (secretThemes.some(p => p.id === presetId)) unlockSecretTheme(presetId)
     const next: ThemeSettings = { presetId, colors: { ...preset.colors }, lightMode: theme.lightMode }
     setTheme(next)
     applyTheme(getEffectiveColors(next))
@@ -255,7 +263,7 @@ function ThemeSection() {
 
       {/* Preset grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '8px', marginBottom: '16px' }}>
-        {THEME_PRESETS.map(preset => {
+        {allPresets.map(preset => {
           const active = theme.presetId === preset.id
           return (
             <button

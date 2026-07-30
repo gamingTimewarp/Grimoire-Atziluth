@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import { loadTraditionSettings, resolveDisplayName } from '@/lib/tradition-store'
@@ -11,6 +11,7 @@ import { computeReferenceTopLevelOverviews, getRandomEntity } from '@/lib/entity
 import type { GroupOverview } from '@/lib/entity-attributes'
 import { ENTITY_TYPE_GROUPS } from '@/lib/entity-type-groups'
 import { Chip, TagInput } from '@/components/ui/TagInput'
+import { Toast } from '@/components/ui/Toast'
 
 export const Route = createFileRoute('/reference/')(({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -47,6 +48,8 @@ function ReferencePage() {
   const [tagFilters,   setTagFilters]   = useState<string[]>([])
   const [sourceFilter, setSourceFilter] = useState<'all' | 'built-in' | 'custom'>('all')
   const [allTags,      setAllTags]      = useState<string[]>([])
+  const [eggToast,     setEggToast]     = useState(false)
+  const eggToastShown = useRef(false)
 
   const activeFilterCount =
     (typeFilter ? 1 : 0) +
@@ -89,6 +92,20 @@ function ReferencePage() {
     if (!engine || !filterOpen || allTags.length > 0) return
     engine.adapter.listAllTags().then(setAllTags).catch(console.error)
   }, [engine, filterOpen])
+
+  // A quiet nod for anyone who notices the odd one out among Easter's real
+  // tags and clicks it — whether that's the URL-driven tag pill or the "egg"
+  // filter added through the panel's multi-select.
+  useEffect(() => {
+    const hasEgg = tagFilter?.toLowerCase() === 'egg' || tagFilters.some(t => t.toLowerCase() === 'egg')
+    if (hasEgg && !eggToastShown.current) {
+      eggToastShown.current = true
+      setEggToast(true)
+      setTimeout(() => setEggToast(false), 3000)
+    } else if (!hasEgg) {
+      eggToastShown.current = false
+    }
+  }, [tagFilter, tagFilters])
 
   // ── Search ────────────────────────────────────────────────────────────────
 
@@ -343,6 +360,8 @@ function ReferencePage() {
           <BrowseGrid onNavigate={handleNavigate} customEnabled={customEnabled} />
         )}
       </div>
+
+      {eggToast && <Toast message="You found an Easter egg. Somewhat literally." />}
     </div>
   )
 }

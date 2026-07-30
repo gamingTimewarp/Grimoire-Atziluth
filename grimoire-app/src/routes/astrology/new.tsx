@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { DateInput } from '@/components/ui/DateInput'
 import { LocationInput } from '@/components/ui/LocationInput'
 import type { LocationValue } from '@/components/ui/LocationInput'
+import { Toast } from '@/components/ui/Toast'
 
 export const Route = createFileRoute('/astrology/new')({
   validateSearch: (s: Record<string, unknown>) => ({
@@ -14,6 +15,23 @@ export const Route = createFileRoute('/astrology/new')({
   }),
   component: NewChartPage,
 })
+
+/**
+ * A quiet nod for anyone who enters one of these exact birth dates — no
+ * explanation, no theme tied to it, just the line itself. Every figure here
+ * is someone the app's own content already points at directly (a credited
+ * deck artist/author, a deck's namesake, or the tradition behind attributions
+ * used throughout), so trying their birthday is a natural thing for a
+ * practitioner to think of, not something stumbled into by chance.
+ */
+const NATAL_CHART_EASTER_EGGS: Record<string, string> = {
+  '1875-10-12': 'Do what thou wilt.',
+  '1878-02-16': 'Pixie signed her work quietly. So does this.',
+  '1857-10-02': 'Every card in this deck bears his name too.',
+  '1738-09-01': 'The first to read these cards as a system of their own.',
+  '1854-01-08': 'Founder of an Order this app owes a great deal to.',
+  '1772-05-27': 'Court fortune-teller to an Empress.',
+}
 
 function NewChartPage() {
   const navigate  = useNavigate()
@@ -28,6 +46,7 @@ function NewChartPage() {
   const [saving,   setSaving]  = useState(false)
   const [error,    setError]   = useState<string | null>(null)
   const [existingSelfChart, setExistingSelfChart] = useState<NatalChartRecord | null>(null)
+  const [secretToastMessage, setSecretToastMessage] = useState<string | null>(null)
 
   // Track whether another chart already holds the "self" flag, so checking the
   // box here can warn that it will take over that role.
@@ -89,12 +108,21 @@ function NewChartPage() {
         notes: notes.trim(),
         isSelf,
       }
+      let targetId: string
       if (edit) {
         await updateNatalChart(edit, input)
-        navigate({ to: '/astrology/$id', params: { id: edit } })
+        targetId = edit
       } else {
         const chart = await saveNatalChart(input)
-        navigate({ to: '/astrology/$id', params: { id: chart.id } })
+        targetId = chart.id
+      }
+
+      const secretMessage = NATAL_CHART_EASTER_EGGS[date]
+      if (secretMessage) {
+        setSecretToastMessage(secretMessage)
+        setTimeout(() => navigate({ to: '/astrology/$id', params: { id: targetId } }), 1800)
+      } else {
+        navigate({ to: '/astrology/$id', params: { id: targetId } })
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err))
@@ -185,6 +213,8 @@ function NewChartPage() {
           <Button variant="ghost" onClick={() => navigate({ to: '/astrology' })}>Cancel</Button>
         </div>
       </div>
+
+      {secretToastMessage && <Toast message={secretToastMessage} />}
     </div>
   )
 }

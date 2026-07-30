@@ -40,7 +40,7 @@
       "secondaryNames": [
         { "name": "Pascha", "languageTag": "grc", "visible": true, "sortOrder": 0 }
       ],
-      "tags": ["gregorian", "spring", "christian", "astronomical", "resurrection"],
+      "tags": ["gregorian", "spring", "christian", "astronomical", "resurrection", "egg"],
       "extendedData": {
         "dateRule": { "kind": "astronomical-easter" },
         "durationDays": 1
