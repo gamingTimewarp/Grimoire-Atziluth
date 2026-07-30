@@ -11,6 +11,8 @@ import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getNatalChart } from '@/lib/astro-engine'
 import { getHomeLocation } from '@/lib/settings-store'
 import { BUILT_IN_DECK_FILTERS, BUILT_IN_SPREADS } from '@/lib/built-in-data'
+import type { DeckFilter } from '@/lib/built-in-data'
+import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
 
 function fisherYates<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -29,9 +31,10 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
   const { dailyDeckId, dailySpreadId } = loadSettings()
   const { astrologyMode, houseSystem } = loadTraditionSettings()
 
-  // Resolve deck filter — dailyDeckId may be a variant id (e.g. 'rws-full') or
-  // a top-level id (e.g. 'runes-elder-futhark'). Try variants first.
-  let deckFilter = BUILT_IN_DECK_FILTERS.find(d => d.id === dailyDeckId)
+  // Resolve deck filter — dailyDeckId may be a variant id (e.g. 'rws-full'), a
+  // top-level built-in id (e.g. 'runes-elder-futhark'), or a custom deck id.
+  // Try built-in variants first, then fall back to custom decks.
+  let deckFilter: DeckFilter | undefined = BUILT_IN_DECK_FILTERS.find(d => d.id === dailyDeckId)
   let tags       = deckFilter?.tags
   let entityType = deckFilter?.entityType
 
@@ -48,22 +51,38 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
     }
   }
 
-  // Guard: no filter resolved, or filter would match everything
-  if (!deckFilter || (!tags?.length && !entityType)) return
+  if (!deckFilter) {
+    const customDecks = await getAllCustomDecks()
+    const customRecord = customDecks.find(d => d.id === dailyDeckId)
+    if (customRecord) deckFilter = deckRecordToFilter(customRecord)
+  }
 
-  // Load cards matching the deck filter
-  const result = await engine.adapter.listEntities(
-    { tags, entityType },
-    { offset: 0, limit: 1000 }
-  )
-  if (!result.items.length) return
+  // Guard: no filter resolved, or filter would match everything
+  if (!deckFilter || (!deckFilter.cardCanonicalNames?.length && !tags?.length && !entityType)) return
+
+  // Load cards matching the deck filter — custom decks carry an explicit card
+  // list instead of a tag/entityType query (see read/index.tsx for the same split).
+  let items
+  if (deckFilter.cardCanonicalNames) {
+    const resolved = await Promise.all(
+      deckFilter.cardCanonicalNames.map(cn => engine.adapter.getEntityByCanonicalName(cn))
+    )
+    items = resolved.filter((e): e is NonNullable<typeof e> => e !== null)
+  } else {
+    const result = await engine.adapter.listEntities(
+      { tags, entityType },
+      { offset: 0, limit: 1000 }
+    )
+    items = result.items
+  }
+  if (!items.length) return
 
   // Resolve spread
   const spread = dailySpreadId ? BUILT_IN_SPREADS.find(s => s.id === dailySpreadId) ?? null : null
   const isFreeReading = !spread || spread.positions.length === 0
 
   // Shuffle and draw cards
-  const shuffled = fisherYates(result.items)
+  const shuffled = fisherYates(items)
   const positions = spread ? [...spread.positions].sort((a, b) => a.drawOrder - b.drawOrder) : []
   const cardCount = isFreeReading ? 1 : positions.length
   const drawnEntities = shuffled.slice(0, cardCount)

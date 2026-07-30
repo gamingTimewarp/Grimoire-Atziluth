@@ -11,6 +11,8 @@ import {
 import type { ThemeSettings, ThemeColors, ThemeColorKey } from '@/lib/theme-store'
 import { applyCustomCss } from '../__root'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
+import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
+import type { DeckFilter } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
 import { Button } from '@/components/ui/Button'
 import { ColorSwatch } from '@/components/ui/HsvColorPicker'
@@ -419,6 +421,10 @@ function DailyReadingSection({ deckId, spreadId, onDeckChange, onSpreadChange }:
   onSpreadChange: (id: string | null) => void
 }) {
   const spreadById = useSpreadById()
+  const [customDecks, setCustomDecks] = useState<DeckFilter[]>([])
+  useEffect(() => {
+    getAllCustomDecks().then(records => setCustomDecks(records.map(deckRecordToFilter)))
+  }, [])
   const selectStyle: React.CSSProperties = {
     width: '100%', padding: '8px 12px', background: 'var(--color-surface-2)',
     border: '1px solid var(--color-border)', borderRadius: '6px',
@@ -450,6 +456,13 @@ function DailyReadingSection({ deckId, spreadId, onDeckChange, onSpreadChange }:
               ) : (
                 <option key={d.id} value={d.id}>{d.displayName}</option>
               )
+            )}
+            {customDecks.length > 0 && (
+              <optgroup label="Custom">
+                {customDecks.map(d => (
+                  <option key={d.id} value={d.id}>{d.displayName}</option>
+                ))}
+              </optgroup>
             )}
           </select>
         </div>
