@@ -343,6 +343,20 @@ function SpreadEditor({
               onMove={dir => movePos(i, dir)}
             />
           ))}
+          <button
+            onClick={() => setPositions(ps => [...ps, newBlankPosition(ps.length)])}
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px',
+              padding: '8px', marginTop: '2px', width: '100%',
+              background: 'none', border: '1px dashed var(--color-border)', borderRadius: '6px',
+              cursor: 'pointer', fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'inherit',
+              transition: 'border-color 0.15s, color 0.15s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)'; e.currentTarget.style.color = 'var(--color-accent)' }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+          >
+            <Plus size={13} /> Add Position
+          </button>
         </div>
       )}
 
@@ -455,6 +469,11 @@ function SpreadsPage() {
               </div>
             </div>
           ))}
+          {editing === null && (
+            <Button variant="primary" size="sm" onClick={() => setEditing('new')} style={{ alignSelf: 'flex-start' }}>
+              <Plus size={13} /> New Spread
+            </Button>
+          )}
         </div>
       )}
     </div>

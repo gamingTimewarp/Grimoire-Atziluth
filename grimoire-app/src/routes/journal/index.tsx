@@ -111,6 +111,13 @@ function JournalPage() {
   const [formEntityLinks, setFormEntityLinks] = useState<string[]>([])
   const [formEntityNames, setFormEntityNames] = useState<Map<string, string>>(new Map())
   const [saving, setSaving] = useState(false)
+  // The form always renders near the top of the page — scroll it into view when
+  // opened so the bottom "New Entry" button (for long lists) doesn't just open
+  // an invisible off-screen form.
+  const formRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (showForm) formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [showForm])
 
   const loadAll = () => {
     setLoading(true)
@@ -200,7 +207,7 @@ function JournalPage() {
 
       {/* Inline new-entry form */}
       {showForm && (
-        <div style={{
+        <div ref={formRef} style={{
           marginBottom: '20px', padding: '16px 20px',
           background: 'var(--color-surface-2)', border: '1px solid var(--color-accent-muted)',
           borderRadius: '8px',
@@ -331,6 +338,14 @@ function JournalPage() {
                 ? <ReadingRow key={`r-${item.data.id}`} reading={item.data} compact={compact} reversedDisplay={a11y.reversedDisplay} onDelete={label => handlePendingDelete(item, label)} />
                 : <EntryRow key={`e-${item.data.id}`} entry={item.data} compact={compact} onDelete={label => handlePendingDelete(item, label)} />
             )}
+            <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+              <Button variant="ghost" size="sm" onClick={() => setShowForm(true)}>
+                <PenLine size={14} /> New Entry
+              </Button>
+              <Button size="sm" onClick={() => navigate({ to: '/read' })}>
+                <Plus size={14} /> New Reading
+              </Button>
+            </div>
           </div>
         ) : (
           <div style={{ color: 'var(--color-text-muted)', fontSize: '14px' }}>No entries match "{filter}".</div>

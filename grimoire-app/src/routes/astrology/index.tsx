@@ -332,6 +332,11 @@ function AstrologyPage() {
         {charts.map(chart => (
           <ChartRow key={chart.id} chart={chart} onDelete={handleDelete} onOpen={() => navigate({ to: '/astrology/$id', params: { id: chart.id } })} />
         ))}
+        {charts.length > 0 && (
+          <Button size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: undefined } })} style={{ alignSelf: 'flex-start' }}>
+            <Plus size={14} /> New Chart
+          </Button>
+        )}
       </div>
     </div>
   )

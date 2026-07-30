@@ -230,6 +230,20 @@ function TraditionEditor({ initial, onSave, onCancel }: {
             {['#', 'Link Label (ID)', 'Display Name'].map(h => <span key={h} style={{ fontSize: '9px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{h}</span>)}
           </div>
           {relTypes.map((rt, i) => <RelTypeRow key={i} rt={rt} index={i} total={relTypes.length} onChange={r => updateRt(i, r)} onDelete={() => deleteRt(i)} onMove={d => moveRt(i, d)} />)}
+          <button
+            onClick={() => setRelTypes(ps => [...ps, { linkLabel: '', displayName: '', targetEntityType: '', allowMultiple: false }])}
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px',
+              padding: '8px', marginTop: '2px', width: '100%',
+              background: 'none', border: '1px dashed var(--color-border)', borderRadius: '6px',
+              cursor: 'pointer', fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'inherit',
+              transition: 'border-color 0.15s, color 0.15s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)'; e.currentTarget.style.color = 'var(--color-accent)' }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+          >
+            <Plus size={12} /> Add
+          </button>
         </div>
       )}
       {relTypes.length === 0 && <p style={{ fontSize: '12px', color: 'var(--color-text-subtle)', margin: '0 0 16px' }}>No relationship types yet. Add some to scope relationships to this tradition.</p>}
@@ -580,6 +594,9 @@ function TraditionsPage() {
                 </div>
               </div>
             ))}
+            <Button variant="primary" size="sm" onClick={() => openEditor(null)} style={{ alignSelf: 'flex-start' }}>
+              <Plus size={13} /> New Tradition
+            </Button>
           </div>
         )
       )}

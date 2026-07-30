@@ -279,6 +279,11 @@ function PresetsPage() {
           {presets.map(p => (
             <PresetRow key={p.id} preset={p} onEdit={() => setEditing(p)} onDelete={() => handleDelete(p.id)} />
           ))}
+          {editing === null && (
+            <Button variant="primary" size="sm" onClick={() => setEditing('new')} style={{ alignSelf: 'flex-start' }}>
+              <Plus size={13} /> New Preset
+            </Button>
+          )}
         </div>
       )}
 
