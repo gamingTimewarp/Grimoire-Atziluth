@@ -62,6 +62,861 @@
         "auspicious": true,
         "traditions": ["chinese-five-poisons", "chinese-folk", "western-folk"]
       }
+    },
+    {
+      "canonicalName": "omen.animal.owl",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Owl",
+      "description": "One of the most sharply bipolar omen animals across traditions. In ancient Greece the owl was sacred to Athena, goddess of wisdom, and its image accompanied her on Athenian coinage — the origin of the owl's enduring Western association with learning and insight. Set against this, an owl's call or its appearance near a home is read as a death omen in a wide range of otherwise unrelated folk traditions, including rural Chinese, Native American (Apache and others), and European folklore, where the bird's nocturnal habits and silent flight were long taken as signs of an unseen, ill-boding presence. The same creature therefore carries opposite readings depending on whether the tradition emphasizes its intellect or its association with night and death.",
+      "secondaryNames": [],
+      "tags": ["greek", "chinese-folk", "native-american", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["greek", "chinese-folk", "native-american", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.raven",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Raven",
+      "description": "In Norse mythology, the god Odin is attended by two ravens, Huginn (\"thought\") and Muninn (\"memory\"), who fly out across the world each day and report back what they have seen — making the raven a messenger and vessel of hidden knowledge rather than a purely ominous bird. Many Native American traditions of the Pacific Northwest cast Raven as a culture hero and trickster figure, credited in various tellings with stealing the sun or otherwise shaping the world, a role distinct from either the Norse or European readings. European folklore, by contrast, treats the raven's black plumage and carrion-eating habits as a death omen and a bird of ill fortune, a reading later cemented in the popular imagination by Poe's \"The Raven.\" Three unrelated traditions thus assign the same bird three distinct roles — messenger, trickster-creator, and death omen.",
+      "secondaryNames": [],
+      "tags": ["norse", "native-american", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["norse", "native-american", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.magpie",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Magpie",
+      "description": "The clearest East-West contrast among the omen animals. In British folklore, a solitary magpie is traditionally regarded as an omen of sorrow or bad luck, codified in the counting rhyme \"One for sorrow, two for joy...\" — a superstition still widely referenced today. In Chinese folk tradition the reading is inverted: the magpie (xique) is a herald of good news and happiness, its very name built from xi (\"joy\"), and its appearance or call is taken as a sign that welcome news is coming. The same bird therefore functions as a bad-luck omen in one tradition and a good-news omen in another, with no shared origin between the two readings.",
+      "secondaryNames": [],
+      "tags": ["european-folk", "chinese-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["european-folk", "chinese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.bat",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Bat",
+      "description": "A mirror image of the Five Poisons' own East-West asymmetry (see calendar.holiday.duanwu): where those five creatures are feared in China and comparatively neutral in the West, the bat runs the opposite way. In Chinese art and decoration the bat (fu) is emphatically auspicious, its name a homophone of fu (\"fortune\" or \"blessing\") — five bats depicted together represent the Five Blessings (Wufu: longevity, wealth, health, virtue, and a peaceful death), a motif found throughout traditional Chinese ornament. Western folklore takes the opposite view, associating bats with darkness, witches, and — after Bram Stoker — vampirism, a reading now inseparable from the modern secular observance of Halloween. The same animal is thus a decoration of good fortune in one tradition and an emblem of dread in another.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "western-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-folk", "western-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.black-cat",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Black Cat",
+      "description": "Perhaps the most familiar bad-luck omen in Anglo-American folklore, where a black cat crossing one's path is widely held to foretell misfortune — a superstition intertwined with the cat's association, during the European witch trials, with witches' familiars. British and Japanese folk traditions run the opposite direction: in Britain a black cat crossing your path (or owning one) is traditionally considered good luck, and in Japan the black cat is likewise regarded as fortunate, particularly for women seeking suitors. A third, older data point sits outside this bad-luck/good-luck axis entirely: in ancient Egypt cats generally, black-coated animals included, were venerated as sacred to the goddess Bastet, protector of the home and of childbirth, with the killing of a cat carrying severe penalties.",
+      "secondaryNames": [],
+      "tags": ["western-folk", "european-folk", "japanese-folk", "egyptian", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["western-folk", "european-folk", "japanese-folk", "egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.cricket",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Cricket",
+      "description": "Widely auspicious across otherwise unconnected folk traditions, though for different reasons in each. In Chinese folk culture the cricket has a long dual history: prized as a fighting insect kept in ornate cages (a pastime documented since the Tang dynasty), and independently heard as a chirping harbinger of good fortune and household prosperity. European and later American folklore holds an unrelated but convergent belief that a cricket taking up residence on the hearth brings good luck to a home, and that killing one invites misfortune — a superstition popularized in English-language literature by Dickens's The Cricket on the Hearth. Unlike most entries in this collection, the cricket carries no significant negative reading in either tradition.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "european-folk", "western-folk", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "european-folk", "western-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.fish",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Fish",
+      "description": "A near-universally auspicious creature, prosperity-coded independently in at least three unrelated traditions. In Chinese culture the fish (yu) is a homophone of \"surplus\" or \"abundance,\" making it a standing New Year and banquet symbol of plenty, while the specific image of a carp leaping over the Dragon Gate (yu li long men) represents perseverance rewarded with success, most often applied to examination or career achievement. Early Christians used the fish (ichthys) as a covert identifying symbol, its Greek letters read as an acrostic for \"Jesus Christ, Son of God, Savior.\" In cartomancy, the Lenormand Fish card (see lenormand.card.the-fish) carries an already-established meaning in this app of financial abundance and business — a correspondence noted directly, not merely analogous, since both draw on the same prosperity association.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "abrahamic", "lenormand", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "abrahamic", "lenormand"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.tortoise",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Tortoise",
+      "description": "A cross-cultural emblem of longevity, stability, and cosmic support. In Chinese tradition the Black Tortoise (Xuanwu, often depicted entwined with a snake) is one of the Four Symbols guarding the cardinal direction of north and the winter season, and the tortoise generally is a folk emblem of long life, its image common on longevity-themed gifts and monuments. In Hindu tradition, Kurma, the second avatar of Vishnu, takes the form of a giant tortoise to support Mount Mandara on its back during the Samudra Manthan, the churning of the cosmic ocean of milk. A structurally similar motif recurs independently in Indigenous North American cosmologies collectively described as \"Turtle Island,\" in which the turtle's back supports or forms the land itself — a description of a recurring world-turtle motif across unrelated cosmologies, not a claim of shared origin.",
+      "secondaryNames": [
+        { "name": "Xuanwu", "languageTag": "zh-translit", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["chinese-folk", "hindu", "native-american", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "hindu", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.hare",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Hare",
+      "description": "The subject of a strikingly widespread lunar myth: cultures across the world independently describe the dark markings on the Moon's face as the silhouette of a hare or rabbit, rather than the Western \"man in the Moon.\" In Chinese folklore the Jade Rabbit (Yutu) pounds the elixir of immortality on the Moon as a companion to the lunar deity Chang'e (see astrology.planet.luna for the Moon's own astrological correspondences). A Buddhist Jataka tale tells of a hare who threw himself into a fire to feed a hungry traveler, and was rewarded by being placed on the Moon as a lasting mark of the sacrifice — a story also found, independently, in Mesoamerican tradition, where a hare's silhouette on the Moon is likewise read as a mark placed there by a god. This entry addresses the hare's lunar-omen role specifically, distinct from the Rabbit's place in the twelve-year Chinese zodiac cycle (see chinese-zodiac.animal.rabbit).",
+      "secondaryNames": [
+        { "name": "Jade Rabbit", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Yutu", "languageTag": "zh-translit", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["chinese-folk", "buddhist", "mesoamerican", "lunar-mythology", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "buddhist", "mesoamerican"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.wolf",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Wolf",
+      "description": "A mixed-valence figure spanning myth-founding and end-of-world roles in different traditions. In Norse mythology, the god Odin keeps two wolves, Geri and Freki, as loyal companions who accompany him and are fed from his own table — yet the same mythology's most feared wolf, Fenrir, is prophesied to kill Odin himself at Ragnarok, making the wolf simultaneously a figure of loyal companionship and of world-ending doom within a single tradition. Roman foundational myth casts the wolf in an entirely different, wholly positive light: a she-wolf (Lupa) nurses the abandoned infants Romulus and Remus, the legendary founders of Rome, an image that remains a civic emblem of the city to this day. Many Native American traditions hold a third view again, regarding the wolf as a teacher or guide spirit associated with instinct, loyalty, and pathfinding, without the Norse tradition's apocalyptic undertone.",
+      "secondaryNames": [],
+      "tags": ["norse", "roman", "native-american", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["norse", "roman", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.ladybug",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Ladybug",
+      "description": "One of the most consistently positive omen creatures in European folk tradition. Its common name derives from \"Our Lady's bird\" or \"beetle of Our Lady\" — medieval European farmers, seeing their crops saved from aphids and other pests by the insect's arrival, credited the Virgin Mary with sending it as a protector, and its red wing cases were likened to her traditional red cloak. The associated belief that a ladybug landing on a person and later flying away grants a wish, or signals coming good luck, remains widespread in both European and American folklore today. Unlike most entries in this collection, the ladybug carries essentially no competing negative reading in the traditions where it appears.",
+      "secondaryNames": [
+        { "name": "Ladybird", "languageTag": "en-GB", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["european-folk", "western-folk", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["european-folk", "western-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.scarab",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Scarab",
+      "description": "The central sacred insect of ancient Egyptian religion, embodying rebirth and the sun's daily cycle. The scarab beetle rolling a ball of dung across the ground was taken as an earthly mirror of Khepri, the god who rolled the sun across the sky each day and who was himself depicted with a scarab in place of a head — the beetle's habit of emerging from its buried, ball-shaped egg case was read as a natural image of spontaneous creation and rebirth. Scarab amulets, often carved from stone and inscribed on their flat underside, were placed among mummy wrappings (heart scarabs) to protect the deceased's heart during judgment in the afterlife, making the scarab one of the most direct funerary-religious animal symbols in this collection.",
+      "secondaryNames": [],
+      "tags": ["egyptian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.butterfly",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Butterfly",
+      "description": "A cross-cultural symbol of the soul and of transformation, independently arrived at by at least three unrelated traditions. In ancient Greek, psyche means both \"soul\" and \"butterfly,\" and the mythological figure Psyche — beloved of Eros and herself an emblem of the soul — is conventionally shown with butterfly wings. Chinese folklore holds the tragic romance of the \"Butterfly Lovers\" (Liang Zhu), in which two star-crossed lovers are transformed into a pair of butterflies after death, reuniting them beyond life. In Mexican and broader Mesoamerican tradition, the migration of monarch butterflies each autumn — arriving in central Mexico around the same time as the Day of the Dead (Dia de los Muertos) observances — is popularly read as the souls of departed ancestors returning to visit the living. This entry addresses the butterfly's cross-cultural soul symbolism specifically; a related but narrower tasseomancy (tea-leaf) reading already exists in this app (see divination.tea-symbol.butterfly).",
+      "secondaryNames": [],
+      "tags": ["greek", "chinese-folk", "mesoamerican", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "chinese-folk", "mesoamerican"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.bee",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Bee",
+      "description": "A creature bound up with both mourning custom and royal symbolism across unrelated traditions. English and broader European folk custom holds the practice of \"telling the bees\": a household's hives are formally informed of a death (or other major event) in the family, often draped in black cloth, on the belief that bees left uninformed would sicken, leave, or stop producing honey out of a kind of collective grief. In ancient Egypt, the bee served as a hieroglyphic emblem of Lower Egypt and appeared in the pharaoh's royal titulary as \"He of the Sedge and the Bee,\" tying the insect to legitimate kingship. Napoleon Bonaparte later adopted the bee as a personal and imperial emblem, deliberately invoking a supposed precedent of golden bee ornaments recovered from the tomb of the Merovingian king Childeric I.",
+      "secondaryNames": [],
+      "tags": ["european-folk", "western-folk", "egyptian", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["european-folk", "western-folk", "egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.cicada",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Cicada",
+      "description": "Two unrelated traditions independently read the cicada through the lens of its own life cycle. In Chinese funerary custom, a carved jade cicada was traditionally placed in the mouth of the deceased, the insect's emergence as a winged adult from a long-buried nymph serving as a natural emblem of rebirth and the soul's immortality. Greek mythology instead reads the cicada as a warning about incomplete rather than perfected transformation: Tithonus, granted immortality by Zeus at the request of the dawn goddess Eos but not eternal youth, ages forever without dying, and is eventually transformed into a cicada — an endlessly aging voice rather than a symbol of renewal.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "greek", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-folk", "greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.moth",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Moth",
+      "description": "Widely read as the Butterfly's folkloric shadow (see omen.animal.butterfly): both insects share a metamorphic life cycle, but where the day-flying butterfly is cross-culturally linked to the soul's release, the night-flying moth is instead read in Appalachian and broader Southern United States folklore, as well as in Irish and British folk tradition, as a death omen — a moth entering the house, or a dark-colored moth in particular, is taken by these traditions as a sign that a death is coming. The pairing of the two insects as light/dark, day/night counterparts recurs independently across these folk traditions rather than being a single shared belief.",
+      "secondaryNames": [],
+      "tags": ["western-folk", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["western-folk", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.dragonfly",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Dragonfly",
+      "description": "A symbol of swift, decisive change in at least two unrelated traditions. In Japan, the dragonfly (katsumushi, literally \"victory insect\") was worn as a motif on samurai armor and helmets, prized for its inability to fly backward — read as an emblem of forward-only advance and martial courage — and Japan itself was historically given the poetic name Akitsushima, \"Land of the Dragonflies.\" Zuni and Hopi (Native American) traditions of the American Southwest independently associate the dragonfly with purity, swiftness, and the presence of water, reflecting the insect's dependence on it, and use dragonfly imagery in pottery and textile design accordingly.",
+      "secondaryNames": [],
+      "tags": ["japanese-folk", "native-american", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["japanese-folk", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.firefly",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Firefly",
+      "description": "Central to a long-standing Japanese aesthetic and folk tradition: hotarugari, the seasonal practice of firefly-viewing, celebrated in classical poetry and court literature for centuries. Beyond simple aesthetic appreciation, some regional Japanese folklore reads fireflies as the souls of the dead, and in a tradition connected to the medieval Genpei War, as the spirits of fallen warriors returning as points of drifting light — a reading that gives the insect's brief, glowing life a memorial rather than purely decorative significance.",
+      "secondaryNames": [],
+      "tags": ["japanese-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["japanese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.dove",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Dove",
+      "description": "One of the oldest continuously-used peace symbols in the Abrahamic tradition, and older still outside it. In the Genesis flood narrative, Noah releases a dove from the ark, and its return bearing an olive leaf signals that the waters have receded and that divine wrath has passed; in the Gospels, the Holy Spirit descends on Christ at his baptism \"like a dove.\" Independently, and considerably earlier, the dove was already sacred to the Mesopotamian goddess Ishtar (Inanna), associated with love, fertility, and her role as a goddess of both war and desire — a reminder that the dove's peace-and-love symbolism did not originate with, and is not exclusive to, the Abrahamic tradition that made it famous. A related but narrower tasseomancy reading of the same bird already exists in this app (see divination.tea-symbol.dove).",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "mesopotamian", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["abrahamic", "mesopotamian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.peacock",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Peacock",
+      "description": "A royal and sacred bird across three unrelated traditions. In Hinduism, the peacock is the mount (vahana) of Kartikeya (Murugan), god of war, and peacock feathers are closely associated with Krishna, who wears one in his crown. Early Christian art adopted the peacock as a symbol of immortality and resurrection, based on the ancient (and mistaken) natural-historical belief, recorded by writers including Augustine, that peacock flesh does not decay after death — the bird appears frequently in catacomb and mosaic art on this basis. In pre-Islamic Persian and Zoroastrian tradition, the peacock's iridescent \"eyed\" tail was closely tied to royal courts and to the symbolism of the all-seeing, connecting the bird to kingship and vigilance.",
+      "secondaryNames": [],
+      "tags": ["hindu", "abrahamic", "persian", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hindu", "abrahamic", "persian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.swallow",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Swallow",
+      "description": "A bird bound up with safe return and the arrival of spring across unrelated traditions. European sailors' tattoo tradition holds that a swallow, earned after a long voyage, marks distance travelled and stands as a promise of safe return home — a swallow lost overboard was, by the same logic, said to carry a sailor's soul to rest. Independently, European folk belief holds that a swallow nesting under one's eaves brings good luck to the household, while killing one invites misfortune, tied to the bird's yearly return as a herald of spring. Greek mythology supplies an older, darker layer: Procne, transformed into a swallow after the discovery of her sister Philomela's rape and her own act of revenge, is condemned to an eternally anxious, twittering flight — a myth explaining the bird's darting, restless movement rather than celebrating it.",
+      "secondaryNames": [],
+      "tags": ["european-folk", "western-folk", "greek", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["european-folk", "western-folk", "greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.fox",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Fox",
+      "description": "A figure of cunning across every tradition it appears in, though not always negatively so. In Japanese folk religion, the fox (kitsune) is the messenger and servant of Inari, the deity of rice, fertility, and prosperity — kitsune can be benevolent protectors or mischievous, shapeshifting tricksters depending on the tale, and stone fox statues still guard Inari shrines throughout Japan. European folklore is more uniformly negative, casting the fox as a purely self-interested trickster who survives by deceiving others, a reading crystallised in Aesop's fables and in the medieval Reynard the Fox cycle. This same cunning-and-deception theme is already established twice elsewhere in this app under different entity types — see lenormand.card.the-fox and divination.tea-symbol.fox — and this entry is linked to both as the same underlying symbolic thread read through cartomancy and tasseomancy respectively.",
+      "secondaryNames": [],
+      "tags": ["japanese-folk", "european-folk", "lenormand", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["japanese-folk", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.deer",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Deer",
+      "description": "A gentle, liminal creature associated with sanctity and the wild's edge in at least two unrelated traditions. Celtic iconography closely associates the stag with Cernunnos, the horned god of the wild, animals, and fertility, whose antlers directly echo the animal's own — making the stag one of the clearest visual attributes of that god. In Nara, Japan, the sika deer that roam the city and its temple grounds are traditionally considered sacred messengers of the Shinto gods (particularly Takemikazuchi, said to have arrived in Nara riding a white deer), and the animals are protected as a result to this day. Both traditions independently place the deer at the threshold between the human and the divine or wild, without either tradition drawing on the other.",
+      "secondaryNames": [],
+      "tags": ["celtic", "japanese-folk", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["celtic", "japanese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.elephant",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Elephant",
+      "description": "An emblem of good fortune, memory, and legitimate power across several traditions. In feng shui and broader Chinese and Southeast Asian folk practice, an elephant figurine placed with its trunk raised is a common good-luck charm, believed to draw fortune and protection into a home. Historically, in Thailand, Myanmar, and neighbouring Southeast Asian kingdoms, the rare birth of a white elephant was treated as a profound omen of a just and legitimate reign, and such animals were reserved exclusively for royal ownership — the origin of the English idiom \"white elephant\" for a costly, unwanted possession, since a monarch could ruinously burden a rival by gifting one. Western folk idiom independently credits the elephant with an exceptional memory (\"an elephant never forgets\"), a lasting reputation rooted in genuine observations of elephant social cognition and long-term recall.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "feng-shui", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "feng-shui"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.crocodile",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Crocodile",
+      "description": "A creature of genuine ambivalence in the one tradition where its religious significance is best documented. In ancient Egypt, the crocodile was both feared as one of the Nile's deadliest predators and venerated as the god Sobek, whose crocodile form tied him to the river's fertility-giving annual flood, to military strength, and to protection — temples at Kom Ombo and elsewhere maintained live sacred crocodiles as embodiments of the god, mummifying them in death. This is not a case of two unrelated traditions splitting on the animal's meaning, as with several other entries in this collection, but a single tradition holding both a fearsome and a sacred reading of the same creature simultaneously. A related but narrower tasseomancy reading of \"lurking danger\" already exists in this app (see divination.tea-symbol.crocodile), corresponding to the fear side of this same duality.",
+      "secondaryNames": [],
+      "tags": ["egyptian"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.frog",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Frog",
+      "description": "Associated with fertility, childbirth, and coming weather across unrelated traditions. In ancient Egypt, the frog-headed goddess Heqet presided over childbirth and fertility, reflecting the annual observation of enormous numbers of frogs appearing along the Nile after its life-giving flood — a natural correlation the Egyptians read as the goddess's own domain. Independently, European folk-weather lore holds that frogs croaking loudly, or gathering in unusual numbers, predicts rain, a belief with a real basis in frogs' sensitivity to rising humidity and barometric pressure before storms. This entry addresses the frog's fertility and weather associations specifically, distinct from the related but differently-focused Toad entry already in this collection (see omen.animal.toad) and from the transformation-themed tasseomancy reading of the frog elsewhere in this app (see divination.tea-symbol.frog).",
+      "secondaryNames": [],
+      "tags": ["egyptian", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["egyptian", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.dolphin",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Dolphin",
+      "description": "A guardian and savior figure at sea across two eras of the same broad Mediterranean cultural lineage. In Greek legend, the poet and musician Arion, thrown overboard by greedy sailors, is carried safely to shore by a dolphin charmed by his singing — a story that helped cement the dolphin's status as sacred to both Apollo (god of music and prophecy) and Poseidon (god of the sea) and as a benevolent friend to sailors generally. Early Christian art, drawing on this same Greco-Roman cultural backdrop rather than rejecting it, adopted the dolphin as a symbol of salvation and safe passage of the soul, often depicting it alongside an anchor or a ship in catacomb carvings — a continuation of the animal's rescuer symbolism into a new religious framework rather than an independent invention.",
+      "secondaryNames": [],
+      "tags": ["greek", "roman", "abrahamic", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "roman", "abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.praying-mantis",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Praying Mantis",
+      "description": "Named directly for its divinatory associations: the Greek word mantis means \"prophet\" or \"seer,\" and the insect's raised, folded forelimbs — read as a posture of prayer or supplication — gave rise to its common name across most European languages. In San (Bushmen) mythology of Southern Africa, Mantis (often called /Kaggen) is not merely named after a seer but is himself a major trickster-creator deity, credited in different tellings with making the moon, fire, and various animals, and known for shapeshifting and morally ambiguous, often comic exploits. The insect's name and the deity's role both independently tie the same creature to insight, foresight, and the numinous, in traditions with no historical contact.",
+      "secondaryNames": [],
+      "tags": ["greek", "san-bushmen", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "san-bushmen"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.bear",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Bear",
+      "description": "A figure of sacred strength across the circumpolar and Northern European world independently of any shared origin. Norse and broader Germanic warrior culture associated the bear with the berserkers (\"bear-shirts\"), warriors said to fight in a trance-like fury while wearing bear pelts, drawing directly on the animal's raw power. Separately, Sami, Finnish, and various Siberian peoples maintained an elaborate circumpolar \"bear cult\": the bear was treated as a sacred, semi-divine ancestor, and its ritual hunting was followed by ceremonies of formal apology and honor to the slain animal's spirit, reflecting real unease about killing so powerful and human-like a creature. Many Native American traditions similarly regard the bear as a potent guide or totem spirit associated with strength, introspection, and healing. A related but narrower tasseomancy reading and a Lenormand card meaning already exist in this app (see divination.tea-symbol.bear and lenormand.card.the-bear), both centered on the same strength-and-authority theme.",
+      "secondaryNames": [],
+      "tags": ["norse", "finnic-sami", "native-american", "lenormand", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["norse", "finnic-sami", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.bull",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Bull",
+      "description": "A creature of divine power and fertility across the ancient Mediterranean and South Asian worlds. Minoan Crete's bull-leaping frescoes and the myth of the Cretan Bull reflect a civilization-wide reverence for the animal, echoed in the Greek myth of Zeus taking the form of a bull to abduct Europa — the very myth underlying the constellation and zodiac sign Taurus (see astrology.zodiac-sign.taurus). In ancient Egypt, the Apis bull was worshipped at Memphis as a living embodiment of the god Ptah, housed, mummified, and buried with full royal honors upon its death. In Hinduism, Nandi, the bull, serves as the mount (vahana) and devoted gatekeeper of Shiva, and statues of Nandi facing the deity are a standard feature of Shiva temples. A related but narrower tasseomancy reading of the bull already exists in this app (see divination.tea-symbol.bull).",
+      "secondaryNames": [],
+      "tags": ["greek", "egyptian", "hindu", "western-astrology"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "egyptian", "hindu"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.cow",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Cow",
+      "description": "Sacred and cosmogonic across three unrelated traditions. In Hinduism, the cow is revered as a sacred, protected animal embodying non-violence (ahimsa) and maternal generosity, personified by Kamadhenu, the divine \"wish-granting\" cow said to provide her keeper with whatever they desire. Norse cosmogony opens with Audhumla, a primeval cow who licks the salty ice of Ginnungagap to free Buri, the first of the gods, making the cow the very origin point of the Norse pantheon. In ancient Egypt, the goddess Hathor was frequently depicted in cow form or with cow's horns, associated with motherhood, fertility, and the joyful, nurturing aspects of the divine feminine. A related but narrower tasseomancy reading of the cow already exists in this app (see divination.tea-symbol.cow).",
+      "secondaryNames": [],
+      "tags": ["hindu", "norse", "egyptian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hindu", "norse", "egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.dog",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Dog",
+      "description": "A recurring guardian of the threshold between life and death across unrelated ancient traditions. In ancient Egypt, the jackal-headed god Anubis presided over mummification and guided souls through the underworld. In Greek mythology, Cerberus, the multi-headed hound, guards the gates of Hades to prevent the dead from leaving and the living from entering, while the goddess Hecate is regularly accompanied by spectral hounds associated with crossroads and the night. Norse mythology supplies a close parallel in Garmr, the blood-stained hound bound before the entrance to Hel's realm, fated to fight the god Tyr at Ragnarok. Three unrelated mythologies thus independently cast the dog as psychopomp and gatekeeper of the underworld, a notably different register from the dog's more familiar role as a loyal companion — the register in which the existing divination.tea-symbol.dog and lenormand.card.the-dog entries in this app are framed.",
+      "secondaryNames": [],
+      "tags": ["egyptian", "greek", "norse", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["egyptian", "greek", "norse"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.horse",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Horse",
+      "description": "A creature of divine transport and folk protection across unrelated traditions. In Norse mythology, Odin rides Sleipnir, an eight-legged horse capable of traversing the boundary between the worlds of the living and the dead, making the horse a vehicle for shamanic and divine journeying rather than mere transport. Celtic tradition venerated Epona, a goddess of horses, fertility, and safe travel whose cult was unusually widespread, adopted even by Roman cavalry units far from her Gaulish origin. Separately, Western European folk tradition holds that an iron horseshoe, hung above a doorway with its open end facing upward (\"to catch the luck\"), wards off evil and brings good fortune to a household — a belief tied to iron's folkloric power against malevolent spirits rather than to the horse itself. A related but narrower tasseomancy reading of both symbols already exists in this app (see divination.tea-symbol.horse and divination.tea-symbol.horseshoe).",
+      "secondaryNames": [],
+      "tags": ["norse", "celtic", "western-folk", "european-folk"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["norse", "celtic", "western-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.lamb",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Lamb",
+      "description": "A sacrificial animal at the center of Abrahamic tradition's most significant ritual and theological symbolism. In the Exodus narrative, the Passover lamb (korban Pesach) is sacrificed and its blood marked on doorposts so that the households of the Israelites are spared during the final plague on Egypt, an event still commemorated annually in the Jewish Pesach seder (see calendar.holiday.pesach). Christianity draws directly on this same imagery in identifying Christ as the \"Lamb of God\" (Agnus Dei), whose sacrifice is understood as fulfilling and superseding the Passover lamb's role — a continuous, self-acknowledged line of symbolism running from one tradition into the other rather than a coincidental parallel. A related but narrower tasseomancy reading of the lamb already exists in this app (see divination.tea-symbol.lamb).",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "jewish", "christian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.lion",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Lion",
+      "description": "An emblem of righteous power across unrelated traditions. In ancient Egypt, the lioness-headed goddess Sekhmet embodied both the destructive fury of war and, paradoxically, the healing arts, reflecting a belief that the same overwhelming force could wound or cure depending on how it was directed. Christian tradition uses the lion in two distinct registers: as the attribute of the Evangelist Mark, and, via the Book of Revelation's \"Lion of the tribe of Judah,\" as a title for Christ himself — a title later adopted directly as an imperial and religious symbol by the Ethiopian monarchy and, from it, by the Rastafari movement. In Greek myth, the Nemean Lion, an invulnerable beast slain by Heracles as the first of his Twelve Labors, is placed among the stars as the constellation and zodiac sign Leo (see astrology.zodiac-sign.leo). A related but narrower tasseomancy reading of the lion already exists in this app (see divination.tea-symbol.lion).",
+      "secondaryNames": [],
+      "tags": ["egyptian", "abrahamic", "greek", "western-astrology"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["egyptian", "abrahamic", "greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.mouse",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Mouse",
+      "description": "A small creature carrying an outsized and paradoxical sacred role in two unrelated traditions. The Greek god Apollo bore the epithet Smintheus (\"mouse god\"), worshipped at a temple in the Troad specifically as a protector against mouse-borne plagues and crop damage — a rare case of a deity being venerated for control over the very creature associated with their own name and iconography. In Hinduism, Mushika, a mouse or rat, serves as the mount (vahana) of Ganesha, the elephant-headed god of wisdom and new beginnings, a pairing often read as symbolizing wisdom's ability to overcome even the smallest and most persistent obstacles. A related but narrower tasseomancy reading of the mouse already exists in this app (see divination.tea-symbol.mouse).",
+      "secondaryNames": [],
+      "tags": ["greek", "hindu"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["greek", "hindu"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.rat",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Rat",
+      "description": "A creature whose reputation splits sharply along cultural lines. Western maritime folklore holds that rats can sense a ship's coming doom and abandon it before disaster strikes, the origin of the still-current idiom \"rats deserting a sinking ship\" — a belief plausibly rooted in rats' genuine sensitivity to a listing hull, but read superstitiously as an omen of catastrophe. European folk memory more broadly associates rats with the Black Death, whose fleas they carried, cementing a lasting reputation as a harbinger of plague and misfortune. Chinese tradition draws the opposite conclusion from the same animal: the rat is the first sign of the twelve-year zodiac cycle (see chinese-zodiac.animal.rat), a position won, in the cycle's founding legend, through the rat's cleverness and resourcefulness rather than treated as a mark against it. A related but narrower tasseomancy reading of the rat already exists in this app (see divination.tea-symbol.rat).",
+      "secondaryNames": [],
+      "tags": ["western-folk", "european-folk", "chinese-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["western-folk", "european-folk", "chinese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.rabbit",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Rabbit",
+      "description": "This entry addresses the rabbit's Western folk-magic and luck traditions specifically, distinct from the Hare's cross-cultural lunar mythology already covered elsewhere in this collection (see omen.animal.hare) and from the Rabbit's place in the Chinese zodiac (see chinese-zodiac.animal.rabbit). In Southern United States hoodoo, a tradition blending West and Central African folk-magical practices with European folklore under slavery and its aftermath, a rabbit's foot — traditionally required to be the left hind foot, taken under specific ritual conditions — is carried as a protective and luck-bringing talisman, a practice that spread into broader American folk culture as the now-familiar \"lucky rabbit's foot\" charm. Independently, British and American folk tradition holds that saying \"rabbit, rabbit\" (or \"rabbit, rabbit, white rabbit\") as the first words spoken on the first day of a new month secures good luck for the entire month. A related but narrower tasseomancy reading of the rabbit already exists in this app (see divination.tea-symbol.rabbit).",
+      "secondaryNames": [],
+      "tags": ["hoodoo", "western-folk", "folk-magic", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hoodoo", "western-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.camel",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Camel",
+      "description": "Central to Bedouin and broader Islamic cultural reverence as the animal that made life and trade across the Arabian desert possible, earning it the enduring epithet \"ship of the desert.\" The Qur'an holds the camel up as a specific sign of divine creative power meriting reflection — \"Do they not look at the camels, how they are created?\" (Qur'an 88:17) — giving the animal a direct scriptural, contemplative significance beyond its practical role. This entry represents one of the few animals in this collection whose primary omen-adjacent significance derives from a single tradition's own scripture rather than from cross-cultural convergence, reflecting the camel's uniquely central, non-transferable role in the culture that most reveres it.",
+      "secondaryNames": [],
+      "tags": ["islamic", "bedouin"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["islamic", "bedouin"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.monkey",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Monkey",
+      "description": "This entry addresses the monkey's devotional significance in Hindu tradition specifically, distinct from the Monkey's place in the twelve-year Chinese zodiac cycle (see chinese-zodiac.animal.monkey). Hanuman, the monkey-god of the Ramayana, is revered as the ideal devotee: his unwavering loyalty and service to Rama, demonstrated most famously by his leap across the strait to Lanka and his role in the war to rescue Sita, made him an enduring symbol of devotion (bhakti), strength, and selfless service. Hanuman temples remain among the most widely visited in the Hindu world, and reciting the Hanuman Chalisa, a devotional hymn in his praise, is a common daily practice for millions.",
+      "secondaryNames": [
+        { "name": "Hanuman", "languageTag": "sa-translit", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["hindu"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hindu"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.eagle",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Eagle",
+      "description": "A near-universal emblem of sovereignty and divine sanction. Roman legions carried the aquila, a golden eagle standard, as their most sacred possession — its loss in battle was a catastrophic dishonor — and the eagle was closely associated with Jupiter, king of the gods, said to carry his thunderbolts. In Aztec tradition, the founding of Tenochtitlan (the future Mexico City) is marked by the prophesied sighting of an eagle perched on a prickly-pear cactus devouring a serpent, an image preserved to this day at the center of the Mexican flag. Many Native American traditions independently regard the eagle as the most sacred of birds, flying closer to the Creator than any other creature and carrying prayers upward on its feathers, which are treated with corresponding ceremonial reverence. A related but narrower tasseomancy reading of the eagle already exists in this app (see divination.tea-symbol.eagle).",
+      "secondaryNames": [],
+      "tags": ["roman", "aztec", "native-american"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["roman", "aztec", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.stork",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Stork",
+      "description": "Best known today for the Germanic-rooted European folk belief that storks deliver newborn babies to their families, a tradition that spread across Europe and persists as a lighthearted cultural touchstone even where it is no longer literally believed — a belief that maps directly onto the existing Lenormand Stork card's meaning of \"new arrivals — classically a pregnancy or birth\" already established in this app (see lenormand.card.the-stork). This folk belief itself may draw on a much older classical tradition: ancient Greek and Roman writers held that storks cared for their aged, flightless parents, carrying and feeding them in their old age, a supposed behavior cited in Roman rhetoric as a model of filial devotion (pietas) worth emulating, regardless of its accuracy as natural history.",
+      "secondaryNames": [],
+      "tags": ["european-folk", "greek", "roman", "lenormand", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["european-folk", "greek", "roman"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.crane",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Crane",
+      "description": "A symbol of longevity in East Asian tradition and, more obscurely, of knowledge in the ancient Mediterranean. In Chinese and Japanese art and folklore, the crane is a foremost emblem of long life and good fortune — Taoist immortals (xian) are frequently depicted riding cranes, and Japan's red-crowned crane (tancho) remains a national symbol of longevity and fidelity to this day, reinforced by the belief that cranes mate for life. A more obscure classical tradition, recorded by later Greek mythographers, credits Palamedes, a hero of the Trojan War, with inventing several letters of the Greek alphabet after observing the V-shaped flight formations of migrating cranes — an origin story for writing itself drawn from watching the bird's flight.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk", "japanese-folk", "greek", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk", "japanese-folk", "greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.vulture",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Vulture",
+      "description": "A bird whose usual Western association with death and decay is inverted into active reverence in the traditions that engage with it most directly. In ancient Egypt, the vulture goddess Nekhbet was one of the \"Two Ladies\" (with the cobra goddess Wadjet) whose protection was invoked in the pharaoh's own royal titulary, and vulture imagery appears throughout royal regalia as a symbol of protective, maternal sovereignty. In Tibetan Buddhist practice, and independently in the older Zoroastrian tradition, the deceased's body may be ritually exposed for vultures to consume — sky burial (jhator) in the Tibetan case, and exposure on a dakhma (\"Tower of Silence\") in the Zoroastrian case — both traditions treating the vulture not as a scavenger of the dead but as an active, respected participant in returning the body to nature and freeing the spirit for its onward journey.",
+      "secondaryNames": [],
+      "tags": ["egyptian", "tibetan-buddhist", "zoroastrian"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["egyptian", "tibetan-buddhist", "zoroastrian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.woodpecker",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Woodpecker",
+      "description": "Sacred to Mars in Roman tradition and directly woven into Rome's own founding legend. Ovid and Plutarch both preserve the story of Picus, a king of Latium transformed into a woodpecker by the sorceress Circe after he remained faithful to his wife and rejected her advances; because Picus was sacred to Mars, the resulting bird retained a connection to the war god. In one strand of Rome's founding myth, a woodpecker is said to have joined the she-wolf (see the Wolf entry, omen.animal.wolf, for the wolf's own role in this same legend) in feeding and guarding the abandoned infants Romulus and Remus, both animals sacred to their father Mars. Roman augury, the formal practice of reading the will of the gods from bird behavior, counted the woodpecker among the alites, the birds whose flight and actions carried the most direct religious significance.",
+      "secondaryNames": [],
+      "tags": ["roman"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["roman"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.pelican",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Pelican",
+      "description": "A bird whose entire symbolic weight in the Western tradition rests on a single, widely believed medieval legend rather than on real natural history. Medieval Christian bestiaries recorded the belief that a mother pelican, unable to otherwise feed her starving chicks, would wound her own breast and nourish them with her blood, even at the cost of her own life — a legend known as \"the pelican in her piety.\" The image became a standard visual metaphor for Christ's self-sacrifice and the Eucharist, appearing widely in medieval church architecture, stained glass, and heraldry, and survives today as a formal heraldic charge (a pelican \"vulning\" itself) used by numerous institutions with no awareness required of the underlying legend's origin.",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "christian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.chameleon",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Chameleon",
+      "description": "The central figure in a widespread origin-of-death myth found in variant forms across Bantu-speaking Southern and Central African folklore. In its common shape, the myth holds that the high god sent the chameleon to deliver a message of immortality to newly created humankind, but the chameleon moved so slowly — or paused to eat along the way, depending on the telling — that a faster messenger (often a lizard) arrived first with a message of death instead, which humanity was then bound to. The myth is notable for using the chameleon's own most famous real trait, its unusually slow and deliberate movement, as the direct mechanism of the story rather than an incidental detail, tying observed natural behavior directly to a foundational explanation for human mortality.",
+      "secondaryNames": [],
+      "tags": ["african-folk", "folklore"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["african-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.whale",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Whale",
+      "description": "A vessel of survival and rebirth in two unrelated maritime traditions. The biblical Book of Jonah recounts its protagonist spending three days and nights in the belly of a \"great fish\" before being delivered back to land — traditionally depicted as a whale in later Christian art and popular retelling, though the original Hebrew text specifies only dag gadol, a \"great fish,\" without naming the species. In Māori tradition, the ancestor Paikea is said to have survived being cast into the sea by riding to the shores of Aotearoa (New Zealand) on the back of a whale, becoming a founding ancestor of the Ngati Porou iwi (tribe) — an origin story in which the whale is not merely a rescuer but the direct means by which a people's lineage in a new land begins.",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "maori", "polynesian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["abrahamic", "maori"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.shark",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Shark",
+      "description": "Almost universally feared, but venerated as an ancestral guardian in one significant tradition. In Native Hawaiian belief, aumakua are deified ancestral spirits who watch over and protect their living descendants, and the shark (mano) is one of the forms an aumakua is most commonly said to take — families with a shark aumakua traditionally regarded sharks with reverence rather than fear, and some accounts describe such sharks recognizing and protecting specific family members at sea. This reading stands in sharp, explicit contrast to the shark's default reputation elsewhere as a purely predatory threat, making it one of the clearest examples in this collection of a single culture's lived relationship with an animal fully inverting its outside reputation.",
+      "secondaryNames": [],
+      "tags": ["polynesian", "hawaiian", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["polynesian", "hawaiian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.octopus",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Octopus",
+      "description": "A creature of striking symbolic and artistic weight in two maritime cultures separated by both distance and time. The octopus is a dominant motif of Late Minoan \"Marine Style\" pottery from Bronze Age Crete (circa 1500 BCE), its curling tentacles wrapped decoratively around vases and jars in a style unique to that civilization's brief artistic flowering. In the Kumulipo, the Hawaiian creation chant, the octopus (he'e) is described as the sole survivor of a previous cosmic era, carried forward alone into the present age of creation — an unusually specific and singular cosmological role for an animal within this collection.",
+      "secondaryNames": [],
+      "tags": ["minoan", "hawaiian", "polynesian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["minoan", "hawaiian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.salmon",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Salmon",
+      "description": "A fish tied to the acquisition of wisdom and to seasonal renewal in two unrelated traditions. Irish mythology tells of the Salmon of Knowledge (bradan feasa), which absorbed all the world's wisdom by eating hazelnuts that fell from the sacred hazels of wisdom; the hero Fionn mac Cumhaill gains this same wisdom by accident, sucking his burnt thumb after touching the cooking fish meant for his teacher. Among many Native American peoples of the Pacific Northwest Coast, the annual return of salmon upriver to spawn is both the material foundation of subsistence and the occasion for the First Salmon Ceremony, a rite of thanksgiving and respect performed to ensure the fish's continued return in future years.",
+      "secondaryNames": [],
+      "tags": ["celtic", "native-american", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["celtic", "native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.locust",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Locust",
+      "description": "One of the most unambiguously negative omen creatures in Abrahamic scripture, appearing independently in both of its major textual traditions. The Book of Exodus names locusts as the eighth plague visited on Egypt, a swarm so total that it \"covered the face of the whole earth\" and devoured everything the earlier hail had spared (Exodus 10:12-15). The Qur'an likewise names locusts among the plagues sent upon Pharaoh's people (Qur'an 7:133), a shared scriptural detail across the two traditions' independent retellings of the same narrative. Unlike the Cricket entry already in this collection (see omen.animal.cricket), whose chirp is read as a sign of prosperity in multiple folk traditions, the locust's significance here rests entirely on its destructive swarming behavior rather than any individual reading of the insect.",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "jewish", "islamic"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.dragon",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Dragon",
+      "description": "The single sharpest East-West contrast among all the creatures in this collection, mythical or otherwise. In Chinese tradition, the dragon (long) is an overwhelmingly benevolent symbol of imperial authority, sky, and rain — the emperor himself was styled the \"true dragon,\" and dragon kings were petitioned for rainfall and good harvests; the dragon's positive standing is reflected in its place in the Chinese zodiac (see chinese-zodiac.animal.dragon), the only creature in that twelve-year cycle that is not a real animal. European tradition runs in almost the opposite direction: dragons are hoarding, treasure-guarding menaces slain by heroes and saints — Beowulf's final battle, and Saint George's dragon-slaying — and the Book of Revelation identifies \"that ancient serpent, the Devil\" directly with a dragon, cementing a firmly negative Christian reading. The dragon's guardian-of-treasure aspect from the European side has its own direct astronomical correspondence in this app: the constellation Draco (see astrology.constellation.draco) is identified with Ladon, the dragon who guarded the golden apples of the Hesperides in Greek myth.",
+      "secondaryNames": [
+        { "name": "Long", "languageTag": "zh-translit", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["chinese-folk", "abrahamic", "european-folk", "western-astrology", "correspondences-over-days"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["chinese-folk", "abrahamic", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.phoenix",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Phoenix",
+      "description": "The archetypal symbol of death and rebirth in the Western tradition, rooted in a syncretism of Greek and older Egyptian belief. Herodotus, writing in the 5th century BCE, describes a fabulous bird from Egyptian tradition — modeled on the Bennu, a heron-like bird sacred to Ra and Atum at Heliopolis and associated with the sun's own daily rebirth — that lives for centuries before consuming itself in flame and rising renewed from its own ashes. This entry addresses the Western/Greco-Egyptian phoenix specifically; a related, but mythologically distinct, Chinese bird often loosely translated as \"phoenix\" in English already exists separately in this collection (see omen.animal.fenghuang), despite lacking the Western phoenix's central rebirth-by-fire mechanism.",
+      "secondaryNames": [
+        { "name": "Bennu", "languageTag": "egy-translit", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["greek", "egyptian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "egyptian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.fenghuang",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Fenghuang",
+      "description": "A composite mythical bird of Chinese tradition, commonly but imprecisely translated into English as \"phoenix\" — a rendering this entry deliberately avoids using directly, since the fenghuang has no fire, death, or rebirth in its own original mythology, unlike the Greco-Egyptian bird it is conventionally equated with (see omen.animal.phoenix). Instead, the fenghuang functions as the empress's own emblem and the dragon's paired counterpart, embodying yin to the dragon's yang; the two appearing together in art and imperial regalia (\"dragon and phoenix\") symbolizes marital harmony and balanced rule. The fenghuang's own appearance is traditionally read as an omen marking an age of peace and virtuous government, rather than as a personal death-and-renewal symbol.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.unicorn",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Unicorn",
+      "description": "A near-untouchable emblem of purity in medieval European tradition, most famously preserved in the Unicorn Tapestries (now at the Cloisters, New York), depicting the beast's hunt and capture. Medieval bestiaries held that a unicorn could only be tamed or captured by a virgin maiden, in whose lap it would lay its head in trust — an image medieval Christian commentators frequently read as an allegory for the Incarnation, with the unicorn representing Christ and the virgin Mary. This entry addresses the Western unicorn specifically; a related, but mythologically distinct, Chinese creature often loosely translated as \"unicorn\" in English already exists separately in this collection (see omen.animal.qilin), despite differing substantially in appearance and symbolic role.",
+      "secondaryNames": [],
+      "tags": ["european-folk", "abrahamic", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["european-folk", "abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.qilin",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Qilin",
+      "description": "An auspicious hybrid creature of Chinese tradition, typically described with a dragon-like scaled body, hooves, and a single horn — the last feature responsible for its common but imprecise English rendering as \"unicorn\" (see omen.animal.unicorn), despite the qilin's markedly different appearance and role. Rather than requiring capture by a virgin as in the Western tradition, the qilin is said to appear of its own accord only during the reign of a wise and virtuous ruler, or to mark the birth or death of a great sage — most famously, later tradition holds that a qilin appeared shortly before the birth of Confucius, and again, wounded and dying, shortly before his own death, an omen he is said to have recognized and mourned.",
+      "secondaryNames": [],
+      "tags": ["chinese-folk"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["chinese-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.griffin",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Griffin",
+      "description": "A composite of eagle and lion — respectively the traditional kings of sky and earth — making the griffin a natural emblem of dual sovereignty across the traditions that adopted it. Herodotus records a Greek tradition, drawn from earlier Scythian and Central Asian sources, of griffins guarding rich deposits of gold in the far north against the one-eyed Arimaspians, a motif echoed independently in actual Scythian and Persian goldwork and art depicting griffins alongside precious metal. Medieval European heraldry later adopted the griffin widely as a symbol of courage, vigilance, and combined earthly and heavenly authority, a role it retains in heraldic and institutional emblems to this day.",
+      "secondaryNames": [],
+      "tags": ["greek", "persian", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek", "persian", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.basilisk",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Basilisk",
+      "description": "The \"king of serpents\" in Western tradition, named for a small crest or crown-like marking said to top its head, and unique among the creatures in this collection for a single, purely lethal trait: the belief, recorded as early as Pliny the Elder's Natural History and repeated throughout medieval bestiaries, that a basilisk could kill with nothing more than its gaze or its breath, without any need for physical contact. A closely related medieval variant, the cockatrice, was said to hatch from a cockerel's egg incubated by a serpent or toad — a deliberately impossible, monstrous parentage matching the creature's monstrous power. Unlike most entries in this collection, the basilisk carries no positive reading in any tradition it appears in.",
+      "secondaryNames": [
+        { "name": "Cockatrice", "languageTag": "en", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["european-folk", "roman", "folklore"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["european-folk", "roman"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.kraken",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Kraken",
+      "description": "A colossal sea monster of Scandinavian maritime folklore, reported by sailors as capable of dragging entire ships beneath the waves. The kraken received a degree of quasi-scientific legitimacy unusual for a legendary creature: Erik Pontoppidan, the Bishop of Bergen, formally described it in his 1755 Natural History of Norway, and Carl Linnaeus briefly included it in early editions of his own foundational taxonomy of living things before removing it. The legend is now widely thought to have been fed by genuine, terrifying sightings of giant squid (Architeuthis), an animal that was itself not conclusively confirmed to exist by scientists until specimens were studied in the 19th and 20th centuries — a rare case in this collection of a \"mythical\" creature converging with a real one.",
+      "secondaryNames": [],
+      "tags": ["norse", "folklore"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["norse"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.sphinx",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Sphinx",
+      "description": "The same lion-bodied, human-headed hybrid form carries almost opposite temperaments in the two traditions most associated with it. The Egyptian sphinx — most famously the Great Sphinx of Giza, believed to represent a pharaoh (most commonly identified as Khafre) wearing the royal nemes headdress — is an authoritative, benevolent guardian figure, watching over sacred and royal ground. The Greek sphinx, by contrast, is a single malevolent monster posted at the gates of Thebes in the Oedipus myth, who poses a riddle to every traveler and kills all who answer incorrectly, until Oedipus finally solves it and the sphinx destroys herself in response. Despite sharing a name and form — the Greek term was itself borrowed and reapplied to the older Egyptian figure — the two traditions' sphinxes function as near-opposite archetypes: eternal guardian versus deadly riddling gatekeeper.",
+      "secondaryNames": [],
+      "tags": ["egyptian", "greek", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["egyptian", "greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.pegasus",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Pegasus",
+      "description": "The winged horse of Greek myth, born from the blood of the Gorgon Medusa at the moment Perseus beheaded her. Tamed by the hero Bellerophon with the aid of a golden bridle gifted by Athena, Pegasus carries Bellerophon into the sky to slay the Chimera (see omen.animal.chimera), a fire-breathing hybrid monster otherwise unstoppable from the ground. Bellerophon's later hubris — attempting to fly Pegasus all the way to Mount Olympus, home of the gods — ends in his own fall back to earth, while Pegasus continues on alone to serve Zeus, eventually carrying his thunderbolts and being placed among the stars as the constellation that bears his name (see astrology.constellation.pegasus).",
+      "secondaryNames": [],
+      "tags": ["greek", "western-astrology"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.chimera",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Chimera",
+      "description": "A fire-breathing Greek hybrid monster, offspring of the monstrous parents Typhon and Echidna, conventionally described as having a lion's body and head, a second goat's head sprouting from its back, and a serpent for a tail. Terrorizing the region of Lycia, the chimera was ultimately slain by the hero Bellerophon, who attacked it from the air while riding the winged horse Pegasus (see omen.animal.pegasus) — a combination that made an otherwise unstoppable ground threat vulnerable from above. The creature's own name has since passed directly into general English usage as a term for any wildly incongruous combination of disparate parts or an unrealistic, fantastical hope, independent of the original myth.",
+      "secondaryNames": [],
+      "tags": ["greek", "folklore"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["greek"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.naga",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Naga",
+      "description": "Serpent-deities central to both Hindu and Buddhist tradition, associated with water, fertility, and the guardianship of treasure and sacred sites — a role distinct from, and considerably more exalted than, the plain snake's mixed reputation already covered elsewhere in this collection (see omen.animal.snake). Nagas feature prominently in Southeast Asian religious architecture, most famously the great seven-headed naga balustrades lining the causeways of Angkor Wat in Cambodia. In Buddhist tradition, the naga king Mucalinda is said to have sheltered the newly-enlightened Buddha from a torrential storm by rising up and spreading his great hood over him like an umbrella, a scene frequently depicted in Southeast Asian Buddhist art.",
+      "secondaryNames": [],
+      "tags": ["hindu", "buddhist", "southeast-asian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hindu", "buddhist", "southeast-asian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.garuda",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Garuda",
+      "description": "A great eagle-man figure of Hindu tradition, serving as the mount (vahana) of Vishnu, and independently revered as a protective figure in Buddhist tradition as well. Garuda's enmity with the nagas (see omen.animal.naga) is central to his mythology — born of a dispute between his mother Vinata and her rival co-wife Kadru, mother of the nagas, Garuda becomes the sworn enemy and devourer of serpents, a rivalry that positions him as a natural counterbalance to the naga's own water-and-earth-bound authority. Garuda's cultural reach today extends well beyond religious myth: he is the national symbol of both Indonesia (Garuda Pancasila) and Thailand, appearing on state emblems, currency, and the flag carrier airline of Indonesia.",
+      "secondaryNames": [],
+      "tags": ["hindu", "buddhist", "southeast-asian"],
+      "extendedData": {
+        "auspicious": true,
+        "traditions": ["hindu", "buddhist", "southeast-asian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.thunderbird",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Thunderbird",
+      "description": "An enormous mythical bird figuring prominently in many Native American and First Nations traditions, particularly among peoples of the Pacific Northwest Coast and the Great Plains, whose beating wings are said to produce thunder and whose flashing eyes produce lightning. In Pacific Northwest Coast tradition, the Thunderbird is frequently depicted in ongoing conflict with a great horned serpent or whale-like being dwelling beneath the water — a widely recurring sky-versus-water mythic opposition found, with local variation, across numerous distinct nations of the region, each with their own specific Thunderbird traditions rather than a single shared pan-Indigenous myth.",
+      "secondaryNames": [],
+      "tags": ["native-american", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["native-american"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.selkie",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Selkie",
+      "description": "Seal-folk of Scottish, Irish, and Faroese folklore, said to shed their sealskin to walk on land in human form. A recurring tale type across these traditions involves a human finding and hiding a selkie's discarded skin, thereby compelling the selkie into marriage and a life on land — a coercive union that ends the moment the hidden skin is recovered, at which point the selkie returns immediately and irresistibly to the sea, often abandoning any children born on land. The legend is generally read as a folkloric working-out of the real, often uneasy relationship between island and coastal fishing communities and the seals sharing their waters and, at times, their fishing grounds.",
+      "secondaryNames": [],
+      "tags": ["celtic", "european-folk", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["celtic", "european-folk"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.roc",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Roc",
+      "description": "An enormous bird of Middle Eastern and Persian legend, most famously described in One Thousand and One Nights — notably in the voyages of Sindbad the Sailor — as large enough to seize and carry off full-grown elephants in its talons. The legend was likely reinforced by real trade contact: enormous eggs from Madagascar's elephant bird, a giant flightless ratite that went extinct only within the last thousand years, were traded across the Indian Ocean and reached Middle Eastern markets, plausibly feeding tales of a bird large enough to have laid them.",
+      "secondaryNames": [],
+      "tags": ["persian", "folklore"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["persian"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.behemoth",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Behemoth",
+      "description": "A primordial land-beast of overwhelming, untamable power described at length in the Book of Job (Job 40:15-24) as a direct demonstration of divine power that exceeds human comprehension or control — the text explicitly presents Behemoth as something \"which I made along with you,\" a creature God alone can approach. Some later commentators have identified Behemoth with the hippopotamus or a similarly massive real animal, but the biblical description itself, emphasizing bones \"like bars of iron\" and a scale beyond ordinary nature, exceeds any single real creature and is generally read as intentionally exceeding naturalistic description. Behemoth's sea-dwelling counterpart, Leviathan, is described immediately afterward in the same text (see omen.animal.leviathan).",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "jewish"],
+      "extendedData": {
+        "auspicious": "mixed",
+        "traditions": ["abrahamic"]
+      }
+    },
+    {
+      "canonicalName": "omen.animal.leviathan",
+      "entityType": "omen.animal",
+      "primaryDisplayName": "Leviathan",
+      "description": "The sea-dwelling counterpart to Behemoth (see omen.animal.behemoth), described in the Book of Job (Job 41) as an armored, fire-breathing sea monster whose hide no weapon can pierce, presented as further proof of the limits of human power against divine creation. Leviathan appears elsewhere in the Hebrew Bible as well — Psalm 74 and Isaiah 27 both describe God crushing or slaying Leviathan's heads at the beginning of time, a chaos-serpent-defeat motif with clear roots in older Near Eastern combat myths, such as the Ugaritic Baal Cycle's battle against the sea-serpent Lotan, later reworked within the biblical text into a demonstration of a single God's exclusive sovereignty over chaos.",
+      "secondaryNames": [],
+      "tags": ["abrahamic", "jewish"],
+      "extendedData": {
+        "auspicious": false,
+        "traditions": ["abrahamic"]
+      }
     }
   ]
 }

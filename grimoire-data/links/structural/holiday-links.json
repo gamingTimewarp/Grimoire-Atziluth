@@ -56,6 +56,254 @@
       "bidirectional": true,
       "traditionScope": [],
       "extendedData": {}
+    },
+    {
+      "source": "omen.animal.fish",
+      "target": "lenormand.card.the-fish",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.hare",
+      "target": "astrology.planet.luna",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.butterfly",
+      "target": "divination.tea-symbol.butterfly",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.dove",
+      "target": "divination.tea-symbol.dove",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.fox",
+      "target": "lenormand.card.the-fox",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.fox",
+      "target": "divination.tea-symbol.fox",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.crocodile",
+      "target": "divination.tea-symbol.crocodile",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.frog",
+      "target": "divination.tea-symbol.frog",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.bear",
+      "target": "divination.tea-symbol.bear",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.bear",
+      "target": "lenormand.card.the-bear",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.bull",
+      "target": "divination.tea-symbol.bull",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.bull",
+      "target": "astrology.zodiac-sign.taurus",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.cow",
+      "target": "divination.tea-symbol.cow",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.dog",
+      "target": "divination.tea-symbol.dog",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.horse",
+      "target": "divination.tea-symbol.horse",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.horse",
+      "target": "divination.tea-symbol.horseshoe",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.lamb",
+      "target": "divination.tea-symbol.lamb",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.lion",
+      "target": "divination.tea-symbol.lion",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.lion",
+      "target": "astrology.zodiac-sign.leo",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.mouse",
+      "target": "divination.tea-symbol.mouse",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.rat",
+      "target": "divination.tea-symbol.rat",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.rabbit",
+      "target": "divination.tea-symbol.rabbit",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.eagle",
+      "target": "divination.tea-symbol.eagle",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.stork",
+      "target": "lenormand.card.the-stork",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.dragon",
+      "target": "chinese-zodiac.animal.dragon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.dragon",
+      "target": "astrology.constellation.draco",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.pegasus",
+      "target": "astrology.constellation.pegasus",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "omen.animal.phoenix",
+      "target": "omen.animal.fenghuang",
+      "label": "cross-tradition-equivalent",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Both are commonly rendered \"phoenix\" in English despite the fenghuang lacking the Greco-Egyptian bird's rebirth-by-fire mythology." }
+    },
+    {
+      "source": "omen.animal.unicorn",
+      "target": "omen.animal.qilin",
+      "label": "cross-tradition-equivalent",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Both are commonly rendered \"unicorn\" in English despite differing substantially in appearance and mythological role." }
+    },
+    {
+      "source": "omen.animal.garuda",
+      "target": "omen.animal.naga",
+      "label": "opposes",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Garuda's own mythology casts him as the sworn enemy and devourer of the nagas." }
+    },
+    {
+      "source": "omen.animal.pegasus",
+      "target": "omen.animal.chimera",
+      "label": "related-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Bellerophon rides Pegasus to slay the Chimera in the same myth." }
     }
   ]
 }
