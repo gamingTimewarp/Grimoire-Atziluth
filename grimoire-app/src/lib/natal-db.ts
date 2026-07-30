@@ -82,10 +82,20 @@ function rowToRecord(r: NatalRow): NatalChartRecord {
   }
 }
 
+/** At most one chart may be the "self" chart — clear the flag on every other row before setting it. */
+async function clearOtherSelfCharts(db: Database, exceptId: string | null): Promise<void> {
+  if (exceptId) {
+    await db.execute('UPDATE natal_charts SET is_self = 0 WHERE is_self = 1 AND id != ?', [exceptId])
+  } else {
+    await db.execute('UPDATE natal_charts SET is_self = 0 WHERE is_self = 1')
+  }
+}
+
 export async function saveNatalChart(input: Omit<NatalChartRecord, 'id' | 'createdAt'>): Promise<NatalChartRecord> {
   const db = await getDb()
   const id = newId()
   const now = nowIso()
+  if (input.isSelf) await clearOtherSelfCharts(db, null)
   await db.execute(
     `INSERT INTO natal_charts
        (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, birth_timezone, notes, is_self)
@@ -100,6 +110,7 @@ export async function saveNatalChart(input: Omit<NatalChartRecord, 'id' | 'creat
 
 export async function updateNatalChart(id: string, input: Omit<NatalChartRecord, 'id' | 'createdAt'>): Promise<void> {
   const db = await getDb()
+  if (input.isSelf) await clearOtherSelfCharts(db, id)
   await db.execute(
     `UPDATE natal_charts SET
        name = ?, birth_date = ?, birth_time = ?, birth_lat = ?, birth_lon = ?,
@@ -128,6 +139,7 @@ export async function listNatalCharts(): Promise<NatalChartRecord[]> {
 /** Insert a chart record preserving its original id/createdAt. Skips if id already exists. */
 export async function importNatalChart(r: NatalChartRecord): Promise<void> {
   const db = await getDb()
+  if (r.isSelf) await clearOtherSelfCharts(db, r.id)
   await db.execute(
     `INSERT OR IGNORE INTO natal_charts
        (id, created_at, name, birth_date, birth_time, birth_lat, birth_lon, birth_location_label, birth_timezone, notes, is_self)

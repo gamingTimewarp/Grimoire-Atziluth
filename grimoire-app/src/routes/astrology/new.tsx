@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate, useSearch } from '@tanstack/react-router'
 import React, { useState, useEffect } from 'react'
-import { saveNatalChart, updateNatalChart, getNatalChartById } from '@/lib/natal-db'
+import { saveNatalChart, updateNatalChart, getNatalChartById, listNatalCharts } from '@/lib/natal-db'
 import type { NatalChartRecord } from '@/lib/natal-db'
 import { loadSettings } from '@/lib/settings-store'
 import { Button } from '@/components/ui/Button'
@@ -27,6 +27,16 @@ function NewChartPage() {
   const [isSelf,   setIsSelf]  = useState(false)
   const [saving,   setSaving]  = useState(false)
   const [error,    setError]   = useState<string | null>(null)
+  const [existingSelfChart, setExistingSelfChart] = useState<NatalChartRecord | null>(null)
+
+  // Track whether another chart already holds the "self" flag, so checking the
+  // box here can warn that it will take over that role.
+  useEffect(() => {
+    listNatalCharts().then(charts => {
+      const other = charts.find(c => c.isSelf && c.id !== edit)
+      setExistingSelfChart(other ?? null)
+    }).catch(console.error)
+  }, [edit])
 
   // Load existing chart if editing
   useEffect(() => {
@@ -127,6 +137,12 @@ function NewChartPage() {
             This is my own natal chart
           </label>
         </div>
+
+        {isSelf && existingSelfChart && (
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', padding: '8px 12px', background: 'var(--color-surface-1)', borderRadius: '6px', border: '1px solid var(--color-border)', marginTop: '-8px' }}>
+            "{existingSelfChart.name}" is currently your self chart. Saving will replace it with this one.
+          </div>
+        )}
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
           <div>
