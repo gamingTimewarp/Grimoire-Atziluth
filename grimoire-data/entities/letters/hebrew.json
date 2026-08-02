@@ -44,6 +44,7 @@
         "gdTarotCard": "tarot.major.rws.the-fool",
         "thothTarotCard": "tarot.major.thoth.the-fool",
         "qabalisticPath": "11",
+        "qabalisticPathCN": "qabalah.path.11",
         "pathFrom": "qabalah.sephira.kether",
         "pathTo": "qabalah.sephira.chokmah",
         "orderNumber": 1
@@ -92,6 +93,7 @@
         "gdTarotCard": "tarot.major.rws.the-magician",
         "thothTarotCard": "tarot.major.thoth.the-magus",
         "qabalisticPath": "12",
+        "qabalisticPathCN": "qabalah.path.12",
         "pathFrom": "qabalah.sephira.kether",
         "pathTo": "qabalah.sephira.binah",
         "orderNumber": 2
@@ -134,6 +136,7 @@
         "gdTarotCard": "tarot.major.rws.the-high-priestess",
         "thothTarotCard": "tarot.major.thoth.the-priestess",
         "qabalisticPath": "13",
+        "qabalisticPathCN": "qabalah.path.13",
         "pathFrom": "qabalah.sephira.kether",
         "pathTo": "qabalah.sephira.tiphareth",
         "orderNumber": 3
@@ -182,6 +185,7 @@
         "gdTarotCard": "tarot.major.rws.the-empress",
         "thothTarotCard": "tarot.major.thoth.the-empress",
         "qabalisticPath": "14",
+        "qabalisticPathCN": "qabalah.path.14",
         "pathFrom": "qabalah.sephira.chokmah",
         "pathTo": "qabalah.sephira.binah",
         "orderNumber": 4
@@ -231,6 +235,7 @@
         "thothTarotCard": "tarot.major.thoth.the-star",
         "note": "In GD tradition: Heh=Emperor (path 15). In Thoth/Thelemic: Heh=The Star, Tzaddi=The Emperor.",
         "qabalisticPath": "15",
+        "qabalisticPathCN": "qabalah.path.15",
         "pathFrom": "qabalah.sephira.chokmah",
         "pathTo": "qabalah.sephira.tiphareth",
         "orderNumber": 5
@@ -285,6 +290,7 @@
         "gdTarotCard": "tarot.major.rws.the-hierophant",
         "thothTarotCard": "tarot.major.thoth.the-hierophant",
         "qabalisticPath": "16",
+        "qabalisticPathCN": "qabalah.path.16",
         "pathFrom": "qabalah.sephira.chokmah",
         "pathTo": "qabalah.sephira.chesed",
         "orderNumber": 6
@@ -327,6 +333,7 @@
         "gdTarotCard": "tarot.major.rws.the-lovers",
         "thothTarotCard": "tarot.major.thoth.the-lovers",
         "qabalisticPath": "17",
+        "qabalisticPathCN": "qabalah.path.17",
         "pathFrom": "qabalah.sephira.binah",
         "pathTo": "qabalah.sephira.tiphareth",
         "orderNumber": 7
@@ -375,6 +382,7 @@
         "gdTarotCard": "tarot.major.rws.the-chariot",
         "thothTarotCard": "tarot.major.thoth.the-chariot",
         "qabalisticPath": "18",
+        "qabalisticPathCN": "qabalah.path.18",
         "pathFrom": "qabalah.sephira.binah",
         "pathTo": "qabalah.sephira.geburah",
         "orderNumber": 8
@@ -423,6 +431,7 @@
         "gdTarotCard": "tarot.major.rws.strength",
         "thothTarotCard": "tarot.major.thoth.lust",
         "qabalisticPath": "19",
+        "qabalisticPathCN": "qabalah.path.19",
         "pathFrom": "qabalah.sephira.chesed",
         "pathTo": "qabalah.sephira.geburah",
         "orderNumber": 9
@@ -471,6 +480,7 @@
         "gdTarotCard": "tarot.major.rws.the-hermit",
         "thothTarotCard": "tarot.major.thoth.the-hermit",
         "qabalisticPath": "20",
+        "qabalisticPathCN": "qabalah.path.20",
         "pathFrom": "qabalah.sephira.chesed",
         "pathTo": "qabalah.sephira.tiphareth",
         "orderNumber": 10
@@ -520,6 +530,7 @@
         "gdTarotCard": "tarot.major.rws.wheel-of-fortune",
         "thothTarotCard": "tarot.major.thoth.fortune",
         "qabalisticPath": "21",
+        "qabalisticPathCN": "qabalah.path.21",
         "pathFrom": "qabalah.sephira.chesed",
         "pathTo": "qabalah.sephira.netzach",
         "orderNumber": 11
@@ -556,6 +567,7 @@
         "gdTarotCard": "tarot.major.rws.justice",
         "thothTarotCard": "tarot.major.thoth.adjustment",
         "qabalisticPath": "22",
+        "qabalisticPathCN": "qabalah.path.22",
         "pathFrom": "qabalah.sephira.geburah",
         "pathTo": "qabalah.sephira.tiphareth",
         "orderNumber": 12
@@ -593,6 +605,7 @@
         "gdTarotCard": "tarot.major.rws.the-hanged-man",
         "thothTarotCard": "tarot.major.thoth.the-hanged-man",
         "qabalisticPath": "23",
+        "qabalisticPathCN": "qabalah.path.23",
         "pathFrom": "qabalah.sephira.geburah",
         "pathTo": "qabalah.sephira.hod",
         "orderNumber": 13
@@ -630,6 +643,7 @@
         "gdTarotCard": "tarot.major.rws.death",
         "thothTarotCard": "tarot.major.thoth.death",
         "qabalisticPath": "24",
+        "qabalisticPathCN": "qabalah.path.24",
         "pathFrom": "qabalah.sephira.tiphareth",
         "pathTo": "qabalah.sephira.netzach",
         "orderNumber": 14
@@ -672,6 +686,7 @@
         "gdTarotCard": "tarot.major.rws.temperance",
         "thothTarotCard": "tarot.major.thoth.art",
         "qabalisticPath": "25",
+        "qabalisticPathCN": "qabalah.path.25",
         "pathFrom": "qabalah.sephira.tiphareth",
         "pathTo": "qabalah.sephira.yesod",
         "orderNumber": 15
@@ -714,6 +729,7 @@
         "gdTarotCard": "tarot.major.rws.the-devil",
         "thothTarotCard": "tarot.major.thoth.the-devil",
         "qabalisticPath": "26",
+        "qabalisticPathCN": "qabalah.path.26",
         "pathFrom": "qabalah.sephira.tiphareth",
         "pathTo": "qabalah.sephira.hod",
         "orderNumber": 16
@@ -763,6 +779,7 @@
         "gdTarotCard": "tarot.major.rws.the-tower",
         "thothTarotCard": "tarot.major.thoth.the-tower",
         "qabalisticPath": "27",
+        "qabalisticPathCN": "qabalah.path.27",
         "pathFrom": "qabalah.sephira.netzach",
         "pathTo": "qabalah.sephira.hod",
         "orderNumber": 17
@@ -819,6 +836,7 @@
         "thothTarotCard": "tarot.major.thoth.the-emperor",
         "note": "In GD: Tzaddi=The Star. In Thoth: Tzaddi=The Emperor (Crowley's reversal, Liber AL I:57).",
         "qabalisticPath": "28",
+        "qabalisticPathCN": "qabalah.path.28",
         "pathFrom": "qabalah.sephira.netzach",
         "pathTo": "qabalah.sephira.yesod",
         "orderNumber": 18
@@ -861,6 +879,7 @@
         "gdTarotCard": "tarot.major.rws.the-moon",
         "thothTarotCard": "tarot.major.thoth.the-moon",
         "qabalisticPath": "29",
+        "qabalisticPathCN": "qabalah.path.29",
         "pathFrom": "qabalah.sephira.netzach",
         "pathTo": "qabalah.sephira.malkuth",
         "orderNumber": 19
@@ -897,6 +916,7 @@
         "gdTarotCard": "tarot.major.rws.the-sun",
         "thothTarotCard": "tarot.major.thoth.the-sun",
         "qabalisticPath": "30",
+        "qabalisticPathCN": "qabalah.path.30",
         "pathFrom": "qabalah.sephira.hod",
         "pathTo": "qabalah.sephira.yesod",
         "orderNumber": 20
@@ -939,6 +959,7 @@
         "gdTarotCard": "tarot.major.rws.judgement",
         "thothTarotCard": "tarot.major.thoth.the-aeon",
         "qabalisticPath": "31",
+        "qabalisticPathCN": "qabalah.path.31",
         "pathFrom": "qabalah.sephira.hod",
         "pathTo": "qabalah.sephira.malkuth",
         "orderNumber": 21
@@ -987,6 +1008,7 @@
         "gdTarotCard": "tarot.major.rws.the-world",
         "thothTarotCard": "tarot.major.thoth.the-universe",
         "qabalisticPath": "32",
+        "qabalisticPathCN": "qabalah.path.32",
         "pathFrom": "qabalah.sephira.yesod",
         "pathTo": "qabalah.sephira.malkuth",
         "orderNumber": 22
