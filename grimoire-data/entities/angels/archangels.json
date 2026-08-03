@@ -126,7 +126,7 @@
         "hebrewName": "רָפָאֵל",
         "etymologyMeaning": "Rapha (רָפָא) = to heal; El = God — 'Healing of God' or 'God has healed'",
         "functions": "Archangel of healing, medicine, travel, and wholeness; governor of the Sun (primary GD attribution) and Air; appears in the Book of Tobit; guardian of the East in the LBRP; healer of the earth and of human bodies and souls",
-        "planet": "astrology.planet.sun"
+        "planet": "astrology.planet.sol"
       }
     },
     {
@@ -193,7 +193,7 @@
         "hebrewName": "גַּבְרִיאֵל",
         "etymologyMeaning": "Gavar (גָּבַר) = strength, hero, mighty one; El = God — 'Strength of God' or 'Hero of God'",
         "functions": "Archangel of divine annunciation, revelation, and the lunar sphere; governor of dreams, vision, astral travel, and psychic perception; messenger of the incarnation in Christian tradition; angel of revelation (Jibril) in Islamic tradition; stands West in the LBRP (Water)",
-        "planet": "astrology.planet.moon"
+        "planet": "astrology.planet.luna"
       }
     },
     {

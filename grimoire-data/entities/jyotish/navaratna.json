@@ -253,7 +253,7 @@
       ],
       "extendedData": {
         "planetName": "Rahu",
-        "planetCN": "jyotish.node.rahu",
+        "planetCN": "astrology.node.rahu",
         "hindiName": "गोमेद",
         "sanskritTransliteration": "Gomed"
       }
@@ -286,7 +286,7 @@
       ],
       "extendedData": {
         "planetName": "Ketu",
-        "planetCN": "jyotish.node.ketu",
+        "planetCN": "astrology.node.ketu",
         "hindiName": "लहसुनिया",
         "sanskritTransliteration": "Lahsunia"
       }

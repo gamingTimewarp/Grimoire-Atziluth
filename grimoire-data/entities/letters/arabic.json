@@ -93,7 +93,7 @@
         "transliteration": "ba",
         "phoneme": "b",
         "abjadValue": 2,
-        "hebrewEquivalentCN": "letter.hebrew.bet",
+        "hebrewEquivalentCN": "letter.hebrew.beth",
         "hebrewLetter": "letter.hebrew.beth",
         "positionInAlphabet": 2,
         "abjadPosition": 2
@@ -191,7 +191,7 @@
         "transliteration": "dal",
         "phoneme": "d",
         "abjadValue": 4,
-        "hebrewEquivalentCN": "letter.hebrew.dalet",
+        "hebrewEquivalentCN": "letter.hebrew.daleth",
         "hebrewLetter": "letter.hebrew.daleth",
         "positionInAlphabet": 8,
         "abjadPosition": 4
@@ -240,7 +240,7 @@
         "transliteration": "ha",
         "phoneme": "h",
         "abjadValue": 5,
-        "hebrewEquivalentCN": "letter.hebrew.he",
+        "hebrewEquivalentCN": "letter.hebrew.heh",
         "hebrewLetter": "letter.hebrew.heh",
         "positionInAlphabet": 26,
         "abjadPosition": 5
@@ -283,7 +283,7 @@
         "transliteration": "waw",
         "phoneme": "w / ū (long vowel)",
         "abjadValue": 6,
-        "hebrewEquivalentCN": "letter.hebrew.vav",
+        "hebrewEquivalentCN": "letter.hebrew.vau",
         "hebrewLetter": "letter.hebrew.vau",
         "positionInAlphabet": 27,
         "abjadPosition": 6
@@ -381,7 +381,7 @@
         "transliteration": "ha",
         "phoneme": "ħ (voiceless pharyngeal fricative)",
         "abjadValue": 8,
-        "hebrewEquivalentCN": "letter.hebrew.chet",
+        "hebrewEquivalentCN": "letter.hebrew.cheth",
         "hebrewLetter": "letter.hebrew.cheth",
         "positionInAlphabet": 6,
         "abjadPosition": 8
@@ -430,7 +430,7 @@
         "transliteration": "ta",
         "phoneme": "tˤ (emphatic/velarised t)",
         "abjadValue": 9,
-        "hebrewEquivalentCN": "letter.hebrew.tet",
+        "hebrewEquivalentCN": "letter.hebrew.teth",
         "hebrewLetter": "letter.hebrew.teth",
         "positionInAlphabet": 16,
         "abjadPosition": 9
@@ -528,7 +528,7 @@
         "transliteration": "kaf",
         "phoneme": "k",
         "abjadValue": 20,
-        "hebrewEquivalentCN": "letter.hebrew.kaf",
+        "hebrewEquivalentCN": "letter.hebrew.kaph",
         "hebrewLetter": "letter.hebrew.kaph",
         "positionInAlphabet": 22,
         "abjadPosition": 11
@@ -724,7 +724,7 @@
         "transliteration": "sin",
         "phoneme": "s",
         "abjadValue": 60,
-        "hebrewEquivalentCN": "letter.hebrew.samech",
+        "hebrewEquivalentCN": "letter.hebrew.samekh",
         "hebrewLetter": "letter.hebrew.samekh",
         "positionInAlphabet": 12,
         "abjadPosition": 15
@@ -822,7 +822,7 @@
         "transliteration": "fa",
         "phoneme": "f",
         "abjadValue": 80,
-        "hebrewEquivalentCN": "letter.hebrew.pe",
+        "hebrewEquivalentCN": "letter.hebrew.peh",
         "hebrewLetter": "letter.hebrew.peh",
         "positionInAlphabet": 20,
         "abjadPosition": 17
@@ -871,7 +871,7 @@
         "transliteration": "sad",
         "phoneme": "sˤ (emphatic/velarised s)",
         "abjadValue": 90,
-        "hebrewEquivalentCN": "letter.hebrew.tsade",
+        "hebrewEquivalentCN": "letter.hebrew.tzaddi",
         "hebrewLetter": "letter.hebrew.tzaddi",
         "positionInAlphabet": 14,
         "abjadPosition": 18
@@ -920,7 +920,7 @@
         "transliteration": "qaf",
         "phoneme": "q (uvular stop)",
         "abjadValue": 100,
-        "hebrewEquivalentCN": "letter.hebrew.qof",
+        "hebrewEquivalentCN": "letter.hebrew.qoph",
         "hebrewLetter": "letter.hebrew.qoph",
         "positionInAlphabet": 21,
         "abjadPosition": 19
