@@ -27,7 +27,8 @@
         "meaning": "The Water-Bearer",
         "hemisphere": "equatorial",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.sadalsuud"
+        "brightestStarCn": "astrology.fixed-star.sadalsuud",
+        "zodiacSignCN": "astrology.zodiac-sign.aquarius"
       }
     },
     {
@@ -57,7 +58,8 @@
         "meaning": "The Ram",
         "hemisphere": "northern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.hamal"
+        "brightestStarCn": "astrology.fixed-star.hamal",
+        "zodiacSignCN": "astrology.zodiac-sign.aries"
       }
     },
     {
@@ -101,7 +103,8 @@
         "abbreviation": "Cnc",
         "meaning": "The Crab",
         "hemisphere": "northern",
-        "isZodiacConstellation": true
+        "isZodiacConstellation": true,
+        "zodiacSignCN": "astrology.zodiac-sign.cancer"
       }
     },
     {
@@ -146,7 +149,8 @@
         "meaning": "The Sea-Goat",
         "hemisphere": "southern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.deneb-algedi"
+        "brightestStarCn": "astrology.fixed-star.deneb-algedi",
+        "zodiacSignCN": "astrology.zodiac-sign.capricorn"
       }
     },
     {
@@ -248,7 +252,8 @@
         "meaning": "The Twins",
         "hemisphere": "northern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.pollux"
+        "brightestStarCn": "astrology.fixed-star.pollux",
+        "zodiacSignCN": "astrology.zodiac-sign.gemini"
       }
     },
     {
@@ -292,7 +297,8 @@
         "meaning": "The Lion",
         "hemisphere": "northern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.regulus"
+        "brightestStarCn": "astrology.fixed-star.regulus",
+        "zodiacSignCN": "astrology.zodiac-sign.leo"
       }
     },
     {
@@ -307,7 +313,8 @@
         "meaning": "The Scales",
         "hemisphere": "equatorial",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.zubeneschamali"
+        "brightestStarCn": "astrology.fixed-star.zubeneschamali",
+        "zodiacSignCN": "astrology.zodiac-sign.libra"
       }
     },
     {
@@ -336,7 +343,8 @@
         "abbreviation": "Oph",
         "meaning": "The Serpent-Bearer",
         "hemisphere": "equatorial",
-        "isZodiacConstellation": false
+        "isZodiacConstellation": false,
+        "zodiacSignCN": "astrology.zodiac-sign.ophiuchus"
       }
     },
     {
@@ -369,6 +377,21 @@
       }
     },
     {
+      "canonicalName": "astrology.constellation.pisces",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Pisces",
+      "description": "Pisces, 'the Fishes', is a large but faint zodiacal constellation depicting two fish tied together by a cord, said to represent Aphrodite and Eros who leapt into the Euphrates and transformed themselves to escape the monster Typhon, binding themselves together so as not to lose one another in the current. The knot joining the two cords is marked by the star Alrescha, 'the cord' or 'the well-rope', at the point where the two ribbons meet.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "pisces"],
+      "extendedData": {
+        "abbreviation": "Psc",
+        "meaning": "The Fishes",
+        "hemisphere": "northern",
+        "isZodiacConstellation": true,
+        "zodiacSignCN": "astrology.zodiac-sign.pisces"
+      }
+    },
+    {
       "canonicalName": "astrology.constellation.piscis-austrinus",
       "entityType": "astrology.constellation",
       "primaryDisplayName": "Piscis Austrinus",
@@ -384,6 +407,21 @@
       }
     },
     {
+      "canonicalName": "astrology.constellation.sagittarius",
+      "entityType": "astrology.constellation",
+      "primaryDisplayName": "Sagittarius",
+      "description": "Sagittarius, 'the Archer', is a zodiacal constellation depicting a centaur drawing back a bow, its arrow aimed at the heart of neighbouring Scorpius. Its brightest stars form the well-known Teapot asterism, and the constellation sits directly in front of the galactic centre — the dense hub of the Milky Way lies within its borders, making Sagittarius the richest hunting ground in the sky for star clusters and nebulae.",
+      "secondaryNames": [],
+      "tags": ["constellation", "astrology", "sagittarius"],
+      "extendedData": {
+        "abbreviation": "Sgr",
+        "meaning": "The Archer",
+        "hemisphere": "southern",
+        "isZodiacConstellation": true,
+        "zodiacSignCN": "astrology.zodiac-sign.sagittarius"
+      }
+    },
+    {
       "canonicalName": "astrology.constellation.scorpius",
       "entityType": "astrology.constellation",
       "primaryDisplayName": "Scorpius",
@@ -395,7 +433,8 @@
         "meaning": "The Scorpion",
         "hemisphere": "southern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.antares"
+        "brightestStarCn": "astrology.fixed-star.antares",
+        "zodiacSignCN": "astrology.zodiac-sign.scorpio"
       }
     },
     {
@@ -425,7 +464,8 @@
         "meaning": "The Bull",
         "hemisphere": "northern",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.aldebaran"
+        "brightestStarCn": "astrology.fixed-star.aldebaran",
+        "zodiacSignCN": "astrology.zodiac-sign.taurus"
       }
     },
     {
@@ -455,7 +495,8 @@
         "meaning": "The Maiden",
         "hemisphere": "equatorial",
         "isZodiacConstellation": true,
-        "brightestStarCn": "astrology.fixed-star.spica"
+        "brightestStarCn": "astrology.fixed-star.spica",
+        "zodiacSignCN": "astrology.zodiac-sign.virgo"
       }
     }
   ]

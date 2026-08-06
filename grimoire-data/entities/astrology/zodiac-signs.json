@@ -40,7 +40,8 @@
         "hebrewLetterThoth": "letter.hebrew.tzaddi",
         "dateRange": "March 21 – April 19",
         "bodyPart": "Head, face, brain",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.aries"
       }
     },
     {
@@ -81,7 +82,8 @@
         "hebrewLetterGD": "letter.hebrew.vau",
         "dateRange": "April 20 – May 20",
         "bodyPart": "Neck, throat, thyroid",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.taurus"
       }
     },
     {
@@ -122,7 +124,8 @@
         "hebrewLetterGD": "letter.hebrew.zayin",
         "dateRange": "May 21 – June 20",
         "bodyPart": "Arms, hands, shoulders, lungs",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.gemini"
       }
     },
     {
@@ -163,7 +166,8 @@
         "hebrewLetterGD": "letter.hebrew.cheth",
         "dateRange": "June 21 – July 22",
         "bodyPart": "Chest, breasts, stomach",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.cancer"
       }
     },
     {
@@ -204,7 +208,8 @@
         "hebrewLetterGD": "letter.hebrew.teth",
         "dateRange": "July 23 – August 22",
         "bodyPart": "Heart, spine, upper back",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.leo"
       }
     },
     {
@@ -245,7 +250,8 @@
         "hebrewLetterGD": "letter.hebrew.yod",
         "dateRange": "August 23 – September 22",
         "bodyPart": "Digestive system, intestines, abdomen",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.virgo"
       }
     },
     {
@@ -286,7 +292,8 @@
         "hebrewLetterGD": "letter.hebrew.lamed",
         "dateRange": "September 23 – October 22",
         "bodyPart": "Kidneys, lower back, adrenal glands",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.libra"
       }
     },
     {
@@ -327,7 +334,8 @@
         "hebrewLetterGD": "letter.hebrew.nun",
         "dateRange": "October 23 – November 21",
         "bodyPart": "Genitals, reproductive organs, colon",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.scorpius"
       }
     },
     {
@@ -368,7 +376,8 @@
         "hebrewLetterGD": "letter.hebrew.samekh",
         "dateRange": "November 22 – December 21",
         "bodyPart": "Thighs, hips, liver, sciatic nerve",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.sagittarius"
       }
     },
     {
@@ -409,7 +418,8 @@
         "hebrewLetterGD": "letter.hebrew.ayin",
         "dateRange": "December 22 – January 19",
         "bodyPart": "Knees, bones, teeth, skin, joints",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.capricornus"
       }
     },
     {
@@ -452,7 +462,8 @@
         "note": "GD: Aquarius=Tzaddi=The Star. Thoth: Aquarius=Heh=The Star (Crowley's reversal).",
         "dateRange": "January 20 – February 18",
         "bodyPart": "Calves, ankles, circulatory system",
-        "polarity": "western.polarity.masculine"
+        "polarity": "western.polarity.masculine",
+        "constellationCN": "astrology.constellation.aquarius"
       }
     },
     {
@@ -493,7 +504,8 @@
         "hebrewLetterGD": "letter.hebrew.qoph",
         "dateRange": "February 19 – March 20",
         "bodyPart": "Feet, toes, lymphatic system",
-        "polarity": "western.polarity.feminine"
+        "polarity": "western.polarity.feminine",
+        "constellationCN": "astrology.constellation.pisces"
       }
     },
     {
@@ -542,7 +554,8 @@
         "hebrewLetterThoth": null,
         "dateRange": "November 30 – December 18 (sidereal / IAU)",
         "note": "Not part of the traditional 12-sign tropical zodiac. Recognised by the IAU; used in 13-sign and sidereal astrology.",
-        "polarity": null
+        "polarity": null,
+        "constellationCN": "astrology.constellation.ophiuchus"
       }
     }
   ]
