@@ -388,6 +388,7 @@
         "meaning": "The Fishes",
         "hemisphere": "northern",
         "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.eta-piscium",
         "zodiacSignCN": "astrology.zodiac-sign.pisces"
       }
     },
@@ -418,6 +419,7 @@
         "meaning": "The Archer",
         "hemisphere": "southern",
         "isZodiacConstellation": true,
+        "brightestStarCn": "astrology.fixed-star.kaus-australis",
         "zodiacSignCN": "astrology.zodiac-sign.sagittarius"
       }
     },

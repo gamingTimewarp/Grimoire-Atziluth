@@ -3649,6 +3649,206 @@
         "behenianStone": null,
         "behenianHerb": null
       }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kaus-australis",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kaus Australis",
+      "description": "Kaus Australis, 'the southern part of the bow', is the brightest star in Sagittarius, marking the tip of the Archer's drawn bow and the base of the Teapot asterism's spout. Its Jupiter-Mercury nature was traditionally read as combining the Archer's expansive aim with the swift precision needed to loose the arrow true.",
+      "secondaryNames": [
+        { "name": "Epsilon Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 4.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 1.85,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Called upon in workings requiring aim, precision of intent, and the courage to release what has been carefully drawn and prepared.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kaus-media",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kaus Media",
+      "description": "Kaus Media, 'the middle of the bow', sits at the grip of the Archer's bow between Kaus Australis and Kaus Borealis, and forms the base of the Teapot asterism's body.",
+      "secondaryNames": [
+        { "name": "Delta Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 2.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 2.70,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the outline of the bow; its central position lends it a supporting, steadying quality in workings of balance.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.kaus-borealis",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Kaus Borealis",
+      "description": "Kaus Borealis, 'the northern part of the bow', marks the upper tip of the Archer's bow and forms the lid of the Teapot asterism. Sharing the Jupiter-Mercury nature of its neighbouring bow-stars, it was associated with foresight and the steady hand needed before the arrow is loosed.",
+      "secondaryNames": [
+        { "name": "Lambda Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 28.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 2.82,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked for foresight and the steadying of intent before decisive action.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.nunki",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Nunki",
+      "description": "Nunki, one of the oldest named stars in the sky, preserves a Babylonian name associated with the god Ea (Enki), lord of the deep waters and wisdom. It marks the handle of the Teapot asterism and, despite its ancient pedigree, carries the same Jupiter-Mercury nature as its neighbours in the Archer's bow.",
+      "secondaryNames": [
+        { "name": "Sigma Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 12.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 2.05,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Its Babylonian pedigree lends it to workings invoking deep, ancient wisdom and the currents of hidden knowledge.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.ascella",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Ascella",
+      "description": "Ascella, 'the armpit', marks the Archer's shoulder joint and forms part of the Teapot asterism's handle alongside Nunki, sharing the constellation's characteristic Jupiter-Mercury attribution.",
+      "secondaryNames": [
+        { "name": "Zeta Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 11.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 2.60,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the Teapot's handle; little distinct lore attaches to it beyond the constellation's general Jupiterian character.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alnasl",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alnasl",
+      "description": "Alnasl, 'the point', marks the arrowhead at the tip of the Archer's aim — and, in the Teapot asterism, the tip of the spout. Its name preserves the moment just before release, the arrow's point already aligned with its target.",
+      "secondaryNames": [
+        { "name": "Gamma2 Sagittarii", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "sagittarius"],
+      "extendedData": {
+        "tropicalLongitude": 23.0,
+        "constellation": "astrology.constellation.sagittarius",
+        "magnitude": 2.98,
+        "planetaryNature": "Nature of Jupiter and Mercury",
+        "primaryPlanet": "astrology.planet.jupiter",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Called upon in workings requiring exact focus on a single, already-chosen target.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.alrescha",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Alrescha",
+      "description": "Alrescha, 'the cord' or 'the knot', marks the point where the two ribbons binding Pisces's fish together are tied — a close double star fittingly placed at the exact junction of the two cords. Sitting in the very last degrees of tropical Pisces, on the threshold of Aries, it was traditionally read as a star of binding, connection, and the tension between two pulls that must be held together rather than resolved.",
+      "secondaryNames": [
+        { "name": "Alpha Piscium", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "The Knot", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "pisces"],
+      "extendedData": {
+        "tropicalLongitude": 29.0,
+        "constellation": "astrology.constellation.pisces",
+        "magnitude": 3.82,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Invoked in bindings and workings of connection — for holding two things, or two people, together without forcing either to yield.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.eta-piscium",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Eta Piscium",
+      "description": "Eta Piscium, sometimes called Alpherg or Kullat Nunu ('the Cord of the Fishes' in Babylonian tradition), is the true brightest star of Pisces despite the constellation's naming convention giving pride of place to the fainter Alrescha. It marks the cord near the head of the northern fish, the one that swims up toward Andromeda — and, owing to precession, has drifted tropically out of Pisces entirely into early Aries, a reminder of how far the fixed constellations have slipped from the moving tropical signs that share their names.",
+      "secondaryNames": [
+        { "name": "Alpherg", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Kullat Nunu", "languageTag": "en", "visible": true, "sortOrder": 1 }
+      ],
+      "tags": ["fixed-star", "astrology", "pisces"],
+      "extendedData": {
+        "tropicalLongitude": 25.0,
+        "constellation": "astrology.constellation.pisces",
+        "magnitude": 3.62,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Its precessional drift into Aries makes it a fitting star for workings on the gap between how things are named and how they truly stand.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
+    },
+    {
+      "canonicalName": "astrology.fixed-star.omega-piscium",
+      "entityType": "astrology.fixed-star",
+      "primaryDisplayName": "Omega Piscium",
+      "description": "Omega Piscium sits within the small circlet asterism marking the head of the northern fish alongside Eta Piscium, and like its neighbour has tropically drifted into early Aries despite belonging to the constellation Pisces.",
+      "secondaryNames": [
+        { "name": "Omega Piscium", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["fixed-star", "astrology", "pisces"],
+      "extendedData": {
+        "tropicalLongitude": 28.0,
+        "constellation": "astrology.constellation.pisces",
+        "magnitude": 4.03,
+        "planetaryNature": "Nature of Saturn and Mercury",
+        "primaryPlanet": "astrology.planet.saturn",
+        "secondaryPlanet": "astrology.planet.mercury",
+        "magicalUses": "Used mainly to complete the circlet asterism; little distinct lore attaches to it beyond that of its brighter neighbour Eta Piscium.",
+        "behenianStar": false,
+        "behenianStone": null,
+        "behenianHerb": null
+      }
     }
 
   ]
