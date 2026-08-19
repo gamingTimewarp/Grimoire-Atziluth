@@ -801,6 +801,918 @@
           "tarot.minor.etteilla.pentacles.king"
         ]
       }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.ace",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ace of Wands",
+      "description": "Ace of Wands across four decks (Fire suit) — the unmanifest root force of fire, prior to any zodiacal division into decans. Thoth titles the card “The root of the powers of Fire.” TdM calls it As de Batons.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "members": [
+          "tarot.minor.rws.wands.ace",
+          "tarot.minor.thoth.wands.ace",
+          "tarot.minor.tdm.batons.ace",
+          "tarot.minor.etteilla.wands.ace"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.2",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Two of Wands",
+      "description": "Two of Wands across four decks (Fire suit). Golden Dawn decan attribution: Mars in Aries. Thoth titles the card “Dominion.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "members": [
+          "tarot.minor.rws.wands.2",
+          "tarot.minor.thoth.wands.2",
+          "tarot.minor.tdm.batons.2",
+          "tarot.minor.etteilla.wands.2"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.3",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Three of Wands",
+      "description": "Three of Wands across four decks (Fire suit). Golden Dawn decan attribution: the Sun in Aries. Thoth titles the card “Virtue.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "members": [
+          "tarot.minor.rws.wands.3",
+          "tarot.minor.thoth.wands.3",
+          "tarot.minor.tdm.batons.3",
+          "tarot.minor.etteilla.wands.3"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.4",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Four of Wands",
+      "description": "Four of Wands across four decks (Fire suit). Golden Dawn decan attribution: Venus in Aries. Thoth titles the card “Completion.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.aries",
+        "members": [
+          "tarot.minor.rws.wands.4",
+          "tarot.minor.thoth.wands.4",
+          "tarot.minor.tdm.batons.4",
+          "tarot.minor.etteilla.wands.4"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.5",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five of Wands",
+      "description": "Five of Wands across four decks (Fire suit). Golden Dawn decan attribution: Saturn in Leo. Thoth titles the card “Strife.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "members": [
+          "tarot.minor.rws.wands.5",
+          "tarot.minor.thoth.wands.5",
+          "tarot.minor.tdm.batons.5",
+          "tarot.minor.etteilla.wands.5"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.6",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Six of Wands",
+      "description": "Six of Wands across four decks (Fire suit). Golden Dawn decan attribution: Jupiter in Leo. Thoth titles the card “Victory.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "members": [
+          "tarot.minor.rws.wands.6",
+          "tarot.minor.thoth.wands.6",
+          "tarot.minor.tdm.batons.6",
+          "tarot.minor.etteilla.wands.6"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.7",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Seven of Wands",
+      "description": "Seven of Wands across four decks (Fire suit). Golden Dawn decan attribution: Mars in Leo. Thoth titles the card “Valour.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.leo",
+        "members": [
+          "tarot.minor.rws.wands.7",
+          "tarot.minor.thoth.wands.7",
+          "tarot.minor.tdm.batons.7",
+          "tarot.minor.etteilla.wands.7"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.8",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eight of Wands",
+      "description": "Eight of Wands across four decks (Fire suit). Golden Dawn decan attribution: Mercury in Sagittarius. Thoth titles the card “Swiftness.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "members": [
+          "tarot.minor.rws.wands.8",
+          "tarot.minor.thoth.wands.8",
+          "tarot.minor.tdm.batons.8",
+          "tarot.minor.etteilla.wands.8"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.9",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nine of Wands",
+      "description": "Nine of Wands across four decks (Fire suit). Golden Dawn decan attribution: the Moon in Sagittarius. Thoth titles the card “Strength.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "members": [
+          "tarot.minor.rws.wands.9",
+          "tarot.minor.thoth.wands.9",
+          "tarot.minor.tdm.batons.9",
+          "tarot.minor.etteilla.wands.9"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.wands.10",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ten of Wands",
+      "description": "Ten of Wands across four decks (Fire suit). Golden Dawn decan attribution: Saturn in Sagittarius. Thoth titles the card “Oppression.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.sagittarius",
+        "members": [
+          "tarot.minor.rws.wands.10",
+          "tarot.minor.thoth.wands.10",
+          "tarot.minor.tdm.batons.10",
+          "tarot.minor.etteilla.wands.10"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.ace",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ace of Cups",
+      "description": "Ace of Cups across four decks (Water suit) — the unmanifest root force of water, prior to any zodiacal division into decans. Thoth titles the card “The root of the powers of Water.” TdM calls it As de Coupes.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "members": [
+          "tarot.minor.rws.cups.ace",
+          "tarot.minor.thoth.cups.ace",
+          "tarot.minor.tdm.coupes.ace",
+          "tarot.minor.etteilla.cups.ace"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.2",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Two of Cups",
+      "description": "Two of Cups across four decks (Water suit). Golden Dawn decan attribution: Venus in Cancer. Thoth titles the card “Love.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "members": [
+          "tarot.minor.rws.cups.2",
+          "tarot.minor.thoth.cups.2",
+          "tarot.minor.tdm.coupes.2",
+          "tarot.minor.etteilla.cups.2"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.3",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Three of Cups",
+      "description": "Three of Cups across four decks (Water suit). Golden Dawn decan attribution: Mercury in Cancer. Thoth titles the card “Abundance.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "members": [
+          "tarot.minor.rws.cups.3",
+          "tarot.minor.thoth.cups.3",
+          "tarot.minor.tdm.coupes.3",
+          "tarot.minor.etteilla.cups.3"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.4",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Four of Cups",
+      "description": "Four of Cups across four decks (Water suit). Golden Dawn decan attribution: the Moon in Cancer. Thoth titles the card “Luxury.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.cancer",
+        "members": [
+          "tarot.minor.rws.cups.4",
+          "tarot.minor.thoth.cups.4",
+          "tarot.minor.tdm.coupes.4",
+          "tarot.minor.etteilla.cups.4"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.5",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five of Cups",
+      "description": "Five of Cups across four decks (Water suit). Golden Dawn decan attribution: Mars in Scorpio. Thoth titles the card “Disappointment.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "members": [
+          "tarot.minor.rws.cups.5",
+          "tarot.minor.thoth.cups.5",
+          "tarot.minor.tdm.coupes.5",
+          "tarot.minor.etteilla.cups.5"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.6",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Six of Cups",
+      "description": "Six of Cups across four decks (Water suit). Golden Dawn decan attribution: the Sun in Scorpio. Thoth titles the card “Pleasure.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "members": [
+          "tarot.minor.rws.cups.6",
+          "tarot.minor.thoth.cups.6",
+          "tarot.minor.tdm.coupes.6",
+          "tarot.minor.etteilla.cups.6"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.7",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Seven of Cups",
+      "description": "Seven of Cups across four decks (Water suit). Golden Dawn decan attribution: Venus in Scorpio. Thoth titles the card “Debauch.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.scorpio",
+        "members": [
+          "tarot.minor.rws.cups.7",
+          "tarot.minor.thoth.cups.7",
+          "tarot.minor.tdm.coupes.7",
+          "tarot.minor.etteilla.cups.7"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.8",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eight of Cups",
+      "description": "Eight of Cups across four decks (Water suit). Golden Dawn decan attribution: Saturn in Pisces. Thoth titles the card “Indolence.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "members": [
+          "tarot.minor.rws.cups.8",
+          "tarot.minor.thoth.cups.8",
+          "tarot.minor.tdm.coupes.8",
+          "tarot.minor.etteilla.cups.8"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.9",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nine of Cups",
+      "description": "Nine of Cups across four decks (Water suit). Golden Dawn decan attribution: Jupiter in Pisces. Thoth titles the card “Happiness.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "members": [
+          "tarot.minor.rws.cups.9",
+          "tarot.minor.thoth.cups.9",
+          "tarot.minor.tdm.coupes.9",
+          "tarot.minor.etteilla.cups.9"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.cups.10",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ten of Cups",
+      "description": "Ten of Cups across four decks (Water suit). Golden Dawn decan attribution: Mars in Pisces. Thoth titles the card “Satiety.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.pisces",
+        "members": [
+          "tarot.minor.rws.cups.10",
+          "tarot.minor.thoth.cups.10",
+          "tarot.minor.tdm.coupes.10",
+          "tarot.minor.etteilla.cups.10"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.ace",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ace of Swords",
+      "description": "Ace of Swords across four decks (Air suit) — the unmanifest root force of air, prior to any zodiacal division into decans. Thoth titles the card “The root of the powers of Air.” TdM calls it As de Epees.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "members": [
+          "tarot.minor.rws.swords.ace",
+          "tarot.minor.thoth.swords.ace",
+          "tarot.minor.tdm.epees.ace",
+          "tarot.minor.etteilla.swords.ace"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.2",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Two of Swords",
+      "description": "Two of Swords across four decks (Air suit). Golden Dawn decan attribution: the Moon in Libra. Thoth titles the card “Peace.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "members": [
+          "tarot.minor.rws.swords.2",
+          "tarot.minor.thoth.swords.2",
+          "tarot.minor.tdm.epees.2",
+          "tarot.minor.etteilla.swords.2"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.3",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Three of Swords",
+      "description": "Three of Swords across four decks (Air suit). Golden Dawn decan attribution: Saturn in Libra. Thoth titles the card “Sorrow.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "members": [
+          "tarot.minor.rws.swords.3",
+          "tarot.minor.thoth.swords.3",
+          "tarot.minor.tdm.epees.3",
+          "tarot.minor.etteilla.swords.3"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.4",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Four of Swords",
+      "description": "Four of Swords across four decks (Air suit). Golden Dawn decan attribution: Jupiter in Libra. Thoth titles the card “Truce.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.libra",
+        "members": [
+          "tarot.minor.rws.swords.4",
+          "tarot.minor.thoth.swords.4",
+          "tarot.minor.tdm.epees.4",
+          "tarot.minor.etteilla.swords.4"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.5",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five of Swords",
+      "description": "Five of Swords across four decks (Air suit). Golden Dawn decan attribution: Venus in Aquarius. Thoth titles the card “Defeat.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "members": [
+          "tarot.minor.rws.swords.5",
+          "tarot.minor.thoth.swords.5",
+          "tarot.minor.tdm.epees.5",
+          "tarot.minor.etteilla.swords.5"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.6",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Six of Swords",
+      "description": "Six of Swords across four decks (Air suit). Golden Dawn decan attribution: Mercury in Aquarius. Thoth titles the card “Science.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "members": [
+          "tarot.minor.rws.swords.6",
+          "tarot.minor.thoth.swords.6",
+          "tarot.minor.tdm.epees.6",
+          "tarot.minor.etteilla.swords.6"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.7",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Seven of Swords",
+      "description": "Seven of Swords across four decks (Air suit). Golden Dawn decan attribution: the Moon in Aquarius. Thoth titles the card “Futility.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.aquarius",
+        "members": [
+          "tarot.minor.rws.swords.7",
+          "tarot.minor.thoth.swords.7",
+          "tarot.minor.tdm.epees.7",
+          "tarot.minor.etteilla.swords.7"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.8",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eight of Swords",
+      "description": "Eight of Swords across four decks (Air suit). Golden Dawn decan attribution: Jupiter in Gemini. Thoth titles the card “Interference.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "members": [
+          "tarot.minor.rws.swords.8",
+          "tarot.minor.thoth.swords.8",
+          "tarot.minor.tdm.epees.8",
+          "tarot.minor.etteilla.swords.8"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.9",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nine of Swords",
+      "description": "Nine of Swords across four decks (Air suit). Golden Dawn decan attribution: Mars in Gemini. Thoth titles the card “Cruelty.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "members": [
+          "tarot.minor.rws.swords.9",
+          "tarot.minor.thoth.swords.9",
+          "tarot.minor.tdm.epees.9",
+          "tarot.minor.etteilla.swords.9"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.swords.10",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ten of Swords",
+      "description": "Ten of Swords across four decks (Air suit). Golden Dawn decan attribution: the Sun in Gemini. Thoth titles the card “Ruin.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.gemini",
+        "members": [
+          "tarot.minor.rws.swords.10",
+          "tarot.minor.thoth.swords.10",
+          "tarot.minor.tdm.epees.10",
+          "tarot.minor.etteilla.swords.10"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.ace",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ace of Pentacles",
+      "description": "Ace of Pentacles across four decks (Earth suit) — the unmanifest root force of earth, prior to any zodiacal division into decans. Thoth titles the card “The root of the powers of Earth.” TdM calls it As de Deniers.",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "members": [
+          "tarot.minor.rws.pentacles.ace",
+          "tarot.minor.thoth.disks.ace",
+          "tarot.minor.tdm.deniers.ace",
+          "tarot.minor.etteilla.pentacles.ace"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.2",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Two of Pentacles",
+      "description": "Two of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Jupiter in Capricorn. Thoth titles the card “Change.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.jupiter",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "members": [
+          "tarot.minor.rws.pentacles.2",
+          "tarot.minor.thoth.disks.2",
+          "tarot.minor.tdm.deniers.2",
+          "tarot.minor.etteilla.pentacles.2"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.3",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Three of Pentacles",
+      "description": "Three of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Mars in Capricorn. Thoth titles the card “Works.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.mars",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "members": [
+          "tarot.minor.rws.pentacles.3",
+          "tarot.minor.thoth.disks.3",
+          "tarot.minor.tdm.deniers.3",
+          "tarot.minor.etteilla.pentacles.3"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.4",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Four of Pentacles",
+      "description": "Four of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: the Sun in Capricorn. Thoth titles the card “Power.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.capricorn",
+        "members": [
+          "tarot.minor.rws.pentacles.4",
+          "tarot.minor.thoth.disks.4",
+          "tarot.minor.tdm.deniers.4",
+          "tarot.minor.etteilla.pentacles.4"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.5",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Five of Pentacles",
+      "description": "Five of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Mercury in Taurus. Thoth titles the card “Worry.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "members": [
+          "tarot.minor.rws.pentacles.5",
+          "tarot.minor.thoth.disks.5",
+          "tarot.minor.tdm.deniers.5",
+          "tarot.minor.etteilla.pentacles.5"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.6",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Six of Pentacles",
+      "description": "Six of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: the Moon in Taurus. Thoth titles the card “Success.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.luna",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "members": [
+          "tarot.minor.rws.pentacles.6",
+          "tarot.minor.thoth.disks.6",
+          "tarot.minor.tdm.deniers.6",
+          "tarot.minor.etteilla.pentacles.6"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.7",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Seven of Pentacles",
+      "description": "Seven of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Saturn in Taurus. Thoth titles the card “Failure.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.saturn",
+        "zodiacSign": "astrology.zodiac-sign.taurus",
+        "members": [
+          "tarot.minor.rws.pentacles.7",
+          "tarot.minor.thoth.disks.7",
+          "tarot.minor.tdm.deniers.7",
+          "tarot.minor.etteilla.pentacles.7"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.8",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eight of Pentacles",
+      "description": "Eight of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: the Sun in Virgo. Thoth titles the card “Prudence.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.sol",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "members": [
+          "tarot.minor.rws.pentacles.8",
+          "tarot.minor.thoth.disks.8",
+          "tarot.minor.tdm.deniers.8",
+          "tarot.minor.etteilla.pentacles.8"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.9",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Nine of Pentacles",
+      "description": "Nine of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Venus in Virgo. Thoth titles the card “Gain.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.venus",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "members": [
+          "tarot.minor.rws.pentacles.9",
+          "tarot.minor.thoth.disks.9",
+          "tarot.minor.tdm.deniers.9",
+          "tarot.minor.etteilla.pentacles.9"
+        ]
+      }
+    },
+    {
+      "canonicalName": "tarot.minor.overview.pentacles.10",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ten of Pentacles",
+      "description": "Ten of Pentacles across four decks (Earth suit). Golden Dawn decan attribution: Mercury in Virgo. Thoth titles the card “Wealth.”",
+      "tags": [
+        "tarot",
+        "minor-arcana",
+        "tarot-overview",
+        "tarot-minor-overview"
+      ],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "rulingPlanet": "astrology.planet.mercury",
+        "zodiacSign": "astrology.zodiac-sign.virgo",
+        "members": [
+          "tarot.minor.rws.pentacles.10",
+          "tarot.minor.thoth.disks.10",
+          "tarot.minor.tdm.deniers.10",
+          "tarot.minor.etteilla.pentacles.10"
+        ]
+      }
     }
   ]
 }

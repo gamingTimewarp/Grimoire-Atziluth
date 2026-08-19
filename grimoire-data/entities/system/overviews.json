@@ -13,9 +13,90 @@
       ],
       "extendedData": {
         "entityTypeGroup": "tarot",
-        "memberEntityType": "tarot.card",
-        "groupByTag": "deck",
-        "note": "Browse by deck: use the Rider-Waite-Smith, Thoth, or Tarot de Marseille deck pages.",
+        "members": [
+          "tarot.deck.rider-waite-smith",
+          "tarot.deck.thoth",
+          "tarot.deck.tarot-de-marseille",
+          "tarot.deck.etteilla",
+          "tarot.major.overview.the-fool",
+          "tarot.major.overview.the-magician",
+          "tarot.major.overview.the-high-priestess",
+          "tarot.major.overview.the-empress",
+          "tarot.major.overview.the-emperor",
+          "tarot.major.overview.the-hierophant",
+          "tarot.major.overview.the-lovers",
+          "tarot.major.overview.the-chariot",
+          "tarot.major.overview.strength",
+          "tarot.major.overview.the-hermit",
+          "tarot.major.overview.wheel-of-fortune",
+          "tarot.major.overview.justice",
+          "tarot.major.overview.the-hanged-man",
+          "tarot.major.overview.death",
+          "tarot.major.overview.temperance",
+          "tarot.major.overview.the-devil",
+          "tarot.major.overview.the-tower",
+          "tarot.major.overview.the-star",
+          "tarot.major.overview.the-moon",
+          "tarot.major.overview.the-sun",
+          "tarot.major.overview.judgement",
+          "tarot.major.overview.the-world",
+          "tarot.minor.overview.wands.ace",
+          "tarot.minor.overview.wands.2",
+          "tarot.minor.overview.wands.3",
+          "tarot.minor.overview.wands.4",
+          "tarot.minor.overview.wands.5",
+          "tarot.minor.overview.wands.6",
+          "tarot.minor.overview.wands.7",
+          "tarot.minor.overview.wands.8",
+          "tarot.minor.overview.wands.9",
+          "tarot.minor.overview.wands.10",
+          "tarot.minor.overview.wands.page",
+          "tarot.minor.overview.wands.knight",
+          "tarot.minor.overview.wands.queen",
+          "tarot.minor.overview.wands.king",
+          "tarot.minor.overview.cups.ace",
+          "tarot.minor.overview.cups.2",
+          "tarot.minor.overview.cups.3",
+          "tarot.minor.overview.cups.4",
+          "tarot.minor.overview.cups.5",
+          "tarot.minor.overview.cups.6",
+          "tarot.minor.overview.cups.7",
+          "tarot.minor.overview.cups.8",
+          "tarot.minor.overview.cups.9",
+          "tarot.minor.overview.cups.10",
+          "tarot.minor.overview.cups.page",
+          "tarot.minor.overview.cups.knight",
+          "tarot.minor.overview.cups.queen",
+          "tarot.minor.overview.cups.king",
+          "tarot.minor.overview.swords.ace",
+          "tarot.minor.overview.swords.2",
+          "tarot.minor.overview.swords.3",
+          "tarot.minor.overview.swords.4",
+          "tarot.minor.overview.swords.5",
+          "tarot.minor.overview.swords.6",
+          "tarot.minor.overview.swords.7",
+          "tarot.minor.overview.swords.8",
+          "tarot.minor.overview.swords.9",
+          "tarot.minor.overview.swords.10",
+          "tarot.minor.overview.swords.page",
+          "tarot.minor.overview.swords.knight",
+          "tarot.minor.overview.swords.queen",
+          "tarot.minor.overview.swords.king",
+          "tarot.minor.overview.pentacles.ace",
+          "tarot.minor.overview.pentacles.2",
+          "tarot.minor.overview.pentacles.3",
+          "tarot.minor.overview.pentacles.4",
+          "tarot.minor.overview.pentacles.5",
+          "tarot.minor.overview.pentacles.6",
+          "tarot.minor.overview.pentacles.7",
+          "tarot.minor.overview.pentacles.8",
+          "tarot.minor.overview.pentacles.9",
+          "tarot.minor.overview.pentacles.10",
+          "tarot.minor.overview.pentacles.page",
+          "tarot.minor.overview.pentacles.knight",
+          "tarot.minor.overview.pentacles.queen",
+          "tarot.minor.overview.pentacles.king"
+        ],
         "relatedOverviews": [
           "system.overview.tarot-decks",
           "system.overview.major-arcana",
@@ -29,7 +110,7 @@
       "canonicalName": "system.overview.tarot-decks",
       "entityType": "system.overview",
       "primaryDisplayName": "Tarot Decks",
-      "description": "An index of tarot and oracle decks in the Grimoire.",
+      "description": "An index of tarot decks and related cross-deck browsing pages in the Grimoire.",
       "secondaryNames": [],
       "tags": [
         "overview",
@@ -43,8 +124,8 @@
           "tarot.deck.tarot-de-marseille",
           "tarot.deck.etteilla",
           "system.overview.tarot-major-arcana-overviews",
+          "system.overview.tarot-minor-arcana-overviews",
           "system.overview.tarot-court-cards-overviews",
-          "system.overview.lenormand",
           "system.overview.playing-cards"
         ],
         "relatedOverviews": [
@@ -93,6 +174,63 @@
           "tarot.major.overview.the-sun",
           "tarot.major.overview.judgement",
           "tarot.major.overview.the-world"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.tarot-minor-arcana-overviews",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Minor Arcana Pips — Cross-Deck",
+      "description": "Cross-deck overview pages for the 40 numbered Minor Arcana pips (4 suits × Ace–10). Each page groups the equivalent rank across the Rider-Waite-Smith, Thoth, Tarot de Marseille, and Etteilla decks, giving the shared Golden Dawn decan attribution (planet-in-sign) and Crowley's Thoth title for the card.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "tarot",
+        "minor-arcana",
+        "tarot-overview"
+      ],
+      "extendedData": {
+        "members": [
+          "tarot.minor.overview.wands.ace",
+          "tarot.minor.overview.wands.2",
+          "tarot.minor.overview.wands.3",
+          "tarot.minor.overview.wands.4",
+          "tarot.minor.overview.wands.5",
+          "tarot.minor.overview.wands.6",
+          "tarot.minor.overview.wands.7",
+          "tarot.minor.overview.wands.8",
+          "tarot.minor.overview.wands.9",
+          "tarot.minor.overview.wands.10",
+          "tarot.minor.overview.cups.ace",
+          "tarot.minor.overview.cups.2",
+          "tarot.minor.overview.cups.3",
+          "tarot.minor.overview.cups.4",
+          "tarot.minor.overview.cups.5",
+          "tarot.minor.overview.cups.6",
+          "tarot.minor.overview.cups.7",
+          "tarot.minor.overview.cups.8",
+          "tarot.minor.overview.cups.9",
+          "tarot.minor.overview.cups.10",
+          "tarot.minor.overview.swords.ace",
+          "tarot.minor.overview.swords.2",
+          "tarot.minor.overview.swords.3",
+          "tarot.minor.overview.swords.4",
+          "tarot.minor.overview.swords.5",
+          "tarot.minor.overview.swords.6",
+          "tarot.minor.overview.swords.7",
+          "tarot.minor.overview.swords.8",
+          "tarot.minor.overview.swords.9",
+          "tarot.minor.overview.swords.10",
+          "tarot.minor.overview.pentacles.ace",
+          "tarot.minor.overview.pentacles.2",
+          "tarot.minor.overview.pentacles.3",
+          "tarot.minor.overview.pentacles.4",
+          "tarot.minor.overview.pentacles.5",
+          "tarot.minor.overview.pentacles.6",
+          "tarot.minor.overview.pentacles.7",
+          "tarot.minor.overview.pentacles.8",
+          "tarot.minor.overview.pentacles.9",
+          "tarot.minor.overview.pentacles.10"
         ]
       }
     },
@@ -155,7 +293,30 @@
         "major-arcana"
       ],
       "extendedData": {
-        "memberTag": "major-arcana"
+        "members": [
+          "tarot.major.overview.the-fool",
+          "tarot.major.overview.the-magician",
+          "tarot.major.overview.the-high-priestess",
+          "tarot.major.overview.the-empress",
+          "tarot.major.overview.the-emperor",
+          "tarot.major.overview.the-hierophant",
+          "tarot.major.overview.the-lovers",
+          "tarot.major.overview.the-chariot",
+          "tarot.major.overview.strength",
+          "tarot.major.overview.the-hermit",
+          "tarot.major.overview.wheel-of-fortune",
+          "tarot.major.overview.justice",
+          "tarot.major.overview.the-hanged-man",
+          "tarot.major.overview.death",
+          "tarot.major.overview.temperance",
+          "tarot.major.overview.the-devil",
+          "tarot.major.overview.the-tower",
+          "tarot.major.overview.the-star",
+          "tarot.major.overview.the-moon",
+          "tarot.major.overview.the-sun",
+          "tarot.major.overview.judgement",
+          "tarot.major.overview.the-world"
+        ]
       }
     },
     {
@@ -220,7 +381,11 @@
       "primaryDisplayName": "Celestial Points",
       "description": "Astrological points that are not physical bodies but carry significant interpretive weight in chart work. Includes the lunar nodes (Rahu and Ketu), which mark the intersections of the Moon's orbit with the ecliptic, and the Hermetic Lots (Arabic Parts), which are sensitive points derived from the angular relationships between planets and the Ascendant. Unlike planets, these points have no mass or light of their own, yet each carries a distinct symbolic and predictive function across multiple astrological traditions.",
       "secondaryNames": [],
-      "tags": ["overview", "astrology", "celestial-points"],
+      "tags": [
+        "overview",
+        "astrology",
+        "celestial-points"
+      ],
       "extendedData": {
         "memberTag": "celestial-points",
         "relatedOverviews": [
@@ -423,10 +588,26 @@
       "primaryDisplayName": "Triads of the Tree of Life",
       "description": "The ten sephiroth are traditionally grouped into three triads and a solitary final sephira. The Supernal Triad (Kether, Chokmah, Binah) lies above the Abyss and represents pre-manifest divinity. The Ethical Triad (Chesed, Geburah, Tiphareth) forms the moral and spiritual centre of the Tree. The Astral Triad (Netzach, Hod, Yesod) governs the psychic and magical forces just above the material world. Malkuth stands alone at the base as the physical world — it is not part of a triad.",
       "secondaryNames": [
-        { "name": "Triads", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
-        { "name": "Triangles of the Tree", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+        {
+          "name": "Triads",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Triangles of the Tree",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["overview", "qabalah", "triangle", "triad", "tree-of-life"],
+      "tags": [
+        "overview",
+        "qabalah",
+        "triangle",
+        "triad",
+        "tree-of-life"
+      ],
       "extendedData": {
         "members": [
           "qabalah.triangle.supernal",
@@ -2163,7 +2344,22 @@
         "water"
       ],
       "extendedData": {
-        "memberTag": "cups",
+        "members": [
+          "tarot.minor.overview.cups.ace",
+          "tarot.minor.overview.cups.2",
+          "tarot.minor.overview.cups.3",
+          "tarot.minor.overview.cups.4",
+          "tarot.minor.overview.cups.5",
+          "tarot.minor.overview.cups.6",
+          "tarot.minor.overview.cups.7",
+          "tarot.minor.overview.cups.8",
+          "tarot.minor.overview.cups.9",
+          "tarot.minor.overview.cups.10",
+          "tarot.minor.overview.cups.page",
+          "tarot.minor.overview.cups.knight",
+          "tarot.minor.overview.cups.queen",
+          "tarot.minor.overview.cups.king"
+        ],
         "relatedOverviews": [
           "system.overview.elements",
           "system.overview.tarot-suit-wands",
@@ -2188,7 +2384,22 @@
         "fire"
       ],
       "extendedData": {
-        "memberTag": "wands",
+        "members": [
+          "tarot.minor.overview.wands.ace",
+          "tarot.minor.overview.wands.2",
+          "tarot.minor.overview.wands.3",
+          "tarot.minor.overview.wands.4",
+          "tarot.minor.overview.wands.5",
+          "tarot.minor.overview.wands.6",
+          "tarot.minor.overview.wands.7",
+          "tarot.minor.overview.wands.8",
+          "tarot.minor.overview.wands.9",
+          "tarot.minor.overview.wands.10",
+          "tarot.minor.overview.wands.page",
+          "tarot.minor.overview.wands.knight",
+          "tarot.minor.overview.wands.queen",
+          "tarot.minor.overview.wands.king"
+        ],
         "relatedOverviews": [
           "system.overview.elements",
           "system.overview.tarot-suit-cups",
@@ -2213,7 +2424,22 @@
         "air"
       ],
       "extendedData": {
-        "memberTag": "swords",
+        "members": [
+          "tarot.minor.overview.swords.ace",
+          "tarot.minor.overview.swords.2",
+          "tarot.minor.overview.swords.3",
+          "tarot.minor.overview.swords.4",
+          "tarot.minor.overview.swords.5",
+          "tarot.minor.overview.swords.6",
+          "tarot.minor.overview.swords.7",
+          "tarot.minor.overview.swords.8",
+          "tarot.minor.overview.swords.9",
+          "tarot.minor.overview.swords.10",
+          "tarot.minor.overview.swords.page",
+          "tarot.minor.overview.swords.knight",
+          "tarot.minor.overview.swords.queen",
+          "tarot.minor.overview.swords.king"
+        ],
         "relatedOverviews": [
           "system.overview.elements",
           "system.overview.tarot-suit-cups",
@@ -2238,7 +2464,22 @@
         "earth"
       ],
       "extendedData": {
-        "memberTag": "pentacles",
+        "members": [
+          "tarot.minor.overview.pentacles.ace",
+          "tarot.minor.overview.pentacles.2",
+          "tarot.minor.overview.pentacles.3",
+          "tarot.minor.overview.pentacles.4",
+          "tarot.minor.overview.pentacles.5",
+          "tarot.minor.overview.pentacles.6",
+          "tarot.minor.overview.pentacles.7",
+          "tarot.minor.overview.pentacles.8",
+          "tarot.minor.overview.pentacles.9",
+          "tarot.minor.overview.pentacles.10",
+          "tarot.minor.overview.pentacles.page",
+          "tarot.minor.overview.pentacles.knight",
+          "tarot.minor.overview.pentacles.queen",
+          "tarot.minor.overview.pentacles.king"
+        ],
         "relatedOverviews": [
           "system.overview.elements",
           "system.overview.tarot-suit-cups",
@@ -2817,7 +3058,12 @@
       "primaryDisplayName": "Magic Circles",
       "description": "Magic circles and ritual diagrams are the geometric foundations of Western ceremonial magic. From the Solomonic circles of the medieval grimoire tradition to the elemental pentagrams of the Golden Dawn and the angelic seals of John Dee's Enochian system, these forms define sacred space, invoke and contain spiritual forces, and provide the practitioner with a structured symbolic language for ritual. This section covers the principal magic circles, ritual stars, and ceremonial seals used in the Western esoteric tradition.",
       "secondaryNames": [],
-      "tags": ["overview", "magic", "ritual", "circles"],
+      "tags": [
+        "overview",
+        "magic",
+        "ritual",
+        "circles"
+      ],
       "extendedData": {
         "members": [
           "system.overview.magic-pentagrams",
@@ -2837,9 +3083,21 @@
       "primaryDisplayName": "Elemental Pentagrams",
       "description": "The elemental pentagrams of the Hermetic Order of the Golden Dawn are the foundational ritual gestures of modern Western ceremonial magic. Each of the four elements (Earth, Fire, Water, Air) and the quintessence (Spirit) has a specific invoking and banishing pentagram, defined by which vertex the star is traced from and in which direction. The system was codified in the GD's Knowledge Lecture and Neophyte Ritual and underpins the Lesser Banishing Ritual of the Pentagram (LBRP), the Greater Ritual of the Pentagram, and the Supreme Ritual of the Pentagram.",
       "secondaryNames": [
-        { "name": "GD Pentagrams", "languageTag": "en", "visible": true, "sortOrder": 0 }
+        {
+          "name": "GD Pentagrams",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "magic", "ritual", "pentagram", "golden-dawn", "elements"],
+      "tags": [
+        "overview",
+        "magic",
+        "ritual",
+        "pentagram",
+        "golden-dawn",
+        "elements"
+      ],
       "extendedData": {
         "memberEntityType": "magic.pentagram",
         "relatedOverviews": [
@@ -2854,9 +3112,21 @@
       "primaryDisplayName": "Planetary Hexagrams",
       "description": "The seven planetary hexagrams of the Golden Dawn system are the elemental counterpart to the pentagrams, but operate on the macrocosmic planetary level rather than the microcosmic elemental level. Each of the seven classical planets (Saturn, Jupiter, Mars, Sol, Venus, Mercury, Luna) is assigned a vertex of the hexagram corresponding to its Sephira on the Tree of Life, and its invoking hexagram is constructed by starting at that vertex. The Ritual of the Hexagram employs these forms to invoke and banish planetary forces, using the godname ARARITA vibrated at each of the six strokes.",
       "secondaryNames": [
-        { "name": "GD Hexagrams", "languageTag": "en", "visible": true, "sortOrder": 0 }
+        {
+          "name": "GD Hexagrams",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "magic", "ritual", "hexagram", "golden-dawn", "planetary"],
+      "tags": [
+        "overview",
+        "magic",
+        "ritual",
+        "hexagram",
+        "golden-dawn",
+        "planetary"
+      ],
       "extendedData": {
         "memberEntityType": "magic.hexagram",
         "relatedOverviews": [
@@ -2872,7 +3142,15 @@
       "primaryDisplayName": "Ritual Circles & Seals",
       "description": "Ritual circles and ceremonial seals define and consecrate the magical workspace, providing both protection and a structured interface for communication with spiritual beings. This section covers the classical Solomonic Circle of Art from the medieval grimoire tradition and the Sigillum Dei Aemeth of John Dee's Enochian system — two of the most influential and enduring ritual instruments in Western magical practice.",
       "secondaryNames": [],
-      "tags": ["overview", "magic", "ritual", "circles", "seals", "solomonic", "enochian"],
+      "tags": [
+        "overview",
+        "magic",
+        "ritual",
+        "circles",
+        "seals",
+        "solomonic",
+        "enochian"
+      ],
       "extendedData": {
         "members": [
           "magic.circle.solomonic",
@@ -2890,7 +3168,10 @@
       "primaryDisplayName": "Numerology",
       "description": "Numerology is the study of the mystical significance of numbers, particularly as derived from names and birth dates through digit reduction. The two systems used here are Pythagorean numerology — which assigns values 1–9 to the Latin alphabet in sequential order and recognises the master numbers 11, 22, and 33 — and Chaldean numerology, an older Babylonian system using values 1–8 (9 is considered sacred and withheld) with letter-number associations based on vibrational sound rather than sequence. Each reduced digit (1–9) carries its own symbolic correspondences to a ruling planet, a Major Arcana tarot card, and a sephira on the Tree of Life. Numerology is closely related to gematria and isopsephy, which apply similar reduction principles to sacred texts in Hebrew and Greek.",
       "secondaryNames": [],
-      "tags": ["overview", "numerology"],
+      "tags": [
+        "overview",
+        "numerology"
+      ],
       "extendedData": {
         "entityTypeGroup": "numerology",
         "memberEntityType": "numerology.digit",
@@ -2908,7 +3189,10 @@
       "primaryDisplayName": "Colours",
       "description": "An overview of twelve common colours and their correspondences across traditions: Western and Eastern symbolic meanings, associated gemstones, the physical colour of the classical planets, the classical elements and Chinese Wu Xing phases, and — for Golden Dawn practitioners — the King Scale (Atziluth) colours of the ten Sephiroth and the twelve zodiacal paths, and the Queen Scale (Briah) colours of the seven classical planets. Colour correspondence is one of the oldest and most cross-cultural forms of symbolic attribution, appearing independently in Chinese Wu Xing cosmology, Hindu chakra systems, Golden Dawn Qabalah, and countless folk and liturgical traditions.",
       "secondaryNames": [],
-      "tags": ["overview", "colour"],
+      "tags": [
+        "overview",
+        "colour"
+      ],
       "extendedData": {
         "entityTypeGroup": "colour",
         "memberEntityType": "colour.colour",
@@ -2926,7 +3210,10 @@
       "primaryDisplayName": "Gemstones",
       "description": "An overview of common gemstones and their mineralogy, history, and colour associations, including the modern (US Jewelers, 1912/2002) monthly birthstone list. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish). Traditional/alternate birthstone lists and other tradition-specific gemstone correspondences (e.g. zodiacal gemstones) are planned as a future addition.",
       "secondaryNames": [],
-      "tags": ["overview", "gemstone"],
+      "tags": [
+        "overview",
+        "gemstone"
+      ],
       "extendedData": {
         "entityTypeGroup": "gemstone",
         "memberEntityType": "gemstone.gemstone",
@@ -2943,7 +3230,10 @@
       "primaryDisplayName": "Astrology",
       "description": "Western astrology is the practice of correlating the positions and movements of celestial bodies with human affairs and natural phenomena. Its core framework — the twelve zodiac signs, the planets, and the astrological houses — dates to Hellenistic Egypt and Babylon and was systematised by Ptolemy's Tetrabiblos (2nd century CE). Hermetic Qabalah, alchemy, and tarot all absorbed astrological correspondences during the Renaissance and the 19th-century occult revival, making astrology one of the most deeply interwoven systems in Western esotericism. This overview indexes the Grimoire's astrological reference material — planets, zodiac signs, elements, fixed stars, decans, lunar mansions, and celestial points.",
       "secondaryNames": [],
-      "tags": ["overview", "astrology"],
+      "tags": [
+        "overview",
+        "astrology"
+      ],
       "extendedData": {
         "entityTypeGroup": "astrology",
         "relatedOverviews": [
@@ -2964,9 +3254,18 @@
       "primaryDisplayName": "Angels",
       "description": "Angelic hierarchies run through nearly every layer of Western ceremonial magic. Hermetic Qabalah attributes an Order (Choir) and a ruling Archangel to each of the ten sephiroth, while the 72 Angels of the Shemhamphorash — derived from three 72-letter verses of Exodus — each govern five degrees of the zodiac and are traditionally paired with a Goetic spirit as their daemonic counterpart. Together these systems form the angelic counterweight to the darker hierarchies (Goetia, Qliphoth) studied elsewhere in the Grimoire.",
       "secondaryNames": [
-        { "name": "Angelology", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Angelology",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "angel", "qabalah"],
+      "tags": [
+        "overview",
+        "angel",
+        "qabalah"
+      ],
       "extendedData": {
         "entityTypeGroup": "angel",
         "relatedOverviews": [
@@ -2983,7 +3282,10 @@
       "primaryDisplayName": "World Deities",
       "description": "This overview indexes the pantheons catalogued under the generic 'deity' entity namespace — currently the Greek and Egyptian pantheons, selected for their direct planetary correspondences and centrality to Western ceremonial magic. Other pantheons in the Grimoire (Norse, Celtic) are catalogued under their own culturally-specific entity types rather than this shared namespace, since they carry their own distinct correspondence systems (runes for the Norse gods, Ogham for Celtic tradition) beyond simple planetary attribution.",
       "secondaryNames": [],
-      "tags": ["overview", "deity"],
+      "tags": [
+        "overview",
+        "deity"
+      ],
       "extendedData": {
         "entityTypeGroup": "deity",
         "relatedOverviews": [
@@ -2998,9 +3300,18 @@
       "primaryDisplayName": "Enochian Magic",
       "description": "The Enochian system was received by the Elizabethan mathematician and astrologer John Dee and his scryer Edward Kelley between 1582 and 1587, through a series of sessions in which angelic intelligences dictated a language, an alphabet, and a cosmological structure via a crystal show-stone. The system comprises the Four (plus one) Watchtower tablets, the 30 concentric Aethyrs, and the 91 zodiacal Governors who administer them. Long dormant, Enochian magic was revived and integrated into ceremonial practice by the Hermetic Order of the Golden Dawn, and later explored in depth by Aleister Crowley's 1909 working through all 30 Aethyrs.",
       "secondaryNames": [
-        { "name": "Angelical Language", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Angelical Language",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "enochian", "magic"],
+      "tags": [
+        "overview",
+        "enochian",
+        "magic"
+      ],
       "extendedData": {
         "entityTypeGroup": "enochian",
         "relatedOverviews": [
@@ -3017,10 +3328,23 @@
       "primaryDisplayName": "Feng Shui",
       "description": "Feng Shui (風水, 'wind-water') is the Chinese practice of arranging the built and natural environment to harmonise the flow of Qi (vital energy). Classical Feng Shui operates through several interlocking systems: the Ba Gua compass directions, the annually-shifting Nine Flying Stars of Xuan Kong practice, and the 24 Mountains that give the Luopan compass its fine directional resolution. All three systems draw on the same foundational cosmology as the I Ching and Wuxing Five Phases, applying it spatially rather than divinatorily.",
       "secondaryNames": [
-        { "name": "風水", "languageTag": "zh", "visible": true, "sortOrder": 0 },
-        { "name": "Fēngshuǐ", "languageTag": "zh-translit", "visible": true, "sortOrder": 1 }
+        {
+          "name": "風水",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Fēngshuǐ",
+          "languageTag": "zh-translit",
+          "visible": true,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["overview", "fengshui"],
+      "tags": [
+        "overview",
+        "fengshui"
+      ],
       "extendedData": {
         "entityTypeGroup": "fengshui",
         "relatedOverviews": [
@@ -3036,7 +3360,10 @@
       "primaryDisplayName": "Gnosticism",
       "description": "Gnosticism was a family of early Christian-era religious movements united by the belief that the material world is the flawed creation of a lesser being (the Demiurge), and that salvation comes through direct experiential knowledge (gnosis) of a transcendent divine realm (the Pleroma). The Grimoire catalogues two of its major cosmological systems separately, since they differ substantially in structure and sources: the Valentinian tradition (documented through patristic heresiologists and Nag Hammadi texts, organised around 30 paired Aeons) and the Sethian tradition (documented primarily in the Nag Hammadi library, centred on the Four Luminaries and the fall of Sophia).",
       "secondaryNames": [],
-      "tags": ["overview", "gnostic"],
+      "tags": [
+        "overview",
+        "gnostic"
+      ],
       "extendedData": {
         "entityTypeGroup": "gnostic",
         "relatedOverviews": [
@@ -3051,10 +3378,24 @@
       "primaryDisplayName": "Jyotish",
       "description": "Jyotish (ज्योतिष, 'science of light') is the traditional Hindu system of astrology, distinguished from Western astrology chiefly by its use of the sidereal (star-fixed) rather than tropical zodiac, and by its Nakshatra (lunar mansion) framework. Its most distinctive predictive tool is the Vimshottari Dasha, a 120-year planetary period system with 9 Mahadasha and 81 Antardasha sub-periods computed from the Moon's natal Nakshatra. The Navaratna — nine gemstones, one per planetary Graha — are prescribed to strengthen or mitigate a planet's influence based on the individual chart.",
       "secondaryNames": [
-        { "name": "ज्योतिष", "languageTag": "sa", "visible": true, "sortOrder": 0 },
-        { "name": "Vedic Astrology", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+        {
+          "name": "ज्योतिष",
+          "languageTag": "sa",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vedic Astrology",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["overview", "jyotish", "vedic"],
+      "tags": [
+        "overview",
+        "jyotish",
+        "vedic"
+      ],
       "extendedData": {
         "entityTypeGroup": "jyotish",
         "note": "The 81 Antardasha sub-periods don't yet have their own dedicated overview page — see the Vimshottari Dasha overview for the system that generates them.",
@@ -3071,7 +3412,11 @@
       "primaryDisplayName": "Ceremonial Magic Tools",
       "description": "This overview indexes the geometric and numerical instruments of Western ceremonial magic catalogued under the generic 'magic' entity namespace: the ritual circles, pentagrams, and hexagrams of the Golden Dawn and Solomonic traditions, and the seven planetary Kamea (magic squares) used to derive spirit seals by tracing a name's numerical value across the grid. These are working tools rather than a single unified doctrine — each draws on a different historical source (Agrippa, the Lemegeton, the Golden Dawn's own Knowledge Lectures) unified only by their shared function of defining sacred space and deriving magical seals.",
       "secondaryNames": [],
-      "tags": ["overview", "magic", "ritual"],
+      "tags": [
+        "overview",
+        "magic",
+        "ritual"
+      ],
       "extendedData": {
         "entityTypeGroup": "magic",
         "relatedOverviews": [
@@ -3086,9 +3431,17 @@
       "primaryDisplayName": "Norse Mythology",
       "description": "Norse cosmology is preserved chiefly in the 13th-century Prose and Poetic Eddas, compiled in Christian-era Iceland from older oral tradition. Its structure centres on the Nine Worlds connected by the world-tree Yggdrasil, and its pantheon on the two divine tribes — the Aesir and the Vanir — who united after their war. The gods carry well-attested weekday and Elder Futhark rune correspondences (Odin/Wednesday, Thor/Thursday, Freya/Friday, Tyr/Tuesday), making Norse mythology one of the more concretely cross-referenced pantheons in the Grimoire.",
       "secondaryNames": [
-        { "name": "Norse Mythology", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Norse Mythology",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "norse"],
+      "tags": [
+        "overview",
+        "norse"
+      ],
       "extendedData": {
         "entityTypeGroup": "norse",
         "relatedOverviews": [
@@ -3104,7 +3457,11 @@
       "primaryDisplayName": "Planetary & Olympic Spirits",
       "description": "This overview groups two distinct families of non-angelic spirit-beings from Renaissance ceremonial magic, catalogued together only because they share the generic 'spirit' entity namespace: the seven Olympic Spirits of the Arbatel de Magia Veterum (1575), planetary daemon-rulers approached directly without hierarchical conjuration; and the planetary Spirits (Spiritus) of Cornelius Agrippa's Three Books of Occult Philosophy, the raw elemental counterpart to each planet's benefic Intelligence. Both are easily confused with the similarly-named angelic Planetary Intelligences, which are catalogued separately as they belong to a different classification.",
       "secondaryNames": [],
-      "tags": ["overview", "spirit", "magic"],
+      "tags": [
+        "overview",
+        "spirit",
+        "magic"
+      ],
       "extendedData": {
         "entityTypeGroup": "spirit",
         "relatedOverviews": [
@@ -3119,9 +3476,20 @@
       "primaryDisplayName": "Planetary Spirits (Agrippa)",
       "description": "The Spiritus (Spirits) of the seven classical planets, described by Cornelius Agrippa in Three Books of Occult Philosophy (1531) as the raw, elemental counterpart to each planet's Intelligentia (Intelligence) — the benefic, directing mind of the sphere. Where the Intelligence guides and focuses a planet's force, its Spirit is the force itself, unrefined. This entity type is easy to confuse with two adjacent systems: the seven Olympic Spirits of the Arbatel (a separate 1575 grimoire with its own daemon-rulers), and the angelic Planetary Intelligences catalogued under the angel namespace, which are Agrippa's Intelligentia half of this same pairing.",
       "secondaryNames": [
-        { "name": "Agrippa's Planetary Spirits", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Agrippa's Planetary Spirits",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "spirit", "magic", "agrippa", "planets"],
+      "tags": [
+        "overview",
+        "spirit",
+        "magic",
+        "agrippa",
+        "planets"
+      ],
       "extendedData": {
         "memberEntityType": "spirit.planetary",
         "relatedOverviews": [
@@ -3138,10 +3506,23 @@
       "primaryDisplayName": "Taoism",
       "description": "Taoism (Daoism) is the Chinese philosophical and religious tradition rooted in the Tao Te Ching (attributed to Laozi) and the Zhuangzi, centred on the Tao ('the Way') as the ineffable source and pattern underlying all existence. Two of its cosmological threads are catalogued in the Grimoire: the Yin-Yang polarity that underlies the I Ching, Wuxing, and Chinese medicine, and the Eight Immortals — legendary figures of Tang/Song folklore who each attained immortality through a distinct spiritual path, popular in Chinese folk religion and art.",
       "secondaryNames": [
-        { "name": "Daoism", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
-        { "name": "道", "languageTag": "zh", "visible": true, "sortOrder": 1 }
+        {
+          "name": "Daoism",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "道",
+          "languageTag": "zh",
+          "visible": true,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["overview", "taoism"],
+      "tags": [
+        "overview",
+        "taoism"
+      ],
       "extendedData": {
         "entityTypeGroup": "taoism",
         "relatedOverviews": [
@@ -3158,7 +3539,11 @@
       "primaryDisplayName": "Yoga & the Subtle Body",
       "description": "Classical yoga philosophy describes the human being as composed of successively subtler layers, mapped by two complementary Vedantic and Tantric systems catalogued here: the five Koshas (sheaths) that veil the true Self, from the physical body to the bliss body; and the five Pranas (vital airs), the currents of life-force that animate the subtle body and are the focus of pranayama practice. Both systems intersect with the chakras and tattwas elsewhere in the Grimoire's Hindu/Tantric reference material.",
       "secondaryNames": [],
-      "tags": ["overview", "yoga", "hinduism"],
+      "tags": [
+        "overview",
+        "yoga",
+        "hinduism"
+      ],
       "extendedData": {
         "entityTypeGroup": "yoga",
         "relatedOverviews": [
@@ -3175,9 +3560,18 @@
       "primaryDisplayName": "Celtic Deities",
       "description": "The Celtic pantheon catalogued here draws from Irish mythological sources (the Lebor Gabála Érenn and the Ulster and Mythological Cycles) and, to a lesser extent, continental Gaulish inscriptions, representing the Tuatha Dé Danann and related figures — deities of sovereignty, craft, war, and the Otherworld such as the Dagda, Brigid, Lugh, and the Morrígan. Unlike the Grimoire's Greek and Egyptian pantheons, Celtic deity correspondences here are largely thematic and mythological rather than tied to fixed planetary attributions, reflecting the more fragmentary and regionally varied nature of the surviving source material. The Ogham alphabet, catalogued separately, is the Celtic world's own tradition of letter-based divination and is often studied alongside these deities.",
       "secondaryNames": [
-        { "name": "Tuatha Dé Danann", "languageTag": "ga", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Tuatha Dé Danann",
+          "languageTag": "ga",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "celtic", "deity"],
+      "tags": [
+        "overview",
+        "celtic",
+        "deity"
+      ],
       "extendedData": {
         "entityTypeGroup": "celtic",
         "memberEntityType": "celtic.deity",
@@ -3194,10 +3588,23 @@
       "primaryDisplayName": "Hermetic Principles",
       "description": "The Seven Hermetic Principles are the foundational laws of Hermetic philosophy as codified in The Kybalion (1908), published pseudonymously by 'Three Initiates' (widely attributed to William Walker Atkinson) and claiming descent from the teachings of Hermes Trismegistus: Mentalism, Correspondence, Vibration, Polarity, Rhythm, Cause and Effect, and Gender. Though the Kybalion's specific formulation is a modern (early 20th-century New Thought) synthesis rather than an ancient text, its Principle of Correspondence ('As above, so below') is one of the most frequently invoked axioms across Western esotericism, underlying the whole logic of astrological, alchemical, and Qabalistic correspondence systems found throughout this Grimoire.",
       "secondaryNames": [
-        { "name": "The Kybalion", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
-        { "name": "Seven Hermetic Principles", "languageTag": "en-alt", "visible": true, "sortOrder": 1 }
+        {
+          "name": "The Kybalion",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Seven Hermetic Principles",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 1
+        }
       ],
-      "tags": ["overview", "hermetic"],
+      "tags": [
+        "overview",
+        "hermetic"
+      ],
       "extendedData": {
         "entityTypeGroup": "hermetic",
         "memberEntityType": "hermetic.principle",
@@ -3213,9 +3620,18 @@
       "primaryDisplayName": "Planetary Hours",
       "description": "The planetary hours are a system of dividing each day and night into twelve unequal hours, each ruled in strict rotation by one of the seven classical planets (the Chaldean order: Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon). The first hour of each day is ruled by the planet that names the day itself (Sunday's first hour by the Sun, Monday's by the Moon, and so on), from which the modern weekday names ultimately derive. Ceremonial magicians time rituals, talisman consecrations, and sigil work to the planetary hour whose nature matches their working's intent.",
       "secondaryNames": [
-        { "name": "Chaldean Hours", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+        {
+          "name": "Chaldean Hours",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
       ],
-      "tags": ["overview", "planetary-hour", "magic"],
+      "tags": [
+        "overview",
+        "planetary-hour",
+        "magic"
+      ],
       "extendedData": {
         "entityTypeGroup": "planetary-hour",
         "memberEntityType": "planetary-hour.day-ruler",
@@ -3230,7 +3646,10 @@
       "primaryDisplayName": "Divination (Index)",
       "description": "This entry exists only to index two divination traditions — Mahjong divination and Tasseomancy (tea leaf reading) — that happen to share a generic 'divination' entity namespace in the Grimoire's data. They are unrelated traditions from different cultures and periods with nothing else in common: Mahjong divination is a Cantonese practice reading the mahjong tile set, while Tasseomancy is a 17th–18th century Western European practice reading tea-leaf patterns. Tarot, geomancy, and palmistry are also forms of divination but are catalogued under their own distinct entity types rather than this shared namespace, since each has a large enough body of material to warrant its own overview.",
       "secondaryNames": [],
-      "tags": ["overview", "divination"],
+      "tags": [
+        "overview",
+        "divination"
+      ],
       "extendedData": {
         "entityTypeGroup": "divination",
         "relatedOverviews": [
@@ -3245,7 +3664,11 @@
       "primaryDisplayName": "Holidays & Festivals",
       "description": "Holidays and festivals from the Gregorian, Hebrew, Chinese, and Hindu calendars, selected for their esoteric-practice significance rather than as a general modern holiday list. Where a documented historical or textual connection exists between holidays across traditions — Easter's computation sharing Passover's equinox-and-full-moon logic, Pentecost's explicit placement on Shavuot in Acts 2 — that connection is shown directly. Several multi-day holidays carry an attested per-day correspondence table (Hanukkah's nightly sefirot, Sukkot's Ushpizin, Navratri's Navadurga sequence, the Twelve Nights' month-by-month omens), shown on each holiday's own page.",
       "secondaryNames": [],
-      "tags": ["overview", "calendar", "holiday"],
+      "tags": [
+        "overview",
+        "calendar",
+        "holiday"
+      ],
       "extendedData": {
         "entityTypeGroup": "calendar",
         "memberEntityType": "calendar.holiday",
@@ -3260,7 +3683,11 @@
       "primaryDisplayName": "Omen Animals",
       "description": "Creatures with attested divinatory or omen significance, drawn together from otherwise unrelated traditions. The initial set is anchored by the Chinese Five Poisons (Wu Du) apotropaic tradition tied to the Duanwu festival (see calendar.holiday.duanwu), but each entity's own description covers its symbolism across every tradition this Grimoire otherwise touches — Abrahamic, alchemical, Western-astrological, and folk traditions among them — rather than being scoped to Chinese folklore alone.",
       "secondaryNames": [],
-      "tags": ["overview", "omen", "animal"],
+      "tags": [
+        "overview",
+        "omen",
+        "animal"
+      ],
       "extendedData": {
         "entityTypeGroup": "omens",
         "memberEntityType": "omen.animal"

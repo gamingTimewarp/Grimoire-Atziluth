@@ -150,14 +150,23 @@ function EntityDetailPage() {
   const useRwsOrder = loadTraditionSettings().primaryBySystem['tarot'] === 'tradition.golden-dawn'
   const hasTraditionalOrder = members.some(m => traditionalSortKey(m, useRwsOrder) < Infinity)
   const sortedMembers = useMemo(() => {
-    if (sortMode === 'traditional' && hasTraditionalOrder) {
-      return [...members].sort((a, b) => {
-        const ka = traditionalSortKey(a, useRwsOrder), kb = traditionalSortKey(b, useRwsOrder)
-        if (ka !== kb) return ka - kb
-        return a.primaryDisplayName.localeCompare(b.primaryDisplayName)
-      })
+    const sortGroup = (group: BaseEntity[]) => {
+      if (sortMode === 'traditional' && hasTraditionalOrder) {
+        return [...group].sort((a, b) => {
+          const ka = traditionalSortKey(a, useRwsOrder), kb = traditionalSortKey(b, useRwsOrder)
+          if (ka !== kb) return ka - kb
+          return a.primaryDisplayName.localeCompare(b.primaryDisplayName)
+        })
+      }
+      return [...group].sort((a, b) => a.primaryDisplayName.localeCompare(b.primaryDisplayName))
     }
-    return [...members].sort((a, b) => a.primaryDisplayName.localeCompare(b.primaryDisplayName))
+    // Deck entities are containers for the other members (e.g. a deck's individual
+    // cards, or a family overview's per-deck pages) — they read as a jumping-off
+    // point, not just another alphabetical/numeric entry, so they always lead the
+    // grid ahead of whatever they contain.
+    const decks = members.filter(m => m.entityType.includes('deck'))
+    const rest = members.filter(m => !m.entityType.includes('deck'))
+    return [...sortGroup(decks), ...sortGroup(rest)]
   }, [members, sortMode, hasTraditionalOrder, useRwsOrder])
 
   // Must be called before any early returns (Rules of Hooks)
