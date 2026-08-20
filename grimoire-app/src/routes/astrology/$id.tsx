@@ -13,7 +13,7 @@ import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
 import { InfoTooltip } from '@/components/ui/InfoTooltip'
 import { Button } from '@/components/ui/Button'
-import { Edit, List, Circle, Radio, Info } from 'lucide-react'
+import { Edit, List, Circle, Radio, Info, Layers } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
@@ -146,6 +146,9 @@ function ChartDetailPage() {
           )}
         </div>
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings/traditions' })}>
+            <Layers size={13} /> Traditions
+          </Button>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: id } })}>
             <Edit size={13} /> Edit
           </Button>

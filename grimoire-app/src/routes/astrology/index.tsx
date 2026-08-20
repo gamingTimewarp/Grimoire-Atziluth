@@ -11,7 +11,7 @@ import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { Button } from '@/components/ui/Button'
-import { Plus, User, Trash2, RefreshCw, List, Circle, Play } from 'lucide-react'
+import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/')({
   component: AstrologyPage,
@@ -259,9 +259,14 @@ function AstrologyPage() {
     <div style={{ maxWidth: '760px' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
         <h1 style={{ fontSize: '22px', fontWeight: 300, margin: 0 }}>Astrology</h1>
-        <Button size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: undefined } })}>
-          <Plus size={14} /> New Chart
-        </Button>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings/traditions' })}>
+            <Layers size={14} /> Traditions
+          </Button>
+          <Button size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: undefined } })}>
+            <Plus size={14} /> New Chart
+          </Button>
+        </div>
       </div>
 
       <CurrentSkyPanel />
