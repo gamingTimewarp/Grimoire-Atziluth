@@ -140,6 +140,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "death, transformation, and the ending that clears the way for something new",
+        "keywords": [
+          "death card",
+          "major transformation",
+          "endings",
+          "authority",
+          "a sudden clean break"
+        ],
         "suit": "playing.suit.spades",
         "rank": "Ace",
         "sourceDeck": "playing.deck.standard"
@@ -164,6 +172,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a separation, or a partnership that calls for caution",
+        "keywords": [
+          "separation",
+          "caution in partnership",
+          "interruption",
+          "a decision deferred"
+        ],
         "suit": "playing.suit.spades",
         "rank": "2",
         "sourceDeck": "playing.deck.standard"
@@ -188,6 +203,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a love triangle, quarrel, or a decision made in haste",
+        "keywords": [
+          "love triangle",
+          "quarrel",
+          "rash decision",
+          "a third party interfering"
+        ],
         "suit": "playing.suit.spades",
         "rank": "3",
         "sourceDeck": "playing.deck.standard"
@@ -212,6 +234,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "illness, a forced pause, or a needed rest",
+        "keywords": [
+          "illness",
+          "temporary setback",
+          "rest required",
+          "a stalled plan"
+        ],
         "suit": "playing.suit.spades",
         "rank": "4",
         "sourceDeck": "playing.deck.standard"
@@ -236,6 +265,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "loss and grief, but also the trouble that is eventually overcome",
+        "keywords": [
+          "loss",
+          "grief",
+          "a hard passage",
+          "trouble survived"
+        ],
         "suit": "playing.suit.spades",
         "rank": "5",
         "sourceDeck": "playing.deck.standard"
@@ -260,6 +296,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a difficult path walked honestly, with gradual improvement",
+        "keywords": [
+          "gradual improvement",
+          "honest labour",
+          "perseverance through hardship",
+          "a slow recovery"
+        ],
         "suit": "playing.suit.spades",
         "rank": "6",
         "sourceDeck": "playing.deck.standard"
@@ -284,6 +327,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a minor loss, unwelcome news, or a warning worth heeding",
+        "keywords": [
+          "minor loss",
+          "unwelcome news",
+          "a warning",
+          "friction with a friend"
+        ],
         "suit": "playing.suit.spades",
         "rank": "7",
         "sourceDeck": "playing.deck.standard"
@@ -308,6 +358,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "opposition and obstacles, or news that brings anxiety",
+        "keywords": [
+          "opposition",
+          "obstacles",
+          "anxious news",
+          "unwanted interference"
+        ],
         "suit": "playing.suit.spades",
         "rank": "8",
         "sourceDeck": "playing.deck.standard"
@@ -332,6 +389,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "the card of sorrow — worry, illness, or a hard ending",
+        "keywords": [
+          "sorrow",
+          "worry",
+          "illness",
+          "a difficult ending",
+          "the \"wish card\" of misfortune"
+        ],
         "suit": "playing.suit.spades",
         "rank": "9",
         "sourceDeck": "playing.deck.standard"
@@ -356,6 +421,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "sudden trouble, but also a heavy burden finally lifted",
+        "keywords": [
+          "sudden trouble",
+          "a heavy burden",
+          "crisis passing",
+          "the worst now behind you"
+        ],
         "suit": "playing.suit.spades",
         "rank": "10",
         "sourceDeck": "playing.deck.standard"
@@ -380,6 +452,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a dark or ill-intentioned young man, or an unreliable messenger",
+        "keywords": [
+          "a dark young man",
+          "ill intent",
+          "an unreliable messenger",
+          "someone not to be trusted"
+        ],
         "suit": "playing.suit.spades",
         "rank": "Jack",
         "sourceDeck": "playing.deck.standard"
@@ -404,6 +483,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a widow, or a sharp-tongued, perceptive woman",
+        "keywords": [
+          "widow",
+          "sharp perception",
+          "malice or shrewdness",
+          "a woman to be wary of"
+        ],
         "suit": "playing.suit.spades",
         "rank": "Queen",
         "sourceDeck": "playing.deck.standard"
@@ -428,6 +514,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a dark, ambitious, or authoritative man — a lawyer, official, or rival",
+        "keywords": [
+          "a dark authoritative man",
+          "ambition",
+          "legal or official power",
+          "a rival"
+        ],
         "suit": "playing.suit.spades",
         "rank": "King",
         "sourceDeck": "playing.deck.standard"
@@ -452,6 +545,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "the home, the heart, and the beginning of happiness",
+        "keywords": [
+          "home",
+          "love beginning",
+          "a love letter",
+          "happiness at the source"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "Ace",
         "sourceDeck": "playing.deck.standard"
@@ -476,6 +576,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a passionate love affair or strong mutual attraction",
+        "keywords": [
+          "passionate love",
+          "mutual attraction",
+          "a strong bond forming"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "2",
         "sourceDeck": "playing.deck.standard"
@@ -500,6 +606,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "caution in love — a rival, a flirtation, or an indiscretion",
+        "keywords": [
+          "a rival in love",
+          "flirtation",
+          "indiscretion",
+          "divided affections"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "3",
         "sourceDeck": "playing.deck.standard"
@@ -524,6 +637,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a change of heart, indecision, or a small delay in love",
+        "keywords": [
+          "change of heart",
+          "indecision",
+          "a delay in love",
+          "wavering feelings"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "4",
         "sourceDeck": "playing.deck.standard"
@@ -548,6 +668,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "jealousy, doubt, or a lovers’ quarrel",
+        "keywords": [
+          "jealousy",
+          "doubt",
+          "lovers' quarrel",
+          "suspicion"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "5",
         "sourceDeck": "playing.deck.standard"
@@ -572,6 +699,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "generosity, an old flame returning, or a lasting affection",
+        "keywords": [
+          "generosity",
+          "an old flame returns",
+          "lasting affection",
+          "sincerity"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "6",
         "sourceDeck": "playing.deck.standard"
@@ -596,6 +730,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a broken promise, unsettled affections, or wistful daydreaming",
+        "keywords": [
+          "broken promise",
+          "unstable affection",
+          "daydreaming",
+          "unfulfilled longing"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "7",
         "sourceDeck": "playing.deck.standard"
@@ -620,6 +761,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "an invitation, a gathering, or a new and hopeful attraction",
+        "keywords": [
+          "invitation",
+          "a party or gathering",
+          "new attraction",
+          "hopeful beginnings"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "8",
         "sourceDeck": "playing.deck.standard"
@@ -644,6 +792,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "the wish card — deep contentment and a wish fulfilled",
+        "keywords": [
+          "the wish card",
+          "contentment",
+          "a wish granted",
+          "joy"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "9",
         "sourceDeck": "playing.deck.standard"
@@ -668,6 +823,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "lasting happiness, family harmony, and good fortune in love",
+        "keywords": [
+          "lasting happiness",
+          "family harmony",
+          "good fortune in love",
+          "domestic bliss"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "10",
         "sourceDeck": "playing.deck.standard"
@@ -692,6 +854,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a fair-haired young man, a trusted friend, or a well-meaning admirer",
+        "keywords": [
+          "a fair young man",
+          "trusted friend",
+          "well-meaning admirer",
+          "loyalty"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "Jack",
         "sourceDeck": "playing.deck.standard"
@@ -716,6 +885,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a warm-hearted, fair-haired woman — a loving friend or confidante",
+        "keywords": [
+          "a fair warm-hearted woman",
+          "loving friend",
+          "confidante",
+          "kindness"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "Queen",
         "sourceDeck": "playing.deck.standard"
@@ -740,6 +916,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "a fair or kind-hearted man, generosity, affection",
+        "keywords": [
+          "fair man",
+          "generosity",
+          "affection",
+          "loyal friend",
+          "good news in love"
+        ],
         "suit": "playing.suit.hearts",
         "rank": "King",
         "sourceDeck": "playing.deck.standard"
@@ -764,6 +948,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a message, a ring, or the start of a business matter",
+        "keywords": [
+          "a message arrives",
+          "a ring or token",
+          "a new business matter",
+          "an official letter"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "Ace",
         "sourceDeck": "playing.deck.standard"
@@ -788,6 +979,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a business partnership or a financial negotiation",
+        "keywords": [
+          "business partnership",
+          "financial negotiation",
+          "a deal being struck"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "2",
         "sourceDeck": "playing.deck.standard"
@@ -812,6 +1009,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a legal or business dispute, or a misunderstanding over money",
+        "keywords": [
+          "legal dispute",
+          "business conflict",
+          "misunderstanding over money"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "3",
         "sourceDeck": "playing.deck.standard"
@@ -836,6 +1039,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a small financial setback — caution with spending is advised",
+        "keywords": [
+          "minor financial setback",
+          "caution with spending",
+          "a small inheritance delayed"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "4",
         "sourceDeck": "playing.deck.standard"
@@ -860,6 +1069,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "unexpected news, often financial, favourable if well accompanied",
+        "keywords": [
+          "unexpected news",
+          "a financial surprise",
+          "news from a distance"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "5",
         "sourceDeck": "playing.deck.standard"
@@ -884,6 +1099,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "an early marriage or partnership, and new material prospects",
+        "keywords": [
+          "early marriage",
+          "new partnership",
+          "material prospects opening"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "6",
         "sourceDeck": "playing.deck.standard"
@@ -908,6 +1129,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a minor loss or a fleeting financial worry",
+        "keywords": [
+          "minor loss",
+          "fleeting worry",
+          "a small setback soon passed"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "7",
         "sourceDeck": "playing.deck.standard"
@@ -932,6 +1159,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a late marriage or partnership, or a venture begun later than expected",
+        "keywords": [
+          "a late marriage",
+          "a delayed venture",
+          "material gain arriving later than hoped"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "8",
         "sourceDeck": "playing.deck.standard"
@@ -956,6 +1189,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "delay, a temporary setback, or travel connected to money",
+        "keywords": [
+          "delay",
+          "temporary setback",
+          "travel for money or business"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "9",
         "sourceDeck": "playing.deck.standard"
@@ -980,6 +1219,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "wealth, a fortunate change, or a significant sum arriving",
+        "keywords": [
+          "wealth",
+          "fortunate change",
+          "a large sum of money",
+          "material success"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "10",
         "sourceDeck": "playing.deck.standard"
@@ -1004,6 +1250,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "an unreliable or self-interested young person, or news of money",
+        "keywords": [
+          "unreliable young person",
+          "self-interest",
+          "a messenger bearing financial news"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "Jack",
         "sourceDeck": "playing.deck.standard"
@@ -1028,6 +1280,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a flirtatious, worldly, or ambitious woman",
+        "keywords": [
+          "worldly woman",
+          "flirtatious",
+          "ambitious",
+          "socially adept"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "Queen",
         "sourceDeck": "playing.deck.standard"
@@ -1052,6 +1311,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a shrewd businessman, official, or man concerned with material power",
+        "keywords": [
+          "shrewd businessman",
+          "official or authority figure",
+          "material power",
+          "calculation"
+        ],
         "suit": "playing.suit.diamonds",
         "rank": "King",
         "sourceDeck": "playing.deck.standard"
@@ -1076,6 +1342,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "wealth through effort, a new enterprise, and the seed of good fortune",
+        "keywords": [
+          "wealth through effort",
+          "new enterprise",
+          "the seed of good fortune",
+          "a promising start"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "Ace",
         "sourceDeck": "playing.deck.standard"
@@ -1100,6 +1373,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "opposition at work, or a minor obstacle to ambition",
+        "keywords": [
+          "opposition at work",
+          "a minor obstacle",
+          "ambition tested"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "2",
         "sourceDeck": "playing.deck.standard"
@@ -1124,6 +1403,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "success achieved through partnership or collaboration",
+        "keywords": [
+          "success through partnership",
+          "collaboration",
+          "combined effort paying off"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "3",
         "sourceDeck": "playing.deck.standard"
@@ -1148,6 +1433,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a minor setback or delay at work — caution against overextension",
+        "keywords": [
+          "minor setback",
+          "delay",
+          "overextension",
+          "a caution to pace yourself"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "4",
         "sourceDeck": "playing.deck.standard"
@@ -1172,6 +1464,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a good marriage, a fortunate alliance, or a generous friend",
+        "keywords": [
+          "fortunate alliance",
+          "good marriage",
+          "a generous friend"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "5",
         "sourceDeck": "playing.deck.standard"
@@ -1196,6 +1494,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "business gain, and a rise in fortune through steady effort",
+        "keywords": [
+          "business gain",
+          "rising fortune",
+          "steady effort rewarded"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "6",
         "sourceDeck": "playing.deck.standard"
@@ -1220,6 +1524,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a small obstacle, self-doubt, or a minor rival at work",
+        "keywords": [
+          "minor obstacle",
+          "self-doubt",
+          "a small rival",
+          "competition at work"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "7",
         "sourceDeck": "playing.deck.standard"
@@ -1244,6 +1555,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "jealousy, competition, or unwanted advice",
+        "keywords": [
+          "jealousy",
+          "competition",
+          "unwanted advice",
+          "interference"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "8",
         "sourceDeck": "playing.deck.standard"
@@ -1268,6 +1586,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "unexpected wealth or a surprising change of fortune",
+        "keywords": [
+          "unexpected wealth",
+          "surprising change of fortune",
+          "a windfall"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "9",
         "sourceDeck": "playing.deck.standard"
@@ -1292,6 +1616,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "sudden wealth, a large undertaking, or a journey connected to business",
+        "keywords": [
+          "sudden wealth",
+          "a large undertaking",
+          "a business journey",
+          "ambition realised"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "10",
         "sourceDeck": "playing.deck.standard"
@@ -1316,6 +1647,12 @@
         }
       ],
       "extendedData": {
+        "meaning": "a generous, dark-haired young man — a loyal friend or well-meaning messenger",
+        "keywords": [
+          "generous dark-haired young man",
+          "loyal friend",
+          "a well-meaning messenger"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "Jack",
         "sourceDeck": "playing.deck.standard"
@@ -1340,6 +1677,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "a friendly, dark-haired woman — a generous and sociable confidante",
+        "keywords": [
+          "friendly dark-haired woman",
+          "generosity",
+          "sociability",
+          "a warm confidante"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "Queen",
         "sourceDeck": "playing.deck.standard"
@@ -1364,6 +1708,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "an honest, dark-haired man — a generous friend or advisor",
+        "keywords": [
+          "honest dark-haired man",
+          "generosity",
+          "a trusted advisor",
+          "good counsel"
+        ],
         "suit": "playing.suit.clubs",
         "rank": "King",
         "sourceDeck": "playing.deck.standard"
@@ -1386,6 +1737,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "great, often unpredictable change — sudden and unexpected joy or upheaval",
+        "keywords": [
+          "unpredictable change",
+          "unexpected joy",
+          "upheaval",
+          "wildcard fortune"
+        ],
         "suit": null,
         "rank": "Joker",
         "color": "Red",
@@ -1409,6 +1767,13 @@
         }
       ],
       "extendedData": {
+        "meaning": "folly, deception, or an unwise choice — proceed with caution",
+        "keywords": [
+          "folly",
+          "deception",
+          "an unwise choice",
+          "a warning to slow down"
+        ],
         "suit": null,
         "rank": "Joker",
         "color": "Black",
