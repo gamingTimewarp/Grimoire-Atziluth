@@ -165,7 +165,14 @@ export function ZodiacYearSpreadDisplay({
       {showWheel && skyChart && (
         <div style={{
           position: 'absolute', top: wheelOffset, left: wheelOffset,
-          opacity: 0.5,
+          // WheelChart's own root is `width: 100%; max-width: size`, sized responsively
+          // against its containing block — fine for a normal-flow parent, but this parent
+          // is absolutely positioned with no explicit width, so the percentage had nothing
+          // to resolve against and the wheel rendered at an unpredictable size, throwing
+          // off the centring this component computes below. Pin the containing block to
+          // the exact size we already computed for it.
+          width: wheelSize, height: wheelSize,
+          opacity: 0.85,
           zIndex: 0,
         }}>
           <WheelChart
