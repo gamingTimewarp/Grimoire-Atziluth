@@ -157,12 +157,13 @@ function CardKeywordPanel({ drawnCard, onNavigate, onClose }: {
   const isReversed = drawnCard.orientation === 'reversed'
 
   // Support both string meanings (RWS/Lenormand) and keyword arrays (Etteilla).
-  // Runes/Ogham don't have separate upright/reversed fields — they carry a single
-  // flat `keywords`/`meaning` pair that applies regardless of orientation. Prefer
-  // `keywords` (this is a keyword panel) and only fall back to the prose `meaning`
-  // if no keyword list was authored for the entity.
-  const uprightRaw = card.extendedData?.uprightMeaning ?? card.extendedData?.uprightKeywords ?? card.extendedData?.keywords ?? card.extendedData?.meaning
-  const reversedRaw = card.extendedData?.reversedMeaning ?? card.extendedData?.reversedKeywords ?? card.extendedData?.keywords ?? card.extendedData?.meaning
+  // Runes/Ogham/Geomancy don't have separate upright/reversed fields — they carry a
+  // single flat `keywords`/`meaning` pair that applies regardless of orientation.
+  // Mahjong and tea-leaf symbols are flat too, but under their own field names
+  // (`divinatoryMeaning`, `generalMeaning`). Prefer `keywords` (this is a keyword
+  // panel) and only fall back to prose if no keyword list was authored.
+  const uprightRaw = card.extendedData?.uprightMeaning ?? card.extendedData?.uprightKeywords ?? card.extendedData?.keywords ?? card.extendedData?.meaning ?? card.extendedData?.divinatoryMeaning ?? card.extendedData?.generalMeaning
+  const reversedRaw = card.extendedData?.reversedMeaning ?? card.extendedData?.reversedKeywords ?? card.extendedData?.keywords ?? card.extendedData?.meaning ?? card.extendedData?.divinatoryMeaning ?? card.extendedData?.generalMeaning
   const upright = Array.isArray(uprightRaw) ? uprightRaw.join(', ') : uprightRaw as string | undefined
   const reversed = Array.isArray(reversedRaw) ? reversedRaw.join(', ') : reversedRaw as string | undefined
   const meaning = isReversed && reversed ? reversed : upright
