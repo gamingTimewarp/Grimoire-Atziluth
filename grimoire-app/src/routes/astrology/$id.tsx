@@ -9,9 +9,9 @@ import { getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
-import { AspectsModal } from '@/components/ui/AspectsModal'
+import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { Button } from '@/components/ui/Button'
-import { Edit, List, Circle, Radio, Waypoints } from 'lucide-react'
+import { Edit, List, Circle, Radio } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
@@ -24,7 +24,6 @@ function ChartDetailPage() {
   const [view,         setView]        = useState<'wheel' | 'table'>('wheel')
   const [loading,      setLoading]     = useState(true)
   const [showTransits, setShowTransits] = useState(false)
-  const [aspectsOpen,  setAspectsOpen]  = useState(false)
   const tradSettings = loadTraditionSettings()
   const astrologyMode: AstrologyMode = tradSettings.astrologyMode
   const houseSystem = tradSettings.houseSystem
@@ -108,11 +107,6 @@ function ChartDetailPage() {
           >
             <Radio size={13} /> {showTransits ? 'Transits On' : 'Transits'}
           </Button>
-          {chart.aspects.length > 0 && (
-            <Button variant="ghost" size="sm" onClick={() => setAspectsOpen(true)}>
-              <Waypoints size={13} /> Aspects ({chart.aspects.length})
-            </Button>
-          )}
           <Button variant="ghost" size="sm" onClick={() => setView(v => v === 'wheel' ? 'table' : 'wheel')}>
             {view === 'wheel' ? <><List size={13} /> Table</> : <><Circle size={13} /> Wheel</>}
           </Button>
@@ -121,7 +115,8 @@ function ChartDetailPage() {
 
       {/* Main content — wheel and table are separate views, not a wheel with a table
           permanently glued to its side; the wheel already surfaces positions via its
-          own hover tooltips, so table view is where the text breakdown lives. */}
+          own hover tooltips, so table view is where the text breakdown lives. Aspects
+          sit below either view rather than sharing a cramped sidebar with the rest. */}
       {view === 'wheel' ? (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
@@ -135,14 +130,13 @@ function ChartDetailPage() {
         </div>
       )}
 
-      {aspectsOpen && (
-        <AspectsModal
+      <div style={{ marginTop: '20px' }}>
+        <AspectsPanel
           aspects={chart.aspects}
           planetOrder={chart.planets.map(p => p.planet.canonicalName)}
           onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
-          onClose={() => setAspectsOpen(false)}
         />
-      )}
+      </div>
 
       {/* Transit-to-natal aspects */}
       {showTransits && transitAspects.length > 0 && (

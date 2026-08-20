@@ -3,12 +3,13 @@ import React, { useEffect, useState, useCallback } from 'react'
 import { listNatalCharts, deleteNatalChart } from '@/lib/natal-db'
 import type { NatalChartRecord } from '@/lib/natal-db'
 import { getNatalChart, getSignsForMode, getTransitAspects } from '@/lib/astro-engine'
-import type { NatalChartData, Aspect, AstrologyMode, TransitAspect } from '@/lib/astro-engine'
+import type { NatalChartData, AstrologyMode, TransitAspect } from '@/lib/astro-engine'
 import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
+import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { Button } from '@/components/ui/Button'
 import { Plus, User, Trash2, RefreshCw, List, Circle, Play } from 'lucide-react'
 
@@ -16,59 +17,6 @@ export const Route = createFileRoute('/astrology/')({
   component: AstrologyPage,
 })
 
-const ASPECT_COLORS: Record<string, string> = {
-  conjunction: 'var(--color-text)',
-  sextile:     '#6ab0a8',
-  square:      '#c44a4a',
-  trine:       '#6aa86a',
-  opposition:  '#c47a4a',
-}
-
-// ─── Reusable aspects list ────────────────────────────────────────────────────
-
-function AspectsList({ aspects, onNav }: { aspects: Aspect[]; onNav: (cn: string) => void }) {
-  if (aspects.length === 0) return null
-  return (
-    <div>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
-        Aspects ({aspects.length})
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-        {aspects.map((asp, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '12px' }}>
-            <span
-              role="button" tabIndex={0}
-              style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '16px', cursor: 'pointer' }}
-              onClick={() => onNav(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav(asp.planet1.canonicalName) } }} title={asp.planet1.name}
-            >{asp.planet1.symbol}</span>
-            <span
-              role="button" tabIndex={0}
-              style={{ color: ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)', minWidth: '16px', textAlign: 'center', cursor: 'pointer' }}
-              onClick={() => onNav('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav('astrology.aspect.' + asp.type) } }} title={asp.type}
-            >{asp.symbol}</span>
-            <span
-              role="button" tabIndex={0}
-              style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '16px', cursor: 'pointer' }}
-              onClick={() => onNav(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav(asp.planet2.canonicalName) } }} title={asp.planet2.name}
-            >{asp.planet2.symbol}</span>
-            <span style={{ color: 'var(--color-text-muted)', flex: 1 }}>
-              <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => onNav(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav(asp.planet1.canonicalName) } }}>{asp.planet1.name}</span>
-              {' '}
-              <span
-                role="button" tabIndex={0}
-                style={{ cursor: 'pointer', color: ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)' }}
-                onClick={() => onNav('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav('astrology.aspect.' + asp.type) } }}
-              >{asp.type}</span>
-              {' '}
-              <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => onNav(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNav(asp.planet2.canonicalName) } }}>{asp.planet2.name}</span>
-            </span>
-            <span style={{ color: 'var(--color-text-subtle)', fontSize: '11px' }}>{asp.orb}°</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 // ─── Current sky snapshot ─────────────────────────────────────────────────────
 
@@ -198,19 +146,19 @@ function CurrentSkyPanel() {
 
       {/* Wheel view */}
       {chart && view === 'wheel' && (
-        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-          <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
-            <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
-          </ZoomableSVGContainer>
-          <div style={{ flex: 1, minWidth: '220px' }}>
-            <AspectsList aspects={chart.aspects} onNav={goToRef} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
+              <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
+            </ZoomableSVGContainer>
           </div>
+          <AspectsPanel aspects={chart.aspects} planetOrder={chart.planets.map(p => p.planet.canonicalName)} onNavigate={goToRef} />
         </div>
       )}
 
       {/* Table view */}
       {chart && view === 'table' && (
-        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {/* Positions grid */}
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
             {chart.planets.map(pos => {
@@ -242,12 +190,7 @@ function CurrentSkyPanel() {
             })}
           </div>
 
-          {/* Aspects */}
-          {chart.aspects.length > 0 && (
-            <div style={{ flex: 1, minWidth: '220px' }}>
-              <AspectsList aspects={chart.aspects} onNav={goToRef} />
-            </div>
-          )}
+          <AspectsPanel aspects={chart.aspects} planetOrder={chart.planets.map(p => p.planet.canonicalName)} onNavigate={goToRef} />
         </div>
       )}
 
