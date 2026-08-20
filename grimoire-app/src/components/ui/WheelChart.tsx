@@ -14,7 +14,7 @@
 
 import React, { useState, useEffect } from 'react'
 import type { NatalChartData } from '@/lib/astro-engine'
-import { getSignsForMode, IAU_BOUNDARIES } from '@/lib/astro-engine'
+import { getSignsForMode, IAU_BOUNDARIES, HOUSE_NAMES } from '@/lib/astro-engine'
 import type { AstrologyMode } from '@/lib/astro-engine'
 
 const TRANSIT_COLOR = '#c4a44a'
@@ -144,12 +144,6 @@ export type WheelChartProps = {
   onShowLotsChange?: (v: boolean) => void
 }
 
-const HOUSE_NAMES = [
-  'House of Self',        'House of Possessions',  'House of Communication',
-  'House of Home',        'House of Creativity',   'House of Health',
-  'House of Partnership', 'House of Transformation','House of Philosophy',
-  'House of Career',      'House of Community',    'House of Spirituality',
-]
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
 const SIGN_ELEMENTS_IAU = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Serpent-bearer','Fire','Earth','Air','Water']
 const LOT_COLOR = 'var(--color-accent)'

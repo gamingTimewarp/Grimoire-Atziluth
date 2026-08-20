@@ -134,6 +134,30 @@ export const INGRESS_PLANETS = PLANETS.slice(0, 5) // Sun, Moon, Mercury, Venus,
 
 export type HouseSystem = 'whole-sign' | 'equal' | 'placidus' | 'koch' | 'regiomontanus' | 'campanus' | 'porphyry' | 'morinus'
 
+/** Display label for a HouseSystem value, e.g. for a chart's "Houses — Placidus" heading. */
+export function formatHouseSystem(system: HouseSystem): string {
+  const LABELS: Record<HouseSystem, string> = {
+    'whole-sign':    'Whole Sign',
+    'equal':         'Equal',
+    'placidus':      'Placidus',
+    'koch':          'Koch',
+    'regiomontanus': 'Regiomontanus',
+    'campanus':      'Campanus',
+    'porphyry':      'Porphyry',
+    'morinus':       'Morinus',
+  }
+  return LABELS[system] ?? system
+}
+
+/** House meanings, index 0 = House 1 — shared by WheelChart's hover tooltip and the
+ * chart detail page's Houses list, so the two never drift out of sync. */
+export const HOUSE_NAMES = [
+  'House of Self',         'House of Possessions',   'House of Communication',
+  'House of Home',         'House of Creativity',    'House of Health',
+  'House of Partnership',  'House of Transformation', 'House of Philosophy',
+  'House of Career',       'House of Community',     'House of Spirituality',
+]
+
 // ─── Output types ─────────────────────────────────────────────────────────────
 
 export type PlanetPosition = {

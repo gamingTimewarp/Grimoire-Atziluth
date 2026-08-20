@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import { getNatalChartById } from '@/lib/natal-db'
 import type { NatalChartRecord } from '@/lib/natal-db'
-import { getNatalChart, getPlanetPositions, getTransitAspects, formatLongitude, getSignsForMode, isDayChart, getMutualReceptions } from '@/lib/astro-engine'
+import { getNatalChart, getPlanetPositions, getTransitAspects, formatLongitude, getSignsForMode, isDayChart, getMutualReceptions, formatHouseSystem, HOUSE_NAMES } from '@/lib/astro-engine'
 import type { NatalChartData, AstrologyMode, TransitAspect, MutualReception } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getHomeLocation } from '@/lib/settings-store'
@@ -16,6 +16,22 @@ import { Edit, List, Circle, Radio } from 'lucide-react'
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
 })
+
+const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
+
+/** House cusps come back as plain 0–360 ecliptic longitude — split into sign/degree/minutes
+ * the same way PlanetPosition already does, so cusps render with the same "12°34′ ♈ Aries"
+ * format as everything else in this table. */
+function longitudeToSignDegree(lon: number): { signIndex: number; degree: number; minutes: number } {
+  const norm = ((lon % 360) + 360) % 360
+  let signIndex = Math.floor(norm / 30)
+  const inSign = norm - signIndex * 30
+  let degree = Math.floor(inSign)
+  let minutes = Math.round((inSign - degree) * 60)
+  if (minutes === 60) { minutes = 0; degree += 1 }
+  if (degree === 30) { degree = 0; signIndex = (signIndex + 1) % 12 }
+  return { signIndex, degree, minutes }
+}
 
 function ChartDetailPage() {
   const { id }    = Route.useParams()
@@ -134,7 +150,7 @@ function ChartDetailPage() {
           )}
           {showTable && (
             <div style={{ flex: 1, minWidth: '260px' }}>
-              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} />
+              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} hasLocation={hasLocation} />
               <MutualReceptionsSection chart={chart} navigate={navigate} />
             </div>
           )}
@@ -170,15 +186,22 @@ function ChartDetailPage() {
 
 // ─── Positions table ──────────────────────────────────────────────────────────
 
-function PositionsTable({ chart, navigate, hasBirthTime }: {
+function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
   chart: NatalChartData
   navigate: ReturnType<typeof useNavigate>
   hasBirthTime: boolean
+  hasLocation: boolean
 }) {
   const tradSettings  = loadTraditionSettings()
   const astrologyMode = tradSettings.astrologyMode
   const signs = getSignsForMode(astrologyMode)
   const showAsteroids = tradSettings.activeTraditions.includes('tradition.modern-astrology')
+
+  // House cusps are always computed in plain tropical longitude (getHouses takes no
+  // mode parameter) — index them against the 12-sign tropical list regardless of the
+  // chart's own display mode, since the 13-sign IAU list has unequal boundaries that
+  // don't line up with a flat 30°-per-sign cusp index.
+  const tropicalSigns = getSignsForMode('tropical')
 
   const sunPos = chart.planets.find(p => p.planet.name === 'Sol')
   const isDay = sunPos ? isDayChart(sunPos.longitude, chart.houses.ascendant) : null
@@ -256,6 +279,52 @@ function PositionsTable({ chart, navigate, hasBirthTime }: {
                     title={sign ? `View ${sign.name} in Reference` : undefined}
                   >
                     {sign?.symbol} {lp.degree}°{String(lp.minutes).padStart(2, '0')}′ {sign?.name}
+                  </span>
+                </React.Fragment>
+              )
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Houses */}
+      <div style={{ marginTop: '16px' }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+          Houses{chart.houses.system && ` — ${formatHouseSystem(chart.houses.system)}`}
+        </div>
+        {!hasBirthTime || !hasLocation ? (
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontStyle: 'italic' }}>
+            Birth time and location required to compute houses.
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr', gap: '4px 10px', alignItems: 'center' }}>
+            {chart.houses.cusps.map((cusp, i) => {
+              const { signIndex, degree, minutes } = longitudeToSignDegree(cusp)
+              const sign = tropicalSigns[signIndex]
+              const houseCN = `astrology.house.${i + 1}`
+              const angle = i === 0 ? 'ASC' : i === 9 ? 'MC' : i === 3 ? 'IC' : i === 6 ? 'DSC' : null
+              return (
+                <React.Fragment key={houseCN}>
+                  <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '24px', textAlign: 'center' }}>
+                    {ROMAN_NUMERALS[i]}
+                  </span>
+                  <span
+                    role="button" tabIndex={0}
+                    style={{ fontSize: '12px', color: 'var(--color-text-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: houseCN } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: houseCN } }) } }}
+                  >
+                    {HOUSE_NAMES[i]}
+                    {angle && (
+                      <span style={{ fontSize: '9px', color: 'var(--color-accent)', border: '1px solid var(--color-accent-muted)', borderRadius: '3px', padding: '0 4px' }}>{angle}</span>
+                    )}
+                  </span>
+                  <span
+                    role="button" tabIndex={0}
+                    style={{ fontSize: '12px', color: 'var(--color-text)', cursor: 'pointer' }}
+                    onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: sign.canonicalName } })} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: sign.canonicalName } }) } }}
+                    title={`View ${sign.name} in Reference`}
+                  >
+                    {sign.symbol} {degree}°{String(minutes).padStart(2, '0')}′ {sign.name}
                   </span>
                 </React.Fragment>
               )
