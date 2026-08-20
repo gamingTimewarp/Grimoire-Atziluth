@@ -26,6 +26,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "freedom, folly, and unbound possibility",
+        "keywords": [
+          "freedom",
+          "folly",
+          "the wanderer",
+          "pure possibility",
+          "unconventional spirit"
+        ],
         "cardNumber": 0,
         "polarity": "positive",
         "numerologyDigit": null,
@@ -57,6 +65,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "skill, dexterity, and the art of illusion",
+        "keywords": [
+          "skill",
+          "manual dexterity",
+          "illusion",
+          "nascent creative power",
+          "the showman"
+        ],
         "cardNumber": 1,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
@@ -88,6 +104,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "hidden wisdom and occult, feminine spiritual authority",
+        "keywords": [
+          "hidden wisdom",
+          "occult knowledge",
+          "feminine authority",
+          "secrecy",
+          "inner knowing"
+        ],
         "cardNumber": 2,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.2",
@@ -119,6 +143,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "creative fertility and earthly, feminine power",
+        "keywords": [
+          "fertility",
+          "earthly power",
+          "material abundance",
+          "feminine authority",
+          "nurturing creativity"
+        ],
         "cardNumber": 3,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
@@ -150,6 +182,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "temporal authority, rational order, and masculine power",
+        "keywords": [
+          "temporal authority",
+          "rational order",
+          "law",
+          "masculine power",
+          "structure"
+        ],
         "cardNumber": 4,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.4",
@@ -181,6 +221,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "spiritual authority and the transmission of sacred tradition",
+        "keywords": [
+          "spiritual authority",
+          "religious tradition",
+          "sacred knowledge",
+          "blessing",
+          "orthodoxy"
+        ],
         "cardNumber": 5,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.5",
@@ -212,6 +260,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "choice, love, and the crossroads between vice and virtue",
+        "keywords": [
+          "choice",
+          "love",
+          "temptation",
+          "a crossroads",
+          "moral decision"
+        ],
         "cardNumber": 6,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.6",
@@ -243,6 +299,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "triumph through will and control of opposing forces",
+        "keywords": [
+          "triumph",
+          "willpower",
+          "control of opposites",
+          "victorious movement",
+          "determination"
+        ],
         "cardNumber": 7,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.7",
@@ -274,6 +338,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "impartial judgment and cosmic equity",
+        "keywords": [
+          "impartial judgment",
+          "legal matters",
+          "balance",
+          "cosmic equity",
+          "fairness"
+        ],
         "cardNumber": 8,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.8",
@@ -305,6 +377,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "withdrawal, inner guidance, and the wisdom of solitude",
+        "keywords": [
+          "withdrawal",
+          "inner guidance",
+          "solitude",
+          "spiritual maturity",
+          "patient searching"
+        ],
         "cardNumber": 9,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.9",
@@ -336,6 +416,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "the cycles of fate and the turning of destiny",
+        "keywords": [
+          "cycles of fate",
+          "inevitable change",
+          "destiny",
+          "fortune turning",
+          "forces beyond control"
+        ],
         "cardNumber": 10,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.1",
@@ -367,6 +455,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "spiritual strength and the power of gentleness over force",
+        "keywords": [
+          "spiritual strength",
+          "courage",
+          "gentleness overcoming force",
+          "inner power",
+          "self-mastery"
+        ],
         "cardNumber": 11,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
@@ -398,6 +494,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "voluntary sacrifice and enlightenment through surrender",
+        "keywords": [
+          "voluntary sacrifice",
+          "suspension",
+          "reversed perspective",
+          "surrender",
+          "enlightenment"
+        ],
         "cardNumber": 12,
         "polarity": "neutral",
         "numerologyDigit": "numerology.digit.3",
@@ -429,6 +533,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "inevitable transformation and the end of a cycle",
+        "keywords": [
+          "transformation",
+          "endings",
+          "the close of a cycle",
+          "clearing away",
+          "renewal through loss"
+        ],
         "cardNumber": 13,
         "polarity": "negative",
         "numerologyDigit": "numerology.digit.4",
@@ -460,6 +572,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "moderation and the balanced blending of opposing forces",
+        "keywords": [
+          "moderation",
+          "flow",
+          "alchemy of the soul",
+          "balance",
+          "harmonising opposites"
+        ],
         "cardNumber": 14,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.5",
@@ -491,6 +611,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "bondage to material desire and unconscious compulsion",
+        "keywords": [
+          "bondage",
+          "material desire",
+          "shadow forces",
+          "compulsion",
+          "chains of the unconscious"
+        ],
         "cardNumber": 15,
         "polarity": "negative",
         "numerologyDigit": "numerology.digit.6",
@@ -522,6 +650,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "sudden catastrophe and the destruction of false structures",
+        "keywords": [
+          "sudden catastrophe",
+          "destruction of false structures",
+          "upheaval",
+          "revelation",
+          "a shattering wake-up call"
+        ],
         "cardNumber": 16,
         "polarity": "negative",
         "numerologyDigit": "numerology.digit.7",
@@ -553,6 +689,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "hope, inspiration, and healing renewal after catastrophe",
+        "keywords": [
+          "hope",
+          "inspiration",
+          "serenity",
+          "healing renewal",
+          "guiding light"
+        ],
         "cardNumber": 17,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.8",
@@ -584,6 +728,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "the unconscious, illusion, and psychic mystery",
+        "keywords": [
+          "the unconscious",
+          "illusion",
+          "the night path",
+          "psychic mystery",
+          "hidden fears"
+        ],
         "cardNumber": 18,
         "polarity": "negative",
         "numerologyDigit": "numerology.digit.9",
@@ -615,6 +767,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "joy, vitality, and the triumph of light over darkness",
+        "keywords": [
+          "joy",
+          "vitality",
+          "clarity",
+          "warmth of consciousness",
+          "triumph of light"
+        ],
         "cardNumber": 19,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.1",
@@ -646,6 +806,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "awakening, renewal, and the call to higher purpose",
+        "keywords": [
+          "awakening",
+          "renewal",
+          "a call to purpose",
+          "reckoning",
+          "rebirth"
+        ],
         "cardNumber": 20,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.2",
@@ -677,6 +845,14 @@
         }
       ],
       "extendedData": {
+        "meaning": "completion, integration, and cosmic consciousness",
+        "keywords": [
+          "completion",
+          "integration",
+          "cosmic consciousness",
+          "fulfilment",
+          "the journey’s end"
+        ],
         "cardNumber": 21,
         "polarity": "positive",
         "numerologyDigit": "numerology.digit.3",
