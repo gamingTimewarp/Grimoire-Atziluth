@@ -16,6 +16,7 @@ import React, { useState, useEffect } from 'react'
 import type { NatalChartData } from '@/lib/astro-engine'
 import { getSignsForMode, IAU_BOUNDARIES, HOUSE_NAMES } from '@/lib/astro-engine'
 import type { AstrologyMode } from '@/lib/astro-engine'
+import { getMoonPhase } from '@/lib/astro-calc'
 
 const TRANSIT_COLOR = '#c4a44a'
 const R_TRANSIT_PLANET = 168
@@ -120,6 +121,12 @@ export type WheelLayout = 'classic' | 'rings'
 export type WheelChartProps = {
   chart: NatalChartData
   transitChart?: NatalChartData
+  /** The moment `chart` represents — birth time for a natal chart, "as of" time for
+   * a Current Sky snapshot. Only used to compute the Moon's phase for its hover
+   * tooltip's second line; harmless to omit, the Moon tooltip just won't show a
+   * phase. The transit ring (if shown) always uses the actual current time for its
+   * own Moon phase, since a transit position is definitionally "right now". */
+  date?: Date
   size?: number
   mode?: AstrologyMode
   onNavigate?: (canonicalName: string) => void
@@ -149,7 +156,7 @@ const SIGN_ELEMENTS_IAU = ['Fire','Earth','Air','Water','Fire','Earth','Air','Wa
 const LOT_COLOR = 'var(--color-accent)'
 
 export function WheelChart({
-  chart, transitChart, size = 500, mode = 'tropical',
+  chart, transitChart, date, size = 500, mode = 'tropical',
   onNavigate, onHoverChange, showTooltip = true, defaultLayout = 'classic',
   hideControls = false,
   layout: layoutProp, onLayoutChange,
@@ -407,6 +414,7 @@ export function WheelChart({
             hovered={hovered}
             planets={planets} lots={lots}
             transitChart={transitChart}
+            date={date}
             mode={mode}
             onNavigate={onNavigate}
           />
@@ -427,12 +435,13 @@ const TOOLTIP_BASE_STYLE: React.CSSProperties = {
 // ─── Inline tooltip content (always rendered, visibility-toggled) ─────────────
 
 function WheelTooltipContent({
-  hovered, planets, lots, transitChart, mode, onNavigate,
+  hovered, planets, lots, transitChart, date, mode, onNavigate,
 }: {
   hovered: string | null
   planets: NatalChartData['planets']
   lots: NatalChartData['lots']
   transitChart?: NatalChartData
+  date?: Date
   mode: AstrologyMode
   onNavigate?: (cn: string) => void
 }) {
@@ -482,12 +491,26 @@ function WheelTooltipContent({
   const pos       = source?.find(p => p.planet.name === name)
   if (!pos) return <div style={{ ...TOOLTIP_BASE_STYLE, visibility: 'hidden' }}>&nbsp;</div>
   const sign = signs[pos.signIndex]
+  // Transit is definitionally "right now" regardless of what `date` (the primary
+  // chart's own moment) is set to; the natal/current-sky ring needs `date` passed in.
+  const moonPhase = pos.planet.name === 'Luna' && (isTransit || date) ? getMoonPhase(isTransit ? new Date() : date!) : null
   return (
     <div style={TOOLTIP_BASE_STYLE}>
-      {isTransit && <span style={{ color: TRANSIT_COLOR, marginRight: '6px', fontSize: '10px' }}>transit</span>}
-      {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
-      {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
-      {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      <div>
+        {isTransit && <span style={{ color: TRANSIT_COLOR, marginRight: '6px', fontSize: '10px' }}>transit</span>}
+        {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
+        {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
+        {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      </div>
+      {moonPhase && (
+        <div
+          role={onNavigate ? 'button' : undefined} tabIndex={onNavigate ? 0 : undefined}
+          style={{ marginTop: '2px', color: 'var(--color-text-subtle)', cursor: onNavigate ? 'pointer' : 'default', pointerEvents: onNavigate ? 'auto' : 'none' }}
+          onClick={() => onNavigate?.(moonPhase.canonicalName)}
+        >
+          {moonPhase.emoji} {moonPhase.name} · {moonPhase.illumination}% lit
+        </div>
+      )}
     </div>
   )
 }
@@ -504,10 +527,13 @@ export function toggleStyle(active: boolean): React.CSSProperties {
 // ─── Standalone tooltip ───────────────────────────────────────────────────────
 
 export function WheelChartTooltip({
-  hoveredKey, chart, mode = 'tropical', onNavigate, style,
+  hoveredKey, chart, date, mode = 'tropical', onNavigate, style,
 }: {
   hoveredKey: string
   chart: NatalChartData
+  /** The moment `chart` represents — see WheelChartProps.date. Only used for the
+   * Moon's phase, shown as a second tooltip line. */
+  date?: Date
   mode?: AstrologyMode
   onNavigate?: (cn: string) => void
   style?: React.CSSProperties
@@ -559,11 +585,23 @@ export function WheelChartTooltip({
   const pos  = planets.find(p => p.planet.name === name)
   if (!pos) return null
   const sign = signs[pos.signIndex]
+  const moonPhase = pos.planet.name === 'Luna' && date ? getMoonPhase(date) : null
   return (
     <div style={base}>
-      {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
-      {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
-      {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      <div>
+        {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
+        {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
+        {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}
+      </div>
+      {moonPhase && (
+        <div
+          role={onNavigate ? 'button' : undefined} tabIndex={onNavigate ? 0 : undefined}
+          style={{ marginTop: '2px', color: 'var(--color-text-subtle)', cursor: onNavigate ? 'pointer' : 'default', pointerEvents: onNavigate ? 'auto' : 'none' }}
+          onClick={() => onNavigate?.(moonPhase.canonicalName)}
+        >
+          {moonPhase.emoji} {moonPhase.name} · {moonPhase.illumination}% lit
+        </div>
+      )}
     </div>
   )
 }

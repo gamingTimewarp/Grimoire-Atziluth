@@ -6,6 +6,7 @@ import { getNatalChart, getSignsForMode, getTransitAspects } from '@/lib/astro-e
 import type { NatalChartData, AstrologyMode, TransitAspect } from '@/lib/astro-engine'
 import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
+import { getMoonPhase } from '@/lib/astro-calc'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
@@ -19,14 +20,6 @@ export const Route = createFileRoute('/astrology/')({
 
 
 // ─── Current sky snapshot ─────────────────────────────────────────────────────
-
-const TRANSIT_ASPECT_COLORS: Record<string, string> = {
-  conjunction: '#c4a44a',
-  sextile:     '#6ab0a8',
-  square:      '#c44a4a',
-  trine:       '#6aa86a',
-  opposition:  '#c47a4a',
-}
 
 function CurrentSkyPanel() {
   const navigate = useNavigate()
@@ -157,13 +150,14 @@ function CurrentSkyPanel() {
           <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
             {showWheel && (
               <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
-                <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
+                <WheelChart chart={chart} size={440} mode={mode} date={asOf ?? undefined} onNavigate={goToRef} />
               </ZoomableSVGContainer>
             )}
             {showTable && (
               <div style={{ flex: 1, minWidth: '220px', display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
                 {chart.planets.map(pos => {
                   const sign = getSignsForMode(loadTraditionSettings().astrologyMode)[pos.signIndex]
+                  const moonPhase = pos.planet.name === 'Luna' && asOf ? getMoonPhase(asOf) : null
                   return (
                     <React.Fragment key={pos.planet.name}>
                       <span
@@ -184,6 +178,17 @@ function CurrentSkyPanel() {
                         title={`View ${sign.name} in Reference`}
                       >
                         {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.symbol} {sign.name}
+                        {moonPhase && (
+                          <span
+                            role="button" tabIndex={0}
+                            style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '2px' }}
+                            onClick={e => { e.stopPropagation(); goToRef(moonPhase.canonicalName) }}
+                            onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); goToRef(moonPhase.canonicalName) } }}
+                            title={`View ${moonPhase.name} in Reference`}
+                          >
+                            {moonPhase.emoji} {moonPhase.name} · {moonPhase.illumination}% lit
+                          </span>
+                        )}
                       </span>
                       <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
                     </React.Fragment>
@@ -203,34 +208,15 @@ function CurrentSkyPanel() {
       )}
 
       {/* Transit-to-natal aspects */}
-      {chart && showTransits && transitAspects.length > 0 && (
-        <div style={{ marginTop: '14px', paddingTop: '14px', borderTop: '1px solid var(--color-border)' }}>
-          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
-            <span style={{ color: '#c4a44a' }}>Transit</span> → Natal
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-            {transitAspects.map((asp, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '12px' }}>
-                <span
-                  role="button" tabIndex={0}
-                  style={{ color: '#c4a44a', fontFamily: 'monospace', minWidth: '16px', cursor: 'pointer' }}
-                  onClick={() => goToRef(asp.transitPlanet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.transitPlanet.canonicalName) } }} title={`Transit ${asp.transitPlanet.name}`}
-                >{asp.transitPlanet.symbol}</span>
-                <span style={{ color: TRANSIT_ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)', minWidth: '16px', textAlign: 'center' }}>{asp.symbol}</span>
-                <span
-                  role="button" tabIndex={0}
-                  style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '16px', cursor: 'pointer' }}
-                  onClick={() => goToRef(asp.natalPlanet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.natalPlanet.canonicalName) } }} title={`Natal ${asp.natalPlanet.name}`}
-                >{asp.natalPlanet.symbol}</span>
-                <span style={{ color: 'var(--color-text-muted)', flex: 1 }}>
-                  <span style={{ color: '#c4a44a' }}>tr.</span> {asp.transitPlanet.name}{' '}
-                  <span style={{ color: TRANSIT_ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)' }}>{asp.type}</span>{' '}
-                  natal {asp.natalPlanet.name}
-                </span>
-                <span style={{ color: 'var(--color-text-subtle)', fontSize: '10px' }}>{asp.applying ? '→' : '←'} {asp.orb}°</span>
-              </div>
-            ))}
-          </div>
+      {chart && selfChart && showTransits && transitAspects.length > 0 && (
+        <div style={{ marginTop: '14px' }}>
+          <AspectsPanel
+            variant="transit"
+            aspects={transitAspects.map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
+            planets={chart.planets.map(p => p.planet)}
+            colPlanets={selfChart.planets.map(p => p.planet)}
+            onNavigate={goToRef}
+          />
         </div>
       )}
 

@@ -7,6 +7,7 @@ import type { NatalChartData, AstrologyMode, TransitAspect, MutualReception } fr
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
+import { getMoonPhase } from '@/lib/astro-calc'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
@@ -81,13 +82,17 @@ function ChartDetailPage() {
       .catch(err => { console.error(err); setLoading(false) })
   }, [id])
 
-  const chart = useMemo((): NatalChartData | null => {
+  const birthDate = useMemo((): Date | null => {
     if (!record) return null
-    const birthDate = zonedTimeToUtc(record.birthDate, record.birthTime ?? '12:00', record.birthTimezone)
+    return zonedTimeToUtc(record.birthDate, record.birthTime ?? '12:00', record.birthTimezone)
+  }, [record])
+
+  const chart = useMemo((): NatalChartData | null => {
+    if (!record || !birthDate) return null
     const lat = record.birthLat ?? 0
     const lon = record.birthLon ?? 0
     return getNatalChart(birthDate, lat, lon, houseSystem, astrologyMode, { showNodes, showModernPlanets })
-  }, [record])
+  }, [record, birthDate])
 
   // Compute transit chart (current sky) when transit overlay is enabled
   const transitChart = useMemo((): NatalChartData | null => {
@@ -178,12 +183,12 @@ function ChartDetailPage() {
         <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
           {showWheel && (
             <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
-              <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
+              <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} date={birthDate ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
             </ZoomableSVGContainer>
           )}
           {showTable && (
             <div style={{ flex: 1, minWidth: '260px' }}>
-              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} hasLocation={hasLocation} />
+              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} hasLocation={hasLocation} date={birthDate} />
               <MutualReceptionsSection chart={chart} navigate={navigate} />
             </div>
           )}
@@ -203,8 +208,16 @@ function ChartDetailPage() {
       </div>
 
       {/* Transit-to-natal aspects */}
-      {showTransits && transitAspects.length > 0 && (
-        <TransitAspectsTable aspects={transitAspects} navigate={navigate} />
+      {showTransits && transitChart && transitAspects.length > 0 && (
+        <div style={{ marginTop: '20px' }}>
+          <AspectsPanel
+            variant="transit"
+            aspects={transitAspects.map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
+            planets={transitChart.planets.map(p => p.planet)}
+            colPlanets={chart.planets.map(p => p.planet)}
+            onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+          />
+        </div>
       )}
 
       {/* Notes */}
@@ -219,11 +232,13 @@ function ChartDetailPage() {
 
 // ─── Positions table ──────────────────────────────────────────────────────────
 
-function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
+function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date }: {
   chart: NatalChartData
   navigate: ReturnType<typeof useNavigate>
   hasBirthTime: boolean
   hasLocation: boolean
+  /** Birth moment — used only to compute the Moon's phase for its position row. */
+  date: Date | null
 }) {
   const tradSettings  = loadTraditionSettings()
   const astrologyMode = tradSettings.astrologyMode
@@ -249,6 +264,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
         {majorPositions.map(pos => {
           const sign = signs[pos.signIndex]
+          const moonPhase = pos.planet.name === 'Luna' && date ? getMoonPhase(date) : null
           return (
             <React.Fragment key={pos.planet.name}>
               <span
@@ -269,6 +285,17 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
                 title={`View ${sign.name} in Reference`}
               >
                 {sign.symbol} {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.name}
+                {moonPhase && (
+                  <span
+                    role="button" tabIndex={0}
+                    style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '2px' }}
+                    onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: moonPhase.canonicalName } }) }}
+                    onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: moonPhase.canonicalName } }) } }}
+                    title={`View ${moonPhase.name} in Reference`}
+                  >
+                    {moonPhase.emoji} {moonPhase.name} · {moonPhase.illumination}% lit
+                  </span>
+                )}
               </span>
               <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
             </React.Fragment>
@@ -425,16 +452,6 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
   )
 }
 
-// ─── Transit aspects table ────────────────────────────────────────────────────
-
-const TRANSIT_ASPECT_COLORS: Record<string, string> = {
-  conjunction: '#c4a44a',
-  sextile:     '#6ab0a8',
-  square:      '#c44a4a',
-  trine:       '#6aa86a',
-  opposition:  '#c47a4a',
-}
-
 // ─── Mutual reception section ─────────────────────────────────────────────────
 
 function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; navigate: ReturnType<typeof useNavigate> }) {
@@ -474,44 +491,3 @@ function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; n
   )
 }
 
-// ─── Transit aspects table ────────────────────────────────────────────────────
-
-function TransitAspectsTable({ aspects, navigate }: { aspects: TransitAspect[]; navigate: ReturnType<typeof useNavigate> }) {
-  const [expanded, setExpanded] = useState(true)
-  const goToRef = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
-
-  return (
-    <div style={{ marginTop: '20px' }}>
-      <div
-        role="button" tabIndex={0}
-        style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
-        onClick={() => setExpanded(e => !e)}
-        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setExpanded(ex => !ex) } }}
-        aria-expanded={expanded}
-      >
-        <span style={{ color: '#c4a44a' }}>Transit</span> Aspects ({aspects.length}) {expanded ? '▲' : '▼'}
-      </div>
-      {expanded && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-          {aspects.map((asp, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px' }}>
-              <span role="button" tabIndex={0} style={{ color: '#c4a44a', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => goToRef(asp.transitPlanet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.transitPlanet.canonicalName) } }} title={`Transit ${asp.transitPlanet.name}`}
-              >{asp.transitPlanet.symbol}</span>
-              <span style={{ color: TRANSIT_ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)', minWidth: '18px', textAlign: 'center' }}>{asp.symbol}</span>
-              <span role="button" tabIndex={0} style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => goToRef(asp.natalPlanet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.natalPlanet.canonicalName) } }} title={`Natal ${asp.natalPlanet.name}`}
-              >{asp.natalPlanet.symbol}</span>
-              <span style={{ color: 'var(--color-text-muted)', flex: 1 }}>
-                <span style={{ color: '#c4a44a' }}>tr.</span> {asp.transitPlanet.name}{' '}
-                <span style={{ color: TRANSIT_ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)' }}>{asp.type}</span>{' '}
-                natal {asp.natalPlanet.name}
-              </span>
-              <span style={{ color: 'var(--color-text-subtle)', fontSize: '10px' }}>{asp.applying ? '→' : '←'} {asp.orb}°</span>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
