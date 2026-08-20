@@ -11,7 +11,7 @@ import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { Button } from '@/components/ui/Button'
-import { Edit, List, Circle, Radio } from 'lucide-react'
+import { Edit, List, Circle, Radio, Info } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
@@ -31,6 +31,26 @@ function longitudeToSignDegree(lon: number): { signIndex: number; degree: number
   if (minutes === 60) { minutes = 0; degree += 1 }
   if (degree === 30) { degree = 0; signIndex = (signIndex + 1) % 12 }
   return { signIndex, degree, minutes }
+}
+
+/** Small (i) link next to a table-section header, to the system.overview entity that
+ * the section's own rows are members of (e.g. Hermetic Lots -> system.overview.lots). */
+function SectionInfoLink({ canonicalName, label, navigate }: {
+  canonicalName: string
+  label: string
+  navigate: ReturnType<typeof useNavigate>
+}) {
+  return (
+    <span
+      role="button" tabIndex={0}
+      title={`View ${label} overview in Reference`}
+      style={{ display: 'inline-flex', color: 'var(--color-text-subtle)', cursor: 'pointer' }}
+      onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName } })}
+      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName } }) } }}
+    >
+      <Info size={12} />
+    </span>
+  )
 }
 
 function ChartDetailPage() {
@@ -206,13 +226,18 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
   const sunPos = chart.planets.find(p => p.planet.name === 'Sol')
   const isDay = sunPos ? isDayChart(sunPos.longitude, chart.houses.ascendant) : null
 
+  // Asteroids/minor bodies get their own section below — exclude them here so they
+  // don't appear twice.
+  const majorPositions = chart.planets.filter(p => !p.planet.canonicalName.startsWith('astrology.minor-body.'))
+
   return (
     <div style={{ marginBottom: '20px' }}>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
+      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
         Planetary Positions
+        <SectionInfoLink canonicalName="system.overview.planets" label="Planets" navigate={navigate} />
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
-        {chart.planets.map(pos => {
+        {majorPositions.map(pos => {
           const sign = signs[pos.signIndex]
           return (
             <React.Fragment key={pos.planet.name}>
@@ -245,6 +270,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
       <div style={{ marginTop: '16px' }}>
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
           Hermetic Lots
+          <SectionInfoLink canonicalName="system.overview.lots" label="Hermetic Lots" navigate={navigate} />
           {isDay !== null && (
             <span style={{ textTransform: 'none', letterSpacing: 0, fontSize: '10px', padding: '1px 6px', borderRadius: '3px', background: isDay ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: isDay ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${isDay ? 'var(--color-accent-muted)' : 'var(--color-border)'}` }}>
               {isDay ? '☉ Day chart' : '☽ Night chart'}
@@ -289,8 +315,9 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
 
       {/* Houses */}
       <div style={{ marginTop: '16px' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
           Houses{chart.houses.system && ` — ${formatHouseSystem(chart.houses.system)}`}
+          <SectionInfoLink canonicalName="system.overview.houses" label="Houses" navigate={navigate} />
         </div>
         {!hasBirthTime || !hasLocation ? (
           <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontStyle: 'italic' }}>
@@ -339,8 +366,9 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
         if (asteroidPositions.length === 0) return null
         return (
         <div style={{ marginTop: '16px' }}>
-          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
             Asteroids
+            <SectionInfoLink canonicalName="system.overview.minor-bodies" label="Asteroids" navigate={navigate} />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr', gap: '4px 10px', alignItems: 'center' }}>
             {asteroidPositions.map(ap => {

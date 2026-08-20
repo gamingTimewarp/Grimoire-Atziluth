@@ -3270,7 +3270,10 @@
           "system.overview.fixed-stars",
           "system.overview.decans",
           "system.overview.nakshatras",
-          "system.overview.lunar-mansions"
+          "system.overview.lunar-mansions",
+          "system.overview.houses",
+          "system.overview.lots",
+          "system.overview.minor-bodies"
         ]
       }
     },
@@ -3734,6 +3737,78 @@
         "entityTypeGroup": "omens",
         "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "omen.animal"
+      }
+    },
+    {
+      "canonicalName": "system.overview.houses",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Astrological Houses",
+      "description": "The twelve astrological houses divide the sky into life domains relative to the birth moment and location, rather than the zodiac's fixed division by constellation. Where a sign describes how a planet acts, a house describes where in life it acts — the First House of self and appearance, the Seventh of partnership, the Tenth of career and public standing, and so on. House cusps are drawn from a chosen house system (Placidus, Whole Sign, Equal, Koch, and others each divide the circle differently) applied to the exact birth time and location, which is why an accurate birth time matters more for houses than almost any other chart factor.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "astrology",
+        "houses"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.house",
+        "relatedOverviews": [
+          "system.overview.astrology",
+          "system.overview.zodiac",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.lots",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Hermetic Lots",
+      "description": "The Hermetic Lots (Arabic Parts) are calculated points derived from the angular relationship between two chart factors — most commonly a planet and the Ascendant — projected from the Sun and Moon's positions. The Lot of Fortune, the oldest and most prominent, marks worldly circumstance and the body; the Lot of Spirit its complement, marking will and vocation. Each lot's formula flips between day and night charts, a distinction (sect) that runs throughout Hellenistic astrology. Computing a lot requires an accurate birth time, since the Ascendant it's measured against moves roughly one degree every four minutes.",
+      "secondaryNames": [
+        {
+          "name": "Arabic Parts",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "lots"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.lot",
+        "relatedOverviews": [
+          "system.overview.astrology",
+          "system.overview.planets"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.minor-bodies",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Asteroids",
+      "description": "The asteroids and minor bodies extend the classical and modern planets with smaller solar-system objects adopted by 20th- and 21st-century astrologers, most from Jungian and feminist-influenced traditions seeking correspondences the ten major planets don't cover. Chiron, the wounded healer, bridges Saturn and Uranus and signifies core wounds and the capacity to heal through them. Ceres, Pallas, Juno, and Vesta — the four largest main-belt asteroids, all named for goddesses — restore archetypally feminine significators (nurture, wisdom, partnership, devotion) to a planetary set otherwise weighted toward gods. Eris, a trans-Neptunian dwarf planet, marks discord and the disruption of an unjust status quo.",
+      "secondaryNames": [
+        {
+          "name": "Minor Bodies",
+          "languageTag": "en-alt",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "overview",
+        "astrology",
+        "asteroids"
+      ],
+      "extendedData": {
+        "memberEntityType": "astrology.minor-body",
+        "relatedOverviews": [
+          "system.overview.astrology",
+          "system.overview.planets"
+        ]
       }
     }
   ]
