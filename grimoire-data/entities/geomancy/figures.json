@@ -27,6 +27,15 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "courage, conflict, impulsive masculine energy",
+        "keywords": [
+          "rashness",
+          "courage",
+          "conflict",
+          "competition",
+          "impulsiveness",
+          "boldness"
+        ],
         "orderNumber": 1,
         "planet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.aries",
@@ -72,6 +81,14 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "loss, letting go, things slipping away",
+        "keywords": [
+          "loss",
+          "letting go",
+          "financial loss",
+          "sacrifice",
+          "liberality"
+        ],
         "orderNumber": 2,
         "planet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.taurus",
@@ -117,6 +134,14 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "clarity, wisdom, calm judgment",
+        "keywords": [
+          "clarity",
+          "wisdom",
+          "good counsel",
+          "fair judgment",
+          "honest dealing"
+        ],
         "orderNumber": 3,
         "planet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.gemini",
@@ -162,6 +187,14 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "crowds, the collective, receptive amplification",
+        "keywords": [
+          "crowds",
+          "the public",
+          "collective opinion",
+          "receptivity",
+          "multiplicity"
+        ],
         "orderNumber": 4,
         "planet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.cancer",
@@ -207,6 +240,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "great success earned through inner strength",
+        "keywords": [
+          "triumph",
+          "honour",
+          "advancement",
+          "protection",
+          "earned success",
+          "leadership"
+        ],
         "orderNumber": 5,
         "planet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.leo",
@@ -252,6 +294,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "union, agreement, coming together",
+        "keywords": [
+          "union",
+          "reunion",
+          "agreement",
+          "partnership",
+          "contracts",
+          "recovery of lost things"
+        ],
         "orderNumber": 6,
         "planet": "astrology.planet.mercury",
         "zodiacSign": "astrology.zodiac-sign.virgo",
@@ -297,6 +348,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "beauty, harmony, feminine grace",
+        "keywords": [
+          "beauty",
+          "harmony",
+          "peace",
+          "pleasure",
+          "charm",
+          "agreeable outcomes"
+        ],
         "orderNumber": 7,
         "planet": "astrology.planet.venus",
         "zodiacSign": "astrology.zodiac-sign.libra",
@@ -342,6 +402,15 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "danger, volatility, destructive transformation",
+        "keywords": [
+          "violence",
+          "deception",
+          "addiction",
+          "dangerous passion",
+          "hidden corruption",
+          "transformation through destruction"
+        ],
         "orderNumber": 8,
         "planet": "astrology.planet.mars",
         "zodiacSign": "astrology.zodiac-sign.scorpio",
@@ -387,6 +456,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "gain, prosperity, successful accumulation",
+        "keywords": [
+          "gain",
+          "prosperity",
+          "accumulation",
+          "expansion",
+          "generosity",
+          "legal favour"
+        ],
         "orderNumber": 9,
         "planet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
@@ -432,6 +510,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "restriction, binding, confinement",
+        "keywords": [
+          "restriction",
+          "binding",
+          "delay",
+          "imprisonment",
+          "rigid boundaries",
+          "necessary limits"
+        ],
         "orderNumber": 10,
         "planet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.capricorn",
@@ -477,6 +564,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "sorrow, grief, misfortune",
+        "keywords": [
+          "grief",
+          "depression",
+          "downfall",
+          "misfortune",
+          "isolation",
+          "purifying suffering"
+        ],
         "orderNumber": 11,
         "planet": "astrology.planet.saturn",
         "zodiacSign": "astrology.zodiac-sign.aquarius",
@@ -522,6 +618,15 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "joy, happiness, spiritual delight",
+        "keywords": [
+          "joy",
+          "happiness",
+          "health",
+          "good news",
+          "spiritual grace",
+          "celebration"
+        ],
         "orderNumber": 12,
         "planet": "astrology.planet.jupiter",
         "zodiacSign": "astrology.zodiac-sign.pisces",
@@ -585,6 +690,14 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "endings, release, completion",
+        "keywords": [
+          "endings",
+          "departures",
+          "release",
+          "completion",
+          "letting go of the harmful"
+        ],
         "orderNumber": 13,
         "planet": null,
         "zodiacSign": "astrology.zodiac-sign.sagittarius",
@@ -648,6 +761,15 @@
         "stable"
       ],
       "extendedData": {
+        "meaning": "beginnings, new ventures, growth",
+        "keywords": [
+          "beginnings",
+          "new ventures",
+          "growth",
+          "opportunity",
+          "entry",
+          "increase"
+        ],
         "orderNumber": 14,
         "planet": null,
         "zodiacSign": "astrology.zodiac-sign.virgo",
@@ -693,6 +815,14 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "quick success aided by outside circumstances",
+        "keywords": [
+          "outside help",
+          "quick success",
+          "favourable timing",
+          "swift outcome",
+          "borrowed fortune"
+        ],
         "orderNumber": 15,
         "planet": "astrology.planet.sol",
         "zodiacSign": "astrology.zodiac-sign.leo",
@@ -738,6 +868,15 @@
         "mobile"
       ],
       "extendedData": {
+        "meaning": "travel, movement, transformation in progress",
+        "keywords": [
+          "journey",
+          "travel",
+          "movement",
+          "change",
+          "transition",
+          "restlessness"
+        ],
         "orderNumber": 16,
         "planet": "astrology.planet.luna",
         "zodiacSign": "astrology.zodiac-sign.cancer",
