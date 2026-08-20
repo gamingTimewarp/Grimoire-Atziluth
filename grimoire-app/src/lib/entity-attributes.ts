@@ -145,6 +145,8 @@ export function hasSymbolicArt(entityType: string, canonicalName?: string): bool
 export interface GroupOverview {
   canonicalName: string
   label: string
+  /** extendedData.browseTopic, when the overview declares one — see computeReferenceTopLevelOverviews. */
+  topic?: string
 }
 
 /**
@@ -163,7 +165,8 @@ export async function discoverGroupOverviews(adapter: StorageAdapter): Promise<M
   for (const e of result.items) {
     const key = e.extendedData.entityTypeGroup
     if (typeof key === 'string' && key) {
-      map.set(key, { canonicalName: e.canonicalName, label: e.primaryDisplayName })
+      const topic = e.extendedData.browseTopic
+      map.set(key, { canonicalName: e.canonicalName, label: e.primaryDisplayName, topic: typeof topic === 'string' ? topic : undefined })
     }
   }
   return map

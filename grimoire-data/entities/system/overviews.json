@@ -13,6 +13,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "tarot",
+        "browseTopic": "Tarot & Cartomancy",
         "members": [
           "tarot.deck.rider-waite-smith",
           "tarot.deck.thoth",
@@ -344,6 +345,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "goetia",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "memberEntityType": "goetia.demon"
       }
     },
@@ -533,6 +535,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "qabalah",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.sephiroth",
           "system.overview.triangles",
@@ -682,6 +685,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "iching",
+        "browseTopic": "Divination Systems",
         "memberEntityType": "iching.hexagram",
         "relatedOverviews": [
           "system.overview.iching-trigrams",
@@ -757,6 +761,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "wuxing",
+        "browseTopic": "Eastern & Vedic Traditions",
         "memberEntityType": "wuxing.phase",
         "relatedOverviews": [
           "system.overview.yin-yang",
@@ -785,6 +790,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "western",
+        "browseTopic": "Numerology & Sacred Pattern",
         "memberEntityType": "western.polarity",
         "relatedOverviews": [
           "system.overview.sephiroth",
@@ -958,6 +964,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "chakra",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "chakra",
         "relatedOverviews": [
           "system.overview.chakras-extended",
@@ -1021,6 +1028,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "herb",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "herb",
         "relatedOverviews": [
           "system.overview.planets",
@@ -1059,6 +1067,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "alchemy",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.alchemy-metals",
           "system.overview.alchemy-stages",
@@ -1198,6 +1207,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "chinese-zodiac",
+        "browseTopic": "Astrology & Calendar",
         "relatedOverviews": [
           "system.overview.chinese-zodiac-animals",
           "system.overview.chinese-zodiac-stems",
@@ -1333,6 +1343,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "calendar",
+        "browseTopic": "Astrology & Calendar",
         "memberEntityType": "calendar.sabbat",
         "relatedOverviews": [
           "system.overview.planets",
@@ -1384,6 +1395,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "lenormand",
+        "browseTopic": "Tarot & Cartomancy",
         "memberTag": "lenormand",
         "relatedOverviews": [
           "system.overview.tarot"
@@ -1416,6 +1428,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "geomancy",
+        "browseTopic": "Divination Systems",
         "memberEntityType": "geomancy.figure"
       }
     },
@@ -1619,6 +1632,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "tattwa",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "tattwa",
         "relatedOverviews": [
           "system.overview.elements",
@@ -1844,6 +1858,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "ayurveda",
+        "browseTopic": "Eastern & Vedic Traditions",
         "memberEntityType": "ayurveda.dosha",
         "relatedOverviews": [
           "system.overview.tattwas",
@@ -2198,6 +2213,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "letter",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "members": [
           "system.overview.hebrew-letters",
           "system.overview.isopsephy",
@@ -2505,6 +2521,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "compass",
+        "browseTopic": "Eastern & Vedic Traditions",
         "memberEntityType": "compass.direction",
         "relatedOverviews": [
           "system.overview.iching-trigrams",
@@ -2638,6 +2655,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "islamic",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "memberEntityType": "islamic.divine-name",
         "relatedOverviews": [
           "system.overview.arabic-letters",
@@ -2738,6 +2756,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "geometry",
+        "browseTopic": "Numerology & Sacred Pattern",
         "memberEntityType": "geometry.shape",
         "relatedOverviews": [
           "system.overview.elements",
@@ -2809,6 +2828,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "vedic",
+        "browseTopic": "Eastern & Vedic Traditions",
         "memberEntityType": "vedic.mahabhuta",
         "relatedOverviews": [
           "system.overview.doshas",
@@ -2839,6 +2859,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "rosicrucian",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "memberEntityType": "rosicrucian.symbol",
         "relatedOverviews": [
           "system.overview.qabalah",
@@ -2990,6 +3011,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "palmistry",
+        "browseTopic": "Divination Systems",
         "memberEntityType": "palmistry.mount",
         "relatedOverviews": [
           "system.overview.planets",
@@ -3174,6 +3196,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "numerology",
+        "browseTopic": "Numerology & Sacred Pattern",
         "memberEntityType": "numerology.digit",
         "note": "Use the Numerology calculator (Qabalah → Numerology) to compute name-derived numbers (Expression, Soul Urge, Personality, Balance, Hidden Passion, Karmic Lessons), birth-date numbers (Life Path, Birthday, Attitude, Personal Year/Month/Day, Challenge Numbers, Pinnacle Numbers), and the combined Maturity Number — under either system, with Karmic Debt Numbers (13, 14, 16, 19) flagged automatically.",
         "relatedOverviews": [
@@ -3195,6 +3218,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "colour",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "colour.colour",
         "note": "Toggle the Golden Dawn tradition to see King Scale (Sephiroth, Paths) and Queen Scale (Planets) colour attributions on each colour's page.",
         "relatedOverviews": [
@@ -3216,6 +3240,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "gemstone",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "gemstone.gemstone",
         "note": "Gemstones tagged 'birthstone' carry a birthMonth/birthMonthNumber in extendedData (modern list only, one stone per month).",
         "relatedOverviews": [
@@ -3236,6 +3261,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "astrology",
+        "browseTopic": "Astrology & Calendar",
         "relatedOverviews": [
           "system.overview.planets",
           "system.overview.zodiac",
@@ -3268,6 +3294,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "angel",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.angel-orders",
           "system.overview.archangels",
@@ -3288,6 +3315,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "deity",
+        "browseTopic": "World Mythology & Religion",
         "relatedOverviews": [
           "system.overview.greek-deities",
           "system.overview.egyptian-deities"
@@ -3314,6 +3342,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "enochian",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.enochian-aethyrs",
           "system.overview.enochian-watchtowers",
@@ -3347,6 +3376,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "fengshui",
+        "browseTopic": "Eastern & Vedic Traditions",
         "relatedOverviews": [
           "system.overview.feng-shui-directions",
           "system.overview.feng-shui-flying-stars",
@@ -3366,6 +3396,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "gnostic",
+        "browseTopic": "World Mythology & Religion",
         "relatedOverviews": [
           "system.overview.valentinian-aeons",
           "system.overview.sethian-aeons"
@@ -3398,6 +3429,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "jyotish",
+        "browseTopic": "Eastern & Vedic Traditions",
         "note": "The 81 Antardasha sub-periods don't yet have their own dedicated overview page — see the Vimshottari Dasha overview for the system that generates them.",
         "relatedOverviews": [
           "system.overview.jyotish-dasha",
@@ -3419,6 +3451,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "magic",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.magic-circles",
           "system.overview.kamea"
@@ -3444,6 +3477,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "norse",
+        "browseTopic": "World Mythology & Religion",
         "relatedOverviews": [
           "system.overview.norse-worlds",
           "system.overview.norse-deities",
@@ -3464,6 +3498,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "spirit",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "relatedOverviews": [
           "system.overview.olympic-spirits",
           "system.overview.spirit-planetary"
@@ -3525,6 +3560,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "taoism",
+        "browseTopic": "World Mythology & Religion",
         "relatedOverviews": [
           "system.overview.yin-yang",
           "system.overview.ba-xian",
@@ -3546,6 +3582,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "yoga",
+        "browseTopic": "Eastern & Vedic Traditions",
         "relatedOverviews": [
           "system.overview.koshas",
           "system.overview.pranas",
@@ -3574,6 +3611,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "celtic",
+        "browseTopic": "World Mythology & Religion",
         "memberEntityType": "celtic.deity",
         "relatedOverviews": [
           "system.overview.ogham",
@@ -3607,6 +3645,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "hermetic",
+        "browseTopic": "Qabalah & Ceremonial Magic",
         "memberEntityType": "hermetic.principle",
         "relatedOverviews": [
           "system.overview.alchemy",
@@ -3634,6 +3673,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "planetary-hour",
+        "browseTopic": "Astrology & Calendar",
         "memberEntityType": "planetary-hour.day-ruler",
         "relatedOverviews": [
           "system.overview.planets"
@@ -3652,6 +3692,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "divination",
+        "browseTopic": "Divination Systems",
         "relatedOverviews": [
           "system.overview.mahjong",
           "system.overview.tasseomancy"
@@ -3671,6 +3712,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "calendar",
+        "browseTopic": "Astrology & Calendar",
         "memberEntityType": "calendar.holiday",
         "relatedOverviews": [
           "system.overview.sabbats"
@@ -3690,6 +3732,7 @@
       ],
       "extendedData": {
         "entityTypeGroup": "omens",
+        "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "omen.animal"
       }
     }

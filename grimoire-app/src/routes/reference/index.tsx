@@ -554,15 +554,106 @@ function RecentlyViewedSection({ onNavigate }: { onNavigate: (cn: string) => voi
 
 // ─── Browse grid ──────────────────────────────────────────────────────────────
 
+type BrowseSortMode = 'alpha' | 'topic'
+
+/**
+ * Deliberate reading order for topic sections — roughly the app's own weight of
+ * emphasis (cartomancy and divination first, since that's the primary use case)
+ * rather than alphabetical, which would otherwise scatter Tarot to the bottom.
+ * Any overview whose browseTopic isn't listed here falls into "Other", sorted
+ * after every named topic.
+ */
+const TOPIC_ORDER = [
+  'Tarot & Cartomancy',
+  'Divination Systems',
+  'Astrology & Calendar',
+  'Qabalah & Ceremonial Magic',
+  'World Mythology & Religion',
+  'Eastern & Vedic Traditions',
+  'Correspondences & Natural Magic',
+  'Numerology & Sacred Pattern',
+]
+
+function BrowseTile({ label, onClick }: { label: string; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        padding: '12px 14px', background: 'var(--color-surface-2)',
+        border: '1px solid var(--color-border)', borderRadius: '6px',
+        cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
+        textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
+        transition: 'border-color 0.15s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+    >
+      {label}
+    </button>
+  )
+}
+
+function BrowseSortToggle({ mode, onChange }: { mode: BrowseSortMode; onChange: (m: BrowseSortMode) => void }) {
+  const btn = (m: BrowseSortMode, label: string, title: string) => (
+    <button
+      key={m}
+      onClick={() => onChange(m)}
+      title={title}
+      style={{
+        padding: '2px 8px',
+        fontSize: '10px',
+        fontFamily: 'monospace',
+        fontWeight: 600,
+        cursor: 'pointer',
+        border: '1px solid',
+        borderColor: mode === m ? 'var(--color-accent-muted)' : 'var(--color-border)',
+        background: mode === m ? 'var(--color-surface-3)' : 'var(--color-surface-2)',
+        color: mode === m ? 'var(--color-accent)' : 'var(--color-text-subtle)',
+        borderRadius: m === 'alpha' ? '4px 0 0 4px' : '0 4px 4px 0',
+        lineHeight: '1.6',
+        letterSpacing: '0.02em',
+      }}
+    >
+      {label}
+    </button>
+  )
+  return (
+    <div style={{ display: 'flex' }}>
+      {btn('alpha', 'ABC', 'Sort alphabetically')}
+      {btn('topic', 'Topic', 'Group by topic')}
+    </div>
+  )
+}
+
 function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) => void; customEnabled: boolean }) {
   const navigate = useNavigate()
   const { engine } = useEngineStore()
   const [browseItems, setBrowseItems] = useState<GroupOverview[]>([])
+  const [browseSortMode, setBrowseSortMode] = useState<BrowseSortMode>('alpha')
 
   useEffect(() => {
     if (!engine) return
     computeReferenceTopLevelOverviews(engine.adapter).then(setBrowseItems).catch(console.error)
   }, [engine])
+
+  const topicGroups = React.useMemo(() => {
+    if (browseSortMode !== 'topic') return null
+    const byTopic = new Map<string, GroupOverview[]>()
+    for (const item of browseItems) {
+      const topic = item.topic ?? 'Other'
+      const list = byTopic.get(topic)
+      if (list) list.push(item)
+      else byTopic.set(topic, [item])
+    }
+    for (const list of byTopic.values()) list.sort((a, b) => a.label.localeCompare(b.label))
+    return [...byTopic.entries()].sort(([a], [b]) => {
+      const ia = TOPIC_ORDER.indexOf(a), ib = TOPIC_ORDER.indexOf(b)
+      if (ia === -1 && ib === -1) return a.localeCompare(b)
+      if (ia === -1) return 1
+      if (ib === -1) return -1
+      return ia - ib
+    })
+  }, [browseItems, browseSortMode])
 
   return (
     <div>
@@ -602,28 +693,34 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
           </div>
         </div>
       )}
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
-        Browse
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          Browse
+        </div>
+        <BrowseSortToggle mode={browseSortMode} onChange={setBrowseSortMode} />
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '8px' }}>
-        {browseItems.map(item => (
-          <button
-            key={item.canonicalName}
-            onClick={() => onNavigate(item.canonicalName)}
-            style={{
-              padding: '12px 14px', background: 'var(--color-surface-2)',
-              border: '1px solid var(--color-border)', borderRadius: '6px',
-              cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px',
-              textAlign: 'left', fontFamily: 'inherit', fontWeight: 500,
-              transition: 'border-color 0.15s',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
-          >
-            {item.label}
-          </button>
-        ))}
-      </div>
+      {topicGroups ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          {topicGroups.map(([topic, items]) => (
+            <div key={topic}>
+              <div style={{ fontSize: '11px', color: 'var(--color-accent)', letterSpacing: '0.04em', marginBottom: '8px' }}>
+                {topic}
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '8px' }}>
+                {items.map(item => (
+                  <BrowseTile key={item.canonicalName} label={item.label} onClick={() => onNavigate(item.canonicalName)} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '8px' }}>
+          {browseItems.map(item => (
+            <BrowseTile key={item.canonicalName} label={item.label} onClick={() => onNavigate(item.canonicalName)} />
+          ))}
+        </div>
+      )}
 
       <div style={{ marginTop: '20px' }}>
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
