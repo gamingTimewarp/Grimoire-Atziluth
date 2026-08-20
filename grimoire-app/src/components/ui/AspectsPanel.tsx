@@ -11,6 +11,7 @@
  */
 
 import { useState } from 'react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
 import { SegmentedToggle } from '@/components/ui/SegmentedToggle'
 import { ASPECT_DEFS } from '@/lib/astro-engine'
 import type { Aspect, AspectType } from '@/lib/astro-engine'
@@ -40,6 +41,7 @@ interface AspectsPanelProps {
 
 export function AspectsPanel({ aspects, planetOrder, onNavigate }: AspectsPanelProps) {
   const [sortMode, setSortMode] = useState<AspectSortMode>('degree')
+  const [isOpen, setIsOpen] = useState(true)
 
   if (aspects.length === 0) return null
 
@@ -69,21 +71,33 @@ export function AspectsPanel({ aspects, planetOrder, onNavigate }: AspectsPanelP
       background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
       borderRadius: '8px', padding: '14px 16px',
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '12px' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+      <div
+        role="button" tabIndex={0}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: isOpen ? '12px' : 0, cursor: 'pointer', userSelect: 'none' }}
+        onClick={() => setIsOpen(o => !o)}
+        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setIsOpen(o => !o) } }}
+        aria-expanded={isOpen}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          {isOpen ? <ChevronDown size={11} /> : <ChevronRight size={11} />}
           Aspects ({aspects.length})
         </div>
-        <SegmentedToggle
-          value={sortMode}
-          onChange={setSortMode}
-          options={[
-            { value: 'degree', label: 'Degree', title: 'Sort by tightest orb first' },
-            { value: 'planet', label: 'Planet',  title: 'Group by the planets involved' },
-            { value: 'aspect', label: 'Aspect',  title: 'Group by aspect type' },
-          ]}
-        />
+        {isOpen && (
+          <div onClick={e => e.stopPropagation()}>
+            <SegmentedToggle
+              value={sortMode}
+              onChange={setSortMode}
+              options={[
+                { value: 'degree', label: 'Degree', title: 'Sort by tightest orb first' },
+                { value: 'planet', label: 'Planet',  title: 'Group by the planets involved' },
+                { value: 'aspect', label: 'Aspect',  title: 'Group by aspect type' },
+              ]}
+            />
+          </div>
+        )}
       </div>
 
+      {isOpen && (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
         {sorted.map((asp, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px' }}>
@@ -117,6 +131,7 @@ export function AspectsPanel({ aspects, planetOrder, onNavigate }: AspectsPanelP
           </div>
         ))}
       </div>
+      )}
     </div>
   )
 }
