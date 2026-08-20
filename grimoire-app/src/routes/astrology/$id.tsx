@@ -21,7 +21,8 @@ function ChartDetailPage() {
   const { id }    = Route.useParams()
   const navigate  = useNavigate()
   const [record,       setRecord]      = useState<NatalChartRecord | null>(null)
-  const [view,         setView]        = useState<'wheel' | 'table'>('wheel')
+  const [showWheel,    setShowWheel]   = useState(true)
+  const [showTable,    setShowTable]   = useState(true)
   const [loading,      setLoading]     = useState(true)
   const [showTransits, setShowTransits] = useState(false)
   const tradSettings = loadTraditionSettings()
@@ -107,26 +108,40 @@ function ChartDetailPage() {
           >
             <Radio size={13} /> {showTransits ? 'Transits On' : 'Transits'}
           </Button>
-          <Button variant="ghost" size="sm" onClick={() => setView(v => v === 'wheel' ? 'table' : 'wheel')}>
-            {view === 'wheel' ? <><List size={13} /> Table</> : <><Circle size={13} /> Wheel</>}
+          <Button variant="ghost" size="sm" onClick={() => setShowWheel(v => !v)}
+            style={showWheel ? { borderColor: 'var(--color-accent-muted)', color: 'var(--color-accent)' } : undefined}
+          >
+            <Circle size={13} /> Wheel
+          </Button>
+          <Button variant="ghost" size="sm" onClick={() => setShowTable(v => !v)}
+            style={showTable ? { borderColor: 'var(--color-accent-muted)', color: 'var(--color-accent)' } : undefined}
+          >
+            <List size={13} /> Table
           </Button>
         </div>
       </div>
 
-      {/* Main content — wheel and table are separate views, not a wheel with a table
-          permanently glued to its side; the wheel already surfaces positions via its
-          own hover tooltips, so table view is where the text breakdown lives. Aspects
-          sit below either view rather than sharing a cramped sidebar with the rest. */}
-      {view === 'wheel' ? (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
-            <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
-          </ZoomableSVGContainer>
+      {/* Main content — wheel and table are independently toggleable rather than a single
+          either/or view, so both can be seen side by side (the default, and most useful
+          combination) without the table permanently gluing itself to the wheel regardless
+          of what's toggled, which was the original complaint about this layout. */}
+      {showWheel || showTable ? (
+        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
+          {showWheel && (
+            <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
+              <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
+            </ZoomableSVGContainer>
+          )}
+          {showTable && (
+            <div style={{ flex: 1, minWidth: '260px' }}>
+              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} />
+              <MutualReceptionsSection chart={chart} navigate={navigate} />
+            </div>
+          )}
         </div>
       ) : (
-        <div>
-          <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} />
-          <MutualReceptionsSection chart={chart} navigate={navigate} />
+        <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>
+          Enable Wheel or Table above to view chart details.
         </div>
       )}
 

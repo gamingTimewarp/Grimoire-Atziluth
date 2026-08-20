@@ -33,7 +33,8 @@ function CurrentSkyPanel() {
   const [chart,          setChart]         = useState<NatalChartData | null>(null)
   const [asOf,           setAsOf]          = useState<Date | null>(null)
   const [spinning,       setSpinning]      = useState(false)
-  const [view,           setView]          = useState<'table' | 'wheel'>('table')
+  const [showWheel,      setShowWheel]     = useState(true)
+  const [showTable,      setShowTable]     = useState(true)
   const [noLoc,          setNoLoc]         = useState(false)
   const [mode,           setMode]          = useState<AstrologyMode>('tropical')
   const [selfChart,      setSelfChart]     = useState<NatalChartData | null>(null)
@@ -99,12 +100,16 @@ function CurrentSkyPanel() {
             Current Sky
           </div>
           <button
-            onClick={() => setView(v => v === 'table' ? 'wheel' : 'table')}
-            style={{ display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: '1px solid var(--color-border)', borderRadius: '4px', cursor: 'pointer', fontSize: '11px', color: 'var(--color-text-muted)', padding: '2px 8px' }}
+            onClick={() => setShowWheel(v => !v)}
+            style={{ display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: `1px solid ${showWheel ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, borderRadius: '4px', cursor: 'pointer', fontSize: '11px', color: showWheel ? 'var(--color-accent)' : 'var(--color-text-muted)', padding: '2px 8px' }}
           >
-            {view === 'table'
-              ? <><Circle size={10} /> Wheel</>
-              : <><List size={10} /> Table</>}
+            <Circle size={10} /> Wheel
+          </button>
+          <button
+            onClick={() => setShowTable(v => !v)}
+            style={{ display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: `1px solid ${showTable ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, borderRadius: '4px', cursor: 'pointer', fontSize: '11px', color: showTable ? 'var(--color-accent)' : 'var(--color-text-muted)', padding: '2px 8px' }}
+          >
+            <List size={10} /> Table
           </button>
           {selfChart && transitAspects.length > 0 && (
             <button
@@ -144,53 +149,56 @@ function CurrentSkyPanel() {
         <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Computing…</div>
       )}
 
-      {/* Wheel view */}
-      {chart && view === 'wheel' && (
+      {/* Wheel and table are independently toggleable rather than a single either/or
+          view, so both can be seen side by side at once — the default, and most
+          useful combination. */}
+      {chart && (showWheel || showTable) && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
-              <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
-            </ZoomableSVGContainer>
+          <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
+            {showWheel && (
+              <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
+                <WheelChart chart={chart} size={440} mode={mode} onNavigate={goToRef} />
+              </ZoomableSVGContainer>
+            )}
+            {showTable && (
+              <div style={{ flex: 1, minWidth: '220px', display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
+                {chart.planets.map(pos => {
+                  const sign = getSignsForMode(loadTraditionSettings().astrologyMode)[pos.signIndex]
+                  return (
+                    <React.Fragment key={pos.planet.name}>
+                      <span
+                        role="button" tabIndex={0}
+                        style={{ fontSize: '15px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', cursor: 'pointer' }}
+                        onClick={() => goToRef(pos.planet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(pos.planet.canonicalName) } }}
+                        title={pos.planet.name}
+                      >{pos.planet.symbol}</span>
+                      <span
+                        role="button" tabIndex={0}
+                        style={{ fontSize: '12px', color: 'var(--color-text-muted)', cursor: 'pointer' }}
+                        onClick={() => goToRef(pos.planet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(pos.planet.canonicalName) } }}
+                      >{pos.planet.name}</span>
+                      <span
+                        role="button" tabIndex={0}
+                        style={{ fontSize: '12px', color: 'var(--color-text)', cursor: 'pointer' }}
+                        onClick={() => goToRef(sign.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(sign.canonicalName) } }}
+                        title={`View ${sign.name} in Reference`}
+                      >
+                        {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.symbol} {sign.name}
+                      </span>
+                      <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
+                    </React.Fragment>
+                  )
+                })}
+              </div>
+            )}
           </div>
           <AspectsPanel aspects={chart.aspects} planetOrder={chart.planets.map(p => p.planet.canonicalName)} onNavigate={goToRef} />
         </div>
       )}
 
-      {/* Table view */}
-      {chart && view === 'table' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          {/* Positions grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
-            {chart.planets.map(pos => {
-              const sign = getSignsForMode(loadTraditionSettings().astrologyMode)[pos.signIndex]
-              return (
-                <React.Fragment key={pos.planet.name}>
-                  <span
-                    role="button" tabIndex={0}
-                    style={{ fontSize: '15px', color: 'var(--color-text-subtle)', fontFamily: 'monospace', cursor: 'pointer' }}
-                    onClick={() => goToRef(pos.planet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(pos.planet.canonicalName) } }}
-                    title={pos.planet.name}
-                  >{pos.planet.symbol}</span>
-                  <span
-                    role="button" tabIndex={0}
-                    style={{ fontSize: '12px', color: 'var(--color-text-muted)', cursor: 'pointer' }}
-                    onClick={() => goToRef(pos.planet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(pos.planet.canonicalName) } }}
-                  >{pos.planet.name}</span>
-                  <span
-                    role="button" tabIndex={0}
-                    style={{ fontSize: '12px', color: 'var(--color-text)', cursor: 'pointer' }}
-                    onClick={() => goToRef(sign.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(sign.canonicalName) } }}
-                    title={`View ${sign.name} in Reference`}
-                  >
-                    {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign.symbol} {sign.name}
-                  </span>
-                  <span title={pos.retrograde ? 'Retrograde' : undefined} style={{ fontSize: '11px', color: 'var(--color-danger)', minWidth: '12px' }}>{pos.retrograde ? '℞' : ''}</span>
-                </React.Fragment>
-              )
-            })}
-          </div>
-
-          <AspectsPanel aspects={chart.aspects} planetOrder={chart.planets.map(p => p.planet.canonicalName)} onNavigate={goToRef} />
+      {chart && !showWheel && !showTable && (
+        <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>
+          Enable Wheel or Table above to view the sky.
         </div>
       )}
 
