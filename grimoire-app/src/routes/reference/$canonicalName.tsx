@@ -128,6 +128,12 @@ function EntityDetailPage() {
           memberList = Array.isArray(e.extendedData.members) ? e.extendedData.members as string[] : null
         } else if (e.entityType.includes('deck')) {
           memberTag = canonicalName.split('.').pop() ?? null
+          // Tag-only filtering isn't enough: Thoth/TdM tag their own deck entity and
+          // their four suit entities with the deck's own slug (e.g. tarot.deck.thoth
+          // and tarot.suit.thoth.wands are both tagged "thoth"), so without an
+          // entityType constraint the deck ends up listing itself and its suits
+          // alongside its actual cards. Scope to the matching card type instead.
+          memberEntityType = e.entityType.replace('.deck', '.card')
         } else if (e.entityType === 'qabalah.triangle' || e.entityType === 'qabalah.pillar') {
           memberList = Array.isArray(e.extendedData.sephiroth) ? e.extendedData.sephiroth as string[] : null
         }
