@@ -15,7 +15,8 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { EntityArt } from './EntityArt'
 import type { CardSlot } from './SpreadGrid'
 import type { CardOrientation } from '@grimoire/core'
-import { WheelChart, WheelChartTooltip } from './WheelChart'
+import { WheelChart, WheelChartTooltip, toggleStyle } from './WheelChart'
+import type { WheelLayout } from './WheelChart'
 import {
   getSignsForMode,
   getNatalChart,
@@ -101,6 +102,11 @@ export function ZodiacYearSpreadDisplay({
   const [showWheel, setShowWheel]     = useState(true)
   const [skyChart, setSkyChart]       = useState<NatalChartData | null>(null)
   const [wheelHovered, setWheelHovered] = useState<string | null>(null)
+  // Driven from our own button row (below) instead of WheelChart's built-in controls —
+  // that row renders in normal flow below the SVG, which collides with the card ring
+  // once the wheel is positioned as an absolute background layer here.
+  const [wheelLayout, setWheelLayout]     = useState<WheelLayout>('classic')
+  const [wheelShowLots, setWheelShowLots] = useState(true)
   // ascendant ecliptic longitude — used to rotate card positions to match wheel
   const [chartAsc, setChartAsc]   = useState(0)
 
@@ -182,7 +188,45 @@ export function ZodiacYearSpreadDisplay({
             onNavigate={onLabelClick}
             showTooltip={false}
             onHoverChange={setWheelHovered}
+            hideControls
+            layout={wheelLayout}
+            onLayoutChange={setWheelLayout}
+            showLots={wheelShowLots}
+            onShowLotsChange={setWheelShowLots}
           />
+        </div>
+      )}
+
+      {/* ── Wheel controls — relocated from WheelChart's own (normal-flow, would
+           collide with the card ring below) row to the empty top-left corner ──── */}
+      {showWheel && skyChart && (
+        <div style={{
+          position: 'absolute',
+          top: Math.round(4 * effectiveScale), left: Math.round(4 * effectiveScale),
+          zIndex: 10,
+          display: 'flex', gap: Math.round(4 * effectiveScale),
+        }}>
+          <button
+            onClick={() => setWheelLayout(l => l === 'classic' ? 'rings' : 'classic')}
+            title={wheelLayout === 'rings' ? 'Switch to classic single-ring layout' : 'Switch to concentric rings layout'}
+            style={{ ...toggleStyle(wheelLayout === 'rings'), fontSize: `${Math.max(9, Math.round(10 * effectiveScale))}px`, padding: '3px 6px' }}
+          >
+            {wheelLayout === 'rings' ? '◎' : '○'}
+          </button>
+          {skyChart.lots && skyChart.lots.length > 0 && (
+            <button
+              onClick={() => setWheelShowLots(v => !v)}
+              title={wheelShowLots ? 'Hide Lots' : 'Show Lots'}
+              style={{
+                ...toggleStyle(wheelShowLots),
+                fontSize: `${Math.max(9, Math.round(10 * effectiveScale))}px`, padding: '3px 6px',
+                borderColor: wheelShowLots ? 'var(--color-accent-muted)' : 'var(--color-border)',
+                color: wheelShowLots ? 'var(--color-accent)' : 'var(--color-text-subtle)',
+              }}
+            >
+              ⊕
+            </button>
+          )}
         </div>
       )}
 

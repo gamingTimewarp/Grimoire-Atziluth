@@ -126,6 +126,22 @@ export type WheelChartProps = {
   onHoverChange?: (key: string | null) => void
   showTooltip?: boolean
   defaultLayout?: WheelLayout
+  /**
+   * Hides the built-in Rings/Natal/Lots/Transits toggle row below the SVG — for
+   * callers that render their own controls elsewhere, e.g. because this component
+   * is absolutely-positioned as a background layer and the row's normal-flow
+   * position would collide with other content placed below it (ZodiacYearSpread's
+   * card ring). Pair with the `layout`/`onLayoutChange` and `showLots`/
+   * `onShowLotsChange` controlled props below so the caller's own buttons still
+   * drive the chart.
+   */
+  hideControls?: boolean
+  /** Controlled ring layout. Omit to let WheelChart manage its own state (uncontrolled). */
+  layout?: WheelLayout
+  onLayoutChange?: (l: WheelLayout) => void
+  /** Controlled Lots visibility. Omit to let WheelChart manage its own state (uncontrolled). */
+  showLots?: boolean
+  onShowLotsChange?: (v: boolean) => void
 }
 
 const HOUSE_NAMES = [
@@ -141,6 +157,9 @@ const LOT_COLOR = 'var(--color-accent)'
 export function WheelChart({
   chart, transitChart, size = 500, mode = 'tropical',
   onNavigate, onHoverChange, showTooltip = true, defaultLayout = 'classic',
+  hideControls = false,
+  layout: layoutProp, onLayoutChange,
+  showLots: showLotsProp, onShowLotsChange,
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -148,8 +167,25 @@ export function WheelChart({
   const [hovered,      setHovered]      = useState<string | null>(null)
   const [showNatal,    setShowNatal]    = useState(true)
   const [showTransits, setShowTransits] = useState(true)
-  const [showLots,     setShowLots]     = useState(true)
-  const [layout,       setLayout]       = useState<WheelLayout>(defaultLayout)
+  const [internalShowLots, setInternalShowLots] = useState(true)
+  const [internalLayout,   setInternalLayout]   = useState<WheelLayout>(defaultLayout)
+
+  // Controlled/uncontrolled dual mode: most callers let WheelChart manage its own
+  // layout/showLots state, but ZodiacYearSpread drives these from buttons it renders
+  // itself (see hideControls above), so it needs to pass the current value in and
+  // hear about changes rather than have WheelChart own the state privately.
+  const layout   = layoutProp   ?? internalLayout
+  const showLots = showLotsProp ?? internalShowLots
+  const toggleLayout = () => {
+    const next: WheelLayout = layout === 'classic' ? 'rings' : 'classic'
+    if (onLayoutChange) onLayoutChange(next)
+    else setInternalLayout(next)
+  }
+  const toggleShowLots = () => {
+    const next = !showLots
+    if (onShowLotsChange) onShowLotsChange(next)
+    else setInternalShowLots(next)
+  }
 
   useEffect(() => { onHoverChange?.(hovered) }, [hovered])
 
@@ -343,30 +379,32 @@ export function WheelChart({
       </svg>
 
       {/* ── Controls ── */}
-      <div style={{ display: 'flex', gap: '6px', justifyContent: 'center', marginTop: '8px', flexWrap: 'wrap' }}>
-        <button
-          onClick={() => setLayout(l => l === 'classic' ? 'rings' : 'classic')}
-          title={isRings ? 'Switch to classic single-ring layout' : 'Switch to concentric rings layout'}
-          style={toggleStyle(isRings)}
-        >
-          {isRings ? '◎ Rings' : '○ Rings'}
-        </button>
-        {transitChart && (
-          <button onClick={() => setShowNatal(v => !v)} style={toggleStyle(showNatal)}>☉ Natal</button>
-        )}
-        {lots && lots.length > 0 && (
-          <button onClick={() => setShowLots(v => !v)}
-            style={{ ...toggleStyle(showLots), borderColor: showLots ? 'var(--color-accent-muted)' : 'var(--color-border)', color: showLots ? LOT_COLOR : 'var(--color-text-subtle)' }}>
-            ⊕ Lots
+      {!hideControls && (
+        <div style={{ display: 'flex', gap: '6px', justifyContent: 'center', marginTop: '8px', flexWrap: 'wrap' }}>
+          <button
+            onClick={toggleLayout}
+            title={isRings ? 'Switch to classic single-ring layout' : 'Switch to concentric rings layout'}
+            style={toggleStyle(isRings)}
+          >
+            {isRings ? '◎ Rings' : '○ Rings'}
           </button>
-        )}
-        {transitChart && (
-          <button onClick={() => setShowTransits(v => !v)}
-            style={{ ...toggleStyle(showTransits), borderColor: showTransits ? TRANSIT_COLOR + '80' : 'var(--color-border)', color: showTransits ? TRANSIT_COLOR : 'var(--color-text-subtle)', background: showTransits ? TRANSIT_COLOR + '18' : 'transparent' }}>
-            ☿ Transits
-          </button>
-        )}
-      </div>
+          {transitChart && (
+            <button onClick={() => setShowNatal(v => !v)} style={toggleStyle(showNatal)}>☉ Natal</button>
+          )}
+          {lots && lots.length > 0 && (
+            <button onClick={toggleShowLots}
+              style={{ ...toggleStyle(showLots), borderColor: showLots ? 'var(--color-accent-muted)' : 'var(--color-border)', color: showLots ? LOT_COLOR : 'var(--color-text-subtle)' }}>
+              ⊕ Lots
+            </button>
+          )}
+          {transitChart && (
+            <button onClick={() => setShowTransits(v => !v)}
+              style={{ ...toggleStyle(showTransits), borderColor: showTransits ? TRANSIT_COLOR + '80' : 'var(--color-border)', color: showTransits ? TRANSIT_COLOR : 'var(--color-text-subtle)', background: showTransits ? TRANSIT_COLOR + '18' : 'transparent' }}>
+              ☿ Transits
+            </button>
+          )}
+        </div>
+      )}
 
       {/* ── Hover tooltip — always rendered, visibility-toggled to prevent layout shift ── */}
       {showTooltip && (
@@ -460,7 +498,7 @@ function WheelTooltipContent({
   )
 }
 
-function toggleStyle(active: boolean): React.CSSProperties {
+export function toggleStyle(active: boolean): React.CSSProperties {
   return {
     padding: '3px 10px', fontSize: '11px', cursor: 'pointer',
     border: '1px solid var(--color-border)', borderRadius: '4px',
