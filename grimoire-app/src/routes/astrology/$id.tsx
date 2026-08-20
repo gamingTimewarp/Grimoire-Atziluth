@@ -11,6 +11,7 @@ import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
+import { InfoTooltip } from '@/components/ui/InfoTooltip'
 import { Button } from '@/components/ui/Button'
 import { Edit, List, Circle, Radio, Info } from 'lucide-react'
 
@@ -127,9 +128,11 @@ function ChartDetailPage() {
               </span>
             )}
             {chart.sect && (
-              <span title={SECT_TOOLTIP} style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '3px', background: chart.sect === 'day' ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: chart.sect === 'day' ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${chart.sect === 'day' ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
-                {chart.sect === 'day' ? '☉ Day chart' : '☽ Night chart'}
-              </span>
+              <InfoTooltip text={SECT_TOOLTIP}>
+                <span style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '3px', background: chart.sect === 'day' ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: chart.sect === 'day' ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${chart.sect === 'day' ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
+                  {chart.sect === 'day' ? '☉ Day chart' : '☽ Night chart'}
+                </span>
+              </InfoTooltip>
             )}
           </div>
           <div style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>{dateLabel}</div>
@@ -191,7 +194,7 @@ function ChartDetailPage() {
       <div style={{ marginTop: '20px' }}>
         <AspectsPanel
           aspects={chart.aspects}
-          planetOrder={chart.planets.map(p => p.planet.canonicalName)}
+          planets={chart.planets.map(p => p.planet)}
           onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
         />
       </div>
@@ -278,9 +281,11 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
             Hermetic Lots
             <SectionInfoLink canonicalName="system.overview.lots" label="Hermetic Lots" navigate={navigate} />
             {isDay !== null && (
-              <span title={SECT_TOOLTIP} style={{ textTransform: 'none', letterSpacing: 0, fontSize: '10px', padding: '1px 6px', borderRadius: '3px', background: isDay ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: isDay ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${isDay ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
-                {isDay ? '☉ Day chart' : '☽ Night chart'}
-              </span>
+              <InfoTooltip text={SECT_TOOLTIP}>
+                <span style={{ textTransform: 'none', letterSpacing: 0, fontSize: '10px', padding: '1px 6px', borderRadius: '3px', background: isDay ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: isDay ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${isDay ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
+                  {isDay ? '☉ Day chart' : '☽ Night chart'}
+                </span>
+              </InfoTooltip>
             )}
           </>
         }>
@@ -438,7 +443,7 @@ function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; n
 
   return (
     <div style={{ marginTop: '16px' }}>
-      <CollapsibleSection header={<span title={MUTUAL_RECEPTION_TOOLTIP} style={{ cursor: 'help' }}>Mutual Reception ({receptions.length})</span>}>
+      <CollapsibleSection header={<InfoTooltip text={MUTUAL_RECEPTION_TOOLTIP}><span style={{ cursor: 'help' }}>Mutual Reception ({receptions.length})</span></InfoTooltip>}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
         {receptions.map((mr, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px' }}>

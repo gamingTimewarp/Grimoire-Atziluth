@@ -192,7 +192,7 @@ function CurrentSkyPanel() {
               </div>
             )}
           </div>
-          <AspectsPanel aspects={chart.aspects} planetOrder={chart.planets.map(p => p.planet.canonicalName)} onNavigate={goToRef} />
+          <AspectsPanel aspects={chart.aspects} planets={chart.planets.map(p => p.planet)} onNavigate={goToRef} />
         </div>
       )}
 
