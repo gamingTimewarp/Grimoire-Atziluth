@@ -12,6 +12,7 @@ import type { GroupOverview } from '@/lib/entity-attributes'
 import { ENTITY_TYPE_GROUPS } from '@/lib/entity-type-groups'
 import { Chip, TagInput } from '@/components/ui/TagInput'
 import { Toast } from '@/components/ui/Toast'
+import { SegmentedToggle } from '@/components/ui/SegmentedToggle'
 
 export const Route = createFileRoute('/reference/')(({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -594,34 +595,15 @@ function BrowseTile({ label, onClick }: { label: string; onClick: () => void }) 
 }
 
 function BrowseSortToggle({ mode, onChange }: { mode: BrowseSortMode; onChange: (m: BrowseSortMode) => void }) {
-  const btn = (m: BrowseSortMode, label: string, title: string) => (
-    <button
-      key={m}
-      onClick={() => onChange(m)}
-      title={title}
-      style={{
-        padding: '2px 8px',
-        fontSize: '10px',
-        fontFamily: 'monospace',
-        fontWeight: 600,
-        cursor: 'pointer',
-        border: '1px solid',
-        borderColor: mode === m ? 'var(--color-accent-muted)' : 'var(--color-border)',
-        background: mode === m ? 'var(--color-surface-3)' : 'var(--color-surface-2)',
-        color: mode === m ? 'var(--color-accent)' : 'var(--color-text-subtle)',
-        borderRadius: m === 'alpha' ? '4px 0 0 4px' : '0 4px 4px 0',
-        lineHeight: '1.6',
-        letterSpacing: '0.02em',
-      }}
-    >
-      {label}
-    </button>
-  )
   return (
-    <div style={{ display: 'flex' }}>
-      {btn('alpha', 'ABC', 'Sort alphabetically')}
-      {btn('topic', 'Topic', 'Group by topic')}
-    </div>
+    <SegmentedToggle
+      value={mode}
+      onChange={onChange}
+      options={[
+        { value: 'alpha', label: 'ABC',   title: 'Sort alphabetically' },
+        { value: 'topic',  label: 'Topic', title: 'Group by topic' },
+      ]}
+    />
   )
 }
 

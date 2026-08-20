@@ -2,27 +2,20 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import { getNatalChartById } from '@/lib/natal-db'
 import type { NatalChartRecord } from '@/lib/natal-db'
-import { getNatalChart, getPlanetPositions, getTransitAspects, formatLongitude, getSignsForMode, ASPECT_DEFS, isDayChart, getMutualReceptions } from '@/lib/astro-engine'
+import { getNatalChart, getPlanetPositions, getTransitAspects, formatLongitude, getSignsForMode, isDayChart, getMutualReceptions } from '@/lib/astro-engine'
 import type { NatalChartData, AstrologyMode, TransitAspect, MutualReception } from '@/lib/astro-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
+import { AspectsModal } from '@/components/ui/AspectsModal'
 import { Button } from '@/components/ui/Button'
-import { Edit, List, Circle, Radio } from 'lucide-react'
+import { Edit, List, Circle, Radio, Waypoints } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
 })
-
-const ASPECT_COLORS: Record<string, string> = {
-  conjunction: 'var(--color-text)',
-  sextile:     '#6ab0a8',
-  square:      '#c44a4a',
-  trine:       '#6aa86a',
-  opposition:  '#c47a4a',
-}
 
 function ChartDetailPage() {
   const { id }    = Route.useParams()
@@ -31,6 +24,7 @@ function ChartDetailPage() {
   const [view,         setView]        = useState<'wheel' | 'table'>('wheel')
   const [loading,      setLoading]     = useState(true)
   const [showTransits, setShowTransits] = useState(false)
+  const [aspectsOpen,  setAspectsOpen]  = useState(false)
   const tradSettings = loadTraditionSettings()
   const astrologyMode: AstrologyMode = tradSettings.astrologyMode
   const houseSystem = tradSettings.houseSystem
@@ -105,7 +99,7 @@ function ChartDetailPage() {
             </div>
           )}
         </div>
-        <div style={{ display: 'flex', gap: '8px' }}>
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: id } })}>
             <Edit size={13} /> Edit
           </Button>
@@ -114,28 +108,41 @@ function ChartDetailPage() {
           >
             <Radio size={13} /> {showTransits ? 'Transits On' : 'Transits'}
           </Button>
+          {chart.aspects.length > 0 && (
+            <Button variant="ghost" size="sm" onClick={() => setAspectsOpen(true)}>
+              <Waypoints size={13} /> Aspects ({chart.aspects.length})
+            </Button>
+          )}
           <Button variant="ghost" size="sm" onClick={() => setView(v => v === 'wheel' ? 'table' : 'wheel')}>
             {view === 'wheel' ? <><List size={13} /> Table</> : <><Circle size={13} /> Wheel</>}
           </Button>
         </div>
       </div>
 
-      {/* Main content */}
-      <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-        {/* Wheel */}
-        {view === 'wheel' && (
+      {/* Main content — wheel and table are separate views, not a wheel with a table
+          permanently glued to its side; the wheel already surfaces positions via its
+          own hover tooltips, so table view is where the text breakdown lives. */}
+      {view === 'wheel' ? (
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
           <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
             <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
           </ZoomableSVGContainer>
-        )}
-
-        {/* Positions + aspects table (always visible in table view, sidebar in wheel view) */}
-        <div style={{ flex: 1, minWidth: '260px' }}>
-          <PositionsTable chart={chart} navigate={navigate} compact={view === 'wheel'} hasBirthTime={!!record.birthTime} />
-          <AspectsTable chart={chart} navigate={navigate} compact={view === 'wheel'} />
+        </div>
+      ) : (
+        <div>
+          <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} />
           <MutualReceptionsSection chart={chart} navigate={navigate} />
         </div>
-      </div>
+      )}
+
+      {aspectsOpen && (
+        <AspectsModal
+          aspects={chart.aspects}
+          planetOrder={chart.planets.map(p => p.planet.canonicalName)}
+          onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+          onClose={() => setAspectsOpen(false)}
+        />
+      )}
 
       {/* Transit-to-natal aspects */}
       {showTransits && transitAspects.length > 0 && (
@@ -154,10 +161,9 @@ function ChartDetailPage() {
 
 // ─── Positions table ──────────────────────────────────────────────────────────
 
-function PositionsTable({ chart, navigate, compact, hasBirthTime }: {
+function PositionsTable({ chart, navigate, hasBirthTime }: {
   chart: NatalChartData
   navigate: ReturnType<typeof useNavigate>
-  compact: boolean
   hasBirthTime: boolean
 }) {
   const tradSettings  = loadTraditionSettings()
@@ -292,66 +298,6 @@ function PositionsTable({ chart, navigate, compact, hasBirthTime }: {
         </div>
         )
       })()}
-    </div>
-  )
-}
-
-// ─── Aspects table ────────────────────────────────────────────────────────────
-
-function AspectsTable({ chart, navigate, compact }: { chart: NatalChartData; navigate: ReturnType<typeof useNavigate>; compact: boolean }) {
-  const [expanded, setExpanded] = useState(!compact)
-
-  if (chart.aspects.length === 0) return null
-
-  const goToRef = (cn: string) =>
-    navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
-
-  return (
-    <div>
-      <div
-        role="button" tabIndex={0}
-        style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
-        onClick={() => setExpanded(e => !e)}
-        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setExpanded(ex => !ex) } }}
-        aria-expanded={expanded}
-      >
-        Aspects ({chart.aspects.length}) {expanded ? '▲' : '▼'}
-      </div>
-      {expanded && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-          {chart.aspects.map((asp, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px' }}>
-              <span
-                role="button" tabIndex={0}
-                style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => goToRef(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.planet1.canonicalName) } }} title={asp.planet1.name}
-              >{asp.planet1.symbol}</span>
-              <span
-                role="button" tabIndex={0}
-                style={{ color: ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)', minWidth: '18px', textAlign: 'center', cursor: 'pointer' }}
-                onClick={() => goToRef('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef('astrology.aspect.' + asp.type) } }} title={asp.type}
-              >{asp.symbol}</span>
-              <span
-                role="button" tabIndex={0}
-                style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => goToRef(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.planet2.canonicalName) } }} title={asp.planet2.name}
-              >{asp.planet2.symbol}</span>
-              <span style={{ color: 'var(--color-text-muted)', flex: 1 }}>
-                <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => goToRef(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.planet1.canonicalName) } }}>{asp.planet1.name}</span>
-                {' '}
-                <span
-                  role="button" tabIndex={0}
-                  style={{ cursor: 'pointer', color: ASPECT_COLORS[asp.type] ?? 'var(--color-text-muted)' }}
-                  onClick={() => goToRef('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef('astrology.aspect.' + asp.type) } }}
-                >{asp.type}</span>
-                {' '}
-                <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => goToRef(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goToRef(asp.planet2.canonicalName) } }}>{asp.planet2.name}</span>
-              </span>
-              <span style={{ color: 'var(--color-text-subtle)', fontSize: '11px' }}>{asp.orb}°</span>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   )
 }
