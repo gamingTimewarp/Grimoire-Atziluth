@@ -10,6 +10,7 @@ import { zonedTimeToUtc } from '@/lib/timezone'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
+import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
 import { Button } from '@/components/ui/Button'
 import { Edit, List, Circle, Radio, Info } from 'lucide-react'
 
@@ -18,6 +19,10 @@ export const Route = createFileRoute('/astrology/$id')({
 })
 
 const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
+
+const SECT_TOOLTIP = "Sect: whether the Sun is above the horizon (day chart) or below it (night chart) at the moment of birth. Hellenistic astrology uses sect to weigh which planets are favoured, how essential dignity is scored, and which formula applies to several Hermetic Lots."
+
+const MUTUAL_RECEPTION_TOOLTIP = "Mutual reception: each planet sits in the sign the other rules (e.g. Mars in Cancer, the Moon in Aries) — the two exchange rulership and each acts as though dignified in its own sign, strengthening one another regardless of their own sign placement."
 
 /** House cusps come back as plain 0–360 ecliptic longitude — split into sign/degree/minutes
  * the same way PlanetPosition already does, so cusps render with the same "12°34′ ♈ Aries"
@@ -34,7 +39,9 @@ function longitudeToSignDegree(lon: number): { signIndex: number; degree: number
 }
 
 /** Small (i) link next to a table-section header, to the system.overview entity that
- * the section's own rows are members of (e.g. Hermetic Lots -> system.overview.lots). */
+ * the section's own rows are members of (e.g. Hermetic Lots -> system.overview.lots).
+ * Always nested inside a CollapsibleSection's clickable header, so its own click must
+ * stop propagation or it'd also toggle the section instead of navigating. */
 function SectionInfoLink({ canonicalName, label, navigate }: {
   canonicalName: string
   label: string
@@ -45,8 +52,8 @@ function SectionInfoLink({ canonicalName, label, navigate }: {
       role="button" tabIndex={0}
       title={`View ${label} overview in Reference`}
       style={{ display: 'inline-flex', color: 'var(--color-text-subtle)', cursor: 'pointer' }}
-      onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName } })}
-      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate({ to: '/reference/$canonicalName', params: { canonicalName } }) } }}
+      onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName } }) }}
+      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName } }) } }}
     >
       <Info size={12} />
     </span>
@@ -120,7 +127,7 @@ function ChartDetailPage() {
               </span>
             )}
             {chart.sect && (
-              <span style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '3px', background: chart.sect === 'day' ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: chart.sect === 'day' ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${chart.sect === 'day' ? 'var(--color-accent-muted)' : 'var(--color-border)'}` }}>
+              <span title={SECT_TOOLTIP} style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '3px', background: chart.sect === 'day' ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: chart.sect === 'day' ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${chart.sect === 'day' ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
                 {chart.sect === 'day' ? '☉ Day chart' : '☽ Night chart'}
               </span>
             )}
@@ -232,10 +239,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
 
   return (
     <div style={{ marginBottom: '20px' }}>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-        Planetary Positions
-        <SectionInfoLink canonicalName="system.overview.planets" label="Planets" navigate={navigate} />
-      </div>
+      <CollapsibleSection header={<>Planetary Positions<SectionInfoLink canonicalName="system.overview.planets" label="Planets" navigate={navigate} /></>}>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
         {majorPositions.map(pos => {
           const sign = signs[pos.signIndex]
@@ -265,18 +269,21 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
           )
         })}
       </div>
+      </CollapsibleSection>
 
       {/* Hermetic Lots */}
       <div style={{ marginTop: '16px' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          Hermetic Lots
-          <SectionInfoLink canonicalName="system.overview.lots" label="Hermetic Lots" navigate={navigate} />
-          {isDay !== null && (
-            <span style={{ textTransform: 'none', letterSpacing: 0, fontSize: '10px', padding: '1px 6px', borderRadius: '3px', background: isDay ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: isDay ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${isDay ? 'var(--color-accent-muted)' : 'var(--color-border)'}` }}>
-              {isDay ? '☉ Day chart' : '☽ Night chart'}
-            </span>
-          )}
-        </div>
+        <CollapsibleSection header={
+          <>
+            Hermetic Lots
+            <SectionInfoLink canonicalName="system.overview.lots" label="Hermetic Lots" navigate={navigate} />
+            {isDay !== null && (
+              <span title={SECT_TOOLTIP} style={{ textTransform: 'none', letterSpacing: 0, fontSize: '10px', padding: '1px 6px', borderRadius: '3px', background: isDay ? 'rgba(200,180,80,0.12)' : 'rgba(120,120,180,0.12)', color: isDay ? 'var(--color-accent)' : 'var(--color-text-muted)', border: `1px solid ${isDay ? 'var(--color-accent-muted)' : 'var(--color-border)'}`, cursor: 'help' }}>
+                {isDay ? '☉ Day chart' : '☽ Night chart'}
+              </span>
+            )}
+          </>
+        }>
         {!hasBirthTime ? (
           <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontStyle: 'italic' }}>
             Birth time required to compute lots.
@@ -311,14 +318,17 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
             })}
           </div>
         )}
+        </CollapsibleSection>
       </div>
 
       {/* Houses */}
       <div style={{ marginTop: '16px' }}>
-        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-          Houses{chart.houses.system && ` — ${formatHouseSystem(chart.houses.system)}`}
-          <SectionInfoLink canonicalName="system.overview.houses" label="Houses" navigate={navigate} />
-        </div>
+        <CollapsibleSection header={
+          <>
+            Houses{chart.houses.system && ` — ${formatHouseSystem(chart.houses.system)}`}
+            <SectionInfoLink canonicalName="system.overview.houses" label="Houses" navigate={navigate} />
+          </>
+        }>
         {!hasBirthTime || !hasLocation ? (
           <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', fontStyle: 'italic' }}>
             Birth time and location required to compute houses.
@@ -358,6 +368,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
             })}
           </div>
         )}
+        </CollapsibleSection>
       </div>
 
       {/* Asteroids (Modern Astrology tradition) */}
@@ -366,10 +377,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
         if (asteroidPositions.length === 0) return null
         return (
         <div style={{ marginTop: '16px' }}>
-          <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            Asteroids
-            <SectionInfoLink canonicalName="system.overview.minor-bodies" label="Asteroids" navigate={navigate} />
-          </div>
+          <CollapsibleSection header={<>Asteroids<SectionInfoLink canonicalName="system.overview.minor-bodies" label="Asteroids" navigate={navigate} /></>}>
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto 1fr', gap: '4px 10px', alignItems: 'center' }}>
             {asteroidPositions.map(ap => {
               const sign = signs[ap.signIndex]
@@ -401,6 +409,7 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation }: {
           <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '6px', fontStyle: 'italic' }}>
             Positions computed via Keplerian two-body model (~1–3° accuracy).
           </div>
+          </CollapsibleSection>
         </div>
         )
       })()}
@@ -429,9 +438,7 @@ function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; n
 
   return (
     <div style={{ marginTop: '16px' }}>
-      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
-        Mutual Reception ({receptions.length})
-      </div>
+      <CollapsibleSection header={<span title={MUTUAL_RECEPTION_TOOLTIP} style={{ cursor: 'help' }}>Mutual Reception ({receptions.length})</span>}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
         {receptions.map((mr, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px' }}>
@@ -454,6 +461,7 @@ function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; n
           </div>
         ))}
       </div>
+      </CollapsibleSection>
     </div>
   )
 }
