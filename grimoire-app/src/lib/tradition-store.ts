@@ -10,6 +10,8 @@
  */
 
 import type { BaseEntity } from '@grimoire/core'
+import { open, save } from '@tauri-apps/plugin-dialog'
+import { readTextFile, writeTextFile } from '@tauri-apps/plugin-fs'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -250,6 +252,151 @@ export function saveTraditionSettings(settings: TraditionSettings): void {
 
 export function patchTraditionSettings(patch: Partial<TraditionSettings>): TraditionSettings {
   const next = { ...loadTraditionSettings(), ...patch }
+  saveTraditionSettings(next)
+  return next
+}
+
+// ─── Presets ──────────────────────────────────────────────────────────────────
+
+export interface TraditionPreset {
+  id: string
+  label: string
+  description: string
+  apply: (current: TraditionSettings) => TraditionSettings
+}
+
+function withTraditions(current: TraditionSettings, cns: string[]): string[] {
+  return [...new Set([...current.activeTraditions, ...cns])]
+}
+
+export const TRADITION_PRESETS: TraditionPreset[] = [
+  {
+    id: 'minimal',
+    label: 'Minimal',
+    description: 'One tradition per competing system, no outer planets, no Da’ath, no lunar nodes. The least cluttered view.',
+    apply: current => {
+      const activeTraditions = TRADITION_SYSTEMS.flatMap(s => s.showPrimary === false ? s.traditionCNs : [s.traditionCNs[0]])
+      const primaryBySystem = { ...current.primaryBySystem }
+      for (const s of TRADITION_SYSTEMS) {
+        if (s.showPrimary !== false) primaryBySystem[s.id] = s.traditionCNs[0]
+      }
+      return { ...current, activeTraditions, primaryBySystem, showDaath: false, showNodes: false }
+    },
+  },
+  {
+    id: 'maximal',
+    label: 'Maximal',
+    description: 'Every tradition, outer planets, Da’ath, and lunar nodes active. The most complete view.',
+    apply: current => ({ ...current, activeTraditions: ALL_TRADITION_CNS, showDaath: true, showNodes: true }),
+  },
+  {
+    id: 'classical-astrology',
+    label: 'Classical Astrology',
+    description: 'Tropical zodiac, Whole Sign houses, no outer planets or modern minor bodies. Scoped to astrology only — your Qabalah, Tarot, and Numerology choices are untouched.',
+    apply: current => ({
+      ...current,
+      astrologyMode: 'tropical',
+      houseSystem: 'whole-sign',
+      activeTraditions: current.activeTraditions.filter(t => t !== 'tradition.modern-astrology'),
+    }),
+  },
+  {
+    id: 'atziluth',
+    label: 'Recommended (Atziluth)',
+    description: 'This app’s own curated baseline: Golden Dawn Qabalah & Tarot, Pythagorean numerology, tropical zodiac, Placidus houses, everything else active.',
+    apply: current => ({
+      ...current,
+      activeTraditions: ALL_TRADITION_CNS,
+      primaryBySystem: {
+        ...current.primaryBySystem,
+        qabalah: 'tradition.golden-dawn',
+        tarot: 'tradition.golden-dawn',
+        numerology: 'tradition.pythagorean-numerology',
+      },
+      astrologyMode: 'tropical',
+      houseSystem: 'placidus',
+      showDaath: true,
+      showNodes: true,
+    }),
+  },
+  {
+    id: 'thelemic',
+    label: 'Thelemic',
+    description: 'Golden Dawn Qabalah, Thoth/Crowley Tarot, Enochian and Hermetic/Alchemy active. Leaves other systems as they are.',
+    apply: current => ({
+      ...current,
+      primaryBySystem: { ...current.primaryBySystem, qabalah: 'tradition.golden-dawn', tarot: 'tradition.thoth-crowley' },
+      activeTraditions: withTraditions(current, [
+        'tradition.golden-dawn', 'tradition.thoth-crowley', 'tradition.enochian',
+        'tradition.hermetic', 'tradition.alchemy',
+      ]),
+    }),
+  },
+  {
+    id: 'traditional-jewish',
+    label: 'Traditional Jewish',
+    description: 'Jewish Kabbalah as the primary Qabalistic attribution. Scoped to Qabalah only — Tarot and Numerology are Western-esoteric additions with no traditional Jewish equivalent, so this preset leaves them untouched.',
+    apply: current => ({
+      ...current,
+      primaryBySystem: { ...current.primaryBySystem, qabalah: 'tradition.jewish-kabbalah' },
+      activeTraditions: withTraditions(current, ['tradition.jewish-kabbalah']),
+    }),
+  },
+]
+
+export function applyPreset(presetId: string, current: TraditionSettings): TraditionSettings {
+  const preset = TRADITION_PRESETS.find(p => p.id === presetId)
+  return preset ? preset.apply(current) : current
+}
+
+// ─── Export / import (tradition settings only, as a standalone JSON file) ─────
+
+interface TraditionSettingsFile {
+  kind: 'grimoire-tradition-settings'
+  version: 1
+  exportedAt: string
+  settings: TraditionSettings
+}
+
+/**
+ * Exports the current tradition settings as their own JSON file — distinct from
+ * the full app backup in export-import.ts, for sharing/reusing just a tradition
+ * configuration (e.g. handing a curated preset to someone else).
+ * Returns null if the user cancelled the Save dialog.
+ */
+export async function exportTraditionSettingsFile(settings: TraditionSettings): Promise<string | null> {
+  const file: TraditionSettingsFile = {
+    kind: 'grimoire-tradition-settings',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    settings,
+  }
+  const path = await save({
+    defaultPath: 'grimoire-tradition-settings.json',
+    filters: [{ name: 'Tradition Settings', extensions: ['json'] }],
+  })
+  if (!path) return null
+  await writeTextFile(path, JSON.stringify(file, null, 2))
+  return path
+}
+
+/**
+ * Shows a native Open dialog, reads the chosen tradition settings file, and
+ * returns the merged settings (existing settings as base, so a file missing
+ * newer fields doesn't null them out). Returns null if the user cancelled.
+ */
+export async function pickAndImportTraditionSettingsFile(): Promise<TraditionSettings | null> {
+  const path = await open({
+    multiple: false,
+    filters: [{ name: 'Tradition Settings', extensions: ['json'] }],
+  })
+  if (!path || Array.isArray(path)) return null
+  const text = await readTextFile(path)
+  const parsed = JSON.parse(text) as Partial<TraditionSettingsFile>
+  if (parsed.kind !== 'grimoire-tradition-settings' || !parsed.settings) {
+    throw new Error('Not a Grimoire tradition settings file.')
+  }
+  const next = { ...loadTraditionSettings(), ...parsed.settings }
   saveTraditionSettings(next)
   return next
 }

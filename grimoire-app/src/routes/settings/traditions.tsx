@@ -4,11 +4,12 @@ import { useEngineStore } from '@/stores/engine'
 import type { Tradition } from '@grimoire/core'
 import {
   loadTraditionSettings, saveTraditionSettings,
-  TRADITION_SYSTEMS, TRADITION_DISPLAY_NAMES,
+  TRADITION_SYSTEMS, TRADITION_DISPLAY_NAMES, TRADITION_PRESETS,
+  exportTraditionSettingsFile, pickAndImportTraditionSettingsFile,
 } from '@/lib/tradition-store'
 import type { TraditionSettings, AstrologyMode, HouseSystem, TraditionTab } from '@/lib/tradition-store'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, ExternalLink, Search, Info } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Search, Info, Download, Upload, X } from 'lucide-react'
 
 export const Route = createFileRoute('/settings/traditions')({
   component: TraditionsPage,
@@ -22,6 +23,8 @@ function TraditionsPage() {
   const [saved, setSaved] = useState(false)
   const [query, setQuery] = useState('')
   const [tab, setTab] = useState<TraditionTab>('western')
+  const [ioBusy, setIoBusy] = useState(false)
+  const [ioError, setIoError] = useState<string | null>(null)
 
   useEffect(() => {
     if (!engine) return
@@ -65,6 +68,34 @@ function TraditionsPage() {
     save({ ...settings, houseSystem: hs })
   }
 
+  const applyPresetById = (presetId: string) => {
+    const preset = TRADITION_PRESETS.find(p => p.id === presetId)
+    if (!preset) return
+    save(preset.apply(settings))
+  }
+
+  const handleExport = async () => {
+    setIoError(null)
+    try {
+      await exportTraditionSettingsFile(settings)
+    } catch (err) {
+      setIoError(err instanceof Error ? err.message : 'Failed to export tradition settings.')
+    }
+  }
+
+  const handleImport = async () => {
+    setIoError(null)
+    setIoBusy(true)
+    try {
+      const imported = await pickAndImportTraditionSettingsFile()
+      if (imported) setSettings(imported)
+    } catch (err) {
+      setIoError(err instanceof Error ? err.message : 'Failed to import tradition settings.')
+    } finally {
+      setIoBusy(false)
+    }
+  }
+
   return (
     <div style={{ maxWidth: '640px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -80,6 +111,50 @@ function TraditionsPage() {
         throughout the app. The primary tradition for each system determines which names
         and romanisations are displayed.
       </p>
+
+      {/* Presets */}
+      <div style={{ marginBottom: '20px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+          <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Presets</div>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <Button variant="ghost" size="sm" onClick={handleExport}>
+              <Download size={12} /> Export
+            </Button>
+            <Button variant="ghost" size="sm" onClick={handleImport} disabled={ioBusy}>
+              <Upload size={12} /> {ioBusy ? 'Importing…' : 'Import'}
+            </Button>
+          </div>
+        </div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '14px' }}>
+          Apply a curated bundle in one click, or export/import your current settings as a standalone JSON file.
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+          {TRADITION_PRESETS.map(p => (
+            <button
+              key={p.id}
+              onClick={() => applyPresetById(p.id)}
+              title={p.description}
+              style={{
+                padding: '7px 12px', background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+                borderRadius: '6px', cursor: 'pointer', fontSize: '12px', color: 'var(--color-text)',
+                fontFamily: 'inherit', transition: 'border-color 0.15s, color 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)'; e.currentTarget.style.color = 'var(--color-accent)' }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text)' }}
+            >
+              {p.label}
+            </button>
+          ))}
+        </div>
+        {ioError && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '12px', padding: '10px 14px', background: 'rgba(200,60,60,0.1)', border: '1px solid rgba(200,60,60,0.3)', borderRadius: '6px', fontSize: '12px', color: 'var(--color-danger, #e06060)' }}>
+            <div style={{ flex: 1 }}>{ioError}</div>
+            <button onClick={() => setIoError(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', display: 'flex', padding: 0 }}>
+              <X size={13} />
+            </button>
+          </div>
+        )}
+      </div>
 
       {/* Search */}
       <div style={{ position: 'relative', marginBottom: '20px' }}>
