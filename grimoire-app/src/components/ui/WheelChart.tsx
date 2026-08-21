@@ -113,6 +113,7 @@ const ASPECT_COLORS: Record<string, string> = {
   trine:       '#6aa86a',
   opposition:  '#c47a4a',
 }
+const TRANSIT_ASPECT_COLORS: Record<string, string> = { ...ASPECT_COLORS, conjunction: TRANSIT_COLOR }
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
@@ -172,6 +173,11 @@ export type WheelChartProps = {
    * overlay (secondary context on top of your own chart); the Compare Charts page
    * treats both charts as equally significant, so it sets this. */
   overlayEqualWeight?: boolean
+  /** Labels for the built-in "Natal"/"Transits" show/hide toggle buttons — override
+   * when the two rings aren't actually natal-vs-transit, e.g. Compare Charts passing
+   * each chart's own name so the buttons don't misname an arbitrary second chart. */
+  natalLabel?: string
+  transitLabel?: string
 }
 
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
@@ -185,6 +191,7 @@ export function WheelChart({
   layout: layoutProp, onLayoutChange,
   showLots: showLotsProp, onShowLotsChange,
   hiddenPlanets, hiddenTransitPlanets, overlayLabel = 'transit', overlayEqualWeight = false,
+  natalLabel = 'Natal', transitLabel = 'Transits',
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -328,6 +335,30 @@ export function WheelChart({
           )
         })}
 
+        {/* ── Overlay chart's own aspect lines — like its house ring, only drawn when
+             the overlay is being treated as a real chart of its own (Compare Charts),
+             not an actual transiting moment (whose own internal aspects aren't what a
+             transit overlay is for). Same shared aspect circle as the natal ring's,
+             coloured to match the overlay's other markers. */}
+        {overlayEqualWeight && showTransits && transitChart && visibleTransitPlanets && (() => {
+          const visibleTransitCNs = new Set(visibleTransitPlanets.map(p => p.planet.canonicalName))
+          return transitChart.aspects
+            .filter(asp => visibleTransitCNs.has(asp.planet1.canonicalName) && visibleTransitCNs.has(asp.planet2.canonicalName))
+            .map((asp, i) => {
+              const p1 = transitChart.planets.find(p => p.planet.name === asp.planet1.name)
+              const p2 = transitChart.planets.find(p => p.planet.name === asp.planet2.name)
+              if (!p1 || !p2) return null
+              const [x1, y1] = polar(lonToSvgAngle(p1.longitude, asc), rAspect)
+              const [x2, y2] = polar(lonToSvgAngle(p2.longitude, asc), rAspect)
+              const isHov    = hovered === 't:' + asp.planet1.name || hovered === 't:' + asp.planet2.name
+              return (
+                <line key={'ta:' + i} x1={x1} y1={y1} x2={x2} y2={y2}
+                  stroke={TRANSIT_ASPECT_COLORS[asp.type] ?? TRANSIT_COLOR}
+                  strokeWidth={isHov ? 1.5 : 0.7} opacity={isHov ? 0.9 : 0.4} />
+              )
+            })
+        })()}
+
         {/* Aspect circle */}
         <circle cx={CX} cy={CY} r={rAspect} fill="none" stroke="var(--color-border)" strokeWidth="0.3" strokeDasharray="2,4" />
 
@@ -461,7 +492,7 @@ export function WheelChart({
             {isRings ? '◎ Rings' : '○ Rings'}
           </button>
           {transitChart && (
-            <button onClick={() => setShowNatal(v => !v)} style={toggleStyle(showNatal)}>☉ Natal</button>
+            <button onClick={() => setShowNatal(v => !v)} style={toggleStyle(showNatal)}>☉ {natalLabel}</button>
           )}
           {lots && lots.length > 0 && (
             <button onClick={toggleShowLots}
@@ -472,7 +503,7 @@ export function WheelChart({
           {transitChart && (
             <button onClick={() => setShowTransits(v => !v)}
               style={{ ...toggleStyle(showTransits), borderColor: showTransits ? TRANSIT_COLOR + '80' : 'var(--color-border)', color: showTransits ? TRANSIT_COLOR : 'var(--color-text-subtle)', background: showTransits ? TRANSIT_COLOR + '18' : 'transparent' }}>
-              ☿ Transits
+              ☿ {transitLabel}
             </button>
           )}
         </div>
