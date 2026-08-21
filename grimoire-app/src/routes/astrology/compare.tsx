@@ -213,6 +213,7 @@ function ComparePage() {
                       hiddenPlanets={hiddenA}
                       hiddenTransitPlanets={hiddenB}
                       overlayLabel={b.label}
+                      overlayEqualWeight
                       onNavigate={goToRef}
                     />
                   </ZoomableSVGContainer>

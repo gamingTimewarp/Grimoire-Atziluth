@@ -167,6 +167,11 @@ export type WheelChartProps = {
   /** Label shown next to a hovered overlay-ring planet, e.g. "transit" (default) or
    * a second chart's own name on the Compare Charts page — purely cosmetic. */
   overlayLabel?: string
+  /** Render the overlay ring's glyphs at the same size/opacity as the natal ring's,
+   * instead of the smaller, dimmer default. The default suits an actual transit
+   * overlay (secondary context on top of your own chart); the Compare Charts page
+   * treats both charts as equally significant, so it sets this. */
+  overlayEqualWeight?: boolean
 }
 
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
@@ -179,7 +184,7 @@ export function WheelChart({
   hideControls = false,
   layout: layoutProp, onLayoutChange,
   showLots: showLotsProp, onShowLotsChange,
-  hiddenPlanets, hiddenTransitPlanets, overlayLabel = 'transit',
+  hiddenPlanets, hiddenTransitPlanets, overlayLabel = 'transit', overlayEqualWeight = false,
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -392,12 +397,14 @@ export function WheelChart({
               onClick={() => onNavigate?.(pos.planet.canonicalName)}
               style={{ cursor: onNavigate ? 'pointer' : 'default' }}>
               <text x={px} y={py} textAnchor="middle" dominantBaseline="middle"
-                fontSize={isHov ? 13 : 11} fill={TRANSIT_COLOR} opacity={isHov ? 1 : 0.8}
+                fontSize={overlayEqualWeight ? glyphSize(isHov) : (isHov ? 13 : 11)}
+                fill={TRANSIT_COLOR} opacity={overlayEqualWeight ? 1 : (isHov ? 1 : 0.8)}
                 style={{ userSelect: 'none', transition: 'font-size 0.1s' }}>
                 {pos.planet.symbol}
               </text>
               {pos.retrograde && (
-                <text x={px + 6} y={py - 5} fontSize={7} fill={TRANSIT_COLOR} opacity={0.7}
+                <text x={px + (overlayEqualWeight && isRings ? 10 : 6)} y={py - (overlayEqualWeight && isRings ? 9 : 5)}
+                  fontSize={overlayEqualWeight ? (isRings ? 9 : 8) : 7} fill={TRANSIT_COLOR} opacity={overlayEqualWeight ? 0.8 : 0.7}
                   style={{ userSelect: 'none', pointerEvents: 'none' }}>℞</text>
               )}
             </g>
