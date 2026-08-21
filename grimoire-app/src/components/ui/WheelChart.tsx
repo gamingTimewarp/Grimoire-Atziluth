@@ -416,6 +416,38 @@ export function WheelChart({
         <text x={CX + R_ZODIAC_OUTER - 28} y={CY - 6} fontSize={9} fill="var(--color-text-subtle)" opacity={0.6} style={{ userSelect: 'none' }}>DSC</text>
         <text x={CX - 10} y={CY - R_ZODIAC_OUTER + 14} fontSize={9} fill="var(--color-text-subtle)" opacity={0.6} style={{ userSelect: 'none' }}>MC</text>
         <text x={CX - 8} y={CY + R_ZODIAC_OUTER - 6} fontSize={9} fill="var(--color-text-subtle)" opacity={0.6} style={{ userSelect: 'none' }}>IC</text>
+
+        {/* ── Overlay chart's own house axis + cardinal points — the natal ring's ASC/
+             MC/etc. above are fixed screen positions only because the whole wheel is
+             rotated to put *this chart's* ascendant at 9 o'clock; the overlay chart's
+             angles are wherever they actually fall relative to that rotation, so its
+             labels have to be positioned dynamically instead. Only meaningful once
+             the overlay is being treated as a real chart of its own (Compare Charts),
+             not an actual transiting moment, which has no house wheel of its own here. */}
+        {overlayEqualWeight && transitChart && transitChart.houses.cusps.length > 0 && (() => {
+          const tCusps = transitChart.houses.cusps
+          const CARDINALS: [number, string][] = [[0, 'ASC'], [3, 'IC'], [6, 'DSC'], [9, 'MC']]
+          return (
+            <React.Fragment>
+              {CARDINALS.map(([i]) => {
+                const angle    = lonToSvgAngle(tCusps[i], asc)
+                const [x1, y1] = polar(angle, R_HOUSE_INNER)
+                const [x2, y2] = polar(angle, rAspect - 10)
+                return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={TRANSIT_COLOR} strokeWidth="0.8" strokeDasharray="3,3" opacity={0.7} />
+              })}
+              {CARDINALS.map(([i, label]) => {
+                const angle   = lonToSvgAngle(tCusps[i], asc)
+                const [x, y]  = polar(angle, rAspect + 6)
+                return (
+                  <text key={label} x={x} y={y} textAnchor="middle" dominantBaseline="middle"
+                    fontSize={9} fill={TRANSIT_COLOR} opacity={0.8} style={{ userSelect: 'none' }}>
+                    {label}
+                  </text>
+                )
+              })}
+            </React.Fragment>
+          )
+        })()}
       </svg>
 
       {/* ── Controls ── */}
