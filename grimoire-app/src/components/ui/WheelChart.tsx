@@ -124,9 +124,13 @@ export type WheelChartProps = {
   /** The moment `chart` represents — birth time for a natal chart, "as of" time for
    * a Current Sky snapshot. Only used to compute the Moon's phase for its hover
    * tooltip's second line; harmless to omit, the Moon tooltip just won't show a
-   * phase. The transit ring (if shown) always uses the actual current time for its
-   * own Moon phase, since a transit position is definitionally "right now". */
+   * phase. */
   date?: Date
+  /** The moment `transitChart` represents, for its own Moon phase line. Defaults to
+   * the actual current time — correct for every existing caller, where the overlay
+   * really is "the sky right now" — but the Compare Charts page overlays a second
+   * fixed chart that isn't "now" at all, so it passes that chart's own moment here. */
+  transitDate?: Date
   size?: number
   mode?: AstrologyMode
   onNavigate?: (canonicalName: string) => void
@@ -149,10 +153,20 @@ export type WheelChartProps = {
   /** Controlled Lots visibility. Omit to let WheelChart manage its own state (uncontrolled). */
   showLots?: boolean
   onShowLotsChange?: (v: boolean) => void
-  /** Canonical names to exclude from both the natal and transit rings, and from any
-   * aspect line touching one — the same filter driving the Positions page's
-   * Classical/Modern/Asteroids/Nodes visibility groups. Omit to show everything. */
+  /** Canonical names to exclude from the natal ring (and the transit ring too, if
+   * `hiddenTransitPlanets` isn't given separately), and from any aspect line
+   * touching one — the same filter driving the Positions page's Classical/Modern/
+   * Asteroids/Nodes visibility groups. Omit to show everything. */
   hiddenPlanets?: Set<string>
+  /** Independent visibility filter for the transit/overlay ring — e.g. the Compare
+   * Charts page, where "Chart A" and "Chart B" need separately toggleable planets
+   * rather than one filter driving both. Falls back to `hiddenPlanets` when omitted,
+   * so existing single-filter callers (transit-to-natal on the chart detail page and
+   * Current Sky) are unaffected. */
+  hiddenTransitPlanets?: Set<string>
+  /** Label shown next to a hovered overlay-ring planet, e.g. "transit" (default) or
+   * a second chart's own name on the Compare Charts page — purely cosmetic. */
+  overlayLabel?: string
 }
 
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
@@ -160,12 +174,12 @@ const SIGN_ELEMENTS_IAU = ['Fire','Earth','Air','Water','Fire','Earth','Air','Wa
 const LOT_COLOR = 'var(--color-accent)'
 
 export function WheelChart({
-  chart, transitChart, date, size = 500, mode = 'tropical',
+  chart, transitChart, date, transitDate, size = 500, mode = 'tropical',
   onNavigate, onHoverChange, showTooltip = true, defaultLayout = 'classic',
   hideControls = false,
   layout: layoutProp, onLayoutChange,
   showLots: showLotsProp, onShowLotsChange,
-  hiddenPlanets,
+  hiddenPlanets, hiddenTransitPlanets, overlayLabel = 'transit',
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -201,12 +215,17 @@ export function WheelChart({
   const glyphSize = (hov: boolean) => isRings ? (hov ? 19 : 16) : (hov ? 17 : 14)
 
   // Visibility filter (e.g. the Positions page's "Classical/Modern/Asteroids/Nodes"
-  // groups) — applies to both the natal and transit rings alike, and to any aspect
-  // whose either end is hidden. Houses/lots aren't planets and are unaffected.
-  const isHidden        = (cn: string) => hiddenPlanets?.has(cn) ?? false
+  // groups) — applies to the natal ring and to any aspect whose either end is
+  // hidden. The transit/overlay ring uses its own filter if given separately (the
+  // Compare Charts page needs independent per-chart toggles), else falls back to
+  // the same set. Houses/lots aren't planets and are unaffected.
+  const isHidden         = (cn: string) => hiddenPlanets?.has(cn) ?? false
+  const isHiddenInTransit = (cn: string) => (hiddenTransitPlanets ?? hiddenPlanets)?.has(cn) ?? false
   const visiblePlanets  = hiddenPlanets ? planets.filter(p => !isHidden(p.planet.canonicalName)) : planets
   const visibleAspects  = hiddenPlanets ? aspects.filter(a => !isHidden(a.planet1.canonicalName) && !isHidden(a.planet2.canonicalName)) : aspects
-  const visibleTransitPlanets = hiddenPlanets && transitChart ? transitChart.planets.filter(p => !isHidden(p.planet.canonicalName)) : transitChart?.planets
+  const visibleTransitPlanets = (hiddenTransitPlanets ?? hiddenPlanets) && transitChart
+    ? transitChart.planets.filter(p => !isHiddenInTransit(p.planet.canonicalName))
+    : transitChart?.planets
 
   return (
     <div style={{ position: 'relative', width: '100%', maxWidth: size }}>
@@ -428,6 +447,8 @@ export function WheelChart({
             planets={planets} lots={lots}
             transitChart={transitChart}
             date={date}
+            transitDate={transitDate}
+            overlayLabel={overlayLabel}
             mode={mode}
             onNavigate={onNavigate}
           />
@@ -448,13 +469,15 @@ const TOOLTIP_BASE_STYLE: React.CSSProperties = {
 // ─── Inline tooltip content (always rendered, visibility-toggled) ─────────────
 
 function WheelTooltipContent({
-  hovered, planets, lots, transitChart, date, mode, onNavigate,
+  hovered, planets, lots, transitChart, date, transitDate, overlayLabel = 'transit', mode, onNavigate,
 }: {
   hovered: string | null
   planets: NatalChartData['planets']
   lots: NatalChartData['lots']
   transitChart?: NatalChartData
   date?: Date
+  transitDate?: Date
+  overlayLabel?: string
   mode: AstrologyMode
   onNavigate?: (cn: string) => void
 }) {
@@ -506,11 +529,13 @@ function WheelTooltipContent({
   const sign = signs[pos.signIndex]
   // Transit is definitionally "right now" regardless of what `date` (the primary
   // chart's own moment) is set to; the natal/current-sky ring needs `date` passed in.
-  const moonPhase = pos.planet.name === 'Luna' && (isTransit || date) ? getMoonPhase(isTransit ? new Date() : date!) : null
+  const moonPhase = pos.planet.name === 'Luna' && (isTransit || date)
+    ? getMoonPhase(isTransit ? (transitDate ?? new Date()) : date!)
+    : null
   return (
     <div style={TOOLTIP_BASE_STYLE}>
       <div>
-        {isTransit && <span style={{ color: TRANSIT_COLOR, marginRight: '6px', fontSize: '10px' }}>transit</span>}
+        {isTransit && <span style={{ color: TRANSIT_COLOR, marginRight: '6px', fontSize: '10px' }}>{overlayLabel}</span>}
         {pos.planet.symbol} {pos.planet.name} — {pos.degree}°{String(pos.minutes).padStart(2, '0')}′ {sign?.symbol} {sign?.name}
         {pos.retrograde && <span style={{ color: 'var(--color-danger)', marginLeft: '6px' }}>℞</span>}
         {onNavigate && <span style={{ color: 'var(--color-accent)', marginLeft: '8px', fontSize: '10px' }}>→ Reference</span>}

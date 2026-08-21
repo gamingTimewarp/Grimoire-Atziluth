@@ -54,6 +54,7 @@ import { Route as CustomNewRouteImport } from './routes/custom/new'
 import { Route as CustomCnRouteImport } from './routes/custom/$cn'
 import { Route as CalendarMoonRouteImport } from './routes/calendar/moon'
 import { Route as AstrologyNewRouteImport } from './routes/astrology/new'
+import { Route as AstrologyCompareRouteImport } from './routes/astrology/compare'
 import { Route as AstrologyAnimateRouteImport } from './routes/astrology/animate'
 import { Route as AstrologyIdRouteImport } from './routes/astrology/$id'
 
@@ -289,6 +290,11 @@ const AstrologyNewRoute = AstrologyNewRouteImport.update({
   path: '/astrology/new',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AstrologyCompareRoute = AstrologyCompareRouteImport.update({
+  id: '/astrology/compare',
+  path: '/astrology/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AstrologyAnimateRoute = AstrologyAnimateRouteImport.update({
   id: '/astrology/animate',
   path: '/astrology/animate',
@@ -304,6 +310,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
+  '/astrology/compare': typeof AstrologyCompareRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
@@ -353,6 +360,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
+  '/astrology/compare': typeof AstrologyCompareRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
@@ -403,6 +411,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/astrology/$id': typeof AstrologyIdRoute
   '/astrology/animate': typeof AstrologyAnimateRoute
+  '/astrology/compare': typeof AstrologyCompareRoute
   '/astrology/new': typeof AstrologyNewRoute
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
@@ -454,6 +463,7 @@ export interface FileRouteTypes {
     | '/'
     | '/astrology/$id'
     | '/astrology/animate'
+    | '/astrology/compare'
     | '/astrology/new'
     | '/calendar/moon'
     | '/custom/$cn'
@@ -503,6 +513,7 @@ export interface FileRouteTypes {
     | '/'
     | '/astrology/$id'
     | '/astrology/animate'
+    | '/astrology/compare'
     | '/astrology/new'
     | '/calendar/moon'
     | '/custom/$cn'
@@ -552,6 +563,7 @@ export interface FileRouteTypes {
     | '/'
     | '/astrology/$id'
     | '/astrology/animate'
+    | '/astrology/compare'
     | '/astrology/new'
     | '/calendar/moon'
     | '/custom/$cn'
@@ -602,6 +614,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AstrologyIdRoute: typeof AstrologyIdRoute
   AstrologyAnimateRoute: typeof AstrologyAnimateRoute
+  AstrologyCompareRoute: typeof AstrologyCompareRoute
   AstrologyNewRoute: typeof AstrologyNewRoute
   CalendarMoonRoute: typeof CalendarMoonRoute
   CustomCnRoute: typeof CustomCnRoute
@@ -965,6 +978,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AstrologyNewRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/astrology/compare': {
+      id: '/astrology/compare'
+      path: '/astrology/compare'
+      fullPath: '/astrology/compare'
+      preLoaderRoute: typeof AstrologyCompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/astrology/animate': {
       id: '/astrology/animate'
       path: '/astrology/animate'
@@ -986,6 +1006,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AstrologyIdRoute: AstrologyIdRoute,
   AstrologyAnimateRoute: AstrologyAnimateRoute,
+  AstrologyCompareRoute: AstrologyCompareRoute,
   AstrologyNewRoute: AstrologyNewRoute,
   CalendarMoonRoute: CalendarMoonRoute,
   CustomCnRoute: CustomCnRoute,

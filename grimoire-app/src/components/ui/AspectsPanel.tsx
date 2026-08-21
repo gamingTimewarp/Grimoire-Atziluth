@@ -9,11 +9,13 @@
  * the engine's default (tightest orb first): grouped by the planets involved,
  * grouped by aspect type, or a classic aspect-grid matrix.
  *
- * Also doubles as the Transit-to-Natal aspects list (variant="transit") — the
- * two share every bit of sort/grid logic and only differ in row coloring and
- * label text, so transit callers pass a `colPlanets` (the natal planets) to
- * turn the "Chart" grid from a symmetric planet x planet triangle into a full
- * transit x natal rectangle instead.
+ * Also doubles as the cross-chart aspects list (variant="transit") for both
+ * Transit-to-Natal (chart detail page, Current Sky) and Compare Charts — the
+ * three share every bit of sort/grid logic and only differ in row coloring and
+ * the rowLabel/colLabel text ("Transit"/"Natal" by default; Compare Charts
+ * passes each chart's own name instead). Pass `colPlanets` (the other side's
+ * planets) to turn the "Chart" grid from a symmetric planet x planet triangle
+ * into a full rectangle instead, since the two sides are never the same point.
  */
 
 import { useState } from 'react'
@@ -72,10 +74,16 @@ interface AspectsPanelProps {
    * cell is a distinct pair, so nothing gets skipped). */
   colPlanets?: Planet[]
   variant?: 'natal' | 'transit'
+  /** Row/column-axis labels for variant="transit" — default "Transit"/"Natal" fit
+   * the chart-detail and Current Sky pages' actual transit-to-natal comparison;
+   * the Compare Charts page passes each chart's own name instead, since neither
+   * side there is necessarily "transiting" or "natal". */
+  rowLabel?: string
+  colLabel?: string
   onNavigate: (canonicalName: string) => void
 }
 
-export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', onNavigate }: AspectsPanelProps) {
+export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', rowLabel = 'Transit', colLabel = 'Natal', onNavigate }: AspectsPanelProps) {
   const [sortMode, setSortMode] = useState<AspectSortMode>('degree')
   const [isOpen, setIsOpen] = useState(true)
 
@@ -123,7 +131,7 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           {isOpen ? <ChevronDown size={11} /> : <ChevronRight size={11} />}
-          {isTransit ? <><span style={{ color: TRANSIT_COLOR }}>Transit</span>{' '}→ Natal ({aspects.length})</> : <>Aspects ({aspects.length})</>}
+          {isTransit ? <><span style={{ color: TRANSIT_COLOR }}>{rowLabel}</span>{' '}→ {colLabel} ({aspects.length})</> : <>Aspects ({aspects.length})</>}
         </div>
         {isOpen && (
           <div onClick={e => e.stopPropagation()}>
@@ -165,7 +173,7 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
                     role="button" tabIndex={0}
                     style={{ width: cellSize, height: cellSize, textAlign: 'center', color: isTransit ? TRANSIT_COLOR : 'var(--color-text-subtle)', fontWeight: 400, cursor: 'pointer', border: '1px solid var(--color-border)' }}
                     onClick={() => onNavigate(rowPlanet.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(rowPlanet.canonicalName) } }}
-                    title={isTransit ? `Transit ${rowPlanet.name}` : rowPlanet.name}
+                    title={isTransit ? `${rowLabel} ${rowPlanet.name}` : rowPlanet.name}
                   >
                     {rowPlanet.symbol}
                   </th>
@@ -181,7 +189,7 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
                             role="button" tabIndex={0}
                             style={{ color: colors[asp.type] ?? 'var(--color-text-muted)', cursor: 'pointer' }}
                             onClick={() => onNavigate('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate('astrology.aspect.' + asp.type) } }}
-                            title={`${isTransit ? 'Transit ' : ''}${rowPlanet.name} ${asp.type} ${isTransit ? 'natal ' : ''}${colPlanet.name} — ${asp.orb}° orb`}
+                            title={`${isTransit ? rowLabel + ' ' : ''}${rowPlanet.name} ${asp.type} ${isTransit ? colLabel.toLowerCase() + ' ' : ''}${colPlanet.name} — ${asp.orb}° orb`}
                           >
                             {asp.symbol}
                           </span>
@@ -201,7 +209,7 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
               <span
                 role="button" tabIndex={0}
                 style={{ color: isTransit ? TRANSIT_COLOR : 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => onNavigate(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet1.canonicalName) } }} title={isTransit ? `Transit ${asp.planet1.name}` : asp.planet1.name}
+                onClick={() => onNavigate(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet1.canonicalName) } }} title={isTransit ? `${rowLabel} ${asp.planet1.name}` : asp.planet1.name}
               >{asp.planet1.symbol}</span>
               <span
                 role="button" tabIndex={0}
@@ -211,10 +219,10 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
               <span
                 role="button" tabIndex={0}
                 style={{ color: 'var(--color-text-subtle)', fontFamily: 'monospace', minWidth: '18px', cursor: 'pointer' }}
-                onClick={() => onNavigate(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet2.canonicalName) } }} title={isTransit ? `Natal ${asp.planet2.name}` : asp.planet2.name}
+                onClick={() => onNavigate(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet2.canonicalName) } }} title={isTransit ? `${colLabel} ${asp.planet2.name}` : asp.planet2.name}
               >{asp.planet2.symbol}</span>
               <span style={{ color: 'var(--color-text-muted)', flex: 1 }}>
-                {isTransit && <span style={{ color: TRANSIT_COLOR }}>tr. </span>}
+                {isTransit && <span style={{ color: TRANSIT_COLOR }}>{rowLabel} </span>}
                 <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => onNavigate(asp.planet1.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet1.canonicalName) } }}>{asp.planet1.name}</span>
                 {' '}
                 <span
@@ -223,7 +231,7 @@ export function AspectsPanel({ aspects, planets, colPlanets, variant = 'natal', 
                   onClick={() => onNavigate('astrology.aspect.' + asp.type)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate('astrology.aspect.' + asp.type) } }}
                 >{asp.type}</span>
                 {' '}
-                {isTransit && 'natal '}
+                {isTransit && colLabel + ' '}
                 <span role="button" tabIndex={0} style={{ cursor: 'pointer' }} onClick={() => onNavigate(asp.planet2.canonicalName)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(asp.planet2.canonicalName) } }}>{asp.planet2.name}</span>
               </span>
               <span style={{ color: 'var(--color-text-subtle)', fontSize: '11px' }}>

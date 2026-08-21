@@ -15,7 +15,7 @@ import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
 import { PlanetVisibilityFilter, toggleInSet, toggleGroupInSet } from '@/components/ui/PlanetVisibilityFilter'
 import type { PlanetGroup } from '@/components/ui/PlanetVisibilityFilter'
 import { Button } from '@/components/ui/Button'
-import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers } from 'lucide-react'
+import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers, GitCompare } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/')({
   component: AstrologyPage,
@@ -272,6 +272,9 @@ function AstrologyPage() {
         <div style={{ display: 'flex', gap: '8px' }}>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings/traditions' })}>
             <Layers size={14} /> Traditions
+          </Button>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/astrology/compare' })}>
+            <GitCompare size={14} /> Compare
           </Button>
           <Button size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: undefined } })}>
             <Plus size={14} /> New Chart
