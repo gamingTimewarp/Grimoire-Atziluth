@@ -13,7 +13,7 @@
  */
 
 import React, { useState, useEffect } from 'react'
-import type { NatalChartData } from '@/lib/astro-engine'
+import type { NatalChartData, AspectType, Planet } from '@/lib/astro-engine'
 import { getSignsForMode, IAU_BOUNDARIES, HOUSE_NAMES } from '@/lib/astro-engine'
 import type { AstrologyMode } from '@/lib/astro-engine'
 import { getMoonPhase } from '@/lib/astro-calc'
@@ -113,7 +113,32 @@ const ASPECT_COLORS: Record<string, string> = {
   trine:       '#6aa86a',
   opposition:  '#c47a4a',
 }
-const TRANSIT_ASPECT_COLORS: Record<string, string> = { ...ASPECT_COLORS, conjunction: TRANSIT_COLOR }
+
+/** Blend a hex colour toward a target hue by `amount` (0-1), for deriving a
+ * whole palette's "family" variant rather than hand-picking five new hex
+ * values per variant. Good enough for a UI accent, not colour-correct. */
+function mixHex(hex: string, target: string, amount: number): string {
+  const parse = (h: string) => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16))
+  const [r1, g1, b1] = parse(hex)
+  const [r2, g2, b2] = parse(target)
+  const mix = (a: number, b: number) => Math.round(a * (1 - amount) + b * amount)
+  const toHex = (n: number) => n.toString(16).padStart(2, '0')
+  return `#${toHex(mix(r1, r2))}${toHex(mix(g1, g2))}${toHex(mix(b1, b2))}`
+}
+
+function mixPalette(base: Record<string, string>, target: string, amount: number): Record<string, string> {
+  return Object.fromEntries(Object.entries(base).map(([k, v]) => [k, mixHex(v, target, amount)]))
+}
+
+// Chart B's own aspects: the whole palette shifted toward the overlay's gold
+// identity, not just conjunction recoloured — square/trine/etc. need to differ
+// from Chart A's too, or the two charts' aspect lines are indistinguishable.
+const TRANSIT_ASPECT_COLORS: Record<string, string> = mixPalette(ASPECT_COLORS, TRANSIT_COLOR, 0.4)
+
+// Aspects *between* the two charts get a third, distinct family — violet, so
+// they don't read as belonging to either chart's own colour scheme.
+const CROSS_COLOR = '#8a7ac9'
+const CROSS_ASPECT_COLORS: Record<string, string> = mixPalette(ASPECT_COLORS, CROSS_COLOR, 0.5)
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
@@ -178,6 +203,12 @@ export type WheelChartProps = {
    * each chart's own name so the buttons don't misname an arbitrary second chart. */
   natalLabel?: string
   transitLabel?: string
+  /** Aspects *between* chart and transitChart — e.g. Compare Charts' synastry
+   * aspects, already computed for its AspectsPanel below and passed straight
+   * through here too rather than recomputed. `planet1` is always the `chart`
+   * side, `planet2` always the `transitChart` side. Drawn in a third, distinct
+   * colour family and toggleable independently of the natal/overlay rings. */
+  crossAspects?: { planet1: Planet; planet2: Planet; type: AspectType; symbol: string; orb: number }[]
 }
 
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
@@ -191,7 +222,7 @@ export function WheelChart({
   layout: layoutProp, onLayoutChange,
   showLots: showLotsProp, onShowLotsChange,
   hiddenPlanets, hiddenTransitPlanets, overlayLabel = 'transit', overlayEqualWeight = false,
-  natalLabel = 'Natal', transitLabel = 'Transits',
+  natalLabel = 'Natal', transitLabel = 'Transits', crossAspects,
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -199,6 +230,7 @@ export function WheelChart({
   const [hovered,      setHovered]      = useState<string | null>(null)
   const [showNatal,    setShowNatal]    = useState(true)
   const [showTransits, setShowTransits] = useState(true)
+  const [showCrossAspects, setShowCrossAspects] = useState(true)
   const [internalShowLots, setInternalShowLots] = useState(true)
   const [internalLayout,   setInternalLayout]   = useState<WheelLayout>(defaultLayout)
 
@@ -359,6 +391,27 @@ export function WheelChart({
             })
         })()}
 
+        {/* ── Cross-chart aspect lines — aspects *between* the two charts (e.g. Compare
+             Charts synastry), kept visually distinct from either chart's own aspects
+             via a third colour family and its own independent visibility toggle. */}
+        {showCrossAspects && crossAspects && crossAspects.length > 0 && (() => {
+          return crossAspects
+            .filter(asp => !isHidden(asp.planet1.canonicalName) && !isHiddenInTransit(asp.planet2.canonicalName))
+            .map((asp, i) => {
+              const p1 = planets.find(p => p.planet.name === asp.planet1.name)
+              const p2 = transitChart?.planets.find(p => p.planet.name === asp.planet2.name)
+              if (!p1 || !p2) return null
+              const [x1, y1] = polar(lonToSvgAngle(p1.longitude, asc), rAspect)
+              const [x2, y2] = polar(lonToSvgAngle(p2.longitude, asc), rAspect)
+              const isHov    = hovered === 'n:' + asp.planet1.name || hovered === 't:' + asp.planet2.name
+              return (
+                <line key={'xa:' + i} x1={x1} y1={y1} x2={x2} y2={y2}
+                  stroke={CROSS_ASPECT_COLORS[asp.type] ?? CROSS_COLOR}
+                  strokeWidth={isHov ? 1.5 : 0.7} opacity={isHov ? 0.9 : 0.4} />
+              )
+            })
+        })()}
+
         {/* Aspect circle */}
         <circle cx={CX} cy={CY} r={rAspect} fill="none" stroke="var(--color-border)" strokeWidth="0.3" strokeDasharray="2,4" />
 
@@ -504,6 +557,12 @@ export function WheelChart({
             <button onClick={() => setShowTransits(v => !v)}
               style={{ ...toggleStyle(showTransits), borderColor: showTransits ? TRANSIT_COLOR + '80' : 'var(--color-border)', color: showTransits ? TRANSIT_COLOR : 'var(--color-text-subtle)', background: showTransits ? TRANSIT_COLOR + '18' : 'transparent' }}>
               ☿ {transitLabel}
+            </button>
+          )}
+          {crossAspects && crossAspects.length > 0 && (
+            <button onClick={() => setShowCrossAspects(v => !v)}
+              style={{ ...toggleStyle(showCrossAspects), borderColor: showCrossAspects ? CROSS_COLOR + '80' : 'var(--color-border)', color: showCrossAspects ? CROSS_COLOR : 'var(--color-text-subtle)', background: showCrossAspects ? CROSS_COLOR + '18' : 'transparent' }}>
+              ⇄ Cross
             </button>
           )}
         </div>

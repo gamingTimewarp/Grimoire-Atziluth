@@ -216,6 +216,7 @@ function ComparePage() {
                       overlayEqualWeight
                       natalLabel={a.label}
                       transitLabel={b.label}
+                      crossAspects={crossAspects.map(asp => ({ planet1: asp.natalPlanet, planet2: asp.transitPlanet, type: asp.type, symbol: asp.symbol, orb: asp.orb }))}
                       onNavigate={goToRef}
                     />
                   </ZoomableSVGContainer>
