@@ -32,6 +32,13 @@ export const Route = createFileRoute('/astrology/compare')({
 const NOW_ID = '__now__'
 const CHART_B_COLOR = '#c4a44a'
 
+const selectStyle: React.CSSProperties = {
+  display: 'block', width: '100%', marginTop: '4px', padding: '8px 10px',
+  background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
+  borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px',
+  fontFamily: 'inherit', outline: 'none', cursor: 'pointer', colorScheme: 'dark',
+}
+
 interface ChartOption {
   chart: NatalChartData
   label: string
@@ -133,7 +140,7 @@ function ComparePage() {
               <select
                 value={idA}
                 onChange={e => setIdA(e.target.value)}
-                style={{ display: 'block', width: '100%', marginTop: '4px', padding: '8px 10px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit' }}
+                style={selectStyle}
               >
                 {chartOptions.map(o => <option key={o.id} value={o.id}>{o.name}</option>)}
               </select>
@@ -143,7 +150,7 @@ function ComparePage() {
               <select
                 value={idB}
                 onChange={e => setIdB(e.target.value)}
-                style={{ display: 'block', width: '100%', marginTop: '4px', padding: '8px 10px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit' }}
+                style={selectStyle}
               >
                 {chartOptions.map(o => <option key={o.id} value={o.id}>{o.name}</option>)}
               </select>
