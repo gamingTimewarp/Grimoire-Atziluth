@@ -11,6 +11,9 @@ import { loadTraditionSettings } from '@/lib/tradition-store'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
+import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
+import { PlanetVisibilityFilter, toggleInSet, toggleGroupInSet } from '@/components/ui/PlanetVisibilityFilter'
+import type { PlanetGroup } from '@/components/ui/PlanetVisibilityFilter'
 import { Button } from '@/components/ui/Button'
 import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers } from 'lucide-react'
 
@@ -33,6 +36,10 @@ function CurrentSkyPanel() {
   const [selfChart,      setSelfChart]     = useState<NatalChartData | null>(null)
   const [transitAspects, setTransitAspects] = useState<TransitAspect[]>([])
   const [showTransits,   setShowTransits]  = useState(false)
+  const [hiddenPlanets,  setHiddenPlanets] = useState<Set<string>>(() => new Set())
+  const togglePlanet = (cn: string) => setHiddenPlanets(prev => toggleInSet(prev, cn))
+  const toggleGroup = (group: PlanetGroup, currentlyAllVisible: boolean) =>
+    setHiddenPlanets(prev => toggleGroupInSet(prev, group, currentlyAllVisible))
 
   // Load self natal chart once on mount
   useEffect(() => {
@@ -142,6 +149,17 @@ function CurrentSkyPanel() {
         <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Computing…</div>
       )}
 
+      {/* Planet visibility — hides selected bodies from the wheel and table below,
+          in both wheel and table modes. Shared with the Animate page's own filter
+          (same groups, same chips). */}
+      {chart && (
+        <div style={{ marginBottom: '16px' }}>
+          <CollapsibleSection header={<>Visibility</>} defaultOpen={false}>
+            <PlanetVisibilityFilter hiddenPlanets={hiddenPlanets} onTogglePlanet={togglePlanet} onToggleAll={toggleGroup} />
+          </CollapsibleSection>
+        </div>
+      )}
+
       {/* Wheel and table are independently toggleable rather than a single either/or
           view, so both can be seen side by side at once — the default, and most
           useful combination. */}
@@ -150,12 +168,12 @@ function CurrentSkyPanel() {
           <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
             {showWheel && (
               <ZoomableSVGContainer style={{ width: '100%', maxWidth: 440, borderRadius: '8px' }}>
-                <WheelChart chart={chart} size={440} mode={mode} date={asOf ?? undefined} onNavigate={goToRef} />
+                <WheelChart chart={chart} size={440} mode={mode} date={asOf ?? undefined} hiddenPlanets={hiddenPlanets} onNavigate={goToRef} />
               </ZoomableSVGContainer>
             )}
             {showTable && (
               <div style={{ flex: 1, minWidth: '220px', display: 'grid', gridTemplateColumns: 'auto auto 1fr auto', gap: '4px 10px', alignItems: 'center' }}>
-                {chart.planets.map(pos => {
+                {chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(pos => {
                   const sign = getSignsForMode(loadTraditionSettings().astrologyMode)[pos.signIndex]
                   const moonPhase = pos.planet.name === 'Luna' && asOf ? getMoonPhase(asOf) : null
                   return (
@@ -197,7 +215,11 @@ function CurrentSkyPanel() {
               </div>
             )}
           </div>
-          <AspectsPanel aspects={chart.aspects} planets={chart.planets.map(p => p.planet)} onNavigate={goToRef} />
+          <AspectsPanel
+            aspects={chart.aspects.filter(a => !hiddenPlanets.has(a.planet1.canonicalName) && !hiddenPlanets.has(a.planet2.canonicalName))}
+            planets={chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
+            onNavigate={goToRef}
+          />
         </div>
       )}
 
@@ -212,9 +234,11 @@ function CurrentSkyPanel() {
         <div style={{ marginTop: '14px' }}>
           <AspectsPanel
             variant="transit"
-            aspects={transitAspects.map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
-            planets={chart.planets.map(p => p.planet)}
-            colPlanets={selfChart.planets.map(p => p.planet)}
+            aspects={transitAspects
+              .filter(a => !hiddenPlanets.has(a.transitPlanet.canonicalName) && !hiddenPlanets.has(a.natalPlanet.canonicalName))
+              .map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
+            planets={chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
+            colPlanets={selfChart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
             onNavigate={goToRef}
           />
         </div>

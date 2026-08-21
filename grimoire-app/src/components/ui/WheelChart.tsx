@@ -149,6 +149,10 @@ export type WheelChartProps = {
   /** Controlled Lots visibility. Omit to let WheelChart manage its own state (uncontrolled). */
   showLots?: boolean
   onShowLotsChange?: (v: boolean) => void
+  /** Canonical names to exclude from both the natal and transit rings, and from any
+   * aspect line touching one — the same filter driving the Positions page's
+   * Classical/Modern/Asteroids/Nodes visibility groups. Omit to show everything. */
+  hiddenPlanets?: Set<string>
 }
 
 const SIGN_ELEMENTS     = ['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water']
@@ -161,6 +165,7 @@ export function WheelChart({
   hideControls = false,
   layout: layoutProp, onLayoutChange,
   showLots: showLotsProp, onShowLotsChange,
+  hiddenPlanets,
 }: WheelChartProps) {
   const { planets, houses, aspects, lots } = chart
   const asc = houses.ascendant
@@ -194,6 +199,14 @@ export function WheelChart({
   const rPlanet   = (cn: string) => isRings ? getRingRadius(cn) : R_PLANET
   const rAspect   = isRings ? R_ASPECT_RINGS : R_ASPECT
   const glyphSize = (hov: boolean) => isRings ? (hov ? 19 : 16) : (hov ? 17 : 14)
+
+  // Visibility filter (e.g. the Positions page's "Classical/Modern/Asteroids/Nodes"
+  // groups) — applies to both the natal and transit rings alike, and to any aspect
+  // whose either end is hidden. Houses/lots aren't planets and are unaffected.
+  const isHidden        = (cn: string) => hiddenPlanets?.has(cn) ?? false
+  const visiblePlanets  = hiddenPlanets ? planets.filter(p => !isHidden(p.planet.canonicalName)) : planets
+  const visibleAspects  = hiddenPlanets ? aspects.filter(a => !isHidden(a.planet1.canonicalName) && !isHidden(a.planet2.canonicalName)) : aspects
+  const visibleTransitPlanets = hiddenPlanets && transitChart ? transitChart.planets.filter(p => !isHidden(p.planet.canonicalName)) : transitChart?.planets
 
   return (
     <div style={{ position: 'relative', width: '100%', maxWidth: size }}>
@@ -277,7 +290,7 @@ export function WheelChart({
         })}
 
         {/* ── Aspect lines ── */}
-        {showNatal && aspects.map((asp, i) => {
+        {showNatal && visibleAspects.map((asp, i) => {
           const p1 = planets.find(p => p.planet.name === asp.planet1.name)
           const p2 = planets.find(p => p.planet.name === asp.planet2.name)
           if (!p1 || !p2) return null
@@ -295,7 +308,7 @@ export function WheelChart({
         <circle cx={CX} cy={CY} r={rAspect} fill="none" stroke="var(--color-border)" strokeWidth="0.3" strokeDasharray="2,4" />
 
         {/* ── Natal planet glyphs ── */}
-        {showNatal && planets.map(pos => {
+        {showNatal && visiblePlanets.map(pos => {
           const angle    = lonToSvgAngle(pos.longitude, asc)
           const r        = rPlanet(pos.planet.canonicalName)
           const [px, py] = polar(angle, r)
@@ -349,7 +362,7 @@ export function WheelChart({
         })}
 
         {/* ── Transit planet glyphs ── */}
-        {showTransits && transitChart && transitChart.planets.map(pos => {
+        {showTransits && transitChart && visibleTransitPlanets?.map(pos => {
           const angle    = lonToSvgAngle(pos.longitude, asc)
           const [px, py] = polar(angle, R_TRANSIT_PLANET)
           const isHov    = hovered === 't:' + pos.planet.name

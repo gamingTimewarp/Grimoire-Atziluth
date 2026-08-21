@@ -12,6 +12,8 @@ import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
 import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
+import { PlanetVisibilityFilter, toggleInSet, toggleGroupInSet } from '@/components/ui/PlanetVisibilityFilter'
+import type { PlanetGroup } from '@/components/ui/PlanetVisibilityFilter'
 import { InfoTooltip } from '@/components/ui/InfoTooltip'
 import { Button } from '@/components/ui/Button'
 import { Edit, List, Circle, Radio, Info, Layers } from 'lucide-react'
@@ -70,6 +72,10 @@ function ChartDetailPage() {
   const [showTable,    setShowTable]   = useState(true)
   const [loading,      setLoading]     = useState(true)
   const [showTransits, setShowTransits] = useState(false)
+  const [hiddenPlanets, setHiddenPlanets] = useState<Set<string>>(() => new Set())
+  const togglePlanet = (cn: string) => setHiddenPlanets(prev => toggleInSet(prev, cn))
+  const toggleGroup = (group: PlanetGroup, currentlyAllVisible: boolean) =>
+    setHiddenPlanets(prev => toggleGroupInSet(prev, group, currentlyAllVisible))
   const tradSettings = loadTraditionSettings()
   const astrologyMode: AstrologyMode = tradSettings.astrologyMode
   const houseSystem = tradSettings.houseSystem
@@ -175,6 +181,15 @@ function ChartDetailPage() {
         </div>
       </div>
 
+      {/* Planet visibility — hides selected bodies from the wheel and every table
+          section below, in both wheel and table modes. Shared with the Animate
+          page's own filter (same groups, same chips). */}
+      <div style={{ marginBottom: '20px' }}>
+        <CollapsibleSection header={<>Visibility</>} defaultOpen={false}>
+          <PlanetVisibilityFilter hiddenPlanets={hiddenPlanets} onTogglePlanet={togglePlanet} onToggleAll={toggleGroup} />
+        </CollapsibleSection>
+      </div>
+
       {/* Main content — wheel and table are independently toggleable rather than a single
           either/or view, so both can be seen side by side (the default, and most useful
           combination) without the table permanently gluing itself to the wheel regardless
@@ -183,13 +198,13 @@ function ChartDetailPage() {
         <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: showTable ? 'flex-start' : 'center' }}>
           {showWheel && (
             <ZoomableSVGContainer style={{ width: '100%', maxWidth: 460, borderRadius: '8px' }}>
-              <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} date={birthDate ?? undefined} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
+              <WheelChart chart={chart} size={460} mode={astrologyMode} transitChart={transitChart ?? undefined} date={birthDate ?? undefined} hiddenPlanets={hiddenPlanets} onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })} />
             </ZoomableSVGContainer>
           )}
           {showTable && (
             <div style={{ flex: 1, minWidth: '260px' }}>
-              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} hasLocation={hasLocation} date={birthDate} />
-              <MutualReceptionsSection chart={chart} navigate={navigate} />
+              <PositionsTable chart={chart} navigate={navigate} hasBirthTime={!!record.birthTime} hasLocation={hasLocation} date={birthDate} hiddenPlanets={hiddenPlanets} />
+              <MutualReceptionsSection chart={chart} navigate={navigate} hiddenPlanets={hiddenPlanets} />
             </div>
           )}
         </div>
@@ -201,8 +216,8 @@ function ChartDetailPage() {
 
       <div style={{ marginTop: '20px' }}>
         <AspectsPanel
-          aspects={chart.aspects}
-          planets={chart.planets.map(p => p.planet)}
+          aspects={chart.aspects.filter(a => !hiddenPlanets.has(a.planet1.canonicalName) && !hiddenPlanets.has(a.planet2.canonicalName))}
+          planets={chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
           onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
         />
       </div>
@@ -212,9 +227,11 @@ function ChartDetailPage() {
         <div style={{ marginTop: '20px' }}>
           <AspectsPanel
             variant="transit"
-            aspects={transitAspects.map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
-            planets={transitChart.planets.map(p => p.planet)}
-            colPlanets={chart.planets.map(p => p.planet)}
+            aspects={transitAspects
+              .filter(a => !hiddenPlanets.has(a.transitPlanet.canonicalName) && !hiddenPlanets.has(a.natalPlanet.canonicalName))
+              .map(a => ({ planet1: a.transitPlanet, planet2: a.natalPlanet, type: a.type, symbol: a.symbol, orb: a.orb, applying: a.applying }))}
+            planets={transitChart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
+            colPlanets={chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)).map(p => p.planet)}
             onNavigate={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
           />
         </div>
@@ -232,13 +249,18 @@ function ChartDetailPage() {
 
 // ─── Positions table ──────────────────────────────────────────────────────────
 
-function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date }: {
+function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date, hiddenPlanets }: {
   chart: NatalChartData
   navigate: ReturnType<typeof useNavigate>
   hasBirthTime: boolean
   hasLocation: boolean
   /** Birth moment — used only to compute the Moon's phase for its position row. */
   date: Date | null
+  /** Canonical names hidden via the Visibility filter — sect (Day/Night) below is
+   * deliberately computed from the full unfiltered chart.planets, since it's a
+   * chart-level fact rather than a per-planet row and shouldn't disappear just
+   * because the Sun's row is hidden. */
+  hiddenPlanets: Set<string>
 }) {
   const tradSettings  = loadTraditionSettings()
   const astrologyMode = tradSettings.astrologyMode
@@ -256,7 +278,9 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date }: {
 
   // Asteroids/minor bodies get their own section below — exclude them here so they
   // don't appear twice.
-  const majorPositions = chart.planets.filter(p => !p.planet.canonicalName.startsWith('astrology.minor-body.'))
+  const majorPositions = chart.planets.filter(p =>
+    !p.planet.canonicalName.startsWith('astrology.minor-body.') && !hiddenPlanets.has(p.planet.canonicalName),
+  )
 
   return (
     <div style={{ marginBottom: '20px' }}>
@@ -408,7 +432,9 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date }: {
 
       {/* Asteroids (Modern Astrology tradition) */}
       {showAsteroids && (() => {
-        const asteroidPositions = chart.planets.filter(p => p.planet.canonicalName.startsWith('astrology.minor-body.'))
+        const asteroidPositions = chart.planets.filter(p =>
+          p.planet.canonicalName.startsWith('astrology.minor-body.') && !hiddenPlanets.has(p.planet.canonicalName),
+        )
         if (asteroidPositions.length === 0) return null
         return (
         <div style={{ marginTop: '16px' }}>
@@ -454,8 +480,12 @@ function PositionsTable({ chart, navigate, hasBirthTime, hasLocation, date }: {
 
 // ─── Mutual reception section ─────────────────────────────────────────────────
 
-function MutualReceptionsSection({ chart, navigate }: { chart: NatalChartData; navigate: ReturnType<typeof useNavigate> }) {
-  const receptions = getMutualReceptions(chart.planets)
+function MutualReceptionsSection({ chart, navigate, hiddenPlanets }: {
+  chart: NatalChartData
+  navigate: ReturnType<typeof useNavigate>
+  hiddenPlanets: Set<string>
+}) {
+  const receptions = getMutualReceptions(chart.planets.filter(p => !hiddenPlanets.has(p.planet.canonicalName)))
   if (receptions.length === 0) return null
 
   const goToRef = (cn: string) =>
