@@ -714,6 +714,7 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
             { to: '/reference/iching-trigram-matrix',       label: 'I Ching Trigram Matrix' },
             { to: '/reference/wuxing-phases',               label: 'I Ching Elements' },
             { to: '/reference/astrological-dignities',      label: 'Astrological Dignities' },
+            { to: '/reference/planet-in-sign',              label: 'Planet in Sign' },
             { to: '/reference/chinese-zodiac-compatibility',label: 'Chinese Zodiac Compatibility' },
             { to: '/reference/sephirothic-matrix',          label: 'Sephirothic Attributions' },
             { to: '/reference/planetary-matrix',            label: 'Planetary Attributions' },

@@ -36,6 +36,7 @@ import { Route as SettingsAccessibilityRouteImport } from './routes/settings/acc
 import { Route as ReferenceWuxingPhasesRouteImport } from './routes/reference/wuxing-phases'
 import { Route as ReferenceSephirothicMatrixRouteImport } from './routes/reference/sephirothic-matrix'
 import { Route as ReferencePlanetaryMatrixRouteImport } from './routes/reference/planetary-matrix'
+import { Route as ReferencePlanetInSignRouteImport } from './routes/reference/planet-in-sign'
 import { Route as ReferenceLenormandCombinationsRouteImport } from './routes/reference/lenormand-combinations'
 import { Route as ReferenceIchingTrigramMatrixRouteImport } from './routes/reference/iching-trigram-matrix'
 import { Route as ReferenceGeomancyShieldChartRouteImport } from './routes/reference/geomancy-shield-chart'
@@ -195,6 +196,11 @@ const ReferencePlanetaryMatrixRoute =
     path: '/reference/planetary-matrix',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ReferencePlanetInSignRoute = ReferencePlanetInSignRouteImport.update({
+  id: '/reference/planet-in-sign',
+  path: '/reference/planet-in-sign',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReferenceLenormandCombinationsRoute =
   ReferenceLenormandCombinationsRouteImport.update({
     id: '/reference/lenormand-combinations',
@@ -329,6 +335,7 @@ export interface FileRoutesByFullPath {
   '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
   '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planet-in-sign': typeof ReferencePlanetInSignRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
@@ -379,6 +386,7 @@ export interface FileRoutesByTo {
   '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
   '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planet-in-sign': typeof ReferencePlanetInSignRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
@@ -430,6 +438,7 @@ export interface FileRoutesById {
   '/reference/geomancy-shield-chart': typeof ReferenceGeomancyShieldChartRoute
   '/reference/iching-trigram-matrix': typeof ReferenceIchingTrigramMatrixRoute
   '/reference/lenormand-combinations': typeof ReferenceLenormandCombinationsRoute
+  '/reference/planet-in-sign': typeof ReferencePlanetInSignRoute
   '/reference/planetary-matrix': typeof ReferencePlanetaryMatrixRoute
   '/reference/sephirothic-matrix': typeof ReferenceSephirothicMatrixRoute
   '/reference/wuxing-phases': typeof ReferenceWuxingPhasesRoute
@@ -482,6 +491,7 @@ export interface FileRouteTypes {
     | '/reference/geomancy-shield-chart'
     | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planet-in-sign'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
     | '/reference/wuxing-phases'
@@ -532,6 +542,7 @@ export interface FileRouteTypes {
     | '/reference/geomancy-shield-chart'
     | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planet-in-sign'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
     | '/reference/wuxing-phases'
@@ -582,6 +593,7 @@ export interface FileRouteTypes {
     | '/reference/geomancy-shield-chart'
     | '/reference/iching-trigram-matrix'
     | '/reference/lenormand-combinations'
+    | '/reference/planet-in-sign'
     | '/reference/planetary-matrix'
     | '/reference/sephirothic-matrix'
     | '/reference/wuxing-phases'
@@ -633,6 +645,7 @@ export interface RootRouteChildren {
   ReferenceGeomancyShieldChartRoute: typeof ReferenceGeomancyShieldChartRoute
   ReferenceIchingTrigramMatrixRoute: typeof ReferenceIchingTrigramMatrixRoute
   ReferenceLenormandCombinationsRoute: typeof ReferenceLenormandCombinationsRoute
+  ReferencePlanetInSignRoute: typeof ReferencePlanetInSignRoute
   ReferencePlanetaryMatrixRoute: typeof ReferencePlanetaryMatrixRoute
   ReferenceSephirothicMatrixRoute: typeof ReferenceSephirothicMatrixRoute
   ReferenceWuxingPhasesRoute: typeof ReferenceWuxingPhasesRoute
@@ -852,6 +865,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReferencePlanetaryMatrixRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/reference/planet-in-sign': {
+      id: '/reference/planet-in-sign'
+      path: '/reference/planet-in-sign'
+      fullPath: '/reference/planet-in-sign'
+      preLoaderRoute: typeof ReferencePlanetInSignRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/reference/lenormand-combinations': {
       id: '/reference/lenormand-combinations'
       path: '/reference/lenormand-combinations'
@@ -1026,6 +1046,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReferenceGeomancyShieldChartRoute: ReferenceGeomancyShieldChartRoute,
   ReferenceIchingTrigramMatrixRoute: ReferenceIchingTrigramMatrixRoute,
   ReferenceLenormandCombinationsRoute: ReferenceLenormandCombinationsRoute,
+  ReferencePlanetInSignRoute: ReferencePlanetInSignRoute,
   ReferencePlanetaryMatrixRoute: ReferencePlanetaryMatrixRoute,
   ReferenceSephirothicMatrixRoute: ReferenceSephirothicMatrixRoute,
   ReferenceWuxingPhasesRoute: ReferenceWuxingPhasesRoute,

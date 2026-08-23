@@ -16,7 +16,7 @@ import { PlanetVisibilityFilter, toggleInSet, toggleGroupInSet } from '@/compone
 import type { PlanetGroup } from '@/components/ui/PlanetVisibilityFilter'
 import { InfoTooltip } from '@/components/ui/InfoTooltip'
 import { Button } from '@/components/ui/Button'
-import { Edit, List, Circle, Radio, Info, Layers } from 'lucide-react'
+import { Edit, List, Circle, Radio, Info, Layers, BookOpen } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/$id')({
   component: ChartDetailPage,
@@ -159,6 +159,9 @@ function ChartDetailPage() {
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/settings/traditions' })}>
             <Layers size={13} /> Traditions
+          </Button>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/reference/planet-in-sign', search: { chartId: id } })}>
+            <BookOpen size={13} /> Sign Meanings
           </Button>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/astrology/new', search: { edit: id } })}>
             <Edit size={13} /> Edit
