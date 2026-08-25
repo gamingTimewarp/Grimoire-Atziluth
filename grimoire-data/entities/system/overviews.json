@@ -353,7 +353,7 @@
       "canonicalName": "system.overview.planets",
       "entityType": "system.overview",
       "primaryDisplayName": "Planets",
-      "description": "The classical and modern planets used in astrology, alchemy, Hermetic Qabalah, and ceremonial magic. The seven classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn) each rule a day of the week, a metal, a sephira on the Tree of Life, and a sphere of the Ptolemaic cosmos. The three outer planets (Uranus, Neptune, Pluto) were added to the system as they were discovered.",
+      "description": "The classical and modern planets used in astrology, alchemy, Hermetic Qabalah, and ceremonial magic. The seven classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn) each rule a day of the week, a metal, a precious stone (per Crowley's 777), a sephira on the Tree of Life, and a sphere of the Ptolemaic cosmos. The three outer planets (Uranus, Neptune, Pluto) were added to the system as they were discovered.",
       "secondaryNames": [
         {
           "name": "Celestial Bodies",
@@ -553,7 +553,7 @@
       "canonicalName": "system.overview.sephiroth",
       "entityType": "system.overview",
       "primaryDisplayName": "Tree of Life",
-      "description": "The Tree of Life (Etz Chaim) is the central diagram of Hermetic Qabalah, consisting of ten emanations (sephiroth) and 22 connecting paths. The sephiroth are arranged on three pillars: the Pillar of Mercy (right), the Pillar of Severity (left), and the Middle Pillar. The Tree maps the structure of divine emanation from the Absolute (Kether) to the manifest world (Malkuth). An interactive Tree of Life diagram is planned for a future phase of this application.",
+      "description": "The Tree of Life (Etz Chaim) is the central diagram of Hermetic Qabalah, consisting of ten emanations (sephiroth) and 22 connecting paths. The sephiroth are arranged on three pillars: the Pillar of Mercy (right), the Pillar of Severity (left), and the Middle Pillar. The Tree maps the structure of divine emanation from the Absolute (Kether) to the manifest world (Malkuth). An interactive Tree of Life diagram is available on the Qabalah page of this application.",
       "secondaryNames": [
         {
           "name": "Sephiroth",
@@ -581,8 +581,7 @@
         "tree-of-life"
       ],
       "extendedData": {
-        "memberEntityType": "qabalah.sephira",
-        "plannedFeature": "Interactive Tree of Life diagram — coming in a future phase."
+        "memberEntityType": "qabalah.sephira"
       }
     },
     {
@@ -628,7 +627,7 @@
       "canonicalName": "system.overview.qliphoth",
       "entityType": "system.overview",
       "primaryDisplayName": "Tree of Death",
-      "description": "The Tree of Death (also called the Qliphothic Tree or Sitra Achra, 'the Other Side') is the shadow reflection of the Tree of Life, consisting of the ten Qliphoth — the shells or husks of the sephiroth, representing unbalanced or 'broken' divine emanations. The Qliphoth are studied in Qabalistic demonology and left-hand path traditions. An interactive Tree of Death diagram is planned for a future phase of this application.",
+      "description": "The Tree of Death (also called the Qliphothic Tree or Sitra Achra, 'the Other Side') is the shadow reflection of the Tree of Life, consisting of the ten Qliphoth — the shells or husks of the sephiroth, representing unbalanced or 'broken' divine emanations. The Qliphoth are studied in Qabalistic demonology and left-hand path traditions. An interactive Tree of Death diagram (the 'Nightside Tree') is available on the Qabalah page of this application.",
       "secondaryNames": [
         {
           "name": "Qliphoth",
@@ -656,8 +655,7 @@
         "tree-of-death"
       ],
       "extendedData": {
-        "memberEntityType": "qabalah.qliphoth",
-        "plannedFeature": "Interactive Tree of Death diagram — coming in a future phase."
+        "memberEntityType": "qabalah.qliphoth"
       }
     },
     {
@@ -3232,7 +3230,7 @@
       "canonicalName": "system.overview.gemstones",
       "entityType": "system.overview",
       "primaryDisplayName": "Gemstones",
-      "description": "An overview of common gemstones and their mineralogy, history, and colour associations, including the modern (US Jewelers, 1912/2002) monthly birthstone list. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish). Traditional/alternate birthstone lists and other tradition-specific gemstone correspondences (e.g. zodiacal gemstones) are planned as a future addition.",
+      "description": "An overview of common gemstones and their mineralogy, history, and colour associations, including both the modern (US Jewelers, 1912/2002) and the older traditional (Polish, 16th–18th century) monthly birthstone lists, one stone per month per list. This is a general reference catalogue distinct from the Navaratna (the nine sacred gems of Vedic astrology, found under Jyotish). Tradition-specific gemstone correspondences are also carried on the planet and zodiac-sign entities: each of the seven classical planets and twelve zodiac signs (via its ruling planet) has a precious stone per Crowley's 777.",
       "secondaryNames": [],
       "tags": [
         "overview",
@@ -3242,10 +3240,12 @@
         "entityTypeGroup": "gemstone",
         "browseTopic": "Correspondences & Natural Magic",
         "memberEntityType": "gemstone.gemstone",
-        "note": "Gemstones tagged 'birthstone' carry a birthMonth/birthMonthNumber in extendedData (modern list only, one stone per month).",
+        "note": "Gemstones tagged 'birthstone' carry a birthMonth/birthMonthNumber (modern list); those tagged 'traditional-birthstone' carry a traditionalBirthMonth/traditionalBirthMonthNumber (older Western list). The two lists coincide for 10 of 12 months and diverge only at March (Aquamarine/Bloodstone) and August (Peridot/Sardonyx). See also the 'preciousStone' field on astrology.planet and astrology.zodiac-sign entities.",
         "relatedOverviews": [
           "system.overview.colours",
-          "system.overview.navaratna"
+          "system.overview.navaratna",
+          "system.overview.planets",
+          "system.overview.zodiac"
         ]
       }
     },

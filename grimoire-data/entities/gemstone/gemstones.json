@@ -9,8 +9,8 @@
       "secondaryNames": [
         { "name": "Corundum (red)", "languageTag": "en-mineral", "visible": false, "sortOrder": 0 }
       ],
-      "tags": ["gemstone", "gemstone-red", "corundum"],
-      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "red, from trace chromium" }
+      "tags": ["gemstone", "gemstone-red", "corundum", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "red, from trace chromium", "birthMonth": "July", "birthMonthNumber": 7, "traditionalBirthMonth": "July", "traditionalBirthMonthNumber": 7 }
     },
     {
       "canonicalName": "gemstone.gemstone.garnet",
@@ -18,8 +18,8 @@
       "primaryDisplayName": "Garnet",
       "description": "Garnet is not a single mineral but a group of closely related silicate minerals sharing the same crystal structure, occurring in a wide range of colours though most classically and famously in deep wine-red. The name derives from the Latin granatum ('pomegranate'), a reference to the resemblance between garnet crystals and the fruit's seeds. Garnet has been used in jewellery and as an abrasive since the Bronze Age, and in medieval European tradition was carried by travellers as a protective stone believed to light the way through darkness and guard against wounds — a association plausibly connected to its deep, glowing red hue.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-red", "silicate"],
-      "extendedData": { "mineralClass": "nesosilicate group", "hardnessMohs": "6.5–7.5", "colourNote": "classically deep wine-red" }
+      "tags": ["gemstone", "gemstone-red", "silicate", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "nesosilicate group", "hardnessMohs": "6.5–7.5", "colourNote": "classically deep wine-red", "birthMonth": "January", "birthMonthNumber": 1, "traditionalBirthMonth": "January", "traditionalBirthMonthNumber": 1 }
     },
     {
       "canonicalName": "gemstone.gemstone.carnelian",
@@ -56,8 +56,8 @@
       "secondaryNames": [
         { "name": "Imperial Topaz", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
       ],
-      "tags": ["gemstone", "gemstone-yellow", "silicate"],
-      "extendedData": { "mineralClass": "aluminium silicate", "hardnessMohs": "8", "colourNote": "golden-orange (Imperial topaz)" }
+      "tags": ["gemstone", "gemstone-yellow", "silicate", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "aluminium silicate", "hardnessMohs": "8", "colourNote": "golden-orange (Imperial topaz)", "birthMonth": "November", "birthMonthNumber": 11, "traditionalBirthMonth": "November", "traditionalBirthMonthNumber": 11 }
     },
     {
       "canonicalName": "gemstone.gemstone.emerald",
@@ -65,8 +65,8 @@
       "primaryDisplayName": "Emerald",
       "description": "Emerald is the green variety of the mineral beryl, its colour caused by trace chromium and/or vanadium, and is among the most highly valued coloured gemstones — fine emeralds routinely command higher prices per carat than diamonds of comparable size. Emeralds were mined in Egypt as early as 1500 BCE (Cleopatra was famously associated with the mines near the Red Sea) and later, following the Spanish conquest, the Colombian emerald deposits became the dominant global source. Nearly all natural emeralds contain visible internal inclusions, poetically termed the jardin ('garden') by gem-cutters, treated as a signature of authenticity rather than a flaw. Long associated with Venus, fertility, and rebirth.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-green", "beryl"],
-      "extendedData": { "mineralClass": "beryl", "hardnessMohs": "7.5–8", "colourNote": "green, from chromium/vanadium" }
+      "tags": ["gemstone", "gemstone-green", "beryl", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "beryl", "hardnessMohs": "7.5–8", "colourNote": "green, from chromium/vanadium", "birthMonth": "May", "birthMonthNumber": 5, "traditionalBirthMonth": "May", "traditionalBirthMonthNumber": 5 }
     },
     {
       "canonicalName": "gemstone.gemstone.jade",
@@ -87,8 +87,8 @@
       "secondaryNames": [
         { "name": "Corundum (blue)", "languageTag": "en-mineral", "visible": false, "sortOrder": 0 }
       ],
-      "tags": ["gemstone", "gemstone-blue", "corundum"],
-      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "blue, from trace iron and titanium" }
+      "tags": ["gemstone", "gemstone-blue", "corundum", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "corundum", "hardnessMohs": "9", "colourNote": "blue, from trace iron and titanium", "birthMonth": "September", "birthMonthNumber": 9, "traditionalBirthMonth": "September", "traditionalBirthMonthNumber": 9 }
     },
     {
       "canonicalName": "gemstone.gemstone.lapis-lazuli",
@@ -125,8 +125,8 @@
       "primaryDisplayName": "Amethyst",
       "description": "Amethyst is the purple variety of quartz, coloured by trace iron combined with natural irradiation within the crystal, and takes its name from the Greek amethystos ('not intoxicated') — ancient Greeks and Romans believed wine drunk from an amethyst cup, or an amethyst worn on the body, prevented drunkenness. Until large Brazilian deposits were discovered in the 19th century, amethyst was ranked among the cardinal gemstones alongside ruby, sapphire, and emerald; the new supply subsequently made it far more affordable. It is the traditional colour of the Christian liturgical vestments of a bishop's ring and, in Catholic tradition, a stone of piety and clerical rank.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-violet", "quartz"],
-      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "purple, from trace iron plus irradiation" }
+      "tags": ["gemstone", "gemstone-violet", "quartz", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "quartz", "hardnessMohs": "7", "colourNote": "purple, from trace iron plus irradiation", "birthMonth": "February", "birthMonthNumber": 2, "traditionalBirthMonth": "February", "traditionalBirthMonthNumber": 2 }
     },
     {
       "canonicalName": "gemstone.gemstone.sugilite",
@@ -239,8 +239,8 @@
       "primaryDisplayName": "Diamond",
       "description": "Diamond is pure crystallised carbon, formed under the extreme pressure and temperature found roughly 140–190 km deep in the Earth's mantle and carried to the surface by rare volcanic eruptions through kimberlite pipes. It is the hardest known natural material — the defining reference point (10) at the top of the Mohs scale — and its exceptional hardness combined with a high refractive index and strong dispersion of light produce the brilliance and 'fire' prized in cut stones. Diamond's status as the default engagement-ring stone is a comparatively recent, and famously manufactured, tradition: the phrase 'A Diamond is Forever,' coined by De Beers' advertising agency in 1947, is widely credited with single-handedly establishing that convention in the modern West within a few decades. The 20th-century trade in 'conflict' or 'blood' diamonds funding armed conflict in parts of Africa led to the Kimberley Process certification scheme (2003), an ongoing and imperfect attempt to track a stone's origin.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-white", "native-element", "birthstone"],
-      "extendedData": { "mineralClass": "native carbon", "hardnessMohs": "10", "colourNote": "colourless (finest), also found in every colour ('fancy' diamonds)", "birthMonth": "April", "birthMonthNumber": 4 }
+      "tags": ["gemstone", "gemstone-white", "native-element", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "native carbon", "hardnessMohs": "10", "colourNote": "colourless (finest), also found in every colour ('fancy' diamonds)", "birthMonth": "April", "birthMonthNumber": 4, "traditionalBirthMonth": "April", "traditionalBirthMonthNumber": 4 }
     },
     {
       "canonicalName": "gemstone.gemstone.pearl",
@@ -248,8 +248,8 @@
       "primaryDisplayName": "Pearl",
       "description": "Pearl is the only gemstone produced by a living organism rather than a geological process: a mollusc such as an oyster or mussel secretes layer upon layer of nacre around an irritant (naturally a parasite or debris, commercially an inserted bead or tissue graft), building up the lustrous material over months or years. Natural pearls are exceptionally rare; the modern pearl trade is built almost entirely on culturing, a technique pioneered commercially by Kokichi Mikimoto in Japan around 1893. Pliny the Elder records the story — probably apocryphal, but told for two thousand years regardless — of Cleopatra dissolving a priceless pearl earring in vinegar and drinking it to win a wager with Mark Antony over who could host the more extravagant banquet.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-white", "organic-gem", "birthstone"],
-      "extendedData": { "mineralClass": "nacre (organic, calcium carbonate + conchiolin)", "hardnessMohs": "2.5–4.5", "colourNote": "white to cream, also pink, silver, and black", "birthMonth": "June", "birthMonthNumber": 6 }
+      "tags": ["gemstone", "gemstone-white", "organic-gem", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "nacre (organic, calcium carbonate + conchiolin)", "hardnessMohs": "2.5–4.5", "colourNote": "white to cream, also pink, silver, and black", "birthMonth": "June", "birthMonthNumber": 6, "traditionalBirthMonth": "June", "traditionalBirthMonthNumber": 6 }
     },
     {
       "canonicalName": "gemstone.gemstone.peridot",
@@ -266,8 +266,8 @@
       "primaryDisplayName": "Opal",
       "description": "Opal is hydrated amorphous silica — a mineraloid rather than a true crystalline mineral — and precious opal's signature 'play-of-colour,' a shifting flash of spectral hues across the stone, is a purely optical effect produced by the diffraction of light through a microscopic, closely packed lattice of silica spheres within the stone. Australia has produced roughly 95% of the world's precious opal historically, with the black opal of Lightning Ridge and the boulder opal of Queensland among the most prized varieties. The Romans regarded opal as the luckiest and most powerful of all gems, a reputation later inverted by 19th-century European superstition — partly traceable to a plot device in Walter Scott's 1829 novel Anne of Geierstein — holding that opal was unlucky for anyone not born in October.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-white", "mineraloid", "birthstone"],
-      "extendedData": { "mineralClass": "hydrated silica (mineraloid)", "hardnessMohs": "5.5–6.5", "colourNote": "white or black body colour with spectral play-of-colour", "birthMonth": "October", "birthMonthNumber": 10 }
+      "tags": ["gemstone", "gemstone-white", "mineraloid", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "hydrated silica (mineraloid)", "hardnessMohs": "5.5–6.5", "colourNote": "white or black body colour with spectral play-of-colour", "birthMonth": "October", "birthMonthNumber": 10, "traditionalBirthMonth": "October", "traditionalBirthMonthNumber": 10 }
     },
     {
       "canonicalName": "gemstone.gemstone.turquoise",
@@ -275,8 +275,8 @@
       "primaryDisplayName": "Turquoise",
       "description": "Turquoise is an opaque hydrated copper-aluminium phosphate, ranging from robin's-egg blue to blue-green, frequently veined or mottled with the brown or black matrix of its host rock. It is among the oldest gemstones ever mined by humans: Egyptian expeditions worked turquoise deposits in the Sinai Peninsula as early as the fourth millennium BCE, and turquoise inlay appears throughout Tutankhamun's funerary mask and jewellery. It held comparable status across entirely separate cultural spheres — set into Persian royal regalia and mosque tilework, carved by Aztec and Mixtec artisans into ceremonial mosaics, and, following the introduction of silversmithing techniques in the mid-19th century, worked into the turquoise-and-silver jewellery now closely associated with Navajo, Zuni, and other Southwestern United States artisan traditions.",
       "secondaryNames": [],
-      "tags": ["gemstone", "gemstone-blue", "gemstone-green", "phosphate", "birthstone"],
-      "extendedData": { "mineralClass": "hydrated copper aluminium phosphate", "hardnessMohs": "5–6", "colourNote": "sky blue to blue-green, often veined with matrix", "birthMonth": "December", "birthMonthNumber": 12 }
+      "tags": ["gemstone", "gemstone-blue", "gemstone-green", "phosphate", "birthstone", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "hydrated copper aluminium phosphate", "hardnessMohs": "5–6", "colourNote": "sky blue to blue-green, often veined with matrix", "birthMonth": "December", "birthMonthNumber": 12, "traditionalBirthMonth": "December", "traditionalBirthMonthNumber": 12 }
     },
     {
       "canonicalName": "gemstone.gemstone.malachite",
@@ -286,6 +286,26 @@
       "secondaryNames": [],
       "tags": ["gemstone", "gemstone-green", "carbonate"],
       "extendedData": { "mineralClass": "copper carbonate hydroxide", "hardnessMohs": "3.5–4", "colourNote": "banded green, various shades" }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.bloodstone",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Bloodstone",
+      "description": "Bloodstone is a dark green variety of chalcedony jasper flecked with red spots of iron oxide (hematite), the 'blood' that gives the stone its name — the flecks form where iron impurities were trapped as the silica deposited. Also called heliotrope ('sun-turner') in antiquity, from a belief that the stone could turn the sun's reflection blood-red when placed in water, it was carved into seals in ancient Rome and Persia. In medieval Christian legend it was said to have formed at the foot of the cross, the red spots being drops of Christ's blood that fell onto green jasper, which made it a favoured stone for carved Passion scenes and martyrs' relics through the Renaissance. It is the traditional (pre-1912) birthstone for March, distinct from the modern list's aquamarine.",
+      "secondaryNames": [
+        { "name": "Heliotrope", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["gemstone", "gemstone-green", "chalcedony", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "chalcedony (quartz) with hematite inclusions", "hardnessMohs": "6.5–7", "colourNote": "dark green, flecked with red iron oxide", "traditionalBirthMonth": "March", "traditionalBirthMonthNumber": 3 }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.sardonyx",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Sardonyx",
+      "description": "Sardonyx is a banded variety of chalcedony combining reddish-brown sard with white or black onyx in parallel layers, the contrasting bands making it a favourite material for carved cameos and intaglio seals since antiquity — like carnelian, wax does not adhere to it, which made it popular for Greek and Roman signet rings. Roman soldiers reportedly wore sardonyx engraved with images of gods such as Mars for courage in battle, and it was later used extensively in Napoleonic-era cameo jewellery. It is the traditional (pre-1912) birthstone for August, distinct from the modern list's peridot.",
+      "secondaryNames": [],
+      "tags": ["gemstone", "gemstone-red", "gemstone-brown", "chalcedony", "traditional-birthstone"],
+      "extendedData": { "mineralClass": "chalcedony (quartz), banded sard and onyx", "hardnessMohs": "6.5–7", "colourNote": "banded reddish-brown and white/black", "traditionalBirthMonth": "August", "traditionalBirthMonthNumber": 8 }
     }
   ]
 }

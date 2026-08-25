@@ -15,6 +15,7 @@
         "symbol": "☉",
         "dayOfWeek": "Sunday",
         "metalAlchemy": "alchemy.metal.gold",
+        "preciousStone": "gemstone.gemstone.topaz",
         "qabalisticSephira": "qabalah.sephira.tiphareth",
         "rulesSign": ["astrology.zodiac-sign.leo"],
         "exaltedIn": "astrology.zodiac-sign.aries",
@@ -40,6 +41,7 @@
         "symbol": "☽",
         "dayOfWeek": "Monday",
         "metalAlchemy": "alchemy.metal.silver",
+        "preciousStone": "gemstone.gemstone.pearl",
         "qabalisticSephira": "qabalah.sephira.yesod",
         "rulesSign": ["astrology.zodiac-sign.cancer"],
         "exaltedIn": "astrology.zodiac-sign.taurus",
@@ -65,6 +67,7 @@
         "symbol": "☿",
         "dayOfWeek": "Wednesday",
         "metalAlchemy": "alchemy.metal.mercury",
+        "preciousStone": "gemstone.gemstone.opal",
         "qabalisticSephira": "qabalah.sephira.hod",
         "rulesSign": [
           "astrology.zodiac-sign.gemini",
@@ -96,6 +99,7 @@
         "symbol": "♀",
         "dayOfWeek": "Friday",
         "metalAlchemy": "alchemy.metal.copper",
+        "preciousStone": "gemstone.gemstone.emerald",
         "qabalisticSephira": "qabalah.sephira.netzach",
         "rulesSign": [
           "astrology.zodiac-sign.taurus",
@@ -127,6 +131,7 @@
         "symbol": "♂",
         "dayOfWeek": "Tuesday",
         "metalAlchemy": "alchemy.metal.iron",
+        "preciousStone": "gemstone.gemstone.ruby",
         "qabalisticSephira": "qabalah.sephira.geburah",
         "rulesSign": ["astrology.zodiac-sign.aries"],
         "traditionalRulesSign": [
@@ -156,6 +161,7 @@
         "symbol": "♃",
         "dayOfWeek": "Thursday",
         "metalAlchemy": "alchemy.metal.tin",
+        "preciousStone": "gemstone.gemstone.amethyst",
         "qabalisticSephira": "qabalah.sephira.chesed",
         "rulesSign": ["astrology.zodiac-sign.sagittarius"],
         "traditionalRulesSign": [
@@ -185,6 +191,7 @@
         "symbol": "♄",
         "dayOfWeek": "Saturday",
         "metalAlchemy": "alchemy.metal.lead",
+        "preciousStone": "gemstone.gemstone.onyx",
         "qabalisticSephira": "qabalah.sephira.binah",
         "rulesSign": ["astrology.zodiac-sign.capricorn"],
         "traditionalRulesSign": [
