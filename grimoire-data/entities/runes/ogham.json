@@ -40,7 +40,7 @@
         "phoneme": "B",
         "meaning": "birch, new beginning",
         "element": "astrology.element.air",
-        "deity": "Brigid",
+        "deityEpithet": "Brigid",
         "keywords": [
           "new beginnings",
           "purification",
@@ -92,7 +92,7 @@
         "phoneme": "L",
         "meaning": "rowan, protection",
         "element": "astrology.element.fire",
-        "deity": "Brigid / Tuatha Dé Danann",
+        "deityEpithet": "Brigid / Tuatha Dé Danann",
         "keywords": [
           "protection",
           "discernment",
@@ -144,7 +144,7 @@
         "phoneme": "F",
         "meaning": "alder, steadfastness",
         "element": "astrology.element.water",
-        "deity": "Nuada / Bran the Blessed",
+        "deityEpithet": "Nuada / Bran the Blessed",
         "keywords": [
           "steadfastness",
           "foundation",
@@ -196,7 +196,7 @@
         "phoneme": "S",
         "meaning": "willow, flow",
         "element": "astrology.element.water",
-        "deity": "Cailleach Bhéara",
+        "deityEpithet": "Cailleach Bhéara",
         "keywords": [
           "flexibility",
           "fluidity",
@@ -249,7 +249,7 @@
         "phoneme": "N",
         "meaning": "ash, world-tree",
         "element": "astrology.element.air",
-        "deity": "Lug Lámfhota",
+        "deityEpithet": "Lug Lámfhota",
         "keywords": [
           "world-tree",
           "cosmic order",
@@ -301,7 +301,7 @@
         "phoneme": "H",
         "meaning": "hawthorn, dread",
         "element": "astrology.element.air",
-        "deity": "the Sídhe / Otherworld powers",
+        "deityEpithet": "the Sídhe / Otherworld powers",
         "keywords": [
           "dread",
           "the fairy thorn",
@@ -353,7 +353,7 @@
         "phoneme": "D",
         "meaning": "oak, strength",
         "element": "astrology.element.earth",
-        "deity": "The Dagda",
+        "deityEpithet": "The Dagda",
         "keywords": [
           "strength",
           "endurance",
@@ -406,7 +406,7 @@
         "phoneme": "T",
         "meaning": "holly, warrior's craft",
         "element": "astrology.element.fire",
-        "deity": "Cú Chulainn / Holly King",
+        "deityEpithet": "Cú Chulainn / Holly King",
         "keywords": [
           "warrior",
           "winter vitality",
@@ -458,7 +458,7 @@
         "phoneme": "C",
         "meaning": "hazel, wisdom",
         "element": "astrology.element.air",
-        "deity": "Manannán mac Lir / Fionn",
+        "deityEpithet": "Manannán mac Lir / Fionn",
         "keywords": [
           "wisdom",
           "inspiration",
@@ -510,7 +510,7 @@
         "phoneme": "Q",
         "meaning": "apple, Otherworld beauty",
         "element": "astrology.element.water",
-        "deity": "Manannán mac Lir",
+        "deityEpithet": "Manannán mac Lir",
         "keywords": [
           "Otherworld",
           "Tír na nÓg",
@@ -563,7 +563,7 @@
         "phoneme": "M",
         "meaning": "vine, harvest of truth",
         "element": "astrology.element.water",
-        "deity": "Goibhniu (divine brewer)",
+        "deityEpithet": "Goibhniu (divine brewer)",
         "keywords": [
           "harvest",
           "intoxication",
@@ -616,7 +616,7 @@
         "phoneme": "G",
         "meaning": "ivy, spiralling tenacity",
         "element": "astrology.element.earth",
-        "deity": "the Dagda / Otherworld forces",
+        "deityEpithet": "the Dagda / Otherworld forces",
         "keywords": [
           "tenacity",
           "the spiral path",
@@ -668,7 +668,7 @@
         "phoneme": "Ng",
         "meaning": "reed, healing music",
         "element": "astrology.element.water",
-        "deity": "Manannán mac Lir",
+        "deityEpithet": "Manannán mac Lir",
         "keywords": [
           "flexibility",
           "music",
@@ -720,7 +720,7 @@
         "phoneme": "Z",
         "meaning": "blackthorn, coercion",
         "element": "astrology.element.earth",
-        "deity": "The Morrigan",
+        "deityEpithet": "The Morrigan",
         "keywords": [
           "coercion",
           "fate",
@@ -773,7 +773,7 @@
         "phoneme": "R",
         "meaning": "elder, the boundary",
         "element": "astrology.element.water",
-        "deity": "Cailleach Bhéara",
+        "deityEpithet": "Cailleach Bhéara",
         "keywords": [
           "endings",
           "Samhain",
@@ -826,7 +826,7 @@
         "phoneme": "A",
         "meaning": "pine, clarity",
         "element": "astrology.element.fire",
-        "deity": "Brigid (as keeper of the sacred flame)",
+        "deityEpithet": "Brigid (as keeper of the sacred flame)",
         "keywords": [
           "clarity",
           "far-seeing",
@@ -879,7 +879,7 @@
         "phoneme": "O",
         "meaning": "gorse, perennial vitality",
         "element": "astrology.element.fire",
-        "deity": "Lug (sun god)",
+        "deityEpithet": "Lug (sun god)",
         "keywords": [
           "optimism",
           "vitality",
@@ -931,7 +931,7 @@
         "phoneme": "U",
         "meaning": "heather, healing and luck",
         "element": "astrology.element.earth",
-        "deity": "Áine",
+        "deityEpithet": "Áine",
         "keywords": [
           "healing",
           "luck",
@@ -984,7 +984,7 @@
         "phoneme": "E",
         "meaning": "aspen, spirit communication",
         "element": "astrology.element.air",
-        "deity": "The Morrigan (as shapeshifter between worlds)",
+        "deityEpithet": "The Morrigan (as shapeshifter between worlds)",
         "keywords": [
           "trembling",
           "Otherworld communication",
@@ -1036,7 +1036,7 @@
         "phoneme": "I",
         "meaning": "yew, death and immortality",
         "element": "astrology.element.earth",
-        "deity": "The Dagda / ancestors",
+        "deityEpithet": "The Dagda / ancestors",
         "keywords": [
           "death",
           "immortality",
@@ -1089,7 +1089,7 @@
         "phoneme": "Ea",
         "meaning": "the sacred grove, beyond categories",
         "element": "astrology.element.air",
-        "deity": "Druids / collective sacred",
+        "deityEpithet": "Druids / collective sacred",
         "keywords": [
           "nemeton",
           "sacred grove",
@@ -1141,7 +1141,7 @@
         "phoneme": "Oi",
         "meaning": "gold, fate-thread",
         "element": "astrology.element.fire",
-        "deity": "Solar sovereignty / fate-spinners",
+        "deityEpithet": "Solar sovereignty / fate-spinners",
         "keywords": [
           "gold",
           "hidden value",
@@ -1194,7 +1194,7 @@
         "phoneme": "Ui",
         "meaning": "honeysuckle, binding and enchantment",
         "element": "astrology.element.water",
-        "deity": "Étaín (enchanted and transformed)",
+        "deityEpithet": "Étaín (enchanted and transformed)",
         "keywords": [
           "binding",
           "enchantment",
@@ -1247,7 +1247,7 @@
         "phoneme": "Io",
         "meaning": "gooseberry, hidden sweetness",
         "element": "astrology.element.earth",
-        "deity": "Flidais (goddess of the wild and the woods)",
+        "deityEpithet": "Flidais (goddess of the wild and the woods)",
         "keywords": [
           "perseverance",
           "hidden treasure",
@@ -1299,7 +1299,7 @@
         "phoneme": "Ae",
         "meaning": "twin hazel, wisdom renewed",
         "element": "astrology.element.air",
-        "deity": "Ogma (inventor of the Ogham)",
+        "deityEpithet": "Ogma (inventor of the Ogham)",
         "keywords": [
           "completion",
           "renewal",

@@ -234,6 +234,11 @@ function EntityDetailPage() {
   const isHoliday = entity.entityType === 'calendar.holiday'
   const isMoonEntity = entity.canonicalName === 'astrology.planet.luna'
   const isWuxing = entity.entityType === 'wuxing.phase'
+  const isSephira = entity.entityType === 'qabalah.sephira'
+  const isAlchemyMetal = entity.entityType === 'alchemy.metal'
+  const isEnochianTablet = entity.entityType === 'enochian.tablet'
+  const isGeomancyFigure = entity.entityType === 'geomancy.figure'
+  const isOghamLetter = entity.entityType === 'ogham.letter'
 
   const dignityLinks = isPlanet ? allCorrespondences.filter(l => DIGNITY_LABELS.has(l.label)) : []
   const spiritLinks  = isPlanet ? allCorrespondences.filter(l => PLANET_SPIRIT_LABELS.has(l.label)) : []
@@ -278,6 +283,19 @@ function EntityDetailPage() {
   const wuxingExtDataHide = isWuxing
     ? new Set(['season'])
     : undefined
+  // "divineName"/"divineNameHebrew" duplicate the attributed-divine-name link (Attributes
+  // panel already shows it, clickable, as "Divine Name" — the raw extendedData strings
+  // would show a second, plain-text "Divine Name" row with the same information).
+  const sephiraExtDataHide = isSephira
+    ? new Set(['divineName', 'divineNameHebrew'])
+    : undefined
+  // These extendedData keys hold the exact same canonical-name value as an
+  // attributed-* link the Attributes panel already renders (clickable) under the
+  // same auto-generated label — the raw extendedData row would just repeat it.
+  const alchemyMetalExtDataHide = isAlchemyMetal ? new Set(['planet']) : undefined
+  const enochianTabletExtDataHide = isEnochianTablet ? new Set(['element']) : undefined
+  const geomancyFigureExtDataHide = isGeomancyFigure ? new Set(['planet', 'zodiacSign']) : undefined
+  const oghamLetterExtDataHide = isOghamLetter ? new Set(['element']) : undefined
 
   const navToEntity = (cn: string) => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })
 
@@ -474,7 +492,7 @@ function EntityDetailPage() {
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? wuxingExtDataHide} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? wuxingExtDataHide ?? sephiraExtDataHide ?? alchemyMetalExtDataHide ?? enochianTabletExtDataHide ?? geomancyFigureExtDataHide ?? oghamLetterExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
