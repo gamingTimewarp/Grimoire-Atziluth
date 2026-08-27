@@ -2,7 +2,6 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { InMemoryAdapter } from '../src/adapters/in-memory/index.js'
 import { GraphEngine } from '../src/engines/graph-engine.js'
 import { EntityEngine } from '../src/engines/entity-engine.js'
-import { LinkLabel } from '../src/constants/link-labels.js'
 import { TraditionId } from '../src/constants/tradition-ids.js'
 import {
   DuplicateLinkError,
@@ -33,7 +32,7 @@ describe('GraphEngine.createLink', () => {
 
     expect(link.sourceCanonicalName).toBe('tarot.major.the-fool')
     expect(link.targetCanonicalName).toBe('letter.hebrew.aleph')
-    expect(link.label).toBe(LinkLabel.ATTRIBUTED_LETTER)
+    expect(link.label).toBe('attributed-letter')
     expect(link.traditionScope).toContain(TraditionId.GOLDEN_DAWN)
     expect(link.id).toBeTruthy()
   })
@@ -122,7 +121,7 @@ describe('GraphEngine.getNeighbours', () => {
     await graph.createLink(foolToKether)
 
     const links = await graph.getNeighbours('tarot.major.the-fool', {
-      labels: [LinkLabel.ATTRIBUTED_LETTER],
+      labels: ['attributed-letter'],
     })
     expect(links).toHaveLength(1)
     expect(links[0]?.targetCanonicalName).toBe('letter.hebrew.aleph')
@@ -164,7 +163,7 @@ describe('GraphEngine.linkExists', () => {
     const exists = await graph.linkExists(
       'tarot.major.the-fool',
       'letter.hebrew.aleph',
-      LinkLabel.ATTRIBUTED_LETTER
+      'attributed-letter'
     )
     expect(exists).toBe(true)
   })
@@ -174,7 +173,7 @@ describe('GraphEngine.linkExists', () => {
     const exists = await graph.linkExists(
       'tarot.major.the-fool',
       'letter.hebrew.aleph',
-      LinkLabel.ATTRIBUTED_LETTER
+      'attributed-letter'
     )
     expect(exists).toBe(false)
   })

@@ -62,10 +62,12 @@ export class GraphEngine {
   // ── Querying ───────────────────────────────────────────────────────────
 
   async queryLinks(query: LinkQuery, page?: Page): Promise<PagedResult<Link>> {
+    const limit = query.limit ?? page?.limit
+    const offset = query.offset ?? page?.offset
     return this.adapter.queryLinks({
       ...query,
-      limit: query.limit ?? page?.limit,
-      offset: query.offset ?? page?.offset,
+      ...(limit !== undefined ? { limit } : {}),
+      ...(offset !== undefined ? { offset } : {}),
     })
   }
 
@@ -88,8 +90,8 @@ export class GraphEngine {
     const result = await this.adapter.queryLinks({
       involvedCanonicalName: canonicalName,
       direction: options.direction ?? 'both',
-      labels: options.labels,
-      traditions: options.traditions,
+      ...(options.labels !== undefined ? { labels: options.labels } : {}),
+      ...(options.traditions !== undefined ? { traditions: options.traditions } : {}),
     })
     return result.items
   }

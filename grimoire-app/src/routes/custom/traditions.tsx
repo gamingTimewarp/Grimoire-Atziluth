@@ -9,8 +9,8 @@ import { Button } from '@/components/ui/Button'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 
-// Well-known built-in link labels from grimoire-core LinkLabel constants.
-// Kept inline to avoid the type/value name collision with `type LinkLabel = string`.
+// Well-known built-in link labels (grimoire-core's `LinkLabel` is just `type LinkLabel = string` —
+// no exported constants object — so the list is kept inline here).
 const WELL_KNOWN_LABELS = new Set([
   'corresponds-to', 'opposes', 'complements', 'precedes', 'follows',
   'part-of', 'contains', 'connects', 'has-shadow',

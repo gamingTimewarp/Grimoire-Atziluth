@@ -494,7 +494,7 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
 
       {!expanded && entry.notes && (
         <div style={{ padding: '0 20px 14px', fontSize: '12px', color: 'var(--color-text-muted)' }}>
-          {entry.notes.replace(/[#*`_~>\-]/g, '').slice(0, 120)}{entry.notes.replace(/[#*`_~>\-]/g, '').length > 120 ? '…' : ''}
+          {entry.notes.replace(/[#*`_~>-]/g, '').slice(0, 120)}{entry.notes.replace(/[#*`_~>-]/g, '').length > 120 ? '…' : ''}
         </div>
       )}
 

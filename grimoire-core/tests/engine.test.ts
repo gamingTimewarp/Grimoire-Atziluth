@@ -8,7 +8,6 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { InMemoryAdapter } from '../src/adapters/in-memory/index.js'
 import { createGrimoireEngine, GrimoireEngine } from '../src/engines/grimoire-engine.js'
 import { TraditionId } from '../src/constants/tradition-ids.js'
-import { LinkLabel } from '../src/constants/link-labels.js'
 import { NotInitializedError } from '../src/utils/errors.js'
 import { theFool, kether, mars, aleph } from './fixtures/entities.fixture.js'
 import { goldenDawnTradition, thothTradition } from './fixtures/traditions.fixture.js'
@@ -52,8 +51,8 @@ describe('GrimoireEngine integration', () => {
     )
 
     expect(attrs.byTradition).toHaveLength(1)
-    expect(attrs.byTradition[0]!.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
-    expect(attrs.byTradition[0]!.fields[LinkLabel.ATTRIBUTED_LETTER]![0]!.targetPrimaryDisplayName).toBe('Aleph')
+    expect(attrs.byTradition[0]!.fields['attributed-letter']).toHaveLength(1)
+    expect(attrs.byTradition[0]!.fields['attributed-letter']![0]!.targetPrimaryDisplayName).toBe('Aleph')
 
     await engine.close()
   })
@@ -97,7 +96,7 @@ describe('GrimoireEngine integration', () => {
 
     expect(attrs.byTradition).toHaveLength(2)
     for (const tradResult of attrs.byTradition) {
-      expect(tradResult.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
+      expect(tradResult.fields['attributed-letter']).toHaveLength(1)
     }
 
     await engine.close()

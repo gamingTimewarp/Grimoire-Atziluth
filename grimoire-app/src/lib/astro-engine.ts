@@ -1165,7 +1165,7 @@ function calcMC(gastHours: number, lonDeg: number): number {
   const ramc = normLon((gastHours * 15) + lonDeg)
   const ramcRad = ramc * Math.PI / 180
   const epsRad  = OBLIQUITY_DEG * Math.PI / 180
-  let mc = Math.atan2(Math.sin(ramcRad), Math.cos(ramcRad) * Math.cos(epsRad)) * 180 / Math.PI
+  const mc = Math.atan2(Math.sin(ramcRad), Math.cos(ramcRad) * Math.cos(epsRad)) * 180 / Math.PI
   return normLon(mc)
 }
 
@@ -1174,7 +1174,7 @@ function calcAscendant(gastHours: number, latDeg: number, lonDeg: number): numbe
   const ramcRad = ramc * Math.PI / 180
   const epsRad  = OBLIQUITY_DEG * Math.PI / 180
   const latRad  = latDeg * Math.PI / 180
-  let asc = Math.atan2(
+  const asc = Math.atan2(
     Math.cos(ramcRad),
     -(Math.sin(ramcRad) * Math.cos(epsRad) + Math.tan(latRad) * Math.sin(epsRad))
   ) * 180 / Math.PI

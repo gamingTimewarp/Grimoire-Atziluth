@@ -4,8 +4,6 @@ import { EntityEngine } from '../src/engines/entity-engine.js'
 import { GraphEngine } from '../src/engines/graph-engine.js'
 import { TraditionEngine } from '../src/engines/tradition-engine.js'
 import { TraditionId } from '../src/constants/tradition-ids.js'
-import { LinkLabel } from '../src/constants/link-labels.js'
-import { EntityType } from '../src/constants/entity-types.js'
 import {
   CanonicalNameConflictError,
   ImmutableTraditionError,
@@ -19,7 +17,7 @@ import { foolToAleph, foolToKether, foolToAirGD } from './fixtures/links.fixture
 // Air element entity (needed for element attribution tests)
 const airElement = {
   canonicalName: 'astrology.element.air',
-  entityType: EntityType.ELEMENT,
+  entityType: 'astrology.element',
   primaryDisplayName: 'Air',
   tags: ['element'],
   isBuiltIn: true,
@@ -49,8 +47,8 @@ describe('TraditionEngine.createTradition', () => {
     expect(tradition.displayName).toBe('Golden Dawn')
     expect(tradition.isBuiltIn).toBe(true)
     expect(tradition.attributionFields).toHaveLength(5)
-    expect(tradition.ownedLinkLabels).toContain(LinkLabel.ATTRIBUTED_PLANET)
-    expect(tradition.ownedLinkLabels).toContain(LinkLabel.ATTRIBUTED_LETTER)
+    expect(tradition.ownedLinkLabels).toContain('attributed-planet')
+    expect(tradition.ownedLinkLabels).toContain('attributed-letter')
   })
 
   it('throws CanonicalNameConflictError on duplicate', async () => {
@@ -147,8 +145,8 @@ describe('TraditionEngine.getAttributionsForEntity', () => {
     expect(result.byTradition).toHaveLength(1)
     const gdResult = result.byTradition[0]!
     expect(gdResult.tradition.canonicalName).toBe(TraditionId.GOLDEN_DAWN)
-    expect(gdResult.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
-    expect(gdResult.fields[LinkLabel.ATTRIBUTED_LETTER]![0]!.targetCanonicalName).toBe('letter.hebrew.aleph')
+    expect(gdResult.fields['attributed-letter']).toHaveLength(1)
+    expect(gdResult.fields['attributed-letter']![0]!.targetCanonicalName).toBe('letter.hebrew.aleph')
   })
 
   it('includes universal links in all tradition results', async () => {
@@ -165,7 +163,7 @@ describe('TraditionEngine.getAttributionsForEntity', () => {
     )
     const gdResult = result.byTradition[0]!
     // Only GD-owned labels appear; universal corresponds-to is not a GD field
-    expect(gdResult.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
+    expect(gdResult.fields['attributed-letter']).toHaveLength(1)
   })
 
   it('returns attributions for multiple traditions simultaneously', async () => {
@@ -183,8 +181,8 @@ describe('TraditionEngine.getAttributionsForEntity', () => {
     const gdResult = result.byTradition.find(t => t.tradition.canonicalName === TraditionId.GOLDEN_DAWN)!
     const thothResult = result.byTradition.find(t => t.tradition.canonicalName === TraditionId.THOTH_CROWLEY)!
 
-    expect(gdResult.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
-    expect(thothResult.fields[LinkLabel.ATTRIBUTED_LETTER]).toHaveLength(1)
+    expect(gdResult.fields['attributed-letter']).toHaveLength(1)
+    expect(thothResult.fields['attributed-letter']).toHaveLength(1)
   })
 
   it('isolates tradition-specific links correctly', async () => {
@@ -202,9 +200,9 @@ describe('TraditionEngine.getAttributionsForEntity', () => {
     const thothResult = result.byTradition.find(t => t.tradition.canonicalName === TraditionId.THOTH_CROWLEY)!
 
     // GD sees the air attribution
-    expect(gdResult.fields[LinkLabel.ATTRIBUTED_ELEMENT]).toHaveLength(1)
+    expect(gdResult.fields['attributed-element']).toHaveLength(1)
     // Thoth does NOT see the GD-only attribution
-    expect(thothResult.fields[LinkLabel.ATTRIBUTED_ELEMENT]).toHaveLength(0)
+    expect(thothResult.fields['attributed-element']).toHaveLength(0)
   })
 
   it('throws TraditionNotFoundError for missing traditions', async () => {
@@ -239,7 +237,7 @@ describe('TraditionEngine.getTraditionsForLinkLabel', () => {
     await traditions.createTradition(goldenDawnTradition)
     await traditions.createTradition(thothTradition)
 
-    const result = await traditions.getTraditionsForLinkLabel(LinkLabel.ATTRIBUTED_PLANET)
+    const result = await traditions.getTraditionsForLinkLabel('attributed-planet')
     expect(result.length).toBe(2)
     const names = result.map(t => t.canonicalName)
     expect(names).toContain(TraditionId.GOLDEN_DAWN)

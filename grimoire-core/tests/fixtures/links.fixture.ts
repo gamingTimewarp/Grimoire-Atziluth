@@ -1,12 +1,11 @@
 import type { CreateLinkInput } from '../../src/types/link.types.js'
-import { LinkLabel } from '../../src/constants/link-labels.js'
 import { TraditionId } from '../../src/constants/tradition-ids.js'
 
 /** GD attribution: The Fool → Aleph (Hebrew letter) */
 export const foolToAleph: CreateLinkInput = {
   sourceCanonicalName: 'tarot.major.the-fool',
   targetCanonicalName: 'letter.hebrew.aleph',
-  label: LinkLabel.ATTRIBUTED_LETTER,
+  label: 'attributed-letter',
   bidirectional: false,
   traditionScope: [TraditionId.GOLDEN_DAWN, TraditionId.THOTH_CROWLEY],
   isBuiltIn: true,
@@ -17,7 +16,7 @@ export const foolToAleph: CreateLinkInput = {
 export const foolToKether: CreateLinkInput = {
   sourceCanonicalName: 'tarot.major.the-fool',
   targetCanonicalName: 'qabalah.sephira.kether',
-  label: LinkLabel.CORRESPONDS_TO,
+  label: 'corresponds-to',
   bidirectional: true,
   traditionScope: [],  // universal
   isBuiltIn: true,
@@ -28,7 +27,7 @@ export const foolToKether: CreateLinkInput = {
 export const foolToAirGD: CreateLinkInput = {
   sourceCanonicalName: 'tarot.major.the-fool',
   targetCanonicalName: 'astrology.element.air',
-  label: LinkLabel.ATTRIBUTED_ELEMENT,
+  label: 'attributed-element',
   bidirectional: false,
   traditionScope: [TraditionId.GOLDEN_DAWN],
   isBuiltIn: true,

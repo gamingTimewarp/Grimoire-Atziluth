@@ -33,7 +33,7 @@ export function loadSeedDirectory(dataDir: string): SeedData {
   try {
     manifest = JSON.parse(readFileSync(manifestPath, 'utf-8')) as SeedManifest
   } catch (e) {
-    throw new Error(`Failed to read seed manifest at "${manifestPath}": ${String(e)}`)
+    throw new Error(`Failed to read seed manifest at "${manifestPath}": ${String(e)}`, { cause: e })
   }
 
   const traditions: TraditionSeedRecord[] = []
@@ -47,7 +47,7 @@ export function loadSeedDirectory(dataDir: string): SeedData {
       try {
         raw = JSON.parse(readFileSync(fullPath, 'utf-8'))
       } catch (e) {
-        throw new Error(`Failed to read seed file "${fullPath}": ${String(e)}`)
+        throw new Error(`Failed to read seed file "${fullPath}": ${String(e)}`, { cause: e })
       }
 
       if (group.type === 'traditions') {

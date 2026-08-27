@@ -968,7 +968,7 @@ export class SqliteAdapter implements StorageAdapter {
       .get(id)
     if (!existing) throw new TraditionNotFoundError(id)
 
-    this.db.prepare<[string, string | null, string]>(`
+    this.db.prepare<[string, string | null, string, string]>(`
       UPDATE traditions SET display_name = ?, description = ?, updated_at = ?
       WHERE id = ?
     `).run(

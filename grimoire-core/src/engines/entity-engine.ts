@@ -130,7 +130,10 @@ export class EntityEngine {
     page?: Page
   ): Promise<PagedResult<EntitySearchResult>> {
     if (!query.trim()) {
-      const all = await this.adapter.listEntities({ entityType: filter?.entityType }, page)
+      const all = await this.adapter.listEntities(
+        filter?.entityType !== undefined ? { entityType: filter.entityType } : {},
+        page
+      )
       return {
         items: all.items.map(entity => ({ entity, matchedOn: [], score: 0 })),
         total: all.total,
@@ -208,8 +211,8 @@ export class EntityEngine {
       canonicalName: newCanonicalName,
       entityType: source.entityType,
       primaryDisplayName: source.primaryDisplayName,
-      description: source.description,
-      userNotes: source.userNotes,
+      ...(source.description !== undefined ? { description: source.description } : {}),
+      ...(source.userNotes !== undefined ? { userNotes: source.userNotes } : {}),
       extendedData: { ...source.extendedData },
       tags: [...source.tags],
       isBuiltIn: false,

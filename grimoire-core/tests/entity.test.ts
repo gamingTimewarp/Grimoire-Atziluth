@@ -1,7 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { InMemoryAdapter } from '../src/adapters/in-memory/index.js'
 import { EntityEngine } from '../src/engines/entity-engine.js'
-import { EntityType } from '../src/constants/entity-types.js'
 import {
   CanonicalNameConflictError,
   EntityNotFoundError,
@@ -160,7 +159,7 @@ describe('EntityEngine.listEntities', () => {
     const { engine } = makeEngine()
     await engine.createEntity(theFool)
     await engine.createEntity(kether)
-    const result = await engine.listEntities({ entityType: EntityType.TAROT_CARD })
+    const result = await engine.listEntities({ entityType: 'tarot.card' })
     expect(result.items).toHaveLength(1)
     expect(result.items[0]?.canonicalName).toBe('tarot.major.the-fool')
   })

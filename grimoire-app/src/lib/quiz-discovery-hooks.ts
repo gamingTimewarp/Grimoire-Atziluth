@@ -56,7 +56,6 @@ export function useEntityTypeDiscovery(
           return next
         })
       })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [adapter, enabledEntityTypes, defsByType, defsLoading])
 
   return { entityTypes, defsByType, defsLoading, groupOverviews }

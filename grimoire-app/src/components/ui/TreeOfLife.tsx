@@ -198,7 +198,7 @@ function avgHsvHex(hex1: string, hex2: string): string {
   // Clamp V so paths are always readable against the SVG background
   const v = Math.max((v1 + v2) / 2, 0.50)
   // Circular hue mean — skip if both achromatic
-  let h = 0
+  let h: number
   if (s1 < 0.05 && s2 < 0.05) {
     h = 0
   } else if (s1 < 0.05) {
@@ -347,7 +347,6 @@ export function TreeOfLife({ mode, onNavigate, size = 500, showDaath = true }: T
       const nameHalo = haloFor(nameColor)
       return { node, x, y, colors, isDaath, num, hebrew, chakra, planet, hasNum, hitBottom, nameColor, nameHalo }
     })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isSephiroth, numberedSephiroth, qliphoth, daath, showDaath, chakraMap, planetSymbols])
 
   if (loading) {

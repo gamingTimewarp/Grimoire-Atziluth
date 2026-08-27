@@ -64,12 +64,12 @@ export class Seeder {
         await this.engine.adapter.createTradition({
           canonicalName: record.canonicalName,
           displayName: record.displayName,
-          description: record.description,
+          ...(record.description !== undefined ? { description: record.description } : {}),
           isBuiltIn: true,
           attributionFields: (record.attributionFields ?? []).map((f, i) => ({
             linkLabel: f.linkLabel,
             displayName: f.displayName,
-            targetEntityType: f.targetEntityType,
+            ...(f.targetEntityType !== undefined ? { targetEntityType: f.targetEntityType } : {}),
             allowMultiple: f.allowMultiple ?? false,
             sortOrder: f.sortOrder ?? i,
           })),
@@ -80,7 +80,7 @@ export class Seeder {
         if (e instanceof CanonicalNameConflictError) {
           this.log(`  Skip (exists): tradition ${record.canonicalName}`)
         } else {
-          throw new Error(`Failed to seed tradition "${record.canonicalName}": ${String(e)}`)
+          throw new Error(`Failed to seed tradition "${record.canonicalName}": ${String(e)}`, { cause: e })
         }
       }
     }
@@ -93,7 +93,7 @@ export class Seeder {
           canonicalName: record.canonicalName,
           entityType: record.entityType,
           primaryDisplayName: record.primaryDisplayName,
-          description: record.description,
+          ...(record.description !== undefined ? { description: record.description } : {}),
           extendedData: record.extendedData ?? {},
           tags: record.tags ?? [],
           isBuiltIn: true,
@@ -109,7 +109,7 @@ export class Seeder {
         if (e instanceof CanonicalNameConflictError) {
           this.log(`  Skip (exists): entity ${record.canonicalName}`)
         } else {
-          throw new Error(`Failed to seed entity "${record.canonicalName}": ${String(e)}`)
+          throw new Error(`Failed to seed entity "${record.canonicalName}": ${String(e)}`, { cause: e })
         }
       }
     }
@@ -134,7 +134,8 @@ export class Seeder {
           this.log(`  Skip (exists): link ${record.source} -[${record.label}]-> ${record.target}`)
         } else {
           throw new Error(
-            `Failed to seed link "${record.source}" -[${record.label}]-> "${record.target}": ${String(e)}`
+            `Failed to seed link "${record.source}" -[${record.label}]-> "${record.target}": ${String(e)}`,
+            { cause: e }
           )
         }
       }

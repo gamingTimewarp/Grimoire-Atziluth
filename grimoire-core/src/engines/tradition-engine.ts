@@ -240,7 +240,7 @@ export class TraditionEngine {
     return this.adapter.createTradition({
       canonicalName: newCanonicalName,
       displayName: newDisplayName,
-      description: source.description,
+      ...(source.description !== undefined ? { description: source.description } : {}),
       isBuiltIn: false,
       forkedFromCanonicalName: sourceCanonicalName,
       attributionFields: source.attributionFields.map(f => ({

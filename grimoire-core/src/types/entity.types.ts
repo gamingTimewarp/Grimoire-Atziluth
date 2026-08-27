@@ -15,14 +15,12 @@ export type CanonicalName = string
 
 /**
  * An open string type for entity classification.
- * Use the EntityType constants from src/constants/entity-types.ts for well-known types.
  * Custom/user-defined entity classes use arbitrary strings.
  */
 export type EntityType = string
 
 /**
  * An open string type for link classification.
- * Use the LinkLabel constants from src/constants/link-labels.ts for well-known labels.
  */
 export type LinkLabel = string
 

@@ -1,7 +1,5 @@
 import type { CreateTraditionInput } from '../../src/types/tradition.types.js'
 import { TraditionId } from '../../src/constants/tradition-ids.js'
-import { LinkLabel } from '../../src/constants/link-labels.js'
-import { EntityType } from '../../src/constants/entity-types.js'
 
 export const goldenDawnTradition: CreateTraditionInput = {
   canonicalName: TraditionId.GOLDEN_DAWN,
@@ -10,37 +8,37 @@ export const goldenDawnTradition: CreateTraditionInput = {
   isBuiltIn: true,
   attributionFields: [
     {
-      linkLabel: LinkLabel.ATTRIBUTED_PLANET,
+      linkLabel: 'attributed-planet',
       displayName: 'Attributed Planet',
-      targetEntityType: EntityType.PLANET,
+      targetEntityType: 'astrology.planet',
       allowMultiple: false,
       sortOrder: 0,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_SIGN,
+      linkLabel: 'attributed-sign',
       displayName: 'Attributed Sign',
-      targetEntityType: EntityType.ZODIAC_SIGN,
+      targetEntityType: 'astrology.sign',
       allowMultiple: false,
       sortOrder: 1,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_ELEMENT,
+      linkLabel: 'attributed-element',
       displayName: 'Attributed Element',
-      targetEntityType: EntityType.ELEMENT,
+      targetEntityType: 'astrology.element',
       allowMultiple: false,
       sortOrder: 2,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_LETTER,
+      linkLabel: 'attributed-letter',
       displayName: 'Hebrew Letter',
-      targetEntityType: EntityType.HEBREW_LETTER,
+      targetEntityType: 'letter.hebrew',
       allowMultiple: false,
       sortOrder: 3,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_PATH,
+      linkLabel: 'attributed-path',
       displayName: 'Attributed Path',
-      targetEntityType: EntityType.PATH,
+      targetEntityType: 'qabalah.path',
       allowMultiple: false,
       sortOrder: 4,
     },
@@ -54,30 +52,30 @@ export const thothTradition: CreateTraditionInput = {
   isBuiltIn: true,
   attributionFields: [
     {
-      linkLabel: LinkLabel.ATTRIBUTED_PLANET,
+      linkLabel: 'attributed-planet',
       displayName: 'Attributed Planet',
-      targetEntityType: EntityType.PLANET,
+      targetEntityType: 'astrology.planet',
       allowMultiple: false,
       sortOrder: 0,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_SIGN,
+      linkLabel: 'attributed-sign',
       displayName: 'Attributed Sign',
-      targetEntityType: EntityType.ZODIAC_SIGN,
+      targetEntityType: 'astrology.sign',
       allowMultiple: false,
       sortOrder: 1,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_ELEMENT,
+      linkLabel: 'attributed-element',
       displayName: 'Attributed Element',
-      targetEntityType: EntityType.ELEMENT,
+      targetEntityType: 'astrology.element',
       allowMultiple: false,
       sortOrder: 2,
     },
     {
-      linkLabel: LinkLabel.ATTRIBUTED_LETTER,
+      linkLabel: 'attributed-letter',
       displayName: 'Hebrew Letter',
-      targetEntityType: EntityType.HEBREW_LETTER,
+      targetEntityType: 'letter.hebrew',
       allowMultiple: false,
       sortOrder: 3,
     },

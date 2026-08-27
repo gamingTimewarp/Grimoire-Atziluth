@@ -1,9 +1,8 @@
 import type { CreateEntityInput } from '../../src/types/entity.types.js'
-import { EntityType } from '../../src/constants/entity-types.js'
 
 export const theFool: CreateEntityInput = {
   canonicalName: 'tarot.major.the-fool',
-  entityType: EntityType.TAROT_CARD,
+  entityType: 'tarot.card',
   primaryDisplayName: 'The Fool',
   description: 'The first card of the Major Arcana. Numbered 0.',
   tags: ['major-arcana', 'tarot'],
@@ -26,7 +25,7 @@ export const theFool: CreateEntityInput = {
 
 export const theMagician: CreateEntityInput = {
   canonicalName: 'tarot.major.the-magician',
-  entityType: EntityType.TAROT_CARD,
+  entityType: 'tarot.card',
   primaryDisplayName: 'The Magician',
   description: 'The second card of the Major Arcana. Numbered 1.',
   tags: ['major-arcana', 'tarot'],
@@ -41,7 +40,7 @@ export const theMagician: CreateEntityInput = {
 
 export const kether: CreateEntityInput = {
   canonicalName: 'qabalah.sephira.kether',
-  entityType: EntityType.SEPHIRA,
+  entityType: 'qabalah.sephira',
   primaryDisplayName: 'Kether',
   description: 'The Crown. First and highest of the sephiroth on the Tree of Life.',
   tags: ['sephira', 'qabalah'],
@@ -58,7 +57,7 @@ export const kether: CreateEntityInput = {
 
 export const mars: CreateEntityInput = {
   canonicalName: 'astrology.planet.mars',
-  entityType: EntityType.PLANET,
+  entityType: 'astrology.planet',
   primaryDisplayName: 'Mars',
   description: 'The planet Mars. Associated with war, energy, and action.',
   tags: ['planet', 'astrology'],
@@ -70,7 +69,7 @@ export const mars: CreateEntityInput = {
 
 export const aleph: CreateEntityInput = {
   canonicalName: 'letter.hebrew.aleph',
-  entityType: EntityType.HEBREW_LETTER,
+  entityType: 'letter.hebrew',
   primaryDisplayName: 'Aleph',
   description: 'First letter of the Hebrew alphabet. A Mother letter.',
   tags: ['hebrew-letter', 'letter'],
