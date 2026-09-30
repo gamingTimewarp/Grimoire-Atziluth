@@ -9,17 +9,27 @@ import { useNavigate } from '@tanstack/react-router'
 import { WidgetCard } from '@/components/ui/WidgetCard'
 import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase } from '@/lib/astro-calc'
 import { getSunSignForMode, getVoidOfCourseMoon } from '@/lib/astro-engine'
+import { getHolidaysForYear } from '@/lib/holiday-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
+
+function getTodaysHolidays(date: Date) {
+  return getHolidaysForYear(date.getFullYear()).filter(h =>
+    h.time.getFullYear() === date.getFullYear() &&
+    h.time.getMonth() === date.getMonth() &&
+    h.time.getDate() === date.getDate()
+  )
+}
 
 export function DayInfoWidget() {
   const navigate = useNavigate()
   const date = new Date()
   const { astrologyMode } = loadTraditionSettings()
-  const moon   = getMoonPhase(date)
-  const ruler  = getPlanetaryDayRuler(date)
-  const sun    = getSunSignForMode(date, astrologyMode)
-  const wuxing = getWuxingPhase(date)
-  const voc    = getVoidOfCourseMoon(date)
+  const moon     = getMoonPhase(date)
+  const ruler    = getPlanetaryDayRuler(date)
+  const sun      = getSunSignForMode(date, astrologyMode)
+  const wuxing   = getWuxingPhase(date)
+  const voc      = getVoidOfCourseMoon(date)
+  const holidays = getTodaysHolidays(date)
 
   const chip = (label: string, sub: string, cn?: string) => {
     const inner = (
@@ -58,6 +68,11 @@ export function DayInfoWidget() {
         {chip(`${sun.symbol} ${sun.name}`, 'Sun sign', sun.canonicalName)}
         {chip(`${wuxing.nameZh} ${wuxing.name}`, wuxing.season + ' season', wuxing.canonicalName)}
         {voc.isVoid && chip('☽ v/c', `${voc.degreesRemaining.toFixed(1)}° to ingress`)}
+        {holidays.map(h => chip(
+          `${h.emoji} ${h.name}`,
+          h.durationDays > 1 ? `Day ${h.dayIndex} of ${h.durationDays}` : 'Today',
+          h.canonicalName
+        ))}
       </div>
     </WidgetCard>
   )

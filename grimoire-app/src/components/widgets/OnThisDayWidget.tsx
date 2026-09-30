@@ -7,7 +7,7 @@
 
 import { useEffect, useState } from 'react'
 import { useNavigate } from '@tanstack/react-router'
-import { BookMarked, PenLine } from 'lucide-react'
+import { BookMarked, Info, PenLine } from 'lucide-react'
 import { WidgetCard } from '@/components/ui/WidgetCard'
 import { ActivityItem } from './ActivityItem'
 import { listReadingsOnThisDay, listJournalEntriesOnThisDay } from '@/lib/reading-db'
@@ -40,15 +40,31 @@ export function OnThisDayWidget() {
   }, [])
 
   if (!loaded) return null
-  if (readings.length === 0 && entries.length === 0) return null
+
+  const infoAction = (
+    <span
+      title="Shows readings and journal entries you made on this same month and day in past years. Empty until you have history to look back on."
+      style={{ display: 'flex', color: 'var(--color-text-subtle)', cursor: 'default' }}
+    >
+      <Info size={13} />
+    </span>
+  )
 
   const items = [
     ...readings.map(r => ({ kind: 'reading' as const, date: r.readingDate, data: r })),
     ...entries.map(e => ({ kind: 'entry' as const, date: e.entryDate, data: e })),
   ].sort((a, b) => b.date.localeCompare(a.date)).slice(0, MAX_SHOWN)
 
+  if (items.length === 0) {
+    return (
+      <WidgetCard title="On This Day" action={infoAction}>
+        <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Nothing on this day in past years.</div>
+      </WidgetCard>
+    )
+  }
+
   return (
-    <WidgetCard title="On This Day">
+    <WidgetCard title="On This Day" action={infoAction}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
         {items.map(item => {
           const year = item.date.slice(0, 4)
@@ -60,7 +76,7 @@ export function OnThisDayWidget() {
                 icon={<BookMarked size={13} />}
                 label={spreadById.get(r.spreadId ?? '')?.displayName ?? 'Free Reading'}
                 sub={`${deckById.get(r.deckId)?.displayName ?? r.deckId} · ${year}`}
-                onClick={() => navigate({ to: '/journal' })}
+                onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
               />
             )
           }
@@ -71,7 +87,7 @@ export function OnThisDayWidget() {
               icon={<PenLine size={13} />}
               label={e.title ?? 'Journal Entry'}
               sub={year}
-              onClick={() => navigate({ to: '/journal' })}
+              onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
             />
           )
         })}
