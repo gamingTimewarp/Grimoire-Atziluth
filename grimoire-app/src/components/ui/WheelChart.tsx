@@ -273,7 +273,13 @@ export function WheelChart({
 
   return (
     <div style={{ position: 'relative', width: '100%', maxWidth: size }}>
-      <svg viewBox="0 0 500 500" width="100%" style={{ display: 'block', aspectRatio: '1 / 1' }}>
+      {/* Explicit font-family (not just inherited from the page) works around an
+          Android WebView quirk where <text> inside an inline <svg> doesn't
+          reliably fall through a unicode-range @font-face chain the way plain
+          HTML text does — planet glyphs added after most OEM font builds
+          (e.g. Eris ⯰, U+2BF0; see index.css) can render as tofu there
+          otherwise, even though the bundled fallback font covers them. */}
+      <svg viewBox="0 0 500 500" width="100%" style={{ display: 'block', aspectRatio: '1 / 1', fontFamily: 'var(--font-sans)' }}>
 
         {/* ── Background ── */}
         <circle cx={CX} cy={CY} r={R_ZODIAC_OUTER} fill="var(--color-surface-1)" stroke="var(--color-border)" strokeWidth="1" />

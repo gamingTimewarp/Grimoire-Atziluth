@@ -16,8 +16,16 @@
   unicode-range: U+260A-260D, U+263D, U+263F-2640, U+2642-2653, U+26B3-26BB,
     U+26CE, U+1F701-1F704, U+1F708, U+1F70D, U+1F70F, U+1F75B, U+1F76A;
 }
+/* Kept as a separate font-family (not a 2nd @font-face under the same name)
+ * — some Android WebView builds don't reliably union multiple same-named
+ * @font-face rules split by unicode-range, silently dropping every codepoint
+ * that lives only in the 2nd/3rd/etc. rule (e.g. Eris's ⯰, U+2BF0, appeared
+ * as tofu everywhere it was used — an inline SVG wheel chart AND a plain
+ * HTML span alike — because it's declared only here, never in the block
+ * above). Both families are listed explicitly in --font-sans below.
+ */
 @font-face {
-  font-family: "Noto Symbols Fallback";
+  font-family: "Noto Symbols 2 Fallback";
   src: url("/fonts/NotoSansSymbols2-subset.woff2") format("woff2");
   font-display: swap;
   unicode-range: U+25A1, U+25B3, U+2609, U+2630-2637, U+263C, U+2BF0;
@@ -54,7 +62,7 @@
   --color-text-muted: #7a7a8f;
   --color-text-subtle: #4a4a60;
   --color-danger: #c44a4a;
-  --font-sans: "Inter", "Noto Symbols Fallback", "Noto Runic Fallback", "Noto Ogham Fallback", system-ui, sans-serif;
+  --font-sans: "Inter", "Noto Symbols Fallback", "Noto Symbols 2 Fallback", "Noto Runic Fallback", "Noto Ogham Fallback", system-ui, sans-serif;
 }
 
 * {
