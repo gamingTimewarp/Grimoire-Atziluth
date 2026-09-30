@@ -150,7 +150,27 @@ function RecordReadingPage() {
       }
     }
     getAllCustomDecks()
-      .then(records => setDeckOptions([...builtIn, ...records.map(r => { const f = deckRecordToFilter(r); return { id: f.id, label: f.displayName, filter: f } })]))
+      .then(records => {
+        const custom: FlatDeckOption[] = []
+        for (const r of records) {
+          const f = deckRecordToFilter(r)
+          if (f.variants?.length) {
+            // Sub-decks (see CustomDeckSubDeck) — same flattening as built-in
+            // deck variants above, just carrying an explicit card list
+            // instead of tags.
+            for (const v of f.variants) {
+              custom.push({
+                id: v.id,
+                label: `${f.displayName} — ${v.label}`,
+                filter: { ...f, id: v.id, cardCanonicalNames: v.cardCanonicalNames },
+              })
+            }
+          } else {
+            custom.push({ id: f.id, label: f.displayName, filter: f })
+          }
+        }
+        setDeckOptions([...builtIn, ...custom])
+      })
       .catch(() => setDeckOptions(builtIn))
 
     const { astrologyMode } = loadTraditionSettings()
@@ -261,7 +281,7 @@ function RecordReadingPage() {
         traditionSnapshot: [],
         astroSnapshot: null,
       }, { astroSnapshot })
-      navigate({ to: '/journal' })
+      navigate({ to: '/journal', search: { linkEntity: undefined } })
     } catch (err) {
       setSaveError(err instanceof Error ? err.message : 'Failed to save reading.')
       setSaving(false)

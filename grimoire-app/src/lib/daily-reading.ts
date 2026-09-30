@@ -12,7 +12,7 @@ import { getHomeLocation } from '@/lib/settings-store'
 import { todayInZone } from '@/lib/timezone'
 import { BUILT_IN_DECK_FILTERS, BUILT_IN_SPREADS } from '@/lib/built-in-data'
 import type { DeckFilter } from '@/lib/built-in-data'
-import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
+import { getAllCustomDecks, deckRecordToFilter, getAllCustomSpreads, spreadRecordToDefinition } from '@/lib/custom-db'
 
 function fisherYates<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -62,7 +62,21 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
   if (!deckFilter) {
     const customDecks = await getAllCustomDecks()
     const customRecord = customDecks.find(d => d.id === dailyDeckId)
-    if (customRecord) deckFilter = deckRecordToFilter(customRecord)
+    if (customRecord) {
+      deckFilter = deckRecordToFilter(customRecord)
+    } else {
+      // Search inside custom decks' own sub-deck variants
+      for (const record of customDecks) {
+        const filter = deckRecordToFilter(record)
+        const variant = filter.variants?.find(v => v.id === dailyDeckId)
+        if (variant) {
+          deckFilter  = { ...filter, cardCanonicalNames: variant.cardCanonicalNames }
+          tags        = variant.tags       ?? filter.tags
+          entityType  = variant.entityType ?? filter.entityType
+          break
+        }
+      }
+    }
   }
 
   // Guard: no filter resolved, or filter would match everything
@@ -85,8 +99,18 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
   }
   if (!items.length) return
 
-  // Resolve spread
-  const spread = dailySpreadId ? BUILT_IN_SPREADS.find(s => s.id === dailySpreadId) ?? null : null
+  // Resolve spread. dailySpreadId === null means "Single card (default)" (see
+  // the settings picker) — a real 1-position spread, not a true free
+  // reading — so it must resolve to the 'single' built-in, not to no spread
+  // at all. A configured id can also name a custom spread, same as the deck
+  // resolution above; an id that matches neither also falls back to 'single'
+  // rather than silently degrading to a free reading.
+  const customSpreads = await getAllCustomSpreads()
+  const spreadCandidates = [...BUILT_IN_SPREADS, ...customSpreads.map(spreadRecordToDefinition)]
+  const spread =
+    spreadCandidates.find(s => s.id === dailySpreadId) ??
+    spreadCandidates.find(s => s.id === 'single') ??
+    null
   const isFreeReading = !spread || spread.positions.length === 0
 
   // Shuffle and draw cards

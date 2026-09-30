@@ -72,6 +72,7 @@ function deckRecordToExportRow(d: CustomDeckRecord): ImportEntityInput {
       members: d.cardCanonicalNames,
       cardCount: d.cardCanonicalNames.length,
       reversalEnabled: d.reversalEnabled,
+      ...(d.subDecks.length > 0 ? { subDeckLabels: d.subDecks.map(sd => sd.label) } : {}),
     },
   }
 }

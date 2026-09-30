@@ -575,9 +575,15 @@ function DailyReadingSection({ deckId, spreadId, onDeckChange, onSpreadChange }:
             )}
             {customDecks.length > 0 && (
               <optgroup label="Custom">
-                {customDecks.map(d => (
-                  <option key={d.id} value={d.id}>{d.displayName}</option>
-                ))}
+                {customDecks.map(d =>
+                  d.variants ? (
+                    d.variants.map(v => (
+                      <option key={v.id} value={v.id}>{d.displayName} — {v.label}</option>
+                    ))
+                  ) : (
+                    <option key={d.id} value={d.id}>{d.displayName}</option>
+                  )
+                )}
               </optgroup>
             )}
           </select>

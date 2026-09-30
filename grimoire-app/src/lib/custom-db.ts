@@ -98,6 +98,10 @@ export async function initCustomDb(): Promise<void> {
   // Migration: decks predating entity representation have no canonical name yet —
   // getAllCustomDecks() backfills and persists one for any row still missing it.
   try { await db.execute('ALTER TABLE custom_decks ADD COLUMN canonical_name TEXT') } catch { /* column already exists */ }
+  // Sub-decks: named, checkbox-selected subsets of this deck's own cards — the
+  // custom-deck equivalent of a built-in deck's tag-based variants (Full 78 vs
+  // Major Arcana Only). Stored as JSON since positions/order don't matter here.
+  try { await db.execute("ALTER TABLE custom_decks ADD COLUMN sub_decks TEXT NOT NULL DEFAULT '[]'") } catch { /* column already exists */ }
   await db.execute(`
     CREATE TABLE IF NOT EXISTS custom_spreads (
       id            TEXT PRIMARY KEY,
@@ -442,6 +446,16 @@ export async function getCustomLinksForTradition(traditionCn: string): Promise<C
 
 // ─── Deck CRUD ────────────────────────────────────────────────────────────────
 
+/** A named, checkbox-selected subset of a custom deck's own cards — the
+ *  custom-deck equivalent of a built-in deck's tag-based variants (e.g. Full
+ *  78 vs Major Arcana Only). Surfaces as an extra option (alongside "All")
+ *  in the reading flow's deck-selection step. */
+export interface CustomDeckSubDeck {
+  id: string
+  label: string
+  cardCanonicalNames: string[]
+}
+
 export interface CustomDeckRecord {
   id: string
   /** Immutable once created — the entity representing this deck in the reference database. */
@@ -450,6 +464,7 @@ export interface CustomDeckRecord {
   description: string
   reversalEnabled: boolean
   cardCanonicalNames: string[]
+  subDecks: CustomDeckSubDeck[]
   createdAt: string
   updatedAt: string
 }
@@ -461,6 +476,7 @@ type DeckRow = {
   description: string
   reversal_enabled: number
   card_canonical_names: string
+  sub_decks: string
   created_at: string
   updated_at: string
 }
@@ -487,6 +503,7 @@ function rowToDeck(r: DeckRow): CustomDeckRecord {
     description:        r.description,
     reversalEnabled:    r.reversal_enabled === 1,
     cardCanonicalNames: JSON.parse(r.card_canonical_names) as string[],
+    subDecks:           r.sub_decks ? (JSON.parse(r.sub_decks) as CustomDeckSubDeck[]) : [],
     createdAt:          r.created_at,
     updatedAt:          r.updated_at,
   }
@@ -500,6 +517,16 @@ export function deckRecordToFilter(r: CustomDeckRecord): DeckFilter {
     reversalEnabled:    r.reversalEnabled,
     cardCanonicalNames: r.cardCanonicalNames,
     infoCanonicalName:  r.canonicalName || undefined,
+    // Same shape as a built-in deck's tag-based variants (see BUILT_IN_DECK_FILTERS
+    // in built-in-data.ts) — an explicit "All" option plus one per sub-deck, each
+    // carrying its own card list instead of tags (custom decks have no tags to
+    // filter by).
+    variants: r.subDecks.length > 0
+      ? [
+          { id: `${r.id}--all`, label: 'All', cardCanonicalNames: r.cardCanonicalNames },
+          ...r.subDecks.map(sd => ({ id: sd.id, label: sd.label, cardCanonicalNames: sd.cardCanonicalNames })),
+        ]
+      : undefined,
   }
 }
 
@@ -524,10 +551,10 @@ export async function saveCustomDeck(d: CustomDeckRecord): Promise<void> {
   const db = await getDb()
   await db.execute(
     `INSERT OR REPLACE INTO custom_decks
-       (id, canonical_name, display_name, description, reversal_enabled, card_canonical_names, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, canonical_name, display_name, description, reversal_enabled, card_canonical_names, sub_decks, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [d.id, d.canonicalName, d.displayName, d.description, d.reversalEnabled ? 1 : 0,
-     JSON.stringify(d.cardCanonicalNames), d.createdAt, d.updatedAt],
+     JSON.stringify(d.cardCanonicalNames), JSON.stringify(d.subDecks ?? []), d.createdAt, d.updatedAt],
   )
 }
 

@@ -20,6 +20,8 @@ export interface DeckVariant {
   label: string
   tags?: string[]
   entityType?: string
+  /** Explicit card list override — used by custom-deck sub-decks, which have no tags to filter by. */
+  cardCanonicalNames?: string[]
 }
 
 /** Deck definitions that resolve to entity tag filters at runtime. */

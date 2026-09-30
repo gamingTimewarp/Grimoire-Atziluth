@@ -267,6 +267,11 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
       description: deck.description,
       tags: variant.tags,
       entityType: variant.entityType ?? deck.entityType,
+      // Custom-deck sub-decks carry an explicit card list instead of tags
+      // (see CustomDeckSubDeck / deckRecordToFilter in custom-db.ts) — a
+      // built-in tag-based variant simply has none, so this is undefined
+      // there, same as before.
+      cardCanonicalNames: variant.cardCanonicalNames,
       reversalEnabled: deck.reversalEnabled,
     }
     setPendingDeck(null)
@@ -274,8 +279,9 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
   }
 
   // Determine which parent deck id is "active" (either a variant was selected, or pending)
+  // — checked against both built-in and custom decks, since either kind can now have variants.
   const selectedParentId = selected
-    ? BUILT_IN_DECK_FILTERS.find(d => d.variants?.some(v => v.id === selected.id))?.id ?? selected.id
+    ? [...BUILT_IN_DECK_FILTERS, ...customDecks].find(d => d.variants?.some(v => v.id === selected.id))?.id ?? selected.id
     : null
 
   return (
@@ -339,23 +345,49 @@ function DeckSelection({ onSelect, selected, onManage }: { onSelect: (d: DeckFil
             </div>
           )
         })}
-        {customDecks.map(deck => (
-          <div key={deck.id} style={{ position: 'relative' }}>
-            <Card
-              onClick={() => onSelect(deck)}
-              selected={selected?.id === deck.id}
-            >
-              <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px', paddingRight: deck.infoCanonicalName ? '18px' : 0 }}>{deck.displayName}</div>
-              <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>{deck.description}</div>
-              <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
-                {deck.cardCanonicalNames!.length} cards
-                {deck.reversalEnabled ? ' · Reversals on' : ''}
-                <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>
-              </div>
-            </Card>
-            {deck.infoCanonicalName && <InfoButton canonicalName={deck.infoCanonicalName} />}
-          </div>
-        ))}
+        {customDecks.map(deck => {
+          const isPending = pendingDeck?.id === deck.id
+          const isSelected = selectedParentId === deck.id
+          return (
+            <div key={deck.id} style={{ position: 'relative' }}>
+              <Card
+                onClick={() => handleDeckClick(deck)}
+                selected={isSelected || isPending}
+              >
+                <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px', paddingRight: deck.infoCanonicalName ? '18px' : 0 }}>{deck.displayName}</div>
+                <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', lineHeight: '1.4' }}>{deck.description}</div>
+                <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--color-text-subtle)' }}>
+                  {deck.cardCanonicalNames!.length} cards
+                  {deck.reversalEnabled ? ' · Reversals on' : ''}
+                  <span style={{ marginLeft: '6px', color: 'var(--color-accent)' }}>Custom</span>
+                </div>
+                {isPending && deck.variants && (
+                  <div style={{ marginTop: '10px' }} onClick={e => e.stopPropagation()}>
+                    <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '6px' }}>Choose a sub-deck to continue:</div>
+                    <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                      {deck.variants.map(v => (
+                        <button
+                          key={v.id}
+                          onClick={() => handleVariantClick(deck, v.id)}
+                          style={{
+                            padding: '4px 10px', borderRadius: '4px', fontSize: '11px', cursor: 'pointer',
+                            background: selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-surface-3)',
+                            color: selected?.id === v.id ? 'var(--color-accent-contrast)' : 'var(--color-text)',
+                            border: `1px solid ${selected?.id === v.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                            fontFamily: 'inherit',
+                          }}
+                        >
+                          {v.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </Card>
+              {deck.infoCanonicalName && <InfoButton canonicalName={deck.infoCanonicalName} />}
+            </div>
+          )
+        })}
       </div>
     </div>
   )

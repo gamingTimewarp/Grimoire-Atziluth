@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useEffect, useMemo } from 'react'
-import { ArrowLeft, Plus, Trash2, Save, Pencil, Search, X, Check } from 'lucide-react'
+import { ArrowLeft, Plus, Trash2, Save, Pencil, Search, X, Check, ChevronDown, ChevronRight, Layers } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { TagInput } from '@/components/ui/TagInput'
 import { useEngineStore } from '@/stores/engine'
@@ -11,6 +11,7 @@ import {
   deleteCustomDeck,
   generateDeckCanonicalName,
   type CustomDeckRecord,
+  type CustomDeckSubDeck,
 } from '@/lib/custom-db'
 import { ENTITY_TYPE_GROUPS, KNOWN_ENTITY_TYPES } from '@/lib/entity-type-groups'
 import { formatEntityType } from '@/lib/format'
@@ -27,14 +28,22 @@ function newId() {
   return `custom-deck-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
 }
 
+function newSubDeckId() {
+  return `custom-subdeck-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
+}
+
 // ─── Card picker ───────────────────────────────────────────────────────────────
 
 function CardPicker({
   selected,
   onToggle,
+  restrictTo,
 }: {
   selected: Set<string>
   onToggle: (cn: string) => void
+  /** When given, only entities in this set are shown/toggleable — used to scope a
+   *  sub-deck's picker down to the parent deck's own already-selected cards. */
+  restrictTo?: Set<string>
 }) {
   const { engine } = useEngineStore()
   const { customEnabled } = loadTraditionSettings()
@@ -72,6 +81,7 @@ function CardPicker({
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     return allEntities.filter(e => {
+      if (restrictTo && !restrictTo.has(e.canonicalName)) return false
       if (showSelected && !selected.has(e.canonicalName)) return false
       if (typeFilter && e.entityType !== typeFilter) return false
       if (sourceFilter === 'built-in' && !e.isBuiltIn) return false
@@ -80,7 +90,7 @@ function CardPicker({
       if (q && !e.primaryDisplayName.toLowerCase().includes(q) && !e.canonicalName.includes(q)) return false
       return true
     }).slice(0, 100)
-  }, [allEntities, typeFilter, sourceFilter, tagFilters, search, showSelected, selected])
+  }, [allEntities, typeFilter, sourceFilter, tagFilters, search, showSelected, selected, restrictTo])
 
   const inputStyle: React.CSSProperties = {
     background: 'var(--color-surface-3)',
@@ -236,6 +246,60 @@ function CardPicker({
   )
 }
 
+// ─── Sub-deck row (a collapsible, card-scoped picker) ──────────────────────────
+
+function SubDeckRow({
+  subDeck,
+  deckCards,
+  onRename,
+  onToggleCard,
+  onRemove,
+}: {
+  subDeck: CustomDeckSubDeck
+  /** The parent deck's own card list — a sub-deck can only draw from these. */
+  deckCards: Set<string>
+  onRename: (label: string) => void
+  onToggleCard: (cn: string) => void
+  onRemove: () => void
+}) {
+  const [expanded, setExpanded] = useState(false)
+  const subSelected = useMemo(() => new Set(subDeck.cardCanonicalNames), [subDeck.cardCanonicalNames])
+
+  return (
+    <div style={{ border: '1px solid var(--color-border)', borderRadius: '6px', background: 'var(--color-surface-3)', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 10px' }}>
+        <button
+          onClick={() => setExpanded(e => !e)}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', padding: 0 }}
+        >
+          {expanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+        </button>
+        <Layers size={12} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
+        <input
+          value={subDeck.label}
+          onChange={e => onRename(e.target.value)}
+          placeholder="Sub-deck name"
+          style={{
+            flex: 1, minWidth: 0, background: 'none', border: 'none',
+            color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit', outline: 'none',
+          }}
+        />
+        <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>
+          {subDeck.cardCanonicalNames.length} card{subDeck.cardCanonicalNames.length !== 1 ? 's' : ''}
+        </span>
+        <button onClick={onRemove} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', padding: 0 }}>
+          <Trash2 size={13} />
+        </button>
+      </div>
+      {expanded && (
+        <div style={{ padding: '0 10px 10px' }}>
+          <CardPicker selected={subSelected} onToggle={onToggleCard} restrictTo={deckCards} />
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ─── Deck editor ───────────────────────────────────────────────────────────────
 
 function DeckEditor({
@@ -251,6 +315,8 @@ function DeckEditor({
   const [description, setDescription] = useState(initial?.description ?? '')
   const [reversals, setReversals]     = useState(initial?.reversalEnabled ?? false)
   const [selected, setSelected]       = useState<Set<string>>(new Set(initial?.cardCanonicalNames ?? []))
+  const [subDecks, setSubDecks]       = useState<CustomDeckSubDeck[]>(initial?.subDecks ?? [])
+  const [newSubDeckLabel, setNewSubDeckLabel] = useState('')
   const [error, setError]             = useState('')
 
   const toggle = (cn: string) =>
@@ -259,6 +325,26 @@ function DeckEditor({
       next.has(cn) ? next.delete(cn) : next.add(cn)
       return next
     })
+
+  const addSubDeck = () => {
+    const label = newSubDeckLabel.trim()
+    if (!label) return
+    setSubDecks(prev => [...prev, { id: newSubDeckId(), label, cardCanonicalNames: [] }])
+    setNewSubDeckLabel('')
+  }
+
+  const removeSubDeck = (id: string) =>
+    setSubDecks(prev => prev.filter(sd => sd.id !== id))
+
+  const renameSubDeck = (id: string, label: string) =>
+    setSubDecks(prev => prev.map(sd => sd.id === id ? { ...sd, label } : sd))
+
+  const toggleCardInSubDeck = (id: string, cn: string) =>
+    setSubDecks(prev => prev.map(sd => {
+      if (sd.id !== id) return sd
+      const has = sd.cardCanonicalNames.includes(cn)
+      return { ...sd, cardCanonicalNames: has ? sd.cardCanonicalNames.filter(c => c !== cn) : [...sd.cardCanonicalNames, cn] }
+    }))
 
   const handleSave = () => {
     if (!name.trim()) { setError('Name is required.'); return }
@@ -271,6 +357,12 @@ function DeckEditor({
       description:        description.trim(),
       reversalEnabled:    reversals,
       cardCanonicalNames: [...selected],
+      // Drop empty/unlabeled sub-decks, and prune any card that was since
+      // removed from the deck's own list — a sub-deck can only ever be a
+      // subset of the deck it belongs to.
+      subDecks: subDecks
+        .map(sd => ({ ...sd, cardCanonicalNames: sd.cardCanonicalNames.filter(cn => selected.has(cn)) }))
+        .filter(sd => sd.label.trim() && sd.cardCanonicalNames.length > 0),
       createdAt:          initial?.createdAt ?? now,
       updatedAt:          now,
     })
@@ -321,6 +413,45 @@ function DeckEditor({
       </div>
       <CardPicker selected={selected} onToggle={toggle} />
 
+      <div style={{ marginTop: '24px' }}>
+        <label style={{ display: 'block', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '5px' }}>
+          Sub-decks (optional)
+        </label>
+        <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', margin: '0 0 10px' }}>
+          Group this deck's cards into named subsets — e.g. "Majors Only" — the same way the
+          built-in Tarot decks offer "Full 78" vs "Major Arcana Only". Each sub-deck (plus an
+          automatic "All" option) appears as a choice in the reading flow.
+        </p>
+
+        {subDecks.length > 0 && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '10px' }}>
+            {subDecks.map(sd => (
+              <SubDeckRow
+                key={sd.id}
+                subDeck={sd}
+                deckCards={selected}
+                onRename={label => renameSubDeck(sd.id, label)}
+                onToggleCard={cn => toggleCardInSubDeck(sd.id, cn)}
+                onRemove={() => removeSubDeck(sd.id)}
+              />
+            ))}
+          </div>
+        )}
+
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <input
+            value={newSubDeckLabel}
+            onChange={e => setNewSubDeckLabel(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addSubDeck() } }}
+            placeholder="e.g. Major Arcana Only"
+            style={{ ...inputStyle, width: 'auto', flex: 1 }}
+          />
+          <Button variant="ghost" size="sm" onClick={addSubDeck} disabled={!newSubDeckLabel.trim()}>
+            <Plus size={13} /> Add Sub-deck
+          </Button>
+        </div>
+      </div>
+
       <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end', marginTop: '16px' }}>
         <Button variant="ghost" size="sm" onClick={onCancel}>Cancel</Button>
         <Button variant="primary" size="sm" onClick={handleSave}>
@@ -360,7 +491,12 @@ function DecksPage() {
         primaryDisplayName: r.displayName,
         description: r.description || undefined,
         tags: ['deck'],
-        extendedData: { members: r.cardCanonicalNames, cardCount: r.cardCanonicalNames.length, reversalEnabled: r.reversalEnabled },
+        extendedData: {
+          members: r.cardCanonicalNames,
+          cardCount: r.cardCanonicalNames.length,
+          reversalEnabled: r.reversalEnabled,
+          ...(r.subDecks.length > 0 ? { subDeckLabels: r.subDecks.map(sd => sd.label) } : {}),
+        },
       }
       try {
         if (existing) {
@@ -432,6 +568,7 @@ function DecksPage() {
                 <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>
                   {d.cardCanonicalNames.length} card{d.cardCanonicalNames.length !== 1 ? 's' : ''}
                   {d.reversalEnabled ? ' · Reversals on' : ''}
+                  {d.subDecks.length > 0 && ` · ${d.subDecks.length} sub-deck${d.subDecks.length !== 1 ? 's' : ''}`}
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
