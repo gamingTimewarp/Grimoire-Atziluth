@@ -1,13 +1,21 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { listReadings, listJournalEntries, saveJournalEntry, deleteJournalEntry, deleteReading, getEntityLinksForEntry, addEntityLinkToEntry, removeEntityLinkFromEntry, getEntityLinksForReading, addEntityLinkToReading, removeEntityLinkFromReading } from '@/lib/reading-db'
+import {
+  listReadings, listJournalEntries, saveJournalEntry, updateJournalEntry, deleteJournalEntry, deleteReading,
+  getEntityLinksForEntry, addEntityLinkToEntry, removeEntityLinkFromEntry,
+  getEntityLinksForReading, addEntityLinkToReading, removeEntityLinkFromReading,
+  attachReadingToEntry, detachReadingFromEntry, searchUnattachedReadings,
+} from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
 import type { SpreadPosition } from '@grimoire/core'
-import { BookMarked, ChevronDown, ChevronRight, Plus, PenLine, Trash2, List, Circle, X, Link2, BarChart2, Share2 } from 'lucide-react'
+import { useReadingStore } from '@/stores/reading'
+import { pickAndImportJournalEntry, exportJournalEntry } from '@/lib/journal-import'
+import type { JournalEntryImportSummary } from '@/lib/journal-import'
+import { BookMarked, ChevronDown, ChevronRight, Plus, PenLine, Trash2, List, Circle, X, Link2, BarChart2, Share2, Unlink, Pencil, Upload, CheckCircle, AlertCircle } from 'lucide-react'
 import { RichTextEditor, RichTextRenderer, isRichTextEmpty } from '@/components/ui/RichText'
 import { DateInput } from '@/components/ui/DateInput'
 import { SpreadGrid } from '@/components/ui/SpreadGrid'
@@ -35,6 +43,11 @@ import { listNatalCharts } from '@/lib/natal-db'
 import { useBreakpoint } from '@/hooks/useBreakpoint'
 
 export const Route = createFileRoute('/journal/')({
+  validateSearch: (s: Record<string, unknown>) => ({
+    // Set by the "+" button on a reference entity's Journal section — opens
+    // the New Entry form with that entity already attached as a link.
+    linkEntity: typeof s.linkEntity === 'string' ? s.linkEntity : undefined,
+  }),
   component: JournalPage,
 })
 
@@ -59,7 +72,10 @@ type PendingDelete = {
 
 function JournalPage() {
   const navigate = useNavigate()
+  const { linkEntity } = Route.useSearch()
+  const { engine } = useEngineStore()
   const [items, setItems] = useState<ListItem[]>([])
+  const [readingsByEntry, setReadingsByEntry] = useState<Map<string, Reading[]>>(new Map())
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('')
   const [compact, setCompact] = useState(() => loadSettings().defaultCompactJournal)
@@ -119,12 +135,42 @@ function JournalPage() {
     if (showForm) formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [showForm])
 
+  // Arrived via the "+" button on a reference entity's Journal section — open
+  // the New Entry form with that entity already attached as a link. Consumes
+  // (clears) the search param immediately so it doesn't re-trigger on a later
+  // back/forward navigation or refresh.
+  useEffect(() => {
+    if (!linkEntity || !engine) return
+    navigate({ to: '/journal', search: { linkEntity: undefined }, replace: true })
+    engine.adapter.getEntityByCanonicalName(linkEntity).then(entity => {
+      setFormEntityLinks(ls => ls.includes(linkEntity) ? ls : [...ls, linkEntity])
+      setFormEntityNames(m => new Map(m).set(linkEntity, entity?.primaryDisplayName ?? linkEntity))
+      setShowForm(true)
+    }).catch(console.error)
+  }, [linkEntity, engine, navigate])
+
   const loadAll = () => {
     setLoading(true)
-    Promise.all([listReadings(), listJournalEntries()])
+    Promise.all([listReadings(10000), listJournalEntries(10000)])
       .then(([readings, entries]) => {
+        // Readings grouped under an entry (journalEntryId set) render nested
+        // inside that entry's expanded view, not as their own top-level row —
+        // only standalone readings join the merged top-level timeline.
+        const grouped = new Map<string, Reading[]>()
+        const standalone: Reading[] = []
+        for (const r of readings) {
+          if (r.journalEntryId) {
+            const list = grouped.get(r.journalEntryId) ?? []
+            list.push(r)
+            grouped.set(r.journalEntryId, list)
+          } else {
+            standalone.push(r)
+          }
+        }
+        setReadingsByEntry(grouped)
+
         const merged: ListItem[] = [
-          ...readings.map(r => ({ type: 'reading' as const, date: r.readingDate, data: r })),
+          ...standalone.map(r => ({ type: 'reading' as const, date: r.readingDate, data: r })),
           ...entries.map(e => ({ type: 'entry' as const, date: e.entryDate, data: e })),
         ]
         merged.sort((a, b) => b.date.localeCompare(a.date))
@@ -135,6 +181,29 @@ function JournalPage() {
   }
 
   useEffect(() => { loadAll() }, [])
+
+  // Import a single journal-entry file (see journal-import.ts) — the
+  // entry-scoped counterpart to the full backup at Settings > Data.
+  const [importBusy, setImportBusy] = useState(false)
+  const [importError, setImportError] = useState<string | null>(null)
+  const [importSummary, setImportSummary] = useState<JournalEntryImportSummary | null>(null)
+
+  const handleImportEntry = async () => {
+    setImportError(null)
+    setImportSummary(null)
+    setImportBusy(true)
+    try {
+      const summary = await pickAndImportJournalEntry()
+      if (summary) {
+        setImportSummary(summary)
+        loadAll()
+      }
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Failed to import file.')
+    } finally {
+      setImportBusy(false)
+    }
+  }
 
   const handleSaveEntry = async () => {
     if (isRichTextEmpty(formNotes)) return
@@ -184,11 +253,46 @@ function JournalPage() {
           <Button variant="ghost" size="sm" onClick={() => { setShowForm(s => !s) }}>
             <PenLine size={14} /> New Entry
           </Button>
+          <Button variant="ghost" size="sm" onClick={handleImportEntry} disabled={importBusy}>
+            <Upload size={14} /> {importBusy ? 'Importing…' : 'Import Entry'}
+          </Button>
           <Button size="sm" onClick={() => navigate({ to: '/read' })}>
             <Plus size={14} /> New Reading
           </Button>
         </div>
       </div>
+
+      {importError && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px', padding: '10px 14px', background: 'rgba(200,60,60,0.1)', border: '1px solid rgba(200,60,60,0.3)', borderRadius: '6px', fontSize: '13px', color: 'var(--color-danger, #e06060)' }}>
+          <AlertCircle size={15} style={{ flexShrink: 0 }} />
+          <div style={{ flex: 1 }}>{importError}</div>
+          <button onClick={() => setImportError(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', display: 'flex', padding: 0 }}>
+            <X size={14} />
+          </button>
+        </div>
+      )}
+
+      {importSummary && (
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '16px', padding: '10px 14px', background: 'rgba(80,160,80,0.1)', border: '1px solid rgba(80,160,80,0.35)', borderRadius: '6px', fontSize: '13px', color: 'var(--color-text)' }}>
+          <CheckCircle size={15} style={{ color: '#5ca05c', flexShrink: 0, marginTop: '1px' }} />
+          <div style={{ flex: 1 }}>
+            <div>
+              {importSummary.entryAlreadyExisted
+                ? <>"{importSummary.title}" was already present — no changes made to the entry.</>
+                : <>Imported "{importSummary.title}".</>}
+            </div>
+            {(importSummary.readingsImported > 0 || importSummary.readingsAlreadyExisted > 0) && (
+              <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '2px' }}>
+                {importSummary.readingsImported} reading{importSummary.readingsImported !== 1 ? 's' : ''} imported
+                {importSummary.readingsAlreadyExisted > 0 && `, ${importSummary.readingsAlreadyExisted} already present`}.
+              </div>
+            )}
+          </div>
+          <button onClick={() => setImportSummary(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', display: 'flex', padding: 0 }}>
+            <X size={14} />
+          </button>
+        </div>
+      )}
 
       {/* Filter */}
       {items.length > 0 && (
@@ -316,18 +420,17 @@ function JournalPage() {
         const q = filter.trim().toLowerCase()
         const visible = q
           ? items.filter(item => {
-              if (item.type === 'reading') {
-                const r = item.data
-                return (
-                  r.question?.toLowerCase().includes(q) ||
-                  r.notes?.toLowerCase().includes(q) ||
-                  r.deckId?.toLowerCase().includes(q) ||
-                  r.cards.some(c => c.cardCanonicalName.toLowerCase().includes(q))
-                )
-              }
-              return (
+              const matchesReading = (r: Reading) => (
+                r.question?.toLowerCase().includes(q) ||
+                r.notes?.toLowerCase().includes(q) ||
+                r.deckId?.toLowerCase().includes(q) ||
+                r.cards.some(c => c.cardCanonicalName.toLowerCase().includes(q))
+              )
+              if (item.type === 'reading') return matchesReading(item.data)
+              return Boolean(
                 item.data.title?.toLowerCase().includes(q) ||
-                item.data.notes?.toLowerCase().includes(q)
+                item.data.notes?.toLowerCase().includes(q) ||
+                (readingsByEntry.get(item.data.id) ?? []).some(matchesReading)
               )
             })
           : items
@@ -336,7 +439,17 @@ function JournalPage() {
             {visible.map(item =>
               item.type === 'reading'
                 ? <ReadingRow key={`r-${item.data.id}`} reading={item.data} compact={compact} reversedDisplay={a11y.reversedDisplay} onDelete={label => handlePendingDelete(item, label)} />
-                : <EntryRow key={`e-${item.data.id}`} entry={item.data} compact={compact} onDelete={label => handlePendingDelete(item, label)} />
+                : (
+                  <EntryRow
+                    key={`e-${item.data.id}`}
+                    entry={item.data}
+                    readings={readingsByEntry.get(item.data.id) ?? []}
+                    compact={compact}
+                    reversedDisplay={a11y.reversedDisplay}
+                    onDelete={label => handlePendingDelete(item, label)}
+                    onRefresh={loadAll}
+                  />
+                )
             )}
             <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
               <Button variant="ghost" size="sm" onClick={() => setShowForm(true)}>
@@ -391,9 +504,18 @@ function DailyContextBar({ dateStr }: { dateStr: string }) {
   )
 }
 
-// ─── Standalone journal entry row ─────────────────────────────────────────────
+// ─── Journal entry row (title + notes, grouping zero or more readings) ────────
 
-function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; onDelete: (label: string) => void; compact?: boolean }) {
+function EntryRow({
+  entry, readings, onDelete, onRefresh, compact = false, reversedDisplay,
+}: {
+  entry: JournalEntry
+  readings: Reading[]
+  onDelete: (label: string) => void
+  onRefresh: () => void
+  compact?: boolean
+  reversedDisplay?: import('@/lib/accessibility-store').ReversedDisplay
+}) {
   const navigate = useNavigate()
   const { engine } = useEngineStore()
   const [expanded, setExpanded] = useState(false)
@@ -401,6 +523,61 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
   const [entityLinks, setEntityLinks] = useState<string[]>([])
   const [entityNames, setEntityNames] = useState<Map<string, string>>(new Map())
   const [linksLoaded, setLinksLoaded] = useState(false)
+
+  // Edit mode — title/date/notes only; readings are managed separately below.
+  const [editing, setEditing] = useState(false)
+  const [editTitle, setEditTitle] = useState(entry.title ?? '')
+  const [editNotes, setEditNotes] = useState(entry.notes)
+  const [editDate, setEditDate] = useState(entry.entryDate.slice(0, 10))
+  const [savingEdit, setSavingEdit] = useState(false)
+
+  const startEditing = () => {
+    setEditTitle(entry.title ?? '')
+    setEditNotes(entry.notes)
+    setEditDate(entry.entryDate.slice(0, 10))
+    setEditing(true)
+  }
+
+  const handleSaveEdit = async () => {
+    if (isRichTextEmpty(editNotes)) return
+    setSavingEdit(true)
+    try {
+      await updateJournalEntry(entry.id, { title: editTitle.trim() || null, notes: editNotes, entryDate: editDate })
+      setEditing(false)
+      onRefresh()
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setSavingEdit(false)
+    }
+  }
+
+  const handleNewReadingHere = () => {
+    useReadingStore.getState().setJournalEntryId(entry.id)
+    navigate({ to: '/read' })
+  }
+
+  const handleDetachReading = async (readingId: string) => {
+    await detachReadingFromEntry(readingId)
+    onRefresh()
+  }
+
+  const handleDeleteNestedReading = async (readingId: string) => {
+    await deleteReading(readingId)
+    onRefresh()
+  }
+
+  const [exportingEntry, setExportingEntry] = useState(false)
+  const handleExportEntry = async () => {
+    setExportingEntry(true)
+    try {
+      await exportJournalEntry(entry, readings)
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setExportingEntry(false)
+    }
+  }
 
   // Load entity links on first expand
   useEffect(() => {
@@ -446,18 +623,45 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         }}
       >
-        <div
-          onClick={() => setExpanded(e => !e)}
-          style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', flex: 1, minWidth: 0 }}
-        >
-          <PenLine size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
-          <span style={{ fontSize: '15px', fontWeight: 500, color: 'var(--color-text)' }}>
-            {entry.title ?? 'Journal Entry'}
-          </span>
-        </div>
+        {editing ? (
+          <input
+            value={editTitle}
+            onChange={e => setEditTitle(e.target.value)}
+            placeholder="Title (optional)"
+            autoFocus
+            style={{
+              flex: 1, minWidth: 0, marginRight: '10px', padding: '5px 8px',
+              background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+              borderRadius: '4px', color: 'var(--color-text)', fontSize: '15px', fontWeight: 500,
+              outline: 'none', boxSizing: 'border-box',
+            }}
+          />
+        ) : (
+          <div
+            onClick={() => setExpanded(e => !e)}
+            style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', flex: 1, minWidth: 0 }}
+          >
+            <PenLine size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
+            <span style={{ fontSize: '15px', fontWeight: 500, color: 'var(--color-text)' }}>
+              {entry.title ?? 'Journal Entry'}
+            </span>
+            {readings.length > 0 && (
+              <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>
+                · {readings.length} reading{readings.length !== 1 ? 's' : ''}
+              </span>
+            )}
+          </div>
+        )}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>{date}</span>
-          {confirmDelete ? (
+          {!editing && <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>{date}</span>}
+          {editing ? (
+            <>
+              <Button size="sm" onClick={handleSaveEdit} disabled={savingEdit || isRichTextEmpty(editNotes)}>
+                {savingEdit ? 'Saving…' : 'Save'}
+              </Button>
+              <Button variant="ghost" size="sm" onClick={() => setEditing(false)}>Cancel</Button>
+            </>
+          ) : confirmDelete ? (
             <>
               <button
                 onClick={() => { setConfirmDelete(false); onDelete(entry.title ?? 'Journal Entry') }}
@@ -473,15 +677,38 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
               </button>
             </>
           ) : (
-            <button
-              onClick={e => { e.stopPropagation(); setConfirmDelete(true) }}
-              style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', opacity: 0.5 }}
-              title="Delete entry"
-              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = 'var(--color-danger)' }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '0.5'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
-            >
-              <Trash2 size={14} />
-            </button>
+            <>
+              {expanded && (
+                <button
+                  onClick={e => { e.stopPropagation(); handleExportEntry() }}
+                  disabled={exportingEntry}
+                  style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                  title="Export entry (and its readings) as a file"
+                  onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                  onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+                >
+                  <Share2 size={14} />
+                </button>
+              )}
+              <button
+                onClick={e => { e.stopPropagation(); setExpanded(true); startEditing() }}
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                title="Edit entry"
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+              >
+                <Pencil size={14} />
+              </button>
+              <button
+                onClick={e => { e.stopPropagation(); setConfirmDelete(true) }}
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                title="Delete entry"
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-danger)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+              >
+                <Trash2 size={14} />
+              </button>
+            </>
           )}
           <div onClick={() => setExpanded(e => !e)} style={{ cursor: 'pointer', display: 'flex' }}>
             {expanded
@@ -501,9 +728,57 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
       {expanded && (
         <div style={{ padding: '14px 20px 20px', borderTop: '1px solid var(--color-border)' }}>
           <DailyContextBar dateStr={entry.entryDate} />
-          <div style={{ marginBottom: '16px' }}>
-            <RichTextRenderer markdown={entry.notes} />
+
+          {editing ? (
+            <div style={{ marginBottom: '16px' }}>
+              <div style={{ marginBottom: '10px' }}>
+                <DateInput
+                  value={editDate}
+                  onChange={setEditDate}
+                  style={{
+                    padding: '6px 10px', background: 'var(--color-surface-3)',
+                    border: '1px solid var(--color-border)', borderRadius: '6px',
+                    color: 'var(--color-text)', fontSize: '13px', outline: 'none',
+                    colorScheme: 'dark',
+                  }}
+                />
+              </div>
+              <RichTextEditor value={editNotes} onChange={setEditNotes} minHeight={120} />
+            </div>
+          ) : (
+            <div style={{ marginBottom: '16px' }}>
+              <RichTextRenderer markdown={entry.notes} />
+            </div>
+          )}
+
+          {/* Readings grouped under this entry */}
+          <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '12px', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                <BarChart2 size={11} /> Readings
+              </div>
+              <Button variant="ghost" size="sm" onClick={handleNewReadingHere}>
+                <Plus size={13} /> New Reading Here
+              </Button>
+            </div>
+            {readings.length > 0 && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: compact ? '6px' : '10px', marginBottom: '10px' }}>
+                {readings.map(r => (
+                  <ReadingRow
+                    key={r.id}
+                    reading={r}
+                    compact={compact}
+                    reversedDisplay={reversedDisplay}
+                    nested
+                    onDetach={() => handleDetachReading(r.id)}
+                    onDelete={() => handleDeleteNestedReading(r.id)}
+                  />
+                ))}
+              </div>
+            )}
+            <ReadingAttachPicker entryId={entry.id} onAttached={onRefresh} />
           </div>
+
           <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '12px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px', fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
               <Link2 size={11} /> Linked Entities
@@ -553,7 +828,18 @@ function EntryRow({ entry, onDelete, compact = false }: { entry: JournalEntry; o
 
 // ─── Reading row ───────────────────────────────────────────────────────────────
 
-function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { reading: Reading; onDelete: (label: string) => void; compact?: boolean; reversedDisplay?: import('@/lib/accessibility-store').ReversedDisplay }) {
+function ReadingRow({
+  reading, onDelete, compact = false, reversedDisplay, nested = false, onDetach,
+}: {
+  reading: Reading
+  onDelete: (label: string) => void
+  compact?: boolean
+  reversedDisplay?: import('@/lib/accessibility-store').ReversedDisplay
+  /** True when rendered inside an EntryRow's readings list rather than the top-level timeline. */
+  nested?: boolean
+  /** Removes this reading from its entry without deleting it — only meaningful when nested. */
+  onDetach?: () => void
+}) {
   const navigate = useNavigate()
   const isMobile = useBreakpoint() === 'mobile'
   const { engine } = useEngineStore()
@@ -698,17 +984,17 @@ function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { r
                 onClick={e => { e.stopPropagation(); handleExportMarkdown() }}
                 disabled={exporting}
                 title="Export as Markdown"
-                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', opacity: 0.5 }}
-                onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
-                onMouseLeave={e => { e.currentTarget.style.opacity = '0.5' }}
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
               ><Share2 size={13} /><span style={{ fontSize: '11px', marginLeft: '3px' }}>md</span></button>
               <button
                 onClick={e => { e.stopPropagation(); handleExportImage() }}
                 disabled={exporting}
                 title="Export as Image"
-                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', opacity: 0.5 }}
-                onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
-                onMouseLeave={e => { e.currentTarget.style.opacity = '0.5' }}
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
               ><Share2 size={13} /><span style={{ fontSize: '11px', marginLeft: '3px' }}>img</span></button>
             </>
           )}
@@ -728,15 +1014,28 @@ function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { r
               </button>
             </>
           ) : (
-            <button
-              onClick={e => { e.stopPropagation(); setConfirmDelete(true) }}
-              style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', opacity: 0.5 }}
-              title="Delete reading"
-              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = 'var(--color-danger)' }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '0.5'; e.currentTarget.style.color = 'var(--color-text-subtle)' }}
-            >
-              <Trash2 size={14} />
-            </button>
+            <>
+              {nested && onDetach && (
+                <button
+                  onClick={e => { e.stopPropagation(); onDetach() }}
+                  style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                  title="Remove from this entry (keeps the reading, unattached)"
+                  onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+                  onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+                >
+                  <Unlink size={14} />
+                </button>
+              )}
+              <button
+                onClick={e => { e.stopPropagation(); setConfirmDelete(true) }}
+                style={{ background: 'none', border: 'none', padding: '4px', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex' }}
+                title="Delete reading"
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-danger)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+              >
+                <Trash2 size={14} />
+              </button>
+            </>
           )}
           <div onClick={() => setExpanded(e => !e)} style={{ cursor: 'pointer', display: 'flex' }}>
             {expanded
@@ -895,6 +1194,107 @@ function ReadingRow({ reading, onDelete, compact = false, reversedDisplay }: { r
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+// ─── Attach an existing standalone reading to an entry ─────────────────────────
+
+function ReadingAttachPicker({ entryId, onAttached }: { entryId: string; onAttached: () => void }) {
+  const [query, setQuery] = useState('')
+  const [results, setResults] = useState<Reading[]>([])
+  const [open, setOpen] = useState(false)
+  const [attaching, setAttaching] = useState<string | null>(null)
+  const spreadById = useSpreadById()
+
+  useEffect(() => {
+    if (!query.trim()) { setResults([]); return }
+    const timer = setTimeout(async () => {
+      const r = await searchUnattachedReadings(query.trim())
+      setResults(r)
+    }, 200)
+    return () => clearTimeout(timer)
+  }, [query])
+
+  const handleAttach = async (reading: Reading) => {
+    setAttaching(reading.id)
+    try {
+      await attachReadingToEntry(reading.id, entryId)
+      setQuery('')
+      setResults([])
+      setOpen(false)
+      onAttached()
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setAttaching(null)
+    }
+  }
+
+  const label = (r: Reading) => {
+    const spread = r.spreadId ? spreadById.get(r.spreadId)?.displayName : null
+    const parts = [spread ?? 'Free Reading']
+    if (r.subject && r.subject !== 'self') parts.push(r.subject)
+    if (r.question) parts.push(`"${r.question}"`)
+    return parts.join(' · ')
+  }
+
+  if (!open) {
+    return (
+      <Button variant="ghost" size="sm" onClick={() => setOpen(true)}>
+        <Link2 size={13} /> Attach Existing Reading
+      </Button>
+    )
+  }
+
+  return (
+    <div>
+      <div style={{ position: 'relative' }}>
+        <input
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search unattached readings by question, subject, or deck…"
+          autoFocus
+          style={{
+            width: '100%', padding: '6px 10px',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', outline: 'none',
+            boxSizing: 'border-box',
+          }}
+        />
+      </div>
+      {results.length > 0 && (
+        <div style={{
+          marginTop: '6px', background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+          borderRadius: '6px', overflow: 'hidden',
+        }}>
+          {results.map(r => (
+            <button
+              key={r.id}
+              onClick={() => handleAttach(r)}
+              disabled={attaching === r.id}
+              style={{
+                display: 'block', width: '100%', textAlign: 'left',
+                padding: '8px 12px', background: 'none', border: 'none', cursor: 'pointer',
+                fontSize: '12px', color: 'var(--color-text)', fontFamily: 'inherit',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-2)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+            >
+              {attaching === r.id ? 'Attaching…' : label(r)}
+              <span style={{ color: 'var(--color-text-subtle)', marginLeft: '6px' }}>
+                {new Date(r.readingDate).toLocaleDateString()}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
+      <button
+        onClick={() => { setOpen(false); setQuery(''); setResults([]) }}
+        style={{ background: 'none', border: 'none', padding: '4px 0', marginTop: '4px', cursor: 'pointer', fontSize: '11px', color: 'var(--color-text-subtle)' }}
+      >
+        Cancel
+      </button>
     </div>
   )
 }

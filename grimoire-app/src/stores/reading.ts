@@ -54,6 +54,8 @@ interface ReadingStore {
   notes: string
   tags: string[]
   subject: string
+  /** Journal entry to attach this reading to on save, if started from within one. */
+  journalEntryId: string | null
 
   // Completed reading
   savedReading: Reading | null
@@ -74,6 +76,8 @@ interface ReadingStore {
   setNotes: (notes: string) => void
   setTags: (tags: string[]) => void
   setSubject: (subject: string) => void
+  /** Sets the entry this in-progress reading will attach to on save — call before navigating into /read. */
+  setJournalEntryId: (entryId: string | null) => void
   saveAndFinish: () => Promise<void>
   reset: () => void
 }
@@ -91,6 +95,7 @@ const initialState = {
   notes: '',
   tags: [],
   subject: 'self',
+  journalEntryId: null,
   savedReading: null,
 }
 
@@ -106,7 +111,7 @@ function fisherYates<T>(arr: T[]): T[] {
 type PersistedReadingState = Pick<ReadingStore,
   | 'step' | 'selectedDeck' | 'selectedSpread' | 'reversalsEnabled'
   | 'shuffledCards' | 'drawIndex' | 'drawnCards' | 'currentPositionIndex'
-  | 'question' | 'notes' | 'tags' | 'subject' | 'savedReading'
+  | 'question' | 'notes' | 'tags' | 'subject' | 'journalEntryId' | 'savedReading'
 >
 
 /**
@@ -193,9 +198,10 @@ export const useReadingStore = create<ReadingStore>()(persist((set, get) => ({
   setNotes(notes) { set({ notes }) },
   setTags(tags) { set({ tags }) },
   setSubject(subject) { set({ subject }) },
+  setJournalEntryId(journalEntryId) { set({ journalEntryId }) },
 
   async saveAndFinish() {
-    const { selectedDeck, selectedSpread, drawnCards, question, notes, tags, subject } = get()
+    const { selectedDeck, selectedSpread, drawnCards, question, notes, tags, subject, journalEntryId } = get()
     if (!selectedDeck) return
 
     // Capture astrological snapshot at time of saving
@@ -226,10 +232,14 @@ export const useReadingStore = create<ReadingStore>()(persist((set, get) => ({
       tags,
       traditionSnapshot: [],
       astroSnapshot: null,
+      journalEntryId,
     }
 
     const saved = await saveReading(input, { astroSnapshot })
-    set({ savedReading: saved, step: 'complete' })
+    // Clear the target entry immediately after use so the next, unrelated
+    // reading (started fresh from /read, not from within an entry) doesn't
+    // silently inherit it.
+    set({ savedReading: saved, step: 'complete', journalEntryId: null })
   },
 
   reset() {
@@ -244,12 +254,12 @@ export const useReadingStore = create<ReadingStore>()(persist((set, get) => ({
     const {
       step, selectedDeck, selectedSpread, reversalsEnabled,
       shuffledCards, drawIndex, drawnCards, currentPositionIndex,
-      question, notes, tags, subject, savedReading,
+      question, notes, tags, subject, journalEntryId, savedReading,
     } = state
     return {
       step, selectedDeck, selectedSpread, reversalsEnabled,
       shuffledCards, drawIndex, drawnCards, currentPositionIndex,
-      question, notes, tags, subject, savedReading,
+      question, notes, tags, subject, journalEntryId, savedReading,
     }
   },
 }))

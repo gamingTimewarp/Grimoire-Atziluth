@@ -381,7 +381,7 @@ function DrawPage() {
 
         <div style={{ display: 'flex', gap: '12px', marginTop: '20px', flexWrap: 'wrap' }}>
           <Button onClick={reset}>New Reading</Button>
-          <Button variant="ghost" onClick={() => navigate({ to: '/journal' })}>View in Journal</Button>
+          <Button variant="ghost" onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}>View in Journal</Button>
           <div style={{ display: 'flex', gap: '6px', marginLeft: 'auto' }}>
             <Button variant="ghost" size="sm" onClick={handleExportMarkdown} disabled={exporting}>
               <Share2 size={13} /> Markdown

@@ -170,7 +170,7 @@ export function GlobalSearch({ spotlight = false, onNavigate }: GlobalSearchProp
         const entries = await searchJournalEntries(query.trim(), 5)
         for (const entry of entries) {
           const preview = entry.title ?? (entry.notes.slice(0, 50) + (entry.notes.length > 50 ? '…' : ''))
-          items.push({ key: `journal:${entry.id}`, type: 'journal', label: preview, sublabel: `Journal · ${entry.entryDate}`, onSelect: () => navigate({ to: '/journal' }) })
+          items.push({ key: `journal:${entry.id}`, type: 'journal', label: preview, sublabel: `Journal · ${entry.entryDate}`, onSelect: () => navigate({ to: '/journal', search: { linkEntity: undefined } }) })
         }
       } catch { /* DB not yet initialised */ }
 

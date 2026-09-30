@@ -46,7 +46,7 @@ export function TodaysActivityWidget() {
             icon={<BookMarked size={13} />}
             label={spreadById.get(r.spreadId ?? '')?.displayName ?? 'Free Reading'}
             sub={deckById.get(r.deckId)?.displayName}
-            onClick={() => navigate({ to: '/journal' })}
+            onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
           />
         ))}
         {todayEntries.map(e => (
@@ -54,7 +54,7 @@ export function TodaysActivityWidget() {
             key={e.id}
             icon={<PenLine size={13} />}
             label={e.title ?? 'Journal Entry'}
-            onClick={() => navigate({ to: '/journal' })}
+            onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
           />
         ))}
       </div>

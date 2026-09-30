@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo, useRef } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil, Download } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil, Download, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -2276,20 +2276,33 @@ function JournalLinksSection({ canonicalName }: { canonicalName: string }) {
 
   return (
     <div style={{ marginTop: '32px', paddingTop: '20px', borderTop: '1px solid var(--color-border)' }}>
-      <button
-        onClick={() => setOpen(o => !o)}
-        style={{
-          display: 'flex', alignItems: 'center', gap: '8px',
-          background: 'none', border: 'none', padding: 0, cursor: 'pointer',
-          color: 'var(--color-text-subtle)', fontSize: '11px',
-          textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600,
-          marginBottom: open ? '14px' : 0,
-        }}
-      >
-        <BookMarked size={12} />
-        Journal
-        {open ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
-      </button>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: open ? '14px' : 0 }}>
+        <button
+          onClick={() => setOpen(o => !o)}
+          style={{
+            display: 'flex', alignItems: 'center', gap: '8px',
+            background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+            color: 'var(--color-text-subtle)', fontSize: '11px',
+            textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600,
+          }}
+        >
+          <BookMarked size={12} />
+          Journal
+          {open ? <ChevronDown size={12} /> : <ChevronRight size={12} />}
+        </button>
+        <button
+          onClick={() => navigate({ to: '/journal', search: { linkEntity: canonicalName } })}
+          title="New journal entry linked to this entity"
+          style={{
+            background: 'none', border: 'none', padding: '2px', cursor: 'pointer',
+            color: 'var(--color-text-subtle)', display: 'flex',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+        >
+          <Plus size={14} />
+        </button>
+      </div>
 
       {open && (
         !loaded ? (
@@ -2303,7 +2316,7 @@ function JournalLinksSection({ canonicalName }: { canonicalName: string }) {
             {entries.map(entry => (
               <div
                 key={entry.id}
-                onClick={() => navigate({ to: '/journal' })}
+                onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
                 style={{
                   padding: '10px 14px',
                   background: 'var(--color-surface-2)',
@@ -2329,7 +2342,7 @@ function JournalLinksSection({ canonicalName }: { canonicalName: string }) {
             {readings.map(reading => (
               <div
                 key={reading.id}
-                onClick={() => navigate({ to: '/journal' })}
+                onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
                 style={{
                   padding: '10px 14px',
                   background: 'var(--color-surface-2)',

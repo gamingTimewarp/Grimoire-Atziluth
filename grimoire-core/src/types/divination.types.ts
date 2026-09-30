@@ -85,6 +85,8 @@ export interface Reading {
   traditionSnapshot: string[]
   /** Planetary positions captured at the time of the reading (JSON-serialised NatalChartData). */
   astroSnapshot: object | null
+  /** The journal entry this reading is grouped under, if any. Readings may stand alone. */
+  journalEntryId?: string | null
 }
 
 export type CreateReadingInput = Omit<Reading, 'id' | 'createdAt'>

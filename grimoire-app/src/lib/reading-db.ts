@@ -43,9 +43,21 @@ export async function initReadingDb(): Promise<void> {
     'ALTER TABLE readings ADD COLUMN is_daily INTEGER NOT NULL DEFAULT 0',
     'ALTER TABLE readings ADD COLUMN astro_snapshot TEXT',
     'ALTER TABLE readings ADD COLUMN question TEXT',
+    // Groups a reading under a journal entry; NULL means the reading stands alone.
+    // No FK constraint (SQLite ALTER TABLE can't add one to an existing table) —
+    // journal_entries deletion instead nulls this column at the app level, see
+    // deleteJournalEntry().
+    'ALTER TABLE readings ADD COLUMN journal_entry_id TEXT',
   ]) {
     try { await db.execute(col) } catch { /* column already exists */ }
   }
+  // One-time backfill: daily readings saved with no spread_id (the settings
+  // default "Single card (default)") used to be resolved as a true free
+  // reading — displaying as "Free Reading" in the journal instead of "Single
+  // Card" — before daily-reading.ts started defaulting them to the 'single'
+  // built-in spread. is_daily=1 AND spread_id IS NULL unambiguously identifies
+  // rows written by that bug, so this is safe to (re-)run on every startup.
+  await db.execute("UPDATE readings SET spread_id = 'single', is_free_reading = 0 WHERE is_daily = 1 AND spread_id IS NULL")
   await db.execute(`
     CREATE TABLE IF NOT EXISTS reading_cards (
       id                   TEXT PRIMARY KEY,
@@ -82,6 +94,7 @@ export async function initReadingDb(): Promise<void> {
       UNIQUE(reading_id, canonical_name)
     )
   `)
+  await db.execute('CREATE INDEX IF NOT EXISTS idx_readings_journal_entry ON readings(journal_entry_id)')
 }
 
 type ReadingRow = {
@@ -98,6 +111,7 @@ type ReadingRow = {
   tags: string
   tradition_snapshot: string
   astro_snapshot: string | null
+  journal_entry_id: string | null
 }
 
 type ReadingCardRow = {
@@ -124,6 +138,7 @@ function rowToReading(row: ReadingRow, cards: ReadingCardRow[]): Reading {
     tags: JSON.parse(row.tags) as string[],
     traditionSnapshot: JSON.parse(row.tradition_snapshot) as string[],
     astroSnapshot: row.astro_snapshot ? JSON.parse(row.astro_snapshot) : null,
+    journalEntryId: row.journal_entry_id,
     cards: cards.map(c => ({
       id: c.id,
       cardCanonicalName: c.card_canonical_name,
@@ -144,8 +159,8 @@ export async function saveReading(
 
   await db.execute(
     `INSERT INTO readings (id, created_at, reading_date, deck_id, spread_id, is_free_reading,
-       is_daily, question, subject, notes, tags, tradition_snapshot, astro_snapshot)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       is_daily, question, subject, notes, tags, tradition_snapshot, astro_snapshot, journal_entry_id)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       id, now, input.readingDate, input.deckId, input.spreadId,
       input.isFreeReading ? 1 : 0,
@@ -154,6 +169,7 @@ export async function saveReading(
       input.subject, input.notes,
       JSON.stringify(input.tags), JSON.stringify(input.traditionSnapshot),
       options?.astroSnapshot ? JSON.stringify(options.astroSnapshot) : null,
+      input.journalEntryId ?? null,
     ]
   )
 
@@ -181,7 +197,11 @@ export async function getReadingById(id: string): Promise<Reading | null> {
   return rowToReading(rows[0], cards)
 }
 
-// ─── Journal entries (standalone, no cards) ───────────────────────────────────
+// ─── Journal entries ────────────────────────────────────────────────────────
+// An entry is an overarching title + narrative notes that can group zero or
+// more readings (each keeping its own subject/question/cards/notes) — see
+// getReadingsForEntry/attachReadingToEntry below. A reading not attached to
+// any entry (journalEntryId null) still stands alone, unchanged from before.
 
 export interface JournalEntry {
   id: string
@@ -208,9 +228,92 @@ export async function saveJournalEntry(input: {
   return { id, createdAt: now, entryDate: input.entryDate, title: input.title ?? null, notes: input.notes, tags: [] }
 }
 
+/** Edit an existing entry's title/notes/date in place. */
+export async function updateJournalEntry(id: string, input: {
+  title?: string | null
+  notes: string
+  entryDate: string
+}): Promise<void> {
+  const db = await getDb()
+  await db.execute(
+    'UPDATE journal_entries SET title = ?, notes = ?, entry_date = ? WHERE id = ?',
+    [input.title ?? null, input.notes, input.entryDate, id]
+  )
+}
+
 export async function deleteJournalEntry(id: string): Promise<void> {
   const db = await getDb()
+  // Detach (don't delete) any readings grouped under this entry — deleting a
+  // journal entry is note-scoped; the reading history it happened to organize
+  // shouldn't disappear with it. They fall back to standalone, same as any
+  // reading never attached to an entry.
+  await db.execute('UPDATE readings SET journal_entry_id = NULL WHERE journal_entry_id = ?', [id])
   await db.execute('DELETE FROM journal_entries WHERE id = ?', [id])
+}
+
+// ─── Journal entry ↔ reading grouping ──────────────────────────────────────
+
+export async function getReadingsForEntry(entryId: string): Promise<Reading[]> {
+  const db = await getDb()
+  const rows = await db.select<ReadingRow[]>(
+    'SELECT * FROM readings WHERE journal_entry_id = ? ORDER BY reading_date',
+    [entryId]
+  )
+  if (!rows.length) return []
+  const ids = rows.map(r => r.id)
+  const placeholders = ids.map(() => '?').join(',')
+  const cards = await db.select<ReadingCardRow[]>(
+    `SELECT * FROM reading_cards WHERE reading_id IN (${placeholders}) ORDER BY draw_order`,
+    ids
+  )
+  const cardsByReading = new Map<string, ReadingCardRow[]>()
+  for (const c of cards) {
+    const list = cardsByReading.get(c.reading_id) ?? []
+    list.push(c)
+    cardsByReading.set(c.reading_id, list)
+  }
+  return rows.map(r => rowToReading(r, cardsByReading.get(r.id) ?? []))
+}
+
+export async function attachReadingToEntry(readingId: string, entryId: string): Promise<void> {
+  const db = await getDb()
+  await db.execute('UPDATE readings SET journal_entry_id = ? WHERE id = ?', [entryId, readingId])
+}
+
+export async function detachReadingFromEntry(readingId: string): Promise<void> {
+  const db = await getDb()
+  await db.execute('UPDATE readings SET journal_entry_id = NULL WHERE id = ?', [readingId])
+}
+
+/**
+ * Readings not currently grouped under any entry, matching the query against
+ * question/subject/notes/deck — the pool an "attach an existing reading"
+ * picker searches. Mirrors searchJournalEntries's shape/limit convention.
+ */
+export async function searchUnattachedReadings(query: string, limit = 8): Promise<Reading[]> {
+  const db = await getDb()
+  const like = `%${query}%`
+  const rows = await db.select<ReadingRow[]>(
+    `SELECT * FROM readings
+     WHERE journal_entry_id IS NULL
+       AND (question LIKE ? OR subject LIKE ? OR notes LIKE ? OR deck_id LIKE ?)
+     ORDER BY reading_date DESC LIMIT ?`,
+    [like, like, like, like, limit]
+  )
+  if (!rows.length) return []
+  const ids = rows.map(r => r.id)
+  const placeholders = ids.map(() => '?').join(',')
+  const cards = await db.select<ReadingCardRow[]>(
+    `SELECT * FROM reading_cards WHERE reading_id IN (${placeholders}) ORDER BY draw_order`,
+    ids
+  )
+  const cardsByReading = new Map<string, ReadingCardRow[]>()
+  for (const c of cards) {
+    const list = cardsByReading.get(c.reading_id) ?? []
+    list.push(c)
+    cardsByReading.set(c.reading_id, list)
+  }
+  return rows.map(r => rowToReading(r, cardsByReading.get(r.id) ?? []))
 }
 
 export async function deleteReading(id: string): Promise<void> {
@@ -495,14 +598,15 @@ export async function getAllJournalEntityLinks(): Promise<{ entryId: string; can
   return rows.map(r => ({ entryId: r.entry_id, canonicalName: r.canonical_name }))
 }
 
-/** Import a reading preserving its original id. Skips if id already exists. */
-export async function importReading(r: Reading): Promise<void> {
+/** Import a reading preserving its original id. Skips if id already exists.
+ *  Returns whether it was actually inserted (false = already present). */
+export async function importReading(r: Reading): Promise<{ inserted: boolean }> {
   const db = await getDb()
-  const inserted = await db.execute(
+  const result = await db.execute(
     `INSERT OR IGNORE INTO readings
        (id, created_at, reading_date, deck_id, spread_id, is_free_reading, is_daily,
-        question, subject, notes, tags, tradition_snapshot, astro_snapshot)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        question, subject, notes, tags, tradition_snapshot, astro_snapshot, journal_entry_id)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       r.id, r.createdAt, r.readingDate, r.deckId, r.spreadId,
       r.isFreeReading ? 1 : 0, r.isDaily ? 1 : 0,
@@ -510,9 +614,10 @@ export async function importReading(r: Reading): Promise<void> {
       r.subject, r.notes,
       JSON.stringify(r.tags), JSON.stringify(r.traditionSnapshot),
       r.astroSnapshot ? JSON.stringify(r.astroSnapshot) : null,
+      r.journalEntryId ?? null,
     ]
   )
-  if ((inserted as { rowsAffected: number }).rowsAffected === 0) return
+  if ((result as { rowsAffected: number }).rowsAffected === 0) return { inserted: false }
   for (const card of r.cards) {
     await db.execute(
       `INSERT OR IGNORE INTO reading_cards
@@ -521,16 +626,19 @@ export async function importReading(r: Reading): Promise<void> {
       [card.id || newId(), r.id, card.cardCanonicalName, card.positionId, card.drawOrder, card.orientation]
     )
   }
+  return { inserted: true }
 }
 
-/** Import a journal entry preserving its original id. Skips if id already exists. */
-export async function importJournalEntry(e: JournalEntry): Promise<void> {
+/** Import a journal entry preserving its original id. Skips if id already exists.
+ *  Returns whether it was actually inserted (false = already present). */
+export async function importJournalEntry(e: JournalEntry): Promise<{ inserted: boolean }> {
   const db = await getDb()
-  await db.execute(
+  const result = await db.execute(
     `INSERT OR IGNORE INTO journal_entries (id, created_at, entry_date, title, notes, tags)
      VALUES (?, ?, ?, ?, ?, ?)`,
     [e.id, e.createdAt, e.entryDate, e.title ?? null, e.notes, JSON.stringify(e.tags)]
   )
+  return { inserted: (result as { rowsAffected: number }).rowsAffected > 0 }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

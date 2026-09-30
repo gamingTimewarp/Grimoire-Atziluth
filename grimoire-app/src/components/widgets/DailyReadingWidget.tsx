@@ -53,7 +53,7 @@ export function DailyReadingWidget() {
       {reading && (
         <button
           type="button"
-          onClick={() => navigate({ to: '/journal' })}
+          onClick={() => navigate({ to: '/journal', search: { linkEntity: undefined } })}
           aria-label="View daily reading in journal"
           style={{
             display: 'flex', alignItems: 'center', gap: '16px',

@@ -632,6 +632,7 @@ function StatsPage() {
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
         <Link
           to="/journal"
+          search={{ linkEntity: undefined }}
           style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '13px', color: 'var(--color-text-muted)', textDecoration: 'none' }}
         >
           <ChevronLeft size={14} /> Journal
