@@ -102,6 +102,14 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          # The action's own default is "tools platform-tools" — Google has since
+          # dropped the legacy standalone "tools" package from the SDK repository
+          # entirely (long deprecated in favour of cmdline-tools/sdkmanager, which
+          # this action already bootstraps beforehand regardless), so requesting
+          # it now fails outright rather than just warning. We only ever needed
+          # platform-tools (adb etc.) here.
+          packages: 'platform-tools'
 
       - name: Install Android NDK
         run: sdkmanager "ndk;27.0.12077973"
