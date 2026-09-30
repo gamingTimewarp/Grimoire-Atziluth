@@ -46,31 +46,45 @@ You can reorder, show, or hide sidebar sections in **Settings → Navigation**. 
 
 ## 2. Home Dashboard
 
-The home page gives you a live snapshot of the current moment and your activity today.
+The home page gives you a live snapshot of the current moment and your activity today, built from a set of independent, reorderable widgets. Go to **Settings → Home Widgets** to show/hide widgets, reorder them (▲/▼), or **Reset to defaults**. Changes apply immediately. A few widgets (Today's Activity, Bookmarks, Natal Transits, On This Day, Recently Viewed) only appear on Home when they actually have something to show — hiding them in settings isn't the only way they can be absent.
 
-### Daily Context Bar
+Widgets shown by default:
 
-At the top, a row shows the active celestial context for the current day:
+### Today
 
-- **Planetary day ruler** — the classical planet ruling today (Sun/Moon/Mars/Mercury/Jupiter/Venus/Saturn)
-- **Moon phase** — emoji indicator, phase name, and illumination percentage
-- **Sun sign** — current zodiac position of the Sun
-- **Wu Xing phase** — the active Chinese five-element cycle phase
-- **Void-of-course Moon** — when the Moon makes no more major aspects before leaving its current sign, a ☽ v/c notice appears both here and on the draw screen
-
-Clicking any item that has a reference page navigates there directly.
+A row of chips for the active celestial context for the current day: **planetary day ruler** (the classical planet ruling today), **moon phase** (emoji, name, illumination %), **sun sign**, **Wu Xing phase** (the active Chinese five-element cycle phase), a **☽ v/c** chip when the Moon is void-of-course (making no more major aspects before leaving its current sign), and — for each Sabbat or calendar holiday currently in progress (e.g. "🌿 Sukkot — Day 4 of 7") — a holiday chip. Clicking any chip with a reference page navigates there directly.
 
 ### Daily Reading
 
-One reading is performed automatically each day using your configured daily reading deck and spread (set in **Settings → Daily Reading**). It appears below the context bar with its name and orientation. Clicking on a card from it opens its reference page.
+One reading is performed automatically each day using your configured daily reading deck and spread (set in **Settings → Daily Reading**, including any custom deck sub-deck). It appears with its name and orientation. Clicking on a card from it opens its reference page.
 
 ### Today's Activity
 
-Any readings saved or journal entries written today are listed here for quick review. Clicking a reading expands it; clicking a journal entry opens it.
+Any readings saved or journal entries written today are listed here for quick review (the automatic daily reading itself is excluded, since it has its own widget). Clicking a reading expands it; clicking a journal entry opens it.
 
 ### Bookmarks
 
 Up to your most recent bookmarked entities appear as a quick-access row. Click any to go to its reference page.
+
+### Moon
+
+An at-a-glance current Moon phase, linking through to the full Moon calendar page (phases, size/brightness, position, aspects, eclipses, full moon names).
+
+### Retrograde
+
+A small list of any planets currently retrograde.
+
+### Other available widgets (hidden by default)
+
+Enable these from **Settings → Home Widgets**:
+
+- **Statistics** — this month's reading count, linking to the full Journal Statistics page
+- **Study** — cards due today and your current streak, linking to the Study page
+- **Upcoming Holidays & Sabbats** — the next few upcoming Sabbats and calendar holidays (start dates only — a holiday already in progress, like a Sukkot you're partway through, shows on the **Today** widget instead, not here)
+- **Natal Transits** — current transit aspects to your saved "Self" natal chart (silently absent if you haven't saved one)
+- **On This Day** — readings and journal entries you made on this same month and day in past years (an ⓘ icon explains this); shows "Nothing on this day in past years" once you have no history yet, rather than disappearing
+- **Recently Viewed** — your last few visited reference entities
+- **Discover** — spotlights one random entity from the dataset each visit
 
 ---
 
@@ -98,7 +112,7 @@ Scroll through the deck list and tap to select. Built-in decks include:
 | Playing Cards | 52 / 54 (with Jokers) | — |
 | Tea Leaf Symbols | ~90 symbols | — |
 
-Any custom decks you have created appear at the bottom of the list.
+Any custom decks you have created appear at the bottom of the list. If a deck (built-in or custom) defines variants — e.g. Full 78 vs Major Arcana Only, or a custom deck's own sub-decks (see [Custom Decks](#10-custom-content)) — tapping it opens a row of variant buttons; pick one, including **All**, to continue.
 
 #### Step 2 — Choose a Spread
 
@@ -154,27 +168,42 @@ The complete reading screen shows the full spread plus any notes and the astrolo
 - **Markdown export** — save the reading as a `.md` file (spread name, question, cards, notes, astrological snapshot)
 - **Image export** — save a PNG screenshot of the complete reading view
 
+### Recording a Physical Reading
+
+If you did a reading offline with a physical deck, tap **Record Physical** (next to New Reading, in the Read or Journal header) to log it with the same data shape as a digital reading:
+
+1. Choose a deck and spread (built-in or custom, including any sub-decks) — same as the digital flow.
+2. Assign each drawn card to a position manually: pick the entity, then set upright/reversed.
+3. For a free-reading deck, add cards freely instead of filling fixed positions; a **Clarifier** section is always available regardless of spread.
+4. Set the reading's date and time (defaults to now — backdate it if you're logging a past reading).
+5. Optionally attach an astrological snapshot for the reading's date/time.
+6. Add a question, subject, and notes, exactly as in the digital flow.
+
+Saved physical readings appear in the Journal alongside digital ones, with no distinction in how they're displayed.
+
 ---
 
 ## 4. Journal
 
-The Journal combines all saved readings and standalone journal entries into a single reverse-chronological timeline.
+The Journal combines all saved readings and journal entries into a single reverse-chronological timeline. A journal entry is more than a freeform note — it's an overarching, titled container that can group one or more readings, each still keeping its own question, subject, cards, and notes. Use it to document a single sitting that covered several questions, a recurring practice you want to narrate over time, or just a quick note with nothing attached.
 
 ### Timeline View
 
-Each entry in the timeline shows:
-- **Reading**: spread name, deck, question (if set), and date
-- **Journal entry**: title and date with a short text preview
+Each top-level row shows:
+- **Reading** (not attached to any entry): spread name, deck, question (if set), and date
+- **Journal entry**: title, date, a short text preview, and a reading count (e.g. "· 3 readings") when it has readings attached
+
+A reading that's attached to an entry does **not** get its own row in the timeline — it only appears nested inside that entry's expanded view (see below).
 
 Tap the chevron or the row header to expand a reading or entry in place.
 
 **Compact mode**: Toggle the layout toggle in the header (double-line / single-line icon) to switch between the standard view and a more condensed list. This preference is saved as your default.
 
-**Filter**: Type in the filter field to search readings by question, notes, or card names; and journal entries by title or content.
+**Filter**: Type in the filter field to search readings by question, notes, or card names, and entries by title, notes, or the content of any reading attached to them.
 
 ### Expanded Reading
 
-An expanded reading shows:
+An expanded reading (standalone or nested inside an entry) shows:
 - A **daily context bar** for the date the reading was done
 - The full **spread visualisation** (spread grid, Tree of Life SVG, Chakra display, Year Ahead wheel, Grand Tableau, or Zodiac Year chart depending on the spread)
 - **Clarifier cards** below the main spread
@@ -183,21 +212,34 @@ An expanded reading shows:
 
 **Exporting**: When a reading is expanded, Markdown and Image export buttons appear in the header row (share icon + label).
 
-**Deleting**: Tap the trash icon, then **Confirm**. The reading disappears from the list immediately and a toast notification appears at the bottom of the screen with an **Undo** button. You have 5 seconds to undo before the deletion is committed to the database.
+**Deleting a standalone (top-level) reading**: Tap the trash icon, then **Confirm**. The reading disappears from the list immediately and a toast notification appears at the bottom of the screen with an **Undo** button. You have 5 seconds to undo before the deletion is committed to the database.
 
-### Standalone Journal Entries
+**Deleting a reading nested inside an entry**: Tap the trash icon, then **Confirm** — this removes it immediately with no Undo toast. Use the **unlink** icon instead (see below) if you want to keep the reading, just not grouped under this entry.
 
-Tap **New Entry** in the Journal header to write a freeform entry without a reading. Fill in:
+### Journal Entries
+
+Tap **New Entry** in the Journal header to write an entry. Fill in:
 - **Title** (optional)
 - **Date** (defaults to today; can be changed to backdate an entry)
 - **Notes** (rich text)
 - **Entity links** — type in the entity search field to link reference entities
 
-Entries support the same expand/collapse, entity linking, editing, and soft-delete with undo as readings.
+**Editing**: Expand an entry and tap the pencil icon to edit its title, date, and notes in place, then **Save** or **Cancel**. (Reference-database links and attached readings are managed separately, as below, and remain in place while editing.)
+
+**Adding readings to an entry**: Expand an entry to see its **Readings** section:
+- **New Reading Here** — starts the normal reading flow (deck → spread → draw → notes); the finished reading is automatically attached to this entry.
+- **Attach Existing Reading** — search your standalone (unattached) readings by question, subject, or deck, and click one to add it to this entry.
+- Each attached reading shows an **unlink** icon alongside delete — unlinking removes it from the entry without deleting it; it becomes a standalone reading again, reappearing in the top-level timeline.
+
+**Deleting an entry**: Tap the trash icon, then **Confirm** — same 5-second Undo toast as a standalone reading. Deleting an entry does **not** delete the readings attached to it; they're detached and become standalone instead.
+
+**Exporting/importing a single entry**: Expand an entry and tap the export icon (next to Edit) to save that entry, plus every reading attached to it, as one `.json` file. Use **Import Entry** in the Journal header to restore one — importing a file whose entry was already present here changes nothing (no duplicates). See also [Data & Backup](#12-data--backup).
 
 ### Entity Links
 
 Both readings and entries can be linked to any entities in the reference database. In the expanded view, type in the entity search field to find an entity by name and add it as a chip. Tap the chip to navigate to the entity, or tap the **×** on the chip to remove the link.
+
+You can also start a new entry directly from an entity: on any reference page, the **Journal** section (see [Reference → Entity Pages](#5-reference)) has a **+** button that opens the New Entry form with that entity already added as a link.
 
 ### Journal Statistics
 
@@ -241,6 +283,7 @@ Every entity has a dedicated page showing:
 - **Reversed meaning** — shown for tarot cards that have reversals data, toggleable between upright and reversed
 - **Personal annotation** — a text field at the bottom of the page where you can write your own notes. These are stored locally and never leave your device.
 - **Bookmark star** — tap to save/unsave this entity to your bookmarks
+- **Journal** — a collapsible section listing every journal entry and reading linked to this entity; tap one to jump to it in the Journal. Tap the **+** in its top-right corner to start a new journal entry with this entity already attached as a link (see [Journal → Entity Links](#4-journal))
 
 ---
 
@@ -420,7 +463,9 @@ Define your own spread layout with named positions, draw order, position meaning
 
 ### Custom Decks
 
-Build a deck from any combination of entities (built-in or custom), configure whether reversals are enabled, and optionally set a source tradition.
+Build a deck from any combination of entities (built-in or custom) and configure whether reversals are enabled.
+
+**Sub-decks**: Group a deck's own cards into named, selectable subsets — the same idea as a built-in Tarot deck's "Full 78" vs "Major Arcana Only". In the deck editor, add a sub-deck by name, then tick which of the deck's cards belong to it; you can define as many as you like. A deck with sub-decks defined shows a variant picker (an automatic **All** option plus each sub-deck) wherever you choose it — the main Read flow, physical-reading recording, and the daily-reading deck setting — exactly like the built-in deck variants.
 
 ### Custom Traditions
 
@@ -518,10 +563,12 @@ Tap **Export Backup** to save a `.json` file containing:
 - All readings and reading cards
 - All journal entries and entity links
 - All natal charts
-- All study card states and session history
-- All custom entities, spreads, decks, and traditions
+- All custom entities and entity links
+- Your app settings (localStorage)
 
 The file is human-readable JSON. A timestamp is stored in the app so the Data page can show when you last backed up.
+
+**Not included in the backup**: Study/SRS card progress and session history (intentionally excluded — it's large and rebuilds naturally from continued use), and custom spreads, custom decks, and custom traditions. From the [Custom Content](#10-custom-content) page you can export any of these individually or all-at-once as JSON; custom spreads and traditions can also be re-imported from an exported file, but there is currently no way to import an exported custom deck back in.
 
 ### Restore
 
@@ -537,6 +584,10 @@ While viewing any reading in the Journal (or on the post-save complete screen), 
 
 - **Markdown export** — a `.md` file with the spread name, question, card list (with positions and orientations), notes, and astrological snapshot table
 - **Image export** — a 2× PNG screenshot of the complete reading view
+
+### Export/Import a Single Journal Entry
+
+Expand any entry in the Journal and tap **Export entry** to save a `.json` file containing that entry (title, date, notes, entity links) along with every reading attached to it. Tap **Import Entry** in the Journal toolbar to bring one back in — the entry and its readings keep their original IDs, so re-importing a file you already have does nothing (it's reported as already existing rather than duplicated). This is a good way to move a single entry between devices or share one without a full backup.
 
 ---
 
