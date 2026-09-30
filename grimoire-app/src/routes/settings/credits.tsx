@@ -81,6 +81,11 @@ function CreditsPage() {
           role="Windows Tester"
           note="Helped with Windows testing — the author avoids that foul OS like the plague, but Kaz is a much stronger and braver soul."
         />
+        <PersonEntry
+          name="Hikari"
+          role="Windows Tester"
+          note="A second brave soul who helped with Windows testing."
+        />
       </Section>
 
       {/* Art Pack Sources */}
