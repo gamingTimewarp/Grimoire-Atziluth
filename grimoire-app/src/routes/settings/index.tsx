@@ -10,6 +10,11 @@ import {
 } from '@/lib/theme-store'
 import type { ThemeSettings, ThemeColors, ThemeColorKey, ThemePreset } from '@/lib/theme-store'
 import { getVisibleSecretThemes, unlockSecretTheme } from '@/lib/secret-themes'
+import {
+  loadFontSettings, saveFontSettings, applyFont, resolveFontStack,
+  FONT_PRESETS, DEFAULT_FONT_PRESET_ID,
+} from '@/lib/font-store'
+import type { FontSettings } from '@/lib/font-store'
 import { applyCustomCss } from '../__root'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
@@ -18,7 +23,7 @@ import { useSpreadById } from '@/lib/spread-hooks'
 import { Button } from '@/components/ui/Button'
 import { ColorSwatch } from '@/components/ui/HsvColorPicker'
 import { DateTimeInput } from '@/components/ui/DateInput'
-import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen, CalendarDays, LayoutGrid } from 'lucide-react'
+import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen, CalendarDays, LayoutGrid, Type } from 'lucide-react'
 import { LocationInput } from '@/components/ui/LocationInput'
 import type { LocationValue } from '@/components/ui/LocationInput'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
@@ -45,6 +50,7 @@ function SettingsPage() {
 
       <WindowSection />
       <ThemeSection />
+      <FontSection />
 
       <LocationSection
         location={settings.homeLocation}
@@ -370,6 +376,108 @@ function ColorRow({ label, value, onChange }: {
       <ColorSwatch value={value} onChange={onChange} />
       <span style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>{label}</span>
     </div>
+  )
+}
+
+// ─── Font section ──────────────────────────────────────────────────────────────
+
+function FontSection() {
+  const [settings, setSettingsState] = useState<FontSettings>(() => loadFontSettings())
+  const [saved, setSaved] = useState(false)
+  const isCustom = settings.presetId === 'custom'
+
+  const persist = (next: FontSettings, flash: boolean) => {
+    setSettingsState(next)
+    applyFont(next)
+    saveFontSettings(next)
+    if (flash) {
+      setSaved(true)
+      setTimeout(() => setSaved(false), 1500)
+    }
+  }
+
+  const previewStack = resolveFontStack(settings)
+
+  return (
+    <section style={{ marginBottom: '32px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
+        <Type size={15} style={{ color: 'var(--color-accent)' }} />
+        <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Font</span>
+        {saved && (
+          <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--color-accent)', marginLeft: '8px' }}>
+            <Check size={12} /> Saved
+          </span>
+        )}
+      </div>
+      <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '14px' }}>
+        Choose the default font used throughout the app. Planetary, rune, and Ogham glyphs keep rendering correctly no matter what you pick.
+      </p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '8px', marginBottom: '12px' }}>
+        {FONT_PRESETS.map(preset => {
+          const active = !isCustom && settings.presetId === preset.id
+          return (
+            <button
+              key={preset.id}
+              onClick={() => persist({ ...settings, presetId: preset.id }, true)}
+              style={{
+                padding: '10px 12px', borderRadius: '6px', cursor: 'pointer',
+                border: `1px solid ${active ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                background: active ? 'rgba(196,146,42,0.08)' : 'var(--color-surface-2)',
+                display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', fontFamily: 'inherit',
+              }}
+            >
+              <div style={{ fontSize: '18px', color: active ? 'var(--color-accent)' : 'var(--color-text)', fontFamily: preset.stack }}>Aa</div>
+              <div style={{ fontSize: '11px', color: active ? 'var(--color-accent)' : 'var(--color-text-muted)' }}>{preset.label}</div>
+            </button>
+          )
+        })}
+        <button
+          onClick={() => persist({ ...settings, presetId: 'custom' }, true)}
+          style={{
+            padding: '10px 12px', borderRadius: '6px', cursor: 'pointer',
+            border: `1px solid ${isCustom ? 'var(--color-accent)' : 'var(--color-border)'}`,
+            background: isCustom ? 'rgba(196,146,42,0.08)' : 'var(--color-surface-2)',
+            display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', fontFamily: 'inherit',
+          }}
+        >
+          <div style={{ fontSize: '18px', color: isCustom ? 'var(--color-accent)' : 'var(--color-text)' }}>Aa</div>
+          <div style={{ fontSize: '11px', color: isCustom ? 'var(--color-accent)' : 'var(--color-text-muted)' }}>Custom</div>
+        </button>
+      </div>
+
+      {isCustom && (
+        <div style={{ marginBottom: '12px' }}>
+          <input
+            type="text"
+            value={settings.customStack}
+            onChange={e => persist({ ...settings, presetId: 'custom', customStack: e.target.value }, false)}
+            placeholder='e.g. "Garamond", "Palatino Linotype", serif'
+            style={{
+              width: '100%', padding: '8px 12px', boxSizing: 'border-box',
+              background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
+              borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', outline: 'none',
+            }}
+          />
+          <p style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '6px', marginBottom: 0 }}>
+            Any valid CSS font-family value. The font must already be installed on this device — nothing is downloaded.
+          </p>
+        </div>
+      )}
+
+      <div style={{ padding: '14px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', borderRadius: '6px', marginBottom: '12px' }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>Preview</div>
+        <div style={{ fontSize: '16px', color: 'var(--color-text)', fontFamily: previewStack }}>
+          The quick brown fox jumps over the lazy dog.
+        </div>
+      </div>
+
+      {settings.presetId !== DEFAULT_FONT_PRESET_ID && (
+        <Button variant="ghost" size="sm" onClick={() => persist({ presetId: DEFAULT_FONT_PRESET_ID, customStack: '' }, true)}>
+          Reset to default
+        </Button>
+      )}
+    </section>
   )
 }
 

@@ -9,6 +9,7 @@ import { initNatalDb } from '@/lib/natal-db'
 import { initQuizDb } from '@/lib/quiz-db'
 import { createDailyReadingIfAbsent } from '@/lib/daily-reading'
 import { loadAndApplyTheme } from '@/lib/theme-store'
+import { loadAndApplyFont } from '@/lib/font-store'
 import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
 import { migrateStoredCanonicalNames } from '@/lib/canonical-aliases'
 import { loadSidebarPinned } from '@/lib/nav-store'
@@ -39,6 +40,7 @@ function RootLayout() {
 
   useEffect(() => {
     loadAndApplyTheme()
+    loadAndApplyFont()
     applyAccessibilitySettings(loadAccessibilitySettings())
     migrateStoredCanonicalNames()
     initialize()
