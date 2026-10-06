@@ -15,6 +15,7 @@ import { Route as SettingsIndexRouteImport } from './routes/settings/index'
 import { Route as ReferenceIndexRouteImport } from './routes/reference/index'
 import { Route as ReadIndexRouteImport } from './routes/read/index'
 import { Route as QabalahIndexRouteImport } from './routes/qabalah/index'
+import { Route as PracticeIndexRouteImport } from './routes/practice/index'
 import { Route as JournalIndexRouteImport } from './routes/journal/index'
 import { Route as CustomIndexRouteImport } from './routes/custom/index'
 import { Route as CalendarIndexRouteImport } from './routes/calendar/index'
@@ -87,6 +88,11 @@ const ReadIndexRoute = ReadIndexRouteImport.update({
 const QabalahIndexRoute = QabalahIndexRouteImport.update({
   id: '/qabalah/',
   path: '/qabalah/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PracticeIndexRoute = PracticeIndexRouteImport.update({
+  id: '/practice/',
+  path: '/practice/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const JournalIndexRoute = JournalIndexRouteImport.update({
@@ -357,6 +363,7 @@ export interface FileRoutesByFullPath {
   '/calendar/': typeof CalendarIndexRoute
   '/custom/': typeof CustomIndexRoute
   '/journal/': typeof JournalIndexRoute
+  '/practice/': typeof PracticeIndexRoute
   '/qabalah/': typeof QabalahIndexRoute
   '/read/': typeof ReadIndexRoute
   '/reference/': typeof ReferenceIndexRoute
@@ -408,6 +415,7 @@ export interface FileRoutesByTo {
   '/calendar': typeof CalendarIndexRoute
   '/custom': typeof CustomIndexRoute
   '/journal': typeof JournalIndexRoute
+  '/practice': typeof PracticeIndexRoute
   '/qabalah': typeof QabalahIndexRoute
   '/read': typeof ReadIndexRoute
   '/reference': typeof ReferenceIndexRoute
@@ -460,6 +468,7 @@ export interface FileRoutesById {
   '/calendar/': typeof CalendarIndexRoute
   '/custom/': typeof CustomIndexRoute
   '/journal/': typeof JournalIndexRoute
+  '/practice/': typeof PracticeIndexRoute
   '/qabalah/': typeof QabalahIndexRoute
   '/read/': typeof ReadIndexRoute
   '/reference/': typeof ReferenceIndexRoute
@@ -513,6 +522,7 @@ export interface FileRouteTypes {
     | '/calendar/'
     | '/custom/'
     | '/journal/'
+    | '/practice/'
     | '/qabalah/'
     | '/read/'
     | '/reference/'
@@ -564,6 +574,7 @@ export interface FileRouteTypes {
     | '/calendar'
     | '/custom'
     | '/journal'
+    | '/practice'
     | '/qabalah'
     | '/read'
     | '/reference'
@@ -615,6 +626,7 @@ export interface FileRouteTypes {
     | '/calendar/'
     | '/custom/'
     | '/journal/'
+    | '/practice/'
     | '/qabalah/'
     | '/read/'
     | '/reference/'
@@ -667,6 +679,7 @@ export interface RootRouteChildren {
   CalendarIndexRoute: typeof CalendarIndexRoute
   CustomIndexRoute: typeof CustomIndexRoute
   JournalIndexRoute: typeof JournalIndexRoute
+  PracticeIndexRoute: typeof PracticeIndexRoute
   QabalahIndexRoute: typeof QabalahIndexRoute
   ReadIndexRoute: typeof ReadIndexRoute
   ReferenceIndexRoute: typeof ReferenceIndexRoute
@@ -716,6 +729,13 @@ declare module '@tanstack/react-router' {
       path: '/qabalah'
       fullPath: '/qabalah/'
       preLoaderRoute: typeof QabalahIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/practice/': {
+      id: '/practice/'
+      path: '/practice'
+      fullPath: '/practice/'
+      preLoaderRoute: typeof PracticeIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/journal/': {
@@ -1068,6 +1088,7 @@ const rootRouteChildren: RootRouteChildren = {
   CalendarIndexRoute: CalendarIndexRoute,
   CustomIndexRoute: CustomIndexRoute,
   JournalIndexRoute: JournalIndexRoute,
+  PracticeIndexRoute: PracticeIndexRoute,
   QabalahIndexRoute: QabalahIndexRoute,
   ReadIndexRoute: ReadIndexRoute,
   ReferenceIndexRoute: ReferenceIndexRoute,
