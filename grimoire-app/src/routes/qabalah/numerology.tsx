@@ -4,43 +4,17 @@ import { ArrowLeft, Hash } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { DateInput } from '@/components/ui/DateInput'
 import { loadNumerologyState, saveNumerologyState, type NumerologyTab, type NumerologySystem } from '@/lib/numerology-store'
+import {
+  PYTHAGOREAN_TABLE as PYTHAGOREAN, CHALDEAN_TABLE as CHALDEAN, reduceNumber as reduce, MASTER,
+} from '@/lib/numerology-calc'
 
 export const Route = createFileRoute('/qabalah/numerology')({
   component: NumerologyPage,
 })
 
-// ─── Letter value tables ───────────────────────────────────────────────────────
-
-const PYTHAGOREAN: Record<string, number> = {
-  a:1,  b:2,  c:3,  d:4,  e:5,  f:6,  g:7,  h:8,  i:9,
-  j:1,  k:2,  l:3,  m:4,  n:5,  o:6,  p:7,  q:8,  r:9,
-  s:1,  t:2,  u:3,  v:4,  w:5,  x:6,  y:7,  z:8,
-}
-
-// Chaldean assigns no value to 9 (sacred/complete)
-const CHALDEAN: Record<string, number> = {
-  a:1, b:2, c:3, d:4, e:5, f:8, g:3, h:5, i:1,
-  j:1, k:2, l:3, m:4, n:5, o:7, p:8, q:1, r:2,
-  s:3, t:4, u:6, v:6, w:6, x:5, y:1, z:7,
-}
-
 const VOWELS = new Set(['a','e','i','o','u'])
 
 // ─── Reduction logic ───────────────────────────────────────────────────────────
-
-const MASTER = new Set([11, 22, 33])
-const KARMIC_DEBT = new Set([13, 14, 16, 19])
-
-/** Reduce a number to a single digit or master number, recording each step. */
-function reduce(n: number): { steps: number[]; result: number; karmicDebt: number | null } {
-  const steps: number[] = [n]
-  let cur = n
-  while (cur > 9 && !MASTER.has(cur)) {
-    cur = String(cur).split('').reduce((s, d) => s + Number(d), 0)
-    steps.push(cur)
-  }
-  return { steps, result: cur, karmicDebt: KARMIC_DEBT.has(n) ? n : null }
-}
 
 /** Reduce fully to a single digit 1–9, ignoring master numbers — used for the
  * month/day/year building blocks of Challenge, Pinnacle, and Personal Year/Month/Day. */

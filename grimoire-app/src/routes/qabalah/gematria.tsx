@@ -3,60 +3,21 @@ import { useState, useMemo, useEffect } from 'react'
 import { ArrowLeft, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadGematriaState, saveGematriaState, type GematriaDisplayMode } from '@/lib/gematria-store'
+import {
+  HEBREW_VALUES,
+  HEBREW_UNICODE_TO_NAME as UNICODE_TO_NAME,
+  HEBREW_FINAL_BASE as FINAL_BASE,
+  HEBREW_LATIN_TO_NAME as LATIN_TO_NAME,
+} from '@/lib/numerology-calc'
 
 export const Route = createFileRoute('/qabalah/gematria')({
   component: GematriaPage,
 })
 
 // ─── Letter data ──────────────────────────────────────────────────────────────
-
-const HEBREW_VALUES: Record<string, number> = {
-  aleph: 1,   beth: 2,    gimel: 3,   daleth: 4,  he: 5,
-  vav: 6,     zayin: 7,   cheth: 8,   teth: 9,    yod: 10,
-  kaph: 20,   lamed: 30,  mem: 40,    nun: 50,    samekh: 60,
-  ayin: 70,   pe: 80,     tzaddi: 90, qoph: 100,  resh: 200,
-  shin: 300,  tav: 400,
-  // Mispar Gadol — final (sofit) form values
-  'kaph-final': 500, 'mem-final': 600, 'nun-final': 700,
-  'pe-final': 800,   'tzaddi-final': 900,
-}
-
-// Unicode Hebrew → internal name.  Finals map to their '-final' names so the
-// parser can resolve them correctly based on the useFinalValues flag.
-const UNICODE_TO_NAME: Record<string, string> = {
-  'א': 'aleph', 'ב': 'beth',   'ג': 'gimel',  'ד': 'daleth', 'ה': 'he',
-  'ו': 'vav',   'ז': 'zayin',  'ח': 'cheth',  'ט': 'teth',   'י': 'yod',
-  'כ': 'kaph',  'ל': 'lamed',  'מ': 'mem',    'נ': 'nun',    'ס': 'samekh',
-  'ע': 'ayin',  'פ': 'pe',     'צ': 'tzaddi', 'ק': 'qoph',   'ר': 'resh',
-  'ש': 'shin',  'ת': 'tav',
-  'ך': 'kaph-final', 'ם': 'mem-final', 'ן': 'nun-final',
-  'ף': 'pe-final',   'ץ': 'tzaddi-final',
-}
-
-// Base letter for each final form (for resolving back to standard value)
-const FINAL_BASE: Record<string, string> = {
-  'kaph-final': 'kaph', 'mem-final': 'mem', 'nun-final': 'nun',
-  'pe-final': 'pe', 'tzaddi-final': 'tzaddi',
-}
-
-const LATIN_TO_NAME: Record<string, string> = {
-  'aleph': 'aleph', 'alef': 'aleph', 'beth': 'beth', 'bet': 'beth', 'vet': 'beth',
-  'gimel': 'gimel', 'daleth': 'daleth', 'dalet': 'daleth', 'he': 'he', 'heh': 'he',
-  'vav': 'vav', 'wav': 'vav', 'waw': 'vav', 'zayin': 'zayin', 'zain': 'zayin',
-  'cheth': 'cheth', 'chet': 'cheth', 'het': 'cheth', 'teth': 'teth', 'tet': 'teth',
-  'yod': 'yod', 'yud': 'yod', 'kaph': 'kaph', 'kaf': 'kaph', 'koph': 'kaph',
-  'lamed': 'lamed', 'lamedh': 'lamed', 'mem': 'mem', 'nun': 'nun', 'samekh': 'samekh',
-  'samech': 'samekh', 'ayin': 'ayin', 'pe': 'pe', 'peh': 'pe', 'fe': 'pe',
-  'tzaddi': 'tzaddi', 'tsadi': 'tzaddi', 'tzade': 'tzaddi', 'sadhe': 'tzaddi',
-  'qoph': 'qoph', 'qof': 'qoph', 'kuf': 'qoph', 'resh': 'resh', 'shin': 'shin',
-  'tav': 'tav', 'taw': 'tav', 'tau': 'tav',
-  // Final forms — Latin input (multiple spellings)
-  'kaph-final': 'kaph-final', 'kaf-sofit': 'kaph-final', 'final-kaph': 'kaph-final',
-  'mem-final':  'mem-final',  'mem-sofit':  'mem-final',  'final-mem':  'mem-final',
-  'nun-final':  'nun-final',  'nun-sofit':  'nun-final',  'final-nun':  'nun-final',
-  'pe-final':   'pe-final',   'peh-sofit':  'pe-final',   'final-pe':   'pe-final',
-  'tzaddi-final': 'tzaddi-final', 'tsadi-sofit': 'tzaddi-final', 'final-tzaddi': 'tzaddi-final',
-}
+// Value tables (HEBREW_VALUES, UNICODE_TO_NAME, FINAL_BASE, LATIN_TO_NAME)
+// live in @/lib/numerology-calc — shared with the Practice page's Numerology
+// widget so both stay numerically consistent.
 
 interface LetterToken {
   display: string   // Hebrew char or Latin name as typed
