@@ -18,7 +18,7 @@ const ITEM_LABELS: Record<string, string> = {
   'retrograde':        'Retrograde',
   'statistics':        'Statistics',
   'study':             'Study',
-  'upcoming-holidays': 'Upcoming Holidays & Sabbats',
+  'upcoming-holidays': 'Upcoming Holidays, Sabbats & Astro Events',
   'natal-transits':    'Natal Transits',
   'on-this-day':       'On This Day',
   'recently-viewed':   'Recently Viewed',

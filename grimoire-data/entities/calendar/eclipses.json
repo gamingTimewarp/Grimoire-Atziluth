@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.eclipse.lunar",
+      "entityType": "calendar.eclipse",
+      "primaryDisplayName": "Lunar Eclipse",
+      "description": "Earth passes between the Sun and Moon, casting its shadow across the lunar disc — possible only at Full Moon, and only on the roughly twice-yearly occasions when that Full Moon falls close enough to a node of the Moon's tilted orbit (an \"eclipse season\"). A penumbral eclipse, the faintest kind, only dims the Moon slightly as it crosses Earth's outer, partial shadow and is easy to miss entirely. A partial eclipse brings part of the Moon into Earth's dark umbral shadow, visibly biting a dark edge from the disc. A total eclipse immerses the whole Moon in the umbra; rather than vanishing, it typically glows a dim coppery red — refracted, reddened sunlight bent through Earth's atmosphere, the same effect that colours every sunrise and sunset on Earth projected onto the Moon at once, giving a total lunar eclipse its popular name, \"Blood Moon.\" Unlike a solar eclipse, a lunar eclipse is visible, identically and simultaneously, from the entire night-side hemisphere of Earth, and is completely safe to watch with the naked eye.",
+      "secondaryNames": [
+        { "name": "Blood Moon", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["eclipse", "full-moon", "luna"],
+      "extendedData": {
+        "kinds": ["total", "partial", "penumbral"],
+        "requiredPhase": "full-moon",
+        "visibility": "entire night hemisphere simultaneously"
+      }
+    },
+    {
+      "canonicalName": "calendar.eclipse.solar",
+      "entityType": "calendar.eclipse",
+      "primaryDisplayName": "Solar Eclipse",
+      "description": "The Moon passes directly between the Sun and Earth, casting its shadow onto Earth's surface — possible only at New Moon, and only when that New Moon falls close enough to a node of the Moon's tilted orbit for the three bodies to align. Because the Moon's shadow is small compared to Earth, a solar eclipse is visible only from a narrow track across the planet, unlike the globally-visible lunar eclipse. A partial eclipse, seen from a much wider surrounding region, leaves the Sun looking like a crescent or with a bite taken from it. A total eclipse, visible only along a narrow path of totality, briefly blocks the Sun's bright disc completely — for the only few minutes it's ever naked-eye safe to look directly at an eclipsed Sun — revealing the faint corona and often a visible drop in daylight and temperature. An annular eclipse occurs when the Moon is near the far point of its orbit (apogee) and so appears slightly smaller than the Sun, leaving a bright unblocked ring — the \"ring of fire\" — even at maximum eclipse; the Sun is never fully safe to view directly during an annular eclipse. A rare hybrid eclipse shifts between annular and total along different points of the same path, as Earth's curvature changes the Moon's apparent distance. Outside totality, safe solar-eclipse viewing always requires proper solar filters.",
+      "secondaryNames": [
+        { "name": "Ring of Fire", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["eclipse", "new-moon", "sol"],
+      "extendedData": {
+        "kinds": ["total", "annular", "partial", "hybrid"],
+        "requiredPhase": "new-moon",
+        "visibility": "narrow track across Earth's surface"
+      }
+    }
+  ]
+}

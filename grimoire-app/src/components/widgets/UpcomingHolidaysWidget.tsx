@@ -1,8 +1,9 @@
 /**
  * UpcomingHolidaysWidget.tsx
- * Next few Sabbats and calendar.holiday entries (Twelve Nights, Hanukkah,
- * Navratri, etc.), merged and sorted by date. Both getSabbatsForYear and
- * getHolidaysForYear are whole-year, sorted-by-time arrays with no
+ * Next few Sabbats, calendar.holiday entries (Twelve Nights, Hanukkah,
+ * Navratri, etc.), meteor shower peaks, and eclipses, merged and sorted by
+ * date. getSabbatsForYear/getHolidaysForYear/getMeteorShowersForYear/
+ * getEclipsesForYear are all whole-year, sorted-by-time arrays with no
  * "upcoming" filter of their own (confirmed absent elsewhere in the
  * codebase) — this widget is exactly that trivial glue: fetch this year
  * (and next year's, near the boundary, so the list doesn't go empty in
@@ -12,7 +13,8 @@
 import { useNavigate } from '@tanstack/react-router'
 import { WidgetCard } from '@/components/ui/WidgetCard'
 import { getSabbatsForYear } from '@/lib/astro-engine'
-import { getHolidaysForYear } from '@/lib/holiday-engine'
+import { getHolidaysForYear, getMeteorShowersForYear } from '@/lib/holiday-engine'
+import { getEclipsesForYear, eclipseEmoji, eclipseLabel } from '@/lib/eclipse-engine'
 
 const MAX_SHOWN = 4
 
@@ -34,6 +36,8 @@ export function getUpcoming(now: Date): UpcomingEntry[] {
       if (h.dayIndex !== 1) continue // only the start of each holiday, not every day of a multi-day span
       entries.push({ canonicalName: h.canonicalName, name: h.name, emoji: h.emoji, time: h.time })
     }
+    for (const m of getMeteorShowersForYear(y)) entries.push({ canonicalName: m.canonicalName, name: `${m.name} peak`, emoji: m.emoji, time: m.time })
+    for (const ecl of getEclipsesForYear(y)) entries.push({ canonicalName: ecl.canonicalName, name: eclipseLabel(ecl), emoji: eclipseEmoji(ecl), time: ecl.time })
   }
 
   return entries

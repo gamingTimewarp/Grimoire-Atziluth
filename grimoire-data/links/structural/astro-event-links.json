@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "calendar.eclipse.lunar",
+      "target": "astrology.planet.luna",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "A lunar eclipse only occurs at Full Moon, when Earth's shadow falls on the lunar disc." }
+    },
+    {
+      "source": "calendar.eclipse.solar",
+      "target": "astrology.planet.sol",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "A solar eclipse only occurs at New Moon, when the Moon's shadow falls across the Sun." }
+    },
+    {
+      "source": "calendar.eclipse.solar",
+      "target": "calendar.eclipse.lunar",
+      "label": "historically-linked-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": { "basis": "Both occur only during the same twice-yearly eclipse seasons, roughly two weeks apart, as the Moon's orbital nodes align with the Sun." }
+    }
+  ]
+}

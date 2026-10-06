@@ -87,20 +87,44 @@ function resolveNativeCalendarInstances(rule: Extract<DateRule, { kind: 'native-
   return dates
 }
 
-/** Only used for Dongzhi (270°, the December solstice) this pass — unlike
- *  Imbolc's search in getSabbatsForYear (which starts from 1 Dec of the
- *  *prior* year because Imbolc falls in early-mid Feb), a longitude that
- *  itself falls in December needs the search to start within the *target*
- *  year, or it never reaches that December at all. 1 Nov comfortably
- *  brackets a Dec 21-23 solstice within a 60-day window. */
+/**
+ * Resolves a fixed solar longitude (e.g. a solstice, or a meteor shower's
+ * established peak) to its one real date within `gregorianYear` — unlike
+ * getSabbatsForYear, which walks its 8 longitudes in order and can advance
+ * searchFrom incrementally between them, this has to work for ANY single
+ * longitude in isolation, with no neighbour to anchor from.
+ *
+ * SearchSunLongitude finds the next crossing after a start date within a
+ * bounded window, and (per getSabbatsForYear's own note) a window anywhere
+ * near a full solar year risks converging on next year's crossing instead
+ * of a nearby one — so this walks forward in safe ~100-day windows from a
+ * year before the target, re-anchoring past whatever it finds until a
+ * crossing lands inside `gregorianYear` (a longitude whose crossing falls
+ * very early in the year, like the Quadrantids near January, needs the
+ * walk to pass through — and discard — that same longitude's occurrence
+ * in the *prior* year first, since "year - 1, Jan 1" has no way to know in
+ * advance which side of the year boundary a given longitude's first hit
+ * will land on).
+ */
 function resolveSolarLongitudeDate(sunLongitude: number, gregorianYear: number): Date | null {
-  try {
-    const result = Astronomy.SearchSunLongitude(sunLongitude, new Date(gregorianYear, 10, 1), 60)
-    if (!result) return null
-    return result.date.getFullYear() === gregorianYear ? result.date : null
-  } catch {
-    return null
+  let searchFrom = new Date(gregorianYear - 1, 0, 1)
+  for (let i = 0; i < 10; i++) {
+    let result: ReturnType<typeof Astronomy.SearchSunLongitude> | null
+    try {
+      result = Astronomy.SearchSunLongitude(sunLongitude, searchFrom, 100)
+    } catch {
+      result = null
+    }
+    if (!result) {
+      searchFrom = new Date(searchFrom.getTime() + 95 * 86400000)
+      continue
+    }
+    const year = result.date.getFullYear()
+    if (year === gregorianYear) return result.date
+    if (year > gregorianYear) return null
+    searchFrom = new Date(result.date.getTime() + 86400000)
   }
+  return null
 }
 
 function resolveDatesForYear(def: HolidayDef, gregorianYear: number): Date[] {
@@ -160,6 +184,51 @@ export function getHolidaysForYear(year: number): HolidayInstance[] {
         }
       }
     }
+  }
+  return instances.sort((a, b) => a.time.getTime() - b.time.getTime())
+}
+
+// ─── Meteor showers ─────────────────────────────────────────────────────────
+// Resolves calendar.meteor-shower entities (grimoire-data/entities/calendar/
+// meteor-showers.json) to a real date each year. Unlike holidays, a shower's
+// peak is a single point in time (no durationDays span, no per-day
+// correspondences) — it's the solar-longitude mechanism already used for
+// Dongzhi above, just applied across the whole year instead of one point
+// near the solstice. sunLongitude values here must stay in sync with each
+// entity's own extendedData.dateRule, same relationship HOLIDAY_DEFS has
+// with the holiday entities' dateRule fields.
+
+export interface MeteorShowerDef {
+  canonicalName: string
+  name: string
+  emoji: string
+  sunLongitude: number
+}
+
+export interface MeteorShowerInstance {
+  canonicalName: string
+  name: string
+  emoji: string
+  time: Date
+}
+
+export const METEOR_SHOWER_DEFS: MeteorShowerDef[] = [
+  { canonicalName: 'calendar.meteor-shower.quadrantids',    name: 'Quadrantids',    emoji: '☄️', sunLongitude: 283.16 },
+  { canonicalName: 'calendar.meteor-shower.lyrids',          name: 'Lyrids',         emoji: '☄️', sunLongitude: 32.32 },
+  { canonicalName: 'calendar.meteor-shower.eta-aquariids',   name: 'Eta Aquariids',  emoji: '☄️', sunLongitude: 45.5 },
+  { canonicalName: 'calendar.meteor-shower.perseids',        name: 'Perseids',       emoji: '☄️', sunLongitude: 140.0 },
+  { canonicalName: 'calendar.meteor-shower.orionids',        name: 'Orionids',       emoji: '☄️', sunLongitude: 208.0 },
+  { canonicalName: 'calendar.meteor-shower.leonids',         name: 'Leonids',        emoji: '☄️', sunLongitude: 235.27 },
+  { canonicalName: 'calendar.meteor-shower.geminids',        name: 'Geminids',       emoji: '☄️', sunLongitude: 262.2 },
+  { canonicalName: 'calendar.meteor-shower.ursids',          name: 'Ursids',         emoji: '☄️', sunLongitude: 270.7 },
+]
+
+/** Returns every major meteor shower's peak date within the given Gregorian year. */
+export function getMeteorShowersForYear(year: number): MeteorShowerInstance[] {
+  const instances: MeteorShowerInstance[] = []
+  for (const def of METEOR_SHOWER_DEFS) {
+    const time = resolveSolarLongitudeDate(def.sunLongitude, year)
+    if (time) instances.push({ canonicalName: def.canonicalName, name: def.name, emoji: def.emoji, time })
   }
   return instances.sort((a, b) => a.time.getTime() - b.time.getTime())
 }

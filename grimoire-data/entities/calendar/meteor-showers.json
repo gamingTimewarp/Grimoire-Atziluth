@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "calendar.meteor-shower.quadrantids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Quadrantids",
+      "description": "One of the strongest annual showers (zenithal hourly rate around 110), but with an unusually sharp peak lasting only a few hours rather than the few-day plateau typical of other showers — timing matters more here than for almost any other shower. Its radiant lies near Boötes, in the area of the old, now-abolished constellation Quadrans Muralis the shower is still named for. The parent body is the asteroid 2003 EH1, widely suspected to be the burnt-out nucleus of a long-period comet rather than a true asteroid.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "winter", "parent-asteroid", "sharp-peak"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 283.16 },
+        "durationDays": 1,
+        "zhr": 110,
+        "radiantConstellation": "Boötes",
+        "parentBody": "2003 EH1 (asteroid, likely an extinct comet)"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.lyrids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Lyrids",
+      "description": "A modest shower (zenithal hourly rate around 18) but one of the oldest documented — Chinese records describe meteors \"falling like rain\" from this radiant as far back as 687 BCE. The radiant sits near the bright star Vega in Lyra. Its parent is the long-period comet C/1861 G1 (Thatcher), which won't return to the inner solar system for roughly four more centuries, leaving only its debris trail behind each spring.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "spring", "parent-comet"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 32.32 },
+        "durationDays": 1,
+        "zhr": 18,
+        "radiantConstellation": "Lyra",
+        "parentBody": "C/1861 G1 (Thatcher)"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.eta-aquariids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Eta Aquariids",
+      "description": "Debris from Halley's Comet, encountered as Earth crosses the comet's orbital path each spring (the same stream produces the Orionids again each autumn, on the far side of Earth's orbit). The radiant near Eta Aquarii sits low for northern observers but rides high before dawn in the southern hemisphere, where the zenithal hourly rate can reach 50; northern viewers typically see far fewer. Eta Aquariid meteors are fast, often leaving persistent glowing trains.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "spring", "parent-comet", "southern-hemisphere-favoured"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 45.5 },
+        "durationDays": 1,
+        "zhr": 50,
+        "radiantConstellation": "Aquarius",
+        "parentBody": "1P/Halley"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.perseids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Perseids",
+      "description": "The best-known meteor shower in the northern hemisphere, favoured by its combination of a high zenithal hourly rate (around 100), warm summer nights, and a radiant near Perseus that climbs well above the horizon by midnight. Debris from comet 109P/Swift-Tuttle, on a 133-year orbit, produces bright, often fragmenting meteors and the occasional fireball. Perseid watching has been a documented folk tradition in Europe for centuries, historically associated with the feast of Saint Lawrence (10 August) and known in places as \"the tears of Saint Lawrence.\"",
+      "secondaryNames": [
+        { "name": "Tears of Saint Lawrence", "languageTag": "en-folk", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["meteor-shower", "summer", "parent-comet", "fireballs"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 140.0 },
+        "durationDays": 1,
+        "zhr": 100,
+        "radiantConstellation": "Perseus",
+        "parentBody": "109P/Swift-Tuttle"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.orionids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Orionids",
+      "description": "Halley's Comet's second encounter with Earth each year, this time in autumn as Earth crosses the opposite side of the comet's debris trail from the Eta Aquariids. The radiant sits near Orion's upraised club, well placed for late-night viewing from both hemispheres. Orionid meteors are among the fastest of any annual shower, striking the atmosphere at roughly 66 km/s, which gives them a reputation for persistent trains and occasional fireballs despite a modest zenithal hourly rate around 20.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "autumn", "parent-comet"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 208.0 },
+        "durationDays": 1,
+        "zhr": 20,
+        "radiantConstellation": "Orion",
+        "parentBody": "1P/Halley"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.leonids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Leonids",
+      "description": "Ordinarily a modest shower (zenithal hourly rate around 15), the Leonids are famous for the meteor storms they produce roughly every 33 years, when Earth passes through an unusually dense clump of debris left by their parent, comet 55P/Tempel-Tuttle, on its own 33-year orbit. The 1833 storm (tens of thousands of meteors an hour) is credited with sparking the modern scientific study of meteor showers; the 1966 and 1999–2001 storms were the most recent. The radiant lies in Leo's \"sickle\" asterism.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "autumn", "parent-comet", "periodic-storms"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 235.27 },
+        "durationDays": 1,
+        "zhr": 15,
+        "radiantConstellation": "Leo",
+        "parentBody": "55P/Tempel-Tuttle"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.geminids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Geminids",
+      "description": "Often the single best shower of the year by raw numbers, with a zenithal hourly rate around 120 and meteors bright and slow enough to be easy for casual observers. Unusually, its parent is not a comet but the asteroid 3200 Phaethon, a rocky body on a comet-like orbit that sheds dust through thermal fracturing as it swings unusually close to the Sun — earning it the nickname \"rock comet.\" The radiant near Castor in Gemini rises in early evening, making this one of the few major showers comfortably watched before midnight.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "winter", "parent-asteroid", "rock-comet"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 262.2 },
+        "durationDays": 1,
+        "zhr": 120,
+        "radiantConstellation": "Gemini",
+        "parentBody": "3200 Phaethon (asteroid)"
+      }
+    },
+    {
+      "canonicalName": "calendar.meteor-shower.ursids",
+      "entityType": "calendar.meteor-shower",
+      "primaryDisplayName": "Ursids",
+      "description": "A quiet, often-overlooked shower (zenithal hourly rate around 10) falling right at the winter solstice, in the shadow of the far richer Geminids just days before. The radiant sits near Ursa Minor's bowl, circumpolar for most northern observers and visible all night. Its parent, comet 8P/Tuttle, occasionally produces brief outbursts of elevated activity when Earth crosses a denser filament of its debris trail.",
+      "secondaryNames": [],
+      "tags": ["meteor-shower", "winter", "parent-comet", "yule"],
+      "extendedData": {
+        "dateRule": { "kind": "solar-longitude", "sunLongitude": 270.7 },
+        "durationDays": 1,
+        "zhr": 10,
+        "radiantConstellation": "Ursa Minor",
+        "parentBody": "8P/Tuttle"
+      }
+    }
+  ]
+}

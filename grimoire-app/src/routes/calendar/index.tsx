@@ -11,8 +11,10 @@ import {
   getRetrogradeStrip, getRetrogradeStationInfo, getMoonIlluminationPercent,
 } from '@/lib/astro-engine'
 import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat, RetrogradeStripEntry } from '@/lib/astro-engine'
-import { getHolidaysForYear } from '@/lib/holiday-engine'
-import type { HolidayInstance } from '@/lib/holiday-engine'
+import { getHolidaysForYear, getMeteorShowersForYear } from '@/lib/holiday-engine'
+import type { HolidayInstance, MeteorShowerInstance } from '@/lib/holiday-engine'
+import { getEclipsesForYear, eclipseEmoji, eclipseLabel } from '@/lib/eclipse-engine'
+import type { EclipseInstance } from '@/lib/eclipse-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { loadSettings, patchSettings } from '@/lib/settings-store'
 import { listReadingsByMonth, listJournalEntriesByMonth } from '@/lib/reading-db'
@@ -22,7 +24,7 @@ import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import { useSpreadById } from '@/lib/spread-hooks'
 import { CALENDAR_TABS, getCalendarTab, GREGORIAN_MONTH_CANONICAL_NAMES } from '@/lib/calendar-systems'
 import type { CalendarTabDefinition } from '@/lib/calendar-systems'
-import { ChevronLeft, ChevronRight, BookOpen, PenLine, Settings2, Moon } from 'lucide-react'
+import { ChevronLeft, ChevronRight, BookOpen, PenLine, Settings2, Moon, Info } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 export const Route = createFileRoute('/calendar/')({
@@ -214,7 +216,7 @@ type DayEntries = { readings: Reading[]; entries: JournalEntry[] }
 type DateLabeler = (date: Date) => { label: string | number; inPeriod: boolean }
 
 function CalendarGrid({
-  weeks, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, holidaysByDate, onDayClick, navigate, showRetrograde, labelForDate, onRetrogradeTap,
+  weeks, today, selectedDate, entriesByDate, astroByDate, sabbatsByDate, holidaysByDate, meteorShowersByDate, eclipsesByDate, onDayClick, navigate, showRetrograde, labelForDate, onRetrogradeTap,
 }: {
   weeks: Date[][]
   today: string
@@ -223,6 +225,8 @@ function CalendarGrid({
   astroByDate: MonthAstroData['byDate'] | null
   sabbatsByDate: Map<string, Sabbat>
   holidaysByDate: Map<string, HolidayInstance[]>
+  meteorShowersByDate: Map<string, MeteorShowerInstance[]>
+  eclipsesByDate: Map<string, EclipseInstance[]>
   onDayClick: (dateStr: string) => void
   navigate: ReturnType<typeof useNavigate>
   showRetrograde: boolean
@@ -266,6 +270,8 @@ function CalendarGrid({
             const preciseMoon = astroDay?.moonEvents[0]
             const sabbat = sabbatsByDate.get(ds)
             const holidays = holidaysByDate.get(ds) ?? []
+            const meteorShowers = meteorShowersByDate.get(ds) ?? []
+            const eclipses = eclipsesByDate.get(ds) ?? []
 
             return (
               <div
@@ -325,6 +331,41 @@ function CalendarGrid({
                       style={{ fontSize: '9px', color: 'var(--color-text-muted)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                     >
                       {h.emoji} {h.name}{h.durationDays > 1 ? ` (${h.dayIndex}/${h.durationDays})` : ''}
+                    </div>
+                  ))}
+
+                  {/* Meteor shower labels */}
+                  {meteorShowers.map(m => (
+                    <div
+                      key={m.canonicalName}
+                      onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: m.canonicalName } }) }}
+                      title={`${m.name} — peak — view in Reference`}
+                      style={{ fontSize: '9px', color: 'var(--color-text-muted)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, marginTop: '1px', cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+                    >
+                      {m.emoji} {m.name}
+                    </div>
+                  ))}
+
+                  {/* Eclipse labels */}
+                  {eclipses.map(ecl => (
+                    <div
+                      key={ecl.canonicalName + ecl.time.toISOString()}
+                      style={{ display: 'flex', alignItems: 'center', gap: '3px', marginTop: '1px', overflow: 'hidden' }}
+                    >
+                      <span
+                        onClick={e => { e.stopPropagation(); navigate({ to: '/reference/$canonicalName', params: { canonicalName: ecl.canonicalName } }) }}
+                        title={`${eclipseLabel(ecl)} — view in Reference`}
+                        style={{ fontSize: '9px', color: 'var(--color-accent)', fontWeight: 500, letterSpacing: '0.04em', lineHeight: 1.2, cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flex: 1, minWidth: 0 }}
+                      >
+                        {eclipseEmoji(ecl)} {eclipseLabel(ecl)}
+                      </span>
+                      <span
+                        onClick={e => e.stopPropagation()}
+                        title={ecl.visibility}
+                        style={{ display: 'flex', color: 'var(--color-text-subtle)', cursor: 'default', flexShrink: 0 }}
+                      >
+                        <Info size={8} />
+                      </span>
                     </div>
                   ))}
 
@@ -503,13 +544,15 @@ function TransitsPanel({
 // ─── Day detail panel ─────────────────────────────────────────────────────────
 
 function DayDetail({
-  dateStr, entries, astroDay, sabbat, holidays, navigate, nativeLabel,
+  dateStr, entries, astroDay, sabbat, holidays, meteorShowers, eclipses, navigate, nativeLabel,
 }: {
   dateStr: string
   entries: DayEntries | undefined
   astroDay: MonthAstroData['byDate'] extends Map<string, infer V> ? V : never
   sabbat: Sabbat | undefined
   holidays: HolidayInstance[]
+  meteorShowers: MeteorShowerInstance[]
+  eclipses: EclipseInstance[]
   navigate: ReturnType<typeof useNavigate>
   /** e.g. "5 Iyar 5786" — shown alongside the Gregorian date on a native-calendar tab. */
   nativeLabel?: string
@@ -565,6 +608,30 @@ function DayDetail({
               style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 400, cursor: 'pointer' }}
             >
               {h.emoji} {h.name}{h.durationDays > 1 ? ` — day ${h.dayIndex} of ${h.durationDays}` : ''}
+            </span>
+          ))}
+          {meteorShowers.map(m => (
+            <span
+              key={m.canonicalName}
+              onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: m.canonicalName } })}
+              title="View in Reference"
+              style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 400, cursor: 'pointer' }}
+            >
+              {m.emoji} {m.name} peak
+            </span>
+          ))}
+          {eclipses.map(ecl => (
+            <span key={ecl.canonicalName + ecl.time.toISOString()} style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span
+                onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: ecl.canonicalName } })}
+                title="View in Reference"
+                style={{ fontSize: '13px', color: 'var(--color-accent)', fontWeight: 400, cursor: 'pointer' }}
+              >
+                {eclipseEmoji(ecl)} {eclipseLabel(ecl)}
+              </span>
+              <span title={ecl.visibility} style={{ display: 'flex', color: 'var(--color-text-subtle)', cursor: 'default' }}>
+                <Info size={12} />
+              </span>
             </span>
           ))}
         </div>
@@ -727,6 +794,28 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
     return map
   }, [year])
 
+  const meteorShowersByDate = useMemo(() => {
+    const map = new Map<string, MeteorShowerInstance[]>()
+    try {
+      for (const m of getMeteorShowersForYear(year)) {
+        const ds = toDateString(m.time)
+        map.set(ds, [...(map.get(ds) ?? []), m])
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [year])
+
+  const eclipsesByDate = useMemo(() => {
+    const map = new Map<string, EclipseInstance[]>()
+    try {
+      for (const ecl of getEclipsesForYear(year)) {
+        const ds = toDateString(ecl.time)
+        map.set(ds, [...(map.get(ds) ?? []), ecl])
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [year])
+
   useEffect(() => {
     Promise.all([
       listReadingsByMonth(year, month),
@@ -814,6 +903,8 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
         onRetrogradeTap={setRetrogradeTapText}
         sabbatsByDate={sabbatsByDate}
         holidaysByDate={holidaysByDate}
+        meteorShowersByDate={meteorShowersByDate}
+        eclipsesByDate={eclipsesByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
         showRetrograde={showRetrograde}
@@ -827,6 +918,8 @@ function GregorianCalendarView({ navigate, today }: { navigate: ReturnType<typeo
           astroDay={selectedAstroDay}
           sabbat={sabbatsByDate.get(selectedDate)}
           holidays={holidaysByDate.get(selectedDate) ?? []}
+          meteorShowers={meteorShowersByDate.get(selectedDate) ?? []}
+          eclipses={eclipsesByDate.get(selectedDate) ?? []}
           navigate={navigate}
         />
       )}
@@ -904,6 +997,32 @@ function TraditionCalendarView({
         for (const h of getHolidaysForYear(y)) {
           const ds = toDateString(h.time)
           map.set(ds, [...(map.get(ds) ?? []), h])
+        }
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [firstOfMonth, lastOfMonth])
+
+  const meteorShowersByDate = useMemo(() => {
+    const map = new Map<string, MeteorShowerInstance[]>()
+    try {
+      for (const y of new Set([firstOfMonth.getFullYear(), lastOfMonth.getFullYear()])) {
+        for (const m of getMeteorShowersForYear(y)) {
+          const ds = toDateString(m.time)
+          map.set(ds, [...(map.get(ds) ?? []), m])
+        }
+      }
+    } catch { /* silently skip */ }
+    return map
+  }, [firstOfMonth, lastOfMonth])
+
+  const eclipsesByDate = useMemo(() => {
+    const map = new Map<string, EclipseInstance[]>()
+    try {
+      for (const y of new Set([firstOfMonth.getFullYear(), lastOfMonth.getFullYear()])) {
+        for (const ecl of getEclipsesForYear(y)) {
+          const ds = toDateString(ecl.time)
+          map.set(ds, [...(map.get(ds) ?? []), ecl])
         }
       }
     } catch { /* silently skip */ }
@@ -1026,6 +1145,8 @@ function TraditionCalendarView({
         onRetrogradeTap={setRetrogradeTapText}
         sabbatsByDate={sabbatsByDate}
         holidaysByDate={holidaysByDate}
+        meteorShowersByDate={meteorShowersByDate}
+        eclipsesByDate={eclipsesByDate}
         onDayClick={setSelectedDate}
         navigate={navigate}
         showRetrograde={showRetrograde}
@@ -1039,6 +1160,8 @@ function TraditionCalendarView({
           astroDay={selectedAstroDay}
           sabbat={sabbatsByDate.get(selectedDate)}
           holidays={holidaysByDate.get(selectedDate) ?? []}
+          meteorShowers={meteorShowersByDate.get(selectedDate) ?? []}
+          eclipses={eclipsesByDate.get(selectedDate) ?? []}
           navigate={navigate}
           nativeLabel={selectedNativeLabel}
         />

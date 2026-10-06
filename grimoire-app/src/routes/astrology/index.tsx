@@ -1,13 +1,15 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useEffect, useState, useCallback, useMemo } from 'react'
 import { listNatalCharts, deleteNatalChart } from '@/lib/natal-db'
 import type { NatalChartRecord } from '@/lib/natal-db'
 import { getNatalChart, getSignsForMode, getTransitAspects } from '@/lib/astro-engine'
 import type { NatalChartData, AstrologyMode, TransitAspect } from '@/lib/astro-engine'
 import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
 import { zonedTimeToUtc } from '@/lib/timezone'
-import { getMoonPhase } from '@/lib/astro-calc'
+import { getMoonPhase, toDateString } from '@/lib/astro-calc'
 import { loadTraditionSettings } from '@/lib/tradition-store'
+import { getMeteorShowersForYear } from '@/lib/holiday-engine'
+import { getEclipsesForYear, eclipseEmoji, eclipseLabel } from '@/lib/eclipse-engine'
 import { WheelChart } from '@/components/ui/WheelChart'
 import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { AspectsPanel } from '@/components/ui/AspectsPanel'
@@ -15,7 +17,7 @@ import { CollapsibleSection } from '@/components/ui/CollapsibleSection'
 import { PlanetVisibilityFilter, toggleInSet, toggleGroupInSet } from '@/components/ui/PlanetVisibilityFilter'
 import type { PlanetGroup } from '@/components/ui/PlanetVisibilityFilter'
 import { Button } from '@/components/ui/Button'
-import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers, GitCompare } from 'lucide-react'
+import { Plus, User, Trash2, RefreshCw, List, Circle, Play, Layers, GitCompare, X, Info } from 'lucide-react'
 
 export const Route = createFileRoute('/astrology/')({
   component: AstrologyPage,
@@ -251,6 +253,97 @@ function CurrentSkyPanel() {
   )
 }
 
+// ─── Today's astro-event notice (eclipses, meteor shower peaks) ───────────────
+
+interface TodaysAstroEvent {
+  canonicalName: string
+  emoji: string
+  label: string
+  /** Where on Earth this is visible from, shown via an (i) icon — only set for eclipses. */
+  visibility?: string
+}
+
+function getTodaysAstroEvents(): TodaysAstroEvent[] {
+  const now = new Date()
+  const today = toDateString(now)
+  const year = now.getFullYear()
+  const events: TodaysAstroEvent[] = []
+  for (const ecl of getEclipsesForYear(year)) {
+    if (toDateString(ecl.time) === today) events.push({ canonicalName: ecl.canonicalName, emoji: eclipseEmoji(ecl), label: `${eclipseLabel(ecl)} today`, visibility: ecl.visibility })
+  }
+  for (const m of getMeteorShowersForYear(year)) {
+    if (toDateString(m.time) === today) events.push({ canonicalName: m.canonicalName, emoji: m.emoji, label: `${m.name} peaks tonight` })
+  }
+  return events
+}
+
+const DISMISSED_ASTRO_EVENTS_KEY = 'grimoire:dismissed-astro-events'
+
+function loadDismissedAstroEvents(): Set<string> {
+  try {
+    const raw = localStorage.getItem(DISMISSED_ASTRO_EVENTS_KEY)
+    return raw ? new Set(JSON.parse(raw) as string[]) : new Set()
+  } catch {
+    return new Set()
+  }
+}
+
+/** Dismissable banner for an eclipse or meteor shower peak happening today —
+ *  dismissal is keyed by date+event, so it stays gone for the rest of that
+ *  specific occurrence but reappears for the next one, same as the badges
+ *  this mirrors on the Calendar page. */
+function AstroEventNotice() {
+  const navigate = useNavigate()
+  const events = useMemo(() => getTodaysAstroEvents(), [])
+  const [dismissed, setDismissed] = useState<Set<string>>(loadDismissedAstroEvents)
+  const today = useMemo(() => toDateString(new Date()), [])
+
+  const dismiss = (canonicalName: string) => {
+    const key = `${today}:${canonicalName}`
+    const next = new Set(dismissed).add(key)
+    setDismissed(next)
+    try { localStorage.setItem(DISMISSED_ASTRO_EVENTS_KEY, JSON.stringify([...next])) } catch { /* ignore */ }
+  }
+
+  const visible = events.filter(e => !dismissed.has(`${today}:${e.canonicalName}`))
+  if (visible.length === 0) return null
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '20px' }}>
+      {visible.map(e => (
+        <div
+          key={e.canonicalName}
+          style={{
+            display: 'flex', alignItems: 'center', gap: '10px',
+            padding: '12px 16px', background: 'rgba(196,146,42,0.08)',
+            border: '1px solid var(--color-accent-muted)', borderRadius: '8px',
+          }}
+        >
+          <span style={{ fontSize: '18px', flexShrink: 0 }}>{e.emoji}</span>
+          <button
+            onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: e.canonicalName } })}
+            style={{ flex: 1, textAlign: 'left', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit' }}
+          >
+            {e.label}
+          </button>
+          {e.visibility && (
+            <span title={e.visibility} style={{ display: 'flex', color: 'var(--color-text-subtle)', cursor: 'default', flexShrink: 0 }}>
+              <Info size={14} />
+            </span>
+          )}
+          <button
+            onClick={() => dismiss(e.canonicalName)}
+            title="Dismiss"
+            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', display: 'flex', flexShrink: 0 }}
+          >
+            <X size={14} />
+          </button>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 // ─── Main page ────────────────────────────────────────────────────────────────
 
 function AstrologyPage() {
@@ -281,6 +374,8 @@ function AstrologyPage() {
           </Button>
         </div>
       </div>
+
+      <AstroEventNotice />
 
       <CurrentSkyPanel />
 

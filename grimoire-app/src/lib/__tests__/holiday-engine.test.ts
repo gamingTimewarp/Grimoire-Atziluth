@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { HebrewCalendarSystem } from '@grimoire/core'
-import { getHolidaysForYear, HOLIDAY_DEFS } from '../holiday-engine'
+import { getHolidaysForYear, HOLIDAY_DEFS, getMeteorShowersForYear, METEOR_SHOWER_DEFS } from '../holiday-engine'
 import type { HolidayInstance } from '../holiday-engine'
 import { getEasterForYear } from '../astro-engine'
 
@@ -114,5 +114,52 @@ describe('getHolidaysForYear — Twelve Nights year-boundary spillover', () => {
     const janTail = y2024.filter(h => h.time.getMonth() === 0)   // January 2024
     expect(decStart.map(h => h.dayIndex).sort((a, b) => a - b)).toEqual([1, 2, 3, 4, 5, 6, 7])
     expect(janTail.map(h => h.dayIndex).sort((a, b) => a - b)).toEqual([8, 9, 10, 11, 12])
+  })
+})
+
+describe('METEOR_SHOWER_DEFS', () => {
+  it('has a unique canonicalName per shower', () => {
+    const names = METEOR_SHOWER_DEFS.map(d => d.canonicalName)
+    expect(new Set(names).size).toBe(names.length)
+  })
+})
+
+describe('getMeteorShowersForYear', () => {
+  // Known peak dates (IMO-published, essentially fixed year to year since
+  // they're solar-longitude based) — exercises both an ordinary mid-year
+  // longitude (Perseids) and the two trickiest boundary cases: a longitude
+  // whose crossing falls in very early January (Quadrantids, right at the
+  // year start) and one right at the very end of December (Ursids, a day
+  // after Dongzhi/the solstice).
+  const EXPECTED: Record<string, string> = {
+    'calendar.meteor-shower.quadrantids':   '01-03',
+    'calendar.meteor-shower.lyrids':        '04-22',
+    'calendar.meteor-shower.eta-aquariids': '05-05',
+    'calendar.meteor-shower.perseids':      '08-12',
+    'calendar.meteor-shower.orionids':      '10-21',
+    'calendar.meteor-shower.leonids':       '11-17',
+    'calendar.meteor-shower.geminids':      '12-13',
+    'calendar.meteor-shower.ursids':        '12-22',
+  }
+
+  it('resolves every shower to its known peak date, within a day, for 2026', () => {
+    const showers = getMeteorShowersForYear(2026)
+    expect(showers.length).toBe(METEOR_SHOWER_DEFS.length)
+    for (const s of showers) {
+      expect(s.time.getFullYear()).toBe(2026)
+      const mmdd = `${String(s.time.getMonth() + 1).padStart(2, '0')}-${String(s.time.getDate()).padStart(2, '0')}`
+      const [expMonth, expDay] = EXPECTED[s.canonicalName]!.split('-').map(Number)
+      const expected = new Date(2026, expMonth! - 1, expDay)
+      const actualDiffDays = Math.abs((s.time.getTime() - expected.getTime()) / 86400000)
+      expect(actualDiffDays, `${s.canonicalName}: got ${mmdd}, expected near ${EXPECTED[s.canonicalName]}`).toBeLessThanOrEqual(1)
+    }
+  })
+
+  it('stays within the target year across consecutive years, including the Quadrantids/Ursids year-boundary cases', () => {
+    for (const year of [2025, 2026, 2027]) {
+      for (const s of getMeteorShowersForYear(year)) {
+        expect(s.time.getFullYear()).toBe(year)
+      }
+    }
   })
 })
