@@ -189,11 +189,12 @@ function JournalPage() {
   const [importSummary, setImportSummary] = useState<JournalEntryImportSummary | null>(null)
 
   const handleImportEntry = async () => {
+    if (!engine) return
     setImportError(null)
     setImportSummary(null)
     setImportBusy(true)
     try {
-      const summary = await pickAndImportJournalEntry()
+      const summary = await pickAndImportJournalEntry(engine)
       if (summary) {
         setImportSummary(summary)
         loadAll()
@@ -238,15 +239,6 @@ function JournalPage() {
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/journal/stats' })}>
             <BarChart2 size={13} /> Statistics
           </Button>
-          <button
-            type="button"
-            onClick={toggleCompact}
-            title={compact ? 'Switch to standard view' : 'Switch to compact view'}
-            aria-pressed={compact}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', color: compact ? 'var(--color-accent)' : 'var(--color-text-subtle)', display: 'flex', alignItems: 'center' }}
-          >
-            {compact ? <AlignLeft size={14} /> : <AlignJustify size={14} />}
-          </button>
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/read/record' })}>
             <PenLine size={14} /> Record Physical
           </Button>
@@ -260,6 +252,19 @@ function JournalPage() {
             <Plus size={14} /> New Reading
           </Button>
         </div>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+        <button
+          type="button"
+          onClick={toggleCompact}
+          title={compact ? 'Switch to standard view' : 'Switch to compact view'}
+          aria-pressed={compact}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', display: 'flex', alignItems: 'center', gap: '5px', color: compact ? 'var(--color-accent)' : 'var(--color-text-subtle)', fontSize: '12px' }}
+        >
+          {compact ? <AlignLeft size={13} /> : <AlignJustify size={13} />}
+          {compact ? 'Compact view' : 'Standard view'}
+        </button>
       </div>
 
       {importError && (
@@ -285,6 +290,12 @@ function JournalPage() {
               <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '2px' }}>
                 {importSummary.readingsImported} reading{importSummary.readingsImported !== 1 ? 's' : ''} imported
                 {importSummary.readingsAlreadyExisted > 0 && `, ${importSummary.readingsAlreadyExisted} already present`}.
+              </div>
+            )}
+            {importSummary.reconstructedFromMarkdown && (
+              <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', marginTop: '2px' }}>
+                This file had no exact data embedded, so it was reconstructed from its visible Markdown (deck/spread/cards matched by name).
+                {importSummary.cardsSkipped > 0 && ` ${importSummary.cardsSkipped} card${importSummary.cardsSkipped !== 1 ? 's' : ''} couldn't be matched and ${importSummary.cardsSkipped !== 1 ? 'were' : 'was'} skipped.`}
               </div>
             )}
           </div>
@@ -518,6 +529,7 @@ function EntryRow({
 }) {
   const navigate = useNavigate()
   const { engine } = useEngineStore()
+  const spreadById = useSpreadById()
   const [expanded, setExpanded] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const [entityLinks, setEntityLinks] = useState<string[]>([])
@@ -569,9 +581,10 @@ function EntryRow({
 
   const [exportingEntry, setExportingEntry] = useState(false)
   const handleExportEntry = async () => {
+    if (!engine) return
     setExportingEntry(true)
     try {
-      await exportJournalEntry(entry, readings)
+      await exportJournalEntry(entry, readings, engine, spreadById)
     } catch (e) {
       console.error(e)
     } finally {
