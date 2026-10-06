@@ -8,8 +8,10 @@ import {
   exportTraditionSettingsFile, pickAndImportTraditionSettingsFile,
 } from '@/lib/tradition-store'
 import type { TraditionSettings, AstrologyMode, HouseSystem, TraditionTab } from '@/lib/tradition-store'
+import { loadRitualSettings, saveRitualSettings } from '@/lib/practice-store'
+import type { RitualSettings, RitualGroupsEnabled } from '@/lib/practice-store'
 import { Button } from '@/components/ui/Button'
-import { ArrowLeft, ExternalLink, Search, Info, Download, Upload, X } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Search, Info, Download, Upload, X, Flame } from 'lucide-react'
 
 export const Route = createFileRoute('/settings/traditions')({
   component: TraditionsPage,
@@ -20,6 +22,7 @@ function TraditionsPage() {
   const { engine } = useEngineStore()
   const [settings, setSettings] = useState<TraditionSettings>(() => loadTraditionSettings())
   const [traditions, setTraditions] = useState<Map<string, Tradition>>(new Map())
+  const [ritualSettings, setRitualSettings] = useState<RitualSettings>(() => loadRitualSettings())
   const [saved, setSaved] = useState(false)
   const [query, setQuery] = useState('')
   const [tab, setTab] = useState<TraditionTab>('western')
@@ -67,6 +70,14 @@ function TraditionsPage() {
   const setHouseSystem = (hs: HouseSystem) => {
     save({ ...settings, houseSystem: hs })
   }
+
+  const saveRitual = (next: RitualSettings) => {
+    setRitualSettings(next)
+    saveRitualSettings(next)
+  }
+  const toggleEnglishCaptions = () => saveRitual({ ...ritualSettings, showEnglishCaptions: !ritualSettings.showEnglishCaptions })
+  const toggleRitualGroup = (group: keyof RitualGroupsEnabled) =>
+    saveRitual({ ...ritualSettings, groupsEnabled: { ...ritualSettings.groupsEnabled, [group]: !ritualSettings.groupsEnabled[group] } })
 
   const applyPresetById = (presetId: string) => {
     const preset = TRADITION_PRESETS.find(p => p.id === presetId)
@@ -154,6 +165,60 @@ function TraditionsPage() {
             </button>
           </div>
         )}
+      </div>
+
+      {/* Ritual */}
+      <div style={{ marginBottom: '20px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+          <Flame size={15} style={{ color: 'var(--color-accent)' }} />
+          <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Ritual</div>
+        </div>
+        <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '14px' }}>
+          Controls the Practice page's ritual space — which slots appear, and how the
+          Tetragrammaton corner slots are labelled.
+        </div>
+
+        <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', userSelect: 'none', marginBottom: '14px' }}>
+          <input
+            type="checkbox"
+            checked={ritualSettings.showEnglishCaptions}
+            onChange={toggleEnglishCaptions}
+            style={{ accentColor: 'var(--color-accent)', width: '14px', height: '14px', flexShrink: 0 }}
+          />
+          <span style={{ fontSize: '13px', color: 'var(--color-text)' }}>
+            Show English captions for the Hebrew letters
+            <span style={{ color: 'var(--color-text-subtle)' }}> — e.g. "י (Yod)" instead of just "י"</span>
+          </span>
+        </label>
+
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+          Ritual Space Slots
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '8px' }}>
+          {([
+            { key: 'cardinal',      label: 'Cardinal (N / E / S / W)' },
+            { key: 'intercardinal', label: 'Intercardinal (NE / SE / SW / NW)' },
+            { key: 'center',        label: 'Centre' },
+            { key: 'corners',       label: 'Corners (Tetragrammaton)' },
+          ] as { key: keyof RitualGroupsEnabled; label: string }[]).map(g => (
+            <label
+              key={g.key}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 10px',
+                background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+                borderRadius: '6px', cursor: 'pointer', userSelect: 'none',
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={ritualSettings.groupsEnabled[g.key]}
+                onChange={() => toggleRitualGroup(g.key)}
+                style={{ accentColor: 'var(--color-accent)', width: '14px', height: '14px', flexShrink: 0 }}
+              />
+              <span style={{ fontSize: '12px', color: 'var(--color-text)' }}>{g.label}</span>
+            </label>
+          ))}
+        </div>
       </div>
 
       {/* Search */}

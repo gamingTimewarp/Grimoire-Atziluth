@@ -1,6 +1,6 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { useState, useEffect } from 'react'
-import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X, HelpCircle } from 'lucide-react'
+import { Home, BookOpen, Search, BookMarked, CalendarDays, Star, Network, Library, Settings, Sparkles, Bookmark, X, HelpCircle, Flame } from 'lucide-react'
 import { GlobalSearch } from './GlobalSearch'
 import { loadNavConfig } from '@/lib/nav-store'
 import { getLastViewedEntity } from '@/lib/recent-entities'
@@ -9,6 +9,7 @@ import { APP_VERSION } from '@/lib/app-version'
 const ALL_NAV_ITEMS = [
   { to: '/',           icon: Home,         label: 'Home'      },
   { to: '/read',       icon: BookOpen,     label: 'Read'      },
+  { to: '/practice',   icon: Flame,        label: 'Practice'  },
   { to: '/calendar',   icon: CalendarDays, label: 'Calendar'  },
   { to: '/astrology',  icon: Star,         label: 'Astrology' },
   { to: '/qabalah',    icon: Network,      label: 'Qabalah'   },

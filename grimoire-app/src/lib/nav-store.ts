@@ -14,6 +14,7 @@ const KEY = 'grimoire:nav-config'
 export const NAV_ITEM_DEFAULTS: NavItemConfig[] = [
   { id: '/',           visible: true  },
   { id: '/read',       visible: true  },
+  { id: '/practice',   visible: true  },
   { id: '/calendar',   visible: true  },
   { id: '/astrology',  visible: true  },
   { id: '/qabalah',    visible: true  },

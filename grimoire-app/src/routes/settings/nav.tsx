@@ -14,6 +14,7 @@ export const Route = createFileRoute('/settings/nav')({
 const ITEM_LABELS: Record<string, string> = {
   '/':           'Home',
   '/read':       'Read',
+  '/practice':   'Practice',
   '/calendar':   'Calendar',
   '/astrology':  'Astrology',
   '/qabalah':    'Qabalah',
