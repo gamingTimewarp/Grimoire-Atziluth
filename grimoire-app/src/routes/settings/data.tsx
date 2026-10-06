@@ -7,8 +7,8 @@ import { countOlderThan, archiveOlderThan } from '@/lib/reading-db'
 import { Button } from '@/components/ui/Button'
 import { useEngineStore } from '@/stores/engine'
 import { seedCustomIntoEngine } from '@/lib/custom-db'
-import { appConfigDir } from '@tauri-apps/api/path'
-import { openPath } from '@tauri-apps/plugin-opener'
+import { appConfigDir, join } from '@tauri-apps/api/path'
+import { revealItemInDir } from '@tauri-apps/plugin-opener'
 
 export const Route = createFileRoute('/settings/data')({
   component: DataSettingsPage,
@@ -73,8 +73,10 @@ function DataSettingsPage() {
   const handleOpenFileLocation = async () => {
     setFileLocationError(null)
     try {
-      const dir = await appConfigDir()
-      await openPath(dir)
+      // Reveal grimoire.db itself (selected, where the OS supports it) rather
+      // than just opening its parent folder blind.
+      const dbPath = await join(await appConfigDir(), 'grimoire.db')
+      await revealItemInDir(dbPath)
     } catch (err) {
       setFileLocationError(err instanceof Error ? err.message : 'Failed to open the folder.')
     }

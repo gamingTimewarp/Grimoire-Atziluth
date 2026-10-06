@@ -30,8 +30,7 @@ import type { NatalChartRecord } from './natal-db'
 import { resolveCanonicalName, migrateStoredCanonicalNames } from './canonical-aliases'
 import { save, open } from '@tauri-apps/plugin-dialog'
 import { writeTextFile, readTextFile } from '@tauri-apps/plugin-fs'
-import { openPath } from '@tauri-apps/plugin-opener'
-import { dirname } from '@tauri-apps/api/path'
+import { revealItemInDir } from '@tauri-apps/plugin-opener'
 
 // ─── localStorage keys to include ─────────────────────────────────────────────
 
@@ -114,9 +113,8 @@ export async function exportBackup(): Promise<string | null> {
   // Record the timestamp so the Data settings page can show "Last backup: X days ago"
   localStorage.setItem('grimoire:last-backup', new Date().toISOString())
 
-  // Reveal the containing folder in the OS file manager
-  const dir = await dirname(path)
-  await openPath(dir)
+  // Reveal the exported file (selected, where the OS supports it) in the file manager
+  await revealItemInDir(path)
 
   return path
 }

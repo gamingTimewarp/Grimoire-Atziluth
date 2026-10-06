@@ -12,8 +12,9 @@ import { useEngineStore } from '@/stores/engine'
 import type { GrimoireEngine } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft, HelpCircle, FolderOpen, X, Search, Plus, Trash2, Package } from 'lucide-react'
-import { openPath } from '@tauri-apps/plugin-opener'
+import { revealItemInDir } from '@tauri-apps/plugin-opener'
 import { resourceDir, join, appConfigDir } from '@tauri-apps/api/path'
+import { exists } from '@tauri-apps/plugin-fs'
 
 export const Route = createFileRoute('/settings/art')({
   component: ArtPacksPage,
@@ -38,7 +39,7 @@ function ArtPacksPage() {
     try {
       const resDir = await resourceDir()
       const artDir = await join(resDir, 'art')
-      await openPath(artDir)
+      await revealItemInDir(artDir)
     } catch {
       // In dev mode resourceDir may not resolve to the expected path;
       // fall back to just showing the guide.
@@ -50,8 +51,14 @@ function ArtPacksPage() {
   const openFileLocation = async () => {
     setFileLocationError(null)
     try {
-      const dir = await appConfigDir()
-      await openPath(dir)
+      // Reveal the custom-art subfolder specifically — more useful here than
+      // the bare app config folder, since this page is about art packs. It's
+      // only created on first upload/import, so fall back to the parent
+      // folder if it doesn't exist yet (revealItemInDir requires its target
+      // to exist).
+      const base = await appConfigDir()
+      const artDir = await join(base, 'custom-art')
+      await revealItemInDir((await exists(artDir)) ? artDir : base)
     } catch (err) {
       setFileLocationError(err instanceof Error ? err.message : `Failed to open the folder: ${String(err)}`)
     }
