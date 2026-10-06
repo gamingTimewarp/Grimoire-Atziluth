@@ -1,8 +1,8 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import React, { useEffect, useState, useMemo, useRef } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Play, Pause, SkipBack, SkipForward, RotateCcw, Moon as MoonIcon, Pencil, Download, Plus } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Moon as MoonIcon, Pencil, Download, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -17,7 +17,9 @@ import { getCustomImageFileName } from '@/lib/custom-art'
 import { EntityArt } from '@/components/ui/EntityArt'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
-import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
+import { KameaDiagram } from '@/components/ui/KameaDiagram'
+import { PentagramDiagram } from '@/components/ui/PentagramDiagram'
+import { HexagramDiagram } from '@/components/ui/HexagramDiagram'
 import { ConstellationDiagram } from '@/components/ui/ConstellationDiagram'
 import { EntityLink } from '@/components/ui/EntityLink'
 import { SegmentedToggle } from '@/components/ui/SegmentedToggle'
@@ -232,6 +234,7 @@ function EntityDetailPage() {
   const isMagicCircle = entity.entityType === 'magic.circle'
   const isConstellation = entity.entityType === 'astrology.constellation'
   const isHoliday = entity.entityType === 'calendar.holiday'
+  const isMeteorShower = entity.entityType === 'calendar.meteor-shower'
   const isMoonEntity = entity.canonicalName === 'astrology.planet.luna'
   const isWuxing = entity.entityType === 'wuxing.phase'
   const isSephira = entity.entityType === 'qabalah.sephira'
@@ -276,6 +279,9 @@ function EntityDetailPage() {
     : undefined
   const holidayExtDataHide = isHoliday
     ? new Set(['dateRule', 'dayCorrespondences'])
+    : undefined
+  const meteorShowerExtDataHide = isMeteorShower
+    ? new Set(['dateRule'])
     : undefined
   // "season" duplicates the attributed-season link (Attributes panel already shows it,
   // clickable, as "Season" — the raw extendedData string would show a second, plain-text
@@ -492,7 +498,7 @@ function EntityDetailPage() {
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? wuxingExtDataHide ?? sephiraExtDataHide ?? alchemyMetalExtDataHide ?? enochianTabletExtDataHide ?? geomancyFigureExtDataHide ?? oghamLetterExtDataHide} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? meteorShowerExtDataHide ?? wuxingExtDataHide ?? sephiraExtDataHide ?? alchemyMetalExtDataHide ?? enochianTabletExtDataHide ?? geomancyFigureExtDataHide ?? oghamLetterExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
@@ -1432,534 +1438,30 @@ function ZodiacSignContextSection({
 
 // ─── Kamea section ────────────────────────────────────────────────────────────
 
-type KameaOverlay = 'none' | 'intelligence' | 'spirit' | 'full'
-
-interface KameaSigilDef { name: string; cells: number[] }
-interface KameaExtData {
-  grid: number[][]
-  sigils: { intelligence: KameaSigilDef; spirit: KameaSigilDef }
-  order: number
-  magicConstant: number
-  totalSum: number
-  intelligenceName: string
-  spiritName: string
-}
-
 function KameaSection({ entity }: { entity: BaseEntity }) {
-  const d = entity.extendedData as unknown as KameaExtData
-  const [overlay, setOverlay] = useState<KameaOverlay>('none')
-
-  const cellPos = useMemo(() => {
-    const map = new Map<number, [number, number]>()
-    d.grid.forEach((row, r) => row.forEach((val, c) => map.set(val, [r, c])))
-    return map
-  }, [d.grid])
-
-  const n = d.order
-  // Font size scales with grid size so numbers fit comfortably
-  const cellFontSize = n <= 4 ? '14px' : n <= 6 ? '12px' : n <= 7 ? '11px' : '9px'
-  const sumFontSize  = n <= 4 ? '11px' : '9px'
-  // Max container width so large grids don't overflow narrow mobile viewports
-  const maxW = Math.min(n * 46 + 36, 420)
-
-  const fullSequence = useMemo(() => Array.from({ length: n * n }, (_, i) => i + 1), [n])
-
-  const overlayColor =
-    overlay === 'intelligence' ? '#c8a84b'
-    : overlay === 'spirit'     ? '#c84b4b'
-    :                            '#4b8bc8'
-
-  const overlayLabel =
-    overlay === 'intelligence' ? `${d.sigils.intelligence.name} (Intelligence)`
-    : overlay === 'spirit'     ? `${d.sigils.spirit.name} (Spirit)`
-    : overlay === 'full'       ? `Full sequence (1–${n * n})`
-    : null
-
   return (
     <Section title="Magic Square">
-      <div style={{ width: '100%', maxWidth: `${maxW}px`, margin: '0 auto' }}>
-        {/* Outer grid: [data+overlay | row-sums] over [col-sums | Σ] */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gridTemplateRows: '1fr auto', gap: '4px' }}>
-          {/* Data cells with SVG sigil overlay */}
-          <div style={{ position: 'relative' }}>
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: `repeat(${n}, 1fr)`,
-              gap: 0,
-              border: '1px solid var(--color-border)',
-              borderRadius: '4px',
-              overflow: 'hidden',
-            }}>
-              {d.grid.flat().map((val, i) => {
-                const r = Math.floor(i / n)
-                const c = i % n
-                return (
-                  <div
-                    key={i}
-                    style={{
-                      aspectRatio: '1',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      background: 'var(--color-surface-2)',
-                      borderRight: c < n - 1 ? '1px solid var(--color-border)' : undefined,
-                      borderBottom: r < n - 1 ? '1px solid var(--color-border)' : undefined,
-                      fontSize: cellFontSize,
-                      fontVariantNumeric: 'tabular-nums',
-                      color: 'var(--color-text)',
-                      fontWeight: 500,
-                      lineHeight: 1,
-                    }}
-                  >
-                    {val}
-                  </div>
-                )
-              })}
-            </div>
-            {overlay !== 'none' && (
-              <KameaSigilOverlay
-                cells={overlay === 'full' ? fullSequence : d.sigils[overlay].cells}
-                cellPos={cellPos}
-                n={n}
-                color={overlayColor}
-              />
-            )}
-          </div>
-
-          {/* Row sums */}
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', paddingLeft: '4px' }}>
-            {d.grid.map((row, r) => (
-              <div key={r} style={{ fontSize: sumFontSize, color: 'var(--color-text-muted)', fontVariantNumeric: 'tabular-nums', lineHeight: 1 }}>
-                {row.reduce((s, v) => s + v, 0)}
-              </div>
-            ))}
-          </div>
-
-          {/* Column sums */}
-          <div style={{ display: 'grid', gridTemplateColumns: `repeat(${n}, 1fr)` }}>
-            {Array.from({ length: n }, (_, c) => (
-              <div key={c} style={{ display: 'flex', justifyContent: 'center', paddingTop: '2px', fontSize: sumFontSize, color: 'var(--color-text-muted)', fontVariantNumeric: 'tabular-nums' }}>
-                {d.grid.reduce((s, row) => s + row[c], 0)}
-              </div>
-            ))}
-          </div>
-
-          {/* Empty bottom-right cell — keeps grid layout intact */}
-          <div />
-        </div>
-        {/* Stats line */}
-        <p style={{ fontSize: '11px', color: 'var(--color-text-muted)', textAlign: 'center', margin: '8px 0 0' }}>
-          {n}×{n} · magic constant {d.magicConstant} · total {d.totalSum}
-        </p>
-      </div>
-
-      {/* Sigil toggle buttons */}
-      <div style={{ display: 'flex', gap: '8px', marginTop: '14px', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {(['none', 'intelligence', 'spirit', 'full'] as const).map(opt => {
-          const label =
-            opt === 'none'         ? 'No Sigil'
-            : opt === 'intelligence' ? d.sigils.intelligence.name
-            : opt === 'spirit'       ? d.sigils.spirit.name
-            :                          `1–${n * n}`
-          const active = overlay === opt
-          return (
-            <button
-              key={opt}
-              onClick={() => setOverlay(opt)}
-              style={{
-                padding: '5px 14px',
-                background: active ? 'var(--color-accent)' : 'var(--color-surface-2)',
-                border: `1px solid ${active ? 'var(--color-accent)' : 'var(--color-border)'}`,
-                borderRadius: '5px',
-                fontSize: '12px',
-                color: active ? 'var(--color-accent-contrast)' : 'var(--color-text)',
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                transition: 'all 0.15s',
-              }}
-              onMouseEnter={e => { if (!active) e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-              onMouseLeave={e => { if (!active) e.currentTarget.style.borderColor = 'var(--color-border)' }}
-            >
-              {opt === 'intelligence' ? '✦ ' : opt === 'spirit' ? '⬡ ' : opt === 'full' ? '◈ ' : ''}{label}
-            </button>
-          )
-        })}
-      </div>
-      {overlayLabel && (
-        <p style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textAlign: 'center', margin: '8px 0 0', fontStyle: 'italic' }}>
-          {overlayLabel}
-        </p>
-      )}
+      <KameaDiagram entity={entity} />
     </Section>
   )
 }
 
-function KameaSigilOverlay({
-  cells,
-  cellPos,
-  n,
-  color,
-}: {
-  cells: number[]
-  cellPos: Map<number, [number, number]>
-  n: number
-  color: string
-}) {
-  // Map each cell number to SVG coords (0-100 range, zero gaps)
-  const toXY = ([r, c]: [number, number]): [number, number] =>
-    [(c + 0.5) / n * 100, (r + 0.5) / n * 100]
-
-  const rawPoints = cells
-    .map(cell => cellPos.get(cell))
-    .filter((pos): pos is [number, number] => pos !== undefined)
-    .map(toXY)
-
-  if (rawPoints.length < 2) return null
-
-  // Deduplicate consecutive identical points; track loop positions instead
-  const points: [number, number][] = []
-  const loops: [number, number][] = []
-  rawPoints.forEach((pt, i) => {
-    const prev = rawPoints[i - 1]
-    if (prev && prev[0] === pt[0] && prev[1] === pt[1]) {
-      loops.push(pt)
-    } else {
-      points.push(pt)
-    }
-  })
-
-  const first = points[0]
-  const last  = points[points.length - 1]
-
-  // Perpendicular end-bar
-  const prev2 = points[points.length - 2] ?? first
-  const angle = Math.atan2(last[1] - prev2[1], last[0] - prev2[0])
-  const perp  = angle + Math.PI / 2
-  const barLen = 3.5
-  const bar = {
-    x1: last[0] + Math.cos(perp) * barLen, y1: last[1] + Math.sin(perp) * barLen,
-    x2: last[0] - Math.cos(perp) * barLen, y2: last[1] - Math.sin(perp) * barLen,
-  }
-
-  const pathD = points
-    .map((p, i) => `${i === 0 ? 'M' : 'L'} ${p[0].toFixed(2)} ${p[1].toFixed(2)}`)
-    .join(' ')
-
-  return (
-    <svg
-      viewBox="0 0 100 100"
-      preserveAspectRatio="xMidYMid meet"
-      style={{
-        position: 'absolute', inset: 0,
-        width: '100%', height: '100%',
-        pointerEvents: 'none',
-      }}
-    >
-      <g opacity="0.55">
-        {/* Drop shadow for readability */}
-        <path d={pathD} stroke="rgba(0,0,0,0.5)" strokeWidth="3.5" fill="none"
-          strokeLinecap="round" strokeLinejoin="round" />
-        {/* Main sigil path */}
-        <path d={pathD} stroke={color} strokeWidth="2" fill="none"
-          strokeLinecap="round" strokeLinejoin="round" />
-        {/* Loop indicators (repeated cell) */}
-        {loops.map(([lx, ly], i) => (
-          <circle key={i} cx={lx} cy={ly} r="4" fill="none"
-            stroke={color} strokeWidth="1.5" />
-        ))}
-        {/* Start: filled circle */}
-        <circle cx={first[0]} cy={first[1]} r="2.8"
-          fill={color} stroke="rgba(0,0,0,0.3)" strokeWidth="0.8" />
-      {/* End: perpendicular bar */}
-      <line x1={bar.x1} y1={bar.y1} x2={bar.x2} y2={bar.y2}
-        stroke={color} strokeWidth="2" strokeLinecap="round" />
-      </g>
-    </svg>
-  )
-}
-
-// ─── Shared animation controls helper ────────────────────────────────────────
-
-function animCtrlBtn(primary = false): React.CSSProperties {
-  return {
-    display: 'flex', alignItems: 'center', justifyContent: 'center',
-    width: '28px', height: '28px',
-    background: primary ? 'var(--color-accent)' : 'var(--color-surface-2)',
-    border: `1px solid ${primary ? 'var(--color-accent)' : 'var(--color-border)'}`,
-    borderRadius: '5px', cursor: 'pointer',
-    color: primary ? 'var(--color-accent-contrast)' : 'var(--color-text-muted)',
-    padding: 0,
-  }
-}
-
 // ─── Pentagram section ────────────────────────────────────────────────────────
 
-const PENTA_VERTEX_LABELS = ['Spirit', 'Fire', 'Earth', 'Water', 'Air']
-const PENTA_ALL_EDGES: [number, number][] = [[0,2],[2,4],[4,1],[1,3],[3,0]]
-const PENTA_VERTS = [0,1,2,3,4].map(i => {
-  const a = (i * 72 - 90) * Math.PI / 180
-  return [50 + 38 * Math.cos(a), 50 + 38 * Math.sin(a)] as [number, number]
-})
-
 function PentagramSection({ entity }: { entity: BaseEntity }) {
-  const d = entity.extendedData as Record<string, unknown>
-  const steps = (d.constructionSteps as [number, number][]) ?? []
-  const elementVertex = (d.elementVertex as number) ?? 0
-  const elementColor = (d.elementColor as string) || 'var(--color-accent)'
-  const variant = (d.variant as string) ?? ''
-
-  const [step, setStep] = useState(-1)
-  const [playing, setPlaying] = useState(false)
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  const totalSteps = steps.length
-
-  useEffect(() => {
-    if (!playing) {
-      if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null }
-      return
-    }
-    intervalRef.current = setInterval(() => {
-      setStep(prev => {
-        if (prev >= totalSteps - 1) { setPlaying(false); return prev }
-        return prev + 1
-      })
-    }, 700)
-    return () => { if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null } }
-  }, [playing, totalSteps])
-
-  const handleReset     = () => { setPlaying(false); setStep(-1) }
-  const handleBack      = () => { setPlaying(false); setStep(s => Math.max(-1, s - 1)) }
-  const handleFwd       = () => { setPlaying(false); setStep(s => Math.min(totalSteps - 1, s + 1)) }
-  const handleTogglePlay = () => {
-    if (step >= totalSteps - 1) { setStep(-1); setPlaying(true) }
-    else setPlaying(p => !p)
-  }
-
-  const completedEdges = step >= 0 ? steps.slice(0, step + 1) : steps
-  const activeEdge = (step >= 0 && step < totalSteps) ? steps[step] : null
-  const isComplete = step < 0
-
   return (
     <Section title="Construction">
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-        <ZoomableSVGContainer style={{ flex: '1 1 200px', maxWidth: '240px', borderRadius: '6px' }}>
-          <svg viewBox="-8 0 120 100" width="100%" style={{ display: 'block' }}
-            aria-label="Pentagram construction diagram">
-            {PENTA_ALL_EDGES.map(([a, b], i) => (
-              <line key={i}
-                x1={PENTA_VERTS[a][0]} y1={PENTA_VERTS[a][1]}
-                x2={PENTA_VERTS[b][0]} y2={PENTA_VERTS[b][1]}
-                stroke="var(--color-border)" strokeWidth="0.8" opacity="0.4" />
-            ))}
-            {completedEdges.map(([a, b], i) => {
-              const isActive = !isComplete && activeEdge && activeEdge[0] === a && activeEdge[1] === b
-              return (
-                <line key={i}
-                  x1={PENTA_VERTS[a][0]} y1={PENTA_VERTS[a][1]}
-                  x2={PENTA_VERTS[b][0]} y2={PENTA_VERTS[b][1]}
-                  stroke={elementColor}
-                  strokeWidth={isActive ? 2.5 : 1.5}
-                  opacity={isActive ? 1 : 0.75}
-                />
-              )
-            })}
-            {PENTA_VERTS.map(([x, y], i) => (
-              <circle key={i} cx={x} cy={y}
-                r={i === elementVertex ? 3.5 : 2.5}
-                fill={i === elementVertex ? elementColor : 'var(--color-surface-2)'}
-                stroke={i === elementVertex ? elementColor : 'var(--color-border)'}
-                strokeWidth="1"
-              />
-            ))}
-            {PENTA_VERTS.map(([x, y], i) => {
-              const lx = x + (x < 45 ? -7 : x > 55 ? 7 : 0)
-              const ly = y + (y < 30 ? -5 : y > 70 ? 5 : y < 50 ? -5 : 5)
-              return (
-                <text key={i} x={lx} y={ly}
-                  textAnchor={x < 45 ? 'end' : x > 55 ? 'start' : 'middle'}
-                  dominantBaseline="middle" fontSize="5.5"
-                  fill={i === elementVertex ? elementColor : 'var(--color-text-muted)'}
-                  style={{ userSelect: 'none' } as React.CSSProperties}
-                >
-                  {PENTA_VERTEX_LABELS[i]}
-                </text>
-              )
-            })}
-          </svg>
-        </ZoomableSVGContainer>
-
-        <div style={{ flex: '1 1 150px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-            <button onClick={handleReset} title="Reset" style={animCtrlBtn()}>
-              <RotateCcw size={13} />
-            </button>
-            <button onClick={handleBack} title="Step back" style={animCtrlBtn()}>
-              <SkipBack size={13} />
-            </button>
-            <button onClick={handleTogglePlay} title={playing ? 'Pause' : 'Play'} style={animCtrlBtn(true)}>
-              {playing ? <Pause size={13} /> : <Play size={13} />}
-            </button>
-            <button onClick={handleFwd} title="Step forward" style={animCtrlBtn()}>
-              <SkipForward size={13} />
-            </button>
-          </div>
-          <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', minHeight: '32px', lineHeight: '1.5' }}>
-            {step < 0 ? (
-              <span style={{ fontStyle: 'italic', color: 'var(--color-text-subtle)' }}>
-                Complete — press ▶ to animate
-              </span>
-            ) : (
-              <>
-                <span style={{ color: 'var(--color-text-subtle)' }}>Step {step + 1} of {totalSteps}</span>
-                <br />
-                <span style={{ color: 'var(--color-text)' }}>
-                  {PENTA_VERTEX_LABELS[steps[step][0]]} → {PENTA_VERTEX_LABELS[steps[step][1]]}
-                </span>
-              </>
-            )}
-          </div>
-          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', textTransform: 'capitalize' }}>
-            {variant} form
-          </div>
-        </div>
-      </div>
+      <PentagramDiagram entity={entity} />
     </Section>
   )
 }
 
 // ─── Hexagram section ─────────────────────────────────────────────────────────
 
-const HEX_VERTEX_LABELS  = ['Saturn', 'Jupiter', 'Mars', 'Sol', 'Venus', 'Mercury']
-const HEX_VERTEX_SYMBOLS = ['♄', '♃', '♂', '☉', '♀', '☿']
-const HEX_ALL_EDGES: [number, number][] = [[0,2],[2,4],[4,0],[3,5],[5,1],[1,3]]
-const HEX_VERTS = [0,1,2,3,4,5].map(i => {
-  const a = (i * 60 - 90) * Math.PI / 180
-  return [50 + 38 * Math.cos(a), 50 + 38 * Math.sin(a)] as [number, number]
-})
-
 function HexagramSection({ entity }: { entity: BaseEntity }) {
-  const d = entity.extendedData as Record<string, unknown>
-  const steps = (d.constructionSteps as [number, number][]) ?? []
-  const planetVertex = (d.planetVertex as number) ?? 0
-  const planetColor = (d.planetColor as string) || 'var(--color-accent)'
-  const secondColor = '#888899'
-
-  const [step, setStep] = useState(-1)
-  const [playing, setPlaying] = useState(false)
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  const totalSteps = steps.length
-
-  useEffect(() => {
-    if (!playing) {
-      if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null }
-      return
-    }
-    intervalRef.current = setInterval(() => {
-      setStep(prev => {
-        if (prev >= totalSteps - 1) { setPlaying(false); return prev }
-        return prev + 1
-      })
-    }, 700)
-    return () => { if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null } }
-  }, [playing, totalSteps])
-
-  const handleReset     = () => { setPlaying(false); setStep(-1) }
-  const handleBack      = () => { setPlaying(false); setStep(s => Math.max(-1, s - 1)) }
-  const handleFwd       = () => { setPlaying(false); setStep(s => Math.min(totalSteps - 1, s + 1)) }
-  const handleTogglePlay = () => {
-    if (step >= totalSteps - 1) { setStep(-1); setPlaying(true) }
-    else setPlaying(p => !p)
-  }
-
-  const completedEdges = step >= 0 ? steps.slice(0, step + 1) : steps
-  const activeEdge = (step >= 0 && step < totalSteps) ? steps[step] : null
-  const isComplete = step < 0
-
   return (
     <Section title="Construction">
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-        <ZoomableSVGContainer style={{ flex: '1 1 200px', maxWidth: '240px', borderRadius: '6px' }}>
-          <svg viewBox="-30 -5 160 110" width="100%" style={{ display: 'block' }}
-            aria-label="Hexagram construction diagram">
-            {HEX_ALL_EDGES.map(([a, b], i) => (
-              <line key={i}
-                x1={HEX_VERTS[a][0]} y1={HEX_VERTS[a][1]}
-                x2={HEX_VERTS[b][0]} y2={HEX_VERTS[b][1]}
-                stroke="var(--color-border)" strokeWidth="0.8" opacity="0.4" />
-            ))}
-            {completedEdges.map(([a, b], i) => {
-              const isActive = !isComplete && activeEdge && activeEdge[0] === a && activeEdge[1] === b
-              const color = i < 3 ? planetColor : secondColor
-              return (
-                <line key={i}
-                  x1={HEX_VERTS[a][0]} y1={HEX_VERTS[a][1]}
-                  x2={HEX_VERTS[b][0]} y2={HEX_VERTS[b][1]}
-                  stroke={color}
-                  strokeWidth={isActive ? 2.5 : 1.5}
-                  opacity={isActive ? 1 : 0.75}
-                />
-              )
-            })}
-            {HEX_VERTS.map(([x, y], i) => (
-              <circle key={i} cx={x} cy={y}
-                r={i === planetVertex ? 3.5 : 2.5}
-                fill={i === planetVertex ? planetColor : 'var(--color-surface-2)'}
-                stroke={i === planetVertex ? planetColor : 'var(--color-border)'}
-                strokeWidth="1"
-              />
-            ))}
-            {HEX_VERTS.map(([x, y], i) => {
-              const lx = x + (x < 45 ? -7 : x > 55 ? 7 : 0)
-              const ly = y + (y < 45 ? -5 : y > 55 ? 5 : 0)
-              return (
-                <text key={i} x={lx} y={ly}
-                  textAnchor={x < 45 ? 'end' : x > 55 ? 'start' : 'middle'}
-                  dominantBaseline="middle" fontSize="5"
-                  fill={i === planetVertex ? planetColor : 'var(--color-text-muted)'}
-                  style={{ userSelect: 'none' } as React.CSSProperties}
-                >
-                  {HEX_VERTEX_SYMBOLS[i]} {HEX_VERTEX_LABELS[i]}
-                </text>
-              )
-            })}
-          </svg>
-        </ZoomableSVGContainer>
-
-        <div style={{ flex: '1 1 150px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-            <button onClick={handleReset} title="Reset" style={animCtrlBtn()}>
-              <RotateCcw size={13} />
-            </button>
-            <button onClick={handleBack} title="Step back" style={animCtrlBtn()}>
-              <SkipBack size={13} />
-            </button>
-            <button onClick={handleTogglePlay} title={playing ? 'Pause' : 'Play'} style={animCtrlBtn(true)}>
-              {playing ? <Pause size={13} /> : <Play size={13} />}
-            </button>
-            <button onClick={handleFwd} title="Step forward" style={animCtrlBtn()}>
-              <SkipForward size={13} />
-            </button>
-          </div>
-          <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', minHeight: '32px', lineHeight: '1.5' }}>
-            {step < 0 ? (
-              <span style={{ fontStyle: 'italic', color: 'var(--color-text-subtle)' }}>
-                Complete — press ▶ to animate
-              </span>
-            ) : (
-              <>
-                <span style={{ color: 'var(--color-text-subtle)' }}>Step {step + 1} of {totalSteps}</span>
-                <br />
-                <span style={{ color: 'var(--color-text)' }}>
-                  {HEX_VERTEX_SYMBOLS[steps[step][0]]} {HEX_VERTEX_LABELS[steps[step][0]]} → {HEX_VERTEX_SYMBOLS[steps[step][1]]} {HEX_VERTEX_LABELS[steps[step][1]]}
-                </span>
-              </>
-            )}
-          </div>
-          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
-            Godname: <span style={{ color: 'var(--color-text)' }}>ARARITA</span>
-          </div>
-        </div>
-      </div>
+      <HexagramDiagram entity={entity} />
     </Section>
   )
 }

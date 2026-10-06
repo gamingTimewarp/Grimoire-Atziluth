@@ -1,7 +1,7 @@
 /**
- * PentagramDiagram.tsx
- * Animated pentagram-construction diagram — moved out of
- * reference/$canonicalName.tsx's PentagramSection (its original, sole
+ * HexagramDiagram.tsx
+ * Animated hexagram-construction diagram — moved out of
+ * reference/$canonicalName.tsx's HexagramSection (its original, sole
  * owner) so the Practice page's Magic Circle widget can reuse the same
  * diagram instead of duplicating it. $canonicalName.tsx still wraps this in
  * its own <Section title="Construction"> heading; this component is just
@@ -15,10 +15,11 @@ import { Play, Pause, SkipBack, SkipForward, RotateCcw } from 'lucide-react'
 import type { BaseEntity } from '@grimoire/core'
 import { ZoomableSVGContainer } from './ZoomableSVGContainer'
 
-const PENTA_VERTEX_LABELS = ['Spirit', 'Fire', 'Earth', 'Water', 'Air']
-const PENTA_ALL_EDGES: [number, number][] = [[0,2],[2,4],[4,1],[1,3],[3,0]]
-const PENTA_VERTS = [0,1,2,3,4].map(i => {
-  const a = (i * 72 - 90) * Math.PI / 180
+const HEX_VERTEX_LABELS  = ['Saturn', 'Jupiter', 'Mars', 'Sol', 'Venus', 'Mercury']
+const HEX_VERTEX_SYMBOLS = ['♄', '♃', '♂', '☉', '♀', '☿']
+const HEX_ALL_EDGES: [number, number][] = [[0,2],[2,4],[4,0],[3,5],[5,1],[1,3]]
+const HEX_VERTS = [0,1,2,3,4,5].map(i => {
+  const a = (i * 60 - 90) * Math.PI / 180
   return [50 + 38 * Math.cos(a), 50 + 38 * Math.sin(a)] as [number, number]
 })
 
@@ -34,12 +35,12 @@ function animCtrlBtn(primary = false): CSSProperties {
   }
 }
 
-export function PentagramDiagram({ entity }: { entity: BaseEntity }) {
+export function HexagramDiagram({ entity }: { entity: BaseEntity }) {
   const d = entity.extendedData as Record<string, unknown>
   const steps = (d.constructionSteps as [number, number][]) ?? []
-  const elementVertex = (d.elementVertex as number) ?? 0
-  const elementColor = (d.elementColor as string) || 'var(--color-accent)'
-  const variant = (d.variant as string) ?? ''
+  const planetVertex = (d.planetVertex as number) ?? 0
+  const planetColor = (d.planetColor as string) || 'var(--color-accent)'
+  const secondColor = '#888899'
 
   const [step, setStep] = useState(-1)
   const [playing, setPlaying] = useState(false)
@@ -75,45 +76,46 @@ export function PentagramDiagram({ entity }: { entity: BaseEntity }) {
   return (
     <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
       <ZoomableSVGContainer style={{ flex: '1 1 200px', maxWidth: '240px', borderRadius: '6px' }}>
-        <svg viewBox="-8 0 120 100" width="100%" style={{ display: 'block' }}
-          aria-label="Pentagram construction diagram">
-          {PENTA_ALL_EDGES.map(([a, b], i) => (
+        <svg viewBox="-30 -5 160 110" width="100%" style={{ display: 'block' }}
+          aria-label="Hexagram construction diagram">
+          {HEX_ALL_EDGES.map(([a, b], i) => (
             <line key={i}
-              x1={PENTA_VERTS[a][0]} y1={PENTA_VERTS[a][1]}
-              x2={PENTA_VERTS[b][0]} y2={PENTA_VERTS[b][1]}
+              x1={HEX_VERTS[a][0]} y1={HEX_VERTS[a][1]}
+              x2={HEX_VERTS[b][0]} y2={HEX_VERTS[b][1]}
               stroke="var(--color-border)" strokeWidth="0.8" opacity="0.4" />
           ))}
           {completedEdges.map(([a, b], i) => {
             const isActive = !isComplete && activeEdge && activeEdge[0] === a && activeEdge[1] === b
+            const color = i < 3 ? planetColor : secondColor
             return (
               <line key={i}
-                x1={PENTA_VERTS[a][0]} y1={PENTA_VERTS[a][1]}
-                x2={PENTA_VERTS[b][0]} y2={PENTA_VERTS[b][1]}
-                stroke={elementColor}
+                x1={HEX_VERTS[a][0]} y1={HEX_VERTS[a][1]}
+                x2={HEX_VERTS[b][0]} y2={HEX_VERTS[b][1]}
+                stroke={color}
                 strokeWidth={isActive ? 2.5 : 1.5}
                 opacity={isActive ? 1 : 0.75}
               />
             )
           })}
-          {PENTA_VERTS.map(([x, y], i) => (
+          {HEX_VERTS.map(([x, y], i) => (
             <circle key={i} cx={x} cy={y}
-              r={i === elementVertex ? 3.5 : 2.5}
-              fill={i === elementVertex ? elementColor : 'var(--color-surface-2)'}
-              stroke={i === elementVertex ? elementColor : 'var(--color-border)'}
+              r={i === planetVertex ? 3.5 : 2.5}
+              fill={i === planetVertex ? planetColor : 'var(--color-surface-2)'}
+              stroke={i === planetVertex ? planetColor : 'var(--color-border)'}
               strokeWidth="1"
             />
           ))}
-          {PENTA_VERTS.map(([x, y], i) => {
+          {HEX_VERTS.map(([x, y], i) => {
             const lx = x + (x < 45 ? -7 : x > 55 ? 7 : 0)
-            const ly = y + (y < 30 ? -5 : y > 70 ? 5 : y < 50 ? -5 : 5)
+            const ly = y + (y < 45 ? -5 : y > 55 ? 5 : 0)
             return (
               <text key={i} x={lx} y={ly}
                 textAnchor={x < 45 ? 'end' : x > 55 ? 'start' : 'middle'}
-                dominantBaseline="middle" fontSize="5.5"
-                fill={i === elementVertex ? elementColor : 'var(--color-text-muted)'}
+                dominantBaseline="middle" fontSize="5"
+                fill={i === planetVertex ? planetColor : 'var(--color-text-muted)'}
                 style={{ userSelect: 'none' } as CSSProperties}
               >
-                {PENTA_VERTEX_LABELS[i]}
+                {HEX_VERTEX_SYMBOLS[i]} {HEX_VERTEX_LABELS[i]}
               </text>
             )
           })}
@@ -145,13 +147,13 @@ export function PentagramDiagram({ entity }: { entity: BaseEntity }) {
               <span style={{ color: 'var(--color-text-subtle)' }}>Step {step + 1} of {totalSteps}</span>
               <br />
               <span style={{ color: 'var(--color-text)' }}>
-                {PENTA_VERTEX_LABELS[steps[step][0]]} → {PENTA_VERTEX_LABELS[steps[step][1]]}
+                {HEX_VERTEX_SYMBOLS[steps[step][0]]} {HEX_VERTEX_LABELS[steps[step][0]]} → {HEX_VERTEX_SYMBOLS[steps[step][1]]} {HEX_VERTEX_LABELS[steps[step][1]]}
               </span>
             </>
           )}
         </div>
-        <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)', textTransform: 'capitalize' }}>
-          {variant} form
+        <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+          Godname: <span style={{ color: 'var(--color-text)' }}>ARARITA</span>
         </div>
       </div>
     </div>
