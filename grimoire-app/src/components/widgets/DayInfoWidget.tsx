@@ -6,6 +6,7 @@
  */
 
 import { useNavigate } from '@tanstack/react-router'
+import { Info } from 'lucide-react'
 import { WidgetCard } from '@/components/ui/WidgetCard'
 import { getMoonPhase, getPlanetaryDayRuler, getWuxingPhase } from '@/lib/astro-calc'
 import { getSunSignForMode, getVoidOfCourseMoon } from '@/lib/astro-engine'
@@ -31,10 +32,13 @@ export function DayInfoWidget() {
   const voc      = getVoidOfCourseMoon(date)
   const holidays = getTodaysHolidays(date)
 
-  const chip = (label: string, sub: string, cn?: string) => {
+  const chip = (label: string, sub: string, cn?: string, opts?: { info?: string; onClick?: () => void }) => {
     const inner = (
       <>
-        <div style={{ fontSize: '16px', marginBottom: '2px' }}>{label}</div>
+        <div style={{ fontSize: '16px', marginBottom: '2px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <span>{label}</span>
+          {opts?.info && <Info size={11} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />}
+        </div>
         <div style={{ fontSize: '11px', color: 'var(--color-text-muted)' }}>{sub}</div>
       </>
     )
@@ -43,12 +47,14 @@ export function DayInfoWidget() {
       border: '1px solid var(--color-border)', borderRadius: '6px',
       flex: '1 1 100px', transition: 'border-color 0.15s',
     }
-    if (cn) {
+    const handleClick = opts?.onClick ?? (cn ? () => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } }) : undefined)
+    if (handleClick) {
       return (
         <button
           key={label}
           type="button"
-          onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+          title={opts?.info}
+          onClick={handleClick}
           style={{ ...sharedStyle, cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left', display: 'block' }}
           onMouseEnter={e => { (e.currentTarget).style.borderColor = 'var(--color-accent-muted)' }}
           onMouseLeave={e => { (e.currentTarget).style.borderColor = 'var(--color-border)' }}
@@ -57,7 +63,7 @@ export function DayInfoWidget() {
         </button>
       )
     }
-    return <div key={label} style={{ ...sharedStyle, cursor: 'default' }}>{inner}</div>
+    return <div key={label} title={opts?.info} style={{ ...sharedStyle, cursor: 'default' }}>{inner}</div>
   }
 
   return (
@@ -67,7 +73,15 @@ export function DayInfoWidget() {
         {chip(`${moon.emoji} ${moon.name}`, `${moon.illumination}% illuminated`, moon.canonicalName)}
         {chip(`${sun.symbol} ${sun.name}`, 'Sun sign', sun.canonicalName)}
         {chip(`${wuxing.nameZh} ${wuxing.name}`, wuxing.season + ' season', wuxing.canonicalName)}
-        {voc.isVoid && chip('☽ v/c', `${voc.degreesRemaining.toFixed(1)}° to ingress`)}
+        {voc.isVoid && chip(
+          '☽ v/c',
+          `${voc.degreesRemaining.toFixed(1)}° to ingress`,
+          undefined,
+          {
+            info: "Void-of-course: the Moon won't make any more major aspects before entering its next sign. Traditionally considered a poor time to start new ventures — plans made now are prone to fizzling or going nowhere.",
+            onClick: () => navigate({ to: '/calendar/moon' }),
+          }
+        )}
         {holidays.map(h => chip(
           `${h.emoji} ${h.name}`,
           h.durationDays > 1 ? `Day ${h.dayIndex} of ${h.durationDays}` : 'Today',
