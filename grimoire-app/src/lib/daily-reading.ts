@@ -4,7 +4,7 @@
  */
 
 import type { GrimoireEngine } from '@grimoire/core'
-import { getTodaysDailyReading, saveReading } from '@/lib/reading-db'
+import { getTodaysDailyReading, saveReading, saveJournalEntry } from '@/lib/reading-db'
 import { loadSettings } from '@/lib/settings-store'
 import { loadTraditionSettings } from '@/lib/tradition-store'
 import { getNatalChart } from '@/lib/astro-engine'
@@ -135,6 +135,12 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
     console.error('Daily reading astro snapshot failed:', e)
   }
 
+  // Wrap in its own titled journal entry (one per day) rather than leaving it
+  // standalone — this is what makes the daily reading editable/annotatable
+  // like any other journal entry, e.g. adding notes about how the day's
+  // message actually played out.
+  const entry = await saveJournalEntry({ title: 'Daily Reading', notes: '', entryDate: today })
+
   await saveReading(
     {
       // Midday UTC on the zone-local calendar day computed above, rather than
@@ -151,6 +157,7 @@ export async function createDailyReadingIfAbsent(engine: GrimoireEngine): Promis
       tags: [],
       traditionSnapshot: [],
       astroSnapshot: null,
+      journalEntryId: entry.id,
     },
     { isDaily: true, astroSnapshot }
   )

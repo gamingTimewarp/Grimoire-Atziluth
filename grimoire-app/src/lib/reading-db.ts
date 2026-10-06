@@ -68,6 +68,20 @@ export async function initReadingDb(): Promise<void> {
       orientation          TEXT NOT NULL DEFAULT 'upright'
     )
   `)
+  // One-time backfill, part 2: the spread_id backfill above turns an old
+  // daily free-reading into a 'single'-spread reading, but its card was
+  // originally saved with position_id NULL (the free-reading convention) —
+  // SpreadGrid renders by matching each position's id against a card's
+  // position_id, so with a real spread now assigned but no matching
+  // position_id, the card silently fails to render at all. Only rows this
+  // exact bug could have produced still have position_id NULL under a
+  // 'single'-spread daily reading (the current code always writes 'card'),
+  // so this is precise and safe to (re-)run every startup.
+  await db.execute(`
+    UPDATE reading_cards SET position_id = 'card'
+    WHERE position_id IS NULL
+      AND reading_id IN (SELECT id FROM readings WHERE is_daily = 1 AND spread_id = 'single')
+  `)
   await db.execute(`
     CREATE TABLE IF NOT EXISTS journal_entries (
       id          TEXT PRIMARY KEY,
