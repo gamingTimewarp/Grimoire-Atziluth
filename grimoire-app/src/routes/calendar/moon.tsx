@@ -290,9 +290,19 @@ function MoonPage() {
       <Panel
         title="Size & Brightness"
         right={
-          noLoc
-            ? <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>Set home location for accurate altitude</span>
-            : <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>{getHomeLocation()?.label}</span>
+          <button
+            onClick={() => navigate({ to: '/settings', hash: 'home-location' })}
+            title="Go to Home Location setting"
+            style={{
+              background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+              fontSize: '11px', color: 'var(--color-text-subtle)', textDecoration: 'underline',
+              textDecorationStyle: 'dotted', textUnderlineOffset: '2px', fontFamily: 'inherit',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+          >
+            {noLoc ? 'Set home location for accurate altitude' : getHomeLocation()?.label}
+          </button>
         }
       >
         {snapshot ? (

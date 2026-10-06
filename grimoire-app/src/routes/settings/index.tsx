@@ -26,7 +26,7 @@ import { DateTimeInput } from '@/components/ui/DateInput'
 import { MapPin, Clock, Check, Layers, Sun, Palette, PanelLeft, HardDrive, Maximize2, Minimize2, ScrollText, ImageIcon, Eye, Moon, Code2, BookMarked, Keyboard, AlertCircle, Shield, BookOpen, CalendarDays, LayoutGrid, Type } from 'lucide-react'
 import { LocationInput } from '@/components/ui/LocationInput'
 import type { LocationValue } from '@/components/ui/LocationInput'
-import { loadAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
+import { loadAccessibilitySettings, saveAccessibilitySettings, applyAccessibilitySettings } from '@/lib/accessibility-store'
 
 export const Route = createFileRoute('/settings/')({
   component: SettingsPage,
@@ -382,9 +382,20 @@ function ColorRow({ label, value, onChange }: {
 // ─── Font section ──────────────────────────────────────────────────────────────
 
 function FontSection() {
+  const navigate = useNavigate()
   const [settings, setSettingsState] = useState<FontSettings>(() => loadFontSettings())
   const [saved, setSaved] = useState(false)
+  const [dyslexiaActive, setDyslexiaActive] = useState(() => loadAccessibilitySettings().dyslexiaFont)
   const isCustom = settings.presetId === 'custom'
+
+  // Dyslexia-Friendly font (Settings → Accessibility) always overrides this
+  // setting, and can be toggled off from the Custom CSS section on this same
+  // page — stay in sync without a remount.
+  useEffect(() => {
+    const handler = () => setDyslexiaActive(loadAccessibilitySettings().dyslexiaFont)
+    window.addEventListener('grimoire:accessibility-changed', handler)
+    return () => window.removeEventListener('grimoire:accessibility-changed', handler)
+  }, [])
 
   const persist = (next: FontSettings, flash: boolean) => {
     setSettingsState(next)
@@ -413,15 +424,37 @@ function FontSection() {
         Choose the default font used throughout the app. Planetary, rune, and Ogham glyphs keep rendering correctly no matter what you pick.
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '8px', marginBottom: '12px' }}>
+      {dyslexiaActive && (
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px',
+          padding: '10px 12px', background: 'rgba(196,146,42,0.08)',
+          border: '1px solid var(--color-accent-muted)', borderRadius: '6px',
+          fontSize: '12px', color: 'var(--color-text-muted)',
+        }}>
+          <AlertCircle size={13} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
+          <span>
+            Overridden by Dyslexia-Friendly font — manage it in{' '}
+            <button
+              type="button"
+              onClick={() => navigate({ to: '/settings/accessibility' })}
+              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'var(--color-accent)', fontSize: 'inherit', fontFamily: 'inherit', textDecoration: 'underline' }}
+            >
+              Settings → Accessibility
+            </button>.
+          </span>
+        </div>
+      )}
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '8px', marginBottom: '12px', opacity: dyslexiaActive ? 0.4 : 1 }}>
         {FONT_PRESETS.map(preset => {
           const active = !isCustom && settings.presetId === preset.id
           return (
             <button
               key={preset.id}
+              disabled={dyslexiaActive}
               onClick={() => persist({ ...settings, presetId: preset.id }, true)}
               style={{
-                padding: '10px 12px', borderRadius: '6px', cursor: 'pointer',
+                padding: '10px 12px', borderRadius: '6px', cursor: dyslexiaActive ? 'not-allowed' : 'pointer',
                 border: `1px solid ${active ? 'var(--color-accent)' : 'var(--color-border)'}`,
                 background: active ? 'rgba(196,146,42,0.08)' : 'var(--color-surface-2)',
                 display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', fontFamily: 'inherit',
@@ -433,9 +466,10 @@ function FontSection() {
           )
         })}
         <button
+          disabled={dyslexiaActive}
           onClick={() => persist({ ...settings, presetId: 'custom' }, true)}
           style={{
-            padding: '10px 12px', borderRadius: '6px', cursor: 'pointer',
+            padding: '10px 12px', borderRadius: '6px', cursor: dyslexiaActive ? 'not-allowed' : 'pointer',
             border: `1px solid ${isCustom ? 'var(--color-accent)' : 'var(--color-border)'}`,
             background: isCustom ? 'rgba(196,146,42,0.08)' : 'var(--color-surface-2)',
             display: 'flex', flexDirection: 'column', gap: '4px', textAlign: 'left', fontFamily: 'inherit',
@@ -447,9 +481,10 @@ function FontSection() {
       </div>
 
       {isCustom && (
-        <div style={{ marginBottom: '12px' }}>
+        <div style={{ marginBottom: '12px', opacity: dyslexiaActive ? 0.4 : 1 }}>
           <input
             type="text"
+            disabled={dyslexiaActive}
             value={settings.customStack}
             onChange={e => persist({ ...settings, presetId: 'custom', customStack: e.target.value }, false)}
             placeholder='e.g. "Garamond", "Palatino Linotype", serif'
@@ -502,7 +537,7 @@ function LocationSection({ location, onChange }: {
   }
 
   return (
-    <section style={{ marginBottom: '32px' }}>
+    <section id="home-location" style={{ marginBottom: '32px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
         <MapPin size={15} style={{ color: 'var(--color-accent)' }} />
         <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Home Location</span>
@@ -726,6 +761,20 @@ function CustomCssSection() {
   const apply = () => {
     const err = validateCss(css)
     if (err) { setCssError(err); return }
+    // Custom CSS and Dyslexia-Friendly font (Settings → Accessibility) can each
+    // override the other's font-family rules in confusing ways, so the two are
+    // kept mutually exclusive — applying non-empty CSS while dyslexia mode is
+    // on clears it, with confirmation.
+    if (css.trim()) {
+      const a11y = loadAccessibilitySettings()
+      if (a11y.dyslexiaFont) {
+        const ok = window.confirm('Custom CSS conflicts with Dyslexia-Friendly font. Applying it will turn off Dyslexia-Friendly font. Continue?')
+        if (!ok) return
+        const next = { ...a11y, dyslexiaFont: false }
+        saveAccessibilitySettings(next)
+        applyAccessibilitySettings(next)
+      }
+    }
     localStorage.setItem('grimoire:custom-css', css)
     applyCustomCss(css)
     setSaved(true)
