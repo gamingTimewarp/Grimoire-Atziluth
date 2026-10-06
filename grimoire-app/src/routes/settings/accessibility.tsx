@@ -8,6 +8,9 @@ import {
   applyAccessibilitySettings,
 } from '@/lib/accessibility-store'
 import type { AccessibilitySettings, ColorblindMode, TextScale, NavSide } from '@/lib/accessibility-store'
+import { applyCustomCss } from '../__root'
+
+const CUSTOM_CSS_KEY = 'grimoire:custom-css'
 
 export const Route = createFileRoute('/settings/accessibility')({
   component: AccessibilityPage,
@@ -26,6 +29,21 @@ function AccessibilityPage() {
 
   const toggle = (key: keyof Omit<AccessibilitySettings, 'colorblindMode' | 'textScale' | 'reversedDisplay' | 'navSide'>) => {
     update({ [key]: !settings[key] })
+  }
+
+  // Dyslexia-friendly font and Custom CSS (Settings → Custom CSS) can each
+  // override the other's font-family rules in ways that produce confusing,
+  // unpredictable results, so the two are kept mutually exclusive — turning
+  // one on while the other is active clears the other, with confirmation.
+  const toggleDyslexiaFont = () => {
+    const turningOn = !settings.dyslexiaFont
+    if (turningOn && (localStorage.getItem(CUSTOM_CSS_KEY) ?? '').trim()) {
+      const ok = window.confirm('Dyslexia-friendly font conflicts with Custom CSS. Turning it on will clear your Custom CSS. Continue?')
+      if (!ok) return
+      localStorage.removeItem(CUSTOM_CSS_KEY)
+      applyCustomCss('')
+    }
+    update({ dyslexiaFont: turningOn })
   }
 
   const colorblindOptions: { value: ColorblindMode; label: string; desc: string }[] = [
@@ -174,9 +192,9 @@ function AccessibilityPage() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '28px' }}>
         <ToggleRow
           label="Dyslexia-friendly font"
-          desc="Uses OpenDyslexic (if installed) with increased letter and word spacing."
+          desc="Uses OpenDyslexic (if installed) with increased letter and word spacing. Overrides any custom font chosen in Settings, and is mutually exclusive with Custom CSS."
           checked={settings.dyslexiaFont}
-          onToggle={() => toggle('dyslexiaFont')}
+          onToggle={toggleDyslexiaFont}
         />
       </div>
 
