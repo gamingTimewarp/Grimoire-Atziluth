@@ -8,6 +8,8 @@ import { formatEntityType, formatTag } from '@/lib/format'
 import { getRecentEntities, removeRecentEntity, clearRecentEntities } from '@/lib/recent-entities'
 import type { RecentEntity } from '@/lib/recent-entities'
 import { computeReferenceTopLevelOverviews, getRandomEntity } from '@/lib/entity-attributes'
+import { loadBrowseSortMode, saveBrowseSortMode } from '@/lib/reference-browse-store'
+import type { BrowseSortMode } from '@/lib/reference-browse-store'
 import type { GroupOverview } from '@/lib/entity-attributes'
 import { ENTITY_TYPE_GROUPS } from '@/lib/entity-type-groups'
 import { Chip, TagInput } from '@/components/ui/TagInput'
@@ -555,8 +557,6 @@ function RecentlyViewedSection({ onNavigate }: { onNavigate: (cn: string) => voi
 
 // ─── Browse grid ──────────────────────────────────────────────────────────────
 
-type BrowseSortMode = 'alpha' | 'topic'
-
 /**
  * Deliberate reading order for topic sections — roughly the app's own weight of
  * emphasis (cartomancy and divination first, since that's the primary use case)
@@ -611,12 +611,16 @@ function BrowseGrid({ onNavigate, customEnabled }: { onNavigate: (cn: string) =>
   const navigate = useNavigate()
   const { engine } = useEngineStore()
   const [browseItems, setBrowseItems] = useState<GroupOverview[]>([])
-  const [browseSortMode, setBrowseSortMode] = useState<BrowseSortMode>('alpha')
+  const [browseSortMode, setBrowseSortMode] = useState<BrowseSortMode>(() => loadBrowseSortMode())
 
   useEffect(() => {
     if (!engine) return
     computeReferenceTopLevelOverviews(engine.adapter).then(setBrowseItems).catch(console.error)
   }, [engine])
+
+  useEffect(() => {
+    saveBrowseSortMode(browseSortMode)
+  }, [browseSortMode])
 
   const topicGroups = React.useMemo(() => {
     if (browseSortMode !== 'topic') return null
