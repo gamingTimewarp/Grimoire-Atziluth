@@ -80,7 +80,7 @@ Enable these from **Settings → Home Widgets**:
 
 - **Statistics** — this month's reading count, linking to the full Journal Statistics page
 - **Study** — cards due today and your current streak, linking to the Study page
-- **Upcoming Holidays & Sabbats** — the next few upcoming Sabbats and calendar holidays (start dates only — a holiday already in progress, like a Sukkot you're partway through, shows on the **Today** widget instead, not here)
+- **Upcoming Holidays, Sabbats & Astro Events** — the next few upcoming Sabbats, calendar holidays, meteor shower peaks, and eclipses (start dates only — a holiday already in progress, like a Sukkot you're partway through, shows on the **Today** widget instead, not here)
 - **Natal Transits** — current transit aspects to your saved "Self" natal chart (silently absent if you haven't saved one)
 - **On This Day** — readings and journal entries you made on this same month and day in past years (an ⓘ icon explains this); shows "Nothing on this day in past years" once you have no history yet, rather than disappearing
 - **Recently Viewed** — your last few visited reference entities
@@ -328,9 +328,13 @@ The **Calendar** page (separate sidebar entry) shows:
 - **Moon ingresses** — when the Moon moves into a new sign
 - **Planet ingresses** — when an outer planet changes signs
 - **Retrograde stations** — retrograde and direct stations for all planets
-- **Eclipse markers**
+- **Sabbats and holidays** — the Wheel of the Year plus every tracked calendar holiday, same as the native-calendar tabs
+- **Meteor shower peaks** — the 8 major annual showers (Quadrantids, Lyrids, Eta Aquariids, Perseids, Orionids, Leonids, Geminids, Ursids), each landing on its real solar-longitude-calculated peak date every year
+- **Eclipses** — every total or partial lunar and solar eclipse (penumbral lunar eclipses, too faint to notice without instruments, are omitted), computed directly rather than taken from a fixed list, with its kind labelled (e.g. "Total Lunar Eclipse"). An ⓘ icon next to each gives its approximate visibility: lunar eclipses are visible from the entire night-side hemisphere of Earth; total/annular solar eclipses name the approximate coordinates their narrow path of totality/annularity crosses at peak (with a much wider surrounding region seeing a partial eclipse); solar eclipses that never reach total or annular anywhere note that there's no single peak location to name.
 
-Tap any event to open details.
+Tap any event badge to open its Reference page — meteor showers each have their own entry (radiant, parent comet/asteroid, typical rate); eclipses link to one of two general "Lunar Eclipse"/"Solar Eclipse" explainer pages, since the specific date/kind is shown right on the calendar itself rather than needing its own entity.
+
+On the day an eclipse or meteor shower peak actually falls, the Astrology page also shows a dismissable notice at the top linking straight to it.
 
 ### Modes & House Systems
 
@@ -456,6 +460,8 @@ Tap **New Entity** to create an entity with:
 - **Extended data** — arbitrary key/value pairs for tradition attributions
 
 Custom entities appear in Reference search results, can be bookmarked, linked in journal entries, and included in the Study system.
+
+On the Custom page, your entities are grouped into folders by entity type — one folder level per dot-separated segment (e.g. an entity typed `calendar.meteor-shower` sits in folder **Calendar** → subfolder **Meteor Shower**; a flat type like `herb` is just a top-level folder with no subfolder). Tap a folder to expand or collapse it. Above the list, a search box matches display name, canonical name, secondary names, description, and your own notes as you type, and a tag filter — the same chip-based multi-select the main Reference page uses — narrows the list to entities carrying every selected tag. Both combine, and a **Clear** link appears whenever either is active.
 
 ### Custom Spreads
 
@@ -587,7 +593,14 @@ While viewing any reading in the Journal (or on the post-save complete screen), 
 
 ### Export/Import a Single Journal Entry
 
-Expand any entry in the Journal and tap **Export entry** to save a `.json` file containing that entry (title, date, notes, entity links) along with every reading attached to it. Tap **Import Entry** in the Journal toolbar to bring one back in — the entry and its readings keep their original IDs, so re-importing a file you already have does nothing (it's reported as already existing rather than duplicated). This is a good way to move a single entry between devices or share one without a full backup.
+Expand any entry in the Journal and tap **Export entry** to save a `.md` (Markdown) file containing that entry's title, date, and notes, plus a readable section for every reading attached to it (spread, cards, positions, orientations, question, and its own notes) — the same rendering as a reading's own "Export as Markdown" button. The exact data is also embedded invisibly in the file, so re-importing it is lossless.
+
+Tap **Import Entry** in the Journal toolbar to bring a file back in:
+
+- **A file this app exported** (or an old `.json`-format export) restores the entry and its readings exactly, keeping their original IDs — re-importing a file you already have does nothing (it's reported as already existing rather than duplicated).
+- **Any other Markdown file** — a hand-edited copy, a single reading's own bare "Export as Markdown" file, or a note written from scratch — is reconstructed best-effort from its visible text: the first heading becomes the title, `**Date:**` becomes the date, and any `## Cards` section has its deck/spread/card names matched by name against your built-in and custom data. A card that can't be matched is skipped (reported in the import summary) rather than failing the whole import; an unmatched deck or spread falls back to a free reading.
+
+This is a good way to move a single entry between devices, share one, or hand-write a journal entry as plain Markdown and bring it in.
 
 ---
 
