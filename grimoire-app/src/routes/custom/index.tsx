@@ -1,10 +1,11 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
-import { Plus, Pencil, LayoutList, BookOpen, GitBranch, Layers, Download, Upload, X } from 'lucide-react'
+import { Plus, Pencil, LayoutList, BookOpen, GitBranch, Layers, Download, Upload, X, ChevronDown, ChevronRight, Folder, FolderOpen, Search } from 'lucide-react'
 import { formatEntityType } from '@/lib/format'
+import { TagInput } from '@/components/ui/TagInput'
 import { getAllCustomSpreads, getAllCustomDecks, getAllCustomTraditions, type CustomSpreadRecord, type CustomDeckRecord, type CustomTraditionRecord } from '@/lib/custom-db'
 import { pickAndImportCustomEntities, exportImportTemplate, type ImportSummary } from '@/lib/custom-import'
 import { exportSingleEntity, exportEntitySet, exportDeckRecord, exportDeckRecords } from '@/lib/entity-export'
@@ -12,6 +13,48 @@ import { exportSingleEntity, exportEntitySet, exportDeckRecord, exportDeckRecord
 export const Route = createFileRoute('/custom/')({
   component: CustomEntitiesPage,
 })
+
+// ─── Entity folder tree ────────────────────────────────────────────────────
+// Groups custom entities into folders by entityType, one folder level per
+// dot-separated segment (e.g. "calendar.meteor-shower" → folder "Calendar" >
+// subfolder "Meteor Shower"), the same hierarchy entityType already encodes
+// everywhere else in the app (ENTITY_TYPE_GROUPS, formatEntityType, etc.) —
+// a flat, single-segment type (e.g. "herb") is just a top-level folder with
+// no subfolder. Entities live at the node matching their exact, full
+// entityType, not scattered across every ancestor folder.
+
+interface EntityFolderNode {
+  segment: string
+  path: string
+  children: Map<string, EntityFolderNode>
+  entities: BaseEntity[]
+}
+
+function buildEntityFolderTree(entities: BaseEntity[]): EntityFolderNode {
+  const root: EntityFolderNode = { segment: '', path: '', children: new Map(), entities: [] }
+  for (const e of entities) {
+    let node = root
+    let path = ''
+    for (const seg of e.entityType.split('.')) {
+      path = path ? `${path}.${seg}` : seg
+      let child = node.children.get(seg)
+      if (!child) {
+        child = { segment: seg, path, children: new Map(), entities: [] }
+        node.children.set(seg, child)
+      }
+      node = child
+    }
+    node.entities.push(e)
+  }
+  return root
+}
+
+/** Total entity count across a folder and every descendant — used for the folder header badge. */
+function folderEntityCount(node: EntityFolderNode): number {
+  let count = node.entities.length
+  for (const child of node.children.values()) count += folderEntityCount(child)
+  return count
+}
 
 function CustomEntitiesPage() {
   const { engine } = useEngineStore()
@@ -24,6 +67,9 @@ function CustomEntitiesPage() {
   const [importBusy,    setImportBusy]    = useState(false)
   const [importError,   setImportError]   = useState<string | null>(null)
   const [importSummary, setImportSummary] = useState<ImportSummary | null>(null)
+  const [tagFilters,    setTagFilters]    = useState<string[]>([])
+  const [query,         setQuery]         = useState('')
+  const [collapsedFolders, setCollapsedFolders] = useState<Set<string>>(() => new Set())
 
   const loadAll = useCallback(() => {
     if (!engine) return
@@ -41,6 +87,43 @@ function CustomEntitiesPage() {
   }, [engine])
 
   useEffect(() => { loadAll() }, [loadAll])
+
+  const allTags = useMemo(() => {
+    const set = new Set<string>()
+    for (const e of entities) for (const t of e.tags) set.add(t)
+    return [...set].sort()
+  }, [entities])
+
+  const filteredEntities = useMemo(() => {
+    let result = entities
+    const q = query.trim().toLowerCase()
+    if (q) {
+      result = result.filter(e =>
+        e.primaryDisplayName.toLowerCase().includes(q) ||
+        e.canonicalName.toLowerCase().includes(q) ||
+        (e.description?.toLowerCase().includes(q) ?? false) ||
+        (e.userNotes?.toLowerCase().includes(q) ?? false) ||
+        e.secondaryNames.some(n => n.name.toLowerCase().includes(q))
+      )
+    }
+    if (tagFilters.length > 0) {
+      result = result.filter(e => tagFilters.every(t => e.tags.includes(t)))
+    }
+    return result
+  }, [entities, query, tagFilters])
+
+  const entityTree = useMemo(() => buildEntityFolderTree(filteredEntities), [filteredEntities])
+
+  const addTagFilter = (t: string) => { if (!tagFilters.includes(t)) setTagFilters(prev => [...prev, t]) }
+  const removeTagFilter = (t: string) => setTagFilters(prev => prev.filter(x => x !== t))
+
+  const toggleFolder = (path: string) => {
+    setCollapsedFolders(prev => {
+      const next = new Set(prev)
+      if (next.has(path)) next.delete(path); else next.add(path)
+      return next
+    })
+  }
 
   const handleDownloadTemplate = async () => {
     setImportError(null)
@@ -290,19 +373,127 @@ function CustomEntitiesPage() {
       )}
 
       {entities.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          {entities.map(e => (
-            <EntityRow
-              key={e.id}
-              entity={e}
-              onClick={() => navigate({ to: '/custom/$cn', params: { cn: e.canonicalName } })}
-              onViewReference={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: e.canonicalName } })}
-              onExport={() => exportSingleEntity(e).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export entity.'))}
+        <>
+          <div style={{ position: 'relative', marginBottom: '10px' }}>
+            <Search size={14} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-subtle)' }} />
+            <input
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder="Search name, description, notes…"
+              style={{
+                width: '100%', padding: '9px 12px 9px 36px', boxSizing: 'border-box',
+                background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
+                borderRadius: '6px', color: 'var(--color-text)', fontSize: '13px', outline: 'none',
+              }}
             />
-          ))}
-          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/new' })} style={{ alignSelf: 'flex-start' }}>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px', flexWrap: 'wrap' }}>
+            <TagInput chips={tagFilters} suggestions={allTags} onAdd={addTagFilter} onRemove={removeTagFilter} />
+            {(tagFilters.length > 0 || query) && (
+              <button
+                onClick={() => { setTagFilters([]); setQuery('') }}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '11px', padding: 0 }}
+              >
+                Clear
+              </button>
+            )}
+          </div>
+
+          {filteredEntities.length === 0 ? (
+            <div style={{ padding: '20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)', textAlign: 'center', fontSize: '13px', color: 'var(--color-text-subtle)' }}>
+              No entities match your search.
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              {[...entityTree.children.values()]
+                .sort((a, b) => a.segment.localeCompare(b.segment))
+                .map(child => (
+                  <FolderView
+                    key={child.path}
+                    node={child}
+                    depth={0}
+                    collapsed={collapsedFolders}
+                    onToggle={toggleFolder}
+                    navigate={navigate}
+                    onViewReference={cn => navigate({ to: '/reference/$canonicalName', params: { canonicalName: cn } })}
+                    onExport={e => exportSingleEntity(e).catch(err => setImportError(err instanceof Error ? err.message : 'Failed to export entity.'))}
+                  />
+                ))}
+            </div>
+          )}
+
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/new' })} style={{ marginTop: '12px' }}>
             <Plus size={12} /> New entity
           </Button>
+        </>
+      )}
+    </div>
+  )
+}
+
+function FolderView({
+  node, depth, collapsed, onToggle, navigate, onViewReference, onExport,
+}: {
+  node: EntityFolderNode
+  depth: number
+  collapsed: Set<string>
+  onToggle: (path: string) => void
+  navigate: ReturnType<typeof useNavigate>
+  onViewReference: (canonicalName: string) => void
+  onExport: (entity: BaseEntity) => void
+}) {
+  const isCollapsed = collapsed.has(node.path)
+  const count = folderEntityCount(node)
+  const children = [...node.children.values()].sort((a, b) => a.segment.localeCompare(b.segment))
+  const sortedEntities = [...node.entities].sort((a, b) => a.primaryDisplayName.localeCompare(b.primaryDisplayName))
+
+  return (
+    <div>
+      <button
+        onClick={() => onToggle(node.path)}
+        style={{
+          display: 'flex', alignItems: 'center', gap: '6px', width: '100%',
+          padding: '8px 10px', paddingLeft: `${10 + depth * 18}px`,
+          background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit',
+          borderRadius: '6px',
+        }}
+        onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-2)' }}
+        onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+      >
+        {isCollapsed ? <ChevronRight size={13} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> : <ChevronDown size={13} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />}
+        {isCollapsed ? <Folder size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> : <FolderOpen size={14} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />}
+        <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--color-text)' }}>{formatEntityType(node.segment)}</span>
+        <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)' }}>{count}</span>
+      </button>
+
+      {!isCollapsed && (
+        <div>
+          {children.map(child => (
+            <FolderView
+              key={child.path}
+              node={child}
+              depth={depth + 1}
+              collapsed={collapsed}
+              onToggle={onToggle}
+              navigate={navigate}
+              onViewReference={onViewReference}
+              onExport={onExport}
+            />
+          ))}
+          {sortedEntities.length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', paddingLeft: `${10 + (depth + 1) * 18}px`, marginBottom: '4px' }}>
+              {sortedEntities.map(e => (
+                <EntityRow
+                  key={e.id}
+                  entity={e}
+                  onClick={() => navigate({ to: '/custom/$cn', params: { cn: e.canonicalName } })}
+                  onViewReference={() => onViewReference(e.canonicalName)}
+                  onExport={() => onExport(e)}
+                />
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
