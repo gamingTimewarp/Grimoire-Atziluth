@@ -9,16 +9,17 @@
 1. [Getting Around](#1-getting-around)
 2. [Home Dashboard](#2-home-dashboard)
 3. [Readings & Divination](#3-readings--divination)
-4. [Journal](#4-journal)
-5. [Reference](#5-reference)
-6. [Astrology](#6-astrology)
-7. [Qabalah](#7-qabalah)
-8. [Study](#8-study)
-9. [Bookmarks](#9-bookmarks)
-10. [Custom Content](#10-custom-content)
-11. [Settings](#11-settings)
-12. [Data & Backup](#12-data--backup)
-13. [Keyboard Shortcuts](#13-keyboard-shortcuts)
+4. [Practice](#4-practice)
+5. [Journal](#5-journal)
+6. [Reference](#6-reference)
+7. [Astrology](#7-astrology)
+8. [Qabalah](#8-qabalah)
+9. [Study](#9-study)
+10. [Bookmarks](#10-bookmarks)
+11. [Custom Content](#11-custom-content)
+12. [Settings](#12-settings)
+13. [Data & Backup](#13-data--backup)
+14. [Keyboard Shortcuts](#14-keyboard-shortcuts)
 
 ---
 
@@ -112,7 +113,7 @@ Scroll through the deck list and tap to select. Built-in decks include:
 | Playing Cards | 52 / 54 (with Jokers) | — |
 | Tea Leaf Symbols | ~90 symbols | — |
 
-Any custom decks you have created appear at the bottom of the list. If a deck (built-in or custom) defines variants — e.g. Full 78 vs Major Arcana Only, or a custom deck's own sub-decks (see [Custom Decks](#10-custom-content)) — tapping it opens a row of variant buttons; pick one, including **All**, to continue.
+Any custom decks you have created appear at the bottom of the list. If a deck (built-in or custom) defines variants — e.g. Full 78 vs Major Arcana Only, or a custom deck's own sub-decks (see [Custom Decks](#11-custom-content)) — tapping it opens a row of variant buttons; pick one, including **All**, to continue.
 
 #### Step 2 — Choose a Spread
 
@@ -183,7 +184,54 @@ Saved physical readings appear in the Journal alongside digital ones, with no di
 
 ---
 
-## 4. Journal
+## 4. Practice
+
+The **Practice** page is a workspace for actively running a ritual: reference entities kept at hand, a circular correspondence board, a handful of small live tools, and a notes field — all of it persisting between visits until you clear it.
+
+### Pinned References
+
+A bar across the top lets you "pin" any reference entity for quick access during a ritual — tap the dashed **+** box to search for and add one. Pinned entities share the bar's width evenly (two pinned entities each take half, three take a third, and so on); once there are enough that they'd get too narrow, they wrap onto additional rows instead of continuing to shrink. Tap a pinned entity to open its reference page, or its **×** to unpin it. A **Clear all** link removes every pin at once.
+
+### Ritual Space
+
+A circular board with 13 correspondence slots: the 8 compass points (cardinal and intercardinal), a centre slot, and 4 corner slots labelled with the Tetragrammaton (Yod, Heh, Vav, Heh, reading clockwise). Tap any empty slot to open a picker grouped by category (the five Wu Xing phases, the four Western elements, Yin/Yang, and Masculine/Feminine polarity); picking one fills the slot with that correspondence's colour and symbol.
+
+Once a slot is filled, two small badges appear on it:
+
+- **×** (top-left) — clears that one slot
+- **↗** (top-right) — opens the Reference page filtered to every entity sharing that correspondence's tag
+
+A **Clear all** link above the board clears every slot and widget at once. A **Ritual settings** link next to it jumps straight to the Ritual section of **Settings → Traditions**, where you can show English captions alongside the Hebrew corner letters, and independently show or hide the cardinal, intercardinal, centre, and corner slot groups.
+
+On narrow (mobile-width) screens, the ritual space and its side widgets don't reflow to fit — they keep their full desktop layout and become pannable/pinch-zoomable instead, the same touch interaction used for diagrams elsewhere in the app. A reset button appears once you've panned or zoomed away from the default view.
+
+### Widgets
+
+Four square slots — two on each side of the ritual space — each hold one small live tool. Tap a slot's **+** to choose one:
+
+- **Timer / Stopwatch** — toggles between stopwatch (counts up) and a countdown timer (set a minutes/seconds duration while paused); both show a milliseconds digit, and the countdown stops itself automatically at zero.
+- **Magic Circle** — pick any magic circle, pentagram, hexagram, or kamea entity from a searchable list and display its full diagram at a larger, more legible size than the slot itself.
+- **Reading** — pick a deck (built-in or custom, including deck variants), then tap **Draw** to pull a single random card with orientation if the deck supports reversals. The card links through to its own reference page; **Draw Again** re-rolls, **Change deck** returns to deck selection.
+- **Numerology** — switch between Pythagorean, Chaldean, and Gematria, type a word or phrase, and see its value: the reduced single-digit (or master) number for Pythagorean/Chaldean, or the raw unreduced sum for Gematria (which accepts Hebrew text or space-separated Hebrew letter names).
+- **Sky Wheel** — the current moment's planetary positions as a wheel chart (classical planets and zodiac only, concentric-rings layout, no aspects or house/lot clutter), refreshing every few minutes. Links through to the full Astrology page.
+- **Natal Chart** — pick any saved natal chart (not just your own "Self" chart) from a searchable list and display it the same stripped-down way. Links through to that chart's full detail page.
+
+A widget's **×** badge removes it from its slot entirely (distinct from the picker's own "change selection" options, which keep the widget but let you pick something else).
+
+### Notes
+
+A free-text box at the bottom of the page for notes on the current ritual.
+
+### Saving and Loading a Ritual
+
+Two buttons in the page header manage the whole ritual's state (pinned references, every slot pick, all four widgets, and your notes) as a unit:
+
+- **Save** — name the ritual, then either **Export as JSON…** (saves a file you can back up or share) or **Save as Custom Entity** (stores it in the app, browsable from the Custom page under the "Ritual" folder).
+- **Load** — either **Import from JSON…** to bring in an exported file, or pick from a list of rituals you've previously saved as custom entities. Loading always asks for confirmation first, since it replaces everything currently on the page.
+
+---
+
+## 5. Journal
 
 The Journal combines all saved readings and journal entries into a single reverse-chronological timeline. A journal entry is more than a freeform note — it's an overarching, titled container that can group one or more readings, each still keeping its own question, subject, cards, and notes. Use it to document a single sitting that covered several questions, a recurring practice you want to narrate over time, or just a quick note with nothing attached.
 
@@ -233,13 +281,13 @@ Tap **New Entry** in the Journal header to write an entry. Fill in:
 
 **Deleting an entry**: Tap the trash icon, then **Confirm** — same 5-second Undo toast as a standalone reading. Deleting an entry does **not** delete the readings attached to it; they're detached and become standalone instead.
 
-**Exporting/importing a single entry**: Expand an entry and tap the export icon (next to Edit) to save that entry, plus every reading attached to it, as one `.json` file. Use **Import Entry** in the Journal header to restore one — importing a file whose entry was already present here changes nothing (no duplicates). See also [Data & Backup](#12-data--backup).
+**Exporting/importing a single entry**: Expand an entry and tap the export icon (next to Edit) to save that entry, plus every reading attached to it, as one `.json` file. Use **Import Entry** in the Journal header to restore one — importing a file whose entry was already present here changes nothing (no duplicates). See also [Data & Backup](#13-data--backup).
 
 ### Entity Links
 
 Both readings and entries can be linked to any entities in the reference database. In the expanded view, type in the entity search field to find an entity by name and add it as a chip. Tap the chip to navigate to the entity, or tap the **×** on the chip to remove the link.
 
-You can also start a new entry directly from an entity: on any reference page, the **Journal** section (see [Reference → Entity Pages](#5-reference)) has a **+** button that opens the New Entry form with that entity already added as a link.
+You can also start a new entry directly from an entity: on any reference page, the **Journal** section (see [Reference → Entity Pages](#6-reference)) has a **+** button that opens the New Entry form with that entity already added as a link.
 
 ### Journal Statistics
 
@@ -247,7 +295,7 @@ Tap **Statistics** (bar-chart icon) in the Journal header to view aggregate char
 
 ---
 
-## 5. Reference
+## 6. Reference
 
 The Reference section is a searchable encyclopaedia of all esoteric entities in the database.
 
@@ -283,11 +331,11 @@ Every entity has a dedicated page showing:
 - **Reversed meaning** — shown for tarot cards that have reversals data, toggleable between upright and reversed
 - **Personal annotation** — a text field at the bottom of the page where you can write your own notes. These are stored locally and never leave your device.
 - **Bookmark star** — tap to save/unsave this entity to your bookmarks
-- **Journal** — a collapsible section listing every journal entry and reading linked to this entity; tap one to jump to it in the Journal. Tap the **+** in its top-right corner to start a new journal entry with this entity already attached as a link (see [Journal → Entity Links](#4-journal))
+- **Journal** — a collapsible section listing every journal entry and reading linked to this entity; tap one to jump to it in the Journal. Tap the **+** in its top-right corner to start a new journal entry with this entity already attached as a link (see [Journal → Entity Links](#5-journal))
 
 ---
 
-## 6. Astrology
+## 7. Astrology
 
 ### Natal Charts
 
@@ -349,7 +397,7 @@ These are configured globally in **Settings → Traditions**:
 
 ---
 
-## 7. Qabalah
+## 8. Qabalah
 
 ### Tree of Life
 
@@ -391,7 +439,7 @@ Master numbers (11, 22, 33) are highlighted and not further reduced.
 
 ---
 
-## 8. Study
+## 9. Study
 
 The Study section implements spaced repetition (SM-2 algorithm) to help you memorise entity meanings.
 
@@ -439,7 +487,7 @@ Tap **Settings** (gear icon) on the Study page to configure:
 
 ---
 
-## 9. Bookmarks
+## 10. Bookmarks
 
 Tap the **★** star button on any entity reference page to bookmark it. Bookmarks appear in the **Bookmarks** section of the sidebar and on the home dashboard.
 
@@ -447,7 +495,7 @@ To remove a bookmark, tap the star again on the entity's reference page, or use 
 
 ---
 
-## 10. Custom Content
+## 11. Custom Content
 
 The **Custom** section (accessible from the sidebar) lets you extend the app with your own material.
 
@@ -479,7 +527,7 @@ Define a new tradition by specifying which `linkLabel`s it owns and how its attr
 
 ---
 
-## 11. Settings
+## 12. Settings
 
 Open **Settings** from the bottom of the sidebar. Settings are organised into sections:
 
@@ -559,7 +607,7 @@ A text area for injecting arbitrary CSS into the app. Styles are validated for b
 
 ---
 
-## 12. Data & Backup
+## 13. Data & Backup
 
 Open **Settings → Data** to manage your data.
 
@@ -574,7 +622,7 @@ Tap **Export Backup** to save a `.json` file containing:
 
 The file is human-readable JSON. A timestamp is stored in the app so the Data page can show when you last backed up.
 
-**Not included in the backup**: Study/SRS card progress and session history (intentionally excluded — it's large and rebuilds naturally from continued use), and custom spreads, custom decks, and custom traditions. From the [Custom Content](#10-custom-content) page you can export any of these individually or all-at-once as JSON; custom spreads and traditions can also be re-imported from an exported file, but there is currently no way to import an exported custom deck back in.
+**Not included in the backup**: Study/SRS card progress and session history (intentionally excluded — it's large and rebuilds naturally from continued use), and custom spreads, custom decks, and custom traditions. From the [Custom Content](#11-custom-content) page you can export any of these individually or all-at-once as JSON; custom spreads and traditions can also be re-imported from an exported file, but there is currently no way to import an exported custom deck back in.
 
 ### Restore
 
@@ -604,7 +652,7 @@ This is a good way to move a single entry between devices, share one, or hand-wr
 
 ---
 
-## 13. Keyboard Shortcuts
+## 14. Keyboard Shortcuts
 
 | Key | Action |
 |-----|--------|
