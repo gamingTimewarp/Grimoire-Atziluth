@@ -3110,6 +3110,99 @@
         ],
         "safetyNote": "LETHAL POISON — one of the most toxic plants known. Aconitine causes rapid cardiac and neurological failure. Skin contact with the root juice causes numbness, tingling, and can be absorbed transdermally. Do not handle without gloves. Do not ingest any part under any circumstances. Fatal in very small quantities. Keep entirely away from children."
       }
+    },
+    {
+      "canonicalName": "herb.oregano",
+      "entityType": "herb",
+      "primaryDisplayName": "Oregano",
+      "description": "Oregano (Origanum vulgare), also known as Wild Marjoram, is a pungent Mediterranean herb and close botanical relative of sweet marjoram. Where marjoram's magical lineage leans toward Mercury and Air, herbal tradition more often assigns oregano to Venus and Earth for its warm, grounding, protective quality. Long used in Mediterranean folk magic to ward off the evil eye and hexes, bring happiness into the home, and strengthen the body and spirit. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Origanum vulgare",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Wild Marjoram",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "herb",
+        "venus",
+        "earth",
+        "protection",
+        "happiness",
+        "strength",
+        "tranquility"
+      ],
+      "extendedData": {
+        "botanicalName": "Origanum vulgare",
+        "planet": "astrology.planet.venus",
+        "element": "astrology.element.earth",
+        "magicalUses": [
+          "protection against the evil eye and hexes",
+          "happiness and joy in the home",
+          "strength and vitality",
+          "tranquility and peaceful sleep",
+          "warding the household",
+          "general good luck"
+        ],
+        "safetyNote": null
+      }
+    },
+    {
+      "canonicalName": "herb.turmeric",
+      "entityType": "herb",
+      "primaryDisplayName": "Turmeric",
+      "description": "Turmeric (Curcuma longa) is a vivid golden-orange rhizome central to South and Southeast Asian cuisine, medicine, and ritual. In Hindu tradition turmeric (haldi) is considered intensely auspicious and purifying — applied to the skin of the bride and groom in the haldi ceremony before a wedding, used to ward off the evil eye, and offered to deities for prosperity and good fortune. Its brilliant golden hue gives it a strong solar association; ruled by the Sun and Fire, it is used magically for purification, protection, prosperity, and blessing new beginnings. Safe in culinary use.",
+      "secondaryNames": [
+        {
+          "name": "Curcuma longa",
+          "languageTag": "la",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Haldi",
+          "languageTag": "hi",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "name": "Indian Saffron",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 2
+        }
+      ],
+      "tags": [
+        "herb",
+        "sol",
+        "fire",
+        "purification",
+        "protection",
+        "prosperity",
+        "blessing",
+        "solar"
+      ],
+      "extendedData": {
+        "botanicalName": "Curcuma longa",
+        "planet": "astrology.planet.sol",
+        "element": "astrology.element.fire",
+        "magicalUses": [
+          "purification rituals",
+          "warding off the evil eye",
+          "prosperity and good fortune",
+          "blessing marriages and new beginnings",
+          "protection of the home",
+          "solar invocations"
+        ],
+        "safetyNote": "Large medicinal doses may interact with blood-thinning medication; discontinue before surgery. Safe in normal culinary amounts."
+      }
     }
   ]
 }
