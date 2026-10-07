@@ -3723,6 +3723,64 @@
       }
     },
     {
+      "canonicalName": "system.overview.astrological-events",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Astrological Events",
+      "description": "Celestial events tracked on the Grimoire's calendar beyond the regular motions of the Sun, Moon, and planets: eclipses and the year's major annual meteor showers. Both are computed directly from real astronomical positions rather than drawn from a fixed table, so the dates shown always reflect the actual event for the year being viewed.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "calendar",
+        "astrology",
+        "eclipse",
+        "meteor-shower"
+      ],
+      "extendedData": {
+        "entityTypeGroup": "astrological-events",
+        "browseTopic": "Astrology & Calendar",
+        "members": [
+          "system.overview.eclipses",
+          "system.overview.meteor-showers"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.eclipses",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Eclipses",
+      "description": "Solar and lunar eclipses, computed directly from the Sun and Moon's real positions rather than drawn from a fixed table, so the dates shown always reflect the actual astronomical event for the year being viewed. Each is labelled by kind (total, annular, or partial; penumbral lunar eclipses, too faint to notice without instruments, are omitted), with an approximate indication of where on Earth it's visible from.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "calendar",
+        "eclipse"
+      ],
+      "extendedData": {
+        "memberEntityType": "calendar.eclipse",
+        "relatedOverviews": [
+          "system.overview.meteor-showers"
+        ]
+      }
+    },
+    {
+      "canonicalName": "system.overview.meteor-showers",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Meteor Showers",
+      "description": "The year's major annual meteor showers, each produced when Earth's orbit crosses the debris trail left by a parent comet or (for a couple of showers) asteroid. Every shower's peak date is calculated from the Sun's real solar-longitude position for the year being viewed, rather than a fixed calendar date, so it tracks the astronomical event precisely from year to year.",
+      "secondaryNames": [],
+      "tags": [
+        "overview",
+        "calendar",
+        "meteor-shower"
+      ],
+      "extendedData": {
+        "memberEntityType": "calendar.meteor-shower",
+        "relatedOverviews": [
+          "system.overview.eclipses"
+        ]
+      }
+    },
+    {
       "canonicalName": "system.overview.omen-animals",
       "entityType": "system.overview",
       "primaryDisplayName": "Omen Animals",
