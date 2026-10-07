@@ -85,6 +85,7 @@ export const ENTITY_TYPE_GROUPS: EntityTypeGroup[] = [
   { label: 'Colour & Gemstone', options: [
     { value: 'colour.colour',       label: 'Colours' },
     { value: 'gemstone.gemstone',   label: 'Gemstones' },
+    { value: 'gemstone.variety',    label: 'Gemstone Varieties' },
   ]},
   { label: 'Other', options: [
     { value: 'numerology.digit',    label: 'Numerology' },

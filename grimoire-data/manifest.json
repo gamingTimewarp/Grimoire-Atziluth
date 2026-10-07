@@ -152,7 +152,8 @@
         "entities/system/traditions.json",
         "entities/astrology/minor-bodies.json",
         "entities/colour/colours.json",
-        "entities/gemstone/gemstones.json"
+        "entities/gemstone/gemstones.json",
+        "entities/gemstone/additional-gemstones.json"
       ]
     },
     {
@@ -226,6 +227,7 @@
         "links/structural/pentagram-element-links.json",
         "links/structural/hexagram-planet-links.json",
         "links/structural/colour-gemstone-links.json",
+        "links/structural/additional-gemstone-colour-links.json",
         "links/structural/colour-planet-physical-links.json",
         "links/structural/colour-element-links.json",
         "links/structural/colour-phase-links.json",

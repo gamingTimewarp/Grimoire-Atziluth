@@ -1,0 +1,1741 @@
+{
+  "version": 1,
+  "links": [
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.actinolite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.alexandrite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.alexandrite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.alexandrite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.amazonite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.amazonite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.ametrine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.ametrine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.andalusite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.andalusite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.ammonite-fossil",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.grey",
+      "target": "gemstone.gemstone.ammonite-fossil",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.angelite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.apatite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.apatite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.apatite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.aventurine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.aventurine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.aventurine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.azurite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.indigo",
+      "target": "gemstone.gemstone.azurite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.bismuth",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.bowenite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.bronzite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.brookite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.brookite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.charoite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.celestite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.blue-chalcedony",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.chrysoberyl",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.chrysoberyl",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.chrysocolla",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.chrysocolla",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.copper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.diopside",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.dioptase",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.dolomite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.eudialyte",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.eudialyte",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.eudialyte",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.fuchsite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.gold",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.gemstone.goldstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.goldstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.goldstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.halite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.howlite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.kunzite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.kunzite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.hiddenite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.kyanite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.kyanite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.gemstone.kyanite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.labradorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.labradorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.labradorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.labradorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.labradorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.larimar",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.grey",
+      "target": "gemstone.gemstone.larvikite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.lazulite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.lazulite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.lepidolite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.lodestone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.lodestone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.moldavite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.opalite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.opalite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.opalite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.olivine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.petrified-wood",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.grey",
+      "target": "gemstone.gemstone.platinum",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.purpurite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.pyrite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.rhodochrosite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.rutile",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.rutile",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.serpentine",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.shungite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.grey",
+      "target": "gemstone.gemstone.silver",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.smithsonite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.smithsonite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.smithsonite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.spinel",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.sunstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.tanzanite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.titanium-aura-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.titanium-aura-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.zircon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.zircon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.zircon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.gemstone.zircon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.zircon",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.elestial-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.faden-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.gemstone.golden-healer-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.herkimer-diamond",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.lithium-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.garden-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.pink-lemurian-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.spirit-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.tangerine-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.gemstone.tangerine-quartz",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.grey",
+      "target": "gemstone.gemstone.agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.gemstone.agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.blue-lace-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.crazy-lace-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.crazy-lace-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.crazy-lace-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.banded-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.banded-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.fire-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.fire-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.flower-lace-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.holly-blue-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.moss-agate",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.beryl",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.beryl",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.red-beryl",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.goshenite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.heliodor",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.morganite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.blue-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.cobaltoan-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.green-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.honey-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.orange-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.red-calcite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.gemstone.fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.blue-fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.green-fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.pink-fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.variety.purple-fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.yellow-fluorite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.ruby-fuchsite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.ruby-fuchsite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.variety.ruby-fuchsite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.grossular-garnet",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.grossular-garnet",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.hessonite-garnet",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.melanite-garnet",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.spessartine-garnet",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.gemstone.gypsum",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.selenite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.selenite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.desert-rose",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.jadeite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.nephrite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.dianite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.dalmatian-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.dalmatian-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.kambaba-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.laguna-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.laguna-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.laguna-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.leopardskin-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.leopardskin-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.leopardskin-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.leopardskin-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.leopardskin-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.mookaite-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.violet",
+      "target": "gemstone.variety.mookaite-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.mookaite-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.mookaite-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.ocean-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.ocean-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.picture-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.rainforest-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.rainforest-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.unakite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.unakite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.red-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.yellow",
+      "target": "gemstone.variety.yellow-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.imperial-jasper",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.black-moonstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.peach-moonstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.rainbow-moonstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.rainbow-moonstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.rainbow-moonstone",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.golden-sheen-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.mahogany-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.mahogany-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.silver-sheen-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.snowflake-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.snowflake-obsidian",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.brown",
+      "target": "gemstone.variety.boulder-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.boulder-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.cacholong-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.fire-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.orange",
+      "target": "gemstone.variety.fire-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.white",
+      "target": "gemstone.variety.fire-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.pink-opal",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.hawks-eye",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.variety.red-tigers-eye",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.gemstone.tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.gemstone.tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.gemstone.tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.black",
+      "target": "gemstone.variety.black-tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.green-tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.indicolite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.pink-tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.rubellite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.green",
+      "target": "gemstone.variety.watermelon-tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.pink",
+      "target": "gemstone.variety.watermelon-tourmaline",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.red",
+      "target": "gemstone.gemstone.cinnabar",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    },
+    {
+      "source": "colour.colour.blue",
+      "target": "gemstone.variety.dianite",
+      "label": "corresponds-to",
+      "bidirectional": true,
+      "traditionScope": [],
+      "extendedData": {}
+    }
+  ]
+}

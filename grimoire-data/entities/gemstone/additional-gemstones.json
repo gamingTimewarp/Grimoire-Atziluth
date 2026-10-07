@@ -1,0 +1,2596 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "gemstone.gemstone.actinolite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Actinolite",
+      "description": "Actinolite is a calcium-magnesium-iron amphibole, part of the tremolite-actinolite series, typically found as dark green, fibrous or bladed crystals in metamorphic rocks. Fibrous actinolite is one of the six regulated forms of asbestos, so raw or massive specimens should be handled with the same care as any asbestiform mineral; polished cabochons and tumbled stones pose no such risk.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "amphibole"
+      ],
+      "extendedData": {
+        "mineralClass": "amphibole (tremolite-actinolite series)",
+        "hardnessMohs": "5–6",
+        "colourNote": "dark green, sometimes fibrous",
+        "safetyNote": "Fibrous/asbestiform actinolite is a regulated asbestos mineral — avoid grinding, cutting, or inhaling dust from raw specimens."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.alexandrite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Alexandrite",
+      "description": "Alexandrite is a rare colour-change variety of chrysoberyl, famously appearing green in daylight and red-violet under incandescent light — an effect caused by chromium impurities interacting with the mineral's unusual light absorption. First discovered in the Ural Mountains in 1830 and named for the future Tsar Alexander II — its red and green echoing the colours of the Imperial Russian flag — it was genuinely embraced in Russia as a national stone of good omen, and fine natural material remains among the rarest and most valuable of all gemstones.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-violet",
+        "gemstone-blue",
+        "chrysoberyl"
+      ],
+      "extendedData": {
+        "mineralClass": "chrysoberyl",
+        "hardnessMohs": "8.5",
+        "colourNote": "green in daylight, red-violet in incandescent light"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.amazonite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Amazonite",
+      "description": "Amazonite is a blue-green variety of microcline feldspar, its colour caused by trace lead and water in the crystal structure. It was used in Ancient Egypt for amulets and jewellery — pieces were found in Tutankhamun's tomb, and slabs of it were inscribed with the \"Judgement of Osiris\" chapter of the Book of the Dead — and South American folklore separately ties it to legendary Amazon warrior women said to have decorated their shields with it, the likely source of its name rather than any confirmed deposit in the Amazon region itself.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-blue",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar (microcline)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "blue-green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.ametrine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Ametrine",
+      "description": "Ametrine is a naturally occurring bicoloured quartz showing both amethyst's violet and citrine's yellow in the same crystal, caused by uneven heating and iron oxidation states within a single growth. Nearly all commercial ametrine comes from Bolivia's Anahí mine, whose name recalls a (likely legendary) 17th-century story of a Spanish conquistador given the mine as a dowry upon marrying an indigenous princess, Anahí, who is said to have introduced the purple-and-gold stone to the Spanish royal court.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "gemstone-violet",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "zoned violet and yellow in one stone"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.andalusite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Andalusite",
+      "description": "Andalusite is an aluminium silicate known for strong pleochroism, showing different colours (typically olive-green, brown, and red) depending on the viewing angle. Its variety chiastolite grows with carbon inclusions arranged in a distinctive dark cross visible in cross-section; sold since at least the 16th century as lapis crucifer to pilgrims on the Camino de Santiago de Compostela (sourced near Boal, Asturias), it was carried as genuine Christian protection against harm while travelling. Ordinary andalusite itself carries no comparable independent lore.",
+      "secondaryNames": [
+        {
+          "name": "Chiastolite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-green",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate",
+        "hardnessMohs": "6.5–7.5",
+        "colourNote": "brown to olive-green, strongly pleochroic"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.ammonite-fossil",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Ammonite Fossil",
+      "description": "Ammonites were coiled-shelled cephalopods that lived in the world's oceans until the end of the Cretaceous, roughly 66 million years ago. In English folklore, especially around Whitby, Yorkshire, fossilised ammonites were \"snakestones,\" believed to be serpents turned to stone by the 7th-century abbess St. Hilda — medieval carvers even added carved snake heads to them, and a snakestone appears in Whitby's own heraldry. In Hindu tradition, ammonite-bearing river stones are Shaligrams, sacred to Vishnu because the fossil's spiral ribs are taken to resemble his chakra discus. Colour depends entirely on the replacing mineral (commonly calcite, pyrite, or opal-like ammolite).",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-grey",
+        "organic-gem",
+        "fossil"
+      ],
+      "extendedData": {
+        "mineralClass": "fossil (mineralised shell)",
+        "hardnessMohs": "variable (depends on replacing mineral)",
+        "colourNote": "white to grey, calcite-infilled",
+        "note": "A fossil, not a single mineral species — colour and hardness depend on what mineral replaced the original shell."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.angelite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Angelite",
+      "description": "Angelite is the trade name for massive, pale blue anhydrite, a calcium sulfate mineral that forms when gypsum loses its water content under pressure. It is soft and water-sensitive, and should be kept dry and handled gently.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "sulfate"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfate (anhydrite)",
+        "hardnessMohs": "3–3.5",
+        "colourNote": "pale powder blue",
+        "safetyNote": "Soft and water-soluble over time — avoid soaking or prolonged water exposure."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.apatite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Apatite",
+      "description": "Apatite is a calcium phosphate mineral — the same mineral family that makes up tooth enamel and bone — occurring in a wide range of colours, most prized in vivid neon blue-green (\"Paraiba-like\") and golden yellow. Its name, from the Greek apate (\"deceit\"), reflects a long history of being mistaken for other gem species.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-yellow",
+        "gemstone-green",
+        "phosphate"
+      ],
+      "extendedData": {
+        "mineralClass": "phosphate",
+        "hardnessMohs": "5",
+        "colourNote": "commonly blue-green, gold, or green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.aventurine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Aventurine",
+      "description": "Aventurine is a translucent quartzite coloured and given its characteristic sparkle (aventurescence) by included flakes of another mineral — fuchsite (chromium mica) for the classic green, or hematite/goethite for the red-brown, peach, and gold varieties. In Tibetan Buddhist tradition green aventurine was carved into the eyes of deity statues, its shimmer likened to celestial light, and it was valued in China alongside jade and reportedly carried by Indian snake charmers as a protective amulet.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-pink",
+        "gemstone-yellow",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartzite (quartz + included mica)",
+        "hardnessMohs": "7",
+        "colourNote": "green (fuchsite), peach/pink or gold (hematite/goethite)"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.azurite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Azurite",
+      "description": "Azurite is a deep blue copper carbonate mineral, chemically related to malachite and often found intergrown with it (azurite-malachite); it slowly alters to green malachite over long timescales through weathering. Ground as pigment in Egypt from the Fourth Dynasty onward — reportedly used by priests to paint the Eye of Horus as an aid to a god-conscious trance state — it was later called the \"Stone of Heaven\" in China, where it coloured Song- and Ming-dynasty paintings and was believed to open a portal between heaven and earth; it also saw ceremonial use among Native American cultures.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-indigo",
+        "carbonate"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3.5–4",
+        "colourNote": "deep azure blue"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.bismuth",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Bismuth",
+      "description": "Bismuth crystals sold as collector and metaphysical specimens are lab-grown from molten bismuth metal, their stair-stepped hopper-crystal structure and vivid iridescent rainbow colours produced by a thin oxide film, the same thin-film interference effect seen in an oil slick or soap bubble. Not a naturally mined gem material.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "gemstone-yellow",
+        "gemstone-pink",
+        "gemstone-green",
+        "gemstone-violet",
+        "gemstone-blue",
+        "native-element"
+      ],
+      "extendedData": {
+        "mineralClass": "native element (lab-grown crystal)",
+        "hardnessMohs": "2–2.5",
+        "colourNote": "iridescent rainbow oxide sheen over silvery-grey metal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.bowenite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Bowenite",
+      "description": "Bowenite is a hard, translucent variety of the serpentine mineral antigorite. In New Zealand, where it is found at Anita Bay near Milford Sound, it is classified by Māori as a form of pounamu (treasured stone) and called tangiwai, historically worked into tools, weapons, and ornaments alongside true nephrite jade, though regarded as a lesser material than nephrite. It has also long served as a jade substitute for carving in China.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "serpentine"
+      ],
+      "extendedData": {
+        "mineralClass": "serpentine (antigorite)",
+        "hardnessMohs": "5–6",
+        "colourNote": "apple to olive green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.bronzite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Bronzite",
+      "description": "Bronzite is a brown, bronze-sheened variety of the orthopyroxene mineral enstatite, its metallic lustre caused by microscopic inclusions of iron oxide aligned within the crystal structure.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "pyroxene"
+      ],
+      "extendedData": {
+        "mineralClass": "pyroxene (enstatite)",
+        "hardnessMohs": "5–6",
+        "colourNote": "bronze-brown with metallic sheen"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.brookite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Brookite",
+      "description": "Brookite is one of the three natural crystal forms of titanium dioxide (alongside rutile and anatase), typically found as small reddish-brown to black crystals, with rarer pale, more transparent material cut as a collector's gem.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-brown",
+        "oxide"
+      ],
+      "extendedData": {
+        "mineralClass": "oxide (titanium dioxide)",
+        "hardnessMohs": "5.5–6",
+        "colourNote": "reddish-brown to near-colourless"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.charoite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Charoite",
+      "description": "Charoite is a swirling lilac-to-purple silicate mineral found at only one known deposit, along the Chara River in Siberia, noted by geologists from the 1940s onward but not formally described until 1978 — meaning it has no ancient lore by definition. Its name may echo the Russian chary, \"magic\" or \"charm\", an etymological wrinkle debated alongside the river naming at the time of its description.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "silicate",
+        "hardnessMohs": "5–6",
+        "colourNote": "lilac to deep violet, swirling pattern"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.celestite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Celestite",
+      "description": "Celestite (or celestine) is a soft strontium sulfate mineral best known for forming large, pale sky-blue crystal geodes, most famously from Madagascar. Its name, from the Latin caelestis (\"heavenly\"), dates only to its first description in the 1790s — the mineral was unknown and unnamed before the 18th century.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "sulfate"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfate",
+        "hardnessMohs": "3–3.5",
+        "colourNote": "pale sky blue"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.blue-chalcedony",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Blue Chalcedony",
+      "description": "Blue chalcedony is a pale, waxy-lustred, microcrystalline form of quartz — the same mineral family as agate, carnelian, onyx, and bloodstone — coloured a soft powder blue, most notably mined in Namibia and Turkey. Chalcedony generally has deep roots as a protective talisman: Assyrian and Babylonian cylinder seals from around 4000 BCE were carved from it, and Romans wore it believing it aided calm, persuasive oratory.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "chalcedony"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (cryptocrystalline quartz)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "pale powder blue"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.chrysoberyl",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Chrysoberyl",
+      "description": "Chrysoberyl is an independent gem mineral (not a variety of beryl, despite the name) known for exceptional hardness; its name comes from the Greek chrysos, \"gold.\" Most of chrysoberyl's rich lore — its place in the symbolic necklace of Vishnu, and its use across ancient Sri Lanka and Asia as protection against the evil eye — belongs specifically to its cat's-eye (cymophane) variety; ordinary yellow-to-green chrysoberyl carries little independent tradition of its own.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "gemstone-green",
+        "chrysoberyl"
+      ],
+      "extendedData": {
+        "mineralClass": "chrysoberyl",
+        "hardnessMohs": "8.5",
+        "colourNote": "yellow to green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.chrysocolla",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Chrysocolla",
+      "description": "Chrysocolla is a soft, hydrated copper silicate forming in the oxidised zones of copper deposits, prized for its vivid turquoise-to-blue-green colour; too soft to wear well on its own, it is often stabilised with quartz (as \"gem silica\") for jewellery use. Ground into blue pigment and eye makeup in Ancient Egypt, it was nicknamed the \"wise stone\" and is said to have been favoured by Cleopatra, who reportedly gave it to foreign visitors to encourage calm negotiation; it also saw ceremonial use among the Aztec and Inca.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-green",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "silicate (hydrous copper silicate)",
+        "hardnessMohs": "2.5–3.5 (7 when quartz-stabilised)",
+        "colourNote": "turquoise to blue-green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.cinnabar",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Cinnabar",
+      "description": "Cinnabar is mercury sulfide, a brilliant red mineral that has been the world's primary source of mercury and of vermilion pigment since antiquity. In Chinese Daoist alchemy, cinnabar (dan) was central to the search for immortality elixirs (neidan and waidan practice) and gave its name to the whole alchemical tradition of \"cinnabar fields\" (dantian) in the body; in Mesoamerica, Maya and other cultures covered the bodies of high-status dead in cinnabar powder, most famously the \"Red Queen\" tomb at Palenque. Western alchemy associated it with the union of Mercury and Sulphur, the two foundational alchemical principles. It is also known as cinnabarite, an older mineralogical synonym. Cinnabar is highly toxic and should never be handled as a loose powder or ingested; polished display specimens are generally safe to handle but should not be worked, cut, or ground at home.",
+      "secondaryNames": [
+        {
+          "name": "Cinnabarite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Vermilion",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "sulfide",
+        "alchemical",
+        "toxic"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfide (mercury sulfide)",
+        "hardnessMohs": "2–2.5",
+        "colourNote": "vivid scarlet to brick red",
+        "safetyNote": "TOXIC — contains mercury. Do not grind, cut, ingest, or inhale dust. Wash hands after handling raw specimens."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.copper",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Copper",
+      "description": "Native copper is a naturally occurring metallic element, bright salmon-pink to reddish-orange when freshly exposed but commonly found as water-worn nuggets or dendritic specimens with a dark brown to black oxidised patina, which is the form usually sold as a mineral specimen. In Ancient Egypt the ankh, symbol of eternal life, was often made of copper, and copper vessels were used to purify water; Native American peoples around the Great Lakes mined it ceremonially from around 4000 BCE, regarding it as a sacred metal linking the physical and spirit worlds, and European folk medicine long used copper bracelets for joint ailments.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "native-element"
+      ],
+      "extendedData": {
+        "mineralClass": "native element",
+        "hardnessMohs": "2.5–3",
+        "colourNote": "reddish-orange when fresh, brown-black when oxidised/patinated"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.diopside",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Diopside",
+      "description": "Diopside is a calcium-magnesium pyroxene found in shades from pale to deep green, with the finest chromium-rich material (chrome diopside) prized for a vivid emerald-green colour at a fraction of emerald's price.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "pyroxene"
+      ],
+      "extendedData": {
+        "mineralClass": "pyroxene",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "pale to deep (chrome) green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.dioptase",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Dioptase",
+      "description": "Dioptase is a copper cyclosilicate forming small, intensely saturated emerald-green crystals, visually striking but too soft and brittle for everyday jewellery wear and collected mainly as a specimen and cabochon stone.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "cyclosilicate (hydrous copper silicate)",
+        "hardnessMohs": "5",
+        "colourNote": "intense emerald green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.dolomite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Dolomite",
+      "description": "Dolomite is a calcium-magnesium carbonate rock-forming mineral, usually colourless to white or pale pink/brown, chemically similar to calcite but harder and less reactive to acid — the namesake of the Dolomite mountains of northern Italy.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "carbonate"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3.5–4",
+        "colourNote": "white to pale pink/brown"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.eudialyte",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Eudialyte",
+      "description": "Eudialyte is a complex zirconium-bearing silicate found in alkaline igneous rocks, prized for its striking mix of pink-to-red, green, and black patches in a single specimen. The Sámi people of Russia's Kola Peninsula call it \"Saami Blood\": mineralogist Alexander Fersman recorded a local legend of a battle between the Sámi and a Swedish invader named Kuiva, in which the Sámi's spilled blood was said to have turned to the stone's red patches in the tundra rock.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-red",
+        "gemstone-black",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "cyclosilicate",
+        "hardnessMohs": "5–6",
+        "colourNote": "mottled red/pink, green, and black"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.fuchsite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Fuchsite",
+      "description": "Fuchsite is a chromium-rich, green variety of the mica mineral muscovite, its colour caused by chromium substituting for aluminium in the crystal structure — the same mineral responsible for aventurine's green sparkle when included in quartz. A green mica-like stone described by Pliny the Elder in the 1st century CE is thought by some scholars to refer to fuchsite, and in Brazilian folk tradition green mica has been linked to Yemanjá, the orphan sea goddess.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "mica"
+      ],
+      "extendedData": {
+        "mineralClass": "mica (chromium muscovite)",
+        "hardnessMohs": "2.5–3",
+        "colourNote": "bright green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.gold",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Gold",
+      "description": "Native gold is a naturally occurring metallic element, found as nuggets, flakes, or embedded in quartz veins, chemically inert and famously resistant to tarnish. Ancient Egyptians held it as the flesh of the sun god Ra and buried pharaohs in it for immortality; the Inca called it the \"Sweat of the Sun,\" lavishing it on the Coricancha temple to Inti; Western alchemy assigned it the Sun's own symbol (☉) as emblem of purity and incorruptibility; and Han-dynasty Chinese emperors drank gold elixirs in pursuit of immortality.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "native-element"
+      ],
+      "extendedData": {
+        "mineralClass": "native element",
+        "hardnessMohs": "2.5–3",
+        "colourNote": "metallic gold-yellow"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.goldstone",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Goldstone",
+      "description": "Goldstone is a man-made glass, not a natural mineral — copper-infused glass (the classic sparkling orange-brown colour) or cobalt/chromium-infused glass for the blue and green versions. It was being produced by Murano glassmakers, most credibly the Miotti family of Venice, by at least 1644; a popular story of its \"accidental\" discovery by a monk is an undocumented legend that historians generally reject.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "gemstone-blue",
+        "gemstone-green",
+        "man-made-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "synthetic glass",
+        "hardnessMohs": "5–6 (glass)",
+        "colourNote": "orange-brown (copper), blue or green (cobalt/chromium)",
+        "note": "A man-made glass, not a mined mineral — invented in Venice, traditionally attributed to the Miotti glassworking family."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.halite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Halite",
+      "description": "Halite is the mineral form of ordinary sodium chloride (rock salt), occurring in large evaporite deposits and sometimes in vivid pink to orange shades from trace mineral or algal inclusions, most famously from the Khewra Salt Mine in Pakistan. Salt itself carries some of the deepest and most widespread protective folklore of any substance: scattered at a new home's threshold to ward evil, thrown over the left shoulder to undo the bad luck of a spill, thrown at witches to disrupt their flight, and invoked as a covenant symbol in biblical tradition and ancient tomb offerings.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "halide"
+      ],
+      "extendedData": {
+        "mineralClass": "halide (sodium chloride)",
+        "hardnessMohs": "2–2.5",
+        "colourNote": "pink to orange, or colourless/white",
+        "safetyNote": "Water-soluble and will dissolve or degrade with moisture exposure."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.howlite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Howlite",
+      "description": "Howlite is a white, often grey-veined borate mineral, discovered in 1868 near Windsor, Nova Scotia. Its porous texture readily accepts dye, and dyed howlite is the most common commercial source of imitation turquoise and other coloured beads.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "borate"
+      ],
+      "extendedData": {
+        "mineralClass": "borate",
+        "hardnessMohs": "3.5",
+        "colourNote": "white with grey veining"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.jasper",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Jasper",
+      "description": "Jasper is the general name for opaque, impurity-rich chalcedony (microcrystalline quartz), occurring in an enormous range of colours and patterns depending on the minerals and sediments incorporated during formation. It is the twelfth stone of the Hebrew High Priest's breastplate and a named foundation stone of the New Jerusalem in Revelation; various Native American traditions used it to dowse for water, and medieval European \"tempestaries\" (storm-masters) invoked it as \"the great rain bringer\" to protect harvests and ships. Many of its most popular named varieties are really trade names for a particular locality's distinctive patterning rather than chemically distinct minerals.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-red",
+        "gemstone-yellow",
+        "chalcedony"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (cryptocrystalline quartz)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "highly variable, opaque and patterned"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.kunzite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Kunzite",
+      "description": "Kunzite is the pink-to-lilac variety of the pyroxene mineral spodumene (hiddenite is its green counterpart), coloured by trace manganese. First described in 1902 and named for gemmologist George Frederick Kunz, it is notably light-sensitive and can fade with prolonged sun exposure.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-pink",
+        "pyroxene"
+      ],
+      "extendedData": {
+        "mineralClass": "pyroxene (spodumene)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "pale pink to lilac",
+        "safetyNote": "Colour can fade with prolonged exposure to strong light — store away from direct sun."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.hiddenite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Hiddenite",
+      "description": "Hiddenite is the green variety of the pyroxene mineral spodumene (kunzite is its pink counterpart), coloured by trace chromium, first discovered in North Carolina in 1879. It is not related to garnet despite sometimes being grouped with garnet varieties in informal lists.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "pyroxene"
+      ],
+      "extendedData": {
+        "mineralClass": "pyroxene (spodumene)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "yellow-green to emerald green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.kyanite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Kyanite",
+      "description": "Kyanite is an aluminium silicate unusual for its markedly different hardness along different crystal axes — soft enough to scratch lengthwise with a knife but resistant across the grain. It is most commonly a striated blue, with rarer black, green, and (chromium- or manganese-bearing) orange material.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "gemstone-blue",
+        "gemstone-orange",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate",
+        "hardnessMohs": "4.5–5 (lengthwise), 6.5–7 (across)",
+        "colourNote": "blue most common; also black and orange"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.labradorite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Labradorite",
+      "description": "Labradorite is a feldspar famous for labradorescence — a flash of iridescent blue, green, gold, or violet that sweeps across the stone as it is tilted, caused by light interference within microscopic internal layering. First described near Nain, Labrador in 1770, it carries a genuine Inuit legend, recorded in a 1941 Smithsonian ethnography, that the Northern Lights were once trapped within the coastal rocks of Labrador until a warrior struck them free with his spear, most of the light escaping to the sky while some remained captured in the stone — the Inuit name for it translates to \"fire-rock.\"",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "gemstone-blue",
+        "gemstone-green",
+        "gemstone-black",
+        "gemstone-yellow",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar (plagioclase)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "grey body colour with blue/green/gold/violet iridescent flash"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.larimar",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Larimar",
+      "description": "Larimar is a rare blue variety of the mineral pectolite, found almost exclusively in the Dominican Republic. It was rediscovered on a Dominican beach in 1974 by Miguel Méndez and Peace Corps volunteer Norman Rilling, who named it by blending his daughter Larissa's name with mar, \"sea.\"",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "silicate (pectolite)",
+        "hardnessMohs": "4.5–5",
+        "colourNote": "pale to deep sky blue"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.larvikite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Larvikite",
+      "description": "Larvikite is not a single mineral but an igneous rock (a monzonite) from the Larvik region of Norway, composed mostly of large feldspar crystals that produce a striking silvery-blue schiller (sheen) against a dark grey-black body — traded in the stone trade as \"Blue Pearl Granite,\" though it is not a true granite.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-grey",
+        "igneous-rock"
+      ],
+      "extendedData": {
+        "mineralClass": "igneous rock (monzonite)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "dark grey-black with blue-silver feldspar schiller"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.lazulite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Lazulite",
+      "description": "Lazulite is a deep blue magnesium-aluminium phosphate, visually similar to lazurite (the blue mineral in lapis lazuli) but chemically unrelated, occurring as crystals in quartz-rich metamorphic rock, which can give specimens a brown-and-blue mixed appearance.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-brown",
+        "phosphate"
+      ],
+      "extendedData": {
+        "mineralClass": "phosphate",
+        "hardnessMohs": "5.5–6",
+        "colourNote": "deep azure blue, sometimes with brown host rock"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.lepidolite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Lepidolite",
+      "description": "Lepidolite is a lithium-rich mica, usually a soft lilac-pink to violet-grey, historically an important ore of lithium and still sometimes containing visible flecks of pink tourmaline where the two minerals grew together.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "mica"
+      ],
+      "extendedData": {
+        "mineralClass": "mica",
+        "hardnessMohs": "2.5–4",
+        "colourNote": "lilac to violet-grey"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.lodestone",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Lodestone",
+      "description": "Lodestone is naturally magnetised magnetite, an iron oxide mineral — one of very few minerals found naturally magnetic. Thales of Miletus documented its attractive power in the 6th century BCE; Chinese texts from the 4th–2nd centuries BCE describe a lodestone \"south-pointing spoon\" used in divination and geomancy, a practice that developed into the magnetic compass by the 11th century CE; and later European and African-diaspora folk-magic traditions treated lodestone (paired with iron filings said to be its \"food\") as a charm for drawing luck, love, or money.",
+      "secondaryNames": [
+        {
+          "name": "Magnetite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "gemstone-brown",
+        "iron-oxide"
+      ],
+      "extendedData": {
+        "mineralClass": "iron oxide (magnetite)",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "black to brownish-black, metallic"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.moldavite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Moldavite",
+      "description": "Moldavite is a natural glass (a tektite) formed around 15 million years ago when a large meteorite impact in present-day Germany melted and ejected terrestrial rock, which cooled into glassy fragments scattered across the Moldau/Vltava river basin of the Czech Republic, the only place it is found. Genuine medieval Bohemian folklore calls it the \"emerald that fell from the sky,\" believed to bring fertility and prosperity and to ward off evil.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "tektite"
+      ],
+      "extendedData": {
+        "mineralClass": "tektite (natural impact glass)",
+        "hardnessMohs": "5.5–7",
+        "colourNote": "olive to forest green, often translucent"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.opalite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Opalite",
+      "description": "Opalite is a man-made opalescent glass, not a natural opal or mineral, produced by adding trace amounts of substances like fluorite or impure uranium-era formulas to achieve a milky, blue-to-opalescent glow reminiscent of moonstone or opal.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-yellow",
+        "gemstone-blue",
+        "man-made-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "synthetic glass",
+        "hardnessMohs": "5–6 (glass)",
+        "colourNote": "milky white to blue, opalescent",
+        "note": "A man-made opalescent glass; plastic opal simulants date to the late 1970s, with the 'opalite' trade name appearing by 1988 — not a natural mineral or ancient material, and often sold in ways that mimic real opal or moonstone."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.olivine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Olivine",
+      "description": "Olivine is the mineral family name for a magnesium-iron silicate; its gem-quality, vividly green form is better known by the name peridot. Ancient Greco-Roman sources, including Pliny the Elder, record the Red Sea island of \"Topazios\" (identified with modern Zabargad, or St. John's Island, Egypt) as the ancient source of this gem, mined from around the 3rd century BCE through the Roman period — roughly 800 years of documented activity confirmed by later archaeology.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate (forsterite-fayalite series)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "olive to bright green",
+        "note": "The parent mineral of peridot — peridot is gem-quality olivine; the two names are often used interchangeably in the trade. The ancient 'Topazios' mining history belongs to this material specifically."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.petrified-wood",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Petrified Wood",
+      "description": "Petrified wood is fossilised tree material in which the original organic structure has been replaced, cell by cell, with minerals (usually silica as agate/chalcedony), preserving the wood's grain in stone. Ancient Egyptians used fossilised wood in funerary contexts as a symbol of immortality; Navajo tradition calls the petrified logs of what is now Petrified Forest National Park Yei'iitsoh Bitsi'in (\"the giant's bones\"), holding that removing them disrupts the land's balance, while Apache legend credits the trickster Coyote with first setting the world's forests alight.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "fossil"
+      ],
+      "extendedData": {
+        "mineralClass": "fossil (silicified wood)",
+        "hardnessMohs": "6.5–7 (when silica-replaced)",
+        "colourNote": "brown, tan, and grey, following original wood grain"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.platinum",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Platinum",
+      "description": "Native platinum is a rare, dense, naturally occurring metallic element, found mainly as small grains in alluvial deposits and certain igneous rocks, highly resistant to tarnish and chemical attack. The La Tolita-Tumaco culture near Esmeraldas, Ecuador, deliberately alloyed and sintered platinum with gold from the last centuries BCE onward to make nose rings and ceremonial ornaments — sophisticated, intentional metalworking rather than incidental use; trace platinum found in some ancient Egyptian gold artefacts, by contrast, is now believed to be an accidental byproduct of impure Nubian gold ore.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-grey",
+        "native-element"
+      ],
+      "extendedData": {
+        "mineralClass": "native element",
+        "hardnessMohs": "4–4.5",
+        "colourNote": "silvery-white to steel grey, metallic"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.purpurite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Purpurite",
+      "description": "Purpurite is a manganese phosphate mineral forming as a secondary alteration product in lithium-bearing pegmatites, prized for its intense, uniform purple colour.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "phosphate"
+      ],
+      "extendedData": {
+        "mineralClass": "phosphate",
+        "hardnessMohs": "4–4.5",
+        "colourNote": "deep violet-purple"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.pyrite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Pyrite",
+      "description": "Pyrite is an iron sulfide mineral nicknamed \"fool's gold\" for its brassy, metallic yellow lustre, commonly forming well-defined cubic crystals; it readily oxidises in humid conditions, developing a sulfurous smell and crumbling texture over time. Mosaic pyrite-backed mirrors were made across Teotihuacan and the Classic Maya world (roughly 250–900 CE) and used by elites and shamans for scrying and divination, viewed as portals to ancestors and supernatural forces, a practice that in some form persisted until the Spanish conquest.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "sulfide"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfide",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "brassy metallic yellow",
+        "safetyNote": "Can oxidise and break down in humid conditions, sometimes releasing a sulfurous odour — store dry."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.rhodochrosite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Rhodochrosite",
+      "description": "Rhodochrosite is a manganese carbonate prized for its rich rose-pink to red colour, often banded in concentric patterns, most famously mined in Argentina, where it is the official national gemstone. Known there as Rosa del Inca (\"Inca Rose\"), it carries an Argentine folk legend of star-crossed lovers whose spilled blood became the pink stone — a romantic folk tale rather than a documented pre-Columbian religious text, but a genuinely significant piece of Argentine national culture.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "carbonate"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3.5–4",
+        "colourNote": "rose pink to red, often banded"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.rutile",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Rutile",
+      "description": "Rutile is a titanium dioxide mineral forming slender, needle-like reddish-brown to black crystals, best known for growing as fine golden-red needle inclusions inside quartz (\"rutilated quartz\") and for producing the star effect in star sapphire and star ruby.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-red",
+        "oxide"
+      ],
+      "extendedData": {
+        "mineralClass": "oxide (titanium dioxide)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "reddish-brown to brownish-red"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.serpentine",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Serpentine",
+      "description": "Serpentine is a group of related magnesium silicate minerals, typically mottled green with a waxy-to-greasy lustre reminiscent of snakeskin, the source of its name. Pliny the Elder described a serpentine marble (\"ophite\") as protective against snakebite on the strength of its snakeskin-like pattern, and ancient Egyptians and Persians wore serpentine amulets against snakebite, poison, and evil spirits; medieval European belief further held that a serpentine drinking vessel would sweat or shatter if poison were placed in it.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "serpentine"
+      ],
+      "extendedData": {
+        "mineralClass": "serpentine",
+        "hardnessMohs": "2.5–5.5",
+        "colourNote": "mottled green"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.shungite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Shungite",
+      "description": "Shungite is a black, carbon-rich mineraloid found almost exclusively near Shunga, Russia, notable as one of the oldest known carbon-bearing rocks, around 2 billion years old. In 1706, Peter the Great had \"aspidniy stone\" brought from Karelia to his palace, and in 1719 he founded Russia's first mineral spa, Marsial Waters near Petrozavodsk, after bathing in and drinking shungite-filtered water.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "carbon-mineraloid"
+      ],
+      "extendedData": {
+        "mineralClass": "mineraloid (carbon-rich metamorphic rock)",
+        "hardnessMohs": "3.5–4",
+        "colourNote": "black"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.silver",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Silver",
+      "description": "Native silver is a naturally occurring metallic element, found as wires, sheets, or masses, usually intergrown with other minerals; it tarnishes readily on exposure to sulfur compounds in air. It was sacred to the Roman Moon goddesses Luna and Diana and to the Greek Selene and Artemis, consistently assigned to the Moon in classical and later alchemical correspondence systems, and the Inca called it the \"Tears of the Moon,\" paired with gold as the Sun's \"sweat.\"",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-grey",
+        "native-element"
+      ],
+      "extendedData": {
+        "mineralClass": "native element",
+        "hardnessMohs": "2.5–3",
+        "colourNote": "bright metallic silver, tarnishing to grey-black"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.smithsonite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Smithsonite",
+      "description": "Smithsonite is a zinc carbonate mineral forming in the oxidised zones of zinc ore deposits, prized for a smooth, almost melted-looking botryoidal (grape-like) crystal habit in a wide range of pastel colours.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-pink",
+        "gemstone-green",
+        "carbonate"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "4–4.5",
+        "colourNote": "pastel blue, pink, or green, botryoidal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.spinel",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Spinel",
+      "description": "Spinel is a magnesium-aluminium oxide gem mineral occurring in nearly every colour, historically confused with ruby and sapphire. The \"Black Prince's Ruby\" in the British Crown Jewels (first recorded in 14th-century Spain) and the 352-carat \"Timur Ruby\" are both large red spinels long believed to be rubies, since spinel was not mineralogically distinguished from true ruby corundum until 1783, when Romé de l'Isle identified it as a separate species.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "oxide"
+      ],
+      "extendedData": {
+        "mineralClass": "oxide",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "wide range; pink is among the most popular"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.sunstone",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Sunstone",
+      "description": "Sunstone is a feldspar that displays aventurescence — a glittering, metallic sparkle caused by thin, reflective platelets of included copper or hematite. The \"sunstone\" of medieval Icelandic sagas, used by Vikings to locate the sun through overcast sky for navigation, is now believed by most researchers to have been calcite (Iceland spar) or possibly cordierite — not the copper-bearing feldspar gem sold under the sunstone name today, which carries no comparable lore of its own.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar (oligoclase/labradorite)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "orange-brown with metallic sparkle"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.tanzanite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Tanzanite",
+      "description": "Tanzanite is the blue-violet gem variety of the mineral zoisite, found at only one location on Earth — the foothills of Mount Kilimanjaro in Tanzania — and discovered only in 1967. Maasai herders are said to have first found the blue crystals (originally brown zoisite, colour-changed by heat) scattered after a lightning-sparked grass fire; the Maasai regard lightning as a sacred link between heaven and earth, and are reported to have treasured the resulting stone in ceremonies and blessings for newborns — a genuine though recent (20th-century) piece of Indigenous cultural history, not ancient lore.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "sorosilicate (zoisite)",
+        "hardnessMohs": "6–7",
+        "colourNote": "blue to violet-blue"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.titanium-aura-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Titanium Aura Quartz",
+      "description": "Titanium aura quartz is natural clear quartz that has been laboratory-treated — bonded with a microscopically thin layer of titanium (and sometimes other metals) in a vacuum chamber — to produce a permanent, brilliantly iridescent rainbow-to-violet-black surface sheen.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "gemstone-violet",
+        "quartz",
+        "treated-stone"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (metal-coated/treated)",
+        "hardnessMohs": "7 (coating is a thin surface film)",
+        "colourNote": "iridescent dark violet to black sheen",
+        "note": "A late-20th-century jewellery-trade invention — a natural quartz crystal given a vacuum vapour-deposition metal coating, a technique adapted from aerospace/electronics manufacturing — not a naturally occurring colour."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.zircon",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Zircon",
+      "description": "Zircon is a zirconium silicate occurring naturally in almost any colour, though colourless and heat-treated blue are the most commercially common; it is among the oldest minerals on Earth's surface, with crystals dated past 4.4 billion years. The Hebrew \"leshem\" stone in Exodus's High Priest's breastplate is often translated \"jacinth,\" a name modern gemmology applies to orange-red zircon, but scholars are not confident in that identification — some argue instead for amber or hessonite garnet — so the biblical connection should be treated as debated rather than settled. Not to be confused with cubic zirconia, a wholly synthetic diamond simulant.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-red",
+        "gemstone-green",
+        "gemstone-blue",
+        "gemstone-brown",
+        "silicate"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate",
+        "hardnessMohs": "6.5–7.5",
+        "colourNote": "colourless/white and blue most common; naturally occurs in nearly every colour"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.elestial-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Elestial Quartz",
+      "description": "Elestial quartz is a trade name (not a separate mineral) for naturally etched quartz crystals showing complex, layered, skeletal terminations formed by a stop-start growth and partial dissolution history, most often smoky brown in colour.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "smoky brown, deeply etched terminations"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.faden-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Faden Quartz",
+      "description": "Faden quartz is a distinctive quartz formation containing a visible internal white thread-like line (faden is German for \"thread\") running through the crystal, formed when a fracture repeatedly healed with new quartz growth as the surrounding rock slowly pulled apart.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "clear to white, with an internal thread-like line"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.golden-healer-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Golden Healer Quartz",
+      "description": "Golden healer is a trade name for clear quartz with a surface or internal golden-yellow coating of iron oxide, the colour sitting on or just beneath the crystal's surface rather than through its body.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (iron oxide coated/included)",
+        "hardnessMohs": "7",
+        "colourNote": "golden yellow surface colouring on clear quartz"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.herkimer-diamond",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Herkimer Diamond",
+      "description": "Herkimer diamonds are not diamonds at all but small, exceptionally clear, naturally double-terminated quartz crystals found in Herkimer County, New York. Mohawk peoples of the region had a genuine historical relationship with these crystals as amulets and trade items — some scholars note the Mohawk people's own name for themselves translates closer to \"People of the Crystal\" than the more familiar \"People of the Flint\" — though the \"Herkimer diamond\" trade name itself dates only to 18th-century European settlers.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "colourless to white, exceptionally clear",
+        "note": "Not a diamond — a locality name for an especially clear, double-terminated quartz crystal."
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.lithium-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Lithium Quartz",
+      "description": "Lithium quartz is a trade name for quartz tinted a soft lilac-grey to smoky brown by inclusions of the lithium mica lepidolite, distinct from true amethyst (coloured by iron) despite a sometimes similar pale purple tone.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (with lepidolite inclusions)",
+        "hardnessMohs": "7",
+        "colourNote": "smoky brown to soft lilac-grey"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.garden-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Garden Quartz",
+      "description": "Garden quartz (also called lodolite or shaman quartz) is clear quartz grown around abundant mineral inclusions — commonly chlorite, hematite, or other minerals — that create landscape-like scenes inside the crystal, with colour and pattern varying widely by inclusion.",
+      "secondaryNames": [
+        {
+          "name": "Lodolite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        },
+        {
+          "name": "Shaman Quartz",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 1
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (with mineral inclusions)",
+        "hardnessMohs": "7",
+        "colourNote": "clear with green/brown internal mineral inclusions"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.pink-lemurian-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Pink Lemurian Quartz",
+      "description": "Pink Lemurian quartz is a trade name for Lemurian seed quartz — elongated quartz crystals with distinctive horizontal striations on their faces, from certain Brazilian localities (chiefly the Serra do Cabral/Diamantina region) — in a pink colouration attributed to manganese or included pink mineral traces.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "soft pink, with striated crystal faces"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.spirit-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Spirit Quartz",
+      "description": "Spirit quartz (cactus quartz) is a quartz formation in which a central crystal point is entirely covered in a dense coating of small druzy crystal points, found almost exclusively near Magaliesburg, South Africa.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz",
+        "hardnessMohs": "7",
+        "colourNote": "white to pale lilac, druzy-coated"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.tangerine-quartz",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Tangerine Quartz",
+      "description": "Tangerine quartz is a trade name for clear quartz coated with a thin, naturally occurring layer of red-orange iron oxide (hematite), giving otherwise colourless crystals a warm tangerine hue.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-orange",
+        "quartz"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (iron oxide coated)",
+        "hardnessMohs": "7",
+        "colourNote": "orange to reddish-brown surface colouring on clear quartz"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.agate",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Agate",
+      "description": "Agate is a banded, translucent variety of chalcedony (microcrystalline quartz), its concentric or wavy layers formed as successive bands of silica deposited inside a cavity in volcanic or sedimentary rock. It is genuinely ancient as a protective talisman: Mesopotamian seals and amulets carved from it date to the 3rd millennium BCE, eye-banded agate beads have been found in Sumerian royal graves as afterlife protection, and ancient Greeks — who named it after Sicily's Achates river — carried it into battle for courage. Colour and banding pattern vary enormously by locality, giving rise to dozens of named trade varieties.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-grey",
+        "gemstone-brown",
+        "gemstone-white",
+        "chalcedony"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (cryptocrystalline quartz)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "highly variable, typically banded"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.blue-lace-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Blue Lace Agate",
+      "description": "Blue lace agate is a pale, delicately banded blue variety of agate, most famously sourced from Namibia, prized for its soft, lace-like fine banding.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (banded agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "pale powder blue, finely banded",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.crazy-lace-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Crazy Lace Agate",
+      "description": "Crazy lace agate is a vividly multicoloured, intricately swirling-banded agate variety, mined mainly in Chihuahua, Mexico, named for its chaotic, maze-like pattern rather than the orderly concentric bands typical of most agate.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-orange",
+        "gemstone-white",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (banded agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "swirling mix of blue, orange, and white",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.banded-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Banded Agate",
+      "description": "Banded agate describes agate showing strong, well-defined parallel colour bands, often in warm red-and-orange tones reminiscent of carnelian; the banding pattern rather than a specific chemistry is what defines the trade name.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "gemstone-orange",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (banded agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "red and orange parallel bands",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.fire-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Fire Agate",
+      "description": "Fire agate is an agate variety with a thin internal layer of iridescent iron oxide (goethite), producing a flashing, fire-like play of orange, red, and green similar to the schiller seen in labradorite. It is found mainly in Mexico and the southwestern United States, a region where it has long been used by local Indigenous peoples in jewellery and trade.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "gemstone-green",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (agate with iridescent iron oxide layer)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "orange and green iridescent flash",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.flower-lace-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Flower Lace Agate",
+      "description": "Flower lace agate is a trade name for a pale, white, finely banded agate whose delicate patterning is said to resemble lace or small flowers.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (banded agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "white, finely banded",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.holly-blue-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Holly Blue Agate",
+      "description": "Holly Blue agate is a trade name for a soft blue agate associated with deposits in the Holly Mountains area of Oregon, prized for a smooth, even, pale blue colour.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (banded agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "soft, even blue",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.moss-agate",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Moss Agate",
+      "description": "Moss agate is a variety of chalcedony containing dendritic (branching, moss-like) inclusions of green chlorite or other minerals — technically a chalcedony rather than a true banded agate, but long grouped with agate in the trade. Known as the \"Gardener's Stone\" in medieval and early modern Europe, farmers buried it in fields or hung it on trees and livestock to promote fertile crops and a good harvest, a documented agrarian folk practice recorded into the 18th century in Britain.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "chalcedony",
+        "agate"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (with dendritic mineral inclusions)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "translucent with green moss-like inclusions",
+        "parentGem": "gemstone.gemstone.agate"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.beryl",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Beryl",
+      "description": "Beryl is a beryllium aluminium silicate that forms the parent mineral of several famous gems — emerald (green, chromium/vanadium) and aquamarine (blue-green, iron) are its best-known varieties, already catalogued in their own right. Pliny the Elder wrote of beryl curing eye diseases, and Greek physicians prepared beryl-infused water as a remedy for bladder and kidney ailments; medieval and Renaissance scrying balls were often cut from beryl, and the German word for eyeglasses, Brille, descends from the 13th-century use of beryl lenses. It is also named among the twelve foundation stones of the New Jerusalem in the Book of Revelation.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-white",
+        "beryl"
+      ],
+      "extendedData": {
+        "mineralClass": "beryl",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "colourless in pure form; trace elements produce many gem varieties",
+        "note": "Aquamarine and emerald are also beryl varieties, already catalogued as their own Gemstones entries."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.red-beryl",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Red Beryl",
+      "description": "Red beryl is an extremely rare manganese-coloured variety of beryl, found in gem quality at only a handful of localities worldwide (principally Utah's Wah Wah Mountains), making fine specimens far rarer — and often more valuable per carat — than emerald.",
+      "secondaryNames": [
+        {
+          "name": "Bixbite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "beryl"
+      ],
+      "extendedData": {
+        "mineralClass": "beryl",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "raspberry to brick red",
+        "parentGem": "gemstone.gemstone.beryl"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.goshenite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Goshenite",
+      "description": "Goshenite is colourless beryl, lacking the trace-element impurities that give other beryl varieties their colour. First described from Goshen, Massachusetts in 1844, colourless beryl of this kind was historically ground into simple lenses and spectacles before fine optical glass became available.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "beryl"
+      ],
+      "extendedData": {
+        "mineralClass": "beryl",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "colourless to pale white",
+        "parentGem": "gemstone.gemstone.beryl"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.heliodor",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Heliodor",
+      "description": "Heliodor is the golden-yellow variety of beryl, coloured by trace iron, its name drawn from the Greek for \"gift of the sun.\" Fine material is mined chiefly in Namibia, Brazil, and Madagascar.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "beryl"
+      ],
+      "extendedData": {
+        "mineralClass": "beryl",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "golden yellow",
+        "parentGem": "gemstone.gemstone.beryl"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.morganite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Morganite",
+      "description": "Morganite is the pink-to-peach variety of beryl, coloured by trace manganese, named in 1911 for the financier and gem collector J.P. Morgan. It is chemically identical to emerald and aquamarine apart from its colouring trace element.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "beryl"
+      ],
+      "extendedData": {
+        "mineralClass": "beryl",
+        "hardnessMohs": "7.5–8",
+        "colourNote": "pale pink to peach",
+        "parentGem": "gemstone.gemstone.beryl"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.calcite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Calcite",
+      "description": "Calcite is calcium carbonate, one of the most common minerals on Earth and a major component of limestone and marble, occurring in an unusually wide range of colours depending on trace impurities; it is notably soft and will effervesce in contact with dilute acid. Clear calcite (Iceland spar) is hypothesised by some modern researchers, supported by a find in a 16th-century shipwreck, to be the \"sunstone\" of Viking sagas, used to locate the sun through overcast sky for navigation; calcite was also carved as \"alabaster\" across ancient Egypt, Greece, and Rome.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "carbonate"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "highly variable depending on trace impurities",
+        "safetyNote": "Soft and reactive to acids — avoid harsh cleaners."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.blue-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Blue Calcite",
+      "description": "Blue calcite is a pale, soft blue variety of calcite, its colour attributed to trace copper or manganese impurities.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "pale soft blue",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.cobaltoan-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Cobaltoan Calcite",
+      "description": "Cobaltoan calcite is a vivid pink-to-magenta calcite coloured by trace cobalt substituting for calcium, mined mainly in the Democratic Republic of the Congo.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "vivid pink to magenta",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.green-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Green Calcite",
+      "description": "Green calcite is a pale-to-mid green variety of calcite, its colour from trace iron or other included minerals.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "pale to mid green",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.honey-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Honey Calcite",
+      "description": "Honey calcite is a warm golden-yellow variety of calcite, its colour from trace iron oxide.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "warm golden yellow",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.orange-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Orange Calcite",
+      "description": "Orange calcite is a bright orange variety of calcite, coloured by trace iron oxide, often found as stalactitic or banded formations.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "bright orange",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.red-calcite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Red Calcite",
+      "description": "Red calcite is a calcite variety that, despite the trade name, typically appears as a dusty rose to salmon pink rather than a true saturated red, coloured by trace iron oxide.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "carbonate",
+        "calcite"
+      ],
+      "extendedData": {
+        "mineralClass": "carbonate",
+        "hardnessMohs": "3",
+        "colourNote": "dusty rose-pink, despite the name",
+        "parentGem": "gemstone.gemstone.calcite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.fluorite",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Fluorite",
+      "description": "Fluorite is calcium fluoride, famous for occurring in nearly every colour of the rainbow — sometimes several at once in concentric colour-zoned crystals — and for its strong fluorescence under ultraviolet light, the phenomenon itself named after this mineral. Pliny the Elder described extraordinarily costly Roman vasa murrina (\"murrine\" vessels), now generally identified by scholars as carved from banded fluorite imported from Parthia; centuries later, purple \"Blue John\" fluorite from Castleton, Derbyshire, became a prized material for ornamental urns and vases in Georgian-era English decorative arts.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "gemstone-green",
+        "halide"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "highly variable, often colour-zoned"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.blue-fluorite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Blue Fluorite",
+      "description": "Blue fluorite is a pale-to-deep blue colour variety of fluorite, coloured by natural irradiation and trace rare-earth elements.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "halide",
+        "fluorite"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "pale to deep blue",
+        "parentGem": "gemstone.gemstone.fluorite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.green-fluorite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Green Fluorite",
+      "description": "Green fluorite is one of the most common fluorite colours, ranging from pale mint to deep forest green, widely mined in China, Mexico, and the UK.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "halide",
+        "fluorite"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "pale mint to deep green",
+        "parentGem": "gemstone.gemstone.fluorite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.pink-fluorite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Pink Fluorite",
+      "description": "Pink fluorite is a soft pink colour variety of fluorite, among the rarer fluorite colours in fine, saturated material.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "halide",
+        "fluorite"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "soft pink",
+        "parentGem": "gemstone.gemstone.fluorite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.purple-fluorite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Purple Fluorite",
+      "description": "Purple fluorite is the classic deep violet-purple colour most associated with the mineral, and the colour most strongly tied to fluorite's own documented history — both the Roman vasa murrina vessels described by Pliny and the Georgian-era English \"Blue John\" decorative stone trade centred on this violet-purple banding.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-violet",
+        "halide",
+        "fluorite"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "deep violet-purple",
+        "parentGem": "gemstone.gemstone.fluorite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.yellow-fluorite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Yellow Fluorite",
+      "description": "Yellow fluorite is a golden-to-pale-yellow colour variety of fluorite, coloured by natural irradiation of trace yttrium.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "halide",
+        "fluorite"
+      ],
+      "extendedData": {
+        "mineralClass": "halide",
+        "hardnessMohs": "4",
+        "colourNote": "pale to golden yellow",
+        "parentGem": "gemstone.gemstone.fluorite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.ruby-fuchsite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Ruby Fuchsite",
+      "description": "Ruby fuchsite (ruby-in-fuchsite) is a rock combining green chromium mica (fuchsite) with embedded red-to-violet ruby crystals, the same chromium that colours the mica also responsible for the ruby's red — the two minerals growing together wherever chromium-rich fluids met the right host rock.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-red",
+        "gemstone-violet",
+        "mica",
+        "fuchsite"
+      ],
+      "extendedData": {
+        "mineralClass": "mica + corundum (fuchsite with ruby inclusions)",
+        "hardnessMohs": "2.5–3 (fuchsite); 9 (ruby inclusions)",
+        "colourNote": "green fuchsite matrix with red-violet ruby crystals",
+        "parentGem": "gemstone.gemstone.fuchsite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.grossular-garnet",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Grossular Garnet",
+      "description": "Grossular is a calcium-aluminium garnet species ranging from colourless through yellow, orange, and green (its vivid green variety, tsavorite, is among the most valuable garnets). The name comes from the Latin for gooseberry, a reference to the typical honey-yellow-green colour of the type specimen.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "gemstone-green",
+        "garnet"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate (garnet group)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "yellow to green",
+        "parentGem": "gemstone.gemstone.garnet"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.hessonite-garnet",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Hessonite Garnet",
+      "description": "Hessonite is a warm orange-brown variety of grossular garnet, sometimes called \"cinnamon stone.\" It is one of the Navaratna, the nine sacred gems of Vedic astrology, specifically assigned to the lunar node Rahu and prescribed in Jyotish tradition to counter Rahu's difficult influence; Hindu legend holds that the stone formed from the fingernails of the demon Vala. It was also cut as jewellery and intaglios by the ancient Greeks and Romans.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "garnet"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate (garnet group)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "warm honey-orange to cinnamon-brown",
+        "parentGem": "gemstone.gemstone.garnet"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.melanite-garnet",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Melanite Garnet",
+      "description": "Melanite is an opaque black, titanium-bearing variety of andradite garnet, historically cut and polished as a mourning jewellery stone in the Victorian era, alongside jet and black onyx.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "garnet"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate (garnet group, andradite)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "opaque black",
+        "parentGem": "gemstone.gemstone.garnet"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.spessartine-garnet",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Spessartine Garnet",
+      "description": "Spessartine is a manganese-aluminium garnet prized for a vivid orange colour, sometimes called \"mandarin garnet\" in its most saturated, fine material from Namibia.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "garnet"
+      ],
+      "extendedData": {
+        "mineralClass": "nesosilicate (garnet group)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "vivid orange",
+        "parentGem": "gemstone.gemstone.garnet"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.gypsum",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Gypsum",
+      "description": "Gypsum is a soft calcium sulfate mineral, one of the most common evaporite minerals on Earth, familiar today as the raw material of plaster and drywall. As \"alabaster\" it has deep ancient roots: Egyptian canopic jars and perfume vessels (alabastra) were carved from it, as was the famous early-3rd-millennium-BCE Mesopotamian statue of the deity Abu from Tell Asmar, and Assyrian palace relief carvings of the 9th–7th centuries BCE (\"Mosul marble\").",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "sulfate"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfate",
+        "hardnessMohs": "2",
+        "colourNote": "colourless to white"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.selenite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Selenite",
+      "description": "Selenite is the clear-to-translucent, often fibrous or sheet-like crystalline variety of gypsum. Its name derives from Selene, the Greek goddess of the Moon, an association already established when the English mineral term entered use in the 1600s. Orange selenite is coloured by trace iron oxide.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-orange",
+        "sulfate",
+        "gypsum"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfate (gypsum)",
+        "hardnessMohs": "2",
+        "colourNote": "colourless to white; orange from iron oxide",
+        "parentGem": "gemstone.gemstone.gypsum",
+        "safetyNote": "Very soft and water-soluble over time — avoid soaking or prolonged water exposure."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.desert-rose",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Desert Rose",
+      "description": "Desert rose is a rosette-shaped formation of selenite (gypsum) crystals, grown in arid, sandy environments where embedded sand grains give the otherwise clear mineral a warm tan-to-brown colour and a distinctive petal-like shape.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "sulfate",
+        "gypsum"
+      ],
+      "extendedData": {
+        "mineralClass": "sulfate (gypsum, selenite variety)",
+        "hardnessMohs": "2",
+        "colourNote": "tan to brown, sand-included",
+        "parentGem": "gemstone.variety.selenite"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.jadeite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Jadeite",
+      "description": "Jadeite is a pyroxene mineral and one of the two distinct minerals traded as \"jade\" (the other being nephrite). Burmese jadeite only reached China in volume in the late Ming and early Qing dynasties, but it was the Qianlong Emperor (r. 1735–96) who elevated it to \"imperial jade,\" eclipsing the older nephrite as the prestige material of Qing court carving and connoisseurship — the variety most associated with fine carved and polished jade jewellery today.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "jade"
+      ],
+      "extendedData": {
+        "mineralClass": "pyroxene",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "commonly vivid green; also lavender, white, and other colours",
+        "parentGem": "gemstone.gemstone.jade"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.nephrite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Nephrite",
+      "description": "Nephrite is an amphibole mineral (part of the tremolite-actinolite series) and the older, more widespread of the two \"jade\" minerals. It was carved into ritual bi discs and cong tubes — believed to bridge heaven and earth — by Neolithic Chinese cultures including Liangzhu (c. 3400–2250 BCE) and Hongshan (c. 4700–2200 BCE), and among the Māori it is pounamu, worked into mere (clubs) and hei-tiki pendants passed down as sacred ancestral heirlooms.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "jade"
+      ],
+      "extendedData": {
+        "mineralClass": "amphibole (tremolite-actinolite series)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "olive to spinach green, more muted than jadeite",
+        "parentGem": "gemstone.gemstone.jade"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.dianite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Dianite",
+      "description": "Dianite — also marketed as Siberian Blue Jade — is a dappled blue-green ornamental rock from the Murun alkaline complex in Siberia, Russia. It is not a true jade mineral: rather than jadeite (pyroxene) or nephrite (amphibole tremolite-actinolite), it is composed mainly of a different amphibole, potassic-richterite, and is sold as a jade look-alike and substitute rather than a genuine variety of jade.",
+      "secondaryNames": [
+        {
+          "name": "Siberian Blue Jade",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-green",
+        "amphibole",
+        "jade"
+      ],
+      "extendedData": {
+        "mineralClass": "amphibole (potassic-richterite, not true jade)",
+        "hardnessMohs": "5.5–6",
+        "colourNote": "dappled blue and green",
+        "parentGem": "gemstone.gemstone.jade",
+        "note": "Not a true jade mineral — marketed as a jade substitute."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.dalmatian-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Dalmatian Jasper",
+      "description": "Dalmatian jasper is named for its resemblance to the dog's coat — a cream-to-white base speckled with small black spots (black tourmaline or arfvedsonite, not true jasper banding), mined mainly in Mexico.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "gemstone-black",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "white/cream with black spots",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.kambaba-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Kambaba Jasper",
+      "description": "Kambaba jasper is a dark green and black, circular-patterned stone from Madagascar, geologically a fossilised cyanobacteria mat (stromatolite) rather than a true jasper, though long traded under the jasper name.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "fossilised stromatolite (marketed as jasper)",
+        "hardnessMohs": "6–7",
+        "colourNote": "dark green with black orbicular pattern",
+        "parentGem": "gemstone.gemstone.jasper",
+        "note": "Its pattern is geologically disputed: some geologists classify it as a fossilised cyanobacteria mat (stromatolite), others attribute it to volcanic crystallisation with a superficially similar appearance."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.laguna-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Laguna Jasper",
+      "description": "Laguna jasper (also called Laguna agate) is a banded chalcedony from Estación Ojo Laguna, Chihuahua, Mexico, discovered by local miners in the late 1940s and prized by lapidaries for intricate concentric banding in warm brown, orange, and white tones. It has no documented lore beyond this comparatively recent mining history.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-orange",
+        "gemstone-white",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper/agate)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "banded brown, orange, and white",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.leopardskin-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Leopardskin Jasper",
+      "description": "Leopardskin jasper is a spotted, multicoloured jasper from Mexico, its mottled pattern of yellow, orange, brown, red, and black patches resembling a leopard's coat.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "gemstone-orange",
+        "gemstone-brown",
+        "gemstone-red",
+        "gemstone-black",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "mottled yellow, orange, brown, red, and black",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.mookaite-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Mookaite Jasper",
+      "description": "Mookaite is a banded jasper found only near Mooka Creek, in the Kennedy Range of Western Australia — \"Mooka\" derives from a local Aboriginal word for \"running water,\" referring to the freshwater springs there, and Aboriginal Australians used the stone as a toolmaking material long before its commercial discovery in the 1960s. More specific claims of its ceremonial or healing use are far less well documented.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "gemstone-violet",
+        "gemstone-yellow",
+        "gemstone-white",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper, radiolarian in origin)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "banded red, purple/violet, yellow, and cream",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.ocean-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Ocean Jasper",
+      "description": "Ocean jasper is an orbicular (spherically patterned) jasper found only on a remote stretch of Madagascar's coast, accessible solely at low tide, prized for its distinctive circular \"eye\" patterns in blue, white, and many other colours.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "gemstone-white",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "orbicular patterning, commonly blue and white among other colours",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.picture-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Picture Jasper",
+      "description": "Picture jasper is a brown-toned banded jasper, mainly from the western United States, named from the Latin pictura (\"painting\") for its swirling, layered, landscape-like patterns when cut and polished.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "tan and brown, landscape-like banding",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.rainforest-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Rainforest Jasper",
+      "description": "Rainforest jasper (rhyolite marketed as jasper) is a green-and-brown mottled stone from Queensland, Australia, geologically a rhyolite volcanic rock rather than a true chalcedony jasper.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-brown",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "rhyolite (marketed as jasper)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "mottled green and brown",
+        "parentGem": "gemstone.gemstone.jasper",
+        "note": "Mined commercially since the late 1960s from the extinct Mt Hay volcano in Queensland, Australia — a rhyolite, not a true chalcedony jasper, despite being traded alongside jasper varieties."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.unakite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Unakite",
+      "description": "Unakite is a mottled pink-and-green altered granite, composed of pink feldspar, green epidote, and quartz — geologically a rock rather than a single mineral, and not a true jasper, though commonly sold and grouped alongside jasper varieties. Its name genuinely derives from the Cherokee unega (\"white\"), referring to the Unaka mountains' white chestnut blossoms in spring, though the stone itself was only identified and named in 1874 by geologist Frank Bradley.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-pink",
+        "epidote",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "altered granite (epidote + feldspar + quartz)",
+        "hardnessMohs": "6–7",
+        "colourNote": "mottled pink and green",
+        "parentGem": "gemstone.gemstone.jasper",
+        "note": "A rock (epidote-feldspar-quartz), not a single mineral or true jasper, despite being traded alongside jasper."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.red-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Red Jasper",
+      "description": "Red jasper is jasper coloured a deep brick-red by iron oxide inclusions, among the most common and widely available jasper colours worldwide. Chapter 156 of the Egyptian Book of the Dead prescribes a tyet (Isis knot) amulet of red jasper, placed at a mummy's throat and invoking \"the blood of Isis, the spells of Isis\" for protection — its red colour specifically signifying Isis's blood and regenerative power.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "brick red",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.yellow-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Yellow Jasper",
+      "description": "Yellow jasper is jasper coloured gold-to-ochre by iron oxide, found in many localities worldwide. Ancient Egyptian colour symbolism tied yellow to gold, the sun, and eternity, and yellow jasper was worked into Egyptian, Greek, and Roman amulets and jewellery on that strength.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-yellow",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "golden yellow to ochre",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.imperial-jasper",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Imperial Jasper",
+      "description": "Imperial jasper is a trade name for a swirled, multicoloured Mexican jasper most prized in its green patterning, often banded or swirled together with purple, pink, and brown in the same stone.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "chalcedony",
+        "jasper"
+      ],
+      "extendedData": {
+        "mineralClass": "chalcedony (jasper)",
+        "hardnessMohs": "6.5–7",
+        "colourNote": "swirled green, often with purple and brown",
+        "parentGem": "gemstone.gemstone.jasper"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.black-moonstone",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Black Moonstone",
+      "description": "Black moonstone is a dark grey-to-black feldspar showing the same adularescent sheen as classic moonstone, the dark body colour making its blue-white schiller appear especially vivid by contrast.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "dark grey to black, with blue-white sheen",
+        "parentGem": "gemstone.gemstone.moonstone"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.peach-moonstone",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Peach Moonstone",
+      "description": "Peach moonstone is a warm peachy-orange feldspar from the same mineral family as classic moonstone, its colour from trace iron, usually showing a softer, more diffuse sheen than blue-white moonstone.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-orange",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "warm peach to orange",
+        "parentGem": "gemstone.gemstone.moonstone"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.rainbow-moonstone",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Rainbow Moonstone",
+      "description": "Rainbow moonstone is, despite the name, technically a colourless variety of labradorite feldspar rather than true moonstone (orthoclase/albite). It carries labradorite's genuine Inuit legend of the Northern Lights trapped within the stone (see Labradorite), rather than moonstone's own lunar and Hindu associations, which belong to true moonstone specifically.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "gemstone-white",
+        "gemstone-blue",
+        "feldspar"
+      ],
+      "extendedData": {
+        "mineralClass": "feldspar (labradorite)",
+        "hardnessMohs": "6–6.5",
+        "colourNote": "clear to white/black body, rainbow sheen",
+        "parentGem": "gemstone.gemstone.moonstone",
+        "note": "Mineralogically a colourless labradorite rather than true moonstone, despite the trade name."
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.golden-sheen-obsidian",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Golden Sheen Obsidian",
+      "description": "Golden sheen obsidian is black volcanic glass containing aligned microscopic gas-bubble inclusions that reflect light as a metallic golden sheen when the stone is cut and polished along the right plane.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "volcanic-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "volcanic glass",
+        "hardnessMohs": "5–5.5",
+        "colourNote": "black body with golden metallic sheen",
+        "parentGem": "gemstone.gemstone.obsidian"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.mahogany-obsidian",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Mahogany Obsidian",
+      "description": "Mahogany obsidian is a reddish-brown-and-black volcanic glass, its warm colour caused by included iron oxide within the otherwise black glass.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-red",
+        "volcanic-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "volcanic glass",
+        "hardnessMohs": "5–5.5",
+        "colourNote": "reddish-brown mottled with black",
+        "parentGem": "gemstone.gemstone.obsidian"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.silver-sheen-obsidian",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Silver Sheen Obsidian",
+      "description": "Silver sheen obsidian is black volcanic glass with aligned gas-bubble inclusions that produce a metallic silvery (rather than golden) sheen, the same optical mechanism as golden sheen obsidian with a different inclusion density/size.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "volcanic-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "volcanic glass",
+        "hardnessMohs": "5–5.5",
+        "colourNote": "black with silvery metallic sheen",
+        "parentGem": "gemstone.gemstone.obsidian"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.snowflake-obsidian",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Snowflake Obsidian",
+      "description": "Snowflake obsidian is black volcanic glass containing white, radial clusters of cristobalite crystals that grew within the cooling glass, forming distinctive snowflake-like white patches.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "gemstone-white",
+        "volcanic-glass"
+      ],
+      "extendedData": {
+        "mineralClass": "volcanic glass (with cristobalite inclusions)",
+        "hardnessMohs": "5–5.5",
+        "colourNote": "black with white snowflake-shaped patches",
+        "parentGem": "gemstone.gemstone.obsidian"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.boulder-opal",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Boulder Opal",
+      "description": "Boulder opal is precious opal that formed as thin veins and patches within ironstone boulders, mined mainly in Queensland, Australia, and typically left backed by its natural brown ironstone host rather than cut as a solid stone. It holds genuine significance in Aboriginal culture: the Rainbow Serpent, a major ancestral Dreaming being recognised across many language groups, is said to have left opal wherever its body touched the earth, and boulder opal specifically was used in ceremonies and rites of passage by northern Queensland Aboriginal groups.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-brown",
+        "gemstone-white",
+        "mineraloid"
+      ],
+      "extendedData": {
+        "mineralClass": "mineraloid (hydrated silica) in ironstone",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "opal play-of-colour against a brown ironstone backing",
+        "parentGem": "gemstone.gemstone.opal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.cacholong-opal",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Cacholong Opal",
+      "description": "Cacholong is an opaque, porcelain-white variety of common opal, its name deriving from Kalmyk words meaning \"beautiful stone.\" It holds genuine significance in Central Asian material culture — used in Kazakh, Uzbek, and Mongolian craft — and was prominently worked into Russian Imperial-era objects, including Fabergé pieces and Cossack figurines commissioned by Tsar Nicholas II; traditional folk medicine in the region also credited it with easing pregnancy and gynaecological ailments.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-white",
+        "mineraloid"
+      ],
+      "extendedData": {
+        "mineralClass": "mineraloid (hydrated silica)",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "opaque porcelain white",
+        "parentGem": "gemstone.gemstone.opal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.fire-opal",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Fire Opal",
+      "description": "Fire opal is a transparent-to-translucent orange-to-red opal, named for its vivid body colour rather than for showing play-of-colour, mined mainly in Mexico since its rediscovery near Querétaro in 1835. The Aztecs are credited with naming it quetzalitzlipyollitli (\"stone of the bird of paradise,\" after the quetzal), associating it with the sun god Tonatiuh and using it in ceremonial mosaics and status objects from as early as around 850 CE.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "gemstone-orange",
+        "gemstone-white",
+        "mineraloid"
+      ],
+      "extendedData": {
+        "mineralClass": "mineraloid (hydrated silica)",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "vivid orange to red, sometimes with play-of-colour",
+        "parentGem": "gemstone.gemstone.opal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.pink-opal",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Pink Opal",
+      "description": "Pink opal is an opaque, pastel pink common opal, mined chiefly in Peru and the Andes, usually lacking the play-of-colour of precious opal.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "mineraloid"
+      ],
+      "extendedData": {
+        "mineralClass": "mineraloid (hydrated silica)",
+        "hardnessMohs": "5.5–6.5",
+        "colourNote": "opaque pastel pink",
+        "parentGem": "gemstone.gemstone.opal"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.hawks-eye",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Hawk's Eye",
+      "description": "Hawk's eye (also called falcon's eye) is the blue-grey counterpart of tiger's eye — the same quartz pseudomorph after fibrous crocidolite, but preserving the asbestos mineral's original blue colour rather than having oxidised to golden-brown.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "quartz",
+        "tigers-eye"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (pseudomorph after crocidolite)",
+        "hardnessMohs": "7",
+        "colourNote": "blue-grey, chatoyant",
+        "parentGem": "gemstone.gemstone.tigers-eye"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.red-tigers-eye",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Red Tiger's Eye",
+      "description": "Red tiger's eye is tiger's eye that has been heat-treated to convert its natural golden-brown colour to a deeper red-brown, a long-established and widely disclosed commercial treatment rather than a naturally occurring colour.",
+      "secondaryNames": [
+        {
+          "name": "Ox Eye",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-red",
+        "quartz",
+        "tigers-eye"
+      ],
+      "extendedData": {
+        "mineralClass": "quartz (pseudomorph after crocidolite, heat-treated)",
+        "hardnessMohs": "7",
+        "colourNote": "deep red-brown",
+        "parentGem": "gemstone.gemstone.tigers-eye"
+      }
+    },
+    {
+      "canonicalName": "gemstone.gemstone.tourmaline",
+      "entityType": "gemstone.gemstone",
+      "primaryDisplayName": "Tourmaline",
+      "description": "Tourmaline is a complex borosilicate mineral group occurring in a wider range of colours than almost any other gem species, caused by its unusually varied chemistry. In the 18th century, Dutch East India Company traders brought tourmaline back from Sri Lankan (Ceylon) mines and named it aschentrekker (\"ash puller\") for its pyroelectric ability to attract ash when heated, a property Dutch households reportedly put to practical use cleaning meerschaum pipes. Colour varieties are generally referred to by their own trade names rather than simply \"tourmaline.\"",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-pink",
+        "gemstone-black",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "extremely variable, often zoned"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.black-tourmaline",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Black Tourmaline",
+      "description": "Black tourmaline (schorl) is the most common tourmaline species, an opaque iron-rich variety genuinely used in Victorian mourning jewellery as a substitute for jet during formal \"deep mourning.\"",
+      "secondaryNames": [
+        {
+          "name": "Schorl",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-black",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate (schorl)",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "opaque black",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.green-tourmaline",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Green Tourmaline",
+      "description": "Green tourmaline (verdelite) is a chromium- or vanadium-coloured tourmaline ranging from pale mint to deep forest green. A 16th-century Spanish conquistador in Brazil is said to have mistaken a green tourmaline crystal for emerald, a confusion that reportedly persisted until tourmaline was recognised as its own mineral species in the 19th century; Brazilian material was later prized in 19th-century European royal jewellery collections.",
+      "secondaryNames": [
+        {
+          "name": "Verdelite",
+          "languageTag": "en",
+          "visible": true,
+          "sortOrder": 0
+        }
+      ],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "pale mint to deep forest green",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.indicolite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Indicolite",
+      "description": "Indicolite is the blue variety of tourmaline, coloured by trace iron, ranging from pale sky blue to deep indigo. In the 18th century European lapidaries marketed it as \"Brazilian sapphire\" until 19th-century mineralogists distinguished it as tourmaline, and it reportedly carried a \"calm remembrance\" symbolism in Victorian mourning jewellery.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-blue",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "pale blue to deep indigo",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.pink-tourmaline",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Pink Tourmaline",
+      "description": "Pink tourmaline is a manganese-coloured tourmaline ranging from pale baby pink to a deeper rose. Qing-dynasty Empress Dowager Cixi's personal passion for pink tourmaline drove a mining boom in San Diego County, California, between 1902 and 1910 — roughly 120 tons were shipped to China for imperial snuff bottles and carvings — a trade that collapsed after her death in 1908 and the Qing dynasty's fall in 1912.",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "pale to medium pink",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.rubellite",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Rubellite",
+      "description": "Rubellite is the deep pink-to-red variety of tourmaline, named for its ruby-like colour saturation. The Russian Crown Jewels' \"Caesar's Ruby,\" a roughly 260-carat stone traded among French, Swedish, and Russian royalty from the late 16th century, was long believed to be a ruby until mineralogist Alexander Fersman identified it as rubellite tourmaline during a 1922 inventory — a documented case of royal-treasury mistaken identity comparable to spinel's \"Black Prince's Ruby.\"",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-pink",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "deep pink to red",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    },
+    {
+      "canonicalName": "gemstone.variety.watermelon-tourmaline",
+      "entityType": "gemstone.variety",
+      "primaryDisplayName": "Watermelon Tourmaline",
+      "description": "Watermelon tourmaline is a bicoloured tourmaline crystal with a pink core surrounded by a green outer rind, the colour zoning formed as the crystal's growth chemistry changed over time, cut in cross-section to show the namesake \"watermelon\" slice pattern. It shares tourmaline's general 18th-century Dutch \"ash puller\" history (see Tourmaline).",
+      "secondaryNames": [],
+      "tags": [
+        "gemstone",
+        "gemstone-green",
+        "gemstone-pink",
+        "tourmaline"
+      ],
+      "extendedData": {
+        "mineralClass": "borosilicate",
+        "hardnessMohs": "7–7.5",
+        "colourNote": "pink core, green rind",
+        "parentGem": "gemstone.gemstone.tourmaline"
+      }
+    }
+  ]
+}
