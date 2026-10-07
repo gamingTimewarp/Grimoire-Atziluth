@@ -1491,7 +1491,7 @@ dependencies = [
 
 [[package]]
 name = "grimoire-app"
-version = "1.8.6"
+version = "1.9.0"
 dependencies = [
  "serde",
  "serde_json",
