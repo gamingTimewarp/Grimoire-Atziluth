@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import React, { useEffect, useState, useMemo } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, Link, Reading } from '@grimoire/core'
-import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Moon as MoonIcon, Pencil, Download, Plus } from 'lucide-react'
+import { ArrowLeft, Star, BookMarked, ChevronDown, ChevronRight, Info, Moon as MoonIcon, Pencil, Download, Plus, Hash, CalendarDays, Network } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { loadTraditionSettings, isLinkVisible, resolveDisplayName } from '@/lib/tradition-store'
 import { isBookmarked, toggleBookmark } from '@/lib/bookmarks-store'
@@ -236,6 +236,10 @@ function EntityDetailPage() {
   const isHoliday = entity.entityType === 'calendar.holiday'
   const isMeteorShower = entity.entityType === 'calendar.meteor-shower'
   const isMoonEntity = entity.canonicalName === 'astrology.planet.luna'
+  const isNumerologyEntity = entity.entityType === 'numerology.digit'
+  const isAstrologyEntity = entity.entityType.startsWith('astrology.') && !isMoonEntity
+  const isCalendarEventEntity = ['calendar.holiday', 'calendar.sabbat', 'calendar.eclipse', 'calendar.meteor-shower'].includes(entity.entityType)
+  const isQabalahEntity = entity.entityType.startsWith('qabalah.')
   const isWuxing = entity.entityType === 'wuxing.phase'
   const isSephira = entity.entityType === 'qabalah.sephira'
   const isAlchemyMetal = entity.entityType === 'alchemy.metal'
@@ -366,24 +370,31 @@ function EntityDetailPage() {
         )}
       </div>
 
-      {/* Live Moon calendar page — Luna only */}
+      {/* Live feature-page links */}
       {isMoonEntity && (
-        <button
-          onClick={() => navigate({ to: '/calendar/moon' })}
-          style={{
-            display: 'flex', alignItems: 'center', gap: '10px', width: '100%',
-            padding: '10px 14px', marginBottom: '24px', background: 'var(--color-surface-2)',
-            border: '1px solid var(--color-border)', borderRadius: '8px', cursor: 'pointer',
-            color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit', textAlign: 'left',
-            transition: 'border-color 0.15s',
-          }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
-        >
-          <MoonIcon size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
-          <span style={{ flex: 1 }}>View live phase, position &amp; timeline on the Moon page</span>
-          <ChevronRight size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
-        </button>
+        <FeatureLinkButton icon={<MoonIcon size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />} onClick={() => navigate({ to: '/calendar/moon' })}>
+          View live phase, position &amp; timeline on the Moon page
+        </FeatureLinkButton>
+      )}
+      {isAstrologyEntity && (
+        <FeatureLinkButton icon={<Star size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />} onClick={() => navigate({ to: '/astrology' })}>
+          View live sky positions on the Astrology page
+        </FeatureLinkButton>
+      )}
+      {isNumerologyEntity && (
+        <FeatureLinkButton icon={<Hash size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />} onClick={() => navigate({ to: '/qabalah/numerology' })}>
+          Calculate names and dates on the Numerology page
+        </FeatureLinkButton>
+      )}
+      {isCalendarEventEntity && (
+        <FeatureLinkButton icon={<CalendarDays size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />} onClick={() => navigate({ to: '/calendar' })}>
+          View upcoming dates on the Calendar page
+        </FeatureLinkButton>
+      )}
+      {isQabalahEntity && (
+        <FeatureLinkButton icon={<Network size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />} onClick={() => navigate({ to: '/qabalah' })}>
+          Explore the Tree of Life on the Qabalah page
+        </FeatureLinkButton>
       )}
 
       {/* Secondary names */}
@@ -753,6 +764,30 @@ function MemberArtTile({
 }
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
+
+/** A styled call-to-action row linking out to a live feature page — e.g. the
+ *  Moon entity linking to the live Moon page. Shared across every such link
+ *  so they stay visually consistent. */
+function FeatureLinkButton({ icon, children, onClick }: { icon: React.ReactNode; children: React.ReactNode; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        display: 'flex', alignItems: 'center', gap: '10px', width: '100%',
+        padding: '10px 14px', marginBottom: '24px', background: 'var(--color-surface-2)',
+        border: '1px solid var(--color-border)', borderRadius: '8px', cursor: 'pointer',
+        color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit', textAlign: 'left',
+        transition: 'border-color 0.15s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+    >
+      {icon}
+      <span style={{ flex: 1 }}>{children}</span>
+      <ChevronRight size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
+    </button>
+  )
+}
 
 function Section({ title, children, action }: { title: string; children: React.ReactNode; action?: React.ReactNode }) {
   const [isOpen, setIsOpen] = React.useState(true)
