@@ -1,19 +1,32 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
+import type { RefObject } from 'react'
+import { createPortal } from 'react-dom'
 import {
   Plus, X, ExternalLink, Timer, CircleDot, Layers, Hash, Play, Pause, RotateCcw,
-  Save, FolderOpen, Upload, Download, Archive,
+  Save, FolderOpen, Upload, Download, Archive, Circle, User, Settings,
 } from 'lucide-react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, GrimoireEngine } from '@grimoire/core'
 import { PYTHAGOREAN_TABLE, CHALDEAN_TABLE, sumLatinWord, sumGematriaWord, reduceNumber } from '@/lib/numerology-calc'
+import { WheelChart } from '@/components/ui/WheelChart'
+import { getNatalChart } from '@/lib/astro-engine'
+import type { AstrologyMode, NatalChartData } from '@/lib/astro-engine'
+import { getEffectiveDate, getHomeLocation } from '@/lib/settings-store'
+import { loadTraditionSettings } from '@/lib/tradition-store'
+import { listNatalCharts, getNatalChartById } from '@/lib/natal-db'
+import type { NatalChartRecord } from '@/lib/natal-db'
+import { zonedTimeToUtc } from '@/lib/timezone'
 import { RITUAL_CORRESPONDENCES, RITUAL_CORRESPONDENCE_CATEGORIES } from '@/lib/ritual-correspondences'
 import type { RitualCorrespondence } from '@/lib/ritual-correspondences'
 import {
   loadPinnedCanonicalNames, savePinnedCanonicalNames, loadSlotPicks, saveSlotPicks,
   loadRitualSettings, loadWidgetSlots, saveWidgetSlots, loadRitualNotes, saveRitualNotes,
 } from '@/lib/practice-store'
-import type { RitualGroupsEnabled, RitualWidgetState, TimerWidgetState, MagicCircleWidgetState, ReadingWidgetState, NumerologyWidgetState } from '@/lib/practice-store'
+import type {
+  RitualGroupsEnabled, RitualWidgetState, TimerWidgetState, MagicCircleWidgetState, ReadingWidgetState,
+  NumerologyWidgetState, NatalChartWidgetState,
+} from '@/lib/practice-store'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import type { DeckFilter } from '@/lib/built-in-data'
 import { getAllCustomDecks, deckRecordToFilter } from '@/lib/custom-db'
@@ -24,6 +37,7 @@ import {
 import type { RitualSnapshot } from '@/lib/ritual-io'
 import { EntityArt } from '@/components/ui/EntityArt'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
+import { ZoomableSVGContainer } from '@/components/ui/ZoomableSVGContainer'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
 import { KameaDiagram } from '@/components/ui/KameaDiagram'
 import { PentagramDiagram } from '@/components/ui/PentagramDiagram'
@@ -54,6 +68,13 @@ const SPACE_SIZE = 440
 const SPACE_R = 170
 const SLOT_SIZE = 64
 const CORNER_INSET = SLOT_SIZE / 2 + 10
+const RITUAL_ROW_GAP = 20
+// The ritual space + its two widget columns are given a hard minimum total
+// width (rather than letting their minmax(0,1fr) tracks shrink to fit a
+// narrow viewport) so the layout never reflows on mobile — instead it
+// overflows, and the ZoomableSVGContainer wrapping it clips/pans/zooms that
+// overflow, same as every other fixed-size diagram in this app.
+const RITUAL_ROW_MIN_WIDTH = WIDGET_SLOT_SIZE * 2 + SPACE_SIZE + RITUAL_ROW_GAP * 2
 
 function dirPos(angleDeg: number): { x: number; y: number } {
   const rad = angleDeg * Math.PI / 180
@@ -160,8 +181,11 @@ function PracticePage() {
     delete next[id]
     return next
   })
-  const clearAllSlots = () => setSlotPicks({})
-  const anySlotSet = Object.keys(slotPicks).length > 0
+  const clearAllSlots = () => {
+    setSlotPicks({})
+    setWidgetSlots({})
+  }
+  const anySlotSet = Object.keys(slotPicks).length > 0 || Object.keys(widgetSlots).length > 0
 
   const setWidget = (id: string, w: RitualWidgetState) => setWidgetSlots(prev => ({ ...prev, [id]: w }))
   const clearWidget = (id: string) => setWidgetSlots(prev => {
@@ -219,7 +243,7 @@ function PracticePage() {
           </button>
         )}
       </div>
-      <div style={{ display: 'flex', gap: '8px', marginBottom: '28px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '28px' }}>
         {pinned.map(entity => (
           <PinSlot
             key={entity.canonicalName}
@@ -236,52 +260,68 @@ function PracticePage() {
         <span style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           Ritual Space
         </span>
-        {anySlotSet && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <button
-            onClick={clearAllSlots}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '11px', padding: 0 }}
-            onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-danger)' }}
+            onClick={() => navigate({ to: '/settings/traditions', hash: 'ritual-settings' })}
+            title="Ritual settings"
+            style={{ display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '11px', padding: 0 }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
             onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
           >
-            Clear all
+            <Settings size={11} /> Ritual settings
           </button>
-        )}
-      </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center', gap: '20px' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifySelf: 'end' }}>
-          <WidgetSlot state={widgetSlots['left-1']} onSet={w => setWidget('left-1', w)} onClear={() => clearWidget('left-1')} />
-          <WidgetSlot state={widgetSlots['left-2']} onSet={w => setWidget('left-2', w)} onClear={() => clearWidget('left-2')} />
-        </div>
-
-        <div style={{ position: 'relative', width: `${SPACE_SIZE}px`, height: `${SPACE_SIZE}px`, flexShrink: 0 }}>
-          <div style={{
-            position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-            width: `${SPACE_R * 2}px`, height: `${SPACE_R * 2}px`, borderRadius: '50%',
-            border: '1px dashed var(--color-border)',
-          }} />
-          {SLOT_DEFS.filter(d => ritualSettings.groupsEnabled[d.group]).map(d => {
-            const cn = slotPicks[d.id]
-            const value = cn ? RITUAL_CORRESPONDENCES.find(c => c.canonicalName === cn) ?? null : null
-            return (
-              <RitualSlot
-                key={d.id}
-                label={slotDisplayLabel(d, ritualSettings.showEnglishCaptions)}
-                x={d.x}
-                y={d.y}
-                value={value}
-                onPick={c => setSlot(d.id, c)}
-                onClear={() => clearSlot(d.id)}
-                navigate={navigate}
-              />
-            )
-          })}
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifySelf: 'start' }}>
-          <WidgetSlot state={widgetSlots['right-1']} onSet={w => setWidget('right-1', w)} onClear={() => clearWidget('right-1')} />
-          <WidgetSlot state={widgetSlots['right-2']} onSet={w => setWidget('right-2', w)} onClear={() => clearWidget('right-2')} />
+          {anySlotSet && (
+            <button
+              onClick={clearAllSlots}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '11px', padding: 0 }}
+              onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-danger)' }}
+              onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+            >
+              Clear all
+            </button>
+          )}
         </div>
       </div>
+      <ZoomableSVGContainer>
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center',
+          gap: `${RITUAL_ROW_GAP}px`, minWidth: `${RITUAL_ROW_MIN_WIDTH}px`,
+        }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifySelf: 'end' }}>
+            <WidgetSlot state={widgetSlots['left-1']} onSet={w => setWidget('left-1', w)} onClear={() => clearWidget('left-1')} />
+            <WidgetSlot state={widgetSlots['left-2']} onSet={w => setWidget('left-2', w)} onClear={() => clearWidget('left-2')} />
+          </div>
+
+          <div style={{ position: 'relative', width: `${SPACE_SIZE}px`, height: `${SPACE_SIZE}px`, flexShrink: 0 }}>
+            <div style={{
+              position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+              width: `${SPACE_R * 2}px`, height: `${SPACE_R * 2}px`, borderRadius: '50%',
+              border: '1px dashed var(--color-border)',
+            }} />
+            {SLOT_DEFS.filter(d => ritualSettings.groupsEnabled[d.group]).map(d => {
+              const cn = slotPicks[d.id]
+              const value = cn ? RITUAL_CORRESPONDENCES.find(c => c.canonicalName === cn) ?? null : null
+              return (
+                <RitualSlot
+                  key={d.id}
+                  label={slotDisplayLabel(d, ritualSettings.showEnglishCaptions)}
+                  x={d.x}
+                  y={d.y}
+                  value={value}
+                  onPick={c => setSlot(d.id, c)}
+                  onClear={() => clearSlot(d.id)}
+                  navigate={navigate}
+                />
+              )
+            })}
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', justifySelf: 'start' }}>
+            <WidgetSlot state={widgetSlots['right-1']} onSet={w => setWidget('right-1', w)} onClear={() => clearWidget('right-1')} />
+            <WidgetSlot state={widgetSlots['right-2']} onSet={w => setWidget('right-2', w)} onClear={() => clearWidget('right-2')} />
+          </div>
+        </div>
+      </ZoomableSVGContainer>
 
       {/* Notes */}
       <div style={{ marginTop: '32px' }}>
@@ -311,7 +351,7 @@ function PinSlot({ entity, onOpen, onRemove }: { entity: BaseEntity; onOpen: () 
   return (
     <div
       style={{
-        position: 'relative', flex: '1 1 0', minWidth: 0, height: `${BAR_HEIGHT}px`,
+        position: 'relative', flex: '1 1 140px', minWidth: '140px', height: `${BAR_HEIGHT}px`,
         background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
         borderRadius: '8px', cursor: 'pointer', transition: 'border-color 0.15s',
         display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6px 10px',
@@ -460,16 +500,35 @@ function RitualSlot({
   navigate: ReturnType<typeof useNavigate>
 }) {
   const [open, setOpen] = useState(false)
+  const [anchor, setAnchor] = useState<{ top: number; left: number } | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const popoverRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!open) return
     const handler = (e: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) setOpen(false)
+      const target = e.target as Node
+      if (containerRef.current?.contains(target)) return
+      if (popoverRef.current?.contains(target)) return
+      setOpen(false)
     }
     document.addEventListener('mousedown', handler)
     return () => document.removeEventListener('mousedown', handler)
   }, [open])
+
+  // Position is captured fresh each time the popover opens — it's portaled to
+  // document.body (see CorrespondencePicker) to escape this slot's own and the
+  // ritual space's pan/zoom transforms, both of which would otherwise trap a
+  // plain position:fixed/absolute to their own transformed box instead of the
+  // real viewport. Escaping that way means the popover no longer inherits a
+  // position from its trigger automatically, so this recomputes it explicitly
+  // from the actual click point, rather than the button's own (much larger)
+  // bounding box, so it opens right where the pointer is instead of trailing
+  // off toward whichever edge the box happens to end at.
+  const toggleOpen = (e: React.MouseEvent) => {
+    if (!open) setAnchor({ top: e.clientY + 8, left: e.clientX })
+    setOpen(o => !o)
+  }
 
   return (
     <div
@@ -480,7 +539,7 @@ function RitualSlot({
     >
       <div ref={containerRef} style={{ position: 'relative' }}>
         <button
-          onClick={() => setOpen(o => !o)}
+          onClick={toggleOpen}
           title={value ? value.label : (label ? `Set ${label}` : 'Set')}
           style={{
             width: `${SLOT_SIZE}px`, height: `${SLOT_SIZE}px`, borderRadius: '50%',
@@ -529,8 +588,10 @@ function RitualSlot({
           </>
         )}
 
-        {open && (
+        {open && anchor && (
           <CorrespondencePicker
+            innerRef={popoverRef}
+            anchor={anchor}
             onPick={c => { onPick(c); setOpen(false) }}
             onClear={value ? () => { onClear(); setOpen(false) } : undefined}
           />
@@ -546,10 +607,17 @@ function RitualSlot({
   )
 }
 
-function CorrespondencePicker({ onPick, onClear }: { onPick: (c: RitualCorrespondence) => void; onClear?: () => void }) {
-  return (
-    <div style={{
-      position: 'absolute', top: `${SLOT_SIZE + 24}px`, left: '50%', transform: 'translateX(-50%)', zIndex: 30,
+function CorrespondencePicker({
+  innerRef, anchor, onPick, onClear,
+}: {
+  innerRef: RefObject<HTMLDivElement | null>
+  anchor: { top: number; left: number }
+  onPick: (c: RitualCorrespondence) => void
+  onClear?: () => void
+}) {
+  return createPortal(
+    <div ref={innerRef} style={{
+      position: 'fixed', top: `${anchor.top}px`, left: `${anchor.left}px`, transform: 'translateX(-50%)', zIndex: 9000,
       width: '220px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
       borderRadius: '8px', boxShadow: '0 8px 24px rgba(0,0,0,0.4)', padding: '10px',
       maxHeight: '320px', overflowY: 'auto',
@@ -596,7 +664,8 @@ function CorrespondencePicker({ onPick, onClear }: { onPick: (c: RitualCorrespon
           Clear
         </button>
       )}
-    </div>
+    </div>,
+    document.body,
   )
 }
 
@@ -610,22 +679,40 @@ function WidgetSlot({
   onClear: () => void
 }) {
   const [pickerOpen, setPickerOpen] = useState(false)
+  const [pickerAnchor, setPickerAnchor] = useState<{ top: number; left: number } | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const popoverRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!pickerOpen) return
     const handler = (e: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) setPickerOpen(false)
+      const target = e.target as Node
+      if (containerRef.current?.contains(target)) return
+      if (popoverRef.current?.contains(target)) return
+      setPickerOpen(false)
     }
     document.addEventListener('mousedown', handler)
     return () => document.removeEventListener('mousedown', handler)
   }, [pickerOpen])
 
+  // Captured fresh on open from the actual click point — the popover is
+  // portaled to document.body (escaping this slot's and the ritual space's
+  // pan/zoom transforms, see CorrespondencePicker) purely to guarantee it
+  // paints on top of everything else; its x/y should still track wherever was
+  // clicked. Using the click coordinates directly, rather than the trigger's
+  // own (150px-square) bounding box, matters here specifically because the
+  // [+] icon sits in the middle of that box — anchoring off the box's bottom
+  // edge put the popover ~75px further down than the icon itself.
+  const toggleOpen = (e: React.MouseEvent) => {
+    if (!pickerOpen) setPickerAnchor({ top: e.clientY + 8, left: e.clientX })
+    setPickerOpen(o => !o)
+  }
+
   if (!state) {
     return (
       <div ref={containerRef} style={{ position: 'relative' }}>
         <button
-          onClick={() => setPickerOpen(o => !o)}
+          onClick={toggleOpen}
           title="Add a ritual widget"
           style={{
             width: `${WIDGET_SLOT_SIZE}px`, height: `${WIDGET_SLOT_SIZE}px`,
@@ -639,10 +726,11 @@ function WidgetSlot({
           <Plus size={22} />
         </button>
 
-        {pickerOpen && (
-          <div style={{
-            position: 'absolute', top: 0, left: `${WIDGET_SLOT_SIZE + 10}px`, zIndex: 25,
-            width: '190px', background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
+        {pickerOpen && pickerAnchor && createPortal(
+          <div ref={popoverRef} style={{
+            position: 'fixed', top: `${pickerAnchor.top}px`, left: `${pickerAnchor.left}px`, transform: 'translateX(-50%)', zIndex: 9000,
+            width: '190px', maxHeight: '280px', overflowY: 'auto',
+            background: 'var(--color-surface-2)', border: '1px solid var(--color-border)',
             borderRadius: '8px', boxShadow: '0 8px 24px rgba(0,0,0,0.4)', padding: '8px',
             display: 'flex', flexDirection: 'column', gap: '2px',
           }}>
@@ -694,7 +782,32 @@ function WidgetSlot({
             >
               <Hash size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> Numerology
             </button>
-          </div>
+            <button
+              onClick={() => { onSet({ kind: 'sky-wheel' }); setPickerOpen(false) }}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px', width: '100%', textAlign: 'left',
+                padding: '8px 9px', background: 'none', border: 'none', borderRadius: '5px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-3)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+            >
+              <Circle size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> Sky Wheel
+            </button>
+            <button
+              onClick={() => { onSet({ kind: 'natal-chart', chartId: null }); setPickerOpen(false) }}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px', width: '100%', textAlign: 'left',
+                padding: '8px 9px', background: 'none', border: 'none', borderRadius: '5px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-3)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+            >
+              <User size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> Natal Chart
+            </button>
+          </div>,
+          document.body,
         )}
       </div>
     )
@@ -711,6 +824,8 @@ function WidgetSlot({
         {state.kind === 'magic-circle' && <MagicCircleWidget state={state} onChange={onSet} />}
         {state.kind === 'reading' && <ReadingWidget state={state} onChange={onSet} />}
         {state.kind === 'numerology' && <NumerologyWidget state={state} onChange={onSet} />}
+        {state.kind === 'sky-wheel' && <SkyWheelWidget />}
+        {state.kind === 'natal-chart' && <NatalChartWidget state={state} onChange={onSet} />}
       </div>
       <button
         onClick={onClear}
@@ -876,6 +991,7 @@ function MagicCircleWidget({ state, onChange }: { state: MagicCircleWidgetState;
   const { engine } = useEngineStore()
   const [entities, setEntities] = useState<BaseEntity[]>([])
   const [selected, setSelected] = useState<BaseEntity | null>(null)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     if (!engine || state.canonicalName) return
@@ -891,27 +1007,47 @@ function MagicCircleWidget({ state, onChange }: { state: MagicCircleWidgetState;
   }, [engine, state.canonicalName])
 
   if (!state.canonicalName) {
+    const q = query.trim().toLowerCase()
+    const filtered = q
+      ? entities.filter(e => e.primaryDisplayName.toLowerCase().includes(q) || e.canonicalName.toLowerCase().includes(q))
+      : entities
+
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WIDGET_SLOT_SIZE - 24}px`, maxHeight: `${WIDGET_SLOT_SIZE - 24}px`, overflowY: 'auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WIDGET_SLOT_SIZE - 24}px` }}>
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '2px' }}>
           Select a Diagram
         </div>
-        {entities.length === 0 && <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>Loading…</div>}
-        {entities.map(e => (
-          <button
-            key={e.canonicalName}
-            onClick={() => onChange({ kind: 'magic-circle', canonicalName: e.canonicalName })}
-            style={{
-              textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
-              border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
-              color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
-            }}
-            onMouseEnter={ev => { ev.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-            onMouseLeave={ev => { ev.currentTarget.style.borderColor = 'var(--color-border)' }}
-          >
-            {e.primaryDisplayName}
-          </button>
-        ))}
+        <input
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search…"
+          style={{
+            width: '100%', padding: '6px 8px', boxSizing: 'border-box',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', color: 'var(--color-text)', fontSize: '12px', outline: 'none',
+          }}
+        />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: `${WIDGET_SLOT_SIZE - 24}px`, overflowY: 'auto' }}>
+          {entities.length === 0 && <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>Loading…</div>}
+          {entities.length > 0 && filtered.length === 0 && (
+            <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>No matches.</div>
+          )}
+          {filtered.map(e => (
+            <button
+              key={e.canonicalName}
+              onClick={() => onChange({ kind: 'magic-circle', canonicalName: e.canonicalName })}
+              style={{
+                textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
+                border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={ev => { ev.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+              onMouseLeave={ev => { ev.currentTarget.style.borderColor = 'var(--color-border)' }}
+            >
+              {e.primaryDisplayName}
+            </button>
+          ))}
+        </div>
       </div>
     )
   }
@@ -950,11 +1086,13 @@ function flattenDeckOptions(decks: DeckFilter[]): DeckFilter[] {
 }
 
 function ReadingWidget({ state, onChange }: { state: ReadingWidgetState; onChange: (w: ReadingWidgetState) => void }) {
+  const navigate = useNavigate()
   const { engine } = useEngineStore()
   const [decks, setDecks] = useState<DeckFilter[]>(BUILT_IN_DECK_FILTERS)
   const [card, setCard] = useState<BaseEntity | null>(null)
   const [orientation, setOrientation] = useState<'upright' | 'reversed'>('upright')
   const [drawing, setDrawing] = useState(false)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     getAllCustomDecks()
@@ -997,26 +1135,44 @@ function ReadingWidget({ state, onChange }: { state: ReadingWidgetState; onChang
   }
 
   if (!state.deckId) {
+    const q = query.trim().toLowerCase()
+    const filteredDecks = q ? deckOptions.filter(d => d.displayName.toLowerCase().includes(q)) : deckOptions
+
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WIDGET_SLOT_SIZE - 24}px`, maxHeight: `${WIDGET_SLOT_SIZE - 24}px`, overflowY: 'auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WIDGET_SLOT_SIZE - 24}px` }}>
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '2px' }}>
           Select a Deck
         </div>
-        {deckOptions.map(d => (
-          <button
-            key={d.id}
-            onClick={() => pickDeck(d.id)}
-            style={{
-              textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
-              border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
-              color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
-          >
-            {d.displayName}
-          </button>
-        ))}
+        <input
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search…"
+          style={{
+            width: '100%', padding: '6px 8px', boxSizing: 'border-box',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', color: 'var(--color-text)', fontSize: '12px', outline: 'none',
+          }}
+        />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: `${WIDGET_SLOT_SIZE - 24}px`, overflowY: 'auto' }}>
+          {deckOptions.length > 0 && filteredDecks.length === 0 && (
+            <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>No matches.</div>
+          )}
+          {filteredDecks.map(d => (
+            <button
+              key={d.id}
+              onClick={() => pickDeck(d.id)}
+              style={{
+                textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
+                border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+            >
+              {d.displayName}
+            </button>
+          ))}
+        </div>
       </div>
     )
   }
@@ -1029,7 +1185,13 @@ function ReadingWidget({ state, onChange }: { state: ReadingWidgetState; onChang
 
       {card ? (
         <>
-          <EntityArt entity={card} width={70} height={112} />
+          <button
+            onClick={() => navigate({ to: '/reference/$canonicalName', params: { canonicalName: card.canonicalName } })}
+            title={`View ${card.primaryDisplayName} in Reference`}
+            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', display: 'block' }}
+          >
+            <EntityArt entity={card} width={70} height={112} />
+          </button>
           <div style={{ fontSize: '10px', color: 'var(--color-text-subtle)' }}>
             {orientation === 'reversed' ? '↓ Reversed' : '↑ Upright'}
           </div>
@@ -1140,6 +1302,189 @@ function NumerologyWidget({ state, onChange }: { state: NumerologyWidgetState; o
             Enter a word or phrase
           </div>
         )}
+      </div>
+    </div>
+  )
+}
+
+// ─── Sky Wheel / Natal Chart widgets ────────────────────────────────────────
+// Both render a WheelChart much larger than WIDGET_SLOT_SIZE — at the normal
+// ~130px widget content width a wheel's glyphs and degree ticks are illegible,
+// so these two intentionally grow past the nominal slot size (the filled-slot
+// container has no max-width, same as MagicCircleWidget's 280px diagrams).
+const WHEEL_WIDGET_SIZE = 260
+
+function SkyWheelWidget() {
+  const navigate = useNavigate()
+  const [chart, setChart] = useState<NatalChartData | null>(null)
+  const [mode, setMode] = useState<AstrologyMode>('tropical')
+
+  useEffect(() => {
+    const compute = () => {
+      const date = getEffectiveDate()
+      const loc = getHomeLocation()
+      const { astrologyMode, houseSystem } = loadTraditionSettings()
+      setMode(astrologyMode)
+      try {
+        // Classical planets only (no nodes/modern/asteroids) and no aspects —
+        // at this widget's scale, those just clutter a chart that's meant to
+        // be glanced at, not analysed in full the way the Astrology page's
+        // own wheel is.
+        const c = getNatalChart(date, loc?.lat ?? 0, loc?.lon ?? 0, houseSystem, astrologyMode, { showNodes: false, showModernPlanets: false })
+        setChart({ ...c, aspects: [] })
+      } catch (err) {
+        console.error('Sky Wheel widget compute error:', err)
+      }
+    }
+    compute()
+    const id = setInterval(compute, 5 * 60 * 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
+      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        Sky Wheel
+      </div>
+      {chart ? (
+        <WheelChart
+          chart={chart} size={WHEEL_WIDGET_SIZE} mode={mode} hideControls showTooltip={false}
+          showLots={false} defaultLayout="rings" glyphScale={3} zodiacBandScale={2}
+        />
+      ) : (
+        <div style={{ width: `${WHEEL_WIDGET_SIZE}px`, height: `${WHEEL_WIDGET_SIZE}px`, borderRadius: '50%', border: '1px dashed var(--color-border)' }} />
+      )}
+      <button
+        onClick={() => navigate({ to: '/astrology' })}
+        style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '10px', padding: 0 }}
+        onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+        onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+      >
+        Open Astrology page
+      </button>
+    </div>
+  )
+}
+
+function NatalChartWidget({ state, onChange }: { state: NatalChartWidgetState; onChange: (w: NatalChartWidgetState) => void }) {
+  const navigate = useNavigate()
+  const [records, setRecords] = useState<NatalChartRecord[]>([])
+  const [record, setRecord] = useState<NatalChartRecord | null>(null)
+  const [chart, setChart] = useState<NatalChartData | null>(null)
+  const [query, setQuery] = useState('')
+
+  useEffect(() => {
+    if (state.chartId) return
+    listNatalCharts().then(setRecords).catch(console.error)
+  }, [state.chartId])
+
+  useEffect(() => {
+    if (!state.chartId) { setRecord(null); setChart(null); return }
+    getNatalChartById(state.chartId).then(r => {
+      setRecord(r)
+      if (!r) return
+      const { astrologyMode, houseSystem } = loadTraditionSettings()
+      const birthDate = zonedTimeToUtc(r.birthDate, r.birthTime ?? '12:00', r.birthTimezone)
+      try {
+        // Classical planets only, no aspects — see SkyWheelWidget.
+        const c = getNatalChart(birthDate, r.birthLat ?? 0, r.birthLon ?? 0, houseSystem, astrologyMode, { showNodes: false, showModernPlanets: false })
+        setChart({ ...c, aspects: [] })
+      } catch (err) {
+        console.error('Natal Chart widget compute error:', err)
+      }
+    }).catch(console.error)
+  }, [state.chartId])
+
+  const pickChart = (chartId: string) => onChange({ kind: 'natal-chart', chartId })
+  const changeChart = () => onChange({ kind: 'natal-chart', chartId: null })
+
+  if (!state.chartId) {
+    const q = query.trim().toLowerCase()
+    const filtered = q ? records.filter(r => r.name.toLowerCase().includes(q)) : records
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WHEEL_WIDGET_SIZE}px` }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '2px' }}>
+          Select a Natal Chart
+        </div>
+        {records.length === 0 ? (
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+            No natal charts saved.{' '}
+            <button
+              onClick={() => navigate({ to: '/astrology/new', search: { edit: undefined } })}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-accent)', fontSize: '12px', padding: 0 }}
+            >
+              Create one
+            </button>
+          </div>
+        ) : (
+          <>
+            <input
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder="Search…"
+              style={{
+                width: '100%', padding: '6px 8px', boxSizing: 'border-box',
+                background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+                borderRadius: '6px', color: 'var(--color-text)', fontSize: '12px', outline: 'none',
+              }}
+            />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: '240px', overflowY: 'auto' }}>
+              {filtered.length === 0 && <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>No matches.</div>}
+              {filtered.map(r => (
+                <button
+                  key={r.id}
+                  onClick={() => pickChart(r.id)}
+                  style={{
+                    textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
+                    border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
+                    color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)' }}
+                >
+                  {r.name}{r.isSelf ? ' (Self)' : ''}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    )
+  }
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
+      <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        {record?.name ?? 'Natal Chart'}
+      </div>
+      {chart ? (
+        <WheelChart
+          chart={chart} size={WHEEL_WIDGET_SIZE} hideControls showTooltip={false}
+          showLots={false} defaultLayout="rings" glyphScale={3} zodiacBandScale={2}
+        />
+      ) : (
+        <div style={{ width: `${WHEEL_WIDGET_SIZE}px`, height: `${WHEEL_WIDGET_SIZE}px`, borderRadius: '50%', border: '1px dashed var(--color-border)' }} />
+      )}
+      <div style={{ display: 'flex', gap: '10px' }}>
+        {record && (
+          <button
+            onClick={() => navigate({ to: '/astrology/$id', params: { id: record.id } })}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '10px', padding: 0 }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+          >
+            View full chart
+          </button>
+        )}
+        <button
+          onClick={changeChart}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-subtle)', fontSize: '10px', padding: 0 }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+        >
+          Change chart
+        </button>
       </div>
     </div>
   )

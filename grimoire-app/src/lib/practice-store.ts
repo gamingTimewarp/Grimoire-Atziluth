@@ -123,7 +123,21 @@ export interface NumerologyWidgetState {
   input: string
 }
 
-export type RitualWidgetState = TimerWidgetState | MagicCircleWidgetState | ReadingWidgetState | NumerologyWidgetState
+/** No configuration — always shows the current-moment sky, same as the
+ *  Astrology page's "Current Sky" panel, just without its controls. */
+export interface SkyWheelWidgetState {
+  kind: 'sky-wheel'
+}
+
+export interface NatalChartWidgetState {
+  kind: 'natal-chart'
+  /** NatalChartRecord id — null until a chart has been picked. */
+  chartId: string | null
+}
+
+export type RitualWidgetState =
+  | TimerWidgetState | MagicCircleWidgetState | ReadingWidgetState | NumerologyWidgetState
+  | SkyWheelWidgetState | NatalChartWidgetState
 
 const WIDGETS_KEY = 'grimoire:practice-widgets'
 

@@ -168,7 +168,7 @@ function TraditionsPage() {
       </div>
 
       {/* Ritual */}
-      <div style={{ marginBottom: '20px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+      <div id="ritual-settings" style={{ marginBottom: '20px', padding: '16px 20px', background: 'var(--color-surface-2)', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
           <Flame size={15} style={{ color: 'var(--color-accent)' }} />
           <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-text)' }}>Ritual</div>

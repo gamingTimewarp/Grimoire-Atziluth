@@ -19,34 +19,40 @@ import type { AstrologyMode } from '@/lib/astro-engine'
 import { getMoonPhase } from '@/lib/astro-calc'
 
 const TRANSIT_COLOR = '#c4a44a'
-const R_TRANSIT_PLANET = 168
+const R_TRANSIT_PLANET_BASE = 168
 
 // ─── Geometry helpers ─────────────────────────────────────────────────────────
 
 const CX = 250
 const CY = 250
 
-// Shared radii (both modes)
+// Shared radii (both modes). R_ZODIAC_OUTER is the one fixed anchor — every
+// other radius below is a *_BASE value that the component shifts inward by
+// `zodiacBandScale` (see WheelChart body) to make room for a thicker zodiac
+// band without moving the outer edge past the viewBox, or any of the rings
+// inside it overlapping each other. A uniform inward shift preserves every
+// pairwise gap between these radii exactly, so this only needs the *_BASE
+// values below — nothing else about the layout logic changes.
 const R_ZODIAC_OUTER = 238
-const R_ZODIAC_INNER = 196
-const R_HOUSE_OUTER  = 196
-const R_HOUSE_INNER  = 174
+const R_ZODIAC_INNER_BASE = 196
+const R_HOUSE_OUTER_BASE  = 196
+const R_HOUSE_INNER_BASE  = 174
 
 // Classic layout
-const R_PLANET = 155
-const R_ASPECT = 110
+const R_PLANET_BASE = 155
+const R_ASPECT_BASE = 110
 
 // Rings layout — concentric planet rings
-const R_RING_1       = 160  // Moon, Sun, Mercury, Venus, Mars
-const R_RING_2       = 135  // Jupiter, Saturn
-const R_RING_3       = 110  // Uranus, Neptune, Pluto
-const R_RING_4       = 85   // Asteroids, Nodes, Lilith
-const R_ASPECT_RINGS = 65   // aspect projection circle in rings mode
+const R_RING_1_BASE       = 160  // Moon, Sun, Mercury, Venus, Mars
+const R_RING_2_BASE       = 135  // Jupiter, Saturn
+const R_RING_3_BASE       = 110  // Uranus, Neptune, Pluto
+const R_RING_4_BASE       = 85   // Asteroids, Nodes, Lilith
+const R_ASPECT_RINGS_BASE = 65   // aspect projection circle in rings mode
 
 // Ring separator circles (drawn between rings in rings mode)
-const R_SEP_12 = 147
-const R_SEP_23 = 122
-const R_SEP_34 = 97
+const R_SEP_12_BASE = 147
+const R_SEP_23_BASE = 122
+const R_SEP_34_BASE = 97
 
 const RING_1_CNS = new Set([
   'astrology.planet.sol', 'astrology.planet.luna',
@@ -55,11 +61,11 @@ const RING_1_CNS = new Set([
 const RING_2_CNS = new Set(['astrology.planet.jupiter', 'astrology.planet.saturn'])
 const RING_3_CNS = new Set(['astrology.planet.uranus', 'astrology.planet.neptune', 'astrology.planet.pluto'])
 
-function getRingRadius(cn: string): number {
-  if (RING_1_CNS.has(cn)) return R_RING_1
-  if (RING_2_CNS.has(cn)) return R_RING_2
-  if (RING_3_CNS.has(cn)) return R_RING_3
-  return R_RING_4
+function getRingRadius(cn: string, rRing1: number, rRing2: number, rRing3: number, rRing4: number): number {
+  if (RING_1_CNS.has(cn)) return rRing1
+  if (RING_2_CNS.has(cn)) return rRing2
+  if (RING_3_CNS.has(cn)) return rRing3
+  return rRing4
 }
 
 /** Convert ecliptic longitude + ascendant to SVG polar angle (0=right, CW). */
@@ -158,6 +164,15 @@ export type WheelChartProps = {
    * fixed chart that isn't "now" at all, so it passes that chart's own moment here. */
   transitDate?: Date
   size?: number
+  /** Multiplies every planet/zodiac-sign glyph's font size. Default 1 (no
+   *  change) — intended for small-scale contexts (e.g. a dashboard widget)
+   *  where the normal glyph size is illegible. */
+  glyphScale?: number
+  /** Multiplies the zodiac ring's thickness, shifting every radius inside it
+   *  (houses, planet rings, aspect circle) inward by the same amount to make
+   *  room without changing the chart's overall size or overlapping anything.
+   *  Default 1 (no change). */
+  zodiacBandScale?: number
   mode?: AstrologyMode
   onNavigate?: (canonicalName: string) => void
   onHoverChange?: (key: string | null) => void
@@ -217,6 +232,7 @@ const LOT_COLOR = 'var(--color-accent)'
 
 export function WheelChart({
   chart, transitChart, date, transitDate, size = 500, mode = 'tropical',
+  glyphScale = 1, zodiacBandScale = 1,
   onNavigate, onHoverChange, showTooltip = true, defaultLayout = 'classic',
   hideControls = false,
   layout: layoutProp, onLayoutChange,
@@ -254,9 +270,29 @@ export function WheelChart({
   useEffect(() => { onHoverChange?.(hovered) }, [hovered])
 
   const isRings   = layout === 'rings'
-  const rPlanet   = (cn: string) => isRings ? getRingRadius(cn) : R_PLANET
-  const rAspect   = isRings ? R_ASPECT_RINGS : R_ASPECT
-  const glyphSize = (hov: boolean) => isRings ? (hov ? 19 : 16) : (hov ? 17 : 14)
+
+  // Every non-outer radius shifts inward by the same amount, so a thicker
+  // zodiac band never overlaps the rings inside it — see the *_BASE constants'
+  // own comment above for why this is safe to do with a single offset.
+  const bandExtra    = (zodiacBandScale - 1) * (R_ZODIAC_OUTER - R_ZODIAC_INNER_BASE)
+  const rZodiacInner = R_ZODIAC_INNER_BASE - bandExtra
+  const rHouseOuter  = R_HOUSE_OUTER_BASE - bandExtra
+  const rHouseInner  = R_HOUSE_INNER_BASE - bandExtra
+  const rPlanetBase  = R_PLANET_BASE - bandExtra
+  const rAspectBase  = R_ASPECT_BASE - bandExtra
+  const rRing1       = R_RING_1_BASE - bandExtra
+  const rRing2       = R_RING_2_BASE - bandExtra
+  const rRing3       = R_RING_3_BASE - bandExtra
+  const rRing4       = R_RING_4_BASE - bandExtra
+  const rAspectRings = R_ASPECT_RINGS_BASE - bandExtra
+  const rSep12       = R_SEP_12_BASE - bandExtra
+  const rSep23       = R_SEP_23_BASE - bandExtra
+  const rSep34       = R_SEP_34_BASE - bandExtra
+  const rTransitPlanet = R_TRANSIT_PLANET_BASE - bandExtra
+
+  const rPlanet   = (cn: string) => isRings ? getRingRadius(cn, rRing1, rRing2, rRing3, rRing4) : rPlanetBase
+  const rAspect   = isRings ? rAspectRings : rAspectBase
+  const glyphSize = (hov: boolean) => (isRings ? (hov ? 19 : 16) : (hov ? 17 : 14)) * glyphScale
 
   // Visibility filter (e.g. the Positions page's "Classical/Modern/Asteroids/Nodes"
   // groups) — applies to the natal ring and to any aspect whose either end is
@@ -292,16 +328,16 @@ export function WheelChart({
             const lon1     = mode === 'iau' ? IAU_RING_SEGMENTS[i][0] : i * 30
             const lon2     = mode === 'iau' ? IAU_RING_SEGMENTS[i][1] : (i + 1) * 30
             const midAngle = lonToSvgAngle((lon1 + lon2) / 2, asc)
-            const [tx, ty] = polar(midAngle, (R_ZODIAC_OUTER + R_ZODIAC_INNER) / 2)
+            const [tx, ty] = polar(midAngle, (R_ZODIAC_OUTER + rZodiacInner) / 2)
             const color    = colors[i]
             const isHov    = hovered === `s:${i}`
             return (
               <g key={sign.name} onMouseEnter={() => setHovered(`s:${i}`)} onMouseLeave={() => setHovered(null)}
                 onClick={() => onNavigate?.(sign.canonicalName)} style={{ cursor: onNavigate ? 'pointer' : 'default' }}>
-                <path d={arcSector(lon1, lon2, R_ZODIAC_OUTER, R_ZODIAC_INNER, asc)}
+                <path d={arcSector(lon1, lon2, R_ZODIAC_OUTER, rZodiacInner, asc)}
                   fill={isHov ? `${color}38` : `${color}18`} stroke="var(--color-border)" strokeWidth="0.5" />
                 <text x={tx} y={ty} textAnchor="middle" dominantBaseline="middle"
-                  fontSize={14} fill={color} opacity={isHov ? 1 : 0.9}
+                  fontSize={14 * glyphScale} fill={color} opacity={isHov ? 1 : 0.9}
                   style={{ userSelect: 'none', pointerEvents: 'none' }}>
                   {sign.symbol}
                 </text>
@@ -314,13 +350,13 @@ export function WheelChart({
         {houses.cusps.map((cuspLon, i) => {
           const nextCusp = houses.cusps[(i + 1) % 12]
           const midAngle = lonToSvgAngle(cuspLon + 15, asc)
-          const [tx, ty] = polar(midAngle, (R_HOUSE_OUTER + R_HOUSE_INNER) / 2)
+          const [tx, ty] = polar(midAngle, (rHouseOuter + rHouseInner) / 2)
           const isAngular = [0, 3, 6, 9].includes(i)
           const isHov     = hovered === `h:${i}`
           return (
             <g key={i} onMouseEnter={() => setHovered(`h:${i}`)} onMouseLeave={() => setHovered(null)}
               onClick={() => onNavigate?.(`astrology.house.${i + 1}`)} style={{ cursor: onNavigate ? 'pointer' : 'default' }}>
-              <path d={arcSector(cuspLon, nextCusp, R_HOUSE_OUTER, R_HOUSE_INNER, asc)}
+              <path d={arcSector(cuspLon, nextCusp, rHouseOuter, rHouseInner, asc)}
                 fill={isHov ? 'rgba(180,156,90,0.18)' : isAngular ? 'rgba(180,156,90,0.08)' : 'var(--color-surface-2)'}
                 stroke="var(--color-border)" strokeWidth="0.5" />
               <text x={tx} y={ty} textAnchor="middle" dominantBaseline="middle"
@@ -333,10 +369,10 @@ export function WheelChart({
         })}
 
         {/* Inner chart circle */}
-        <circle cx={CX} cy={CY} r={R_HOUSE_INNER} fill="var(--color-surface-2)" stroke="var(--color-border)" strokeWidth="0.5" />
+        <circle cx={CX} cy={CY} r={rHouseInner} fill="var(--color-surface-2)" stroke="var(--color-border)" strokeWidth="0.5" />
 
         {/* ── Ring separators (rings mode only) ── */}
-        {isRings && [R_SEP_12, R_SEP_23, R_SEP_34].map(r => (
+        {isRings && [rSep12, rSep23, rSep34].map(r => (
           <circle key={r} cx={CX} cy={CY} r={r}
             fill="none" stroke="var(--color-border)" strokeWidth="0.5" strokeDasharray="2,4" opacity={0.4} />
         ))}
@@ -344,8 +380,8 @@ export function WheelChart({
         {/* Degree ticks */}
         {Array.from({ length: 72 }, (_, i) => i * 5).map(lon => (
           <path key={lon}
-            d={tickLine(lon, R_ZODIAC_INNER,
-              lon % 30 === 0 ? R_HOUSE_OUTER : lon % 10 === 0 ? R_ZODIAC_INNER - 4 : R_ZODIAC_INNER - 2,
+            d={tickLine(lon, rZodiacInner,
+              lon % 30 === 0 ? rHouseOuter : lon % 10 === 0 ? rZodiacInner - 4 : rZodiacInner - 2,
               asc)}
             stroke="var(--color-border)" strokeWidth={lon % 30 === 0 ? 1 : 0.5} />
         ))}
@@ -353,7 +389,7 @@ export function WheelChart({
         {/* ── House axis lines ── */}
         {[0, 3, 6, 9].map(i => {
           const angle    = lonToSvgAngle(houses.cusps[i], asc)
-          const [x1, y1] = polar(angle, R_HOUSE_INNER)
+          const [x1, y1] = polar(angle, rHouseInner)
           const [x2, y2] = polar(angle, rAspect - 10)
           return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="var(--color-accent-muted)" strokeWidth="0.8" strokeDasharray="3,3" />
         })}
@@ -426,7 +462,7 @@ export function WheelChart({
           const angle    = lonToSvgAngle(pos.longitude, asc)
           const r        = rPlanet(pos.planet.canonicalName)
           const [px, py] = polar(angle, r)
-          const [tx, ty] = polar(angle, R_HOUSE_INNER + 10)
+          const [tx, ty] = polar(angle, rHouseInner + 10)
           const isHov    = hovered === 'n:' + pos.planet.name
           return (
             <g key={pos.planet.name}
@@ -455,7 +491,7 @@ export function WheelChart({
         {/* ── Hermetic Lot glyphs ── */}
         {showLots && lots?.map(lp => {
           const angle    = lonToSvgAngle(lp.longitude, asc)
-          const [px, py] = polar(angle, R_PLANET)
+          const [px, py] = polar(angle, rPlanetBase)
           const isHov    = hovered === 'l:' + lp.lot.canonicalName
           const isMulti  = lp.lot.symbol.length > 1
           return (
@@ -478,7 +514,7 @@ export function WheelChart({
         {/* ── Transit planet glyphs ── */}
         {showTransits && transitChart && visibleTransitPlanets?.map(pos => {
           const angle    = lonToSvgAngle(pos.longitude, asc)
-          const [px, py] = polar(angle, R_TRANSIT_PLANET)
+          const [px, py] = polar(angle, rTransitPlanet)
           const isHov    = hovered === 't:' + pos.planet.name
           return (
             <g key={'t:' + pos.planet.name}
@@ -521,7 +557,7 @@ export function WheelChart({
             <React.Fragment>
               {CARDINALS.map(([i]) => {
                 const angle    = lonToSvgAngle(tCusps[i], asc)
-                const [x1, y1] = polar(angle, R_HOUSE_INNER)
+                const [x1, y1] = polar(angle, rHouseInner)
                 const [x2, y2] = polar(angle, rAspect - 10)
                 return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={TRANSIT_COLOR} strokeWidth="0.8" strokeDasharray="3,3" opacity={0.7} />
               })}
