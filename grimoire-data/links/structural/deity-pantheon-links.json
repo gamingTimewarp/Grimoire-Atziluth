@@ -112,6 +112,27 @@
       "label": "pantheon-equivalent",
       "bidirectional": false,
       "traditionScope": []
+    },
+    {
+      "source": "deity.greek.hera",
+      "target": "norse.deity.frigg",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.egyptian.geb",
+      "target": "deity.greek.kronos",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
+    },
+    {
+      "source": "deity.greek.nyx",
+      "target": "deity.egyptian.nuit",
+      "label": "pantheon-equivalent",
+      "bidirectional": true,
+      "traditionScope": []
     }
   ]
 }

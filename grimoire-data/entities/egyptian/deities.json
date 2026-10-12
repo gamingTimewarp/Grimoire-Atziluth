@@ -267,6 +267,187 @@
         "sephiraCN": null,
         "domain": ["protection", "home", "cats", "fertility", "music", "joy", "dancing", "the Moon", "the domestic hearth"]
       }
+    },
+    {
+      "canonicalName": "deity.egyptian.atum",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Atum",
+      "description": "Atum is the self-created creator god of Heliopolis, who arose unbidden from the formless primordial waters of Nu and stood upon the benben, the first mound of dry land to emerge at creation. Through an act of solitary creation — by some accounts spitting, by others masturbating — he brought forth the first divine pair, Shu and Tefnut, beginning the lineage of the Great Ennead of Heliopolis that continues through Geb and Nut to Osiris, Isis, Set, and Nephthys. As the complete totality that existed before even the gods of differentiation, his name is traditionally read as 'the complete one' or 'the one who finishes,' and funerary texts describe him returning to serpent form at the end of time, when creation itself unravels back into the waters of Nu. By the New Kingdom he had merged with the solar cult as Atum-Ra, specifically the aged, setting aspect of the sun as it descends into the underworld each evening — distinct from Khepri, the rising scarab-sun of morning, and Ra himself at noon — a role already reflected in the 'Atum' secondary name on this app's Ra entry. His status as sole self-creator makes him the root-principle from which the entire Ennead, and so the visible pantheon, descends.",
+      "secondaryNames": [
+        { "name": "Tem", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Atem", "languageTag": "egy", "visible": false, "sortOrder": 1 },
+        { "name": "Atum-Ra", "languageTag": "egy", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.sol",
+        "sephiraCN": null,
+        "domain": ["creation", "self-creation", "primordial totality", "the setting sun", "the first mound", "completion", "serpent of ending"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.shu",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Shu",
+      "description": "Shu is the Egyptian god of air, light, and the space between earth and sky, one of the first divine pair born of Atum alongside his twin sister and consort Tefnut. His defining mythological act is the separation of the world: standing between his son Geb (the earth, reclining below) and his daughter Nut (the sky, arched above), Shu lifts Nut's star-covered body skyward and holds her aloft, physically creating the breathable space of the atmosphere in which life and the rising sun can exist — one of the most frequently painted scenes in Egyptian cosmological art. His name may derive from a word for 'emptiness' or 'he who rises up,' and he is typically shown wearing a single ostrich feather, the hieroglyph of his name and a symbol of lightness shared with Ma'at. At the cult centre of Leontopolis ('City of Lions') he and Tefnut were worshipped together as a pair of lions, Shu as the lion of the sunrise guarding the eastern horizon. As the calm, rational air mediating between the extremes of earth and heaven, Shu embodies the stable, breathable middle space upon which the rest of creation depends.",
+      "secondaryNames": [
+        { "name": "Su", "languageTag": "egy", "visible": false, "sortOrder": 0 },
+        { "name": "He Who Holds Up the Sky", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["air", "light", "the atmosphere", "separation of earth and sky", "sunlight", "the eastern horizon", "the lion of dawn"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.tefnut",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Tefnut",
+      "description": "Tefnut is the Egyptian goddess of moisture, rain, and dew, twin sister and consort of Shu and, with him, the first divine pair brought forth by Atum at the dawn of creation — her name is traditionally connected to a word for spitting, reflecting one version of her birth. Paired with her lion-headed brother at the cult centre of Leontopolis, she too was worshipped in leonine form, and as a fierce aspect of the Eye of Ra she is the protagonist of the New Kingdom 'Myth of the Sun's Eye': enraged and estranged from her father, she flees into Nubia as a rampaging lioness, and only the coaxing of Thoth (sent in the form of a baboon) persuades her to return to Egypt, where her transformation back into a gentle, fertile goddess brings the life-giving Nile flood with her — a myth structurally identical to the parallel Sekhmet/Hathor 'Distant Goddess' traditions. As mother of Geb and Nut, she stands two generations above Osiris, Isis, Set, and Nephthys in the Ennead's lineage, her moisture understood as the necessary complement to Shu's dry air in sustaining the living world.",
+      "secondaryNames": [
+        { "name": "Tefenet", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["moisture", "rain", "dew", "the lioness", "the Eye of Ra", "the Distant Goddess myth", "the Nile flood"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.geb",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Geb",
+      "description": "Geb is the Egyptian god of the earth, son of Shu and Tefnut, brother-husband of the sky goddess Nut, and father of Osiris, Isis, Set, and Nephthys — the generation of the Ennead whose children's drama of murder, mourning, and resurrection forms the central myth cycle of Egyptian religion. He is depicted as a reclining green-skinned man stretched beneath the star-covered arch of Nut, separated from her by their father Shu, and often wears a goose upon his head: 'Geb' resembled the Egyptian word for goose, earning him the epithet 'the Great Cackler' in the myth where he laid the cosmic egg from which the sun was born. As the earth itself, he was honoured as the ground in which the dead are buried and from which crops grow, and Egyptian kings traced their legitimacy to 'the Throne of Geb,' inherited through the mythic succession from Geb to Osiris to Horus. The Greek historian Plutarch, writing on Egyptian religion, explicitly equated Geb with Cronus and Nut with Rhea — the earth-and-sky parents of a divine family overthrown by jealousy and succession, just as Cronus and Rhea parented the Olympians — making this one of the more precisely attested cross-pantheon equations in classical sources on Egypt.",
+      "secondaryNames": [
+        { "name": "Seb", "languageTag": "egy", "visible": false, "sortOrder": 0 },
+        { "name": "The Great Cackler", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": "astrology.planet.saturn",
+        "sephiraCN": null,
+        "domain": ["earth", "fertility of soil", "vegetation", "earthquakes", "royal legitimacy", "the goose", "the Great Cackler", "the cosmic egg"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.nu",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Nu",
+      "description": "Nu (also Nun) is the personification of the primordial waters — the formless, infinite, and undifferentiated chaos that existed before creation and that continues to surround and underlie the created world, from which Atum first arose upon the benben mound. As the eldest and most fundamental of the four pairs of the Ogdoad of Hermopolis, Nu and his consort Naunet represent water and its hidden depths, the raw potential out of which all existence was drawn and into which it could, in principle, dissolve again; Egyptian texts describe Nu as 'father of the gods' precisely because every other deity, even Atum, ultimately comes forth from him. He is typically shown as a bearded man standing chest-deep in water, arms raised to lift the solar barque of Ra into the sky at the moment of creation, and the Nile's yearly inundation was understood as the primordial waters of Nu briefly reasserting themselves within the created world. Male members of the Ogdoad were conventionally depicted with frog heads, reflecting Nu's deep association with the fertile, chaotic waters from which Egypt itself was believed to have emerged.",
+      "secondaryNames": [
+        { "name": "Nun", "languageTag": "egy", "visible": true, "sortOrder": 0 },
+        { "name": "Father of the Gods", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["primordial waters", "pre-creation chaos", "the abyss", "potential", "the Ogdoad", "the Nile flood", "father of the gods"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.naunet",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Naunet",
+      "description": "Naunet is the female counterpart and consort of Nu within the Ogdoad of Hermopolis, personifying the primordial waters in their hidden, receptive aspect — the same boundless pre-creation chaos as Nu, expressed through the feminine principle that complements rather than opposes him, in keeping with the paired structure of all four Ogdoad couples. Female members of the Ogdoad were conventionally depicted as snake-headed, in contrast to their frog-headed male counterparts, and Naunet's serpent form links her to the primeval marshland creatures believed to inhabit the chaotic waters before the earth's emergence. In later tradition she was sometimes identified with the sky in its most ancient, undifferentiated aspect, blurring into the domain of Nut, and some Ptolemaic-period temple texts at Thebes draw Naunet into the sphere of the Theban triad as a protective maternal figure. As with the rest of the Ogdoad, her significance lies less in an individual cult than in her structural place within the eightfold cosmogony of Hermopolis (Khemenu), the city that claimed to be the site where the primordial mound first broke the surface of Nu's waters.",
+      "secondaryNames": [
+        { "name": "Nunet", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the primordial waters (feminine aspect)", "the hidden deep", "pre-creation chaos", "the Ogdoad", "the primeval marsh"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.heh",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Heh",
+      "description": "Heh is the personification of infinity, eternity, and the boundless expanse of time within the Ogdoad of Hermopolis, embodying specifically the concept the Egyptians called 'millions of years' — the inconceivably vast duration wished upon a reigning pharaoh in countless temple inscriptions and royal titularies. He is depicted kneeling, holding in each hand a notched palm-rib, the hieroglyph used to record the passage of individual years, so that his very image is a tally of endless time; this posture, absorbed into royal and temple decoration throughout Egyptian history, became one of the most widely reproduced religious motifs in Egyptian art, long after the Ogdoad's cosmogony itself had faded from active worship. With his consort Hauhet, Heh represents one of the four fundamental qualities of the pre-creation void at Hermopolis — formlessness extended not through space but through time, the sheer endlessness that had to exist before anything could be measured, dated, or bounded. His continued popularity as a decorative and votive figure, used to wish long reigns and lifespans upon the living, made him one of the more visually familiar Ogdoad members despite having no major cult centre or mythological narrative of his own.",
+      "secondaryNames": [
+        { "name": "Huh", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["infinity", "eternity", "boundlessness", "millions of years", "the Ogdoad", "the counting of years"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.hauhet",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Hauhet",
+      "description": "Hauhet is the female counterpart and consort of Heh within the Ogdoad of Hermopolis, personifying infinity and eternity in its receptive, feminine aspect — the same boundless extension of time represented by Heh, expressed through the paired structure shared by all four Ogdoad couples. Depicted, like the other female members of the Ogdoad, with the head of a snake rather than her consort's frog, she rarely appears independently of Heh in surviving temple reliefs and funerary texts, their names and images typically given together as a single balanced unit rather than as separate objects of devotion. As with Naunet and Kauket, her theological role is primarily structural: she completes the eightfold symmetry of the Hermopolitan cosmogony, in which each fundamental quality of pre-creation chaos — water, infinity, darkness, and hiddenness — is expressed through a male-female pair whose union, according to Hermopolitan doctrine, produced the cosmic egg (or in some versions, the primeval lotus) from which the sun god first emerged to begin creation.",
+      "secondaryNames": [
+        { "name": "Hehut", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["infinity (feminine aspect)", "eternity", "boundlessness", "the Ogdoad", "the cosmic egg"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.kek",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Kek",
+      "description": "Kek (also Kuk) personifies primordial darkness within the Ogdoad of Hermopolis — not darkness as a moral evil, but the literal absence of light that necessarily preceded the sun god's first rising, the raw chaotic night out of which day itself had to be created. With his consort Kauket he represents one of the four fundamental qualities of the pre-creation void, and in some temple texts he is additionally cast as 'bringer-in of darkness,' the force responsible for the alternation of night and day once creation was underway, linking the primordial Ogdoad to the ongoing cosmic order it preceded. He is sometimes depicted with the head of a frog, like the other male Ogdoad members, and occasionally as a baboon-headed figure, baboons being animals the Egyptians associated with the hours before dawn for their habit of greeting the sunrise with loud calls. Conceptually he parallels the primordial darkness of the Greek Erebus and Nyx, though no ancient source draws this comparison explicitly, and his significance — like the rest of the Ogdoad — lies in his place within the structured, eightfold description of the state that existed before Atum's first act of creation at Hermopolis.",
+      "secondaryNames": [
+        { "name": "Kuk", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["primordial darkness", "pre-creation night", "the Ogdoad", "the alternation of day and night"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.kauket",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Kauket",
+      "description": "Kauket is the female counterpart and consort of Kek within the Ogdoad of Hermopolis, personifying primordial darkness in its receptive, feminine aspect — the same formless pre-dawn night represented by Kek, completing one of the four paired qualities ascribed to the chaos that preceded creation. As with the other female Ogdoad members she is conventionally shown with a serpent's head, and she is rarely attested independently of Kek, the pair's names typically invoked together in temple litanies and funerary texts that list the eight primordial powers collectively rather than singling out any one member for individual cult devotion. Her role, like that of her fellow female Ogdoad members Naunet and Hauhet, is to complete the Hermopolitan cosmogony's symmetrical structure: darkness, like water and infinity, had to exist in complementary male and female expression before Atum — or, in the Hermopolitan telling, the Ogdoad's own collective potency — could call light and order into being.",
+      "secondaryNames": [
+        { "name": "Kekuit", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["primordial darkness (feminine aspect)", "pre-creation night", "the Ogdoad"]
+      }
+    },
+    {
+      "canonicalName": "deity.egyptian.amunet",
+      "entityType": "deity.egyptian",
+      "primaryDisplayName": "Amunet",
+      "description": "Amunet is the female counterpart and consort of Amun within the Ogdoad of Hermopolis, personifying hiddenness, invisibility, and concealment — the quality of being unseen or unknowable that her consort's own name ('Amun' means 'the hidden one') makes explicit. Unlike the other three Ogdoad pairs, Amun rose dramatically in later Egyptian religion from an obscure Hermopolitan primordial power to become the supreme hidden god of Thebes, ultimately merging with the sun god as Amun-Ra, the universal hidden-yet-manifest creator already covered by this app's Ra entry — a transformation Amunet herself did not share, remaining comparatively obscure even as her consort became one of the most powerful gods in Egypt. She nonetheless continued to receive cult worship in her own right at Karnak, sometimes depicted wearing the Red Crown of Lower Egypt and invoked in rituals protecting the pharaoh, and in the Ptolemaic period she was occasionally identified with Neith, the ancient weaver-goddess of Sais. Amunet's persistence as a distinct cult figure, even after Amun's theology outgrew the Ogdoad entirely, makes her one of the more independently attested of the Hermopolitan primordial goddesses.",
+      "secondaryNames": [
+        { "name": "Amaunet", "languageTag": "egy", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "egyptian", "mythology"],
+      "extendedData": {
+        "romanEquivalent": null,
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["hiddenness", "invisibility", "concealment", "the Ogdoad", "protection of the pharaoh"]
+      }
     }
   ]
 }

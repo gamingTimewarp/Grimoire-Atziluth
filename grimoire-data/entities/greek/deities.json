@@ -76,6 +76,23 @@
       }
     },
     {
+      "canonicalName": "deity.greek.eros",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Eros",
+      "description": "Eros is the Greek god and personification of love and desire — in Hesiod's Theogony one of the very first beings to spring from primordial Chaos, the generative force that set the whole cosmos into motion, though later tradition more commonly casts him as the son of Aphrodite, a winged, often mischievous youth armed with arrows that kindle desire in whomever they strike. In his best-known myth he falls in love with the mortal Psyche ('Soul'), and only after she passes a series of trials set by a jealous Aphrodite is she made immortal and reunited with him — a story read since antiquity as an allegory of the soul's trials on its path to union with the divine. Eros and Aphrodite together leapt into the Euphrates and transformed into fish, bound by a cord so as not to lose one another, to escape the monster Typhon — the aetiological myth behind the constellation Pisces. His Roman equivalent Cupid became the Western tradition's definitive image of love's blind, indiscriminate power — a blindness made explicit in the Thoth tarot's Lovers card — and the Hellenistic Lot of Eros, computed from Venus and the Lot of Spirit, remains a working technique in Hellenistic astrology for reading desire and the heart's deepest wants.",
+      "secondaryNames": [
+        { "name": "Cupid", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Amor", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Cupid",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["love", "desire", "attraction", "primordial generative force"]
+      }
+    },
+    {
       "canonicalName": "deity.greek.ares",
       "entityType": "deity.greek",
       "primaryDisplayName": "Ares",
@@ -109,6 +126,93 @@
         "planetCN": "astrology.planet.jupiter",
         "sephiraCN": "qabalah.sephira.chesed",
         "domain": ["sky", "thunder", "divine law", "sovereignty", "justice", "cosmic order"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hera",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hera",
+      "description": "Hera is the queen of Olympus, wife and sister of Zeus, and the supreme goddess of marriage, childbirth, and the sanctity of the bond between spouses — the Heraion of Argos and the all-female Heraean Games of Olympia attest to her standing as one of the most widely venerated Olympians. Famed for her jealous rage against Zeus's lovers and his illegitimate children, she set the crab Carcinus against Heracles during his battle with the Hydra, a labour afterward placed among the stars as the constellation Cancer; and in the myth explaining the Milky Way's origin, the infant Heracles — put to her breast by trickery while she slept — pulled away at her waking touch, scattering her divine milk across the night sky as the band the Greeks called Galaxias, 'the milky circle'. Her Roman equivalent Juno lent her name to the third asteroid discovered, governing in modern astrology the dynamics of committed partnership, equality, and the cost of betrayal within long-term bonds. Her peacock, sacred cow, and diadem remain among the most recognisable emblems of queenly, matronly divine authority in the Western tradition.",
+      "secondaryNames": [
+        { "name": "Juno", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Hera Teleia", "languageTag": "el", "visible": false, "sortOrder": 1 },
+        { "name": "Argive Hera", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Juno",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["marriage", "queenship", "family", "childbirth", "oaths", "jealousy", "sovereignty"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.athena",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Athena",
+      "description": "Athena is the Olympian goddess of wisdom, strategic warfare, crafts, and weaving, born not of woman but fully grown and armoured from the forehead of Zeus, after he had swallowed her pregnant mother Metis to forestall a prophecy that her child would overthrow him. As patron of Athens, she won the city's devotion over Poseidon by gifting the olive tree — source of oil, food, and wood — against his offer of a saltwater spring, a contest commemorated ever after in the city's sacred olive groves. Her aegis bears the severed head of the Gorgon Medusa: it was Athena who gave Perseus the polished shield that let him behead Medusa without meeting her petrifying gaze, and who later gave Bellerophon the golden bridle that tamed the winged horse Pegasus. Her owl, sacred and ever-watchful, became the enduring emblem of learning and insight across the Western tradition, still appearing on ancient Athenian coinage and modern seals of scholarship alike. Her Roman equivalent Minerva absorbed her full portfolio, and the second asteroid discovered, Pallas, bears her epithet 'Pallas Athena' — governing in modern astrology the integration of intellect and craft, strategic thinking, and the androgynous mind.",
+      "secondaryNames": [
+        { "name": "Minerva", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Pallas Athena", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Pallas", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Minerva",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["wisdom", "strategy", "crafts", "weaving", "just warfare", "patronage of heroes"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.apollo",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Apollo",
+      "description": "Apollo is the Olympian god of prophecy, music, poetry, healing, and archery, twin brother of Artemis and son of Zeus and the Titaness Leto, born on the floating island of Delos. At Delphi he slew the serpent Python guarding the ancient oracle and installed his own priestess, the Pythia, whose trance-prophecies — induced partly by bay-laurel smoke — made Delphi the most consulted oracle of the ancient world; his epithet Phoebus ('shining') reflects his identification, especially from the Hellenistic period onward, with the sun itself, syncretised with Helios as 'Phoebus Apollo'. As god of healing he fathered Asclepius, whose own serpent-entwined staff and myth are commemorated in the constellation Ophiuchus, and as an archer-god he was served by a crow sent to fetch sacred water — a crow whose dawdling earned it the eternal thirst of the constellation Corvus. His epithet Smintheus ('mouse god') paradoxically made him both patron of field mice and protector against the plagues they carried. His Roman equivalent kept his Greek name unchanged — one of the few Olympians never renamed by Rome — and in palmistry the Mount and Line of Apollo, governing creativity, fame, and artistic recognition, directly carry forward his solar and inspirational domain onto the human hand.",
+      "secondaryNames": [
+        { "name": "Phoebus", "languageTag": "el", "visible": true, "sortOrder": 0 },
+        { "name": "Phoebus Apollo", "languageTag": "el", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Apollo",
+        "planetCN": "astrology.planet.sol",
+        "sephiraCN": null,
+        "domain": ["prophecy", "music", "poetry", "healing", "archery", "light"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.artemis",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Artemis",
+      "description": "Artemis is the Olympian goddess of the hunt, wild animals, and the untamed wilderness, twin sister of Apollo and, paradoxically for an eternal virgin, the protector of women in childbirth — a domain she inherited, by one tradition, from having helped deliver her own twin moments after her own birth. She is named as one-third of the Greek Triple Goddess of the Moon in more than one formulation — alongside Selene and Hecate in one common grouping, alongside Selene and Persephone in another — a lunar triad foundational to Wiccan and modern Pagan practice, even though her own myths are set far more often in forest and mountain than in the night sky itself. Fiercely protective of her chastity and that of her nymph attendants, she transformed the hunter Actaeon into a stag and set his own hounds upon him for glimpsing her bathing — one of Greek myth's starkest statements of the price of trespass against a goddess. Her silver bow and crescent-tipped arrows, her stag and hound companions, and her cult at Ephesus (venerated there in a many-breasted form influenced by older Anatolian mother-goddesses, quite unlike her huntress image elsewhere) all attest to the breadth of her worship. Her Roman equivalent Diana absorbed her full portfolio and her lunar and sylvan associations alike.",
+      "secondaryNames": [
+        { "name": "Diana", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Potnia Theron", "languageTag": "el", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Diana",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": null,
+        "domain": ["the hunt", "wilderness", "wild animals", "virginity", "childbirth", "the Moon"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.ouranos",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Ouranos",
+      "description": "Ouranos is the primordial personification of the Sky, born of Gaia (Earth) in the first generation of the cosmos before becoming her consort — together they produced the twelve Titans, the one-eyed Cyclopes, and the hundred-handed Hecatoncheires. His oppressive rule, which kept his monstrous children imprisoned within Gaia's body, ended when his son Kronos, armed with an adamantine sickle Gaia had fashioned, castrated him; his severed genitals, cast into the sea, produced the sea-foam from which Aphrodite was born (hence her epithet Aphrodite Urania, 'heavenly'). The blood that fell on Gaia from his wound gave rise to the Giants, the vengeful Erinyes, and the Meliae nymphs. As the sky-father displaced by his own son — a pattern Kronos himself would later repeat when overthrown by Zeus — Ouranos establishes the generational struggle for cosmic succession that structures the entire Greek theogony. His Roman equivalent Caelus is a distant, rarely-worshipped figure, but the Greek name Ouranos itself was carried forward unchanged as the name of the seventh planet, discovered in 1781, making him a rare primordial deity with a direct and exclusive modern astrological namesake.",
+      "secondaryNames": [
+        { "name": "Uranus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Caelus", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Caelus",
+        "planetCN": "astrology.planet.uranus",
+        "sephiraCN": null,
+        "domain": ["sky", "primordial cosmos", "the heavens", "father of the Titans"]
       }
     },
     {
@@ -146,6 +250,22 @@
         "planetCN": "astrology.planet.luna",
         "sephiraCN": "qabalah.sephira.yesod",
         "domain": ["magic", "witchcraft", "night", "crossroads", "necromancy", "underworld", "the Moon", "keys", "torches"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.demeter",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Demeter",
+      "description": "Demeter is the Olympian goddess of the harvest, agriculture, and the fertility of cultivated land, sister of Zeus, Hera, Poseidon, Hades, and Hestia. When Hades abducted her daughter Persephone to be his underworld queen, Demeter's grief-stricken search caused the earth to wither and crops to fail, until Zeus brokered Persephone's partial return — her months above ground with Demeter and below with Hades became the mythic charter for the cycle of the seasons. This same myth, re-enacted in secret rites, formed the basis of the Eleusinian Mysteries at Eleusis, the most important and long-lived mystery religion of the ancient Greek world, whose initiates were promised a blessed afterlife in exchange for their silence about what they witnessed. Demeter's torch, carried through the night during her search, her sheaf of wheat, and the sacred kykeon drink of the Eleusinian rites remain her most potent symbols. Her Roman equivalent Ceres — from which 'cereal' derives — lent her name to the first asteroid discovered, later reclassified as the first recognised dwarf planet, whose astrology governs nourishment, the body's relationship to food, grief, and the ecological bond between humanity and the living Earth.",
+      "secondaryNames": [
+        { "name": "Ceres", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Ceres",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["harvest", "agriculture", "grain", "motherhood", "the seasons", "Eleusinian Mysteries"]
       }
     },
     {
@@ -204,6 +324,23 @@
       }
     },
     {
+      "canonicalName": "deity.greek.pan",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Pan",
+      "description": "Pan is the god of the wild, shepherds, flocks, and rustic music, depicted with the horns, legs, and hindquarters of a goat upon a man's torso — son, in the most common account, of Hermes and a mountain nymph, born so startlingly goat-like that his own nurse fled from him at birth. He pursued the nymph Syrinx, who escaped him by transforming into river reeds; grief-stricken, Pan cut the reeds into the unequal lengths of the pan-pipes (syrinx) that became his signature instrument. His sudden, terrifying cry in lonely wild places gave the English language the word 'panic' — most famously at the Battle of Marathon, where he was credited with throwing the invading Persian army into a rout. One tradition holds that Pan, fleeing the monster Typhon alongside the other gods, dove into the Nile and transformed his lower half into a fish tail to escape — the same flight, by the same monster, that produced the fish-goat form of the constellation Capricornus. In the Golden Dawn and Thoth tarot traditions Pan is identified outright with Atu XV, The Devil, attributed to the Hebrew letter Ayin and the sign of Capricorn — not as a Christian adversary but as the 'All-God', the raw, amoral creative life-force of nature itself. His Roman equivalent Faunus, though a distinct native Italian deity in origin, absorbed his full identity in the Roman imagination.",
+      "secondaryNames": [
+        { "name": "Faunus", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Aegipan", "languageTag": "el", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Faunus",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["wild nature", "shepherds", "flocks", "rustic music", "panic", "fertility"]
+      }
+    },
+    {
       "canonicalName": "deity.greek.hephaestus",
       "entityType": "deity.greek",
       "primaryDisplayName": "Hephaestus",
@@ -236,6 +373,187 @@
         "planetCN": "astrology.planet.neptune",
         "sephiraCN": null,
         "domain": ["sea", "earthquakes", "horses", "the deep", "storms at sea", "navigation"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hades",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hades",
+      "description": "Hades is king of the underworld and god of the dead, one of the three sons of Kronos and Rhea who divided the cosmos by lot after the Titanomachy — Zeus receiving the sky, Poseidon the sea, and Hades the realm beneath the earth. Also called Plouton ('the Rich One'), he is as much a god of hidden wealth — the gold, gems, and seeds buried within the earth — as he is lord of the dead, a dual nature that softened his fearsome reputation among the Greeks, who rarely invoked his name directly. He abducted Demeter's daughter Persephone to be his queen, an act whose resolution — her annual return to the surface — became the mythological foundation of the Eleusinian Mysteries. His helm of invisibility, one of three gifts the Cyclopes forged for the victorious brothers after the Titanomachy (alongside Zeus's thunderbolt and Poseidon's trident), and his three-headed hound Cerberus guarding the gates of the underworld, are his most enduring symbols. His Roman equivalent Pluto gave his name to the planet discovered in 1930, whose astrological domain — death, transformation, the collective shadow, and the irreversible — is the direct modern continuation of his ancient portfolio.",
+      "secondaryNames": [
+        { "name": "Pluto", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Plouton", "languageTag": "el", "visible": true, "sortOrder": 1 },
+        { "name": "Aidoneus", "languageTag": "el", "visible": false, "sortOrder": 2 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Pluto",
+        "planetCN": "astrology.planet.pluto",
+        "sephiraCN": null,
+        "domain": ["underworld", "death", "wealth", "minerals", "judgment of the dead", "the hidden"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hestia",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hestia",
+      "description": "Hestia is the goddess of the hearth, home, and the sacrificial flame, eldest child of Kronos and Rhea and so, by the order of her siblings' swallowing and disgorging by their father, simultaneously the first-born and the last restored — one of the original twelve Olympians. She swore an oath on the head of Zeus to remain forever virgin, refusing marriage to both Apollo and Poseidon, and in later tradition she is said to have voluntarily surrendered her Olympian seat to Dionysus to preserve peace among the gods, withdrawing instead to tend the sacred hearth-fire at the very centre of Olympus. Every Greek city maintained a public hearth sacred to her in its prytaneion, kept perpetually burning, and colonists carried fire from their mother city's hearth to kindle the hearth of any new settlement — making her, despite having almost no mythology of her own and very few temples, one of the most continuously and universally worshipped of all the Olympians, present in literally every home and civic centre in the Greek world. Her Roman equivalent Vesta, tended by the Vestal Virgins, lent her name to the second asteroid discovered, whose astrology governs sacred focus, devotion, and the capacity for disciplined dedication to a higher purpose.",
+      "secondaryNames": [
+        { "name": "Vesta", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Vesta",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the hearth", "home", "the sacred flame", "domesticity", "civic harmony", "hospitality", "the eternal fire"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.atlas",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Atlas",
+      "description": "Atlas is a Titan, son of Iapetus and the Oceanid Clymene, who led the Titans in their war against the Olympians and was singled out by Zeus for the harshest punishment of all the defeated Titans: condemned to stand at the western edge of the world and bear the weight of the sky upon his shoulders for eternity, holding heaven and earth apart. He is the father of the Pleiades and the Hyades — the star-cluster nymphs born of his union with the Oceanid Pleione and with Aethra respectively — linking him directly to two of the most mythologically rich star groups in the night sky. In his eleventh labour, Heracles briefly relieved Atlas of his burden so the Titan could fetch the golden apples of the Hesperides on his behalf, only for Atlas to try to leave Heracles holding the sky permanently — a trick Heracles reversed by asking Atlas to hold it just a moment longer while he adjusted his cloak. Later tradition (notably Ovid) tells that Perseus turned Atlas to stone with the severed head of Medusa, his petrified body becoming the Atlas Mountains of North Africa. Renaissance mapmakers' habit of placing his image on the title pages of map collections gave the word 'atlas' to any bound set of maps, and the uppermost vertebra of the human spine, which bears the weight of the skull, carries his name for the same reason.",
+      "secondaryNames": [
+        { "name": "Heaven-Bearer", "languageTag": "en", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Atlas",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the sky", "endurance", "cosmic burden", "the Titans", "the Pleiades", "the Hyades", "cartography"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.nyx",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Nyx",
+      "description": "Nyx is the primordial goddess of Night, born directly from Chaos at the very beginning of the cosmos alongside Gaia (Earth), Tartarus (the Abyss), and Eros (primal desire) — among the oldest and most powerful beings in the Greek cosmogony, feared even by Zeus himself, who in the Iliad hesitates to provoke her wrath. With Erebus (primordial Darkness), or in some accounts alone, she gave birth to an extraordinary brood of personified forces that govern mortal fate: Hypnos (Sleep) and Thanatos (Death), the Moirai (the Fates), Nemesis (Retribution), Eris (Strife), the Keres (violent death), and many more of the abstract powers that shape human life from birth to death. She is depicted as a winged goddess drawing a star-strewn robe or veil across the sky each evening, or driving a chariot drawn by dark horses, and her palace at the edge of the world is where Day and Night perpetually pass one another at the threshold, never meeting. As the mother of nearly every dark and fateful force in Greek myth, Nyx stands conceptually very close to the Egyptian sky-and-stars goddess Nuit already present in this app — both are primordial feminine personifications of the star-filled night that precedes and contains all subsequent creation.",
+      "secondaryNames": [
+        { "name": "Nox", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Night", "languageTag": "en", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Nox",
+        "planetCN": null,
+        "sephiraCN": "qabalah.sephira.binah",
+        "domain": ["night", "primordial darkness", "the cosmos before the gods", "mother of fate and death", "the stars", "the threshold of day and night"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.nike",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Nike",
+      "description": "Nike is the winged goddess of victory, daughter of the Titan Pallas and the primordial river-goddess Styx, and sister of Kratos (Strength), Bia (Force), and Zelos (Rivalry) — all four siblings chose to fight alongside Zeus in the Titanomachy and were rewarded with permanent places beside his throne as his inseparable attendants. She is most often shown alighting from flight to crown a victor — whether in athletic contest, poetic competition, or war — with a laurel wreath, the origin of the wreath as the universal symbol of triumph, and she is closely associated with, and sometimes functionally merged with, Athena as Athena Nike, who had her own small temple on the Athenian Acropolis. The Winged Victory of Samothrace, one of the most celebrated sculptures to survive from antiquity, captures her mid-flight, wings outstretched against an imagined ship's prow. Her Roman equivalent Victoria retained her full portfolio and gave her name, via its Greek original, to the Hellenistic Lot of Victory, an astrological technique computed from Jupiter and the Lot of Spirit used to assess the native's capacity for success and the favour of the gods — one of the few Olympians with a direct, named presence in technical Hellenistic astrology.",
+      "secondaryNames": [
+        { "name": "Victoria", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Victoria",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["victory", "triumph", "glory", "the laurel wreath", "military success", "athletic competition"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.hypnos",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Hypnos",
+      "description": "Hypnos is the god of sleep, twin brother of Thanatos (Death), and son of Nyx (Night) — he dwells in a dim cave near the entrance to the underworld, beside the river Lethe (Forgetfulness), its threshold overgrown with poppies and other soporific plants, already echoed in this app's entry on the opium poppy. He is the father of Morpheus and his brother dream-spirits Phobetor and Phantasos, who take the shapes of humans, animals, and inanimate things respectively to populate mortal dreams. Even Zeus was not beyond his reach: in the Iliad, Hera persuades Hypnos to lull Zeus to sleep so she can intervene in the Trojan War unnoticed, a favour Hypnos grants only reluctantly, having once nearly suffered Zeus's wrath for a similar trick. He is depicted as a gentle winged youth, often shown with poppy stems or an inverted, extinguished torch, pouring the waters of forgetfulness from a horn, or simply asleep himself. His Roman equivalent Somnus presides over a cave so silent that no rooster crows, no dog barks, and no branch stirs there, in Ovid's famous description — the definitive literary image of absolute, dreamless quiet.",
+      "secondaryNames": [
+        { "name": "Somnus", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Somnus",
+        "planetCN": "astrology.planet.luna",
+        "sephiraCN": null,
+        "domain": ["sleep", "dreams", "rest", "night", "the cave of sleep", "poppies", "forgetfulness"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.thanatos",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Thanatos",
+      "description": "Thanatos is the god of death — specifically gentle, peaceful death, as distinct from his fierce sisters the Keres, who personify death by violence, battle-wound, and disease — twin brother of Hypnos and son of Nyx. In the myth of Sisyphus, the cunning king famously tricks and binds Thanatos in chains, so that no mortal anywhere can die until Ares, furious that war has lost its sting, frees him by force; in the myth of Alcestis, dramatised by Euripides, Heracles physically wrestles Thanatos at a tomb to win back a queen who had offered her own life in her husband's place. He is depicted as a winged, often gently sorrowful youth, carrying an extinguished and inverted torch or a sword, the counterpart and frequent companion of his twin Hypnos — the two are shown together in several surviving vase paintings, one figure asleep in the other's arms, death and sleep rendered as brothers rather than as enemies. The ancient Greeks used the eighth letter of their alphabet, Theta, as a written abbreviation for his name on inscriptions and tallies, already noted in this app's own entry on that letter. His Roman equivalent Mors, and modern astrology's attribution of death and irreversible transformation to Pluto — already the direct namesake of Hades — gives Thanatos, the personification of death's moment rather than death's kingdom, a natural secondary resonance with the same planet.",
+      "secondaryNames": [
+        { "name": "Mors", "languageTag": "la", "visible": true, "sortOrder": 0 },
+        { "name": "Letum", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Mors",
+        "planetCN": "astrology.planet.pluto",
+        "sephiraCN": null,
+        "domain": ["death", "peaceful death", "mortality", "the end of life", "the extinguished torch", "sleep's twin"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.moirai",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "The Moirai",
+      "description": "The Moirai, known in English as the Fates, are the three goddesses — Clotho, Lachesis, and Atropos — who together spin, measure, and cut the thread of every mortal life, their joint decree binding even the gods in the oldest layers of Greek myth, where not even Zeus can overturn what the Moirai have allotted. Hesiod's Theogony names them daughters of Nyx (Night) alone, aligning them with the darker, more ancient and inexorable powers of the cosmos, though a later, more Olympian-friendly genealogy makes them daughters of Zeus and Themis (goddess of divine law) instead, ruling fate as an extension of cosmic order rather than primordial chaos — both traditions remained current throughout antiquity. Their collective symbol, the spun and measured thread, made them a natural model for every later Western image of fate as a weaving or measuring process, and in this app's Thoth tarot deck the Wheel of Fortune card draws on them directly: the ascending figure is Clotho spinning new life, the still point is Lachesis holding the taut thread, and the descending figure is Atropos, the cutter of endings. Their Roman equivalents, the Parcae, were similarly three in number and similarly inexorable.",
+      "secondaryNames": [
+        { "name": "The Fates", "languageTag": "en", "visible": true, "sortOrder": 0 },
+        { "name": "Parcae", "languageTag": "la", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Parcae",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["fate", "destiny", "the thread of life", "the three Fates", "cosmic law", "inevitability"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.clotho",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Clotho",
+      "description": "Clotho ('the Spinner') is the youngest of the three Moirai, who spins the thread of each mortal life on her spindle at the moment of birth, determining that a new thread — and so a new fate — has begun. Her name comes directly from the Greek verb 'to spin,' and she is traditionally shown with a spindle or distaff, the instrument by which raw fibre becomes continuous thread, a potent and immediate image of a life beginning to take its particular shape. She is credited in some sources with the power to save the lives of those already fated to die, and in the aftermath of the hero Pelops's death and restoration — his father Tantalus having served him to the gods at a banquet — it is Clotho who respins him back to life, one of the rare myths in which a Fate acts to reverse, rather than simply enact, mortality. In this app's Thoth tarot Wheel of Fortune card, she corresponds to Hermanubis, shown ascending and actively spinning the thread of new life, the generative, upward-moving phase of the wheel's three-part cycle alongside her sisters Lachesis and Atropos.",
+      "secondaryNames": [
+        { "name": "Nona", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Nona",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the spinning of fate", "birth", "beginnings", "the spindle", "the thread of life"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.lachesis",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Lachesis",
+      "description": "Lachesis ('the Allotter' or 'the Measurer') is the second of the three Moirai, who measures out the length of the thread Clotho has spun, determining the span and shape of each mortal's allotted lifetime — her name derives from the Greek word for 'lot' or 'portion,' the same root behind the English word 'allotment.' She is traditionally depicted holding a measuring rod or a scroll, weighing out destiny with careful, deliberate precision rather than the sudden acts of her sisters, and in Plato's Republic she is the Fate who presides over the choosing of each soul's next life before reincarnation, assigning each soul a guardian spirit to see its chosen lot through. In this app's Thoth tarot Wheel of Fortune card, she corresponds to the Sphinx at the wheel's still centre, holding the taut thread at the point of maximum tension between beginning and end — the measurer's stillness between Clotho's upward spin and Atropos's downward cut, embodying the moment of poised, unresolved potential that is itself part of every fate.",
+      "secondaryNames": [
+        { "name": "Decima", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Decima",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the measuring of fate", "allotment", "destiny's span", "the measuring rod", "choice of lots"]
+      }
+    },
+    {
+      "canonicalName": "deity.greek.atropos",
+      "entityType": "deity.greek",
+      "primaryDisplayName": "Atropos",
+      "description": "Atropos ('She Who Cannot Be Turned') is the eldest and most feared of the three Moirai, who cuts the thread of life with her shears at the precise, unalterable moment of death — her name itself means 'inflexible' or 'unturning,' marking her as the one point in the whole process of fate that admits no negotiation, delay, or reversal, even by the gods. Where Clotho spins and Lachesis measures, Atropos simply ends: she is the final and most absolute of the three, and ancient sources describe her as choosing the manner of a person's death as well as its timing, making her shears one of the most unambiguous symbols of mortality in the whole of Greek iconography. In this app's Thoth tarot Wheel of Fortune card, she corresponds to Typhon/Set, the wheel's descending figure — the destructive, chaos-bringing force that completes the cycle Clotho began, read in the deck's authorial framework as the moment inevitability triggers downfall. Her absolute finality made her, of the three sisters, the one most often invoked alone in later poetry and art as a simple personification of Death itself, distinct from but closely paired with Thanatos.",
+      "secondaryNames": [
+        { "name": "Morta", "languageTag": "la", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["deity", "greek", "mythology"],
+      "extendedData": {
+        "romanEquivalent": "Morta",
+        "planetCN": null,
+        "sephiraCN": null,
+        "domain": ["the cutting of fate", "death's finality", "the shears", "inevitability", "the end of the thread"]
       }
     }
   ]
