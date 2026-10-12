@@ -282,7 +282,7 @@ function PracticePage() {
           )}
         </div>
       </div>
-      <ZoomableSVGContainer>
+      <ZoomableSVGContainer panMode="horizontal" style={{ display: 'flex', justifyContent: 'center', padding: '12px 0' }}>
         <div style={{
           display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto minmax(0, 1fr)', alignItems: 'center',
           gap: `${RITUAL_ROW_GAP}px`, minWidth: `${RITUAL_ROW_MIN_WIDTH}px`,

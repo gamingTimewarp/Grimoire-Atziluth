@@ -6,7 +6,24 @@ interface Props {
   maxZoom?: number
   zoomStep?: number
   style?: CSSProperties
+  /**
+   * 'free' (default) pans in both directions and claims every single-finger
+   * touch gesture that starts inside the component, exactly as before.
+   *
+   * 'horizontal' is for content that's only ever wider than its own box, never
+   * taller (e.g. the Practice page's ritual space) — a single-finger drag's
+   * axis is decided from its first few pixels of movement: a mostly-vertical
+   * drag is released back to the browser (so it scrolls the page, which this
+   * component would otherwise swallow entirely), while a mostly-horizontal
+   * drag pans as usual.
+   */
+  panMode?: 'free' | 'horizontal'
 }
+
+/** Touch-move distance, in px, before a 'horizontal' panMode gesture commits
+ *  to either panning (ours) or scrolling (the page's) — small enough to feel
+ *  immediate, large enough that a near-vertical drag doesn't misfire as a pan. */
+const DIRECTION_DEADZONE = 8
 
 const BTN: CSSProperties = {
   display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -40,6 +57,7 @@ export function ZoomableSVGContainer({
   maxZoom = 4,
   zoomStep = 0.25,
   style,
+  panMode = 'free',
 }: Props) {
   const [zoom, setZoom]             = useState(1)
   const [pan, setPan]               = useState({ x: 0, y: 0 })
@@ -57,6 +75,11 @@ export function ZoomableSVGContainer({
     startPan: { x: number; y: number }
     startMid: { x: number; y: number }
     startTouchPan: { x: number; y: number }
+    // panMode 'horizontal' only: null until the gesture's axis is decided
+    // (see DIRECTION_DEADZONE) — 'pan' claims it for us, 'scroll' releases it
+    // back to the browser for the rest of this gesture. Always 'pan' outside
+    // 'horizontal' mode, decided immediately.
+    committed: 'pan' | 'scroll' | null
   } | null>(null)
 
   // Shared zoom/pan updaters
@@ -103,7 +126,15 @@ export function ZoomableSVGContainer({
 
   const handleTouchStart = (e: React.TouchEvent) => {
     if (e.touches.length === 1) {
-      e.preventDefault()
+      // In 'horizontal' mode at the default 1x zoom, don't claim the gesture
+      // yet — wait for handleTouchMove to decide its axis — so a vertical
+      // drag can still reach the browser's native scroll. Once zoomed in,
+      // content can overflow vertically too, so claim the gesture outright
+      // (like panning a zoomed image) rather than ever releasing it to the
+      // page; the matching touchAction switch keeps the browser from racing
+      // us to it.
+      const undecided = panMode === 'horizontal' && zoomRef.current <= 1
+      if (!undecided) e.preventDefault()
       touchState.current = {
         type: 'pan',
         startDist: 0,
@@ -111,9 +142,10 @@ export function ZoomableSVGContainer({
         startPan: { ...panRef.current },
         startMid: { x: 0, y: 0 },
         startTouchPan: { x: e.touches[0].clientX, y: e.touches[0].clientY },
+        committed: undecided ? null : 'pan',
       }
     } else if (e.touches.length === 2) {
-      // Two-finger pinch
+      // Two-finger pinch always claims the gesture, even in 'horizontal' mode
       e.preventDefault()
       touchState.current = {
         type: 'pinch',
@@ -122,6 +154,7 @@ export function ZoomableSVGContainer({
         startPan: { ...panRef.current },
         startMid: pinchMid(e.touches),
         startTouchPan: { x: 0, y: 0 },
+        committed: 'pan',
       }
     }
   }
@@ -129,14 +162,22 @@ export function ZoomableSVGContainer({
   const handleTouchMove = (e: React.TouchEvent) => {
     const ts = touchState.current
     if (!ts) return
-    e.preventDefault()
 
     if (ts.type === 'pan' && e.touches.length === 1) {
-      setPan({
-        x: ts.startPan.x + (e.touches[0].clientX - ts.startTouchPan.x),
-        y: ts.startPan.y + (e.touches[0].clientY - ts.startTouchPan.y),
-      })
+      const dx = e.touches[0].clientX - ts.startTouchPan.x
+      const dy = e.touches[0].clientY - ts.startTouchPan.y
+
+      if (ts.committed === 'scroll') return
+      if (ts.committed === null) {
+        if (Math.abs(dx) < DIRECTION_DEADZONE && Math.abs(dy) < DIRECTION_DEADZONE) return
+        ts.committed = Math.abs(dx) > Math.abs(dy) ? 'pan' : 'scroll'
+        if (ts.committed === 'scroll') return
+      }
+
+      e.preventDefault()
+      setPan({ x: ts.startPan.x + dx, y: ts.startPan.y + dy })
     } else if (ts.type === 'pinch' && e.touches.length === 2) {
+      e.preventDefault()
       const ratio   = pinchDist(e.touches) / ts.startDist
       const newZoom = Math.min(maxZoom, Math.max(minZoom, ts.startZoom * ratio))
 
@@ -171,6 +212,7 @@ export function ZoomableSVGContainer({
         startPan: { ...panRef.current },
         startMid: { x: 0, y: 0 },
         startTouchPan: { x: e.touches[0].clientX, y: e.touches[0].clientY },
+        committed: 'pan',
       }
     }
   }
@@ -181,7 +223,7 @@ export function ZoomableSVGContainer({
         position: 'relative',
         overflow: 'hidden',
         userSelect: 'none',
-        touchAction: 'none',
+        touchAction: panMode === 'horizontal' && zoom <= 1 ? 'pan-y' : 'none',
         ...style,
       }}
     >

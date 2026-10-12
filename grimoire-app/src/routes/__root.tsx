@@ -202,7 +202,7 @@ function RootLayout() {
         </div>
 
         {/* Content */}
-        <main id="main-content" style={{ flex: 1, overflow: 'auto', padding: '16px' }}>
+        <main id="main-content" style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden', padding: '16px' }}>
           <Outlet />
         </main>
       </div>
@@ -215,7 +215,7 @@ function RootLayout() {
       <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Sidebar mode="icon" />
-        <main id="main-content" style={{ flex: 1, overflow: 'auto', padding: '20px', display: 'flex', justifyContent: 'center' }}>
+        <main id="main-content" style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden', padding: '20px', display: 'flex', justifyContent: 'center' }}>
           <div style={{ width: '100%', maxWidth: '900px' }}>
             <Outlet />
           </div>
@@ -229,7 +229,7 @@ function RootLayout() {
     <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
       <a href="#main-content" className="skip-link">Skip to main content</a>
       <Sidebar mode={sidebarPinned ? 'icon' : 'full'} />
-      <main id="main-content" style={{ flex: 1, overflow: 'auto', padding: '32px', display: 'flex', justifyContent: 'center' }}>
+      <main id="main-content" style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden', padding: '32px', display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '100%', maxWidth: '900px' }}>
           <Outlet />
         </div>
