@@ -14,6 +14,8 @@ import { exportSingleEntity, exportEntitySet } from '@/lib/entity-export'
 import { recordRecentEntity } from '@/lib/recent-entities'
 import { artGroupForEntityType } from '@/lib/art-store'
 import { getCustomImageFileName } from '@/lib/custom-art'
+import { getIdentificationPhoto } from '@/lib/identification-photos'
+import type { IdentificationPhotoInfo } from '@/lib/identification-photos'
 import { EntityArt } from '@/components/ui/EntityArt'
 import { SolomonicCircleDiagram } from '@/components/ui/SolomonicCircleDiagram'
 import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
@@ -322,8 +324,13 @@ function EntityDetailPage() {
       </div>
 
       {/* Header */}
-      <div style={{ marginBottom: '28px' }}>
+      {/* overflow:'auto' is a clearfix — without it, this div collapses to the
+          height of its non-floated children, letting the photo/art float (which
+          can run taller, e.g. a long photo credit wrapping to several lines)
+          stick out below into the next sections instead of being contained. */}
+      <div style={{ marginBottom: '28px', overflow: 'auto' }}>
         <EntityArtPanel entity={entity} />
+        <IdentificationPhotoPanel entity={entity} />
         <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginBottom: '4px' }}>
           {formatEntityType(entity.entityType)}
         </div>
@@ -668,6 +675,73 @@ function EntityArtPanel({ entity }: { entity: BaseEntity }) {
           }}
         >
           <EntityArt entity={entity} width={200} height={280} />
+        </div>
+      )}
+    </>
+  )
+}
+
+/**
+ * Open-licensed Wikimedia Commons identification photo, shown for gemstone/herb
+ * entities that have one sourced (most don't yet — see /identification/manifest.json).
+ * Renders nothing while loading or if this entity has no photo.
+ */
+function IdentificationPhotoPanel({ entity }: { entity: BaseEntity }) {
+  const [photo, setPhoto] = useState<IdentificationPhotoInfo | null>(null)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    setPhoto(null)
+    getIdentificationPhoto(entity.canonicalName).then(p => { if (!cancelled) setPhoto(p) })
+    return () => { cancelled = true }
+  }, [entity.canonicalName])
+
+  if (!photo) return null
+
+  return (
+    <>
+      <div style={{ float: 'right', marginLeft: '20px', marginBottom: '12px', maxWidth: '160px' }}>
+        <img
+          src={photo.file}
+          alt={`${entity.primaryDisplayName} — identification photo`}
+          onClick={() => setLightboxOpen(true)}
+          title="Click to zoom"
+          style={{ width: '100%', borderRadius: '6px', cursor: 'zoom-in', display: 'block' }}
+        />
+        <div style={{ fontSize: '10px', color: 'var(--color-text-subtle)', marginTop: '4px', lineHeight: 1.4 }}>
+          <div
+            title={`Photo: ${photo.author}`}
+            style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
+          >
+            Photo: {photo.author}
+          </div>
+          <a href={photo.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+            {photo.license}
+          </a>
+        </div>
+      </div>
+      {lightboxOpen && (
+        <div
+          onClick={() => setLightboxOpen(false)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 9999,
+            background: 'rgba(0,0,0,0.85)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'zoom-out', flexDirection: 'column', gap: '12px',
+          }}
+        >
+          <img src={photo.file} alt="" style={{ maxWidth: '90vw', maxHeight: '80vh', borderRadius: '8px' }} />
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+            {photo.title} — {photo.author} ·{' '}
+            <a
+              href={photo.sourceUrl} target="_blank" rel="noopener noreferrer"
+              onClick={e => e.stopPropagation()}
+              style={{ color: 'var(--color-text-subtle)' }}
+            >
+              {photo.license} on Wikimedia Commons
+            </a>
+          </div>
         </div>
       )}
     </>

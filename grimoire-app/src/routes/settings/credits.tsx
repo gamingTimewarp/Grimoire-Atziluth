@@ -221,6 +221,15 @@ function CreditsPage() {
           required
         />
 
+        <SourceEntry
+          title="Gemstone &amp; Herb Identification Photos"
+          licence="Various (CC0, CC BY, CC BY-SA, Public Domain)"
+          source="Wikimedia Commons"
+          sourceUrl="https://commons.wikimedia.org"
+          notes="Photos bundled with the app to help identify gemstone and herb entities, each individually sourced from Wikimedia Commons under an open licence. Being added gradually — not every entity has one yet. Each photo's specific photographer, licence, and source page is credited directly beneath the image on that entity's own Reference page, which is where the legally required per-image attribution lives (not repeated here, since no two photos share the same author or licence)."
+          required
+        />
+
       </Section>
 
       {/* App framework */}
