@@ -709,6 +709,16 @@ export type MoonRiseSet = {
   nextSet: Date | null
 }
 
+export type TideEvent = {
+  kind: 'high' | 'low'
+  time: Date
+}
+
+export type TideEstimate = {
+  nextHigh: TideEvent
+  nextLow: TideEvent
+}
+
 export type LunarApsisEvent = {
   kind: 'perigee' | 'apogee'
   time: Date
@@ -740,6 +750,7 @@ export type MoonSnapshot = {
   nextLunarEclipse: EclipseForecast | null
   nextSolarEclipse: EclipseForecast | null
   riseSet: MoonRiseSet
+  tides: TideEstimate
   apsis: LunarApsisTimeline
   constellation: MoonConstellation
   /** 1–12, tropical (house cusps are always tropical regardless of display mode). */
@@ -875,6 +886,34 @@ export function getMoonRiseSet(date: Date, lat: number, lon: number): MoonRiseSe
 }
 
 /**
+ * Rough equilibrium-tide estimate of the next local high and low tide, from
+ * the Moon's hour angle alone: upper and lower lunar culmination (hour angle
+ * 0 and 12 — the Moon directly overhead, and directly underfoot on the far
+ * side of the Earth) each raise a tidal bulge, giving two high tides per
+ * lunar day; the quarter points between them (hour angle 6 and 18) give the
+ * two intervening lows.
+ *
+ * This is the idealized "equilibrium tide" model, not a real prediction — it
+ * ignores everything that makes actual coastal tides differ from it (basin
+ * shape, seabed depth, resonance, friction) as well as the Sun's smaller,
+ * phase-dependent contribution (which is what makes real spring/neap tides
+ * vary in height through the month). It can be off from a real tide table by
+ * hours. Callers should present it as an estimate, not a prediction.
+ */
+export function getTideEstimate(date: Date, lat: number, lon: number): TideEstimate {
+  const observer = new Astronomy.Observer(lat, lon, 0)
+  const at = (hourAngle: number) => Astronomy.SearchHourAngle(Astronomy.Body.Moon, observer, hourAngle, date, +1).time.date
+
+  const highs = [at(0), at(12)].sort((a, b) => a.getTime() - b.getTime())
+  const lows  = [at(6), at(18)].sort((a, b) => a.getTime() - b.getTime())
+
+  return {
+    nextHigh: { kind: 'high', time: highs[0] },
+    nextLow:  { kind: 'low',  time: lows[0] },
+  }
+}
+
+/**
  * Next perigee and next apogee after `date`. Perigee/apogee strictly alternate,
  * so two calls to NextLunarApsis are always enough to find one of each kind.
  */
@@ -1006,6 +1045,7 @@ export function getMoonSnapshot(
     nextLunarEclipse: getNextLunarEclipse(date),
     nextSolarEclipse: getNextSolarEclipse(date),
     riseSet: getMoonRiseSet(date, lat, lon),
+    tides: getTideEstimate(date, lat, lon),
     apsis: getLunarApsisTimeline(date),
     constellation: getMoonConstellation(date),
     house: getMoonHouse(date, lat, lon, houseSystem),

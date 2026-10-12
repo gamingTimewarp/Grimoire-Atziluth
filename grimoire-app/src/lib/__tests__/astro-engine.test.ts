@@ -5,6 +5,7 @@ import {
   getMoonQuarterTimeline, getMoonAppearance, getNextLunarEclipse, getNextSolarEclipse,
   getMoonRiseSet, getLunarApsisTimeline, isSupermoon, getMoonConstellation,
   houseOfLongitude, getMoonHouse, getMoonAspects, getMoonIlluminationPercent,
+  getTideEstimate,
 } from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
 import * as Astronomy from 'astronomy-engine'
@@ -316,6 +317,29 @@ describe('getMoonRiseSet', () => {
     // Both should occur within a couple of days — never further out than the 2-day search window.
     expect(rs.nextRise!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
     expect(rs.nextSet!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
+  })
+})
+
+describe('getTideEstimate', () => {
+  it('finds a high and low tide strictly after the given date, each within one lunar half-day', () => {
+    const date = new Date('2026-03-15T00:00:00Z')
+    const tides = getTideEstimate(date, 51.5, -0.1)
+    expect(tides.nextHigh.kind).toBe('high')
+    expect(tides.nextLow.kind).toBe('low')
+    expect(tides.nextHigh.time.getTime()).toBeGreaterThan(date.getTime())
+    expect(tides.nextLow.time.getTime()).toBeGreaterThan(date.getTime())
+    // High tides (and, separately, low tides) recur roughly every 12h25m
+    // (half a ~24h50m lunar day), so the very next of either kind is never
+    // more than that away — bounded here at 13h for float slack.
+    const HALF_LUNAR_DAY_MS = 13 * 3600000
+    expect(tides.nextHigh.time.getTime() - date.getTime()).toBeLessThan(HALF_LUNAR_DAY_MS)
+    expect(tides.nextLow.time.getTime() - date.getTime()).toBeLessThan(HALF_LUNAR_DAY_MS)
+    // High and low tides alternate roughly every 6h12m (a quarter lunar day),
+    // so the next high and next low can never be more than one such quarter
+    // apart, however the reference date happens to fall between them.
+    const QUARTER_LUNAR_DAY_MS = 6.5 * 3600000
+    const gapMs = Math.abs(tides.nextHigh.time.getTime() - tides.nextLow.time.getTime())
+    expect(gapMs).toBeLessThan(QUARTER_LUNAR_DAY_MS)
   })
 })
 

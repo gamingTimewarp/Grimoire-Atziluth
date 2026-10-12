@@ -356,6 +356,40 @@ function MoonPage() {
         )}
       </Panel>
 
+      {/* Tides */}
+      <Panel
+        title="Tides (estimated)"
+        right={noLoc ? (
+          <button
+            onClick={() => navigate({ to: '/settings', hash: 'home-location' })}
+            title="Go to Home Location setting"
+            style={{
+              background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+              fontSize: '11px', color: 'var(--color-text-subtle)', textDecoration: 'underline',
+              textDecorationStyle: 'dotted', textUnderlineOffset: '2px', fontFamily: 'inherit',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-accent)' }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'var(--color-text-subtle)' }}
+          >
+            Set home location — tides need real coordinates
+          </button>
+        ) : undefined}
+      >
+        {snapshot ? (
+          <>
+            <Row label="Next high tide" value={`${formatRelative(snapshot.tides.nextHigh.time, now)} · ${formatTime(snapshot.tides.nextHigh.time)}`} />
+            <Row label="Next low tide" value={`${formatRelative(snapshot.tides.nextLow.time, now)} · ${formatTime(snapshot.tides.nextLow.time)}`} />
+            <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', marginTop: '8px' }}>
+              Estimated from the Moon's position alone (the idealized "equilibrium tide"), not a real tide
+              table — actual local tides also depend on coastline shape and seabed depth, and can differ by
+              hours from this estimate, especially far from open coastline.
+            </div>
+          </>
+        ) : (
+          <div style={{ fontSize: '13px', color: 'var(--color-text-subtle)' }}>Computing…</div>
+        )}
+      </Panel>
+
       {/* Position */}
       <Panel title="Position">
         {snapshot ? (
