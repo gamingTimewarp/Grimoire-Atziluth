@@ -620,7 +620,12 @@ function EntryRow({
     setEntityLinks(ls => ls.filter(l => l !== cn))
   }
 
-  const date = new Date(entry.entryDate).toLocaleDateString(undefined, {
+  // entry.entryDate is a plain YYYY-MM-DD string (no time component) — parsing
+  // it alone is interpreted as UTC midnight, which rolls back a day once
+  // formatted in any timezone behind UTC. Anchoring to local midnight instead
+  // keeps this showing the same calendar day the entry was actually saved
+  // under, matching the attached reading's own (already timezone-safe) date.
+  const date = new Date(`${entry.entryDate}T00:00:00`).toLocaleDateString(undefined, {
     weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
   })
 
@@ -633,7 +638,8 @@ function EntryRow({
       <div
         style={{
           padding: compact ? '10px 16px' : '16px 20px',
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center',
+          rowGap: '4px',
         }}
       >
         {editing ? (
@@ -652,10 +658,16 @@ function EntryRow({
         ) : (
           <div
             onClick={() => setExpanded(e => !e)}
-            style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', flex: 1, minWidth: 0 }}
+            style={{
+              display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px 10px',
+              cursor: 'pointer', flex: '1 1 auto', minWidth: 0,
+            }}
           >
             <PenLine size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} />
-            <span style={{ fontSize: '15px', fontWeight: 500, color: 'var(--color-text)' }}>
+            <span style={{
+              fontSize: '15px', fontWeight: 500, color: 'var(--color-text)',
+              overflowWrap: 'break-word', minWidth: 0,
+            }}>
               {entry.title ?? 'Journal Entry'}
             </span>
             {readings.length > 0 && (
@@ -665,7 +677,7 @@ function EntryRow({
             )}
           </div>
         )}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
           {!editing && <span style={{ fontSize: '12px', color: 'var(--color-text-subtle)', whiteSpace: 'nowrap' }}>{date}</span>}
           {editing ? (
             <>
