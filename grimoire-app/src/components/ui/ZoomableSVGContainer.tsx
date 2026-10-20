@@ -98,7 +98,6 @@ export function ZoomableSVGContainer({
   const handleZoomOut = () => {
     const next = Math.max(minZoom, parseFloat((zoom - zoomStep).toFixed(2)))
     setZoom(next)
-    if (next <= 1) setPan({ x: 0, y: 0 })
   }
 
   const handleReset = () => { setZoom(1); setPan({ x: 0, y: 0 }) }
@@ -195,10 +194,6 @@ export function ZoomableSVGContainer({
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (e.touches.length === 0) {
       touchState.current = null
-      // Snap pan back to zero if pinched below 1× (no need to pan when zoomed out)
-      if (zoomRef.current <= 1) {
-        setPan({ x: 0, y: 0 })
-      }
       // Clamp to minZoom if pinched below it
       if (zoomRef.current < minZoom) {
         setZoom(minZoom)
