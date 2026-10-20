@@ -1,0 +1,385 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "canonicalName": "ritual.tool.athame",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Athame",
+      "description": "The athame is the primary ritual knife of modern Wicca and ceremonial witchcraft — traditionally double-edged with a black handle, it is used to direct personal energy, inscribe the boundary of the ritual circle in the air, and command or banish spirits, but is never used for physical cutting (that task belongs to the boline). Gerald Gardner's published rituals (Witchcraft Today, 1954, and the Gardnerian Book of Shadows) established it as the most important tool on the modern witch's altar, likely drawing on earlier ceremonial-magic black-handled knives described in grimoires such as the Key of Solomon. Its elemental attribution is genuinely contested across traditions: most Gardnerian-descended Wiccan lineages assign it to Fire and the wand to Air, while practitioners who instead follow the Golden Dawn's tarot correspondences (swords to Air, wands to Fire) assign the athame to Air. Despite its warlike appearance, its use in ritual is entirely symbolic — cutting energy, never matter.",
+      "secondaryNames": [
+        { "name": "Athamé", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Black-Handled Knife", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "fire", "air", "protection", "banishing", "wicca"],
+      "extendedData": {
+        "element": ["astrology.element.fire", "astrology.element.air"],
+        "traditions": ["Wicca", "Ceremonial Magic"],
+        "magicalUses": ["directing energy", "casting the circle", "banishing", "commanding spirits"],
+        "distinctFrom": "The boline, the Wiccan working knife reserved for all physical cutting."
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.wand",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Wand",
+      "description": "The wand channels and directs magical energy more gently than the athame, used for invoking (rather than banishing) spirits and deities, charging objects, and casting or closing the ritual circle in some traditions. Traditionally cut from a single branch of a living tree with the tree's consent and consecrated to the practitioner's sole use, the wood itself carries meaning in many traditions — hazel for wisdom, willow for lunar and intuitive work, oak for strength and endurance. Its elemental attribution mirrors the athame's own genuine dispute: most Gardnerian-descended Wiccan lineages assign the wand to Air and the athame to Fire, while traditions following the Golden Dawn's tarot correspondences (wands to Fire, swords to Air) reverse this and give the wand Fire instead.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-tool", "air", "fire", "invocation", "wicca"],
+      "extendedData": {
+        "element": ["astrology.element.air", "astrology.element.fire"],
+        "traditions": ["Wicca", "Ceremonial Magic"],
+        "magicalUses": ["invocation", "directing energy", "charging objects", "casting the circle"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.chalice",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Chalice",
+      "description": "The chalice is the ritual cup of Wicca and ceremonial magic, almost universally assigned to the element of Water and the receptive, feminine principle — standing opposite the athame's assertive, masculine blade in the Great Rite, where the athame is symbolically lowered into the chalice to represent the union of god and goddess, male and female, spirit and matter. Filled with wine, mead, or juice for ritual toasts and offerings, it is typically the vessel passed around a circle for the 'cakes and ale' portion of Wiccan ritual that follows formal spellwork. Chalices appear across a far wider span of ceremonial and religious practice than most other modern witchcraft tools, echoing the Christian Eucharistic cup, the Arthurian Grail legend, and the libation vessels of classical antiquity — a continuity Wiccan writers have frequently drawn on explicitly.",
+      "secondaryNames": [
+        { "name": "Cup", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "water", "wicca", "receptive"],
+      "extendedData": {
+        "element": "astrology.element.water",
+        "traditions": ["Wicca", "Ceremonial Magic"],
+        "magicalUses": ["ritual toasts", "offerings", "the Great Rite", "cakes and ale"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.pentacle",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Pentacle",
+      "description": "The pentacle is a flat disc — traditionally wood, clay, or metal — inscribed with a five-pointed star and placed on the altar as the fixed representation of the element Earth, the only one of the four classical ritual tools that is a symbol resting in the physical world rather than an implement actively wielded. It serves as a surface for consecrating objects, blessing food and drink before the 'cakes and ale' portion of ritual, and grounding or stabilising energy raised elsewhere in the rite. It should not be confused with the pentagram diagrams used in ceremonial banishing and invoking rituals, traced in the air or drawn as working sigils — the altar pentacle is the specific physical object bearing the five-pointed star, not the gesture or diagram itself. Its five points are commonly read, from the Golden Dawn and later Wiccan tradition alike, as the four classical elements crowned by a fifth: Spirit.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-tool", "earth", "wicca", "consecration"],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "traditions": ["Wicca", "Ceremonial Magic"],
+        "magicalUses": ["consecration", "blessing food and drink", "grounding energy"],
+        "distinctFrom": "The magic.pentagram diagrams used in banishing/invoking rituals — those are the gesture or drawn figure, not a physical altar object."
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.censer",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Censer",
+      "description": "The censer (or thurible, in its more elaborate swinging form used in Catholic and Orthodox liturgy) is the incense burner of the ritual altar, assigned to the element of Air for the smoke it produces and used to purify ritual space, the practitioner's body, or ritual tools before use. Burning resins, herbs, and prepared incense blends on charcoal or in a self-igniting cone, its smoke is wafted with a hand or a feather to cleanse a person or object, consecrate the boundary of a working space, or simply raise fragrant smoke as an offering to invoked deities and spirits. The practice long predates modern witchcraft: ancient Egyptian, Mesopotamian, Greek, and Roman temple ritual all made extensive ceremonial use of burned offerings and purifying smoke, and most world religions retain some form of ritual incense use to the present day.",
+      "secondaryNames": [
+        { "name": "Thurible", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Incense Burner", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "air", "purification", "incense"],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "traditions": ["Wicca", "Ceremonial Magic", "Catholic/Orthodox Liturgy", "Ancient Mediterranean Temple Ritual"],
+        "magicalUses": ["purification", "consecrating space", "offerings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.bell",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Ritual Bell",
+      "description": "A bell rung at the opening and closing of ritual marks a shift in consciousness, calls attention and focus, or clears stagnant and negative energy from a space — sound itself, rather than any particular bell's material or shape, is the working element, making this one of the simplest and most cross-culturally attested ritual tools. Tibetan Buddhist ritual pairs a bell (prajna, wisdom, the feminine) with a dorje/vajra (compassion, the masculine) in a close structural echo of the chalice-and-athame polarity found in Western witchcraft; Catholic Mass uses a small bell to mark the moment of consecration; Shinto shrines use large bells or bell-ropes so a worshipper can announce their arrival to the kami. In Wiccan and ceremonial practice, a single ring commonly opens a rite and a second closes it, with further rings sometimes marking the stages of a longer working.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-tool", "sound", "purification", "wicca"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Wicca", "Ceremonial Magic", "Tibetan Buddhism", "Catholic Liturgy", "Shinto"],
+        "magicalUses": ["marking ritual transitions", "clearing energy", "calling attention"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.besom",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Besom",
+      "description": "The besom is a ritual broom used to symbolically sweep a space clean of stagnant or negative energy before a rite begins — a purification gesture rather than literal housekeeping, performed just above the floor rather than making physical contact with it. Traditionally bound from birch twigs around an ash handle, in turn bound with flexible willow, all three woods carry their own folk symbolism in British and Northern European tradition. Besoms also feature in the Pagan and some secular handfasting custom of 'jumping the broom,' in which a couple leaps over a besom laid on the ground to mark their union and the threshold into a new shared life — a custom independently well-attested in both British Romani and African-American communities, the latter particularly from the era of American slavery, when enslaved couples were denied legal marriage and the broom-jump served as the community's own binding rite.",
+      "secondaryNames": [
+        { "name": "Broom", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "purification", "handfasting", "wicca"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Wicca", "British/Northern European Folk Magic", "African-American Folk Tradition"],
+        "magicalUses": ["purifying space before ritual", "handfasting (jumping the broom)"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.cauldron",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Cauldron",
+      "description": "The cauldron is a cast-iron or heavy metal vessel used for brewing ritual mixtures, scrying by firelight or moonlight reflected in water held within it, and safely burning petitions, old spells, or other small ritual items — its black, rounded form makes it one of the most immediately recognisable images of witchcraft in popular culture, inherited largely from the three cauldron-stirring witches of Shakespeare's Macbeth. In Welsh mythology, the goddess Cerridwen's cauldron of inspiration and transformation (Awen) is the central image of the Hanes Taliesin tale, and the cauldron more broadly carries womb and rebirth symbolism across Celtic material, standing in for the chalice's water/receptive principle when ritual calls for fire, transformation, or a working surface larger than a simple cup allows.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-tool", "water", "fire", "transformation", "scrying"],
+      "extendedData": {
+        "element": ["astrology.element.water", "astrology.element.fire"],
+        "traditions": ["Wicca", "Welsh/Celtic Mythology"],
+        "magicalUses": ["brewing", "scrying", "burning petitions", "transformation workings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.boline",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Boline",
+      "description": "The boline is the Wiccan practitioner's white-handled working knife, used for every ordinary cutting task a ritual might call for — harvesting herbs, carving symbols into candle wax, cutting cord for binding or cord magic, trimming wicks — precisely because the athame is reserved for symbolic, energetic work and never used on physical material. The distinction is functional rather than ancient: while black-handled ceremonial knives appear in much older grimoire tradition, the boline as a deliberately separate white-handled 'working knife' is first clearly codified in Gerald Gardner's mid-20th-century Wiccan Book of Shadows, alongside the athame itself. Some traditions give it a curved, sickle-like blade echoing the crescent harvesting knives of earlier folk herbalism, though a plain straight utility blade is equally common in contemporary practice.",
+      "secondaryNames": [
+        { "name": "White-Handled Knife", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "wicca"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Wicca"],
+        "magicalUses": ["harvesting herbs", "carving candles", "cutting cord", "practical ritual tasks"],
+        "distinctFrom": "The athame, reserved for symbolic/energetic work and never used for physical cutting."
+      }
+    },
+    {
+      "canonicalName": "ritual.tool.scrying-mirror",
+      "entityType": "ritual.tool",
+      "primaryDisplayName": "Scrying Mirror",
+      "description": "A scrying mirror is a mirror deliberately darkened — traditionally by painting the back of ordinary glass with layers of black paint, or using polished obsidian in place of glass entirely — to remove the sharp, literal reflection of an ordinary mirror and instead offer a soft, dark depth the diviner can gaze into to induce a light trance and perceive images, symbols, or visions. John Dee's Elizabethan Enochian workings famously used a polished obsidian mirror, now held in the British Museum, brought back from Aztec Mexico — demonstrating how far dark-mirror scrying already reached by the 16th century, independent of any single tradition of origin, since Aztec priests used obsidian mirrors for their own divination long before European contact. Modern practitioners most often prepare a black mirror from curved watch-glass or picture-frame glass painted matte black, used in low or candlelit conditions for the same soft, unfocused gaze that black-mirror and water-scrying traditions worldwide depend on.",
+      "secondaryNames": [
+        { "name": "Black Mirror", "languageTag": "en-alt", "visible": true, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-tool", "divination", "scrying"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Ceremonial Magic", "Aztec Divination", "Elizabethan Enochian Magic"],
+        "magicalUses": ["scrying", "divination", "trance induction"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.salt",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Salt",
+      "description": "Salt is among the most universally used purification and protection substances in ritual practice worldwide, cast in a circle to mark sacred or protected space, scattered across a threshold to bar unwanted influences, or dissolved in water to consecrate that water for blessing and cleansing. Its preserving, antiseptic properties in ordinary life translate directly into its symbolic ones: a substance that keeps corruption out of food becomes, by the same logic, a substance that keeps it out of a person, a home, or a working. The practice spans traditions that otherwise share little else — Shinto purification rites use scattered salt before sumo bouts and at shrine entrances, salt is blessed and used in Catholic exorcism ritual and holy water, and Hoodoo 'road opener' and uncrossing work both make extensive use of plain salt, salt baths, and salt scrubs to clear negative conditions.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "purification", "protection", "earth"],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "traditions": ["Shinto", "Catholic Folk Practice", "Hoodoo", "Wicca", "Ceremonial Magic"],
+        "magicalUses": ["purification", "protection", "consecrating water", "casting circles"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.candles",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Ritual Candles",
+      "description": "Candles supply light, fire, and colour to a ritual working all at once, and candle magic treats the candle itself as a spell: a candle is chosen or dyed for a colour matching the working's intent, anointed with oil, and sometimes carved with a sigil, name, or symbol before being burned down to completion as the spell's duration. How a candle burns is itself read as a divinatory sign in the folk practice of candle-reading — a strong, steady flame is read as favourable, while excessive guttering, crackling, or a flame that will not stay lit is read as resistance or an obstacle to the working's success. Candle magic's simplicity and low cost have made it one of the most widely practised and cross-tradition forms of spellwork, common to Wicca, Hoodoo, Catholic folk-devotional practice (the novena candle), and general secular 'manifestation' practice alike.",
+      "secondaryNames": [
+        { "name": "Candle Magic", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "fire", "candle-magic", "colour-magic"],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "traditions": ["Wicca", "Hoodoo", "Catholic Folk Devotion"],
+        "magicalUses": ["spellwork", "colour magic", "divination (candle-reading)", "offerings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.rice",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Rice",
+      "description": "Raw rice grains are thrown, scattered, or offered across an enormous range of cultures as a symbol of fertility, abundance, and prosperity — most familiarly in the Western custom of throwing rice at newlyweds, a wish for a fruitful and well-provisioned marriage rooted in rice's own status as a staple, life-sustaining grain across most of Asia. In Japanese Shinto practice, rice (and the sake brewed from it) is among the most common offerings left at a shrine; in Chinese tradition, a full rice bowl is itself a wish for abundance, and rice is scattered or offered at many household and ancestor rites; in Hoodoo and other American folk-magic practice, rice is used in prosperity mixtures and floor washes for the same abundance symbolism. Its practical role as a staple food across more of the world's population than any other single grain is precisely what gives it such broad, independently-arrived-at ritual meaning.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "prosperity", "fertility", "offerings"],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "traditions": ["Shinto", "Chinese Folk Religion", "Hoodoo", "Western Wedding Custom"],
+        "magicalUses": ["prosperity", "fertility", "offerings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.beans",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Beans",
+      "description": "Dried beans appear in protective and luck-related folk practice across several independent traditions, most strikingly in the ancient Roman festival of Lemuria: Ovid's Fasti (1st century CE) describes the paterfamilias walking through his house at midnight, barefoot, throwing black beans behind him without looking back while repeating a set formula, to ransom the household from the restless dead (lemures) with the beans standing in for the living. Italian folk-Catholic practice preserves a related thread in the fava beans blessed and distributed on the Feast of St. Joseph (March 19), carried afterward as a luck and protection charm against poverty, tied to the legend that fava crops alone survived a medieval Sicilian famine. In American Southern and Hoodoo tradition, black-eyed peas eaten on New Year's Day (classically in Hoppin' John) are held to bring luck and prosperity for the coming year — continuing the same basic logic, a humble staple legume standing in for continued provision and protection, independently arrived at across unrelated times and places.",
+      "secondaryNames": [
+        { "name": "Fava Beans", "languageTag": "en-alt", "visible": false, "sortOrder": 0 },
+        { "name": "Black-Eyed Peas", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "protection", "luck", "prosperity"],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "traditions": ["Ancient Roman Religion", "Italian Folk-Catholic Practice", "Hoodoo"],
+        "magicalUses": ["protection against restless spirits", "luck", "prosperity"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.eggs",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Eggs",
+      "description": "The egg's self-contained, generative form — a whole latent life sealed inside a shell — makes it one of the most widely used objects in cleansing and protective folk magic, most developed in the limpia (spiritual cleansing) tradition of Mexican and broader Latin American curanderismo: a raw egg is passed in slow sweeping motions over a person's body, believed to absorb illness, negative energy, or a curse, then cracked into a glass of water afterward, where the shape, colour, and clarity of the yolk and white are read to diagnose what exactly was drawn out. Beyond this specific practice, eggs carry near-universal fertility and rebirth symbolism — most visibly in the dyed and decorated eggs of Eastern European Easter traditions (the Ukrainian pysanka foremost among them) and the older pre-Christian spring-renewal symbolism those customs likely continue.",
+      "secondaryNames": [
+        { "name": "Limpia", "languageTag": "es", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "cleansing", "fertility", "curanderismo"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Curanderismo", "Eastern European Folk Custom"],
+        "magicalUses": ["spiritual cleansing (limpia)", "diagnosis of curses/illness", "fertility and rebirth symbolism"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.coins",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Coins",
+      "description": "Coins function in ritual practice as a compact, universally recognised token of value, making them a natural offering at thresholds and a focus for prosperity spellwork: in Hoodoo and broader African-American folk magic, coins are left at a crossroads as payment to the spirit associated with that liminal space, and silver coins specifically are carried or placed in mojo bags for luck and protection. Feng Shui practice ties three coins together with red cord — traditionally old Chinese cash coins with a square central hole — as a portable wealth charm, hung on a door or carried in a wallet. The older folk custom of dropping a coin into a wishing well or fountain, itself descended from the Celtic and Roman practice of depositing votive coins and other valuables into sacred springs and rivers as offerings to the deities believed to dwell there, survives today as a half-remembered superstition almost entirely stripped of its original religious context.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "prosperity", "offerings", "crossroads"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Hoodoo", "Feng Shui", "Celtic/Roman Votive Offering"],
+        "magicalUses": ["crossroads offerings", "prosperity charms", "wishing-well offerings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.cord",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Cord",
+      "description": "Cord and thread, knotted or unknotted in a deliberate sequence, are the material of knot magic — a working method that binds an intention into the cord itself, knot by knot, to be released later by untying, burning, or burying it, or left permanently tied to fix the working in place. Traditional 'witch's ladder' knot-spells recite a rhyme with each knot tied ('by knot of one, the spell's begun...'), and cord features just as centrally in Wiccan handfasting, where the couple's joined hands are literally bound with cord — the likely origin of the common English phrase 'tying the knot.' Cord-cutting, the reverse working, deliberately severs a cord symbolising an unwanted tie, habit, or relationship, most often performed with the athame or boline rather than by hand, to mark a decisive, ritualised end rather than a gradual one.",
+      "secondaryNames": [
+        { "name": "Thread", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Witch's Ladder", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "knot-magic", "binding", "handfasting"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Wicca", "British Folk Magic"],
+        "magicalUses": ["knot magic", "binding", "handfasting", "cord-cutting"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.nails",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Nails",
+      "description": "Iron nails are a protection-magic staple best documented through the English and early American 'witch bottle': a small bottle or jar packed with bent nails and pins, sometimes alongside the practitioner's own urine, hair, or nail clippings, sealed and buried beneath a hearth, threshold, or near a property's boundary to turn back a curse or hostile magic directed at the household, the sharp iron believed to injure or trap the malevolent force attempting to enter. Archaeologists have recovered genuine examples of these buried bottles across England and colonial New England, confirming the practice was real and widespread rather than purely literary. Iron's broader folkloric reputation as inherently hostile to malevolent spirits — witches, faeries, and similar beings said to be repelled by cold iron — gives the nail's sharpness a double protective function: a physical barrier and, by its very metal, a supernatural one.",
+      "secondaryNames": [
+        { "name": "Witch Bottle", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "protection", "iron", "witch-bottle"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["English Folk Magic", "Colonial American Folk Magic"],
+        "magicalUses": ["protection", "curse-breaking", "witch bottles"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.horseshoe",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Horseshoe",
+      "description": "A horseshoe hung over a doorway is one of the most widespread protection and luck charms in Western folk magic, its iron construction drawing on the same iron-repels-evil-spirits folklore behind the witch bottle's nails, reinforced by the horseshoe's crescent shape evoking the protective, waxing Moon. Orientation is a genuinely unresolved point of folk disagreement even within a single region: hung points-up, it is said to 'hold' luck inside like a cup; hung points-down, it is said to pour luck out over everyone who passes beneath it — both readings are sincerely held by different households with no clear historical resolution of which came first. One often-told origin legend credits Saint Dunstan, a 10th-century Archbishop of Canterbury and former blacksmith, with nailing a horseshoe to the Devil's own hoof and only agreeing to remove it after extracting a promise that the Devil would never enter a home protected by one — a charming tale almost certainly invented well after the custom it explains.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "protection", "luck", "iron"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["British/Western Folk Magic"],
+        "magicalUses": ["protection", "luck"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.key",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Key",
+      "description": "A key's practical function — granting or restricting access — carries directly into its ritual symbolism: possessing the right key means possessing passage, protection, or hidden knowledge otherwise locked away. The Greek goddess Hecate was worshipped with the epithet 'Kleidouchos' (Key-Bearer), holding the key to the gates between the world of the living and the underworld, and classical statues and reliefs of her frequently show a key among her attributes alongside her torches. In Catholic folk-devotional practice, Saint Peter's crossed keys — granted by Christ to 'bind and loose' and open the gates of Heaven — are carried or displayed as a protection and opportunity charm independent of their original theological meaning. Old, ornate, or 'found' keys, as opposed to a current working key to an active lock, are generally preferred for ritual use, valued precisely for no longer serving a mundane locking function, leaving them free to serve only a symbolic one.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "protection", "opportunity", "hecate"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Greek Religion", "Catholic Folk Devotion"],
+        "magicalUses": ["protection", "opening opportunity", "unlocking hidden knowledge"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.chalk",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Chalk",
+      "description": "Chalk provides the simplest possible way to mark a working surface without lasting change — a sigil, protective symbol, or temporary circle drawn in chalk on a floor, table, or doorstep is easily and deliberately erased once its purpose is served, distinct from the more permanent commitment of paint or carving. In German-speaking Christian folk custom, chalk blessed on the Feast of the Epiphany is used to mark a household's door lintel with the formula '20✝C✝M✝B✝[year]' — the initials read as either the traditional Three Kings (Caspar, Melchior, Balthasar) or the Latin blessing Christus Mansionem Benedicat, 'Christ bless this house' — for protection through the coming year, a custom that survives actively in parts of Europe and German-American communities to the present day. In contemporary witchcraft, chalk is valued above all for the same erasability: casting a temporary circle on a floor that must later be used for ordinary life, without leaving a permanent mark.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "protection", "sigil-work"],
+      "extendedData": {
+        "element": "astrology.element.earth",
+        "traditions": ["German Christian Folk Custom", "Wicca", "Ceremonial Magic"],
+        "magicalUses": ["temporary circle casting", "sigil work", "house blessing"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.ash",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Ash",
+      "description": "Ash — from a ritual fire, burned herbs, or spent incense — is kept and reused rather than discarded, carrying forward the purifying or protective purpose of whatever was burned to produce it: ash from a Yule or Midsummer bonfire is traditionally gathered and scattered over fields or kept in the home through the year for protection and continued blessing, and the ash remaining after a petition paper or working is burned is sometimes buried, scattered to the wind, or added to a working bag rather than simply swept away, on the logic that the physical transformation of burning has concentrated rather than destroyed the intention placed in the original material. Ash Wednesday's Catholic observance — marking the forehead with ash from the previous year's burned Palm Sunday fronds — runs on a closely related logic in a specifically Christian liturgical context: a humbling, purifying mark made from something already made sacred, now transformed by fire.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "fire", "protection", "transformation"],
+      "extendedData": {
+        "element": "astrology.element.fire",
+        "traditions": ["British/Northern European Folk Custom", "Catholic Liturgy"],
+        "magicalUses": ["protection", "blessing", "concentrating a completed working's intention"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.honey",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Honey",
+      "description": "Honey's natural sweetness and preservative quality make it the central material of 'sweetening' spells, most developed in Hoodoo's honey jar: a petition naming a person or a desired outcome is written on paper, placed inside a jar, covered in honey, and sealed, worked on with daily attention (lighting a candle atop it, speaking to it) to 'sweeten' that person's feelings or that situation's outcome toward the petitioner. The practice draws directly on honey's un-spoiling nature — archaeologically, genuinely edible honey has been recovered from millennia-old sealed contexts — lending the working a durability other ritual materials can't offer, since the honey itself does not sour or need replacing. Honey also appears as a libation and offering well beyond Hoodoo specifically, from classical Greek and Roman offerings to chthonic deities and the dead, to its continued use in Hindu puja and other devotional ritual across many unrelated traditions.",
+      "secondaryNames": [
+        { "name": "Honey Jar", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "sweetening", "offerings", "hoodoo"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Hoodoo", "Ancient Greek/Roman Offering Practice", "Hindu Puja"],
+        "magicalUses": ["sweetening spells", "offerings", "libations"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.feathers",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Feathers",
+      "description": "A feather's natural connection to flight and air makes it the most common hand-held substitute for a censer's incense smoke, used to waft or 'smoke' a space, person, or object during a cleansing — valued particularly where burning incense directly isn't practical or wanted. Beyond this practical role, feathers from specific birds carry their own layered symbolism across many traditions independently: owl feathers for wisdom and night-vision in both Western occultism and a number of Indigenous North American traditions (where eagle feathers specifically carry much deeper, often legally protected ceremonial significance reserved to tribal members, outside the scope of general ritual-supply use); crow and raven feathers for messages, omens, and work with the dead; dove feathers for peace and gentle love-workings. A found feather, fallen naturally rather than taken from a living or killed bird, is generally preferred in most traditions that use them, read as the bird's own gift rather than something taken.",
+      "secondaryNames": [],
+      "tags": ["ritual-item", "ritual-material", "air", "purification", "divination"],
+      "extendedData": {
+        "element": "astrology.element.air",
+        "traditions": ["Wicca", "Ceremonial Magic"],
+        "magicalUses": ["wafting cleansing smoke", "communication/omen work", "love workings"],
+        "distinctFrom": null
+      }
+    },
+    {
+      "canonicalName": "ritual.material.cowrie-shells",
+      "entityType": "ritual.material",
+      "primaryDisplayName": "Cowrie Shells",
+      "description": "Cowrie shells have served as both currency and a divination medium across a remarkable span of unrelated cultures, from ancient China — one of the earliest known forms of proto-money, their shape the likely origin of several Chinese characters relating to wealth and trade — to West Africa, where cowries remain central to divination systems within Yoruba-derived Ifá and the diloggún divination of Lucumí/Santería: a closed, initiatory practice in which a specific set of sixteen consecrated cowries is cast and read by a trained diviner according to a highly developed symbolic system, well beyond general folk-magic use. Outside these specific initiatory contexts, cowries are more broadly carried or worn across West African and diaspora communities as protection and prosperity charms, their old currency-use value lending them the same prosperity symbolism coins carry elsewhere. Formal diloggún divination specifically requires lineage training and consecration; the general protective/prosperity use described here is the broader folk layer, not a substitute for that initiatory practice.",
+      "secondaryNames": [
+        { "name": "Diloggún", "languageTag": "en-alt", "visible": false, "sortOrder": 0 }
+      ],
+      "tags": ["ritual-item", "ritual-material", "divination", "prosperity", "protection"],
+      "extendedData": {
+        "element": null,
+        "traditions": ["Ifá/Yoruba Tradition", "Lucumí/Santería", "Ancient Chinese Proto-Currency"],
+        "magicalUses": ["divination (within initiatory lineages)", "protection", "prosperity"],
+        "distinctFrom": "Formal diloggún divination is a closed, initiatory practice requiring lineage training and consecration, not general folk use of carried/worn shells."
+      }
+    }
+  ]
+}

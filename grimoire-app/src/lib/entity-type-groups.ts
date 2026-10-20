@@ -87,6 +87,10 @@ export const ENTITY_TYPE_GROUPS: EntityTypeGroup[] = [
     { value: 'gemstone.gemstone',   label: 'Gemstones' },
     { value: 'gemstone.variety',    label: 'Gemstone Varieties' },
   ]},
+  { label: 'Ritual Tools & Materia', options: [
+    { value: 'ritual.tool',     label: 'Ritual Tools' },
+    { value: 'ritual.material', label: 'Ritual Materia' },
+  ]},
   { label: 'Other', options: [
     { value: 'numerology.digit',    label: 'Numerology' },
     { value: 'chinese-zodiac.animal', label: 'Chinese Zodiac' },

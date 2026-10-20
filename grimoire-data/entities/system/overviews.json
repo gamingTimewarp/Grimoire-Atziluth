@@ -3868,6 +3868,30 @@
           "system.overview.planets"
         ]
       }
+    },
+    {
+      "canonicalName": "system.overview.ritual-items",
+      "entityType": "system.overview",
+      "primaryDisplayName": "Ritual Tools & Materia",
+      "description": "The physical implements and consumable materials of ritual practice, distinct from the herbs and gemstones already catalogued elsewhere: reusable ceremonial tools such as the athame, wand, chalice, and pentacle that furnish a Wiccan or ceremonial-magic altar, and the pantry-style materia — salt, rice, beans, coins, cord, and the like — drawn on across a far broader span of folk-magic traditions, from Hoodoo to Italian folk-Catholic practice to curanderismo. These two groups are tagged separately (ritual.tool and ritual.material) but share a single overview here since both answer the same practical question: what do you actually reach for during a working? Several entries note where a closed or initiatory practice (such as formal diloggún divination) sits behind a more general folk use of the same object, and that distinction is called out explicitly rather than collapsed.",
+      "secondaryNames": [
+        { "name": "Ritual Items", "languageTag": "en-alt", "visible": true, "sortOrder": 0 },
+        { "name": "Altar Tools & Folk Magic Materia", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+      ],
+      "tags": [
+        "overview",
+        "ritual-item"
+      ],
+      "extendedData": {
+        "entityTypeGroup": "ritual-item",
+        "browseTopic": "Correspondences & Natural Magic",
+        "memberTag": "ritual-item",
+        "relatedOverviews": [
+          "system.overview.herbs",
+          "system.overview.gemstones",
+          "system.overview.magic"
+        ]
+      }
     }
   ]
 }
