@@ -4,11 +4,12 @@
     {
       "canonicalName": "tarot.major.etteilla.etteilla",
       "entityType": "tarot.card",
-      "primaryDisplayName": "Etteilla — The Questioner",
+      "primaryDisplayName": "The Questioner",
       "description": "Card 1 in the Etteilla system. Unlike all other tarot systems, Etteilla placed a unique card at position 1 representing the Questioner — the person consulting the oracle. This card stands for the inquirer themselves: their concerns, their question, their current state. When it appears in a reading it draws attention back to the self and the nature of the inquiry, and in some interpretations also represents the role of the diviner as mediator between seeker and cosmos.",
       "secondaryNames": [
-        { "name": "Le Consultant", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "The Consultant", "languageTag": "en-alt", "visible": false, "sortOrder": 1 }
+        { "name": "Etteilla", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "Le Consultant", "languageTag": "fr", "visible": true, "sortOrder": 1 },
+        { "name": "The Consultant", "languageTag": "en-alt", "visible": false, "sortOrder": 2 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
@@ -24,11 +25,12 @@
     {
       "canonicalName": "tarot.major.etteilla.the-sun",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Lighted Torch — The Sun",
+      "primaryDisplayName": "The Sun",
       "description": "Card 2 in the Etteilla system, corresponding to the Sun. Etteilla positioned this card near the start of his cosmogonic sequence, reflecting divine light as the primal creative force illuminating existence. Where RWS depicts a joyful child on horseback, Etteilla's version emphasises enlightenment, clarity, and the source of all life as a torch that banishes darkness.",
       "secondaryNames": [
         { "name": "Le Soleil", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "La Torche Éclairée", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+        { "name": "The Lighted Torch", "languageTag": "en-alt", "visible": false, "sortOrder": 1 },
+        { "name": "La Torche Éclairée", "languageTag": "fr", "visible": false, "sortOrder": 2 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
@@ -65,7 +67,7 @@
     {
       "canonicalName": "tarot.major.etteilla.the-heavens",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Heavens — Le Ciel",
+      "primaryDisplayName": "The Heavens",
       "description": "Card 4 in the Etteilla system. A cosmological card unique to Etteilla's sequence, depicting the celestial firmament — the heavens as a realm of divine order and creation. Corresponding to the separation of the heavens in the Genesis narrative, it carries meanings of divine blessing, spiritual elevation, and the ordering of the cosmos. The image shows a figure pouring water beneath a star-filled sky.",
       "secondaryNames": [
         { "name": "Le Ciel", "languageTag": "fr", "visible": true, "sortOrder": 0 }
@@ -85,11 +87,12 @@
     {
       "canonicalName": "tarot.major.etteilla.the-world",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The World — The Universe",
+      "primaryDisplayName": "The World",
       "description": "Card 5 in the Etteilla system. Etteilla placed the World early in his cosmogonic sequence — not as a culminating card but as the establishment of the created earth itself within his Genesis narrative. He interpreted it as travel, journey, and worldly affairs, grounding it in practical outcomes and movement through the material world.",
       "secondaryNames": [
         { "name": "Le Monde", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "L'Univers", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+        { "name": "The Universe", "languageTag": "en-alt", "visible": false, "sortOrder": 1 },
+        { "name": "L'Univers", "languageTag": "fr", "visible": false, "sortOrder": 2 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
@@ -107,7 +110,7 @@
     {
       "canonicalName": "tarot.major.etteilla.the-stars",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Stars — Les Astres",
+      "primaryDisplayName": "The Stars",
       "description": "Card 6 in the Etteilla system. Etteilla titled this card 'The Stars' (Les Astres), depicting the sun, moon, and zodiac together as the celestial lights of creation. Connecting to the fixed stars and celestial influences in his Egyptian-origin theory of tarot, it retains the hopeful, renewing quality of the RWS Star but with a broader cosmological scope, representing the guiding lights that orient the soul in darkness.",
       "secondaryNames": [
         { "name": "Les Astres", "languageTag": "fr", "visible": true, "sortOrder": 0 },
@@ -128,7 +131,7 @@
     {
       "canonicalName": "tarot.major.etteilla.birds-and-fish",
       "entityType": "tarot.card",
-      "primaryDisplayName": "Birds and Fish — Les Oiseaux et les Poissons",
+      "primaryDisplayName": "Birds and Fish",
       "description": "Card 7 in the Etteilla system. A cosmological card unique to Etteilla's sequence, depicting the fifth day of Genesis creation — the filling of sky and sea with birds and fish. The image shows an ocean teeming with sea creatures, birds in flight overhead, and a serpent amid the waters, with a mountain on the horizon. In Etteilla's divinatory vocabulary this card carries meanings of support, protection, and natural abundance.",
       "secondaryNames": [
         { "name": "Les Oiseaux et les Poissons", "languageTag": "fr", "visible": true, "sortOrder": 0 }
@@ -147,10 +150,11 @@
     {
       "canonicalName": "tarot.major.etteilla.questionnante",
       "entityType": "tarot.card",
-      "primaryDisplayName": "La Questionnante — The Female Questioner",
+      "primaryDisplayName": "The Female Questioner",
       "description": "Card 8 in the Etteilla system. The Questionnante is the female counterpart to the male Questionnant (card 1), representing the female querent consulting the oracle. Visually identified with Eve in the Garden, she is attributed to Scorpio, grounding the inquiry in depth, transformation, and the instinctive feminine. When she appears in a reading, attention returns to the female seeker herself — her situation, her inner state, and the nature of her question.",
       "secondaryNames": [
-        { "name": "La Consultante", "languageTag": "fr", "visible": true, "sortOrder": 0 }
+        { "name": "La Questionnante", "languageTag": "fr", "visible": true, "sortOrder": 0 },
+        { "name": "La Consultante", "languageTag": "fr", "visible": true, "sortOrder": 1 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
@@ -305,11 +309,12 @@
     {
       "canonicalName": "tarot.major.etteilla.the-last-judgment",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Last Judgment — Trumpets",
+      "primaryDisplayName": "The Last Judgment",
       "description": "Card 16 in the Etteilla system, corresponding to Judgement. Etteilla called it 'The Trumpets' or 'The Last Judgment', placing it in the latter half of his sequence as the great awakening call. It retains the RWS themes of rebirth and reckoning but Etteilla emphasised its literal divinatory meaning of significant news, callings, and decisive moments that cannot be reversed.",
       "secondaryNames": [
         { "name": "Le Jugement", "languageTag": "fr", "visible": true, "sortOrder": 0 },
-        { "name": "Les Trompettes", "languageTag": "fr", "visible": false, "sortOrder": 1 }
+        { "name": "Trumpets", "languageTag": "en-alt", "visible": false, "sortOrder": 1 },
+        { "name": "Les Trompettes", "languageTag": "fr", "visible": false, "sortOrder": 2 }
       ],
       "tags": ["tarot", "major-arcana", "etteilla"],
       "extendedData": {
@@ -429,7 +434,7 @@
     {
       "canonicalName": "tarot.major.etteilla.the-fool",
       "entityType": "tarot.card",
-      "primaryDisplayName": "The Fool — Le Mat",
+      "primaryDisplayName": "The Fool",
       "description": "Card 0 / 78 in the Etteilla system, corresponding to the traditional Fool (Le Mat). Etteilla retained the Fool at the boundary of his numbered sequence — labelled both 0 and 78 — reflecting its liminal status outside the cosmogonic order. He read it as folly, madness, and delirium in the upright position: the unchecked mind unmoored from reason, or the querent on the verge of a reckless act.",
       "secondaryNames": [
         { "name": "Le Mat", "languageTag": "fr", "visible": true, "sortOrder": 0 },

@@ -5,7 +5,7 @@
       "canonicalName": "tarot.major.overview.the-fool",
       "entityType": "system.overview",
       "primaryDisplayName": "The Fool",
-      "description": "The Fool as rendered across the four supported decks. In the Tarot de Marseille he is Le Mat — the unnumbered wanderer outside the sequence. Thoth retains the name and Crowley's imagery of the Green Man. Etteilla retained the Fool at the liminal boundary of his numbered sequence, labelling it both 0 and 78, and read it as folly, madness, and the unchecked mind unmoored from reason. Card 1 in Etteilla's deck ('Etteilla — The Questioner') is a separate self-card unique to his system, not a replacement for the Fool.",
+      "description": "The Fool as rendered across the four supported decks. In the Tarot de Marseille he is Le Mat — the unnumbered wanderer outside the sequence. Thoth retains the name and Crowley's imagery of the Green Man. Etteilla retained the Fool at the liminal boundary of his numbered sequence, labelling it both 0 and 78, and read it as folly, madness, and the unchecked mind unmoored from reason. Card 1 in Etteilla's deck ('The Questioner', also known as Etteilla) is a separate self-card unique to his system, not a replacement for the Fool.",
       "tags": [
         "tarot",
         "major-arcana",
@@ -407,7 +407,7 @@
       "canonicalName": "tarot.major.overview.the-sun",
       "entityType": "system.overview",
       "primaryDisplayName": "The Sun",
-      "description": "The Sun (XIX) across four decks. The great luminary of vitality, consciousness, and spiritual illumination. Etteilla titles his card The Lighted Torch — The Sun. Thoth's Sun shows the Rose of Tiphareth with twin children.",
+      "description": "The Sun (XIX) across four decks. The great luminary of vitality, consciousness, and spiritual illumination. Etteilla titles his card The Sun (also known as The Lighted Torch). Thoth's Sun shows the Rose of Tiphareth with twin children.",
       "tags": [
         "tarot",
         "major-arcana",
