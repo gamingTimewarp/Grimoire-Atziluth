@@ -10,16 +10,17 @@
 2. [Home Dashboard](#2-home-dashboard)
 3. [Readings & Divination](#3-readings--divination)
 4. [Practice](#4-practice)
-5. [Journal](#5-journal)
-6. [Reference](#6-reference)
-7. [Astrology](#7-astrology)
-8. [Qabalah](#8-qabalah)
-9. [Study](#9-study)
-10. [Bookmarks](#10-bookmarks)
-11. [Custom Content](#11-custom-content)
-12. [Settings](#12-settings)
-13. [Data & Backup](#13-data--backup)
-14. [Keyboard Shortcuts](#14-keyboard-shortcuts)
+5. [Calendar](#5-calendar)
+6. [Journal](#6-journal)
+7. [Reference](#7-reference)
+8. [Astrology](#8-astrology)
+9. [Qabalah](#9-qabalah)
+10. [Study](#10-study)
+11. [Bookmarks](#11-bookmarks)
+12. [Custom Content](#12-custom-content)
+13. [Settings](#13-settings)
+14. [Data & Backup](#14-data--backup)
+15. [Keyboard Shortcuts](#15-keyboard-shortcuts)
 
 ---
 
@@ -113,7 +114,7 @@ Scroll through the deck list and tap to select. Built-in decks include:
 | Playing Cards | 52 / 54 (with Jokers) | — |
 | Tea Leaf Symbols | ~90 symbols | — |
 
-Any custom decks you have created appear at the bottom of the list. If a deck (built-in or custom) defines variants — e.g. Full 78 vs Major Arcana Only, or a custom deck's own sub-decks (see [Custom Decks](#11-custom-content)) — tapping it opens a row of variant buttons; pick one, including **All**, to continue.
+Any custom decks you have created appear at the bottom of the list. If a deck (built-in or custom) defines variants — e.g. Full 78 vs Major Arcana Only, or a custom deck's own sub-decks (see [Custom Decks](#12-custom-content)) — tapping it opens a row of variant buttons; pick one, including **All**, to continue.
 
 #### Step 2 — Choose a Spread
 
@@ -231,7 +232,44 @@ Two buttons in the page header manage the whole ritual's state (pinned reference
 
 ---
 
-## 5. Journal
+## 5. Calendar
+
+Navigate to **Calendar** in the sidebar. A tab bar across the top always includes **Gregorian**; enable Hebrew, Islamic, Chinese, and/or Hindu tabs from **Settings → Calendar Tabs**, or the **Manage** button on the Calendar page itself.
+
+### Month Grid
+
+Every tab — Gregorian or native — shows a full month grid with today highlighted and days clickable for detail:
+
+- **Moon ingresses** — when the Moon moves into a new sign
+- **Planet ingresses** — when an outer planet changes signs
+- **Sabbats and holidays** — the Wheel of the Year plus every tracked calendar holiday
+- **Meteor shower peaks** — the 8 major annual showers (Quadrantids, Lyrids, Eta Aquariids, Perseids, Orionids, Leonids, Geminids, Ursids), each landing on its real solar-longitude-calculated peak date every year
+- **Eclipses** — every total or partial lunar and solar eclipse (penumbral lunar eclipses, too faint to notice without instruments, are omitted), computed directly rather than taken from a fixed list, with its kind labelled (e.g. "Total Lunar Eclipse"). An ⓘ icon next to each gives its approximate visibility: lunar eclipses are visible from the entire night-side hemisphere of Earth; total/annular solar eclipses name the approximate coordinates their narrow path of totality/annularity crosses at peak (with a much wider surrounding region seeing a partial eclipse); solar eclipses that never reach total or annular anywhere note that there's no single peak location to name.
+
+Tap any event badge to open its Reference page — meteor showers each have their own entry (radiant, parent comet/asteroid, typical rate); eclipses link to one of two general "Lunar Eclipse"/"Solar Eclipse" explainer pages, since the specific date/kind is shown right on the calendar itself rather than needing its own entity.
+
+A **Retrograde tracker** toggle at the top of the grid adds a small strip to each day showing which of the eight visible planets (Mercury through Pluto) are retrograde that day; hover a coloured segment for that planet's current station — "Day 3 of 8", for example.
+
+### Native Calendar Tabs
+
+A native tab (Hebrew, Islamic, Chinese, Hindu) navigates by that calendar system's own year and month rather than the Gregorian one — with its own month names, and, for the Chinese calendar, correct handling of leap months — but overlays exactly the same Sabbats, holidays, meteor showers, eclipses, and ingresses as the Gregorian view, keyed to the matching Gregorian date underneath. A day's detail panel shows both its native-calendar date and its Gregorian date together.
+
+### Moon Page
+
+A button on the Calendar page opens a dedicated Moon detail view:
+
+- **Now** — current phase, emoji, and percent illuminated
+- **Phases** — the next phase change, plus the most recent and next upcoming New and Full Moons
+- **Size & Brightness** — distance, apparent diameter, relative size (with a Supermoon badge when applicable), magnitude, illuminated percentage, altitude from your home location, next moonrise/moonset, and next perigee/apogee
+- **Tides (estimated)** — the next local high and low tide, estimated from the Moon's position alone (the idealised "equilibrium tide"); explicitly flagged as an estimate rather than a real tide-table prediction, since it ignores coastline and seabed geometry
+- **Position** — current constellation (with entry/exit times) and astrological house
+- **Aspects** — the Moon's current aspects to every other body
+- **Eclipses** — the next lunar and next solar eclipse
+- **Full Moon Names** — a table of named full moons by month (Anglo-Saxon and modern Celtic-neopagan columns), with the current month highlighted
+
+---
+
+## 6. Journal
 
 The Journal combines all saved readings and journal entries into a single reverse-chronological timeline. A journal entry is more than a freeform note — it's an overarching, titled container that can group one or more readings, each still keeping its own question, subject, cards, and notes. Use it to document a single sitting that covered several questions, a recurring practice you want to narrate over time, or just a quick note with nothing attached.
 
@@ -281,13 +319,13 @@ Tap **New Entry** in the Journal header to write an entry. Fill in:
 
 **Deleting an entry**: Tap the trash icon, then **Confirm** — same 5-second Undo toast as a standalone reading. Deleting an entry does **not** delete the readings attached to it; they're detached and become standalone instead.
 
-**Exporting/importing a single entry**: Expand an entry and tap the export icon (next to Edit) to save that entry, plus every reading attached to it, as one `.json` file. Use **Import Entry** in the Journal header to restore one — importing a file whose entry was already present here changes nothing (no duplicates). See also [Data & Backup](#13-data--backup).
+**Exporting/importing a single entry**: Expand an entry and tap the export icon (next to Edit) to save that entry, plus every reading attached to it, as one `.json` file. Use **Import Entry** in the Journal header to restore one — importing a file whose entry was already present here changes nothing (no duplicates). See also [Data & Backup](#14-data--backup).
 
 ### Entity Links
 
 Both readings and entries can be linked to any entities in the reference database. In the expanded view, type in the entity search field to find an entity by name and add it as a chip. Tap the chip to navigate to the entity, or tap the **×** on the chip to remove the link.
 
-You can also start a new entry directly from an entity: on any reference page, the **Journal** section (see [Reference → Entity Pages](#6-reference)) has a **+** button that opens the New Entry form with that entity already added as a link.
+You can also start a new entry directly from an entity: on any reference page, the **Journal** section (see [Reference → Entity Pages](#7-reference)) has a **+** button that opens the New Entry form with that entity already added as a link.
 
 ### Journal Statistics
 
@@ -295,7 +333,7 @@ Tap **Statistics** (bar-chart icon) in the Journal header to view aggregate char
 
 ---
 
-## 6. Reference
+## 7. Reference
 
 The Reference section is a searchable encyclopaedia of all esoteric entities in the database.
 
@@ -331,11 +369,11 @@ Every entity has a dedicated page showing:
 - **Reversed meaning** — shown for tarot cards that have reversals data, toggleable between upright and reversed
 - **Personal annotation** — a text field at the bottom of the page where you can write your own notes. These are stored locally and never leave your device.
 - **Bookmark star** — tap to save/unsave this entity to your bookmarks
-- **Journal** — a collapsible section listing every journal entry and reading linked to this entity; tap one to jump to it in the Journal. Tap the **+** in its top-right corner to start a new journal entry with this entity already attached as a link (see [Journal → Entity Links](#5-journal))
+- **Journal** — a collapsible section listing every journal entry and reading linked to this entity; tap one to jump to it in the Journal. Tap the **+** in its top-right corner to start a new journal entry with this entity already attached as a link (see [Journal → Entity Links](#6-journal))
 
 ---
 
-## 7. Astrology
+## 8. Astrology
 
 ### Natal Charts
 
@@ -361,6 +399,16 @@ The chart detail page shows:
 
 Click any planet, sign, or aspect to navigate to its Reference page.
 
+### Compare Charts
+
+Tap **Compare Charts** on the Astrology page to open a synastry tool:
+
+- Pick any two saved charts as **Chart A** and **Chart B**
+- **Wheel** — an overlaid biwheel showing both charts' planets together, with cross-chart aspect lines
+- **Table** — side-by-side position tables for each chart
+- **Cross-aspects table** — every aspect between a Chart A planet and a Chart B planet, with applying/separating status
+- Each chart's own planet visibility can be filtered independently, so you can focus on just the bodies you care about
+
 ### Current Sky
 
 The current sky panel (below the chart list on the Astrology index page) updates every five minutes and shows:
@@ -368,21 +416,7 @@ The current sky panel (below the chart list on the Astrology index page) updates
 - Planet positions, retrograde markers, and sign positions right now
 - **Transit aspects to natal** — if a Self chart is saved, a toggle appears showing every current transit that aspects a natal planet. Each transit shows the transiting body, the natal body, the aspect type, and whether it is applying (→) or separating (←).
 
-### Astrology Calendar
-
-The **Calendar** page (separate sidebar entry) shows:
-
-- Month grid with astrological events
-- **Moon ingresses** — when the Moon moves into a new sign
-- **Planet ingresses** — when an outer planet changes signs
-- **Retrograde stations** — retrograde and direct stations for all planets
-- **Sabbats and holidays** — the Wheel of the Year plus every tracked calendar holiday, same as the native-calendar tabs
-- **Meteor shower peaks** — the 8 major annual showers (Quadrantids, Lyrids, Eta Aquariids, Perseids, Orionids, Leonids, Geminids, Ursids), each landing on its real solar-longitude-calculated peak date every year
-- **Eclipses** — every total or partial lunar and solar eclipse (penumbral lunar eclipses, too faint to notice without instruments, are omitted), computed directly rather than taken from a fixed list, with its kind labelled (e.g. "Total Lunar Eclipse"). An ⓘ icon next to each gives its approximate visibility: lunar eclipses are visible from the entire night-side hemisphere of Earth; total/annular solar eclipses name the approximate coordinates their narrow path of totality/annularity crosses at peak (with a much wider surrounding region seeing a partial eclipse); solar eclipses that never reach total or annular anywhere note that there's no single peak location to name.
-
-Tap any event badge to open its Reference page — meteor showers each have their own entry (radiant, parent comet/asteroid, typical rate); eclipses link to one of two general "Lunar Eclipse"/"Solar Eclipse" explainer pages, since the specific date/kind is shown right on the calendar itself rather than needing its own entity.
-
-On the day an eclipse or meteor shower peak actually falls, the Astrology page also shows a dismissable notice at the top linking straight to it.
+On the day an eclipse or meteor shower peak actually falls (see [Calendar](#5-calendar)), the Astrology page also shows a dismissable notice at the top linking straight to it.
 
 ### Modes & House Systems
 
@@ -397,7 +431,7 @@ These are configured globally in **Settings → Traditions**:
 
 ---
 
-## 8. Qabalah
+## 9. Qabalah
 
 ### Tree of Life
 
@@ -439,7 +473,7 @@ Master numbers (11, 22, 33) are highlighted and not further reduced.
 
 ---
 
-## 9. Study
+## 10. Study
 
 The Study section implements spaced repetition (SM-2 algorithm) to help you memorise entity meanings.
 
@@ -487,7 +521,7 @@ Tap **Settings** (gear icon) on the Study page to configure:
 
 ---
 
-## 10. Bookmarks
+## 11. Bookmarks
 
 Tap the **★** star button on any entity reference page to bookmark it. Bookmarks appear in the **Bookmarks** section of the sidebar and on the home dashboard.
 
@@ -495,7 +529,7 @@ To remove a bookmark, tap the star again on the entity's reference page, or use 
 
 ---
 
-## 11. Custom Content
+## 12. Custom Content
 
 The **Custom** section (accessible from the sidebar) lets you extend the app with your own material.
 
@@ -527,7 +561,7 @@ Define a new tradition by specifying which `linkLabel`s it owns and how its attr
 
 ---
 
-## 12. Settings
+## 13. Settings
 
 Open **Settings** from the bottom of the sidebar. Settings are organised into sections:
 
@@ -607,7 +641,7 @@ A text area for injecting arbitrary CSS into the app. Styles are validated for b
 
 ---
 
-## 13. Data & Backup
+## 14. Data & Backup
 
 Open **Settings → Data** to manage your data.
 
@@ -622,7 +656,7 @@ Tap **Export Backup** to save a `.json` file containing:
 
 The file is human-readable JSON. A timestamp is stored in the app so the Data page can show when you last backed up.
 
-**Not included in the backup**: Study/SRS card progress and session history (intentionally excluded — it's large and rebuilds naturally from continued use), and custom spreads, custom decks, and custom traditions. From the [Custom Content](#11-custom-content) page you can export any of these individually or all-at-once as JSON; custom spreads and traditions can also be re-imported from an exported file, but there is currently no way to import an exported custom deck back in.
+**Not included in the backup**: Study/SRS card progress and session history (intentionally excluded — it's large and rebuilds naturally from continued use), and custom spreads, custom decks, and custom traditions. From the [Custom Content](#12-custom-content) page you can export any of these individually or all-at-once as JSON; custom spreads and traditions can also be re-imported from an exported file, but there is currently no way to import an exported custom deck back in.
 
 ### Restore
 
@@ -652,7 +686,7 @@ This is a good way to move a single entry between devices, share one, or hand-wr
 
 ---
 
-## 14. Keyboard Shortcuts
+## 15. Keyboard Shortcuts
 
 | Key | Action |
 |-----|--------|

@@ -53,7 +53,23 @@ function ManualPage() {
         <P><Strong>After Saving.</Strong> The complete reading screen shows the spread, notes, and the astrological snapshot. From here you can export as Markdown (<code>.md</code>) or PNG image, or jump to the reading's journal entry.</P>
       </Section>
 
-      <Section title="4. Journal">
+      <Section title="4. Practice">
+        <P>The <Strong>Practice</Strong> page is a workspace for actively running a ritual: reference entities kept at hand, a circular correspondence board, a handful of small live tools, and a notes field — all of it persisting between visits until you clear it.</P>
+        <P><Strong>Pinned References.</Strong> Tap the dashed <Strong>+</Strong> box at the top to pin any reference entity for quick access during a ritual. Tap a pinned entity to open its reference page, or its <Strong>×</Strong> to unpin it; <Strong>Clear all</Strong> removes every pin at once.</P>
+        <P><Strong>Ritual Space.</Strong> A circular board with 13 correspondence slots — the 8 compass points, a centre slot, and 4 corner slots labelled with the Tetragrammaton. Tap an empty slot to fill it with a Wu Xing phase, Western element, Yin/Yang, or polarity correspondence; each filled slot gets a <Strong>×</Strong> badge to clear it and an <Strong>↗</Strong> badge to browse every entity sharing that correspondence's tag. <Strong>Clear all</Strong> resets the whole space and its widgets at once; <Strong>Ritual settings</Strong> jumps straight to the matching section of <Strong>Settings → Traditions</Strong>, where you can show English captions and independently show/hide each slot group. On mobile-width screens the space keeps its full desktop layout rather than reflowing, and becomes pannable/pinch-zoomable instead — a reset button appears once you've panned or zoomed away from the default view.</P>
+        <P><Strong>Widgets.</Strong> Four slots, two on each side of the ritual space, each hold one small live tool: a <Strong>Timer / Stopwatch</Strong>, a <Strong>Magic Circle</Strong> viewer (any magic circle, pentagram, hexagram, or kamea diagram), a single-card <Strong>Reading</Strong> draw from any deck, a <Strong>Numerology</Strong> calculator (Pythagorean, Chaldean, or Gematria), a live <Strong>Sky Wheel</Strong> chart of the current moment, or any saved <Strong>Natal Chart</Strong>. Each widget's own <Strong>×</Strong> badge removes it from its slot.</P>
+        <P><Strong>Notes.</Strong> A free-text box at the bottom of the page for notes on the current ritual.</P>
+        <P><Strong>Saving & Loading.</Strong> <Strong>Save</Strong> (in the page header) captures everything on the page — pins, every slot, all four widgets, and your notes — as a single named ritual, either exported as a <code>.json</code> file or stored in-app as a Custom entity. <Strong>Load</Strong> brings a ritual back in from either source, always asking for confirmation first since it replaces everything currently on the page.</P>
+      </Section>
+
+      <Section title="5. Calendar">
+        <P>Navigate to <Strong>Calendar</Strong> in the sidebar. A tab bar across the top always includes <Strong>Gregorian</Strong>; enable Hebrew, Islamic, Chinese, and/or Hindu tabs from <Strong>Settings → Calendar Tabs</Strong>, or the <Strong>Manage</Strong> button on the page itself.</P>
+        <P><Strong>Month Grid.</Strong> Every tab — Gregorian or native — shows a full month grid with today highlighted and days clickable for detail. A native tab navigates by that calendar's own year and month (with its own month names, and leap-month handling for Chinese) rather than the Gregorian one, but overlays the same events: Sabbats and every tracked calendar holiday, Moon and planet ingresses, the 8 major annual meteor shower peaks on their real solar-longitude-calculated dates, and every total/partial lunar and solar eclipse. Tap any event badge to open its reference page.</P>
+        <P><Strong>Retrograde Tracker.</Strong> A toggle at the top of the grid adds a small strip to each day showing which of the eight visible planets (Mercury through Pluto) are retrograde that day; hover a coloured segment for that planet's current station — "Day 3 of 8", for example.</P>
+        <P><Strong>Moon Page.</Strong> A button on the Calendar page opens a dedicated Moon detail view: current phase and illumination, a timeline of upcoming/past quarter phases, distance/apparent size/supermoon status, estimated local high and low tides, constellation and house position, current aspects, the next lunar and solar eclipse, and a Full Moon Names table (Anglo-Saxon and modern Celtic-neopagan names) that highlights the current month.</P>
+      </Section>
+
+      <Section title="6. Journal">
         <P>The Journal combines all saved readings and standalone journal entries into a single reverse-chronological timeline.</P>
         <P><Strong>Timeline View.</Strong> Tap a row header or chevron to expand a reading or entry in place. Toggle the layout icon in the header to switch between standard and compact list views.</P>
         <P><Strong>Filter.</Strong> Type in the filter field to search readings by question, notes, or card names; and journal entries by title or content.</P>
@@ -63,7 +79,7 @@ function ManualPage() {
         <P><Strong>Statistics.</Strong> Tap the bar-chart icon in the Journal header to view aggregate charts about your reading practice over time.</P>
       </Section>
 
-      <Section title="5. Reference">
+      <Section title="7. Reference">
         <P>A searchable encyclopaedia of all esoteric entities in the database.</P>
         <P><Strong>Search.</Strong> Results filter in real time across names, descriptions, and tags. Use the Type, Tags, and Source filters to narrow results. Tap the dice icon for a random entity.</P>
         <P><Strong>Browse Grid.</Strong> Category tiles give an overview of every system — tarot, runes, sephiroth, paths, planets, zodiac, houses, aspects, lunar nodes, decans, deities, angels, demons, Hebrew letters, chakras, hexagrams, and more. Tap a category to jump to a filtered view.</P>
@@ -81,24 +97,24 @@ function ManualPage() {
         ]} />
       </Section>
 
-      <Section title="6. Astrology">
+      <Section title="8. Astrology">
         <P><Strong>Natal Charts.</Strong> Go to <Strong>Astrology</Strong> in the sidebar and tap <Strong>New Chart</Strong>. Enter name, birth date + time, and birth location. Use the city search field to find a city by name (type 3 or more characters) — selecting a result fills the coordinates and timezone automatically. Coordinates can always be edited manually. Mark one chart as "Self" to enable transit-to-natal comparisons.</P>
         <P><Strong>Chart Detail</Strong> shows sect badge, SVG wheel chart (toggle Tropical / Sidereal / IAU), planet positions table, asteroids table, aspects table, mutual receptions, and Arabic parts/Lots.</P>
+        <P><Strong>Compare Charts.</Strong> Tap <Strong>Compare Charts</Strong> on the Astrology page to open a synastry tool: pick any two saved charts as A and B, then view them as an overlaid biwheel or side-by-side position tables, plus a full cross-aspects table between every pair of planets. Each chart's planet visibility can be filtered independently.</P>
         <P><Strong>Current Sky</Strong> updates every five minutes with planet positions and (if a Self chart is saved) transit aspects to natal — each transit shows applying (→) or separating (←) status.</P>
         <P><Strong>Sky Animation.</Strong> Tap the play button on the Current Sky page to open the animated sky wheel. The wheel shows all visible planets orbiting in real time. Use the speed controls to slow down or accelerate time, and the play/pause button to stop. Hover or tap any planet glyph to see its current sign, degree, and retrograde status. The animation reflects your active zodiac mode (Tropical / Sidereal / IAU).</P>
-        <P><Strong>Astrology Calendar</Strong> shows a month grid with Moon ingresses, planet ingresses, and eclipse markers. The <Strong>Retrograde tracker</Strong> toggle at the top adds a small strip to each day showing which of the eight visible planets (Mercury through Pluto) are retrograde that day; hover a coloured segment for that planet's current station — "Day 3 of 8", for example.</P>
         <P><Strong>Modes & House Systems</Strong> are configured in <Strong>Settings → Traditions</Strong>. Zodiac modes: Tropical, Sidereal, IAU 13-sign (includes Ophiuchus with accurate arc widths). House systems: Whole Sign, Equal, Placidus, Regiomontanus, Campanus, Koch.</P>
         <P><Strong>Lunar Nodes.</Strong> The Reference section includes a Lunar Nodes category (Rahu / North Node ☊ and Ketu / South Node ☋) with full Jyotish descriptions, Sanskrit names, Latin names (Caput/Cauda Draconis), and classical attributions. Navigate to them via Browse → Astrology → Lunar Nodes or by searching their names.</P>
       </Section>
 
-      <Section title="7. Qabalah">
+      <Section title="9. Qabalah">
         <P><Strong>Tree of Life.</Strong> An interactive SVG scaled to fill the viewport. Switch between Tree of Life mode (Queen Scale colours, 22 Paths) and Nightside Tree (Qliphoth, Tunnels of Set). Toggle Daath visibility in <Strong>Settings → Traditions</Strong>. Tap any node to navigate to its reference page.</P>
         <P><Strong>Gematria Calculator.</Strong> Type Hebrew characters directly or use the letter table to build a word. The total updates in real time. Final forms (ך ם ן ף ץ) are handled automatically. Tap any value to look up entities linked to that number.</P>
         <P><Strong>Numerology Calculator.</Strong> Enter a full name to calculate Expression, Soul Urge / Heart's Desire, and Personality numbers. Enter a birth date to compute the Life Path number. Switch between Pythagorean and Chaldean systems. Master numbers (11, 22, 33) are highlighted.</P>
         <P><Strong>Sephirothic Attributions Matrix.</Strong> Available in <Strong>Reference → Guides</Strong>. Displays all 10 Sephiroth as columns with rows for GD planet, Tarot trump, archangel, angelic order, divine name, corresponding chakra, and Queen Scale (Briah) colour. Click any cell to navigate to that entity's reference page.</P>
       </Section>
 
-      <Section title="8. Study">
+      <Section title="10. Study">
         <P>Spaced repetition (SM-2 algorithm) to help you memorise entity meanings.</P>
         <P><Strong>Dashboard</Strong> shows cards due today, progress breakdown (New / Learning / Review / Mature), per-type bars, streak, and 14-day accuracy sparkline.</P>
         <P><Strong>Question Modes.</Strong></P>
@@ -113,11 +129,11 @@ function ManualPage() {
         <P><Strong>Study Settings.</Strong> Configure session size (1–500, default 20), which entity types to include, question modes per type, multiple-choice count, and whether to include custom entities.</P>
       </Section>
 
-      <Section title="9. Bookmarks">
+      <Section title="11. Bookmarks">
         <P>Tap the <Strong>★</Strong> star button on any entity reference page to bookmark it. Bookmarks appear in the sidebar and on the home dashboard. Tap the star again to remove, or use the remove button in the Bookmarks section.</P>
       </Section>
 
-      <Section title="10. Custom Content">
+      <Section title="12. Custom Content">
         <P>The <Strong>Custom</Strong> section (sidebar) lets you extend the app with your own material.</P>
         <P><Strong>Custom Entities.</Strong> Set a canonical name (slug), entity type, display name, description, secondary names, tags, and extended key/value data. Custom entities appear in search, can be bookmarked, linked in journal entries, and included in study sessions.</P>
         <P><Strong>Batch Import.</Strong> From the Entities section, <Strong>Download template</Strong> saves an example <code>.json</code> file showing the exact format; <Strong>Import JSON</Strong> reads a file of the same shape and creates every entity it describes in one pass. Each entry needs a <code>canonicalName</code>, <code>entityType</code>, and <code>displayName</code>; <code>description</code>, <code>userNotes</code>, <code>tags</code>, and <code>extendedData</code> (any JSON value per key) are optional. An entry can also include a <code>links</code> array — each needs a <code>target</code> canonical name and a <code>label</code>; the target can be any existing entity, built-in or custom, or another entity defined later in the same file. Importing a canonical name that already belongs to one of your custom entities updates it in place rather than duplicating it; a canonical name belonging to a built-in entity is rejected, to protect built-in data. A results summary lists exactly what was created, updated, or skipped (and why) after every import.</P>
@@ -126,7 +142,7 @@ function ManualPage() {
         <P><Strong>Custom Traditions.</Strong> Specify which link labels a tradition owns and how its attributions are displayed. Custom traditions appear in the Settings → Traditions toggles.</P>
       </Section>
 
-      <Section title="11. Settings">
+      <Section title="13. Settings">
         <P><Strong>Window.</Strong> Toggle fullscreen (also F11) and compact window mode.</P>
         <P><Strong>Theme.</Strong> Choose from seven presets (Vesper, Midnight, Twilight, Silver, Amber, Mint, Copper) in light or dark mode. Expand the custom colour editor to edit any of 18 design tokens with live preview.</P>
         <P><Strong>Traditions.</Strong> Toggle active traditions on/off; set primary per-system where multiple traditions overlap; configure zodiac mode and house system; show/hide Daath.</P>
@@ -140,14 +156,14 @@ function ManualPage() {
         <P><Strong>Custom CSS.</Strong> Inject arbitrary CSS. Styles are validated for balanced braces before being applied.</P>
       </Section>
 
-      <Section title="12. Data & Backup">
+      <Section title="14. Data & Backup">
         <P><Strong>Export Backup</Strong> (Settings → Data) saves a <code>.json</code> file of all readings, journal entries, natal charts, study states, and custom content. The file is human-readable JSON.</P>
         <P><Strong>Import Backup</Strong> merges a previously exported file with the current database. Existing records are preserved.</P>
         <P><Strong>Archive Old Data.</Strong> Enter a year threshold, preview affected records, then permanently delete entries older than that date (two-step confirmation).</P>
         <P><Strong>Export a Single Reading.</Strong> From any expanded reading in the Journal, use the <Strong>md</Strong> and <Strong>img</Strong> buttons to export just that reading as Markdown or PNG.</P>
       </Section>
 
-      <Section title="13. Keyboard Shortcuts">
+      <Section title="15. Keyboard Shortcuts">
         <Table rows={[
           ['F11', 'Toggle fullscreen'],
           ['Escape', 'Close the active overlay, lightbox, or search panel'],
