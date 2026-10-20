@@ -709,6 +709,13 @@ export type MoonRiseSet = {
   nextSet: Date | null
 }
 
+export type SunriseSunset = {
+  /** Sunrise on the local calendar day containing `date`, or null in polar day/night. */
+  sunrise: Date | null
+  /** Sunset on the local calendar day containing `date`, or null in polar day/night. */
+  sunset: Date | null
+}
+
 export type TideEvent = {
   kind: 'high' | 'low'
   time: Date
@@ -883,6 +890,22 @@ export function getMoonRiseSet(date: Date, lat: number, lon: number): MoonRiseSe
   const nextRise = Astronomy.SearchRiseSet(Astronomy.Body.Moon, observer, +1, date, 2)
   const nextSet  = Astronomy.SearchRiseSet(Astronomy.Body.Moon, observer, -1, date, 2)
   return { nextRise: nextRise?.date ?? null, nextSet: nextSet?.date ?? null }
+}
+
+/**
+ * Approximate sunrise and sunset for the local calendar day containing
+ * `date` (midnight to midnight in the runtime's local timezone), as seen
+ * from a given location. This is the same geometric horizon-crossing search
+ * `isDayChart`'s sect calculation relies on conceptually, surfaced here as
+ * actual clock times; real sunrise/sunset can differ by a few minutes due to
+ * atmospheric refraction and local horizon obstructions (hills, buildings).
+ */
+export function getSunriseSunset(date: Date, lat: number, lon: number): SunriseSunset {
+  const observer = new Astronomy.Observer(lat, lon, 0)
+  const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate())
+  const sunrise = Astronomy.SearchRiseSet(Astronomy.Body.Sun, observer, +1, dayStart, 1)
+  const sunset  = Astronomy.SearchRiseSet(Astronomy.Body.Sun, observer, -1, dayStart, 1)
+  return { sunrise: sunrise?.date ?? null, sunset: sunset?.date ?? null }
 }
 
 /**

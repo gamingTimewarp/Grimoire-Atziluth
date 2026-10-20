@@ -5,7 +5,7 @@ import {
   getMoonQuarterTimeline, getMoonAppearance, getNextLunarEclipse, getNextSolarEclipse,
   getMoonRiseSet, getLunarApsisTimeline, isSupermoon, getMoonConstellation,
   houseOfLongitude, getMoonHouse, getMoonAspects, getMoonIlluminationPercent,
-  getTideEstimate,
+  getTideEstimate, getSunriseSunset,
 } from '../astro-engine'
 import type { HouseSystem } from '../astro-engine'
 import * as Astronomy from 'astronomy-engine'
@@ -317,6 +317,22 @@ describe('getMoonRiseSet', () => {
     // Both should occur within a couple of days — never further out than the 2-day search window.
     expect(rs.nextRise!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
     expect(rs.nextSet!.getTime() - date.getTime()).toBeLessThan(2 * 86400000)
+  })
+})
+
+describe('getSunriseSunset', () => {
+  it('returns a sunrise before sunset, both on the local calendar day containing the given date', () => {
+    const date = new Date(Date.UTC(2026, 2, 15, 12, 0, 0))
+    const { sunrise, sunset } = getSunriseSunset(date, 51.5, -0.1)
+    expect(sunrise).not.toBeNull()
+    expect(sunset).not.toBeNull()
+    expect(sunrise!.getTime()).toBeLessThan(sunset!.getTime())
+    const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime()
+    const dayEnd = dayStart + 86400000
+    expect(sunrise!.getTime()).toBeGreaterThanOrEqual(dayStart)
+    expect(sunrise!.getTime()).toBeLessThan(dayEnd)
+    expect(sunset!.getTime()).toBeGreaterThanOrEqual(dayStart)
+    expect(sunset!.getTime()).toBeLessThan(dayEnd)
   })
 })
 

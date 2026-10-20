@@ -7,7 +7,7 @@ import {
 } from '@/lib/astro-calc'
 import {
   computeMonthAstroData, computeAstroDataForRange, getPlanetPositions, getAspects, formatLongitude, formatTime,
-  getSignsForMode, getSunSignForMode, getSabbatsForYear,
+  getSignsForMode, getSunSignForMode, getSabbatsForYear, getSunriseSunset,
   getRetrogradeStrip, getRetrogradeStationInfo, getMoonIlluminationPercent,
 } from '@/lib/astro-engine'
 import type { MonthAstroData, PlanetPosition, Aspect, MoonEvent, Ingress, Sabbat, RetrogradeStripEntry } from '@/lib/astro-engine'
@@ -16,7 +16,7 @@ import type { HolidayInstance, MeteorShowerInstance } from '@/lib/holiday-engine
 import { getEclipsesForYear, eclipseEmoji, eclipseLabel } from '@/lib/eclipse-engine'
 import type { EclipseInstance } from '@/lib/eclipse-engine'
 import { loadTraditionSettings } from '@/lib/tradition-store'
-import { loadSettings, patchSettings } from '@/lib/settings-store'
+import { loadSettings, patchSettings, getHomeLocation } from '@/lib/settings-store'
 import { listReadingsByMonth, listJournalEntriesByMonth } from '@/lib/reading-db'
 import type { JournalEntry } from '@/lib/reading-db'
 import type { Reading } from '@grimoire/core'
@@ -565,6 +565,8 @@ function DayDetail({
   const sun    = getSunSignForMode(date, astrologyMode)
   const wuxing = getWuxingPhase(date)
   const chineseAnimal = getChineseZodiacYear(date)
+  const homeLocation = getHomeLocation()
+  const sunTimes = getSunriseSunset(date, homeLocation?.lat ?? 0, homeLocation?.lon ?? 0)
   const gregorianLabel = date.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
   // On a native-calendar tab, that calendar's own date is the point of the
   // view — it should read as the headline, with the Gregorian date as the
@@ -645,6 +647,25 @@ function DayDetail({
           {navLink(`${wuxing.nameZh} ${wuxing.name}`, wuxing.canonicalName)}
           <span style={{ color: 'var(--color-border)' }}>·</span>
           {navLink(`${chineseAnimal.emoji} ${chineseAnimal.chineseChar} ${chineseAnimal.name}`, chineseAnimal.canonicalName)}
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '10px', fontSize: '12px', marginTop: '8px' }}>
+          <span style={{ color: 'var(--color-text-muted)' }}>
+            ☀️ Sunrise {sunTimes.sunrise ? formatTime(sunTimes.sunrise) : '—'}
+          </span>
+          <span style={{ color: 'var(--color-border)' }}>·</span>
+          <span style={{ color: 'var(--color-text-muted)' }}>
+            🌇 Sunset {sunTimes.sunset ? formatTime(sunTimes.sunset) : '—'}
+          </span>
+          <span
+            onClick={() => navigate({ to: '/settings', hash: 'home-location' })}
+            title="Go to Home Location setting"
+            style={{
+              color: 'var(--color-text-subtle)', textDecoration: 'underline', textDecorationStyle: 'dotted',
+              textUnderlineOffset: '2px', cursor: 'pointer',
+            }}
+          >
+            {homeLocation ? homeLocation.label : 'approximate — set home location'}
+          </span>
         </div>
       </div>
 
