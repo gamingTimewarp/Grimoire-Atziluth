@@ -109,6 +109,11 @@ export function ZoomableSVGContainer({
     setIsDragging(true)
     dragOrigin.current = { mouseX: e.clientX, mouseY: e.clientY, panX: pan.x, panY: pan.y }
     e.preventDefault()
+    // Claim the gesture outright — without this, a container nested inside another
+    // one (e.g. a sigil widget's own pan/zoom, inside the Practice page's ritual-row
+    // pan/zoom) would see its own drag bubble up to the outer container too, panning
+    // both at once.
+    e.stopPropagation()
   }
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -117,9 +122,15 @@ export function ZoomableSVGContainer({
       x: dragOrigin.current.panX + (e.clientX - dragOrigin.current.mouseX),
       y: dragOrigin.current.panY + (e.clientY - dragOrigin.current.mouseY),
     })
+    e.stopPropagation()
   }
 
-  const handleMouseUp = () => { dragging.current = false; setIsDragging(false) }
+  const handleMouseUp = (e: React.MouseEvent) => {
+    const wasDragging = dragging.current
+    dragging.current = false
+    setIsDragging(false)
+    if (wasDragging) e.stopPropagation()
+  }
 
   // ── Touch handlers ───────────────────────────────────────────────────────────
 
@@ -133,7 +144,11 @@ export function ZoomableSVGContainer({
       // page; the matching touchAction switch keeps the browser from racing
       // us to it.
       const undecided = panMode === 'horizontal' && zoomRef.current <= 1
-      if (!undecided) e.preventDefault()
+      // Only claim the gesture (and keep a nested container's own touch pan/zoom
+      // from also reaching an ancestor's) once it's actually ours to claim — in
+      // 'horizontal' mode at 1x, that's still undecided until handleTouchMove sees
+      // which way it moves, same as the preventDefault above.
+      if (!undecided) { e.preventDefault(); e.stopPropagation() }
       touchState.current = {
         type: 'pan',
         startDist: 0,
@@ -146,6 +161,7 @@ export function ZoomableSVGContainer({
     } else if (e.touches.length === 2) {
       // Two-finger pinch always claims the gesture, even in 'horizontal' mode
       e.preventDefault()
+      e.stopPropagation()
       touchState.current = {
         type: 'pinch',
         startDist: pinchDist(e.touches),
@@ -174,9 +190,11 @@ export function ZoomableSVGContainer({
       }
 
       e.preventDefault()
+      e.stopPropagation()
       setPan({ x: ts.startPan.x + dx, y: ts.startPan.y + dy })
     } else if (ts.type === 'pinch' && e.touches.length === 2) {
       e.preventDefault()
+      e.stopPropagation()
       const ratio   = pinchDist(e.touches) / ts.startDist
       const newZoom = Math.min(maxZoom, Math.max(minZoom, ts.startZoom * ratio))
 
@@ -192,6 +210,10 @@ export function ZoomableSVGContainer({
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
+    // Only a gesture that was actually committed (claimed) should keep an ancestor
+    // container from seeing this touchend too — same reasoning as the other handlers.
+    const wasCommitted = touchState.current?.committed === 'pan'
+    if (wasCommitted) e.stopPropagation()
     if (e.touches.length === 0) {
       touchState.current = null
       // Clamp to minZoom if pinched below it
