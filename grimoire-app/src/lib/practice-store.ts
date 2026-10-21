@@ -135,9 +135,15 @@ export interface NatalChartWidgetState {
   chartId: string | null
 }
 
+export interface CustomSigilWidgetState {
+  kind: 'custom-sigil'
+  /** 'magic.custom-sigil' entity canonicalName — null until one has been picked. */
+  canonicalName: string | null
+}
+
 export type RitualWidgetState =
   | TimerWidgetState | MagicCircleWidgetState | ReadingWidgetState | NumerologyWidgetState
-  | SkyWheelWidgetState | NatalChartWidgetState
+  | SkyWheelWidgetState | NatalChartWidgetState | CustomSigilWidgetState
 
 const WIDGETS_KEY = 'grimoire:practice-widgets'
 

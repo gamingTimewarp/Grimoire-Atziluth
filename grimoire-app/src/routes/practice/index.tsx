@@ -4,7 +4,7 @@ import type { RefObject } from 'react'
 import { createPortal } from 'react-dom'
 import {
   Plus, X, ExternalLink, Timer, CircleDot, Layers, Hash, Play, Pause, RotateCcw,
-  Save, FolderOpen, Upload, Download, Archive, Circle, User, Settings,
+  Save, FolderOpen, Upload, Download, Archive, Circle, User, Settings, Shapes,
 } from 'lucide-react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity, GrimoireEngine } from '@grimoire/core'
@@ -25,7 +25,7 @@ import {
 } from '@/lib/practice-store'
 import type {
   RitualGroupsEnabled, RitualWidgetState, TimerWidgetState, MagicCircleWidgetState, ReadingWidgetState,
-  NumerologyWidgetState, NatalChartWidgetState,
+  NumerologyWidgetState, NatalChartWidgetState, CustomSigilWidgetState,
 } from '@/lib/practice-store'
 import { BUILT_IN_DECK_FILTERS } from '@/lib/built-in-data'
 import type { DeckFilter } from '@/lib/built-in-data'
@@ -42,6 +42,8 @@ import { SigillumDiagram } from '@/components/ui/SigillumDiagram'
 import { KameaDiagram } from '@/components/ui/KameaDiagram'
 import { PentagramDiagram } from '@/components/ui/PentagramDiagram'
 import { HexagramDiagram } from '@/components/ui/HexagramDiagram'
+import { CustomSigilDiagram } from '@/components/ui/CustomSigilDiagram'
+import { sigilDesignFromExtendedData } from '@/lib/sigil-data'
 import { Toast } from '@/components/ui/Toast'
 
 const MAGIC_DIAGRAM_ENTITY_TYPES = ['magic.circle', 'magic.pentagram', 'magic.hexagram', 'magic.kamea']
@@ -806,6 +808,18 @@ function WidgetSlot({
             >
               <User size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> Natal Chart
             </button>
+            <button
+              onClick={() => { onSet({ kind: 'custom-sigil', canonicalName: null }); setPickerOpen(false) }}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px', width: '100%', textAlign: 'left',
+                padding: '8px 9px', background: 'none', border: 'none', borderRadius: '5px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '13px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-surface-3)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'none' }}
+            >
+              <Shapes size={14} style={{ color: 'var(--color-text-subtle)', flexShrink: 0 }} /> Custom Sigil
+            </button>
           </div>,
           document.body,
         )}
@@ -826,6 +840,7 @@ function WidgetSlot({
         {state.kind === 'numerology' && <NumerologyWidget state={state} onChange={onSet} />}
         {state.kind === 'sky-wheel' && <SkyWheelWidget />}
         {state.kind === 'natal-chart' && <NatalChartWidget state={state} onChange={onSet} />}
+        {state.kind === 'custom-sigil' && <CustomSigilWidget state={state} onChange={onSet} />}
       </div>
       <button
         onClick={onClear}
@@ -1059,6 +1074,79 @@ function MagicCircleWidget({ state, onChange }: { state: MagicCircleWidgetState;
       {selected?.entityType === 'magic.pentagram' && <PentagramDiagram entity={selected} />}
       {selected?.entityType === 'magic.hexagram' && <HexagramDiagram entity={selected} />}
       {selected?.entityType === 'magic.kamea' && <KameaDiagram entity={selected} />}
+    </div>
+  )
+}
+
+// ─── Custom Sigil widget ────────────────────────────────────────────────────
+
+function CustomSigilWidget({ state, onChange }: { state: CustomSigilWidgetState; onChange: (w: CustomSigilWidgetState) => void }) {
+  const { engine } = useEngineStore()
+  const [entities, setEntities] = useState<BaseEntity[]>([])
+  const [selected, setSelected] = useState<BaseEntity | null>(null)
+  const [query, setQuery] = useState('')
+
+  useEffect(() => {
+    if (!engine || state.canonicalName) return
+    engine.adapter.listEntities({ entityType: 'magic.custom-sigil' }, { offset: 0, limit: 50 })
+      .then(result => setEntities(result.items))
+      .catch(console.error)
+  }, [engine, state.canonicalName])
+
+  useEffect(() => {
+    if (!engine || !state.canonicalName) { setSelected(null); return }
+    engine.adapter.getEntityByCanonicalName(state.canonicalName).then(setSelected).catch(console.error)
+  }, [engine, state.canonicalName])
+
+  if (!state.canonicalName) {
+    const q = query.trim().toLowerCase()
+    const filtered = q
+      ? entities.filter(e => e.primaryDisplayName.toLowerCase().includes(q) || e.canonicalName.toLowerCase().includes(q))
+      : entities
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: `${WIDGET_SLOT_SIZE - 24}px` }}>
+        <div style={{ fontSize: '11px', color: 'var(--color-text-subtle)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '2px' }}>
+          Select a Sigil
+        </div>
+        <input
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search…"
+          style={{
+            width: '100%', padding: '6px 8px', boxSizing: 'border-box',
+            background: 'var(--color-surface-3)', border: '1px solid var(--color-border)',
+            borderRadius: '6px', color: 'var(--color-text)', fontSize: '12px', outline: 'none',
+          }}
+        />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: `${WIDGET_SLOT_SIZE - 24}px`, overflowY: 'auto' }}>
+          {entities.length === 0 && <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>No custom sigils yet — create one under Custom Entities.</div>}
+          {entities.length > 0 && filtered.length === 0 && (
+            <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>No matches.</div>
+          )}
+          {filtered.map(e => (
+            <button
+              key={e.canonicalName}
+              onClick={() => onChange({ kind: 'custom-sigil', canonicalName: e.canonicalName })}
+              style={{
+                textAlign: 'left', padding: '7px 9px', background: 'var(--color-surface-3)',
+                border: '1px solid var(--color-border)', borderRadius: '6px', cursor: 'pointer',
+                color: 'var(--color-text)', fontSize: '12px', fontFamily: 'inherit',
+              }}
+              onMouseEnter={ev => { ev.currentTarget.style.borderColor = 'var(--color-accent-muted)' }}
+              onMouseLeave={ev => { ev.currentTarget.style.borderColor = 'var(--color-border)' }}
+            >
+              {e.primaryDisplayName}
+            </button>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div style={{ width: '280px', maxWidth: '100%' }}>
+      {selected && <CustomSigilDiagram design={sigilDesignFromExtendedData(selected.extendedData)} />}
     </div>
   )
 }
