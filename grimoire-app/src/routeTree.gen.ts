@@ -52,6 +52,7 @@ import { Route as QabalahNumerologyRouteImport } from './routes/qabalah/numerolo
 import { Route as QabalahGematriaRouteImport } from './routes/qabalah/gematria'
 import { Route as JournalStatsRouteImport } from './routes/journal/stats'
 import { Route as CustomTraditionsRouteImport } from './routes/custom/traditions'
+import { Route as CustomSigilRouteImport } from './routes/custom/sigil'
 import { Route as CustomNewRouteImport } from './routes/custom/new'
 import { Route as CustomCnRouteImport } from './routes/custom/$cn'
 import { Route as CalendarMoonRouteImport } from './routes/calendar/moon'
@@ -282,6 +283,11 @@ const CustomTraditionsRoute = CustomTraditionsRouteImport.update({
   path: '/custom/traditions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CustomSigilRoute = CustomSigilRouteImport.update({
+  id: '/custom/sigil',
+  path: '/custom/sigil',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CustomNewRoute = CustomNewRouteImport.update({
   id: '/custom/new',
   path: '/custom/new',
@@ -327,6 +333,7 @@ export interface FileRoutesByFullPath {
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
+  '/custom/sigil': typeof CustomSigilRoute
   '/custom/traditions': typeof CustomTraditionsRoute
   '/journal/stats': typeof JournalStatsRoute
   '/qabalah/gematria': typeof QabalahGematriaRoute
@@ -379,6 +386,7 @@ export interface FileRoutesByTo {
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
+  '/custom/sigil': typeof CustomSigilRoute
   '/custom/traditions': typeof CustomTraditionsRoute
   '/journal/stats': typeof JournalStatsRoute
   '/qabalah/gematria': typeof QabalahGematriaRoute
@@ -432,6 +440,7 @@ export interface FileRoutesById {
   '/calendar/moon': typeof CalendarMoonRoute
   '/custom/$cn': typeof CustomCnRoute
   '/custom/new': typeof CustomNewRoute
+  '/custom/sigil': typeof CustomSigilRoute
   '/custom/traditions': typeof CustomTraditionsRoute
   '/journal/stats': typeof JournalStatsRoute
   '/qabalah/gematria': typeof QabalahGematriaRoute
@@ -486,6 +495,7 @@ export interface FileRouteTypes {
     | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
+    | '/custom/sigil'
     | '/custom/traditions'
     | '/journal/stats'
     | '/qabalah/gematria'
@@ -538,6 +548,7 @@ export interface FileRouteTypes {
     | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
+    | '/custom/sigil'
     | '/custom/traditions'
     | '/journal/stats'
     | '/qabalah/gematria'
@@ -590,6 +601,7 @@ export interface FileRouteTypes {
     | '/calendar/moon'
     | '/custom/$cn'
     | '/custom/new'
+    | '/custom/sigil'
     | '/custom/traditions'
     | '/journal/stats'
     | '/qabalah/gematria'
@@ -643,6 +655,7 @@ export interface RootRouteChildren {
   CalendarMoonRoute: typeof CalendarMoonRoute
   CustomCnRoute: typeof CustomCnRoute
   CustomNewRoute: typeof CustomNewRoute
+  CustomSigilRoute: typeof CustomSigilRoute
   CustomTraditionsRoute: typeof CustomTraditionsRoute
   JournalStatsRoute: typeof JournalStatsRoute
   QabalahGematriaRoute: typeof QabalahGematriaRoute
@@ -990,6 +1003,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CustomTraditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/custom/sigil': {
+      id: '/custom/sigil'
+      path: '/custom/sigil'
+      fullPath: '/custom/sigil'
+      preLoaderRoute: typeof CustomSigilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/custom/new': {
       id: '/custom/new'
       path: '/custom/new'
@@ -1051,6 +1071,7 @@ const rootRouteChildren: RootRouteChildren = {
   CalendarMoonRoute: CalendarMoonRoute,
   CustomCnRoute: CustomCnRoute,
   CustomNewRoute: CustomNewRoute,
+  CustomSigilRoute: CustomSigilRoute,
   CustomTraditionsRoute: CustomTraditionsRoute,
   JournalStatsRoute: JournalStatsRoute,
   QabalahGematriaRoute: QabalahGematriaRoute,

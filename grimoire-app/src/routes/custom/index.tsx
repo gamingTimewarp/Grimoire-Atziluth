@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useEngineStore } from '@/stores/engine'
 import type { BaseEntity } from '@grimoire/core'
 import { Button } from '@/components/ui/Button'
-import { Plus, Pencil, LayoutList, BookOpen, GitBranch, Layers, Download, Upload, X, ChevronDown, ChevronRight, Folder, FolderOpen, Search } from 'lucide-react'
+import { Plus, Pencil, LayoutList, BookOpen, GitBranch, Layers, Download, Upload, X, ChevronDown, ChevronRight, Folder, FolderOpen, Search, Shapes } from 'lucide-react'
 import { formatEntityType } from '@/lib/format'
 import { TagInput } from '@/components/ui/TagInput'
 import { getAllCustomSpreads, getAllCustomDecks, getAllCustomTraditions, type CustomSpreadRecord, type CustomDeckRecord, type CustomTraditionRecord } from '@/lib/custom-db'
@@ -331,6 +331,9 @@ function CustomEntitiesPage() {
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/new' })}>
             <Plus size={12} /> New entity
           </Button>
+          <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/sigil', search: { edit: undefined } })}>
+            <Shapes size={12} /> New sigil
+          </Button>
         </div>
       </div>
 
@@ -487,7 +490,9 @@ function FolderView({
                 <EntityRow
                   key={e.id}
                   entity={e}
-                  onClick={() => navigate({ to: '/custom/$cn', params: { cn: e.canonicalName } })}
+                  onClick={() => e.entityType === 'magic.custom-sigil'
+                    ? navigate({ to: '/custom/sigil', search: { edit: e.canonicalName } })
+                    : navigate({ to: '/custom/$cn', params: { cn: e.canonicalName } })}
                   onViewReference={() => onViewReference(e.canonicalName)}
                   onExport={() => onExport(e)}
                 />
