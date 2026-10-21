@@ -8,6 +8,8 @@ import {
 } from '@/lib/custom-db'
 import type { CustomLinkRecord } from '@/lib/custom-db'
 import { CUSTOM_IMAGE_KEY, getCustomImageFileName, pickAndStoreCustomImage, removeCustomImage, useCustomImageUrl } from '@/lib/custom-art'
+import { ATTACHED_SIGIL_KEY, sigilDesignFromExtendedData } from '@/lib/sigil-data'
+import { CustomSigilDiagram } from '@/components/ui/CustomSigilDiagram'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft, Plus, X, Trash2, Image as ImageIcon } from 'lucide-react'
 import { formatEntityType } from '@/lib/format'
@@ -39,6 +41,8 @@ function EditCustomEntityPage() {
   const [imageFileName,         setImageFileName]         = useState<string | null>(null)
   const [originalImageFileName, setOriginalImageFileName] = useState<string | null>(null)
   const [imageBusy,   setImageBusy]  = useState(false)
+  const [attachedSigilCn, setAttachedSigilCn] = useState('')
+  const [availableSigils, setAvailableSigils] = useState<BaseEntity[]>([])
   const [saved,       setSaved]      = useState(false)
   const [saving,      setSaving]     = useState(false)
   const [error,       setError]      = useState<string | null>(null)
@@ -61,7 +65,7 @@ function EditCustomEntityPage() {
     setTags([...e.tags])
     setExtraData(
       Object.entries(e.extendedData)
-        .filter(([key]) => key !== CUSTOM_IMAGE_KEY)
+        .filter(([key]) => key !== CUSTOM_IMAGE_KEY && key !== ATTACHED_SIGIL_KEY)
         .map(([key, value]) => ({
           key,
           value: typeof value === 'string' ? value : JSON.stringify(value),
@@ -70,8 +74,11 @@ function EditCustomEntityPage() {
     const existingImage = getCustomImageFileName(e) ?? null
     setImageFileName(existingImage)
     setOriginalImageFileName(existingImage)
+    setAttachedSigilCn(typeof e.extendedData[ATTACHED_SIGIL_KEY] === 'string' ? e.extendedData[ATTACHED_SIGIL_KEY] as string : '')
     const savedLinks = await getCustomLinksForEntity(cn)
     setLinks(savedLinks)
+    const sigilResult = await engine.adapter.listEntities({ entityType: 'magic.custom-sigil' }, { offset: 0, limit: 500 })
+    setAvailableSigils(sigilResult.items)
     setLoading(false)
   }, [engine, cn, navigate])
 
@@ -123,6 +130,7 @@ function EditCustomEntityPage() {
       if (k) extendedData[k] = row.value
     }
     if (imageFileName) extendedData[CUSTOM_IMAGE_KEY] = imageFileName
+    if (attachedSigilCn) extendedData[ATTACHED_SIGIL_KEY] = attachedSigilCn
 
     const now = new Date().toISOString()
     try {
@@ -280,6 +288,33 @@ function EditCustomEntityPage() {
             style={{ ...inputStyle, width: '100%', resize: 'vertical', height: '60px' }}
           />
         </div>
+      </FormSection>
+
+      {/* Attached sigil */}
+      <FormSection label="Sigil">
+        <FormRow label="Attached sigil">
+          <select
+            value={attachedSigilCn}
+            onChange={e => setAttachedSigilCn(e.target.value)}
+            style={{ ...inputStyle, colorScheme: 'dark' }}
+          >
+            <option value="">— None —</option>
+            {availableSigils.map(s => (
+              <option key={s.canonicalName} value={s.canonicalName}>{s.primaryDisplayName}</option>
+            ))}
+          </select>
+        </FormRow>
+        {availableSigils.length === 0 && (
+          <div style={{ fontSize: '12px', color: 'var(--color-text-subtle)' }}>
+            No custom sigils yet — <Button variant="ghost" size="sm" onClick={() => navigate({ to: '/custom/sigil', search: { edit: undefined } })}>create one</Button> first, then come back to attach it here.
+          </div>
+        )}
+        {attachedSigilCn && (() => {
+          const sigil = availableSigils.find(s => s.canonicalName === attachedSigilCn)
+          return sigil
+            ? <div style={{ marginTop: '10px', maxWidth: '220px' }}><CustomSigilDiagram design={sigilDesignFromExtendedData(sigil.extendedData)} /></div>
+            : null
+        })()}
       </FormSection>
 
       {/* Tags */}

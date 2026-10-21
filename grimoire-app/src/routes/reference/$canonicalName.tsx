@@ -23,6 +23,8 @@ import { KameaDiagram } from '@/components/ui/KameaDiagram'
 import { PentagramDiagram } from '@/components/ui/PentagramDiagram'
 import { HexagramDiagram } from '@/components/ui/HexagramDiagram'
 import { ConstellationDiagram } from '@/components/ui/ConstellationDiagram'
+import { CustomSigilDiagram } from '@/components/ui/CustomSigilDiagram'
+import { sigilDesignFromExtendedData, ATTACHED_SIGIL_KEY } from '@/lib/sigil-data'
 import { EntityLink } from '@/components/ui/EntityLink'
 import { SegmentedToggle } from '@/components/ui/SegmentedToggle'
 import { CONSTELLATION_DIAGRAMS } from '@/lib/constellation-diagrams'
@@ -65,6 +67,7 @@ function EntityDetailPage() {
   const [links, setLinks] = useState<Link[]>([])
   const [linkedNames, setLinkedNames] = useState<Map<string, string>>(new Map())
   const [members, setMembers] = useState<BaseEntity[]>([])
+  const [attachedSigil, setAttachedSigil] = useState<BaseEntity | null>(null)
   const [loading, setLoading] = useState(true)
   const [notFound, setNotFound] = useState(false)
   const [sortMode, setSortMode] = useState<SortMode>('alpha')
@@ -74,6 +77,7 @@ function EntityDetailPage() {
     setLoading(true)
     setNotFound(false)
     setMembers([])
+    setAttachedSigil(null)
 
     Promise.all([
       engine.adapter.getEntityByCanonicalName(canonicalName),
@@ -115,6 +119,12 @@ function EntityDetailPage() {
           )
         )
         setLinkedNames(new Map(nameEntries.filter((entry): entry is [string, string] => entry !== null)))
+
+        // Load an attached custom sigil, if this entity references one
+        if (typeof e.extendedData[ATTACHED_SIGIL_KEY] === 'string') {
+          const sigil = await engine.adapter.getEntityByCanonicalName(e.extendedData[ATTACHED_SIGIL_KEY] as string)
+          setAttachedSigil(sigil && sigil.entityType === 'magic.custom-sigil' ? sigil : null)
+        }
 
         // Load members for overview entities and decks
         let memberEntityType: string | null = null
@@ -234,6 +244,7 @@ function EntityDetailPage() {
   const isPentagram  = entity.entityType === 'magic.pentagram'
   const isHexagram   = entity.entityType === 'magic.hexagram'
   const isMagicCircle = entity.entityType === 'magic.circle'
+  const isCustomSigil = entity.entityType === 'magic.custom-sigil'
   const isConstellation = entity.entityType === 'astrology.constellation'
   const isHoliday = entity.entityType === 'calendar.holiday'
   const isMeteorShower = entity.entityType === 'calendar.meteor-shower'
@@ -279,6 +290,9 @@ function EntityDetailPage() {
     : undefined
   const circleExtDataHide = isMagicCircle
     ? new Set(['triangleNames', 'ringInscriptions', 'heptarchicKings', 'angelNames'])
+    : undefined
+  const customSigilExtDataHide = isCustomSigil
+    ? new Set(['points', 'lines', 'circles'])
     : undefined
   const constellationExtDataHide = isConstellation
     ? new Set(['brightestStarCn'])
@@ -510,13 +524,19 @@ function EntityDetailPage() {
       {/* Magic circle diagram */}
       {isMagicCircle && <MagicCircleSection entity={entity} onNavigate={navToEntity} />}
 
+      {/* User-drawn custom sigil */}
+      {isCustomSigil && <CustomSigilSection entity={entity} />}
+
+      {/* Custom sigil attached to this (otherwise unrelated) entity */}
+      {attachedSigil && <AttachedSigilSection sigil={attachedSigil} onNavigate={navToEntity} />}
+
       {/* Constellation star chart */}
       {isConstellation && <ConstellationSection entity={entity} onNavigate={navToEntity} />}
 
       {/* Extended data + attribution links — type-specific fields and tradition attributions */}
       {(Object.keys(entity.extendedData).length > 0 || attributionLinks.length > 0) && (
         <Section title="Attributes">
-          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? meteorShowerExtDataHide ?? wuxingExtDataHide ?? sephiraExtDataHide ?? alchemyMetalExtDataHide ?? enochianTabletExtDataHide ?? geomancyFigureExtDataHide ?? oghamLetterExtDataHide} />
+          <ExtendedDataTable data={entity.extendedData} linkedNames={linkedNames} onNavigate={navToEntity} additionalHiddenKeys={planetExtDataHide ?? signExtDataHide ?? kameaExtDataHide ?? pentagramExtDataHide ?? hexagramExtDataHide ?? circleExtDataHide ?? customSigilExtDataHide ?? constellationExtDataHide ?? holidayExtDataHide ?? meteorShowerExtDataHide ?? wuxingExtDataHide ?? sephiraExtDataHide ?? alchemyMetalExtDataHide ?? enochianTabletExtDataHide ?? geomancyFigureExtDataHide ?? oghamLetterExtDataHide} />
           {attributionLinks.length > 0 && (
             <div style={{ marginTop: Object.keys(entity.extendedData).length > 0 ? '10px' : 0 }}>
               <LinkList links={attributionLinks} selfName={canonicalName} linkedNames={linkedNames} onNavigate={navToEntity} stripAttributedPrefix />
@@ -1590,6 +1610,38 @@ function MagicCircleSection({ entity, onNavigate }: { entity: BaseEntity; onNavi
   )
 }
 
+// ─── Custom sigil section ─────────────────────────────────────────────────────
+
+function CustomSigilSection({ entity }: { entity: BaseEntity }) {
+  const design = sigilDesignFromExtendedData(entity.extendedData)
+  return (
+    <Section title="Sigil">
+      <CustomSigilDiagram design={design} />
+    </Section>
+  )
+}
+
+// ─── Attached custom sigil section (sigil belongs to another entity) ──────────
+
+function AttachedSigilSection({ sigil, onNavigate }: { sigil: BaseEntity; onNavigate: (cn: string) => void }) {
+  const design = sigilDesignFromExtendedData(sigil.extendedData)
+  return (
+    <Section title="Sigil">
+      <CustomSigilDiagram design={design} />
+      <button
+        onClick={() => onNavigate(sigil.canonicalName)}
+        style={{
+          marginTop: '10px', fontSize: '12px', color: 'var(--color-text-subtle)',
+          background: 'none', border: 'none', cursor: 'pointer', padding: 0, textDecoration: 'underline',
+          fontFamily: 'inherit',
+        }}
+      >
+        View "{sigil.primaryDisplayName}"
+      </button>
+    </Section>
+  )
+}
+
 // ─── Constellation star chart section ────────────────────────────────────────
 
 function ConstellationSection({ entity, onNavigate }: { entity: BaseEntity; onNavigate: (cn: string) => void }) {
@@ -1623,7 +1675,7 @@ function ExtendedDataTable({
   // Hidden here because Reference shows these in a bespoke section elsewhere on the
   // page, not because they're bad content — they remain fair game elsewhere (e.g.
   // as quiz fields, via the same getAttributeEntries() used for that).
-  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'relatedOverviews'])
+  const HIDDEN_KEYS = new Set(['authorNotes', 'uprightMeaning', 'reversedMeaning', 'uprightKeywords', 'reversedKeywords', 'relatedOverviews', ATTACHED_SIGIL_KEY])
   const DURATION_KEYS = new Set(['durationYears', 'durationYearsInt', 'durationMonths', 'durationDays'])
 
   const hasDuration = 'durationYearsInt' in data && 'durationMonths' in data && 'durationDays' in data
